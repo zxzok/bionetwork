@@ -76,3 +76,8 @@ videos:
   gene-network-inference: [L13-core]
   network-medicine: [L14-core]
   reproducible-research: [L15-core]
+  degree-correlations: [T-degree-correlations]
+  robustness: [T-robustness]
+  network-construction: [T-network-construction]
+  analysis-workflow: [T-analysis-workflow]
+  reporting-frontiers: [T-reporting-frontiers]

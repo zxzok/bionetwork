@@ -201,7 +201,12 @@ def chrome(fig, header_left, sub, frac):
 
 def render(lid):
     script = load_script(lid)
-    if not re.fullmatch(r"L\d\d(-\d+)?", lid):  # paper explainer, e.g. zhang2016_inputgraph
+    if lid.startswith("T-"):  # topic explainer for a topic without a legacy lecture, e.g. T-robustness
+        import yaml
+        tax = yaml.safe_load((ROOT / "content" / "taxonomy.yaml").read_text(encoding="utf-8"))
+        name = lid
+        header = next((x["title"] for x in tax["topics"] if x["id"] == lid[2:]), script.get("title", lid))
+    elif not re.fullmatch(r"L\d\d(-\d+)?", lid):  # paper explainer, e.g. zhang2016_inputgraph
         name = lid
         header = f"论文精读 · {script.get('title', lid)}"
     else:
@@ -266,7 +271,7 @@ def render(lid):
     transcript = "\n\n".join("".join(sc["lines"]) for sc in script["scenes"])
     (OUT / f"{name}.txt").write_text(transcript, encoding="utf-8")
     meta = {"id": script.get("id", f"{lid}-core"), "title": script.get("title", ""), "duration": round(total, 1),
-            "voice": VOICE, "ai_voice": True}
+            "voice": VOICE}
     (OUT / f"{name}.json").write_text(json.dumps(meta, ensure_ascii=False), encoding="utf-8")
     print(f"VIDEO_OK {mp4} {total:.1f}s", flush=True)
 
