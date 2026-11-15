@@ -1,0 +1,10 @@
+{
+ "topic": "molecular-networks",
+ "index": 3,
+ "title": "一致型 1 型前馈环（与门）的持续性检测",
+ "hash": "3587c7975e959b0c232b185249f78a2bbbd65d1c",
+ "ok": true,
+ "figures": 1,
+ "stdout": "理论延迟 T_on = ln2 ≈ 0.69\n脉冲 0.5：简单调控 Z 峰值 = 0.39，FFL 的 Z 峰值 = 0.00\n脉冲 4.0：简单调控 Z 峰值 = 0.98，FFL 的 Z 峰值 = 0.96",
+ "stderr": ""
+}

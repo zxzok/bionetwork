@@ -1,0 +1,446 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>小世界与无标度网络模型 · 生物医学网络科学</title><meta name="description" content="小世界与无标度网络模型：用小世界、无标度、配置、适应度、复制–分化与空间模型解释真实网络的高聚类、短路径与枢纽，并讨论其统计判别。"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-theory"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html" aria-current="page">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory" open><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html" aria-current="page">小世界与无标度网络模型</a><ol class="sub"><li><a href="network-models.small-world-phenomenon.html"><span class="n">01</span>小世界现象</a></li><li><a href="network-models.lattice-vs-random.html"><span class="n">02</span>规则网格与随机网络</a></li><li><a href="network-models.watts-strogatz.html"><span class="n">03</span>Watts–Strogatz 小世界模型</a></li><li><a href="network-models.scale-free.html"><span class="n">04</span>幂律度分布与无标度网络</a></li><li><a href="network-models.configuration-model.html"><span class="n">05</span>任意度分布网络的生成：配置模型与隐变量模型</a></li><li><a href="network-models.barabasi-albert.html"><span class="n">06</span>Barabási–Albert 优先连接模型</a></li><li><a href="network-models.preferential-attachment-measurement.html"><span class="n">07</span>测量优先连接与非线性优先连接</a></li><li><a href="network-models.preferential-attachment-origins.html"><span class="n">08</span>优先连接从何而来：链接选择、复制与优化</a></li><li><a href="network-models.fitness-model.html"><span class="n">09</span>适应度模型与玻色–爱因斯坦凝聚</a></li><li><a href="network-models.evolving-networks.html"><span class="n">10</span>演化网络的扩展模型</a></li><li><a href="network-models.duplication-divergence.html"><span class="n">11</span>复制–分化模型</a></li><li><a href="network-models.spatial-networks.html"><span class="n">12</span>空间网络与随机几何图</a></li><li><a href="network-models.identification.html"><span class="n">13</span>小世界与无标度的统计判别</a></li><li><a href="network-models.derivations.html"><span class="n">14</span>数学推导与算法</a></li><li><a href="network-models.frontiers.html"><span class="n">15</span>研究前沿与开放问题</a></li><li><a href="network-models.biomedical.html"><span class="n">16</span>生物医学应用</a></li><li><a href="network-models.limitations.html"><span class="n">17</span>适用范围与常见误用</a></li></ol></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><div class="lec-grid"><article style="min-width:0"><header class="doc-head"><nav class="crumb"><a href="domains.html">知识领域</a> <span class="sep">/</span> <a href="d-theory.html">网络基础理论</a></nav><div class="eyebrow" style="margin-top:14px"><b>Network Foundations</b><span>Small-world and scale-free models</span></div><h1>小世界与无标度网络模型</h1><p class="dek">用小世界、无标度、配置、适应度、复制–分化与空间模型解释真实网络的高聚类、短路径与枢纽，并讨论其统计判别。</p><dl class="doc-meta"><div><dt>知识页面</dt><dd>17 页</dd></div><div><dt>阅读</dt><dd>约 48 分钟</dd></div><div><dt>讲解视频</dt><dd>6 段</dd></div><div><dt>代码示例</dt><dd>10 个</dd></div></dl><div class="chips"><span class="chip">小世界</span><span class="chip">无标度</span><span class="chip">Watts–Strogatz 模型</span><span class="chip">优先连接</span><span class="chip">幂律</span><span class="chip">枢纽节点</span><span class="chip">小世界系数</span><span class="chip">配置模型</span><span class="chip">适应度模型</span><span class="chip">复制–分化</span><span class="chip">随机几何图</span><span class="chip">演化网络</span></div></header><section class="block prose" id="overview"><p>以 ER 随机网络为尺子（见<a
+href="network-metrics.html">网络结构指标与随机图</a>），可以量出真实网络的两个反常之处：一是聚集系数远高于同规模随机网络，二是度分布的尾巴远比泊松分布长，存在连接数极多的枢纽节点（hub）。随机网络解释不了这两件事。</p>
+<p>本专题围绕“什么机制会产生这些结构”组织：</p>
+<ul>
+<li><strong>小世界</strong>：Watts–Strogatz（WS）模型说明高聚类与短路径可以并存；空间嵌入加少量长程连接是它在生物系统中最自然的实现。</li>
+<li><strong>无标度与枢纽</strong>：先介绍幂律分布本身的性质（矩的发散、自然截断、度指数决定的距离标度），再介绍两类生成思路——<strong>静态</strong>地按给定度分布连边（配置模型、隐变量模型），以及<strong>动态</strong>地让网络生长（Barabási–Albert
+优先连接模型及其扩展）。</li>
+<li><strong>优先连接的来龙去脉</strong>：怎样从数据中测量优先连接、非线性优先连接会怎样改变网络、优先连接本身可能来自哪些局部机制（链接选择、复制、优化），以及适应度、初始吸引力、内部连边、节点删除、加速增长、老化对度指数的影响。</li>
+<li><strong>生物学中的生成机制</strong>：蛋白质相互作用网络的复制–分化模型及其证据与争议；脑网络等空间嵌入网络的距离依赖模型。</li>
+<li><strong>统计判别</strong>：在实际数据上怎样判断小世界性与无标度性，以及“无标度是否普遍”的争论。</li>
+</ul>
+<p>这些结构性质对网络上的动力学有直接影响：度分布的二阶矩决定传播阈值（见<a
+href="spreading.html">网络上的传播与免疫</a>），枢纽决定网络对随机失效与蓄意攻击的不同响应（见<a
+href="robustness.html">网络鲁棒性、渗流与级联失效</a>与<a
+href="controllability.html">网络可控性与稳定性</a>）。随机块模型等以社团为核心的生成模型见<a
+href="community-structure.html">社团结构与社区发现</a>；度相关（同配/异配）见<a
+href="degree-correlations.html">度相关性与网络结构的高阶统计</a>。</p>
+</section><section class="block" id="pages"><h2><span class="tag">Contents</span>知识页面</h2><div class="arts"><a class="art" href="network-models.small-world-phenomenon.html"><span class="no">01</span><span class="t">小世界现象</span><span class="d">1967 年，社会心理学家 Stanley Milgram 做了一个著名的实验：让美国内布拉斯加州等地的志愿者把一封信转交给波士顿的一位陌生目标人物，规则是只能寄给自己“直呼其名”…</span></a><a class="art" href="network-models.lattice-vs-random.html"><span class="no">02</span><span class="t">规则网格与随机网络</span><span class="d">先看两个容易分析的极端情形（ 个节点，平均度 ）： 环形规则网格（ring lattice） ER 随机网络 --- --- --- 构造 节点排成一圈，每个节点与左右各 个最近邻…</span></a><a class="art" href="network-models.watts-strogatz.html"><span class="no">03</span><span class="t">Watts–Strogatz 小世界模型</span><span class="d">构造：从网格出发，随机重连 WS 模型的构造只有两步： 1. 从 个节点、每个节点度为 的环形规则网格出发； 2. 依次检查每条边，以概率 把它的一个端点改连到随机选择的另一个节点…</span></a><a class="art" href="network-models.scale-free.html"><span class="no">04</span><span class="t">幂律度分布与无标度网络</span><span class="d">观察：长尾分布 1999 年前后，研究者在万维网、互联网路由器、论文引用和演员合作网络中都发现：度分布在双对数坐标下近似为一条直线， 其中 称为度指数，常见值在 2 到 3 之间（…</span></a><a class="art" href="network-models.configuration-model.html"><span class="no">05</span><span class="t">任意度分布网络的生成：配置模型与隐变量模型</span><span class="d">很多时候我们并不关心度分布“从哪里来”，只想问：如果网络除了度分布之外完全随机，会是什么样子？这需要能按指定度分布或度序列生成网络的“静态”模型。它们既是研究度异质性效应的理论工具…</span></a><a class="art" href="network-models.barabasi-albert.html"><span class="no">06</span><span class="t">Barabási–Albert 优先连接模型</span><span class="d">两个要素：增长与优先连接 Barabási 和 Albert 注意到 ER 和 WS 模型都假设节点数固定，而真实网络大多在不断增长：网页不断被创建，论文不断被发表，基因在演化中不…</span></a><a class="art" href="network-models.preferential-attachment-measurement.html"><span class="no">07</span><span class="t">测量优先连接与非线性优先连接</span><span class="d">BA 模型把优先连接写成一个假设。它在真实网络中是否成立、函数形式是不是线性，可以用网络的时间序列数据直接检验。 从两个时间快照测量 如果优先连接成立，节点在一小段时间内获得的新边…</span></a><a class="art" href="network-models.preferential-attachment-origins.html"><span class="no">08</span><span class="t">优先连接从何而来：链接选择、复制与优化</span><span class="d">BA 模型中的新节点需要知道全网所有节点的度，才能按 选择目标。真实系统中的新网页、新论文、新基因显然没有这种全局信息。下面几种机制只用局部信息或理性权衡，就能“自然地”产生优先连…</span></a><a class="art" href="network-models.fitness-model.html"><span class="no">09</span><span class="t">适应度模型与玻色–爱因斯坦凝聚</span><span class="d">后来者为什么能反超 在 BA 模型中，所有节点的度都按 增长，早到的节点永远领先。但现实中常有“后来居上”：一篇晚发表的论文很快成为被引最多的文献，一个后出现的网站超过早期领先者。…</span></a><a class="art" href="network-models.evolving-networks.html"><span class="no">10</span><span class="t">演化网络的扩展模型</span><span class="d">BA 模型只有“加节点、按度连边”两个动作。真实网络还会在已有节点之间加边、删除节点、随时间加速增长，节点也会“老化”。每加入一种过程，度指数都会以可计算的方式改变。下面的结果都可…</span></a><a class="art" href="network-models.duplication-divergence.html"><span class="no">11</span><span class="t">复制–分化模型</span><span class="d">生物学背景 基因复制是新基因的主要来源。Ohno（1970）的经典论述认为，复制产生的冗余拷贝可以摆脱选择约束，积累突变并获得新功能。Teichmann 与 Babu（2004, …</span></a><a class="art" href="network-models.spatial-networks.html"><span class="no">12</span><span class="t">空间网络与随机几何图</span><span class="d">神经元、血管、蛋白质复合体、细胞–细胞接触网络都嵌入在物理空间中。连一条长边需要付出代价（轴突的体积与代谢、信号延迟），所以连边概率随距离下降。空间约束本身就能产生高聚类、模块性，…</span></a><a class="art" href="network-models.identification.html"><span class="no">13</span><span class="t">小世界与无标度的统计判别</span><span class="d">小世界的定量判据 最常用的是 Humphries 和 Gurney（2008）提出的小世界系数： 其中 、 来自与原网络节点数、边数（最好还有度序列）相同的随机网络集合。 被认为具…</span></a><a class="art" href="network-models.derivations.html"><span class="no">14</span><span class="t">数学推导与算法</span><span class="d">环形规则网格的聚集系数 每个节点与左右各 个最近邻相连。节点 的两个邻居相距（沿环）不超过 步时彼此相连。分别计数同侧与异侧的邻居对，可得邻居之间的边数 ，而邻居对总数为 ，于是 …</span></a><a class="art" href="network-models.frontiers.html"><span class="no">15</span><span class="t">研究前沿与开放问题</span><span class="d">- 无标度是否普遍。Broido 与 Clauset（2019）用严格的统计检验发现强无标度网络是少数，Barabási 等学者则强调有限规模和采样对纯幂律的扭曲；Voitalov…</span></a><a class="art" href="network-models.biomedical.html"><span class="no">16</span><span class="t">生物医学应用</span><span class="d">蛋白质相互作用网络中的枢纽。 Jeong、Mason、Barabási 和 Oltvai（2001，Nature）分析酵母蛋白质相互作用网络，发现其度分布具有长尾，并且度越高的蛋白…</span></a><a class="art" href="network-models.limitations.html"><span class="no">17</span><span class="t">适用范围与常见误用</span><span class="d">1. 误区：小世界网络就是平均路径短的网络。→ 正解：小世界要求“短路径 + 高聚类”同时成立。ER 随机网络路径也很短，但聚集系数极低，不是小世界网络。 2. 误区：WS 模型能…</span></a></div></section><section class="block" id="video"><h2><span class="tag">VIDEO</span>讲解视频</h2><div class="video-main"><video controls preload="metadata" playsinline poster="media/videos/L03-core.jpg"><source src="media/videos/L03-core.mp4" type="video/mp4"><track kind="captions" srclang="zh" label="中文字幕" src="media/videos/L03-core.vtt"></video><div class="video-meta"><strong>小世界与无标度：两种改变我们认识网络的模型</strong><span>4 分 17 秒</span></div><details class="transcript"><summary>文字稿</summary><p>大家好，这一期的主题是小世界网络与无标度网络。在网络结构指标里，我们用随机网络当尺子，量出了真实网络的两处反常。这一期，我们来看两个模型怎样解释这两处反常。</p><p>第一个问题，朋友圈高度抱团，为什么任意两人之间仍然只隔几步？第二个问题，为什么少数节点能拥有成百上千条连接？第三个问题，拿到自己的数据，怎样判断它是不是小世界或无标度？</p><p>先看左边，这是一个环形规则网络，每个节点只连接身边的邻居。它的聚集系数很高，但要从一端走到另一端，需要走很多步。Watts 和 Strogatz 的做法很简单，让每条边以一定概率随机改连。注意右边两条曲线，横轴是重连概率，用的是对数刻度。重连概率只有百分之一时，平均路径已经下降了一大半。可是聚集系数几乎纹丝不动，要到概率接近十分之一以后才明显下降。原因在于，路径长度是全局量，一条捷径能让许多节点对同时受益。而聚集系数是局部量，一条边改连只破坏它附近的几个三角形。</p><p>所以我们可以这样记，要破坏聚类，需要大量的随机性。而要制造捷径，只需要一点点随机性。两者之间那片宽广的区间，就是我们说的小世界。</p><p>再来看第二处反常，也就是度分布。左边是随机网络，度分布集中在平均度附近，像一个鼓包。右边这种网络的分布在线性坐标下几乎贴着横轴，尾巴拖得很长。换成双对数坐标，它变成了一条近似的直线，这就是幂律分布。幂律分布没有典型尺度，随手抽一个节点，度可能是2，也可能是2000。这种度分布服从幂律的网络，我们称为无标度网络。</p><p>枢纽从哪里来？巴拉巴西和 Albert 给出了两个要素。第一是增长，网络不断加入新节点，就像不断有新论文发表。第二是优先连接，新节点更愿意连向本来连接就多的节点。大家看，节点的大小代表度，早来的节点越长越大。推导可以得到，度分布的指数等于3，而且和每次加几条边无关。如果去掉增长或者去掉优先连接，幂律就不再出现。</p><p>在自己的数据上怎么判断呢？小世界常用的是小世界系数。它是实际聚集系数与随机网络之比，再除以路径长度之比。要提醒大家，参照的随机网络最好保持度序列不变，结论才更严格。判断幂律，不要在双对数直方图上直接画直线拟合。应该用最大似然估计，并和对数正态等其他分布做比较。近年的研究发现，严格的无标度网络并不多，但重尾和枢纽很常见。</p><p>这些概念在生物医学里有什么用？来看蛋白质相互作用网络。在酵母中，研究者发现度越高的蛋白，敲除后越容易致死。红色标出的是枢纽，删掉它们，网络很快碎成许多小块。脑网络也是一样，它兼具小世界的高效和少数枢纽脑区。当然，这只是统计上的关联，解读时要考虑数据偏倚。</p><p>最后小结一下，小世界网络同时具有高聚类和短路径。Watts 和 Strogatz 模型说明，少量随机捷径就足以做到这一点。无标度网络的度分布是幂律，存在少数枢纽节点。巴拉巴西模型说明，增长加上优先连接就能产生枢纽。</p><p>接下来，请大家打开页面上的两个演示，亲手拖一拖重连概率。然后运行 Python 代码示例，自己画出这两条经典曲线。下一期，我们一起来看网络中的社团结构。</p></details></div><ul class="vlist"><li style="grid-template-columns:minmax(0,1fr)"><details><summary style="cursor:pointer">六度分隔：Milgram 实验与小世界现象 <span class="vtype">· 5 分 46 秒</span></summary><div class="video-main"><video controls preload="metadata" playsinline poster="media/videos/L03-1.jpg"><source src="media/videos/L03-1.mp4" type="video/mp4"><track kind="captions" srclang="zh" label="中文字幕" src="media/videos/L03-1.vtt"></video><div class="video-meta"><strong>六度分隔：Milgram 实验与小世界现象</strong><span>5 分 46 秒</span></div><details class="transcript"><summary>文字稿</summary><p>大家好，这是网络模型专题的第1段，我们从一个社会心理学实验讲起。这一段大约7分钟，我会讲清楚六度分隔到底测到了什么。也会告诉大家，这个著名的数字有哪些值得怀疑的地方。</p><p>1967年，社会心理学家 Milgram 设计了一个非常简单的实验。他请内布拉斯加州等地的志愿者，把一封信转交给波士顿的一位陌生人。规则只有一条，只能寄给自己直呼其名的熟人，再由熟人继续转寄。在最终送达的64封信里，平均转手大约6次。这就是六度分隔这个说法的来源，后来它还被写进了戏剧和电影。</p><p>2003年，Dodds、Muhamad 和 Watts 用电子邮件重做了这个实验。这一次的志愿者来自全世界，目标人物分布在13个国家。起始链条大约有2.4万条，真正到达目标的链条其实很少。但到达的那些链条，长度同样集中在5到7步。可见，短路径这个现象在不同年代、不同媒介下都能看到。</p><p>为什么路径会这么短？我们先做一个粗略的估算。假设每个人认识100人，那么1步之内就能联系到100人。2步就是1万人，3步就是100万人，5步就已经超过了世界人口。这种指数扩张，和随机网络的结论是一致的。随机网络的平均路径，大约是节点数的对数除以平均度的对数。代入10亿人、每人认识100人，算出来只有4.5步左右。</p><p>画面上演示的就是这个扩张过程，从一个源点出发做广度优先搜索。第一层是直接邻居，第二层是邻居的邻居，一层一层向外扩散。颜色代表到源点的距离，层数就是最短路径的长度。如果每一层碰到的都是全新的节点，只需要很少几层就能覆盖全网。大家可以数一数，画面上这个网络，最远的节点离源点只有几层。</p><p>后来，研究者在在线社交网络上直接计算了最短路径。2011年对 Facebook 约7亿活跃用户的分析，平均距离大约是4.7。2016年 Facebook 又报告了一次，平均距离降到了3.6左右。所以在今天的社交网络里，两个陌生人之间往往只隔三四个人。</p><p>但是这个估算有一个漏洞，大家先停下来想一想是什么？现实生活中，你朋友的朋友，很多本来就是你的朋友。画面上选中的这个节点，它的邻居之间也彼此相连，形成了许多三角形。这叫三角形闭合，所以社交网络的聚集系数通常很高。三角形越多，第二步认识的人重复得越多，扩张速度就远低于估算。比如你的100个朋友里，如果有一半彼此认识，第2步遇到的新人就会大打折扣。按理说高聚类会让路径变长，那社交网络为什么仍然是小世界？</p><p>在回答之前，我们先把要解释的现象说准确，这叫小世界现象。它说的是，在很大的网络里，任意两点之间的典型最短路径都很短。更准确地说，路径长度随节点数的对数增长，而不是线性增长。节点数从1000涨到100万，路径长度大约只翻一倍，而不是涨1000倍。</p><p>不过，Milgram 的实验本身有不少局限，我们要客观地看待它。第一，大部分信件没有送达，而没送达的链条往往更长，平均值被低估了。第二，起点的志愿者并不是随机抽样的，很多人本身就有一定社会资源。第三，许多信件是经过少数几个漏斗人物才到达目标的。所以六度是一个有启发性的数字，而不是一个精确的测量值。</p><p>这个实验其实还揭示了一件更微妙的事情，值得我们多想一步。每个转信人只知道自己的熟人，并不知道整张网络长什么样。可他们仅凭地理位置、职业这些局部线索，常常就能把信送到。Kleinberg 后来专门研究了这个问题，叫做网络的可搜索性。短路径存在是一回事，能不能靠局部信息找到它，又是另一回事。</p><p>这里要澄清一个常见误区，有人以为路径短就是小世界。其实随机网络的路径也很短，但它的聚集系数极低，不算小世界。小世界要求短路径和高聚类同时成立，这一点请大家牢牢记住。</p><p>生物网络里也能看到同样的现象，最经典的例子是秀丽隐杆线虫。它有302个神经元，是第一个被完整绘出接线图的神经系统。它的平均路径长度是2.65，同规模随机网络是2.25，几乎一样短。可它的聚集系数是0.28，是随机网络的5倍多。对神经系统来说，局部抱团利于专门化处理，短路径利于全身信息整合。在脑网络专题里我们会看到，人脑网络也有同样的特征。</p><p>最后小结一下，Milgram 实验让我们注意到，陌生人之间往往只隔几步。指数扩张能解释短路径，但三角形闭合又会让扩张明显变慢。高聚类和短路径怎样同时成立，就是下一段 Watts–Strogatz 模型要回答的问题。建议大家接着看这个专题的第2段，WS 模型。</p></details></div></details></li><li style="grid-template-columns:minmax(0,1fr)"><details><summary style="cursor:pointer">Watts–Strogatz 模型：重连如何同时得到高聚类与短路径 <span class="vtype">· 6 分 10 秒</span></summary><div class="video-main"><video controls preload="metadata" playsinline poster="media/videos/L03-2.jpg"><source src="media/videos/L03-2.mp4" type="video/mp4"><track kind="captions" srclang="zh" label="中文字幕" src="media/videos/L03-2.vtt"></video><div class="video-meta"><strong>Watts–Strogatz 模型：重连如何同时得到高聚类与短路径</strong><span>6 分 10 秒</span></div><details class="transcript"><summary>文字稿</summary><p>大家好，这一段我们来讲 Watts 和 Strogatz 在1998年提出的小世界模型。上一段留下了一个问题，高聚类和短路径怎样才能同时成立？这一段我会用具体的数字，带大家看清楚其中的机制。</p><p>先看两个容易计算的极端情形，节点数1000，每个节点的度是10。第一个极端是环形规则网格，每个节点只连左右各5个最近邻。它的聚集系数大约是0.67，可平均路径大约有50步。第二个极端是同样规模的随机网络。它的聚集系数只有0.01左右，平均路径却只有3步。一个抱团但绕远，一个快捷但松散，真实网络更像哪一个呢？</p><p>Watts 和 Strogatz 在论文里给出了三组真实数据。电影演员合作网络，聚集系数0.79，同规模随机网络只有0.00027。美国西部电网，聚集系数0.08，随机网络是0.005。线虫神经网络，聚集系数0.28，随机网络是0.05。而这三个网络的平均路径，都只比随机网络稍长一点。所以真实网络既不是规则网格，也不是随机网络，而是落在两者之间。</p><p>WS 模型的构造只有两步，第一步，从刚才的环形规则网格出发。第二步，依次检查每条边，以一定概率把它的一个端点改连到随机节点。重连概率为0就是规则网格，为1就接近随机网络。重连不增加也不减少边，所以平均度始终保持不变。这样我们就得到一个可以连续调节的旋钮，从完全有序一直拧到完全随机。</p><p>在看曲线之前，我们先感受一下一条捷径有多大威力。在1000个节点的环上，正对面的两个节点相距大约50步。现在只加一条捷径，把环上正对面的两个区域直接连起来。从这一端出发做广度优先搜索，走到捷径口，跨过去，再走几步就到了。原来要走50步的节点对，现在只要十几步，而且附近成百上千的节点对都跟着受益。</p><p>现在来看动画，左边的环正按重连概率随机改连。右边两条曲线，分别是聚集系数和平均路径相对于初始值的比例。请注意，横轴是对数刻度，从万分之一一直到1。看路径这条线，重连概率还很小的时候它就掉下来了。而聚集系数这条线，在很长一段区间里几乎是平的。两条曲线之间那片宽广的区域，就是小世界区间。大致来说，重连概率在百分之一到十分之一之间，网络都处在这个区间里。</p><p>我们用一次模拟的数字，把这件事说得更具体。重连概率是百分之一时，聚集系数还保留着初始值的98%左右。而平均路径已经降到初始值的19%左右，也就是从50步降到了不到10步。重连概率到十分之一时，聚集系数还剩74%，路径只剩9%左右。换句话说，5000条边里只改连50条，路径就缩短了五分之四。</p><p>为什么两条曲线反应差这么多？关键在于一个是全局量，一个是局部量。路径长度是全局量，一条捷径能把环上相距很远的两片区域直接接通。所有经过这附近的最短路径，都会同时从这条捷径受益。聚集系数是局部量，一条边被改连，只破坏它所在的那几个三角形。有一个近似公式，聚集系数大约按1减重连概率的立方缓慢下降。代入百分之一，结果约是0.97，和模拟结果基本吻合。</p><p>所以请大家记住一句话，破坏聚类需要大量的随机性。而制造捷径，只需要一点点随机性。</p><p>这里补充一个变体，由 Newman 和 Watts 提出，叫做只加不删。它不删除原来的边，而是在规则网格上额外添加少量随机捷径。这样原有的三角形全部保留，聚集系数几乎不会下降。同时网络也不会被重连拆成几块，所以在数学上更容易分析。大家读 WS 原文时，可以想一想这个变体的两条曲线会是什么样子。</p><p>这里有一个常见误区，有人以为 WS 模型也能产生枢纽节点。其实重连之后，每个节点的度仍然集中在平均度附近，分布很窄。它也不是生长过程，节点数事先就固定了。所以 WS 模型只解释了高聚类加短路径，枢纽要靠后面讲的另一个机制。</p><p>来看一个生物医学的例子，人脑网络。用弥散成像追踪纤维，或用功能磁共振计算相关，都能构建脑网络。许多研究报告，脑网络的聚集系数远高于随机网络，路径却接近随机网络。高聚类支持局部脑区的专门化处理，我们叫它功能分离。短路径让信息几步之内传遍全脑，我们叫它功能整合。从布线成本看，少量长程纤维就换来了全局效率，这正是 WS 模型的启示。</p><p>最后小结一下，真实网络介于规则网格和随机网络之间，聚类高、路径短。WS 模型说明，只要少量随机捷径，路径就会大幅缩短。而聚集系数是局部量，在很宽的区间里基本保持不变。请大家打开页面上的 WS 演示，亲手拖动重连概率，看看两条曲线怎么变化。</p></details></div></details></li><li style="grid-template-columns:minmax(0,1fr)"><details><summary style="cursor:pointer">幂律与无标度：枢纽节点从何而来 <span class="vtype">· 5 分 58 秒</span></summary><div class="video-main"><video controls preload="metadata" playsinline poster="media/videos/L03-3.jpg"><source src="media/videos/L03-3.mp4" type="video/mp4"><track kind="captions" srclang="zh" label="中文字幕" src="media/videos/L03-3.vtt"></video><div class="video-meta"><strong>幂律与无标度：枢纽节点从何而来</strong><span>5 分 58 秒</span></div><details class="transcript"><summary>文字稿</summary><p>大家好，这一段我们离开小世界，来看真实网络的第二处反常。那就是度分布，也就是每个节点有多少条连接的统计规律。我们要回答，为什么少数节点能拥有成百上千条连接？</p><p>先回顾随机网络，它的度分布是泊松分布，集中在平均度附近。远离平均值的概率衰减得极快，几乎不会出现度为平均值10倍的节点。再看右边，这类网络的分布在线性坐标下几乎贴着横轴，尾巴拖得很长。换成双对数坐标，它近似变成了一条直线。1999年前后，研究者在万维网、论文引用和演员合作网络中都看到了它。不同领域的网络出现同一种形状，这在当时引起了很大的轰动。</p><p>双对数坐标下的直线，对应的就是幂律分布。度为某个值的概率，与这个度的若干次方成反比，这个幂次叫做度指数。真实网络的度指数常在2到3之间，比如万维网入度约2.1，演员网络约2.3。第二行是幂律最特别的性质，把度放大任意倍数，分布的形状都不变。所以它没有一个特征尺度，我们把这种网络叫做无标度网络。</p><p>打个比方，大家的身高集中在平均值附近，说平均身高是有意义的。没有人会比平均身高高出5倍，更不会有10米高的人。可城市人口就不一样了，从几千人的小镇到上千万人的超大城市，跨好几个数量级。小镇非常多，超大城市只有少数几个，这就是长尾分布的样子。随机网络的度像身高，无标度网络的度更像城市人口。</p><p>我们用数字比较一下两种分布有多不一样。在平均度为10的随机网络里，一个节点的度达到100，概率大约是10的负63次方。这意味着，即使把宇宙里所有的原子都当作节点，也几乎碰不到一个。而在度指数为3的幂律网络里，度不小于100的节点，是度不小于10的节点的百分之一。也就是说，枢纽在幂律网络里不是奇迹，而是必然会出现的常客。</p><p>为什么说没有典型尺度？我们算一下分布的各阶矩。当度指数在2和3之间时，平均度是有限的。但度的平方的平均值，会随着网络变大而不断增大，没有上界。也就是说方差发散，用平均度加减标准差来描述一个节点没有意义。随手抽一个节点，它的度可能是2，也可能是2000。</p><p>当然，真实网络是有限的，最大度也有一个自然的上限。度指数为3时，最大度大约随节点数的平方根增长。举个例子，节点数1万，枢纽的度约是最小度的100倍。节点数到100万，这个倍数就变成了1000倍。而同样规模的随机网络，最大度只比平均度高出几倍。</p><p>枢纽还有一个作用，它们是捷径的汇集点，能让路径变得更短。度指数在2和3之间时，平均路径随节点数的对数的对数增长，叫做超小世界。代入100万个节点，对数约是13.8，对数的对数只有2.6左右。也就是说，网络从1万个节点涨到100万，路径几乎感觉不到变化。</p><p>这些枢纽在生物网络里意味着什么？来看蛋白质相互作用网络。2001年，Jeong 等人分析酵母的蛋白质相互作用网络，发现度分布有长尾。更有意思的是，度越高的蛋白，敲除后致死的比例也越高。这就把枢纽从一个拓扑概念，变成了可以用实验检验的生物学假设。画面上删掉红色标出的枢纽，网络很快碎成了许多小块。不过要提醒大家，研究得越多的蛋白，测到的相互作用也越多，这里有数据偏倚。</p><p>再看代谢网络，2000年 Jeong 等人比较了43种生物的代谢网络。从细菌到真核生物，它们的度分布都有长尾。网络直径在不同物种之间几乎不变，并不随代谢物的数量增加而变长。处在枢纽位置的，是丙酮酸、辅酶 A 这类参与大量反应的核心代谢物。</p><p>枢纽的存在还带来一个重要后果，网络的鲁棒性变得很不对称。一条曲线是随机删点，删掉很多节点，巨分支仍然相当完整。另一条是专门攻击度最高的节点，只删一小部分，网络就迅速瓦解。原因很简单，随机删点多半删到的是度很小的节点，对整体影响不大。这一点在鲁棒性部分会详细展开，传播专题还会看到枢纽怎样让传染病更容易扩散。</p><p>这里有一个常见误区，看到几个度特别大的节点，就说网络是无标度的。其实对数正态等许多重尾分布，同样会产生枢纽。无标度是对整个尾部形状的判断，不是对几个节点的判断。反过来，一个网络不是严格的幂律，也完全可以有枢纽。怎样严格地判断，我们放到第5段专门讲。</p><p>最后小结一下，幂律分布在双对数坐标下近似一条直线，没有典型尺度。度指数在2和3之间时方差发散，枢纽不是奇迹而是常客。那么枢纽究竟是怎样长出来的？下一段的 BA 模型会给出答案。</p></details></div></details></li><li style="grid-template-columns:minmax(0,1fr)"><details><summary style="cursor:pointer">BA 优先连接模型：增长 + 偏好 <span class="vtype">· 6 分 12 秒</span></summary><div class="video-main"><video controls preload="metadata" playsinline poster="media/videos/L03-4.jpg"><source src="media/videos/L03-4.mp4" type="video/mp4"><track kind="captions" srclang="zh" label="中文字幕" src="media/videos/L03-4.vtt"></video><div class="video-meta"><strong>BA 优先连接模型：增长 + 偏好</strong><span>6 分 12 秒</span></div><details class="transcript"><summary>文字稿</summary><p>大家好，这一段我们来讲巴拉巴西和 Albert 在1999年提出的优先连接模型。上一段我们看到了枢纽和幂律，这一段要回答它们是怎样生成的。我会带大家一步步做一个平均场推导，只用到一点微积分，不用害怕。</p><p>巴拉巴西注意到，随机网络和 WS 模型都假设节点数是固定的。可真实网络大多在增长，网页不断被创建，论文不断被发表。所以模型的第一个要素是增长，每一步加入一个新节点，带着几条边。第二个要素是优先连接，新节点连向某个老节点的概率与它当前的度成正比。直观上就是富者愈富，被引用多的论文更容易被看到，也更容易被继续引用。这个思想并不新，Yule、Simon 和 Price 早就讨论过类似的机制。Price 在1965年研究论文引用时，就已经看到了引用次数的长尾。</p><p>我们先算一个小例子，体会一下优先连接的概率。假设现有3个节点，度分别是1、2、5，总度数是8。新节点连向度为5的那个节点，概率是8分之5，也就是六成多。而连向度为1的节点，概率只有8分之1。这条边连上之后，度为5的节点变成6，下一次被选中的机会就更大了。</p><p>来看动画，节点的大小代表它的度。每一步都有一个新节点加入，并按刚才的规则选择连接对象。大家注意，最早进入的几个节点越长越大，后来者很难追上。右边是度分布，在双对数坐标下逐渐呈现出一条直线。网络越大，这条直线的范围就越宽，尾部的枢纽也越大。请大家记住这个画面，接下来我们用推导来解释它。</p><p>下面做平均场推导，我们把每个节点的度看作时间的连续函数。每一步新增几条边，每条边贡献2个度，总度数就约等于2乘边数乘时间。某个节点的度增长速度，等于每步的边数乘以它被选中的概率。化简之后边数被约掉了，度的增长速度等于当前度除以2倍的时间。</p><p>对这个式子积分，初始条件是节点加入时的度等于每步的边数。结果是，每个节点的度都随时间的平方根增长。它还和加入时刻有关，加入越早度越大，这就是先到者优势。举个数字，每步带3条边，第100步加入的节点，到第1万步时度约为30。而第1步就进入的节点，到同一时刻度约为300，整整大了10倍。</p><p>接下来求度分布，度小于某个值，等价于加入的时刻足够晚。节点按时间均匀加入，所以这个比例很好算，等于1减去一个与度平方成反比的项。再对度求导，就得到度分布与度的3次方成反比。所以 BA 模型产生度指数为3的幂律，而且与每步带几条边无关。每步的边数只决定最小度和平均度，平均度正好是它的2倍。</p><p>平均场是一种近似，这个模型其实还有精确解，就是第一行这个式子。我们代入每步2条边、度为20，精确解约是0.0013。平均场给出的是0.0010，两者已经很接近了。度越大，两者越接近，它们的尾部都与度的3次方成反比。所以平均场虽然粗糙，抓住的却是最关键的标度关系。</p><p>两个要素缺一不可，我们分别拿掉一个看看。只有增长、新节点均匀随机地连接老节点，度分布变成指数分布，没有长尾。只有优先连接、节点数固定，时间长了网络趋于几乎完全连接，幂律只是暂态。只有两者兼备，才能稳定地得到幂律。</p><p>这里有两个常见误区，第一，以为每步带的边越多，度指数就越大。其实在线性优先连接下，度指数始终是3。第二，模型能产生幂律，并不代表真实网络就是按这个机制生成的。不同机制可以产生相似的分布，机制要靠独立的证据来检验。</p><p>在生物学里，什么过程像优先连接？一个有力的候选是基因复制。基因复制后，新基因继承了原基因的全部相互作用伙伴。随后在演化中分化，部分相互作用逐渐丢失。度大的蛋白邻居多，邻居被复制的机会也多，它就更容易获得新连接。所以复制分化模型在效果上等价于优先连接，同样能产生长尾度分布。当然，这是一个类比，复制之后还有选择和丢失，比 BA 模型复杂得多。</p><p>当然，BA 模型也有局限，它只能产生度指数为3，而真实网络差异很大。它的聚集系数随网络变大趋于0，和真实网络的高聚类不符。比如1万个节点时，它的聚集系数还不到0.01，远低于真实的蛋白网络。它预测老节点度最大，可现实中后来者常能反超，适应度模型就是为此提出的。</p><p>最后小结一下，BA 模型用增长加优先连接两个要素解释了枢纽的出现。平均场推导告诉我们，度按时间的平方根增长，度指数等于3，与边数无关。请大家打开 BA 演示，一步步加点，看看双对数度分布怎样变成直线。</p></details></div></details></li><li style="grid-template-columns:minmax(0,1fr)"><details><summary style="cursor:pointer">怎样判断小世界与无标度 <span class="vtype">· 5 分 55 秒</span></summary><div class="video-main"><video controls preload="metadata" playsinline poster="media/videos/L03-5.jpg"><source src="media/videos/L03-5.mp4" type="video/mp4"><track kind="captions" srclang="zh" label="中文字幕" src="media/videos/L03-5.vtt"></video><div class="video-meta"><strong>怎样判断小世界与无标度</strong><span>5 分 55 秒</span></div><details class="transcript"><summary>文字稿</summary><p>大家好，这是网络模型专题的最后一段，也是对大家做研究最有用的一段。拿到一个真实网络，怎样判断它是不是小世界，是不是无标度？我们先讲判据，再讲陷阱，最后讲一场至今仍有分歧的学术争论。</p><p>先看小世界，最常用的指标是小世界系数。它由 Humphries 和 Gurney 在2008年提出，用来量化小世界性。它等于实际与随机网络的聚集系数之比，再除以平均路径之比。算一个例子，线虫神经网络的聚集系数之比是0.28除以0.05，约等于5.6。路径之比是2.65除以2.25，约等于1.18。两者相除，小世界系数约为4.8，明显大于1，提示具有小世界性。</p><p>但小世界系数有个问题，随机网络的聚集系数随网络变大而趋于0。于是网络越大，这个系数越容易很大，几乎什么大网络都显得是小世界。Telesford 等人在2011年提出了另一个指标，同时与随机网络和规则网格比较。它的取值在负1到1之间，接近0表示小世界，接近1偏随机，接近负1偏规则。</p><p>无论用哪个指标，零模型的选择都决定了结论。用节点数和边数相同的随机网络当参照，是最宽松的做法。更严格的是保持度序列不变的随机化，反复交换两条边的端点就能生成。它能排除度分布本身造成的高聚类。一般至少生成100个随机网络，取它们的平均值作为参照，并报告波动范围。论文里要写清楚用了哪种零模型、生成了多少个、路径是否只在最大分支上算。</p><p>再看无标度，最常见也最不可靠的做法，是在双对数直方图上拟合直线。这样做有三个问题，第一，直方图尾部每个箱子里只有几个节点，噪声极大。第二，取对数后再做最小二乘，违反了回归的误差假设，估计是有偏的。第三，对数正态等分布，在一两个数量级内看起来也很像直线。而生物网络的度往往只跨两个数量级，这个陷阱就格外危险。</p><p>Clauset、Shalizi 和 Newman 在2009年给出了一套标准流程。第一步，画互补累积分布而不是直方图，它不需要分箱，尾部平滑得多。注意它的斜率是负的度指数减1，不要直接读成度指数。第二步，用最大似然估计度指数，公式就是第二行。第三步，用 KS 距离选出幂律开始成立的最小度。也就是只要求尾部服从幂律，低度部分可以不服从。第四步，用似然比检验，把幂律和对数正态、指数、截断幂律等逐一比较。</p><p>我们手算一个小例子，尾部有5个节点，最小度取10。它们的度分别是10、10、20、40和80。每个度除以10再取自然对数，得到0、0、0.69、1.39和2.08，加起来约4.16。用5除以4.16约等于1.2，再加1，估计的度指数约为2.2。真实数据要用几百个尾部节点，样本太少时这个估计的误差会很大。</p><p>2019年，Broido 和 Clauset 按这套严格标准，检验了近千个真实网络。他们把无标度的证据从超弱到最强分成了几级。结论是强意义上的无标度网络只占少数，对数正态往往拟合得一样好甚至更好。生物网络里，多数更接近对数正态或带截断的分布。巴拉巴西等学者随后回应，有限规模、采样不完整和度相关都会扭曲纯幂律。他们认为，重尾和枢纽的存在才是关键，不必苛求严格的幂律。说到底，双方的分歧有很大一部分来自对无标度的定义不同。</p><p>这场争论的共识可以概括为，重尾和枢纽很普遍。而严格的幂律，需要谨慎地论证。所以常见误区就是，双对数图上看着像直线，就说网络是无标度的。写论文时，与其断言无标度，不如报告分布形状、拟合方法和替代分布的比较。</p><p>这一点在脑网络研究中尤其重要。脑网络的度分布多为带指数截断的重尾分布，而不是严格的幂律。小世界指标对脑区划分方式和阈值选择也非常敏感。比较患者组和对照组时，必须控制网络密度，并使用同样的零模型。否则组间差异可能只是密度不同造成的，脑网络专题的阈值实验会专门讨论。</p><p>最后，把这一段浓缩成一张判断清单。是否小世界，看聚类和路径，用两个系数，并配上保度零模型。是否有枢纽，看互补累积分布有没有重尾。是否幂律，用最大似然、KS 距离和似然比检验。结论是否稳健，就换阈值、换数据源、换随机种子再做一遍。</p><p>网络模型专题的视频到这里就全部结束了。建议打开 Python 代码示例，亲手用最大似然拟合一次度分布。有兴趣的话，再读一读 Broido 和 Clauset 的文章，我们下一期再见。</p></details></div></details></li></ul></section><section class="block" id="demos"><h2><span class="tag">INTERACTIVE</span>交互可视化</h2><div class="demo" data-demo="ws"></div><div class="demo" data-demo="ba"></div></section><section class="block" id="code"><h2><span class="tag">CODE</span>计算实现</h2><p class="small">10 个完整可运行的 Python 示例，每个都给出代码、输出图和解读；可在浏览器中直接运行，或下载 <a href="notebooks/network-models.ipynb" download>Jupyter Notebook</a> · <a href="notebooks/network-models.py" download>Python 脚本</a>。</p><div class="gallery"><a class="gcard" href="ex-network-models-0.html"><span class="thumb"><img src="gallery/network-models-0-0.png" alt="" loading="lazy"></span><span class="gt">复现 Watts–Strogatz 的经典曲线</span></a><a class="gcard" href="ex-network-models-1.html"><span class="thumb"><img src="gallery/network-models-1-0.png" alt="" loading="lazy"></span><span class="gt">BA 网络与 ER 网络的度分布（CCDF）</span></a><a class="gcard" href="ex-network-models-2.html"><span class="thumb"><img src="gallery/network-models-2-0.png" alt="" loading="lazy"></span><span class="gt">用最大似然估计度指数，并与最小二乘比较</span></a><a class="gcard" href="ex-network-models-3.html"><span class="thumb"><img src="gallery/network-models-3-0.png" alt="" loading="lazy"></span><span class="gt">判断一个真实网络是否“小世界”</span></a><a class="gcard" href="ex-network-models-4.html"><span class="thumb"><img src="gallery/network-models-4-0.png" alt="" loading="lazy"></span><span class="gt">配置模型——从给定度序列生成随机网络</span></a><a class="gcard" href="ex-network-models-5.html"><span class="thumb"><img src="gallery/network-models-5-0.png" alt="" loading="lazy"></span><span class="gt">非线性优先连接 Π(k) ∝ k^α 与“测量”优先连接</span></a><a class="gcard" href="ex-network-models-6.html"><span class="thumb"><img src="gallery/network-models-6-0.png" alt="" loading="lazy"></span><span class="gt">Bianconi–Barabási 适应度模型——后来者居上</span></a><a class="gcard" href="ex-network-models-7.html"><span class="thumb"><img src="gallery/network-models-7-0.png" alt="" loading="lazy"></span><span class="gt">复制–分化（duplication–divergence）模型与蛋白质网络的长尾</span></a><a class="gcard" href="ex-network-models-8.html"><span class="thumb"><img src="gallery/network-models-8-0.png" alt="" loading="lazy"></span><span class="gt">随机几何图——空间嵌入带来的高聚类与“大世界”</span></a><a class="gcard" href="ex-network-models-9.html"><span class="thumb"><img src="gallery/network-models-9-0.png" alt="" loading="lazy"></span><span class="gt">初始吸引力与内部连边如何改变度指数</span></a></div></section><section class="block prose" id="related"><h2><span class="tag">Links</span>关联知识</h2><ul>
+<li><a
+href="network-metrics.html">网络结构指标与随机图</a>：聚集系数、路径长度与
+ER 零模型是判断小世界与无标度的基础。</li>
+<li><a
+href="degree-correlations.html">度相关性与网络结构的高阶统计</a>：配置模型中的结构截断、枢纽间连接偏少与同配/异配的度量。</li>
+<li><a
+href="community-structure.html">社团结构与社区发现</a>：模块度的期望项来自配置模型；随机块模型等以社团为核心的生成模型。</li>
+<li><a
+href="network-construction.html">网络构建与统计验证</a>：保度随机化、配置模型、空间零模型在网络统计验证中的位置。</li>
+<li><a
+href="spreading.html">网络上的传播与免疫</a>：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msup><mi>k</mi><mn>2</mn></msup><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle k^2\rangle</annotation></semantics></math>
+的发散使无标度网络的流行病阈值趋于零。</li>
+<li><a
+href="robustness.html">网络鲁棒性、渗流与级联失效</a>：Molloy–Reed
+判据与枢纽使网络对随机失效稳健、对蓄意攻击脆弱。</li>
+<li><a href="molecular-networks.html">生物分子网络与拓扑特征</a>：PPI
+与代谢网络中的枢纽、中心性–致死性规律及其数据偏倚。</li>
+<li><a
+href="brain-connectome.html">脑连接组：结构与功能连接</a>：脑网络小世界性、枢纽脑区、空间约束与阈值敏感性。</li>
+</ul>
+</section><section class="block" id="papers"><h2><span class="tag">Papers</span>论文精读</h2><div class="pgrid"><article class="pcard" data-own="0" data-dom="theory dynamics" data-k="on the evolution of random graphs论随机图的演化随机图 er 模型 阈值函数 巨连通分支 相变 双跳"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">网络基础理论</span><span class="pbadge dm">网络动力学与控制</span><span>Publications of the Mathematical Institute of the Hungarian Academy of Sciences · 1960</span></div><h3><a href="paper-erdos1960_randomgraphs.html">论随机图的演化</a></h3><p class="porig">On the evolution of random graphs<br><span>Erdős P, Rényi A</span></p><p class="psum">让随机图的边数逐渐增加，系统刻画各种结构在何时“突然”出现，发现巨连通分支在平均度为 1 处涌现。</p><div class="plec small">相关专题：<a href="network-metrics.html">网络结构指标与随机图</a> <a href="network-models.html">小世界与无标度网络模型</a> <a href="controllability.html">网络可控性与稳定性</a></div></article><article class="pcard" data-own="0" data-dom="theory dynamics" data-k="collective dynamics of &#x27;small-world&#x27; networks“小世界”网络的集体动力学小世界 重连概率 聚集系数 特征路径长度 线虫神经网络"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">网络基础理论</span><span class="pbadge dm">网络动力学与控制</span><span>Nature · 1998</span></div><h3><a href="paper-watts1998_smallworld.html">“小世界”网络的集体动力学</a></h3><p class="porig">Collective dynamics of &#x27;small-world&#x27; networks<br><span>Watts DJ, Strogatz SH</span></p><p class="psum">用随机重连在规则网格与随机图间插值，发现少量捷径即可使网络兼具高聚类与短路径，并在真实网络中验证。</p><div class="plec small">相关专题：<a href="network-models.html">小世界与无标度网络模型</a> <a href="network-metrics.html">网络结构指标与随机图</a> <a href="synchronization.html">同步与协同动力学</a></div></article><article class="pcard" data-own="0" data-dom="theory molecular" data-k="emergence of scaling in random networks随机网络中标度律的涌现无标度 幂律度分布 增长 优先连接 ba 模型 平均场"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">网络基础理论</span><span class="pbadge dm">分子网络与基因调控</span><span>Science · 1999</span></div><h3><a href="paper-barabasi1999_scaling.html">随机网络中标度律的涌现</a></h3><p class="porig">Emergence of scaling in random networks<br><span>Barabási A-L, Albert R</span></p><p class="psum">报告多个真实网络的度分布尾部近似幂律，并提出“增长 + 优先连接”模型，用平均场方法推出指数 γ=3。</p><div class="plec small">相关专题：<a href="network-models.html">小世界与无标度网络模型</a> <a href="molecular-networks.html">生物分子网络与拓扑特征</a></div></article><article class="pcard" data-own="0" data-dom="dynamics theory" data-k="error and attack tolerance of complex networks复杂网络对随机故障与蓄意攻击的耐受性鲁棒性 随机故障 蓄意攻击 无标度网络 网络碎裂 渗流"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">网络动力学与控制</span><span class="pbadge dm">网络基础理论</span><span>Nature · 2000</span></div><h3><a href="paper-albert2000_attack.html">复杂网络对随机故障与蓄意攻击的耐受性</a></h3><p class="porig">Error and attack tolerance of complex networks<br><span>Albert R, Jeong H, Barabási A-L</span></p><p class="psum">比较随机图与无标度网络在随机删点和按度删点下的直径与碎裂过程，发现无标度网络“耐随机故障、怕蓄意攻击”。</p><div class="plec small">相关专题：<a href="controllability.html">网络可控性与稳定性</a> <a href="network-models.html">小世界与无标度网络模型</a></div></article><article class="pcard" data-own="0" data-dom="molecular theory dynamics" data-k="lethality and centrality in protein networks蛋白质网络中的致死性与中心性蛋白质相互作用网络 酵母 必需基因 枢纽 致死性–中心性规则"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">分子网络与基因调控</span><span class="pbadge dm">网络基础理论</span><span>Nature · 2001</span></div><h3><a href="paper-jeong2001_lethality.html">蛋白质网络中的致死性与中心性</a></h3><p class="porig">Lethality and centrality in protein networks<br><span>Jeong H, Mason SP, Barabási A-L, Oltvai ZN</span></p><p class="psum">在酵母蛋白质相互作用网络中发现度分布重尾，且度越高的蛋白敲除后越可能致死，提出“致死性–中心性”关系。</p><div class="plec small">相关专题：<a href="molecular-networks.html">生物分子网络与拓扑特征</a> <a href="network-models.html">小世界与无标度网络模型</a> <a href="controllability.html">网络可控性与稳定性</a></div></article><article class="pcard" data-own="0" data-dom="dynamics theory" data-k="epidemic spreading in scale-free networks无标度网络上的流行病传播sis 模型 流行病阈值 无标度网络 异质平均场 计算机病毒"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">网络动力学与控制</span><span class="pbadge dm">网络基础理论</span><span>Physical Review Letters · 2001</span></div><h3><a href="paper-pastorsatorras2001_epidemic.html">无标度网络上的流行病传播</a></h3><p class="porig">Epidemic spreading in scale-free networks<br><span>Pastor-Satorras R, Vespignani A</span></p><p class="psum">用异质平均场分析无标度网络上的 SIS 模型，发现流行病阈值消失，解释了计算机病毒长期低水平流行的现象。</p><div class="plec small">相关专题：<a href="spreading.html">网络上的传播与免疫</a> <a href="network-models.html">小世界与无标度网络模型</a></div></article><article class="pcard" data-own="0" data-dom="theory" data-k="the structure and function of complex networks复杂网络的结构与功能综述 网络统计量 聚集系数 度相关 配置模型 生成函数 网络上的过程"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">网络基础理论</span><span>SIAM Review · 2003</span></div><h3><a href="paper-newman2003_review.html">复杂网络的结构与功能</a></h3><p class="porig">The structure and function of complex networks<br><span>Newman MEJ</span></p><p class="psum">网络科学第一个十年的系统综述：真实网络的统计特征、随机图与增长模型、网络上的渗流与传播。</p><div class="plec small">相关专题：<a href="network-basics.html">复杂系统与网络的数学表示</a> <a href="network-metrics.html">网络结构指标与随机图</a> <a href="network-models.html">小世界与无标度网络模型</a></div></article><article class="pcard" data-own="0" data-dom="brain theory" data-k="complex brain networks: graph theoretical analysis of structural and functional systems复杂脑网络：结构与功能系统的图论分析连接组 结构连接 功能连接 小世界 枢纽 模块化 布线成本"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">脑网络与连接组</span><span class="pbadge dm">网络基础理论</span><span>Nature Reviews Neuroscience · 2009</span></div><h3><a href="paper-bullmore2009_brain.html">复杂脑网络：结构与功能系统的图论分析</a></h3><p class="porig">Complex brain networks: graph theoretical analysis of structural and functional systems<br><span>Bullmore E, Sporns O</span></p><p class="psum">系统梳理用图论分析脑结构与功能网络的流程与发现，总结小世界、枢纽、模块化等跨尺度、跨模态反复出现的特征。</p><div class="plec small">相关专题：<a href="brain-connectome.html">脑连接组：结构与功能连接</a> <a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a> <a href="network-models.html">小世界与无标度网络模型</a></div></article><article class="pcard" data-own="0" data-dom="theory methods" data-k="power-law distributions in empirical data经验数据中的幂律分布幂律 最大似然估计 ks 统计量 拟合优度检验 似然比检验 对数正态分布"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">网络基础理论</span><span class="pbadge dm">计算方法与研究规范</span><span>SIAM Review · 2009</span></div><h3><a href="paper-clauset2009_powerlaw.html">经验数据中的幂律分布</a></h3><p class="porig">Power-law distributions in empirical data<br><span>Clauset A, Shalizi CR, Newman MEJ</span></p><p class="psum">提出最大似然拟合、KS 选下界、自助法检验与似然比比较的幂律分析流程，并重新检验了 24 个数据集。</p><div class="plec small">相关专题：<a href="network-models.html">小世界与无标度网络模型</a> <a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></div></article><article class="pcard" data-own="0" data-dom="dynamics theory" data-k="catastrophic cascade of failures in interdependent networks相互依存网络中的灾难性级联失效相互依存网络 级联失效 渗流 一级相变 生成函数 鲁棒性"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">网络动力学与控制</span><span class="pbadge dm">网络基础理论</span><span>Nature · 2010</span></div><h3><a href="paper-buldyrev2010_cascade.html">相互依存网络中的灾难性级联失效</a></h3><p class="porig">Catastrophic cascade of failures in interdependent networks<br><span>Buldyrev SV, Parshani R, Paul G, Stanley HE, Havlin S</span></p><p class="psum">两个相互依赖的网络中，失效会来回传递并引发突变式崩溃；与单一网络相反，度分布越宽，相互依存网络越脆弱。</p><div class="plec small">相关专题：<a href="controllability.html">网络可控性与稳定性</a> <a href="network-models.html">小世界与无标度网络模型</a></div></article><article class="pcard" data-own="0" data-dom="brain theory methods" data-k="complex network measures of brain connectivity: uses and interpretations脑连接的复杂网络指标：用法与解读图论指标 分离与整合 中心性 模块 零模型 brain connectivity toolbox"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">脑网络与连接组</span><span class="pbadge dm">网络基础理论</span><span>NeuroImage · 2010</span></div><h3><a href="paper-rubinov2010_measures.html">脑连接的复杂网络指标：用法与解读</a></h3><p class="porig">Complex network measures of brain connectivity: uses and interpretations<br><span>Rubinov M, Sporns O</span></p><p class="psum">按神经科学含义整理脑网络常用图论指标及其解读，并发布 Brain Connectivity Toolbox。</p><div class="plec small">相关专题：<a href="brain-connectome.html">脑连接组：结构与功能连接</a> <a href="network-models.html">小世界与无标度网络模型</a> <a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></div></article><article class="pcard" data-own="0" data-dom="theory" data-k="scale-free networks are rare无标度网络是罕见的无标度网络 幂律检验 对数正态 证据分级 icon 科学争论"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">网络基础理论</span><span>Nature Communications · 2019</span></div><h3><a href="paper-broido2019_rare.html">无标度网络是罕见的</a></h3><p class="porig">Scale-free networks are rare<br><span>Broido AD, Clauset A</span></p><p class="psum">用严格的统计检验分析 928 个真实网络数据集，发现强无标度结构很少见，对数正态往往拟合得同样好或更好。</p><div class="plec small">相关专题：<a href="network-models.html">小世界与无标度网络模型</a></div></article></div></section><section class="block prose" id="references"><h2><span class="tag">References</span>核心文献</h2><h3
+id="watts-strogatz-1998collective-dynamics-of-small-world-networks">Watts
+&amp; Strogatz 1998：Collective dynamics of ‘small-world’ networks</h3>
+<ul>
+<li><strong>出处</strong>：<em>Nature</em> 393: 440–442。DOI：<a
+href="https://doi.org/10.1038/30918">10.1038/30918</a>。论文精读：<a
+href="paper-watts1998_smallworld.html">Watts 1998</a></li>
+<li><strong>背景</strong>：当时的网络模型要么是完全规则的，要么是完全随机的，社会学中的“六度分隔”缺少一个可计算的机制模型。</li>
+<li><strong>核心发现</strong>：提出以重连概率
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>
+在两者之间插值的模型；发现存在一个宽广的
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>
+区间，使网络同时具有高聚类和短路径；在演员网络、电网和线虫神经网络中都找到了这种特征；并用模拟说明小世界结构会加快传染病的传播。</li>
+<li><strong>阅读提示</strong>：重点看图
+2（<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo stretchy="false" form="prefix">(</mo><mi>β</mi><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mi>C</mi><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">C(\beta)/C(0)</annotation></semantics></math>
+与
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo stretchy="false" form="prefix">(</mo><mi>β</mi><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mi>L</mi><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">L(\beta)/L(0)</annotation></semantics></math>
+随
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>
+的变化，注意横轴是对数坐标）和表
+1；思考作者所说的“随机网络”具体是如何构造的。</li>
+<li><strong>思考题</strong>：如果把重连换成“只加捷径、不删原有边”（Newman–Watts
+变体），<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>
+和
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>
+的曲线会怎样变化？为什么这个变体在数学上更容易分析？</li>
+</ul>
+<h3
+id="barabási-albert-1999emergence-of-scaling-in-random-networks">Barabási
+&amp; Albert 1999：Emergence of scaling in random networks</h3>
+<ul>
+<li><strong>出处</strong>：<em>Science</em> 286: 509–512。DOI：<a
+href="https://doi.org/10.1126/science.286.5439.509">10.1126/science.286.5439.509</a>。论文精读：<a
+href="paper-barabasi1999_scaling.html">Barabási 1999</a></li>
+<li><strong>背景</strong>：多个领域的网络数据同时出现长尾度分布，而 ER
+与 WS 模型都无法产生这种分布。</li>
+<li><strong>核心发现</strong>：报告演员网络、万维网和电网的度分布尾部近似幂律；提出“增长
++ 优先连接”模型，用平均场方法推出
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>γ</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">\gamma=3</annotation></semantics></math>；并证明两个要素缺一不可。</li>
+<li><strong>阅读提示</strong>：论文中幂律指数是从双对数图上读出来的，这在今天看来不够严格（参见
+Clauset 等
+2009）；注意区分“模型能产生幂律”与“真实网络就是这样生成的”。</li>
+<li><strong>思考题</strong>：对于蛋白质相互作用网络，“新节点”和“优先连接”分别可能对应什么生物学过程？这个类比在哪里会失效？</li>
+</ul>
+<h3
+id="bianconi-barabási-2001competition-and-multiscaling-in-evolving-networks">Bianconi
+&amp; Barabási 2001：Competition and multiscaling in evolving
+networks</h3>
+<ul>
+<li><strong>出处</strong>：<em>Europhysics Letters</em> 54:
+436–442。DOI：<a
+href="https://doi.org/10.1209/epl/i2001-00260-6">10.1209/epl/i2001-00260-6</a>。姊妹篇：Bose–Einstein
+condensation in complex networks，<em>Phys. Rev. Lett.</em> 86:
+5632–5635，DOI：<a
+href="https://doi.org/10.1103/PhysRevLett.86.5632">10.1103/PhysRevLett.86.5632</a></li>
+<li><strong>背景</strong>：BA
+模型中最早的节点永远领先，无法解释后来者居上。</li>
+<li><strong>核心发现</strong>：引入节点适应度，推出依赖适应度的动态指数
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo stretchy="false" form="prefix">(</mo><mi>η</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>η</mi><mi>/</mi><mi>C</mi></mrow><annotation encoding="application/x-tex">\beta(\eta)=\eta/C</annotation></semantics></math>
+与自洽方程；姊妹篇建立了与玻色气体的映射，预言“适者富”与“赢家通吃”两种相。</li>
+<li><strong>阅读提示</strong>：先在均匀适应度下自己推一遍
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>≈</mo><mn>1.255</mn></mrow><annotation encoding="application/x-tex">C\approx1.255</annotation></semantics></math>；再想想凝聚相对应的是哪类真实系统。</li>
+<li><strong>思考题</strong>：只给你一个时间点的网络快照，能否区分“早到”与“适应度高”？需要什么额外数据？</li>
+</ul>
+<h3
+id="newman-strogatz-watts-2001random-graphs-with-arbitrary-degree-distributions-and-their-applications">Newman,
+Strogatz &amp; Watts 2001：Random graphs with arbitrary degree
+distributions and their applications</h3>
+<ul>
+<li><strong>出处</strong>：<em>Physical Review E</em> 64:
+026118。DOI：<a
+href="https://doi.org/10.1103/PhysRevE.64.026118">10.1103/PhysRevE.64.026118</a></li>
+<li><strong>背景</strong>：真实网络的度分布不是泊松分布，ER
+网络的解析结果无法直接套用。</li>
+<li><strong>核心发现</strong>：用生成函数系统地求解配置模型的巨连通分支、分支大小分布、平均距离等性质，并推广到有向与二分网络。</li>
+<li><strong>阅读提示</strong>：生成函数
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>G</mi><mn>0</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo>∑</mo><msub><mi>p</mi><mi>k</mi></msub><msup><mi>x</mi><mi>k</mi></msup></mrow><annotation encoding="application/x-tex">G_0(x)=\sum p_kx^k</annotation></semantics></math>、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>G</mi><mn>1</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msubsup><mi>G</mi><mn>0</mn><mo>′</mo></msubsup><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>/</mi><msubsup><mi>G</mi><mn>0</mn><mo>′</mo></msubsup><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">G_1(x)=G_0&#39;(x)/G_0&#39;(1)</annotation></semantics></math>
+的含义（随机节点与随机边末端）是理解渗流与传播的钥匙，可与<a
+href="robustness.html">网络鲁棒性、渗流与级联失效</a>对照阅读。</li>
+<li><strong>思考题</strong>：配置模型假设网络局部是树状的。对于聚类很高的生物网络，这一假设会让预测偏向哪个方向？</li>
+</ul>
+<h3
+id="vázquez-flammini-maritan-vespignani-2003modeling-of-protein-interaction-networks">Vázquez,
+Flammini, Maritan &amp; Vespignani 2003：Modeling of protein interaction
+networks</h3>
+<ul>
+<li><strong>出处</strong>：<em>ComPlexUs</em> 1: 38–44。DOI：<a
+href="https://doi.org/10.1159/000067642">10.1159/000067642</a></li>
+<li><strong>背景</strong>：酵母双杂交数据显示 PPI
+网络有长尾度分布，需要一个基于分子演化而非“新节点优先连接”的解释。</li>
+<li><strong>核心发现</strong>：提出基于基因复制与相互作用分化的网络生长模型，说明复制机制在效果上产生优先连接，并能再现
+PPI 网络的度分布与聚类特征。</li>
+<li><strong>阅读提示</strong>：对照 Solé 等（2002）与 Pastor-Satorras
+等（2003）的版本，注意各模型在“谁丢边”“是否加入新边”上的差别，以及这些差别对度指数的影响。</li>
+<li><strong>思考题</strong>：Wagner（2001）估计复制后相互作用丢失得很快。这对模型中的保留概率意味着什么？平均度还能保持稳定吗？</li>
+</ul>
+<h3 id="broido-clauset-2019scale-free-networks-are-rare">Broido &amp;
+Clauset 2019：Scale-free networks are rare</h3>
+<ul>
+<li><strong>出处</strong>：<em>Nature Communications</em> 10:
+1017。DOI：<a
+href="https://doi.org/10.1038/s41467-019-08746-5">10.1038/s41467-019-08746-5</a>。论文精读：<a
+href="paper-broido2019_rare.html">Broido 2019</a></li>
+<li><strong>背景</strong>：“无标度网络普遍存在”在 2000
+年代几乎成为共识，但多数证据来自双对数图上的目测。</li>
+<li><strong>核心发现</strong>：用最大似然拟合和似然比检验分析近千个网络数据集，按证据强弱分级；严格意义上的无标度网络只占少数，生物网络中多数更接近对数正态或截断分布。</li>
+<li><strong>阅读提示</strong>：留意作者对“无标度”的定义层级（从“超弱”到“最强”）；这篇文章发表后有多篇回应（如
+Voitalov 等 2019；Holme
+2019），可以对照阅读，体会“定义不同导致结论不同”。</li>
+<li><strong>思考题</strong>：如果你的研究结论依赖于“网络中存在枢纽”，那么它是否必须依赖“度分布严格服从幂律”？</li>
+</ul>
+<h3 id="补充文献">补充文献</h3>
+<ul>
+<li>Ohno S. <em>Evolution by Gene Duplication</em>. Springer,
+1970.（专著）</li>
+<li>Penrose M. <em>Random Geometric Graphs</em>. Oxford University
+Press, 2003.（专著）</li>
+<li>Kleinberg J. Navigation in a small world. <em>Nature</em>, 2000,
+406: 845. DOI: <a
+href="https://doi.org/10.1038/35022643">10.1038/35022643</a></li>
+<li>Newman MEJ, Watts DJ. Renormalization group analysis of the
+small-world network model. <em>Phys. Lett. A</em>, 1999, 263: 341–346.
+DOI: <a
+href="https://doi.org/10.1016/S0375-9601(99)00757-4">10.1016/S0375-9601(99)00757-4</a></li>
+<li>Barrat A, Weigt M. On the properties of small-world network models.
+<em>Eur. Phys. J. B</em>, 2000, 13: 547–560. DOI: <a
+href="https://doi.org/10.1007/s100510050067">10.1007/s100510050067</a></li>
+<li>Cohen R, Havlin S. Scale-free networks are ultrasmall. <em>Phys.
+Rev. Lett.</em>, 2003, 90: 058701. DOI: <a
+href="https://doi.org/10.1103/PhysRevLett.90.058701">10.1103/PhysRevLett.90.058701</a></li>
+<li>Molloy M, Reed B. A critical point for random graphs with a given
+degree sequence. <em>Random Struct. Algorithms</em>, 1995, 6: 161–180.
+DOI: <a
+href="https://doi.org/10.1002/rsa.3240060204">10.1002/rsa.3240060204</a></li>
+<li>Boguñá M, Pastor-Satorras R, Vespignani A. Cut-offs and finite size
+effects in scale-free networks. <em>Eur. Phys. J. B</em>, 2004, 38:
+205–209. DOI: <a
+href="https://doi.org/10.1140/epjb/e2004-00038-8">10.1140/epjb/e2004-00038-8</a></li>
+<li>Goh K-I, Kahng B, Kim D. Universal behavior of load distribution in
+scale-free networks. <em>Phys. Rev. Lett.</em>, 2001, 87: 278701. DOI:
+<a
+href="https://doi.org/10.1103/PhysRevLett.87.278701">10.1103/PhysRevLett.87.278701</a></li>
+<li>Caldarelli G, Capocci A, De Los Rios P, Muñoz MA. Scale-free
+networks from varying vertex intrinsic fitness. <em>Phys.
+Rev. Lett.</em>, 2002, 89: 258702. DOI: <a
+href="https://doi.org/10.1103/PhysRevLett.89.258702">10.1103/PhysRevLett.89.258702</a></li>
+<li>Maslov S, Sneppen K. Specificity and stability in topology of
+protein networks. <em>Science</em>, 2002, 296: 910–913. DOI: <a
+href="https://doi.org/10.1126/science.1065103">10.1126/science.1065103</a></li>
+<li>Price DJdS. Networks of scientific papers. <em>Science</em>, 1965,
+149: 510–515. DOI: <a
+href="https://doi.org/10.1126/science.149.3683.510">10.1126/science.149.3683.510</a></li>
+<li>Price DJdS. A general theory of bibliometric and other cumulative
+advantage processes. <em>J. Am. Soc. Inf. Sci.</em>, 1976, 27: 292–306.
+DOI: <a
+href="https://doi.org/10.1002/asi.4630270505">10.1002/asi.4630270505</a></li>
+<li>Dorogovtsev SN, Mendes JFF, Samukhin AN. Structure of growing
+networks with preferential linking. <em>Phys. Rev. Lett.</em>, 2000, 85:
+4633–4636. DOI: <a
+href="https://doi.org/10.1103/PhysRevLett.85.4633">10.1103/PhysRevLett.85.4633</a></li>
+<li>Krapivsky PL, Redner S, Leyvraz F. Connectivity of growing random
+networks. <em>Phys. Rev. Lett.</em>, 2000, 85: 4629–4632. DOI: <a
+href="https://doi.org/10.1103/PhysRevLett.85.4629">10.1103/PhysRevLett.85.4629</a></li>
+<li>Bollobás B, Riordan O, Spencer J, Tusnády G. The degree sequence of
+a scale-free random graph process. <em>Random Struct. Algorithms</em>,
+2001, 18: 279–290. DOI: <a
+href="https://doi.org/10.1002/rsa.1009">10.1002/rsa.1009</a></li>
+<li>Bollobás B, Riordan O. The diameter of a scale-free random graph.
+<em>Combinatorica</em>, 2004, 24: 5–34. DOI: <a
+href="https://doi.org/10.1007/s00493-004-0002-2">10.1007/s00493-004-0002-2</a></li>
+<li>Fronczak A, Fronczak P, Hołyst JA. Mean-field theory for clustering
+coefficients in Barabási–Albert networks. <em>Phys. Rev. E</em>, 2003,
+68: 046126. DOI: <a
+href="https://doi.org/10.1103/PhysRevE.68.046126">10.1103/PhysRevE.68.046126</a></li>
+<li>Jeong H, Néda Z, Barabási A-L. Measuring preferential attachment in
+evolving networks. <em>Europhys. Lett.</em>, 2003, 61: 567–572. DOI: <a
+href="https://doi.org/10.1209/epl/i2003-00166-9">10.1209/epl/i2003-00166-9</a></li>
+<li>Holme P, Kim BJ. Growing scale-free networks with tunable
+clustering. <em>Phys. Rev. E</em>, 2002, 65: 026107. DOI: <a
+href="https://doi.org/10.1103/PhysRevE.65.026107">10.1103/PhysRevE.65.026107</a></li>
+<li>Fabrikant A, Koutsoupias E, Papadimitriou CH. Heuristically
+optimized trade-offs: a new paradigm for power laws in the Internet.
+<em>ICALP 2002, LNCS</em> 2380: 110–122. DOI: <a
+href="https://doi.org/10.1007/3-540-45465-9_11">10.1007/3-540-45465-9_11</a></li>
+<li>Kong JS, Sarshar N, Roychowdhury VP. Experience versus talent shapes
+the structure of the Web. <em>PNAS</em>, 2008, 105: 13724–13729. DOI: <a
+href="https://doi.org/10.1073/pnas.0805921105">10.1073/pnas.0805921105</a></li>
+<li>Wang D, Song C, Barabási A-L. Quantifying long-term scientific
+impact. <em>Science</em>, 2013, 342: 127–132. DOI: <a
+href="https://doi.org/10.1126/science.1237825">10.1126/science.1237825</a></li>
+<li>Dorogovtsev SN, Mendes JFF. Evolution of networks with aging of
+sites. <em>Phys. Rev. E</em>, 2000, 62: 1842–1845. DOI: <a
+href="https://doi.org/10.1103/PhysRevE.62.1842">10.1103/PhysRevE.62.1842</a></li>
+<li>Dorogovtsev SN, Mendes JFF. Effect of the accelerating growth of
+communications networks on their structure. <em>Phys. Rev. E</em>, 2001,
+63: 025101. DOI: <a
+href="https://doi.org/10.1103/PhysRevE.63.025101">10.1103/PhysRevE.63.025101</a></li>
+<li>Moore C, Ghoshal G, Newman MEJ. Exact solutions for models of
+evolving networks with addition and deletion of nodes. <em>Phys.
+Rev. E</em>, 2006, 74: 036121. DOI: <a
+href="https://doi.org/10.1103/PhysRevE.74.036121">10.1103/PhysRevE.74.036121</a></li>
+<li>Solé RV, Pastor-Satorras R, Smith E, Kepler TB. A model of
+large-scale proteome evolution. <em>Adv. Complex Syst.</em>, 2002, 5:
+43–54. DOI: <a
+href="https://doi.org/10.1142/S021952590200047X">10.1142/S021952590200047X</a></li>
+<li>Pastor-Satorras R, Smith E, Solé RV. Evolving protein interaction
+networks through gene duplication. <em>J. Theor. Biol.</em>, 2003, 222:
+199–210. DOI: <a
+href="https://doi.org/10.1016/S0022-5193(03)00028-6">10.1016/S0022-5193(03)00028-6</a></li>
+<li>Ispolatov I, Krapivsky PL, Yuryev A. Duplication-divergence model of
+protein interaction network. <em>Phys. Rev. E</em>, 2005, 71: 061911.
+DOI: <a
+href="https://doi.org/10.1103/PhysRevE.71.061911">10.1103/PhysRevE.71.061911</a></li>
+<li>Wagner A. The yeast protein interaction network evolves rapidly and
+contains few redundant duplicate genes. <em>Mol. Biol. Evol.</em>, 2001,
+18: 1283–1292. DOI: <a
+href="https://doi.org/10.1093/oxfordjournals.molbev.a003913">10.1093/oxfordjournals.molbev.a003913</a></li>
+<li>Wagner A. How the global structure of protein interaction networks
+evolves. <em>Proc. R. Soc. B</em>, 2003, 270: 457–466. DOI: <a
+href="https://doi.org/10.1098/rspb.2002.2269">10.1098/rspb.2002.2269</a></li>
+<li>Eisenberg E, Levanon EY. Preferential attachment in the protein
+network evolution. <em>Phys. Rev. Lett.</em>, 2003, 91: 138701. DOI: <a
+href="https://doi.org/10.1103/PhysRevLett.91.138701">10.1103/PhysRevLett.91.138701</a></li>
+<li>Teichmann SA, Babu MM. Gene regulatory network growth by
+duplication. <em>Nat. Genet.</em>, 2004, 36: 492–496. DOI: <a
+href="https://doi.org/10.1038/ng1340">10.1038/ng1340</a></li>
+<li>Middendorf M, Ziv E, Wiggins CH. Inferring network mechanisms: the
+<em>Drosophila melanogaster</em> protein interaction network.
+<em>PNAS</em>, 2005, 102: 3192–3197. DOI: <a
+href="https://doi.org/10.1073/pnas.0409515102">10.1073/pnas.0409515102</a></li>
+<li>Presser A, Elowitz MB, Kellis M, Kishony R. The evolutionary
+dynamics of the <em>Saccharomyces cerevisiae</em> protein interaction
+network after duplication. <em>PNAS</em>, 2008, 105: 950–954. DOI: <a
+href="https://doi.org/10.1073/pnas.0707293105">10.1073/pnas.0707293105</a></li>
+<li>Kim WK, Marcotte EM. Age-dependent evolution of the yeast protein
+interaction network suggests a limited role of gene duplication and
+divergence. <em>PLoS Comput. Biol.</em>, 2008, 4: e1000232. DOI: <a
+href="https://doi.org/10.1371/journal.pcbi.1000232">10.1371/journal.pcbi.1000232</a></li>
+<li>Hakes L, Pinney JW, Robertson DL, Lovell SC. Protein-protein
+interaction networks and biology—what’s the connection? <em>Nat.
+Biotechnol.</em>, 2008, 26: 69–72. DOI: <a
+href="https://doi.org/10.1038/nbt0108-69">10.1038/nbt0108-69</a></li>
+<li>Stumpf MPH, Wiuf C, May RM. Subnets of scale-free networks are not
+scale-free: sampling properties of networks. <em>PNAS</em>, 2005, 102:
+4221–4224. DOI: <a
+href="https://doi.org/10.1073/pnas.0501179102">10.1073/pnas.0501179102</a></li>
+<li>Pržulj N, Corneil DG, Jurisica I. Modeling interactome: scale-free
+or geometric? <em>Bioinformatics</em>, 2004, 20: 3508–3515. DOI: <a
+href="https://doi.org/10.1093/bioinformatics/bth436">10.1093/bioinformatics/bth436</a></li>
+<li>Higham DJ, Rašajski M, Pržulj N. Fitting a geometric graph to a
+protein–protein interaction network. <em>Bioinformatics</em>, 2008, 24:
+1093–1099. DOI: <a
+href="https://doi.org/10.1093/bioinformatics/btn079">10.1093/bioinformatics/btn079</a></li>
+<li>Dall J, Christensen M. Random geometric graphs. <em>Phys.
+Rev. E</em>, 2002, 66: 016121. DOI: <a
+href="https://doi.org/10.1103/PhysRevE.66.016121">10.1103/PhysRevE.66.016121</a></li>
+<li>Waxman BM. Routing of multipoint connections. <em>IEEE J. Sel. Areas
+Commun.</em>, 1988, 6: 1617–1622. DOI: <a
+href="https://doi.org/10.1109/49.12889">10.1109/49.12889</a></li>
+<li>Kaiser M, Hilgetag CC. Spatial growth of real-world networks.
+<em>Phys. Rev. E</em>, 2004, 69: 036103. DOI: <a
+href="https://doi.org/10.1103/PhysRevE.69.036103">10.1103/PhysRevE.69.036103</a></li>
+<li>Barthélemy M. Spatial networks. <em>Phys. Rep.</em>, 2011, 499:
+1–101. DOI: <a
+href="https://doi.org/10.1016/j.physrep.2010.11.002">10.1016/j.physrep.2010.11.002</a></li>
+<li>Bullmore E, Sporns O. The economy of brain network organization.
+<em>Nat. Rev. Neurosci.</em>, 2012, 13: 336–349. DOI: <a
+href="https://doi.org/10.1038/nrn3214">10.1038/nrn3214</a></li>
+<li>Ercsey-Ravasz M, Markov NT, Lamy C, et al. A predictive network
+model of cerebral cortical connectivity based on a distance rule.
+<em>Neuron</em>, 2013, 80: 184–197. DOI: <a
+href="https://doi.org/10.1016/j.neuron.2013.07.036">10.1016/j.neuron.2013.07.036</a></li>
+<li>Betzel RF, Avena-Koenigsberger A, Goñi J, et al. Generative models
+of the human connectome. <em>NeuroImage</em>, 2016, 124: 1054–1064. DOI:
+<a
+href="https://doi.org/10.1016/j.neuroimage.2015.09.041">10.1016/j.neuroimage.2015.09.041</a></li>
+<li>Vértes PE, Alexander-Bloch AF, Gogtay N, et al. Simple models of
+human brain functional networks. <em>PNAS</em>, 2012, 109: 5868–5873.
+DOI: <a
+href="https://doi.org/10.1073/pnas.1111738109">10.1073/pnas.1111738109</a></li>
+<li>Akarca D, Vértes PE, Bullmore ET, et al. A generative network model
+of neurodevelopmental diversity in structural brain organization.
+<em>Nat. Commun.</em>, 2021, 12: 4216. DOI: <a
+href="https://doi.org/10.1038/s41467-021-24430-z">10.1038/s41467-021-24430-z</a></li>
+<li>Krioukov D, Papadopoulos F, Kitsak M, Vahdat A, Boguñá M. Hyperbolic
+geometry of complex networks. <em>Phys. Rev. E</em>, 2010, 82: 036106.
+DOI: <a
+href="https://doi.org/10.1103/PhysRevE.82.036106">10.1103/PhysRevE.82.036106</a></li>
+<li>Papadopoulos F, Kitsak M, Serrano MÁ, Boguñá M, Krioukov D.
+Popularity versus similarity in growing networks. <em>Nature</em>, 2012,
+489: 537–540. DOI: <a
+href="https://doi.org/10.1038/nature11459">10.1038/nature11459</a></li>
+<li>Voitalov I, van der Hoorn P, van der Hofstad R, Krioukov D.
+Scale-free networks well done. <em>Phys. Rev. Research</em>, 2019, 1:
+033034. DOI: <a
+href="https://doi.org/10.1103/PhysRevResearch.1.033034">10.1103/PhysRevResearch.1.033034</a></li>
+<li>Holme P. Rare and everywhere: perspectives on scale-free networks.
+<em>Nat. Commun.</em>, 2019, 10: 1016. DOI: <a
+href="https://doi.org/10.1038/s41467-019-09038-8">10.1038/s41467-019-09038-8</a></li>
+<li>Lima-Mendez G, van Helden J. The powerful law of the power law and
+other myths in network biology. <em>Mol. BioSyst.</em>, 2009, 5:
+1482–1493. DOI: <a
+href="https://doi.org/10.1039/b908681a">10.1039/b908681a</a></li>
+</ul>
+</section><section class="block" id="data"><h2><span class="tag">Data &amp; tools</span>相关数据与软件</h2><div class="rgrid"><a class="rcard" href="r-networkx.html" data-dom="theory methods dynamics" data-k="networkx python 中最常用的通用网络创建、分析与可视化库。"><span class="kind">软件/工具包</span><b>NetworkX</b><span class="d">Python 中最常用的通用网络创建、分析与可视化库。</span></a><a class="rcard" href="r-snap-datasets.html" data-dom="theory methods" data-k="snap 大型网络数据集 斯坦福大学整理的大型真实网络数据集合。"><span class="kind">数据集</span><b>SNAP 大型网络数据集</b><span class="d">斯坦福大学整理的大型真实网络数据集合。</span></a><a class="rcard" href="r-netzschleuder.html" data-dom="theory methods" data-k="netzschleuder graph-tool 作者维护的网络数据目录与仓库。"><span class="kind">数据库</span><b>Netzschleuder</b><span class="d">graph-tool 作者维护的网络数据目录与仓库。</span></a></div></section><section class="block prose" id="resources"><h2><span class="tag">Further</span>延伸资源</h2><div class="table-wrap"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>类型</th>
+<th>资源</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>教材</td>
+<td>Barabási《Network Science》第 3–6 章（<a
+href="http://networksciencebook.com/">networksciencebook.com</a>；CC
+BY-NC-SA 2.0）</td>
+<td>免费在线教材。第 4 章 The Scale-Free Property（<a
+href="http://networksciencebook.com/chapter/4">chapter/4</a>：幂律、枢纽、超小世界、度指数的作用、配置模型与隐变量模型，进阶专题含幂律拟合）；第
+5 章 The Barabási–Albert Model（<a
+href="http://networksciencebook.com/chapter/5">chapter/5</a>：度动力学、测量与非线性优先连接、优先连接的起源、直径与聚集）；第
+6 章 Evolving Networks（<a
+href="http://networksciencebook.com/chapter/6">chapter/6</a>：适应度模型、玻色–爱因斯坦凝聚、初始吸引力、内部连边、删点、加速增长、老化）。本专题的覆盖面对照这三章整理</td>
+</tr>
+<tr>
+<td>教材</td>
+<td>Newman《Networks》（第 2 版，Oxford University Press，2018）</td>
+<td>第 11–13 章（随机图、配置模型与生成函数、网络形成模型：Price
+模型、BA 模型、复制模型、优化模型）给出比本页更完整的推导</td>
+</tr>
+<tr>
+<td>公开课</td>
+<td>Stanford CS224W: Machine Learning with Graphs（<a
+href="https://web.stanford.edu/class/cs224w/">主页</a>）</td>
+<td>英文公开课；“小世界与网络模型”部分与本专题对应，视频在
+YouTube（需境外网络）</td>
+</tr>
+<tr>
+<td>经典综述</td>
+<td>Albert &amp; Barabási 2002, <em>Rev. Mod. Phys.</em>（<a
+href="https://doi.org/10.1103/RevModPhys.74.47">DOI</a>）</td>
+<td>小世界与无标度网络的系统综述，第 IV–VII
+节对应本专题，适合需要推导细节的读者</td>
+</tr>
+<tr>
+<td>经典综述</td>
+<td>Newman 2003, <em>SIAM Review</em>（论文精读见 <a
+href="paper-newman2003_review.html">Newman 2003</a>）</td>
+<td>网络结构与功能的综述，配置模型、生成函数与网络生长模型部分与本专题直接相关</td>
+</tr>
+<tr>
+<td>方法论文</td>
+<td>Clauset, Shalizi &amp; Newman 2009, <em>SIAM Review</em>（<a
+href="https://doi.org/10.1137/070710111">DOI</a>）</td>
+<td>幂律拟合的标准方法，第 3–5 节最重要；做度分布分析前必读。论文精读见
+<a href="paper-clauset2009_powerlaw.html">Clauset 2009</a></td>
+</tr>
+<tr>
+<td>生物综述</td>
+<td>Barabási &amp; Oltvai 2004, “Network biology”, <em>Nat.
+Rev. Genet.</em>（<a
+href="https://doi.org/10.1038/nrg1272">DOI</a>）</td>
+<td>把小世界、无标度、模块性落到细胞网络上</td>
+</tr>
+<tr>
+<td>批判性综述</td>
+<td>Lima-Mendez &amp; van Helden 2009, <em>Mol. BioSyst.</em>（<a
+href="https://doi.org/10.1039/b908681a">DOI</a>）</td>
+<td>梳理网络生物学中关于幂律与枢纽的过度解读，与上面的综述对照阅读</td>
+</tr>
+<tr>
+<td>空间网络综述</td>
+<td>Barthélemy 2011, <em>Phys. Rep.</em>（<a
+href="https://doi.org/10.1016/j.physrep.2010.11.002">DOI</a>）</td>
+<td>空间网络的模型、度量与零模型，适合研究脑网络、血管网络的读者</td>
+</tr>
+<tr>
+<td>脑网络综述</td>
+<td>Bullmore &amp; Sporns 2009, <em>Nat. Rev. Neurosci.</em>（<a
+href="https://doi.org/10.1038/nrn2575">DOI</a>）；Bullmore &amp; Sporns
+2012（<a href="https://doi.org/10.1038/nrn3214" target="_blank" rel="noopener">DOI</a>）</td>
+<td>脑结构与功能网络的图论分析，以及布线代价与拓扑效率的权衡；论文精读见
+<a href="paper-bullmore2009_brain.html">Bullmore 2009</a></td>
+</tr>
+<tr>
+<td>软件文档</td>
+<td>NetworkX 图生成器文档（<a
+href="https://networkx.org/documentation/stable/reference/generators.html">networkx.org</a>）</td>
+<td><code>watts_strogatz_graph</code>、<code>newman_watts_strogatz_graph</code>、<code>barabasi_albert_graph</code>、<code>powerlaw_cluster_graph</code>（Holme–Kim）、<code>configuration_model</code>、<code>expected_degree_graph</code>（Chung–Lu）、<code>duplication_divergence_graph</code>、<code>random_geometric_graph</code>、<code>waxman_graph</code>
+等函数，配合本专题代码示例使用</td>
+</tr>
+</tbody>
+</table></div>
+</section><section class="block prose" id="questions"><h2><span class="tag">Open questions</span>开放问题</h2><ol type="1">
+<li>选一个与你研究方向相关的生物医学网络（例如某种疾病的基因共表达网络、某个脑图谱下的功能网络）。你预期它是小世界网络吗？是否存在枢纽？如果要用数据检验，你会选择什么样的零模型（ER、保度随机化、空间零模型），结论可能对哪些分析选择（阈值、节点定义、数据来源）敏感？</li>
+<li>BA
+模型用“富者愈富”解释枢纽的出现。在你熟悉的生物系统中，有没有类似的“累积优势”机制（例如基因复制、神经发育中的突触竞争、科研中的“热门基因”效应）？它与
+BA 模型的假设有哪些相同与不同？</li>
+<li>复制–分化、优先连接、空间几何与“晶体生长”模型都能部分解释蛋白质相互作用网络的结构。如果你能获得多个物种的相互作用组与基因系统发育信息，你会设计什么分析来区分这些机制？观测偏倚会如何干扰判断？</li>
+<li>在脑网络中，空间约束可以单独产生高聚类与模块性。你会如何设计零模型，使得“患者组小世界性改变”的结论不被布线距离或图谱分辨率的差异所解释？</li>
+</ol>
+</section></article><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script><script src="assets/js/demos.js"></script></body></html>

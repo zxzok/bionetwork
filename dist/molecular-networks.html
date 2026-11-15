@@ -1,0 +1,553 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>生物分子网络与拓扑特征 · 生物医学网络科学</title><meta name="description" content="生物分子网络与拓扑特征：蛋白相互作用、转录调控、代谢与信号网络的数据来源、拓扑、枢纽与必需性、复合物、网络基序、差异网络与多组学整合"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-molecular"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html" aria-current="page">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular" open><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html" aria-current="page">生物分子网络与拓扑特征</a><ol class="sub"><li><a href="molecular-networks.network-types.html"><span class="n">01</span>生物分子网络的类型与数据来源</a></li><li><a href="molecular-networks.ppi-mapping.html"><span class="n">02</span>相互作用组图谱：检测方法、质量与偏倚</a></li><li><a href="molecular-networks.topology.html"><span class="n">03</span>分子网络的拓扑特征</a></li><li><a href="molecular-networks.metabolic-networks.html"><span class="n">04</span>代谢网络与通量平衡分析</a></li><li><a href="molecular-networks.signaling-networks.html"><span class="n">05</span>信号转导网络</a></li><li><a href="molecular-networks.protein-complexes.html"><span class="n">06</span>蛋白复合物与功能模块的检测</a></li><li><a href="molecular-networks.centrality-lethality.html"><span class="n">07</span>致死性与中心性：枢纽蛋白假说及其争议</a></li><li><a href="molecular-networks.disease-modules.html"><span class="n">08</span>人类疾病网络与疾病模块</a></li><li><a href="molecular-networks.network-motifs.html"><span class="n">09</span>网络基序：类别与动力学功能</a></li><li><a href="molecular-networks.differential-networks.html"><span class="n">10</span>条件特异性网络、差异网络与网络重连</a></li><li><a href="molecular-networks.multiomics-integration.html"><span class="n">11</span>多组学网络整合</a></li><li><a href="molecular-networks.derivations.html"><span class="n">12</span>数学推导与算法</a></li><li><a href="molecular-networks.frontiers.html"><span class="n">13</span>研究前沿与开放问题</a></li><li><a href="molecular-networks.biomedical.html"><span class="n">14</span>生物医学应用</a></li><li><a href="molecular-networks.limitations.html"><span class="n">15</span>适用范围与常见误用</a></li></ol></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><div class="lec-grid"><article style="min-width:0"><header class="doc-head"><nav class="crumb"><a href="domains.html">知识领域</a> <span class="sep">/</span> <a href="d-molecular.html">分子网络与基因调控</a></nav><div class="eyebrow" style="margin-top:14px"><b>Molecular &amp; Gene Regulatory Networks</b><span>Biomolecular networks and their topology</span></div><h1>生物分子网络与拓扑特征</h1><p class="dek">蛋白相互作用、转录调控、代谢与信号网络的数据来源、拓扑、枢纽与必需性、复合物、网络基序、差异网络与多组学整合</p><dl class="doc-meta"><div><dt>知识页面</dt><dd>15 页</dd></div><div><dt>阅读</dt><dd>约 58 分钟</dd></div><div><dt>讲解视频</dt><dd>1 段</dd></div><div><dt>代码示例</dt><dd>13 个</dd></div></dl><div class="chips"><span class="chip">蛋白质相互作用网络</span><span class="chip">转录调控网络</span><span class="chip">代谢网络</span><span class="chip">信号转导网络</span><span class="chip">遗传相互作用</span><span class="chip">互作组</span><span class="chip">酵母双杂交</span><span class="chip">亲和纯化质谱</span><span class="chip">通量平衡分析</span><span class="chip">枢纽</span><span class="chip">致死性</span><span class="chip">蛋白复合物</span><span class="chip">人类疾病网络</span><span class="chip">疾病模块</span></div></header><section class="block prose" id="overview"><p>许多生物医学网络是<strong>从相关数据中估计</strong>出来的，例如<a
+href="brain-connectome.html">脑连接组</a>中脑区信号的相关、<a
+href="symptom-networks.html">症状网络</a>中症状之间的偏相关。蛋白质相互作用网络和转录调控网络则有所不同：它们的边原则上对应<strong>物理事件</strong>——两个蛋白结合在一起，或一个转录因子结合到某基因的启动子上。这让分子网络在“边的含义”上更接近<a
+href="network-basics.html">复杂系统与网络的数学表示</a>至<a
+href="controllability.html">网络可控性与稳定性</a>中讨论的经典网络，但也带来了新问题：实验测得的网络不完整、有偏倚、有噪声；而且实际使用的“分子网络”中，相当一部分边并不是物理相互作用，而是数据库推断的功能关联或统计共表达关系。</p>
+<p>本专题从数据到结构、再到功能与情境展开：先介绍主要的分子网络类型、三类不同含义的边及其数据来源，以及相互作用组图谱的实验方法和质量评估；再讨论整体拓扑特征（重尾度分布、小世界、模块与层次、度异配），并单独讨论代谢网络（含通量平衡分析）和信号转导网络这两类“边带有化学计量或符号”的网络；然后讨论蛋白复合物与功能模块的检测、Jeong
+等（2001）提出的“致死性–中心性”关系及其争议、人类疾病网络与疾病模块；接着转到微观尺度，系统介绍各类网络基序及其动力学功能；最后讨论分子网络随条件改变的“重连”（差异网络）以及把多种组学数据整合到网络中的方法。</p>
+<p>阅读时可以抓住一条主线：<strong>网络上的每一个结论，都依赖于“边是怎样测得的”</strong>。度分布、枢纽、模块、基序乃至疾病模块，都会随检测方法、研究偏倚和取样范围而改变；因此本专题在每个知识页面中都把数据来源与零模型放在和结论同等重要的位置。理解这些内容需要用到<a
+href="network-models.html">小世界与无标度网络模型</a>中的度分布与<a
+href="controllability.html">网络可控性与稳定性</a>中的鲁棒性，网络基序部分需要一点常微分方程的直觉。如何从表达数据<strong>推断</strong>调控网络，见<a
+href="gene-network-inference.html">基因调控网络推断与共表达分析</a>；疾病模块在药物重定位中的应用，见<a
+href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a>。</p>
+</section><section class="block" id="pages"><h2><span class="tag">Contents</span>知识页面</h2><div class="arts"><a class="art" href="molecular-networks.network-types.html"><span class="no">01</span><span class="t">生物分子网络的类型与数据来源</span><span class="d">蛋白质相互作用网络（PPI） 蛋白质相互作用网络（protein–protein interaction network, PPI）：节点是蛋白质，无向边表示两个蛋白之间存在物理相…</span></a><a class="art" href="molecular-networks.ppi-mapping.html"><span class="no">02</span><span class="t">相互作用组图谱：检测方法、质量与偏倚</span><span class="d">PPI 网络的所有拓扑结论都建立在“哪些边被测到了”之上。本页比较主要实验方法测得的边有何不同，介绍评估图谱质量的参数与互作组规模的估计，最后讨论用网络结构本身补全缺失边的方法。 …</span></a><a class="art" href="molecular-networks.topology.html"><span class="no">03</span><span class="t">分子网络的拓扑特征</span><span class="d">重尾度分布与“无标度”之争 Barabási 等在 1999–2001 年前后报告了代谢网络（Jeong 等, 2000, Nature）和酵母 PPI 网络的度分布近似幂律 ，网…</span></a><a class="art" href="molecular-networks.metabolic-networks.html"><span class="no">04</span><span class="t">代谢网络与通量平衡分析</span><span class="d">代谢网络是最早被系统分析的大规模分子网络，也是唯一一类边具有精确化学计量含义的分子网络：一个反应消耗多少底物、生成多少产物是确定的。因此，代谢网络既可以作为普通图来研究拓扑，也可以…</span></a><a class="art" href="molecular-networks.signaling-networks.html"><span class="no">05</span><span class="t">信号转导网络</span><span class="d">信号转导网络描述细胞如何把外界刺激（配体、应激、细胞接触）转换为内部响应（转录、代谢、运动、分裂或凋亡）。与 PPI 网络相比，它的边有方向、有符号（激活/抑制），并常带有机制类型…</span></a><a class="art" href="molecular-networks.protein-complexes.html"><span class="no">06</span><span class="t">蛋白复合物与功能模块的检测</span><span class="d">Hartwell、Hopfield、Leibler &amp; Murray（1999, Nature）提出，功能模块是细胞生物学的基本组织单位：一组相互作用的分子共同完成一项相对独立的功…</span></a><a class="art" href="molecular-networks.centrality-lethality.html"><span class="no">07</span><span class="t">致死性与中心性：枢纽蛋白假说及其争议</span><span class="d">Jeong 等（2001）的发现 酿酒酵母中约五分之一的基因单独敲除就会致死，称为必需基因（essential gene）。Jeong, Mason, Barabási &amp; Olt…</span></a><a class="art" href="molecular-networks.disease-modules.html"><span class="no">08</span><span class="t">人类疾病网络与疾病模块</span><span class="d">Goh 等（2007）：人类疾病网络 Goh 等（2007, PNAS）用 OMIM 数据库中已知的疾病–基因关联构建了一个二分网络（“疾病组”, diseasome）：一类节点是…</span></a><a class="art" href="molecular-networks.network-motifs.html"><span class="no">09</span><span class="t">网络基序：类别与动力学功能</span><span class="d">什么是网络基序 网络基序（network motif; Milo 等, 2002, Science）：在真实网络中出现次数显著多于随机化网络的小型子图模式。显著性常用 衡量，其中随…</span></a><a class="art" href="molecular-networks.differential-networks.html"><span class="no">10</span><span class="t">条件特异性网络、差异网络与网络重连</span><span class="d">数据库中的 PPI 或调控网络是把不同细胞、不同时间、不同条件下测到的边“叠加”起来的静态并集。然而在任何一个细胞中，只有被表达的蛋白之间的相互作用可能发生，调控关系也随信号和细胞…</span></a><a class="art" href="molecular-networks.multiomics-integration.html"><span class="no">11</span><span class="t">多组学网络整合</span><span class="d">同一批样本或同一种疾病往往有多种组学数据：基因组变异、转录组、蛋白质组、磷酸化蛋白质组、代谢组、表观组。每种数据只看到系统的一个侧面，且噪声与偏倚各不相同。网络为整合提供了两条思路…</span></a><a class="art" href="molecular-networks.derivations.html"><span class="no">12</span><span class="t">数学推导与算法</span><span class="d">本节推导幂律指数的最大似然估计并给出 Clauset 等（2009）的完整检验流程，写出网络基序检测的算法，求解一致型 FFL 与负自调控的 ODE，定量得到“符号敏感延迟”与“加…</span></a><a class="art" href="molecular-networks.frontiers.html"><span class="no">13</span><span class="t">研究前沿与开放问题</span><span class="d">1. “无标度”的判定标准本身有争议：Broido &amp; Clauset（2019）认为强无标度少见；Voitalov 等（2019, Physical Review Researc…</span></a><a class="art" href="molecular-networks.biomedical.html"><span class="no">14</span><span class="t">生物医学应用</span><span class="d">分子网络在生物医学中的应用主线是从网络位置推断功能和疾病相关性： - 候选基因优先排序：全基因组关联研究（GWAS）常给出一个包含几十个基因的风险区间。利用 PPI 网络，可以优先…</span></a><a class="art" href="molecular-networks.limitations.html"><span class="no">15</span><span class="t">适用范围与常见误用</span><span class="d">1. 误用：STRING 中的每条边都是两个蛋白之间的物理结合。→ 正解：STRING 收录功能关联，包括共表达、文本挖掘等证据渠道；构建物理互作网络需要筛选证据渠道和置信度。 2…</span></a></div></section><section class="block" id="video"><h2><span class="tag">VIDEO</span>讲解视频</h2><div class="video-main"><video controls preload="metadata" playsinline poster="media/videos/L12-core.jpg"><source src="media/videos/L12-core.mp4" type="video/mp4"><track kind="captions" srclang="zh" label="中文字幕" src="media/videos/L12-core.vtt"></video><div class="video-meta"><strong>细胞里的网络：枢纽、疾病模块与前馈环</strong><span>4 分 8 秒</span></div><details class="transcript"><summary>文字稿</summary><p>大家好，这一期我们走进细胞内部，看看蛋白质和基因组成的网络。和脑网络、症状网络不同，这里的边原则上对应真实的物理事件。比如两个蛋白结合在一起，或者一个转录因子结合到某个基因的启动子上。</p><p>第一个问题，分子网络的数据从哪里来，可信吗。第二个问题，网络中的枢纽蛋白，是不是真的更关键。第三个问题，三五个基因组成的小基序，能完成什么样的功能。</p><p>蛋白质相互作用网络是无向的，节点是蛋白，边是物理结合。转录调控网络是有向的，从转录因子指向靶基因，还分激活和抑制。相互作用主要来自酵母双杂交和亲和纯化质谱，两者测到的边含义不同。人类互作组已整理出十几万条相互作用，但距离完整还很远。而且越热门的基因被报道的相互作用越多，这就是研究偏倚。</p><p>这是一个模拟的蛋白网络，红色的是少数连接特别多的枢纽。2001年，巴拉巴西团队在酵母中发现，度越高的蛋白越可能是必需的。度大于15的蛋白中，大约62%敲除后会致死，而低度蛋白只有约21%。删除枢纽后网络迅速碎裂，这曾被用来解释为什么枢纽更致命。但后来有学者指出，枢纽可能只是更容易包含某个必需的相互作用。也可能是因为枢纽集中在核糖体这类必需的复合物里，相关不等于机制。这个例子提醒我们，一个稳健的相关，可能对应好几种互相竞争的机制。</p><p>2007年，巴拉巴西团队又把疾病和致病基因连成一个二分网络。两个疾病共享致病基因就相连，于是得到了人类疾病网络。同类疾病聚在一起，它们的致病基因在相互作用网络中也更接近。有意思的是，大多数遗传病基因并不是枢纽，而是位于网络的外围。这启发了疾病模块假说，同一疾病的基因倾向于聚集在网络的局部区域。在网络推断和网络医学专题里，我们会在这个基础上讨论网络推断和药物重定位。</p><p>判断一个子图是不是基序，要和随机化网络比较。随机化时保持每个节点的入度和出度不变，只打乱连接对象。真实网络中的数量减去随机网络的均值，再除以标准差，就是Z分数。Z分数很大，说明这种结构的出现不能用度分布来解释。</p><p>现在把视角缩小到几个基因，看网络基序，也就是比随机网络多得多的小子图。最著名的是前馈环，X调控Y，X和Y又共同调控Z。如果Z要求X和Y同时存在，那么Z必须等Y积累起来才会开启。所以短暂的输入脉冲会被过滤掉，只有持续足够久的信号才能引起响应。这就像一个持续性检测器，帮助细胞忽略偶然的噪声。另一种常见基序是负自调控，它能加快响应、减小细胞间的波动。不过要记住，同样的结构换一组参数，功能就可能完全不同。</p><p>第一，分子网络边的含义取决于实验方法，使用数据库前要读懂证据来源。第二，重尾度分布和枢纽是稳健的，但严格的无标度要做统计检验。第三，枢纽与致死性的相关很稳健，但背后的机制仍有多种解释。第四，多数遗传病基因位于网络外围，疾病基因倾向于形成模块。第五，网络基序像电路元件，建议在代码示例里亲手模拟前馈环的滤波效果。</p></details></div></section><section class="block" id="demos"><h2><span class="tag">INTERACTIVE</span>交互可视化</h2><div class="demo" data-demo="ffl"></div><div class="demo" data-demo="attack"></div><div class="demo" data-demo="modularity"></div></section><section class="block" id="code"><h2><span class="tag">CODE</span>计算实现</h2><p class="small">13 个完整可运行的 Python 示例，每个都给出代码、输出图和解读；可在浏览器中直接运行，或下载 <a href="notebooks/molecular-networks.ipynb" download>Jupyter Notebook</a> · <a href="notebooks/molecular-networks.py" download>Python 脚本</a>。</p><div class="gallery"><a class="gcard" href="ex-molecular-networks-0.html"><span class="thumb"><img src="gallery/molecular-networks-0-0.png" alt="" loading="lazy"></span><span class="gt">重尾度分布与 Jeong 式统计</span></a><a class="gcard" href="ex-molecular-networks-1.html"><span class="thumb"><img src="gallery/molecular-networks-1-0.png" alt="" loading="lazy"></span><span class="gt">删除枢纽与随机删除对巨连通分支的影响</span></a><a class="gcard" href="ex-molecular-networks-2.html"><span class="thumb"><img src="gallery/molecular-networks-2-0.png" alt="" loading="lazy"></span><span class="gt">前馈环计数与保持入度/出度的随机化零模型（网络基序 Z 分数）</span></a><a class="gcard" href="ex-molecular-networks-3.html"><span class="thumb"><img src="gallery/molecular-networks-3-0.png" alt="" loading="lazy"></span><span class="gt">一致型 1 型前馈环（与门）的持续性检测</span></a><a class="gcard" href="ex-molecular-networks-4.html"><span class="thumb"><img src="gallery/molecular-networks-4-0.png" alt="" loading="lazy"></span><span class="gt">AP-MS 拉下数据的 spoke 模型与 matrix 模型</span></a><a class="gcard" href="ex-molecular-networks-5.html"><span class="thumb"><img src="gallery/molecular-networks-5-0.png" alt="" loading="lazy"></span><span class="gt">互作组补全——共同邻居（L2）与长度为 3 的路径（L3）链路预测</span></a><a class="gcard" href="ex-molecular-networks-6.html"><span class="thumb"><img src="gallery/molecular-networks-6-0.png" alt="" loading="lazy"></span><span class="gt">通量平衡分析（FBA）与反应敲除</span></a><a class="gcard" href="ex-molecular-networks-7.html"><span class="thumb"><img src="gallery/molecular-networks-7-0.png" alt="" loading="lazy"></span><span class="gt">负自调控加快响应；不一致型 1 型前馈环产生脉冲并加速</span></a><a class="gcard" href="ex-molecular-networks-8.html"><span class="thumb"><img src="gallery/molecular-networks-8-0.png" alt="" loading="lazy"></span><span class="gt">三节点子图普查（triad census）与显著性谱</span></a><a class="gcard" href="ex-molecular-networks-9.html"><span class="thumb"><img src="gallery/molecular-networks-9-0.png" alt="" loading="lazy"></span><span class="gt">马尔可夫聚类（MCL）检测蛋白复合物并与参考复合物匹配</span></a><a class="gcard" href="ex-molecular-networks-10.html"><span class="thumb"><img src="gallery/molecular-networks-10-0.png" alt="" loading="lazy"></span><span class="gt">度与必需性的混杂——控制复合物成员身份后度还有预测力吗？</span></a><a class="gcard" href="ex-molecular-networks-11.html"><span class="thumb"><img src="gallery/molecular-networks-11-0.png" alt="" loading="lazy"></span><span class="gt">差异共表达——Fisher z 检验与置换检验</span></a><a class="gcard" href="ex-molecular-networks-12.html"><span class="thumb"><img src="gallery/molecular-networks-12-0.png" alt="" loading="lazy"></span><span class="gt">相似性网络融合（SNF）整合两类组学数据</span></a></div></section><section class="block prose" id="related"><h2><span class="tag">Links</span>关联知识</h2><ul>
+<li><a
+href="network-models.html">小世界与无标度网络模型</a>：度分布、幂律与优先连接模型，是判断分子网络“重尾/无标度”的理论背景。</li>
+<li><a
+href="community-structure.html">社团结构与社区发现</a>：蛋白复合物、功能模块与层次模块化对应网络中的社团结构。</li>
+<li><a href="controllability.html">网络可控性与稳定性</a>与<a
+href="robustness.html">网络鲁棒性、渗流与级联失效</a>：随机失效与蓄意攻击下的鲁棒性，是中心性–致死性规则最初的类比来源，也说明了“网络碎裂”解释的局限。</li>
+<li><a
+href="gene-network-inference.html">基因调控网络推断与共表达分析</a>：当没有现成的物理相互作用网络时，如何从表达数据推断共表达与调控网络。</li>
+<li><a
+href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a>：把疾病模块、分离度和网络邻近度用于疾病关系与药物重定位。</li>
+<li><a
+href="symptom-networks.html">症状网络与网络精神病学</a>：同样面临“中心节点是否是干预靶点”的问题，正反馈与替代稳定态在概念上相通。</li>
+<li><a
+href="brain-connectome.html">脑连接组：结构与功能连接</a>：脑网络的富人俱乐部与
+PPI 的度异配形成对照。</li>
+<li><a
+href="degree-correlations.html">度相关性与网络结构的高阶统计</a>：度异配、富人俱乐部系数和三元组统计的定义与零模型，是分析
+PPI 度相关与网络基序的工具。</li>
+</ul>
+</section><section class="block" id="papers"><h2><span class="tag">Papers</span>论文精读</h2><div class="pgrid"><article class="pcard" data-own="0" data-dom="theory molecular" data-k="emergence of scaling in random networks随机网络中标度律的涌现无标度 幂律度分布 增长 优先连接 ba 模型 平均场"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">网络基础理论</span><span class="pbadge dm">分子网络与基因调控</span><span>Science · 1999</span></div><h3><a href="paper-barabasi1999_scaling.html">随机网络中标度律的涌现</a></h3><p class="porig">Emergence of scaling in random networks<br><span>Barabási A-L, Albert R</span></p><p class="psum">报告多个真实网络的度分布尾部近似幂律，并提出“增长 + 优先连接”模型，用平均场方法推出指数 γ=3。</p><div class="plec small">相关专题：<a href="network-models.html">小世界与无标度网络模型</a> <a href="molecular-networks.html">生物分子网络与拓扑特征</a></div></article><article class="pcard" data-own="0" data-dom="molecular theory dynamics" data-k="lethality and centrality in protein networks蛋白质网络中的致死性与中心性蛋白质相互作用网络 酵母 必需基因 枢纽 致死性–中心性规则"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">分子网络与基因调控</span><span class="pbadge dm">网络基础理论</span><span>Nature · 2001</span></div><h3><a href="paper-jeong2001_lethality.html">蛋白质网络中的致死性与中心性</a></h3><p class="porig">Lethality and centrality in protein networks<br><span>Jeong H, Mason SP, Barabási A-L, Oltvai ZN</span></p><p class="psum">在酵母蛋白质相互作用网络中发现度分布重尾，且度越高的蛋白敲除后越可能致死，提出“致死性–中心性”关系。</p><div class="plec small">相关专题：<a href="molecular-networks.html">生物分子网络与拓扑特征</a> <a href="network-models.html">小世界与无标度网络模型</a> <a href="controllability.html">网络可控性与稳定性</a></div></article><article class="pcard" data-own="0" data-dom="molecular methods" data-k="network motifs: simple building blocks of complex networks网络基序：复杂网络的简单构件网络基序 子图计数 零模型 前馈环 度保持随机化"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">分子网络与基因调控</span><span class="pbadge dm">计算方法与研究规范</span><span>Science · 2002</span></div><h3><a href="paper-milo2002_motifs.html">网络基序：复杂网络的简单构件</a></h3><p class="porig">Network motifs: simple building blocks of complex networks<br><span>Milo R, Shen-Orr S, Itzkovitz S, Kashtan N, Chklovskii D, Alon U</span></p><p class="psum">把“在真实网络中出现次数显著多于随机网络的小子图”定义为网络基序，发现不同领域的网络各有特征性基序。</p><div class="plec small">相关专题：<a href="molecular-networks.html">生物分子网络与拓扑特征</a> <a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></div></article><article class="pcard" data-own="0" data-dom="molecular" data-k="network motifs in the transcriptional regulation network of escherichia coli大肠杆菌转录调控网络中的网络基序网络基序 转录调控网络 前馈环 单输入模块 密集重叠调控子 随机化零模型"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">分子网络与基因调控</span><span>Nature Genetics · 2002</span></div><h3><a href="paper-shenorr2002_ecoli.html">大肠杆菌转录调控网络中的网络基序</a></h3><p class="porig">Network motifs in the transcriptional regulation network of Escherichia coli<br><span>Shen-Orr SS, Milo R, Mangan S, Alon U</span></p><p class="psum">在大肠杆菌转录调控网络中发现前馈环、单输入模块、密集重叠调控子三类富集基序。</p><div class="plec small">相关专题：<a href="molecular-networks.html">生物分子网络与拓扑特征</a> <a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></div></article><article class="pcard" data-own="0" data-dom="molecular methods" data-k="evidence for dynamically organized modularity in the yeast protein–protein interaction network酵母蛋白质相互作用网络中动态组织的模块性证据蛋白质相互作用网络 枢纽 date hub party hub 共表达 动态模块性"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">分子网络与基因调控</span><span class="pbadge dm">计算方法与研究规范</span><span>Nature · 2004</span></div><h3><a href="paper-han2004_datehubs.html">酵母蛋白质相互作用网络中动态组织的模块性证据</a></h3><p class="porig">Evidence for dynamically organized modularity in the yeast protein–protein interaction network<br><span>Han J-DJ, Bertin N, Hao T, Goldberg DS, Berriz GF, Zhang LV, et al.</span></p><p class="psum">结合共表达把酵母互作组枢纽分为 party hub 与 date hub，提出动态组织的模块性。</p><div class="plec small">相关专题：<a href="molecular-networks.html">生物分子网络与拓扑特征</a> <a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></div></article><article class="pcard" data-own="0" data-dom="molecular theory" data-k="a general framework for weighted gene co-expression network analysis加权基因共表达网络分析的一般框架wgcna 共表达网络 软阈值 无标度拓扑准则 拓扑重叠 加权聚集系数"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">分子网络与基因调控</span><span class="pbadge dm">网络基础理论</span><span>Statistical Applications in Genetics and Molecular Biology · 2005</span></div><h3><a href="paper-zhang2005_wgcna.html">加权基因共表达网络分析的一般框架</a></h3><p class="porig">A general framework for weighted gene co-expression network analysis<br><span>Zhang B, Horvath S</span></p><p class="psum">提出用“软阈值”把基因间相关转为连续连接权重，构建加权共表达网络，并把连接度、拓扑重叠、聚集系数推广到加权情形。</p><div class="plec small">相关专题：<a href="gene-network-inference.html">基因调控网络推断与共表达分析</a> <a href="molecular-networks.html">生物分子网络与拓扑特征</a> <a href="community-structure.html">社团结构与社区发现</a></div></article><article class="pcard" data-own="0" data-dom="molecular medicine theory" data-k="the human disease network人类疾病网络疾病组 二分网络 网络投影 疾病模块 必需基因 网络医学"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">分子网络与基因调控</span><span class="pbadge dm">网络医学与药物网络</span><span>PNAS · 2007</span></div><h3><a href="paper-goh2007_diseasenetwork.html">人类疾病网络</a></h3><p class="porig">The human disease network<br><span>Goh K-I, Cusick ME, Valle D, Childs B, Vidal M, Barabási A-L</span></p><p class="psum">用 OMIM 疾病–基因关联构建疾病网络，发现疾病共享遗传根源、按类别聚集，多数遗传病基因位于网络外围。</p><div class="plec small">相关专题：<a href="molecular-networks.html">生物分子网络与拓扑特征</a> <a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a> <a href="network-basics.html">复杂系统与网络的数学表示</a></div></article><article class="pcard" data-own="0" data-dom="medicine molecular" data-k="network medicine: a network-based approach to human disease网络医学：基于网络理解人类疾病网络医学 相互作用组 疾病模块 局部假说 疾病基因预测 人类疾病网络"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">网络医学与药物网络</span><span class="pbadge dm">分子网络与基因调控</span><span>Nature Reviews Genetics · 2011</span></div><h3><a href="paper-barabasi2011_networkmedicine.html">网络医学：基于网络理解人类疾病</a></h3><p class="porig">Network medicine: a network-based approach to human disease<br><span>Barabási A-L, Gulbahce N, Loscalzo J</span></p><p class="psum">纲领性综述：疾病很少源于单个基因，而是细胞分子网络的扰动；系统梳理网络医学的核心假设、疾病基因预测方法与疾病间关系网络。</p><div class="plec small">相关专题：<a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a> <a href="molecular-networks.html">生物分子网络与拓扑特征</a></div></article><article class="pcard" data-own="0" data-dom="molecular" data-k="wisdom of crowds for robust gene network inference群体智慧实现稳健的基因调控网络推断基因调控网络推断 dream5 群体智慧 集成方法 aupr 金标准"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">分子网络与基因调控</span><span>Nature Methods · 2012</span></div><h3><a href="paper-marbach2012_wisdom.html">群体智慧实现稳健的基因调控网络推断</a></h3><p class="porig">Wisdom of crowds for robust gene network inference<br><span>Marbach D, Costello JC, Küffner R, Vega NM, Prill RJ, Camacho DM, et al.; DREAM5 Consortium</span></p><p class="psum">DREAM5 挑战对 35 种网络推断方法做盲评，发现没有单一方法始终最优，而整合多种方法的“社区网络”最稳健。</p><div class="plec small">相关专题：<a href="gene-network-inference.html">基因调控网络推断与共表达分析</a> <a href="molecular-networks.html">生物分子网络与拓扑特征</a></div></article><article class="pcard" data-own="0" data-dom="medicine molecular" data-k="uncovering disease-disease relationships through the incomplete interactome借助不完整的相互作用组揭示疾病之间的关系相互作用组 疾病模块 渗流 网络分离度 共病 网络医学"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">网络医学与药物网络</span><span class="pbadge dm">分子网络与基因调控</span><span>Science · 2015</span></div><h3><a href="paper-menche2015_interactome.html">借助不完整的相互作用组揭示疾病之间的关系</a></h3><p class="porig">Uncovering disease-disease relationships through the incomplete interactome<br><span>Menche J, Sharma A, Kitsak M, Ghiassian SD, Vidal M, Loscalzo J, et al.</span></p><p class="psum">给出不完整互作组中疾病模块可被观测的条件，提出网络分离度，用以预测疾病间的生物与临床相似性。</p><div class="plec small">相关专题：<a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a> <a href="molecular-networks.html">生物分子网络与拓扑特征</a></div></article><article class="pcard" data-own="0" data-dom="medicine molecular" data-k="network-based in silico drug efficacy screening基于网络的药物疗效计算机筛选网络邻近度 药物重定位 疾病模块 相互作用组 度保持随机化 姑息治疗"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">网络医学与药物网络</span><span class="pbadge dm">分子网络与基因调控</span><span>Nature Communications · 2016</span></div><h3><a href="paper-guney2016_drugefficacy.html">基于网络的药物疗效计算机筛选</a></h3><p class="porig">Network-based in silico drug efficacy screening<br><span>Guney E, Menche J, Vidal M, Barabási A-L</span></p><p class="psum">提出校正度偏倚的药物–疾病网络邻近度，发现有效药物的靶点更靠近疾病基因。</p><div class="plec small">相关专题：<a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a> <a href="molecular-networks.html">生物分子网络与拓扑特征</a></div></article><article class="pcard" data-own="1" data-dom="dynamics molecular medicine" data-k="cancer-keeper genes as therapeutic targets癌症维持基因作为治疗靶点癌症维持基因 控制枢纽 控制路径 结构可控性 膀胱癌"><div class="pmeta"><span class="pbadge">研究论文</span><span class="pbadge dm">网络动力学与控制</span><span class="pbadge dm">分子网络与基因调控</span><span class="pbadge vid">▶ 视频</span><span>iScience · 2023</span></div><h3><a href="paper-zhang2023_cancerkeeper.html">癌症维持基因作为治疗靶点</a></h3><p class="porig">Cancer-keeper genes as therapeutic targets<br><span>Zhang X, Pan C, Wei X, Yu M, Liu S, An J, et al.</span></p><p class="psum">提出在所有控制方案中都处于控制路径中间的控制枢纽，用作癌症维持基因，并在膀胱癌细胞和小鼠模型中检验部分候选。</p><div class="plec small">相关专题：<a href="controllability.html">网络可控性与稳定性</a> <a href="molecular-networks.html">生物分子网络与拓扑特征</a> <a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></div></article><article class="pcard" data-own="1" data-dom="brain theory molecular" data-k="synaptic organization in shared receivers predicts connectivity between input neurons共同接收者中的突触组织预测输入神经元之间的连接连接组 突触位置 路径距离 下行神经元 果蝇 连接预测 物理网络"><div class="pmeta"><span class="pbadge">研究论文</span><span class="pbadge dm">脑网络与连接组</span><span class="pbadge dm">网络基础理论</span><span class="pbadge vid">▶ 视频</span><span>在投稿件 · 2026</span></div><h3><a href="paper-zhang2026_flysynapse.html">共同接收者中的突触组织预测输入神经元之间的连接</a></h3><p class="porig">Synaptic organization in shared receivers predicts connectivity between input neurons<br><span>Zhang X</span></p><p class="psum">在两个成年果蝇连接组中，相连输入源的突触在共同接收神经元上靠得更近，这种空间信息可帮助预测未见过的输入神经元之间的连接。</p><div class="plec small">相关专题：<a href="brain-connectome.html">脑连接组：结构与功能连接</a> <a href="network-metrics.html">网络结构指标与随机图</a> <a href="molecular-networks.html">生物分子网络与拓扑特征</a></div></article></div></section><section class="block prose" id="references"><h2><span class="tag">References</span>核心文献</h2><h3
+id="barabási-oltvai-2004network-biology-understanding-the-cells-functional-organization">Barabási
+&amp; Oltvai 2004：Network biology: understanding the cell’s functional
+organization</h3>
+<ul>
+<li><strong>背景</strong>：酵母
+PPI、代谢网络等大规模数据出现后，需要一个统一框架描述细胞内网络的组织原则。</li>
+<li><strong>核心发现</strong>：该综述（<em>Nature Reviews
+Genetics</em>，DOI: <a
+href="https://doi.org/10.1038/nrg1272">10.1038/nrg1272</a>）总结了分子网络的重尾度分布、小世界、层次模块化和基序等特征，提出从“单个分子”转向“网络组织”理解细胞功能。</li>
+<li><strong>阅读提示</strong>：这是网络生物学的奠基性综述，但部分结论（尤其是普遍的无标度性）在后续研究中被修正。阅读时把每个论断与<a
+href="molecular-networks.topology.html">分子网络的拓扑特征</a>和<a
+href="molecular-networks.centrality-lethality.html">致死性与中心性</a>中的“争议”对照。</li>
+<li><strong>思考题</strong>：文中把枢纽的存在归因于“优先连接”式的演化（基因复制）。还有哪些机制可以产生重尾度分布？如何用数据区分它们？</li>
+</ul>
+<h3 id="jeong-等-2001lethality-and-centrality-in-protein-networks">Jeong
+等 2001：Lethality and centrality in protein networks</h3>
+<ul>
+<li><strong>背景</strong>：已知无标度网络对攻击枢纽很脆弱（见<a
+href="controllability.html">网络可控性与稳定性</a>），作者想知道这一网络性质是否对应生物学后果。</li>
+<li><strong>核心发现</strong>：该短文（<em>Nature</em>，DOI: <a
+href="https://doi.org/10.1038/35075138">10.1038/35075138</a>）在酵母 PPI
+中发现度越高的蛋白越可能是必需的，度大于 15 的蛋白中约 62%
+必需，而度不超过 5 的蛋白中约 21% 必需。</li>
+<li><strong>阅读提示</strong>：全文只有两页，图 1c
+是核心证据。读完后可读 He &amp;
+Zhang（2006）的反驳，比较两者的论证逻辑。论文精读见 <a
+href="paper-jeong2001_lethality.html">Jeong 2001</a>。</li>
+<li><strong>思考题</strong>：如果有一个控制了研究偏倚的高质量 PPI
+数据集和每个蛋白所属复合物的注释，应如何设计分析来区分“网络碎裂”“必需相互作用”“必需复合物”三种解释？</li>
+</ul>
+<h3 id="alon-2007network-motifs-theory-and-experimental-approaches">Alon
+2007：Network motifs: theory and experimental approaches</h3>
+<ul>
+<li><strong>背景</strong>：Milo
+等（2002）定义了网络基序之后，需要回答：这些基序为什么被进化选择？它们执行什么功能？</li>
+<li><strong>核心发现</strong>：该综述（<em>Nature Reviews
+Genetics</em>，DOI: <a
+href="https://doi.org/10.1038/nrg2102">10.1038/nrg2102</a>）系统总结了自调控、前馈环、单输入模块等基序的动力学功能（加速、延迟、滤波、脉冲、时序控制）以及在细菌、酵母、动物中的实验证据。</li>
+<li><strong>阅读提示</strong>：重点读一致型与不一致型 FFL
+的部分，并用“前馈环”交互演示复现“持续性检测”现象。相关原始论文的精读见
+<a href="paper-milo2002_motifs.html">Milo 2002</a> 与 <a
+href="paper-shenorr2002_ecoli.html">Shen-Orr 2002</a>。</li>
+<li><strong>思考题</strong>：在癌症信号通路或炎症通路中，能否找到一个前馈环或负反馈环的例子？它的动力学功能对药物给药方案（持续给药
+vs 脉冲给药）有什么启示？</li>
+</ul>
+<h3
+id="jeong-等-2000the-large-scale-organization-of-metabolic-networks">Jeong
+等 2000：The large-scale organization of metabolic networks</h3>
+<ul>
+<li><strong>背景</strong>：在
+WWW、互联网等非生物网络中发现重尾度分布后，作者想知道细胞内的生化网络是否遵循相同的组织原则。</li>
+<li><strong>核心发现</strong>：该文（<em>Nature</em>，DOI: <a
+href="https://doi.org/10.1038/35036627">10.1038/35036627</a>）比较了生命三域中
+43
+种生物的代谢网络，报告它们尽管成分与通路差异很大，却具有相同的拓扑标度性质，并据此提出代谢网络遵循“鲁棒、容错的无标度网络”的设计原则。</li>
+<li><strong>阅读提示</strong>：与 Arita（2004）、Ma &amp;
+Zeng（2003）对照阅读：货币代谢物的处理方式和图表示的选择，会显著改变度分布与平均路径长度。正文见<a
+href="molecular-networks.metabolic-networks.html">代谢网络与通量平衡分析</a>。</li>
+<li><strong>思考题</strong>：如果用二分图或追踪碳原子的方式重建同一个代谢网络，哪些结论会保留，哪些会改变？</li>
+</ul>
+<h3
+id="luck-等-2020a-reference-map-of-the-human-binary-protein-interactome">Luck
+等 2020：A reference map of the human binary protein interactome</h3>
+<ul>
+<li><strong>背景</strong>：文献整理的人类 PPI
+数据高度偏向研究充分的蛋白，需要一张对全部蛋白对“一视同仁”的系统性二元图谱。</li>
+<li><strong>核心发现</strong>：该文（<em>Nature</em>，DOI: <a
+href="https://doi.org/10.1038/s41586-020-2188-x">10.1038/s41586-020-2188-x</a>）报告了人类“全对全”二元参考互作图谱
+HuRI，含约 53000 条 PPI，约为小规模研究中高质量整理数据的 4
+倍；结合基因组、转录组与蛋白质组数据推断组织特异网络，用于解释孟德尔病的组织特异表型。</li>
+<li><strong>阅读提示</strong>：重点看质量控制（正交验证、阳性/随机参考集）与组织特异网络的构建方式。正文见<a
+href="molecular-networks.ppi-mapping.html">相互作用组图谱</a>。</li>
+<li><strong>思考题</strong>：在 HuRI
+与文献整理网络上分别计算疾病基因的平均度，你预期结果有何不同？为什么？</li>
+</ul>
+<h3
+id="vidalcusick-barabási-2011interactome-networks-and-human-disease">Vidal、Cusick
+&amp; Barabási 2011：Interactome networks and human disease</h3>
+<ul>
+<li><strong>背景</strong>：从“单个基因–单个疾病”转向把基因型–表型关系放在相互作用组背景下理解。</li>
+<li><strong>核心发现</strong>：该综述（<em>Cell</em>，DOI: <a
+href="https://doi.org/10.1016/j.cell.2011.02.016">10.1016/j.cell.2011.02.016</a>）系统梳理了相互作用组图谱的实验策略、质量评估、不同类型的分子网络，以及疾病作为网络扰动（包括节点删除与
+edgetic 扰动）的观点。</li>
+<li><strong>阅读提示</strong>：可作为<a
+href="molecular-networks.ppi-mapping.html">相互作用组图谱</a>与<a
+href="molecular-networks.disease-modules.html">疾病模块</a>两页的总览阅读。</li>
+<li><strong>思考题</strong>：二元图谱与共复合物图谱分别更适合回答哪些疾病机制问题？</li>
+</ul>
+<h3
+id="orththiele-palsson-2010what-is-flux-balance-analysis">Orth、Thiele
+&amp; Palsson 2010：What is flux balance analysis?</h3>
+<ul>
+<li><strong>背景</strong>：基于约束的代谢建模在微生物工程与系统生物学中广泛使用，需要一份简明的入门说明。</li>
+<li><strong>核心发现</strong>：该入门文章（<em>Nature
+Biotechnology</em>，DOI: <a
+href="https://doi.org/10.1038/nbt.1614">10.1038/nbt.1614</a>）用一个小例子讲解化学计量矩阵、稳态约束、上下界与目标函数，说明
+FBA 如何用线性规划预测生长率和基因敲除效果，以及它的主要局限。</li>
+<li><strong>阅读提示</strong>：读完后用代码示例中的玩具网络复现“旁路使反应非必需”的结论（见<a
+href="molecular-networks.html#code">FBA 与反应敲除</a>）。</li>
+<li><strong>思考题</strong>：对于人类分化细胞，什么样的目标函数比“最大化生物量”更合理？如何用数据检验它？</li>
+</ul>
+<h3 id="ideker-krogan-2012differential-network-biology">Ideker &amp;
+Krogan 2012：Differential network biology</h3>
+<ul>
+<li><strong>背景</strong>：静态互作组把不同条件下的边叠加在一起，掩盖了细胞对刺激的响应方式。</li>
+<li><strong>核心发现</strong>：该综述（<em>Molecular Systems
+Biology</em>，DOI: <a
+href="https://doi.org/10.1038/msb.2011.99">10.1038/msb.2011.99</a>）主张在不同条件下测量并比较网络，以“改变的边”揭示条件特异的功能，讨论了差异遗传相互作用与差异物理相互作用的实验与分析策略。</li>
+<li><strong>阅读提示</strong>：与 Bandyopadhyay 等（2010）的 DNA
+损伤差异上位性图谱一起读。正文见<a
+href="molecular-networks.differential-networks.html">差异网络</a>。</li>
+<li><strong>思考题</strong>：如果只有两组各 30
+个样本的表达数据，你能可靠地检测哪种程度的“重连”？（参考<a
+href="molecular-networks.derivations.html">数学推导与算法</a>中的样本量估计。）</li>
+</ul>
+<h3 id="其他引用文献">其他引用文献</h3>
+<ul>
+<li>Uetz P 等 (2000). A comprehensive analysis of protein–protein
+interactions in Saccharomyces cerevisiae. <em>Nature</em> 403:623-627.
+DOI <a
+href="https://doi.org/10.1038/35001009">10.1038/35001009</a>。</li>
+<li>Ito T 等 (2001). A comprehensive two-hybrid analysis to explore the
+yeast protein interactome. <em>Proceedings of the National Academy of
+Sciences</em> 98:4569-4574. DOI <a
+href="https://doi.org/10.1073/pnas.061034498">10.1073/pnas.061034498</a>。</li>
+<li>Gavin AC 等 (2002). Functional organization of the yeast proteome by
+systematic analysis of protein complexes. <em>Nature</em> 415:141-147.
+DOI <a href="https://doi.org/10.1038/415141a" target="_blank" rel="noopener">10.1038/415141a</a>。</li>
+<li>Ho Y 等 (2002). Systematic identification of protein complexes in
+Saccharomyces cerevisiae by mass spectrometry. <em>Nature</em>
+415:180-183. DOI <a
+href="https://doi.org/10.1038/415180a">10.1038/415180a</a>。</li>
+<li>Gavin AC 等 (2006). Proteome survey reveals modularity of the yeast
+cell machinery. <em>Nature</em> 440:631-636. DOI <a
+href="https://doi.org/10.1038/nature04532">10.1038/nature04532</a>。</li>
+<li>Krogan NJ 等 (2006). Global landscape of protein complexes in the
+yeast Saccharomyces cerevisiae. <em>Nature</em> 440:637-643. DOI <a
+href="https://doi.org/10.1038/nature04670">10.1038/nature04670</a>。</li>
+<li>Rual JF 等 (2005). Towards a proteome-scale map of the human
+protein–protein interaction network. <em>Nature</em> 437:1173-1178. DOI
+<a
+href="https://doi.org/10.1038/nature04209">10.1038/nature04209</a>。</li>
+<li>Rolland T 等 (2014). A Proteome-Scale Map of the Human Interactome
+Network. <em>Cell</em> 159:1212-1226. DOI <a
+href="https://doi.org/10.1016/j.cell.2014.10.050">10.1016/j.cell.2014.10.050</a>。</li>
+<li>Huttlin EL 等 (2017). Architecture of the human interactome defines
+protein communities and disease networks. <em>Nature</em> 545:505-509.
+DOI <a
+href="https://doi.org/10.1038/nature22366">10.1038/nature22366</a>。</li>
+<li>Huttlin EL 等 (2021). Dual proteome-scale networks reveal
+cell-specific remodeling of the human interactome. <em>Cell</em>
+184:3022-3040.e28. DOI <a
+href="https://doi.org/10.1016/j.cell.2021.04.011">10.1016/j.cell.2021.04.011</a>。</li>
+<li>Yu H 等 (2008). High-Quality Binary Protein Interaction Map of the
+Yeast Interactome Network. <em>Science</em> 322:104-110. DOI <a
+href="https://doi.org/10.1126/science.1158684">10.1126/science.1158684</a>。</li>
+<li>Venkatesan K 等 (2009). An empirical framework for binary
+interactome mapping. <em>Nature Methods</em> 6:83-90. DOI <a
+href="https://doi.org/10.1038/nmeth.1280">10.1038/nmeth.1280</a>。</li>
+<li>von Mering C 等 (2002). Comparative assessment of large-scale data
+sets of protein–protein interactions. <em>Nature</em> 417:399-403. DOI
+<a href="https://doi.org/10.1038/nature750" target="_blank" rel="noopener">10.1038/nature750</a>。</li>
+<li>Stumpf MPH 等 (2008). Estimating the size of the human interactome.
+<em>Proceedings of the National Academy of Sciences</em> 105:6959-6964.
+DOI <a
+href="https://doi.org/10.1073/pnas.0708078105">10.1073/pnas.0708078105</a>。</li>
+<li>Han JDJ 等 (2005). Effect of sampling on topology predictions of
+protein-protein interaction networks. <em>Nature Biotechnology</em>
+23:839-844. DOI <a
+href="https://doi.org/10.1038/nbt1116">10.1038/nbt1116</a>。</li>
+<li>Stumpf MPH 等 (2005). Subnets of scale-free networks are not
+scale-free: Sampling properties of networks. <em>Proceedings of the
+National Academy of Sciences</em> 102:4221-4224. DOI <a
+href="https://doi.org/10.1073/pnas.0501179102">10.1073/pnas.0501179102</a>。</li>
+<li>Kovács IA 等 (2019). Network-based prediction of protein
+interactions. <em>Nature Communications</em> 10:1240. DOI <a
+href="https://doi.org/10.1038/s41467-019-09177-y">10.1038/s41467-019-09177-y</a>。</li>
+<li>Maslov S, Sneppen K (2002). Specificity and Stability in Topology of
+Protein Networks. <em>Science</em> 296:910-913. DOI <a
+href="https://doi.org/10.1126/science.1065103">10.1126/science.1065103</a>。</li>
+<li>Ravasz E 等 (2002). Hierarchical Organization of Modularity in
+Metabolic Networks. <em>Science</em> 297:1551-1555. DOI <a
+href="https://doi.org/10.1126/science.1073374">10.1126/science.1073374</a>。</li>
+<li>Batada NN 等 (2006). Stratus Not Altocumulus: A New View of the
+Yeast Protein Interaction Network. <em>PLoS Biology</em> 4:e317. DOI <a
+href="https://doi.org/10.1371/journal.pbio.0040317">10.1371/journal.pbio.0040317</a>。</li>
+<li>Guimerà R, Nunes Amaral LA (2005). Functional cartography of complex
+metabolic networks. <em>Nature</em> 433:895-900. DOI <a
+href="https://doi.org/10.1038/nature03288">10.1038/nature03288</a>。</li>
+<li>Ma HW, Zeng AP (2003). The connectivity structure, giant strong
+component and centrality of metabolic networks. <em>Bioinformatics</em>
+19:1423-1430. DOI <a
+href="https://doi.org/10.1093/bioinformatics/btg177">10.1093/bioinformatics/btg177</a>。</li>
+<li>Arita M (2004). The metabolic world of Escherichia coli is not
+small. <em>Proceedings of the National Academy of Sciences</em>
+101:1543-1547. DOI <a
+href="https://doi.org/10.1073/pnas.0306458101">10.1073/pnas.0306458101</a>。</li>
+<li>Schuster S 等 (2000). A general definition of metabolic pathways
+useful for systematic organization and analysis of complex metabolic
+networks. <em>Nature Biotechnology</em> 18:326-332. DOI <a
+href="https://doi.org/10.1038/73786">10.1038/73786</a>。</li>
+<li>Edwards JS, Palsson BO (2000). The Escherichia coli MG1655 in silico
+metabolic genotype: Its definition, characteristics, and capabilities.
+<em>Proceedings of the National Academy of Sciences</em> 97:5528-5533.
+DOI <a
+href="https://doi.org/10.1073/pnas.97.10.5528">10.1073/pnas.97.10.5528</a>。</li>
+<li>Ibarra RU 等 (2002). Escherichia coli K-12 undergoes adaptive
+evolution to achieve in silico predicted optimal growth. <em>Nature</em>
+420:186-189. DOI <a
+href="https://doi.org/10.1038/nature01149">10.1038/nature01149</a>。</li>
+<li>Duarte NC 等 (2007). Global reconstruction of the human metabolic
+network based on genomic and bibliomic data. <em>Proceedings of the
+National Academy of Sciences</em> 104:1777-1782. DOI <a
+href="https://doi.org/10.1073/pnas.0610772104">10.1073/pnas.0610772104</a>。</li>
+<li>Bhalla US, Iyengar R (1999). Emergent Properties of Networks of
+Biological Signaling Pathways. <em>Science</em> 283:381-387. DOI <a
+href="https://doi.org/10.1126/science.283.5400.381">10.1126/science.283.5400.381</a>。</li>
+<li>Ma’ayan A 等 (2005). Formation of Regulatory Patterns During Signal
+Propagation in a Mammalian Cellular Network. <em>Science</em>
+309:1078-1083. DOI <a
+href="https://doi.org/10.1126/science.1108876">10.1126/science.1108876</a>。</li>
+<li>Huang CY, Ferrell JE (1996). Ultrasensitivity in the
+mitogen-activated protein kinase cascade. <em>Proceedings of the
+National Academy of Sciences</em> 93:10078-10083. DOI <a
+href="https://doi.org/10.1073/pnas.93.19.10078">10.1073/pnas.93.19.10078</a>。</li>
+<li>Türei D 等 (2016). OmniPath: guidelines and gateway for
+literature-curated signaling pathway resources. <em>Nature Methods</em>
+13:966-967. DOI <a
+href="https://doi.org/10.1038/nmeth.4077">10.1038/nmeth.4077</a>。</li>
+<li>Hartwell LH 等 (1999). From molecular to modular cell biology.
+<em>Nature</em> 402:C47-C52. DOI <a
+href="https://doi.org/10.1038/35011540">10.1038/35011540</a>。</li>
+<li>Spirin V, Mirny LA (2003). Protein complexes and functional modules
+in molecular networks. <em>Proceedings of the National Academy of
+Sciences</em> 100:12123-12128. DOI <a
+href="https://doi.org/10.1073/pnas.2032324100">10.1073/pnas.2032324100</a>。</li>
+<li>Bader GD, Hogue CW (2003). An automated method for finding molecular
+complexes in large protein interaction networks. <em>BMC
+Bioinformatics</em> 4:2. DOI <a
+href="https://doi.org/10.1186/1471-2105-4-2">10.1186/1471-2105-4-2</a>。</li>
+<li>Enright AJ 等 (2002). An efficient algorithm for large-scale
+detection of protein families. <em>Nucleic Acids Research</em>
+30:1575-1584. DOI <a
+href="https://doi.org/10.1093/nar/30.7.1575">10.1093/nar/30.7.1575</a>。</li>
+<li>Nepusz T 等 (2012). Detecting overlapping protein complexes in
+protein-protein interaction networks. <em>Nature Methods</em> 9:471-472.
+DOI <a
+href="https://doi.org/10.1038/nmeth.1938">10.1038/nmeth.1938</a>。</li>
+<li>Giurgiu M 等 (2019). CORUM: the comprehensive resource of mammalian
+protein complexes—2019. <em>Nucleic Acids Research</em> 47:D559-D563.
+DOI <a
+href="https://doi.org/10.1093/nar/gky973">10.1093/nar/gky973</a>。</li>
+<li>He X, Zhang J (2006). Why Do Hubs Tend to Be Essential in Protein
+Networks? <em>PLoS Genetics</em> 2:e88. DOI <a
+href="https://doi.org/10.1371/journal.pgen.0020088">10.1371/journal.pgen.0020088</a>。</li>
+<li>Kim PM 等 (2006). Relating Three-Dimensional Structures to Protein
+Networks Provides Evolutionary Insights. <em>Science</em> 314:1938-1941.
+DOI <a
+href="https://doi.org/10.1126/science.1136174">10.1126/science.1136174</a>。</li>
+<li>Costanzo M 等 (2016). A global genetic interaction network maps a
+wiring diagram of cellular function. <em>Science</em> 353:aaf1420. DOI
+<a
+href="https://doi.org/10.1126/science.aaf1420">10.1126/science.aaf1420</a>。</li>
+<li>Hart T 等 (2015). High-Resolution CRISPR Screens Reveal Fitness
+Genes and Genotype-Specific Cancer Liabilities. <em>Cell</em>
+163:1515-1526. DOI <a
+href="https://doi.org/10.1016/j.cell.2015.11.015">10.1016/j.cell.2015.11.015</a>。</li>
+<li>Wang T 等 (2015). Identification and characterization of essential
+genes in the human genome. <em>Science</em> 350:1096-1101. DOI <a
+href="https://doi.org/10.1126/science.aac7041">10.1126/science.aac7041</a>。</li>
+<li>Agarwal S 等 (2010). Revisiting Date and Party Hubs: Novel
+Approaches to Role Assignment in Protein Interaction Networks. <em>PLoS
+Computational Biology</em> 6:e1000817. DOI <a
+href="https://doi.org/10.1371/journal.pcbi.1000817">10.1371/journal.pcbi.1000817</a>。</li>
+<li>Taylor IW 等 (2009). Dynamic modularity in protein interaction
+networks predicts breast cancer outcome. <em>Nature Biotechnology</em>
+27:199-204. DOI <a
+href="https://doi.org/10.1038/nbt.1522">10.1038/nbt.1522</a>。</li>
+<li>Zhong Q 等 (2009). Edgetic perturbation models of human inherited
+disorders. <em>Molecular Systems Biology</em> 5:MSB200980. DOI <a
+href="https://doi.org/10.1038/msb.2009.80">10.1038/msb.2009.80</a>。</li>
+<li>Sahni N 等 (2015). Widespread Macromolecular Interaction
+Perturbations in Human Genetic Disorders. <em>Cell</em> 161:647-660. DOI
+<a
+href="https://doi.org/10.1016/j.cell.2015.04.013">10.1016/j.cell.2015.04.013</a>。</li>
+<li>Milo R 等 (2002). Network Motifs: Simple Building Blocks of Complex
+Networks. <em>Science</em> 298:824-827. DOI <a
+href="https://doi.org/10.1126/science.298.5594.824">10.1126/science.298.5594.824</a>。</li>
+<li>Shen-Orr SS 等 (2002). Network motifs in the transcriptional
+regulation network of Escherichia coli. <em>Nature Genetics</em>
+31:64-68. DOI <a
+href="https://doi.org/10.1038/ng881">10.1038/ng881</a>。</li>
+<li>Lee TI 等 (2002). Transcriptional Regulatory Networks in
+Saccharomyces cerevisiae. <em>Science</em> 298:799-804. DOI <a
+href="https://doi.org/10.1126/science.1075090">10.1126/science.1075090</a>。</li>
+<li>Milo R 等 (2004). Superfamilies of Evolved and Designed Networks.
+<em>Science</em> 303:1538-1542. DOI <a
+href="https://doi.org/10.1126/science.1089167">10.1126/science.1089167</a>。</li>
+<li>Rosenfeld N 等 (2002). Negative Autoregulation Speeds the Response
+Times of Transcription Networks. <em>Journal of Molecular Biology</em>
+323:785-793. DOI <a
+href="https://doi.org/10.1016/S0022-2836(02)00994-4">10.1016/S0022-2836(02)00994-4</a>。</li>
+<li>Becskei A, Serrano L (2000). Engineering stability in gene networks
+by autoregulation. <em>Nature</em> 405:590-593. DOI <a
+href="https://doi.org/10.1038/35014651">10.1038/35014651</a>。</li>
+<li>Mangan S, Alon U (2003). Structure and function of the feed-forward
+loop network motif. <em>Proceedings of the National Academy of
+Sciences</em> 100:11980-11985. DOI <a
+href="https://doi.org/10.1073/pnas.2133841100">10.1073/pnas.2133841100</a>。</li>
+<li>Mangan S 等 (2003). The Coherent Feedforward Loop Serves as a
+Sign-sensitive Delay Element in Transcription Networks. <em>Journal of
+Molecular Biology</em> 334:197-204. DOI <a
+href="https://doi.org/10.1016/j.jmb.2003.09.049">10.1016/j.jmb.2003.09.049</a>。</li>
+<li>Mangan S 等 (2006). The Incoherent Feed-forward Loop Accelerates the
+Response-time of the gal System of Escherichia coli. <em>Journal of
+Molecular Biology</em> 356:1073-1081. DOI <a
+href="https://doi.org/10.1016/j.jmb.2005.12.003">10.1016/j.jmb.2005.12.003</a>。</li>
+<li>Kalir S 等 (2001). Ordering Genes in a Flagella Pathway by Analysis
+of Expression Kinetics from Living Bacteria. <em>Science</em>
+292:2080-2083. DOI <a
+href="https://doi.org/10.1126/science.1058758">10.1126/science.1058758</a>。</li>
+<li>Zaslaver A 等 (2004). Just-in-time transcription program in
+metabolic pathways. <em>Nature Genetics</em> 36:486-491. DOI <a
+href="https://doi.org/10.1038/ng1348">10.1038/ng1348</a>。</li>
+<li>Gardner TS 等 (2000). Construction of a genetic toggle switch in
+Escherichia coli. <em>Nature</em> 403:339-342. DOI <a
+href="https://doi.org/10.1038/35002131">10.1038/35002131</a>。</li>
+<li>Elowitz MB, Leibler S (2000). A synthetic oscillatory network of
+transcriptional regulators. <em>Nature</em> 403:335-338. DOI <a
+href="https://doi.org/10.1038/35002125">10.1038/35002125</a>。</li>
+<li>Yeger-Lotem E 等 (2004). Network motifs in integrated cellular
+networks of transcription–regulation and protein–protein interaction.
+<em>Proceedings of the National Academy of Sciences</em> 101:5934-5939.
+DOI <a
+href="https://doi.org/10.1073/pnas.0306752101">10.1073/pnas.0306752101</a>。</li>
+<li>Bossi A, Lehner B (2009). Tissue specificity and the human protein
+interaction network. <em>Molecular Systems Biology</em> 5:MSB200917. DOI
+<a
+href="https://doi.org/10.1038/msb.2009.17">10.1038/msb.2009.17</a>。</li>
+<li>Greene CS 等 (2015). Understanding multicellular function and
+disease with human tissue-specific networks. <em>Nature Genetics</em>
+47:569-576. DOI <a
+href="https://doi.org/10.1038/ng.3259">10.1038/ng.3259</a>。</li>
+<li>Bandyopadhyay S 等 (2010). Rewiring of Genetic Networks in Response
+to DNA Damage. <em>Science</em> 330:1385-1389. DOI <a
+href="https://doi.org/10.1126/science.1195618">10.1126/science.1195618</a>。</li>
+<li>de la Fuente A (2010). From ‘differential expression’ to
+‘differential networking’ – identification of dysfunctional regulatory
+networks in diseases. <em>Trends in Genetics</em> 26:326-333. DOI <a
+href="https://doi.org/10.1016/j.tig.2010.05.001">10.1016/j.tig.2010.05.001</a>。</li>
+<li>Hasin Y 等 (2017). Multi-omics approaches to disease. <em>Genome
+Biology</em> 18:83. DOI <a
+href="https://doi.org/10.1186/s13059-017-1215-1">10.1186/s13059-017-1215-1</a>。</li>
+<li>Mitra K 等 (2013). Integrative approaches for finding modular
+structure in biological networks. <em>Nature Reviews Genetics</em>
+14:719-732. DOI <a
+href="https://doi.org/10.1038/nrg3552">10.1038/nrg3552</a>。</li>
+<li>Ideker T 等 (2002). Discovering regulatory and signalling circuits
+in molecular interaction networks. <em>Bioinformatics</em> 18:S233-S240.
+DOI <a
+href="https://doi.org/10.1093/bioinformatics/18.suppl_1.S233">10.1093/bioinformatics/18.suppl_1.S233</a>。</li>
+<li>Leiserson MDM 等 (2015). Pan-cancer network analysis identifies
+combinations of rare somatic mutations across pathways and protein
+complexes. <em>Nature Genetics</em> 47:106-114. DOI <a
+href="https://doi.org/10.1038/ng.3168">10.1038/ng.3168</a>。</li>
+<li>Tuncbag N 等 (2016). Network-Based Interpretation of Diverse
+High-Throughput Datasets through the Omics Integrator Software Package.
+<em>PLOS Computational Biology</em> 12:e1004879. DOI <a
+href="https://doi.org/10.1371/journal.pcbi.1004879">10.1371/journal.pcbi.1004879</a>。</li>
+<li>Wang B 等 (2014). Similarity network fusion for aggregating data
+types on a genomic scale. <em>Nature Methods</em> 11:333-337. DOI <a
+href="https://doi.org/10.1038/nmeth.2810">10.1038/nmeth.2810</a>。</li>
+<li>Alon U (2019). <em>An Introduction to Systems Biology: Design
+Principles of Biological Circuits</em>, 2nd ed. CRC
+Press.（网络基序、自调控、前馈环、单输入模块、发育网络中的反馈环等各章，是<a
+href="molecular-networks.network-motifs.html">网络基序</a>页面的主要参照。）</li>
+</ul>
+</section><section class="block" id="data"><h2><span class="tag">Data &amp; tools</span>相关数据与软件</h2><div class="rgrid"><a class="rcard" href="r-string-db.html" data-dom="molecular medicine" data-k="string 整合实验、数据库、共表达与文本挖掘证据的蛋白功能关联网络。"><span class="kind">数据库</span><b>STRING</b><span class="d">整合实验、数据库、共表达与文本挖掘证据的蛋白功能关联网络。</span></a><a class="rcard" href="r-biogrid.html" data-dom="molecular" data-k="biogrid 人工整理的蛋白、遗传与化学相互作用数据库。"><span class="kind">数据库</span><b>BioGRID</b><span class="d">人工整理的蛋白、遗传与化学相互作用数据库。</span></a><a class="rcard" href="r-intact.html" data-dom="molecular" data-k="intact embl-ebi 维护、按 imex 标准整理的分子相互作用数据库。"><span class="kind">数据库</span><b>IntAct</b><span class="d">EMBL-EBI 维护、按 IMEx 标准整理的分子相互作用数据库。</span></a><a class="rcard" href="r-huri.html" data-dom="molecular medicine" data-k="huri（人类参考蛋白互作组） 系统酵母双杂交筛选得到的人类二元蛋白互作图谱。"><span class="kind">数据集</span><b>HuRI（人类参考蛋白互作组）</b><span class="d">系统酵母双杂交筛选得到的人类二元蛋白互作图谱。</span></a><a class="rcard" href="r-trrust.html" data-dom="molecular" data-k="trrust v2 文献挖掘加人工整理的人与小鼠转录调控关系数据库。"><span class="kind">数据库</span><b>TRRUST v2</b><span class="d">文献挖掘加人工整理的人与小鼠转录调控关系数据库。</span></a><a class="rcard" href="r-collectri-dorothea.html" data-dom="molecular" data-k="collectri / dorothea saez 实验室整理的带符号转录因子调控子集合，用于推断 tf 活性。"><span class="kind">数据库</span><b>CollecTRI / DoRothEA</b><span class="d">Saez 实验室整理的带符号转录因子调控子集合，用于推断 TF 活性。</span></a><a class="rcard" href="r-ncbi-geo.html" data-dom="molecular" data-k="ncbi geo（基因表达综合数据库） ncbi 的公共功能基因组数据仓库，收录芯片与测序表达数据。"><span class="kind">数据库</span><b>NCBI GEO（基因表达综合数据库）</b><span class="d">NCBI 的公共功能基因组数据仓库，收录芯片与测序表达数据。</span></a><a class="rcard" href="r-reactome.html" data-dom="molecular medicine" data-k="reactome 人工整理、同行评审的开放通路知识库。"><span class="kind">数据库</span><b>Reactome</b><span class="d">人工整理、同行评审的开放通路知识库。</span></a><a class="rcard" href="r-kegg.html" data-dom="molecular medicine" data-k="kegg 京都基因与基因组百科全书，含通路图、直系同源与药物疾病信息。"><span class="kind">数据库</span><b>KEGG</b><span class="d">京都基因与基因组百科全书，含通路图、直系同源与药物疾病信息。</span></a><a class="rcard" href="r-gene-ontology.html" data-dom="molecular" data-k="gene ontology（go） 描述基因功能的标准本体及注释资源。"><span class="kind">数据库</span><b>Gene Ontology（GO）</b><span class="d">描述基因功能的标准本体及注释资源。</span></a><a class="rcard" href="r-msigdb.html" data-dom="molecular medicine" data-k="msigdb（分子特征数据库） 用于基因集富集分析（gsea）的人和小鼠基因集合库。"><span class="kind">数据库</span><b>MSigDB（分子特征数据库）</b><span class="d">用于基因集富集分析（GSEA）的人和小鼠基因集合库。</span></a><a class="rcard" href="r-cytoscape.html" data-dom="molecular methods" data-k="cytoscape 生物网络可视化与分析的开源桌面平台，有丰富插件生态。"><span class="kind">软件/工具包</span><b>Cytoscape</b><span class="d">生物网络可视化与分析的开源桌面平台，有丰富插件生态。</span></a><a class="rcard" href="r-flywire.html" data-dom="brain" data-k="flywire 成年雌性果蝇全脑电镜连接组。"><span class="kind">数据集</span><b>FlyWire</b><span class="d">成年雌性果蝇全脑电镜连接组。</span></a></div></section><section class="block prose" id="resources"><h2><span class="tag">Further</span>延伸资源</h2><div class="table-wrap"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>类型</th>
+<th>资源</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>视频</td>
+<td><a
+href="https://www.bilibili.com/video/BV1V7411n78f/">系统生物学讲义
+1–4（张弓，2017）</a>（B 站）</td>
+<td>中文，约 4
+小时，讲解系统生物学概念、网络构建与调控；上传者非讲者本人</td>
+</tr>
+<tr>
+<td>视频</td>
+<td>Uri Alon, Systems Biology 2018：<a
+href="https://www.bilibili.com/video/BV1YT411c7Y9/">B 站 AI
+双语转载</a>；<a
+href="https://www.youtube.com/playlist?list=PLLbr-B8cNbo6v4kc68JowzUeAYdh6gdQH">YouTube
+原始播放列表</a>（需境外网络）</td>
+<td>网络基序的权威系列讲座，推荐第 1 集（基本概念）、第 2
+集（自调控）、第 3 集（前馈环）；B 站版为转载，授权情况不明</td>
+</tr>
+<tr>
+<td>视频</td>
+<td><a href="https://www.bilibili.com/video/BV1n34y1b7by/" target="_blank" rel="noopener">PPI
+网络：蛋白互作网络的构建与核心基因的筛选</a>（B 站）</td>
+<td>中文，31 分钟，STRING + Cytoscape 实操</td>
+</tr>
+<tr>
+<td>综述</td>
+<td>Barabási &amp; Oltvai 2004，<a
+href="https://doi.org/10.1038/nrg1272">doi.org/10.1038/nrg1272</a></td>
+<td>网络生物学经典入门</td>
+</tr>
+<tr>
+<td>综述</td>
+<td>Alon 2007，<a
+href="https://doi.org/10.1038/nrg2102">doi.org/10.1038/nrg2102</a></td>
+<td>网络基序的理论与实验</td>
+</tr>
+<tr>
+<td>经典论文</td>
+<td>Jeong 等 2001，<a
+href="https://doi.org/10.1038/35075138">doi.org/10.1038/35075138</a>；Goh
+等 2007，<a
+href="https://doi.org/10.1073/pnas.0701361104">doi.org/10.1073/pnas.0701361104</a></td>
+<td>致死性–中心性与人类疾病网络两篇原始论文，适合精读；精读见 <a
+href="paper-jeong2001_lethality.html">Jeong 2001</a>、<a
+href="paper-goh2007_diseasenetwork.html">Goh 2007</a></td>
+</tr>
+<tr>
+<td>数据库</td>
+<td><a href="https://string-db.org/" target="_blank" rel="noopener">STRING</a> / <a
+href="https://thebiogrid.org/">BioGRID</a> / <a
+href="https://www.grnpedia.org/trrust/">TRRUST</a></td>
+<td>PPI 与转录调控数据；STRING
+网页输入基因列表即可得到网络与富集结果</td>
+</tr>
+<tr>
+<td>工具</td>
+<td><a href="https://tutorials.cytoscape.org/" target="_blank" rel="noopener">Cytoscape
+官方教程</a></td>
+<td>网络导入、样式、聚类与富集分析</td>
+</tr>
+<tr>
+<td>教材</td>
+<td>Alon U, <em>An Introduction to Systems Biology</em>（第 2 版, 2019,
+CRC Press）</td>
+<td>网络基序与生物线路设计原则的系统教材，第 2–6
+章对应本专题的基序部分</td>
+</tr>
+<tr>
+<td>教材</td>
+<td>Barabási, <em>Network Science</em>，<a
+href="http://networksciencebook.com/">networksciencebook.com</a>（第 4
+章 Scale-Free Property、第 7 章 Degree Correlations、第 8 章 Network
+Robustness、第 9 章 Communities）</td>
+<td>无标度、度相关、鲁棒性与社团的理论背景，书中多处以 PPI
+与代谢网络为例（CC BY-NC-SA 2.0）</td>
+</tr>
+<tr>
+<td>综述</td>
+<td>Vidal 等 2011，<a
+href="https://doi.org/10.1016/j.cell.2011.02.016">doi.org/10.1016/j.cell.2011.02.016</a></td>
+<td>相互作用组图谱与人类疾病</td>
+</tr>
+<tr>
+<td>入门</td>
+<td>Orth 等 2010，<a
+href="https://doi.org/10.1038/nbt.1614">doi.org/10.1038/nbt.1614</a></td>
+<td>通量平衡分析入门</td>
+</tr>
+<tr>
+<td>数据库</td>
+<td><a href="https://www.ebi.ac.uk/intact/" target="_blank" rel="noopener">IntAct</a> / <a
+href="https://mips.helmholtz-muenchen.de/corum/">CORUM</a> / <a
+href="https://reactome.org/">Reactome</a> / <a
+href="https://signor.uniroma2.it/">SIGNOR</a> / <a
+href="https://omnipathdb.org/">OmniPath</a></td>
+<td>实验相互作用、人类蛋白复合物、通路与带符号的信号网络</td>
+</tr>
+<tr>
+<td>数据库</td>
+<td><a href="https://regulondb.ccg.unam.mx/" target="_blank" rel="noopener">RegulonDB</a></td>
+<td>大肠杆菌转录调控网络，网络基序分析的经典数据</td>
+</tr>
+<tr>
+<td>工具</td>
+<td><a href="https://opencobra.github.io/cobrapy/" target="_blank" rel="noopener">COBRApy</a> / <a
+href="http://bigg.ucsd.edu/">BiGG Models</a></td>
+<td>基于约束的代谢建模（FBA、FVA、敲除）的 Python
+工具与基因组尺度模型库</td>
+</tr>
+</tbody>
+</table></div>
+</section><section class="block prose" id="questions"><h2><span class="tag">Open questions</span>开放问题</h2><ol type="1">
+<li>如果手中有一组“感兴趣的基因”（例如差异表达基因、GWAS
+候选基因、某通路成员），把它们映射到 PPI
+网络上：预期会看到什么拓扑特征？应使用哪一类边（物理相互作用、功能关联还是共表达）？用什么零模型检验它们是否形成疾病模块？研究偏倚可能如何影响结论？</li>
+<li>“枢纽更可能是必需的”与“疾病基因不倾向于是枢纽”看似矛盾。结合 Goh
+等（2007）的选择作用解释，以及<a
+href="molecular-networks.centrality-lethality.html">致死性与中心性</a>中的争议，这两个发现之间是什么关系？它对药物靶点选择有什么启示？</li>
+<li>一项研究用 AP-MS
+数据构建了某种肿瘤细胞系的互作组，并报告“与正常细胞系相比，肿瘤中出现了
+300
+条新边”。在接受这一“网络重连”结论之前，你会检查哪些技术因素（诱饵覆盖、检出灵敏度、蛋白丰度、spoke/matrix
+模型）？如何设计对照把真实重连与检测差异区分开？</li>
+<li>一个转录因子通过不一致型前馈环调控某炎症基因。如果用药物持续抑制该转录因子与短暂抑制它，下游基因的表达时间进程会有什么不同？要回答这个问题，除了网络结构，还需要知道哪些参数？</li>
+<li>在代谢网络中，FBA
+判定的“必需反应”与按度数排序的“枢纽代谢物/反应”通常并不一致。从<a
+href="molecular-networks.metabolic-networks.html">代谢网络与通量平衡分析</a>中的旁路算例出发，讨论“拓扑中心性”与“功能必需性”为什么是两个不同的概念。</li>
+</ol>
+</section></article><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script><script src="assets/js/demos.js"></script></body></html>

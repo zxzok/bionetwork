@@ -1,0 +1,10 @@
+{
+ "topic": "robustness",
+ "index": 1,
+ "title": "随机失效与四种攻击策略的比较，并计算 R 指标",
+ "hash": "158eb3dac9c1f2e9d4d45f959e99585df56d9405",
+ "ok": true,
+ "figures": 1,
+ "stdout": "BA(m=2)\n  random R = 0.424   f_c(1%规则) = 0.912\n  ID     R = 0.108   f_c(1%规则) = 0.291\n  RD     R = 0.102   f_c(1%规则) = 0.208\n  RB     R = 0.100   f_c(1%规则) = 0.231\nER(<k>=4)\n  random R = 0.400   f_c(1%规则) = 0.798\n  ID     R = 0.251   f_c(1%规则) = 0.532\n  RD     R = 0.202   f_c(1%规则) = 0.327\n  RB     R = 0.215   f_c(1%规则) = 0.402\n星形 RD 攻击 R = 0.16 (手算 4/25 = 0.16)",
+ "stderr": ""
+}

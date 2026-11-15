@@ -1,0 +1,175 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>数学推导与算法 · 生物医学网络科学</title><meta name="description" content="疾病模块、网络邻近度与药物重定位 · 数学推导与算法"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-medicine"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html" aria-current="page">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine" open><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a><ol class="sub"><li><a href="network-medicine.framework.html"><span class="n">01</span>网络医学：把疾病看作网络的扰动</a></li><li><a href="network-medicine.disease-modules.html"><span class="n">02</span>疾病模块：定义与检测</a></li><li><a href="network-medicine.module-detection.html"><span class="n">03</span>疾病模块检测算法：从种子基因到完整模块</a></li><li><a href="network-medicine.network-propagation.html"><span class="n">04</span>网络传播：带重启随机游走与热扩散</a></li><li><a href="network-medicine.network-separation.html"><span class="n">05</span>疾病之间的网络分离度</a></li><li><a href="network-medicine.network-pharmacology.html"><span class="n">06</span>药物–靶点网络与网络药理学</a></li><li><a href="network-medicine.network-proximity.html"><span class="n">07</span>网络邻近度</a></li><li><a href="network-medicine.drug-combinations.html"><span class="n">08</span>药物组合的网络构型</a></li><li><a href="network-medicine.drug-repurposing.html"><span class="n">09</span>药物重定位：从网络预测到外部验证</a></li><li><a href="network-medicine.knowledge-graphs.html"><span class="n">10</span>异质网络、知识图谱与图机器学习</a></li><li><a href="network-medicine.link-prediction.html"><span class="n">11</span>链路预测与知识图谱嵌入</a></li><li><a href="network-medicine.validation-hierarchy.html"><span class="n">12</span>验证的层次：从回顾性基准到临床试验</a></li><li><a href="network-medicine.statistical-validation.html"><span class="n">13</span>统计要点：参考网络、度偏倚、显著性与外部验证</a></li><li><a href="network-medicine.author-team-research.html"><span class="n">14</span>基于网络可控性的靶点识别</a></li><li><a href="network-medicine.derivations.html" aria-current="page"><span class="n">15</span>数学推导与算法</a></li><li><a href="network-medicine.frontiers.html"><span class="n">16</span>研究前沿与开放问题</a></li><li><a href="network-medicine.biomedical.html"><span class="n">17</span>生物医学应用</a></li><li><a href="network-medicine.limitations.html"><span class="n">18</span>适用范围与常见误用</a></li></ol></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><div class="lec-grid"><article style="min-width:0"><header class="doc-head"><nav class="crumb"><a href="d-medicine.html">网络医学与药物网络</a> <span class="sep">/</span> <a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></nav><div class="eyebrow" style="margin-top:14px"><b>疾病模块、网络邻近度与药物重定位</b><span>15 / 18</span></div><h1>数学推导与算法</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></dd></div><div><dt>阅读</dt><dd>约 3 分钟</dd></div></dl></header><section class="block prose" id="notes"><p>本节把邻近度、分离度写成可执行的算法，说明度匹配抽样的细节与复杂度，并给出
+DIAMOnD
+的伪代码和基于扩散的替代方法——带重启的随机游走（RWR）与热核。符号：相互作用组
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mi>V</mi><mo>,</mo><mi>E</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">G=(V,E)</annotation></semantics></math>，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>V</mi><mo stretchy="false" form="prefix">|</mo><mo>=</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">|V|=N</annotation></semantics></math>，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>E</mi><mo stretchy="false" form="prefix">|</mo><mo>=</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">|E|=M</annotation></semantics></math>；<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo stretchy="false" form="prefix">(</mo><mi>u</mi><mo>,</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">d(u,v)</annotation></semantics></math>
+为最短路径长度；<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+为疾病基因集合，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>
+为药物靶点集合；<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>k</mi><mi>v</mi></msub><annotation encoding="application/x-tex">k_v</annotation></semantics></math>
+为节点度。</p>
+<h3 id="最近距离-d_c-与度匹配-z-分数">最近距离
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>d</mi><mi>c</mi></msub><annotation encoding="application/x-tex">d_c</annotation></semantics></math>
+与度匹配
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>
+分数</h3>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mi>c</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>S</mi><mo>,</mo><mi>T</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mo stretchy="false" form="prefix">|</mo><mi>T</mi><mo stretchy="false" form="prefix">|</mo></mrow></mfrac><msub><mo>∑</mo><mrow><mi>t</mi><mo>∈</mo><mi>T</mi></mrow></msub><msub><mrow><mi mathvariant="normal">min</mi><mo>&#8289;</mo></mrow><mrow><mi>s</mi><mo>∈</mo><mi>S</mi></mrow></msub><mi>d</mi><mo stretchy="false" form="prefix">(</mo><mi>s</mi><mo>,</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">d_c(S,T)=\frac1{|T|}\sum_{t\in T}\min_{s\in S}d(s,t)</annotation></semantics></math>
+有一个计算上的便利：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">min</mi><mo>&#8289;</mo></mrow><mrow><mi>s</mi><mo>∈</mo><mi>S</mi></mrow></msub><mi>d</mi><mo stretchy="false" form="prefix">(</mo><mi>s</mi><mo>,</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\min_{s\in S}d(s,t)</annotation></semantics></math>
+对所有
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+可以用<strong>一次多源广度优先搜索</strong>（把
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+中所有节点同时作为起点、距离设为 0）得到，代价
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false" form="prefix">(</mo><mi>N</mi><mo>+</mo><mi>M</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">O(N+M)</annotation></semantics></math>，不需要计算全体节点对的距离。注意
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>d</mi><mi>c</mi></msub><annotation encoding="application/x-tex">d_c</annotation></semantics></math>
+不对称：它对靶点求平均，衡量“每个靶点离疾病模块多远”。</p>
+<pre class="text"><code>算法 1  网络邻近度 z 分数（Guney 等, 2016 思路）
+输入：G；疾病基因 S；靶点 T；随机次数 B（如 1000）；分箱最小容量 b（例如约 100 个节点）
+输出：d_c、z 分数、经验 p 值
+1. S, T ← 只保留位于 G 最大连通分支中的节点（报告丢弃了多少）
+2. 度分箱：把节点按度升序排列，依次装箱，每箱至少 b 个节点（高度端的箱会跨越较宽的度范围）
+3. dist ← 以 S 为源的多源 BFS；d_obs ← mean_{t∈T} dist[t]
+4. 对 i = 1..B：
+5.     S&#39; ← 对 S 中每个节点，从其所在度箱中无放回随机抽一个替身
+6.     T&#39; ← 对 T 同样处理
+7.     dist&#39; ← 以 S&#39; 为源的多源 BFS；d_i ← mean_{t∈T&#39;} dist&#39;[t]
+8. μ, σ ← d_1..d_B 的均值与标准差
+9. z ← (d_obs − μ)/σ；p ← (1 + #{d_i ≤ d_obs}) / (B + 1)
+复杂度：O(B·(N+M))；对 1.3 万节点、14 万边的互作组，B=1000 时在普通电脑上可接受</code></pre>
+<p>为什么必须分箱抽样？最短路径长度强烈依赖度：高度节点到任意节点的平均距离更短。如果
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>
+中多为枢纽而随机替身均匀抽取，替身的度偏低、距离偏长，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>
+就会系统性地偏负，产生“药物特异地靠近疾病”的假象。分箱是一种折中：箱太细则替身选择太少、随机性不足；箱太粗则度匹配不准。</p>
+<div class="callout-warn">
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>
+分数的含义依赖零分布近似正态。距离是小整数，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>d</mi><mi>c</mi></msub><annotation encoding="application/x-tex">d_c</annotation></semantics></math>
+的零分布可能离散、偏斜，尤其当
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>T</mi><mo stretchy="false" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">|T|</annotation></semantics></math>
+只有 1–2 个靶点时。此时应以经验
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+值为主，并对大量药物–疾病对做多重比较校正。还要注意，靶点本身就是疾病基因时贡献的距离为
+0，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>T</mi><mo stretchy="false" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">|T|</annotation></semantics></math>
+很小时
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>d</mi><mi>c</mi></msub><annotation encoding="application/x-tex">d_c</annotation></semantics></math>
+对这类重叠极其敏感。</p>
+</div>
+<h3 id="分离度-s_ab-的计算与含义">分离度
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>s</mi><mrow><mi>A</mi><mi>B</mi></mrow></msub><annotation encoding="application/x-tex">s_{AB}</annotation></semantics></math>
+的计算与含义</h3>
+<p>按 Menche 等（2015）的定义：</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msub><mi>d</mi><mrow><mi>A</mi><mi>A</mi></mrow></msub><mo stretchy="false" form="postfix">⟩</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mo stretchy="false" form="prefix">|</mo><mi>A</mi><mo stretchy="false" form="prefix">|</mo></mrow></mfrac><munder><mo>∑</mo><mrow><mi>a</mi><mo>∈</mo><mi>A</mi></mrow></munder><munder><mi mathvariant="normal">min</mi><mrow><msup><mi>a</mi><mo>′</mo></msup><mo>∈</mo><mi>A</mi><mo>,</mo><mspace width="0.167em"></mspace><msup><mi>a</mi><mo>′</mo></msup><mo>≠</mo><mi>a</mi></mrow></munder><mi>d</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>,</mo><msup><mi>a</mi><mo>′</mo></msup><mo stretchy="false" form="postfix">)</mo><mo>,</mo><mspace width="2.0em"></mspace><mo stretchy="false" form="prefix">⟨</mo><msub><mi>d</mi><mrow><mi>A</mi><mi>B</mi></mrow></msub><mo stretchy="false" form="postfix">⟩</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mo stretchy="false" form="prefix">|</mo><mi>A</mi><mo stretchy="false" form="prefix">|</mo><mi>+</mi><mo stretchy="false" form="prefix">|</mo><mi>B</mi><mo stretchy="false" form="prefix">|</mo></mrow></mfrac><mo minsize="180%" maxsize="180%" stretchy="true" form="prefix">[</mo><munder><mo>∑</mo><mrow><mi>a</mi><mo>∈</mo><mi>A</mi></mrow></munder><munder><mi mathvariant="normal">min</mi><mrow><mi>b</mi><mo>∈</mo><mi>B</mi></mrow></munder><mi>d</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false" form="postfix">)</mo><mo>+</mo><munder><mo>∑</mo><mrow><mi>b</mi><mo>∈</mo><mi>B</mi></mrow></munder><munder><mi mathvariant="normal">min</mi><mrow><mi>a</mi><mo>∈</mo><mi>A</mi></mrow></munder><mi>d</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false" form="postfix">)</mo><mo minsize="180%" maxsize="180%" stretchy="true" form="postfix">]</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">\langle d_{AA}\rangle=\frac1{|A|}\sum_{a\in A}\min_{a&#39;\in A,\,a&#39;\ne a}d(a,a&#39;),\qquad
+\langle d_{AB}\rangle=\frac{1}{|A|+|B|}\Big[\sum_{a\in A}\min_{b\in B}d(a,b)+\sum_{b\in B}\min_{a\in A}d(a,b)\Big].</annotation></semantics></math></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msub><mi>d</mi><mrow><mi>A</mi><mi>B</mi></mrow></msub><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle d_{AB}\rangle</annotation></semantics></math>
+对
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+对称，共有基因的距离为 0。可以这样理解
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mrow><mi>A</mi><mi>B</mi></mrow></msub><mo>=</mo><mo stretchy="false" form="prefix">⟨</mo><msub><mi>d</mi><mrow><mi>A</mi><mi>B</mi></mrow></msub><mo stretchy="false" form="postfix">⟩</mo><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><msub><mi>d</mi><mrow><mi>A</mi><mi>A</mi></mrow></msub><mo stretchy="false" form="postfix">⟩</mo><mo>+</mo><mo stretchy="false" form="prefix">⟨</mo><msub><mi>d</mi><mrow><mi>B</mi><mi>B</mi></mrow></msub><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">s_{AB}=\langle d_{AB}\rangle-\frac12(\langle d_{AA}\rangle+\langle d_{BB}\rangle)</annotation></semantics></math>
+的符号：若
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+是同一个模块被随机分成两半，那么从
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+的基因找最近的
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+基因，与找最近的另一个
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+基因，距离分布相近，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mrow><mi>A</mi><mi>B</mi></mrow></msub><mo>≈</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">s_{AB}\approx0</annotation></semantics></math>；若两模块有共享基因或彼此穿插，跨模块的最近距离比模块内更短，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mrow><mi>A</mi><mi>B</mi></mrow></msub><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">s_{AB}&lt;0</annotation></semantics></math>；若两模块在网络中各居一处，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mrow><mi>A</mi><mi>B</mi></mrow></msub><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">s_{AB}&gt;0</annotation></semantics></math>。<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msub><mi>d</mi><mrow><mi>A</mi><mi>B</mi></mrow></msub><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle d_{AB}\rangle</annotation></semantics></math>
+可用两次多源 BFS
+得到；<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msub><mi>d</mi><mrow><mi>A</mi><mi>A</mi></mrow></msub><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle d_{AA}\rangle</annotation></semantics></math>
+需要排除自身，可从每个
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+出发做 BFS，代价
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">|</mo><mi>A</mi><mo stretchy="false" form="prefix">|</mo><mo stretchy="false" form="prefix">(</mo><mi>N</mi><mo>+</mo><mi>M</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">O(|A|(N+M))</annotation></semantics></math>。</p>
+<h3 id="diamond-的伪代码">DIAMOnD 的伪代码</h3>
+<pre class="text"><code>算法 3  DIAMOnD 疾病模块扩展（Ghiassian 等, 2015）
+输入：G（N 个节点）；种子集合 S0；迭代次数 n；种子权重 α（默认 1）
+输出：按加入顺序排列的节点列表
+1. S ← S0
+2. 重复 n 次：
+3.     C ← S 中节点的全部邻居 − S
+4.     对每个 v ∈ C：
+5.         k ← 节点 v 的度；ks ← v 在 S 中的邻居数（种子计 α 份时，相应调整 N、|S|、k、ks）
+6.         p(v) ← Σ_{j=ks}^{k} C(|S|, j)·C(N−|S|, k−j) / C(N, k)      # 超几何上尾
+7.     v* ← argmin p(v)；S ← S ∪ {v*}；记录 v*
+8. 返回记录的顺序；模块边界由留出种子的召回率或独立注释的富集决定
+复杂度：每次迭代需更新候选的 ks（只有 v* 的邻居会变），用对数阶乘计算 p 值；总计约 O(n·(|C| + k_max))</code></pre>
+<p>超几何
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+值在
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+和
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>k</mi><mi>s</mi></msub><annotation encoding="application/x-tex">k_s</annotation></semantics></math>
+都较大时数值很小，应在对数空间计算（如
+<code>scipy.stats.hypergeom.logsf</code>）以免下溢。</p>
+<h3 id="扩散方法带重启的随机游走">扩散方法：带重启的随机游走</h3>
+<p>最短路径只看“最近的一条路”，对缺失一条边非常敏感。扩散方法综合了所有路径。设
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+为邻接矩阵，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo>=</mo><mrow><mi mathvariant="normal">diag</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><msub><mi>k</mi><mi>v</mi></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">D=\operatorname{diag}(k_v)</annotation></semantics></math>，列随机矩阵
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>=</mo><mi>A</mi><msup><mi>D</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">W=AD^{-1}</annotation></semantics></math>。游走者每一步以概率
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><mi>r</mi></mrow><annotation encoding="application/x-tex">1-r</annotation></semantics></math>
+走到随机邻居，以概率
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>
+跳回种子集合，种子分布
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>p</mi><mn>0</mn></msub><annotation encoding="application/x-tex">p_0</annotation></semantics></math>（如
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+上均匀，其余为 0）：</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>r</mi><mo stretchy="false" form="postfix">)</mo><mspace width="0.167em"></mspace><mi>W</mi><msub><mi>p</mi><mi>t</mi></msub><mo>+</mo><mi>r</mi><mspace width="0.167em"></mspace><msub><mi>p</mi><mn>0</mn></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">p_{t+1}=(1-r)\,W p_t+r\,p_0 .</annotation></semantics></math></p>
+<p>因为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi><annotation encoding="application/x-tex">W</annotation></semantics></math>
+的谱半径为
+1，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>r</mi><mo stretchy="false" form="postfix">)</mo><mi>W</mi></mrow><annotation encoding="application/x-tex">(1-r)W</annotation></semantics></math>
+的谱半径小于 1，迭代收敛到唯一的不动点</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>p</mi><mo>*</mo></msup><mo>=</mo><mi>r</mi><mo minsize="120%" maxsize="120%" stretchy="true" form="prefix">(</mo><mi>I</mi><mo>−</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>r</mi><mo stretchy="false" form="postfix">)</mo><mi>W</mi><msup><mo minsize="120%" maxsize="120%" stretchy="true" form="postfix">)</mo><mrow><mi>−</mi><mn>1</mn></mrow></msup><msub><mi>p</mi><mn>0</mn></msub><mo>=</mo><mi>r</mi><munderover><mo>∑</mo><mrow><mi>ℓ</mi><mo>=</mo><mn>0</mn></mrow><mo accent="false">∞</mo></munderover><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>r</mi><msup><mo stretchy="false" form="postfix">)</mo><mi>ℓ</mi></msup><msup><mi>W</mi><mi>ℓ</mi></msup><msub><mi>p</mi><mn>0</mn></msub><mo>,</mo></mrow><annotation encoding="application/x-tex">p^\ast=r\big(I-(1-r)W\big)^{-1}p_0=r\sum_{\ell=0}^{\infty}(1-r)^\ell W^\ell p_0 ,</annotation></semantics></math></p>
+<p>即所有长度
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℓ</mi><annotation encoding="application/x-tex">\ell</annotation></semantics></math>
+的游走按几何权重
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>r</mi><msup><mo stretchy="false" form="postfix">)</mo><mi>ℓ</mi></msup></mrow><annotation encoding="application/x-tex">(1-r)^\ell</annotation></semantics></math>
+加总：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>
+越大越“局部”，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>
+越小越“全局”。</p>
+<pre class="text"><code>算法 2  RWR 候选基因 / 药物打分
+输入：邻接矩阵 A（稀疏）；种子集合 S；重启概率 r；收敛阈值 tol（如 1e-6）
+输出：每个节点的稳态分数 p*
+1. W ← A D^{-1}（孤立节点需先移除）
+2. p0 ← 1/|S| 于 S 上，其余为 0；p ← p0
+3. 重复：p_new ← (1−r)·W·p + r·p0
+4.     若 ||p_new − p||_1 &lt; tol：停止；否则 p ← p_new
+5. 返回 p*（排序时排除种子本身）
+6. （去度偏倚）以度匹配随机种子集重复 1–5 共 B 次，
+   把每个节点的分数转为 z 分数或经验百分位
+复杂度：每次迭代 O(M)，迭代次数约 log(tol)/log(1−r)；总计 O(B·M·log(1/tol)/r)</code></pre>
+<div class="callout-warn">
+<p>当
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>→</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">r\to0</annotation></semantics></math>
+时，连通无向图上的
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>p</mi><mo>*</mo></msup><annotation encoding="application/x-tex">p^\ast</annotation></semantics></math>
+趋于平稳分布
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>π</mi><mi>v</mi></msub><mo>=</mo><msub><mi>k</mi><mi>v</mi></msub><mi>/</mi><mn>2</mn><mi>M</mi></mrow><annotation encoding="application/x-tex">\pi_v=k_v/2M</annotation></semantics></math>——<strong>分数正比于度</strong>。即使
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>
+适中，枢纽也会获得偏高的分数。因此 RWR
+排名靠前的基因必须与度匹配随机种子比较，或改用对称归一化
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>D</mi><mrow><mi>−</mi><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup><mi>A</mi><msup><mi>D</mi><mrow><mi>−</mi><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup></mrow><annotation encoding="application/x-tex">D^{-1/2}AD^{-1/2}</annotation></semantics></math>
+等减弱度偏倚的变体。和邻近度一样，扩散分数高只说明“网络上接近”，不说明该蛋白是可行的干预靶点：方向（激活还是抑制）、可成药性、组织表达和毒性都不在模型之中。</p>
+</div>
+<h3 id="热核与-rwr-的统一">热核与 RWR 的统一</h3>
+<p>热扩散
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>p</mi><mo accent="true">̇</mo></mover><mo>=</mo><mi>−</mi><mi>L</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">\dot p=-Lp</annotation></semantics></math>（<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>=</mo><mi>I</mi><mo>−</mo><mi>W</mi></mrow><annotation encoding="application/x-tex">L=I-W</annotation></semantics></math>）的解是
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>e</mi><mrow><mi>−</mi><mi>t</mi><mi>L</mi></mrow></msup><msub><mi>p</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">p(t)=e^{-tL}p_0</annotation></semantics></math>。由于
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+与
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi><annotation encoding="application/x-tex">W</annotation></semantics></math>
+可交换，
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mrow><mi>−</mi><mi>t</mi><mi>L</mi></mrow></msup><mo>=</mo><msup><mi>e</mi><mrow><mi>−</mi><mi>t</mi></mrow></msup><msup><mi>e</mi><mrow><mi>t</mi><mi>W</mi></mrow></msup><mo>=</mo><munder><mo>∑</mo><mrow><mi>ℓ</mi><mo>≥</mo><mn>0</mn></mrow></munder><mfrac><mrow><msup><mi>e</mi><mrow><mi>−</mi><mi>t</mi></mrow></msup><msup><mi>t</mi><mi>ℓ</mi></msup></mrow><mrow><mi>ℓ</mi><mi>!</mi></mrow></mfrac><msup><mi>W</mi><mi>ℓ</mi></msup><mi>.</mi></mrow><annotation encoding="application/x-tex">e^{-tL}=e^{-t}e^{tW}=\sum_{\ell\ge0}\frac{e^{-t}t^\ell}{\ell!}W^\ell .</annotation></semantics></math>
+与 RWR 的
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><msub><mo>∑</mo><mi>ℓ</mi></msub><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>r</mi><msup><mo stretchy="false" form="postfix">)</mo><mi>ℓ</mi></msup><msup><mi>W</mi><mi>ℓ</mi></msup></mrow><annotation encoding="application/x-tex">r\sum_\ell(1-r)^\ell W^\ell</annotation></semantics></math>
+对比可见，两者都是
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∑</mo><mi>ℓ</mi></msub><msub><mi>c</mi><mi>ℓ</mi></msub><msup><mi>W</mi><mi>ℓ</mi></msup><msub><mi>p</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\sum_\ell c_\ell W^\ell p_0</annotation></semantics></math>
+形式的<strong>游走长度加权和</strong>，权重分别为泊松分布与几何分布。几何分布的尾部更重，RWR
+会给更长的游走留下更多权重；泊松分布集中在
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+附近。对称归一化下的同类核还包括正则化拉普拉斯核
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>I</mi><mo>+</mo><mi>β</mi><msub><mi>L</mi><mrow><mi mathvariant="normal">s</mi><mi mathvariant="normal">y</mi><mi mathvariant="normal">m</mi></mrow></msub><msup><mo stretchy="false" form="postfix">)</mo><mrow><mi>−</mi><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">(I+\beta L_{\mathrm{sym}})^{-1}</annotation></semantics></math>
+与扩散核
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>e</mi><mrow><mi>−</mi><mi>β</mi><msub><mi>L</mi><mrow><mi mathvariant="normal">s</mi><mi mathvariant="normal">y</mi><mi mathvariant="normal">m</mi></mrow></msub></mrow></msup><annotation encoding="application/x-tex">e^{-\beta L_{\mathrm{sym}}}</annotation></semantics></math>（<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mrow><mi mathvariant="normal">s</mi><mi mathvariant="normal">y</mi><mi mathvariant="normal">m</mi></mrow></msub><mo>=</mo><mi>I</mi><mo>−</mo><msup><mi>D</mi><mrow><mi>−</mi><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup><mi>A</mi><msup><mi>D</mi><mrow><mi>−</mi><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup></mrow><annotation encoding="application/x-tex">L_{\mathrm{sym}}=I-D^{-1/2}AD^{-1/2}</annotation></semantics></math>）。大网络中无须显式计算矩阵指数，可用
+Krylov 子空间方法直接求
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mrow><mi>−</mi><mi>t</mi><mi>L</mi></mrow></msup><msub><mi>p</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">e^{-tL}p_0</annotation></semantics></math>（如
+<code>scipy.sparse.linalg.expm_multiply</code>），RWR
+则解一个稀疏线性方程组。</p>
+</section><section class="block related-box"><h2>继续阅读</h2><ul><li>交互可视化：<a href="lab.html#proximity">网络邻近度与疾病模块</a></li><li>代码示例：<a href="ex-network-medicine-0.html">疾病基因是否聚成模块（最大连通分支 + 度匹配随机基线）</a>、<a href="ex-network-medicine-1.html">药物–疾病网络邻近度（最近距离 d_c + 度匹配 z 分数）</a>、<a href="ex-network-medicine-2.html">两个疾病模块的网络分离度 s_AB</a>、<a href="ex-network-medicine-3.html">DIAMOnD 疾病模块扩展（连接显著性 + 逐步加入）</a></li><li>论文精读：<a href="paper-goh2007_diseasenetwork.html">人类疾病网络</a>、<a href="paper-barabasi2011_networkmedicine.html">网络医学：基于网络理解人类疾病</a>、<a href="paper-menche2015_interactome.html">借助不完整的相互作用组揭示疾病之间的关系</a>、<a href="paper-guney2016_drugefficacy.html">基于网络的药物疗效计算机筛选</a></li></ul></section><nav class="pager"><a href="network-medicine.author-team-research.html"><small>上一页</small>基于网络可控性的靶点识别</a><a href="network-medicine.frontiers.html"><small>下一页</small>研究前沿与开放问题</a></nav></article><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

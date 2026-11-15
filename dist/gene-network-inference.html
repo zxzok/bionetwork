@@ -1,0 +1,383 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>基因调控网络推断与共表达分析 · 生物医学网络科学</title><meta name="description" content="基因调控网络推断与共表达分析：从表达数据推断基因网络：共表达与 WGCNA、偏相关、互信息、回归、贝叶斯网络与动力学模型，以及推断结果的评估与局限"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-molecular"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html" aria-current="page">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular" open><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html" aria-current="page">基因调控网络推断与共表达分析</a><ol class="sub"><li><a href="gene-network-inference.inference-problem.html"><span class="n">01</span>网络推断问题：从“一起变化”到“谁调控谁”</a></li><li><a href="gene-network-inference.method-landscape.html"><span class="n">02</span>方法家族全景：假设与数据要求</a></li><li><a href="gene-network-inference.wgcna.html"><span class="n">03</span>WGCNA：加权基因共表达网络分析</a></li><li><a href="gene-network-inference.module-interpretation.html"><span class="n">04</span>解读共表达模块时要追问的三件事</a></li><li><a href="gene-network-inference.module-preservation.html"><span class="n">05</span>模块保守性与可重复性检验</a></li><li><a href="gene-network-inference.differential-coexpression.html"><span class="n">06</span>差异共表达分析</a></li><li><a href="gene-network-inference.partial-correlation-shrinkage.html"><span class="n">07</span>偏相关、高斯图模型与收缩估计</a></li><li><a href="gene-network-inference.beyond-correlation.html"><span class="n">08</span>超越相关：信息论、树模型与单细胞方法</a></li><li><a href="gene-network-inference.bayesian-networks.html"><span class="n">09</span>贝叶斯网络与因果结构学习</a></li><li><a href="gene-network-inference.dynamic-models.html"><span class="n">10</span>动力学模型、时间序列与单细胞拟时序</a></li><li><a href="gene-network-inference.prior-knowledge.html"><span class="n">11</span>先验知识整合：TF–靶基因数据库、ChIP-seq 与 ATAC</a></li><li><a href="gene-network-inference.evaluation.html"><span class="n">12</span>推断结果的评估</a></li><li><a href="gene-network-inference.derivations.html"><span class="n">13</span>数学推导与算法</a></li><li><a href="gene-network-inference.frontiers.html"><span class="n">14</span>研究前沿与开放问题</a></li><li><a href="gene-network-inference.biomedical.html"><span class="n">15</span>生物医学应用</a></li><li><a href="gene-network-inference.limitations.html"><span class="n">16</span>适用范围与常见误用</a></li></ol></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><div class="lec-grid"><article style="min-width:0"><header class="doc-head"><nav class="crumb"><a href="domains.html">知识领域</a> <span class="sep">/</span> <a href="d-molecular.html">分子网络与基因调控</a></nav><div class="eyebrow" style="margin-top:14px"><b>Molecular &amp; Gene Regulatory Networks</b><span>Gene network inference and co-expression</span></div><h1>基因调控网络推断与共表达分析</h1><p class="dek">从表达数据推断基因网络：共表达与 WGCNA、偏相关、互信息、回归、贝叶斯网络与动力学模型，以及推断结果的评估与局限</p><dl class="doc-meta"><div><dt>知识页面</dt><dd>16 页</dd></div><div><dt>阅读</dt><dd>约 43 分钟</dd></div><div><dt>讲解视频</dt><dd>1 段</dd></div><div><dt>代码示例</dt><dd>9 个</dd></div></dl><div class="chips"><span class="chip">网络推断</span><span class="chip">共表达网络</span><span class="chip">WGCNA</span><span class="chip">软阈值</span><span class="chip">拓扑重叠</span><span class="chip">模块保守性</span><span class="chip">差异共表达</span><span class="chip">偏相关</span><span class="chip">收缩估计</span><span class="chip">互信息</span><span class="chip">ARACNe</span><span class="chip">CLR</span><span class="chip">GENIE3</span><span class="chip">贝叶斯网络</span></div></header><section class="block prose" id="overview"><p><a
+href="molecular-networks.html">生物分子网络与拓扑特征</a>中的网络是“现成”的：PPI
+来自实验数据库，调控边来自 ChIP
+或文献整理。可是对多数疾病、组织和细胞类型，现成网络既不完整，也不特异。研究者手里更常有的是一张表达矩阵——几十到几千个样本、上万个基因，单细胞数据中则是成千上万个细胞。本专题回答的问题是：<strong>能不能从表达数据反推出基因之间的网络？推出来的网络可信到什么程度？怎样用它找模块和关键基因？</strong></p>
+<p>网络推断（network
+inference）是系统生物学最早的“逆问题”之一。前向问题是：已知调控网络，预测表达如何变化；逆问题是：观测到表达，反推网络。逆问题通常是<strong>欠定</strong>的——很多不同的网络能产生几乎相同的数据——所以每种方法都要加入假设：稀疏性、线性或单调关系、无环、稳态、已知转录因子列表，等等。理解一种方法，关键是理解它加了什么假设、需要什么数据、它的“边”究竟表示什么。</p>
+<p>本专题按以下顺序展开：先说明推断问题本身为什么难，并给出方法家族的全景；然后讲最常用的共表达网络方法
+WGCNA、共表达模块的解读、模块保守性检验与差异共表达分析；接着依次介绍偏相关与收缩估计、互信息与树模型、贝叶斯网络、动力学模型与单细胞拟时序方法，以及如何把
+TF–靶基因数据库、ChIP-seq 与 ATAC-seq
+等先验知识整合进推断；最后讲推断结果的评估指标与金标准的局限。<a
+href="symptom-networks.html">症状网络与网络精神病学</a>中的偏相关、<a
+href="network-construction.html">网络构建与统计验证</a>中的收缩与阈值、<a
+href="community-structure.html">社团结构与社区发现</a>中的层次聚类会在这里再次出现。推断网络中的边属于“统计共表达或推断的调控关系”，与实验验证的物理相互作用、数据库推断的功能关联含义不同（区分见<a
+href="molecular-networks.network-types.html">生物分子网络的类型与数据来源</a>）。</p>
+</section><section class="block" id="pages"><h2><span class="tag">Contents</span>知识页面</h2><div class="arts"><a class="art" href="gene-network-inference.inference-problem.html"><span class="no">01</span><span class="t">网络推断问题：从“一起变化”到“谁调控谁”</span><span class="d">问题的形式 设表达矩阵 ， 个样本、 个基因。网络推断（network inference，也称网络反演 reverse engineering） 的目标是给出一个 的边权矩阵 ，…</span></a><a class="art" href="gene-network-inference.method-landscape.html"><span class="no">02</span><span class="t">方法家族全景：假设与数据要求</span><span class="d">网络推断方法有上百种，但大致可归入六个家族。DREAM5 评估（Marbach 等, 2012）按类似思路把参赛方法分为回归、互信息、相关、贝叶斯网络、其他与元方法几类，并发现同一…</span></a><a class="art" href="gene-network-inference.wgcna.html"><span class="no">03</span><span class="t">WGCNA：加权基因共表达网络分析</span><span class="d">WGCNA（weighted gene co-expression network analysis）由 Zhang 与 Horvath（2005）提出理论框架，Langfelde…</span></a><a class="art" href="gene-network-inference.module-interpretation.html"><span class="no">04</span><span class="t">解读共表达模块时要追问的三件事</span><span class="d">第一，模块由什么驱动？ 组织样本里，免疫浸润、基质比例、红细胞污染都能形成“漂亮”的模块。可以对照细胞类型标志基因列表，或用去卷积方法估计细胞比例后再看模块是否仍存在。Oldham…</span></a><a class="art" href="gene-network-inference.module-preservation.html"><span class="no">05</span><span class="t">模块保守性与可重复性检验</span><span class="d">问题：模块在另一组数据中还在吗？ 在一组数据中找到的模块可能只是该样本的偶然结构。模块保守性（module preservation，也译模块保留） 问的是：参考数据集中定义的模块…</span></a><a class="art" href="gene-network-inference.differential-coexpression.html"><span class="no">06</span><span class="t">差异共表达分析</span><span class="d">差异表达与差异共表达 差异表达（differential expression, DE） 比较一个基因在两种条件下的平均水平；差异共表达（differential co-expre…</span></a><a class="art" href="gene-network-inference.partial-correlation-shrinkage.html"><span class="no">07</span><span class="t">偏相关、高斯图模型与收缩估计</span><span class="d">偏相关去除的是什么 偏相关在控制其他变量后度量两变量的关联。在多元正态假设下，偏相关为 0 等价于条件独立，非零偏相关构成高斯图模型（GGM）的边。偏相关与精度矩阵的关系、它在链式…</span></a><a class="art" href="gene-network-inference.beyond-correlation.html"><span class="no">08</span><span class="t">超越相关：信息论、树模型与单细胞方法</span><span class="d">互信息与 ARACNe 互信息（mutual information, MI） 衡量两个变量的统计依赖，非线性关系（如 U 形）也能捕捉： 对二元高斯变量， ，与相关系数单调对应。…</span></a><a class="art" href="gene-network-inference.bayesian-networks.html"><span class="no">09</span><span class="t">贝叶斯网络与因果结构学习</span><span class="d">模型 贝叶斯网络（Bayesian network, BN） 用一个有向无环图（DAG） 表示联合分布的分解： 是节点 在 中的父节点。图中缺少的边对应条件独立：每个节点在给定父节…</span></a><a class="art" href="gene-network-inference.dynamic-models.html"><span class="no">10</span><span class="t">动力学模型、时间序列与单细胞拟时序</span><span class="d">线性常微分方程模型 把基因表达看作随时间演化的动力系统，在某个工作点附近线性化： 表示基因 的水平对基因 变化率的影响（ 即有向边 ）， 是外加扰动。这个模型允许反馈环，方向也有明…</span></a><a class="art" href="gene-network-inference.prior-knowledge.html"><span class="no">11</span><span class="t">先验知识整合：TF–靶基因数据库、ChIP-seq 与 ATAC</span><span class="d">为什么需要先验 表达数据本身只含关联信息；在真核生物中，DREAM5 显示纯表达数据驱动的推断在酵母上表现很有限。而关于“谁可能调控谁”，生物学已经积累了大量独立证据。把这些证据作…</span></a><a class="art" href="gene-network-inference.evaluation.html"><span class="no">12</span><span class="t">推断结果的评估</span><span class="d">金标准（gold standard）：用于评估推断网络的“已知真边”集合，常见来源有模拟网络（已知全部真边）、整理过的调控数据库（如大肠杆菌的 RegulonDB）、ChIP-se…</span></a><a class="art" href="gene-network-inference.derivations.html"><span class="no">13</span><span class="t">数学推导与算法</span><span class="d">本节补全 WGCNA 中软阈值、TOM 和模块特征基因的数学细节，推导数据处理不等式、收缩强度和差异共表达检验，给出 GENIE3 与模块保守性检验的伪代码，并写出用 AUPR 评…</span></a><a class="art" href="gene-network-inference.frontiers.html"><span class="no">14</span><span class="t">研究前沿与开放问题</span><span class="d">1. 共表达网络如何去混杂？ Parsana 等（2019, Genome Biology，DOI: 10.1186/s13059-019-1700-9）显示，技术因素和细胞组成会…</span></a><a class="art" href="gene-network-inference.biomedical.html"><span class="no">15</span><span class="t">生物医学应用</span><span class="d">网络推断在疾病研究中的价值，主要体现在把高维表达数据变成可解释的单元。WGCNA 是生物医学文献中应用最多的网络方法之一：在阿尔茨海默病、自闭症、精神分裂症的脑组织表达谱中，研究者…</span></a><a class="art" href="gene-network-inference.limitations.html"><span class="no">16</span><span class="t">适用范围与常见误用</span><span class="d">1. 误用：相关系数高的基因对就是调控对。→ 正解：相关可能来自共同上游、细胞比例、批次；调控需要方向性和直接性证据。 2. 误用：WGCNA 选 要让 越接近 1 越好。→ 正解…</span></a></div></section><section class="block" id="video"><h2><span class="tag">VIDEO</span>讲解视频</h2><div class="video-main"><video controls preload="metadata" playsinline poster="media/videos/L13-core.jpg"><source src="media/videos/L13-core.mp4" type="video/mp4"><track kind="captions" srclang="zh" label="中文字幕" src="media/videos/L13-core.vtt"></video><div class="video-meta"><strong>从表达谱到网络：基因调控网络的推断与功能分析</strong><span>4 分 8 秒</span></div><details class="transcript"><summary>文字稿</summary><p>大家好，这一期我们讨论怎样从基因表达数据里推断出网络。分子网络通常来自数据库，这一期的网络要靠我们自己从数据里算出来。我们会重点讲 WGCNA，再看几种更进一步的方法，以及怎样评估推断结果。</p><p>先说难点，一万个基因就有五千万条候选边，而样本常常只有几十个。第二，如果甲调控乙、乙调控丙，甲和丙也会高度相关，这是间接关联。第三，组织里细胞比例不同，同一类细胞的标志基因会一起升降。第四，我们测的是信使核糖核酸，蛋白层面的调控在表达谱里看不见。所以请记住，推断出来的边首先是一个假设，而不是已经证实的调控关系。</p><p>我们来看 WGCNA 的完整流程，它是生物医学文献里用得最多的网络方法之一。第一步，从表达矩阵算出所有基因两两之间的相关系数。第二步是软阈值，把相关系数的绝对值取一个幂次，作为连接强度。幂次越大，弱相关被压得越小，强相关被保留下来。它的直觉是，两个基因如果还共享很多邻居，它们的关系就更可信。第三步，用拓扑重叠衡量两个基因是否与同一批基因相关，以此去除噪声。第四步，以拓扑重叠的补数为距离做层次聚类，再把树切成若干模块。图上不同颜色就是不同的模块，没有归入任何模块的基因标成灰色。</p><p>幂次怎么选呢？WGCNA 用的是无标度拟合准则。对每个候选幂次，看度分布在双对数坐标下是否接近直线。选拟合优度首次达到 0.8 到 0.9 的最小幂次，同时别让平均连接度太低。模块找到以后，取模块内基因表达的第一主成分，叫作模块特征基因。每个基因与特征基因的相关叫模块成员度，排在最前面的就是 hub 基因。</p><p>相关只能看线性关系，ARACNe 改用互信息，并删去三角形中最弱的那条边。GENIE3 把问题变成回归，用转录因子的表达去预测每一个靶基因。它的好处是能捕捉非线性关系，但方向其实来自我们事先给定的转录因子列表。SCENIC 再加一步序列证据，只保留启动子里有结合基序的靶基因。如果有时间序列或敲除实验，我们才真正有机会判断调控方向。</p><p>评估时，真实的边通常不到全部候选边的百分之一，所以我们更看重 AUPR。DREAM5 比较了三十多种方法，没有一种在所有数据上都最好。BEELINE 评估了 12 种单细胞方法，在真实数据上多数只比随机略好。因此，单条边最不可靠，模块和通路层面的结论要稳健得多。</p><p>在肿瘤数据里，常能找到一个增殖模块，它与肿瘤分级高度相关。它的 hub 往往是增殖标志物，这说明的是增殖细胞多，不是找到了新调控因子。做法上，可以对照细胞类型标志基因，看模块是不是细胞比例的影子。每组只有几个样本时，模块和 hub 换一批数据就可能完全不同。想把 hub 说成治疗靶点，至少需要扰动实验和独立数据的支持。</p><p>最后小结一下，共表达只是关联，调控需要方向和直接性的证据。WGCNA 的主线是软阈值、拓扑重叠、层次聚类和模块特征基因。互信息、树模型和基序证据，让推断一步步接近真正的调控。建议在代码示例里亲手跑一遍迷你 WGCNA，我们下一期再见。</p></details></div></section><section class="block" id="demos"><h2><span class="tag">INTERACTIVE</span>交互可视化</h2><div class="demo" data-demo="ffl"></div></section><section class="block" id="code"><h2><span class="tag">CODE</span>计算实现</h2><p class="small">9 个完整可运行的 Python 示例，每个都给出代码、输出图和解读；可在浏览器中直接运行，或下载 <a href="notebooks/gene-network-inference.ipynb" download>Jupyter Notebook</a> · <a href="notebooks/gene-network-inference.py" download>Python 脚本</a>。</p><div class="gallery"><a class="gcard" href="ex-gene-network-inference-0.html"><span class="thumb"><img src="gallery/gene-network-inference-0-0.png" alt="" loading="lazy"></span><span class="gt">软阈值幂次 β 的无标度拟合准则</span></a><a class="gcard" href="ex-gene-network-inference-1.html"><span class="thumb"><img src="gallery/gene-network-inference-1-0.png" alt="" loading="lazy"></span><span class="gt">拓扑重叠矩阵（TOM）与层次聚类划分模块</span></a><a class="gcard" href="ex-gene-network-inference-2.html"><span class="thumb"><img src="gallery/gene-network-inference-2-0.png" alt="" loading="lazy"></span><span class="gt">模块特征基因、模块–性状关联与 hub 基因</span></a><a class="gcard" href="ex-gene-network-inference-3.html"><span class="thumb"><img src="gallery/gene-network-inference-3-0.png" alt="" loading="lazy"></span><span class="gt">互信息网络、CLR 背景校正与 ARACNe 的数据处理不等式</span></a><a class="gcard" href="ex-gene-network-inference-4.html"><span class="thumb"><img src="gallery/gene-network-inference-4-0.png" alt="" loading="lazy"></span><span class="gt">Schäfer–Strimmer 收缩估计偏相关（p &gt; n）</span></a><a class="gcard" href="ex-gene-network-inference-5.html"><span class="thumb"><img src="gallery/gene-network-inference-5-0.png" alt="" loading="lazy"></span><span class="gt">基于回归的有向推断与先验知识整合（LASSO 路径 + 惩罚因子）</span></a><a class="gcard" href="ex-gene-network-inference-6.html"><span class="thumb"><img src="gallery/gene-network-inference-6-0.png" alt="" loading="lazy"></span><span class="gt">差异共表达——Fisher z 检验与模块水平的置换检验</span></a><a class="gcard" href="ex-gene-network-inference-7.html"><span class="thumb"><img src="gallery/gene-network-inference-7-0.png" alt="" loading="lazy"></span><span class="gt">模块保守性检验（简化版 modulePreservation 的 Z 统计量）</span></a><a class="gcard" href="ex-gene-network-inference-8.html"><span class="thumb"><img src="gallery/gene-network-inference-8-0.png" alt="" loading="lazy"></span><span class="gt">评估指标——AUROC、AUPR、早期精度与不完整金标准</span></a></div></section><section class="block prose" id="related"><h2><span class="tag">Links</span>关联知识</h2><ul>
+<li><a
+href="molecular-networks.html">生物分子网络与拓扑特征</a>：实验验证的物理相互作用、数据库推断的功能关联与统计共表达三类边的区别，以及网络基序（ARACNe
+可能误删前馈环）。</li>
+<li><a
+href="network-construction.html">网络构建与统计验证</a>：边权估计（相关、偏相关、互信息、收缩与正则化）、阈值选择、Fisher
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>
+变换与置换检验的一般原理。</li>
+<li><a
+href="symptom-networks.html">症状网络与网络精神病学</a>：偏相关与正则化高斯图模型（EBICglasso），是“直接关联”类推断方法在另一领域的应用。</li>
+<li><a href="community-structure.html">社团结构与社区发现</a>：WGCNA
+的模块检测本质上是基于 TOM 距离的层次聚类与社团划分。</li>
+<li><a href="controllability.html">网络可控性与稳定性</a>：线性 ODE 模型
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi mathvariant="bold-italic">𝒙</mi><mo accent="true">̇</mo></mover><mo>=</mo><mi>A</mi><mi mathvariant="bold-italic">𝒙</mi><mo>+</mo><mi>B</mi><mi mathvariant="bold-italic">𝒖</mi></mrow><annotation encoding="application/x-tex">\dot{\mathbf x}=A\mathbf x+B\mathbf u</annotation></semantics></math>
+是可控性分析的出发点；推断得到的有向网络可作为可控性分析的输入，但其边的不确定性应一并考虑。</li>
+<li><a
+href="brain-connectome.html">脑连接组：结构与功能连接</a>：功能连接同样是从相关估计网络，面临相同的间接效应与混杂问题。</li>
+<li><a
+href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a>：推断得到的模块与关键基因如何进一步用于疾病模块分析与药物重定位。</li>
+<li><a
+href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a>：模块与
+hub 的稳定性检验、样本量与参数敏感性。</li>
+</ul>
+</section><section class="block" id="papers"><h2><span class="tag">Papers</span>论文精读</h2><div class="pgrid"><article class="pcard" data-own="0" data-dom="molecular" data-k="network motifs in the transcriptional regulation network of escherichia coli大肠杆菌转录调控网络中的网络基序网络基序 转录调控网络 前馈环 单输入模块 密集重叠调控子 随机化零模型"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">分子网络与基因调控</span><span>Nature Genetics · 2002</span></div><h3><a href="paper-shenorr2002_ecoli.html">大肠杆菌转录调控网络中的网络基序</a></h3><p class="porig">Network motifs in the transcriptional regulation network of Escherichia coli<br><span>Shen-Orr SS, Milo R, Mangan S, Alon U</span></p><p class="psum">在大肠杆菌转录调控网络中发现前馈环、单输入模块、密集重叠调控子三类富集基序。</p><div class="plec small">相关专题：<a href="molecular-networks.html">生物分子网络与拓扑特征</a> <a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></div></article><article class="pcard" data-own="0" data-dom="molecular theory" data-k="a general framework for weighted gene co-expression network analysis加权基因共表达网络分析的一般框架wgcna 共表达网络 软阈值 无标度拓扑准则 拓扑重叠 加权聚集系数"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">分子网络与基因调控</span><span class="pbadge dm">网络基础理论</span><span>Statistical Applications in Genetics and Molecular Biology · 2005</span></div><h3><a href="paper-zhang2005_wgcna.html">加权基因共表达网络分析的一般框架</a></h3><p class="porig">A general framework for weighted gene co-expression network analysis<br><span>Zhang B, Horvath S</span></p><p class="psum">提出用“软阈值”把基因间相关转为连续连接权重，构建加权共表达网络，并把连接度、拓扑重叠、聚集系数推广到加权情形。</p><div class="plec small">相关专题：<a href="gene-network-inference.html">基因调控网络推断与共表达分析</a> <a href="molecular-networks.html">生物分子网络与拓扑特征</a> <a href="community-structure.html">社团结构与社区发现</a></div></article><article class="pcard" data-own="0" data-dom="molecular" data-k="wisdom of crowds for robust gene network inference群体智慧实现稳健的基因调控网络推断基因调控网络推断 dream5 群体智慧 集成方法 aupr 金标准"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">分子网络与基因调控</span><span>Nature Methods · 2012</span></div><h3><a href="paper-marbach2012_wisdom.html">群体智慧实现稳健的基因调控网络推断</a></h3><p class="porig">Wisdom of crowds for robust gene network inference<br><span>Marbach D, Costello JC, Küffner R, Vega NM, Prill RJ, Camacho DM, et al.; DREAM5 Consortium</span></p><p class="psum">DREAM5 挑战对 35 种网络推断方法做盲评，发现没有单一方法始终最优，而整合多种方法的“社区网络”最稳健。</p><div class="plec small">相关专题：<a href="gene-network-inference.html">基因调控网络推断与共表达分析</a> <a href="molecular-networks.html">生物分子网络与拓扑特征</a></div></article></div></section><section class="block prose" id="references"><h2><span class="tag">References</span>核心文献</h2><h3
+id="zhang-horvath-2005a-general-framework-for-weighted-gene-co-expression-network-analysis">Zhang
+&amp; Horvath 2005：A general framework for weighted gene co-expression
+network analysis</h3>
+<ul>
+<li><strong>背景</strong>：<em>Statistical Applications in Genetics and
+Molecular Biology</em> 4:17，DOI <a
+href="https://doi.org/10.2202/1544-6115.1128">10.2202/1544-6115.1128</a>。论文精读见
+<a href="paper-zhang2005_wgcna.html">Zhang 2005</a>。</li>
+<li><strong>核心内容</strong>：提出软阈值邻接、无标度拟合准则与拓扑重叠矩阵，把共表达网络从硬阈值的无权图推广为加权网络。</li>
+<li><strong>思考题</strong>：软阈值为什么能让模块检测对参数不那么敏感？无标度拟合准则在什么数据上会失效？</li>
+</ul>
+<h3
+id="langfelder-horvath-2008wgcna-an-r-package-for-weighted-correlation-network-analysis">Langfelder
+&amp; Horvath 2008：WGCNA: an R package for weighted correlation network
+analysis</h3>
+<ul>
+<li><strong>背景</strong>：Zhang 与 Horvath 2005
+年提出软阈值与拓扑重叠的理论框架，此后需要一个标准化、可复用的软件实现。<em>BMC
+Bioinformatics</em> 9:559，DOI <a
+href="https://doi.org/10.1186/1471-2105-9-559">10.1186/1471-2105-9-559</a>。</li>
+<li><strong>核心内容</strong>：系统给出网络构建（软阈值、TOM）、模块检测（层次聚类与动态剪切）、模块特征基因、模块–性状关联、模块成员度与基因显著性、模块保留等函数及使用流程。</li>
+<li><strong>阅读提示</strong>：重点看“网络构建”和“模块与性状关联”两部分的逻辑链；注意作者对样本量、离群样本和
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>
+选择的建议。</li>
+<li><strong>思考题</strong>：若数据只有 12 个样本且分为两组，WGCNA
+哪些步骤最可能失效？应怎样改进研究设计？</li>
+</ul>
+<h3
+id="langfelder-等-2011is-my-network-module-preserved-and-reproducible">Langfelder
+等 2011：Is my network module preserved and reproducible?</h3>
+<ul>
+<li><strong>背景</strong>：<em>PLoS Computational Biology</em>
+7:e1001057，DOI <a
+href="https://doi.org/10.1371/journal.pcbi.1001057">10.1371/journal.pcbi.1001057</a>。</li>
+<li><strong>核心内容</strong>：提出不依赖在检验数据中重新聚类的密度与连接模式保守性统计量、置换
+Z 分数与
+Zsummary、medianRank，并用小鼠多组织、人与黑猩猩脑等数据演示。</li>
+<li><strong>思考题</strong>：为什么交叉表（参考模块与检验模块的重叠）可能低估保守性？</li>
+</ul>
+<h3 id="margolin-等-2006aracne">Margolin 等 2006：ARACNE</h3>
+<ul>
+<li><strong>背景</strong>：<em>BMC Bioinformatics</em> 7(Suppl
+1):S7，DOI <a
+href="https://doi.org/10.1186/1471-2105-7-S1-S7">10.1186/1471-2105-7-S1-S7</a>。</li>
+<li><strong>核心内容</strong>：用互信息加数据处理不等式在哺乳动物细胞表达数据中重建调控网络；讨论了
+DPI 在何种拓扑下能去除间接边、在何种拓扑下会误删真边。</li>
+</ul>
+<h3 id="faith-等-2007clr">Faith 等 2007：CLR</h3>
+<ul>
+<li><strong>背景</strong>：<em>PLoS Biology</em> 5:e8，DOI <a
+href="https://doi.org/10.1371/journal.pbio.0050008">10.1371/journal.pbio.0050008</a>。</li>
+<li><strong>核心内容</strong>：在大肠杆菌表达数据汇编上提出 CLR，以
+RegulonDB 为金标准比较多种方法，并用 ChIP 实验验证部分新预测。</li>
+</ul>
+<h3 id="huynh-thu-等-2010genie3">Huynh-Thu 等 2010：GENIE3</h3>
+<ul>
+<li><strong>背景</strong>：<em>PLoS ONE</em> 5:e12776，DOI <a
+href="https://doi.org/10.1371/journal.pone.0012776">10.1371/journal.pone.0012776</a>。</li>
+<li><strong>核心内容</strong>：把网络推断拆成每个靶基因的树模型回归，用特征重要性给边排序；在
+DREAM4 多因子挑战中表现最好。</li>
+</ul>
+<h3 id="schäfer-strimmer-2005收缩估计与偏相关网络">Schäfer &amp;
+Strimmer 2005：收缩估计与偏相关网络</h3>
+<ul>
+<li><strong>背景</strong>：<em>Statistical Applications in Genetics and
+Molecular Biology</em> 4:32，DOI <a
+href="https://doi.org/10.2202/1544-6115.1175">10.2202/1544-6115.1175</a>；配套的经验贝叶斯选边方法见
+<em>Bioinformatics</em> 21:754–764，DOI <a
+href="https://doi.org/10.1093/bioinformatics/bti062">10.1093/bioinformatics/bti062</a>。</li>
+<li><strong>核心内容</strong>：给出多种收缩目标下最优收缩强度的解析估计，使
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>≫</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">p\gg n</annotation></semantics></math>
+时的协方差与偏相关估计可行；用局部 fdr 判断偏相关网络中的显著边。</li>
+<li><strong>思考题</strong>：收缩目标选单位阵意味着什么先验信念？当真实相关普遍较强时会怎样？</li>
+</ul>
+<h3
+id="friedman-2004inferring-cellular-networks-using-probabilistic-graphical-models">Friedman
+2004：Inferring cellular networks using probabilistic graphical
+models</h3>
+<ul>
+<li><strong>背景</strong>：<em>Science</em> 303:799–805，DOI <a
+href="https://doi.org/10.1126/science.1094068">10.1126/science.1094068</a>。早期工作见
+Friedman 等 2000, <em>Journal of Computational Biology</em>，DOI <a
+href="https://doi.org/10.1089/106652700750050961">10.1089/106652700750050961</a>。</li>
+<li><strong>核心内容</strong>：综述贝叶斯网络、动态贝叶斯网络与模块网络在基因表达和信号网络推断中的应用，讨论观测数据下方向的可识别性与干预数据的作用。</li>
+</ul>
+<h3 id="aibar-等-2017scenic">Aibar 等 2017：SCENIC</h3>
+<ul>
+<li><strong>背景</strong>：<em>Nature Methods</em> 14:1083–1086，DOI <a
+href="https://doi.org/10.1038/nmeth.4463">10.1038/nmeth.4463</a>。</li>
+<li><strong>核心内容</strong>：共表达（GENIE3/GRNBoost2）+ 基序富集剪枝
++
+细胞水平调控子活性（AUCell），把单细胞转录组分析从基因层面提升到调控程序层面。</li>
+</ul>
+<h3
+id="marbach-等-2012wisdom-of-crowds-for-robust-gene-network-inference">Marbach
+等 2012：Wisdom of crowds for robust gene network inference</h3>
+<ul>
+<li><strong>背景</strong>：DREAM
+社区组织公开挑战，用统一数据和金标准比较网络推断方法。<em>Nature
+Methods</em> 9:796–804，DOI <a
+href="https://doi.org/10.1038/nmeth.2016">10.1038/nmeth.2016</a>。论文精读见
+<a href="paper-marbach2012_wisdom.html">Marbach 2012</a>。</li>
+<li><strong>核心发现</strong>：方法可大致分为回归、互信息、相关、贝叶斯网络等类别，各有偏好的网络结构（例如对前馈环、级联的识别能力不同）；没有单一方法全面领先；整合多种方法的社区网络最稳健。</li>
+<li><strong>阅读提示</strong>：留意不同方法对不同基序的系统性偏差，这把<a
+href="molecular-networks.network-motifs.html">网络基序</a>与网络推断联系了起来。</li>
+<li><strong>思考题</strong>：为什么“整合多种方法”能提高稳健性？在什么情况下整合反而可能放大错误？</li>
+</ul>
+<h3
+id="pratapa-等-2020benchmarking-algorithms-for-gene-regulatory-network-inference-from-single-cell-transcriptomic-data">Pratapa
+等 2020：Benchmarking algorithms for gene regulatory network inference
+from single-cell transcriptomic data</h3>
+<ul>
+<li><strong>背景</strong>：单细胞 GRN
+推断算法大量涌现，缺乏统一评估。<em>Nature Methods</em> 17:147–154，DOI
+<a
+href="https://doi.org/10.1038/s41592-019-0690-6">10.1038/s41592-019-0690-6</a>。</li>
+<li><strong>核心发现</strong>：BEELINE 框架评估 12
+种算法；方法在合成网络上比在布尔模型上表现好，在真实数据上多数方法的早期精度接近随机；不需要拟时序的方法（GENIE3、GRNBoost2、PIDC）总体更准确，且不受拟时序误差影响。</li>
+<li><strong>阅读提示</strong>：注意作者如何构建模拟数据（用 BoolODE
+从已知布尔模型模拟单细胞表达），以及 AUPR
+比值、早期精度比等指标的定义。</li>
+<li><strong>思考题</strong>：如果推断方法在真实数据上接近随机，SCENIC
+为什么仍被广泛使用？它的哪一步弥补了纯共表达推断的不足？</li>
+</ul>
+<h3
+id="其他引用文献按专题内出现顺序">其他引用文献（按专题内出现顺序）</h3>
+<ul>
+<li>Oldham MC 等 2008. Functional organization of the transcriptome in
+human brain. <em>Nature Neuroscience</em> 11:1271–1282. DOI <a
+href="https://doi.org/10.1038/nn.2207">10.1038/nn.2207</a></li>
+<li>Tesson BM, Breitling R, Jansen RC 2010. DiffCoEx: a simple and
+sensitive method to find differentially coexpressed gene modules.
+<em>BMC Bioinformatics</em> 11:497. DOI <a
+href="https://doi.org/10.1186/1471-2105-11-497">10.1186/1471-2105-11-497</a></li>
+<li>Amar D, Safer H, Shamir R 2013. Dissection of regulatory networks
+that are altered in disease via differential co-expression. <em>PLoS
+Computational Biology</em> 9:e1002955. DOI <a
+href="https://doi.org/10.1371/journal.pcbi.1002955">10.1371/journal.pcbi.1002955</a></li>
+<li>Ledoit O, Wolf M 2004. A well-conditioned estimator for
+large-dimensional covariance matrices. <em>Journal of Multivariate
+Analysis</em> 88:365–411. DOI <a
+href="https://doi.org/10.1016/S0047-259X(03)00096-4">10.1016/S0047-259X(03)00096-4</a></li>
+<li>Meinshausen N, Bühlmann P 2006. High-dimensional graphs and variable
+selection with the Lasso. <em>Annals of Statistics</em> 34:1436–1462.
+DOI <a
+href="https://doi.org/10.1214/009053606000000281">10.1214/009053606000000281</a></li>
+<li>Meyer PE 等 2007. Information-theoretic inference of large
+transcriptional regulatory networks（MRNET）. <em>EURASIP Journal on
+Bioinformatics and Systems Biology</em> 2007:79879. DOI <a
+href="https://doi.org/10.1155/2007/79879">10.1155/2007/79879</a></li>
+<li>Bonneau R 等 2006. The Inferelator. <em>Genome Biology</em> 7:R36.
+DOI <a
+href="https://doi.org/10.1186/gb-2006-7-5-r36">10.1186/gb-2006-7-5-r36</a></li>
+<li>Moerman T 等 2019. GRNBoost2 and Arboreto. <em>Bioinformatics</em>
+35:2159–2161. DOI <a
+href="https://doi.org/10.1093/bioinformatics/bty916">10.1093/bioinformatics/bty916</a></li>
+<li>Bravo González-Blas C 等 2023. SCENIC+: single-cell multiomic
+inference of enhancers and gene regulatory networks. <em>Nature
+Methods</em> 20:1355–1367. DOI <a
+href="https://doi.org/10.1038/s41592-023-01938-4">10.1038/s41592-023-01938-4</a></li>
+<li>Segal E 等 2003. Module networks. <em>Nature Genetics</em>
+34:166–176. DOI <a
+href="https://doi.org/10.1038/ng1165">10.1038/ng1165</a></li>
+<li>Sachs K 等 2005. Causal protein-signaling networks derived from
+multiparameter single-cell data. <em>Science</em> 308:523–529. DOI <a
+href="https://doi.org/10.1126/science.1105809">10.1126/science.1105809</a></li>
+<li>Gardner TS 等 2003. Inferring genetic networks and identifying
+compound mode of action via expression profiling. <em>Science</em>
+301:102–105. DOI <a
+href="https://doi.org/10.1126/science.1081900">10.1126/science.1081900</a></li>
+<li>Bansal M 等 2007. How to infer gene networks from expression
+profiles. <em>Molecular Systems Biology</em> 3:78. DOI <a
+href="https://doi.org/10.1038/msb4100120">10.1038/msb4100120</a></li>
+<li>Skinnider MA, Squair JW, Foster LJ 2019. Evaluating measures of
+association for single-cell transcriptomics. <em>Nature Methods</em>
+16:381–386. DOI <a
+href="https://doi.org/10.1038/s41592-019-0372-4">10.1038/s41592-019-0372-4</a></li>
+<li>Matsumoto H 等 2017. SCODE. <em>Bioinformatics</em> 33:2314–2321.
+DOI <a
+href="https://doi.org/10.1093/bioinformatics/btx194">10.1093/bioinformatics/btx194</a></li>
+<li>Papili Gao N 等 2018. SINCERITIES. <em>Bioinformatics</em>
+34:258–266. DOI <a
+href="https://doi.org/10.1093/bioinformatics/btx575">10.1093/bioinformatics/btx575</a></li>
+<li>Specht AT, Li J 2017. LEAP. <em>Bioinformatics</em> 33:764–766. DOI
+<a
+href="https://doi.org/10.1093/bioinformatics/btw729">10.1093/bioinformatics/btw729</a></li>
+<li>Chan TE, Stumpf MPH, Babtie AC 2017. Gene regulatory network
+inference from single-cell data using multivariate information
+measures（PIDC）. <em>Cell Systems</em> 5:251–267. DOI <a
+href="https://doi.org/10.1016/j.cels.2017.08.014">10.1016/j.cels.2017.08.014</a></li>
+<li>Han H 等 2018. TRRUST v2. <em>Nucleic Acids Research</em>
+46:D380–D386. DOI <a
+href="https://doi.org/10.1093/nar/gkx1013">10.1093/nar/gkx1013</a></li>
+<li>Garcia-Alonso L 等 2019. Benchmark and integration of resources for
+the estimation of human transcription factor activities（DoRothEA）.
+<em>Genome Research</em> 29:1363–1375. DOI <a
+href="https://doi.org/10.1101/gr.240663.118">10.1101/gr.240663.118</a></li>
+<li>Müller-Dott S 等 2023. Expanding the coverage of regulons from
+high-confidence prior knowledge for accurate estimation of transcription
+factor activities（CollecTRI）. <em>Nucleic Acids Research</em>
+51:10934–10949. DOI <a
+href="https://doi.org/10.1093/nar/gkad841">10.1093/nar/gkad841</a></li>
+<li>Greenfield A, Hafemeister C, Bonneau R 2013. Robust data-driven
+incorporation of prior knowledge into the inference of dynamic
+regulatory networks. <em>Bioinformatics</em> 29:1060–1067. DOI <a
+href="https://doi.org/10.1093/bioinformatics/btt099">10.1093/bioinformatics/btt099</a></li>
+<li>Saito T, Rehmsmeier M 2015. The precision-recall plot is more
+informative than the ROC plot when evaluating binary classifiers on
+imbalanced datasets. <em>PLoS ONE</em> 10:e0118432. DOI <a
+href="https://doi.org/10.1371/journal.pone.0118432">10.1371/journal.pone.0118432</a></li>
+<li>Davis J, Goadrich M 2006. The relationship between precision-recall
+and ROC curves. <em>Proceedings of ICML 2006</em>. DOI <a
+href="https://doi.org/10.1145/1143844.1143874">10.1145/1143844.1143874</a></li>
+<li>Voineagu I 等 2011. Transcriptomic analysis of autistic brain
+reveals convergent molecular pathology. <em>Nature</em> 474:380–384. DOI
+<a
+href="https://doi.org/10.1038/nature10110">10.1038/nature10110</a></li>
+<li>Basso K 等 2005. Reverse engineering of regulatory networks in human
+B cells. <em>Nature Genetics</em> 37:382–390. DOI <a
+href="https://doi.org/10.1038/ng1532">10.1038/ng1532</a></li>
+<li>Carro MS 等 2010. The transcriptional network for mesenchymal
+transformation of brain tumours. <em>Nature</em> 463:318–325. DOI <a
+href="https://doi.org/10.1038/nature08712">10.1038/nature08712</a></li>
+<li>Badia-i-Mompel P 等 2023. Gene regulatory network inference in the
+era of single-cell multi-omics. <em>Nature Reviews Genetics</em>
+24:739–754. DOI <a
+href="https://doi.org/10.1038/s41576-023-00618-5">10.1038/s41576-023-00618-5</a></li>
+</ul>
+</section><section class="block" id="data"><h2><span class="tag">Data &amp; tools</span>相关数据与软件</h2><div class="rgrid"><a class="rcard" href="r-trrust.html" data-dom="molecular" data-k="trrust v2 文献挖掘加人工整理的人与小鼠转录调控关系数据库。"><span class="kind">数据库</span><b>TRRUST v2</b><span class="d">文献挖掘加人工整理的人与小鼠转录调控关系数据库。</span></a><a class="rcard" href="r-collectri-dorothea.html" data-dom="molecular" data-k="collectri / dorothea saez 实验室整理的带符号转录因子调控子集合，用于推断 tf 活性。"><span class="kind">数据库</span><b>CollecTRI / DoRothEA</b><span class="d">Saez 实验室整理的带符号转录因子调控子集合，用于推断 TF 活性。</span></a><a class="rcard" href="r-gtex.html" data-dom="molecular medicine" data-k="gtex（基因型–组织表达项目） 人体多组织基因表达与表达数量性状位点（eqtl）资源。"><span class="kind">数据库</span><b>GTEx（基因型–组织表达项目）</b><span class="d">人体多组织基因表达与表达数量性状位点（eQTL）资源。</span></a><a class="rcard" href="r-ncbi-geo.html" data-dom="molecular" data-k="ncbi geo（基因表达综合数据库） ncbi 的公共功能基因组数据仓库，收录芯片与测序表达数据。"><span class="kind">数据库</span><b>NCBI GEO（基因表达综合数据库）</b><span class="d">NCBI 的公共功能基因组数据仓库，收录芯片与测序表达数据。</span></a><a class="rcard" href="r-tcga-gdc.html" data-dom="molecular medicine" data-k="tcga / nci genomic data commons（gdc） nci 的癌症基因组数据共享平台，收录 tcga 等项目数据。"><span class="kind">数据库</span><b>TCGA / NCI Genomic Data Commons（GDC）</b><span class="d">NCI 的癌症基因组数据共享平台，收录 TCGA 等项目数据。</span></a><a class="rcard" href="r-wgcna.html" data-dom="molecular" data-k="wgcna 加权基因共表达网络分析的 r 包。"><span class="kind">软件/工具包</span><b>WGCNA</b><span class="d">加权基因共表达网络分析的 R 包。</span></a><a class="rcard" href="r-genie3-arboreto.html" data-dom="molecular" data-k="genie3 / arboreto 基于树模型从表达数据推断基因调控网络的方法及其可扩展实现。"><span class="kind">软件/工具包</span><b>GENIE3 / arboreto</b><span class="d">基于树模型从表达数据推断基因调控网络的方法及其可扩展实现。</span></a><a class="rcard" href="r-scenic.html" data-dom="molecular" data-k="scenic / pyscenic 从单细胞转录组推断调控子并评估其活性的分析流程。"><span class="kind">软件/工具包</span><b>SCENIC / pySCENIC</b><span class="d">从单细胞转录组推断调控子并评估其活性的分析流程。</span></a></div></section><section class="block prose" id="resources"><h2><span class="tag">Further</span>延伸资源</h2><div class="table-wrap"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>类型</th>
+<th>资源</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>视频</td>
+<td><a
+href="https://www.bilibili.com/video/BV1wfRgY1Eyb/">只讲一遍——WGCNA
+的原理（B 站）</a></td>
+<td>中文，约 8 分钟，用来快速复习软阈值、TOM 与模块</td>
+</tr>
+<tr>
+<td>视频</td>
+<td>7.91J（2014）Lecture 15: Gene Regulatory Networks，<a
+href="https://www.youtube.com/watch?v=So6MK_FcP4E">YouTube
+原版</a>（需境外网络）；<a
+href="https://www.bilibili.com/video/BV1od4y1e7UZ/">B 站转载</a></td>
+<td>英文，约 80 分钟，系统讲相关、互信息、贝叶斯网络推断与 DREAM
+评估；原版为 OpenCourseWare 公开视频（CC BY-NC-SA），B
+站转载授权情况不明</td>
+</tr>
+<tr>
+<td>视频</td>
+<td><a href="https://www.bilibili.com/video/BV1Mg4y1c7wU/" target="_blank" rel="noopener">SCENIC
+单细胞转录因子预测（B 站系列）</a></td>
+<td>中文，11 集约 147 分钟，原理与 R/Python
+实操；可只看前两集原理部分</td>
+</tr>
+<tr>
+<td>教程</td>
+<td><a
+href="https://du-bii.github.io/module-6-Integrative-Bioinformatics/2020/session5/Network_Inference_with_WGCNA.html">WGCNA
+女性小鼠肝脏教程（du-bii 整理版）</a></td>
+<td>WGCNA 官方教程数据与完整 R 代码，适合在本地完整运行一遍真实数据（约
+2–3 小时）</td>
+</tr>
+<tr>
+<td>软件</td>
+<td><a
+href="https://cran.r-project.org/package=WGCNA">WGCNA（CRAN）</a></td>
+<td>R
+包主页与函数文档，<code>pickSoftThreshold</code>、<code>blockwiseModules</code>
+是入口函数；<code>modulePreservation</code> 实现模块保守性检验</td>
+</tr>
+<tr>
+<td>软件</td>
+<td><a href="https://cran.r-project.org/package=GeneNet" target="_blank" rel="noopener">GeneNet</a> 与
+<a
+href="https://cran.r-project.org/package=corpcor">corpcor</a>（CRAN）</td>
+<td>Schäfer–Strimmer 收缩相关、收缩偏相关与局部 fdr 选边</td>
+</tr>
+<tr>
+<td>论文</td>
+<td>Margolin 等 2006 ARACNE，<a
+href="https://doi.org/10.1186/1471-2105-7-S1-S7">doi.org/10.1186/1471-2105-7-S1-S7</a>；Huynh-Thu
+等 2010 GENIE3，<a
+href="https://doi.org/10.1371/journal.pone.0012776">doi.org/10.1371/journal.pone.0012776</a></td>
+<td>两类经典推断方法的原始论文，均开放获取</td>
+</tr>
+<tr>
+<td>综述</td>
+<td>Bansal 等 2007，<a
+href="https://doi.org/10.1038/msb4100120">doi.org/10.1038/msb4100120</a>；Badia-i-Mompel
+等 2023，<a
+href="https://doi.org/10.1038/s41576-023-00618-5">doi.org/10.1038/s41576-023-00618-5</a></td>
+<td>前者是按数据类型比较推断方法的入门教程（开放获取）；后者综述单细胞多组学背景下的
+GRN 推断</td>
+</tr>
+<tr>
+<td>教程</td>
+<td><a href="https://pyscenic.readthedocs.io/" target="_blank" rel="noopener">pySCENIC 文档</a> 与 Van
+de Sande 等 2020 流程论文 <a
+href="https://doi.org/10.1038/s41596-020-0336-2">doi.org/10.1038/s41596-020-0336-2</a></td>
+<td>单细胞 GRN 标准流程；需下载数 GB 的 cisTarget 数据库</td>
+</tr>
+<tr>
+<td>工具</td>
+<td><a
+href="https://github.com/Murali-group/Beeline">BEELINE（GitHub）</a></td>
+<td>用统一流程比较多种推断算法并计算 AUPRC
+与早期精度，可复现评估论文</td>
+</tr>
+<tr>
+<td>工具</td>
+<td><a href="https://decoupler-py.readthedocs.io/" target="_blank" rel="noopener">decoupler</a></td>
+<td>用 CollecTRI、DoRothEA 等先验调控网络估计转录因子活性</td>
+</tr>
+<tr>
+<td>教材</td>
+<td>Barabási, <em>Network Science</em>,
+http://networksciencebook.com/</td>
+<td>该书不设基因网络推断专章；度分布与无标度拟合（Ch. 4 The Scale-Free
+Property）、社团（Ch. 9 Communities）可作为 WGCNA 背景阅读</td>
+</tr>
+</tbody>
+</table></div>
+</section><section class="block prose" id="questions"><h2><span class="tag">Open questions</span>开放问题</h2><ol type="1">
+<li>一份表达数据（或其他高维数据，如代谢组、脑区时间序列）在什么条件下适合做共表达网络？预期得到的模块会反映生物学程序、细胞组成，还是技术因素？如何区分？</li>
+<li>一篇论文用 WGCNA 在 30 例样本中找到“与预后相关的 hub
+基因”，并据此提出治疗靶点。请从样本量、混杂、方向性、外部验证四个角度写出审稿意见。</li>
+<li>一个模块在动物模型中定义、在人类组织中 Zsummary 为
+6。你会如何表述这个结果？还需要哪些分析才能说“该调控程序在人类中保守”？</li>
+<li>设计一个评估方案：你提出了一种整合 ATAC-seq 先验的单细胞 GRN
+推断方法。金标准应如何选取才能避免循环论证？应报告哪些指标与基线？</li>
+<li>若只有横断面表达数据、没有扰动与时间信息，哪些关于调控方向的结论在原则上无法得出？哪些外部信息（遗传变异、转录因子列表、基序）可以部分弥补？</li>
+</ol>
+</section></article><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script><script src="assets/js/demos.js"></script></body></html>

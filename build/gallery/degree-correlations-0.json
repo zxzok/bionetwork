@@ -1,0 +1,10 @@
+{
+ "topic": "degree-correlations",
+ "index": 0,
+ "title": "按定义手算度相关系数 r 与 k_nn(k)，并与 NetworkX 对照",
+ "hash": "108d40a7c6fbec5e91a2d1c11dd30359793bc5d6",
+ "ok": true,
+ "figures": 1,
+ "stdout": "星形图 (1 个中心 + 6 个叶子): r(定义) = -1.0000, r(NetworkX) = -1.0000, k_nn(k) 与 NetworkX 一致: True\n   k_nn(k): {1: 6.0, 6: 1.0}\n两个团 K3 与 K5（不相连）: r(定义) = 1.0000, r(NetworkX) = 1.0000, k_nn(k) 与 NetworkX 一致: True\n   k_nn(k): {2: 2.0, 4: 4.0}\nZachary 空手道俱乐部: r(定义) = -0.4756, r(NetworkX) = -0.4756, k_nn(k) 与 NetworkX 一致: True\n   k_nn(k): {1: 16.0, 2: 12.41, 3: 8.22, 4: 8.54, 5: 10.47, 6: 8.33, 9: 5.78, 10: 6.6, 12: 5.08, 16: 4.31, 17: 3.82}\n\nER 随机图：<k> = 10.00, <k^2>/<k> = 11.01, 所有节点的邻居平均度的均值 = 11.01",
+ "stderr": ""
+}

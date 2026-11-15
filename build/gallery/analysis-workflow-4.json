@@ -1,0 +1,10 @@
+{
+ "topic": "analysis-workflow",
+ "index": 4,
+ "title": "格式互转——边表、邻接矩阵、稀疏矩阵、GraphML 与 JSON 的往返检查",
+ "hash": "7258b1866ad06194a66774a2a1a32f525b58c376",
+ "ok": true,
+ "figures": 1,
+ "stdout": "边表往返：5 节点 / 5 边（原图 6 节点，孤立点丢失）\n稠密矩阵 (6, 6)，对称：True；CSR 非零元 10（无向边各存两次）\n稀疏矩阵往返边集一致：True\nGraphML 往返：6 节点 / 5 边，TP53 的 role = 'tumor suppressor'，权重类型 float\nJSON 往返：6 节点 / 5 边\n列表属性写 GraphML 失败：NetworkXError\n转为分号分隔字符串后写入成功",
+ "stderr": ""
+}

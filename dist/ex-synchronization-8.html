@@ -1,0 +1,144 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>噪声与时滞对 Kuramoto 同步的影响 · 生物医学网络科学</title><meta name="description" content="同步与协同动力学 · 代码示例：噪声与时滞对 Kuramoto 同步的影响"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-dynamics"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html" aria-current="page">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics" open><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a><ol class="sub"><li><a href="synchronization.synchronization-types.html"><span class="n">01</span>同步现象与类型</a></li><li><a href="synchronization.kuramoto-model.html"><span class="n">02</span>Kuramoto 模型与序参量</a></li><li><a href="synchronization.network-kuramoto.html"><span class="n">03</span>网络拓扑与同步阈值</a></li><li><a href="synchronization.laplacian-spectrum.html"><span class="n">04</span>拉普拉斯谱与代数连通度</a></li><li><a href="synchronization.master-stability.html"><span class="n">05</span>主稳定函数与可同步性</a></li><li><a href="synchronization.hierarchical-sync.html"><span class="n">06</span>模块结构与分层同步</a></li><li><a href="synchronization.explosive-sync.html"><span class="n">07</span>爆发式同步</a></li><li><a href="synchronization.cluster-chimera.html"><span class="n">08</span>簇同步与奇异态</a></li><li><a href="synchronization.delay-noise.html"><span class="n">09</span>时滞与噪声</a></li><li><a href="synchronization.whole-brain-models.html"><span class="n">10</span>神经质量模型与全脑模型</a></li><li><a href="synchronization.phase-synchrony-estimation.html"><span class="n">11</span>从实测信号估计同步</a></li><li><a href="synchronization.consensus.html"><span class="n">12</span>共识动力学</a></li><li><a href="synchronization.derivations.html"><span class="n">13</span>数学推导与算法</a></li><li><a href="synchronization.frontiers.html"><span class="n">14</span>研究前沿与开放问题</a></li><li><a href="synchronization.biomedical.html"><span class="n">15</span>生物医学应用</a></li><li><a href="synchronization.limitations.html"><span class="n">16</span>适用范围与常见误用</a></li></ol></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="code.html">代码库</a> <span class="sep">/</span> <a href="code.html#dynamics">网络动力学与控制</a> <span class="sep">/</span> <a href="synchronization.html">同步与协同动力学</a></nav><div class="eyebrow" style="margin-top:14px"><b>Example</b><span>09 / 11</span></div><h1>噪声与时滞对 Kuramoto 同步的影响</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="synchronization.html">同步与协同动力学</a></dd></div><div><dt>下载</dt><dd><a href="notebooks/synchronization.ipynb" download>Notebook</a> · <a href="notebooks/synchronization.py" download>.py</a></dd></div></dl></header><section class="block prose"><ol type="1">
+<li>噪声：全连接 Kuramoto + 白噪声 d theta = [omega + K r
+sin(psi-theta)] dt + sqrt(2D) dW， omega 取洛伦兹分布（gamma=0.5）。理论
+K_c = 2(gamma + D)。用 Euler–Maruyama 积分， 比较 D=0 与 D=0.5 时 r(K)
+的起点。</li>
+<li>时滞：两个相同振荡器 omega=1、耦合 K=1、时滞
+tau，完全同步时集体频率满足 Omega = omega - K
+sin(Omega<em>tau)；同相态稳定需 K cos(Omega</em>tau) &gt; 0。tau
+较大时有多个解（多稳态）， 模拟落在哪一个取决于初始历史。</li>
+</ol>
+</section><section class="block"><h2><span class="tag">Output</span>输出图</h2><div class="ex-figs"><img src="gallery/synchronization-8-0.png" alt="噪声与时滞对 Kuramoto 同步的影响：输出图 1" loading="lazy"></div></section><section class="block"><h2><span class="tag">Output</span>文字输出</h2><pre class="ex-out">D=0.0 理论 K_c=1.0  r(K=1,2,3,4) = [0.16, 0.71, 0.82, 0.86]
+D=0.5 理论 K_c=2.0  r(K=1,2,3,4) = [0.03, 0.14, 0.64, 0.76]
+tau=0.0  同相解 Omega： [1.0]  其中稳定： [1.0]
+         模拟（初值接近、历史取常数）得到 Omega=1.000，末态相位差=-0.00
+tau=0.5  同相解 Omega： [0.671]  其中稳定： [0.671]
+         模拟（初值接近、历史取常数）得到 Omega=0.671，末态相位差=0.00
+tau=1.5  同相解 Omega： [0.416]  其中稳定： [0.416]
+         模拟（初值接近、历史取常数）得到 Omega=0.416，末态相位差=0.00
+tau=2.5  同相解 Omega： [0.307, 1.438, 1.975]  其中稳定： [0.307, 1.975]
+         模拟（初值接近、历史取常数）得到 Omega=0.307，末态相位差=0.00</pre></section><section class="block prose"><h2><span class="tag">Code</span>代码</h2><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># (1) 噪声：全连接 Kuramoto + 白噪声 d theta = [omega + K r sin(psi-theta)] dt + sqrt(2D) dW，</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#     omega 取洛伦兹分布（gamma=0.5）。理论 K_c = 2(gamma + D)。用 Euler–Maruyama 积分，</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#     比较 D=0 与 D=0.5 时 r(K) 的起点。</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># (2) 时滞：两个相同振荡器 omega=1、耦合 K=1、时滞 tau，完全同步时集体频率满足</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">#     Omega = omega - K sin(Omega*tau)；同相态稳定需 K cos(Omega*tau) &gt; 0。tau 较大时有多个解（多稳态），</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">#     模拟落在哪一个取决于初始历史。</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.optimize <span class="im">import</span> brentq</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>N, gamma <span class="op">=</span> <span class="dv">2000</span>, <span class="fl">0.5</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>omega <span class="op">=</span> gamma <span class="op">*</span> np.tan(np.pi <span class="op">*</span> (np.arange(<span class="dv">1</span>, N <span class="op">+</span> <span class="dv">1</span>) <span class="op">/</span> (N <span class="op">+</span> <span class="dv">1</span>) <span class="op">-</span> <span class="fl">0.5</span>))</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> r_noise(K, D, T<span class="op">=</span><span class="fl">60.0</span>, dt<span class="op">=</span><span class="fl">0.02</span>, seed<span class="op">=</span><span class="dv">0</span>):</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    rng <span class="op">=</span> np.random.default_rng(seed)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    th <span class="op">=</span> rng.uniform(<span class="dv">0</span>, <span class="dv">2</span> <span class="op">*</span> np.pi, N)<span class="op">;</span> rs <span class="op">=</span> []</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> n <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">int</span>(T <span class="op">/</span> dt)):</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>        z <span class="op">=</span> np.exp(<span class="ot">1j</span> <span class="op">*</span> th).mean()</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>        th <span class="op">=</span> th <span class="op">+</span> dt <span class="op">*</span> (omega <span class="op">+</span> K <span class="op">*</span> np.imag(z <span class="op">*</span> np.exp(<span class="op">-</span><span class="ot">1j</span> <span class="op">*</span> th))) <span class="op">+</span> np.sqrt(<span class="dv">2</span> <span class="op">*</span> D <span class="op">*</span> dt) <span class="op">*</span> rng.standard_normal(N)</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> n <span class="op">&gt;</span> <span class="bu">int</span>(T <span class="op">/</span> dt) <span class="op">//</span> <span class="dv">2</span>:</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>            rs.append(<span class="bu">abs</span>(z))</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.mean(rs)</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>r_by_D <span class="op">=</span> {}</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> D <span class="kw">in</span> [<span class="fl">0.0</span>, <span class="fl">0.5</span>]:</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    Ks <span class="op">=</span> [<span class="fl">1.0</span>, <span class="fl">2.0</span>, <span class="fl">3.0</span>, <span class="fl">4.0</span>]</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    r_by_D[D] <span class="op">=</span> [r_noise(K, D) <span class="cf">for</span> K <span class="kw">in</span> Ks]</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;D=</span><span class="sc">%.1f</span><span class="st"> 理论 K_c=</span><span class="sc">%.1f</span><span class="st">  r(K=1,2,3,4) =&quot;</span> <span class="op">%</span> (D, <span class="dv">2</span> <span class="op">*</span> (gamma <span class="op">+</span> D)),</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>          np.<span class="bu">round</span>(r_by_D[D], <span class="dv">2</span>).tolist())</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>w, K <span class="op">=</span> <span class="fl">1.0</span>, <span class="fl">1.0</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>delay_res <span class="op">=</span> []</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> tau <span class="kw">in</span> [<span class="fl">0.0</span>, <span class="fl">0.5</span>, <span class="fl">1.5</span>, <span class="fl">2.5</span>]:</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>    g <span class="op">=</span> <span class="kw">lambda</span> O: O <span class="op">-</span> w <span class="op">+</span> K <span class="op">*</span> np.sin(O <span class="op">*</span> tau)        <span class="co"># 所有解都落在 [w-K, w+K]</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>    grid <span class="op">=</span> np.linspace(w <span class="op">-</span> K, w <span class="op">+</span> K, <span class="dv">2001</span>)</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>    roots <span class="op">=</span> [brentq(g, x0, x1) <span class="cf">for</span> x0, x1 <span class="kw">in</span> <span class="bu">zip</span>(grid[:<span class="op">-</span><span class="dv">1</span>], grid[<span class="dv">1</span>:]) <span class="cf">if</span> g(x0) <span class="op">*</span> g(x1) <span class="op">&lt;</span> <span class="dv">0</span>]</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>    roots <span class="op">=</span> roots <span class="kw">or</span> [w]</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>    stable <span class="op">=</span> [O <span class="cf">for</span> O <span class="kw">in</span> roots <span class="cf">if</span> K <span class="op">*</span> np.cos(O <span class="op">*</span> tau) <span class="op">&gt;</span> <span class="dv">0</span>]</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;tau=</span><span class="sc">%.1f</span><span class="st">  同相解 Omega：&quot;</span> <span class="op">%</span> tau, np.<span class="bu">round</span>(roots, <span class="dv">3</span>).tolist(), <span class="st">&quot; 其中稳定：&quot;</span>, np.<span class="bu">round</span>(stable, <span class="dv">3</span>).tolist())</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 模拟：两个振荡器，初始相位接近，用历史缓冲实现时滞</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>    dt <span class="op">=</span> <span class="fl">0.001</span><span class="op">;</span> d <span class="op">=</span> <span class="bu">int</span>(<span class="bu">round</span>(tau <span class="op">/</span> dt))<span class="op">;</span> steps <span class="op">=</span> <span class="dv">60000</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>    th <span class="op">=</span> np.zeros((steps <span class="op">+</span> <span class="dv">1</span>, <span class="dv">2</span>))<span class="op">;</span> th[<span class="dv">0</span>] <span class="op">=</span> [<span class="fl">0.0</span>, <span class="fl">0.1</span>]</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> n <span class="kw">in</span> <span class="bu">range</span>(steps):</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>        past <span class="op">=</span> th[<span class="bu">max</span>(n <span class="op">-</span> d, <span class="dv">0</span>)]</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>        th[n <span class="op">+</span> <span class="dv">1</span>, <span class="dv">0</span>] <span class="op">=</span> th[n, <span class="dv">0</span>] <span class="op">+</span> dt <span class="op">*</span> (w <span class="op">+</span> K <span class="op">*</span> np.sin(past[<span class="dv">1</span>] <span class="op">-</span> th[n, <span class="dv">0</span>]))</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>        th[n <span class="op">+</span> <span class="dv">1</span>, <span class="dv">1</span>] <span class="op">=</span> th[n, <span class="dv">1</span>] <span class="op">+</span> dt <span class="op">*</span> (w <span class="op">+</span> K <span class="op">*</span> np.sin(past[<span class="dv">0</span>] <span class="op">-</span> th[n, <span class="dv">1</span>]))</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>    Om_sim <span class="op">=</span> (th[<span class="op">-</span><span class="dv">1</span>, <span class="dv">0</span>] <span class="op">-</span> th[<span class="op">-</span><span class="dv">20001</span>, <span class="dv">0</span>]) <span class="op">/</span> (<span class="dv">20000</span> <span class="op">*</span> dt)</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;         模拟（初值接近、历史取常数）得到 Omega=</span><span class="sc">%.3f</span><span class="st">，末态相位差=</span><span class="sc">%.2f</span><span class="st">&quot;</span></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>          <span class="op">%</span> (Om_sim, np.angle(np.exp(<span class="ot">1j</span> <span class="op">*</span> (th[<span class="op">-</span><span class="dv">1</span>, <span class="dv">0</span>] <span class="op">-</span> th[<span class="op">-</span><span class="dv">1</span>, <span class="dv">1</span>])))))</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>    delay_res.append((tau, roots, stable, Om_sim))</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>fig, (ax1, ax2) <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">4</span>))</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (D, rs), mk <span class="kw">in</span> <span class="bu">zip</span>(r_by_D.items(), [<span class="st">&quot;o&quot;</span>, <span class="st">&quot;s&quot;</span>]):</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>    l, <span class="op">=</span> ax1.plot(Ks, rs, marker<span class="op">=</span>mk, ls<span class="op">=</span><span class="st">&quot;-&quot;</span>, label<span class="op">=</span><span class="st">&quot;D = </span><span class="sc">%.1f</span><span class="st">&quot;</span> <span class="op">%</span> D)</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>    ax1.axvline(<span class="dv">2</span> <span class="op">*</span> (gamma <span class="op">+</span> D), ls<span class="op">=</span><span class="st">&quot;--&quot;</span>, c<span class="op">=</span>l.get_color(), lw<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>ax1.set_xlabel(<span class="st">&quot;K&quot;</span>)<span class="op">;</span> ax1.set_ylabel(<span class="st">&quot;r&quot;</span>)<span class="op">;</span> ax1.legend()<span class="op">;</span> ax1.set_title(<span class="st">&quot;Noise shifts K_c = 2(gamma + D)&quot;</span>)</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, (tau, roots, stable, Om) <span class="kw">in</span> <span class="bu">enumerate</span>(delay_res):</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>    unst <span class="op">=</span> [O <span class="cf">for</span> O <span class="kw">in</span> roots <span class="cf">if</span> O <span class="kw">not</span> <span class="kw">in</span> stable]</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>    ax2.plot([tau] <span class="op">*</span> <span class="bu">len</span>(stable), stable, <span class="st">&quot;o&quot;</span>, c<span class="op">=</span><span class="st">&quot;tab:blue&quot;</span>, label<span class="op">=</span><span class="st">&quot;stable root&quot;</span> <span class="cf">if</span> i <span class="op">==</span> <span class="dv">0</span> <span class="cf">else</span> <span class="va">None</span>)</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>    ax2.plot([tau] <span class="op">*</span> <span class="bu">len</span>(unst), unst, <span class="st">&quot;o&quot;</span>, mfc<span class="op">=</span><span class="st">&quot;none&quot;</span>, c<span class="op">=</span><span class="st">&quot;0.5&quot;</span>, label<span class="op">=</span><span class="st">&quot;unstable root&quot;</span> <span class="cf">if</span> i <span class="op">==</span> <span class="dv">0</span> <span class="cf">else</span> <span class="va">None</span>)</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>    ax2.plot(tau, Om, <span class="st">&quot;x&quot;</span>, c<span class="op">=</span><span class="st">&quot;tab:red&quot;</span>, ms<span class="op">=</span><span class="dv">10</span>, label<span class="op">=</span><span class="st">&quot;simulation&quot;</span> <span class="cf">if</span> i <span class="op">==</span> <span class="dv">0</span> <span class="cf">else</span> <span class="va">None</span>)</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>ax2.set_xlabel(<span class="st">&quot;delay tau&quot;</span>)<span class="op">;</span> ax2.set_ylabel(<span class="st">&quot;collective frequency Omega&quot;</span>)<span class="op">;</span> ax2.legend(fontsize<span class="op">=</span><span class="dv">8</span>)</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>ax2.set_title(<span class="st">&quot;Delay creates multiple in-phase solutions&quot;</span>)</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()<span class="op">;</span> plt.show()</span></code></pre></div>
+</section><section class="block"><h2><span class="tag">Run</span>在浏览器中运行</h2><p class="small">首次加载 Python 环境约需 20–40 秒；可以修改参数后重新运行。</p><div class="cell"><div class="cell-head"><h3>噪声与时滞对 Kuramoto 同步的影响</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea id="synchronization-cell8" rows="30" spellcheck="false" aria-label="噪声与时滞对 Kuramoto 同步的影响 代码"># (1) 噪声：全连接 Kuramoto + 白噪声 d theta = [omega + K r sin(psi-theta)] dt + sqrt(2D) dW，
+#     omega 取洛伦兹分布（gamma=0.5）。理论 K_c = 2(gamma + D)。用 Euler–Maruyama 积分，
+#     比较 D=0 与 D=0.5 时 r(K) 的起点。
+# (2) 时滞：两个相同振荡器 omega=1、耦合 K=1、时滞 tau，完全同步时集体频率满足
+#     Omega = omega - K sin(Omega*tau)；同相态稳定需 K cos(Omega*tau) &gt; 0。tau 较大时有多个解（多稳态），
+#     模拟落在哪一个取决于初始历史。
+import numpy as np
+from scipy.optimize import brentq
+
+N, gamma = 2000, 0.5
+omega = gamma * np.tan(np.pi * (np.arange(1, N + 1) / (N + 1) - 0.5))
+def r_noise(K, D, T=60.0, dt=0.02, seed=0):
+    rng = np.random.default_rng(seed)
+    th = rng.uniform(0, 2 * np.pi, N); rs = []
+    for n in range(int(T / dt)):
+        z = np.exp(1j * th).mean()
+        th = th + dt * (omega + K * np.imag(z * np.exp(-1j * th))) + np.sqrt(2 * D * dt) * rng.standard_normal(N)
+        if n &gt; int(T / dt) // 2:
+            rs.append(abs(z))
+    return np.mean(rs)
+r_by_D = {}
+for D in [0.0, 0.5]:
+    Ks = [1.0, 2.0, 3.0, 4.0]
+    r_by_D[D] = [r_noise(K, D) for K in Ks]
+    print(&quot;D=%.1f 理论 K_c=%.1f  r(K=1,2,3,4) =&quot; % (D, 2 * (gamma + D)),
+          np.round(r_by_D[D], 2).tolist())
+
+w, K = 1.0, 1.0
+delay_res = []
+for tau in [0.0, 0.5, 1.5, 2.5]:
+    g = lambda O: O - w + K * np.sin(O * tau)        # 所有解都落在 [w-K, w+K]
+    grid = np.linspace(w - K, w + K, 2001)
+    roots = [brentq(g, x0, x1) for x0, x1 in zip(grid[:-1], grid[1:]) if g(x0) * g(x1) &lt; 0]
+    roots = roots or [w]
+    stable = [O for O in roots if K * np.cos(O * tau) &gt; 0]
+    print(&quot;tau=%.1f  同相解 Omega：&quot; % tau, np.round(roots, 3).tolist(), &quot; 其中稳定：&quot;, np.round(stable, 3).tolist())
+    # 模拟：两个振荡器，初始相位接近，用历史缓冲实现时滞
+    dt = 0.001; d = int(round(tau / dt)); steps = 60000
+    th = np.zeros((steps + 1, 2)); th[0] = [0.0, 0.1]
+    for n in range(steps):
+        past = th[max(n - d, 0)]
+        th[n + 1, 0] = th[n, 0] + dt * (w + K * np.sin(past[1] - th[n, 0]))
+        th[n + 1, 1] = th[n, 1] + dt * (w + K * np.sin(past[0] - th[n, 1]))
+    Om_sim = (th[-1, 0] - th[-20001, 0]) / (20000 * dt)
+    print(&quot;         模拟（初值接近、历史取常数）得到 Omega=%.3f，末态相位差=%.2f&quot;
+          % (Om_sim, np.angle(np.exp(1j * (th[-1, 0] - th[-1, 1])))))
+    delay_res.append((tau, roots, stable, Om_sim))
+
+import matplotlib.pyplot as plt
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 4))
+for (D, rs), mk in zip(r_by_D.items(), [&quot;o&quot;, &quot;s&quot;]):
+    l, = ax1.plot(Ks, rs, marker=mk, ls=&quot;-&quot;, label=&quot;D = %.1f&quot; % D)
+    ax1.axvline(2 * (gamma + D), ls=&quot;--&quot;, c=l.get_color(), lw=1)
+ax1.set_xlabel(&quot;K&quot;); ax1.set_ylabel(&quot;r&quot;); ax1.legend(); ax1.set_title(&quot;Noise shifts K_c = 2(gamma + D)&quot;)
+for i, (tau, roots, stable, Om) in enumerate(delay_res):
+    unst = [O for O in roots if O not in stable]
+    ax2.plot([tau] * len(stable), stable, &quot;o&quot;, c=&quot;tab:blue&quot;, label=&quot;stable root&quot; if i == 0 else None)
+    ax2.plot([tau] * len(unst), unst, &quot;o&quot;, mfc=&quot;none&quot;, c=&quot;0.5&quot;, label=&quot;unstable root&quot; if i == 0 else None)
+    ax2.plot(tau, Om, &quot;x&quot;, c=&quot;tab:red&quot;, ms=10, label=&quot;simulation&quot; if i == 0 else None)
+ax2.set_xlabel(&quot;delay tau&quot;); ax2.set_ylabel(&quot;collective frequency Omega&quot;); ax2.legend(fontsize=8)
+ax2.set_title(&quot;Delay creates multiple in-phase solutions&quot;)
+plt.tight_layout(); plt.show()</textarea><div class="out" aria-live="polite"></div></div></section><nav class="pager"><a href="ex-synchronization-7.html"><small>上一个示例</small>对称性决定的簇同步（星图中的“远程同步”）</a><a href="ex-synchronization-9.html"><small>下一个示例</small>模块化“连接组”上的 Hopf 全脑模型：模拟功能连接与亚稳态</a></nav></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

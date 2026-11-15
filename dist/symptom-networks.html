@@ -1,0 +1,401 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>症状网络与网络精神病学 · 生物医学网络科学</title><meta name="description" content="症状网络与网络精神病学：把症状视为相互作用的网络节点，估计偏相关、Ising 与时间序列网络，并检验中心性、稳定性与组间差异。"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-symptom"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html" aria-current="page">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom" open><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html" aria-current="page">症状网络与网络精神病学</a><ol class="sub"><li><a href="symptom-networks.network-theory.html"><span class="n">01</span>共同原因模型与网络理论</a></li><li><a href="symptom-networks.gaussian-graphical-model.html"><span class="n">02</span>偏相关与高斯图模型</a></li><li><a href="symptom-networks.regularization.html"><span class="n">03</span>正则化估计：EBICglasso</a></li><li><a href="symptom-networks.ising-model.html"><span class="n">04</span>Ising 模型与二值症状数据</a></li><li><a href="symptom-networks.mixed-graphical-models.html"><span class="n">05</span>混合图模型与可预测性</a></li><li><a href="symptom-networks.dependence-vs-causation.html"><span class="n">06</span>横断面统计依赖与因果作用</a></li><li><a href="symptom-networks.centrality.html"><span class="n">07</span>症状中心性及其解释</a></li><li><a href="symptom-networks.bridge-centrality.html"><span class="n">08</span>桥中心性与共病</a></li><li><a href="symptom-networks.stability.html"><span class="n">09</span>抽样不确定性：边权准确性与中心性稳定性</a></li><li><a href="symptom-networks.sample-size.html"><span class="n">10</span>样本量与估计方法的选择</a></li><li><a href="symptom-networks.network-comparison.html"><span class="n">11</span>网络比较与跨样本复现</a></li><li><a href="symptom-networks.temporal-networks.html"><span class="n">12</span>个体动态网络：经验取样与时间序列</a></li><li><a href="symptom-networks.panel-networks.html"><span class="n">13</span>面板数据网络：CLPN 与 panel-GVAR</a></li><li><a href="symptom-networks.network-intervention.html"><span class="n">14</span>网络干预分析</a></li><li><a href="symptom-networks.clinical-controversies.html"><span class="n">15</span>临床应用与争议</a></li><li><a href="symptom-networks.module-control.html"><span class="n">16</span>症状网络的模块控制</a></li><li><a href="symptom-networks.derivations.html"><span class="n">17</span>数学推导与算法</a></li><li><a href="symptom-networks.frontiers.html"><span class="n">18</span>研究前沿与开放问题</a></li><li><a href="symptom-networks.biomedical.html"><span class="n">19</span>生物医学应用</a></li><li><a href="symptom-networks.limitations.html"><span class="n">20</span>适用范围与常见误用</a></li></ol></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><div class="lec-grid"><article style="min-width:0"><header class="doc-head"><nav class="crumb"><a href="domains.html">知识领域</a> <span class="sep">/</span> <a href="d-symptom.html">症状网络与网络精神病学</a></nav><div class="eyebrow" style="margin-top:14px"><b>Symptom Networks &amp; Network Psychiatry</b><span>Symptom networks and network psychiatry</span></div><h1>症状网络与网络精神病学</h1><p class="dek">把症状视为相互作用的网络节点，估计偏相关、Ising 与时间序列网络，并检验中心性、稳定性与组间差异。</p><dl class="doc-meta"><div><dt>知识页面</dt><dd>20 页</dd></div><div><dt>阅读</dt><dd>约 46 分钟</dd></div><div><dt>讲解视频</dt><dd>1 段</dd></div><div><dt>代码示例</dt><dd>10 个</dd></div></dl><div class="chips"><span class="chip">网络精神病学</span><span class="chip">症状网络</span><span class="chip">高斯图模型</span><span class="chip">偏相关</span><span class="chip">EBICglasso</span><span class="chip">Ising 模型</span><span class="chip">混合图模型</span><span class="chip">可预测性</span><span class="chip">强度中心性</span><span class="chip">预期影响</span><span class="chip">桥中心性</span><span class="chip">共病</span><span class="chip">bootstrap</span><span class="chip">CS 系数</span></div></header><section class="block prose" id="overview"><p><a href="brain-connectome.html">脑连接组</a>与<a
+href="dynamic-brain-networks.html">动态脑网络</a>中的节点是脑区，边来自影像信号。症状网络的节点换成了<strong>症状</strong>：失眠、情绪低落、疲乏、注意力差……边是症状之间的统计关联。这个看似简单的转换背后，是对“精神疾病是什么”的一种不同理解，被称为<strong>网络精神病学</strong>（network
+psychiatry）或网络心理测量学（network psychometrics）。Borsboom
+等（2021, <em>Nature Reviews Methods
+Primers</em>）对这一方法体系做了系统综述：从多元数据中估计变量之间的条件依赖网络，再对网络结构做描述、比较和推断。</p>
+<p>本专题按“理论—估计—推断—动态与干预—争议”组织：</p>
+<ul>
+<li><strong>理论</strong>：<a
+href="symptom-networks.network-theory.html">共同原因模型与网络理论</a>，说明为什么要把症状看成网络，以及“替代稳定态”“滞后”等复杂系统概念如何进入精神病理学；</li>
+<li><strong>估计</strong>：连续/有序数据的<a
+href="symptom-networks.gaussian-graphical-model.html">偏相关与高斯图模型</a>与<a
+href="symptom-networks.regularization.html">正则化估计</a>；二值数据的
+<a href="symptom-networks.ising-model.html">Ising
+模型</a>；混合类型数据的<a
+href="symptom-networks.mixed-graphical-models.html">混合图模型与可预测性</a>；</li>
+<li><strong>解读与推断</strong>：贯穿全专题的<a
+href="symptom-networks.dependence-vs-causation.html">横断面统计依赖与因果作用</a>之分；<a
+href="symptom-networks.centrality.html">症状中心性</a>、<a
+href="symptom-networks.bridge-centrality.html">桥中心性与共病</a>；<a
+href="symptom-networks.stability.html">抽样不确定性与稳定性</a>、<a
+href="symptom-networks.sample-size.html">样本量与估计方法的选择</a>、<a
+href="symptom-networks.network-comparison.html">网络比较</a>；</li>
+<li><strong>动态与干预</strong>：<a
+href="symptom-networks.temporal-networks.html">个体动态网络（ESM、mlVAR、GVAR）</a>、<a
+href="symptom-networks.panel-networks.html">面板数据网络（CLPN 与
+panel-GVAR）</a>、<a
+href="symptom-networks.network-intervention.html">网络干预分析</a>；</li>
+<li><strong>应用与争议</strong>：<a
+href="symptom-networks.clinical-controversies.html">临床应用、可重复性与中心性假说之争</a>，以及<a
+href="symptom-networks.module-control.html">症状网络模块控制</a>方面的研究。</li>
+</ul>
+<p>方法部分用到<a
+href="brain-connectome.functional-connectivity.html">脑连接组</a>中介绍过的偏相关与精度矩阵、<a
+href="community-structure.html">社团结构与社区发现</a>中的社团划分、<a
+href="network-construction.html">网络构建与统计验证</a>中的 bootstrap
+与置换检验，以及<a
+href="controllability.html">网络可控性与稳定性</a>中的网络控制理论。真实研究中，症状网络通常用
+R 语言的
+qgraph、bootnet、IsingFit、mgm、mlVAR、psychonetrics、NetworkComparisonTest
+等包或图形界面软件 JASP 估计；本专题的<a
+href="symptom-networks.html#code">代码示例</a>用 numpy
+从零实现其中的核心算法（EBICglasso、Ising 逐节点回归、桥中心性、NCT
+置换、多被试 VAR、网络干预分析、可预测性），以便看清原理。</p>
+</section><section class="block" id="pages"><h2><span class="tag">Contents</span>知识页面</h2><div class="arts"><a class="art" href="symptom-networks.network-theory.html"><span class="no">01</span><span class="t">共同原因模型与网络理论</span><span class="d">共同原因模型 传统的精神病学和心理测量学大多隐含一个共同原因模型（common cause model）：存在一个潜在的疾病实体（如“抑郁症”），它导致了失眠、情绪低落、疲乏等症状…</span></a><a class="art" href="symptom-networks.gaussian-graphical-model.html"><span class="no">02</span><span class="t">偏相关与高斯图模型</span><span class="d">为什么不用相关网络 如果直接用相关系数构网，“失眠–注意力差”可能很强，但这可能完全来自它们共同与“疲乏”相关。相关网络会把间接关联也画成边，因而又密又难以解释。我们需要的是控制其…</span></a><a class="art" href="symptom-networks.regularization.html"><span class="no">03</span><span class="t">正则化估计：EBICglasso</span><span class="d">9 个症状（如 PHQ-9 抑郁量表）需要估计 个偏相关；37 个条目的组合量表需要 666 个。样本量有限时，样本偏相关会产生大量小而非零的虚假边。标准做法是图形 LASSO（g…</span></a><a class="art" href="symptom-networks.ising-model.html"><span class="no">04</span><span class="t">Ising 模型与二值症状数据</span><span class="d">很多症状数据本来就是二值的：诊断访谈中的症状“有/无”、DSM 条目是否达到临床阈值。此时 GGM 的正态假设明显不成立。二值数据的对应模型是来自统计物理的 Ising 模型。 I…</span></a><a class="art" href="symptom-networks.mixed-graphical-models.html"><span class="no">05</span><span class="t">混合图模型与可预测性</span><span class="d">混合图模型（MGM） 临床数据常同时包含连续变量（如量表总分、生理指标）、类别变量（性别、诊断、治疗分组）和计数变量（发作次数）。Haslbeck &amp; Waldorp（2020, …</span></a><a class="art" href="symptom-networks.dependence-vs-causation.html"><span class="no">06</span><span class="t">横断面统计依赖与因果作用</span><span class="d">症状网络研究中最常见的混淆，是把估计出来的统计依赖读成症状之间的因果作用。网络理论的主张是因果性的（症状相互引起、相互维持），但常用的数据和方法只能提供以下几层不同强度的证据，应分…</span></a><a class="art" href="symptom-networks.centrality.html"><span class="no">07</span><span class="t">症状中心性及其解释</span><span class="d">常用指标 在加权症状网络中，网络结构指标中的中心性有对应的加权版本： - 强度（strength）： ，即与节点相连的边权绝对值之和； - 预期影响（expected influe…</span></a><a class="art" href="symptom-networks.bridge-centrality.html"><span class="no">08</span><span class="t">桥中心性与共病</span><span class="d">共病的网络解释 精神障碍之间共病率很高，抑郁与焦虑尤甚。共同原因模型的解释是两个潜在疾病相关；网络模型的解释是两组症状通过若干桥症状直接相连：一组症状被激活后，经由桥症状扩散到另一…</span></a><a class="art" href="symptom-networks.stability.html"><span class="no">09</span><span class="t">抽样不确定性：边权准确性与中心性稳定性</span><span class="d">症状网络通常基于几百人的样本，估计不确定性很大。Epskamp, Borsboom &amp; Fried（2018, Behavior Research Methods）提出了一套检验流…</span></a><a class="art" href="symptom-networks.sample-size.html"><span class="no">10</span><span class="t">样本量与估计方法的选择</span><span class="d">“需要多少人才能估计一个症状网络”没有统一答案：它取决于节点数 、真实网络的稀疏程度与边权大小、数据类型（连续、有序、二值）以及研究目标。这里只总结有文献支持的原则。 参数数量与功…</span></a><a class="art" href="symptom-networks.network-comparison.html"><span class="no">11</span><span class="t">网络比较与跨样本复现</span><span class="d">网络比较检验（NCT） 比较两组（如男性与女性、不同诊断组、两个国家的样本）时，可用网络比较检验（network comparison test, NCT；van Borkulo …</span></a><a class="art" href="symptom-networks.temporal-networks.html"><span class="no">12</span><span class="t">个体动态网络：经验取样与时间序列</span><span class="d">为了接近“个体体内的症状相互作用”，研究者使用经验取样法（experience sampling method, ESM；也称生态瞬时评估，EMA）：让被试在数周内每天多次用手机报…</span></a><a class="art" href="symptom-networks.panel-networks.html"><span class="no">13</span><span class="t">面板数据网络：CLPN 与 panel-GVAR</span><span class="d">ESM 需要密集测量，成本高、条目少。很多队列研究只有 2–5 次随访（如间隔数月或一年），但每次测量了完整量表。这类面板数据也可以估计有向的滞后网络。 横截滞后面板网络（CLPN…</span></a><a class="art" href="symptom-networks.network-intervention.html"><span class="no">14</span><span class="t">网络干预分析</span><span class="d">“中心症状是否为好的干预靶点”最终需要干预数据来回答。网络干预分析（network intervention analysis, NIA）由 Blanken 等（2019, Psy…</span></a><a class="art" href="symptom-networks.clinical-controversies.html"><span class="no">15</span><span class="t">临床应用与争议</span><span class="d">网络方法在十余年间迅速扩散，Robinaugh 等（2020, Psychological Medicine）对 2008–2018 年的文献做了系统回顾，并提出未来议程；Frie…</span></a><a class="art" href="symptom-networks.module-control.html"><span class="no">16</span><span class="t">症状网络的模块控制</span><span class="d">Pan 等（2024）把网络可控性理论用于症状网络（Pan 2024）。思路是：症状网络中多个量表条目往往形成症状模块，以往研究多关注单个节点之间的关系（中心性、桥中心性），而较少…</span></a><a class="art" href="symptom-networks.derivations.html"><span class="no">17</span><span class="t">数学推导与算法</span><span class="d">本节从多元正态分布出发推导“偏相关为 0 ⇔ 条件独立”，写出图形 LASSO 与 EBIC 的完整形式，给出 Ising 伪似然估计、病例删除 bootstrap 与 CS 系数…</span></a><a class="art" href="symptom-networks.frontiers.html"><span class="no">18</span><span class="t">研究前沿与开放问题</span><span class="d">1. 群体网络能否推广到个体？ Fisher, Medaglia &amp; Jeronimus（2018, PNAS，DOI: 10.1073/pnas.1711978115）显示个体间…</span></a><a class="art" href="symptom-networks.biomedical.html"><span class="no">19</span><span class="t">生物医学应用</span><span class="d">症状网络方法已扩展到精神医学之外。慢性疼痛研究中，疼痛强度、睡眠、疲乏、抑郁情绪、灾难化思维之间的网络被用于理解“疼痛–失眠–情绪”的恶性循环；在癌症患者的症状群研究中，护理学领域…</span></a><a class="art" href="symptom-networks.limitations.html"><span class="no">20</span><span class="t">适用范围与常见误用</span><span class="d">1. 误区：症状网络的边表示一个症状导致另一个症状。→ 正解：截面偏相关网络的边表示条件关联，方向和因果需要纵向、实验或干预证据；还可能是对撞偏倚造成的。 2. 误区：网络里没有边…</span></a></div></section><section class="block" id="video"><h2><span class="tag">VIDEO</span>讲解视频</h2><div class="video-main"><video controls preload="metadata" playsinline poster="media/videos/L11-core.jpg"><source src="media/videos/L11-core.mp4" type="video/mp4"><track kind="captions" srclang="zh" label="中文字幕" src="media/videos/L11-core.vtt"></video><div class="video-meta"><strong>症状网络：当症状彼此影响</strong><span>4 分 11 秒</span></div><details class="transcript"><summary>文字稿</summary><p>大家好，在脑网络里节点是脑区，这一期节点换成了症状。失眠、情绪低落、疲乏、注意力差，它们之间的关联也能构成一张网络。这背后其实是对精神疾病是什么的一种全新理解。这一期我们讲理论、讲方法，最后也会介绍一项具体研究。</p><p>传统的观点是共同原因模型，一个潜在的疾病导致了所有症状。网络观点则认为，症状之间存在直接的相互作用，彼此维持。比如失眠导致疲乏，疲乏导致注意力差，注意力差又加重自我否定。有研究在三千多名抑郁症患者中发现了一千多种不同的症状组合。这种异质性提示，把所有人归入同一个潜在实体，可能丢掉了大量信息。</p><p>这是一个模拟的抑郁症状网络，9个节点对应抑郁量表的9个条目。如果直接用相关系数连边，间接关联也会被画成边，网络又密又乱。所以我们用偏相关，也就是控制其他所有症状之后，两个症状还剩下的关联。偏相关可以从协方差矩阵的逆矩阵直接算出来。边越粗表示关联越强，右边的条形图是每个症状的强度中心性。强度就是与这个症状相连的所有边权绝对值之和。强度高的症状，与其他症状的条件关联最强，但这还不是因果上的重要性。</p><p>偏相关为零，意味着给定其余症状后，两个症状条件独立。但样本有限时，样本偏相关会出现许多小而非零的虚假边。常用的做法是图形套索，用惩罚项把弱边压缩为零。惩罚强度通常用扩展贝叶斯信息准则来选择，这就是常说的EBICglasso。要注意，被压缩为零的边，不一定真的不存在，可能只是样本不够。</p><p>早期研究常把最中心的症状解释为最佳治疗靶点，这个推论要非常小心。截面数据描述的是人与人之间的关联，不等于某个人体内的因果过程。两个条目内容几乎相同，也会彼此抬高中心性。所以一定要用自助法检验边权的置信区间和中心性的稳定性系数。</p><p>症状网络往往只基于几百个被试，估计的不确定性很大。第一步，对被试有放回地重抽样，得到每条边权的置信区间。第二步，逐步删掉一部分被试，看中心性排序还能不能保持。能删掉的最大比例叫稳定性系数，建议至少0.25，最好超过0.5。比较两组人的网络时，可以用置换组标签的网络比较检验。</p><p>最后介绍一项研究，它把网络控制理论用到了症状网络上。我们分析了两千七百多名大学新生的抑郁、焦虑、失眠和压力量表。网络划分出6个症状模块，我们在模块尺度上计算模块之间的控制强度。结果发现，非情绪模块对情绪模块的控制强度最高，情绪模块更容易被控制。控制作用最强的几个条目，来自失眠量表和压力量表。当然，这是基于截面数据的结构分析，还需要纵向和干预研究来检验。</p><p>第一，症状网络把疾病看作症状相互作用形成的稳定状态。第二，网络通常用正则化偏相关估计，而不是简单的相关。第三，中心性只是统计描述，不能直接当作治疗靶点。第四，任何症状网络研究都应报告边权和中心性的稳定性。建议在代码示例里亲手比较相关和偏相关，真实分析可以用R语言或JASP完成。</p></details></div></section><section class="block" id="demos"><h2><span class="tag">INTERACTIVE</span>交互可视化</h2><div class="demo" data-demo="symptom"></div></section><section class="block" id="code"><h2><span class="tag">CODE</span>计算实现</h2><p class="small">10 个完整可运行的 Python 示例，每个都给出代码、输出图和解读；可在浏览器中直接运行，或下载 <a href="notebooks/symptom-networks.ipynb" download>Jupyter Notebook</a> · <a href="notebooks/symptom-networks.py" download>Python 脚本</a>。</p><div class="gallery"><a class="gcard" href="ex-symptom-networks-0.html"><span class="thumb"><img src="gallery/symptom-networks-0-0.png" alt="" loading="lazy"></span><span class="gt">相关网络与偏相关网络</span></a><a class="gcard" href="ex-symptom-networks-1.html"><span class="thumb"><img src="gallery/symptom-networks-1-0.png" alt="" loading="lazy"></span><span class="gt">强度中心性与预期影响</span></a><a class="gcard" href="ex-symptom-networks-2.html"><span class="thumb"><img src="gallery/symptom-networks-2-0.png" alt="" loading="lazy"></span><span class="gt">中心性稳定性——简化版病例删除 bootstrap</span></a><a class="gcard" href="ex-symptom-networks-3.html"><span class="thumb"><img src="gallery/symptom-networks-3-0.png" alt="" loading="lazy"></span><span class="gt">EBICglasso——图形 LASSO 加 EBIC 选择惩罚参数</span></a><a class="gcard" href="ex-symptom-networks-4.html"><span class="thumb"><img src="gallery/symptom-networks-4-0.png" alt="" loading="lazy"></span><span class="gt">二值症状的 Ising 模型——Gibbs 抽样与逐节点 L1 逻辑回归（eLasso 思路）</span></a><a class="gcard" href="ex-symptom-networks-5.html"><span class="thumb"><img src="gallery/symptom-networks-5-0.png" alt="" loading="lazy"></span><span class="gt">桥中心性——抑郁与焦虑症状之间的&quot;桥&quot;</span></a><a class="gcard" href="ex-symptom-networks-6.html"><span class="thumb"><img src="gallery/symptom-networks-6-0.png" alt="" loading="lazy"></span><span class="gt">网络比较检验（NCT）的置换逻辑</span></a><a class="gcard" href="ex-symptom-networks-7.html"><span class="thumb"><img src="gallery/symptom-networks-7-0.png" alt="" loading="lazy"></span><span class="gt">个体内与个体间网络可以方向相反——多被试 VAR(1) 与 GVAR 的三种网络</span></a><a class="gcard" href="ex-symptom-networks-8.html"><span class="thumb"><img src="gallery/symptom-networks-8-0.png" alt="" loading="lazy"></span><span class="gt">网络干预分析（NIA）——把&quot;治疗分组&quot;作为网络中的一个节点</span></a><a class="gcard" href="ex-symptom-networks-9.html"><span class="thumb"><img src="gallery/symptom-networks-9-0.png" alt="" loading="lazy"></span><span class="gt">节点可预测性——由精度矩阵直接得到每个症状的 R²</span></a></div></section><section class="block prose" id="related"><h2><span class="tag">Links</span>关联知识</h2><ul>
+<li><a
+href="network-metrics.html">网络结构指标与随机图</a>：度、介数、接近中心性的原始定义及其“流动”假设，是理解症状中心性局限的起点。</li>
+<li><a href="community-structure.html">社团结构与社区发现</a>：Louvain
+等社团划分方法，用于识别症状模块，是桥中心性与模块控制的前提。</li>
+<li><a
+href="controllability.html">网络可控性与稳定性</a>：最小支配集与结构可控性，症状网络模块控制的理论基础。</li>
+<li><a
+href="brain-connectome.html">脑连接组：结构与功能连接</a>：偏相关、精度矩阵与正则化在功能连接估计中的同一用法。</li>
+<li><a
+href="network-construction.html">网络构建与统计验证</a>：从原始测量构建网络、bootstrap
+与置换检验的一般原则。</li>
+<li><a
+href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a>：时间序列上的网络估计、零模型与可重复性问题，与个体动态症状网络方法相通。</li>
+<li><a href="synchronization.html">同步与协同动力学</a>、<a
+href="spreading.html">网络上的传播与免疫</a>：耦合强度与集体状态转变，为症状网络的替代稳定态与滞后提供动力学类比。</li>
+<li><a
+href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a>：估计方法与超参数选择的敏感性分析和预注册。</li>
+</ul>
+</section><section class="block" id="papers"><h2><span class="tag">Papers</span>论文精读</h2><div class="pgrid"><article class="pcard" data-own="0" data-dom="theory symptom" data-k="a set of measures of centrality based on betweenness一组基于“介于性”的中心性度量介数中心性 中心性 最短路径 中心化程度 社会网络分析"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">网络基础理论</span><span class="pbadge dm">症状网络与网络精神病学</span><span>Sociometry · 1977</span></div><h3><a href="paper-freeman1977_betweenness.html">一组基于“介于性”的中心性度量</a></h3><p class="porig">A set of measures of centrality based on betweenness<br><span>Freeman LC</span></p><p class="psum">用“一个节点落在多少对节点的最短路径上”来定义中心性，给出节点介数、标准化介数和整个网络的中心化指标。</p><div class="plec small">相关专题：<a href="network-metrics.html">网络结构指标与随机图</a> <a href="community-structure.html">社团结构与社区发现</a> <a href="symptom-networks.html">症状网络与网络精神病学</a></div></article><article class="pcard" data-own="0" data-dom="symptom dynamics" data-k="network analysis: an integrative approach to the structure of psychopathology网络分析：理解精神病理结构的整合性方法网络精神病学 症状网络 共同原因模型 反馈环 中心性 共病"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">症状网络与网络精神病学</span><span class="pbadge dm">网络动力学与控制</span><span>Annual Review of Clinical Psychology · 2013</span></div><h3><a href="paper-borsboom2013_psychopathology.html">网络分析：理解精神病理结构的整合性方法</a></h3><p class="porig">Network analysis: an integrative approach to the structure of psychopathology<br><span>Borsboom D, Cramer AOJ</span></p><p class="psum">系统阐述把精神障碍看作症状之间因果相互作用的网络观点，综述症状网络的构建、分析和模拟方法及其临床意义。</p><div class="plec small">相关专题：<a href="symptom-networks.html">症状网络与网络精神病学</a> <a href="controllability.html">网络可控性与稳定性</a></div></article><article class="pcard" data-own="0" data-dom="symptom" data-k="estimating psychological networks and their accuracy: a tutorial paper心理网络的估计及其准确性：教程症状网络 高斯图模型 bootstrap cs 系数 bootnet 中心性稳定性"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">症状网络与网络精神病学</span><span>Behavior Research Methods · 2018</span></div><h3><a href="paper-epskamp2018_accuracy.html">心理网络的估计及其准确性：教程</a></h3><p class="porig">Estimating psychological networks and their accuracy: a tutorial paper<br><span>Epskamp S, Borsboom D, Fried EI</span></p><p class="psum">提出检验症状网络边权准确性与中心性稳定性的 bootstrap 流程和 CS 系数（R 包 bootnet）。</p><div class="plec small">相关专题：<a href="symptom-networks.html">症状网络与网络精神病学</a></div></article><article class="pcard" data-own="1" data-dom="symptom dynamics theory" data-k="module control of network analysis in psychopathology精神病理学网络分析中的模块控制症状网络 最小支配集 模块控制网络 控制频率 图形lasso louvain"><div class="pmeta"><span class="pbadge">研究论文</span><span class="pbadge dm">症状网络与网络精神病学</span><span class="pbadge dm">网络动力学与控制</span><span class="pbadge vid">▶ 视频</span><span>iScience · 2024</span></div><h3><a href="paper-pan2024_modulecontrol.html">精神病理学网络分析中的模块控制</a></h3><p class="porig">Module control of network analysis in psychopathology<br><span>Pan C, Zhang Q, Zhu Y, Kong S, Liu J, Zhang C, et al.</span></p><p class="psum">用最小支配集在模块尺度分析症状网络的控制关系，发现 2773 名大学新生中睡眠、压力模块结构上控制情绪模块。</p><div class="plec small">相关专题：<a href="symptom-networks.html">症状网络与网络精神病学</a> <a href="controllability.html">网络可控性与稳定性</a> <a href="community-structure.html">社团结构与社区发现</a></div></article></div></section><section class="block prose" id="references"><h2><span class="tag">References</span>核心文献</h2><h3 id="borsboom-2017a-network-theory-of-mental-disorders">Borsboom
+2017：A network theory of mental disorders</h3>
+<ul>
+<li><strong>背景</strong>：网络方法在精神病理学中迅速流行，但缺少一个系统的理论表述。</li>
+<li><strong>核心发现</strong>：该文（<em>World Psychiatry</em>，DOI: <a
+href="https://doi.org/10.1002/wps.20375">10.1002/wps.20375</a>）系统阐述了网络理论：症状之间存在直接因果关系；强连接的症状网络可能具有替代稳定态和滞后效应；外部因素通过“外场”作用于特定症状。文后附有多位学者的评论，代表了支持与批评的不同立场。</li>
+<li><strong>阅读提示</strong>：一定要读评论部分，体会该理论在概念上的争议（例如症状是否能被清楚地界定为独立的“节点”）。早期的综述可读
+Borsboom &amp; Cramer 2013（<a
+href="paper-borsboom2013_psychopathology.html">精读</a>）。</li>
+<li><strong>思考题</strong>：如果网络理论正确，治疗应该怎样设计？如果共同原因模型正确，治疗又应怎样设计？二者的预测在什么实验中会出现分歧？</li>
+</ul>
+<h3
+id="borsboom-等-2021network-analysis-of-multivariate-data-in-psychological-science">Borsboom
+等 2021：Network analysis of multivariate data in psychological
+science</h3>
+<ul>
+<li><strong>背景</strong>：网络方法从精神病理学扩展到人格、态度、认知等领域，需要一份系统的方法学综述。</li>
+<li><strong>核心内容</strong>：该文（<em>Nature Reviews Methods
+Primers</em>，DOI: <a
+href="https://doi.org/10.1038/s43586-021-00055-w">10.1038/s43586-021-00055-w</a>）覆盖数据类型与研究设计、截面网络（GGM、Ising、混合图模型）与时间序列网络的估计、中心性与可预测性、稳定性与可重复性、报告与数据共享、方法局限与发展方向。</li>
+<li><strong>阅读提示</strong>：可作为本专题估计方法部分的总纲；对照本专题各知识页面，看每一种估计方法对应的数据假设。</li>
+</ul>
+<h3
+id="epskamp-fried-2018a-tutorial-on-regularized-partial-correlation-networks">Epskamp
+&amp; Fried 2018：A tutorial on regularized partial correlation
+networks</h3>
+<ul>
+<li><strong>背景</strong>：EBICglasso
+被广泛使用，但许多使用者不清楚正则化的假设和后果。</li>
+<li><strong>核心内容</strong>：该文（<em>Psychological
+Methods</em>，DOI: <a
+href="https://doi.org/10.1037/met0000167">10.1037/met0000167</a>）系统讲解偏相关网络、glasso
+与 EBIC
+选择、有序数据的处理，并用模拟说明不同样本量下的估计表现与常见误读。</li>
+<li><strong>阅读提示</strong>：对照<a
+href="symptom-networks.regularization.html">正则化估计</a>与<a
+href="symptom-networks.sample-size.html">样本量与估计方法的选择</a>阅读。</li>
+</ul>
+<h3
+id="epskamp-borsboom-fried-2018estimating-psychological-networks-and-their-accuracy-a-tutorial-paper">Epskamp,
+Borsboom &amp; Fried 2018：Estimating psychological networks and their
+accuracy: A tutorial paper</h3>
+<ul>
+<li><strong>背景</strong>：大量症状网络研究只报告一个网络图和中心性排序，缺少对估计不确定性的检验。</li>
+<li><strong>核心发现</strong>：该文（<em>Behavior Research
+Methods</em>，DOI: <a
+href="https://doi.org/10.3758/s13428-017-0862-1">10.3758/s13428-017-0862-1</a>）提出了边权
+bootstrap 置信区间、病例删除 bootstrap 与 CS
+系数、差异检验等一整套方法，实现于 R 包 bootnet，并用一个 PTSD
+数据集完整演示。</li>
+<li><strong>阅读提示</strong>：对照<a
+href="symptom-networks.stability.html">抽样不确定性：边权准确性与中心性稳定性</a>，把文中每一张图与它要回答的问题对应起来；注意作者对
+CS 系数阈值的表述是经验性的建议。</li>
+<li><strong>思考题</strong>：如果一项研究的强度中心性 CS 系数为
+0.13，作者却在讨论部分大篇幅解释“最中心症状”的临床意义，你作为审稿人会提出什么意见？</li>
+<li><strong>精读</strong>：<a
+href="paper-epskamp2018_accuracy.html">Epskamp 2018</a></li>
+</ul>
+<h3
+id="bringmann-等-2019what-do-centrality-measures-measure-in-psychological-networks">Bringmann
+等 2019：What do centrality measures measure in psychological
+networks?</h3>
+<ul>
+<li><strong>背景</strong>：中心性指标来自社会网络和信息流动研究，被直接搬到症状网络中。</li>
+<li><strong>核心发现</strong>：该文（<em>Journal of Abnormal
+Psychology</em>，DOI: <a
+href="https://doi.org/10.1037/abn0000446">10.1037/abn0000446</a>）分析了中心性指标背后的假设，指出接近中心性和介数中心性的假设在症状网络中难以满足，强度的解释也需谨慎，并用实证数据展示了这些指标的不稳定性。</li>
+<li><strong>阅读提示</strong>：结合<a
+href="network-metrics.html">网络结构指标与随机图</a>中中心性的定义，思考“流动”的假设在社交网络、脑网络和症状网络中各自是否成立。</li>
+<li><strong>思考题</strong>：你能否设计一个中心性指标，使其假设与症状网络的生成机制相匹配？它需要什么样的数据？</li>
+</ul>
+<h3
+id="epskamp-waldorp-mõttus-borsboom-2018the-gaussian-graphical-model-in-cross-sectional-and-time-series-data">Epskamp,
+Waldorp, Mõttus &amp; Borsboom 2018：The Gaussian graphical model in
+cross-sectional and time-series data</h3>
+<ul>
+<li><strong>背景</strong>：ESM
+数据同时含有个体内与个体间变异，单一网络无法区分。</li>
+<li><strong>核心内容</strong>：该文（<em>Multivariate Behavioral
+Research</em>，DOI: <a
+href="https://doi.org/10.1080/00273171.2018.1454823">10.1080/00273171.2018.1454823</a>）把
+GGM
+推广到时间序列，提出时间网络、同期网络与个体间网络三者的区分，并给出多被试的估计方法（mlVAR）。</li>
+<li><strong>阅读提示</strong>：对照<a
+href="symptom-networks.temporal-networks.html">个体动态网络</a>与代码中的模拟，理解三种网络为什么可能符号不同。</li>
+</ul>
+<h3 id="其他方法文献">其他方法文献</h3>
+<div class="table-wrap"><table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>主题</th>
+<th>文献</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ising 模型估计</td>
+<td>van Borkulo 等 2014，<em>Scientific Reports</em>，<a
+href="https://doi.org/10.1038/srep05918">10.1038/srep05918</a></td>
+</tr>
+<tr>
+<td>Ising 与 IRT</td>
+<td>Marsman 等 2018，<em>Multivariate Behavioral Research</em>，<a
+href="https://doi.org/10.1080/00273171.2017.1379379">10.1080/00273171.2017.1379379</a></td>
+</tr>
+<tr>
+<td>混合图模型</td>
+<td>Haslbeck &amp; Waldorp 2020，<em>Journal of Statistical
+Software</em>，<a
+href="https://doi.org/10.18637/jss.v093.i08">10.18637/jss.v093.i08</a></td>
+</tr>
+<tr>
+<td>可预测性</td>
+<td>Haslbeck &amp; Waldorp 2018，<em>Behavior Research Methods</em>，<a
+href="https://doi.org/10.3758/s13428-017-0910-x">10.3758/s13428-017-0910-x</a></td>
+</tr>
+<tr>
+<td>调节网络模型</td>
+<td>Haslbeck, Borsboom &amp; Waldorp 2021，<em>Multivariate Behavioral
+Research</em>，<a
+href="https://doi.org/10.1080/00273171.2019.1677207">10.1080/00273171.2019.1677207</a></td>
+</tr>
+<tr>
+<td>桥中心性</td>
+<td>Jones, Ma &amp; McNally 2021，<em>Multivariate Behavioral
+Research</em>，<a
+href="https://doi.org/10.1080/00273171.2019.1614898">10.1080/00273171.2019.1614898</a></td>
+</tr>
+<tr>
+<td>预期影响</td>
+<td>Robinaugh, Millner &amp; McNally 2016，<em>J Abnorm Psychol</em>，<a
+href="https://doi.org/10.1037/abn0000181">10.1037/abn0000181</a></td>
+</tr>
+<tr>
+<td>网络比较检验</td>
+<td>van Borkulo 等 2023，<em>Psychological Methods</em>，<a
+href="https://doi.org/10.1037/met0000476">10.1037/met0000476</a></td>
+</tr>
+<tr>
+<td>稀疏假设的风险</td>
+<td>Epskamp, Kruis &amp; Marsman 2017，<em>PLOS ONE</em>，<a
+href="https://doi.org/10.1371/journal.pone.0179891">10.1371/journal.pone.0179891</a></td>
+</tr>
+<tr>
+<td>估计方法选择</td>
+<td>Isvoranu &amp; Epskamp 2023，<em>Psychological Methods</em>，<a
+href="https://doi.org/10.1037/met0000439">10.1037/met0000439</a></td>
+</tr>
+<tr>
+<td>报告规范</td>
+<td>Burger 等 2023，<em>Psychological Methods</em>，<a
+href="https://doi.org/10.1037/met0000471">10.1037/met0000471</a></td>
+</tr>
+<tr>
+<td>广义网络心理测量</td>
+<td>Epskamp, Rhemtulla &amp; Borsboom 2017，<em>Psychometrika</em>，<a
+href="https://doi.org/10.1007/s11336-017-9557-x">10.1007/s11336-017-9557-x</a></td>
+</tr>
+<tr>
+<td>多层 VAR</td>
+<td>Bringmann 等 2013，<em>PLOS ONE</em>，<a
+href="https://doi.org/10.1371/journal.pone.0060188">10.1371/journal.pone.0060188</a></td>
+</tr>
+<tr>
+<td>个体化网络</td>
+<td>Epskamp, van Borkulo 等 2018，<em>Clinical Psychological
+Science</em>，<a
+href="https://doi.org/10.1177/2167702617744325">10.1177/2167702617744325</a>；Fisher
+等 2017，<em>J Abnorm Psychol</em>，<a
+href="https://doi.org/10.1037/abn0000311">10.1037/abn0000311</a></td>
+</tr>
+<tr>
+<td>面板数据网络</td>
+<td>Epskamp 2020，<em>Psychometrika</em>，<a
+href="https://doi.org/10.1007/s11336-020-09697-3">10.1007/s11336-020-09697-3</a>；Wysocki
+等 2025，<em>advances.in/psychology</em>，<a
+href="https://doi.org/10.56296/aip00037">10.56296/aip00037</a>；Hamaker,
+Kuiper &amp; Grasman 2015，<em>Psychological Methods</em>，<a
+href="https://doi.org/10.1037/a0038889">10.1037/a0038889</a></td>
+</tr>
+<tr>
+<td>网络干预分析</td>
+<td>Blanken 等 2019，<em>Psychotherapy and Psychosomatics</em>，<a
+href="https://doi.org/10.1159/000495045">10.1159/000495045</a></td>
+</tr>
+<tr>
+<td>中心性与因果</td>
+<td>Dablander &amp; Hinne 2019，<em>Scientific Reports</em>，<a
+href="https://doi.org/10.1038/s41598-019-43033-9">10.1038/s41598-019-43033-9</a>；Spiller
+等 2020，<em>BMC Medicine</em>，<a
+href="https://doi.org/10.1186/s12916-020-01740-5">10.1186/s12916-020-01740-5</a></td>
+</tr>
+<tr>
+<td>可重复性争论</td>
+<td>Forbes 等 2017，<a
+href="https://doi.org/10.1037/abn0000276">10.1037/abn0000276</a>；Borsboom
+等 2017，<a
+href="https://doi.org/10.1037/abn0000306">10.1037/abn0000306</a>；Forbes
+等 2017 答复，<a
+href="https://doi.org/10.1037/abn0000313">10.1037/abn0000313</a>（均为
+<em>J Abnorm Psychol</em>）；Forbes 等 2021，<em>Multivariate Behavioral
+Research</em>，<a
+href="https://doi.org/10.1080/00273171.2019.1616526">10.1080/00273171.2019.1616526</a>；Fried
+等 2018，<em>Clinical Psychological Science</em>，<a
+href="https://doi.org/10.1177/2167702617745092">10.1177/2167702617745092</a></td>
+</tr>
+<tr>
+<td>理论与综述</td>
+<td>Cramer 等 2010，<em>Behav Brain Sci</em>，<a
+href="https://doi.org/10.1017/S0140525X09991567">10.1017/S0140525X09991567</a>；Cramer
+等 2016，<em>PLOS ONE</em>，<a
+href="https://doi.org/10.1371/journal.pone.0167490">10.1371/journal.pone.0167490</a>；Fried
+&amp; Nesse 2015，<em>J Affect Disord</em>，<a
+href="https://doi.org/10.1016/j.jad.2014.10.010">10.1016/j.jad.2014.10.010</a>；Fried
+&amp; Cramer 2017，<em>Perspect Psychol Sci</em>，<a
+href="https://doi.org/10.1177/1745691617705892">10.1177/1745691617705892</a>；Robinaugh
+等 2020，<em>Psychol Med</em>，<a
+href="https://doi.org/10.1017/S0033291719003404">10.1017/S0033291719003404</a>；Haslbeck
+等 2021，<em>Psychological Methods</em>，<a
+href="https://doi.org/10.1037/met0000303">10.1037/met0000303</a></td>
+</tr>
+</tbody>
+</table></div>
+</section><section class="block" id="data"><h2><span class="tag">Data &amp; tools</span>相关数据与软件</h2><div class="rgrid"><a class="rcard" href="r-qgraph.html" data-dom="symptom methods" data-k="qgraph 绘制与估计心理测量网络的 r 包。"><span class="kind">软件/工具包</span><b>qgraph</b><span class="d">绘制与估计心理测量网络的 R 包。</span></a><a class="rcard" href="r-bootnet.html" data-dom="symptom methods" data-k="bootnet 估计心理网络并用自助法评估边与中心性稳定性的 r 包。"><span class="kind">软件/工具包</span><b>bootnet</b><span class="d">估计心理网络并用自助法评估边与中心性稳定性的 R 包。</span></a><a class="rcard" href="r-mgm.html" data-dom="symptom" data-k="mgm 估计混合图模型与时变网络的 r 包。"><span class="kind">软件/工具包</span><b>mgm</b><span class="d">估计混合图模型与时变网络的 R 包。</span></a><a class="rcard" href="r-networkcomparisontest.html" data-dom="symptom methods" data-k="networkcomparisontest（nct） 用置换检验比较两组网络结构的 r 包。"><span class="kind">软件/工具包</span><b>NetworkComparisonTest（NCT）</b><span class="d">用置换检验比较两组网络结构的 R 包。</span></a><a class="rcard" href="r-psychonetrics.html" data-dom="symptom" data-k="psychonetrics 以结构方程框架拟合与检验心理测量网络模型的 r 包。"><span class="kind">软件/工具包</span><b>psychonetrics</b><span class="d">以结构方程框架拟合与检验心理测量网络模型的 R 包。</span></a><a class="rcard" href="r-nhanes.html" data-dom="symptom medicine" data-k="nhanes（美国国家健康与营养调查） 美国 cdc 的全国代表性健康调查，含 phq-9 等公开量表数据。"><span class="kind">数据集</span><b>NHANES（美国国家健康与营养调查）</b><span class="d">美国 CDC 的全国代表性健康调查，含 PHQ-9 等公开量表数据。</span></a></div></section><section class="block prose" id="resources"><h2><span class="tag">Further</span>延伸资源</h2><div class="table-wrap"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>类型</th>
+<th>资源</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>视频</td>
+<td><a
+href="https://www.bilibili.com/video/BV1cvWpeQEa1/">朱政：症状网络的概述和应用</a>（B
+站）</td>
+<td>中文讲座，70 分钟，理论与临床应用概述；上传者非讲者本人</td>
+</tr>
+<tr>
+<td>视频</td>
+<td><a href="https://www.bilibili.com/video/BV1KA4m1N7jw/" target="_blank" rel="noopener">R 语言
+bootnet 心理学网络分析</a>（B 站）</td>
+<td>中文，16 分钟，照着 Epskamp 2018 教程逐步操作</td>
+</tr>
+<tr>
+<td>综述</td>
+<td>Borsboom 等 2021，<a
+href="https://doi.org/10.1038/s43586-021-00055-w">doi.org/10.1038/s43586-021-00055-w</a></td>
+<td>心理科学中多元数据网络分析的方法学总览</td>
+</tr>
+<tr>
+<td>理论</td>
+<td>Borsboom 2017，<a
+href="https://doi.org/10.1002/wps.20375">doi.org/10.1002/wps.20375</a></td>
+<td>网络理论的纲领性文章，附多篇评论</td>
+</tr>
+<tr>
+<td>方法</td>
+<td>Epskamp, Borsboom &amp; Fried 2018，<a
+href="https://doi.org/10.3758/s13428-017-0862-1">doi.org/10.3758/s13428-017-0862-1</a></td>
+<td>稳定性分析教程（CC BY 4.0），撰写方法部分时的主要参考</td>
+</tr>
+<tr>
+<td>方法</td>
+<td>Epskamp &amp; Fried 2018，<a
+href="https://doi.org/10.1037/met0000167">doi.org/10.1037/met0000167</a></td>
+<td>正则化偏相关网络（EBICglasso）教程</td>
+</tr>
+<tr>
+<td>方法</td>
+<td>Burger 等 2023，<a
+href="https://doi.org/10.1037/met0000471">doi.org/10.1037/met0000471</a></td>
+<td>截面心理网络分析的报告标准</td>
+</tr>
+<tr>
+<td>批评</td>
+<td>Bringmann 等 2019，<a
+href="https://doi.org/10.1037/abn0000446">doi.org/10.1037/abn0000446</a></td>
+<td>中心性指标适用性的代表性批评</td>
+</tr>
+<tr>
+<td>网站</td>
+<td><a href="https://psych-networks.com/" target="_blank" rel="noopener">psych-networks.com</a></td>
+<td>Eiko Fried
+维护的博客，含心理网络方法的教程、争论与新文献介绍（中心性解读、正则化后的
+bootstrap、个体化方法等）</td>
+</tr>
+<tr>
+<td>软件</td>
+<td><a href="https://jasp-stats.org/" target="_blank" rel="noopener">JASP</a>；R 包 <a
+href="https://cran.r-project.org/package=bootnet">bootnet</a>、<a
+href="https://cran.r-project.org/package=qgraph">qgraph</a>、<a
+href="https://cran.r-project.org/package=networktools">networktools</a></td>
+<td>JASP 的 Network 模块无需写代码；R
+包分别负责估计与稳定性、绘图、桥中心性与条目重叠检查</td>
+</tr>
+<tr>
+<td>软件</td>
+<td>R 包 <a
+href="https://cran.r-project.org/package=IsingFit">IsingFit</a>、<a
+href="https://cran.r-project.org/package=mgm">mgm</a>、<a
+href="https://cran.r-project.org/package=mlVAR">mlVAR</a>、<a
+href="https://cran.r-project.org/package=graphicalVAR">graphicalVAR</a>、<a
+href="https://cran.r-project.org/package=psychonetrics">psychonetrics</a>、<a
+href="https://cran.r-project.org/package=NetworkComparisonTest">NetworkComparisonTest</a></td>
+<td>分别对应 Ising 模型、混合图模型与可预测性、多层 VAR、单被试
+GVAR、panel-GVAR 与潜变量网络、网络比较检验</td>
+</tr>
+<tr>
+<td>数据</td>
+<td><a
+href="https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/DPQ_L.htm">NHANES
+2021–2023 PHQ-9（DPQ_L）</a></td>
+<td>6337 名成人的 PHQ-9 九个条目，公开下载，可用于构建抑郁症状网络</td>
+</tr>
+</tbody>
+</table></div>
+</section><section class="block prose" id="questions"><h2><span class="tag">Open questions</span>开放问题</h2><ol type="1">
+<li>选择一种你熟悉的疾病（可以是精神疾病，也可以是慢性病，如糖尿病、慢性疼痛、帕金森病的非运动症状），列出
+8–12
+个可测量的症状或指标。用网络视角提出一个可检验的假说，并说明你需要什么样的数据（截面、ESM、面板还是干预）来检验它，以及应选择
+GGM、Ising 还是混合图模型。</li>
+<li>Pan
+等（2024）的模块控制研究发现非情绪模块（如睡眠、压力相关条目）对情绪模块有更强的控制作用。如果要把这一发现推进到临床应用，你认为下一步应做什么研究？请说明研究设计（例如能否用网络干预分析检验）、主要结局指标以及可能的混杂因素。</li>
+<li>一项研究用两次随访的横截滞后网络发现“失眠预测后续情绪低落，而不是相反”。在接受这一结论之前，你还需要看到哪些证据或敏感性分析？</li>
+<li>两组样本的 NCT
+结果是全局强度显著不同，但网络结构不变性检验不显著。这种组合可能在什么情况下出现？应如何解读？</li>
+</ol>
+</section></article><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script><script src="assets/js/demos.js"></script></body></html>

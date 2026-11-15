@@ -1,0 +1,10 @@
+{
+ "topic": "network-basics",
+ "index": 8,
+ "title": "符号网络与结构平衡",
+ "hash": "e346170d5e6879bf355f4cf56eb5e70a4bae43d5",
+ "ok": true,
+ "figures": 1,
+ "stdout": "【原网络】结构平衡？True\n  两组: ['A', 'B'] ['C', 'D']\n  环 C–B–D 的符号 = +1\n  环 C–A–B 的符号 = +1\n【把 B–C 改为 +1】结构平衡？False\n  环 C–B–D 的符号 = -1\n  环 C–A–B 的符号 = -1",
+ "stderr": ""
+}

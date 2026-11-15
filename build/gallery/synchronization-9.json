@@ -1,0 +1,10 @@
+{
+ "topic": "synchronization",
+ "index": 9,
+ "title": "模块化“连接组”上的 Hopf 全脑模型：模拟功能连接与亚稳态",
+ "hash": "12c67c0b2ffebf1cf49c17bebf099c01adb53705",
+ "ok": true,
+ "figures": 1,
+ "stdout": "G=0.00  corr(FC, SC)=-0.06  平均 r=0.13  亚稳态 std(r)=0.068\nG=0.05  corr(FC, SC)=0.80  平均 r=0.31  亚稳态 std(r)=0.160\nG=0.20  corr(FC, SC)=0.72  平均 r=0.56  亚稳态 std(r)=0.208\nG=0.50  corr(FC, SC)=0.63  平均 r=0.73  亚稳态 std(r)=0.203\nG=1.00  corr(FC, SC)=0.58  平均 r=0.81  亚稳态 std(r)=0.182",
+ "stderr": ""
+}

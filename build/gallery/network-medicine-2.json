@@ -1,0 +1,10 @@
+{
+ "topic": "network-medicine",
+ "index": 2,
+ "title": "两个疾病模块的网络分离度 s_AB",
+ "hash": "71177dfd5205e14cfc7db99eaf9423553baaa038",
+ "ok": true,
+ "figures": 1,
+ "stdout": "A 与 B（重叠）：共享基因 15 个，s = -0.75\nA 与 C（远离）：共享基因 0 个，s = 1.80",
+ "stderr": ""
+}

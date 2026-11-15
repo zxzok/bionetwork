@@ -1,0 +1,10 @@
+{
+ "topic": "community-structure",
+ "index": 1,
+ "title": "Girvan–Newman 算法",
+ "hash": "9703483a439a4957789cffddae34b0ebb022c8dc",
+ "ok": true,
+ "figures": 1,
+ "stdout": "社团数  2  Q = 0.360\n社团数  3  Q = 0.349\n社团数  4  Q = 0.363\n社团数  5  Q = 0.401\n社团数  6  Q = 0.393\n社团数  7  Q = 0.376\n社团数  8  Q = 0.358\n社团数  9  Q = 0.342\n社团数 10  Q = 0.333\n最佳：5 个社团，Q = 0.401\n第一次分裂中与真实分派不一致的节点: [2, 8]",
+ "stderr": ""
+}

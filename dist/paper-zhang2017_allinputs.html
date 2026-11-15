@@ -1,0 +1,199 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>寻找控制复杂网络的全部可能输入节点的高效算法 · 生物医学网络科学</title><meta name="description" content="论文精读：An efficient algorithm for finding all possible input nodes for controlling complex networks"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-dynamics"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html" aria-current="page">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics" open><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html" aria-current="page">网络可控性与稳定性</a><ol class="sub"><li><a href="controllability.network-control-systems.html"><span class="n">01</span>动态系统与网络控制</a></li><li><a href="controllability.linear-controllability.html"><span class="n">02</span>线性系统的可控性</a></li><li><a href="controllability.structural-controllability.html"><span class="n">03</span>结构可控性与最大匹配</a></li><li><a href="controllability.driver-nodes.html"><span class="n">04</span>驱动节点与网络结构</a></li><li><a href="controllability.control-centrality.html"><span class="n">05</span>控制中心性与可控子空间</a></li><li><a href="controllability.control-energy.html"><span class="n">06</span>控制能量与 Gramian 的数值问题</a></li><li><a href="controllability.target-control.html"><span class="n">07</span>目标控制与部分可控</a></li><li><a href="controllability.observability.html"><span class="n">08</span>可观测性与观测节点</a></li><li><a href="controllability.nonlinear-control.html"><span class="n">09</span>非线性网络的控制</a></li><li><a href="controllability.brain-network-control.html"><span class="n">10</span>脑网络控制：平均与模态可控性</a></li><li><a href="controllability.author-team-research.html"><span class="n">11</span>驱动节点的枚举、分类与自适应控制</a></li><li><a href="controllability.structural-robustness.html"><span class="n">12</span>结构鲁棒性</a></li><li><a href="controllability.dynamical-stability.html"><span class="n">13</span>动力学稳定性</a></li><li><a href="controllability.derivations.html"><span class="n">14</span>数学推导与算法</a></li><li><a href="controllability.frontiers.html"><span class="n">15</span>研究前沿与开放问题</a></li><li><a href="controllability.biomedical.html"><span class="n">16</span>生物医学应用</a></li><li><a href="controllability.limitations.html"><span class="n">17</span>适用范围与常见误用</a></li></ol></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><div class="lec-grid"><div style="min-width:0"><div class="lec-head"><nav class="crumb"><a href="papers.html">文献知识库</a> › 网络动力学与控制</nav><div class="eyebrow"><b>研究论文</b><span>难度：进阶</span></div><h1>寻找控制复杂网络的全部可能输入节点的高效算法</h1><p class="porig big">An efficient algorithm for finding all possible input nodes for controlling complex networks</p><p class="small">Zhang X, Han J, Zhang W · <i>Scientific Reports</i> 2017 · <a href="https://doi.org/10.1038/s41598-017-10744-w" target="_blank" rel="noopener">DOI: 10.1038/s41598-017-10744-w</a></p><div class="chips"><span class="chip">可能输入节点</span><span class="chip">交替路径</span><span class="chip">Hopcroft–Karp 算法</span><span class="chip">替代节点</span><span class="chip">最大匹配</span></div><div class="objectives"><h2>一句话</h2><p style="margin:0">证明只需一个最大匹配及其交替路径即可找出全部可能输入节点，把复杂度降到与最大匹配相同，并输出每个输入节点的替代节点集。</p><p class="small" style="margin:8px 0 0">相关专题：<a href="controllability.html">网络可控性与稳定性</a></p></div></div><section class="block" id="video"><h2><span class="tag">VIDEO</span>讲解视频</h2><div class="video-main"><video controls preload="metadata" playsinline poster="media/videos/zhang2017_allinputs.jpg"><source src="media/videos/zhang2017_allinputs.mp4" type="video/mp4"><track kind="captions" srclang="zh" label="中文字幕" src="media/videos/zhang2017_allinputs.vtt"></video><div class="video-meta"><strong>寻找控制复杂网络的全部可能输入节点的高效算法</strong><span>3 分 27 秒</span></div><details class="transcript"><summary>文字稿</summary><p>大家好，这一期我们精读2017年发表的一篇算法论文。它解决一个很实际的问题：哪些节点有资格成为控制网络的输入节点？</p><p>我们知道，一个最大匹配下的非匹配节点，构成一个最小输入节点集。最大匹配不唯一，所以最小输入节点集也有很多个。所有这些集合的并集，就是全部可能输入节点。知道这个集合，才能在有约束时挑选合适的控制方案，比如避开无法干预的蛋白。</p><p>已有方法先求一个最大匹配，这一步本身是很快的。然后对网络中的节点一个一个地检验，看它能不能在别的最大匹配里不被匹配。逐点检验让总复杂度达到节点数乘以边数的量级，大网络上要算好几个小时。</p><p>我们先把有向网络拆成二分图，每个节点分成入端和出端两个点。从当前的输入节点出发，沿着非匹配边和匹配边交替的路径往前走。定理说，这条交替路径能到达的入端节点，全都是可能输入节点。反过来，任何交替路径都到不了的节点，就一定是冗余节点。</p><p>连接两个入端节点的交替路径，长度一定是偶数。它从输入节点的一条非匹配边开始，以目标节点的一条匹配边结束。把路径上每条边的匹配状态全部翻转，匹配边数不变，仍是最大匹配。于是原来的输入节点被匹配，路径终点的节点变成了新的输入节点。这同时告诉我们，路径能到达的节点都是这个输入节点的替代节点。</p><p>看一个小网络，它有四条边，从 1 指向 2 和 3，从 4 指向 3 和 5。取最大匹配为 1 到 2 和 4 到 3 两条边。这时 1、4、5 没有被匹配入边，是一组输入节点。从 5 出发走交替路径，依次到达 3 和 2，所以它们都能替换节点 5。</p><p>Hopcroft–Karp 算法会反复寻找增广路径，不断把匹配扩大。最后一轮找不到增广路径时，它其实已经搜遍了从输入节点出发的交替路径。我们只需在这一轮顺手记录到达过的入端节点，就得到了全部可能输入节点。所以总复杂度和求一次最大匹配完全相同，只多了一点记录工作。</p><p>在 500 万个节点的无标度网络上，新算法只用了约 3.3 秒。同样的任务旧方法要算 6 个多小时，加速约 7330 倍。在 Amazon0601 这样 40 多万节点的真实网络上，加速约 1.7 万倍。而且网络越稠密，新算法的优势越明显。</p><p>总结一下，只要一个最大匹配，就能找出全部可能输入节点。算法还会给出每个输入节点的替代节点集，靶点不可用时可以快速换靶。它把 2016 年输入图论文里的控制路径思想，变成了高效可用的算法。后续删边和反转边改变控制模式的工作，也都建立在这套交替路径分析之上。建议大家在可控性专题代码示例的基础上，自己动手实现这个算法。</p></details></div></section><section class="block prose" id="notes"><h2 id="一句话看懂">一句话看懂</h2>
+<p>一个网络的所有最小输入节点集（MIS）的并集，就是全部<strong>可能输入节点</strong>。这篇论文证明：只要算出<strong>一个</strong>最大匹配，再从它的输入节点出发沿交替路径搜索，路径能到达的节点就是全部可能输入节点。这一步恰好可以并入
+Hopcroft–Karp 算法的最后一轮，因此总复杂度与求一次最大匹配相同，为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false" form="prefix">(</mo><msup><mi>N</mi><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup><mi>L</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">O(N^{1/2}L)</annotation></semantics></math>；在大型真实网络上比已有方法快几个数量级。</p>
+<h2 id="研究背景与问题">研究背景与问题</h2>
+<p><a
+href="controllability.structural-controllability.html">结构可控性与最大匹配</a>中讲过：驱动节点（本文称输入节点）由最大匹配中的非匹配节点给出，最大匹配不唯一，所以
+MIS
+不唯一。知道”哪些节点有资格当输入节点”在应用中很有用：理解节点在控制中的角色、在约束条件下设计
+MIS、在信号通路中识别关键基因。</p>
+<p>已有方法（Jia 等 2013，Nature
+Communications）先求一个最大匹配，再<strong>逐个检验</strong>匹配节点：对每个节点判断它能否在某个最大匹配中成为非匹配节点。求最大匹配需
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false" form="prefix">(</mo><msup><mi>N</mi><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup><mi>L</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">O(N^{1/2}L)</annotation></semantics></math>，逐点检验需
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false" form="prefix">(</mo><mi>N</mi><mi>L</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">O(NL)</annotation></semantics></math>，总复杂度
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false" form="prefix">(</mo><mi>N</mi><mi>L</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">O(NL)</annotation></semantics></math>。对几十万、上百万节点的网络，这意味着数小时甚至十几小时的计算。</p>
+<p>Zhang、Lv 与
+Pu（2016）的输入图论文已经证明：从输入节点出发沿控制路径可达的节点都是可能输入节点，反之不可达者为冗余节点。本文的问题是：<strong>能否不构建完整输入图、不逐点检验，以求一次最大匹配的代价拿到全部可能输入节点？</strong></p>
+<h2 id="核心思想与方法">核心思想与方法</h2>
+<h3 id="二分图与交替路径">二分图与交替路径</h3>
+<p>把有向网络
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo stretchy="false" form="prefix">(</mo><mi>V</mi><mo>,</mo><mi>E</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">G(V,E)</annotation></semantics></math>
+拆成二分图：每个节点
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+拆成入端
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mrow><mi>i</mi><mi>n</mi></mrow></msub><annotation encoding="application/x-tex">n_{in}</annotation></semantics></math>
+和出端
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mrow><mi>o</mi><mi>u</mi><mi>t</mi></mrow></msub><annotation encoding="application/x-tex">n_{out}</annotation></semantics></math>，有向边
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>→</mo><mi>v</mi></mrow><annotation encoding="application/x-tex">u\to v</annotation></semantics></math>
+对应
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>u</mi><mrow><mi>o</mi><mi>u</mi><mi>t</mi></mrow></msub><annotation encoding="application/x-tex">u_{out}</annotation></semantics></math>–<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mrow><mi>i</mi><mi>n</mi></mrow></msub><annotation encoding="application/x-tex">v_{in}</annotation></semantics></math>
+的无向边。最大匹配下，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>V</mi><mrow><mi>i</mi><mi>n</mi></mrow></msub><annotation encoding="application/x-tex">V_{in}</annotation></semantics></math>
+中的非匹配节点就是输入节点。<strong>交替路径</strong>是匹配边与非匹配边交替出现的路径；两端都是非匹配节点的交替路径称为<strong>增广路径</strong>，Berge
+定理说最大匹配等价于不存在增广路径。</p>
+<div class="callout-def">
+<p><strong>定理 1</strong>：给定有向网络
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+及其一个最大匹配
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>，节点
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+是可能输入节点，当且仅当满足以下之一：</p>
+<ol type="1">
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+是
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+下的输入节点；</li>
+<li>在二分图中，存在从某个输入节点
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>m</mi><mrow><mi>i</mi><mi>n</mi></mrow></msub><annotation encoding="application/x-tex">m_{in}</annotation></semantics></math>
+出发、到达
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mrow><mi>i</mi><mi>n</mi></mrow></msub><annotation encoding="application/x-tex">n_{in}</annotation></semantics></math>
+的交替路径
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>p</mi><mrow><mi>n</mi><mi>m</mi></mrow></msub><annotation encoding="application/x-tex">p_{nm}</annotation></semantics></math>。</li>
+</ol>
+<p><strong>推论 1（替代节点）</strong>：设
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+是 MIS
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>
+中的输入节点，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mi>m</mi></msub><annotation encoding="application/x-tex">K_m</annotation></semantics></math>
+是从
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>m</mi><mrow><mi>i</mi><mi>n</mi></mrow></msub><annotation encoding="application/x-tex">m_{in}</annotation></semantics></math>
+沿交替路径可达的节点集合，则对任意
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>∈</mo><msub><mi>K</mi><mi>m</mi></msub></mrow><annotation encoding="application/x-tex">n\in K_m</annotation></semantics></math>，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>D</mi><mo>′</mo></msup><mo>=</mo><mi>D</mi><mo>−</mo><mo stretchy="false" form="prefix">{</mo><mi>m</mi><mo stretchy="false" form="postfix">}</mo><mo>+</mo><mo stretchy="false" form="prefix">{</mo><mi>n</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">D&#39;=D-\{m\}+\{n\}</annotation></semantics></math>
+仍是一个 MIS。</p>
+</div>
+<p><strong>充分性</strong>的证明很像”翻转”：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>m</mi><mrow><mi>i</mi><mi>n</mi></mrow></msub><annotation encoding="application/x-tex">m_{in}</annotation></semantics></math>
+和
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mrow><mi>i</mi><mi>n</mi></mrow></msub><annotation encoding="application/x-tex">n_{in}</annotation></semantics></math>
+都在入端，所以连接它们的交替路径长度为偶数，以
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>m</mi><mrow><mi>i</mi><mi>n</mi></mrow></msub><annotation encoding="application/x-tex">m_{in}</annotation></semantics></math>
+处的非匹配边开始、以
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mrow><mi>i</mi><mi>n</mi></mrow></msub><annotation encoding="application/x-tex">n_{in}</annotation></semantics></math>
+处的匹配边结束。把路径上所有边的匹配状态翻转，匹配边数不变，得到新的最大匹配
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>M</mi><mo>′</mo></msup><annotation encoding="application/x-tex">M&#39;</annotation></semantics></math>；此时
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>m</mi><mrow><mi>i</mi><mi>n</mi></mrow></msub><annotation encoding="application/x-tex">m_{in}</annotation></semantics></math>
+被匹配，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mrow><mi>i</mi><mi>n</mi></mrow></msub><annotation encoding="application/x-tex">n_{in}</annotation></semantics></math>
+失去匹配，成为输入节点。<strong>必要性</strong>用反证：若
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+在另一个最大匹配
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>M</mi><mo>′</mo></msup><annotation encoding="application/x-tex">M&#39;</annotation></semantics></math>
+中未被匹配，可以构造一条偶数长度的路径，回到
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+下会发现它恰好从
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+的某个输入节点出发到达
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mrow><mi>i</mi><mi>n</mi></mrow></msub><annotation encoding="application/x-tex">n_{in}</annotation></semantics></math>，与”不可达”矛盾。</p>
+<p><strong>小例子</strong>：边为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>→</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">1\to2</annotation></semantics></math>、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>→</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">1\to3</annotation></semantics></math>、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>→</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">4\to3</annotation></semantics></math>、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>→</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">4\to5</annotation></semantics></math>，取最大匹配
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo>→</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>→</mo><mn>3</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{1\to2, 4\to3\}</annotation></semantics></math>，输入节点为
+1、4、5（1 和 4 入度为 0）。从
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mn>5</mn><mrow><mi>i</mi><mi>n</mi></mrow></msub><annotation encoding="application/x-tex">5_{in}</annotation></semantics></math>
+出发：非匹配边到
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mn>4</mn><mrow><mi>o</mi><mi>u</mi><mi>t</mi></mrow></msub><annotation encoding="application/x-tex">4_{out}</annotation></semantics></math>，匹配边到
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mn>3</mn><mrow><mi>i</mi><mi>n</mi></mrow></msub><annotation encoding="application/x-tex">3_{in}</annotation></semantics></math>，非匹配边到
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mn>1</mn><mrow><mi>o</mi><mi>u</mi><mi>t</mi></mrow></msub><annotation encoding="application/x-tex">1_{out}</annotation></semantics></math>，匹配边到
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mn>2</mn><mrow><mi>i</mi><mi>n</mi></mrow></msub><annotation encoding="application/x-tex">2_{in}</annotation></semantics></math>。这条交替路径经过的入端是
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mn>3</mn><mrow><mi>i</mi><mi>n</mi></mrow></msub><annotation encoding="application/x-tex">3_{in}</annotation></semantics></math>、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mn>2</mn><mrow><mi>i</mi><mi>n</mi></mrow></msub><annotation encoding="application/x-tex">2_{in}</annotation></semantics></math>，所以
+3 和 2 都是可能输入节点，也都是 5 的替代节点：MIS
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{1,4,5\}</annotation></semantics></math>
+可以换成
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>3</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{1,4,3\}</annotation></semantics></math>
+或
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>2</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{1,4,2\}</annotation></semantics></math>。全部可能输入节点为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{1,2,3,4,5\}</annotation></semantics></math>。</p>
+<h3 id="把搜索并入-hopcroftkarp-算法">把搜索并入 Hopcroft–Karp 算法</h3>
+<p>Hopcroft–Karp
+算法反复做两件事：从所有非匹配节点出发搜索交替路径，若找到增广路径就沿其扩大匹配。当某一轮再也找不到增广路径时，算法结束——而这最后一轮<strong>恰好已经搜索了从所有输入节点出发的交替路径</strong>。根据定理
+1，这一轮经过的入端节点就是答案。算法 All_Input(G)：</p>
+<ol type="1">
+<li>由有向网络构建二分图，初始匹配为空；</li>
+<li>从
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>V</mi><mrow><mi>i</mi><mi>n</mi></mrow></msub><annotation encoding="application/x-tex">V_{in}</annotation></semantics></math>
+中所有非匹配节点出发找交替路径，把路径上的入端节点记为候选；</li>
+<li>若存在增广路径，扩大匹配、清空候选，回到第 2 步；</li>
+<li>若不存在增广路径，候选节点即全部可能输入节点，当前非匹配节点构成一个
+MIS。</li>
+</ol>
+<p>由于只是在原算法中”顺手记录”候选节点，复杂度保持
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false" form="prefix">(</mo><msup><mi>N</mi><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup><mi>L</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">O(N^{1/2}L)</annotation></semantics></math>。同时，每个输入节点的交替路径可达集就是它的替代节点集。</p>
+<h2 id="主要发现">主要发现</h2>
+<ol type="1">
+<li><strong>合成网络上提速数百到数千倍</strong>。13 个无标度网络（节点数
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>10</mn><mn>5</mn></msup><annotation encoding="application/x-tex">10^5</annotation></semantics></math>
+到
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>×</mo><msup><mn>10</mn><mn>6</mn></msup></mrow><annotation encoding="application/x-tex">5\times10^6</annotation></semantics></math>，平均度
+6 到
+16），新算法与旧方法结果一致。<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><msup><mn>10</mn><mn>5</mn></msup></mrow><annotation encoding="application/x-tex">n=10^5</annotation></semantics></math>
+时加速 52
+倍；<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>5</mn><mo>×</mo><msup><mn>10</mn><mn>6</mn></msup></mrow><annotation encoding="application/x-tex">n=5\times10^6</annotation></semantics></math>
+时新算法仅用 3.276 秒，旧方法约 24 013 秒，加速约 7330 倍。</li>
+<li><strong>网络越稠密，加速越明显</strong>。<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><msup><mn>10</mn><mn>6</mn></msup></mrow><annotation encoding="application/x-tex">n=10^6</annotation></semantics></math>
+时，平均度从 6 增至 16，加速比从 315 倍升至约 4097 倍。</li>
+<li><strong>大型真实网络上提速可达
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>10</mn><mn>4</mn></msup><annotation encoding="application/x-tex">10^4</annotation></semantics></math>
+量级</strong>。在 20 个真实网络上，Amazon0601（403 394 个节点）用时
+2.886 秒，旧方法 49 293 秒，加速约 17 080 倍；Higgs_Twitter（456 626
+个节点、约 1486 万条边）用时 12.589 秒，旧方法约 66 445 秒。</li>
+<li><strong>生物网络中的可能输入节点比例差异很大</strong>。人类有向蛋白相互作用网络（6339
+个节点、34 814 条边）的可能输入节点比例为 0.585，TRN-Yeast-1 转录网络为
+0.999，E. coli 转录网络为 0.730。</li>
+<li><strong>不同输入节点的可替代性不同</strong>。St. Marks 食物网的一个
+MIS 有 13
+个输入节点，各自的替代节点集大小不同，说明有些输入节点在控制中更”稳健”、更容易被替换；Kohonen、TRN-Yeast-1、Ythan
+等网络结果类似。部分输入节点替代集大小相同，是因为它们连到同一组替代节点。</li>
+</ol>
+<h2 id="怎样读这篇论文">怎样读这篇论文</h2>
+<ul>
+<li>全文很短，核心是”定理 1 + 推论 1 + 算法 All_Input”。建议先看图
+2（二分图与交替路径）和图 3（算法在小网络上的完整过程），再读证明。</li>
+<li>读证明时自己画一个二分图，标出入端和出端，确认”为什么连接两个入端节点的交替路径长度一定是偶数”。</li>
+<li>表 1、表 2 是运行时间对比，抓住”规模越大、越稠密，优势越大”即可；图
+5、图 6 关于替代节点，体现了算法的第二个用途。</li>
+<li>若已读过 2016
+年输入图论文，可以把本文的交替路径与那里的”控制路径”一一对应起来理解。</li>
+</ul>
+<h2 id="局限与后续工作">局限与后续工作</h2>
+<ul>
+<li>理论框架仍是线性时不变系统的结构可控性和最大匹配框架，只适用于有向网络；无向网络常用的最小支配集框架不在本文讨论范围内。</li>
+<li>推论 1
+只保证<strong>单个</strong>输入节点可被替换；多个输入节点同时替换时可能冲突（2016
+年论文已指出共享邻居的输入节点不能同时替换）。</li>
+<li>运行时间比较依赖具体实现（JAVA
+实现、单台工作站），加速倍数应理解为量级而非精确值。</li>
+<li><strong>与系列工作的关系</strong>：
+<ul>
+<li>本文是 2016
+年<strong>输入图</strong>的算法化：输入图回答了”为什么”（控制邻接、交换定理、控制分支），本文回答了”如何快速算”，把找出全部可能输入节点的复杂度从
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false" form="prefix">(</mo><mi>N</mi><mi>L</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">O(NL)</annotation></semantics></math>
+降到
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false" form="prefix">(</mo><msup><mi>N</mi><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup><mi>L</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">O(N^{1/2}L)</annotation></semantics></math>。</li>
+<li>快速判定”谁是可能输入节点、谁是冗余节点”，是后续改变控制模式工作的计算基础：Zhang
+与 Li（2019）通过<strong>删边</strong>、Zhang
+等（2021）通过<strong>反转边</strong>，切断驱动节点与巨输入分支之间的交替路径，使大量可能输入节点变为冗余节点（2021
+年论文在参考文献中引用了本文）。</li>
+<li>后续研究基于控制路径给节点分类、寻找控制核心点（见<a
+href="controllability.author-team-research.html">驱动节点的枚举、分类与自适应控制</a>），其中”所有可能的头节点即所有可能的驱动节点”这一步正可用本文方法高效计算。</li>
+</ul></li>
+</ul>
+<h2 id="关联知识">关联知识</h2>
+<ul>
+<li><a
+href="controllability.structural-controllability.html">结构可控性与最大匹配</a>中的二分图拆点与
+Hopcroft–Karp 算法是本文的直接基础；<a
+href="controllability.author-team-research.html">驱动节点的枚举、分类与自适应控制</a>提到的”在最大匹配算法最后一步的交替路径搜索中输出全部可能的驱动节点，复杂度
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false" form="prefix">(</mo><msqrt><mi>N</mi></msqrt><mi>L</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">O(\sqrt N L)</annotation></semantics></math>“即本文结果。</li>
+<li>可在<a
+href="controllability.html#code">网络可控性与稳定性</a>的代码示例中用
+NetworkX
+求出最大匹配，再从非匹配入端做交替路径的广度优先搜索，即可实现本文算法。</li>
+<li>在药物靶点研究中，替代节点集给出了”某靶点不可用时的备选靶点”，而且只改动一条匹配链，对原控制方案影响最小。</li>
+</ul>
+<h2 id="延伸思考">延伸思考</h2>
+<ol type="1">
+<li>在小例子中，若再加一条边
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>→</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">2\to5</annotation></semantics></math>，重新求最大匹配和全部可能输入节点。哪些节点的类型发生了变化？</li>
+<li>为什么旧方法需要”逐点检验”，而本文只需一轮交替路径搜索？请用”翻转交替路径得到新最大匹配”的思想解释。</li>
+<li>某输入节点的替代节点集很大，另一个很小。在设计药物干预方案时，你会如何利用这一信息？</li>
+<li>人类蛋白相互作用网络的可能输入节点比例为
+0.585。这个数字本身能否说明网络处于分布式控制模式？还需要哪些信息？</li>
+</ol>
+</section><nav class="pager"><a href="paper-zhang2016_inputgraph.html">← 输入图：控制复杂网络的隐藏几何结构</a><a href="paper-zhang2023_cancerkeeper.html">癌症维持基因作为治疗靶点 →</a></nav></div><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

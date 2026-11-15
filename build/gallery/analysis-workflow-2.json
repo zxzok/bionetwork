@@ -1,0 +1,10 @@
+{
+ "topic": "analysis-workflow",
+ "index": 2,
+ "title": "社团发现、模块度与结果稳定性",
+ "hash": "e3887f7148dd13b414ff18e23f36423caf4d8e63",
+ "ok": true,
+ "figures": 1,
+ "stdout": "Louvain  社团数 = 4, Q = 0.444\nGreedy   社团数 = 3, Q = 0.411\nLouvain 10 个种子：Q 范围 0.427 – 0.445\nLouvain 与真实分裂的 NMI = 0.600",
+ "stderr": ""
+}

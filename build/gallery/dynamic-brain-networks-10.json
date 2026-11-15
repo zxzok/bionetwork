@@ -1,0 +1,10 @@
+{
+ "topic": "dynamic-brain-networks",
+ "index": 10,
+ "title": "动态指标的重测信度（ICC）",
+ "hash": "4a3e9b7179240f04c8b0705455515b55e5030492",
+ "ok": true,
+ "figures": 1,
+ "stdout": "静态相关的 ICC(3,1)        = 0.84\n窗口相关标准差的 ICC(3,1)  = 0.40\n窗口相关标准差与真实波动幅度的相关 = 0.52",
+ "stderr": ""
+}

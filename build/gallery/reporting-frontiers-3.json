@@ -1,0 +1,10 @@
+{
+ "topic": "reporting-frontiers",
+ "index": 3,
+ "title": "度保持零模型与“真实值 vs 零分布”图",
+ "hash": "e3e98cff9696f2660a01a8b3678710ae8131fdee",
+ "ok": true,
+ "figures": 1,
+ "stdout": "C = 0.571，度保持随机 = 0.362 ± 0.058，z = 3.6",
+ "stderr": ""
+}

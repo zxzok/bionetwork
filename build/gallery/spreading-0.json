@@ -1,0 +1,10 @@
+{
+ "topic": "spreading",
+ "index": 0,
+ "title": "网络上的离散时间 SIR 模拟（ER 与 BA 网络对比）",
+ "hash": "7a0767e10d70db3ada4cc334ec2781d98e15ba2e",
+ "ok": true,
+ "figures": 1,
+ "stdout": "ER 平均最终规模 = 0.006\nBA 平均最终规模 = 0.062",
+ "stderr": ""
+}

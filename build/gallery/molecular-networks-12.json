@@ -1,0 +1,10 @@
+{
+ "topic": "molecular-networks",
+ "index": 12,
+ "title": "相似性网络融合（SNF）整合两类组学数据",
+ "hash": "b60ed50fad4f9f7ee7b89313760522d24600838b",
+ "ok": true,
+ "figures": 1,
+ "stdout": "只用表达：ARI = 0.47\n只用甲基化：ARI = 0.31\nSNF 融合：ARI = 0.83",
+ "stderr": ""
+}

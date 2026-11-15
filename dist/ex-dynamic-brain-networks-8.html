@@ -1,0 +1,205 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>多层模块度与网络灵活性 · 生物医学网络科学</title><meta name="description" content="动态功能连接与多层脑网络 · 代码示例：多层模块度与网络灵活性"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-brain"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html" aria-current="page">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain" open><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a><ol class="sub"><li><a href="dynamic-brain-networks.method-landscape.html"><span class="n">01</span>方法谱系与基本假设</a></li><li><a href="dynamic-brain-networks.sliding-window.html"><span class="n">02</span>滑动窗口相关</a></li><li><a href="dynamic-brain-networks.wavelet-coherence.html"><span class="n">03</span>时频分析与小波相干</a></li><li><a href="dynamic-brain-networks.phase-synchrony.html"><span class="n">04</span>相位同步与瞬时相位方法</a></li><li><a href="dynamic-brain-networks.caps.html"><span class="n">05</span>共激活模式</a></li><li><a href="dynamic-brain-networks.edge-time-series.html"><span class="n">06</span>边时间序列</a></li><li><a href="dynamic-brain-networks.connectivity-states.html"><span class="n">07</span>连接状态</a></li><li><a href="dynamic-brain-networks.hmm.html"><span class="n">08</span>隐马尔可夫模型</a></li><li><a href="dynamic-brain-networks.state-number.html"><span class="n">09</span>状态数的选择与稳定性</a></li><li><a href="dynamic-brain-networks.sampling-variability.html"><span class="n">10</span>有限样本波动与窗口长度</a></li><li><a href="dynamic-brain-networks.null-models.html"><span class="n">11</span>平稳零模型检验</a></li><li><a href="dynamic-brain-networks.multilayer.html"><span class="n">12</span>多层网络</a></li><li><a href="dynamic-brain-networks.flexibility.html"><span class="n">13</span>网络灵活性与动态社团指标</a></li><li><a href="dynamic-brain-networks.sc-fc-coupling.html"><span class="n">14</span>结构–功能耦合</a></li><li><a href="dynamic-brain-networks.electrophysiology.html"><span class="n">15</span>EEG/MEG 网络与微状态</a></li><li><a href="dynamic-brain-networks.reliability.html"><span class="n">16</span>动态指标的重测信度</a></li><li><a href="dynamic-brain-networks.disease-reproducibility.html"><span class="n">17</span>疾病、发育与老化中的动态网络</a></li><li><a href="dynamic-brain-networks.derivations.html"><span class="n">18</span>数学推导与算法</a></li><li><a href="dynamic-brain-networks.frontiers.html"><span class="n">19</span>研究前沿与开放问题</a></li><li><a href="dynamic-brain-networks.biomedical.html"><span class="n">20</span>生物医学应用</a></li><li><a href="dynamic-brain-networks.limitations.html"><span class="n">21</span>适用范围与常见误用</a></li></ol></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="code.html">代码库</a> <span class="sep">/</span> <a href="code.html#brain">脑网络与连接组</a> <span class="sep">/</span> <a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></nav><div class="eyebrow" style="margin-top:14px"><b>Example</b><span>09 / 11</span></div><h1>多层模块度与网络灵活性</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></dd></div><div><dt>下载</dt><dd><a href="notebooks/dynamic-brain-networks.ipynb" download>Notebook</a> · <a href="notebooks/dynamic-brain-networks.py" download>.py</a></dd></div></dl></header><section class="block prose"><p>时间多层网络：12 个脑区、10 层（时间窗）。前 5 层模块为
+{0–5}、{6–11}；后 5 层中脑区 4、5 换到第二个模块。 构造超模块度矩阵
+B（层内 A − γ k kᵀ/2m，层间同一脑区相连、权重 ω），
+用一个简化的“局部移动”启发式（Louvain 第一阶段）最大化
+Q，再计算每个脑区的灵活性 （相邻层间改变模块归属的次数 / (层数 − 1)）。
+输出解读：在中小的 ω 下，只有换模块的脑区 4、5 灵活性非零（1 次变化 / 9
+个相邻层对 ≈ 0.11）； ω 增大到 10 时只剩脑区 4 仍会切换，ω = 50
+时层间耦合压倒层内结构，所有脑区被“冻结”，灵活性全为 0。
+灵活性的数值依赖 ω 和 γ，研究中应在参数网格上报告。 不同随机种子得到的 Q
+不同（模块度优化的简并性），所以要多次运行；实际研究用 GenLouvain
+等实现， 并对多次运行取共识、与置换零模型比较。</p>
+</section><section class="block"><h2><span class="tag">Output</span>输出图</h2><div class="ex-figs"><img src="gallery/dynamic-brain-networks-8-0.png" alt="多层模块度与网络灵活性：输出图 1" loading="lazy"></div></section><section class="block"><h2><span class="tag">Output</span>文字输出</h2><pre class="ex-out">ω = 0.1：10 次运行 Q 范围 0.330–0.330，最优解社团数 = 2，灵活性 = [0.0, 0.0, 0.0, 0.0, 0.11, 0.11, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+ω = 1.0：10 次运行 Q 范围 0.440–0.477，最优解社团数 = 2，灵活性 = [0.0, 0.0, 0.0, 0.0, 0.11, 0.11, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+ω = 10.0：10 次运行 Q 范围 0.824–0.825，最优解社团数 = 2，灵活性 = [0.0, 0.0, 0.0, 0.0, 0.11, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+ω = 50.0：10 次运行 Q 范围 0.957–0.957，最优解社团数 = 2，灵活性 = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]</pre></section><section class="block prose"><h2><span class="tag">Code</span>代码</h2><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 时间多层网络：12 个脑区、10 层（时间窗）。前 5 层模块为 {0–5}、{6–11}；后 5 层中脑区 4、5 换到第二个模块。</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 构造超模块度矩阵 B（层内 A − γ k kᵀ/2m，层间同一脑区相连、权重 ω），</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 用一个简化的“局部移动”启发式（Louvain 第一阶段）最大化 Q，再计算每个脑区的灵活性</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># （相邻层间改变模块归属的次数 / (层数 − 1)）。</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 输出解读：在中小的 ω 下，只有换模块的脑区 4、5 灵活性非零（1 次变化 / 9 个相邻层对 ≈ 0.11）；</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># ω 增大到 10 时只剩脑区 4 仍会切换，ω = 50 时层间耦合压倒层内结构，所有脑区被“冻结”，灵活性全为 0。</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 灵活性的数值依赖 ω 和 γ，研究中应在参数网格上报告。</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># 不同随机种子得到的 Q 不同（模块度优化的简并性），所以要多次运行；实际研究用 GenLouvain 等实现，</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># 并对多次运行取共识、与置换零模型比较。</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>rng <span class="op">=</span> np.random.default_rng(<span class="dv">2</span>)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>N, L <span class="op">=</span> <span class="dv">12</span>, <span class="dv">10</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> layer_adj(groups):</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    A <span class="op">=</span> rng.uniform(<span class="dv">0</span>, <span class="fl">0.2</span>, (N, N))</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> g <span class="kw">in</span> groups:</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> i <span class="kw">in</span> g:</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> j <span class="kw">in</span> g:</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>                A[i, j] <span class="op">+=</span> rng.uniform(<span class="fl">0.6</span>, <span class="fl">1.0</span>)</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    A <span class="op">=</span> (A <span class="op">+</span> A.T) <span class="op">/</span> <span class="dv">2</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    np.fill_diagonal(A, <span class="dv">0</span>)</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> A</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>layers <span class="op">=</span> [layer_adj([<span class="bu">range</span>(<span class="dv">0</span>, <span class="dv">6</span>), <span class="bu">range</span>(<span class="dv">6</span>, <span class="dv">12</span>)]) <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>)] <span class="op">+</span> <span class="op">\</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>         [layer_adj([<span class="bu">range</span>(<span class="dv">0</span>, <span class="dv">4</span>), <span class="bu">range</span>(<span class="dv">4</span>, <span class="dv">12</span>)]) <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>)]</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> supra_B(layers, gamma, omega):</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    B <span class="op">=</span> np.zeros((N <span class="op">*</span> L, N <span class="op">*</span> L))</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> l, A <span class="kw">in</span> <span class="bu">enumerate</span>(layers):</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>        k <span class="op">=</span> A.<span class="bu">sum</span>(<span class="dv">1</span>)<span class="op">;</span> m2 <span class="op">=</span> k.<span class="bu">sum</span>()</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>        B[l <span class="op">*</span> N:(l <span class="op">+</span> <span class="dv">1</span>) <span class="op">*</span> N, l <span class="op">*</span> N:(l <span class="op">+</span> <span class="dv">1</span>) <span class="op">*</span> N] <span class="op">=</span> A <span class="op">-</span> gamma <span class="op">*</span> np.outer(k, k) <span class="op">/</span> m2</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> l <span class="kw">in</span> <span class="bu">range</span>(L <span class="op">-</span> <span class="dv">1</span>):                            <span class="co"># 有序耦合：只连相邻层</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(N):</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>            B[l <span class="op">*</span> N <span class="op">+</span> i, (l <span class="op">+</span> <span class="dv">1</span>) <span class="op">*</span> N <span class="op">+</span> i] <span class="op">=</span> B[(l <span class="op">+</span> <span class="dv">1</span>) <span class="op">*</span> N <span class="op">+</span> i, l <span class="op">*</span> N <span class="op">+</span> i] <span class="op">=</span> omega</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> B</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> local_moving(B, seed<span class="op">=</span><span class="dv">0</span>, n_pass<span class="op">=</span><span class="dv">50</span>):</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;Louvain 第一阶段：逐个节点移到使 Q 增量最大的社团，直到不再移动。&quot;&quot;&quot;</span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>    r <span class="op">=</span> np.random.default_rng(seed)</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>    n <span class="op">=</span> B.shape[<span class="dv">0</span>]</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>    g <span class="op">=</span> np.arange(n)</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(n_pass):</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>        moved <span class="op">=</span> <span class="va">False</span></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> v <span class="kw">in</span> r.permutation(n):</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>            comms <span class="op">=</span> np.unique(g)</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>            score <span class="op">=</span> np.array([B[v, g <span class="op">==</span> c].<span class="bu">sum</span>() <span class="op">-</span> (B[v, v] <span class="cf">if</span> g[v] <span class="op">==</span> c <span class="cf">else</span> <span class="dv">0</span>) <span class="cf">for</span> c <span class="kw">in</span> comms])</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>            best <span class="op">=</span> comms[score.argmax()]</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> best <span class="op">!=</span> g[v] <span class="kw">and</span> score.<span class="bu">max</span>() <span class="op">&gt;</span> score[comms <span class="op">==</span> g[v]][<span class="dv">0</span>] <span class="op">+</span> <span class="fl">1e-12</span>:</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>                g[v] <span class="op">=</span> best<span class="op">;</span> moved <span class="op">=</span> <span class="va">True</span></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="kw">not</span> moved:</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>            <span class="cf">break</span></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.unique(g, return_inverse<span class="op">=</span><span class="va">True</span>)[<span class="dv">1</span>]</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> louvain_B(B, seed<span class="op">=</span><span class="dv">0</span>):</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;对任意模块度矩阵 B 做 Louvain：局部移动 + 聚合，重复至收敛。&quot;&quot;&quot;</span></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>    member <span class="op">=</span> np.arange(B.shape[<span class="dv">0</span>])</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>    Bc <span class="op">=</span> B.copy()</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> <span class="va">True</span>:</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>        g <span class="op">=</span> local_moving(Bc, seed)</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> g.<span class="bu">max</span>() <span class="op">+</span> <span class="dv">1</span> <span class="op">==</span> Bc.shape[<span class="dv">0</span>]:</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> member</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>        member <span class="op">=</span> g[member]</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>        P <span class="op">=</span> np.eye(g.<span class="bu">max</span>() <span class="op">+</span> <span class="dv">1</span>)[g]                    <span class="co"># (旧节点数, 新节点数) 指示矩阵</span></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>        Bc <span class="op">=</span> P.T <span class="op">@</span> Bc <span class="op">@</span> P</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> flexibility(g):</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>    G <span class="op">=</span> g.reshape(L, N)</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (G[<span class="dv">1</span>:] <span class="op">!=</span> G[:<span class="op">-</span><span class="dv">1</span>]).<span class="bu">sum</span>(<span class="dv">0</span>) <span class="op">/</span> (L <span class="op">-</span> <span class="dv">1</span>)</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> quality(B, g, two_mu):</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> B[g[:, <span class="va">None</span>] <span class="op">==</span> g[<span class="va">None</span>, :]].<span class="bu">sum</span>() <span class="op">/</span> two_mu</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>two_m <span class="op">=</span> <span class="bu">sum</span>(A.<span class="bu">sum</span>() <span class="cf">for</span> A <span class="kw">in</span> layers)</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>best_g <span class="op">=</span> []                                           <span class="co"># 记录各 ω 的最优划分，供作图</span></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> omega <span class="kw">in</span> [<span class="fl">0.1</span>, <span class="fl">1.0</span>, <span class="fl">10.0</span>, <span class="fl">50.0</span>]:</span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>    B <span class="op">=</span> supra_B(layers, gamma<span class="op">=</span><span class="fl">1.0</span>, omega<span class="op">=</span>omega)</span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>    two_mu <span class="op">=</span> two_m <span class="op">+</span> <span class="dv">2</span> <span class="op">*</span> omega <span class="op">*</span> N <span class="op">*</span> (L <span class="op">-</span> <span class="dv">1</span>)</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>    runs <span class="op">=</span> [louvain_B(B, seed<span class="op">=</span>s) <span class="cf">for</span> s <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span>)]   <span class="co"># 启发式有随机性：多次运行</span></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>    Qs <span class="op">=</span> [quality(B, g, two_mu) <span class="cf">for</span> g <span class="kw">in</span> runs]</span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>    g <span class="op">=</span> runs[<span class="bu">int</span>(np.argmax(Qs))]</span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>    best_g.append(g)</span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;ω = </span><span class="sc">{</span>omega<span class="sc">}</span><span class="ss">：10 次运行 Q 范围 </span><span class="sc">{</span><span class="bu">min</span>(Qs)<span class="sc">:.3f}</span><span class="ss">–</span><span class="sc">{</span><span class="bu">max</span>(Qs)<span class="sc">:.3f}</span><span class="ss">，最优解社团数 = </span><span class="sc">{</span>g<span class="sc">.</span><span class="bu">max</span>() <span class="op">+</span> <span class="dv">1</span><span class="sc">}</span><span class="ss">，&quot;</span></span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a>          <span class="ss">f&quot;灵活性 = </span><span class="sc">{</span>flexibility(g)<span class="sc">.</span><span class="bu">round</span>(<span class="dv">2</span>)<span class="sc">.</span>tolist()<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">4</span>))</span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>].imshow(best_g[<span class="dv">1</span>].reshape(L, N).T, cmap<span class="op">=</span><span class="st">&quot;Set2&quot;</span>, aspect<span class="op">=</span><span class="st">&quot;auto&quot;</span>, interpolation<span class="op">=</span><span class="st">&quot;nearest&quot;</span>)</span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>].<span class="bu">set</span>(xlabel<span class="op">=</span><span class="st">&quot;Layer (time window)&quot;</span>, ylabel<span class="op">=</span><span class="st">&quot;Region&quot;</span>, xticks<span class="op">=</span><span class="bu">range</span>(L), yticks<span class="op">=</span><span class="bu">range</span>(N),</span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>            title<span class="op">=</span><span class="st">&quot;Community labels across layers (omega = 1)&quot;</span>)</span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> g, om, mk, ls <span class="kw">in</span> <span class="bu">zip</span>(best_g, [<span class="fl">0.1</span>, <span class="fl">1.0</span>, <span class="fl">10.0</span>, <span class="fl">50.0</span>], <span class="st">&quot;os^D&quot;</span>, [<span class="st">&quot;-&quot;</span>, <span class="st">&quot;--&quot;</span>, <span class="st">&quot;-.&quot;</span>, <span class="st">&quot;:&quot;</span>]):</span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a>    axes[<span class="dv">1</span>].plot(<span class="bu">range</span>(N), flexibility(g), marker<span class="op">=</span>mk, ls<span class="op">=</span>ls, lw<span class="op">=</span><span class="dv">1</span>, label<span class="op">=</span><span class="ss">f&quot;omega = </span><span class="sc">{</span>om<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">1</span>].<span class="bu">set</span>(xlabel<span class="op">=</span><span class="st">&quot;Region&quot;</span>, ylabel<span class="op">=</span><span class="st">&quot;Flexibility&quot;</span>, xticks<span class="op">=</span><span class="bu">range</span>(N), title<span class="op">=</span><span class="st">&quot;Only regions that switch are flexible&quot;</span>)</span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">1</span>].legend(fontsize<span class="op">=</span><span class="dv">8</span>)</span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()<span class="op">;</span> plt.show()</span></code></pre></div>
+</section><section class="block"><h2><span class="tag">Run</span>在浏览器中运行</h2><p class="small">首次加载 Python 环境约需 20–40 秒；可以修改参数后重新运行。</p><div class="cell"><div class="cell-head"><h3>多层模块度与网络灵活性</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea id="dynamic-brain-networks-cell8" rows="30" spellcheck="false" aria-label="多层模块度与网络灵活性 代码"># 时间多层网络：12 个脑区、10 层（时间窗）。前 5 层模块为 {0–5}、{6–11}；后 5 层中脑区 4、5 换到第二个模块。
+# 构造超模块度矩阵 B（层内 A − γ k kᵀ/2m，层间同一脑区相连、权重 ω），
+# 用一个简化的“局部移动”启发式（Louvain 第一阶段）最大化 Q，再计算每个脑区的灵活性
+# （相邻层间改变模块归属的次数 / (层数 − 1)）。
+# 输出解读：在中小的 ω 下，只有换模块的脑区 4、5 灵活性非零（1 次变化 / 9 个相邻层对 ≈ 0.11）；
+# ω 增大到 10 时只剩脑区 4 仍会切换，ω = 50 时层间耦合压倒层内结构，所有脑区被“冻结”，灵活性全为 0。
+# 灵活性的数值依赖 ω 和 γ，研究中应在参数网格上报告。
+# 不同随机种子得到的 Q 不同（模块度优化的简并性），所以要多次运行；实际研究用 GenLouvain 等实现，
+# 并对多次运行取共识、与置换零模型比较。
+import numpy as np
+
+rng = np.random.default_rng(2)
+N, L = 12, 10
+
+def layer_adj(groups):
+    A = rng.uniform(0, 0.2, (N, N))
+    for g in groups:
+        for i in g:
+            for j in g:
+                A[i, j] += rng.uniform(0.6, 1.0)
+    A = (A + A.T) / 2
+    np.fill_diagonal(A, 0)
+    return A
+
+layers = [layer_adj([range(0, 6), range(6, 12)]) for _ in range(5)] + \
+         [layer_adj([range(0, 4), range(4, 12)]) for _ in range(5)]
+
+def supra_B(layers, gamma, omega):
+    B = np.zeros((N * L, N * L))
+    for l, A in enumerate(layers):
+        k = A.sum(1); m2 = k.sum()
+        B[l * N:(l + 1) * N, l * N:(l + 1) * N] = A - gamma * np.outer(k, k) / m2
+    for l in range(L - 1):                            # 有序耦合：只连相邻层
+        for i in range(N):
+            B[l * N + i, (l + 1) * N + i] = B[(l + 1) * N + i, l * N + i] = omega
+    return B
+
+def local_moving(B, seed=0, n_pass=50):
+    &quot;&quot;&quot;Louvain 第一阶段：逐个节点移到使 Q 增量最大的社团，直到不再移动。&quot;&quot;&quot;
+    r = np.random.default_rng(seed)
+    n = B.shape[0]
+    g = np.arange(n)
+    for _ in range(n_pass):
+        moved = False
+        for v in r.permutation(n):
+            comms = np.unique(g)
+            score = np.array([B[v, g == c].sum() - (B[v, v] if g[v] == c else 0) for c in comms])
+            best = comms[score.argmax()]
+            if best != g[v] and score.max() &gt; score[comms == g[v]][0] + 1e-12:
+                g[v] = best; moved = True
+        if not moved:
+            break
+    return np.unique(g, return_inverse=True)[1]
+
+def louvain_B(B, seed=0):
+    &quot;&quot;&quot;对任意模块度矩阵 B 做 Louvain：局部移动 + 聚合，重复至收敛。&quot;&quot;&quot;
+    member = np.arange(B.shape[0])
+    Bc = B.copy()
+    while True:
+        g = local_moving(Bc, seed)
+        if g.max() + 1 == Bc.shape[0]:
+            return member
+        member = g[member]
+        P = np.eye(g.max() + 1)[g]                    # (旧节点数, 新节点数) 指示矩阵
+        Bc = P.T @ Bc @ P
+
+def flexibility(g):
+    G = g.reshape(L, N)
+    return (G[1:] != G[:-1]).sum(0) / (L - 1)
+
+def quality(B, g, two_mu):
+    return B[g[:, None] == g[None, :]].sum() / two_mu
+
+two_m = sum(A.sum() for A in layers)
+best_g = []                                           # 记录各 ω 的最优划分，供作图
+for omega in [0.1, 1.0, 10.0, 50.0]:
+    B = supra_B(layers, gamma=1.0, omega=omega)
+    two_mu = two_m + 2 * omega * N * (L - 1)
+    runs = [louvain_B(B, seed=s) for s in range(10)]   # 启发式有随机性：多次运行
+    Qs = [quality(B, g, two_mu) for g in runs]
+    g = runs[int(np.argmax(Qs))]
+    best_g.append(g)
+    print(f&quot;ω = {omega}：10 次运行 Q 范围 {min(Qs):.3f}–{max(Qs):.3f}，最优解社团数 = {g.max() + 1}，&quot;
+          f&quot;灵活性 = {flexibility(g).round(2).tolist()}&quot;)
+
+import matplotlib.pyplot as plt
+fig, axes = plt.subplots(1, 2, figsize=(10, 4))
+axes[0].imshow(best_g[1].reshape(L, N).T, cmap=&quot;Set2&quot;, aspect=&quot;auto&quot;, interpolation=&quot;nearest&quot;)
+axes[0].set(xlabel=&quot;Layer (time window)&quot;, ylabel=&quot;Region&quot;, xticks=range(L), yticks=range(N),
+            title=&quot;Community labels across layers (omega = 1)&quot;)
+for g, om, mk, ls in zip(best_g, [0.1, 1.0, 10.0, 50.0], &quot;os^D&quot;, [&quot;-&quot;, &quot;--&quot;, &quot;-.&quot;, &quot;:&quot;]):
+    axes[1].plot(range(N), flexibility(g), marker=mk, ls=ls, lw=1, label=f&quot;omega = {om}&quot;)
+axes[1].set(xlabel=&quot;Region&quot;, ylabel=&quot;Flexibility&quot;, xticks=range(N), title=&quot;Only regions that switch are flexible&quot;)
+axes[1].legend(fontsize=8)
+plt.tight_layout(); plt.show()</textarea><div class="out" aria-live="polite"></div></div></section><nav class="pager"><a href="ex-dynamic-brain-networks-7.html"><small>上一个示例</small>状态数的选择与分半稳定性</a><a href="ex-dynamic-brain-networks-9.html"><small>下一个示例</small>小波相干：连接强度随时间和频率变化</a></nav></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

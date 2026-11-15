@@ -1,0 +1,88 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>NetworkX 上手 · 生物医学网络科学</title><meta name="description" content="网络分析流程与 NetworkX 实践 · NetworkX 上手"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-methods"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html" aria-current="page">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods" open><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a><ol class="sub"><li><a href="analysis-workflow.workflow.html"><span class="n">01</span>网络分析的一般流程</a></li><li><a href="analysis-workflow.tool-selection.html"><span class="n">02</span>工具选择</a></li><li><a href="analysis-workflow.networkx-basics.html" aria-current="page"><span class="n">03</span>NetworkX 上手</a></li><li><a href="analysis-workflow.data-io.html"><span class="n">04</span>数据读写与格式转换</a></li><li><a href="analysis-workflow.networkx-cheatsheet.html"><span class="n">05</span>NetworkX 速查表</a></li><li><a href="analysis-workflow.computational-pitfalls.html"><span class="n">06</span>常见计算陷阱</a></li><li><a href="analysis-workflow.large-scale.html"><span class="n">07</span>大规模网络的计算策略</a></li><li><a href="analysis-workflow.layouts.html"><span class="n">08</span>布局算法</a></li><li><a href="analysis-workflow.visualization.html"><span class="n">09</span>可视化工具与原则</a></li><li><a href="analysis-workflow.null-model-comparison.html"><span class="n">10</span>用模型网络与零模型解读真实网络</a></li><li><a href="analysis-workflow.case-study.html"><span class="n">11</span>完整案例：从表达矩阵到可检验的结论</a></li><li><a href="analysis-workflow.biomedical-datasets.html"><span class="n">12</span>常见生物医学网络数据与分析方向</a></li><li><a href="analysis-workflow.derivations.html"><span class="n">13</span>数学推导与算法</a></li><li><a href="analysis-workflow.frontiers.html"><span class="n">14</span>研究前沿与开放问题</a></li><li><a href="analysis-workflow.biomedical.html"><span class="n">15</span>生物医学应用</a></li><li><a href="analysis-workflow.limitations.html"><span class="n">16</span>适用范围与常见误用</a></li></ol></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><div class="lec-grid"><article style="min-width:0"><header class="doc-head"><nav class="crumb"><a href="d-methods.html">计算方法与研究规范</a> <span class="sep">/</span> <a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></nav><div class="eyebrow" style="margin-top:14px"><b>网络分析流程与 NetworkX 实践</b><span>03 / 16</span></div><h1>NetworkX 上手</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></dd></div><div><dt>阅读</dt><dd>约 2 分钟</dd></div></dl></header><section class="block prose" id="notes"><p>NetworkX 是 Python
+中最常用的网络分析库，接口友好，适合中小规模网络（数万节点以内）。在本地使用时，建议用
+Anaconda 或
+<code>pip install networkx numpy scipy matplotlib pandas</code>
+安装。</p>
+<h3 id="数据结构与图类型">数据结构与图类型</h3>
+<p>NetworkX 把图存成嵌套字典：<code>G.adj[u][v]</code> 是边
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>u</mi><mo>,</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(u,v)</annotation></semantics></math>
+的属性字典，<code>G.nodes[u]</code>
+是节点属性字典。节点可以是任何可哈希的 Python
+对象（字符串、整数、元组），边可以携带任意属性。这种设计非常灵活，也解释了它在大规模网络上较慢、占内存较多的原因：每条边都是若干个
+Python 字典条目，而不是数组中的一个整数。</p>
+<div class="table-wrap"><table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>类</th>
+<th>有向</th>
+<th>允许重边</th>
+<th>典型用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>nx.Graph</code></td>
+<td>否</td>
+<td>否（允许自环）</td>
+<td>PPI、共表达、功能连接</td>
+</tr>
+<tr>
+<td><code>nx.DiGraph</code></td>
+<td>是</td>
+<td>否</td>
+<td>转录调控、信号通路、代谢反应方向、有效连接</td>
+</tr>
+<tr>
+<td><code>nx.MultiGraph</code></td>
+<td>否</td>
+<td>是</td>
+<td>同一对蛋白被多项实验分别报告、多种证据类型并存</td>
+</tr>
+<tr>
+<td><code>nx.MultiDiGraph</code></td>
+<td>是</td>
+<td>是</td>
+<td>知识图谱中同一对实体之间的多种关系</td>
+</tr>
+</tbody>
+</table></div>
+<p>大多数指标（聚集系数、社团检测、许多中心性）只为 <code>Graph</code>
+或 <code>DiGraph</code>
+设计，对多重图要么不支持，要么含义不清。通常的做法是先把重边按明确规则聚合（计数、求和、取最大）为简单图，见<a
+href="analysis-workflow.computational-pitfalls.html">常见计算陷阱</a>。</p>
+<h3 id="构建与读入">构建与读入</h3>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> networkx <span class="im">as</span> nx</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>G <span class="op">=</span> nx.Graph()                    <span class="co"># 无向图；有向图用 nx.DiGraph()</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>G.add_edge(<span class="st">&quot;TP53&quot;</span>, <span class="st">&quot;MDM2&quot;</span>)        <span class="co"># 加边时自动加节点</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>G.add_edge(<span class="st">&quot;TP53&quot;</span>, <span class="st">&quot;EP300&quot;</span>, weight<span class="op">=</span><span class="fl">0.9</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>G.add_edges_from([(<span class="st">&quot;MDM2&quot;</span>, <span class="st">&quot;MDM4&quot;</span>), (<span class="st">&quot;EP300&quot;</span>, <span class="st">&quot;CREBBP&quot;</span>)])</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># 从边列表文件读入（每行 &quot;a b&quot; 或 &quot;a b 0.9&quot;）</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># G = nx.read_edgelist(&quot;ppi.txt&quot;, data=((&quot;weight&quot;, float),))</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># 从 pandas 表读入</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># G = nx.from_pandas_edgelist(df, &quot;protein1&quot;, &quot;protein2&quot;, edge_attr=&quot;score&quot;)</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(G.number_of_nodes(), G.number_of_edges())</span></code></pre></div>
+<h3 id="一个最小的完整分析">一个最小的完整分析</h3>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>G <span class="op">=</span> nx.karate_club_graph()</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>G <span class="op">=</span> G.subgraph(<span class="bu">max</span>(nx.connected_components(G), key<span class="op">=</span><span class="bu">len</span>)).copy()   <span class="co"># 取最大连通分支</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>deg <span class="op">=</span> <span class="bu">dict</span>(G.degree())</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;平均度&quot;</span>, <span class="bu">sum</span>(deg.values()) <span class="op">/</span> G.number_of_nodes())</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;平均聚集系数&quot;</span>, nx.average_clustering(G))</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;平均最短路径&quot;</span>, nx.average_shortest_path_length(G))</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>comms <span class="op">=</span> nx.community.louvain_communities(G, seed<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;社团数&quot;</span>, <span class="bu">len</span>(comms), <span class="st">&quot;模块度 Q =&quot;</span>, nx.community.modularity(G, comms))</span></code></pre></div>
+<p>注意 <code>G.subgraph(...)</code>
+返回的是原图的“视图”，原图改变时它随之改变，并且不能增删节点；需要独立对象时加
+<code>.copy()</code>。</p>
+<p>本专题的代码示例把这几行扩展为九个完整示例：读入与清洗边表、指标与中心性计算、社团发现与稳定性、与模型网络和零模型比较、格式互转、计算陷阱、大规模计算策略、布局比较，以及一个从原始数据到结论的完整案例。</p>
+</section><section class="block related-box"><h2>继续阅读</h2><ul><li>交互可视化：<a href="lab.html#graph_matrix">图与邻接矩阵</a>、<a href="lab.html#modularity">模块度与社团划分</a></li><li>代码示例：<a href="ex-analysis-workflow-0.html">读入边表、按置信度过滤并取最大连通分支</a>、<a href="ex-analysis-workflow-1.html">基本拓扑指标、度分布与中心性排名</a>、<a href="ex-analysis-workflow-2.html">社团发现、模块度与结果稳定性</a>、<a href="ex-analysis-workflow-3.html">与 ER 随机图和保度随机化零模型比较</a></li><li>论文精读：<a href="paper-girvan2002_community.html">社会网络与生物网络中的社团结构</a>、<a href="paper-milo2002_motifs.html">网络基序：复杂网络的简单构件</a>、<a href="paper-han2004_datehubs.html">酵母蛋白质相互作用网络中动态组织的模块性证据</a>、<a href="paper-clauset2009_powerlaw.html">经验数据中的幂律分布</a></li></ul></section><nav class="pager"><a href="analysis-workflow.tool-selection.html"><small>上一页</small>工具选择</a><a href="analysis-workflow.data-io.html"><small>下一页</small>数据读写与格式转换</a></nav></article><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

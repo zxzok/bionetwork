@@ -1,0 +1,10 @@
+{
+ "topic": "degree-correlations",
+ "index": 6,
+ "title": "k-核分解——手写剥离算法并与 NetworkX 对照，比较核数与度",
+ "hash": "c97e169579b45f52b9f48bae59a724695f79f191",
+ "ok": true,
+ "figures": 1,
+ "stdout": "手写剥离算法与 nx.core_number 一致: True\n幂律随机网络: r = -0.10, 最大核数 k_s^max = 9, 最内核节点数 = 19, 最内核内部密度 = 0.70, 核数与度的 Spearman = 0.91\n同配重连（度序列相同）: r = +0.05, 最大核数 k_s^max = 20, 最内核节点数 = 25, 最内核内部密度 = 0.95, 核数与度的 Spearman = 0.86\n幂律随机网络中度为 6 的节点分布在这些壳层: [2, 3, 4]",
+ "stderr": ""
+}

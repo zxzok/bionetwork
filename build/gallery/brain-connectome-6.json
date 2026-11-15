@@ -1,0 +1,10 @@
+{
+ "topic": "brain-connectome",
+ "index": 6,
+ "title": "连接组梯度——扩散映射嵌入",
+ "hash": "c36ede2b1d6865dc6b5844d93cfcd56fcada7370",
+ "ok": true,
+ "figures": 1,
+ "stdout": "梯度 1 与隐藏轴的 Spearman |ρ| = 0.998\n梯度 2 与隐藏轴的 Spearman |ρ| = 0.296\n前 3 个非平凡特征值： [0.995, 0.971, 0.928]",
+ "stderr": ""
+}

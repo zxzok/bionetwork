@@ -1,0 +1,381 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>动态功能连接与多层脑网络 · 生物医学网络科学</title><meta name="description" content="动态功能连接与多层脑网络：研究脑功能连接如何随时间变化、如何检验其统计显著性，以及如何把结构、功能与电生理网络放在同一框架中分析。"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-brain"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html" aria-current="page">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain" open><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html" aria-current="page">动态功能连接与多层脑网络</a><ol class="sub"><li><a href="dynamic-brain-networks.method-landscape.html"><span class="n">01</span>方法谱系与基本假设</a></li><li><a href="dynamic-brain-networks.sliding-window.html"><span class="n">02</span>滑动窗口相关</a></li><li><a href="dynamic-brain-networks.wavelet-coherence.html"><span class="n">03</span>时频分析与小波相干</a></li><li><a href="dynamic-brain-networks.phase-synchrony.html"><span class="n">04</span>相位同步与瞬时相位方法</a></li><li><a href="dynamic-brain-networks.caps.html"><span class="n">05</span>共激活模式</a></li><li><a href="dynamic-brain-networks.edge-time-series.html"><span class="n">06</span>边时间序列</a></li><li><a href="dynamic-brain-networks.connectivity-states.html"><span class="n">07</span>连接状态</a></li><li><a href="dynamic-brain-networks.hmm.html"><span class="n">08</span>隐马尔可夫模型</a></li><li><a href="dynamic-brain-networks.state-number.html"><span class="n">09</span>状态数的选择与稳定性</a></li><li><a href="dynamic-brain-networks.sampling-variability.html"><span class="n">10</span>有限样本波动与窗口长度</a></li><li><a href="dynamic-brain-networks.null-models.html"><span class="n">11</span>平稳零模型检验</a></li><li><a href="dynamic-brain-networks.multilayer.html"><span class="n">12</span>多层网络</a></li><li><a href="dynamic-brain-networks.flexibility.html"><span class="n">13</span>网络灵活性与动态社团指标</a></li><li><a href="dynamic-brain-networks.sc-fc-coupling.html"><span class="n">14</span>结构–功能耦合</a></li><li><a href="dynamic-brain-networks.electrophysiology.html"><span class="n">15</span>EEG/MEG 网络与微状态</a></li><li><a href="dynamic-brain-networks.reliability.html"><span class="n">16</span>动态指标的重测信度</a></li><li><a href="dynamic-brain-networks.disease-reproducibility.html"><span class="n">17</span>疾病、发育与老化中的动态网络</a></li><li><a href="dynamic-brain-networks.derivations.html"><span class="n">18</span>数学推导与算法</a></li><li><a href="dynamic-brain-networks.frontiers.html"><span class="n">19</span>研究前沿与开放问题</a></li><li><a href="dynamic-brain-networks.biomedical.html"><span class="n">20</span>生物医学应用</a></li><li><a href="dynamic-brain-networks.limitations.html"><span class="n">21</span>适用范围与常见误用</a></li></ol></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><div class="lec-grid"><article style="min-width:0"><header class="doc-head"><nav class="crumb"><a href="domains.html">知识领域</a> <span class="sep">/</span> <a href="d-brain.html">脑网络与连接组</a></nav><div class="eyebrow" style="margin-top:14px"><b>Brain Networks &amp; Connectomics</b><span>Dynamic and multilayer brain networks</span></div><h1>动态功能连接与多层脑网络</h1><p class="dek">研究脑功能连接如何随时间变化、如何检验其统计显著性，以及如何把结构、功能与电生理网络放在同一框架中分析。</p><dl class="doc-meta"><div><dt>知识页面</dt><dd>21 页</dd></div><div><dt>阅读</dt><dd>约 47 分钟</dd></div><div><dt>讲解视频</dt><dd>1 段</dd></div><div><dt>代码示例</dt><dd>11 个</dd></div></dl><div class="chips"><span class="chip">动态功能连接</span><span class="chip">时变功能连接</span><span class="chip">滑动窗口</span><span class="chip">小波相干</span><span class="chip">相位同步</span><span class="chip">共激活模式</span><span class="chip">边时间序列</span><span class="chip">隐马尔可夫模型</span><span class="chip">连接状态</span><span class="chip">状态数选择</span><span class="chip">零模型</span><span class="chip">多层网络</span><span class="chip">多层模块度</span><span class="chip">网络灵活性</span></div></header><section class="block prose" id="overview"><p><a
+href="brain-connectome.html">脑连接组：结构与功能连接</a>中的功能网络是“静态”的：把
+6–15
+分钟的扫描平均成一个相关矩阵。可是大脑在这段时间里会走神、犯困、回忆、计划，连接模式真的一成不变吗？<strong>动态功能连接</strong>（dynamic
+functional connectivity, dFC；也称时变功能连接，time-varying functional
+connectivity,
+TVFC）试图回答这个问题：在一次记录之内，脑区之间的统计依赖是否随时间变化，变化的形式是什么，它与认知、意识状态和疾病有什么关系。</p>
+<p>这一问题的难点在于：“连接”本身是一个<strong>二阶统计量</strong>（协方差、相关、相干），需要一段数据才能估计；而越想看清快速变化，可用的数据就越少。几乎所有方法都在这对矛盾中做出不同的取舍。Preti、Bolton
+与 Van De
+Ville（2017）的综述把现有方法按“是否需要窗口”“是否假设离散状态”“工作在信号还是连接层面”加以梳理；Lurie
+等（2020）则汇总了这一领域尚未解决的争议。</p>
+<p>本专题分为四部分：</p>
+<ol type="1">
+<li><strong>方法</strong>：先看<a
+href="dynamic-brain-networks.method-landscape.html">方法谱系与基本假设</a>的总览，再分别介绍<a
+href="dynamic-brain-networks.sliding-window.html">滑动窗口相关</a>、<a
+href="dynamic-brain-networks.wavelet-coherence.html">时频分析与小波相干</a>、<a
+href="dynamic-brain-networks.phase-synchrony.html">相位同步与瞬时相位方法</a>、<a
+href="dynamic-brain-networks.caps.html">共激活模式</a>和<a
+href="dynamic-brain-networks.edge-time-series.html">边时间序列</a>。</li>
+<li><strong>状态模型及其统计学</strong>：<a
+href="dynamic-brain-networks.connectivity-states.html">连接状态</a>、<a
+href="dynamic-brain-networks.hmm.html">隐马尔可夫模型</a>、<a
+href="dynamic-brain-networks.state-number.html">状态数的选择与稳定性</a>，以及决定结论可信度的<a
+href="dynamic-brain-networks.sampling-variability.html">有限样本波动与窗口长度</a>和<a
+href="dynamic-brain-networks.null-models.html">平稳零模型检验</a>。这是近十年争议最多的方向之一：很多看起来“动态”的波动，可能只是有限样本的统计噪声。</li>
+<li><strong>多层与多模态</strong>：<a
+href="dynamic-brain-networks.multilayer.html">多层网络</a>、<a
+href="dynamic-brain-networks.flexibility.html">网络灵活性与动态社团指标</a>、<a
+href="dynamic-brain-networks.sc-fc-coupling.html">结构–功能耦合</a>，以及毫秒尺度的<a
+href="dynamic-brain-networks.electrophysiology.html">EEG/MEG
+网络与微状态</a>。</li>
+<li><strong>可靠性与应用</strong>：<a
+href="dynamic-brain-networks.reliability.html">动态指标的重测信度</a>与<a
+href="dynamic-brain-networks.disease-reproducibility.html">疾病、发育与老化中的动态网络</a>。</li>
+</ol>
+<p>本专题大量使用<a
+href="brain-connectome.html">脑连接组</a>中的相关矩阵、Fisher
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>
+变换、阈值和模块概念，<a
+href="community-structure.html">社团结构与社区发现</a>中的模块度，以及<a
+href="synchronization.html">同步与协同动力学</a>中的相位与同步概念。所有方法都有可运行的模拟示例，见<a
+href="dynamic-brain-networks.html#code">代码示例</a>。</p>
+</section><section class="block" id="pages"><h2><span class="tag">Contents</span>知识页面</h2><div class="arts"><a class="art" href="dynamic-brain-networks.method-landscape.html"><span class="no">01</span><span class="t">方法谱系与基本假设</span><span class="d">不同的 dFC 方法回答的是略有不同的问题。选择方法前，先问三件事：（1）在多长的时间尺度上看变化（毫秒、秒、几十秒）？（2）认为连接是连续漂移的，还是在少数离散状态之间切换？（3…</span></a><a class="art" href="dynamic-brain-networks.sliding-window.html"><span class="no">02</span><span class="t">滑动窗口相关</span><span class="d">最直接的方法是滑动窗口（sliding window）：取长度为 的时间窗，在窗内计算两两相关，然后把窗口向后移动一步（步长 ），再算一次。对 个脑区、 个时间点，得到约 个相关矩…</span></a><a class="art" href="dynamic-brain-networks.wavelet-coherence.html"><span class="no">03</span><span class="t">时频分析与小波相干</span><span class="d">滑动窗口只用一个窗长，等于默认所有频率的连接都在同一时间尺度上变化。时频分析放开了这一限制：低频成分用长窗口、高频成分用短窗口，同时得到连接随时间和频率的变化。 连续小波变换 对信…</span></a><a class="art" href="dynamic-brain-networks.phase-synchrony.html"><span class="no">04</span><span class="t">相位同步与瞬时相位方法</span><span class="d">窗口与小波方法都要在一段时间内估计二阶统计量。若信号是窄带的，可以用瞬时相位在单个时间点上定义同步，从而摆脱窗口。 希尔伯特相位与相位一致性 对带通滤波后的信号 ，用希尔伯特变换构…</span></a><a class="art" href="dynamic-brain-networks.caps.html"><span class="no">05</span><span class="t">共激活模式</span><span class="d">前面的方法都在“连接”（二阶统计量）的层面上工作。共激活模式（co-activation patterns, CAP）回到一阶的活动层面：静息态网络的相关图，可能主要由少数几个时间…</span></a><a class="art" href="dynamic-brain-networks.edge-time-series.html"><span class="no">06</span><span class="t">边时间序列</span><span class="d">边时间序列（edge time series）把相关系数“拆开”到每一个时间点上，是时间分辨率最高、也最直接的分解。 定义与恒等式 把每个脑区信号 标准化（用总体标准差）： 。定义…</span></a><a class="art" href="dynamic-brain-networks.connectivity-states.html"><span class="no">07</span><span class="t">连接状态</span><span class="d">Allen 等（2014, Cerebral Cortex）的研究奠定了常用范式：对 405 名健康被试的静息态 fMRI 先用独立成分分析得到功能网络节点，再计算滑动窗口相关（窗…</span></a><a class="art" href="dynamic-brain-networks.hmm.html"><span class="no">08</span><span class="t">隐马尔可夫模型</span><span class="d">k-means 把每个窗口独立地归类，没有利用“相邻时间点往往处于同一状态”这一信息，也离不开窗口。隐马尔可夫模型（hidden Markov model, HMM）把状态序列本身…</span></a><a class="art" href="dynamic-brain-networks.state-number.html"><span class="no">09</span><span class="t">状态数的选择与稳定性</span><span class="d">无论 k-means、HMM 还是 CAP，都要先确定状态数 。不同研究的 差别很大：Allen 等（2014）选 7 个，Damaraju 等（2014）选 5 个，Liu &amp; …</span></a><a class="art" href="dynamic-brain-networks.sampling-variability.html"><span class="no">10</span><span class="t">有限样本波动与窗口长度</span><span class="d">动态分析的统计陷阱是这一领域最需要细读的内容。Hutchison 等（2013, NeuroImage）的综述标题就把三件事放在一起：promise, issues, and in…</span></a><a class="art" href="dynamic-brain-networks.null-models.html"><span class="no">11</span><span class="t">平稳零模型检验</span><span class="d">要声称存在动态连接，需要检验：观测到的波动是否超过了一个平稳（stationary）零模型下的预期。常用的零模型： - 相位随机化替代数据（phase-randomized sur…</span></a><a class="art" href="dynamic-brain-networks.multilayer.html"><span class="no">12</span><span class="t">多层网络</span><span class="d">多层网络（multilayer network）把多种关系或多个时间点放在同一个数学对象里：每一层是一个网络，同一个节点在不同层之间由层间边相连（Kivelä 等, 2014 的综…</span></a><a class="art" href="dynamic-brain-networks.flexibility.html"><span class="no">13</span><span class="t">网络灵活性与动态社团指标</span><span class="d">时间多层模块度给出每个脑区在每一层的社团标签 。由此定义的指标描述“网络如何重组”。 灵活性（flexibility）：脑区 在相邻层之间改变社团归属的比例， 全脑灵活性是 的平均…</span></a><a class="art" href="dynamic-brain-networks.sc-fc-coupling.html"><span class="no">14</span><span class="t">结构–功能耦合</span><span class="d">结构连接是“道路”，功能连接是“车流”，二者关系是网络神经科学的核心问题之一： - 整体水平：SC 与 FC 的边权在有直接结构连接的脑区对之间呈中等程度正相关，但 FC 中大量连…</span></a><a class="art" href="dynamic-brain-networks.electrophysiology.html"><span class="no">15</span><span class="t">EEG/MEG 网络与微状态</span><span class="d">fMRI 的时间分辨率是秒级，而神经振荡和同步发生在毫秒级。脑电（EEG）和脑磁（MEG）可以直接记录这些快速过程，因此是研究动态网络的另一条主线。振荡同步的一般理论见同步与协同动…</span></a><a class="art" href="dynamic-brain-networks.reliability.html"><span class="no">16</span><span class="t">动态指标的重测信度</span><span class="d">一个指标要用于个体差异或临床研究，首先要在同一个人身上可重复。 组内相关系数（intraclass correlation coefficient, ICC）：在 名被试、每人 次…</span></a><a class="art" href="dynamic-brain-networks.disease-reproducibility.html"><span class="no">17</span><span class="t">疾病、发育与老化中的动态网络</span><span class="d">典型疾病中的发现 - 阿尔茨海默病：Greicius 等（2004, PNAS）报告患者默认模式网络的静息态功能连接降低，尤其涉及后扣带回与海马。结合枢纽与淀粉样蛋白沉积的重叠，形…</span></a><a class="art" href="dynamic-brain-networks.derivations.html"><span class="no">18</span><span class="t">数学推导与算法</span><span class="d">本节推导滑动窗口相关的方差与窗口长度的关系，给出 Allen 等（2014）连接状态流程、相位随机化替代数据、HMM、多层模块度和 ICC 的要点。符号： 个脑区， 个时间点，窗长…</span></a><a class="art" href="dynamic-brain-networks.frontiers.html"><span class="no">19</span><span class="t">研究前沿与开放问题</span><span class="d">1. 时变功能连接有多少来自神经活动？ 采样变异、头动和觉醒波动能解释相当部分的窗口相关变化，剩余部分如何定量、用什么零模型界定，尚无共识。Lurie 等（2020, Networ…</span></a><a class="art" href="dynamic-brain-networks.biomedical.html"><span class="no">20</span><span class="t">生物医学应用</span><span class="d">动态与多模态网络分析最直接的临床愿景，是为神经调控提供靶点和时机。例如在闭环深部脑刺激、经颅磁刺激研究中，研究者希望根据实时的网络状态（如某个连接模式或振荡同步出现时）决定何时、在…</span></a><a class="art" href="dynamic-brain-networks.limitations.html"><span class="no">21</span><span class="t">适用范围与常见误用</span><span class="d">1. 误区：滑动窗口相关在时间上起伏明显，说明连接在动态变化。→ 正解：有限窗口的采样变异本身就会产生起伏，必须与平稳零模型（相位随机化、AR 模型）比较。 2. 误区：窗口越短，…</span></a></div></section><section class="block" id="video"><h2><span class="tag">VIDEO</span>讲解视频</h2><div class="video-main"><video controls preload="metadata" playsinline poster="media/videos/L10-core.jpg"><source src="media/videos/L10-core.mp4" type="video/mp4"><track kind="captions" srclang="zh" label="中文字幕" src="media/videos/L10-core.vtt"></video><div class="video-meta"><strong>动态功能连接：大脑的连接在变，还是噪声在变？</strong><span>3 分 58 秒</span></div><details class="transcript"><summary>文字稿</summary><p>大家好，在静态脑网络里，我们把十分钟的扫描平均成了一个连接矩阵。可是这十分钟里，大脑会走神、会犯困、会回忆，连接真的一成不变吗？这一期我们来讨论动态功能连接，以及它背后的统计陷阱。</p><p>第一个问题，怎样测量随时间变化的功能连接。第二个问题，我们看到的波动，到底是大脑在变，还是噪声在变。第三个问题，结构网络和功能网络能不能放在一个框架里分析。</p><p>这里是几条模拟的脑区信号，我们取一个固定长度的时间窗。在窗内计算两两相关，得到一个连接矩阵。然后把窗口往后挪一步，再算一次，矩阵就随时间变化起来。把所有窗口的矩阵拿去做聚类，就得到几种反复出现的连接状态。2014年艾伦等人用这个方法，在四百多名被试中找到了7个连接状态。状态之间的转换，被认为反映了认知过程和觉醒水平的变化。由此还能计算每个状态的占时比例、停留时间和转移概率。</p><p>但这里有一个根本问题，窗口内的相关只是用少量样本做的估计。即使两个信号的真实相关一直不变，窗口相关也会随机起伏。窗长30个独立样本时，标准误大约是0.19，起伏可以达到正负0.38。而脑血氧信号自相关很强，有效样本还要更少，起伏也就更大。另外，窗口短于最低频成分的周期时，也会产生虚假的波动。这告诉我们，窗长的选择本质上是时间分辨率和估计可靠性之间的取舍。</p><p>所以要证明动态是真的，必须先构造一个平稳的零模型。常用的是相位随机化，它保留功率谱和静态相关，只打乱随时间的变化。如果真实数据的波动明显超过替代数据，才说明存在动态连接。头动和打瞌睡也会改变连接，它们必须作为混杂因素来控制。还要记住，聚类总会给出你指定数目的状态，哪怕数据完全平稳。</p><p>多层网络把每个时间窗当作一层，同一脑区在相邻层之间相连。由此可以计算脑区的灵活性，也就是它多频繁地更换所属模块。结构和功能也可以作为两层，研究结构连接能在多大程度上预测功能连接。脑电和脑磁的时间分辨率高，但要先处理容积传导造成的虚假耦合。脑电微状态是毫秒级的地形图类别，不要和磁共振的连接状态混为一谈。</p><p>在阿尔茨海默病中，研究报告了默认模式网络的功能连接降低。这和前面提到的枢纽与淀粉样蛋白沉积重叠，形成了枢纽易损的研究线索。但组水平的差异，并不意味着能诊断某一个具体的病人。很多网络指标的重测信度只是中等，动态指标往往更低。所以结论需要更长的扫描、更大的样本和独立数据的验证。如果将来想按实时网络状态决定何时刺激，单次短时估计的可靠性就是最大难关。</p><p>第一，滑动窗口加聚类，是动态连接最常用的分析范式。第二，任何动态结论都要和平稳零模型比较，并控制头动和觉醒。第三，多层网络让我们在一个框架里分析时间和多种模态。第四，信度和样本量决定了这些指标离临床应用还有多远。请打开动态连接演示，再到代码示例里亲手做一次相位随机化检验。</p></details></div></section><section class="block" id="demos"><h2><span class="tag">INTERACTIVE</span>交互可视化</h2><div class="demo" data-demo="dfc"></div></section><section class="block" id="code"><h2><span class="tag">CODE</span>计算实现</h2><p class="small">11 个完整可运行的 Python 示例，每个都给出代码、输出图和解读；可在浏览器中直接运行，或下载 <a href="notebooks/dynamic-brain-networks.ipynb" download>Jupyter Notebook</a> · <a href="notebooks/dynamic-brain-networks.py" download>Python 脚本</a>。</p><div class="gallery"><a class="gcard" href="ex-dynamic-brain-networks-0.html"><span class="thumb"><img src="gallery/dynamic-brain-networks-0-0.png" alt="" loading="lazy"></span><span class="gt">滑动窗口相关</span></a><a class="gcard" href="ex-dynamic-brain-networks-1.html"><span class="thumb"><img src="gallery/dynamic-brain-networks-1-0.png" alt="" loading="lazy"></span><span class="gt">窗长的权衡与相位随机化零模型</span></a><a class="gcard" href="ex-dynamic-brain-networks-2.html"><span class="thumb"><img src="gallery/dynamic-brain-networks-2-0.png" alt="" loading="lazy"></span><span class="gt">从窗口相关矩阵到“连接状态”（k-means）</span></a><a class="gcard" href="ex-dynamic-brain-networks-3.html"><span class="thumb"><img src="gallery/dynamic-brain-networks-3-0.png" alt="" loading="lazy"></span><span class="gt">相位同步与主导特征向量（LEiDA 思路）</span></a><a class="gcard" href="ex-dynamic-brain-networks-4.html"><span class="thumb"><img src="gallery/dynamic-brain-networks-4-0.png" alt="" loading="lazy"></span><span class="gt">共激活模式（CAP）：种子阈值选帧 + k-means</span></a><a class="gcard" href="ex-dynamic-brain-networks-5.html"><span class="thumb"><img src="gallery/dynamic-brain-networks-5-0.png" alt="" loading="lazy"></span><span class="gt">边时间序列与高振幅共波动</span></a><a class="gcard" href="ex-dynamic-brain-networks-6.html"><span class="thumb"><img src="gallery/dynamic-brain-networks-6-0.png" alt="" loading="lazy"></span><span class="gt">高斯隐马尔可夫模型（HMM）：前向–后向与 EM</span></a><a class="gcard" href="ex-dynamic-brain-networks-7.html"><span class="thumb"><img src="gallery/dynamic-brain-networks-7-0.png" alt="" loading="lazy"></span><span class="gt">状态数的选择与分半稳定性</span></a><a class="gcard" href="ex-dynamic-brain-networks-8.html"><span class="thumb"><img src="gallery/dynamic-brain-networks-8-0.png" alt="" loading="lazy"></span><span class="gt">多层模块度与网络灵活性</span></a><a class="gcard" href="ex-dynamic-brain-networks-9.html"><span class="thumb"><img src="gallery/dynamic-brain-networks-9-0.png" alt="" loading="lazy"></span><span class="gt">小波相干：连接强度随时间和频率变化</span></a><a class="gcard" href="ex-dynamic-brain-networks-10.html"><span class="thumb"><img src="gallery/dynamic-brain-networks-10-0.png" alt="" loading="lazy"></span><span class="gt">动态指标的重测信度（ICC）</span></a></div></section><section class="block prose" id="related"><h2><span class="tag">Links</span>关联知识</h2><ul>
+<li><a
+href="brain-connectome.html">脑连接组：结构与功能连接</a>：静态功能连接、Fisher
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>
+变换、阈值与拓扑指标，是动态分析的出发点。</li>
+<li><a
+href="community-structure.html">社团结构与社区发现</a>：单层模块度与
+Louvain 算法，多层模块度和灵活性是它的推广；重叠社团与边社团相关。</li>
+<li><a
+href="synchronization.html">同步与协同动力学</a>：振荡同步与相位耦合，为
+EEG/MEG 网络和相位同步类动态连接方法提供理论背景。</li>
+<li><a
+href="network-construction.html">网络构建与统计验证</a>：零模型、替代数据与置换检验的一般原则，以及连接估计的稳定性。</li>
+<li><a
+href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a>：窗长、状态数、图谱等分析选择的敏感性分析与多宇宙分析。</li>
+<li><a
+href="symptom-networks.html">症状网络与网络精神病学</a>：经验取样时间序列上的个体动态网络，是另一类“随时间变化的网络”。</li>
+<li><a
+href="controllability.html">网络可控性与稳定性</a>：脑网络控制以结构连接为底座，动态状态之间的切换可以被表述为控制问题。</li>
+</ul>
+</section><section class="block" id="papers"><h2><span class="tag">Papers</span>论文精读</h2><div class="pgrid"><article class="pcard" data-own="0" data-dom="brain" data-k="mapping the structural core of human cerebral cortex绘制人类大脑皮层的结构核心连接组 弥散谱成像 结构连接 k-core 结构核心 结构–功能耦合"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">脑网络与连接组</span><span>PLoS Biology · 2008</span></div><h3><a href="paper-hagmann2008_structuralcore.html">绘制人类大脑皮层的结构核心</a></h3><p class="porig">Mapping the structural core of human cerebral cortex<br><span>Hagmann P, Cammoun L, Gigandet X, Meuli R, Honey CJ, Wedeen VJ, et al.</span></p><p class="psum">用弥散谱成像构建全皮层高分辨率结构网络，发现位于后内侧与顶叶皮层的结构核心，并显示结构连接强度能预测静息态功能连接。</p><div class="plec small">相关专题：<a href="brain-connectome.html">脑连接组：结构与功能连接</a> <a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></div></article><article class="pcard" data-own="0" data-dom="brain theory" data-k="complex brain networks: graph theoretical analysis of structural and functional systems复杂脑网络：结构与功能系统的图论分析连接组 结构连接 功能连接 小世界 枢纽 模块化 布线成本"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">脑网络与连接组</span><span class="pbadge dm">网络基础理论</span><span>Nature Reviews Neuroscience · 2009</span></div><h3><a href="paper-bullmore2009_brain.html">复杂脑网络：结构与功能系统的图论分析</a></h3><p class="porig">Complex brain networks: graph theoretical analysis of structural and functional systems<br><span>Bullmore E, Sporns O</span></p><p class="psum">系统梳理用图论分析脑结构与功能网络的流程与发现，总结小世界、枢纽、模块化等跨尺度、跨模态反复出现的特征。</p><div class="plec small">相关专题：<a href="brain-connectome.html">脑连接组：结构与功能连接</a> <a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a> <a href="network-models.html">小世界与无标度网络模型</a></div></article><article class="pcard" data-own="0" data-dom="brain" data-k="dynamic functional connectivity: promise, issues, and interpretations动态功能连接：希望、问题与解释动态功能连接 滑动窗口 非平稳性 零模型 生理噪声 静息态 fmri"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">脑网络与连接组</span><span>NeuroImage · 2013</span></div><h3><a href="paper-hutchison2013_dfc.html">动态功能连接：希望、问题与解释</a></h3><p class="porig">Dynamic functional connectivity: promise, issues, and interpretations<br><span>Hutchison RM, Womelsdorf T, Allen EA, Bandettini PA, Calhoun VD, Corbetta M, et al.</span></p><p class="psum">综述动态功能连接的证据与方法，系统指出窗口、噪声、统计检验和神经解释上的问题。</p><div class="plec small">相关专题：<a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a> <a href="brain-connectome.html">脑连接组：结构与功能连接</a></div></article></div></section><section class="block prose" id="references"><h2><span class="tag">References</span>核心文献</h2><h3
+id="hutchison-等-2013dynamic-functional-connectivity-promise-issues-and-interpretations">Hutchison
+等 2013：Dynamic functional connectivity: promise, issues, and
+interpretations</h3>
+<ul>
+<li><strong>背景</strong>：2010
+年前后，多项研究报告静息态功能连接随时间变化，但方法和解释差异很大。</li>
+<li><strong>核心发现</strong>：该综述（<em>NeuroImage</em>，DOI: <a
+href="https://doi.org/10.1016/j.neuroimage.2013.05.079">10.1016/j.neuroimage.2013.05.079</a>）梳理了动物电生理、人类
+fMRI
+中连接变化的证据，系统讨论了滑动窗口参数、统计检验、非神经来源（头动、生理噪声、觉醒水平）等问题。</li>
+<li><strong>阅读提示</strong>：重点读“issues”部分，并把每个问题对应到<a
+href="dynamic-brain-networks.null-models.html">平稳零模型检验</a>中的方法。</li>
+<li><strong>思考题</strong>：如果一个被试在扫描中逐渐入睡，滑动窗口分析会看到什么？你如何区分“连接动态”与“状态漂移”？</li>
+<li><strong>精读</strong>：<a
+href="paper-hutchison2013_dfc.html">Hutchison 2013</a></li>
+</ul>
+<h3
+id="pretibolton-van-de-ville-2017the-dynamic-functional-connectome-state-of-the-art-and-perspectives">Preti、Bolton
+&amp; Van De Ville 2017：The dynamic functional connectome:
+State-of-the-art and perspectives</h3>
+<ul>
+<li><strong>背景</strong>：dFC
+方法快速增多，需要一个按方法原理组织的全景图。</li>
+<li><strong>核心内容</strong>：该综述（<em>NeuroImage</em>，DOI: <a
+href="https://doi.org/10.1016/j.neuroimage.2016.12.061">10.1016/j.neuroimage.2016.12.061</a>）系统描述已有的
+dFC 方法及其优缺点，讨论 dFC 与
+EEG、人口学和行为数据的关联证据，以及初步的临床应用。</li>
+<li><strong>阅读提示</strong>：与本专题的<a
+href="dynamic-brain-networks.method-landscape.html">方法谱系</a>对照阅读，关注每类方法在“信号层面还是连接层面”“是否需要窗口”上的区别。</li>
+</ul>
+<h3
+id="allen-等-2014tracking-whole-brain-connectivity-dynamics-in-the-resting-state">Allen
+等 2014：Tracking whole-brain connectivity dynamics in the resting
+state</h3>
+<ul>
+<li><strong>背景</strong>：需要一个能在大样本中识别全脑重复出现的连接模式的可操作流程。</li>
+<li><strong>核心发现</strong>：该文（<em>Cerebral Cortex</em>，DOI: <a
+href="https://doi.org/10.1093/cercor/bhs352">10.1093/cercor/bhs352</a>）结合组独立成分分析、锥形滑动窗口和
+k-means 聚类，在 405 名被试中识别出 7
+个反复出现的连接状态，其中一些状态与静态平均矩阵明显不同。</li>
+<li><strong>阅读提示</strong>：留意作者如何选择窗长和聚类数、如何处理窗口内的估计噪声；思考哪些结论在后来的“零模型”批评下仍然成立。</li>
+<li><strong>思考题</strong>：静态平均矩阵是否可能是一个“从未真实出现过”的连接模式？用占时比例的概念说明你的理由。</li>
+</ul>
+<h3
+id="vidaurre-等-2017brain-network-dynamics-are-hierarchically-organized-in-time">Vidaurre
+等 2017：Brain network dynamics are hierarchically organized in
+time</h3>
+<ul>
+<li><strong>背景</strong>：大尺度网络是否有自己的有组织的时间动力学，而不仅是随机波动？</li>
+<li><strong>核心发现</strong>：该文（<em>PNAS</em>，DOI: <a
+href="https://doi.org/10.1073/pnas.1705120114">10.1073/pnas.1705120114</a>）用
+HMM 分析静息态
+fMRI，发现状态间转移非随机且呈层级组织，形成感觉运动相关与高级认知相关两组元状态；个体在各状态上的占时稳定、可遗传，并与认知特质相关。</li>
+<li><strong>阅读提示</strong>：对照<a
+href="dynamic-brain-networks.hmm.html">隐马尔可夫模型</a>一节，思考转移矩阵的层级结构是如何从数据中得到的。</li>
+</ul>
+<h3
+id="liu-duyn-2013time-varying-functional-network-information-extracted-from-brief-instances-of-spontaneous-brain-activity">Liu
+&amp; Duyn 2013：Time-varying functional network information extracted
+from brief instances of spontaneous brain activity</h3>
+<ul>
+<li><strong>核心发现</strong>：该文（<em>PNAS</em>，DOI: <a
+href="https://doi.org/10.1073/pnas.1216856110">10.1073/pnas.1216856110</a>）显示，种子相关图可由少数关键时间点的活动重现；对这些时间点聚类得到的共激活模式彼此不同，也不同于传统功能网络。</li>
+<li><strong>阅读提示</strong>：对照<a
+href="dynamic-brain-networks.caps.html">共激活模式</a>，注意作者如何用平稳替代数据作对照。</li>
+</ul>
+<h3
+id="faskowitz-等-2020-与-zamani-esfahlani-等-2020边时间序列">Faskowitz
+等 2020 与 Zamani Esfahlani 等 2020：边时间序列</h3>
+<ul>
+<li><strong>核心发现</strong>：Faskowitz 等（<em>Nature
+Neuroscience</em>，DOI: <a
+href="https://doi.org/10.1038/s41593-020-00719-y">10.1038/s41593-020-00719-y</a>）提出边时间序列与边功能连接，得到重叠的系统层面结构；Zamani
+Esfahlani 等（<em>PNAS</em>，DOI: <a
+href="https://doi.org/10.1073/pnas.2005531117">10.1073/pnas.2005531117</a>）显示少数高振幅共波动帧可以解释
+FC 的大部分模式。</li>
+<li><strong>阅读提示</strong>：与 Novelli &amp; Razi（2022, <em>Nature
+Communications</em>，DOI: <a
+href="https://doi.org/10.1038/s41467-022-29775-7">10.1038/s41467-022-29775-7</a>）和
+Ladwig 等（2022, <em>NeuroImage</em>，DOI: <a
+href="https://doi.org/10.1016/j.neuroimage.2022.119476">10.1016/j.neuroimage.2022.119476</a>）的批评对照阅读。</li>
+</ul>
+<h3 id="mucha-等-2010-与-bassett-等-2011多层模块度与网络灵活性">Mucha 等
+2010 与 Bassett 等 2011：多层模块度与网络灵活性</h3>
+<ul>
+<li><strong>核心发现</strong>：Mucha 等（<em>Science</em>，DOI: <a
+href="https://doi.org/10.1126/science.1184819">10.1126/science.1184819</a>）把模块度推广到时间依赖、多尺度和多重网络；Bassett
+等（<em>PNAS</em>，DOI: <a
+href="https://doi.org/10.1073/pnas.1018985108">10.1073/pnas.1018985108</a>）用它追踪运动学习中脑网络的重组，发现灵活性预测后续学习。</li>
+<li><strong>阅读提示</strong>：注意
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>γ</mi><annotation encoding="application/x-tex">\gamma</annotation></semantics></math>、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ω</mi><annotation encoding="application/x-tex">\omega</annotation></semantics></math>
+的选择方式和零模型的设计（另见 Bassett 等, 2013, <em>Chaos</em>，DOI: <a
+href="https://doi.org/10.1063/1.4790830">10.1063/1.4790830</a>）。</li>
+</ul>
+<h3
+id="lurie-等-2020questions-and-controversies-in-the-study-of-time-varying-functional-connectivity-in-resting-fmri">Lurie
+等 2020：Questions and controversies in the study of time-varying
+functional connectivity in resting fMRI</h3>
+<ul>
+<li><strong>背景</strong>：动态连接研究快速增长，但“它到底测到了什么”仍无共识。</li>
+<li><strong>核心发现</strong>：该文（<em>Network Neuroscience</em>，DOI:
+<a
+href="https://doi.org/10.1162/netn_a_00116">10.1162/netn_a_00116</a>）由多位研究者合写，逐一讨论时变连接的定义、统计检验、非神经来源及与认知行为的关系，明确列出已知、未知和存在分歧的问题。</li>
+<li><strong>阅读提示</strong>：适合在开展动态连接研究前作为“清单”使用。</li>
+<li><strong>思考题</strong>：文中提出的问题中，哪一个你认为最有希望通过更好的实验设计（而非更好的算法）解决？</li>
+</ul>
+<h3 id="其他引用文献按主题">其他引用文献（按主题）</h3>
+<ul>
+<li><strong>方法</strong>：Chang &amp; Glover 2010, <em>NeuroImage</em>,
+<a
+href="https://doi.org/10.1016/j.neuroimage.2009.12.011">10.1016/j.neuroimage.2009.12.011</a>；Grinsted
+等 2004, <em>Nonlinear Processes in Geophysics</em>, <a
+href="https://doi.org/10.5194/npg-11-561-2004">10.5194/npg-11-561-2004</a>；Lindquist
+等 2014, <em>NeuroImage</em>, <a
+href="https://doi.org/10.1016/j.neuroimage.2014.06.052">10.1016/j.neuroimage.2014.06.052</a>；Glerean
+等 2012, <em>Brain Connectivity</em>, <a
+href="https://doi.org/10.1089/brain.2011.0068">10.1089/brain.2011.0068</a>；Tagliazucchi
+等 2012, <em>Frontiers in Physiology</em>, <a
+href="https://doi.org/10.3389/fphys.2012.00015">10.3389/fphys.2012.00015</a>；Karahanoğlu
+&amp; Van De Ville 2015, <em>Nature Communications</em>, <a
+href="https://doi.org/10.1038/ncomms8751">10.1038/ncomms8751</a>；Rabiner
+1989, <em>Proceedings of the IEEE</em>, <a
+href="https://doi.org/10.1109/5.18626">10.1109/5.18626</a>；Vidaurre 等
+2016, <em>NeuroImage</em>, <a
+href="https://doi.org/10.1016/j.neuroimage.2015.11.047">10.1016/j.neuroimage.2015.11.047</a>；Ahrends
+等 2022, <em>NeuroImage</em>, <a
+href="https://doi.org/10.1016/j.neuroimage.2022.119026">10.1016/j.neuroimage.2022.119026</a>；Kivelä
+等 2014, <em>Journal of Complex Networks</em>, <a
+href="https://doi.org/10.1093/comnet/cnu016">10.1093/comnet/cnu016</a>。</li>
+<li><strong>统计与可靠性</strong>：Leonardi &amp; Van De Ville 2015, <a
+href="https://doi.org/10.1016/j.neuroimage.2014.09.007">10.1016/j.neuroimage.2014.09.007</a>；Hindriks
+等 2016, <a
+href="https://doi.org/10.1016/j.neuroimage.2015.11.055">10.1016/j.neuroimage.2015.11.055</a>；Laumann
+等 2017, <em>Cerebral Cortex</em>, <a
+href="https://doi.org/10.1093/cercor/bhw265">10.1093/cercor/bhw265</a>；Shakil
+等 2016, <a
+href="https://doi.org/10.1016/j.neuroimage.2016.02.074">10.1016/j.neuroimage.2016.02.074</a>；Abrol
+等 2017, <a
+href="https://doi.org/10.1016/j.neuroimage.2017.09.020">10.1016/j.neuroimage.2017.09.020</a>；Choe
+等 2017, <a
+href="https://doi.org/10.1016/j.neuroimage.2017.07.005">10.1016/j.neuroimage.2017.07.005</a>；Noble
+等 2019, <a
+href="https://doi.org/10.1016/j.neuroimage.2019.116157">10.1016/j.neuroimage.2019.116157</a>（以上未注明期刊者均为
+<em>NeuroImage</em>）。</li>
+<li><strong>结构–功能耦合</strong>：Honey 等 2009, <em>PNAS</em>, <a
+href="https://doi.org/10.1073/pnas.0811168106">10.1073/pnas.0811168106</a>；Vázquez-Rodríguez
+等 2019, <em>PNAS</em>, <a
+href="https://doi.org/10.1073/pnas.1903403116">10.1073/pnas.1903403116</a>；Baum
+等 2020, <em>PNAS</em>, <a
+href="https://doi.org/10.1073/pnas.1912034117">10.1073/pnas.1912034117</a>；Suárez
+等 2020, <em>Trends in Cognitive Sciences</em>, <a
+href="https://doi.org/10.1016/j.tics.2020.01.008">10.1016/j.tics.2020.01.008</a>。</li>
+<li><strong>电生理</strong>：Stam 等 2007, <em>Human Brain Mapping</em>,
+<a href="https://doi.org/10.1002/hbm.20346" target="_blank" rel="noopener">10.1002/hbm.20346</a>；Nolte
+等 2004, <em>Clinical Neurophysiology</em>, <a
+href="https://doi.org/10.1016/j.clinph.2004.04.029">10.1016/j.clinph.2004.04.029</a>；Vinck
+等 2011, <em>NeuroImage</em>, <a
+href="https://doi.org/10.1016/j.neuroimage.2011.01.055">10.1016/j.neuroimage.2011.01.055</a>；Brookes
+等 2011, <em>PNAS</em>, <a
+href="https://doi.org/10.1073/pnas.1112685108">10.1073/pnas.1112685108</a>；Hipp
+等 2012, <em>Nature Neuroscience</em>, <a
+href="https://doi.org/10.1038/nn.3101">10.1038/nn.3101</a>；Baker 等
+2014, <em>eLife</em>, <a
+href="https://doi.org/10.7554/eLife.01867">10.7554/eLife.01867</a>；Colclough
+等 2016, <em>NeuroImage</em>, <a
+href="https://doi.org/10.1016/j.neuroimage.2016.05.070">10.1016/j.neuroimage.2016.05.070</a>；Michel
+&amp; Koenig 2018, <em>NeuroImage</em>, <a
+href="https://doi.org/10.1016/j.neuroimage.2017.11.062">10.1016/j.neuroimage.2017.11.062</a>；da
+Cruz 等 2020, <em>Nature Communications</em>, <a
+href="https://doi.org/10.1038/s41467-020-16914-1">10.1038/s41467-020-16914-1</a>。</li>
+<li><strong>疾病、发育与老化</strong>：Greicius 等 2004, <em>PNAS</em>,
+<a
+href="https://doi.org/10.1073/pnas.0308627101">10.1073/pnas.0308627101</a>；Damaraju
+等 2014, <em>NeuroImage: Clinical</em>, <a
+href="https://doi.org/10.1016/j.nicl.2014.07.003">10.1016/j.nicl.2014.07.003</a>；Rashid
+等 2014, <em>Frontiers in Human Neuroscience</em>, <a
+href="https://doi.org/10.3389/fnhum.2014.00897">10.3389/fnhum.2014.00897</a>；Du
+等 2018, <em>NeuroImage</em>, <a
+href="https://doi.org/10.1016/j.neuroimage.2017.10.022">10.1016/j.neuroimage.2017.10.022</a>；Braun
+等 2015, <em>PNAS</em>, <a
+href="https://doi.org/10.1073/pnas.1422487112">10.1073/pnas.1422487112</a>；Braun
+等 2016, <em>PNAS</em>, <a
+href="https://doi.org/10.1073/pnas.1608819113">10.1073/pnas.1608819113</a>；Kaiser
+等 2015, <em>JAMA Psychiatry</em>, <a
+href="https://doi.org/10.1001/jamapsychiatry.2015.0071">10.1001/jamapsychiatry.2015.0071</a>；Kaiser
+等 2016, <em>Neuropsychopharmacology</em>, <a
+href="https://doi.org/10.1038/npp.2015.352">10.1038/npp.2015.352</a>；Hutchison
+&amp; Morton 2015, <em>Journal of Neuroscience</em>, <a
+href="https://doi.org/10.1523/JNEUROSCI.4638-14.2015">10.1523/JNEUROSCI.4638-14.2015</a>；Cabral
+等 2017, <em>Scientific Reports</em>, <a
+href="https://doi.org/10.1038/s41598-017-05425-7">10.1038/s41598-017-05425-7</a>；Battaglia
+等 2020, <em>NeuroImage</em>, <a
+href="https://doi.org/10.1016/j.neuroimage.2020.117156">10.1016/j.neuroimage.2020.117156</a>；Tagliazucchi
+&amp; Laufs 2014, <em>Neuron</em>, <a
+href="https://doi.org/10.1016/j.neuron.2014.03.020">10.1016/j.neuron.2014.03.020</a>；Finn
+等 2015, <em>Nature Neuroscience</em>, <a
+href="https://doi.org/10.1038/nn.4135">10.1038/nn.4135</a>；Marek 等
+2022, <em>Nature</em>, <a
+href="https://doi.org/10.1038/s41586-022-04492-9">10.1038/s41586-022-04492-9</a>。</li>
+</ul>
+</section><section class="block" id="data"><h2><span class="tag">Data &amp; tools</span>相关数据与软件</h2><div class="rgrid"><a class="rcard" href="r-hcp.html" data-dom="brain" data-k="human connectome project（hcp） 健康成人高质量多模态 mri 与行为数据，连接组研究的基准数据。"><span class="kind">数据集</span><b>Human Connectome Project（HCP）</b><span class="d">健康成人高质量多模态 MRI 与行为数据，连接组研究的基准数据。</span></a><a class="rcard" href="r-nilearn.html" data-dom="brain methods" data-k="nilearn 用于神经影像统计分析与机器学习的 python 库。"><span class="kind">软件/工具包</span><b>Nilearn</b><span class="d">用于神经影像统计分析与机器学习的 Python 库。</span></a></div></section><section class="block prose" id="resources"><h2><span class="tag">Further</span>延伸资源</h2><div class="table-wrap"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>类型</th>
+<th>资源</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>视频</td>
+<td><a
+href="https://www.bilibili.com/video/BV1vm42137n6/">动态功能连接的原理</a>（B
+站）</td>
+<td>中文，10 分钟，滑动窗口思路入门</td>
+</tr>
+<tr>
+<td>视频</td>
+<td><a href="https://www.bilibili.com/video/BV1BS4y1473K/" target="_blank" rel="noopener">静息态 EEG
+微状态简介和实操</a>（B 站）</td>
+<td>中文，22 分钟，微状态概念与软件操作</td>
+</tr>
+<tr>
+<td>视频</td>
+<td><a href="https://www.youtube.com/watch?v=NohtTTHG1tc" target="_blank" rel="noopener">ISMRM MR
+Academy – Dynamic Functional Connectivity Methods</a>（需境外网络）</td>
+<td>英文，约 26 分钟，系统讲解 dFC 方法与注意事项</td>
+</tr>
+<tr>
+<td>综述</td>
+<td>Hutchison 等 2013，<a
+href="https://doi.org/10.1016/j.neuroimage.2013.05.079">doi.org/10.1016/j.neuroimage.2013.05.079</a></td>
+<td>动态功能连接方法与争议的标准综述</td>
+</tr>
+<tr>
+<td>综述</td>
+<td>Preti 等 2017，<a
+href="https://doi.org/10.1016/j.neuroimage.2016.12.061">doi.org/10.1016/j.neuroimage.2016.12.061</a></td>
+<td>dFC 方法全景与展望</td>
+</tr>
+<tr>
+<td>综述</td>
+<td>Lurie 等 2020，<a
+href="https://doi.org/10.1162/netn_a_00116">doi.org/10.1162/netn_a_00116</a></td>
+<td>时变功能连接的问题与争议（开放获取）</td>
+</tr>
+<tr>
+<td>原始研究</td>
+<td>Allen 等 2014，<a
+href="https://doi.org/10.1093/cercor/bhs352">doi.org/10.1093/cercor/bhs352</a></td>
+<td>滑动窗口 + k-means 连接状态的原始文献</td>
+</tr>
+<tr>
+<td>综述</td>
+<td>Kivelä 等 2014，<a
+href="https://doi.org/10.1093/comnet/cnu016">doi.org/10.1093/comnet/cnu016</a></td>
+<td>多层网络的统一形式化</td>
+</tr>
+<tr>
+<td>综述</td>
+<td>Suárez 等 2020，<a
+href="https://doi.org/10.1016/j.tics.2020.01.008">doi.org/10.1016/j.tics.2020.01.008</a></td>
+<td>结构–功能耦合的统计、通信与生物物理三类模型</td>
+</tr>
+<tr>
+<td>综述</td>
+<td>Michel &amp; Koenig 2018，<a
+href="https://doi.org/10.1016/j.neuroimage.2017.11.062">doi.org/10.1016/j.neuroimage.2017.11.062</a></td>
+<td>EEG 微状态方法与临床应用</td>
+</tr>
+<tr>
+<td>教材</td>
+<td>Barabási, <em>Network Science</em>, Ch. 9 Communities，<a
+href="http://networksciencebook.com/chapter/9">networksciencebook.com/chapter/9</a></td>
+<td>模块度及其局限，是多层模块度的基础</td>
+</tr>
+<tr>
+<td>教材</td>
+<td>Fornito, Zalesky &amp; Bullmore, <em>Fundamentals of Brain Network
+Analysis</em>（Academic Press, 2016）</td>
+<td>脑网络构建、模块与统计推断的系统教材</td>
+</tr>
+<tr>
+<td>工具</td>
+<td><a href="https://pycrostates.readthedocs.io/" target="_blank" rel="noopener">pycrostates</a></td>
+<td>基于 MNE 的 Python 微状态分析包，笔记本电脑即可运行</td>
+</tr>
+<tr>
+<td>工具</td>
+<td><a href="https://osl-dynamics.readthedocs.io/" target="_blank" rel="noopener">osl-dynamics</a></td>
+<td>用 HMM 等模型分析 fMRI/MEG 动态网络的 Python 包</td>
+</tr>
+<tr>
+<td>工具</td>
+<td><a
+href="https://mne.tools/mne-connectivity/">MNE-Connectivity</a></td>
+<td>EEG/MEG 的相干、PLI、wPLI、包络相关等连接估计</td>
+</tr>
+</tbody>
+</table></div>
+</section><section class="block prose" id="questions"><h2><span class="tag">Open questions</span>开放问题</h2><ol type="1">
+<li>你打算用滑动窗口分析某种疾病患者的静息态
+fMRI，并比较患者与对照在某一连接状态上的停留时间。请列出至少三种可能导致“假阳性组间差异”的非神经因素，并为每一种设计一个控制或检验方法。</li>
+<li>如果你的研究对象可以同时获得 MRI（结构与功能）和 EEG
+数据，你会如何设计一个多层网络分析来回答一个具体的生物医学问题？说明每一层的节点和边是什么、层间如何连接、你期望看到什么结果。</li>
+<li>同一份数据用 k-means 连接状态与 HMM
+得到的状态数和停留时间不同。你如何判断哪一个更可信？请设计一个包含模拟数据、替代数据和重测数据的比较方案。</li>
+<li>网络灵活性在患者组更高。请写出至少两种与“大脑更灵活”无关的解释，并说明如何用参数扫描或零模型排除它们。</li>
+<li>一个动态指标的组间效应显著，但重测 ICC 只有
+0.3。它还能用于个体层面的诊断或预测吗？需要多长的扫描或多少次测量才可能改善？</li>
+</ol>
+</section></article><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script><script src="assets/js/demos.js"></script></body></html>

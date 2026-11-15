@@ -1,0 +1,156 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>Watts 阈值级联的&quot;级联窗口&quot;与分支过程 · 生物医学网络科学</title><meta name="description" content="网络鲁棒性、渗流与级联失效 · 代码示例：Watts 阈值级联的&quot;级联窗口&quot;与分支过程"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-dynamics"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html" aria-current="page">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics" open><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a><ol class="sub"><li><a href="robustness.percolation.html"><span class="n">01</span>渗流理论与网络碎裂</a></li><li><a href="robustness.generating-functions.html"><span class="n">02</span>生成函数方法与 Molloy–Reed 判据</a></li><li><a href="robustness.random-failure.html"><span class="n">03</span>随机失效与无标度网络</a></li><li><a href="robustness.targeted-attack.html"><span class="n">04</span>蓄意攻击：按度、介数与自适应攻击</a></li><li><a href="robustness.robustness-measures.html"><span class="n">05</span>鲁棒性度量：R 指标与功能性指标</a></li><li><a href="robustness.load-cascades.html"><span class="n">06</span>级联失效：负载重分配</a></li><li><a href="robustness.threshold-branching.html"><span class="n">07</span>阈值级联与分支过程</a></li><li><a href="robustness.interdependent-networks.html"><span class="n">08</span>相互依存网络与多层网络的渗流</a></li><li><a href="robustness.robustness-optimization.html"><span class="n">09</span>鲁棒性优化与网络设计</a></li><li><a href="robustness.biological-robustness.html"><span class="n">10</span>生物系统的鲁棒性：冗余、缓冲与必需性</a></li><li><a href="robustness.metabolic-knockouts.html"><span class="n">11</span>代谢网络的基因敲除与级联</a></li><li><a href="robustness.brain-lesions.html"><span class="n">12</span>脑损伤与病变的网络后果</a></li><li><a href="robustness.synthetic-lethality.html"><span class="n">13</span>合成致死与癌症治疗</a></li><li><a href="robustness.derivations.html"><span class="n">14</span>数学推导与算法</a></li><li><a href="robustness.frontiers.html"><span class="n">15</span>研究前沿与开放问题</a></li><li><a href="robustness.biomedical.html"><span class="n">16</span>生物医学应用</a></li><li><a href="robustness.limitations.html"><span class="n">17</span>适用范围与常见误用</a></li></ol></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="code.html">代码库</a> <span class="sep">/</span> <a href="code.html#dynamics">网络动力学与控制</a> <span class="sep">/</span> <a href="robustness.html">网络鲁棒性、渗流与级联失效</a></nav><div class="eyebrow" style="margin-top:14px"><b>Example</b><span>05 / 09</span></div><h1>Watts 阈值级联的&quot;级联窗口&quot;与分支过程</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></dd></div><div><dt>下载</dt><dd><a href="notebooks/robustness.ipynb" download>Notebook</a> · <a href="notebooks/robustness.py" download>.py</a></dd></div></dl></header><section class="block prose"><p>Watts 模型：节点在失效邻居比例 &gt;= phi 时失效。度 k &lt;= 1/phi
+的节点是”易损节点”（一个失效邻居即可触发）。 全局级联条件：sum_k k(k-1)
+rho_k P(k) &gt; <k>，rho_k = 1 若 k &lt;= floor(1/phi)。对 ER 网络扫描
+<k> 得到级联窗口，并与模拟比较。 分支过程部分：后代分布 p0, p1, p2
+的灭绝概率 q 满足 q = g(q)；临界分支过程的雪崩规模分布 P(s) ~ s^{-3/2}。
+解读：<k>
+太小（网络不连通）或太大（易损节点太少）都不会出现全局级联；窗口边界附近有限规模效应明显，
+解析判据略小于 1
+时模拟仍可能出现少量全局级联。临界分支过程的对数斜率接近 -1.5。</p>
+</section><section class="block"><h2><span class="tag">Output</span>输出图</h2><div class="ex-figs"><img src="gallery/robustness-4-0.png" alt="Watts 阈值级联的&quot;级联窗口&quot;与分支过程：输出图 1" loading="lazy"></div></section><section class="block"><h2><span class="tag">Output</span>文字输出</h2><pre class="ex-out">&lt;k&gt;=0.8  解析判据 0.79 (&gt;1 才可能全局级联)  模拟全局级联比例 0.00
+&lt;k&gt;=1.5  解析判据 1.40 (&gt;1 才可能全局级联)  模拟全局级联比例 0.67
+&lt;k&gt;=3.0  解析判据 1.94 (&gt;1 才可能全局级联)  模拟全局级联比例 0.90
+&lt;k&gt;=5.0  解析判据 1.33 (&gt;1 才可能全局级联)  模拟全局级联比例 0.60
+&lt;k&gt;=6.0  解析判据 0.91 (&gt;1 才可能全局级联)  模拟全局级联比例 0.33
+&lt;k&gt;=7.0  解析判据 0.57 (&gt;1 才可能全局级联)  模拟全局级联比例 0.00
+&lt;k&gt;=9.0  解析判据 0.19 (&gt;1 才可能全局级联)  模拟全局级联比例 0.00
+超临界分支过程的灭绝概率 q = 0.5
+临界分支过程雪崩规模分布的拟合指数 alpha ≈ 1.51（理论 1.5）</pre></section><section class="block prose"><h2><span class="tag">Code</span>代码</h2><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Watts 模型：节点在失效邻居比例 &gt;= phi 时失效。度 k &lt;= 1/phi 的节点是&quot;易损节点&quot;（一个失效邻居即可触发）。</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 全局级联条件：sum_k k(k-1) rho_k P(k) &gt; &lt;k&gt;，rho_k = 1 若 k &lt;= floor(1/phi)。对 ER 网络扫描 &lt;k&gt; 得到级联窗口，并与模拟比较。</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 分支过程部分：后代分布 p0, p1, p2 的灭绝概率 q 满足 q = g(q)；临界分支过程的雪崩规模分布 P(s) ~ s^{-3/2}。</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 解读：&lt;k&gt; 太小（网络不连通）或太大（易损节点太少）都不会出现全局级联；窗口边界附近有限规模效应明显，</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 解析判据略小于 1 时模拟仍可能出现少量全局级联。临界分支过程的对数斜率接近 -1.5。</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> networkx <span class="im">as</span> nx</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> poisson</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> watts_condition(kmean, phi, kmax<span class="op">=</span><span class="dv">60</span>):</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    k <span class="op">=</span> np.arange(kmax)<span class="op">;</span> P <span class="op">=</span> poisson.pmf(k, kmean)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    rho <span class="op">=</span> (k <span class="op">&lt;=</span> np.floor(<span class="dv">1</span> <span class="op">/</span> phi)).astype(<span class="bu">float</span>)<span class="op">;</span> rho[<span class="dv">0</span>] <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.<span class="bu">sum</span>(k <span class="op">*</span> (k <span class="op">-</span> <span class="dv">1</span>) <span class="op">*</span> rho <span class="op">*</span> P) <span class="op">/</span> kmean</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> watts_sim(n, kmean, phi, trials<span class="op">=</span><span class="dv">30</span>, seed<span class="op">=</span><span class="dv">0</span>):</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    G <span class="op">=</span> nx.fast_gnp_random_graph(n, kmean <span class="op">/</span> (n <span class="op">-</span> <span class="dv">1</span>), seed<span class="op">=</span>seed)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    rng <span class="op">=</span> np.random.default_rng(seed)<span class="op">;</span> big <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    deg <span class="op">=</span> <span class="bu">dict</span>(G.degree())</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(trials):</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>        failed <span class="op">=</span> {<span class="bu">int</span>(rng.integers(n))}<span class="op">;</span> frontier <span class="op">=</span> <span class="bu">list</span>(failed)</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>        <span class="cf">while</span> frontier:</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>            new <span class="op">=</span> []</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> v <span class="kw">in</span> frontier:</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>                <span class="cf">for</span> w <span class="kw">in</span> G[v]:</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>                    <span class="cf">if</span> w <span class="kw">not</span> <span class="kw">in</span> failed <span class="kw">and</span> deg[w] <span class="op">&gt;</span> <span class="dv">0</span> <span class="kw">and</span> <span class="bu">sum</span>(x <span class="kw">in</span> failed <span class="cf">for</span> x <span class="kw">in</span> G[w]) <span class="op">/</span> deg[w] <span class="op">&gt;=</span> phi:</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>                        failed.add(w)<span class="op">;</span> new.append(w)</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>            frontier <span class="op">=</span> new</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>        big <span class="op">+=</span> <span class="bu">len</span>(failed) <span class="op">&gt;</span> <span class="fl">0.1</span> <span class="op">*</span> n</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> big <span class="op">/</span> trials</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>phi <span class="op">=</span> <span class="fl">0.18</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>kms, sims <span class="op">=</span> [<span class="fl">0.8</span>, <span class="fl">1.5</span>, <span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">7</span>, <span class="dv">9</span>], []</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> km <span class="kw">in</span> kms:</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>    sims.append(watts_sim(<span class="dv">3000</span>, km, phi))</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;&lt;k&gt;=</span><span class="sc">%.1f</span><span class="st">  解析判据 </span><span class="sc">%.2f</span><span class="st"> (&gt;1 才可能全局级联)  模拟全局级联比例 </span><span class="sc">%.2f</span><span class="st">&quot;</span> <span class="op">%</span> (km, watts_condition(km, phi), sims[<span class="op">-</span><span class="dv">1</span>]))</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="co"># 分支过程：p0=0.25, p1=0.25, p2=0.5 -&gt; 平均后代 1.25，灭绝概率 q = 0.5（手算见正文）</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>g <span class="op">=</span> <span class="kw">lambda</span> q: <span class="fl">0.25</span> <span class="op">+</span> <span class="fl">0.25</span> <span class="op">*</span> q <span class="op">+</span> <span class="fl">0.5</span> <span class="op">*</span> q <span class="op">**</span> <span class="dv">2</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>q <span class="op">=</span> <span class="fl">0.0</span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">200</span>):</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>    q <span class="op">=</span> g(q)</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;超临界分支过程的灭绝概率 q =&quot;</span>, <span class="bu">round</span>(q, <span class="dv">4</span>))</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>rng <span class="op">=</span> np.random.default_rng(<span class="dv">1</span>)<span class="op">;</span> sizes <span class="op">=</span> []</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">20000</span>):                       <span class="co"># 临界：p0 = p2 = 1/2</span></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>    active, s <span class="op">=</span> <span class="dv">1</span>, <span class="dv">1</span></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> active <span class="op">&gt;</span> <span class="dv">0</span> <span class="kw">and</span> s <span class="op">&lt;</span> <span class="dv">10</span> <span class="op">**</span> <span class="dv">5</span>:</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>        kids <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> rng.integers(<span class="dv">0</span>, <span class="dv">2</span>, size<span class="op">=</span>active).<span class="bu">sum</span>()</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>        active <span class="op">=</span> kids<span class="op">;</span> s <span class="op">+=</span> kids</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>    sizes.append(s)</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>sizes <span class="op">=</span> np.array(sizes)</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>bins <span class="op">=</span> np.logspace(<span class="dv">0</span>, <span class="dv">4</span>, <span class="dv">13</span>)<span class="op">;</span> h, e <span class="op">=</span> np.histogram(sizes, bins<span class="op">=</span>bins, density<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> np.sqrt(e[<span class="dv">1</span>:] <span class="op">*</span> e[:<span class="op">-</span><span class="dv">1</span>])<span class="op">;</span> ok <span class="op">=</span> h <span class="op">&gt;</span> <span class="dv">0</span></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;临界分支过程雪崩规模分布的拟合指数 alpha ≈ </span><span class="sc">%.2f</span><span class="st">（理论 1.5）&quot;</span> <span class="op">%</span> <span class="op">-</span>np.polyfit(np.log(c[ok][<span class="dv">2</span>:]), np.log(h[ok][<span class="dv">2</span>:]), <span class="dv">1</span>)[<span class="dv">0</span>])</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>fig, (ax1, ax2) <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">4</span>))</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>kg <span class="op">=</span> np.linspace(<span class="fl">0.5</span>, <span class="dv">10</span>, <span class="dv">120</span>)</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>ax1.plot(kg, [watts_condition(x, phi) <span class="cf">for</span> x <span class="kw">in</span> kg], c<span class="op">=</span><span class="st">&quot;0.4&quot;</span>, label<span class="op">=</span><span class="st">&quot;analytic condition&quot;</span>)</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>ax1.axhline(<span class="dv">1</span>, ls<span class="op">=</span><span class="st">&quot;--&quot;</span>, c<span class="op">=</span><span class="st">&quot;tab:red&quot;</span>, lw<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>ax1.set_xlabel(<span class="st">&quot;mean degree &lt;k&gt;&quot;</span>)<span class="op">;</span> ax1.set_ylabel(<span class="st">&quot;cascade condition (&gt;1 = global)&quot;</span>)</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>ax1b <span class="op">=</span> ax1.twinx()<span class="op">;</span> ax1b.plot(kms, sims, <span class="st">&quot;o&quot;</span>, c<span class="op">=</span><span class="st">&quot;tab:blue&quot;</span>, label<span class="op">=</span><span class="st">&quot;simulated P(global)&quot;</span>)</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>ax1b.set_ylabel(<span class="st">&quot;fraction of global cascades&quot;</span>, color<span class="op">=</span><span class="st">&quot;tab:blue&quot;</span>)<span class="op">;</span> ax1b.set_ylim(<span class="dv">0</span>, <span class="fl">1.05</span>)</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>ax1.set_title(<span class="st">&quot;Cascade window (phi = </span><span class="sc">%.2f</span><span class="st">)&quot;</span> <span class="op">%</span> phi)</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>h1, l1 <span class="op">=</span> ax1.get_legend_handles_labels()<span class="op">;</span> h2, l2 <span class="op">=</span> ax1b.get_legend_handles_labels()<span class="op">;</span> ax1.legend(h1 <span class="op">+</span> h2, l1 <span class="op">+</span> l2, fontsize<span class="op">=</span><span class="dv">8</span>)</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>ax2.loglog(c[ok], h[ok], <span class="st">&quot;o&quot;</span>, label<span class="op">=</span><span class="st">&quot;critical branching&quot;</span>)</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>ax2.loglog(c[ok], h[ok][<span class="dv">0</span>] <span class="op">*</span> (c[ok] <span class="op">/</span> c[ok][<span class="dv">0</span>]) <span class="op">**</span> <span class="op">-</span><span class="fl">1.5</span>, <span class="st">&quot;k--&quot;</span>, label<span class="op">=</span><span class="st">&quot;slope -3/2&quot;</span>)</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>ax2.set_xlabel(<span class="st">&quot;avalanche size s&quot;</span>)<span class="op">;</span> ax2.set_ylabel(<span class="st">&quot;P(s)&quot;</span>)<span class="op">;</span> ax2.legend()<span class="op">;</span> ax2.set_title(<span class="st">&quot;Avalanche sizes ~ s^(-3/2)&quot;</span>)</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()<span class="op">;</span> plt.show()</span></code></pre></div>
+</section><section class="block"><h2><span class="tag">Run</span>在浏览器中运行</h2><p class="small">首次加载 Python 环境约需 20–40 秒；可以修改参数后重新运行。</p><div class="cell"><div class="cell-head"><h3>Watts 阈值级联的&quot;级联窗口&quot;与分支过程</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea id="robustness-cell4" rows="30" spellcheck="false" aria-label="Watts 阈值级联的&quot;级联窗口&quot;与分支过程 代码"># Watts 模型：节点在失效邻居比例 &gt;= phi 时失效。度 k &lt;= 1/phi 的节点是&quot;易损节点&quot;（一个失效邻居即可触发）。
+# 全局级联条件：sum_k k(k-1) rho_k P(k) &gt; &lt;k&gt;，rho_k = 1 若 k &lt;= floor(1/phi)。对 ER 网络扫描 &lt;k&gt; 得到级联窗口，并与模拟比较。
+# 分支过程部分：后代分布 p0, p1, p2 的灭绝概率 q 满足 q = g(q)；临界分支过程的雪崩规模分布 P(s) ~ s^{-3/2}。
+# 解读：&lt;k&gt; 太小（网络不连通）或太大（易损节点太少）都不会出现全局级联；窗口边界附近有限规模效应明显，
+# 解析判据略小于 1 时模拟仍可能出现少量全局级联。临界分支过程的对数斜率接近 -1.5。
+import numpy as np
+import networkx as nx
+from scipy.stats import poisson
+
+def watts_condition(kmean, phi, kmax=60):
+    k = np.arange(kmax); P = poisson.pmf(k, kmean)
+    rho = (k &lt;= np.floor(1 / phi)).astype(float); rho[0] = 0
+    return np.sum(k * (k - 1) * rho * P) / kmean
+
+def watts_sim(n, kmean, phi, trials=30, seed=0):
+    G = nx.fast_gnp_random_graph(n, kmean / (n - 1), seed=seed)
+    rng = np.random.default_rng(seed); big = 0
+    deg = dict(G.degree())
+    for _ in range(trials):
+        failed = {int(rng.integers(n))}; frontier = list(failed)
+        while frontier:
+            new = []
+            for v in frontier:
+                for w in G[v]:
+                    if w not in failed and deg[w] &gt; 0 and sum(x in failed for x in G[w]) / deg[w] &gt;= phi:
+                        failed.add(w); new.append(w)
+            frontier = new
+        big += len(failed) &gt; 0.1 * n
+    return big / trials
+
+phi = 0.18
+kms, sims = [0.8, 1.5, 3, 5, 6, 7, 9], []
+for km in kms:
+    sims.append(watts_sim(3000, km, phi))
+    print(&quot;&lt;k&gt;=%.1f  解析判据 %.2f (&gt;1 才可能全局级联)  模拟全局级联比例 %.2f&quot; % (km, watts_condition(km, phi), sims[-1]))
+
+# 分支过程：p0=0.25, p1=0.25, p2=0.5 -&gt; 平均后代 1.25，灭绝概率 q = 0.5（手算见正文）
+g = lambda q: 0.25 + 0.25 * q + 0.5 * q ** 2
+q = 0.0
+for _ in range(200):
+    q = g(q)
+print(&quot;超临界分支过程的灭绝概率 q =&quot;, round(q, 4))
+
+rng = np.random.default_rng(1); sizes = []
+for _ in range(20000):                       # 临界：p0 = p2 = 1/2
+    active, s = 1, 1
+    while active &gt; 0 and s &lt; 10 ** 5:
+        kids = 2 * rng.integers(0, 2, size=active).sum()
+        active = kids; s += kids
+    sizes.append(s)
+sizes = np.array(sizes)
+bins = np.logspace(0, 4, 13); h, e = np.histogram(sizes, bins=bins, density=True)
+c = np.sqrt(e[1:] * e[:-1]); ok = h &gt; 0
+print(&quot;临界分支过程雪崩规模分布的拟合指数 alpha ≈ %.2f（理论 1.5）&quot; % -np.polyfit(np.log(c[ok][2:]), np.log(h[ok][2:]), 1)[0])
+
+import matplotlib.pyplot as plt
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 4))
+kg = np.linspace(0.5, 10, 120)
+ax1.plot(kg, [watts_condition(x, phi) for x in kg], c=&quot;0.4&quot;, label=&quot;analytic condition&quot;)
+ax1.axhline(1, ls=&quot;--&quot;, c=&quot;tab:red&quot;, lw=1)
+ax1.set_xlabel(&quot;mean degree &lt;k&gt;&quot;); ax1.set_ylabel(&quot;cascade condition (&gt;1 = global)&quot;)
+ax1b = ax1.twinx(); ax1b.plot(kms, sims, &quot;o&quot;, c=&quot;tab:blue&quot;, label=&quot;simulated P(global)&quot;)
+ax1b.set_ylabel(&quot;fraction of global cascades&quot;, color=&quot;tab:blue&quot;); ax1b.set_ylim(0, 1.05)
+ax1.set_title(&quot;Cascade window (phi = %.2f)&quot; % phi)
+h1, l1 = ax1.get_legend_handles_labels(); h2, l2 = ax1b.get_legend_handles_labels(); ax1.legend(h1 + h2, l1 + l2, fontsize=8)
+ax2.loglog(c[ok], h[ok], &quot;o&quot;, label=&quot;critical branching&quot;)
+ax2.loglog(c[ok], h[ok][0] * (c[ok] / c[ok][0]) ** -1.5, &quot;k--&quot;, label=&quot;slope -3/2&quot;)
+ax2.set_xlabel(&quot;avalanche size s&quot;); ax2.set_ylabel(&quot;P(s)&quot;); ax2.legend(); ax2.set_title(&quot;Avalanche sizes ~ s^(-3/2)&quot;)
+plt.tight_layout(); plt.show()</textarea><div class="out" aria-live="polite"></div></div></section><nav class="pager"><a href="ex-robustness-3.html"><small>上一个示例</small>Motter–Lai 负载重分配级联</a><a href="ex-robustness-5.html"><small>下一个示例</small>相互依存 ER 网络的级联（Buldyrev 等 2010）</a></nav></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

@@ -1,0 +1,10 @@
+{
+ "topic": "robustness",
+ "index": 3,
+ "title": "Motter–Lai 负载重分配级联",
+ "hash": "d14cb9d24663af304e77b17fffe7271adec26a2c",
+ "ok": true,
+ "figures": 1,
+ "stdout": "BA alpha=0.1  最高负载触发 G=0.10  最高度触发 G=0.10  随机触发 G=0.97\nBA alpha=0.3  最高负载触发 G=0.34  最高度触发 G=0.34  随机触发 G=1.00\nBA alpha=0.6  最高负载触发 G=0.99  最高度触发 G=0.99  随机触发 G=1.00\nBA alpha=1.0  最高负载触发 G=1.00  最高度触发 G=1.00  随机触发 G=1.00\nER alpha=0.1  最高负载触发 G=0.09  最高度触发 G=0.09  随机触发 G=1.00\nER alpha=0.3  最高负载触发 G=1.00  最高度触发 G=1.00  随机触发 G=1.00\nER alpha=0.6  最高负载触发 G=1.00  最高度触发 G=1.00  随机触发 G=1.00\nER alpha=1.0  最高负载触发 G=1.00  最高度触发 G=1.00  随机触发 G=1.00",
+ "stderr": ""
+}

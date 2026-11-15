@@ -1,0 +1,170 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>论随机图的演化 · 生物医学网络科学</title><meta name="description" content="论文精读：On the evolution of random graphs"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-theory"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html" aria-current="page">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory" open><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html" aria-current="page">网络结构指标与随机图</a><ol class="sub"><li><a href="network-metrics.degree-density.html"><span class="n">01</span>度、平均度与密度</a></li><li><a href="network-metrics.degree-distribution.html"><span class="n">02</span>度分布</a></li><li><a href="network-metrics.paths-distance.html"><span class="n">03</span>路径、距离与最短路径算法</a></li><li><a href="network-metrics.components.html"><span class="n">04</span>连通分支与巨连通分支</a></li><li><a href="network-metrics.clustering.html"><span class="n">05</span>聚集系数</a></li><li><a href="network-metrics.efficiency.html"><span class="n">06</span>全局效率与局部效率</a></li><li><a href="network-metrics.weighted-networks.html"><span class="n">07</span>加权网络的指标</a></li><li><a href="network-metrics.centrality.html"><span class="n">08</span>中心性：度、接近与介数</a></li><li><a href="network-metrics.spectral-centrality.html"><span class="n">09</span>谱类中心性：特征向量、Katz、PageRank 与 HITS</a></li><li><a href="network-metrics.k-core.html"><span class="n">10</span>k 核分解与核数</a></li><li><a href="network-metrics.centrality-choice.html"><span class="n">11</span>中心性的选择与解释</a></li><li><a href="network-metrics.er-random-graph.html"><span class="n">12</span>ER 随机网络</a></li><li><a href="network-metrics.er-evolution.html"><span class="n">13</span>ER 网络的演化与相变</a></li><li><a href="network-metrics.small-world-distance.html"><span class="n">14</span>小世界性与平均距离</a></li><li><a href="network-metrics.real-vs-random.html"><span class="n">15</span>真实网络与随机网络的比较</a></li><li><a href="network-metrics.derivations.html"><span class="n">16</span>数学推导与算法</a></li><li><a href="network-metrics.frontiers.html"><span class="n">17</span>研究前沿与开放问题</a></li><li><a href="network-metrics.biomedical.html"><span class="n">18</span>生物医学应用</a></li><li><a href="network-metrics.limitations.html"><span class="n">19</span>适用范围与常见误用</a></li></ol></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><div class="lec-grid"><div style="min-width:0"><div class="lec-head"><nav class="crumb"><a href="papers.html">文献知识库</a> › 网络基础理论 · 网络动力学与控制</nav><div class="eyebrow"><b>经典论文</b><span>难度：进阶</span></div><h1>论随机图的演化</h1><p class="porig big">On the evolution of random graphs</p><p class="small">Erdős P, Rényi A · <i>Publications of the Mathematical Institute of the Hungarian Academy of Sciences</i> 1960 · <a href="https://www.renyi.hu/~p_erdos/1960-10.pdf" target="_blank" rel="noopener">原文链接</a></p><div class="chips"><span class="chip">随机图</span><span class="chip">ER 模型</span><span class="chip">阈值函数</span><span class="chip">巨连通分支</span><span class="chip">相变</span><span class="chip">双跳</span></div><div class="objectives"><h2>一句话</h2><p style="margin:0">让随机图的边数逐渐增加，系统刻画各种结构在何时“突然”出现，发现巨连通分支在平均度为 1 处涌现。</p><p class="small" style="margin:8px 0 0">相关专题：<a href="network-metrics.html">网络结构指标与随机图</a>、<a href="network-models.html">小世界与无标度网络模型</a>、<a href="controllability.html">网络可控性与稳定性</a></p></div></div><section class="block prose" id="notes"><h2 id="一句话看懂">一句话看懂</h2>
+<p>把
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+个点之间的边一条一条随机地加进去，图的许多性质不是慢慢变化的，而是在某个边数附近从“几乎不可能”跳到“几乎必然”。最著名的例子是：边数约为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">n/2</annotation></semantics></math>（平均度为
+1）时，一个包含有限比例节点的巨连通分支突然出现。</p>
+<h2 id="研究背景与问题">研究背景与问题</h2>
+<p>在 Erdős 与 Rényi
+之前，图论主要研究一张具体的、确定的图有什么性质。他们在 1959
+年的论文中开始考虑“随机选出的图”，并给出了连通性的阈值。1960
+年这篇长文换了一个视角：把边数
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+看作随时间增长的量，研究图随
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+增大如何“演化”。作者在引言中提到，这种演化可以看作通信网络（如铁路、电网）逐步建设过程的简化模型。</p>
+<p>核心问题是：对给定的结构（某种树、圈、完全子图、大连通分支、整体连通），边数需要增长到多大量级，它才几乎必然出现？</p>
+<h2 id="核心思想与方法">核心思想与方法</h2>
+<p>论文使用的模型是在
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+个带标号的节点上、从
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><mfrac linethickness="0"><mi>n</mi><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\binom{n}{2}</annotation></semantics></math>
+条可能的边中等概率地选出
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+条，记为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">Γ</mi><mrow><mi>n</mi><mo>,</mo><mi>N</mi></mrow></msub><annotation encoding="application/x-tex">\Gamma_{n,N}</annotation></semantics></math>。这就是今天的
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo stretchy="false" form="prefix">(</mo><mi>N</mi><mo>,</mo><mi>M</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">G(N,M)</annotation></semantics></math>
+模型；<a href="network-metrics.er-random-graph.html">ER 随机网络</a>中的
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo stretchy="false" form="prefix">(</mo><mi>N</mi><mo>,</mo><mi>p</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">G(N,p)</annotation></semantics></math>
+模型在
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+很大时与之等价，平均度
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>k</mi><mo stretchy="false" form="postfix">⟩</mo><mo>=</mo><mn>2</mn><mi>N</mi><mi>/</mi><mi>n</mi></mrow><annotation encoding="application/x-tex">\langle k\rangle = 2N/n</annotation></semantics></math>。</p>
+<div class="callout-def">
+<p><strong>阈值函数</strong>（threshold function）：对某个图性质
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>，若存在函数
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo stretchy="false" form="prefix">(</mo><mi>n</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">A(n)</annotation></semantics></math>，使得当
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo stretchy="false" form="prefix">(</mo><mi>n</mi><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mi>A</mi><mo stretchy="false" form="prefix">(</mo><mi>n</mi><mo stretchy="false" form="postfix">)</mo><mo>→</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">N(n)/A(n)\to0</annotation></semantics></math>
+时具有性质
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+的概率趋于 0，而当
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo stretchy="false" form="prefix">(</mo><mi>n</mi><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mi>A</mi><mo stretchy="false" form="prefix">(</mo><mi>n</mi><mo stretchy="false" form="postfix">)</mo><mo>→</mo><mi>∞</mi></mrow><annotation encoding="application/x-tex">N(n)/A(n)\to\infty</annotation></semantics></math>
+时该概率趋于 1，则称
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo stretchy="false" form="prefix">(</mo><mi>n</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">A(n)</annotation></semantics></math>
+为性质
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+的阈值函数。</p>
+</div>
+<p>用这个语言，论文按边数从少到多梳理了图的演化：</p>
+<ul>
+<li>含有
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+个节点的树，阈值为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>n</mi><mrow><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo>−</mo><mn>2</mn><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow></msup><annotation encoding="application/x-tex">n^{(k-2)/(k-1)}</annotation></semantics></math>：先出现孤立边，再出现
+3 个节点的路径，依次类推；</li>
+<li>圈的阈值是
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+的量级；<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+个节点的完全子图，阈值为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>n</mi><mrow><mn>2</mn><mo>−</mo><mn>2</mn><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow></msup><annotation encoding="application/x-tex">n^{2-2/(k-1)}</annotation></semantics></math>；</li>
+<li>当
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>∼</mo><mi>c</mi><mi>n</mi></mrow><annotation encoding="application/x-tex">N\sim cn</annotation></semantics></math>
+时，行为由常数
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+决定，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow><annotation encoding="application/x-tex">c=\tfrac12</annotation></semantics></math>
+是分界点。</li>
+</ul>
+<p>方法上主要是计数和概率论中的矩方法：计算某类子图个数的期望与方差，证明其在阈值两侧分别趋于
+0 或集中在期望附近。</p>
+<h2 id="主要发现">主要发现</h2>
+<ol type="1">
+<li><strong>子图的逐级出现</strong>：随着边数增加，复杂度更高的结构依次出现，每一种都有清晰的阈值。这把“随机图里什么时候出现什么”变成了可以精确回答的数学问题。</li>
+<li><strong>巨连通分支的相变</strong>：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>∼</mo><mi>c</mi><mi>n</mi></mrow><annotation encoding="application/x-tex">N\sim cn</annotation></semantics></math>
+时，若
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>&lt;</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow><annotation encoding="application/x-tex">c&lt;\tfrac12</annotation></semantics></math>，所有连通分支都是树或只含一个圈，最大分支只有
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false" form="prefix">(</mo><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mi>n</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">O(\ln n)</annotation></semantics></math>
+个节点；若
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow><annotation encoding="application/x-tex">c=\tfrac12</annotation></semantics></math>，最大分支约为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>n</mi><mrow><mn>2</mn><mi>/</mi><mn>3</mn></mrow></msup><annotation encoding="application/x-tex">n^{2/3}</annotation></semantics></math>
+的量级；若
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>&gt;</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow><annotation encoding="application/x-tex">c&gt;\tfrac12</annotation></semantics></math>，出现一个包含约
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo stretchy="false" form="prefix">(</mo><mi>c</mi><mo stretchy="false" form="postfix">)</mo><mspace width="0.167em"></mspace><mi>n</mi></mrow><annotation encoding="application/x-tex">G(c)\,n</annotation></semantics></math>
+个节点的巨分支，其余分支仍然很小。<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow><annotation encoding="application/x-tex">c=\tfrac12</annotation></semantics></math>
+正对应平均度
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>k</mi><mo stretchy="false" form="postfix">⟩</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\langle k\rangle=1</annotation></semantics></math>。</li>
+<li><strong>巨分支比例的方程</strong>：作者给出了
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo stretchy="false" form="prefix">(</mo><mi>c</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">G(c)</annotation></semantics></math>
+的隐式表达。换成平均度写法，就是<a
+href="network-metrics.er-random-graph.html">ER 随机网络</a>中的
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mn>1</mn><mo>−</mo><msup><mi>e</mi><mrow><mi>−</mi><mo stretchy="false" form="prefix">⟨</mo><mi>k</mi><mo stretchy="false" form="postfix">⟩</mo><mi>S</mi></mrow></msup></mrow><annotation encoding="application/x-tex">S=1-e^{-\langle k\rangle S}</annotation></semantics></math>。</li>
+<li><strong>“双跳”</strong>：最大分支的规模从
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">\ln n</annotation></semantics></math>
+量级跳到
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>n</mi><mrow><mn>2</mn><mi>/</mi><mn>3</mn></mrow></msup><annotation encoding="application/x-tex">n^{2/3}</annotation></semantics></math>，再跳到
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+的量级，这一现象被称为 double jump。</li>
+<li><strong>连通性</strong>：要使整张图连通，边数需达到
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mi>n</mi><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">\tfrac12 n\ln n</annotation></semantics></math>
+的量级（即平均度约为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">\ln n</annotation></semantics></math>），远多于巨分支出现所需的边数。这一结果在
+1959 年的论文中已经给出，本文把它放进了完整的演化图景中。</li>
+</ol>
+<h2 id="怎样读这篇论文">怎样读这篇论文</h2>
+<p>这是一篇约 40 页的纯数学论文，原刊没有
+DOI，网上可找到扫描版。不必逐条读证明。建议：</p>
+<ol type="1">
+<li>先读引言，理解“演化”的设定和阈值函数的定义；</li>
+<li>跳到讨论
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>∼</mo><mi>c</mi><mi>n</mi></mrow><annotation encoding="application/x-tex">N\sim cn</annotation></semantics></math>
+的部分，重点看
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>&lt;</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow><annotation encoding="application/x-tex">c&lt;\tfrac12</annotation></semantics></math>、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow><annotation encoding="application/x-tex">c=\tfrac12</annotation></semantics></math>、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>&gt;</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow><annotation encoding="application/x-tex">c&gt;\tfrac12</annotation></semantics></math>
+三种情形的结论；</li>
+<li>关于各类子图计数的定理可以只看结论，把它们画成一条“边数轴”，标出每种结构出现的位置。</li>
+</ol>
+<p>读的时候可以同时打开<a
+href="network-metrics.html#demos">网络结构指标与随机图</a>中的 ER
+演示，拖动
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>，对照文中的结论。</p>
+<h2 id="局限与后续工作">局限与后续工作</h2>
+<ul>
+<li><strong>模型过于均匀</strong>：ER 图的度分布是泊松分布，聚集系数约为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>k</mi><mo stretchy="false" form="postfix">⟩</mo><mi>/</mi><mi>n</mi></mrow><annotation encoding="application/x-tex">\langle k\rangle/n</annotation></semantics></math>，几乎为零。Watts
+与 Strogatz（1998）和 Barabási 与 Albert（1999）正是在与 ER
+图比较时发现了真实网络的高聚类和重尾度分布。</li>
+<li><strong>推广到任意度分布</strong>：Molloy 与
+Reed（1995）给出了给定度序列的随机图出现巨分支的判据；Newman、Strogatz
+与 Watts（2001）用生成函数系统地处理了这类模型。<a
+href="controllability.html">网络可控性与稳定性</a>专题中
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mi>c</mi></msub><annotation encoding="application/x-tex">f_c</annotation></semantics></math>
+的推导（见<a
+href="controllability.derivations.html">数学推导与算法</a>）就建立在这条路线上。</li>
+<li><strong>临界窗口的精细结构</strong>：后来的概率论研究（如
+Bollobás、Łuczak 等）细致刻画了
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow><annotation encoding="application/x-tex">c=\tfrac12</annotation></semantics></math>
+附近的“临界窗口”。</li>
+<li><strong>从结构相变到动力学阈值</strong>：ER
+图的巨分支相变与渗流、SIR
+最终规模、相互依存网络的崩溃等问题在数学上同源，这一思想贯穿了<a
+href="spreading.html">网络上的传播与免疫</a>、<a
+href="controllability.html">网络可控性与稳定性</a>等动力学专题。</li>
+</ul>
+<h2 id="关联知识">关联知识</h2>
+<ul>
+<li><a href="network-metrics.er-random-graph.html">ER
+随机网络</a>：模型定义、泊松度分布、巨连通分支在
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>k</mi><mo stretchy="false" form="postfix">⟩</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\langle k\rangle=1</annotation></semantics></math>
+处涌现，都直接来自本文和 1959 年的论文。</li>
+<li><a
+href="network-models.html">小世界与无标度网络模型</a>：小世界与无标度网络都是在与
+ER 图对照时被识别出来的；ER 图也是判断“小世界”时最基本的零模型。</li>
+<li><a
+href="controllability.structural-robustness.html">结构鲁棒性</a>与<a
+href="controllability.derivations.html">数学推导与算法</a>：Molloy–Reed
+判据是 ER
+巨分支条件在任意度分布上的推广，随机删点的鲁棒性分析本质上是渗流问题。</li>
+</ul>
+<h2 id="延伸思考">延伸思考</h2>
+<ol type="1">
+<li>用“分支过程”的直觉解释巨分支为什么恰在
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>k</mi><mo stretchy="false" form="postfix">⟩</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\langle k\rangle=1</annotation></semantics></math>
+时出现：从一个节点沿边向外探索，每一步平均能发现几个新节点？</li>
+<li>巨分支出现只需要平均度约为 1，而整张图连通需要平均度约为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">\ln n</annotation></semantics></math>。在一个
+2 万个蛋白质的 PPI 网络中，这两个数分别约是多少？这对理解“PPI
+网络中常有孤立小片段”有什么启发？</li>
+<li>ER 图的阈值现象是在
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>→</mo><mi>∞</mi></mrow><annotation encoding="application/x-tex">n\to\infty</annotation></semantics></math>
+的极限下陈述的。对一个只有 100
+个节点的脑区网络，你还能看到“突然”的相变吗？应该怎样用模拟来检验？</li>
+</ol>
+</section><nav class="pager"><a href="papers.html">← 文献知识库</a><a href="paper-freeman1977_betweenness.html">一组基于“介于性”的中心性度量 →</a></nav></div><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

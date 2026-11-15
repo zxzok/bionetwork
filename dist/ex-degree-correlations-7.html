@@ -1,0 +1,176 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>度相关如何改变巨连通分支、传播阈值与可同步性 · 生物医学网络科学</title><meta name="description" content="度相关性与网络结构的高阶统计 · 代码示例：度相关如何改变巨连通分支、传播阈值与可同步性"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-theory"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html" aria-current="page">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory" open><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a><ol class="sub"><li><a href="degree-correlations.joint-degree-distribution.html"><span class="n">01</span>联合度分布与条件度分布</a></li><li><a href="degree-correlations.knn-function.html"><span class="n">02</span>邻居平均度函数与相关指数</a></li><li><a href="degree-correlations.assortativity-coefficient.html"><span class="n">03</span>度相关系数 r</a></li><li><a href="degree-correlations.structural-cutoff.html"><span class="n">04</span>结构截断与结构性异配</a></li><li><a href="degree-correlations.randomization-tests.html"><span class="n">05</span>度保持随机化检验</a></li><li><a href="degree-correlations.generating-correlated-networks.html"><span class="n">06</span>生成具有度相关的网络</a></li><li><a href="degree-correlations.rich-club.html"><span class="n">07</span>富人俱乐部系数及其归一化</a></li><li><a href="degree-correlations.clustering-spectrum.html"><span class="n">08</span>聚集谱 C(k) 与层次模块性</a></li><li><a href="degree-correlations.k-core.html"><span class="n">09</span>k-核分解</a></li><li><a href="degree-correlations.impact-on-dynamics.html"><span class="n">10</span>度相关对网络过程的影响</a></li><li><a href="degree-correlations.derivations.html"><span class="n">11</span>数学推导与算法</a></li><li><a href="degree-correlations.biomedical.html"><span class="n">12</span>生物医学应用</a></li><li><a href="degree-correlations.limitations.html"><span class="n">13</span>适用范围与常见误用</a></li></ol></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="code.html">代码库</a> <span class="sep">/</span> <a href="code.html#theory">网络基础理论</a> <span class="sep">/</span> <a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></nav><div class="eyebrow" style="margin-top:14px"><b>Example</b><span>08 / 09</span></div><h1>度相关如何改变巨连通分支、传播阈值与可同步性</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></dd></div><div><dt>下载</dt><dd><a href="notebooks/degree-correlations.ipynb" download>Notebook</a> · <a href="notebooks/degree-correlations.py" download>.py</a></dd></div></dl></header><section class="block prose"><p>从同一张 ER 随机图（N=2000, <k>=4）出发，用 Xulvi-Brunet–Sokolov
+重连（p=0.5）得到同配与异配版本。 比较：(1)
+随机删边（键渗流）后巨连通分支占比；(2) 邻接矩阵最大特征值 lambda_1，
+SIS 模型的淬火平均场阈值约为 1/lambda_1；(3) 拉普拉斯特征值比
+lambda_N/lambda_2（越小越易同步）。 解读：同配使 lambda_1
+增大（高度节点聚在一起形成“储库”，阈值降低）、低保留率下巨分支更易存活，
+但高保留率下巨分支更小；同配同时使 lambda_N/lambda_2
+增大，可同步性变差。</p>
+</section><section class="block"><h2><span class="tag">Output</span>输出图</h2><div class="ex-figs"><img src="gallery/degree-correlations-7-0.png" alt="度相关如何改变巨连通分支、传播阈值与可同步性：输出图 1" loading="lazy"></div></section><section class="block"><h2><span class="tag">Output</span>文字输出</h2><pre class="ex-out">保留边比例:            0.30    0.50    0.90
+同配 (p=0.5)   r=+0.38  巨分支占比 0.341  0.758  0.964 | lambda_1=5.93 (SIS 阈值≈0.169) | lambda_N/lambda_2=172.9
+ER 原始        r=-0.01  巨分支占比 0.275  0.795  0.971 | lambda_1=5.23 (SIS 阈值≈0.191) | lambda_N/lambda_2=93.8
+异配 (p=0.5)   r=-0.36  巨分支占比 0.255  0.813  0.973 | lambda_1=4.92 (SIS 阈值≈0.203) | lambda_N/lambda_2=58.9</pre></section><section class="block prose"><h2><span class="tag">Code</span>代码</h2><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 从同一张 ER 随机图（N=2000, &lt;k&gt;=4）出发，用 Xulvi-Brunet–Sokolov 重连（p=0.5）得到同配与异配版本。</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 比较：(1) 随机删边（键渗流）后巨连通分支占比；(2) 邻接矩阵最大特征值 lambda_1，</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#   SIS 模型的淬火平均场阈值约为 1/lambda_1；(3) 拉普拉斯特征值比 lambda_N/lambda_2（越小越易同步）。</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 解读：同配使 lambda_1 增大（高度节点聚在一起形成“储库”，阈值降低）、低保留率下巨分支更易存活，</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 但高保留率下巨分支更小；同配同时使 lambda_N/lambda_2 增大，可同步性变差。</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> networkx <span class="im">as</span> nx</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.sparse.linalg <span class="im">import</span> eigsh</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.sparse.csgraph <span class="im">import</span> laplacian</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> xbs_rewire(G, n_swaps, mode, p, seed):</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    rng <span class="op">=</span> np.random.default_rng(seed)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    G <span class="op">=</span> G.copy()<span class="op">;</span> dg <span class="op">=</span> <span class="bu">dict</span>(G.degree())<span class="op">;</span> edges <span class="op">=</span> <span class="bu">list</span>(G.edges())<span class="op">;</span> done <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> done <span class="op">&lt;</span> n_swaps:</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>        i, j <span class="op">=</span> rng.choice(<span class="bu">len</span>(edges), <span class="dv">2</span>, replace<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>        (a, b), (c, d) <span class="op">=</span> edges[i], edges[j]</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>        nodes <span class="op">=</span> [a, b, c, d]</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="bu">len</span>(<span class="bu">set</span>(nodes)) <span class="op">&lt;</span> <span class="dv">4</span>:</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>            <span class="cf">continue</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> rng.random() <span class="op">&lt;</span> p:</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>            s <span class="op">=</span> <span class="bu">sorted</span>(nodes, key<span class="op">=</span><span class="kw">lambda</span> x: dg[x], reverse<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>            new <span class="op">=</span> [(s[<span class="dv">0</span>], s[<span class="dv">1</span>]), (s[<span class="dv">2</span>], s[<span class="dv">3</span>])] <span class="cf">if</span> mode <span class="op">==</span> <span class="st">&quot;assortative&quot;</span> <span class="cf">else</span> [(s[<span class="dv">0</span>], s[<span class="dv">3</span>]), (s[<span class="dv">1</span>], s[<span class="dv">2</span>])]</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>            rng.shuffle(nodes)</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>            new <span class="op">=</span> [(nodes[<span class="dv">0</span>], nodes[<span class="dv">1</span>]), (nodes[<span class="dv">2</span>], nodes[<span class="dv">3</span>])]</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="bu">any</span>(G.has_edge(<span class="op">*</span>e) <span class="cf">for</span> e <span class="kw">in</span> new):</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>            <span class="cf">continue</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>        G.remove_edges_from([(a, b), (c, d)])<span class="op">;</span> G.add_edges_from(new)</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>        edges[i], edges[j] <span class="op">=</span> new<span class="op">;</span> done <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> G</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> giant_after_bond_percolation(G, keep, n_rep<span class="op">=</span><span class="dv">10</span>, seed<span class="op">=</span><span class="dv">0</span>):</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>    rng <span class="op">=</span> np.random.default_rng(seed)</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>    edges <span class="op">=</span> <span class="bu">list</span>(G.edges())</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>    out <span class="op">=</span> []</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(n_rep):</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>        H <span class="op">=</span> nx.Graph()</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>        H.add_nodes_from(G)</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>        H.add_edges_from([e <span class="cf">for</span> e <span class="kw">in</span> edges <span class="cf">if</span> rng.random() <span class="op">&lt;</span> keep])</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>        out.append(<span class="bu">max</span>(<span class="bu">len</span>(c) <span class="cf">for</span> c <span class="kw">in</span> nx.connected_components(H)) <span class="op">/</span> G.number_of_nodes())</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.mean(out)</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>G0 <span class="op">=</span> nx.gnm_random_graph(<span class="dv">2000</span>, <span class="dv">4000</span>, seed<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>M <span class="op">=</span> G0.number_of_edges()</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>nets <span class="op">=</span> {</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;同配 (p=0.5)&quot;</span>: xbs_rewire(G0, <span class="dv">3</span> <span class="op">*</span> M, <span class="st">&quot;assortative&quot;</span>, <span class="fl">0.5</span>, <span class="dv">1</span>),</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;ER 原始&quot;</span>: G0,</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;异配 (p=0.5)&quot;</span>: xbs_rewire(G0, <span class="dv">3</span> <span class="op">*</span> M, <span class="st">&quot;disassortative&quot;</span>, <span class="fl">0.5</span>, <span class="dv">2</span>),</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;保留边比例:            0.30    0.50    0.90&quot;</span>)</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>summ <span class="op">=</span> []                                    <span class="co"># 保存结果用于作图</span></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> name, G <span class="kw">in</span> nets.items():</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>    A <span class="op">=</span> nx.to_scipy_sparse_array(G, dtype<span class="op">=</span><span class="bu">float</span>, <span class="bu">format</span><span class="op">=</span><span class="st">&quot;csr&quot;</span>)</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>    lam1 <span class="op">=</span> eigsh(A, k<span class="op">=</span><span class="dv">1</span>, which<span class="op">=</span><span class="st">&quot;LA&quot;</span>)[<span class="dv">0</span>][<span class="dv">0</span>]</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>    S <span class="op">=</span> [giant_after_bond_percolation(G, q, seed<span class="op">=</span><span class="dv">3</span>) <span class="cf">for</span> q <span class="kw">in</span> (<span class="fl">0.3</span>, <span class="fl">0.5</span>, <span class="fl">0.9</span>)]</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>    Gc <span class="op">=</span> G.subgraph(<span class="bu">max</span>(nx.connected_components(G), key<span class="op">=</span><span class="bu">len</span>))</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>    L <span class="op">=</span> laplacian(nx.to_numpy_array(Gc))</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>    ev <span class="op">=</span> np.sort(np.linalg.eigvalsh(L))</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="sc">{</span>name<span class="sc">:12s}</span><span class="ss"> r=</span><span class="sc">{</span>nx<span class="sc">.</span>degree_assortativity_coefficient(G)<span class="sc">:+.2f}</span><span class="ss">  巨分支占比 &quot;</span></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>          <span class="ss">f&quot;</span><span class="sc">{</span>S[<span class="dv">0</span>]<span class="sc">:.3f}</span><span class="ss">  </span><span class="sc">{</span>S[<span class="dv">1</span>]<span class="sc">:.3f}</span><span class="ss">  </span><span class="sc">{</span>S[<span class="dv">2</span>]<span class="sc">:.3f}</span><span class="ss"> | lambda_1=</span><span class="sc">{</span>lam1<span class="sc">:.2f}</span><span class="ss"> (SIS 阈值≈</span><span class="sc">{</span><span class="dv">1</span><span class="op">/</span>lam1<span class="sc">:.3f}</span><span class="ss">) &quot;</span></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>          <span class="ss">f&quot;| lambda_N/lambda_2=</span><span class="sc">{</span>ev[<span class="op">-</span><span class="dv">1</span>]<span class="op">/</span>ev[<span class="dv">1</span>]<span class="sc">:.1f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>    summ.append((nx.degree_assortativity_coefficient(G), S, lam1, ev[<span class="op">-</span><span class="dv">1</span>] <span class="op">/</span> ev[<span class="dv">1</span>]))</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="co"># 作图：键渗流后的巨分支占比，以及 SIS 阈值与同步性指标</span></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">4</span>))</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>labs <span class="op">=</span> [<span class="st">&quot;assortative&quot;</span>, <span class="st">&quot;ER original&quot;</span>, <span class="st">&quot;disassortative&quot;</span>]</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (r, S, lam1, ratio), lab, mk <span class="kw">in</span> <span class="bu">zip</span>(summ, labs, [<span class="st">&quot;o&quot;</span>, <span class="st">&quot;s&quot;</span>, <span class="st">&quot;^&quot;</span>]):</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>    ax[<span class="dv">0</span>].plot([<span class="fl">0.3</span>, <span class="fl">0.5</span>, <span class="fl">0.9</span>], S, marker<span class="op">=</span>mk, label<span class="op">=</span><span class="ss">f&quot;</span><span class="sc">{</span>lab<span class="sc">}</span><span class="ss"> (r=</span><span class="sc">{</span>r<span class="sc">:+.2f}</span><span class="ss">)&quot;</span>)</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].set_xlabel(<span class="st">&quot;fraction of edges kept&quot;</span>)<span class="op">;</span> ax[<span class="dv">0</span>].set_ylabel(<span class="st">&quot;giant component fraction&quot;</span>)<span class="op">;</span> ax[<span class="dv">0</span>].legend()</span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].set_title(<span class="st">&quot;Assortative nets survive sparse sampling, lose at high retention&quot;</span>, fontsize<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.arange(<span class="dv">3</span>)</span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].bar(x <span class="op">-</span> <span class="fl">0.2</span>, [<span class="dv">1</span> <span class="op">/</span> s[<span class="dv">2</span>] <span class="cf">for</span> s <span class="kw">in</span> summ], <span class="fl">0.4</span>, label<span class="op">=</span><span class="st">&quot;SIS threshold 1/lambda_1&quot;</span>)</span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>ax2 <span class="op">=</span> ax[<span class="dv">1</span>].twinx()</span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>ax2.bar(x <span class="op">+</span> <span class="fl">0.2</span>, [s[<span class="dv">3</span>] <span class="cf">for</span> s <span class="kw">in</span> summ], <span class="fl">0.4</span>, color<span class="op">=</span><span class="st">&quot;C1&quot;</span>, label<span class="op">=</span><span class="st">&quot;lambda_N/lambda_2&quot;</span>)</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].set_xticks(x)<span class="op">;</span> ax[<span class="dv">1</span>].set_xticklabels(labs)<span class="op">;</span> ax[<span class="dv">1</span>].set_ylabel(<span class="st">&quot;1/lambda_1 (blue)&quot;</span>)</span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>ax2.set_ylabel(<span class="st">&quot;lambda_N/lambda_2 (orange, lower = easier sync)&quot;</span>)</span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].set_title(<span class="st">&quot;Assortativity lowers epidemic threshold, hurts sync&quot;</span>, fontsize<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()<span class="op">;</span> plt.show()</span></code></pre></div>
+</section><section class="block"><h2><span class="tag">Run</span>在浏览器中运行</h2><p class="small">首次加载 Python 环境约需 20–40 秒；可以修改参数后重新运行。</p><div class="cell"><div class="cell-head"><h3>度相关如何改变巨连通分支、传播阈值与可同步性</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea id="degree-correlations-cell7" rows="30" spellcheck="false" aria-label="度相关如何改变巨连通分支、传播阈值与可同步性 代码"># 从同一张 ER 随机图（N=2000, &lt;k&gt;=4）出发，用 Xulvi-Brunet–Sokolov 重连（p=0.5）得到同配与异配版本。
+# 比较：(1) 随机删边（键渗流）后巨连通分支占比；(2) 邻接矩阵最大特征值 lambda_1，
+#   SIS 模型的淬火平均场阈值约为 1/lambda_1；(3) 拉普拉斯特征值比 lambda_N/lambda_2（越小越易同步）。
+# 解读：同配使 lambda_1 增大（高度节点聚在一起形成“储库”，阈值降低）、低保留率下巨分支更易存活，
+# 但高保留率下巨分支更小；同配同时使 lambda_N/lambda_2 增大，可同步性变差。
+import numpy as np
+import networkx as nx
+from scipy.sparse.linalg import eigsh
+from scipy.sparse.csgraph import laplacian
+
+
+def xbs_rewire(G, n_swaps, mode, p, seed):
+    rng = np.random.default_rng(seed)
+    G = G.copy(); dg = dict(G.degree()); edges = list(G.edges()); done = 0
+    while done &lt; n_swaps:
+        i, j = rng.choice(len(edges), 2, replace=False)
+        (a, b), (c, d) = edges[i], edges[j]
+        nodes = [a, b, c, d]
+        if len(set(nodes)) &lt; 4:
+            continue
+        if rng.random() &lt; p:
+            s = sorted(nodes, key=lambda x: dg[x], reverse=True)
+            new = [(s[0], s[1]), (s[2], s[3])] if mode == &quot;assortative&quot; else [(s[0], s[3]), (s[1], s[2])]
+        else:
+            rng.shuffle(nodes)
+            new = [(nodes[0], nodes[1]), (nodes[2], nodes[3])]
+        if any(G.has_edge(*e) for e in new):
+            continue
+        G.remove_edges_from([(a, b), (c, d)]); G.add_edges_from(new)
+        edges[i], edges[j] = new; done += 1
+    return G
+
+
+def giant_after_bond_percolation(G, keep, n_rep=10, seed=0):
+    rng = np.random.default_rng(seed)
+    edges = list(G.edges())
+    out = []
+    for _ in range(n_rep):
+        H = nx.Graph()
+        H.add_nodes_from(G)
+        H.add_edges_from([e for e in edges if rng.random() &lt; keep])
+        out.append(max(len(c) for c in nx.connected_components(H)) / G.number_of_nodes())
+    return np.mean(out)
+
+
+G0 = nx.gnm_random_graph(2000, 4000, seed=1)
+M = G0.number_of_edges()
+nets = {
+    &quot;同配 (p=0.5)&quot;: xbs_rewire(G0, 3 * M, &quot;assortative&quot;, 0.5, 1),
+    &quot;ER 原始&quot;: G0,
+    &quot;异配 (p=0.5)&quot;: xbs_rewire(G0, 3 * M, &quot;disassortative&quot;, 0.5, 2),
+}
+print(&quot;保留边比例:            0.30    0.50    0.90&quot;)
+summ = []                                    # 保存结果用于作图
+for name, G in nets.items():
+    A = nx.to_scipy_sparse_array(G, dtype=float, format=&quot;csr&quot;)
+    lam1 = eigsh(A, k=1, which=&quot;LA&quot;)[0][0]
+    S = [giant_after_bond_percolation(G, q, seed=3) for q in (0.3, 0.5, 0.9)]
+    Gc = G.subgraph(max(nx.connected_components(G), key=len))
+    L = laplacian(nx.to_numpy_array(Gc))
+    ev = np.sort(np.linalg.eigvalsh(L))
+    print(f&quot;{name:12s} r={nx.degree_assortativity_coefficient(G):+.2f}  巨分支占比 &quot;
+          f&quot;{S[0]:.3f}  {S[1]:.3f}  {S[2]:.3f} | lambda_1={lam1:.2f} (SIS 阈值≈{1/lam1:.3f}) &quot;
+          f&quot;| lambda_N/lambda_2={ev[-1]/ev[1]:.1f}&quot;)
+    summ.append((nx.degree_assortativity_coefficient(G), S, lam1, ev[-1] / ev[1]))
+
+# 作图：键渗流后的巨分支占比，以及 SIS 阈值与同步性指标
+import matplotlib.pyplot as plt
+fig, ax = plt.subplots(1, 2, figsize=(10, 4))
+labs = [&quot;assortative&quot;, &quot;ER original&quot;, &quot;disassortative&quot;]
+for (r, S, lam1, ratio), lab, mk in zip(summ, labs, [&quot;o&quot;, &quot;s&quot;, &quot;^&quot;]):
+    ax[0].plot([0.3, 0.5, 0.9], S, marker=mk, label=f&quot;{lab} (r={r:+.2f})&quot;)
+ax[0].set_xlabel(&quot;fraction of edges kept&quot;); ax[0].set_ylabel(&quot;giant component fraction&quot;); ax[0].legend()
+ax[0].set_title(&quot;Assortative nets survive sparse sampling, lose at high retention&quot;, fontsize=10)
+x = np.arange(3)
+ax[1].bar(x - 0.2, [1 / s[2] for s in summ], 0.4, label=&quot;SIS threshold 1/lambda_1&quot;)
+ax2 = ax[1].twinx()
+ax2.bar(x + 0.2, [s[3] for s in summ], 0.4, color=&quot;C1&quot;, label=&quot;lambda_N/lambda_2&quot;)
+ax[1].set_xticks(x); ax[1].set_xticklabels(labs); ax[1].set_ylabel(&quot;1/lambda_1 (blue)&quot;)
+ax2.set_ylabel(&quot;lambda_N/lambda_2 (orange, lower = easier sync)&quot;)
+ax[1].set_title(&quot;Assortativity lowers epidemic threshold, hurts sync&quot;, fontsize=10)
+plt.tight_layout(); plt.show()</textarea><div class="out" aria-live="polite"></div></div></section><nav class="pager"><a href="ex-degree-correlations-6.html"><small>上一个示例</small>k-核分解——手写剥离算法并与 NetworkX 对照，比较核数与度</a><a href="ex-degree-correlations-8.html"><small>下一个示例</small>阈值化相关网络中的同配性——模块大小如何制造正的 r</a></nav></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

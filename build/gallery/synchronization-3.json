@@ -1,0 +1,10 @@
+{
+ "topic": "synchronization",
+ "index": 3,
+ "title": "共识动力学与代数连通度",
+ "hash": "7ca12563a75f608e61b611e0221ebf8b2d220ea9",
+ "ok": true,
+ "figures": 1,
+ "stdout": "ring       mu2 = 0.0547  收敛时间 = 65.09  mu2*时间 = 3.56\nWS p=0.1   mu2 = 0.1560  收敛时间 = 14.97  mu2*时间 = 2.33\nWS p=0.5   mu2 = 0.5657  收敛时间 = 5.12  mu2*时间 = 2.90\ncomplete   mu2 = 60.0000  收敛时间 = 0.08  mu2*时间 = 4.50",
+ "stderr": ""
+}

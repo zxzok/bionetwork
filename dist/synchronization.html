@@ -1,0 +1,449 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>同步与协同动力学 · 生物医学网络科学</title><meta name="description" content="同步与协同动力学：研究耦合振荡器如何在网络上达成同步，网络拓扑怎样决定同步阈值与稳定性，以及同步异常与疾病的关系。"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-dynamics"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html" aria-current="page">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics" open><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html" aria-current="page">同步与协同动力学</a><ol class="sub"><li><a href="synchronization.synchronization-types.html"><span class="n">01</span>同步现象与类型</a></li><li><a href="synchronization.kuramoto-model.html"><span class="n">02</span>Kuramoto 模型与序参量</a></li><li><a href="synchronization.network-kuramoto.html"><span class="n">03</span>网络拓扑与同步阈值</a></li><li><a href="synchronization.laplacian-spectrum.html"><span class="n">04</span>拉普拉斯谱与代数连通度</a></li><li><a href="synchronization.master-stability.html"><span class="n">05</span>主稳定函数与可同步性</a></li><li><a href="synchronization.hierarchical-sync.html"><span class="n">06</span>模块结构与分层同步</a></li><li><a href="synchronization.explosive-sync.html"><span class="n">07</span>爆发式同步</a></li><li><a href="synchronization.cluster-chimera.html"><span class="n">08</span>簇同步与奇异态</a></li><li><a href="synchronization.delay-noise.html"><span class="n">09</span>时滞与噪声</a></li><li><a href="synchronization.whole-brain-models.html"><span class="n">10</span>神经质量模型与全脑模型</a></li><li><a href="synchronization.phase-synchrony-estimation.html"><span class="n">11</span>从实测信号估计同步</a></li><li><a href="synchronization.consensus.html"><span class="n">12</span>共识动力学</a></li><li><a href="synchronization.derivations.html"><span class="n">13</span>数学推导与算法</a></li><li><a href="synchronization.frontiers.html"><span class="n">14</span>研究前沿与开放问题</a></li><li><a href="synchronization.biomedical.html"><span class="n">15</span>生物医学应用</a></li><li><a href="synchronization.limitations.html"><span class="n">16</span>适用范围与常见误用</a></li></ol></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><div class="lec-grid"><article style="min-width:0"><header class="doc-head"><nav class="crumb"><a href="domains.html">知识领域</a> <span class="sep">/</span> <a href="d-dynamics.html">网络动力学与控制</a></nav><div class="eyebrow" style="margin-top:14px"><b>Dynamics &amp; Control</b><span>Synchronization and collective dynamics</span></div><h1>同步与协同动力学</h1><p class="dek">研究耦合振荡器如何在网络上达成同步，网络拓扑怎样决定同步阈值与稳定性，以及同步异常与疾病的关系。</p><dl class="doc-meta"><div><dt>知识页面</dt><dd>16 页</dd></div><div><dt>阅读</dt><dd>约 40 分钟</dd></div><div><dt>讲解视频</dt><dd>1 段</dd></div><div><dt>代码示例</dt><dd>11 个</dd></div></dl><div class="chips"><span class="chip">同步</span><span class="chip">Kuramoto 模型</span><span class="chip">序参量</span><span class="chip">相变</span><span class="chip">拉普拉斯矩阵</span><span class="chip">拉普拉斯谱</span><span class="chip">代数连通度</span><span class="chip">主稳定函数</span><span class="chip">特征值比</span><span class="chip">爆发式同步</span><span class="chip">奇异态</span><span class="chip">簇同步</span><span class="chip">远程同步</span><span class="chip">时滞</span></div></header><section class="block prose" id="overview"><p>在<a
+href="spreading.html">网络上的传播与免疫</a>中，节点状态是离散的（易感、感染、移除）。同步研究另一类网络动力学：每个节点本身是一个<strong>振荡器</strong>，有自己的节律，通过连接相互影响。当耦合足够强时，许多振荡器会“步调一致”，这就是<strong>同步</strong>（synchronization）。</p>
+<p>心脏窦房结的起搏、视交叉上核产生的昼夜节律、大脑的 α/β/γ
+节律都依赖同步；癫痫与帕金森病则与同步的异常有关。本专题围绕以下问题展开：</p>
+<ol type="1">
+<li>怎样用数学描述“同步”，怎样度量同步程度（<a
+href="synchronization.synchronization-types.html">同步现象与类型</a>、<a
+href="synchronization.kuramoto-model.html">Kuramoto
+模型与序参量</a>）；</li>
+<li>网络结构怎样决定同步何时开始、能否稳定：同步阈值中再次出现
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>k</mi><mo stretchy="false" form="postfix">⟩</mo><mi>/</mi><mo stretchy="false" form="prefix">⟨</mo><msup><mi>k</mi><mn>2</mn></msup><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle k\rangle/\langle k^2\rangle</annotation></semantics></math>（<a
+href="synchronization.network-kuramoto.html">网络拓扑与同步阈值</a>），而相同振荡器的同步稳定性归结为拉普拉斯矩阵的谱（<a
+href="synchronization.laplacian-spectrum.html">拉普拉斯谱与代数连通度</a>、<a
+href="synchronization.master-stability.html">主稳定函数与可同步性</a>）；</li>
+<li>同步的“非常规”形态：按模块分层出现（<a
+href="synchronization.hierarchical-sync.html">分层同步</a>）、不连续地突然出现（<a
+href="synchronization.explosive-sync.html">爆发式同步</a>）、只在部分节点出现（<a
+href="synchronization.cluster-chimera.html">簇同步与奇异态</a>），以及时滞与噪声的作用（<a
+href="synchronization.delay-noise.html">时滞与噪声</a>）；</li>
+<li>同步的线性简化——共识动力学——与代数连通度的关系（<a
+href="synchronization.consensus.html">共识动力学</a>）；</li>
+<li>怎样把这些理论用于大脑：在结构连接组上搭建全脑动力学模型（<a
+href="synchronization.whole-brain-models.html">神经质量模型与全脑模型</a>），以及怎样从
+EEG/MEG 数据估计相位同步而不被容积传导误导（<a
+href="synchronization.phase-synchrony-estimation.html">从实测信号估计同步</a>）。</li>
+</ol>
+<p>本专题的谱方法与线性化思路是<a
+href="controllability.html">网络可控性与稳定性</a>中动力学稳定性分析的基础；从实测信号估计同步的方法则直接通向<a
+href="brain-connectome.html">脑连接组：结构与功能连接</a>和<a
+href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a>中的功能脑网络。全部示例代码见<a
+href="synchronization.html#code">计算实现</a>。</p>
+</section><section class="block" id="pages"><h2><span class="tag">Contents</span>知识页面</h2><div class="arts"><a class="art" href="synchronization.synchronization-types.html"><span class="no">01</span><span class="t">同步现象与类型</span><span class="d">1665 年，惠更斯（Huygens）发现挂在同一根横梁上的两只摆钟，过一段时间后摆动会变得严格反相——横梁的微小振动把两只钟“耦合”在了一起。类似现象随处可见：东南亚某些萤火虫成…</span></a><a class="art" href="synchronization.kuramoto-model.html"><span class="no">02</span><span class="t">Kuramoto 模型与序参量</span><span class="d">模型 只用一个变量——相位 ——描述每个振荡器。Kuramoto（1975）提出： 是固有频率，从分布 中抽取； 是耦合强度；正弦项使相位落后的振荡器加速、领先的减速。这是全连接（…</span></a><a class="art" href="synchronization.network-kuramoto.html"><span class="no">03</span><span class="t">网络拓扑与同步阈值</span><span class="d">把全连接换成任意网络（邻接矩阵 ，可以带权）： 两种阈值近似 异质平均场（Ichinomiya 2004，PRE）：假设度相同的节点统计上等价，节点 感受到的平均场与其度 成正比。…</span></a><a class="art" href="synchronization.laplacian-spectrum.html"><span class="no">04</span><span class="t">拉普拉斯谱与代数连通度</span><span class="d">从共识动力学、相同振荡器的同步稳定性，到谱聚类与随机游走，图拉普拉斯矩阵都是核心对象。本页集中整理它的定义、性质、典型图的谱与计算方法，供后面几个页面引用。 拉普拉斯矩阵：对无向（…</span></a><a class="art" href="synchronization.master-stability.html"><span class="no">05</span><span class="t">主稳定函数与可同步性</span><span class="d">对于相同的振荡器（如相同的神经元模型），完全同步态总是存在的，问题是：它稳定吗？Pecora 与 Carroll（1998，PRL）提出主稳定函数（master stability…</span></a><a class="art" href="synchronization.hierarchical-sync.html"><span class="no">06</span><span class="t">模块结构与分层同步</span><span class="d">Arenas、Díaz-Guilera 与 Pérez-Vicente（2006，PRL）在具有层次社团结构的网络上模拟相同振荡器的 Kuramoto 动力学，发现同步按层次出现：…</span></a><a class="art" href="synchronization.explosive-sync.html"><span class="no">07</span><span class="t">爆发式同步</span><span class="d">经典 Kuramoto 相变是连续的： 从 0 平滑增长。Gómez-Gardeñes、Gómez、Arenas 与 Moreno（2011，PRL）发现，若无标度网络中节点的固有…</span></a><a class="art" href="synchronization.cluster-chimera.html"><span class="no">08</span><span class="t">簇同步与奇异态</span><span class="d">完全同步与完全不同步之间，还有许多“部分有序”的模式：一些节点同步、另一些不同步；或者网络分成几组，组内同步、组间相位不同。这些模式与网络的对称性密切相关。 簇同步与网络对称性 簇…</span></a><a class="art" href="synchronization.delay-noise.html"><span class="no">09</span><span class="t">时滞与噪声</span><span class="d">真实系统中的耦合不是瞬时的，振荡器也不是确定性的。时滞和噪声都会改变同步阈值，有时还会产生新的现象。 时滞 大脑中，信号沿轴突传导需要时间：长程纤维长度可达十几厘米，传导速度从每秒…</span></a><a class="art" href="synchronization.whole-brain-models.html"><span class="no">10</span><span class="t">神经质量模型与全脑模型</span><span class="d">前面的振荡器是抽象的。要用同步理论解释脑成像数据，需要一个层级：把每个脑区（数百万神经元）描述为一个低维的“群体”动力学单元（神经质量模型），再按结构连接组把它们耦合成全脑模型。B…</span></a><a class="art" href="synchronization.phase-synchrony-estimation.html"><span class="no">11</span><span class="t">从实测信号估计同步</span><span class="d">模型里的相位是现成的，实测信号（EEG、MEG、局部场电位、钙成像）则需要先提取相位，再选择合适的同步指标。 提取相位 1. 带通滤波：只保留感兴趣的频段（如 8–12 Hz 的 …</span></a><a class="art" href="synchronization.consensus.html"><span class="no">12</span><span class="t">共识动力学</span><span class="d">如果每个节点只有一个标量状态 （意见、估计值、温度），并向邻居靠拢： 这就是共识（consensus）动力学。把 Kuramoto 模型在同步态附近线性化（ ， 相同），得到的正是…</span></a><a class="art" href="synchronization.derivations.html"><span class="no">13</span><span class="t">数学推导与算法</span><span class="d">本页补全以下推导：A. Kuramoto 自洽方程与 ；B. 共识方程的显式解与 的作用；C. 主稳定函数如何导出特征值比判据；D. 洛伦兹分布下的 Ott–Antonsen 约化…</span></a><a class="art" href="synchronization.frontiers.html"><span class="no">14</span><span class="t">研究前沿与开放问题</span><span class="d">1. 大脑运行在同步的临界点附近吗？ 神经质量模型与 Kuramoto 类模型显示，脑网络在接近同步转变时能产生最丰富的“亚稳态”动力学，模拟 FC 也最接近实测（Deco 等 2…</span></a><a class="art" href="synchronization.biomedical.html"><span class="no">15</span><span class="t">生物医学应用</span><span class="d">心脏起搏细胞 窦房结中的起搏细胞各自具有略有差异的固有频率，通过缝隙连接耦合后以统一节律放电，决定心率。Peskin（1975）最早用耦合振荡器解释起搏细胞的同步；Mirollo …</span></a><a class="art" href="synchronization.limitations.html"><span class="no">16</span><span class="t">适用范围与常见误用</span><span class="d">1. 误用：把同步理解为所有节点状态完全相同。→ 正解：有完全同步、相位同步、频率锁定、广义同步、簇同步等多种类型；Kuramoto 模型中 时通常是部分同步，固有频率极端的振荡器…</span></a></div></section><section class="block" id="video"><h2><span class="tag">VIDEO</span>讲解视频</h2><div class="video-main"><video controls preload="metadata" playsinline poster="media/videos/L06-core.jpg"><source src="media/videos/L06-core.mp4" type="video/mp4"><track kind="captions" srclang="zh" label="中文字幕" src="media/videos/L06-core.vtt"></video><div class="video-meta"><strong>从萤火虫到心跳：网络上的同步</strong><span>4 分 18 秒</span></div><details class="transcript"><summary>文字稿</summary><p>大家好，这一期我们讨论网络动力学的第二个主题，同步。萤火虫成群一起闪光，心脏里的起搏细胞一起放电，这些都是同步。早在1665年，惠更斯就发现挂在同一根横梁上的两只摆钟会自发同步。今天我们要弄清楚，许多节奏不同的个体，怎样通过网络变得步调一致。</p><p>第一，怎样用一个数字来度量一群振荡器同步了多少。第二，耦合要多强，同步才会出现。第三，网络结构，比如枢纽、捷径和社团，怎样影响同步。第四，大脑和心脏里的同步，与疾病有什么关系。</p><p>1975年，Kuramoto 提出了一个极简的模型，每个振荡器只用一个相位来描述。每个振荡器有自己的固有频率，同时被其他振荡器拉向它们的相位。落后的被拉快一点，领先的被拉慢一点，拉力的大小就是耦合强度。怎样度量同步呢？把每个相位看成单位圆上的一个点，求这些点的质心。质心到圆心的距离叫序参量，相位散开时接近0，完全同步时等于1。</p><p>现在我们逐渐增大耦合强度，看看圆上的振荡器会发生什么。耦合很弱的时候，大家各转各的，序参量在0附近小幅波动。耦合超过某个临界值，一部分振荡器突然聚到一起，形成同步簇。右边的序参量曲线随之迅速上升，这就是同步相变。注意，固有频率特别快或特别慢的振荡器，仍然在圆上独自漂移。理论告诉我们，临界耦合与频率分布在中心处的密度成反比，频率越分散越难同步。</p><p>把振荡器放到网络上，临界耦合等于一个常数乘以平均度与二阶矩之比。大家应该觉得眼熟，这和传播专题里流行病阈值的形式完全一样。度越不均匀，枢纽越先同步，整个网络越早开始出现部分同步。但如果关心相同振荡器能否稳定地完全同步，要看拉普拉斯矩阵的特征值比。特征值比越小越容易同步，小世界的少量捷径能让它大幅下降。而度很不均匀的网络，特征值比往往偏大，反而更难完全同步。在社团结构明显的网络里，同步分层出现，先社团内部，再全局。</p><p>如果每个节点只有一个数值，并不断向邻居的数值看齐，就得到共识动力学。在连通的无向网络上，大家最终会达到初始值的平均。收敛有多快，由拉普拉斯矩阵的第二小特征值决定，也叫代数连通度。</p><p>心脏的节律来自窦房结中许多起搏细胞的同步放电。生物钟依靠视交叉上核中大量神经元的同步，网络耦合让节律更加稳健。帕金森病患者基底节环路中，β 频段的同步异常增强，与运动迟缓有关。癫痫常被说成过度同步，但颅内记录显示，发作过程中的同步变化相当复杂。所以对大脑来说，同步不是越强越好，关键是分离与整合的平衡。</p><p>好，最后用四句话把这一期的要点小结一下。序参量是相位在单位圆上的质心长度，用来度量同步程度。耦合超过临界值，系统从无序进入部分同步，这是一种相变。度异质性让同步更早开始，捷径让同步更稳定，社团带来分层同步。在生物系统中，同步过强或过弱都可能意味着疾病。</p><p>请打开交互演示，亲手拖动耦合强度，观察序参量的跳变。然后在代码示例里比较随机网络和无标度网络的同步起点。下一期我们讨论怎样控制一个网络，以及网络在攻击下有多稳定。</p></details></div></section><section class="block" id="demos"><h2><span class="tag">INTERACTIVE</span>交互可视化</h2><div class="demo" data-demo="kuramoto"></div></section><section class="block" id="code"><h2><span class="tag">CODE</span>计算实现</h2><p class="small">11 个完整可运行的 Python 示例，每个都给出代码、输出图和解读；可在浏览器中直接运行，或下载 <a href="notebooks/synchronization.ipynb" download>Jupyter Notebook</a> · <a href="notebooks/synchronization.py" download>Python 脚本</a>。</p><div class="gallery"><a class="gcard" href="ex-synchronization-0.html"><span class="thumb"><img src="gallery/synchronization-0-0.png" alt="" loading="lazy"></span><span class="gt">全连接 Kuramoto 模型的同步相变</span></a><a class="gcard" href="ex-synchronization-1.html"><span class="thumb"><img src="gallery/synchronization-1-0.png" alt="" loading="lazy"></span><span class="gt">网络结构如何影响同步起点</span></a><a class="gcard" href="ex-synchronization-2.html"><span class="thumb"><img src="gallery/synchronization-2-0.png" alt="" loading="lazy"></span><span class="gt">模块化网络上的分层同步</span></a><a class="gcard" href="ex-synchronization-3.html"><span class="thumb"><img src="gallery/synchronization-3-0.png" alt="" loading="lazy"></span><span class="gt">共识动力学与代数连通度</span></a><a class="gcard" href="ex-synchronization-4.html"><span class="thumb"><img src="gallery/synchronization-4-0.png" alt="" loading="lazy"></span><span class="gt">常见图的拉普拉斯谱、特征值比与谱界</span></a><a class="gcard" href="ex-synchronization-5.html"><span class="thumb"><img src="gallery/synchronization-5-0.png" alt="" loading="lazy"></span><span class="gt">数值计算 Rössler 振子的主稳定函数并判断网络可同步性</span></a><a class="gcard" href="ex-synchronization-6.html"><span class="thumb"><img src="gallery/synchronization-6-0.png" alt="" loading="lazy"></span><span class="gt">度–频率关联导致的爆发式同步与滞后</span></a><a class="gcard" href="ex-synchronization-7.html"><span class="thumb"><img src="gallery/synchronization-7-0.png" alt="" loading="lazy"></span><span class="gt">对称性决定的簇同步（星图中的“远程同步”）</span></a><a class="gcard" href="ex-synchronization-8.html"><span class="thumb"><img src="gallery/synchronization-8-0.png" alt="" loading="lazy"></span><span class="gt">噪声与时滞对 Kuramoto 同步的影响</span></a><a class="gcard" href="ex-synchronization-9.html"><span class="thumb"><img src="gallery/synchronization-9-0.png" alt="" loading="lazy"></span><span class="gt">模块化“连接组”上的 Hopf 全脑模型：模拟功能连接与亚稳态</span></a><a class="gcard" href="ex-synchronization-10.html"><span class="thumb"><img src="gallery/synchronization-10-0.png" alt="" loading="lazy"></span><span class="gt">PLV、PLI、wPLI、相干与虚部相干：容积传导的影响</span></a></div></section><section class="block prose" id="related"><h2><span class="tag">Links</span>关联知识</h2><ul>
+<li><a href="spreading.html">网络上的传播与免疫</a>：异质平均场方法与
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>k</mi><mo stretchy="false" form="postfix">⟩</mo><mi>/</mi><mo stretchy="false" form="prefix">⟨</mo><msup><mi>k</mi><mn>2</mn></msup><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle k\rangle/\langle k^2\rangle</annotation></semantics></math>
+型阈值的来源，同步阈值与传播阈值形式相同。</li>
+<li><a
+href="network-metrics.html">网络结构指标与随机图</a>：度分布、邻接矩阵与拉普拉斯矩阵是同步分析的基本对象。</li>
+<li><a
+href="network-models.html">小世界与无标度网络模型</a>：小世界捷径降低特征值比、利于同步；度异质性带来“早开始、难稳定”的两面性。</li>
+<li><a
+href="community-structure.html">社团结构与社区发现</a>：分层同步可用于发现社团；Fiedler
+向量与谱二分；簇同步与网络对称性。</li>
+<li><a
+href="controllability.html">网络可控性与稳定性</a>：主稳定函数是平衡态线性稳定性分析在同步态上的应用；去同步刺激与网络控制问题相关。</li>
+<li><a
+href="brain-connectome.html">脑连接组：结构与功能连接</a>：在结构连接组上模拟耦合振荡器与
+Hopf 模型，重现静息态功能连接。</li>
+<li><a
+href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a>：锁相值、相位滞后指数等同步指标构成的功能网络、容积传导与结构–功能耦合。</li>
+</ul>
+</section><section class="block" id="papers"><h2><span class="tag">Papers</span>论文精读</h2><div class="pgrid"><article class="pcard" data-own="0" data-dom="theory dynamics" data-k="collective dynamics of &#x27;small-world&#x27; networks“小世界”网络的集体动力学小世界 重连概率 聚集系数 特征路径长度 线虫神经网络"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">网络基础理论</span><span class="pbadge dm">网络动力学与控制</span><span>Nature · 1998</span></div><h3><a href="paper-watts1998_smallworld.html">“小世界”网络的集体动力学</a></h3><p class="porig">Collective dynamics of &#x27;small-world&#x27; networks<br><span>Watts DJ, Strogatz SH</span></p><p class="psum">用随机重连在规则网格与随机图间插值，发现少量捷径即可使网络兼具高聚类与短路径，并在真实网络中验证。</p><div class="plec small">相关专题：<a href="network-models.html">小世界与无标度网络模型</a> <a href="network-metrics.html">网络结构指标与随机图</a> <a href="synchronization.html">同步与协同动力学</a></div></article><article class="pcard" data-own="0" data-dom="dynamics theory brain" data-k="synchronization in complex networks复杂网络中的同步同步 kuramoto 模型 主稳定函数 拉普拉斯矩阵 特征值比 可同步性 异质性悖论"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">网络动力学与控制</span><span class="pbadge dm">网络基础理论</span><span>Physics Reports · 2008</span></div><h3><a href="paper-arenas2008_sync.html">复杂网络中的同步</a></h3><p class="porig">Synchronization in complex networks<br><span>Arenas A, Díaz-Guilera A, Kurths J, Moreno Y, Zhou C</span></p><p class="psum">系统综述网络拓扑如何影响同步：Kuramoto 模型的同步起点与路径、主稳定函数与可同步性及应用。</p><div class="plec small">相关专题：<a href="synchronization.html">同步与协同动力学</a> <a href="community-structure.html">社团结构与社区发现</a> <a href="brain-connectome.html">脑连接组：结构与功能连接</a></div></article></div></section><section class="block prose" id="references"><h2><span class="tag">References</span>核心文献</h2><h3 id="strogatz-2000from-kuramoto-to-crawfordphysica-d">Strogatz
+2000：From Kuramoto to Crawford（Physica D）</h3>
+<ul>
+<li><strong>背景</strong>：Kuramoto 模型提出后 25
+年，其稳定性分析一直存在难点。Strogatz
+以讲故事的方式回顾了这一问题的来龙去脉。</li>
+<li><strong>核心内容</strong>：平均场自洽推导
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mi>c</mi></msub><mo>=</mo><mn>2</mn><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mi>π</mi><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">K_c=2/(\pi g(0))</annotation></semantics></math>；锁定与漂移振荡器的划分；不相干态在
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>&lt;</mo><msub><mi>K</mi><mi>c</mi></msub></mrow><annotation encoding="application/x-tex">K&lt;K_c</annotation></semantics></math>
+时为何是“中性稳定”的；Crawford
+等人的工作如何解释临界点附近的标度律。</li>
+<li><strong>阅读要点</strong>：先读第 1–4
+节，跟着推导一遍自洽方程。重点理解“漂移振荡器为何对序参量没有净贡献”。</li>
+<li><strong>延伸思考</strong>：如果
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>ω</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">g(\omega)</annotation></semantics></math>
+是双峰分布（两群振荡器频率不同），预计会出现什么样的同步行为？</li>
+</ul>
+<p>DOI：<a
+href="https://doi.org/10.1016/S0167-2789%2800%2900094-4">10.1016/S0167-2789(00)00094-4</a></p>
+<h3
+id="arenas-等-2008synchronization-in-complex-networksphysics-reports">Arenas
+等 2008：Synchronization in complex networks（Physics Reports）</h3>
+<ul>
+<li><strong>背景</strong>：2000
+年后，网络科学与同步研究交汇，产生了大量结果。这篇综述是该领域的标准参考。</li>
+<li><strong>核心内容</strong>：网络 Kuramoto
+模型的平均场理论；主稳定函数与特征值比；小世界、无标度、加权与模块化网络上的同步；同步与社团发现；在生物、通信等系统中的应用。</li>
+<li><strong>阅读要点</strong>：篇幅很长，建议先读引言和第 2–4
+章的结构，按需深入。注意区分“相同振荡器的完全同步”和“非相同振荡器的相位同步”这两条研究线。</li>
+<li><strong>延伸思考</strong>：如果想通过增加少量边来提高一个网络的可同步性，按
+MSF 框架应该优化哪个量？这对脑网络的“长程连接”有何启示？</li>
+</ul>
+<p>DOI：<a
+href="https://doi.org/10.1016/j.physrep.2008.09.002">10.1016/j.physrep.2008.09.002</a>；精读：<a
+href="paper-arenas2008_sync.html">Arenas 2008</a></p>
+<h3
+id="pecora-与-carroll-1998master-stability-functions-for-synchronized-coupled-systemsprl">Pecora
+与 Carroll 1998：Master stability functions for synchronized coupled
+systems（PRL）</h3>
+<ul>
+<li><strong>背景</strong>：混沌系统可以同步（Pecora 与 Carroll 1990
+年代初的工作），但不同网络、不同耦合方式下同步是否稳定，需要逐一计算。</li>
+<li><strong>核心内容</strong>：在同步态附近按拉普拉斯特征向量把扰动解耦，提出只依赖节点动力学和耦合方式的主稳定函数，把网络结构的作用归结为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi><msub><mi>μ</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">\sigma\mu_k</annotation></semantics></math>
+是否落在稳定区。</li>
+<li><strong>阅读要点</strong>：论文很短，重点看分块对角化那一步和对
+Rössler 振子稳定区的讨论，对照<a
+href="synchronization.derivations.html">数学推导与算法</a> C 节。</li>
+<li><strong>延伸思考</strong>：如果耦合通过
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>
+分量而不是
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+分量，稳定区会怎样变化？对神经元模型，“通过哪个变量耦合”对应什么生理机制？</li>
+</ul>
+<p>DOI：<a
+href="https://doi.org/10.1103/PhysRevLett.80.2109">10.1103/PhysRevLett.80.2109</a></p>
+<h3
+id="rodrigues-等-2016the-kuramoto-model-in-complex-networksphysics-reports">Rodrigues
+等 2016：The Kuramoto model in complex networks（Physics Reports）</h3>
+<ul>
+<li><strong>背景</strong>：Arenas 等 2008 之后，网络 Kuramoto
+模型的研究迅速扩展：爆发式同步、带惯性的模型（电网）、Ott–Antonsen
+约化、多层网络等。</li>
+<li><strong>核心内容</strong>：网络上同步起点的各种近似、同步路径、度–频率关联与爆发式同步、噪声与惯性的影响、在工程（电网）、神经科学与地球科学中的应用及开放问题。</li>
+<li><strong>阅读要点</strong>：可作为工具书查阅，先读引言和网络阈值部分，再按需选读爆发式同步与神经科学应用章节。</li>
+</ul>
+<p>DOI：<a
+href="https://doi.org/10.1016/j.physrep.2015.10.008">10.1016/j.physrep.2015.10.008</a></p>
+<h3
+id="breakspear-2017dynamic-models-of-large-scale-brain-activitynature-neuroscience">Breakspear
+2017：Dynamic models of large-scale brain activity（Nature
+Neuroscience）</h3>
+<ul>
+<li><strong>背景</strong>：脑成像产生了大量结构与功能连接数据，需要动力学模型把二者联系起来。</li>
+<li><strong>核心内容</strong>：从神经质量模型、神经场模型到全脑网络模型的建模层级；多稳态、亚稳态、临界性等动力学概念；模型与
+fMRI、EEG/MEG 数据的对接方式及其局限。</li>
+<li><strong>阅读要点</strong>：重点理解模型层级的划分与每一层的假设，对照<a
+href="synchronization.whole-brain-models.html">神经质量模型与全脑模型</a>。</li>
+<li><strong>延伸思考</strong>：如果两个不同的全脑模型拟合同一份 FC
+数据同样好，还能用什么数据或实验区分它们？</li>
+</ul>
+<p>DOI：<a
+href="https://doi.org/10.1038/nn.4497">10.1038/nn.4497</a></p>
+<h3
+id="uhlhaas-与-singer-2006neural-synchrony-in-brain-disordersneuron">Uhlhaas
+与 Singer 2006：Neural synchrony in brain disorders（Neuron）</h3>
+<ul>
+<li><strong>背景</strong>：神经振荡与同步被认为是大脑整合分布式信息的机制之一，那么疾病是否表现为同步异常？</li>
+<li><strong>核心内容</strong>：综述精神分裂症、癫痫、孤独症、阿尔茨海默病、帕金森病等疾病中神经同步的改变，提出同步异常可能是多种疾病的共同病理生理基础。</li>
+<li><strong>阅读要点</strong>：区分“同步增强”与“同步减弱”对应的疾病；关注各研究使用的同步指标和记录方式（EEG、MEG、颅内记录），想一想哪些结论可能受测量方法影响。</li>
+<li><strong>延伸思考</strong>：如果用 Kuramoto
+模型模拟“病理性过度同步”，应调整哪个参数？治疗（如深部脑刺激）在模型中可以对应什么操作？</li>
+</ul>
+<p>DOI：<a
+href="https://doi.org/10.1016/j.neuron.2006.09.020">10.1016/j.neuron.2006.09.020</a></p>
+<h3 id="其他引用文献">其他引用文献</h3>
+<p><strong>综述与专著</strong></p>
+<ul>
+<li>Boccaletti S, Latora V, Moreno Y, Chavez M, Hwang D-U. Complex
+networks: Structure and dynamics. <em>Physics Reports</em> 2006. <a
+href="https://doi.org/10.1016/j.physrep.2005.10.009">10.1016/j.physrep.2005.10.009</a></li>
+<li>Acebrón JA 等. The Kuramoto model: A simple paradigm for
+synchronization phenomena. <em>Rev Mod Phys</em> 2005. <a
+href="https://doi.org/10.1103/RevModPhys.77.137">10.1103/RevModPhys.77.137</a></li>
+<li>Pikovsky A, Rosenblum M, Kurths J. <em>Synchronization: A Universal
+Concept in Nonlinear Sciences</em>. Cambridge University Press 2001. <a
+href="https://doi.org/10.1017/CBO9780511755743">10.1017/CBO9780511755743</a></li>
+<li>Boccaletti S 等. Explosive transitions in complex networks’
+structure and dynamics: Percolation and synchronization. <em>Physics
+Reports</em> 2016. <a
+href="https://doi.org/10.1016/j.physrep.2016.10.004">10.1016/j.physrep.2016.10.004</a></li>
+<li>Panaggio MJ, Abrams DM. Chimera states: coexistence of coherence and
+incoherence in networks of coupled oscillators. <em>Nonlinearity</em>
+2015. <a
+href="https://doi.org/10.1088/0951-7715/28/3/R67">10.1088/0951-7715/28/3/R67</a></li>
+<li>Glass L. Synchronization and rhythmic processes in physiology.
+<em>Nature</em> 2001. <a
+href="https://doi.org/10.1038/35065745">10.1038/35065745</a></li>
+<li>Olfati-Saber R, Fax JA, Murray RM. Consensus and cooperation in
+networked multi-agent systems. <em>Proc IEEE</em> 2007. <a
+href="https://doi.org/10.1109/JPROC.2006.887293">10.1109/JPROC.2006.887293</a></li>
+</ul>
+<p><strong>理论</strong></p>
+<ul>
+<li>Fiedler M. Algebraic connectivity of graphs. <em>Czechoslovak Math
+J</em> 1973. <a
+href="https://doi.org/10.21136/CMJ.1973.101168">10.21136/CMJ.1973.101168</a></li>
+<li>Ichinomiya T. Frequency synchronization in a random oscillator
+network. <em>PRE</em> 2004. <a
+href="https://doi.org/10.1103/PhysRevE.70.026116">10.1103/PhysRevE.70.026116</a></li>
+<li>Restrepo JG, Ott E, Hunt BR. Onset of synchronization in large
+networks of coupled oscillators. <em>PRE</em> 2005. <a
+href="https://doi.org/10.1103/PhysRevE.71.036151">10.1103/PhysRevE.71.036151</a></li>
+<li>Barahona M, Pecora LM. Synchronization in small-world systems.
+<em>PRL</em> 2002. <a
+href="https://doi.org/10.1103/PhysRevLett.89.054101">10.1103/PhysRevLett.89.054101</a></li>
+<li>Nishikawa T 等. Heterogeneity in oscillator networks: Are smaller
+worlds easier to synchronize? <em>PRL</em> 2003. <a
+href="https://doi.org/10.1103/PhysRevLett.91.014101">10.1103/PhysRevLett.91.014101</a></li>
+<li>Arenas A, Díaz-Guilera A, Pérez-Vicente CJ. Synchronization reveals
+topological scales in complex networks. <em>PRL</em> 2006. <a
+href="https://doi.org/10.1103/PhysRevLett.96.114102">10.1103/PhysRevLett.96.114102</a></li>
+<li>Gómez-Gardeñes J, Gómez S, Arenas A, Moreno Y. Explosive
+synchronization transitions in scale-free networks. <em>PRL</em> 2011.
+<a
+href="https://doi.org/10.1103/PhysRevLett.106.128701">10.1103/PhysRevLett.106.128701</a></li>
+<li>Abrams DM, Strogatz SH. Chimera states for coupled oscillators.
+<em>PRL</em> 2004. <a
+href="https://doi.org/10.1103/PhysRevLett.93.174102">10.1103/PhysRevLett.93.174102</a></li>
+<li>Kuramoto Y, Battogtokh D. Coexistence of coherence and incoherence
+in nonlocally coupled phase oscillators. <em>Nonlinear Phenomena in
+Complex Systems</em> 2002.</li>
+<li>Pecora LM 等. Cluster synchronization and isolated desynchronization
+in complex networks with symmetries. <em>Nat Commun</em> 2014. <a
+href="https://doi.org/10.1038/ncomms5079">10.1038/ncomms5079</a></li>
+<li>Sorrentino F 等. Complete characterization of the stability of
+cluster synchronization in complex dynamical networks. <em>Sci Adv</em>
+2016. <a
+href="https://doi.org/10.1126/sciadv.1501737">10.1126/sciadv.1501737</a></li>
+<li>Nicosia V 等. Remote synchronization reveals network symmetries and
+functional modules. <em>PRL</em> 2013. <a
+href="https://doi.org/10.1103/PhysRevLett.110.174102">10.1103/PhysRevLett.110.174102</a></li>
+<li>Yeung MKS, Strogatz SH. Time delay in the Kuramoto model of coupled
+oscillators. <em>PRL</em> 1999. <a
+href="https://doi.org/10.1103/PhysRevLett.82.648">10.1103/PhysRevLett.82.648</a></li>
+<li>Sakaguchi H. Cooperative phenomena in coupled oscillator systems
+under external fields. <em>Prog Theor Phys</em> 1988. <a
+href="https://doi.org/10.1143/PTP.79.39">10.1143/PTP.79.39</a></li>
+<li>Strogatz SH, Mirollo RE. Stability of incoherence in a population of
+coupled oscillators. <em>J Stat Phys</em> 1991. <a
+href="https://doi.org/10.1007/BF01029202">10.1007/BF01029202</a></li>
+<li>Ott E, Antonsen TM. Low dimensional behavior of large systems of
+globally coupled oscillators. <em>Chaos</em> 2008. <a
+href="https://doi.org/10.1063/1.2930766">10.1063/1.2930766</a></li>
+<li>Mirollo RE, Strogatz SH. Synchronization of pulse-coupled biological
+oscillators. <em>SIAM J Appl Math</em> 1990. <a
+href="https://doi.org/10.1137/0150098">10.1137/0150098</a></li>
+</ul>
+<p><strong>脑动力学模型</strong></p>
+<ul>
+<li>Wilson HR, Cowan JD. Excitatory and inhibitory interactions in
+localized populations of model neurons. <em>Biophys J</em> 1972. <a
+href="https://doi.org/10.1016/S0006-3495%2872%2986068-5">10.1016/S0006-3495(72)86068-5</a></li>
+<li>Honey CJ 等. Predicting human resting-state functional connectivity
+from structural connectivity. <em>PNAS</em> 2009. <a
+href="https://doi.org/10.1073/pnas.0811168106">10.1073/pnas.0811168106</a></li>
+<li>Cabral J, Hugues E, Sporns O, Deco G. Role of local network
+oscillations in resting-state functional connectivity.
+<em>NeuroImage</em> 2011. <a
+href="https://doi.org/10.1016/j.neuroimage.2011.04.010">10.1016/j.neuroimage.2011.04.010</a></li>
+<li>Deco G 等. The dynamics of resting fluctuations in the brain:
+metastability and its dynamical cortical core. <em>Sci Rep</em> 2017. <a
+href="https://doi.org/10.1038/s41598-017-03073-5">10.1038/s41598-017-03073-5</a></li>
+<li>Sanz Leon P 等. The Virtual Brain: a simulator of primate brain
+network dynamics. <em>Front Neuroinform</em> 2013. <a
+href="https://doi.org/10.3389/fninf.2013.00010">10.3389/fninf.2013.00010</a></li>
+<li>Shanahan M. Metastable chimera states in community-structured
+oscillator networks. <em>Chaos</em> 2010. <a
+href="https://doi.org/10.1063/1.3305451">10.1063/1.3305451</a></li>
+<li>Kim M 等. Functional and topological conditions for explosive
+synchronization develop in human brain networks with the onset of
+anesthetic-induced unconsciousness. <em>Front Comput Neurosci</em> 2016.
+<a
+href="https://doi.org/10.3389/fncom.2016.00001">10.3389/fncom.2016.00001</a></li>
+</ul>
+<p><strong>相位同步的估计</strong></p>
+<ul>
+<li>Lachaux J-P 等. Measuring phase synchrony in brain signals. <em>Hum
+Brain Mapp</em> 1999. <a
+href="https://doi.org/10.1002/(SICI)1097-0193(1999)8:4%3C194::AID-HBM4%3E3.0.CO;2-C">10.1002/(SICI)1097-0193(1999)8:4&lt;194::AID-HBM4&gt;3.0.CO;2-C</a></li>
+<li>Nolte G 等. Identifying true brain interaction from EEG data using
+the imaginary part of coherency. <em>Clin Neurophysiol</em> 2004. <a
+href="https://doi.org/10.1016/j.clinph.2004.04.029">10.1016/j.clinph.2004.04.029</a></li>
+<li>Stam CJ, Nolte G, Daffertshofer A. Phase lag index: assessment of
+functional connectivity from multi channel EEG and MEG with diminished
+bias from common sources. <em>Hum Brain Mapp</em> 2007. <a
+href="https://doi.org/10.1002/hbm.20346">10.1002/hbm.20346</a></li>
+<li>Vinck M 等. The pairwise phase consistency: a bias-free measure of
+rhythmic neuronal synchronization. <em>NeuroImage</em> 2010. <a
+href="https://doi.org/10.1016/j.neuroimage.2010.01.073">10.1016/j.neuroimage.2010.01.073</a></li>
+<li>Vinck M 等. An improved index of phase-synchronization for
+electrophysiological data in the presence of volume-conduction, noise
+and sample-size bias. <em>NeuroImage</em> 2011. <a
+href="https://doi.org/10.1016/j.neuroimage.2011.01.055">10.1016/j.neuroimage.2011.01.055</a></li>
+<li>Bastos AM, Schoffelen J-M. A tutorial review of functional
+connectivity analysis methods and their interpretational pitfalls.
+<em>Front Syst Neurosci</em> 2016. <a
+href="https://doi.org/10.3389/fnsys.2015.00175">10.3389/fnsys.2015.00175</a></li>
+</ul>
+<p><strong>生物医学实例</strong></p>
+<ul>
+<li>Michaels DC, Matyas EP, Jalife J. Mechanisms of sinoatrial pacemaker
+synchronization: a new hypothesis. <em>Circ Res</em> 1987. <a
+href="https://doi.org/10.1161/01.RES.61.5.704">10.1161/01.RES.61.5.704</a></li>
+<li>Welsh DK 等. Individual neurons dissociated from rat suprachiasmatic
+nucleus express independently phased circadian firing rhythms.
+<em>Neuron</em> 1995. <a
+href="https://doi.org/10.1016/0896-6273%2895%2990214-7">10.1016/0896-6273(95)90214-7</a></li>
+<li>Liu C, Weaver DR, Strogatz SH, Reppert SM. Cellular construction of
+a circadian clock: period determination in the suprachiasmatic nuclei.
+<em>Cell</em> 1997. <a
+href="https://doi.org/10.1016/S0092-8674%2800%2980473-0">10.1016/S0092-8674(00)80473-0</a></li>
+<li>Aton SJ, Herzog ED. Come together, right…now: synchronization of
+rhythms in a mammalian circadian clock. <em>Neuron</em> 2005. <a
+href="https://doi.org/10.1016/j.neuron.2005.11.001">10.1016/j.neuron.2005.11.001</a></li>
+<li>Schindler K 等. Assessing seizure dynamics by analysing the
+correlation structure of multichannel intracranial EEG. <em>Brain</em>
+2007. <a
+href="https://doi.org/10.1093/brain/awl304">10.1093/brain/awl304</a></li>
+<li>Jiruska P 等. Synchronization and desynchronization in epilepsy:
+controversies and hypotheses. <em>J Physiol</em> 2013. <a
+href="https://doi.org/10.1113/jphysiol.2012.239590">10.1113/jphysiol.2012.239590</a></li>
+<li>Jirsa VK 等. On the nature of seizure dynamics. <em>Brain</em> 2014.
+<a
+href="https://doi.org/10.1093/brain/awu133">10.1093/brain/awu133</a></li>
+<li>Hammond C, Bergman H, Brown P. Pathological synchronization in
+Parkinson’s disease: networks, models and treatments. <em>Trends
+Neurosci</em> 2007. <a
+href="https://doi.org/10.1016/j.tins.2007.05.004">10.1016/j.tins.2007.05.004</a></li>
+<li>Tass PA. A model of desynchronizing deep brain stimulation with a
+demand-controlled coordinated reset of neural subpopulations. <em>Biol
+Cybern</em> 2003. <a
+href="https://doi.org/10.1007/s00422-003-0425-7">10.1007/s00422-003-0425-7</a></li>
+<li>Little S 等. Adaptive deep brain stimulation in advanced Parkinson
+disease. <em>Ann Neurol</em> 2013. <a
+href="https://doi.org/10.1002/ana.23951">10.1002/ana.23951</a></li>
+<li>Rattenborg NC, Amlaner CJ, Lima SL. Behavioral, neurophysiological
+and evolutionary perspectives on unihemispheric sleep. <em>Neurosci
+Biobehav Rev</em> 2000. <a
+href="https://doi.org/10.1016/S0149-7634%2800%2900039-7">10.1016/S0149-7634(00)00039-7</a></li>
+</ul>
+</section><section class="block" id="data"><h2><span class="tag">Data &amp; tools</span>相关数据与软件</h2><div class="rgrid"><a class="rcard" href="r-openworm.html" data-dom="brain dynamics" data-k="openworm 以秀丽隐杆线虫为对象的开放科学数字生物体建模项目。"><span class="kind">软件/工具包</span><b>OpenWorm</b><span class="d">以秀丽隐杆线虫为对象的开放科学数字生物体建模项目。</span></a></div></section><section class="block prose" id="resources"><h2><span class="tag">Further</span>延伸资源</h2><div class="table-wrap"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>类型</th>
+<th>资源</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>中文视频</td>
+<td>Veritasium 真理元素：同步之秘【官方双语】（<a
+href="https://www.bilibili.com/video/BV1zV411n7Nz/">B 站</a>）</td>
+<td>萤火虫、节拍器、千禧桥，引出 Kuramoto 模型；正片约 20 分钟</td>
+</tr>
+<tr>
+<td>交互演示</td>
+<td>Complexity Explorables：Ride my Kuramotocycle!（<a
+href="https://www.complexity-explorables.org/explorables/ride-my-kuramotocycle/">链接</a>）</td>
+<td>调节耦合强度与频率分布，实时观察序参量与同步相变</td>
+</tr>
+<tr>
+<td>开放教材</td>
+<td>Sayama《Introduction to the Modeling and Analysis of Complex
+Systems》第 18 章（<a
+href="https://math.libretexts.org/Bookshelves/Scientific_Computing_Simulations_and_Modeling/Introduction_to_the_Modeling_and_Analysis_of_Complex_Systems_(Sayama)/18%3A_Dynamical_Networks_III__Analysis_of_Network_Dynamics">LibreTexts</a>）</td>
+<td>拉普拉斯谱与可同步性（18.3 节），附 Python 代码；CC BY-NC-SA</td>
+</tr>
+<tr>
+<td>开放教材</td>
+<td>Barabási《Network Science》第 10 章 Spreading Phenomena（<a
+href="http://networksciencebook.com/chapter/10">链接</a>）</td>
+<td>该书没有同步专章；第 10 章的异质平均场与
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>k</mi><mo stretchy="false" form="postfix">⟩</mo><mi>/</mi><mo stretchy="false" form="prefix">⟨</mo><msup><mi>k</mi><mn>2</mn></msup><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle k\rangle/\langle k^2\rangle</annotation></semantics></math>
+阈值可与<a
+href="synchronization.network-kuramoto.html">网络拓扑与同步阈值</a>对照</td>
+</tr>
+<tr>
+<td>论文</td>
+<td>Strogatz 2000, From Kuramoto to Crawford, Physica D（<a
+href="https://doi.org/10.1016/S0167-2789%2800%2900094-4">DOI</a>）</td>
+<td>见核心文献，Kuramoto 模型最好的教学性综述</td>
+</tr>
+<tr>
+<td>综述</td>
+<td>Acebrón 等 2005, The Kuramoto model, Rev Mod Phys（<a
+href="https://doi.org/10.1103/RevModPhys.77.137">DOI</a>）</td>
+<td>完整的数学综述，第 2 节平均场推导可对照<a
+href="synchronization.kuramoto-model.html">Kuramoto
+模型与序参量</a></td>
+</tr>
+<tr>
+<td>综述</td>
+<td>Arenas 等 2008, Synchronization in complex networks, Physics
+Reports（<a
+href="https://doi.org/10.1016/j.physrep.2008.09.002">DOI</a>）</td>
+<td>网络同步的标准参考，见核心文献</td>
+</tr>
+<tr>
+<td>综述</td>
+<td>Rodrigues 等 2016, The Kuramoto model in complex networks, Physics
+Reports（<a
+href="https://arxiv.org/abs/1511.07139">arXiv:1511.07139</a>）</td>
+<td>开放预印本，覆盖爆发式同步、噪声与惯性、Ott–Antonsen 约化</td>
+</tr>
+<tr>
+<td>综述</td>
+<td>Boccaletti 等 2006, Complex networks: Structure and dynamics,
+Physics Reports（<a
+href="https://doi.org/10.1016/j.physrep.2005.10.009">DOI</a>）</td>
+<td>结构与动力学的综合综述，同步部分对 MSF 类型有清晰归纳</td>
+</tr>
+<tr>
+<td>科普书</td>
+<td>Strogatz《Sync: The Emerging Science of Spontaneous
+Order》（2003）</td>
+<td>从萤火虫、起搏细胞、生物钟到约瑟夫森结的非技术性介绍，适合建立整体图景</td>
+</tr>
+<tr>
+<td>软件</td>
+<td>The Virtual Brain（<a
+href="https://www.thevirtualbrain.org/">thevirtualbrain.org</a>）</td>
+<td>开源全脑建模平台，内置多种神经质量模型与连接组</td>
+</tr>
+<tr>
+<td>软件</td>
+<td>MNE-Python Connectivity（<a
+href="https://mne.tools/mne-connectivity/">mne-connectivity</a>）</td>
+<td>EEG/MEG 的 PLV、PLI、wPLI、相干等指标的标准实现</td>
+</tr>
+<tr>
+<td>论文（生物医学）</td>
+<td>Jiruska 等 2013, Synchronization and desynchronization in epilepsy,
+J Physiol（<a
+href="https://doi.org/10.1113/jphysiol.2012.239590">DOI</a>）</td>
+<td>癫痫中同步与去同步的争议与假说，对应<a
+href="synchronization.biomedical.html">生物医学应用</a></td>
+</tr>
+<tr>
+<td>英文视频</td>
+<td>LMU Physics of Life：The Kuramoto Model &amp; Synchronization
+Transition（<a
+href="https://www.youtube.com/watch?v=ywd7jVIubOo">YouTube</a>）</td>
+<td>约 50
+分钟的大学讲座，完整推导同步相变，适合想跟一遍数学的读者；需境外网络</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>提示：Barabási《Network
+Science》在线版需加载境外脚本，在中国大陆可能无法正常显示；标注“需境外网络”的为
+YouTube 资源。</p>
+</blockquote>
+</section><section class="block prose" id="questions"><h2><span class="tag">Open questions</span>开放问题</h2><ol type="1">
+<li>在你的研究方向中（如脑电、心电、细胞钙振荡、生物钟、基因表达振荡），有没有可以看作“耦合振荡器”的系统？其中“耦合”由什么物理或生物机制实现？应该用什么指标度量同步？</li>
+<li>深部脑刺激的一种思路是“去同步化”。请用同步动力学的语言（耦合强度、序参量、网络结构）描述：若要用最少的刺激点打破一个病理性同步簇，应选择网络中的哪些节点？这个问题和<a
+href="controllability.html">网络可控性与稳定性</a>中的网络控制问题有什么联系？</li>
+<li>某研究报告患者组的 EEG α 频段 PLV
+网络“全局效率升高”。在接受这一结论之前，你会检查哪些方法学因素（数据长度、参考电极、容积传导、指标选择、信噪比差异）？换用
+wPLI 后结论若消失，说明了什么？</li>
+<li>全脑模型中，若最符合数据的全局耦合强度在患者组更低，这能否解释为“患者的结构连接更弱”？还有哪些模型参数或数据差异可以产生同样的结果？</li>
+</ol>
+</section></article><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script><script src="assets/js/demos.js"></script></body></html>

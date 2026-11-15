@@ -1,0 +1,129 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>状态数的选择与分半稳定性 · 生物医学网络科学</title><meta name="description" content="动态功能连接与多层脑网络 · 代码示例：状态数的选择与分半稳定性"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-brain"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html" aria-current="page">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain" open><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a><ol class="sub"><li><a href="dynamic-brain-networks.method-landscape.html"><span class="n">01</span>方法谱系与基本假设</a></li><li><a href="dynamic-brain-networks.sliding-window.html"><span class="n">02</span>滑动窗口相关</a></li><li><a href="dynamic-brain-networks.wavelet-coherence.html"><span class="n">03</span>时频分析与小波相干</a></li><li><a href="dynamic-brain-networks.phase-synchrony.html"><span class="n">04</span>相位同步与瞬时相位方法</a></li><li><a href="dynamic-brain-networks.caps.html"><span class="n">05</span>共激活模式</a></li><li><a href="dynamic-brain-networks.edge-time-series.html"><span class="n">06</span>边时间序列</a></li><li><a href="dynamic-brain-networks.connectivity-states.html"><span class="n">07</span>连接状态</a></li><li><a href="dynamic-brain-networks.hmm.html"><span class="n">08</span>隐马尔可夫模型</a></li><li><a href="dynamic-brain-networks.state-number.html"><span class="n">09</span>状态数的选择与稳定性</a></li><li><a href="dynamic-brain-networks.sampling-variability.html"><span class="n">10</span>有限样本波动与窗口长度</a></li><li><a href="dynamic-brain-networks.null-models.html"><span class="n">11</span>平稳零模型检验</a></li><li><a href="dynamic-brain-networks.multilayer.html"><span class="n">12</span>多层网络</a></li><li><a href="dynamic-brain-networks.flexibility.html"><span class="n">13</span>网络灵活性与动态社团指标</a></li><li><a href="dynamic-brain-networks.sc-fc-coupling.html"><span class="n">14</span>结构–功能耦合</a></li><li><a href="dynamic-brain-networks.electrophysiology.html"><span class="n">15</span>EEG/MEG 网络与微状态</a></li><li><a href="dynamic-brain-networks.reliability.html"><span class="n">16</span>动态指标的重测信度</a></li><li><a href="dynamic-brain-networks.disease-reproducibility.html"><span class="n">17</span>疾病、发育与老化中的动态网络</a></li><li><a href="dynamic-brain-networks.derivations.html"><span class="n">18</span>数学推导与算法</a></li><li><a href="dynamic-brain-networks.frontiers.html"><span class="n">19</span>研究前沿与开放问题</a></li><li><a href="dynamic-brain-networks.biomedical.html"><span class="n">20</span>生物医学应用</a></li><li><a href="dynamic-brain-networks.limitations.html"><span class="n">21</span>适用范围与常见误用</a></li></ol></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="code.html">代码库</a> <span class="sep">/</span> <a href="code.html#brain">脑网络与连接组</a> <span class="sep">/</span> <a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></nav><div class="eyebrow" style="margin-top:14px"><b>Example</b><span>08 / 11</span></div><h1>状态数的选择与分半稳定性</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></dd></div><div><dt>下载</dt><dd><a href="notebooks/dynamic-brain-networks.ipynb" download>Notebook</a> · <a href="notebooks/dynamic-brain-networks.py" download>.py</a></dd></div></dl></header><section class="block prose"><p>对同一组“窗口连接向量”，比较 k = 2..6 的 k-means：(a)
+组内平方和（肘部法则）；(b) 平均轮廓系数； (c)
+分半稳定性：把窗口随机分成两半分别聚类，用匈牙利算法匹配两半的状态中心，报告匹配后中心的平均相关。
+模拟数据有 3 个真实状态（模拟数据，仅用于演示方法）。
+输出解读：轮廓系数在 k = 3 最高，组内平方和在 k = 3
+之后下降明显变缓（肘部）； k 继续增大时多出的“状态”只是把真实状态切碎，k
+= 6 时分半中心已无法一一对应。 任何单一指标都只是参考，真实数据的“最佳
+k”常常不明确，应报告多个 k 下结论是否一致。</p>
+</section><section class="block"><h2><span class="tag">Output</span>输出图</h2><div class="ex-figs"><img src="gallery/dynamic-brain-networks-7-0.png" alt="状态数的选择与分半稳定性：输出图 1" loading="lazy"></div></section><section class="block"><h2><span class="tag">Output</span>文字输出</h2><pre class="ex-out">k = 2：组内平方和   6847.2，平均轮廓系数 0.229，分半中心匹配相关（最差一对）0.99
+k = 3：组内平方和   5467.0，平均轮廓系数 0.252，分半中心匹配相关（最差一对）0.99
+k = 4：组内平方和   5409.2，平均轮廓系数 0.182，分半中心匹配相关（最差一对）0.94
+k = 5：组内平方和   5352.5，平均轮廓系数 0.108，分半中心匹配相关（最差一对）0.95
+k = 6：组内平方和   5309.3，平均轮廓系数 0.024，分半中心匹配相关（最差一对）0.13</pre></section><section class="block prose"><h2><span class="tag">Code</span>代码</h2><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 对同一组“窗口连接向量”，比较 k = 2..6 的 k-means：(a) 组内平方和（肘部法则）；(b) 平均轮廓系数；</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># (c) 分半稳定性：把窗口随机分成两半分别聚类，用匈牙利算法匹配两半的状态中心，报告匹配后中心的平均相关。</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 模拟数据有 3 个真实状态（模拟数据，仅用于演示方法）。</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 输出解读：轮廓系数在 k = 3 最高，组内平方和在 k = 3 之后下降明显变缓（肘部）；</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># k 继续增大时多出的“状态”只是把真实状态切碎，k = 6 时分半中心已无法一一对应。</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># 任何单一指标都只是参考，真实数据的“最佳 k”常常不明确，应报告多个 k 下结论是否一致。</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.cluster.vq <span class="im">import</span> kmeans2</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.spatial.distance <span class="im">import</span> cdist</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.optimize <span class="im">import</span> linear_sum_assignment</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>rng <span class="op">=</span> np.random.default_rng(<span class="dv">5</span>)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>D, n_per <span class="op">=</span> <span class="dv">45</span>, <span class="dv">200</span>                                    <span class="co"># 45 维 ≈ 10 个脑区的上三角</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>centers <span class="op">=</span> rng.normal(<span class="dv">0</span>, <span class="fl">0.5</span>, (<span class="dv">3</span>, D))</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>V <span class="op">=</span> np.vstack([c <span class="op">+</span> <span class="fl">0.45</span> <span class="op">*</span> rng.standard_normal((n_per, D)) <span class="cf">for</span> c <span class="kw">in</span> centers])</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> silhouette(V, lab):</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    Dm <span class="op">=</span> cdist(V, V)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    s <span class="op">=</span> np.zeros(<span class="bu">len</span>(V))</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(V)):</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>        same <span class="op">=</span> lab <span class="op">==</span> lab[i]</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>        a <span class="op">=</span> Dm[i, same].<span class="bu">sum</span>() <span class="op">/</span> <span class="bu">max</span>(same.<span class="bu">sum</span>() <span class="op">-</span> <span class="dv">1</span>, <span class="dv">1</span>)</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>        b <span class="op">=</span> <span class="bu">min</span>(Dm[i, lab <span class="op">==</span> c].mean() <span class="cf">for</span> c <span class="kw">in</span> np.unique(lab) <span class="cf">if</span> c <span class="op">!=</span> lab[i])</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>        s[i] <span class="op">=</span> (b <span class="op">-</span> a) <span class="op">/</span> <span class="bu">max</span>(a, b)</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> s.mean()</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> best_kmeans(V, k, n_init<span class="op">=</span><span class="dv">10</span>):</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    best <span class="op">=</span> <span class="va">None</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> s <span class="kw">in</span> <span class="bu">range</span>(n_init):</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>        cen, lab <span class="op">=</span> kmeans2(V, k, seed<span class="op">=</span>s, minit<span class="op">=</span><span class="st">&quot;++&quot;</span>)</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>        sse <span class="op">=</span> ((V <span class="op">-</span> cen[lab]) <span class="op">**</span> <span class="dv">2</span>).<span class="bu">sum</span>()</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> best <span class="kw">is</span> <span class="va">None</span> <span class="kw">or</span> sse <span class="op">&lt;</span> best[<span class="dv">0</span>]:</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>            best <span class="op">=</span> (sse, cen, lab)</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> best</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>curves <span class="op">=</span> []                                           <span class="co"># 记录各 k 的指标，供作图</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> k <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">2</span>, <span class="dv">7</span>):</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>    sse, cen, lab <span class="op">=</span> best_kmeans(V, k)</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>    idx <span class="op">=</span> rng.permutation(<span class="bu">len</span>(V))<span class="op">;</span> h1, h2 <span class="op">=</span> idx[: <span class="bu">len</span>(V) <span class="op">//</span> <span class="dv">2</span>], idx[<span class="bu">len</span>(V) <span class="op">//</span> <span class="dv">2</span>:]</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>    c1 <span class="op">=</span> best_kmeans(V[h1], k)[<span class="dv">1</span>]<span class="op">;</span> c2 <span class="op">=</span> best_kmeans(V[h2], k)[<span class="dv">1</span>]</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>    R <span class="op">=</span> np.corrcoef(c1, c2)[:k, k:]</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>    row, col <span class="op">=</span> linear_sum_assignment(<span class="op">-</span>R)              <span class="co"># 匈牙利算法：最大化匹配相关</span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>    sil <span class="op">=</span> silhouette(V, lab)</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>    curves.append((k, sse, sil, R[row, col].<span class="bu">min</span>()))</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;k = </span><span class="sc">{</span>k<span class="sc">}</span><span class="ss">：组内平方和 </span><span class="sc">{</span>sse<span class="sc">:8.1f}</span><span class="ss">，平均轮廓系数 </span><span class="sc">{</span>sil<span class="sc">:.3f}</span><span class="ss">，&quot;</span></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>          <span class="ss">f&quot;分半中心匹配相关（最差一对）</span><span class="sc">{</span>R[row, col]<span class="sc">.</span><span class="bu">min</span>()<span class="sc">:.2f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>cv <span class="op">=</span> np.array(curves)</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">4</span>))</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>].plot(cv[:, <span class="dv">0</span>], cv[:, <span class="dv">1</span>], <span class="st">&quot;o-&quot;</span>, color<span class="op">=</span><span class="st">&quot;k&quot;</span>)</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>].<span class="bu">set</span>(xlabel<span class="op">=</span><span class="st">&quot;Number of states k&quot;</span>, ylabel<span class="op">=</span><span class="st">&quot;Within-cluster sum of squares&quot;</span>, title<span class="op">=</span><span class="st">&quot;Elbow criterion&quot;</span>)</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">1</span>].plot(cv[:, <span class="dv">0</span>], cv[:, <span class="dv">2</span>], <span class="st">&quot;o-&quot;</span>, color<span class="op">=</span><span class="st">&quot;#4477AA&quot;</span>, label<span class="op">=</span><span class="st">&quot;mean silhouette&quot;</span>)</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">1</span>].plot(cv[:, <span class="dv">0</span>], cv[:, <span class="dv">3</span>], <span class="st">&quot;s--&quot;</span>, color<span class="op">=</span><span class="st">&quot;#CC6677&quot;</span>, label<span class="op">=</span><span class="st">&quot;split-half match r (worst pair)&quot;</span>)</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">1</span>].axvline(<span class="dv">3</span>, color<span class="op">=</span><span class="st">&quot;gray&quot;</span>, ls<span class="op">=</span><span class="st">&quot;:&quot;</span>, lw<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">1</span>].<span class="bu">set</span>(xlabel<span class="op">=</span><span class="st">&quot;Number of states k&quot;</span>, ylabel<span class="op">=</span><span class="st">&quot;Score&quot;</span>, title<span class="op">=</span><span class="st">&quot;Silhouette peaks at the true k = 3&quot;</span>)</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">1</span>].legend(fontsize<span class="op">=</span><span class="dv">8</span>)</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()<span class="op">;</span> plt.show()</span></code></pre></div>
+</section><section class="block"><h2><span class="tag">Run</span>在浏览器中运行</h2><p class="small">首次加载 Python 环境约需 20–40 秒；可以修改参数后重新运行。</p><div class="cell"><div class="cell-head"><h3>状态数的选择与分半稳定性</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea id="dynamic-brain-networks-cell7" rows="30" spellcheck="false" aria-label="状态数的选择与分半稳定性 代码"># 对同一组“窗口连接向量”，比较 k = 2..6 的 k-means：(a) 组内平方和（肘部法则）；(b) 平均轮廓系数；
+# (c) 分半稳定性：把窗口随机分成两半分别聚类，用匈牙利算法匹配两半的状态中心，报告匹配后中心的平均相关。
+# 模拟数据有 3 个真实状态（模拟数据，仅用于演示方法）。
+# 输出解读：轮廓系数在 k = 3 最高，组内平方和在 k = 3 之后下降明显变缓（肘部）；
+# k 继续增大时多出的“状态”只是把真实状态切碎，k = 6 时分半中心已无法一一对应。
+# 任何单一指标都只是参考，真实数据的“最佳 k”常常不明确，应报告多个 k 下结论是否一致。
+import numpy as np
+from scipy.cluster.vq import kmeans2
+from scipy.spatial.distance import cdist
+from scipy.optimize import linear_sum_assignment
+
+rng = np.random.default_rng(5)
+D, n_per = 45, 200                                    # 45 维 ≈ 10 个脑区的上三角
+centers = rng.normal(0, 0.5, (3, D))
+V = np.vstack([c + 0.45 * rng.standard_normal((n_per, D)) for c in centers])
+
+def silhouette(V, lab):
+    Dm = cdist(V, V)
+    s = np.zeros(len(V))
+    for i in range(len(V)):
+        same = lab == lab[i]
+        a = Dm[i, same].sum() / max(same.sum() - 1, 1)
+        b = min(Dm[i, lab == c].mean() for c in np.unique(lab) if c != lab[i])
+        s[i] = (b - a) / max(a, b)
+    return s.mean()
+
+def best_kmeans(V, k, n_init=10):
+    best = None
+    for s in range(n_init):
+        cen, lab = kmeans2(V, k, seed=s, minit=&quot;++&quot;)
+        sse = ((V - cen[lab]) ** 2).sum()
+        if best is None or sse &lt; best[0]:
+            best = (sse, cen, lab)
+    return best
+
+curves = []                                           # 记录各 k 的指标，供作图
+for k in range(2, 7):
+    sse, cen, lab = best_kmeans(V, k)
+    idx = rng.permutation(len(V)); h1, h2 = idx[: len(V) // 2], idx[len(V) // 2:]
+    c1 = best_kmeans(V[h1], k)[1]; c2 = best_kmeans(V[h2], k)[1]
+    R = np.corrcoef(c1, c2)[:k, k:]
+    row, col = linear_sum_assignment(-R)              # 匈牙利算法：最大化匹配相关
+    sil = silhouette(V, lab)
+    curves.append((k, sse, sil, R[row, col].min()))
+    print(f&quot;k = {k}：组内平方和 {sse:8.1f}，平均轮廓系数 {sil:.3f}，&quot;
+          f&quot;分半中心匹配相关（最差一对）{R[row, col].min():.2f}&quot;)
+
+import matplotlib.pyplot as plt
+cv = np.array(curves)
+fig, axes = plt.subplots(1, 2, figsize=(10, 4))
+axes[0].plot(cv[:, 0], cv[:, 1], &quot;o-&quot;, color=&quot;k&quot;)
+axes[0].set(xlabel=&quot;Number of states k&quot;, ylabel=&quot;Within-cluster sum of squares&quot;, title=&quot;Elbow criterion&quot;)
+axes[1].plot(cv[:, 0], cv[:, 2], &quot;o-&quot;, color=&quot;#4477AA&quot;, label=&quot;mean silhouette&quot;)
+axes[1].plot(cv[:, 0], cv[:, 3], &quot;s--&quot;, color=&quot;#CC6677&quot;, label=&quot;split-half match r (worst pair)&quot;)
+axes[1].axvline(3, color=&quot;gray&quot;, ls=&quot;:&quot;, lw=1)
+axes[1].set(xlabel=&quot;Number of states k&quot;, ylabel=&quot;Score&quot;, title=&quot;Silhouette peaks at the true k = 3&quot;)
+axes[1].legend(fontsize=8)
+plt.tight_layout(); plt.show()</textarea><div class="out" aria-live="polite"></div></div></section><nav class="pager"><a href="ex-dynamic-brain-networks-6.html"><small>上一个示例</small>高斯隐马尔可夫模型（HMM）：前向–后向与 EM</a><a href="ex-dynamic-brain-networks-8.html"><small>下一个示例</small>多层模块度与网络灵活性</a></nav></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

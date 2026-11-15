@@ -1,0 +1,10 @@
+{
+ "topic": "reporting-frontiers",
+ "index": 7,
+ "title": "持续同调入门——加权网络在阈值过滤下的贝蒂曲线",
+ "hash": "81a2b9d1691613ac7d16efa27f27dd86f3f35cf8",
+ "ok": true,
+ "figures": 1,
+ "stdout": "环状网络：beta_1 = 1 持续的密度区间长度 ≈ 0.50（占过滤步数比例），beta_1 最大值 1\n打乱权重：beta_1 最大值 8，出现在密度 0.26",
+ "stderr": ""
+}

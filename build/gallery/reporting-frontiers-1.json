@@ -1,0 +1,10 @@
+{
+ "topic": "reporting-frontiers",
+ "index": 1,
+ "title": "社团检测与已知分组的一致性",
+ "hash": "8566c4526e96868d3a979c39cf85d35bf1542fcd",
+ "ok": true,
+ "figures": 1,
+ "stdout": "社团数 = 4，Q = 0.444\n社团0: 大小 11，Mr. Hi 派 11 人，Officer 派 0 人\n社团1: 大小 5，Mr. Hi 派 5 人，Officer 派 0 人\n社团2: 大小 14，Mr. Hi 派 1 人，Officer 派 13 人\n社团3: 大小 4，Mr. Hi 派 0 人，Officer 派 4 人",
+ "stderr": ""
+}

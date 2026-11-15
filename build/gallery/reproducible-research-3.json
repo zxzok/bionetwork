@@ -1,0 +1,10 @@
+{
+ "topic": "reproducible-research",
+ "index": 3,
+ "title": "多元宇宙分析——把所有合理的网络构建选择组合起来同时报告",
+ "hash": "4ceba0ec64d88d4e4af252994ed8238b65c5274c",
+ "ok": true,
+ "figures": 1,
+ "stdout": "设定曲线（按效应量排序）：\n  spearman 密度 0.10 efficiency 差值 -0.1040  p = 0.040 *\n  spearman 密度 0.15 efficiency 差值 -0.1015  p = 0.010 *\n  pearson  密度 0.10 efficiency 差值 -0.0956  p = 0.035 *\n  pearson  密度 0.15 efficiency 差值 -0.0657  p = 0.179 \n  spearman 密度 0.30 efficiency 差值 -0.0542  p = 0.015 *\n  spearman 密度 0.20 efficiency 差值 -0.0511  p = 0.144 \n  pearson  密度 0.30 efficiency 差值 -0.0498  p = 0.030 *\n  partial  密度 0.20 efficiency 差值 -0.0433  p = 0.114 \n  partial  密度 0.15 efficiency 差值 -0.0397  p = 0.244 \n  partial  密度 0.10 efficiency 差值 -0.0335  p = 0.433 \n  partial  密度 0.10 clustering 差值 -0.0281  p = 0.697 \n  spearman 密度 0.20 clustering 差值 -0.0209  p = 0.766 \n  partial  密度 0.15 clustering 差值 -0.0129  p = 0.891 \n  spearman 密度 0.30 clustering 差值 -0.0006  p = 0.995 \n  partial  密度 0.30 clustering 差值 +0.0018  p = 0.995 \n  pearson  密度 0.20 efficiency 差值 +0.0022  p = 0.935 \n  partial  密度 0.30 efficiency 差值 +0.0031  p = 0.652 \n  pearson  密度 0.30 clustering 差值 +0.0095  p = 0.881 \n  pearson  密度 0.20 clustering 差值 +0.0401  p = 0.597 \n  pearson  密度 0.10 clustering 差值 +0.0929  p = 0.249 \n  partial  密度 0.20 clustering 差值 +0.0946  p = 0.244 \n  spearman 密度 0.15 clustering 差值 +0.1095  p = 0.169 \n  pearson  密度 0.15 clustering 差值 +0.1150  p = 0.129 \n  spearman 密度 0.10 clustering 差值 +0.1440  p = 0.055 \n显著宇宙：5/24；效应量中位数 -0.0169；效应为正的宇宙比例 0.42",
+ "stderr": ""
+}

@@ -1,0 +1,10 @@
+{
+ "topic": "network-basics",
+ "index": 4,
+ "title": "邻接矩阵的乘方——游走、共同邻居与三角形",
+ "hash": "6a5eba2b4e939b50fc77234db5b6d5c9a5c69ee1",
+ "ok": true,
+ "figures": 1,
+ "stdout": "A^2 =\n [[2 1 1 1]\n [1 2 1 1]\n [1 1 3 0]\n [1 1 0 1]]\nA^3 =\n [[2 3 4 1]\n [3 2 4 1]\n [4 4 2 3]\n [1 1 3 0]]\nA^2 的对角元: [2 2 3 1]  度: [2, 2, 3, 1]\na 与 d 的共同邻居数 (A^2)_ad = 1 ；NetworkX: 1\n三角形数 tr(A^3)/6 = 1 ；NetworkX: 1\n有向图中 TF1 经两步到达 g 的路径数 = 1 （TF1→TF2→g，前馈环的间接支路）",
+ "stderr": ""
+}

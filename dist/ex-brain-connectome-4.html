@@ -1,0 +1,147 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>加权脑网络指标与权重归一化 · 生物医学网络科学</title><meta name="description" content="脑连接组：结构与功能连接 · 代码示例：加权脑网络指标与权重归一化"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-brain"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html" aria-current="page">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain" open><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a><ol class="sub"><li><a href="brain-connectome.connectome-concepts.html"><span class="n">01</span>连接组：结构连接与功能连接</a></li><li><a href="brain-connectome.parcellation.html"><span class="n">02</span>脑图谱与节点定义</a></li><li><a href="brain-connectome.structural-connectivity.html"><span class="n">03</span>结构连接：弥散 MRI 与纤维追踪</a></li><li><a href="brain-connectome.functional-connectivity.html"><span class="n">04</span>功能连接估计：相关与偏相关</a></li><li><a href="brain-connectome.preprocessing.html"><span class="n">05</span>预处理对功能连接的影响</a></li><li><a href="brain-connectome.effective-connectivity.html"><span class="n">06</span>有效连接：动态因果模型与格兰杰因果</a></li><li><a href="brain-connectome.thresholding.html"><span class="n">07</span>阈值与加权</a></li><li><a href="brain-connectome.weighted-metrics.html"><span class="n">08</span>加权脑网络指标与归一化</a></li><li><a href="brain-connectome.topology.html"><span class="n">09</span>拓扑指标：小世界、模块、枢纽与富人俱乐部</a></li><li><a href="brain-connectome.functional-systems.html"><span class="n">10</span>模块与功能系统</a></li><li><a href="brain-connectome.spatial-embedding.html"><span class="n">11</span>空间嵌入与布线代价</a></li><li><a href="brain-connectome.gradients.html"><span class="n">12</span>连接组梯度</a></li><li><a href="brain-connectome.group-comparison.html"><span class="n">13</span>组间比较与统计验证</a></li><li><a href="brain-connectome.individual-differences.html"><span class="n">14</span>个体指纹与个体差异</a></li><li><a href="brain-connectome.lesion-network-mapping.html"><span class="n">15</span>病变网络映射</a></li><li><a href="brain-connectome.pipeline.html"><span class="n">16</span>从 fMRI 到结论：分析流程与选择</a></li><li><a href="brain-connectome.derivations.html"><span class="n">17</span>数学推导与算法</a></li><li><a href="brain-connectome.frontiers.html"><span class="n">18</span>研究前沿与开放问题</a></li><li><a href="brain-connectome.biomedical.html"><span class="n">19</span>生物医学应用</a></li><li><a href="brain-connectome.limitations.html"><span class="n">20</span>适用范围与常见误用</a></li></ol></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="code.html">代码库</a> <span class="sep">/</span> <a href="code.html#brain">脑网络与连接组</a> <span class="sep">/</span> <a href="brain-connectome.html">脑连接组：结构与功能连接</a></nav><div class="eyebrow" style="margin-top:14px"><b>Example</b><span>05 / 10</span></div><h1>加权脑网络指标与权重归一化</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="brain-connectome.html">脑连接组：结构与功能连接</a></dd></div><div><dt>下载</dt><dd><a href="notebooks/brain-connectome.ipynb" download>Notebook</a> · <a href="notebooks/brain-connectome.py" download>.py</a></dd></div></dl></header><section class="block prose"><p>用模拟的 4 系统功能连接矩阵（只保留正相关）构建加权网络，比较： 强度
+s_i、Onnela 加权聚集系数（networkx 的 clustering(weight=…)
+即此定义，权重先除以最大权重）、 加权全局效率（边长取 1/w，Dijkstra
+最短路径），以及“对所有权重乘同一常数”后各指标是否改变。
+输出解读：加权聚集系数对整体缩放不变（已按最大权重归一化）；加权效率随整体缩放成比例变化，
+因此组间比较加权效率前要决定是否归一化（如除以最大权重或与保持强度的零模型之比），否则“效率差异”可能只是整体
+FC 强度差异。</p>
+</section><section class="block"><h2><span class="tag">Output</span>输出图</h2><div class="ex-figs"><img src="gallery/brain-connectome-4-0.png" alt="加权脑网络指标与权重归一化：输出图 1" loading="lazy"></div></section><section class="block"><h2><span class="tag">Output</span>文字输出</h2><pre class="ex-out">整体缩放 ×1.0: 平均强度 = 5.473，加权聚集 = 0.1965，加权全局效率 = 0.1728
+整体缩放 ×0.7: 平均强度 = 3.831，加权聚集 = 0.1965，加权全局效率 = 0.1210
+强度最高的 5 个节点： [15, 10, 31, 0, 35]
+提示：权重整体乘 0.7，效率也乘 0.7；聚集系数不变。</pre></section><section class="block prose"><h2><span class="tag">Code</span>代码</h2><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 用模拟的 4 系统功能连接矩阵（只保留正相关）构建加权网络，比较：</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 强度 s_i、Onnela 加权聚集系数（networkx 的 clustering(weight=...) 即此定义，权重先除以最大权重）、</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 加权全局效率（边长取 1/w，Dijkstra 最短路径），以及“对所有权重乘同一常数”后各指标是否改变。</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 输出解读：加权聚集系数对整体缩放不变（已按最大权重归一化）；加权效率随整体缩放成比例变化，</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 因此组间比较加权效率前要决定是否归一化（如除以最大权重或与保持强度的零模型之比），否则“效率差异”可能只是整体 FC 强度差异。</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> networkx <span class="im">as</span> nx</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> simulate_fc(n_mod<span class="op">=</span><span class="dv">4</span>, per<span class="op">=</span><span class="dv">10</span>, T<span class="op">=</span><span class="dv">300</span>, seed<span class="op">=</span><span class="dv">0</span>):</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    rng <span class="op">=</span> np.random.default_rng(seed)        <span class="co"># 模拟数据，仅用于演示方法</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    labels <span class="op">=</span> np.repeat(np.arange(n_mod), per)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    sys_sig <span class="op">=</span> rng.standard_normal((n_mod, T))</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    load <span class="op">=</span> rng.uniform(<span class="fl">0.4</span>, <span class="fl">1.0</span>, size<span class="op">=</span>n_mod <span class="op">*</span> per)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    X <span class="op">=</span> load[:, <span class="va">None</span>] <span class="op">*</span> sys_sig[labels] <span class="op">+</span> <span class="fl">0.3</span> <span class="op">*</span> rng.standard_normal(T) <span class="op">+</span> rng.standard_normal((n_mod <span class="op">*</span> per, T))</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.corrcoef(X), labels</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> weighted_graph(W):</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    G <span class="op">=</span> nx.Graph()</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    N <span class="op">=</span> W.shape[<span class="dv">0</span>]</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    G.add_nodes_from(<span class="bu">range</span>(N))</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(N):</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(i <span class="op">+</span> <span class="dv">1</span>, N):</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> W[i, j] <span class="op">&gt;</span> <span class="dv">0</span>:</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>                G.add_edge(i, j, weight<span class="op">=</span>W[i, j], length<span class="op">=</span><span class="fl">1.0</span> <span class="op">/</span> W[i, j])</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> G</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> weighted_global_efficiency(G):</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    N <span class="op">=</span> G.number_of_nodes()</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    tot <span class="op">=</span> <span class="fl">0.0</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i, dist <span class="kw">in</span> nx.all_pairs_dijkstra_path_length(G, weight<span class="op">=</span><span class="st">&quot;length&quot;</span>):</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>        tot <span class="op">+=</span> <span class="bu">sum</span>(<span class="fl">1.0</span> <span class="op">/</span> d <span class="cf">for</span> j, d <span class="kw">in</span> dist.items() <span class="cf">if</span> j <span class="op">!=</span> i)</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> tot <span class="op">/</span> (N <span class="op">*</span> (N <span class="op">-</span> <span class="dv">1</span>))</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>R, labels <span class="op">=</span> simulate_fc()</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>W <span class="op">=</span> np.clip(R, <span class="dv">0</span>, <span class="va">None</span>)                       <span class="co"># 只保留正权（负权需另行处理）</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>np.fill_diagonal(W, <span class="dv">0</span>)</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> scale <span class="kw">in</span> [<span class="fl">1.0</span>, <span class="fl">0.7</span>]:                      <span class="co"># 0.7：模拟整体 FC 减弱 30% 的“另一组”</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>    G <span class="op">=</span> weighted_graph(scale <span class="op">*</span> W)</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>    s <span class="op">=</span> np.array([d <span class="cf">for</span> _, d <span class="kw">in</span> G.degree(weight<span class="op">=</span><span class="st">&quot;weight&quot;</span>)])</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>    Cw <span class="op">=</span> nx.average_clustering(G, weight<span class="op">=</span><span class="st">&quot;weight&quot;</span>)</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>    Ew <span class="op">=</span> weighted_global_efficiency(G)</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;整体缩放 ×</span><span class="sc">{</span>scale<span class="sc">}</span><span class="ss">: 平均强度 = </span><span class="sc">{</span>s<span class="sc">.</span>mean()<span class="sc">:.3f}</span><span class="ss">，加权聚集 = </span><span class="sc">{</span>Cw<span class="sc">:.4f}</span><span class="ss">，加权全局效率 = </span><span class="sc">{</span>Ew<span class="sc">:.4f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>G <span class="op">=</span> weighted_graph(W)</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> np.array([d <span class="cf">for</span> _, d <span class="kw">in</span> G.degree(weight<span class="op">=</span><span class="st">&quot;weight&quot;</span>)])</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;强度最高的 5 个节点：&quot;</span>, np.argsort(s)[::<span class="op">-</span><span class="dv">1</span>][:<span class="dv">5</span>].tolist())</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;提示：权重整体乘 0.7，效率也乘 0.7；聚集系数不变。&quot;</span>)</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>scales <span class="op">=</span> np.linspace(<span class="fl">0.4</span>, <span class="fl">1.0</span>, <span class="dv">7</span>)</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>met <span class="op">=</span> []</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> sc <span class="kw">in</span> scales:</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>    Gs <span class="op">=</span> weighted_graph(sc <span class="op">*</span> W)</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>    met.append([np.mean([d <span class="cf">for</span> _, d <span class="kw">in</span> Gs.degree(weight<span class="op">=</span><span class="st">&quot;weight&quot;</span>)]),</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>                nx.average_clustering(Gs, weight<span class="op">=</span><span class="st">&quot;weight&quot;</span>), weighted_global_efficiency(Gs)])</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>met <span class="op">=</span> np.array(met) <span class="op">/</span> np.array(met)[<span class="op">-</span><span class="dv">1</span>]</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">4</span>))</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>im <span class="op">=</span> axes[<span class="dv">0</span>].imshow(W, cmap<span class="op">=</span><span class="st">&quot;Reds&quot;</span>, vmin<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>fig.colorbar(im, ax<span class="op">=</span>axes[<span class="dv">0</span>], shrink<span class="op">=</span><span class="fl">0.8</span>, label<span class="op">=</span><span class="st">&quot;weight (positive r)&quot;</span>)</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>].<span class="bu">set</span>(title<span class="op">=</span><span class="st">&quot;Positive-weight FC (sorted by system)&quot;</span>, xlabel<span class="op">=</span><span class="st">&quot;Region&quot;</span>, ylabel<span class="op">=</span><span class="st">&quot;Region&quot;</span>)</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> k, (mk, ls, lab) <span class="kw">in</span> <span class="bu">enumerate</span>([(<span class="st">&quot;o&quot;</span>, <span class="st">&quot;-&quot;</span>, <span class="st">&quot;mean strength&quot;</span>), (<span class="st">&quot;s&quot;</span>, <span class="st">&quot;--&quot;</span>, <span class="st">&quot;weighted clustering&quot;</span>),</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>                                   (<span class="st">&quot;^&quot;</span>, <span class="st">&quot;:&quot;</span>, <span class="st">&quot;weighted global efficiency&quot;</span>)]):</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>    axes[<span class="dv">1</span>].plot(scales, met[:, k], marker<span class="op">=</span>mk, ls<span class="op">=</span>ls, label<span class="op">=</span>lab)</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">1</span>].<span class="bu">set</span>(xlabel<span class="op">=</span><span class="st">&quot;Global weight scaling factor&quot;</span>, ylabel<span class="op">=</span><span class="st">&quot;Metric / value at scale 1&quot;</span>,</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>            title<span class="op">=</span><span class="st">&quot;Clustering is scale-invariant; efficiency is not&quot;</span>)</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">1</span>].legend(fontsize<span class="op">=</span><span class="dv">8</span>)</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()<span class="op">;</span> plt.show()</span></code></pre></div>
+</section><section class="block"><h2><span class="tag">Run</span>在浏览器中运行</h2><p class="small">首次加载 Python 环境约需 20–40 秒；可以修改参数后重新运行。</p><div class="cell"><div class="cell-head"><h3>加权脑网络指标与权重归一化</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea id="brain-connectome-cell4" rows="30" spellcheck="false" aria-label="加权脑网络指标与权重归一化 代码"># 用模拟的 4 系统功能连接矩阵（只保留正相关）构建加权网络，比较：
+# 强度 s_i、Onnela 加权聚集系数（networkx 的 clustering(weight=...) 即此定义，权重先除以最大权重）、
+# 加权全局效率（边长取 1/w，Dijkstra 最短路径），以及“对所有权重乘同一常数”后各指标是否改变。
+# 输出解读：加权聚集系数对整体缩放不变（已按最大权重归一化）；加权效率随整体缩放成比例变化，
+# 因此组间比较加权效率前要决定是否归一化（如除以最大权重或与保持强度的零模型之比），否则“效率差异”可能只是整体 FC 强度差异。
+import numpy as np
+import networkx as nx
+
+def simulate_fc(n_mod=4, per=10, T=300, seed=0):
+    rng = np.random.default_rng(seed)        # 模拟数据，仅用于演示方法
+    labels = np.repeat(np.arange(n_mod), per)
+    sys_sig = rng.standard_normal((n_mod, T))
+    load = rng.uniform(0.4, 1.0, size=n_mod * per)
+    X = load[:, None] * sys_sig[labels] + 0.3 * rng.standard_normal(T) + rng.standard_normal((n_mod * per, T))
+    return np.corrcoef(X), labels
+
+def weighted_graph(W):
+    G = nx.Graph()
+    N = W.shape[0]
+    G.add_nodes_from(range(N))
+    for i in range(N):
+        for j in range(i + 1, N):
+            if W[i, j] &gt; 0:
+                G.add_edge(i, j, weight=W[i, j], length=1.0 / W[i, j])
+    return G
+
+def weighted_global_efficiency(G):
+    N = G.number_of_nodes()
+    tot = 0.0
+    for i, dist in nx.all_pairs_dijkstra_path_length(G, weight=&quot;length&quot;):
+        tot += sum(1.0 / d for j, d in dist.items() if j != i)
+    return tot / (N * (N - 1))
+
+R, labels = simulate_fc()
+W = np.clip(R, 0, None)                       # 只保留正权（负权需另行处理）
+np.fill_diagonal(W, 0)
+
+for scale in [1.0, 0.7]:                      # 0.7：模拟整体 FC 减弱 30% 的“另一组”
+    G = weighted_graph(scale * W)
+    s = np.array([d for _, d in G.degree(weight=&quot;weight&quot;)])
+    Cw = nx.average_clustering(G, weight=&quot;weight&quot;)
+    Ew = weighted_global_efficiency(G)
+    print(f&quot;整体缩放 ×{scale}: 平均强度 = {s.mean():.3f}，加权聚集 = {Cw:.4f}，加权全局效率 = {Ew:.4f}&quot;)
+
+G = weighted_graph(W)
+s = np.array([d for _, d in G.degree(weight=&quot;weight&quot;)])
+print(&quot;强度最高的 5 个节点：&quot;, np.argsort(s)[::-1][:5].tolist())
+print(&quot;提示：权重整体乘 0.7，效率也乘 0.7；聚集系数不变。&quot;)
+
+import matplotlib.pyplot as plt
+scales = np.linspace(0.4, 1.0, 7)
+met = []
+for sc in scales:
+    Gs = weighted_graph(sc * W)
+    met.append([np.mean([d for _, d in Gs.degree(weight=&quot;weight&quot;)]),
+                nx.average_clustering(Gs, weight=&quot;weight&quot;), weighted_global_efficiency(Gs)])
+met = np.array(met) / np.array(met)[-1]
+fig, axes = plt.subplots(1, 2, figsize=(10, 4))
+im = axes[0].imshow(W, cmap=&quot;Reds&quot;, vmin=0)
+fig.colorbar(im, ax=axes[0], shrink=0.8, label=&quot;weight (positive r)&quot;)
+axes[0].set(title=&quot;Positive-weight FC (sorted by system)&quot;, xlabel=&quot;Region&quot;, ylabel=&quot;Region&quot;)
+for k, (mk, ls, lab) in enumerate([(&quot;o&quot;, &quot;-&quot;, &quot;mean strength&quot;), (&quot;s&quot;, &quot;--&quot;, &quot;weighted clustering&quot;),
+                                   (&quot;^&quot;, &quot;:&quot;, &quot;weighted global efficiency&quot;)]):
+    axes[1].plot(scales, met[:, k], marker=mk, ls=ls, label=lab)
+axes[1].set(xlabel=&quot;Global weight scaling factor&quot;, ylabel=&quot;Metric / value at scale 1&quot;,
+            title=&quot;Clustering is scale-invariant; efficiency is not&quot;)
+axes[1].legend(fontsize=8)
+plt.tight_layout(); plt.show()</textarea><div class="out" aria-live="polite"></div></div></section><nav class="pager"><a href="ex-brain-connectome-3.html"><small>上一个示例</small>格兰杰因果——神经层面正确，经过区域不同的血流动力学延迟后可能反向</a><a href="ex-brain-connectome-5.html"><small>下一个示例</small>含负权的模块度与功能角色划分（Guimerà–Amaral 功能制图）</a></nav></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

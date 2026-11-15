@@ -1,0 +1,97 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>方法家族全景：假设与数据要求 · 生物医学网络科学</title><meta name="description" content="基因调控网络推断与共表达分析 · 方法家族全景：假设与数据要求"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-molecular"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html" aria-current="page">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular" open><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a><ol class="sub"><li><a href="gene-network-inference.inference-problem.html"><span class="n">01</span>网络推断问题：从“一起变化”到“谁调控谁”</a></li><li><a href="gene-network-inference.method-landscape.html" aria-current="page"><span class="n">02</span>方法家族全景：假设与数据要求</a></li><li><a href="gene-network-inference.wgcna.html"><span class="n">03</span>WGCNA：加权基因共表达网络分析</a></li><li><a href="gene-network-inference.module-interpretation.html"><span class="n">04</span>解读共表达模块时要追问的三件事</a></li><li><a href="gene-network-inference.module-preservation.html"><span class="n">05</span>模块保守性与可重复性检验</a></li><li><a href="gene-network-inference.differential-coexpression.html"><span class="n">06</span>差异共表达分析</a></li><li><a href="gene-network-inference.partial-correlation-shrinkage.html"><span class="n">07</span>偏相关、高斯图模型与收缩估计</a></li><li><a href="gene-network-inference.beyond-correlation.html"><span class="n">08</span>超越相关：信息论、树模型与单细胞方法</a></li><li><a href="gene-network-inference.bayesian-networks.html"><span class="n">09</span>贝叶斯网络与因果结构学习</a></li><li><a href="gene-network-inference.dynamic-models.html"><span class="n">10</span>动力学模型、时间序列与单细胞拟时序</a></li><li><a href="gene-network-inference.prior-knowledge.html"><span class="n">11</span>先验知识整合：TF–靶基因数据库、ChIP-seq 与 ATAC</a></li><li><a href="gene-network-inference.evaluation.html"><span class="n">12</span>推断结果的评估</a></li><li><a href="gene-network-inference.derivations.html"><span class="n">13</span>数学推导与算法</a></li><li><a href="gene-network-inference.frontiers.html"><span class="n">14</span>研究前沿与开放问题</a></li><li><a href="gene-network-inference.biomedical.html"><span class="n">15</span>生物医学应用</a></li><li><a href="gene-network-inference.limitations.html"><span class="n">16</span>适用范围与常见误用</a></li></ol></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><div class="lec-grid"><article style="min-width:0"><header class="doc-head"><nav class="crumb"><a href="d-molecular.html">分子网络与基因调控</a> <span class="sep">/</span> <a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></nav><div class="eyebrow" style="margin-top:14px"><b>基因调控网络推断与共表达分析</b><span>02 / 16</span></div><h1>方法家族全景：假设与数据要求</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></dd></div><div><dt>阅读</dt><dd>约 2 分钟</dd></div></dl></header><section class="block prose" id="notes"><p>网络推断方法有上百种，但大致可归入六个家族。DREAM5 评估（Marbach 等,
+2012）按类似思路把参赛方法分为回归、互信息、相关、贝叶斯网络、其他与元方法几类，并发现同一家族的方法往往犯相似的错误。下表按“边的统计含义”归纳各家族的核心假设与数据要求。</p>
+<table style="width:99%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th>家族</th>
+<th>代表方法</th>
+<th>核心假设</th>
+<th>数据要求</th>
+<th>方向</th>
+<th>计算规模</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>相关 / 共表达</td>
+<td>皮尔逊、斯皮尔曼、WGCNA</td>
+<td>关联近似单调；模块由共同因子驱动</td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≳</mo><mn>20</mn></mrow><annotation encoding="application/x-tex">n\gtrsim 20</annotation></semantics></math>
+的横断面样本</td>
+<td>无</td>
+<td>全基因组，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false" form="prefix">(</mo><msup><mi>p</mi><mn>2</mn></msup><mi>n</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">O(p^2 n)</annotation></semantics></math></td>
+</tr>
+<tr>
+<td>偏相关 / 高斯图模型</td>
+<td>收缩偏相关（GeneNet）、图形 LASSO、邻域选择</td>
+<td>多元正态；精度矩阵稀疏</td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+可小于
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>，但需正则化</td>
+<td>无</td>
+<td>数千基因</td>
+</tr>
+<tr>
+<td>信息论</td>
+<td>互信息、CLR、ARACNe、MRNET、PIDC</td>
+<td>依赖可由 MI 刻画；DPI 时假设无三元直接环</td>
+<td>估计 MI 需要较多样本（数百）</td>
+<td>无</td>
+<td>全基因组</td>
+</tr>
+<tr>
+<td>回归 / 树模型</td>
+<td>LASSO、Inferelator、GENIE3、GRNBoost2</td>
+<td>靶基因可由少数调控因子预测</td>
+<td>需要候选调控因子列表</td>
+<td>由先验给定</td>
+<td>全基因组，可并行</td>
+</tr>
+<tr>
+<td>贝叶斯网络</td>
+<td>静态 BN、动态 BN、模块网络</td>
+<td>有向无环（静态）；局部条件分布形式</td>
+<td>观测数据只能确定等价类；干预或时间数据更好</td>
+<td>有（部分可识别）</td>
+<td>数十到数百基因</td>
+</tr>
+<tr>
+<td>动力学模型</td>
+<td>线性 ODE、NIR、SCODE、SINCERITIES</td>
+<td>系统由微分方程驱动；稳态或时间导数可估计</td>
+<td>扰动后稳态或时间序列/拟时序</td>
+<td>有</td>
+<td>数十到数百基因</td>
+</tr>
+</tbody>
+</table></div>
+<p>各家族之间并非互斥：Inferelator 把回归写成 ODE 的离散形式；SCENIC
+先用树模型找共表达靶基因，再用基序数据库过滤；PIDC
+是信息论方法，但专为单细胞设计。</p>
+<h3 id="怎样选择">怎样选择</h3>
+<ul>
+<li><strong>目标是降维和找与性状相关的基因程序</strong>：用共表达网络（WGCNA）即可，不需要调控方向；重点放在模块的稳健性与混杂控制上（见<a
+href="gene-network-inference.module-interpretation.html">解读共表达模块</a>与<a
+href="gene-network-inference.module-preservation.html">模块保守性</a>）。</li>
+<li><strong>目标是区分直接与间接关联</strong>：偏相关或
+ARACNe/CLR；样本少于基因时必须收缩或正则化。</li>
+<li><strong>目标是找某细胞状态的关键转录因子</strong>：回归/树模型加先验知识（SCENIC
+一类），并用转录因子活性而非 mRNA 水平做下游分析。</li>
+<li><strong>目标是因果方向与动力学预测</strong>：需要扰动或时间数据，配合贝叶斯网络或
+ODE 模型；纯横断面观测数据无法单独完成。</li>
+</ul>
+<div class="callout-warn">
+<p>DREAM5
+的一个结论是：没有哪个家族在所有数据上都最好，不同家族各有偏好的网络结构（例如对级联、前馈环的识别能力不同），把多种方法的排序取平均往往最稳健（见
+<a href="paper-marbach2012_wisdom.html">Marbach
+2012</a>）。实际分析中，若关键结论只在一种方法下成立，应当视为不稳健。</p>
+</div>
+</section><section class="block related-box"><h2>继续阅读</h2><ul><li>交互可视化：<a href="lab.html#ffl">前馈环的滤波作用</a></li><li>代码示例：<a href="ex-gene-network-inference-0.html">软阈值幂次 β 的无标度拟合准则</a>、<a href="ex-gene-network-inference-1.html">拓扑重叠矩阵（TOM）与层次聚类划分模块</a>、<a href="ex-gene-network-inference-2.html">模块特征基因、模块–性状关联与 hub 基因</a>、<a href="ex-gene-network-inference-3.html">互信息网络、CLR 背景校正与 ARACNe 的数据处理不等式</a></li><li>论文精读：<a href="paper-shenorr2002_ecoli.html">大肠杆菌转录调控网络中的网络基序</a>、<a href="paper-zhang2005_wgcna.html">加权基因共表达网络分析的一般框架</a>、<a href="paper-marbach2012_wisdom.html">群体智慧实现稳健的基因调控网络推断</a></li></ul></section><nav class="pager"><a href="gene-network-inference.inference-problem.html"><small>上一页</small>网络推断问题：从“一起变化”到“谁调控谁”</a><a href="gene-network-inference.wgcna.html"><small>下一页</small>WGCNA：加权基因共表达网络分析</a></nav></article><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

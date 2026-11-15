@@ -1,0 +1,147 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>阈值化相关网络中的同配性——模块大小如何制造正的 r · 生物医学网络科学</title><meta name="description" content="度相关性与网络结构的高阶统计 · 代码示例：阈值化相关网络中的同配性——模块大小如何制造正的 r"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-theory"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html" aria-current="page">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory" open><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a><ol class="sub"><li><a href="degree-correlations.joint-degree-distribution.html"><span class="n">01</span>联合度分布与条件度分布</a></li><li><a href="degree-correlations.knn-function.html"><span class="n">02</span>邻居平均度函数与相关指数</a></li><li><a href="degree-correlations.assortativity-coefficient.html"><span class="n">03</span>度相关系数 r</a></li><li><a href="degree-correlations.structural-cutoff.html"><span class="n">04</span>结构截断与结构性异配</a></li><li><a href="degree-correlations.randomization-tests.html"><span class="n">05</span>度保持随机化检验</a></li><li><a href="degree-correlations.generating-correlated-networks.html"><span class="n">06</span>生成具有度相关的网络</a></li><li><a href="degree-correlations.rich-club.html"><span class="n">07</span>富人俱乐部系数及其归一化</a></li><li><a href="degree-correlations.clustering-spectrum.html"><span class="n">08</span>聚集谱 C(k) 与层次模块性</a></li><li><a href="degree-correlations.k-core.html"><span class="n">09</span>k-核分解</a></li><li><a href="degree-correlations.impact-on-dynamics.html"><span class="n">10</span>度相关对网络过程的影响</a></li><li><a href="degree-correlations.derivations.html"><span class="n">11</span>数学推导与算法</a></li><li><a href="degree-correlations.biomedical.html"><span class="n">12</span>生物医学应用</a></li><li><a href="degree-correlations.limitations.html"><span class="n">13</span>适用范围与常见误用</a></li></ol></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="code.html">代码库</a> <span class="sep">/</span> <a href="code.html#theory">网络基础理论</a> <span class="sep">/</span> <a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></nav><div class="eyebrow" style="margin-top:14px"><b>Example</b><span>09 / 09</span></div><h1>阈值化相关网络中的同配性——模块大小如何制造正的 r</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></dd></div><div><dt>下载</dt><dd><a href="notebooks/degree-correlations.ipynb" download>Notebook</a> · <a href="notebooks/degree-correlations.py" download>.py</a></dd></div></dl></header><section class="block prose"><p>模拟 60 个“脑区”的时间序列：4 个功能系统，大小分别为 30、15、10、5
+个脑区，系统内共享一个波动。
+用比例阈值保留最强的若干比例相关，得到二值网络，计算度同配
+r，并与保度零模型比较； 再用 Newman (2003)
+的类别同配系数检查边是否偏向连接同一系统的脑区。
+解读：大系统里的脑区仅因“同伴多”而度高，且主要连向同系统（同样度高）的脑区，于是
+r &gt; 0；
+这种同配来自模块大小与相关的传递性，并随阈值（密度）明显变化，不对应解剖上的“枢纽互连”。</p>
+</section><section class="block"><h2><span class="tag">Output</span>输出图</h2><div class="ex-figs"><img src="gallery/degree-correlations-8-0.png" alt="阈值化相关网络中的同配性——模块大小如何制造正的 r：输出图 1" loading="lazy"></div></section><section class="block"><h2><span class="tag">Output</span>文字输出</h2><pre class="ex-out">密度 0.05: 度同配 r = +0.058
+密度 0.10: 度同配 r = +0.142
+密度 0.20: 度同配 r = +0.490
+密度 0.10: r = +0.142; 保度零模型 r = -0.113 ± 0.056; 单侧经验 p = 0.005
+   系统 0（30 个脑区）的平均度 = 7.5
+   系统 1（15 个脑区）的平均度 = 4.4
+   系统 2（10 个脑区）的平均度 = 5.0
+   系统 3（5 个脑区）的平均度 = 2.4
+按功能系统的类别同配系数（手算）= 1.000；NetworkX = 1.000</pre></section><section class="block prose"><h2><span class="tag">Code</span>代码</h2><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 模拟 60 个“脑区”的时间序列：4 个功能系统，大小分别为 30、15、10、5 个脑区，系统内共享一个波动。</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 用比例阈值保留最强的若干比例相关，得到二值网络，计算度同配 r，并与保度零模型比较；</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 再用 Newman (2003) 的类别同配系数检查边是否偏向连接同一系统的脑区。</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 解读：大系统里的脑区仅因“同伴多”而度高，且主要连向同系统（同样度高）的脑区，于是 r &gt; 0；</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 这种同配来自模块大小与相关的传递性，并随阈值（密度）明显变化，不对应解剖上的“枢纽互连”。</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> networkx <span class="im">as</span> nx</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>rng <span class="op">=</span> np.random.default_rng(<span class="dv">1</span>)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>sizes <span class="op">=</span> [<span class="dv">30</span>, <span class="dv">15</span>, <span class="dv">10</span>, <span class="dv">5</span>]</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>labels <span class="op">=</span> np.repeat(np.arange(<span class="bu">len</span>(sizes)), sizes)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>N, T <span class="op">=</span> <span class="bu">len</span>(labels), <span class="dv">300</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> <span class="fl">0.6</span> <span class="op">*</span> rng.standard_normal((<span class="bu">len</span>(sizes), T))[labels] <span class="op">+</span> rng.standard_normal((N, T))</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>R <span class="op">=</span> np.corrcoef(X)</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>np.fill_diagonal(R, <span class="dv">0</span>)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>iu <span class="op">=</span> np.triu_indices(N, <span class="dv">1</span>)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> threshold(R, density):</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    thr <span class="op">=</span> np.quantile(R[iu], <span class="dv">1</span> <span class="op">-</span> density)</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> nx.from_numpy_array((R <span class="op">&gt;</span> thr).astype(<span class="bu">int</span>))</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> dens <span class="kw">in</span> [<span class="fl">0.05</span>, <span class="fl">0.10</span>, <span class="fl">0.20</span>]:</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    G <span class="op">=</span> threshold(R, dens)</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;密度 </span><span class="sc">{</span>dens<span class="sc">:.2f}</span><span class="ss">: 度同配 r = </span><span class="sc">{</span>nx<span class="sc">.</span>degree_assortativity_coefficient(G)<span class="sc">:+.3f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>G <span class="op">=</span> threshold(R, <span class="fl">0.10</span>)</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>nx.set_node_attributes(G, {i: <span class="bu">int</span>(labels[i]) <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(N)}, <span class="st">&quot;system&quot;</span>)</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>r_obs <span class="op">=</span> nx.degree_assortativity_coefficient(G)</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>null <span class="op">=</span> []</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> s <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">200</span>):</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>    H <span class="op">=</span> G.copy()</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>    nx.double_edge_swap(H, nswap<span class="op">=</span><span class="dv">10</span> <span class="op">*</span> H.number_of_edges(), max_tries<span class="op">=</span><span class="dv">10</span><span class="op">**</span><span class="dv">6</span>, seed<span class="op">=</span>s)</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>    null.append(nx.degree_assortativity_coefficient(H))</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>null <span class="op">=</span> np.array(null)</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> (<span class="dv">1</span> <span class="op">+</span> np.<span class="bu">sum</span>(null <span class="op">&gt;=</span> r_obs)) <span class="op">/</span> (<span class="bu">len</span>(null) <span class="op">+</span> <span class="dv">1</span>)</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;密度 0.10: r = </span><span class="sc">{</span>r_obs<span class="sc">:+.3f}</span><span class="ss">; 保度零模型 r = </span><span class="sc">{</span>null<span class="sc">.</span>mean()<span class="sc">:+.3f}</span><span class="ss"> ± </span><span class="sc">{</span>null<span class="sc">.</span>std(ddof<span class="op">=</span><span class="dv">1</span>)<span class="sc">:.3f}</span><span class="ss">; 单侧经验 p = </span><span class="sc">{</span>p<span class="sc">:.3f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>deg <span class="op">=</span> <span class="bu">dict</span>(G.degree())</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> s_id, sz <span class="kw">in</span> <span class="bu">enumerate</span>(sizes):</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;   系统 </span><span class="sc">{</span>s_id<span class="sc">}</span><span class="ss">（</span><span class="sc">{</span>sz<span class="sc">}</span><span class="ss"> 个脑区）的平均度 = </span><span class="sc">{</span>np<span class="sc">.</span>mean([deg[i] <span class="cf">for</span> i <span class="kw">in</span> G <span class="cf">if</span> labels[i] <span class="op">==</span> s_id])<span class="sc">:.1f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="co"># 类别同配系数 r = (sum_i e_ii - sum_i a_i^2) / (1 - sum_i a_i^2)（无向网络 a_i = b_i）</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>e <span class="op">=</span> np.zeros((<span class="bu">len</span>(sizes), <span class="bu">len</span>(sizes)))</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> u, v <span class="kw">in</span> G.edges():</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>    e[labels[u], labels[v]] <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>    e[labels[v], labels[u]] <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>e <span class="op">/=</span> e.<span class="bu">sum</span>()</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> e.<span class="bu">sum</span>(axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>r_cat <span class="op">=</span> (np.trace(e) <span class="op">-</span> a <span class="op">@</span> a) <span class="op">/</span> (<span class="dv">1</span> <span class="op">-</span> a <span class="op">@</span> a)</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;按功能系统的类别同配系数（手算）= </span><span class="sc">{</span>r_cat<span class="sc">:.3f}</span><span class="ss">；NetworkX = </span><span class="sc">{</span>nx<span class="sc">.</span>attribute_assortativity_coefficient(G, <span class="st">&#39;system&#39;</span>)<span class="sc">:.3f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="co"># 作图：按系统排序的二值邻接矩阵（密度 0.10），以及度同配 r 的保度零分布</span></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">4</span>))</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].imshow(nx.to_numpy_array(G, nodelist<span class="op">=</span><span class="bu">range</span>(N)), cmap<span class="op">=</span><span class="st">&quot;Greys&quot;</span>, interpolation<span class="op">=</span><span class="st">&quot;none&quot;</span>)</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> b <span class="kw">in</span> np.cumsum(sizes)[:<span class="op">-</span><span class="dv">1</span>]:</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>    ax[<span class="dv">0</span>].axhline(b <span class="op">-</span> <span class="fl">0.5</span>, color<span class="op">=</span><span class="st">&quot;C3&quot;</span>, lw<span class="op">=</span><span class="fl">0.8</span>)<span class="op">;</span> ax[<span class="dv">0</span>].axvline(b <span class="op">-</span> <span class="fl">0.5</span>, color<span class="op">=</span><span class="st">&quot;C3&quot;</span>, lw<span class="op">=</span><span class="fl">0.8</span>)</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].set_title(<span class="st">&quot;Thresholded network (density 0.10),</span><span class="ch">\n</span><span class="st">systems of size 30/15/10/5&quot;</span>, fontsize<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].set_xlabel(<span class="st">&quot;region&quot;</span>)<span class="op">;</span> ax[<span class="dv">0</span>].set_ylabel(<span class="st">&quot;region&quot;</span>)</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].hist(null, bins<span class="op">=</span><span class="dv">25</span>, color<span class="op">=</span><span class="st">&quot;0.7&quot;</span>, edgecolor<span class="op">=</span><span class="st">&quot;white&quot;</span>, label<span class="op">=</span><span class="st">&quot;degree-preserving null&quot;</span>)</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].axvline(r_obs, color<span class="op">=</span><span class="st">&quot;C3&quot;</span>, lw<span class="op">=</span><span class="dv">2</span>, label<span class="op">=</span><span class="ss">f&quot;observed r = </span><span class="sc">{</span>r_obs<span class="sc">:+.3f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].set_xlabel(<span class="st">&quot;degree assortativity r&quot;</span>)<span class="op">;</span> ax[<span class="dv">1</span>].set_ylabel(<span class="st">&quot;count&quot;</span>)<span class="op">;</span> ax[<span class="dv">1</span>].legend(fontsize<span class="op">=</span><span class="dv">8</span>)</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].set_title(<span class="st">&quot;Module size alone produces positive r&quot;</span>, fontsize<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()<span class="op">;</span> plt.show()</span></code></pre></div>
+</section><section class="block"><h2><span class="tag">Run</span>在浏览器中运行</h2><p class="small">首次加载 Python 环境约需 20–40 秒；可以修改参数后重新运行。</p><div class="cell"><div class="cell-head"><h3>阈值化相关网络中的同配性——模块大小如何制造正的 r</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea id="degree-correlations-cell8" rows="30" spellcheck="false" aria-label="阈值化相关网络中的同配性——模块大小如何制造正的 r 代码"># 模拟 60 个“脑区”的时间序列：4 个功能系统，大小分别为 30、15、10、5 个脑区，系统内共享一个波动。
+# 用比例阈值保留最强的若干比例相关，得到二值网络，计算度同配 r，并与保度零模型比较；
+# 再用 Newman (2003) 的类别同配系数检查边是否偏向连接同一系统的脑区。
+# 解读：大系统里的脑区仅因“同伴多”而度高，且主要连向同系统（同样度高）的脑区，于是 r &gt; 0；
+# 这种同配来自模块大小与相关的传递性，并随阈值（密度）明显变化，不对应解剖上的“枢纽互连”。
+import numpy as np
+import networkx as nx
+
+rng = np.random.default_rng(1)
+sizes = [30, 15, 10, 5]
+labels = np.repeat(np.arange(len(sizes)), sizes)
+N, T = len(labels), 300
+X = 0.6 * rng.standard_normal((len(sizes), T))[labels] + rng.standard_normal((N, T))
+R = np.corrcoef(X)
+np.fill_diagonal(R, 0)
+iu = np.triu_indices(N, 1)
+
+
+def threshold(R, density):
+    thr = np.quantile(R[iu], 1 - density)
+    return nx.from_numpy_array((R &gt; thr).astype(int))
+
+
+for dens in [0.05, 0.10, 0.20]:
+    G = threshold(R, dens)
+    print(f&quot;密度 {dens:.2f}: 度同配 r = {nx.degree_assortativity_coefficient(G):+.3f}&quot;)
+
+G = threshold(R, 0.10)
+nx.set_node_attributes(G, {i: int(labels[i]) for i in range(N)}, &quot;system&quot;)
+r_obs = nx.degree_assortativity_coefficient(G)
+null = []
+for s in range(200):
+    H = G.copy()
+    nx.double_edge_swap(H, nswap=10 * H.number_of_edges(), max_tries=10**6, seed=s)
+    null.append(nx.degree_assortativity_coefficient(H))
+null = np.array(null)
+p = (1 + np.sum(null &gt;= r_obs)) / (len(null) + 1)
+print(f&quot;密度 0.10: r = {r_obs:+.3f}; 保度零模型 r = {null.mean():+.3f} ± {null.std(ddof=1):.3f}; 单侧经验 p = {p:.3f}&quot;)
+deg = dict(G.degree())
+for s_id, sz in enumerate(sizes):
+    print(f&quot;   系统 {s_id}（{sz} 个脑区）的平均度 = {np.mean([deg[i] for i in G if labels[i] == s_id]):.1f}&quot;)
+
+# 类别同配系数 r = (sum_i e_ii - sum_i a_i^2) / (1 - sum_i a_i^2)（无向网络 a_i = b_i）
+e = np.zeros((len(sizes), len(sizes)))
+for u, v in G.edges():
+    e[labels[u], labels[v]] += 1
+    e[labels[v], labels[u]] += 1
+e /= e.sum()
+a = e.sum(axis=1)
+r_cat = (np.trace(e) - a @ a) / (1 - a @ a)
+print(f&quot;按功能系统的类别同配系数（手算）= {r_cat:.3f}；NetworkX = {nx.attribute_assortativity_coefficient(G, &#x27;system&#x27;):.3f}&quot;)
+
+# 作图：按系统排序的二值邻接矩阵（密度 0.10），以及度同配 r 的保度零分布
+import matplotlib.pyplot as plt
+fig, ax = plt.subplots(1, 2, figsize=(10, 4))
+ax[0].imshow(nx.to_numpy_array(G, nodelist=range(N)), cmap=&quot;Greys&quot;, interpolation=&quot;none&quot;)
+for b in np.cumsum(sizes)[:-1]:
+    ax[0].axhline(b - 0.5, color=&quot;C3&quot;, lw=0.8); ax[0].axvline(b - 0.5, color=&quot;C3&quot;, lw=0.8)
+ax[0].set_title(&quot;Thresholded network (density 0.10),\nsystems of size 30/15/10/5&quot;, fontsize=10)
+ax[0].set_xlabel(&quot;region&quot;); ax[0].set_ylabel(&quot;region&quot;)
+ax[1].hist(null, bins=25, color=&quot;0.7&quot;, edgecolor=&quot;white&quot;, label=&quot;degree-preserving null&quot;)
+ax[1].axvline(r_obs, color=&quot;C3&quot;, lw=2, label=f&quot;observed r = {r_obs:+.3f}&quot;)
+ax[1].set_xlabel(&quot;degree assortativity r&quot;); ax[1].set_ylabel(&quot;count&quot;); ax[1].legend(fontsize=8)
+ax[1].set_title(&quot;Module size alone produces positive r&quot;, fontsize=10)
+plt.tight_layout(); plt.show()</textarea><div class="out" aria-live="polite"></div></div></section><nav class="pager"><a href="ex-degree-correlations-7.html"><small>上一个示例</small>度相关如何改变巨连通分支、传播阈值与可同步性</a><a href="degree-correlations.html"><small>回到专题</small>度相关性与网络结构的高阶统计</a></nav></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

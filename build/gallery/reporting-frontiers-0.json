@@ -1,0 +1,10 @@
+{
+ "topic": "reporting-frontiers",
+ "index": 0,
+ "title": "小世界性——与同规模 ER 随机图比较",
+ "hash": "4015298847ded34fd5a54190d33ee7bff0117321",
+ "ok": true,
+ "figures": 1,
+ "stdout": "C = 0.571（ER 均值 0.140）；L = 2.408（ER 均值 2.407）；sigma = 4.08",
+ "stderr": ""
+}

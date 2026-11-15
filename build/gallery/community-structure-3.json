@@ -1,0 +1,10 @@
+{
+ "topic": "community-structure",
+ "index": 3,
+ "title": "谱方法——模块度矩阵的主特征向量",
+ "hash": "5e77d35f1c0d6bd102e1cee94ca8e5e8ea8e55a8",
+ "ok": true,
+ "figures": 1,
+ "stdout": "最大特征值 β1 = 4.977；B 的行和最大绝对值 = 8.9e-16\n两组大小: [16, 18]  Q = 0.371\n与真实分派不一致的节点: [8]\n|u| 最小的 3 个节点（处于两派“中间”）: [9, 8, 24]",
+ "stderr": ""
+}

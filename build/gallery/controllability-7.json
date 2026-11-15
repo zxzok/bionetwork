@@ -1,0 +1,10 @@
+{
+ "topic": "controllability",
+ "index": 7,
+ "title": "平均可控性与模态可控性（Gu 等 2015 的离散时间定义）及其与度的关系",
+ "hash": "e09a92a9e655faf11fb377396e36719aea063459",
+ "ok": true,
+ "figures": 1,
+ "stdout": "真实（模拟）网络：Spearman(平均可控性, 加权度) = 0.95；Spearman(模态可控性, 加权度) = -0.97\n随机零模型：      Spearman(平均可控性, 加权度) = 0.92；Spearman(模态可控性, 加权度) = -0.94",
+ "stderr": ""
+}

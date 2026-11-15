@@ -1,0 +1,10 @@
+{
+ "topic": "community-structure",
+ "index": 0,
+ "title": "按定义计算模块度",
+ "hash": "37d3123ad72cb1413e8058adf89e9fe5e0e5724c",
+ "ok": true,
+ "figures": 1,
+ "stdout": "两个三角形: 按定义 Q=0.357, NetworkX=0.357\n两个三角形放在同一社团: Q=0.000\n空手道真实两派: 按定义 Q=0.358, NetworkX=0.358",
+ "stderr": ""
+}

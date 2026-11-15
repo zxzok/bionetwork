@@ -1,0 +1,10 @@
+{
+ "topic": "analysis-workflow",
+ "index": 1,
+ "title": "基本拓扑指标、度分布与中心性排名",
+ "hash": "2a0bb64c890069cd2766ce29f1f053ceacfdf213",
+ "ok": true,
+ "figures": 1,
+ "stdout": "节点 77，边 254，连通：True\n平均度      6.597\n密度       0.087\n平均聚集系数   0.573\n传递性      0.499\n平均最短路径   2.641\n直径       5.000\n度同配系数    -0.165\n度中心性 前5： ['Valjean', 'Gavroche', 'Marius', 'Javert', 'Thenardier']\n介数中心性 前5： ['Valjean', 'Myriel', 'Gavroche', 'Marius', 'Fantine']\n特征向量中心性 前5： ['Gavroche', 'Valjean', 'Enjolras', 'Marius', 'Bossuet']",
+ "stderr": ""
+}

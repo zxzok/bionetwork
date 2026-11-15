@@ -1,0 +1,117 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>脑连接的复杂网络指标：用法与解读 · 生物医学网络科学</title><meta name="description" content="论文精读：Complex network measures of brain connectivity: uses and interpretations"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-brain"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html" aria-current="page">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain" open><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html" aria-current="page">脑连接组：结构与功能连接</a><ol class="sub"><li><a href="brain-connectome.connectome-concepts.html"><span class="n">01</span>连接组：结构连接与功能连接</a></li><li><a href="brain-connectome.parcellation.html"><span class="n">02</span>脑图谱与节点定义</a></li><li><a href="brain-connectome.structural-connectivity.html"><span class="n">03</span>结构连接：弥散 MRI 与纤维追踪</a></li><li><a href="brain-connectome.functional-connectivity.html"><span class="n">04</span>功能连接估计：相关与偏相关</a></li><li><a href="brain-connectome.preprocessing.html"><span class="n">05</span>预处理对功能连接的影响</a></li><li><a href="brain-connectome.effective-connectivity.html"><span class="n">06</span>有效连接：动态因果模型与格兰杰因果</a></li><li><a href="brain-connectome.thresholding.html"><span class="n">07</span>阈值与加权</a></li><li><a href="brain-connectome.weighted-metrics.html"><span class="n">08</span>加权脑网络指标与归一化</a></li><li><a href="brain-connectome.topology.html"><span class="n">09</span>拓扑指标：小世界、模块、枢纽与富人俱乐部</a></li><li><a href="brain-connectome.functional-systems.html"><span class="n">10</span>模块与功能系统</a></li><li><a href="brain-connectome.spatial-embedding.html"><span class="n">11</span>空间嵌入与布线代价</a></li><li><a href="brain-connectome.gradients.html"><span class="n">12</span>连接组梯度</a></li><li><a href="brain-connectome.group-comparison.html"><span class="n">13</span>组间比较与统计验证</a></li><li><a href="brain-connectome.individual-differences.html"><span class="n">14</span>个体指纹与个体差异</a></li><li><a href="brain-connectome.lesion-network-mapping.html"><span class="n">15</span>病变网络映射</a></li><li><a href="brain-connectome.pipeline.html"><span class="n">16</span>从 fMRI 到结论：分析流程与选择</a></li><li><a href="brain-connectome.derivations.html"><span class="n">17</span>数学推导与算法</a></li><li><a href="brain-connectome.frontiers.html"><span class="n">18</span>研究前沿与开放问题</a></li><li><a href="brain-connectome.biomedical.html"><span class="n">19</span>生物医学应用</a></li><li><a href="brain-connectome.limitations.html"><span class="n">20</span>适用范围与常见误用</a></li></ol></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><div class="lec-grid"><div style="min-width:0"><div class="lec-head"><nav class="crumb"><a href="papers.html">文献知识库</a> › 脑网络与连接组 · 网络基础理论 · 计算方法与研究规范</nav><div class="eyebrow"><b>经典论文</b><span>难度：入门</span></div><h1>脑连接的复杂网络指标：用法与解读</h1><p class="porig big">Complex network measures of brain connectivity: uses and interpretations</p><p class="small">Rubinov M, Sporns O · <i>NeuroImage</i> 2010 · <a href="https://doi.org/10.1016/j.neuroimage.2009.10.003" target="_blank" rel="noopener">DOI: 10.1016/j.neuroimage.2009.10.003</a></p><div class="chips"><span class="chip">图论指标</span><span class="chip">分离与整合</span><span class="chip">中心性</span><span class="chip">模块</span><span class="chip">零模型</span><span class="chip">Brain Connectivity Toolbox</span></div><div class="objectives"><h2>一句话</h2><p style="margin:0">按神经科学含义整理脑网络常用图论指标及其解读，并发布 Brain Connectivity Toolbox。</p><p class="small" style="margin:8px 0 0">相关专题：<a href="brain-connectome.html">脑连接组：结构与功能连接</a>、<a href="network-models.html">小世界与无标度网络模型</a>、<a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></p></div></div><section class="block prose" id="notes"><h2 id="一句话看懂">一句话看懂</h2>
+<p>这是一篇方法综述兼工具说明：它把脑网络研究里最常用的几十个指标按“它在神经科学上回答什么问题”分成几类，给出二值、加权、有向版本的统一定义，提醒每个指标在结构网络和功能网络上该怎样（以及不该怎样）解释，并附带一个开源的
+Matlab 工具箱（BCT）。</p>
+<h2 id="研究背景与问题">研究背景与问题</h2>
+<p>2000
+年代后期，图论方法在脑成像领域迅速普及，但不同研究使用的指标定义、阈值方法和零模型各不相同，同一个名称（如“效率”）在不同论文里可能算法不同，结果难以比较。更大的问题是，很多指标源自社会网络或物理学，直接搬到脑网络上时，其含义是否成立并不清楚。例如，功能连接是统计相关，在相关网络上计算“最短路径”有什么意义？</p>
+<p>作者希望提供一套统一、可计算、并附带解释说明的指标体系，降低入门门槛，也减少误用。</p>
+<h2 id="核心思想与方法">核心思想与方法</h2>
+<p>文章先讨论<strong>网络构建</strong>：节点应当是功能上相对均一、空间上不重叠的单元；边可以是结构连接（纤维、示踪）或功能/有效连接；二值化需要阈值，加权网络保留更多信息但需要归一化；负权重（负相关）需要单独处理或分开分析。</p>
+<p>然后按问题把指标分类：</p>
+<div class="table-wrap"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>类别</th>
+<th>回答的问题</th>
+<th>代表指标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>基本量</td>
+<td>节点有多少连接</td>
+<td>度、强度、度分布</td>
+</tr>
+<tr>
+<td>功能分离</td>
+<td>是否存在局部紧密的处理群</td>
+<td>聚类系数、传递性、局部效率、模块度</td>
+</tr>
+<tr>
+<td>功能整合</td>
+<td>远距离区域能否快速交流</td>
+<td>特征路径长度、全局效率</td>
+</tr>
+<tr>
+<td>中心性</td>
+<td>哪些区域或连接最关键</td>
+<td>介数、模内度 z 分数、参与系数</td>
+</tr>
+<tr>
+<td>局部模式</td>
+<td>局部连接有哪些典型构型</td>
+<td>网络基序</td>
+</tr>
+<tr>
+<td>韧性</td>
+<td>受损后网络能否维持</td>
+<td>度分布、同配性、模拟攻击</td>
+</tr>
+</tbody>
+</table></div>
+<div class="callout-def">
+<p><strong>全局效率</strong>：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mi>n</mi><mo stretchy="false" form="prefix">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow></mfrac><msub><mo>∑</mo><mrow><mi>i</mi><mo>≠</mo><mi>j</mi></mrow></msub><mfrac><mn>1</mn><msub><mi>d</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mfrac></mrow><annotation encoding="application/x-tex">E=\frac{1}{n(n-1)}\sum_{i\ne j}\frac{1}{d_{ij}}</annotation></semantics></math>，即所有节点对最短路径长度倒数的平均；不连通的节点对贡献为
+0，因此比特征路径长度更适合有孤立节点的网络。</p>
+<p><strong>参与系数</strong>：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi>i</mi></msub><mo>=</mo><mn>1</mn><mo>−</mo><msub><mo>∑</mo><mi>s</mi></msub><msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><msub><mi>k</mi><mrow><mi>i</mi><mi>s</mi></mrow></msub><msub><mi>k</mi><mi>i</mi></msub></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">P_i=1-\sum_{s}\left(\frac{k_{is}}{k_i}\right)^2</annotation></semantics></math>，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>k</mi><mrow><mi>i</mi><mi>s</mi></mrow></msub><annotation encoding="application/x-tex">k_{is}</annotation></semantics></math>
+是节点
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>
+连到模块
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi><annotation encoding="application/x-tex">s</annotation></semantics></math>
+的边数。<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mi>i</mi></msub><annotation encoding="application/x-tex">P_i</annotation></semantics></math>
+接近 0 表示连接集中在本模块（局部枢纽），接近 1
+表示连接均匀分布到各模块（连接枢纽）。</p>
+</div>
+<p>最后讨论<strong>比较问题</strong>：指标必须与保持度序列的随机网络（零模型）比较才有意义；跨被试或组间比较时，网络密度不同会直接改变大多数指标，需要控制。</p>
+<h2 id="主要发现">主要发现</h2>
+<p>作为综述，本文的“发现”主要是方法学结论：</p>
+<ol type="1">
+<li><strong>指标要按解释分类使用</strong>：分离与整合是一对互补概念，小世界性就是“高分离
++ 高整合”的组合，单看一个指标不足以描述网络。</li>
+<li><strong>结构网络与功能网络的解读不同</strong>：在结构网络上，路径可以理解为潜在的信息传递通道；在由相关构建的功能网络上，路径的含义模糊，因为相关本身已经包含间接效应。</li>
+<li><strong>零模型不可或缺</strong>：聚类系数、路径长度、模块度等绝对值本身意义有限，应与保持度分布的随机化网络比较。</li>
+<li><strong>加权与有向推广需谨慎</strong>：加权指标依赖权重的尺度与分布，需要归一化；BCT
+对大多数指标给出了二值无向、加权、有向版本。</li>
+<li><strong>工具与数据开放</strong>：BCT
+提供上述指标的统一实现和若干大尺度解剖连接数据集，后来又有 Python
+版本（bctpy），成为本领域使用最广的工具之一。</li>
+</ol>
+<h2 id="怎样读这篇论文">怎样读这篇论文</h2>
+<p>这篇文章适合“查字典式”阅读。第一遍读引言、网络构建一节和各类指标的概述段落，建立整体框架；文末的指标定义附表是之后反复查阅的部分。之后在实际分析中，用到哪个指标就回头查对应小节和公式，并核对
+BCT
+中的函数实现。文中把分离、整合、中心性画在同一张示意网络上的图，值得对照<a
+href="symptom-networks.centrality.html">症状中心性及其解释</a>中的中心性定义细看。关于韧性与基序的部分初读可以略过。</p>
+<h2 id="局限与后续工作">局限与后续工作</h2>
+<ul>
+<li><strong>指标之间高度相关</strong>：度、强度、介数等常常强相关，报告大量指标并不等于获得大量独立信息，还增加多重比较负担。</li>
+<li><strong>阈值与密度问题</strong>：文章提到了密度影响，但没有给出统一方案。后续
+van Wijk 等（2010, <em>PLoS ONE</em>）、Fornito
+等的工作系统讨论了比较不同密度网络的困难，常见做法是在一系列密度上报告曲线或使用曲线下面积。</li>
+<li><strong>相关网络上的路径解释</strong>：功能网络上“效率降低”是否意味着“信息传递变差”仍有争议，许多研究的解释超出了数据能支持的范围。</li>
+<li><strong>零模型的选择</strong>：保持度序列的随机化对功能网络并不总是合适，因为相关矩阵本身带有传递性；Zalesky
+等（2012,
+<em>NeuroImage</em>）指出相关网络天然有较高聚类。后续有针对相关矩阵的零模型。</li>
+<li><strong>中心性不等于干预靶点</strong>：一个区域介数高，只说明它在拓扑上处于路径交汇处；它是否适合作为刺激或治疗靶点需要因果证据。</li>
+</ul>
+<h2 id="关联知识">关联知识</h2>
+<ul>
+<li><a href="brain-connectome.thresholding.html">阈值与加权</a>和<a
+href="brain-connectome.topology.html">拓扑指标：小世界、模块、枢纽与富人俱乐部</a>使用的阈值、效率、模块、枢纽定义基本都来自本文，<a
+href="brain-connectome.html">脑连接组：结构与功能连接</a>的核心文献也把本文列为“指标字典”。</li>
+<li><a
+href="symptom-networks.centrality.html">症状中心性及其解释</a>中的中心性与<a
+href="community-structure.html">社团结构与社区发现</a>中的社团与模块度，是本文中心性与分离指标的通用版本；对照阅读可以体会“通用图论指标”与“神经科学解读”之间的差距。</li>
+<li>实际分析中建议直接使用 BCT 或
+bctpy，并在方法部分写清指标版本（二值/加权）与零模型。</li>
+</ul>
+<h2 id="延伸思考">延伸思考</h2>
+<ol type="1">
+<li>在基于皮尔逊相关构建的功能网络上，特征路径长度应当怎样解释？如果改用偏相关构建网络，这个解释会变吗？</li>
+<li>患者组的平均功能连接普遍偏弱。若用同一绝对阈值二值化，组间“全局效率降低”可能来自什么？你会怎样设计分析来区分真实拓扑差异和密度差异？</li>
+<li>参与系数依赖模块划分。如果社团检测结果在多次运行间不稳定，你会如何报告参与系数？</li>
+</ol>
+</section><nav class="pager"><a href="paper-kitsak2010_spreaders.html">← 识别复杂网络中的关键传播者</a><a href="paper-barabasi2011_networkmedicine.html">网络医学：基于网络理解人类疾病 →</a></nav></div><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

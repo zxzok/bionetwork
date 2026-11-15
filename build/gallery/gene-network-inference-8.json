@@ -1,0 +1,10 @@
+{
+ "topic": "gene-network-inference",
+ "index": 8,
+ "title": "评估指标——AUROC、AUPR、早期精度与不完整金标准",
+ "hash": "363588c392abd5fde4a3358e0bbf4e1868b8a64b",
+ "ok": true,
+ "figures": 1,
+ "stdout": "真边比例 π = 0.020：随机预测的 AUROC ≈ 0.5，AUPR ≈ π，早期精度 ≈ π\n打分器 A：AUROC = 0.696；AUPR = 0.431（AUPR 比 21.6）；早期精度 = 0.40（EPR 20.0）\n打分器 B：AUROC = 0.869；AUPR = 0.136（AUPR 比  6.8）；早期精度 = 0.00（EPR  0.0）\n打分器 A 前 20 条：按完整金标准精确率 = 0.40，按只含一半真边的金标准 = 0.20；AUPR（对不完整金标准）= 0.280",
+ "stderr": ""
+}

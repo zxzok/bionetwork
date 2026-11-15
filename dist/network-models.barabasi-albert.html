@@ -1,0 +1,96 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>Barabási–Albert 优先连接模型 · 生物医学网络科学</title><meta name="description" content="小世界与无标度网络模型 · Barabási–Albert 优先连接模型"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-theory"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html" aria-current="page">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory" open><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a><ol class="sub"><li><a href="network-models.small-world-phenomenon.html"><span class="n">01</span>小世界现象</a></li><li><a href="network-models.lattice-vs-random.html"><span class="n">02</span>规则网格与随机网络</a></li><li><a href="network-models.watts-strogatz.html"><span class="n">03</span>Watts–Strogatz 小世界模型</a></li><li><a href="network-models.scale-free.html"><span class="n">04</span>幂律度分布与无标度网络</a></li><li><a href="network-models.configuration-model.html"><span class="n">05</span>任意度分布网络的生成：配置模型与隐变量模型</a></li><li><a href="network-models.barabasi-albert.html" aria-current="page"><span class="n">06</span>Barabási–Albert 优先连接模型</a></li><li><a href="network-models.preferential-attachment-measurement.html"><span class="n">07</span>测量优先连接与非线性优先连接</a></li><li><a href="network-models.preferential-attachment-origins.html"><span class="n">08</span>优先连接从何而来：链接选择、复制与优化</a></li><li><a href="network-models.fitness-model.html"><span class="n">09</span>适应度模型与玻色–爱因斯坦凝聚</a></li><li><a href="network-models.evolving-networks.html"><span class="n">10</span>演化网络的扩展模型</a></li><li><a href="network-models.duplication-divergence.html"><span class="n">11</span>复制–分化模型</a></li><li><a href="network-models.spatial-networks.html"><span class="n">12</span>空间网络与随机几何图</a></li><li><a href="network-models.identification.html"><span class="n">13</span>小世界与无标度的统计判别</a></li><li><a href="network-models.derivations.html"><span class="n">14</span>数学推导与算法</a></li><li><a href="network-models.frontiers.html"><span class="n">15</span>研究前沿与开放问题</a></li><li><a href="network-models.biomedical.html"><span class="n">16</span>生物医学应用</a></li><li><a href="network-models.limitations.html"><span class="n">17</span>适用范围与常见误用</a></li></ol></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><div class="lec-grid"><article style="min-width:0"><header class="doc-head"><nav class="crumb"><a href="d-theory.html">网络基础理论</a> <span class="sep">/</span> <a href="network-models.html">小世界与无标度网络模型</a></nav><div class="eyebrow" style="margin-top:14px"><b>小世界与无标度网络模型</b><span>06 / 17</span></div><h1>Barabási–Albert 优先连接模型</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="network-models.html">小世界与无标度网络模型</a></dd></div><div><dt>阅读</dt><dd>约 3 分钟</dd></div></dl></header><section class="block prose" id="notes"><h3 id="两个要素增长与优先连接">两个要素：增长与优先连接</h3>
+<p>Barabási 和 Albert 注意到 ER 和 WS
+模型都假设节点数固定，而真实网络大多在不断增长：网页不断被创建，论文不断被发表，基因在演化中不断复制。他们提出的模型包含两个要素：</p>
+<ol type="1">
+<li><strong>增长</strong>（growth）：从
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>m</mi><mn>0</mn></msub><annotation encoding="application/x-tex">m_0</annotation></semantics></math>
+个节点开始，每个时间步加入一个新节点，新节点带
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+条边（<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>≤</mo><msub><mi>m</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">m \le m_0</annotation></semantics></math>）连到已有节点；</li>
+<li><strong>优先连接</strong>（preferential
+attachment）：新节点连向已有节点
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>
+的概率与
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>
+当前的度成正比：</li>
+</ol>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Π</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>k</mi><mi>i</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mfrac><msub><mi>k</mi><mi>i</mi></msub><mrow><munder><mo>∑</mo><mi>j</mi></munder><msub><mi>k</mi><mi>j</mi></msub></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">\Pi(k_i) = \frac{k_i}{\sum_j k_j}.</annotation></semantics></math></p><div class="demo" data-demo="ba"></div>
+<p>直观上这就是“富者愈富”：被引用多的论文更容易被看到、被继续引用。这一思想可以追溯到
+Yule、Simon 以及 Price（1965、1976）对引文网络的研究。Price
+把它称为“累积优势”（cumulative
+advantage），并提出了有向的引文生长模型：新论文引用旧论文的概率正比于旧论文已有引用数加一个常数（否则没被引用过的论文永远不会被引用）。BA
+模型可以看作 Price 模型的无向版本，常数项取零。</p>
+<h3 id="主要结论">主要结论</h3>
+<p>平均场分析（推导见<a
+href="network-models.derivations.html">数学推导与算法</a>）给出两个结论：</p>
+<ul>
+<li>每个节点的度按
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>k</mi><mi>i</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>m</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mi>/</mi><msub><mi>t</mi><mi>i</mi></msub><msup><mo stretchy="false" form="postfix">)</mo><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup></mrow><annotation encoding="application/x-tex">k_i(t) = m\,(t/t_i)^{1/2}</annotation></semantics></math>
+增长，越早加入的节点（<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mi>i</mi></msub><annotation encoding="application/x-tex">t_i</annotation></semantics></math>
+越小）度越大——<strong>先到者优势</strong>；</li>
+<li>度分布为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo><mo>≈</mo><mn>2</mn><msup><mi>m</mi><mn>2</mn></msup><mi>/</mi><msup><mi>k</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">P(k) \approx 2m^2/k^3</annotation></semantics></math>，即
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>γ</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">\gamma = 3</annotation></semantics></math>
+的幂律，而且指数与
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+无关。用速率方程可得精确解
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mn>2</mn><mi>m</mi><mo stretchy="false" form="prefix">(</mo><mi>m</mi><mo>+</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><mrow><mi>k</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo>+</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo>+</mo><mn>2</mn><mo stretchy="false" form="postfix">)</mo></mrow></mfrac></mstyle></mrow><annotation encoding="application/x-tex">P(k) = \dfrac{2m(m+1)}{k(k+1)(k+2)}</annotation></semantics></math>，大
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+时与平均场结果一致（Dorogovtsev、Mendes 与 Samukhin
+2000；Krapivsky、Redner 与 Leyvraz 2000；严格证明见 Bollobás 等
+2001）。</li>
+</ul>
+<p>由
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>k</mi><mi>i</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>m</mi><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mi>/</mi><msub><mi>t</mi><mi>i</mi></msub><msup><mo stretchy="false" form="postfix">)</mo><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup></mrow><annotation encoding="application/x-tex">k_i(t)=m(t/t_i)^{1/2}</annotation></semantics></math>
+还能看出：最大的枢纽是最早的节点，其度
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>k</mi><mi mathvariant="normal">max</mi></msub><mo>∼</mo><mi>m</mi><mspace width="0.167em"></mspace><msup><mi>t</mi><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup><mo>=</mo><mi>m</mi><msup><mi>N</mi><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup></mrow><annotation encoding="application/x-tex">k_{\max}\sim m\,t^{1/2}=mN^{1/2}</annotation></semantics></math>，正好等于
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>γ</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">\gamma=3</annotation></semantics></math>
+时的自然截断
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>N</mi><mrow><mn>1</mn><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mi>γ</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow></msup><annotation encoding="application/x-tex">N^{1/(\gamma-1)}</annotation></semantics></math>。</p>
+<p>本专题页面的 BA 演示可以逐步加点，在双对数图上观察度分布的形成。</p>
+<h3 id="两个要素缺一不可">两个要素缺一不可</h3>
+<ul>
+<li><strong>只有增长、没有优先连接</strong>（Barabási 书中的“模型
+A”：新节点均匀随机地连接已有节点）：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><msub><mi>k</mi><mi>i</mi></msub><mi>/</mi><mi>d</mi><mi>t</mi><mo>=</mo><mi>m</mi><mi>/</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">dk_i/dt=m/t</annotation></semantics></math>，度只按对数增长
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>k</mi><mi>i</mi></msub><mo>=</mo><mi>m</mi><mo>+</mo><mi>m</mi><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mi>/</mi><msub><mi>t</mi><mi>i</mi></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">k_i=m+m\ln(t/t_i)</annotation></semantics></math>，度分布变为指数分布
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>k</mi></msub><mo>=</mo><mstyle displaystyle="true"><mfrac><mi>e</mi><mi>m</mi></mfrac></mstyle><msup><mi>e</mi><mrow><mi>−</mi><mi>k</mi><mi>/</mi><mi>m</mi></mrow></msup></mrow><annotation encoding="application/x-tex">p_k=\dfrac{e}{m}e^{-k/m}</annotation></semantics></math>，没有幂律尾巴；</li>
+<li><strong>只有优先连接、没有增长</strong>（“模型 B”：节点数
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+固定，每步按优先连接加一条边）：所有节点的度都近似线性增长
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>k</mi><mi>i</mi></msub><mo>≈</mo><mn>2</mn><mi>t</mi><mi>/</mi><mi>N</mi></mrow><annotation encoding="application/x-tex">k_i\approx 2t/N</annotation></semantics></math>，度分布先短暂呈长尾，随后变成以平均度为中心的窄峰，最后趋于完全图——幂律只是暂态。</li>
+</ul>
+<h3 id="距离与聚集">距离与聚集</h3>
+<ul>
+<li><strong>平均距离</strong>：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>≥</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">m\ge2</annotation></semantics></math>
+时 BA 网络的平均距离按
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mi>N</mi><mi>/</mi><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">\ln N/\ln\ln N</annotation></semantics></math>
+增长（Bollobás 与 Riordan 2004；Cohen 与 Havlin
+2003），比同规模随机网络还短；<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">m=1</annotation></semantics></math>
+时网络是一棵树，距离按
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">\ln N</annotation></semantics></math>
+增长。</li>
+<li><strong>聚集系数</strong>：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>C</mi><mo stretchy="false" form="postfix">⟩</mo><mo>∝</mo><mo stretchy="false" form="prefix">(</mo><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mi>N</mi><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mi>/</mi><mi>N</mi></mrow><annotation encoding="application/x-tex">\langle C\rangle\propto (\ln N)^2/N</annotation></semantics></math>（Fronczak
+等 2003），比随机网络的
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mi>N</mi></mrow><annotation encoding="application/x-tex">1/N</annotation></semantics></math>
+下降得慢，但随规模增大仍趋于 0，远低于多数真实网络。</li>
+</ul>
+<h3 id="ba-模型的局限与扩展">BA 模型的局限与扩展</h3>
+<p>BA 模型只能产生
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>γ</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">\gamma=3</annotation></semantics></math>，而真实网络的指数差异很大；它的聚集系数随
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+增大而趋于
+0，与真实网络的高聚类不符；它预测“老节点度大”，但现实中后来者常能反超（Google
+晚于许多搜索引擎出现）；它也没有说明优先连接本身从何而来。后续的工作沿几个方向展开，本专题依次介绍：</p>
+<ul>
+<li>优先连接能否从数据中测到，以及非线性时会怎样（<a
+href="network-models.preferential-attachment-measurement.html">测量优先连接与非线性优先连接</a>）；</li>
+<li>优先连接的局部来源，以及加入三角形闭合以提高聚类（<a
+href="network-models.preferential-attachment-origins.html">优先连接从何而来</a>）；</li>
+<li>节点适应度让后来者反超（<a
+href="network-models.fitness-model.html">适应度模型与玻色–爱因斯坦凝聚</a>）；</li>
+<li>初始吸引力、内部连边、删点、加速增长、老化改变度指数（<a
+href="network-models.evolving-networks.html">演化网络的扩展模型</a>）；</li>
+<li>与生物学关系最密切的<strong>复制–分化模型</strong>：基因复制后，新基因继承原基因的相互作用伙伴，随后部分相互作用丢失。度大的蛋白有更多邻居，邻居被复制的机会更多，因此复制机制在效果上等价于一种优先连接，同样能产生长尾度分布（<a
+href="network-models.duplication-divergence.html">复制–分化模型</a>）。</li>
+</ul>
+</section><section class="block related-box"><h2>继续阅读</h2><ul><li>交互可视化：<a href="lab.html#ws">Watts–Strogatz 重连</a></li><li>代码示例：<a href="ex-network-models-0.html">复现 Watts–Strogatz 的经典曲线</a>、<a href="ex-network-models-1.html">BA 网络与 ER 网络的度分布（CCDF）</a>、<a href="ex-network-models-2.html">用最大似然估计度指数，并与最小二乘比较</a>、<a href="ex-network-models-3.html">判断一个真实网络是否“小世界”</a></li><li>论文精读：<a href="paper-erdos1960_randomgraphs.html">论随机图的演化</a>、<a href="paper-watts1998_smallworld.html">“小世界”网络的集体动力学</a>、<a href="paper-barabasi1999_scaling.html">随机网络中标度律的涌现</a>、<a href="paper-albert2000_attack.html">复杂网络对随机故障与蓄意攻击的耐受性</a></li></ul></section><nav class="pager"><a href="network-models.configuration-model.html"><small>上一页</small>任意度分布网络的生成：配置模型与隐变量模型</a><a href="network-models.preferential-attachment-measurement.html"><small>下一页</small>测量优先连接与非线性优先连接</a></nav></article><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script><script src="assets/js/demos.js"></script></body></html>

@@ -1,0 +1,166 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>富人俱乐部系数 phi(k) 及其保度归一化 rho(k) · 生物医学网络科学</title><meta name="description" content="度相关性与网络结构的高阶统计 · 代码示例：富人俱乐部系数 phi(k) 及其保度归一化 rho(k)"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-theory"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html" aria-current="page">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory" open><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a><ol class="sub"><li><a href="degree-correlations.joint-degree-distribution.html"><span class="n">01</span>联合度分布与条件度分布</a></li><li><a href="degree-correlations.knn-function.html"><span class="n">02</span>邻居平均度函数与相关指数</a></li><li><a href="degree-correlations.assortativity-coefficient.html"><span class="n">03</span>度相关系数 r</a></li><li><a href="degree-correlations.structural-cutoff.html"><span class="n">04</span>结构截断与结构性异配</a></li><li><a href="degree-correlations.randomization-tests.html"><span class="n">05</span>度保持随机化检验</a></li><li><a href="degree-correlations.generating-correlated-networks.html"><span class="n">06</span>生成具有度相关的网络</a></li><li><a href="degree-correlations.rich-club.html"><span class="n">07</span>富人俱乐部系数及其归一化</a></li><li><a href="degree-correlations.clustering-spectrum.html"><span class="n">08</span>聚集谱 C(k) 与层次模块性</a></li><li><a href="degree-correlations.k-core.html"><span class="n">09</span>k-核分解</a></li><li><a href="degree-correlations.impact-on-dynamics.html"><span class="n">10</span>度相关对网络过程的影响</a></li><li><a href="degree-correlations.derivations.html"><span class="n">11</span>数学推导与算法</a></li><li><a href="degree-correlations.biomedical.html"><span class="n">12</span>生物医学应用</a></li><li><a href="degree-correlations.limitations.html"><span class="n">13</span>适用范围与常见误用</a></li></ol></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="code.html">代码库</a> <span class="sep">/</span> <a href="code.html#theory">网络基础理论</a> <span class="sep">/</span> <a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></nav><div class="eyebrow" style="margin-top:14px"><b>Example</b><span>05 / 09</span></div><h1>富人俱乐部系数 phi(k) 及其保度归一化 rho(k)</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></dd></div><div><dt>下载</dt><dd><a href="notebooks/degree-correlations.ipynb" download>Notebook</a> · <a href="notebooks/degree-correlations.py" download>.py</a></dd></div></dl></header><section class="block prose"><p>构造两张度序列相近的网络：BA 网络，以及在 BA 网络上把前 2%
+高度节点之间“补齐”连接后
+再用保度交换恢复原度序列的网络（植入的富人俱乐部）。 计算未归一化 phi(k)
+与归一化 rho(k) = phi(k)/phi_rand(k)，phi_rand 取 20
+个保度随机网络的平均。 解读：即使是 BA 网络，phi(k) 也随 k 上升，单看
+phi(k) 会误判；rho(k) &gt; 1 才是富人俱乐部的证据。</p>
+</section><section class="block"><h2><span class="tag">Output</span>输出图</h2><div class="ex-figs"><img src="gallery/degree-correlations-4-0.png" alt="富人俱乐部系数 phi(k) 及其保度归一化 rho(k)：输出图 1" loading="lazy"></div></section><section class="block"><h2><span class="tag">Output</span>文字输出</h2><pre class="ex-out">BA 网络
+   k &gt;   5: N_&gt;k =  577, phi = 0.010, phi_rand = 0.012, rho = 0.85
+   k &gt;  10: N_&gt;k =  181, phi = 0.029, phi_rand = 0.037, rho = 0.78
+   k &gt;  20: N_&gt;k =   53, phi = 0.099, phi_rand = 0.117, rho = 0.85
+   k &gt;  30: N_&gt;k =   27, phi = 0.197, phi_rand = 0.203, rho = 0.97
+   k &gt;  40: N_&gt;k =   18, phi = 0.255, phi_rand = 0.268, rho = 0.95
+   k &gt;  60: N_&gt;k =    7, phi = 0.619, phi_rand = 0.410, rho = 1.51
+植入富人俱乐部
+   k &gt;   5: N_&gt;k =  577, phi = 0.011, phi_rand = 0.012, rho = 0.95
+   k &gt;  10: N_&gt;k =  181, phi = 0.055, phi_rand = 0.037, rho = 1.46
+   k &gt;  20: N_&gt;k =   53, phi = 0.505, phi_rand = 0.120, rho = 4.22
+   k &gt;  30: N_&gt;k =   27, phi = 1.000, phi_rand = 0.207, rho = 4.83
+   k &gt;  40: N_&gt;k =   18, phi = 1.000, phi_rand = 0.270, rho = 3.70
+   k &gt;  60: N_&gt;k =    7, phi = 1.000, phi_rand = 0.443, rho = 2.26</pre></section><section class="block prose"><h2><span class="tag">Code</span>代码</h2><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 构造两张度序列相近的网络：BA 网络，以及在 BA 网络上把前 2% 高度节点之间“补齐”连接后</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 再用保度交换恢复原度序列的网络（植入的富人俱乐部）。</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 计算未归一化 phi(k) 与归一化 rho(k) = phi(k)/phi_rand(k)，phi_rand 取 20 个保度随机网络的平均。</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 解读：即使是 BA 网络，phi(k) 也随 k 上升，单看 phi(k) 会误判；rho(k) &gt; 1 才是富人俱乐部的证据。</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> networkx <span class="im">as</span> nx</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>G0 <span class="op">=</span> nx.barabasi_albert_graph(<span class="dv">2000</span>, <span class="dv">3</span>, seed<span class="op">=</span><span class="dv">4</span>)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>deg0 <span class="op">=</span> <span class="bu">dict</span>(G0.degree())</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># 植入富人俱乐部：把度最高的 40 个节点两两相连，再为每条新边删去一条“枢纽-低度节点”边并</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co"># 把被拆开的低度端点两两接上，近似保持度序列（剩余偏差很小）。</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>rng <span class="op">=</span> np.random.default_rng(<span class="dv">0</span>)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>G1 <span class="op">=</span> G0.copy()</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>hubs <span class="op">=</span> <span class="bu">sorted</span>(G1, key<span class="op">=</span><span class="kw">lambda</span> x: deg0[x], reverse<span class="op">=</span><span class="va">True</span>)[:<span class="dv">40</span>]</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>hubset <span class="op">=</span> <span class="bu">set</span>(hubs)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(hubs)):</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(i <span class="op">+</span> <span class="dv">1</span>, <span class="bu">len</span>(hubs)):</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>        a, b <span class="op">=</span> hubs[i], hubs[j]</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> G1.has_edge(a, b):</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>            <span class="cf">continue</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>        na <span class="op">=</span> [x <span class="cf">for</span> x <span class="kw">in</span> G1[a] <span class="cf">if</span> x <span class="kw">not</span> <span class="kw">in</span> hubset]</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>        nb <span class="op">=</span> [x <span class="cf">for</span> x <span class="kw">in</span> G1[b] <span class="cf">if</span> x <span class="kw">not</span> <span class="kw">in</span> hubset]</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="kw">not</span> na <span class="kw">or</span> <span class="kw">not</span> nb:</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>            <span class="cf">continue</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>        x, y <span class="op">=</span> rng.choice(na), rng.choice(nb)</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> x <span class="op">==</span> y <span class="kw">or</span> G1.has_edge(x, y):</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>            <span class="cf">continue</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>        G1.remove_edges_from([(a, x), (b, y)])</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>        G1.add_edges_from([(a, b), (x, y)])</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> <span class="bu">dict</span>(G1.degree()) <span class="op">==</span> deg0                     <span class="co"># 度序列严格不变</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> rich_club(G):</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> nx.rich_club_coefficient(G, normalized<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> rich_club_rand(G, n_null<span class="op">=</span><span class="dv">20</span>, seed<span class="op">=</span><span class="dv">0</span>):</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>    acc <span class="op">=</span> {}</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> s <span class="kw">in</span> <span class="bu">range</span>(n_null):</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>        H <span class="op">=</span> G.copy()</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>        m <span class="op">=</span> H.number_of_edges()</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>        nx.double_edge_swap(H, nswap<span class="op">=</span><span class="dv">10</span> <span class="op">*</span> m, max_tries<span class="op">=</span><span class="dv">1000</span> <span class="op">*</span> m, seed<span class="op">=</span>seed <span class="op">+</span> s)</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> k, v <span class="kw">in</span> rich_club(H).items():</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>            acc.setdefault(k, []).append(v)</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> {k: np.mean(v) <span class="cf">for</span> k, v <span class="kw">in</span> acc.items()}</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>curves <span class="op">=</span> []                                         <span class="co"># 保存 phi 与 phi_rand 用于作图</span></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> name, G <span class="kw">in</span> [(<span class="st">&quot;BA 网络&quot;</span>, G0), (<span class="st">&quot;植入富人俱乐部&quot;</span>, G1)]:</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>    phi <span class="op">=</span> rich_club(G)</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>    phi_r <span class="op">=</span> rich_club_rand(G, n_null<span class="op">=</span><span class="dv">20</span>, seed<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>    curves.append((phi, phi_r))</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(name)</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> k <span class="kw">in</span> [<span class="dv">5</span>, <span class="dv">10</span>, <span class="dv">20</span>, <span class="dv">30</span>, <span class="dv">40</span>, <span class="dv">60</span>]:</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> k <span class="kw">in</span> phi <span class="kw">and</span> phi_r.get(k, <span class="dv">0</span>) <span class="op">&gt;</span> <span class="dv">0</span>:</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>            n_rich <span class="op">=</span> <span class="bu">sum</span>(<span class="dv">1</span> <span class="cf">for</span> _, d <span class="kw">in</span> G.degree() <span class="cf">if</span> d <span class="op">&gt;</span> k)</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f&quot;   k &gt; </span><span class="sc">{</span>k<span class="sc">:3d}</span><span class="ss">: N_&gt;k = </span><span class="sc">{</span>n_rich<span class="sc">:4d}</span><span class="ss">, phi = </span><span class="sc">{</span>phi[k]<span class="sc">:.3f}</span><span class="ss">, phi_rand = </span><span class="sc">{</span>phi_r[k]<span class="sc">:.3f}</span><span class="ss">, &quot;</span></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>                  <span class="ss">f&quot;rho = </span><span class="sc">{</span>phi[k] <span class="op">/</span> phi_r[k]<span class="sc">:.2f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="co"># 作图：未归一化 phi(k) 与归一化 rho(k) = phi / phi_rand</span></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">4</span>))</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (phi, phi_r), lab, mk <span class="kw">in</span> <span class="bu">zip</span>(curves, [<span class="st">&quot;BA network&quot;</span>, <span class="st">&quot;planted rich club&quot;</span>], [<span class="st">&quot;o&quot;</span>, <span class="st">&quot;s&quot;</span>]):</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>    ks <span class="op">=</span> [k <span class="cf">for</span> k <span class="kw">in</span> <span class="bu">sorted</span>(phi) <span class="cf">if</span> phi_r.get(k, <span class="dv">0</span>) <span class="op">&gt;</span> <span class="dv">0</span> <span class="kw">and</span> <span class="bu">sum</span>(<span class="dv">1</span> <span class="cf">for</span> _, d <span class="kw">in</span> G0.degree() <span class="cf">if</span> d <span class="op">&gt;</span> k) <span class="op">&gt;=</span> <span class="dv">5</span>]</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>    ax[<span class="dv">0</span>].plot(ks, [phi[k] <span class="cf">for</span> k <span class="kw">in</span> ks], marker<span class="op">=</span>mk, ms<span class="op">=</span><span class="dv">3</span>, label<span class="op">=</span>lab)</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>    ax[<span class="dv">1</span>].plot(ks, [phi[k] <span class="op">/</span> phi_r[k] <span class="cf">for</span> k <span class="kw">in</span> ks], marker<span class="op">=</span>mk, ms<span class="op">=</span><span class="dv">3</span>, label<span class="op">=</span>lab)</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].set_ylabel(<span class="st">&quot;phi(k), unnormalized&quot;</span>)<span class="op">;</span> ax[<span class="dv">0</span>].set_title(<span class="st">&quot;phi(k) rises with k even in BA&quot;</span>)</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].axhline(<span class="dv">1</span>, color<span class="op">=</span><span class="st">&quot;gray&quot;</span>, ls<span class="op">=</span><span class="st">&quot;--&quot;</span>)<span class="op">;</span> ax[<span class="dv">1</span>].set_ylabel(<span class="st">&quot;rho(k) = phi / phi_rand&quot;</span>)</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].set_title(<span class="st">&quot;Planted club: rho(k) &gt;&gt; 1; BA stays near 1&quot;</span>)</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> a <span class="kw">in</span> ax:</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>    a.set_xscale(<span class="st">&quot;log&quot;</span>)<span class="op">;</span> a.set_xlabel(<span class="st">&quot;degree threshold k&quot;</span>)<span class="op">;</span> a.legend()</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()<span class="op">;</span> plt.show()</span></code></pre></div>
+</section><section class="block"><h2><span class="tag">Run</span>在浏览器中运行</h2><p class="small">首次加载 Python 环境约需 20–40 秒；可以修改参数后重新运行。</p><div class="cell"><div class="cell-head"><h3>富人俱乐部系数 phi(k) 及其保度归一化 rho(k)</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea id="degree-correlations-cell4" rows="30" spellcheck="false" aria-label="富人俱乐部系数 phi(k) 及其保度归一化 rho(k) 代码"># 构造两张度序列相近的网络：BA 网络，以及在 BA 网络上把前 2% 高度节点之间“补齐”连接后
+# 再用保度交换恢复原度序列的网络（植入的富人俱乐部）。
+# 计算未归一化 phi(k) 与归一化 rho(k) = phi(k)/phi_rand(k)，phi_rand 取 20 个保度随机网络的平均。
+# 解读：即使是 BA 网络，phi(k) 也随 k 上升，单看 phi(k) 会误判；rho(k) &gt; 1 才是富人俱乐部的证据。
+import numpy as np
+import networkx as nx
+
+G0 = nx.barabasi_albert_graph(2000, 3, seed=4)
+deg0 = dict(G0.degree())
+
+# 植入富人俱乐部：把度最高的 40 个节点两两相连，再为每条新边删去一条“枢纽-低度节点”边并
+# 把被拆开的低度端点两两接上，近似保持度序列（剩余偏差很小）。
+rng = np.random.default_rng(0)
+G1 = G0.copy()
+hubs = sorted(G1, key=lambda x: deg0[x], reverse=True)[:40]
+hubset = set(hubs)
+for i in range(len(hubs)):
+    for j in range(i + 1, len(hubs)):
+        a, b = hubs[i], hubs[j]
+        if G1.has_edge(a, b):
+            continue
+        na = [x for x in G1[a] if x not in hubset]
+        nb = [x for x in G1[b] if x not in hubset]
+        if not na or not nb:
+            continue
+        x, y = rng.choice(na), rng.choice(nb)
+        if x == y or G1.has_edge(x, y):
+            continue
+        G1.remove_edges_from([(a, x), (b, y)])
+        G1.add_edges_from([(a, b), (x, y)])
+assert dict(G1.degree()) == deg0                     # 度序列严格不变
+
+
+def rich_club(G):
+    return nx.rich_club_coefficient(G, normalized=False)
+
+
+def rich_club_rand(G, n_null=20, seed=0):
+    acc = {}
+    for s in range(n_null):
+        H = G.copy()
+        m = H.number_of_edges()
+        nx.double_edge_swap(H, nswap=10 * m, max_tries=1000 * m, seed=seed + s)
+        for k, v in rich_club(H).items():
+            acc.setdefault(k, []).append(v)
+    return {k: np.mean(v) for k, v in acc.items()}
+
+
+curves = []                                         # 保存 phi 与 phi_rand 用于作图
+for name, G in [(&quot;BA 网络&quot;, G0), (&quot;植入富人俱乐部&quot;, G1)]:
+    phi = rich_club(G)
+    phi_r = rich_club_rand(G, n_null=20, seed=10)
+    curves.append((phi, phi_r))
+    print(name)
+    for k in [5, 10, 20, 30, 40, 60]:
+        if k in phi and phi_r.get(k, 0) &gt; 0:
+            n_rich = sum(1 for _, d in G.degree() if d &gt; k)
+            print(f&quot;   k &gt; {k:3d}: N_&gt;k = {n_rich:4d}, phi = {phi[k]:.3f}, phi_rand = {phi_r[k]:.3f}, &quot;
+                  f&quot;rho = {phi[k] / phi_r[k]:.2f}&quot;)
+
+# 作图：未归一化 phi(k) 与归一化 rho(k) = phi / phi_rand
+import matplotlib.pyplot as plt
+fig, ax = plt.subplots(1, 2, figsize=(10, 4))
+for (phi, phi_r), lab, mk in zip(curves, [&quot;BA network&quot;, &quot;planted rich club&quot;], [&quot;o&quot;, &quot;s&quot;]):
+    ks = [k for k in sorted(phi) if phi_r.get(k, 0) &gt; 0 and sum(1 for _, d in G0.degree() if d &gt; k) &gt;= 5]
+    ax[0].plot(ks, [phi[k] for k in ks], marker=mk, ms=3, label=lab)
+    ax[1].plot(ks, [phi[k] / phi_r[k] for k in ks], marker=mk, ms=3, label=lab)
+ax[0].set_ylabel(&quot;phi(k), unnormalized&quot;); ax[0].set_title(&quot;phi(k) rises with k even in BA&quot;)
+ax[1].axhline(1, color=&quot;gray&quot;, ls=&quot;--&quot;); ax[1].set_ylabel(&quot;rho(k) = phi / phi_rand&quot;)
+ax[1].set_title(&quot;Planted club: rho(k) &gt;&gt; 1; BA stays near 1&quot;)
+for a in ax:
+    a.set_xscale(&quot;log&quot;); a.set_xlabel(&quot;degree threshold k&quot;); a.legend()
+plt.tight_layout(); plt.show()</textarea><div class="out" aria-live="polite"></div></div></section><nav class="pager"><a href="ex-degree-correlations-3.html"><small>上一个示例</small>度保持随机化检验——观测到的 r 是否超出度序列本身能解释的范围</a><a href="ex-degree-correlations-5.html"><small>下一个示例</small>聚集谱 C(k) 与层次模块网络（Ravasz–Barabási 型确定性模型）</a></nav></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

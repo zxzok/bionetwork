@@ -1,0 +1,10 @@
+{
+ "topic": "network-metrics",
+ "index": 14,
+ "title": "真实网络与同规模 ER 网络的比较",
+ "hash": "1bc5a5bb8886d54407ea0c0171592a0a7b73224c",
+ "ok": true,
+ "figures": 1,
+ "stdout": "空手道网络: C=0.571, L=2.408\nER 网络:    C=0.163, L=2.349（理论 C≈0.139；最大连通分支含 34/34 个节点）",
+ "stderr": ""
+}

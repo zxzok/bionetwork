@@ -1,0 +1,89 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>复杂网络的可控性 · 生物医学网络科学</title><meta name="description" content="论文精读：Controllability of complex networks"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-dynamics"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html" aria-current="page">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics" open><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html" aria-current="page">网络可控性与稳定性</a><ol class="sub"><li><a href="controllability.network-control-systems.html"><span class="n">01</span>动态系统与网络控制</a></li><li><a href="controllability.linear-controllability.html"><span class="n">02</span>线性系统的可控性</a></li><li><a href="controllability.structural-controllability.html"><span class="n">03</span>结构可控性与最大匹配</a></li><li><a href="controllability.driver-nodes.html"><span class="n">04</span>驱动节点与网络结构</a></li><li><a href="controllability.control-centrality.html"><span class="n">05</span>控制中心性与可控子空间</a></li><li><a href="controllability.control-energy.html"><span class="n">06</span>控制能量与 Gramian 的数值问题</a></li><li><a href="controllability.target-control.html"><span class="n">07</span>目标控制与部分可控</a></li><li><a href="controllability.observability.html"><span class="n">08</span>可观测性与观测节点</a></li><li><a href="controllability.nonlinear-control.html"><span class="n">09</span>非线性网络的控制</a></li><li><a href="controllability.brain-network-control.html"><span class="n">10</span>脑网络控制：平均与模态可控性</a></li><li><a href="controllability.author-team-research.html"><span class="n">11</span>驱动节点的枚举、分类与自适应控制</a></li><li><a href="controllability.structural-robustness.html"><span class="n">12</span>结构鲁棒性</a></li><li><a href="controllability.dynamical-stability.html"><span class="n">13</span>动力学稳定性</a></li><li><a href="controllability.derivations.html"><span class="n">14</span>数学推导与算法</a></li><li><a href="controllability.frontiers.html"><span class="n">15</span>研究前沿与开放问题</a></li><li><a href="controllability.biomedical.html"><span class="n">16</span>生物医学应用</a></li><li><a href="controllability.limitations.html"><span class="n">17</span>适用范围与常见误用</a></li></ol></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><div class="lec-grid"><div style="min-width:0"><div class="lec-head"><nav class="crumb"><a href="papers.html">文献知识库</a> › 网络动力学与控制</nav><div class="eyebrow"><b>经典论文</b><span>难度：进阶</span></div><h1>复杂网络的可控性</h1><p class="porig big">Controllability of complex networks</p><p class="small">Liu Y-Y, Slotine J-J, Barabási A-L · <i>Nature</i> 2011 · <a href="https://doi.org/10.1038/nature10011" target="_blank" rel="noopener">DOI: 10.1038/nature10011</a></p><div class="chips"><span class="chip">结构可控性</span><span class="chip">驱动节点</span><span class="chip">最大匹配</span><span class="chip">最小输入定理</span><span class="chip">度分布</span></div><div class="objectives"><h2>一句话</h2><p style="margin:0">把结构可控性转化为最大匹配，算出最少驱动节点数，发现其主要由度分布决定，且驱动节点倾向于避开枢纽。</p><p class="small" style="margin:8px 0 0">相关专题：<a href="controllability.html">网络可控性与稳定性</a></p></div></div><section class="block prose" id="notes"><h2 id="一句话看懂">一句话看懂</h2>
+<p>要让一个有向网络（在线性动力学下）能被引导到任意状态，最少需要直接施加控制信号的节点数，等于节点数减去网络最大匹配的边数；未被匹配的节点就是驱动节点。由此可以在多项式时间内分析大型真实网络的可控性。</p>
+<h2 id="研究背景与问题">研究背景与问题</h2>
+<p>控制理论早就给出了线性系统
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi mathvariant="bold-italic">𝒙</mi><mo accent="true">̇</mo></mover><mo>=</mo><mi>A</mi><mi mathvariant="bold-italic">𝒙</mi><mo>+</mo><mi>B</mi><mi mathvariant="bold-italic">𝒖</mi></mrow><annotation encoding="application/x-tex">\dot{\mathbf x}=A\mathbf x+B\mathbf u</annotation></semantics></math>
+可控的判据（Kalman 秩判据）：可控性矩阵
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>B</mi><mo>,</mo><mi>A</mi><mi>B</mi><mo>,</mo><mi>…</mi><mo>,</mo><msup><mi>A</mi><mrow><mi>N</mi><mo>−</mo><mn>1</mn></mrow></msup><mi>B</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[B, AB, \dots, A^{N-1}B]</annotation></semantics></math>
+满秩。但直接用于复杂网络有两个障碍：真实网络的边权
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+通常未知或只知道大概；节点数成千上万时，秩的数值计算既昂贵又不稳定。此外还有一个更基本的问题：在一个复杂网络中，<strong>最少</strong>需要控制多少个节点、控制哪些节点？这与网络结构有什么关系？</p>
+<h2 id="核心思想与方法">核心思想与方法</h2>
+<p>作者基于 Lin（1974）的<strong>结构可控性</strong>理论：只关心
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+中哪些元素为零、哪些非零，若对几乎所有非零权重的取值系统都可控，则称系统结构可控。这样就绕开了权重未知的问题。</p>
+<p>关键一步是把“最少输入”问题映射为图论中的最大匹配：</p>
+<div class="callout-def">
+<p><strong>匹配</strong>：有向图中一组边，任意两条既不共享起点，也不共享终点。被某条匹配边指向的节点称为匹配节点，否则为非匹配节点。</p>
+<p><strong>最小输入定理</strong>：控制网络所需的最少驱动节点数
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>N</mi><mi>D</mi></msub><mo>=</mo><mrow><mi mathvariant="normal">max</mi><mo>&#8289;</mo></mrow><mo minsize="120%" maxsize="120%" stretchy="true" form="prefix">(</mo><mi>N</mi><mo>−</mo><mo stretchy="false" form="prefix">|</mo><msup><mi>M</mi><mo>*</mo></msup><mo stretchy="false" form="prefix">|</mo><mo>,</mo><mspace width="0.167em"></mspace><mn>1</mn><mo minsize="120%" maxsize="120%" stretchy="true" form="postfix">)</mo><mo>,</mo></mrow><annotation encoding="application/x-tex">N_D=\max\big(N-|M^*|,\,1\big),</annotation></semantics></math>
+其中
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><msup><mi>M</mi><mo>*</mo></msup><mo stretchy="false" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">|M^*|</annotation></semantics></math>
+是最大匹配的边数。若存在完美匹配，任选一个节点作驱动节点即可；否则，对某一最大匹配下的全部非匹配节点施加独立输入，即可使网络结构可控。</p>
+</div>
+<p>直观理解：最大匹配把网络分解为若干条互不相交的有向路径（以非匹配节点为起点）和若干有向环；每条路径的起点必须由外部信号驱动，环可以“挂”到已有的路径上而不需要新的独立输入。最大匹配可用
+Hopcroft–Karp 算法高效求得。</p>
+<p>在此基础上，作者用统计物理中的<strong>空腔方法</strong>（cavity
+method）对给定入度、出度分布的网络系综解析计算驱动节点比例
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>n</mi><mi>D</mi></msub><mo>=</mo><msub><mi>N</mi><mi>D</mi></msub><mi>/</mi><mi>N</mi></mrow><annotation encoding="application/x-tex">n_D=N_D/N</annotation></semantics></math>，并分析了基因调控、食物网、代谢、神经元、互联网、社交、通信等多类真实网络。为判断哪些结构因素决定
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mi>D</mi></msub><annotation encoding="application/x-tex">n_D</annotation></semantics></math>，作者比较了两种随机化：保持每个节点入度和出度的随机化，以及完全随机化（只保持节点数和边数）。</p>
+<h2 id="主要发现">主要发现</h2>
+<ol type="1">
+<li><strong>可在大网络上计算</strong>：最小输入定理把一个看似组合爆炸的问题变成多项式时间可解的匹配问题。</li>
+<li><strong>驱动节点数主要由度分布决定</strong>：保持度序列的随机化网络的
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mi>D</mi></msub><annotation encoding="application/x-tex">n_D</annotation></semantics></math>
+与原网络接近，而完全随机化后差异明显；空腔方法的解析预测与真实网络的计算结果相符。</li>
+<li><strong>稀疏、异质的网络最难控制</strong>：平均度越低、度分布越不均匀，需要的驱动节点越多；稠密、均匀的网络只需少数驱动节点。作者报告基因调控网络的
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mi>D</mi></msub><annotation encoding="application/x-tex">n_D</annotation></semantics></math>
+较高，而一些社会网络较低。</li>
+<li><strong>驱动节点倾向于避开枢纽</strong>：与直觉相反，模型网络和真实网络中的驱动节点都倾向于是低度节点。原因在于一个节点在匹配中只能“匹配”一个下游节点，枢纽的众多下游中只有一个能被它带动。</li>
+<li><strong>边的分类</strong>：根据删除某条边对控制的影响，把边分为关键边（删除后必须增加驱动节点）、冗余边（删除后驱动节点集合不变）和普通边，用于分析控制的鲁棒性。</li>
+</ol>
+<h2 id="怎样读这篇论文">怎样读这篇论文</h2>
+<p>先读正文第一部分，弄清楚结构可控性的含义以及从 Kalman
+判据到“结构”的转变；然后精读最小输入定理和配套的匹配示意图（图中用小网络展示匹配、非匹配节点与驱动节点），建议对照<a
+href="controllability.structural-controllability.html">结构可控性与最大匹配</a>中的星形网络例子自己验证；接着看真实网络的汇总表和
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mi>D</mi></msub><annotation encoding="application/x-tex">n_D</annotation></semantics></math>
+与随机化网络的比较图，这是“度分布决定可控性”结论的依据。空腔方法的推导在补充材料中，篇幅很长，初读可以只看结论。</p>
+<h2 id="局限与后续工作">局限与后续工作</h2>
+<ul>
+<li><strong>线性与结构假设</strong>：结论基于线性时不变动力学和结构可控性，“可控”只表示存在某种输入能把系统带到任意状态，不考虑所需能量和时间；生物系统多为非线性、多稳态。后续
+Yan 等（2012）研究了控制能量，Zañudo、Yang 与
+Albert（2017）提出了基于反馈顶点集的非线性控制框架。</li>
+<li><strong>自环与节点动力学</strong>：Cowan
+等（2012）指出，若每个节点都有自身动力学（自环），则存在完美匹配，驱动节点数会大幅下降，“度分布决定可控性”的结论依赖于忽略节点自身动力学这一假设。</li>
+<li><strong>控制哪些节点</strong>：最大匹配一般不唯一，驱动节点<strong>集合</strong>不唯一，本文只给出数目和一个可行集合。后续工作研究了节点在所有最小驱动节点集中的角色（关键、间歇、冗余；Jia
+等 2013 的控制双峰性）、只控制部分目标节点的目标控制（Gao 等
+2014），以及<strong>输入图</strong>框架（Zhang、Lv 与 Pu
+2016，<em>Scientific Reports</em>，DOI <a
+href="https://doi.org/10.1038/srep38209">10.1038/srep38209</a>）和<strong>高效枚举所有可能输入节点</strong>的算法（Zhang、Han
+与 Zhang 2017，<em>Scientific Reports</em>，DOI <a
+href="https://doi.org/10.1038/s41598-017-10744-w">10.1038/s41598-017-10744-w</a>），这两篇另有专门精读。</li>
+<li><strong>框架之争</strong>：在无向网络中常用的最小支配集框架做了不同的建模假设，在那里高度节点反而更重要；两种框架的结论不能直接比较。</li>
+<li><strong>实验检验</strong>：Yan
+等（2017）在线虫连接组上第一次用消融实验检验了网络控制原理的预测。</li>
+</ul>
+<h2 id="关联知识">关联知识</h2>
+<ul>
+<li><a
+href="controllability.linear-controllability.html">线性系统的可控性</a>（Kalman
+判据）、<a
+href="controllability.structural-controllability.html">结构可控性与最大匹配</a>、<a
+href="controllability.driver-nodes.html">驱动节点与网络结构</a>（含最大匹配与最小支配集框架）和<a
+href="controllability.derivations.html">数学推导与算法</a>（最小输入定理的来源）都以本文为核心；<a
+href="controllability.html#demos">网络可控性与稳定性</a>中的最大匹配交互演示可以亲手找驱动节点。</li>
+<li><a
+href="controllability.author-team-research.html">驱动节点的枚举、分类与自适应控制</a>正是从本文“最大匹配不唯一”这一点出发的。</li>
+<li>本文的度分布视角承接<a
+href="network-models.scale-free.html">幂律度分布与无标度网络</a>；把控制理论用于症状网络的尝试见<a
+href="symptom-networks.module-control.html">症状网络的模块控制</a>。</li>
+</ul>
+<h2 id="延伸思考">延伸思考</h2>
+<ol type="1">
+<li>星形网络（中心指向
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">N-1</annotation></semantics></math>
+个叶子）需要多少个驱动节点？如果把方向反过来（所有叶子指向中心）呢？用最大匹配解释。</li>
+<li>如果每个节点都加上自环，最小输入定理会给出什么结果？这个结果在生物学上意味着什么？是否合理？</li>
+<li>在一个基因调控网络中，驱动节点多为低度节点。这是否意味着药物应当靶向低度基因？请从“结构可控”与“实际可控”的区别讨论。</li>
+</ol>
+</section><nav class="pager"><a href="paper-barabasi2011_networkmedicine.html">← 网络医学：基于网络理解人类疾病</a><a href="paper-vandenheuvel2011_richclub.html">人类连接组的富人俱乐部组织 →</a></nav></div><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

@@ -1,0 +1,400 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>研究问题、可复现分析与敏感性分析 · 生物医学网络科学</title><meta name="description" content="研究问题、可复现分析与敏感性分析：怎样提出可回答的网络研究问题，做到可复算，并用敏感性分析和替代解释检验结论是否稳健"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-methods"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html" aria-current="page">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods" open><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html" aria-current="page">研究问题、可复现分析与敏感性分析</a><ol class="sub"><li><a href="reproducible-research.research-questions.html"><span class="n">01</span>提出网络研究问题</a></li><li><a href="reproducible-research.preregistration.html"><span class="n">02</span>预注册与分析计划</a></li><li><a href="reproducible-research.reproducible-analysis.html"><span class="n">03</span>可复算的分析</a></li><li><a href="reproducible-research.computational-environment.html"><span class="n">04</span>计算环境与工作流</a></li><li><a href="reproducible-research.open-data-code.html"><span class="n">05</span>数据与代码共享</a></li><li><a href="reproducible-research.randomness-robustness.html"><span class="n">06</span>随机性控制</a></li><li><a href="reproducible-research.sensitivity-analysis.html"><span class="n">07</span>敏感性分析与替代解释</a></li><li><a href="reproducible-research.multiverse-analysis.html"><span class="n">08</span>多元宇宙分析与设定曲线</a></li><li><a href="reproducible-research.power-sample-size.html"><span class="n">09</span>统计功效与样本量</a></li><li><a href="reproducible-research.reporting-checklist.html"><span class="n">10</span>网络研究的报告清单</a></li><li><a href="reproducible-research.replication-cases.html"><span class="n">11</span>可重复性危机与负结果</a></li><li><a href="reproducible-research.ai-assistance.html"><span class="n">12</span>负责任地使用 AI 辅助</a></li><li><a href="reproducible-research.derivations.html"><span class="n">13</span>数学推导与算法</a></li><li><a href="reproducible-research.frontiers.html"><span class="n">14</span>研究前沿与开放问题</a></li><li><a href="reproducible-research.biomedical.html"><span class="n">15</span>生物医学应用</a></li><li><a href="reproducible-research.limitations.html"><span class="n">16</span>适用范围与常见误用</a></li></ol></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><div class="lec-grid"><article style="min-width:0"><header class="doc-head"><nav class="crumb"><a href="domains.html">知识领域</a> <span class="sep">/</span> <a href="d-methods.html">计算方法与研究规范</a></nav><div class="eyebrow" style="margin-top:14px"><b>Methods &amp; Research Practice</b><span>Research questions, reproducibility and sensitivity analysis</span></div><h1>研究问题、可复现分析与敏感性分析</h1><p class="dek">怎样提出可回答的网络研究问题，做到可复算，并用敏感性分析和替代解释检验结论是否稳健</p><dl class="doc-meta"><div><dt>知识页面</dt><dd>16 页</dd></div><div><dt>阅读</dt><dd>约 36 分钟</dd></div><div><dt>讲解视频</dt><dd>1 段</dd></div><div><dt>代码示例</dt><dd>8 个</dd></div></dl><div class="chips"><span class="chip">研究问题</span><span class="chip">预注册</span><span class="chip">分析计划</span><span class="chip">可复算性</span><span class="chip">可重复性</span><span class="chip">计算环境</span><span class="chip">容器</span><span class="chip">数据共享</span><span class="chip">FAIR 原则</span><span class="chip">随机种子</span><span class="chip">蒙特卡洛误差</span><span class="chip">敏感性分析</span><span class="chip">替代解释</span><span class="chip">多元宇宙分析</span></div></header><section class="block prose" id="overview"><p>网络是构建出来的：节点怎么定义、边用什么统计量、阈值取多少、社团算法和随机基线怎么选，每一步都是分析者的选择。本专题讨论的核心问题是：<strong>一个网络分析的结论，是数据的性质，还是分析选择的产物？</strong></p>
+<p>围绕这个问题，本专题按一项研究的生命周期组织：</p>
+<ol type="1">
+<li><strong>设计阶段</strong>：怎样把研究方向改写成可回答、可检验的网络研究问题（<a
+href="reproducible-research.research-questions.html">提出网络研究问题</a>），怎样在看到结果之前写下分析计划（<a
+href="reproducible-research.preregistration.html">预注册与分析计划</a>），以及需要多大的样本（<a
+href="reproducible-research.power-sample-size.html">统计功效与样本量</a>）。</li>
+<li><strong>执行阶段</strong>：怎样组织数据与代码，使结果可以被他人和自己复算（<a
+href="reproducible-research.reproducible-analysis.html">可复算的分析</a>、<a
+href="reproducible-research.computational-environment.html">计算环境与工作流</a>、<a
+href="reproducible-research.randomness-robustness.html">随机性控制</a>）。</li>
+<li><strong>检验阶段</strong>：怎样用敏感性分析、替代解释排查和多元宇宙分析检验结论的稳健性（<a
+href="reproducible-research.sensitivity-analysis.html">敏感性分析与替代解释</a>、<a
+href="reproducible-research.multiverse-analysis.html">多元宇宙分析与设定曲线</a>）。</li>
+<li><strong>报告与共享阶段</strong>：每一步应报告什么（<a
+href="reproducible-research.reporting-checklist.html">网络研究的报告清单</a>），数据和代码怎样共享（<a
+href="reproducible-research.open-data-code.html">数据与代码共享</a>），以及怎样负责任地使用和披露生成式
+AI 辅助工具。</li>
+</ol>
+<p>网络研究中关于可重复性的争论与案例见<a
+href="reproducible-research.replication-cases.html">可重复性危机与负结果</a>。这些方法把其他专题中的具体问题收束为同一原则：<a
+href="brain-connectome.html">脑连接组：结构与功能连接</a>中的阈值选择、<a
+href="symptom-networks.html">症状网络与网络精神病学</a>中的稳定性检验、<a
+href="gene-network-inference.html">基因调控网络推断与共表达分析</a>中的推断可靠性、<a
+href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a>中的度匹配零模型，都是它的不同侧面。网络构建中的统计检验与重抽样方法见<a
+href="network-construction.html">网络构建与统计验证</a>，网络分析的一般流程与工具见<a
+href="analysis-workflow.html">网络分析流程与 NetworkX
+实践</a>，结果的图表呈现与报告结构见<a
+href="reporting-frontiers.html">结果呈现与研究前沿</a>。</p>
+<div class="callout-def">
+<p><strong>几个容易混淆的术语</strong>（本站采用 The Turing Way
+手册的划分）：同一数据 + 同一分析 →
+相同结果，称为<strong>可复算</strong>（reproducible）；不同数据 +
+同一分析 → 一致结论，称为<strong>可重复</strong>（replicable）；同一数据
++ 不同的合理分析 →
+一致结论，称为<strong>稳健</strong>（robust）；不同数据 + 不同分析 →
+一致结论，称为<strong>可推广</strong>（generalisable）。不同领域对
+reproducible 与 replicable 的用法并不统一，写作时应先给出定义。</p>
+</div>
+</section><section class="block" id="pages"><h2><span class="tag">Contents</span>知识页面</h2><div class="arts"><a class="art" href="reproducible-research.research-questions.html"><span class="no">01</span><span class="t">提出网络研究问题</span><span class="d">从研究方向到研究问题 “用 STRING 分析阿尔茨海默病”是方向，不是问题。一个可回答的研究问题至少要说清四件事： 要素 需要回答 例子 --- --- --- 系统 研究对象是…</span></a><a class="art" href="reproducible-research.preregistration.html"><span class="no">02</span><span class="t">预注册与分析计划</span><span class="d">为什么要在看到结果之前写下计划 Nosek 等（2018）把科学推理区分为预测（用新观测检验事先的假设）和事后解释（postdiction，用已有观测产生假设）。两者都有价值，但人…</span></a><a class="art" href="reproducible-research.reproducible-analysis.html"><span class="no">03</span><span class="t">可复算的分析</span><span class="d">两个概念 可复算（reproducible）：用相同的数据、相同的代码和步骤，得到相同的结果。可重复（replicable）：用新的数据、按相同的方法，得到一致的结论。任何计算分析…</span></a><a class="art" href="reproducible-research.computational-environment.html"><span class="no">04</span><span class="t">计算环境与工作流</span><span class="d">同一段代码在不同的软件版本下可能给出不同的结果：默认参数会变，算法实现会改，随机数生成器也可能改变。Burger 等（2023）在心理网络报告规范中专门指出，软件包的估计默认值会随…</span></a><a class="art" href="reproducible-research.open-data-code.html"><span class="no">05</span><span class="t">数据与代码共享</span><span class="d">FAIR 原则 Wilkinson 等（2016）提出的 FAIR 原则要求科研数据（及其元数据）可发现（Findable）、可访问（Accessible）、可互操作（Intero…</span></a><a class="art" href="reproducible-research.randomness-robustness.html"><span class="no">06</span><span class="t">随机性控制</span><span class="d">网络分析中的随机性来源很多：Louvain/Leiden 等启发式算法的节点访问顺序、随机网络与度保持随机化、bootstrap 与置换检验、交叉验证的分割、随机梯度训练的图神经网…</span></a><a class="art" href="reproducible-research.sensitivity-analysis.html"><span class="no">07</span><span class="t">敏感性分析与替代解释</span><span class="d">分析选择的“分岔花园” 一个网络分析要经过许多选择：节点怎么定义、边用什么统计量、阈值取多少、社团算法用哪个、随机基线怎么构造……每个选择都“合理”，但组合起来，结论可能截然不同。…</span></a><a class="art" href="reproducible-research.multiverse-analysis.html"><span class="no">08</span><span class="t">多元宇宙分析与设定曲线</span><span class="d">从“一个分析”到“分析的集合” Steegen 等（2016）指出，原始数据在变成分析数据集之前要经过一系列处理选择，每种合理选择组合都产生一个“数据宇宙”；只报告其中一个，等于隐…</span></a><a class="art" href="reproducible-research.power-sample-size.html"><span class="no">09</span><span class="t">统计功效与样本量</span><span class="d">低功效的双重代价 Button 等（2013）指出，神经科学研究的平均统计功效很低，后果不只是漏检真实效应：在功效低的研究中，显著结果为真阳性的概率也更低，而且被报告的显著效应量会…</span></a><a class="art" href="reproducible-research.reporting-checklist.html"><span class="no">10</span><span class="t">网络研究的报告清单</span><span class="d">报告规范的作用是让读者能评价、复算和综合研究。通用规范（如观察性研究的 STROBE、临床试验的 CONSORT）不覆盖网络构建的细节，因此各领域出现了针对网络或影像的规范：Nic…</span></a><a class="art" href="reproducible-research.replication-cases.html"><span class="no">11</span><span class="t">可重复性危机与负结果</span><span class="d">背景 开放科学合作组织（Open Science Collaboration, 2015）对三本心理学期刊上的 100 项研究做了高功效重复：原研究中 97% 报告了显著结果，而重…</span></a><a class="art" href="reproducible-research.ai-assistance.html"><span class="no">12</span><span class="t">负责任地使用 AI 辅助</span><span class="d">生成式 AI 可以显著提高写代码和查资料的效率，也带来新的错误类型。一个可行的原则是：可以使用，必须核实，如实披露，作者负责。 合适与不合适的用法 合适（核实后使用） 不合适 --…</span></a><a class="art" href="reproducible-research.derivations.html"><span class="no">13</span><span class="t">数学推导与算法</span><span class="d">Fisher z 变换与样本量公式 设样本相关 来自二元正态总体，总体相关为 。Fisher z 变换 近似服从 。对原假设 的双侧检验，统计量 ，拒绝域为 。当真实值为 时，功效…</span></a><a class="art" href="reproducible-research.frontiers.html"><span class="no">14</span><span class="t">研究前沿与开放问题</span><span class="d">1. 网络研究的预注册模板：心理网络已有报告标准（Burger 等 2023），但面向脑网络、分子网络、网络医学的预注册模板和报告清单仍不完善；怎样在不束缚探索的前提下规定“网络构…</span></a><a class="art" href="reproducible-research.biomedical.html"><span class="no">15</span><span class="t">生物医学应用</span><span class="d">可复算和敏感性分析在生物医学网络研究中不是“额外加分”，而是结论能否被采信的前提。 在脑网络领域，阈值和图谱的选择会改变小世界性和枢纽排序（见脑连接组：结构与功能连接），头动会制造…</span></a><a class="art" href="reproducible-research.limitations.html"><span class="no">16</span><span class="t">适用范围与常见误用</span><span class="d">1. 误区：固定了随机种子，结果就“可靠”了。→ 正解：固定种子保证可复算；可靠性要求结论在多个种子下都成立，且随机网络数足够大。 2. 误区：敏感性分析是找到最好看的参数。→ 正…</span></a></div></section><section class="block" id="video"><h2><span class="tag">VIDEO</span>讲解视频</h2><div class="video-main"><video controls preload="metadata" playsinline poster="media/videos/L15-core.jpg"><source src="media/videos/L15-core.mp4" type="video/mp4"><track kind="captions" srclang="zh" label="中文字幕" src="media/videos/L15-core.vtt"></video><div class="video-meta"><strong>让结论站得住：研究问题、可复算与敏感性分析</strong><span>3 分 56 秒</span></div><details class="transcript"><summary>文字稿</summary><p>大家好，这一期不讲新的网络模型，而是讲怎样把网络研究做扎实。我们要回答一个贯穿始终的问题：你的结论是数据的性质，还是分析选择的产物？</p><p>先说研究问题，用 STRING 分析阿尔茨海默病只是一个方向，还不是问题。节点代表什么，边代表什么，数据从哪个库、哪个版本来，都要说清楚。你是在描述、比较、预测，还是解释机制，这决定了后面用什么方法。还要事先写出什么样的结果支持你的假设，比如与度匹配随机基因相比。最后问自己，去掉网络只看单个基因，能不能回答这个问题？能的话，就不需要网络。</p><p>可复算的意思是，同样的数据和代码，别人能得到同样的结果。下载的原始数据不要手工修改，数据库的版本号和下载日期要写进说明文件。关键数值要由脚本产生，图形界面里的点击很难被别人重现。随机种子要固定并记录，但结论要在多个种子下都成立才算可靠。Python 和各个包的版本也要记下来，同一个算法在不同版本里可能不一样。用 Git 管理代码，每完成一步就提交一次，写清楚做了什么。提交之前，从原始数据出发完整跑一遍，确认所有图表都能重新生成。</p><p>再看敏感性分析，这是同一个相关矩阵，我们逐步提高阈值。网络越来越稀疏，密度和平均聚集系数都在变，枢纽排序也会变。如果你的结论只在某一个阈值下成立，就必须如实说明。更好的做法是扫描一段密度区间，把指标画成曲线来报告。阈值只是一个例子，边的定义、数据库置信度、社团算法的种子，都应该这样检查。有研究请70个团队分析同一份脑影像数据，结论差异很大，主要来自分析流程不同。</p><p>看到有趣的结果，先排查替代解释，第一个是两组网络的密度本来就不同。第二，结果是不是只反映了热门基因连边多，有没有做度匹配。第三，头动、批次、细胞组成这些混杂因素会不会同时影响网络和结果。第四，你检验了多少节点和指标，有没有做多重比较校正。第五，有没有用同一份数据既挑选特征、又检验这些特征。</p><p>AI 工具可以帮我们调试代码、解释概念，但每一处都要自己理解和核实。AI 可能编造看起来很像真的参考文献，所以每一条都要通过 DOI 打开核对。未公开的病人数据和受协议保护的数据，不能上传到在线服务。在报告里写一段说明，讲清用了什么工具、用在哪里、怎样核实的。</p><p>研究进行到一半时，可以先整理一页进展报告，请同行看一看。也可以录一段5分钟的讲解视频，或者准备带讲稿的幻灯片。还要列出你打算检查的两到三个关键分析选择。互相评议时，写一个优点、两个问题和一条可操作的建议。修改完成时，附一页修改说明，逐条回应收到的意见。</p><p>小结一下，好问题要说清比较对象和判断标准。好分析要能从原始数据一键重跑。好结论要在合理的分析选择范围内都成立。用 AI 辅助没有问题，但要写明用途，并对全部内容负责。在结果呈现部分，我们还会给出报告规范，可以提前对照检查。建议打开网站上的代码示例，亲手做一次敏感性分析。</p></details></div></section><section class="block" id="demos"><h2><span class="tag">INTERACTIVE</span>交互可视化</h2><div class="demo" data-demo="brain_threshold"></div></section><section class="block" id="code"><h2><span class="tag">CODE</span>计算实现</h2><p class="small">8 个完整可运行的 Python 示例，每个都给出代码、输出图和解读；可在浏览器中直接运行，或下载 <a href="notebooks/reproducible-research.ipynb" download>Jupyter Notebook</a> · <a href="notebooks/reproducible-research.py" download>Python 脚本</a>。</p><div class="gallery"><a class="gcard" href="ex-reproducible-research-0.html"><span class="thumb"><img src="gallery/reproducible-research-0-0.png" alt="" loading="lazy"></span><span class="gt">阈值敏感性——枢纽排名随网络密度如何变化</span></a><a class="gcard" href="ex-reproducible-research-1.html"><span class="thumb"><img src="gallery/reproducible-research-1-0.png" alt="" loading="lazy"></span><span class="gt">随机种子敏感性——社团划分的可重复程度</span></a><a class="gcard" href="ex-reproducible-research-2.html"><span class="thumb"><img src="gallery/reproducible-research-2-0.png" alt="" loading="lazy"></span><span class="gt">替代解释——组间差异来自“结构不同”还是“连接整体变弱”</span></a><a class="gcard" href="ex-reproducible-research-3.html"><span class="thumb"><img src="gallery/reproducible-research-3-0.png" alt="" loading="lazy"></span><span class="gt">多元宇宙分析——把所有合理的网络构建选择组合起来同时报告</span></a><a class="gcard" href="ex-reproducible-research-4.html"><span class="thumb"><img src="gallery/reproducible-research-4-0.png" alt="" loading="lazy"></span><span class="gt">网络边检测的统计功效——Fisher z 近似与蒙特卡洛模拟</span></a><a class="gcard" href="ex-reproducible-research-5.html"><span class="thumb"><img src="gallery/reproducible-research-5-0.png" alt="" loading="lazy"></span><span class="gt">随机种子与蒙特卡洛误差——零模型 z 分数和置换 p 值本身也是估计量</span></a><a class="gcard" href="ex-reproducible-research-6.html"><span class="thumb"><img src="gallery/reproducible-research-6-0.png" alt="" loading="lazy"></span><span class="gt">循环论证（double dipping）——用同一份数据选边又检验边</span></a><a class="gcard" href="ex-reproducible-research-7.html"><span class="thumb"><pre>{
+  &quot;python&quot;: &quot;3.15.0&quot;,
+  &quot;platform&quot;: &quot;macOS-27.2-arm64-arm-64bit-Mach-O&quot;,
+  &quot;packages&quot;: {
+    &quot;networkx&quot;: &quot;3.7&quot;,
+    &quot;numpy&quot;: &quot;2.5.4&quot;,
+    &quot;scipy&quot;: &quot;1.18.1&quot;
+  },
+  &quot;parameters&quot;: {</pre></span><span class="gt">运行清单（provenance manifest）——记录环境、参数、种子与输入输出的哈希</span></a></div></section><section class="block prose" id="related"><h2><span class="tag">Links</span>关联知识</h2><ul>
+<li><a href="analysis-workflow.html">网络分析流程与 NetworkX
+实践</a>：网络分析的一般流程、零模型比较与工具。</li>
+<li><a
+href="network-construction.html">网络构建与统计验证</a>：从原始测量构建网络时的选择与统计检验，bootstrap、重测信度与跨数据集复现是本专题稳健性检验的具体方法。</li>
+<li><a
+href="brain-connectome.html">脑连接组：结构与功能连接</a>：阈值、密度、图谱与预处理选择对脑网络指标的影响。</li>
+<li><a href="symptom-networks.html">症状网络与网络精神病学</a>：中心性的
+bootstrap 稳定性与跨样本复现争论。</li>
+<li><a
+href="gene-network-inference.html">基因调控网络推断与共表达分析</a>：网络推断的可靠性与社区基准评测。</li>
+<li><a
+href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a>：度匹配随机基线、研究偏倚与外部验证。</li>
+<li><a
+href="community-structure.html">社团结构与社区发现</a>：社团检测的随机性、分辨率参数与共识划分。</li>
+<li><a
+href="reporting-frontiers.html">结果呈现与研究前沿</a>：把敏感性分析与不确定性写进图表和报告。</li>
+</ul>
+</section><section class="block prose" id="references"><h2><span class="tag">References</span>核心文献</h2><h3
+id="sandve-等-2013ten-simple-rules-for-reproducible-computational-research">Sandve
+等 2013：Ten simple rules for reproducible computational research</h3>
+<ul>
+<li><strong>背景</strong>：计算研究的结果往往难以由他人甚至原作者复现。<em>PLoS
+Computational Biology</em> 9(10):e1003285，DOI <a
+href="https://doi.org/10.1371/journal.pcbi.1003285">10.1371/journal.pcbi.1003285</a>。</li>
+<li><strong>核心内容</strong>：十条可操作的规则，包括记录每个结果是如何产生的、避免手工修改数据、记录外部程序的版本、用版本控制、记录随机种子、保存图表背后的原始数值等。</li>
+<li><strong>阅读提示</strong>：边读边对照自己的项目目录，逐条打勾；全文很短，约
+30 分钟。</li>
+<li><strong>思考题</strong>：十条规则中，哪一条在你的研究里最难做到？你打算怎样变通？</li>
+</ul>
+<h3
+id="botvinik-nezer-等-2020variability-in-the-analysis-of-a-single-neuroimaging-dataset-by-many-teams">Botvinik-Nezer
+等 2020：Variability in the analysis of a single neuroimaging dataset by
+many teams</h3>
+<ul>
+<li><strong>背景</strong>：同一份数据，不同的合理分析流程会得到多大差异？<em>Nature</em>
+582:84–88，DOI <a
+href="https://doi.org/10.1038/s41586-020-2314-9">10.1038/s41586-020-2314-9</a>。</li>
+<li><strong>核心发现</strong>：70 个团队独立检验 9
+个预设假设，没有两个团队采用完全相同的流程；同一假设上各团队的结论一致性有限，分析流程的多个方面与结果差异有关；但各团队的中间统计图之间相关较高，跨团队的元分析得到了一致的激活区域。</li>
+<li><strong>阅读提示</strong>：注意“中间结果相似、最终二元结论不同”这一现象——阈值化把连续证据变成了“是/否”，与<a
+href="brain-connectome.html">脑连接组</a>中网络阈值的问题同源。</li>
+<li><strong>思考题</strong>：如果你的分析交给 10
+个团队独立完成，你认为哪一步最可能导致结论分歧？</li>
+</ul>
+<h3
+id="steegen-等-2016increasing-transparency-through-a-multiverse-analysis">Steegen
+等 2016：Increasing transparency through a multiverse analysis</h3>
+<ul>
+<li><strong>背景</strong>：数据处理阶段的“合理选择”会在不知不觉中影响结论。<em>Perspectives
+on Psychological Science</em> 11(5):702–712，DOI <a
+href="https://doi.org/10.1177/1745691616658637">10.1177/1745691616658637</a>。</li>
+<li><strong>核心内容</strong>：提出“数据多元宇宙”的概念，主张把所有合理处理选择下的结果一并报告，并用图示呈现结论对选择的依赖。</li>
+<li><strong>阅读提示</strong>：把文中的“数据处理选择”替换为“网络构建选择”（图谱、边统计量、阈值），思考自己研究的多元宇宙有多大。</li>
+<li><strong>思考题</strong>：你的研究中，哪些选择确实没有公认最优解、应放进多元宇宙？哪些选择应在事先就排除？</li>
+</ul>
+<h3 id="nosek-等-2018the-preregistration-revolution">Nosek 等 2018：The
+preregistration revolution</h3>
+<ul>
+<li><strong>背景</strong>：预测与事后解释在实践中常被混淆。<em>PNAS</em>
+115(11):2600–2606，DOI <a
+href="https://doi.org/10.1073/pnas.1708274114">10.1073/pnas.1708274114</a>。</li>
+<li><strong>核心内容</strong>：阐述预注册如何区分验证性与探索性分析，并讨论数据已存在、需要偏离计划等不理想情形下的实用策略。</li>
+<li><strong>阅读提示</strong>：重点读不理想情形的部分，它与使用公共数据库的网络研究最相关。</li>
+<li><strong>思考题</strong>：如果你的数据已经下载并做过描述性统计，怎样设计一个仍然可信的预注册？</li>
+</ul>
+<h3
+id="wilkinson-等-2016the-fair-guiding-principles-for-scientific-data-management-and-stewardship">Wilkinson
+等 2016：The FAIR Guiding Principles for scientific data management and
+stewardship</h3>
+<ul>
+<li><strong>背景</strong>：数据共享需要让人和机器都能找到并重用数据。<em>Scientific
+Data</em> 3:160018，DOI <a
+href="https://doi.org/10.1038/sdata.2016.18">10.1038/sdata.2016.18</a>。</li>
+<li><strong>核心内容</strong>：提出可发现、可访问、可互操作、可重用四类原则及其细则，强调持久标识符、丰富元数据、标准词表与清晰许可。</li>
+<li><strong>阅读提示</strong>：对照<a
+href="reproducible-research.open-data-code.html">数据与代码共享</a>中的表格，检查你的网络数据是否满足每一条。</li>
+<li><strong>思考题</strong>：受隐私限制无法公开的患者数据，怎样仍然满足
+FAIR 中的“可发现”和“可访问”？</li>
+</ul>
+<h3
+id="burger-等-2023reporting-standards-for-psychological-network-analyses-in-cross-sectional-data">Burger
+等 2023：Reporting standards for psychological network analyses in
+cross-sectional data</h3>
+<ul>
+<li><strong>背景</strong>：心理网络分析缺少关于“报告什么”的规范，这为研究者自由度留下空间。<em>Psychological
+Methods</em> 28(4):806–824，DOI <a
+href="https://doi.org/10.1037/met0000471">10.1037/met0000471</a>。</li>
+<li><strong>核心内容</strong>：按方法与结果两部分，给出通用分析流程（样本、变量选择、预处理、估计方法及参数、准确性与稳定性、软件版本与种子）和特定分析流程（组间比较、中心性、边差异、聚类）的报告要求，并附两个用公开数据完成的示例。</li>
+<li><strong>阅读提示</strong>：即使不做症状网络，“通用分析流程”部分也可直接迁移到脑网络和分子网络。</li>
+<li><strong>思考题</strong>：把你最近读过的一篇网络论文按这份规范逐项核对，缺了哪些信息？</li>
+</ul>
+<h3
+id="wilson-等-2017good-enough-practices-in-scientific-computing">Wilson
+等 2017：Good enough practices in scientific computing</h3>
+<ul>
+<li><strong>背景</strong>：面向非专业程序员的研究者，什么是“足够好”的计算实践？<em>PLoS
+Computational Biology</em> 13(6):e1005510，DOI <a
+href="https://doi.org/10.1371/journal.pcbi.1005510">10.1371/journal.pcbi.1005510</a>。</li>
+<li><strong>核心内容</strong>：从数据管理、代码组织、协作、项目结构、版本控制、写作六个方面给出低门槛的建议，强调“先做到够用，再追求完美”。</li>
+<li><strong>阅读提示</strong>：重点读数据管理和项目结构两节，可直接套用于自己的研究项目。</li>
+<li><strong>思考题</strong>：作者建议“为每个项目准备一个
+README”。请为你正在进行的一项分析写出 README 的前 10 行。</li>
+</ul>
+<h3 id="forbes-等-2017-与-borsboom-等-2017症状网络可重复性争论">Forbes
+等 2017 与 Borsboom 等 2017：症状网络可重复性争论</h3>
+<ul>
+<li><strong>背景</strong>：Forbes 等，“Evidence that psychopathology
+symptom networks have limited replicability”，<em>Journal of Abnormal
+Psychology</em> 126(7):969–988，DOI <a
+href="https://doi.org/10.1037/abn0000276">10.1037/abn0000276</a>；Borsboom
+等，“False alarm? A comprehensive reanalysis …”，同刊
+126(7):989–999，DOI <a
+href="https://doi.org/10.1037/abn0000306">10.1037/abn0000306</a>。</li>
+<li><strong>核心内容</strong>：前者认为条件独立网络的边和中心性在相似样本间复现差；后者重新分析后认为问题主要来自方法选择。</li>
+<li><strong>阅读提示</strong>：把两篇对照阅读，列出双方在数据处理上的具体分歧，再看
+Fried 等（2018）的多样本研究如何推进了这一问题。</li>
+<li><strong>思考题</strong>：这场争论中，哪些分歧可以通过事先的报告规范和代码共享避免？</li>
+</ul>
+</section><section class="block" id="data"><h2><span class="tag">Data &amp; tools</span>相关数据与软件</h2><div class="rgrid"><a class="rcard" href="r-openneuro.html" data-dom="brain" data-k="openneuro 按 bids 标准组织的开放神经影像数据共享平台。"><span class="kind">数据库</span><b>OpenNeuro</b><span class="d">按 BIDS 标准组织的开放神经影像数据共享平台。</span></a><a class="rcard" href="r-abide.html" data-dom="brain" data-k="abide（自闭症脑影像数据交换） 多中心自闭症谱系障碍与对照的静息态 fmri 及结构像数据。"><span class="kind">数据集</span><b>ABIDE（自闭症脑影像数据交换）</b><span class="d">多中心自闭症谱系障碍与对照的静息态 fMRI 及结构像数据。</span></a><a class="rcard" href="r-neuromaps.html" data-dom="brain methods" data-k="neuromaps 收集、转换并比较脑图谱的 python 工具箱，含空间置换零模型。"><span class="kind">软件/工具包</span><b>neuromaps</b><span class="d">收集、转换并比较脑图谱的 Python 工具箱，含空间置换零模型。</span></a><a class="rcard" href="r-bootnet.html" data-dom="symptom methods" data-k="bootnet 估计心理网络并用自助法评估边与中心性稳定性的 r 包。"><span class="kind">软件/工具包</span><b>bootnet</b><span class="d">估计心理网络并用自助法评估边与中心性稳定性的 R 包。</span></a></div></section><section class="block prose" id="resources"><h2><span class="tag">Further</span>延伸资源</h2><div class="table-wrap"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>类型</th>
+<th>资源</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>手册</td>
+<td><a href="https://book.the-turing-way.org/" target="_blank" rel="noopener">The Turing Way</a>（The
+Turing Way Community，DOI <a
+href="https://doi.org/10.5281/zenodo.3233853">10.5281/zenodo.3233853</a>）</td>
+<td>可复现、合作与合乎伦理的数据科学社区手册；本专题的术语划分与环境、许可、研究纲要等内容参照其“可复现研究指南”；CC
+BY 许可</td>
+</tr>
+<tr>
+<td>论文</td>
+<td>Simmons, Nelson &amp; Simonsohn 2011，<a
+href="https://doi.org/10.1177/0956797611417632">doi.org/10.1177/0956797611417632</a></td>
+<td>“研究者自由度”如何制造假阳性，30 分钟可读完</td>
+</tr>
+<tr>
+<td>论文</td>
+<td>Simonsohn, Simmons &amp; Nelson 2020，设定曲线分析，<a
+href="https://doi.org/10.1038/s41562-020-0912-z">doi.org/10.1038/s41562-020-0912-z</a></td>
+<td>多元宇宙结果的呈现与联合推断方法</td>
+</tr>
+<tr>
+<td>论文</td>
+<td>Silberzahn 等 2018，多团队分析，<a
+href="https://doi.org/10.1177/2515245917747646">doi.org/10.1177/2515245917747646</a></td>
+<td>29 个团队分析同一数据的结果差异</td>
+</tr>
+<tr>
+<td>论文</td>
+<td>Luppi 等 2024，<a
+href="https://doi.org/10.1038/s41467-024-48781-5">doi.org/10.1038/s41467-024-48781-5</a></td>
+<td>768 条功能连接组构建流水线的系统评估</td>
+</tr>
+<tr>
+<td>论文</td>
+<td>Dafflon 等 2022，<a
+href="https://doi.org/10.1038/s41467-022-31347-8">doi.org/10.1038/s41467-022-31347-8</a></td>
+<td>用主动学习近似探索神经影像分析的多元宇宙</td>
+</tr>
+<tr>
+<td>论文</td>
+<td>Hallquist &amp; Hillary 2019，<a
+href="https://doi.org/10.1162/netn_a_00054">doi.org/10.1162/netn_a_00054</a></td>
+<td>106 项临床图论研究的方法回顾与建议</td>
+</tr>
+<tr>
+<td>论文</td>
+<td>Kriegeskorte 等 2009，<a
+href="https://doi.org/10.1038/nn.2303">doi.org/10.1038/nn.2303</a></td>
+<td>循环分析（double dipping）的危害</td>
+</tr>
+<tr>
+<td>论文</td>
+<td>Kerr 1998，HARKing，<a
+href="https://doi.org/10.1207/s15327957pspr0203_4">doi.org/10.1207/s15327957pspr0203_4</a></td>
+<td>结果已知后提出假设</td>
+</tr>
+<tr>
+<td>论文</td>
+<td>Wicherts 等 2016，<a
+href="https://doi.org/10.3389/fpsyg.2016.01832">doi.org/10.3389/fpsyg.2016.01832</a></td>
+<td>研究各阶段研究者自由度的检查清单</td>
+</tr>
+<tr>
+<td>论文</td>
+<td>Van den Akker 等 2021，<a
+href="https://doi.org/10.15626/MP.2020.2625">doi.org/10.15626/MP.2020.2625</a></td>
+<td>二次数据分析的预注册模板</td>
+</tr>
+<tr>
+<td>论文</td>
+<td>Chambers &amp; Tzavella 2022，<a
+href="https://doi.org/10.1038/s41562-021-01193-7">doi.org/10.1038/s41562-021-01193-7</a></td>
+<td>注册报告的历史、现状与未来</td>
+</tr>
+<tr>
+<td>论文</td>
+<td>Munafò 等 2017，<a
+href="https://doi.org/10.1038/s41562-016-0021">doi.org/10.1038/s41562-016-0021</a></td>
+<td>可复现科学宣言：方法、报告、评审、激励等方面的措施</td>
+</tr>
+<tr>
+<td>论文</td>
+<td>Button 等 2013，<a
+href="https://doi.org/10.1038/nrn3475">doi.org/10.1038/nrn3475</a></td>
+<td>低功效如何损害神经科学结论的可靠性</td>
+</tr>
+<tr>
+<td>论文</td>
+<td>Marek 等 2022，<a
+href="https://doi.org/10.1038/s41586-022-04492-9">doi.org/10.1038/s41586-022-04492-9</a></td>
+<td>全脑关联研究需要数千人的样本</td>
+</tr>
+<tr>
+<td>论文</td>
+<td>Constantin 等 2026，<a
+href="https://doi.org/10.1037/met0000555">doi.org/10.1037/met0000555</a></td>
+<td>网络模型样本量规划的蒙特卡洛方法（R 包 powerly）</td>
+</tr>
+<tr>
+<td>论文</td>
+<td>Isvoranu &amp; Epskamp 2023，<a
+href="https://doi.org/10.1037/met0000439">doi.org/10.1037/met0000439</a></td>
+<td>高斯图模型估计方法的大规模模拟比较与选择建议</td>
+</tr>
+<tr>
+<td>论文</td>
+<td>Fried 等 2018，<a
+href="https://doi.org/10.1177/2167702617745092">doi.org/10.1177/2167702617745092</a></td>
+<td>四个 PTSD 临床样本的网络复现研究，公开了相关矩阵与代码</td>
+</tr>
+<tr>
+<td>论文</td>
+<td>Open Science Collaboration 2015，<a
+href="https://doi.org/10.1126/science.aac4716">doi.org/10.1126/science.aac4716</a></td>
+<td>100 项心理学研究的大规模重复</td>
+</tr>
+<tr>
+<td>论文</td>
+<td>Ioannidis 2005，<a
+href="https://doi.org/10.1371/journal.pmed.0020124">doi.org/10.1371/journal.pmed.0020124</a></td>
+<td>已发表阳性结果可信度的理论分析</td>
+</tr>
+<tr>
+<td>论文</td>
+<td>Stodden, Seiler &amp; Ma 2018，<a
+href="https://doi.org/10.1073/pnas.1708290115">doi.org/10.1073/pnas.1708290115</a></td>
+<td>期刊数据代码政策下计算结果的实际可复算比例</td>
+</tr>
+<tr>
+<td>论文</td>
+<td>Trisovic 等 2022，<a
+href="https://doi.org/10.1038/s41597-022-01143-6">doi.org/10.1038/s41597-022-01143-6</a></td>
+<td>大规模重新执行共享研究代码的结果与建议</td>
+</tr>
+<tr>
+<td>论文</td>
+<td>Phipson &amp; Smyth 2010，<a
+href="https://doi.org/10.2202/1544-6115.1585">doi.org/10.2202/1544-6115.1585</a></td>
+<td>置换
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+值为什么不应为 0</td>
+</tr>
+<tr>
+<td>论文</td>
+<td>Epskamp, Borsboom &amp; Fried 2018，<a
+href="https://doi.org/10.3758/s13428-017-0862-1">doi.org/10.3758/s13428-017-0862-1</a></td>
+<td>网络稳定性与准确性检验教程，症状网络研究必读；论文精读见 <a
+href="paper-epskamp2018_accuracy.html">Epskamp 2018</a></td>
+</tr>
+<tr>
+<td>规范</td>
+<td>Nichols 等 2017，COBIDAS，<a
+href="https://doi.org/10.1038/nn.4500">doi.org/10.1038/nn.4500</a></td>
+<td>MRI 数据分析与共享的最佳实践与报告清单</td>
+</tr>
+<tr>
+<td>规范</td>
+<td>Nosek 等 2015，TOP 指南，<a
+href="https://doi.org/10.1126/science.aab2374">doi.org/10.1126/science.aab2374</a></td>
+<td>期刊透明与开放标准（引用、数据、代码、预注册等）</td>
+</tr>
+<tr>
+<td>规范</td>
+<td>Gorgolewski 等 2016，BIDS，<a
+href="https://doi.org/10.1038/sdata.2016.44">doi.org/10.1038/sdata.2016.44</a></td>
+<td>脑影像数据的标准目录结构</td>
+</tr>
+<tr>
+<td>规范</td>
+<td><a href="https://www.icmje.org/" target="_blank" rel="noopener">ICMJE 建议</a></td>
+<td>国际医学期刊编辑委员会关于作者身份与 AI 使用披露的要求</td>
+</tr>
+<tr>
+<td>实践</td>
+<td>Boettiger 2015，<a
+href="https://doi.org/10.1145/2723872.2723882">doi.org/10.1145/2723872.2723882</a></td>
+<td>用 Docker 打包研究计算环境</td>
+</tr>
+<tr>
+<td>实践</td>
+<td>Grüning 等 2018，<a
+href="https://doi.org/10.1016/j.cels.2018.03.014">doi.org/10.1016/j.cels.2018.03.014</a></td>
+<td>生命科学中可复算计算的分层方案（包管理、容器、工作流）</td>
+</tr>
+<tr>
+<td>实践</td>
+<td>Morin 等 2012，<a
+href="https://doi.org/10.1371/journal.pcbi.1002598">doi.org/10.1371/journal.pcbi.1002598</a></td>
+<td>科研软件许可快速指南</td>
+</tr>
+<tr>
+<td>实践</td>
+<td>Smith, Katz &amp; Niemeyer 2016，<a
+href="https://doi.org/10.7717/peerj-cs.86">doi.org/10.7717/peerj-cs.86</a></td>
+<td>软件引用原则</td>
+</tr>
+<tr>
+<td>工具</td>
+<td><a href="https://git-scm.com/" target="_blank" rel="noopener">Git 官方文档</a></td>
+<td>版本控制入门，含免费电子书 <em>Pro Git</em>（有中文版）</td>
+</tr>
+<tr>
+<td>工具</td>
+<td><a href="https://osf.io/" target="_blank" rel="noopener">OSF</a></td>
+<td>预注册、数据与代码存档的开放平台</td>
+</tr>
+</tbody>
+</table></div>
+</section><section class="block prose" id="questions"><h2><span class="tag">Open questions</span>开放问题</h2><ol type="1">
+<li>用<a
+href="reproducible-research.research-questions.html">研究问题四要素表</a>改写一个你正在考虑的网络研究问题，并列出最可能改变结论的两个分析选择。怎样在报告中呈现这两项敏感性分析？</li>
+<li>为你的一项网络研究写一份一页的分析计划：哪些选择事先固定？哪些作为多元宇宙的维度？预计的宇宙数有多大，计算上是否可行？</li>
+<li>你的研究使用的公共数据库（如
+STRING、HCP、TCGA）你已经接触过。怎样设计预注册或数据分割，使确认性分析仍然可信？</li>
+<li>如果网络有 30 个节点、你关心的边偏相关约为 0.15，按<a
+href="reproducible-research.power-sample-size.html">样本量公式</a>估算所需样本量；与你实际能获得的样本相比，你会怎样调整研究问题？</li>
+<li>在你的研究领域，AI
+工具最可能在哪一步帮你节省时间？最可能在哪一步引入不易察觉的错误？你会怎样设计核实流程？</li>
+</ol>
+</section></article><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script><script src="assets/js/demos.js"></script></body></html>

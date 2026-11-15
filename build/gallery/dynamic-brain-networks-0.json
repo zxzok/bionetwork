@@ -1,0 +1,10 @@
+{
+ "topic": "dynamic-brain-networks",
+ "index": 0,
+ "title": "滑动窗口相关",
+ "hash": "6397ffb0ae91a717aa360efd8343db5c4563b551",
+ "ok": true,
+ "figures": 1,
+ "stdout": "A（平稳 0.3）：窗口相关范围 -0.43 ~ 0.73，标准差 0.24\nB（切换）：前 200 个窗口均值 0.60，后 200 个窗口均值 0.03",
+ "stderr": ""
+}

@@ -1,0 +1,154 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>目标控制——只控制一部分节点需要多少驱动节点 · 生物医学网络科学</title><meta name="description" content="网络可控性与稳定性 · 代码示例：目标控制——只控制一部分节点需要多少驱动节点"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-dynamics"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html" aria-current="page">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics" open><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a><ol class="sub"><li><a href="controllability.network-control-systems.html"><span class="n">01</span>动态系统与网络控制</a></li><li><a href="controllability.linear-controllability.html"><span class="n">02</span>线性系统的可控性</a></li><li><a href="controllability.structural-controllability.html"><span class="n">03</span>结构可控性与最大匹配</a></li><li><a href="controllability.driver-nodes.html"><span class="n">04</span>驱动节点与网络结构</a></li><li><a href="controllability.control-centrality.html"><span class="n">05</span>控制中心性与可控子空间</a></li><li><a href="controllability.control-energy.html"><span class="n">06</span>控制能量与 Gramian 的数值问题</a></li><li><a href="controllability.target-control.html"><span class="n">07</span>目标控制与部分可控</a></li><li><a href="controllability.observability.html"><span class="n">08</span>可观测性与观测节点</a></li><li><a href="controllability.nonlinear-control.html"><span class="n">09</span>非线性网络的控制</a></li><li><a href="controllability.brain-network-control.html"><span class="n">10</span>脑网络控制：平均与模态可控性</a></li><li><a href="controllability.author-team-research.html"><span class="n">11</span>驱动节点的枚举、分类与自适应控制</a></li><li><a href="controllability.structural-robustness.html"><span class="n">12</span>结构鲁棒性</a></li><li><a href="controllability.dynamical-stability.html"><span class="n">13</span>动力学稳定性</a></li><li><a href="controllability.derivations.html"><span class="n">14</span>数学推导与算法</a></li><li><a href="controllability.frontiers.html"><span class="n">15</span>研究前沿与开放问题</a></li><li><a href="controllability.biomedical.html"><span class="n">16</span>生物医学应用</a></li><li><a href="controllability.limitations.html"><span class="n">17</span>适用范围与常见误用</a></li></ol></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="code.html">代码库</a> <span class="sep">/</span> <a href="code.html#dynamics">网络动力学与控制</a> <span class="sep">/</span> <a href="controllability.html">网络可控性与稳定性</a></nav><div class="eyebrow" style="margin-top:14px"><b>Example</b><span>06 / 12</span></div><h1>目标控制——只控制一部分节点需要多少驱动节点</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="controllability.html">网络可控性与稳定性</a></dd></div><div><dt>下载</dt><dd><a href="notebooks/controllability.ipynb" download>Notebook</a> · <a href="notebooks/controllability.py" download>.py</a></dd></div></dl></header><section class="block prose"><p>Gao
+等（2014）的贪心算法：右侧放当前目标集合，左侧放指向它们的上游节点，求二分图最大匹配；
+未被匹配的目标成为驱动节点，被匹配到的上游节点成为下一轮的“目标”，迭代直到集合为空或重复出现。
+最后用随机权重的目标可控性秩判据 rank(C_T [B, AB, …, A^{N-1}B]) = |T|
+检验结果。 解读：控制一小部分目标所需的驱动节点通常远少于全控制的
+N_D；结果是近似（上界），不保证最小。</p>
+</section><section class="block"><h2><span class="tag">Output</span>输出图</h2><div class="ex-figs"><img src="gallery/controllability-5-0.png" alt="目标控制——只控制一部分节点需要多少驱动节点：输出图 1" loading="lazy"></div></section><section class="block"><h2><span class="tag">Output</span>文字输出</h2><pre class="ex-out">全控制：驱动节点 13 个（应等于最大匹配的 N_D）
+目标比例 0.10：|T| = 4，驱动节点 2 个，目标可控性秩 = 4 / 4
+目标比例 0.25：|T| = 10，驱动节点 4 个，目标可控性秩 = 10 / 10
+目标比例 0.50：|T| = 20，驱动节点 8 个，目标可控性秩 = 20 / 20</pre></section><section class="block prose"><h2><span class="tag">Code</span>代码</h2><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gao 等（2014）的贪心算法：右侧放当前目标集合，左侧放指向它们的上游节点，求二分图最大匹配；</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 未被匹配的目标成为驱动节点，被匹配到的上游节点成为下一轮的“目标”，迭代直到集合为空或重复出现。</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 最后用随机权重的目标可控性秩判据 rank(C_T [B, AB, ..., A^{N-1}B]) = |T| 检验结果。</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 解读：控制一小部分目标所需的驱动节点通常远少于全控制的 N_D；结果是近似（上界），不保证最小。</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> networkx <span class="im">as</span> nx</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> matching(left_of, targets, n):</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 左侧节点 u 编号为 u，右侧目标 t 编号为 n + t（整数编号使结果可复现）</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    targets <span class="op">=</span> <span class="bu">sorted</span>(targets)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    L <span class="op">=</span> <span class="bu">sorted</span>(<span class="bu">set</span>().union(<span class="op">*</span>[left_of[t] <span class="cf">for</span> t <span class="kw">in</span> targets])) <span class="cf">if</span> targets <span class="cf">else</span> []</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> L:</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> targets, <span class="bu">set</span>()</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    Bg <span class="op">=</span> nx.Graph()</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    Bg.add_nodes_from(L)<span class="op">;</span> Bg.add_nodes_from(n <span class="op">+</span> t <span class="cf">for</span> t <span class="kw">in</span> targets)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    Bg.add_edges_from((u, n <span class="op">+</span> t) <span class="cf">for</span> t <span class="kw">in</span> targets <span class="cf">for</span> u <span class="kw">in</span> <span class="bu">sorted</span>(left_of[t]))</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    M <span class="op">=</span> nx.bipartite.hopcroft_karp_matching(Bg, top_nodes<span class="op">=</span>L)</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    unmatched <span class="op">=</span> [t <span class="cf">for</span> t <span class="kw">in</span> targets <span class="cf">if</span> n <span class="op">+</span> t <span class="kw">not</span> <span class="kw">in</span> M]</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    matched_up <span class="op">=</span> {M[n <span class="op">+</span> t] <span class="cf">for</span> t <span class="kw">in</span> targets <span class="cf">if</span> n <span class="op">+</span> t <span class="kw">in</span> M}</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> unmatched, matched_up</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> target_drivers(G, T):</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;G 的节点须为 0..n-1 的整数。&quot;&quot;&quot;</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    n <span class="op">=</span> G.number_of_nodes()</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    left_of <span class="op">=</span> {v: <span class="bu">set</span>(G.predecessors(v)) <span class="cf">for</span> v <span class="kw">in</span> G}</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    drivers, current, seen <span class="op">=</span> <span class="bu">set</span>(), <span class="bu">set</span>(T), []</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> current <span class="kw">and</span> current <span class="kw">not</span> <span class="kw">in</span> seen:</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>        seen.append(<span class="bu">set</span>(current))</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>        unmatched, current <span class="op">=</span> matching(left_of, current, n)</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>        drivers <span class="op">|=</span> <span class="bu">set</span>(unmatched)</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> drivers:                              <span class="co"># 目标全部落在环上：至少需要 1 个输入</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>        drivers <span class="op">=</span> {<span class="bu">min</span>(T)}</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> drivers</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> target_rank(G, drivers, T, seed<span class="op">=</span><span class="dv">0</span>):</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>    nodes <span class="op">=</span> <span class="bu">list</span>(G)<span class="op">;</span> idx <span class="op">=</span> {u: k <span class="cf">for</span> k, u <span class="kw">in</span> <span class="bu">enumerate</span>(nodes)}<span class="op">;</span> n <span class="op">=</span> <span class="bu">len</span>(nodes)</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>    rng <span class="op">=</span> np.random.default_rng(seed)</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>    A <span class="op">=</span> np.zeros((n, n))</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> u, v <span class="kw">in</span> G.edges():</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>        A[idx[v], idx[u]] <span class="op">=</span> rng.uniform(<span class="fl">0.5</span>, <span class="fl">1.5</span>)</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>    A <span class="op">/=</span> <span class="bu">max</span>(<span class="fl">1.0</span>, np.<span class="bu">abs</span>(np.linalg.eigvals(A)).<span class="bu">max</span>())</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>    B <span class="op">=</span> np.zeros((n, <span class="bu">len</span>(drivers)))</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> j, d <span class="kw">in</span> <span class="bu">enumerate</span>(drivers):</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>        B[idx[d], j] <span class="op">=</span> <span class="fl">1.0</span></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>    blocks, X <span class="op">=</span> [], B.copy()</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(n):</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>        blocks.append(X)<span class="op">;</span> X <span class="op">=</span> A <span class="op">@</span> X</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>    C <span class="op">=</span> np.hstack(blocks)[[idx[t] <span class="cf">for</span> t <span class="kw">in</span> T], :]</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>    s <span class="op">=</span> np.linalg.svd(C, compute_uv<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="bu">int</span>((s <span class="op">&gt;</span> <span class="fl">1e-10</span> <span class="op">*</span> s[<span class="dv">0</span>]).<span class="bu">sum</span>())</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>G <span class="op">=</span> nx.gnm_random_graph(<span class="dv">40</span>, <span class="dv">60</span>, directed<span class="op">=</span><span class="va">True</span>, seed<span class="op">=</span><span class="dv">7</span>)</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>full <span class="op">=</span> target_drivers(G, <span class="bu">set</span>(G))</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;全控制：驱动节点 </span><span class="sc">%d</span><span class="st"> 个（应等于最大匹配的 N_D）&quot;</span> <span class="op">%</span> <span class="bu">len</span>(full))</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>rng <span class="op">=</span> np.random.default_rng(<span class="dv">0</span>)</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>bars <span class="op">=</span> []</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> frac <span class="kw">in</span> [<span class="fl">0.1</span>, <span class="fl">0.25</span>, <span class="fl">0.5</span>]:</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>    T <span class="op">=</span> <span class="bu">set</span>(rng.choice(<span class="dv">40</span>, <span class="bu">int</span>(frac <span class="op">*</span> <span class="dv">40</span>), replace<span class="op">=</span><span class="va">False</span>).tolist())</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>    D <span class="op">=</span> target_drivers(G, T)</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>    bars.append((<span class="bu">len</span>(T), <span class="bu">len</span>(D)))</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;目标比例 </span><span class="sc">%.2f</span><span class="st">：|T| = </span><span class="sc">%d</span><span class="st">，驱动节点 </span><span class="sc">%d</span><span class="st"> 个，目标可控性秩 = </span><span class="sc">%d</span><span class="st"> / </span><span class="sc">%d</span><span class="st">&quot;</span></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>          <span class="op">%</span> (frac, <span class="bu">len</span>(T), <span class="bu">len</span>(D), target_rank(G, D, <span class="bu">sorted</span>(T)), <span class="bu">len</span>(T)))</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>bars.append((<span class="dv">40</span>, <span class="bu">len</span>(full)))</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="fl">6.4</span>, <span class="fl">4.2</span>))</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.arange(<span class="bu">len</span>(bars))<span class="op">;</span> labels <span class="op">=</span> [<span class="st">&quot;10%&quot;</span>, <span class="st">&quot;25%&quot;</span>, <span class="st">&quot;50%&quot;</span>, <span class="st">&quot;100% (full)&quot;</span>]</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>ax.bar(x <span class="op">-</span> <span class="fl">0.18</span>, [b[<span class="dv">0</span>] <span class="cf">for</span> b <span class="kw">in</span> bars], <span class="fl">0.36</span>, color<span class="op">=</span><span class="st">&quot;0.7&quot;</span>, label<span class="op">=</span><span class="st">&quot;targets |T|&quot;</span>)</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>ax.bar(x <span class="op">+</span> <span class="fl">0.18</span>, [b[<span class="dv">1</span>] <span class="cf">for</span> b <span class="kw">in</span> bars], <span class="fl">0.36</span>, color<span class="op">=</span><span class="st">&quot;tab:blue&quot;</span>, label<span class="op">=</span><span class="st">&quot;driver nodes&quot;</span>)</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>ax.set_xticks(x, labels)<span class="op">;</span> ax.set_xlabel(<span class="st">&quot;target fraction&quot;</span>)<span class="op">;</span> ax.set_ylabel(<span class="st">&quot;number of nodes&quot;</span>)<span class="op">;</span> ax.legend()</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">&quot;Target control needs far fewer drivers than full control&quot;</span>)</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()<span class="op">;</span> plt.show()</span></code></pre></div>
+</section><section class="block"><h2><span class="tag">Run</span>在浏览器中运行</h2><p class="small">首次加载 Python 环境约需 20–40 秒；可以修改参数后重新运行。</p><div class="cell"><div class="cell-head"><h3>目标控制——只控制一部分节点需要多少驱动节点</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea id="controllability-cell5" rows="30" spellcheck="false" aria-label="目标控制——只控制一部分节点需要多少驱动节点 代码"># Gao 等（2014）的贪心算法：右侧放当前目标集合，左侧放指向它们的上游节点，求二分图最大匹配；
+# 未被匹配的目标成为驱动节点，被匹配到的上游节点成为下一轮的“目标”，迭代直到集合为空或重复出现。
+# 最后用随机权重的目标可控性秩判据 rank(C_T [B, AB, ..., A^{N-1}B]) = |T| 检验结果。
+# 解读：控制一小部分目标所需的驱动节点通常远少于全控制的 N_D；结果是近似（上界），不保证最小。
+import numpy as np
+import networkx as nx
+
+def matching(left_of, targets, n):
+    # 左侧节点 u 编号为 u，右侧目标 t 编号为 n + t（整数编号使结果可复现）
+    targets = sorted(targets)
+    L = sorted(set().union(*[left_of[t] for t in targets])) if targets else []
+    if not L:
+        return targets, set()
+    Bg = nx.Graph()
+    Bg.add_nodes_from(L); Bg.add_nodes_from(n + t for t in targets)
+    Bg.add_edges_from((u, n + t) for t in targets for u in sorted(left_of[t]))
+    M = nx.bipartite.hopcroft_karp_matching(Bg, top_nodes=L)
+    unmatched = [t for t in targets if n + t not in M]
+    matched_up = {M[n + t] for t in targets if n + t in M}
+    return unmatched, matched_up
+
+def target_drivers(G, T):
+    &quot;&quot;&quot;G 的节点须为 0..n-1 的整数。&quot;&quot;&quot;
+    n = G.number_of_nodes()
+    left_of = {v: set(G.predecessors(v)) for v in G}
+    drivers, current, seen = set(), set(T), []
+    while current and current not in seen:
+        seen.append(set(current))
+        unmatched, current = matching(left_of, current, n)
+        drivers |= set(unmatched)
+    if not drivers:                              # 目标全部落在环上：至少需要 1 个输入
+        drivers = {min(T)}
+    return drivers
+
+def target_rank(G, drivers, T, seed=0):
+    nodes = list(G); idx = {u: k for k, u in enumerate(nodes)}; n = len(nodes)
+    rng = np.random.default_rng(seed)
+    A = np.zeros((n, n))
+    for u, v in G.edges():
+        A[idx[v], idx[u]] = rng.uniform(0.5, 1.5)
+    A /= max(1.0, np.abs(np.linalg.eigvals(A)).max())
+    B = np.zeros((n, len(drivers)))
+    for j, d in enumerate(drivers):
+        B[idx[d], j] = 1.0
+    blocks, X = [], B.copy()
+    for _ in range(n):
+        blocks.append(X); X = A @ X
+    C = np.hstack(blocks)[[idx[t] for t in T], :]
+    s = np.linalg.svd(C, compute_uv=False)
+    return int((s &gt; 1e-10 * s[0]).sum())
+
+G = nx.gnm_random_graph(40, 60, directed=True, seed=7)
+full = target_drivers(G, set(G))
+print(&quot;全控制：驱动节点 %d 个（应等于最大匹配的 N_D）&quot; % len(full))
+rng = np.random.default_rng(0)
+bars = []
+for frac in [0.1, 0.25, 0.5]:
+    T = set(rng.choice(40, int(frac * 40), replace=False).tolist())
+    D = target_drivers(G, T)
+    bars.append((len(T), len(D)))
+    print(&quot;目标比例 %.2f：|T| = %d，驱动节点 %d 个，目标可控性秩 = %d / %d&quot;
+          % (frac, len(T), len(D), target_rank(G, D, sorted(T)), len(T)))
+
+import matplotlib.pyplot as plt
+bars.append((40, len(full)))
+fig, ax = plt.subplots(figsize=(6.4, 4.2))
+x = np.arange(len(bars)); labels = [&quot;10%&quot;, &quot;25%&quot;, &quot;50%&quot;, &quot;100% (full)&quot;]
+ax.bar(x - 0.18, [b[0] for b in bars], 0.36, color=&quot;0.7&quot;, label=&quot;targets |T|&quot;)
+ax.bar(x + 0.18, [b[1] for b in bars], 0.36, color=&quot;tab:blue&quot;, label=&quot;driver nodes&quot;)
+ax.set_xticks(x, labels); ax.set_xlabel(&quot;target fraction&quot;); ax.set_ylabel(&quot;number of nodes&quot;); ax.legend()
+ax.set_title(&quot;Target control needs far fewer drivers than full control&quot;)
+plt.tight_layout(); plt.show()</textarea><div class="out" aria-live="polite"></div></div></section><nav class="pager"><a href="ex-controllability-4.html"><small>上一个示例</small>控制中心性——单个节点能控制的子空间维数</a><a href="ex-controllability-6.html"><small>下一个示例</small>控制能量、Gramian 条件数与“理论可控、数值不可控”</a></nav></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

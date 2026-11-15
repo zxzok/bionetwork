@@ -1,0 +1,131 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>反馈顶点集控制——锁定少数节点把非线性网络推向指定吸引子 · 生物医学网络科学</title><meta name="description" content="网络可控性与稳定性 · 代码示例：反馈顶点集控制——锁定少数节点把非线性网络推向指定吸引子"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-dynamics"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html" aria-current="page">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics" open><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a><ol class="sub"><li><a href="controllability.network-control-systems.html"><span class="n">01</span>动态系统与网络控制</a></li><li><a href="controllability.linear-controllability.html"><span class="n">02</span>线性系统的可控性</a></li><li><a href="controllability.structural-controllability.html"><span class="n">03</span>结构可控性与最大匹配</a></li><li><a href="controllability.driver-nodes.html"><span class="n">04</span>驱动节点与网络结构</a></li><li><a href="controllability.control-centrality.html"><span class="n">05</span>控制中心性与可控子空间</a></li><li><a href="controllability.control-energy.html"><span class="n">06</span>控制能量与 Gramian 的数值问题</a></li><li><a href="controllability.target-control.html"><span class="n">07</span>目标控制与部分可控</a></li><li><a href="controllability.observability.html"><span class="n">08</span>可观测性与观测节点</a></li><li><a href="controllability.nonlinear-control.html"><span class="n">09</span>非线性网络的控制</a></li><li><a href="controllability.brain-network-control.html"><span class="n">10</span>脑网络控制：平均与模态可控性</a></li><li><a href="controllability.author-team-research.html"><span class="n">11</span>驱动节点的枚举、分类与自适应控制</a></li><li><a href="controllability.structural-robustness.html"><span class="n">12</span>结构鲁棒性</a></li><li><a href="controllability.dynamical-stability.html"><span class="n">13</span>动力学稳定性</a></li><li><a href="controllability.derivations.html"><span class="n">14</span>数学推导与算法</a></li><li><a href="controllability.frontiers.html"><span class="n">15</span>研究前沿与开放问题</a></li><li><a href="controllability.biomedical.html"><span class="n">16</span>生物医学应用</a></li><li><a href="controllability.limitations.html"><span class="n">17</span>适用范围与常见误用</a></li></ol></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="code.html">代码库</a> <span class="sep">/</span> <a href="code.html#dynamics">网络动力学与控制</a> <span class="sep">/</span> <a href="controllability.html">网络可控性与稳定性</a></nav><div class="eyebrow" style="margin-top:14px"><b>Example</b><span>10 / 12</span></div><h1>反馈顶点集控制——锁定少数节点把非线性网络推向指定吸引子</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="controllability.html">网络可控性与稳定性</a></dd></div><div><dt>下载</dt><dd><a href="notebooks/controllability.ipynb" download>Notebook</a> · <a href="notebooks/controllability.py" download>.py</a></dd></div></dl></header><section class="block prose"><p>四基因网络：X 与 Y 互相抑制（双稳态开关），X 激活 Z，Y 抑制 W，Z 与 W
+互相激活形成第二个环。
+反馈顶点集（FVS）是删去后网络无环的节点集合；Fiedler 与 Mochizuki
+等（2013）证明：在温和条件下， 把 FVS
+节点的轨迹锁定为目标吸引子上的值，其余节点会收敛到该吸引子（Zañudo 等
+2017 在此基础上加入源节点）。 本例先求两个稳态，再从稳态 1 出发锁定最小
+FVS，检查其余节点是否收敛到稳态 2。 解读：锁定 FVS（2
+个节点）即可在不依赖具体参数的意义上完成状态切换；只锁定 Z（不是
+FVS）失败。 在这组具体参数下只锁定 X 也成功——FVS
+是“对所有满足条件的非线性函数都有效”的充分集合，具体模型可能需要更少。</p>
+</section><section class="block"><h2><span class="tag">Output</span>输出图</h2><div class="ex-figs"><img src="gallery/controllability-9-0.png" alt="反馈顶点集控制——锁定少数节点把非线性网络推向指定吸引子：输出图 1" loading="lazy"></div></section><section class="block"><h2><span class="tag">Output</span>文字输出</h2><pre class="ex-out">稳态 1: [1.    0.059 0.937 0.962]  稳态 2: [0.059 1.    0.    0.029]
+最小反馈顶点集: [&#x27;X&#x27;, &#x27;Z&#x27;]
+锁定 [&#x27;X&#x27;, &#x27;Z&#x27;] -&gt; 终态 [0.059 1.    0.    0.029]，与稳态 2 的距离 0.000
+锁定 [&#x27;Z&#x27;]      -&gt; 终态 [1.    0.059 0.    0.5  ]，与稳态 2 的距离 1.411
+锁定 [&#x27;X&#x27;]      -&gt; 终态 [0.059 1.    0.    0.029]，与稳态 2 的距离 0.000</pre></section><section class="block prose"><h2><span class="tag">Code</span>代码</h2><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 四基因网络：X 与 Y 互相抑制（双稳态开关），X 激活 Z，Y 抑制 W，Z 与 W 互相激活形成第二个环。</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 反馈顶点集（FVS）是删去后网络无环的节点集合；Fiedler 与 Mochizuki 等（2013）证明：在温和条件下，</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 把 FVS 节点的轨迹锁定为目标吸引子上的值，其余节点会收敛到该吸引子（Zañudo 等 2017 在此基础上加入源节点）。</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 本例先求两个稳态，再从稳态 1 出发锁定最小 FVS，检查其余节点是否收敛到稳态 2。</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 解读：锁定 FVS（2 个节点）即可在不依赖具体参数的意义上完成状态切换；只锁定 Z（不是 FVS）失败。</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># 在这组具体参数下只锁定 X 也成功——FVS 是“对所有满足条件的非线性函数都有效”的充分集合，具体模型可能需要更少。</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> itertools</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> networkx <span class="im">as</span> nx</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.integrate <span class="im">import</span> solve_ivp</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>edges <span class="op">=</span> {(<span class="st">&quot;X&quot;</span>, <span class="st">&quot;Y&quot;</span>): <span class="op">-</span><span class="dv">1</span>, (<span class="st">&quot;Y&quot;</span>, <span class="st">&quot;X&quot;</span>): <span class="op">-</span><span class="dv">1</span>, (<span class="st">&quot;X&quot;</span>, <span class="st">&quot;Z&quot;</span>): <span class="op">+</span><span class="dv">1</span>, (<span class="st">&quot;Y&quot;</span>, <span class="st">&quot;W&quot;</span>): <span class="op">-</span><span class="dv">1</span>, (<span class="st">&quot;Z&quot;</span>, <span class="st">&quot;W&quot;</span>): <span class="op">+</span><span class="dv">1</span>, (<span class="st">&quot;W&quot;</span>, <span class="st">&quot;Z&quot;</span>): <span class="op">+</span><span class="dv">1</span>}</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>nodes <span class="op">=</span> [<span class="st">&quot;X&quot;</span>, <span class="st">&quot;Y&quot;</span>, <span class="st">&quot;Z&quot;</span>, <span class="st">&quot;W&quot;</span>]</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>G <span class="op">=</span> nx.DiGraph(<span class="bu">list</span>(edges))</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>hill <span class="op">=</span> <span class="kw">lambda</span> x, s: x<span class="op">**</span><span class="dv">4</span> <span class="op">/</span> (<span class="fl">0.5</span><span class="op">**</span><span class="dv">4</span> <span class="op">+</span> x<span class="op">**</span><span class="dv">4</span>) <span class="cf">if</span> s <span class="op">&gt;</span> <span class="dv">0</span> <span class="cf">else</span> <span class="fl">0.5</span><span class="op">**</span><span class="dv">4</span> <span class="op">/</span> (<span class="fl">0.5</span><span class="op">**</span><span class="dv">4</span> <span class="op">+</span> x<span class="op">**</span><span class="dv">4</span>)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> rhs(t, x, clamp):</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    d <span class="op">=</span> <span class="bu">dict</span>(<span class="bu">zip</span>(nodes, x))<span class="op">;</span> out <span class="op">=</span> []</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> v <span class="kw">in</span> nodes:</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> v <span class="kw">in</span> clamp:</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>            out.append(<span class="fl">0.0</span>)<span class="op">;</span> <span class="cf">continue</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>        regs <span class="op">=</span> [hill(d[u], s) <span class="cf">for</span> (u, w), s <span class="kw">in</span> edges.items() <span class="cf">if</span> w <span class="op">==</span> v]</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>        out.append(np.mean(regs) <span class="op">-</span> d[v])</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> out</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> run(x0, clamp<span class="op">=</span>()):</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> solve_ivp(rhs, (<span class="dv">0</span>, <span class="dv">60</span>), x0, args<span class="op">=</span>(<span class="bu">set</span>(clamp),), rtol<span class="op">=</span><span class="fl">1e-8</span>).y[:, <span class="op">-</span><span class="dv">1</span>]</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>s1 <span class="op">=</span> run([<span class="fl">1.0</span>, <span class="fl">0.0</span>, <span class="fl">1.0</span>, <span class="fl">1.0</span>])<span class="op">;</span> s2 <span class="op">=</span> run([<span class="fl">0.0</span>, <span class="fl">1.0</span>, <span class="fl">0.0</span>, <span class="fl">0.0</span>])</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;稳态 1:&quot;</span>, np.<span class="bu">round</span>(s1, <span class="dv">3</span>), <span class="st">&quot; 稳态 2:&quot;</span>, np.<span class="bu">round</span>(s2, <span class="dv">3</span>))</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> is_fvs(S):</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>    H <span class="op">=</span> G.copy()<span class="op">;</span> H.remove_nodes_from(S)</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> nx.is_directed_acyclic_graph(H)</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>fvs <span class="op">=</span> <span class="bu">next</span>(<span class="bu">set</span>(S) <span class="cf">for</span> k <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">5</span>) <span class="cf">for</span> S <span class="kw">in</span> itertools.combinations(nodes, k) <span class="cf">if</span> is_fvs(S))</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;最小反馈顶点集:&quot;</span>, <span class="bu">sorted</span>(fvs))</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> S <span class="kw">in</span> [<span class="bu">sorted</span>(fvs), [<span class="st">&quot;Z&quot;</span>], [<span class="st">&quot;X&quot;</span>]]:</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>    x0 <span class="op">=</span> s1.copy()</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> v <span class="kw">in</span> S:</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>        x0[nodes.index(v)] <span class="op">=</span> s2[nodes.index(v)]      <span class="co"># 把锁定节点设为目标吸引子上的值并保持不变</span></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>    xf <span class="op">=</span> run(x0, clamp<span class="op">=</span>S)</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;锁定 </span><span class="sc">%-10s</span><span class="st"> -&gt; 终态 </span><span class="sc">%s</span><span class="st">，与稳态 2 的距离 </span><span class="sc">%.3f</span><span class="st">&quot;</span> <span class="op">%</span> (S, np.<span class="bu">round</span>(xf, <span class="dv">3</span>), np.linalg.norm(xf <span class="op">-</span> s2)))</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">4</span>), sharey<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> ax, S <span class="kw">in</span> <span class="bu">zip</span>(axes, [<span class="bu">sorted</span>(fvs), [<span class="st">&quot;Z&quot;</span>]]):</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>    x0 <span class="op">=</span> s1.copy()</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> v <span class="kw">in</span> S:</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>        x0[nodes.index(v)] <span class="op">=</span> s2[nodes.index(v)]</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>    sol <span class="op">=</span> solve_ivp(rhs, (<span class="dv">0</span>, <span class="dv">30</span>), x0, args<span class="op">=</span>(<span class="bu">set</span>(S),), t_eval<span class="op">=</span>np.linspace(<span class="dv">0</span>, <span class="dv">30</span>, <span class="dv">300</span>))</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i, (v, ls) <span class="kw">in</span> <span class="bu">enumerate</span>(<span class="bu">zip</span>(nodes, [<span class="st">&quot;-&quot;</span>, <span class="st">&quot;--&quot;</span>, <span class="st">&quot;-.&quot;</span>, <span class="st">&quot;:&quot;</span>])):</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>        l, <span class="op">=</span> ax.plot(sol.t, sol.y[i], ls<span class="op">=</span>ls, lw<span class="op">=</span><span class="dv">2</span>, label<span class="op">=</span>v <span class="op">+</span> (<span class="st">&quot; (clamped)&quot;</span> <span class="cf">if</span> v <span class="kw">in</span> S <span class="cf">else</span> <span class="st">&quot;&quot;</span>))</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>        ax.axhline(s2[i], c<span class="op">=</span>l.get_color(), lw<span class="op">=</span><span class="fl">0.6</span>, alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>    ax.set_xlabel(<span class="st">&quot;time&quot;</span>)<span class="op">;</span> ax.set_title(<span class="st">&quot;Clamp </span><span class="sc">%s</span><span class="st">: </span><span class="sc">%s</span><span class="st">&quot;</span> <span class="op">%</span> (<span class="st">&quot;+&quot;</span>.join(S), <span class="st">&quot;reaches state 2&quot;</span> <span class="cf">if</span> np.linalg.norm(sol.y[:, <span class="op">-</span><span class="dv">1</span>] <span class="op">-</span> s2) <span class="op">&lt;</span> <span class="fl">0.05</span> <span class="cf">else</span> <span class="st">&quot;fails&quot;</span>))</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>    ax.legend(fontsize<span class="op">=</span><span class="dv">8</span>)</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>].set_ylabel(<span class="st">&quot;expression level (thin lines = state 2)&quot;</span>)</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()<span class="op">;</span> plt.show()</span></code></pre></div>
+</section><section class="block"><h2><span class="tag">Run</span>在浏览器中运行</h2><p class="small">首次加载 Python 环境约需 20–40 秒；可以修改参数后重新运行。</p><div class="cell"><div class="cell-head"><h3>反馈顶点集控制——锁定少数节点把非线性网络推向指定吸引子</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea id="controllability-cell9" rows="30" spellcheck="false" aria-label="反馈顶点集控制——锁定少数节点把非线性网络推向指定吸引子 代码"># 四基因网络：X 与 Y 互相抑制（双稳态开关），X 激活 Z，Y 抑制 W，Z 与 W 互相激活形成第二个环。
+# 反馈顶点集（FVS）是删去后网络无环的节点集合；Fiedler 与 Mochizuki 等（2013）证明：在温和条件下，
+# 把 FVS 节点的轨迹锁定为目标吸引子上的值，其余节点会收敛到该吸引子（Zañudo 等 2017 在此基础上加入源节点）。
+# 本例先求两个稳态，再从稳态 1 出发锁定最小 FVS，检查其余节点是否收敛到稳态 2。
+# 解读：锁定 FVS（2 个节点）即可在不依赖具体参数的意义上完成状态切换；只锁定 Z（不是 FVS）失败。
+# 在这组具体参数下只锁定 X 也成功——FVS 是“对所有满足条件的非线性函数都有效”的充分集合，具体模型可能需要更少。
+import itertools
+import numpy as np
+import networkx as nx
+from scipy.integrate import solve_ivp
+
+edges = {(&quot;X&quot;, &quot;Y&quot;): -1, (&quot;Y&quot;, &quot;X&quot;): -1, (&quot;X&quot;, &quot;Z&quot;): +1, (&quot;Y&quot;, &quot;W&quot;): -1, (&quot;Z&quot;, &quot;W&quot;): +1, (&quot;W&quot;, &quot;Z&quot;): +1}
+nodes = [&quot;X&quot;, &quot;Y&quot;, &quot;Z&quot;, &quot;W&quot;]
+G = nx.DiGraph(list(edges))
+hill = lambda x, s: x**4 / (0.5**4 + x**4) if s &gt; 0 else 0.5**4 / (0.5**4 + x**4)
+
+def rhs(t, x, clamp):
+    d = dict(zip(nodes, x)); out = []
+    for v in nodes:
+        if v in clamp:
+            out.append(0.0); continue
+        regs = [hill(d[u], s) for (u, w), s in edges.items() if w == v]
+        out.append(np.mean(regs) - d[v])
+    return out
+
+def run(x0, clamp=()):
+    return solve_ivp(rhs, (0, 60), x0, args=(set(clamp),), rtol=1e-8).y[:, -1]
+
+s1 = run([1.0, 0.0, 1.0, 1.0]); s2 = run([0.0, 1.0, 0.0, 0.0])
+print(&quot;稳态 1:&quot;, np.round(s1, 3), &quot; 稳态 2:&quot;, np.round(s2, 3))
+
+def is_fvs(S):
+    H = G.copy(); H.remove_nodes_from(S)
+    return nx.is_directed_acyclic_graph(H)
+fvs = next(set(S) for k in range(1, 5) for S in itertools.combinations(nodes, k) if is_fvs(S))
+print(&quot;最小反馈顶点集:&quot;, sorted(fvs))
+
+for S in [sorted(fvs), [&quot;Z&quot;], [&quot;X&quot;]]:
+    x0 = s1.copy()
+    for v in S:
+        x0[nodes.index(v)] = s2[nodes.index(v)]      # 把锁定节点设为目标吸引子上的值并保持不变
+    xf = run(x0, clamp=S)
+    print(&quot;锁定 %-10s -&gt; 终态 %s，与稳态 2 的距离 %.3f&quot; % (S, np.round(xf, 3), np.linalg.norm(xf - s2)))
+
+import matplotlib.pyplot as plt
+fig, axes = plt.subplots(1, 2, figsize=(10, 4), sharey=True)
+for ax, S in zip(axes, [sorted(fvs), [&quot;Z&quot;]]):
+    x0 = s1.copy()
+    for v in S:
+        x0[nodes.index(v)] = s2[nodes.index(v)]
+    sol = solve_ivp(rhs, (0, 30), x0, args=(set(S),), t_eval=np.linspace(0, 30, 300))
+    for i, (v, ls) in enumerate(zip(nodes, [&quot;-&quot;, &quot;--&quot;, &quot;-.&quot;, &quot;:&quot;])):
+        l, = ax.plot(sol.t, sol.y[i], ls=ls, lw=2, label=v + (&quot; (clamped)&quot; if v in S else &quot;&quot;))
+        ax.axhline(s2[i], c=l.get_color(), lw=0.6, alpha=0.5)
+    ax.set_xlabel(&quot;time&quot;); ax.set_title(&quot;Clamp %s: %s&quot; % (&quot;+&quot;.join(S), &quot;reaches state 2&quot; if np.linalg.norm(sol.y[:, -1] - s2) &lt; 0.05 else &quot;fails&quot;))
+    ax.legend(fontsize=8)
+axes[0].set_ylabel(&quot;expression level (thin lines = state 2)&quot;)
+plt.tight_layout(); plt.show()</textarea><div class="out" aria-live="polite"></div></div></section><nav class="pager"><a href="ex-controllability-8.html"><small>上一个示例</small>可观测性——根强连通分支与最少观测节点</a><a href="ex-controllability-10.html"><small>下一个示例</small>布尔网络的吸引子与最小钉扎控制集（穷举）</a></nav></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

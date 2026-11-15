@@ -1,0 +1,114 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>识别复杂网络中的关键传播者 · 生物医学网络科学</title><meta name="description" content="论文精读：Identification of influential spreaders in complex networks"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-dynamics"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html" aria-current="page">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics" open><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html" aria-current="page">网络上的传播与免疫</a><ol class="sub"><li><a href="spreading.spreading-on-networks.html"><span class="n">01</span>网络传播过程</a></li><li><a href="spreading.compartmental-models.html"><span class="n">02</span>均匀混合下的经典传播模型</a></li><li><a href="spreading.epidemic-threshold.html"><span class="n">03</span>度异质性与流行病阈值</a></li><li><a href="spreading.contact-networks.html"><span class="n">04</span>接触网络：数据与结构</a></li><li><a href="spreading.message-passing.html"><span class="n">05</span>配对近似、边基模型与消息传递</a></li><li><a href="spreading.temporal-networks.html"><span class="n">06</span>时间网络与阵发性</a></li><li><a href="spreading.metapopulation.html"><span class="n">07</span>集合种群与全球传播</a></li><li><a href="spreading.reproduction-number.html"><span class="n">08</span>再生数与超级传播</a></li><li><a href="spreading.immunization.html"><span class="n">09</span>免疫策略</a></li><li><a href="spreading.contact-tracing.html"><span class="n">10</span>接触追踪与监测</a></li><li><a href="spreading.social-contagion.html"><span class="n">11</span>信息与行为的传播</a></li><li><a href="spreading.influential-spreaders.html"><span class="n">12</span>影响力最大化与关键传播者</a></li><li><a href="spreading.source-localization.html"><span class="n">13</span>传播溯源</a></li><li><a href="spreading.derivations.html"><span class="n">14</span>数学推导与算法</a></li><li><a href="spreading.frontiers.html"><span class="n">15</span>研究前沿与开放问题</a></li><li><a href="spreading.biomedical.html"><span class="n">16</span>生物医学应用</a></li><li><a href="spreading.limitations.html"><span class="n">17</span>适用范围与常见误用</a></li></ol></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><div class="lec-grid"><div style="min-width:0"><div class="lec-head"><nav class="crumb"><a href="papers.html">文献知识库</a> › 网络动力学与控制 · 网络基础理论</nav><div class="eyebrow"><b>经典论文</b><span>难度：入门</span></div><h1>识别复杂网络中的关键传播者</h1><p class="porig big">Identification of influential spreaders in complex networks</p><p class="small">Kitsak M, Gallos LK, Havlin S, Liljeros F, Muchnik L, Stanley HE, et al. · <i>Nature Physics</i> 2010 · <a href="https://doi.org/10.1038/nphys1746" target="_blank" rel="noopener">DOI: 10.1038/nphys1746</a></p><div class="chips"><span class="chip">关键传播者</span><span class="chip">k-壳分解</span><span class="chip">核数</span><span class="chip">SIR</span><span class="chip">SIS</span><span class="chip">中心性</span></div><div class="objectives"><h2>一句话</h2><p style="margin:0">发现单个传播源的影响力更取决于它在 k-壳分解中所处的层次，而不是度或介数；多个传播源还需彼此分散。</p><p class="small" style="margin:8px 0 0">相关专题：<a href="spreading.html">网络上的传播与免疫</a>、<a href="network-metrics.html">网络结构指标与随机图</a></p></div></div><section class="block prose" id="notes"><h2 id="一句话看懂">一句话看懂</h2>
+<p>谁是最好的传播者？直觉是“朋友最多的人”。本文发现，一个节点是否处在网络的<strong>核心</strong>（用
+k-壳分解衡量）比它的度更能预测从它出发的传播范围：位于边缘的枢纽往往传播得并不远，而位于核心、度并不突出的节点却可能引发大规模传播。</p>
+<h2 id="研究背景与问题">研究背景与问题</h2>
+<p>在疾病防控、信息推广中，都需要找出“最有影响力的传播者”。传统上有两种看法：网络科学通常认为高度节点（枢纽）是关键，因为它们直接接触的人多；社会网络分析则常用介数中心性，认为处在许多最短路径上的人影响最大。</p>
+<p>作者注意到，度只描述节点的局部，而真实网络的结构很复杂：一个枢纽完全可能位于网络边缘的一条“分支”末端，它的众多邻居彼此之间、与网络其他部分之间都联系很少。问题是：有没有一个更好的指标，能根据节点在网络中的位置预测它的传播能力？</p>
+<h2 id="核心思想与方法">核心思想与方法</h2>
+<div class="callout-def">
+<p><strong>k-壳分解</strong>（k-shell
+decomposition）：先反复删除所有度为 1 的节点（删除后新出现的度为 1
+的节点也一并删除），这些节点构成
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>k</mi><mi>S</mi></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">k_S=1</annotation></semantics></math>
+壳；再以同样方式删除剩余度不超过 2 的节点，得到
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>k</mi><mi>S</mi></msub><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">k_S=2</annotation></semantics></math>
+壳；依次类推，直到所有节点被删除。每个节点得到一个整数<strong>壳指数</strong>（又称核数，coreness）<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>k</mi><mi>S</mi></msub><annotation encoding="application/x-tex">k_S</annotation></semantics></math>。<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>k</mi><mi>S</mi></msub><annotation encoding="application/x-tex">k_S</annotation></semantics></math>
+小的节点在网络边缘，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>k</mi><mi>S</mi></msub><annotation encoding="application/x-tex">k_S</annotation></semantics></math>
+最大的节点构成最内层的核心。</p>
+</div>
+<p>作者在四个社会网络上做模拟：LiveJournal 社区约 340
+万用户的好友网络、伦敦大学学院计算机系的电子邮件网络、瑞典医院住院患者的接触网络（CNI），以及一个演员合作网络。传播模型使用
+SIR 和 SIS：每一步感染者以概率
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>
+感染易感邻居。作者有意选取较小的
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>，使感染比例保持较小；若
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>
+很大，几乎从任何节点出发都能传遍全网，个体差异就不重要了。</p>
+<p>对每个节点
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>，以它为唯一初始感染者，计算平均感染规模
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>M</mi><mi>i</mi></msub><annotation encoding="application/x-tex">M_i</annotation></semantics></math>；再按
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><msub><mi>k</mi><mi>S</mi></msub><mo>,</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(k_S,k)</annotation></semantics></math>
+把节点分组，求每组的平均
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>k</mi><mi>S</mi></msub><mo>,</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">M(k_S,k)</annotation></semantics></math>。为了比较三种指标，定义<strong>不精确函数</strong>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi><mo stretchy="false" form="prefix">(</mo><mi>p</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>1</mn><mo>−</mo><msub><mi>M</mi><mtext mathvariant="normal">指标</mtext></msub><mi>/</mi><msub><mi>M</mi><mtext mathvariant="normal">eff</mtext></msub></mrow><annotation encoding="application/x-tex">\epsilon(p)=1-M_{\text{指标}}/M_{\text{eff}}</annotation></semantics></math>：按某个指标选出排名前
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mi>N</mi></mrow><annotation encoding="application/x-tex">pN</annotation></semantics></math>
+的节点，其平均传播规模与真正最有效的
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mi>N</mi></mrow><annotation encoding="application/x-tex">pN</annotation></semantics></math>
+个节点相差多少。</p>
+<h2 id="主要发现">主要发现</h2>
+<ol type="1">
+<li><strong>度相同，传播差别很大</strong>：在固定度时，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+的取值范围很宽；许多“大度、低壳”的枢纽位于网络边缘，是很差的传播者。</li>
+<li><strong>壳相同，传播相近</strong>：在固定
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>k</mi><mi>S</mi></msub><annotation encoding="application/x-tex">k_S</annotation></semantics></math>
+时，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+几乎与度无关，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>k</mi><mi>S</mi></msub><mo>,</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">M(k_S,k)</annotation></semantics></math>
+的热图呈竖条状分层。最有效的传播者位于最内层的核心，与其度大小关系不大。</li>
+<li><strong>介数也不是好指标</strong>：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>k</mi><mi>S</mi></msub><mo>,</mo><msub><mi>C</mi><mi>B</mi></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">M(k_S,C_B)</annotation></semantics></math>
+的分析表明介数对传播效率的预测较差。在不精确函数的比较中，基于
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>k</mi><mi>S</mi></msub><annotation encoding="application/x-tex">k_S</annotation></semantics></math>
+的排序始终优于基于度的排序，基于介数的排序最差。</li>
+<li><strong>结构才是原因</strong>：把真实网络按保持度序列的方式随机重连后，枢纽都会落入核心，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>k</mi><mi>S</mi></msub><annotation encoding="application/x-tex">k_S</annotation></semantics></math>
+与
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+近似成正比，两种指标给出同样的信息。也就是说，“边缘枢纽”是真实网络特有的结构。</li>
+<li><strong>多个传播源</strong>：同时选多个初始感染者时，取
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>k</mi><mi>S</mi></msub><annotation encoding="application/x-tex">k_S</annotation></semantics></math>
+最高的一批节点反而不如取度最高的一批，因为高壳节点聚集在一起，感染范围大量重叠。更好的策略是选高
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+或高
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>k</mi><mi>S</mi></msub><annotation encoding="application/x-tex">k_S</annotation></semantics></math>
+的节点，同时要求它们之间互不相邻。</li>
+<li><strong>SIS 中的病毒“蓄水池”</strong>：在不产生免疫的 SIS
+模型中，病毒主要在高壳层中长期存在，而不是在枢纽上；在 CNI
+网络中，即使传播率低于全局阈值，病毒仍能在高壳层局部存活。作者把这与性传播疾病研究中的“核心人群”概念联系起来。</li>
+</ol>
+<h2 id="怎样读这篇论文">怎样读这篇论文</h2>
+<p>先看图
+1：同样度数的两个节点，一个在核心、一个在边缘，从它们出发的传播范围差别一目了然。然后看图
+2，这是全文的核心：横轴为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>、纵轴为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>k</mi><mi>S</mi></msub><annotation encoding="application/x-tex">k_S</annotation></semantics></math>
+的热图，颜色表示
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>；注意颜色是按行（<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>k</mi><mi>S</mi></msub><annotation encoding="application/x-tex">k_S</annotation></semantics></math>）而不是按列（<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>）变化的。图
+3
+依次给出不精确函数、枢纽在各壳层的位置、随机化网络的对照和多传播源的结果。图
+4 是 SIS 的结果。方法部分对
+k-壳分解的描述很清楚，可以直接用来编程；四个数据集的细节在补充材料中，可以先跳过。</p>
+<h2 id="局限与后续工作">局限与后续工作</h2>
+<ul>
+<li><strong>参数区间</strong>：结论是在较小
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>
+下得到的。在接近或远高于流行阈值时，最佳指标可能改变；后续研究发现，在不同传播率下，度、k-壳、特征向量中心性各有优劣。</li>
+<li><strong>k-壳的粒度太粗</strong>：大量节点共享同一个
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>k</mi><mi>S</mi></msub><annotation encoding="application/x-tex">k_S</annotation></semantics></math>，无法细分排序。后续工作提出了邻居核数之和、混合度分解等改进。</li>
+<li><strong>“核心”的含义</strong>：在某些网络中，最内层核心可能只是一小块高度连接的团块，并不代表真正的全局核心。Liu
+等（2015）发现部分真实网络存在“伪核心”，需要先剔除冗余连接再做
+k-壳分解。</li>
+<li><strong>从启发式到最优化</strong>：Morone 与
+Makse（2015，<em>Nature</em>）把“选择最少的节点以破坏全局连通”表述为最优渗流问题，提出了
+collective influence 指标；这也是本文第 5
+条发现（多个传播源）思路的延伸。</li>
+<li><strong>传播源重叠与免疫</strong>：选择传播源与选择免疫对象是同一问题的两面；<a
+href="paper-cohen2003_immunization.html">熟人免疫</a>给出了只用局部信息的另一种思路。</li>
+</ul>
+<h2 id="关联知识">关联知识</h2>
+<ul>
+<li><a
+href="spreading.social-contagion.html">信息与行为的传播</a>列出了本文的结论，其中的提示“高度节点就是最佳传播者不总成立”就来自本文；可以用
+NetworkX 的 <code>core_number</code> 函数（见<a
+href="analysis-workflow.networkx-cheatsheet.html">NetworkX
+速查表</a>）在网络上自己复现 k-壳分析。</li>
+<li><a
+href="network-metrics.degree-density.html">度、平均度与密度</a>与<a
+href="network-metrics.clustering.html">聚集系数</a>中的度与聚集系数都是局部指标。本文说明：节点的“位置”是一个介于局部与全局之间的性质，k-壳分解给出了计算它的简单方法。</li>
+</ul>
+<h2 id="延伸思考">延伸思考</h2>
+<ol type="1">
+<li>在一个蛋白质相互作用网络中，高度但低壳的蛋白质可能对应什么样的生物学角色？它们与“核心”蛋白质在敲除实验中的表现可能有什么不同？</li>
+<li>本文发现随机化后的网络中
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>k</mi><mi>S</mi></msub><mo>∝</mo><mi>k</mi></mrow><annotation encoding="application/x-tex">k_S\propto k</annotation></semantics></math>。为什么在随机网络中枢纽一定会落在核心？</li>
+<li>如果要在一所医院的接触网络中选 10
+个人优先接种疫苗，你会用度、k-壳，还是本文提出的“互不相邻的高壳节点”策略？传播和免疫的目标是否需要不同的选择标准？</li>
+</ol>
+</section><nav class="pager"><a href="paper-buldyrev2010_cascade.html">← 相互依存网络中的灾难性级联失效</a><a href="paper-rubinov2010_measures.html">脑连接的复杂网络指标：用法与解读 →</a></nav></div><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

@@ -1,0 +1,10 @@
+{
+ "topic": "controllability",
+ "index": 3,
+ "title": "PBH 判据与精确可控性——同一拓扑、不同权重需要的输入数不同",
+ "hash": "2f370bd010847ed18114d2696c42c9faf8cb0b8c",
+ "ok": true,
+ "figures": 1,
+ "stdout": "完全图 N=6：全 1 权重 N_D = 5；随机权重 N_D = 1；最大匹配 N_D = 1\n全 1 权重、驱动 1 个节点：rank[-I-A, B] = 2 / 6\n稀疏有向 ER（N=300, L=450，单位权重）：N - rank(A) = 97；最大几何重数 = 97；最大匹配 N_D = 97",
+ "stderr": ""
+}

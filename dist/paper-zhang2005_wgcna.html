@@ -1,0 +1,105 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>加权基因共表达网络分析的一般框架 · 生物医学网络科学</title><meta name="description" content="论文精读：A general framework for weighted gene co-expression network analysis"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-molecular"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html" aria-current="page">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular" open><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html" aria-current="page">基因调控网络推断与共表达分析</a><ol class="sub"><li><a href="gene-network-inference.inference-problem.html"><span class="n">01</span>网络推断问题：从“一起变化”到“谁调控谁”</a></li><li><a href="gene-network-inference.method-landscape.html"><span class="n">02</span>方法家族全景：假设与数据要求</a></li><li><a href="gene-network-inference.wgcna.html"><span class="n">03</span>WGCNA：加权基因共表达网络分析</a></li><li><a href="gene-network-inference.module-interpretation.html"><span class="n">04</span>解读共表达模块时要追问的三件事</a></li><li><a href="gene-network-inference.module-preservation.html"><span class="n">05</span>模块保守性与可重复性检验</a></li><li><a href="gene-network-inference.differential-coexpression.html"><span class="n">06</span>差异共表达分析</a></li><li><a href="gene-network-inference.partial-correlation-shrinkage.html"><span class="n">07</span>偏相关、高斯图模型与收缩估计</a></li><li><a href="gene-network-inference.beyond-correlation.html"><span class="n">08</span>超越相关：信息论、树模型与单细胞方法</a></li><li><a href="gene-network-inference.bayesian-networks.html"><span class="n">09</span>贝叶斯网络与因果结构学习</a></li><li><a href="gene-network-inference.dynamic-models.html"><span class="n">10</span>动力学模型、时间序列与单细胞拟时序</a></li><li><a href="gene-network-inference.prior-knowledge.html"><span class="n">11</span>先验知识整合：TF–靶基因数据库、ChIP-seq 与 ATAC</a></li><li><a href="gene-network-inference.evaluation.html"><span class="n">12</span>推断结果的评估</a></li><li><a href="gene-network-inference.derivations.html"><span class="n">13</span>数学推导与算法</a></li><li><a href="gene-network-inference.frontiers.html"><span class="n">14</span>研究前沿与开放问题</a></li><li><a href="gene-network-inference.biomedical.html"><span class="n">15</span>生物医学应用</a></li><li><a href="gene-network-inference.limitations.html"><span class="n">16</span>适用范围与常见误用</a></li></ol></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><div class="lec-grid"><div style="min-width:0"><div class="lec-head"><nav class="crumb"><a href="papers.html">文献知识库</a> › 分子网络与基因调控 · 网络基础理论</nav><div class="eyebrow"><b>经典论文</b><span>难度：进阶</span></div><h1>加权基因共表达网络分析的一般框架</h1><p class="porig big">A general framework for weighted gene co-expression network analysis</p><p class="small">Zhang B, Horvath S · <i>Statistical Applications in Genetics and Molecular Biology</i> 2005 · <a href="https://doi.org/10.2202/1544-6115.1128" target="_blank" rel="noopener">DOI: 10.2202/1544-6115.1128</a></p><div class="chips"><span class="chip">WGCNA</span><span class="chip">共表达网络</span><span class="chip">软阈值</span><span class="chip">无标度拓扑准则</span><span class="chip">拓扑重叠</span><span class="chip">加权聚集系数</span></div><div class="objectives"><h2>一句话</h2><p style="margin:0">提出用“软阈值”把基因间相关转为连续连接权重，构建加权共表达网络，并把连接度、拓扑重叠、聚集系数推广到加权情形。</p><p class="small" style="margin:8px 0 0">相关专题：<a href="gene-network-inference.html">基因调控网络推断与共表达分析</a>、<a href="molecular-networks.html">生物分子网络与拓扑特征</a>、<a href="community-structure.html">社团结构与社区发现</a></p></div></div><section class="block prose" id="notes"><h2 id="一句话看懂">一句话看懂</h2>
+<p>与其用一个硬阈值把基因相关“一刀切”成有边或无边，不如用幂函数等连续函数把相关系数变成
+0 到 1
+之间的连接权重；再用“网络近似无标度”这一生物学动机来选择参数。这套加权网络框架就是后来
+WGCNA 方法与 R 包的理论基础。</p>
+<h2 id="研究背景与问题">研究背景与问题</h2>
+<p>基因共表达网络的构建看起来很简单：节点是基因，若两个基因在一组样本中显著共表达就连边。问题出在“显著”的定义上。常见做法是对相关系数取硬阈值，例如
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>r</mi><mo stretchy="false" form="prefix">|</mo><mo>&gt;</mo><mn>0.8</mn></mrow><annotation encoding="application/x-tex">|r|&gt;0.8</annotation></semantics></math>
+记为 1，否则为
+0。这样做有两个缺点：结果对阈值很敏感，阈值附近微小的差别会让边忽有忽无；把连续的相关信息压缩成
+0/1，丢失了大量信息。</p>
+<p>作者的问题是：能否建立一个不依赖二值化的加权网络框架？参数应该怎样选？网络分析中常用的概念（连接度、拓扑重叠、聚集系数）在加权网络中应如何定义？</p>
+<h2 id="核心思想与方法">核心思想与方法</h2>
+<p><strong>第一步：共表达相似度。</strong> 对基因
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math>
+计算
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mo stretchy="false" form="prefix">|</mo><mrow><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">r</mi></mrow><mo stretchy="false" form="prefix">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>,</mo><msub><mi>x</mi><mi>j</mi></msub><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">s_{ij}=|\mathrm{cor}(x_i,x_j)|</annotation></semantics></math>。</p>
+<p><strong>第二步：邻接函数（软阈值）。</strong> 作者讨论了两类把
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>s</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><annotation encoding="application/x-tex">s_{ij}</annotation></semantics></math>
+变成连接权重
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><annotation encoding="application/x-tex">a_{ij}</annotation></semantics></math>
+的函数：</p>
+<div class="callout-def">
+<p><strong>幂邻接函数</strong>：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><msubsup><mi>s</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>β</mi></msubsup></mrow><annotation encoding="application/x-tex">a_{ij}=s_{ij}^{\beta}</annotation></semantics></math>，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\beta\ge1</annotation></semantics></math>。<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>
+越大，弱相关被压得越小，强相关相对保留。</p>
+<p><strong>S
+形邻接函数</strong>：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><msup><mi>e</mi><mrow><mi>−</mi><mi>α</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>s</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>−</mo><msub><mi>τ</mi><mn>0</mn></msub><mo stretchy="false" form="postfix">)</mo></mrow></msup></mrow></mfrac></mstyle></mrow><annotation encoding="application/x-tex">a_{ij}=\dfrac{1}{1+e^{-\alpha(s_{ij}-\tau_0)}}</annotation></semantics></math>，是硬阈值的光滑版本。</p>
+<p><strong>硬阈值</strong>可以看作阶跃函数这一特例：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">a_{ij}=1</annotation></semantics></math>
+当且仅当
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>≥</mo><mi>τ</mi></mrow><annotation encoding="application/x-tex">s_{ij}\ge\tau</annotation></semantics></math>。</p>
+</div>
+<p><strong>第三步：用无标度拓扑准则选参数。</strong>
+作者认为许多生物网络的度分布近似无标度，因此把“构建出的网络近似满足无标度拓扑”作为选择
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>（或
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>,</mo><msub><mi>τ</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\alpha,\tau_0</annotation></semantics></math>）的依据：对每个候选参数计算连接度分布，看
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">log</mi><mo>&#8289;</mo></mrow><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\log p(k)</annotation></semantics></math>
+与
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">log</mi><mo>&#8289;</mo></mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">\log k</annotation></semantics></math>
+线性拟合的
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>R</mi><mn>2</mn></msup><annotation encoding="application/x-tex">R^2</annotation></semantics></math>；同时考虑平均连接度不要过低，在两者之间取舍。</p>
+<p><strong>第四步：推广网络概念。</strong></p>
+<ul>
+<li><strong>连接度</strong>：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>k</mi><mi>i</mi></msub><mo>=</mo><msub><mo>∑</mo><mrow><mi>j</mi><mo>≠</mo><mi>i</mi></mrow></msub><msub><mi>a</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">k_i=\sum_{j\ne i}a_{ij}</annotation></semantics></math>，即加权度。</li>
+<li><strong>拓扑重叠</strong>：两个基因不仅自身相关，还与同一批基因相关时，它们的拓扑重叠才高，
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ω</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mfrac><mrow><msub><mi>l</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>+</mo><msub><mi>a</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><mrow><mrow><mi mathvariant="normal">min</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><msub><mi>k</mi><mi>i</mi></msub><mo>,</mo><msub><mi>k</mi><mi>j</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mn>1</mn><mo>−</mo><msub><mi>a</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow></mfrac><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>l</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><munder><mo>∑</mo><mi>u</mi></munder><msub><mi>a</mi><mrow><mi>i</mi><mi>u</mi></mrow></msub><msub><mi>a</mi><mrow><mi>u</mi><mi>j</mi></mrow></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">\omega_{ij}=\frac{l_{ij}+a_{ij}}{\min(k_i,k_j)+1-a_{ij}},\qquad l_{ij}=\sum_{u}a_{iu}a_{uj}.</annotation></semantics></math>
+用
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><msub><mi>ω</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">1-\omega_{ij}</annotation></semantics></math>
+作为距离做层次聚类，得到基因模块。</li>
+<li><strong>加权聚集系数</strong>：把聚集系数推广到加权邻接矩阵。</li>
+</ul>
+<h2 id="主要发现">主要发现</h2>
+<ol type="1">
+<li><strong>连接度与生物学意义有关</strong>：作者引入了几种节点连接度指标，并给出经验证据：在加权网络中，这些指标可以帮助预测基因的生物学重要性。</li>
+<li><strong>加权拓扑重叠优于非加权</strong>：理论和实证结果表明，用加权拓扑重叠定义的模块比非加权版本更“紧凑”（内聚性更高）。</li>
+<li><strong>聚集系数与连接度的关系是硬阈值的产物</strong>：非加权网络中常观察到聚集系数随连接度增大而下降，作者给出一个模型，说明这种反比关系可以由硬阈值本身产生；而加权聚集系数与连接度之间没有这种反比关系。</li>
+<li><strong>应用</strong>：方法用于模拟数据、一个癌症芯片数据集（作者配套教程中为脑肿瘤数据）和一个酵母芯片数据集（作者配套教程中为细胞周期数据）。</li>
+</ol>
+<h2 id="怎样读这篇论文">怎样读这篇论文</h2>
+<p>这是一篇长篇方法论文（统计期刊），不必逐页读完。建议顺序：先读引言和邻接函数一节，理解软阈值与硬阈值的关系；再读无标度拓扑准则一节，弄清
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>R</mi><mn>2</mn></msup><annotation encoding="application/x-tex">R^2</annotation></semantics></math>
+与平均连接度之间的权衡；然后读拓扑重叠和模块检测；加权聚集系数和相关数学推导可以先跳过，需要时再查。读的时候配合
+Horvath 课题组后来发布的 R 包教程（Langfelder 与 Horvath
+2008），能把公式与实际代码对应起来。</p>
+<h2 id="局限与后续工作">局限与后续工作</h2>
+<ul>
+<li><strong>无标度假设本身有争议</strong>：用“近似无标度”选参数是一个启发式准则，不是对网络无标度性的检验；生物网络是否普遍无标度仍有争论（见<a
+href="network-models.scale-free.html">幂律度分布与无标度网络</a>）。样本有强分组或批次效应时，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>R</mi><mn>2</mn></msup><annotation encoding="application/x-tex">R^2</annotation></semantics></math>
+可能在任何
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>
+下都达不到要求。</li>
+<li><strong>相关不等于调控</strong>：共表达网络是无向的相关网络，边反映共变而非调控方向或直接相互作用；两个基因的高相关可能来自共同的上游调控者或细胞组成的变化。</li>
+<li><strong>样本量要求</strong>：相关系数的估计需要足够的样本，小样本下模块结构不稳定。</li>
+<li><strong>后续发展</strong>：Langfelder 与 Horvath（2008）发布了 WGCNA
+R
+包，引入有符号网络、模块特征基因、模块–性状关联和动态剪切树等完整流程，使
+WGCNA
+成为转录组研究中使用最广的网络方法之一；之后还有共识模块、模块保守性检验等扩展。单细胞数据和基于回归或信息论的推断方法（如
+GENIE3、ARACNe）提供了互补的思路。</li>
+</ul>
+<h2 id="关联知识">关联知识</h2>
+<ul>
+<li><a
+href="gene-network-inference.wgcna.html">WGCNA：加权基因共表达网络分析</a>逐步讲解了软阈值、无标度拟合准则、拓扑重叠和模块–性状关联，<a
+href="gene-network-inference.derivations.html">数学推导与算法</a>讨论了软阈值与
+TOM 的性质，都以本文为理论来源。</li>
+<li>拓扑重叠以“共同邻居”去噪，与<a
+href="network-metrics.clustering.html">聚集系数</a>和<a
+href="community-structure.html">社团结构</a>的思想一脉相承；用
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><mi>ω</mi></mrow><annotation encoding="application/x-tex">1-\omega</annotation></semantics></math>
+做层次聚类正是<a
+href="community-structure.spectral-hierarchical.html">谱方法与层次聚类</a>介绍的层次聚类方法。</li>
+<li><a
+href="molecular-networks.topology.html">分子网络的拓扑特征</a>中关于“度分布是否真是幂律”的讨论，提醒我们审慎看待本文的参数选择准则。</li>
+</ul>
+<h2 id="延伸思考">延伸思考</h2>
+<ol type="1">
+<li>取
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">\beta=6</annotation></semantics></math>，相关系数
+0.9 和 0.5
+分别对应多大的连接权重？软阈值相对硬阈值的优势体现在哪里？</li>
+<li>如果一组样本中一半是肿瘤、一半是正常组织，大量基因随组别同向变化，共表达网络会出现什么现象？你会如何处理？</li>
+<li>作者用“生物网络近似无标度”来选
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>。如果你不接受这一假设，还可以用什么准则选择参数？</li>
+</ol>
+</section><nav class="pager"><a href="paper-han2004_datehubs.html">← 酵母蛋白质相互作用网络中动态组织的模块性证据</a><a href="paper-newman2006_modularity.html">网络中的模块度与社团结构 →</a></nav></div><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

@@ -1,0 +1,10 @@
+{
+ "topic": "network-basics",
+ "index": 1,
+ "title": "从边列表构造邻接矩阵",
+ "hash": "289ac0cfb1fd33c076ff48f11a92b99be47ea102",
+ "ok": true,
+ "figures": 1,
+ "stdout": "节点顺序: ['ATM', 'CHEK2', 'CREBBP', 'EP300', 'MDM2', 'MDM4', 'TP53']\n[[0 1 0 0 0 0 1]\n [1 0 0 0 0 0 1]\n [0 0 0 1 0 0 1]\n [0 0 1 0 0 0 1]\n [0 0 0 0 0 1 1]\n [0 0 0 0 1 0 1]\n [1 1 1 1 1 1 0]]\n对称吗？ True\n各节点的度: {'ATM': 2, 'CHEK2': 2, 'CREBBP': 2, 'EP300': 2, 'MDM2': 2, 'MDM4': 2, 'TP53': 6}\n度之和 = 18, 2 × 边数 = 18\nNetworkX 给出的度: {'TP53': 6, 'MDM2': 2, 'EP300': 2, 'MDM4': 2, 'CREBBP': 2, 'ATM': 2, 'CHEK2': 2}\n网络密度 = 0.429",
+ "stderr": ""
+}

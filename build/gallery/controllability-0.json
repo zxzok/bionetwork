@@ -1,0 +1,10 @@
+{
+ "topic": "controllability",
+ "index": 0,
+ "title": "用 Kalman 秩判据检验可控性",
+ "hash": "de9f7147b867d3f68ce95ea743abdbb29dc3cecb",
+ "ok": true,
+ "figures": 1,
+ "stdout": "链, 驱动{0}         rank = 4 / 4  -> 可控\n星, 驱动{0}         rank = 2 / 4  -> 不可控\n星, 驱动{0,2,3}     rank = 4 / 4  -> 可控",
+ "stderr": ""
+}

@@ -1,0 +1,61 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>可视化工具与原则 · 生物医学网络科学</title><meta name="description" content="网络分析流程与 NetworkX 实践 · 可视化工具与原则"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-methods"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html" aria-current="page">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods" open><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a><ol class="sub"><li><a href="analysis-workflow.workflow.html"><span class="n">01</span>网络分析的一般流程</a></li><li><a href="analysis-workflow.tool-selection.html"><span class="n">02</span>工具选择</a></li><li><a href="analysis-workflow.networkx-basics.html"><span class="n">03</span>NetworkX 上手</a></li><li><a href="analysis-workflow.data-io.html"><span class="n">04</span>数据读写与格式转换</a></li><li><a href="analysis-workflow.networkx-cheatsheet.html"><span class="n">05</span>NetworkX 速查表</a></li><li><a href="analysis-workflow.computational-pitfalls.html"><span class="n">06</span>常见计算陷阱</a></li><li><a href="analysis-workflow.large-scale.html"><span class="n">07</span>大规模网络的计算策略</a></li><li><a href="analysis-workflow.layouts.html"><span class="n">08</span>布局算法</a></li><li><a href="analysis-workflow.visualization.html" aria-current="page"><span class="n">09</span>可视化工具与原则</a></li><li><a href="analysis-workflow.null-model-comparison.html"><span class="n">10</span>用模型网络与零模型解读真实网络</a></li><li><a href="analysis-workflow.case-study.html"><span class="n">11</span>完整案例：从表达矩阵到可检验的结论</a></li><li><a href="analysis-workflow.biomedical-datasets.html"><span class="n">12</span>常见生物医学网络数据与分析方向</a></li><li><a href="analysis-workflow.derivations.html"><span class="n">13</span>数学推导与算法</a></li><li><a href="analysis-workflow.frontiers.html"><span class="n">14</span>研究前沿与开放问题</a></li><li><a href="analysis-workflow.biomedical.html"><span class="n">15</span>生物医学应用</a></li><li><a href="analysis-workflow.limitations.html"><span class="n">16</span>适用范围与常见误用</a></li></ol></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><div class="lec-grid"><article style="min-width:0"><header class="doc-head"><nav class="crumb"><a href="d-methods.html">计算方法与研究规范</a> <span class="sep">/</span> <a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></nav><div class="eyebrow" style="margin-top:14px"><b>网络分析流程与 NetworkX 实践</b><span>09 / 16</span></div><h1>可视化工具与原则</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></dd></div><div><dt>阅读</dt><dd>约 2 分钟</dd></div></dl></header><section class="block prose" id="notes"><div class="table-wrap"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>工具</th>
+<th>适合做什么</th>
+<th>提示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NetworkX + Matplotlib</td>
+<td>分析过程中快速看图、画度分布等统计图</td>
+<td>布局用 <code>spring_layout</code> 并固定 <code>seed</code>；NetworkX
+官方文档说明其绘图功能只是基础性的，建议用专门工具作图</td>
+</tr>
+<tr>
+<td>Gephi（<a href="https://gephi.org" target="_blank" rel="noopener">gephi.org</a>）</td>
+<td>中大型网络的交互式布局（ForceAtlas2）、按社团着色、导出高分辨率图</td>
+<td>用 <code>nx.write_gexf</code>
+导出，节点属性（社团、中心性）会一起带过去</td>
+</tr>
+<tr>
+<td>Cytoscape（<a href="https://cytoscape.org" target="_blank" rel="noopener">cytoscape.org</a>）</td>
+<td>生物分子网络的标准工具：可直接导入 STRING
+网络（stringApp），做功能富集、聚类等</td>
+<td>官方教程见 <a
+href="https://tutorials.cytoscape.org/">tutorials.cytoscape.org</a>；属性到颜色、大小的“样式映射”可保存复用</td>
+</tr>
+<tr>
+<td>Graphviz</td>
+<td>层次布局（<code>dot</code>）、小型有向网络与流程图</td>
+<td>适合调控级联、通路示意</td>
+</tr>
+<tr>
+<td>邻接矩阵热图（Matplotlib）</td>
+<td>稠密网络（如脑功能连接）；按模块排序后块结构清晰</td>
+<td>行列顺序决定能否看出结构，排序方式要写明</td>
+</tr>
+</tbody>
+</table></div>
+<div class="callout-def">
+<p><strong>好的网络图要回答一个问题</strong>。“毛线团”式的全网图信息量很小。更好的做法是：按社团着色、节点大小映射某个中心性、只标注关键节点；或者干脆用统计图（度分布、中心性排名条形图、与零模型比较的箱线图）来呈现结论。更多图表原则见<a
+href="reporting-frontiers.figures.html">研究结果的图表呈现</a>。</p>
+</div>
+<p>网络图的视觉编码原则：</p>
+<ol type="1">
+<li><strong>一个视觉通道只编码一个变量</strong>：节点颜色表示类别（社团、节点类型），节点大小表示一个连续量（度、中心性），边的粗细表示权重。类别颜色一般不超过
+8 种左右，再多就难以分辨；连续量用单色渐变而非彩虹色。</li>
+<li><strong>面积而非半径与数值成正比</strong>：若半径与数值成正比，大节点会被视觉放大。</li>
+<li><strong>标签要少</strong>：只标注文中讨论的节点。</li>
+<li><strong>稠密网络考虑矩阵视图</strong>：边数远多于节点数时，按模块排序的邻接矩阵热图通常比节点–边图更清楚。</li>
+<li><strong>展示用的阈值不等于分析用的阈值</strong>：为了画图只显示最强的边是可以的，但要在图注中写明，且不能用这张图去“说明”分析结果。</li>
+<li><strong>可复现</strong>：固定布局随机种子、保存坐标；桌面软件中保存会话文件与样式文件。</li>
+<li><strong>可读性</strong>：考虑色觉障碍读者（避免只靠红绿区分）、黑白打印与缩印后的清晰度。</li>
+</ol>
+</section><section class="block related-box"><h2>继续阅读</h2><ul><li>交互可视化：<a href="lab.html#graph_matrix">图与邻接矩阵</a>、<a href="lab.html#modularity">模块度与社团划分</a></li><li>代码示例：<a href="ex-analysis-workflow-0.html">读入边表、按置信度过滤并取最大连通分支</a>、<a href="ex-analysis-workflow-1.html">基本拓扑指标、度分布与中心性排名</a>、<a href="ex-analysis-workflow-2.html">社团发现、模块度与结果稳定性</a>、<a href="ex-analysis-workflow-3.html">与 ER 随机图和保度随机化零模型比较</a></li><li>论文精读：<a href="paper-girvan2002_community.html">社会网络与生物网络中的社团结构</a>、<a href="paper-milo2002_motifs.html">网络基序：复杂网络的简单构件</a>、<a href="paper-han2004_datehubs.html">酵母蛋白质相互作用网络中动态组织的模块性证据</a>、<a href="paper-clauset2009_powerlaw.html">经验数据中的幂律分布</a></li></ul></section><nav class="pager"><a href="analysis-workflow.layouts.html"><small>上一页</small>布局算法</a><a href="analysis-workflow.null-model-comparison.html"><small>下一页</small>用模型网络与零模型解读真实网络</a></nav></article><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

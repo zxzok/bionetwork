@@ -1,0 +1,10 @@
+{
+ "topic": "network-metrics",
+ "index": 3,
+ "title": "全局效率与局部效率",
+ "hash": "7adb85d8625a86e193e80de5bb6d4d62ec44f75a",
+ "ok": true,
+ "figures": 1,
+ "stdout": "E_glob: 手工 0.4920, NetworkX 0.4920\nE_loc : 手工 0.6451, NetworkX 0.6451\n平均聚集系数 C = 0.5706；1/L = 0.4152\n切边后连通分支数 = 2\n平均路径长度：报错 -> Graph is not connected.\n切边后全局效率 = 0.2919",
+ "stderr": ""
+}

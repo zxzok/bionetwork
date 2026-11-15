@@ -1,0 +1,10 @@
+{
+ "topic": "symptom-networks",
+ "index": 6,
+ "title": "网络比较检验（NCT）的置换逻辑",
+ "hash": "0aca97c3926900e8750b89e2d9c21abccb10de0d",
+ "ok": true,
+ "figures": 1,
+ "stdout": "网络结构不变性：M = 0.285，置换 p = 0.001\n全局强度不变性：S = 0.124，置换 p = 0.491\nHolm 校正后显著不同的边：2-3，|Δw| = 0.285，p_holm = 0.015",
+ "stderr": ""
+}

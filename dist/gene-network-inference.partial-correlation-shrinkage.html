@@ -1,0 +1,116 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>偏相关、高斯图模型与收缩估计 · 生物医学网络科学</title><meta name="description" content="基因调控网络推断与共表达分析 · 偏相关、高斯图模型与收缩估计"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-molecular"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html" aria-current="page">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular" open><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a><ol class="sub"><li><a href="gene-network-inference.inference-problem.html"><span class="n">01</span>网络推断问题：从“一起变化”到“谁调控谁”</a></li><li><a href="gene-network-inference.method-landscape.html"><span class="n">02</span>方法家族全景：假设与数据要求</a></li><li><a href="gene-network-inference.wgcna.html"><span class="n">03</span>WGCNA：加权基因共表达网络分析</a></li><li><a href="gene-network-inference.module-interpretation.html"><span class="n">04</span>解读共表达模块时要追问的三件事</a></li><li><a href="gene-network-inference.module-preservation.html"><span class="n">05</span>模块保守性与可重复性检验</a></li><li><a href="gene-network-inference.differential-coexpression.html"><span class="n">06</span>差异共表达分析</a></li><li><a href="gene-network-inference.partial-correlation-shrinkage.html" aria-current="page"><span class="n">07</span>偏相关、高斯图模型与收缩估计</a></li><li><a href="gene-network-inference.beyond-correlation.html"><span class="n">08</span>超越相关：信息论、树模型与单细胞方法</a></li><li><a href="gene-network-inference.bayesian-networks.html"><span class="n">09</span>贝叶斯网络与因果结构学习</a></li><li><a href="gene-network-inference.dynamic-models.html"><span class="n">10</span>动力学模型、时间序列与单细胞拟时序</a></li><li><a href="gene-network-inference.prior-knowledge.html"><span class="n">11</span>先验知识整合：TF–靶基因数据库、ChIP-seq 与 ATAC</a></li><li><a href="gene-network-inference.evaluation.html"><span class="n">12</span>推断结果的评估</a></li><li><a href="gene-network-inference.derivations.html"><span class="n">13</span>数学推导与算法</a></li><li><a href="gene-network-inference.frontiers.html"><span class="n">14</span>研究前沿与开放问题</a></li><li><a href="gene-network-inference.biomedical.html"><span class="n">15</span>生物医学应用</a></li><li><a href="gene-network-inference.limitations.html"><span class="n">16</span>适用范围与常见误用</a></li></ol></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><div class="lec-grid"><article style="min-width:0"><header class="doc-head"><nav class="crumb"><a href="d-molecular.html">分子网络与基因调控</a> <span class="sep">/</span> <a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></nav><div class="eyebrow" style="margin-top:14px"><b>基因调控网络推断与共表达分析</b><span>07 / 16</span></div><h1>偏相关、高斯图模型与收缩估计</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></dd></div><div><dt>阅读</dt><dd>约 3 分钟</dd></div></dl></header><section class="block prose" id="notes"><h3 id="偏相关去除的是什么">偏相关去除的是什么</h3>
+<p>偏相关在控制其他变量后度量两变量的关联。在多元正态假设下，偏相关为 0
+等价于条件独立，非零偏相关构成<strong>高斯图模型（GGM）</strong>的边。偏相关与精度矩阵的关系、它在链式结构与对撞结构中的表现，已在<a
+href="network-construction.edge-estimation.html">连接强度的估计</a>和<a
+href="symptom-networks.gaussian-graphical-model.html">偏相关与高斯图模型</a>中讲过，这里只强调基因表达数据的特点：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>≫</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">p\gg n</annotation></semantics></math>。</p>
+<p><strong>三基因算例</strong>。只控制一个变量时，一阶偏相关有闭式公式：</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mrow><mn>13</mn><mo>⋅</mo><mn>2</mn></mrow></msub><mo>=</mo><mfrac><mrow><msub><mi>r</mi><mn>13</mn></msub><mo>−</mo><msub><mi>r</mi><mn>12</mn></msub><msub><mi>r</mi><mn>23</mn></msub></mrow><msqrt><mrow><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><msubsup><mi>r</mi><mn>12</mn><mn>2</mn></msubsup><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><msubsup><mi>r</mi><mn>23</mn><mn>2</mn></msubsup><mo stretchy="false" form="postfix">)</mo></mrow></msqrt></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">r_{13\cdot2}=\frac{r_{13}-r_{12}r_{23}}{\sqrt{(1-r_{12}^2)(1-r_{23}^2)}}.</annotation></semantics></math></p>
+<p>设 1→2→3
+为调控链，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mn>12</mn></msub><mo>=</mo><mn>0.8</mn></mrow><annotation encoding="application/x-tex">r_{12}=0.8</annotation></semantics></math>，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mn>23</mn></msub><mo>=</mo><mn>0.7</mn></mrow><annotation encoding="application/x-tex">r_{23}=0.7</annotation></semantics></math>。若
+1 与 3 之间没有直接作用，期望
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mn>13</mn></msub><mo>=</mo><mn>0.8</mn><mo>×</mo><mn>0.7</mn><mo>=</mo><mn>0.56</mn></mrow><annotation encoding="application/x-tex">r_{13}=0.8\times0.7=0.56</annotation></semantics></math>——相关网络会画出
+1–3 这条边；但
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mrow><mn>13</mn><mo>⋅</mo><mn>2</mn></mrow></msub><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>0.56</mn><mo>−</mo><mn>0.56</mn><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mi>⋯</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">r_{13\cdot2}=(0.56-0.56)/\cdots=0</annotation></semantics></math>，偏相关正确地去掉了它。若观测到
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mn>13</mn></msub><mo>=</mo><mn>0.7</mn></mrow><annotation encoding="application/x-tex">r_{13}=0.7</annotation></semantics></math>，则
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mrow><mn>13</mn><mo>⋅</mo><mn>2</mn></mrow></msub><mo>=</mo><mn>0.14</mn><mi>/</mi><msqrt><mrow><mn>0.36</mn><mo>×</mo><mn>0.51</mn></mrow></msqrt><mo>≈</mo><mn>0.33</mn></mrow><annotation encoding="application/x-tex">r_{13\cdot2}=0.14/\sqrt{0.36\times0.51}\approx0.33</annotation></semantics></math>，提示
+1 与 3 之间在 2 之外还有联系。</p>
+<h3
+id="pn-时的问题"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>&gt;</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">p&gt;n</annotation></semantics></math>
+时的问题</h3>
+<p>全偏相关需要协方差矩阵的逆。样本协方差
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+的秩至多为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n-1</annotation></semantics></math>，当
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>≥</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">p\ge n</annotation></semantics></math>
+时不可逆；即使
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+略大于
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+的小特征值被严重低估，求逆后噪声被放大。常见对策有两类：<strong>收缩</strong>（把
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+拉向一个简单目标，保证可逆且条件数好）与<strong>稀疏正则化</strong>（图形
+LASSO、邻域选择，见<a
+href="symptom-networks.regularization.html">正则化估计：EBICglasso</a>）。基因网络中，Schäfer
+与
+Strimmer（2005）的收缩方法因为有<strong>解析的最优收缩强度</strong>、计算快，而被广泛使用（R
+包 GeneNet、corpcor）。</p>
+<h3 id="schäferstrimmer-收缩估计">Schäfer–Strimmer 收缩估计</h3>
+<p>对标准化数据（即相关矩阵
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>），以单位阵为目标：</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>R</mi><mo>*</mo></msup><mo>=</mo><mi>λ</mi><mi>I</mi><mo>+</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>λ</mi><mo stretchy="false" form="postfix">)</mo><mi>R</mi><mo>,</mo><mspace width="2.0em"></mspace><mrow><mtext mathvariant="normal">即 </mtext><mspace width="0.333em"></mspace></mrow><msubsup><mi>r</mi><mrow><mi>i</mi><mi>j</mi></mrow><mo>*</mo></msubsup><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>λ</mi><mo stretchy="false" form="postfix">)</mo><msub><mi>r</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mspace width="0.222em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>i</mi><mo>≠</mo><mi>j</mi><mo stretchy="false" form="postfix">)</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">R^{*}=\lambda I+(1-\lambda)R,\qquad\text{即 } r^{*}_{ij}=(1-\lambda)r_{ij}\ (i\neq j).</annotation></semantics></math></p>
+<p>使均方误差最小的收缩强度为</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>λ</mi><mo>*</mo></msup><mo>=</mo><mfrac><mrow><munder><mo>∑</mo><mrow><mi>i</mi><mo>≠</mo><mi>j</mi></mrow></munder><mover><mi mathvariant="normal">Var</mi><mo accent="true">̂</mo></mover><mo stretchy="false" form="prefix">(</mo><msub><mi>r</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo stretchy="false" form="postfix">)</mo></mrow><mrow><munder><mo>∑</mo><mrow><mi>i</mi><mo>≠</mo><mi>j</mi></mrow></munder><msubsup><mi>r</mi><mrow><mi>i</mi><mi>j</mi></mrow><mn>2</mn></msubsup></mrow></mfrac><mo>,</mo></mrow><annotation encoding="application/x-tex">\lambda^{*}=\frac{\sum_{i\neq j}\widehat{\operatorname{Var}}(r_{ij})}{\sum_{i\neq j}r_{ij}^{2}},</annotation></semantics></math></p>
+<p>其中
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi mathvariant="normal">Var</mi><mo accent="true">̂</mo></mover><mo stretchy="false" form="prefix">(</mo><msub><mi>r</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mstyle displaystyle="true"><mfrac><mi>n</mi><mrow><mo stretchy="false" form="prefix">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><msup><mo stretchy="false" form="postfix">)</mo><mn>3</mn></msup></mrow></mfrac></mstyle><msubsup><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mo stretchy="false" form="prefix">(</mo><msub><mi>w</mi><mrow><mi>k</mi><mi>i</mi><mi>j</mi></mrow></msub><mo>−</mo><msub><mover><mi>w</mi><mo accent="true">‾</mo></mover><mrow><mi>i</mi><mi>j</mi></mrow></msub><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\widehat{\operatorname{Var}}(r_{ij})=\dfrac{n}{(n-1)^3}\sum_{k=1}^{n}(w_{kij}-\bar w_{ij})^2</annotation></semantics></math>，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>w</mi><mrow><mi>k</mi><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><msub><mi>z</mi><mrow><mi>k</mi><mi>i</mi></mrow></msub><msub><mi>z</mi><mrow><mi>k</mi><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">w_{kij}=z_{ki}z_{kj}</annotation></semantics></math>
+是第
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+个样本中两基因标准化值的乘积。直观地说：<strong>相关系数整体越“不可靠”（分子大）、相关整体越弱（分母小），就收缩得越多</strong>。<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>λ</mi><mo>*</mo></msup><annotation encoding="application/x-tex">\lambda^*</annotation></semantics></math>
+截断到
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>。得到
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>R</mi><mo>*</mo></msup><annotation encoding="application/x-tex">R^*</annotation></semantics></math>
+后求逆，按
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ρ</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mi>−</mi><msub><mi>ω</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mi>/</mi><msqrt><mrow><msub><mi>ω</mi><mrow><mi>i</mi><mi>i</mi></mrow></msub><msub><mi>ω</mi><mrow><mi>j</mi><mi>j</mi></mrow></msub></mrow></msqrt></mrow><annotation encoding="application/x-tex">\rho_{ij}=-\omega_{ij}/\sqrt{\omega_{ii}\omega_{jj}}</annotation></semantics></math>
+换算偏相关。推导见<a
+href="gene-network-inference.derivations.html">数学推导与算法</a>。</p>
+<p>收缩只给出非稀疏的偏相关估计，还需要判断哪些边显著。Schäfer 与
+Strimmer（2005,
+<em>Bioinformatics</em>）提出用经验贝叶斯混合模型拟合全部偏相关的分布（大部分来自“零边”的零分布，少部分来自真边），对每条边给出<strong>局部错误发现率</strong>（local
+fdr），以此选边。</p>
+<h3 id="模拟中的表现">模拟中的表现</h3>
+<p>代码示例的“收缩估计偏相关”单元在一个含 8 个枢纽的稀疏 GGM（80
+个基因）上比较
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>r</mi><mo stretchy="false" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">|r|</annotation></semantics></math>
+与收缩偏相关：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math></th>
+<th><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>λ</mi><mo>*</mo></msup><annotation encoding="application/x-tex">\lambda^*</annotation></semantics></math></th>
+<th>AUPR（<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>r</mi><mo stretchy="false" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">|r|</annotation></semantics></math>）</th>
+<th>AUPR（收缩偏相关）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>40</td>
+<td>0.79</td>
+<td>0.53</td>
+<td>0.43</td>
+</tr>
+<tr>
+<td>100</td>
+<td>0.69</td>
+<td>0.81</td>
+<td>0.79</td>
+</tr>
+<tr>
+<td>400</td>
+<td>0.34</td>
+<td>0.90</td>
+<td>0.95</td>
+</tr>
+<tr>
+<td>1600</td>
+<td>0.10</td>
+<td>0.88</td>
+<td>1.00</td>
+</tr>
+</tbody>
+</table></div>
+<p>（随机预测的 AUPR 为
+0.02。）结果说明两点：其一，同一枢纽的两个邻居之间没有直接边却有明显相关（<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>400</mn></mrow><annotation encoding="application/x-tex">n=400</annotation></semantics></math>
+时平均
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>r</mi><mo stretchy="false" form="prefix">|</mo><mo>≈</mo><mn>0.21</mn></mrow><annotation encoding="application/x-tex">|r|\approx0.21</annotation></semantics></math>），偏相关把它们压到约
+0.04，这是偏相关的价值；其二，<strong>样本很少时偏相关并不总是优于相关排序</strong>——估计一个精度矩阵比估计相关矩阵需要更多信息，收缩又把信号压得很弱。<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+增大后偏相关继续接近真值，相关排序则停在间接边造成的上限附近。</p>
+<div class="callout-warn">
+<p>（1）偏相关依赖“所有相关变量都在模型中”：漏掉的共同调控因子仍会制造虚假偏相关；（2）对撞结构
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>→</mo><mi>C</mi><mo>←</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A\to C\leftarrow B</annotation></semantics></math>
+中，控制
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>
+会让本不相关的
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+出现偏相关；（3）GGM
+假设线性关系与近似正态，计数数据需先变换；（4）收缩估计偏向单位阵，边权系统性偏小，只宜用于排序与显著性判断，不宜与未收缩的估计直接比较大小。</p>
+</div>
+</section><section class="block related-box"><h2>继续阅读</h2><ul><li>交互可视化：<a href="lab.html#ffl">前馈环的滤波作用</a></li><li>代码示例：<a href="ex-gene-network-inference-0.html">软阈值幂次 β 的无标度拟合准则</a>、<a href="ex-gene-network-inference-1.html">拓扑重叠矩阵（TOM）与层次聚类划分模块</a>、<a href="ex-gene-network-inference-2.html">模块特征基因、模块–性状关联与 hub 基因</a>、<a href="ex-gene-network-inference-3.html">互信息网络、CLR 背景校正与 ARACNe 的数据处理不等式</a></li><li>论文精读：<a href="paper-shenorr2002_ecoli.html">大肠杆菌转录调控网络中的网络基序</a>、<a href="paper-zhang2005_wgcna.html">加权基因共表达网络分析的一般框架</a>、<a href="paper-marbach2012_wisdom.html">群体智慧实现稳健的基因调控网络推断</a></li></ul></section><nav class="pager"><a href="gene-network-inference.differential-coexpression.html"><small>上一页</small>差异共表达分析</a><a href="gene-network-inference.beyond-correlation.html"><small>下一页</small>超越相关：信息论、树模型与单细胞方法</a></nav></article><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

@@ -1,0 +1,10 @@
+{
+ "topic": "spreading",
+ "index": 7,
+ "title": "集合种群模型与有效距离",
+ "hash": "a028dbdd021434e97ad4b5321294684192bd3c0c",
+ "ok": true,
+ "figures": 1,
+ "stdout": "被感染城市 149 / 149\n到达时间 vs 有效距离 r = 0.88\n到达时间 vs 跳数距离 r = 0.61",
+ "stderr": ""
+}

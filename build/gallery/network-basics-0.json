@@ -1,0 +1,10 @@
+{
+ "topic": "network-basics",
+ "index": 0,
+ "title": "哥尼斯堡七桥问题与欧拉路径",
+ "hash": "513ae6a3c883a6633493e1c83e4c7ecf9cb501af",
+ "ok": true,
+ "figures": 1,
+ "stdout": "【原始七桥】节点的度: {'A': 5, 'B': 3, 'C': 3, 'D': 3}\n  奇数度节点个数: 4\n  按 Euler 判据，存在欧拉路径吗？ False\n  NetworkX 的判断: False\n【加一座 B–C 桥】节点的度: {'A': 5, 'B': 4, 'C': 4, 'D': 3}\n  奇数度节点个数: 2\n  按 Euler 判据，存在欧拉路径吗？ True\n  NetworkX 的判断: True",
+ "stderr": ""
+}

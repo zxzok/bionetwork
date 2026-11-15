@@ -1,0 +1,98 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>一组基于“介于性”的中心性度量 · 生物医学网络科学</title><meta name="description" content="论文精读：A set of measures of centrality based on betweenness"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-theory"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html" aria-current="page">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory" open><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html" aria-current="page">网络结构指标与随机图</a><ol class="sub"><li><a href="network-metrics.degree-density.html"><span class="n">01</span>度、平均度与密度</a></li><li><a href="network-metrics.degree-distribution.html"><span class="n">02</span>度分布</a></li><li><a href="network-metrics.paths-distance.html"><span class="n">03</span>路径、距离与最短路径算法</a></li><li><a href="network-metrics.components.html"><span class="n">04</span>连通分支与巨连通分支</a></li><li><a href="network-metrics.clustering.html"><span class="n">05</span>聚集系数</a></li><li><a href="network-metrics.efficiency.html"><span class="n">06</span>全局效率与局部效率</a></li><li><a href="network-metrics.weighted-networks.html"><span class="n">07</span>加权网络的指标</a></li><li><a href="network-metrics.centrality.html"><span class="n">08</span>中心性：度、接近与介数</a></li><li><a href="network-metrics.spectral-centrality.html"><span class="n">09</span>谱类中心性：特征向量、Katz、PageRank 与 HITS</a></li><li><a href="network-metrics.k-core.html"><span class="n">10</span>k 核分解与核数</a></li><li><a href="network-metrics.centrality-choice.html"><span class="n">11</span>中心性的选择与解释</a></li><li><a href="network-metrics.er-random-graph.html"><span class="n">12</span>ER 随机网络</a></li><li><a href="network-metrics.er-evolution.html"><span class="n">13</span>ER 网络的演化与相变</a></li><li><a href="network-metrics.small-world-distance.html"><span class="n">14</span>小世界性与平均距离</a></li><li><a href="network-metrics.real-vs-random.html"><span class="n">15</span>真实网络与随机网络的比较</a></li><li><a href="network-metrics.derivations.html"><span class="n">16</span>数学推导与算法</a></li><li><a href="network-metrics.frontiers.html"><span class="n">17</span>研究前沿与开放问题</a></li><li><a href="network-metrics.biomedical.html"><span class="n">18</span>生物医学应用</a></li><li><a href="network-metrics.limitations.html"><span class="n">19</span>适用范围与常见误用</a></li></ol></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><div class="lec-grid"><div style="min-width:0"><div class="lec-head"><nav class="crumb"><a href="papers.html">文献知识库</a> › 网络基础理论 · 症状网络与网络精神病学</nav><div class="eyebrow"><b>经典论文</b><span>难度：入门</span></div><h1>一组基于“介于性”的中心性度量</h1><p class="porig big">A set of measures of centrality based on betweenness</p><p class="small">Freeman LC · <i>Sociometry</i> 1977 · <a href="https://doi.org/10.2307/3033543" target="_blank" rel="noopener">DOI: 10.2307/3033543</a></p><div class="chips"><span class="chip">介数中心性</span><span class="chip">中心性</span><span class="chip">最短路径</span><span class="chip">中心化程度</span><span class="chip">社会网络分析</span></div><div class="objectives"><h2>一句话</h2><p style="margin:0">用“一个节点落在多少对节点的最短路径上”来定义中心性，给出节点介数、标准化介数和整个网络的中心化指标。</p><p class="small" style="margin:8px 0 0">相关专题：<a href="network-metrics.html">网络结构指标与随机图</a>、<a href="community-structure.html">社团结构与社区发现</a>、<a href="symptom-networks.html">症状网络与网络精神病学</a></p></div></div><section class="block prose" id="notes"><h2 id="一句话看懂">一句话看懂</h2>
+<p>一个人重要，不一定是因为他认识的人多，而可能是因为别人之间的消息必须经过他。Freeman
+把这种“处在中间”的位置量化为<strong>介数</strong>（betweenness）：统计所有节点对之间的最短路径中，有多大比例经过该节点。</p>
+<h2 id="研究背景与问题">研究背景与问题</h2>
+<p>20 世纪 40–50
+年代，社会心理学的小组沟通实验已经发现：在星形、链形、环形等不同沟通结构中，处在“中心”位置的成员更容易成为领导者，小组的效率也不同。但“中心”应该怎样测量，研究者给出了多种互不一致的定义。有的指标只适用于连通图，有的与网络规模纠缠在一起，不同大小的网络之间无法比较。</p>
+<p>Freeman
+的目标是：从“控制沟通”这一直觉出发，给出一组定义清楚、可以跨网络比较、对不连通网络也能使用的中心性指标。</p>
+<h2 id="核心思想与方法">核心思想与方法</h2>
+<p>假设信息总是沿最短路径（geodesic）传递。若节点
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>
+与
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math>
+之间有
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>g</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><annotation encoding="application/x-tex">g_{ij}</annotation></semantics></math>
+条最短路径，其中
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>g</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">g_{ij}(k)</annotation></semantics></math>
+条经过节点
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>，那么
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+能“截住”
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>
+与
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math>
+之间消息的概率可以估计为二者之比。</p>
+<div class="callout-def">
+<p><strong>成对依赖</strong>：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>b</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mi>g</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo><mi>/</mi><msub><mi>g</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">b_{ij}(k)=g_{ij}(k)/g_{ij}</annotation></semantics></math>。</p>
+<p><strong>节点介数</strong>：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mi>B</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mo>∑</mo><mrow><mi>i</mi><mo>&lt;</mo><mi>j</mi><mo>,</mo><mspace width="0.278em"></mspace><mi>i</mi><mo>,</mo><mi>j</mi><mo>≠</mo><mi>k</mi></mrow></msub><msub><mi>b</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">C_B(k)=\sum_{i&lt;j,\;i,j\neq k} b_{ij}(k)</annotation></semantics></math>，即把节点
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+在所有节点对上的成对依赖相加。</p>
+<p><strong>标准化介数</strong>：在
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+个节点的无向图中，星形图的中心落在全部
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mfrac linethickness="0"><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mstyle displaystyle="false"><mfrac><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>−</mo><mn>3</mn><mi>n</mi><mo>+</mo><mn>2</mn></mrow><mn>2</mn></mfrac></mstyle></mrow><annotation encoding="application/x-tex">\binom{n-1}{2}=\tfrac{n^2-3n+2}{2}</annotation></semantics></math>
+对其他节点的唯一最短路径上，这是
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>C</mi><mi>B</mi></msub><annotation encoding="application/x-tex">C_B</annotation></semantics></math>
+的最大值。于是定义
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>C</mi><mi>B</mi><mo>′</mo></msubsup><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mn>2</mn><msub><mi>C</mi><mi>B</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo></mrow><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>−</mo><mn>3</mn><mi>n</mi><mo>+</mo><mn>2</mn></mrow></mfrac></mstyle></mrow><annotation encoding="application/x-tex">C_B&#39;(k)=\dfrac{2C_B(k)}{n^2-3n+2}</annotation></semantics></math>，取值在
+0 与 1 之间。</p>
+</div>
+<p>在节点指标之外，Freeman
+还定义了整个网络的<strong>中心化程度</strong>（centralization）：先找出介数最大的节点
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>k</mi><mo>*</mo></msup><annotation encoding="application/x-tex">k^*</annotation></semantics></math>，再把所有节点与它的差距
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∑</mo><mi>i</mi></msub><mo stretchy="false" form="prefix">[</mo><msubsup><mi>C</mi><mi>B</mi><mo>′</mo></msubsup><mo stretchy="false" form="prefix">(</mo><msup><mi>k</mi><mo>*</mo></msup><mo stretchy="false" form="postfix">)</mo><mo>−</mo><msubsup><mi>C</mi><mi>B</mi><mo>′</mo></msubsup><mo stretchy="false" form="prefix">(</mo><mi>i</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\sum_i[C_B&#39;(k^*)-C_B&#39;(i)]</annotation></semantics></math>
+相加，并除以该求和在星形图中能达到的最大值，使结果落在 0 与 1
+之间。星形图的中心化程度为 1；完全图或环中每个节点地位相同，中心化程度为
+0。</p>
+<p>这一组定义有两个实用优点。第一，若
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>
+与
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math>
+之间没有路径，这一对节点对任何人的介数都没有贡献，因此不连通的网络也能计算。第二，标准化后的指标与网络规模无关，可以比较不同大小的网络。</p>
+<h2 id="主要发现">主要发现</h2>
+<p>这是一篇方法论文，主要贡献是定义而不是经验结果：</p>
+<ol type="1">
+<li>给出了节点介数、标准化节点介数、网络中心化程度三个层次的度量，三者都以最短路径为基础。</li>
+<li>证明了星形图的中心使介数达到最大，并以此作为标准化的基准。</li>
+<li>指出介数刻画的是“对沟通的潜在控制力”，与只看直接连接数的度中心性含义不同：一个度很小的节点，如果是两个群体之间唯一的桥，介数可以很高。</li>
+<li>介数适用于任意大小、连通或不连通的对称关系网络。</li>
+</ol>
+<h2 id="怎样读这篇论文">怎样读这篇论文</h2>
+<p>全文篇幅很短，数学只用到计数。建议先读引言部分对早期沟通实验的回顾，理解作者为什么认为“处在中间”是一种独立的重要性；然后在纸上对星形、链、环三种
+5 个节点的小网络手算
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>C</mi><mi>B</mi></msub><annotation encoding="application/x-tex">C_B</annotation></semantics></math>
+和中心化程度，这比读证明更有帮助。标准化常数的推导可以快速读过。</p>
+<p>读完后建议接着读 Freeman 1979 年在 <em>Social Networks</em>
+上的综述，那里把度、接近、介数三种中心性放在同一框架下比较。</p>
+<h2 id="局限与后续工作">局限与后续工作</h2>
+<ul>
+<li><strong>“只走最短路径”的假设</strong>：介数假设信息只沿最短路径流动。Newman（2005）提出基于随机游走的介数，Borgatti（2005）则系统讨论了不同“流动方式”应当配合不同中心性。在偏相关网络、共表达网络中，边并不代表物质或信息的传递，介数的含义就很可疑（<a
+href="symptom-networks.centrality.html">症状中心性及其解释</a>讨论了这一点）。</li>
+<li><strong>计算代价</strong>：按定义直接计算需要对每对节点枚举最短路径。Brandes（2001）给出的算法在无权图上复杂度为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false" form="prefix">(</mo><mi>n</mi><mi>m</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">O(nm)</annotation></semantics></math>，至今仍是
+NetworkX 等软件的默认实现；大网络上常用抽样近似。</li>
+<li><strong>加权网络</strong>：需要先把权重转换成“距离”。相关性越强代表越近，直接把相关系数当距离会得到相反的结论。</li>
+<li><strong>从节点到边</strong>：把同样的思想用于边，就得到边介数。Girvan
+与 Newman（2002）据此提出了按边介数删边的社团发现算法。</li>
+<li><strong>介数与“重要性”</strong>：高介数节点在网络受攻击时往往很关键，但在生物网络中，高介数是否意味着功能上的重要性需要独立证据，不能直接从拓扑推出。</li>
+</ul>
+<h2 id="关联知识">关联知识</h2>
+<ul>
+<li><a
+href="network-metrics.paths-distance.html">路径、距离与最短路径算法</a>中的最短路径与广度优先搜索是计算介数的基础；BFS
+在无权图上一次就能得到从一个源点出发的全部最短路径计数。</li>
+<li><a href="community-structure.girvan-newman.html">Girvan–Newman
+算法与边介数</a>中的边介数和 Girvan–Newman
+算法，是本文思想在边上的直接推广。</li>
+<li><a
+href="symptom-networks.centrality.html">症状中心性及其解释</a>讨论了接近中心性与介数在症状网络中的解释局限，可以与本文的“沟通控制”假设对照阅读。</li>
+</ul>
+<h2 id="延伸思考">延伸思考</h2>
+<ol type="1">
+<li>在一个由两个稠密团块和一条“桥”边组成的网络里，桥两端节点的度可能不大，但介数很高。请构造一个具体的小例子并计算，体会度与介数的差别。</li>
+<li>在脑结构网络中，白质纤维确实承担信号传递；在基因共表达网络中，边只代表表达相关。介数在这两类网络中的含义有什么不同？</li>
+<li>Freeman 的中心化程度以星形图为最大值。对一个度分布重尾的 PPI
+网络和一个近似规则的格点网络，你预期它们的介数中心化程度谁更高？为什么？</li>
+</ol>
+</section><nav class="pager"><a href="paper-erdos1960_randomgraphs.html">← 论随机图的演化</a><a href="paper-watts1998_smallworld.html">“小世界”网络的集体动力学 →</a></nav></div><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

@@ -1,0 +1,109 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>敏感性分析与替代解释 · 生物医学网络科学</title><meta name="description" content="研究问题、可复现分析与敏感性分析 · 敏感性分析与替代解释"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-methods"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html" aria-current="page">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods" open><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a><ol class="sub"><li><a href="reproducible-research.research-questions.html"><span class="n">01</span>提出网络研究问题</a></li><li><a href="reproducible-research.preregistration.html"><span class="n">02</span>预注册与分析计划</a></li><li><a href="reproducible-research.reproducible-analysis.html"><span class="n">03</span>可复算的分析</a></li><li><a href="reproducible-research.computational-environment.html"><span class="n">04</span>计算环境与工作流</a></li><li><a href="reproducible-research.open-data-code.html"><span class="n">05</span>数据与代码共享</a></li><li><a href="reproducible-research.randomness-robustness.html"><span class="n">06</span>随机性控制</a></li><li><a href="reproducible-research.sensitivity-analysis.html" aria-current="page"><span class="n">07</span>敏感性分析与替代解释</a></li><li><a href="reproducible-research.multiverse-analysis.html"><span class="n">08</span>多元宇宙分析与设定曲线</a></li><li><a href="reproducible-research.power-sample-size.html"><span class="n">09</span>统计功效与样本量</a></li><li><a href="reproducible-research.reporting-checklist.html"><span class="n">10</span>网络研究的报告清单</a></li><li><a href="reproducible-research.replication-cases.html"><span class="n">11</span>可重复性危机与负结果</a></li><li><a href="reproducible-research.ai-assistance.html"><span class="n">12</span>负责任地使用 AI 辅助</a></li><li><a href="reproducible-research.derivations.html"><span class="n">13</span>数学推导与算法</a></li><li><a href="reproducible-research.frontiers.html"><span class="n">14</span>研究前沿与开放问题</a></li><li><a href="reproducible-research.biomedical.html"><span class="n">15</span>生物医学应用</a></li><li><a href="reproducible-research.limitations.html"><span class="n">16</span>适用范围与常见误用</a></li></ol></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><div class="lec-grid"><article style="min-width:0"><header class="doc-head"><nav class="crumb"><a href="d-methods.html">计算方法与研究规范</a> <span class="sep">/</span> <a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></nav><div class="eyebrow" style="margin-top:14px"><b>研究问题、可复现分析与敏感性分析</b><span>07 / 16</span></div><h1>敏感性分析与替代解释</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></dd></div><div><dt>阅读</dt><dd>约 3 分钟</dd></div></dl></header><section class="block prose" id="notes"><h3 id="分析选择的分岔花园">分析选择的“分岔花园”</h3>
+<p>一个网络分析要经过许多选择：节点怎么定义、边用什么统计量、阈值取多少、社团算法用哪个、随机基线怎么构造……每个选择都“合理”，但组合起来，结论可能截然不同。Botvinik-Nezer
+等（2020）请 70 个团队独立分析同一份 fMRI 数据、检验同样 9
+个事先确定的假设：没有两个团队选择了完全相同的分析流程，各团队对同一假设给出的“显著/不显著”结论差异相当大，即使在中间统计图高度相关的团队之间也是如此。</p>
+<div class="callout-def">
+<p><strong>敏感性分析（sensitivity
+analysis）</strong>：系统改变关键分析选择，观察主要结论是否保持。若在合理范围内结论都成立，结论是<strong>稳健的</strong>；若只在某个选择下成立，必须如实报告。把所有合理选择组合起来逐一运行、汇总结果的做法称为<strong>多元宇宙分析（multiverse
+analysis）</strong>，见<a
+href="reproducible-research.multiverse-analysis.html">多元宇宙分析与设定曲线</a>。</p>
+</div>
+<h3 id="网络分析中常见的敏感点">网络分析中常见的敏感点</h3>
+<div class="table-wrap"><table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>分析环节</th>
+<th>常见选择</th>
+<th>敏感性做法</th>
+<th>相关专题</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>节点定义</td>
+<td>不同脑图谱与分辨率；基因 ID 映射规则；症状条目合并与否</td>
+<td>至少比较两种节点定义</td>
+<td><a href="brain-connectome.html">脑连接组</a>、<a
+href="network-construction.html">网络构建</a></td>
+</tr>
+<tr>
+<td>边的定义</td>
+<td>相关、偏相关、互信息</td>
+<td>至少比较两种</td>
+<td><a href="brain-connectome.html">脑连接组</a>、<a
+href="symptom-networks.html">症状网络</a>、<a
+href="gene-network-inference.html">基因网络推断</a></td>
+</tr>
+<tr>
+<td>阈值/密度</td>
+<td>绝对阈值、比例阈值、加权</td>
+<td>扫描一段密度区间并画曲线</td>
+<td><a href="brain-connectome.html">脑连接组</a></td>
+</tr>
+<tr>
+<td>数据库置信度</td>
+<td>STRING 0.4 / 0.7 / 0.9</td>
+<td>报告三档下的结果</td>
+<td><a href="molecular-networks.html">生物分子网络</a>、<a
+href="network-medicine.html">网络医学</a></td>
+</tr>
+<tr>
+<td>预处理</td>
+<td>是否全局信号回归、头动处理策略、批次校正</td>
+<td>主要预处理选择各跑一次</td>
+<td><a href="brain-connectome.html">脑连接组</a></td>
+</tr>
+<tr>
+<td>社团检测</td>
+<td>Louvain 种子、分辨率参数</td>
+<td>多种子、共识划分、报告 Q 的范围</td>
+<td><a href="community-structure.html">社团结构与社区发现</a></td>
+</tr>
+<tr>
+<td>零模型</td>
+<td>ER、度保持重连、度匹配抽样</td>
+<td>说明选择理由，必要时比较两种</td>
+<td><a href="network-metrics.html">网络结构指标与随机图</a>、<a
+href="network-medicine.html">网络医学</a></td>
+</tr>
+<tr>
+<td>样本</td>
+<td>全部样本、去除离群、子样本</td>
+<td>bootstrap 或留一法</td>
+<td><a href="symptom-networks.html">症状网络</a>、<a
+href="network-construction.stability-reproducibility.html">网络构建与统计验证</a></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="替代解释排查表">替代解释排查表</h3>
+<p>看到一个“有趣”的结果时，先问下面五个问题：</p>
+<ol type="1">
+<li><strong>密度/规模差异</strong>：两组网络的边数不同，是否就足以解释指标差异？（见本专题代码示例“替代解释”）</li>
+<li><strong>度与研究偏倚</strong>：结果是否只是“热门基因/节点连边多”的反映？是否做了度匹配？</li>
+<li><strong>混杂因素</strong>：头动、批次、细胞组成、年龄、用药是否可能同时影响网络和结果？</li>
+<li><strong>多重比较</strong>：检验了多少个节点、多少个指标？是否做了
+FDR 校正？</li>
+<li><strong>循环论证（double
+dipping）</strong>：是否用同一份数据既选择特征又检验特征？例如先挑出差异最大的边再比较它们的组间差异。</li>
+</ol>
+<div class="callout-def">
+<p><strong>循环分析（circular analysis, double
+dipping）</strong>：用同一份数据既做选择（选边、选脑区、选基因、选参数），又对选择结果做统计检验或估计效应量。Kriegeskorte
+等（2009）系统说明了它在系统神经科学中的危害：被选中的特征在同一数据中的效应被系统性高估，在纯噪声中也能得到“显著”结果。解决办法是选择与检验使用独立数据（分半、留出集、交叉验证），或者把选择步骤整体放进置换检验的每一次循环中。</p>
+</div>
+<p>本专题的代码示例“循环论证”在不存在任何组间差异的模拟数据上演示：先在全部数据中挑出差异最大的
+10
+条边再检验，几乎每次都“显著”；改为一半数据选边、另一半检验后，“显著”比例回到名义水平
+5% 左右。</p>
+<div class="callout-warn">
+<p>敏感性分析不是“找一个让结果显著的设置”。正确顺序是：<strong>先</strong>在研究计划中写明主分析的选择和要检查的敏感点，<strong>再</strong>运行并如实报告所有结果。反过来做，就成了
+Simmons 等（2011）所说的“研究者自由度”导致的假阳性。Wicherts
+等（2016）把研究设计、执行、分析和报告各阶段的研究者自由度整理成检查清单，可在写分析计划时对照。</p>
+</div>
+</section><section class="block related-box"><h2>继续阅读</h2><ul><li>交互可视化：<a href="lab.html#brain_threshold">脑网络阈值敏感性</a></li><li>代码示例：<a href="ex-reproducible-research-0.html">阈值敏感性——枢纽排名随网络密度如何变化</a>、<a href="ex-reproducible-research-1.html">随机种子敏感性——社团划分的可重复程度</a>、<a href="ex-reproducible-research-2.html">替代解释——组间差异来自“结构不同”还是“连接整体变弱”</a>、<a href="ex-reproducible-research-3.html">多元宇宙分析——把所有合理的网络构建选择组合起来同时报告</a></li></ul></section><nav class="pager"><a href="reproducible-research.randomness-robustness.html"><small>上一页</small>随机性控制</a><a href="reproducible-research.multiverse-analysis.html"><small>下一页</small>多元宇宙分析与设定曲线</a></nav></article><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

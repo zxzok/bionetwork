@@ -1,0 +1,81 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>网络基序：复杂网络的简单构件 · 生物医学网络科学</title><meta name="description" content="论文精读：Network motifs: simple building blocks of complex networks"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-molecular"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html" aria-current="page">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular" open><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html" aria-current="page">生物分子网络与拓扑特征</a><ol class="sub"><li><a href="molecular-networks.network-types.html"><span class="n">01</span>生物分子网络的类型与数据来源</a></li><li><a href="molecular-networks.ppi-mapping.html"><span class="n">02</span>相互作用组图谱：检测方法、质量与偏倚</a></li><li><a href="molecular-networks.topology.html"><span class="n">03</span>分子网络的拓扑特征</a></li><li><a href="molecular-networks.metabolic-networks.html"><span class="n">04</span>代谢网络与通量平衡分析</a></li><li><a href="molecular-networks.signaling-networks.html"><span class="n">05</span>信号转导网络</a></li><li><a href="molecular-networks.protein-complexes.html"><span class="n">06</span>蛋白复合物与功能模块的检测</a></li><li><a href="molecular-networks.centrality-lethality.html"><span class="n">07</span>致死性与中心性：枢纽蛋白假说及其争议</a></li><li><a href="molecular-networks.disease-modules.html"><span class="n">08</span>人类疾病网络与疾病模块</a></li><li><a href="molecular-networks.network-motifs.html"><span class="n">09</span>网络基序：类别与动力学功能</a></li><li><a href="molecular-networks.differential-networks.html"><span class="n">10</span>条件特异性网络、差异网络与网络重连</a></li><li><a href="molecular-networks.multiomics-integration.html"><span class="n">11</span>多组学网络整合</a></li><li><a href="molecular-networks.derivations.html"><span class="n">12</span>数学推导与算法</a></li><li><a href="molecular-networks.frontiers.html"><span class="n">13</span>研究前沿与开放问题</a></li><li><a href="molecular-networks.biomedical.html"><span class="n">14</span>生物医学应用</a></li><li><a href="molecular-networks.limitations.html"><span class="n">15</span>适用范围与常见误用</a></li></ol></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><div class="lec-grid"><div style="min-width:0"><div class="lec-head"><nav class="crumb"><a href="papers.html">文献知识库</a> › 分子网络与基因调控 · 计算方法与研究规范</nav><div class="eyebrow"><b>经典论文</b><span>难度：进阶</span></div><h1>网络基序：复杂网络的简单构件</h1><p class="porig big">Network motifs: simple building blocks of complex networks</p><p class="small">Milo R, Shen-Orr S, Itzkovitz S, Kashtan N, Chklovskii D, Alon U · <i>Science</i> 2002 · <a href="https://doi.org/10.1126/science.298.5594.824" target="_blank" rel="noopener">DOI: 10.1126/science.298.5594.824</a></p><div class="chips"><span class="chip">网络基序</span><span class="chip">子图计数</span><span class="chip">零模型</span><span class="chip">前馈环</span><span class="chip">度保持随机化</span></div><div class="objectives"><h2>一句话</h2><p style="margin:0">把“在真实网络中出现次数显著多于随机网络的小子图”定义为网络基序，发现不同领域的网络各有特征性基序。</p><p class="small" style="margin:8px 0 0">相关专题：<a href="molecular-networks.html">生物分子网络与拓扑特征</a>、<a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></p></div></div><section class="block prose" id="notes"><h2 id="一句话看懂">一句话看懂</h2>
+<p>在有向网络中数一数各种三节点、四节点小子图出现了多少次，再与保持每个节点入度和出度不变的随机网络比较；显著“多出来”的子图就是网络基序。功能相近的网络（如基因调控网络和神经网络）共享相似的基序，功能不同的网络（如食物网）基序也不同。</p>
+<h2 id="研究背景与问题">研究背景与问题</h2>
+<p>度分布、聚集系数、路径长度都是全局统计量，能告诉我们网络“整体长什么样”，却不能告诉我们它由什么样的局部线路构成。Alon
+课题组此前在大肠杆菌转录调控网络中发现某些调控模式反复出现（Shen-Orr 等
+2002），自然的问题是：能否把这一做法变成适用于任何有向网络的一般方法？不同领域的网络是否有各自的“基本构件”？</p>
+<p>难点在于定义“反复出现”。一个子图出现很多次，可能只是因为网络中有很多高出度节点，而不是因为它有特殊功能。因此必须拿真实网络与合适的随机网络比较。</p>
+<h2 id="核心思想与方法">核心思想与方法</h2>
+<div class="callout-def">
+<p><strong>网络基序</strong>（network
+motif）：在真实网络中出现次数显著高于相应随机化网络的连接模式（小型有向子图）。</p>
+<p><strong>零模型</strong>：随机化网络保持每个节点的入度、出度（以及双向边的数目）不变，只打乱连接对象。检验四节点子图时，零模型还应保持三节点子图的计数，以免四节点“富集”只是三节点结构的副产品。</p>
+</div>
+<p>方法步骤：</p>
+<ol type="1">
+<li>枚举网络中所有连通的
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+节点子图（<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">n=3</annotation></semantics></math>
+时有 13
+种有向构型，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">n=4</annotation></semantics></math>
+时有 199 种），按同构类计数
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>N</mi><mtext mathvariant="normal">real</mtext></msub><annotation encoding="application/x-tex">N_{\text{real}}</annotation></semantics></math>；</li>
+<li>用边交换生成大量随机网络，分别计数，得到
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msub><mi>N</mi><mtext mathvariant="normal">rand</mtext></msub><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle N_{\text{rand}}\rangle</annotation></semantics></math>
+和标准差
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>σ</mi><mtext mathvariant="normal">rand</mtext></msub><annotation encoding="application/x-tex">\sigma_{\text{rand}}</annotation></semantics></math>；</li>
+<li>若某类子图在随机网络中出现次数达到或超过真实网络的概率很小，且富集幅度和出现次数达到一定要求，就把它判定为基序。常用的标准化指标是
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Z</mi><mo>=</mo><mfrac><mrow><msub><mi>N</mi><mtext mathvariant="normal">real</mtext></msub><mo>−</mo><mo stretchy="false" form="prefix">⟨</mo><msub><mi>N</mi><mtext mathvariant="normal">rand</mtext></msub><mo stretchy="false" form="postfix">⟩</mo></mrow><msub><mi>σ</mi><mtext mathvariant="normal">rand</mtext></msub></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">Z=\frac{N_{\text{real}}-\langle N_{\text{rand}}\rangle}{\sigma_{\text{rand}}}.</annotation></semantics></math></li>
+</ol>
+<p>作者把这套方法用于生物化学（转录调控）、神经生物学（线虫神经元连接）、生态学（食物网）和工程（电子电路）等领域的网络，以及万维网的一个子集。</p>
+<h2 id="主要发现">主要发现</h2>
+<ol type="1">
+<li><strong>各领域网络都有基序</strong>，而且基序因网络类别而异。</li>
+<li><strong>信息处理网络共享相似的基序</strong>：大肠杆菌和酿酒酵母的转录调控网络中，前馈环（feed-forward
+loop，X 调控 Y，X 和 Y 共同调控
+Z）和双扇形（bi-fan，两个调控者共同调控两个靶点）显著富集；线虫神经元网络同样富集前馈环。尽管一个由生物分子组成、一个由神经元组成，它们的“线路风格”相近。</li>
+<li><strong>食物网的基序与之不同</strong>：食物网中富集的是捕食链和“双平行”一类结构，而前馈环并不突出。</li>
+<li><strong>工程网络</strong>：电子电路中出现了与其功能相对应的基序，部分与生物信息处理网络相近。</li>
+<li>作者据此提出，基序可能定义网络的“普适类”，并可能是理解大多数网络的基本构件。</li>
+</ol>
+<h2 id="怎样读这篇论文">怎样读这篇论文</h2>
+<p>先看图 1：它示意了真实网络与随机网络中子图计数的比较，并列出 13
+种三节点有向子图——建议把它们自己画一遍。然后看汇总表，按网络类别横向对比基序（这是全文的核心结果），注意表中给出的
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>N</mi><mtext mathvariant="normal">real</mtext></msub><annotation encoding="application/x-tex">N_{\text{real}}</annotation></semantics></math>、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>N</mi><mtext mathvariant="normal">rand</mtext></msub><annotation encoding="application/x-tex">N_{\text{rand}}</annotation></semantics></math>
+和
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Z</mi><annotation encoding="application/x-tex">Z</annotation></semantics></math>。正文对随机化方法的描述较简略，可配合补充材料或
+Alon（2007）的综述理解。讨论部分关于“普适类”的推测可以带着批判性去读。</p>
+<h2 id="局限与后续工作">局限与后续工作</h2>
+<ul>
+<li><strong>零模型的选择决定结论</strong>：Artzy-Randrup
+等（2004）指出，如果真实网络还有空间嵌入、局部聚集等其他结构，仅保持度序列的零模型可能把这些结构的副产品误认为基序；基序的“显著性”是相对于某个零模型而言的。</li>
+<li><strong>统计问题</strong>：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>σ</mi><mtext mathvariant="normal">rand</mtext></msub><annotation encoding="application/x-tex">\sigma_{\text{rand}}</annotation></semantics></math>
+很小时
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Z</mi><annotation encoding="application/x-tex">Z</annotation></semantics></math>
+值会非常大，且子图计数分布未必近似正态；实践中应同时报告经验
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+值和富集倍数。</li>
+<li><strong>结构富集不等于功能</strong>：基序被富集，不说明它被进化“选择”来执行特定功能。Mangan
+与
+Alon（2003）等工作用理论和实验研究了前馈环的动力学功能（如符号持续性检测、响应加速），把“结构”与“功能”联系起来，这是本文之后最重要的一步。</li>
+<li><strong>数据不完整</strong>：转录调控网络和连接组都不完整，缺失边会改变子图计数。</li>
+<li><strong>扩展</strong>：后续发展出显著性谱（跨网络比较基序构成）、基序的动力学分析、加权与时序网络中的基序、高阶网络中的“基序”概念等。</li>
+</ul>
+<h2 id="关联知识">关联知识</h2>
+<ul>
+<li><a
+href="molecular-networks.network-motifs.html">网络基序：自调控与前馈环</a>以本文为核心，<a
+href="molecular-networks.derivations.html">数学推导与算法</a>给出了三节点基序富集检验的完整算法；交互演示可以调输入脉冲长度，观察前馈环的滤波作用。</li>
+<li><a
+href="analysis-workflow.null-model-comparison.html">用模型网络与零模型解读真实网络</a>强调的零模型思想在本文中体现得最充分：同一个计数，换一个零模型，结论可能完全不同。</li>
+<li>本文也提供了从“局部结构”理解网络的视角，与<a
+href="community-structure.html">社团结构与社区发现</a>的社团（中尺度）和<a
+href="network-models.html">小世界与无标度网络模型</a>的度分布（全局）形成三个尺度。</li>
+</ul>
+<h2 id="延伸思考">延伸思考</h2>
+<ol type="1">
+<li>为什么零模型要保持每个节点的入度和出度，而不是只保持总边数？如果只保持总边数，哪些子图会被系统性地误判为基序？</li>
+<li>在线虫神经网络中，节点的空间位置影响连接概率（近处神经元更容易相连）。你会如何改进零模型以考虑空间约束？</li>
+<li>前馈环在转录网络中富集。请设计一个实验或数据分析，检验某个具体前馈环是否真的具有“过滤短暂信号”的功能。</li>
+</ol>
+</section><nav class="pager"><a href="paper-girvan2002_community.html">← 社会网络与生物网络中的社团结构</a><a href="paper-shenorr2002_ecoli.html">大肠杆菌转录调控网络中的网络基序 →</a></nav></div><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

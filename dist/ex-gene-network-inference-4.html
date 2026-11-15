@@ -1,0 +1,162 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>Schäfer–Strimmer 收缩估计偏相关（p &gt; n） · 生物医学网络科学</title><meta name="description" content="基因调控网络推断与共表达分析 · 代码示例：Schäfer–Strimmer 收缩估计偏相关（p &gt; n）"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-molecular"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html" aria-current="page">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular" open><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a><ol class="sub"><li><a href="gene-network-inference.inference-problem.html"><span class="n">01</span>网络推断问题：从“一起变化”到“谁调控谁”</a></li><li><a href="gene-network-inference.method-landscape.html"><span class="n">02</span>方法家族全景：假设与数据要求</a></li><li><a href="gene-network-inference.wgcna.html"><span class="n">03</span>WGCNA：加权基因共表达网络分析</a></li><li><a href="gene-network-inference.module-interpretation.html"><span class="n">04</span>解读共表达模块时要追问的三件事</a></li><li><a href="gene-network-inference.module-preservation.html"><span class="n">05</span>模块保守性与可重复性检验</a></li><li><a href="gene-network-inference.differential-coexpression.html"><span class="n">06</span>差异共表达分析</a></li><li><a href="gene-network-inference.partial-correlation-shrinkage.html"><span class="n">07</span>偏相关、高斯图模型与收缩估计</a></li><li><a href="gene-network-inference.beyond-correlation.html"><span class="n">08</span>超越相关：信息论、树模型与单细胞方法</a></li><li><a href="gene-network-inference.bayesian-networks.html"><span class="n">09</span>贝叶斯网络与因果结构学习</a></li><li><a href="gene-network-inference.dynamic-models.html"><span class="n">10</span>动力学模型、时间序列与单细胞拟时序</a></li><li><a href="gene-network-inference.prior-knowledge.html"><span class="n">11</span>先验知识整合：TF–靶基因数据库、ChIP-seq 与 ATAC</a></li><li><a href="gene-network-inference.evaluation.html"><span class="n">12</span>推断结果的评估</a></li><li><a href="gene-network-inference.derivations.html"><span class="n">13</span>数学推导与算法</a></li><li><a href="gene-network-inference.frontiers.html"><span class="n">14</span>研究前沿与开放问题</a></li><li><a href="gene-network-inference.biomedical.html"><span class="n">15</span>生物医学应用</a></li><li><a href="gene-network-inference.limitations.html"><span class="n">16</span>适用范围与常见误用</a></li></ol></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="code.html">代码库</a> <span class="sep">/</span> <a href="code.html#molecular">分子网络与基因调控</a> <span class="sep">/</span> <a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></nav><div class="eyebrow" style="margin-top:14px"><b>Example</b><span>05 / 09</span></div><h1>Schäfer–Strimmer 收缩估计偏相关（p &gt; n）</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></dd></div><div><dt>下载</dt><dd><a href="notebooks/gene-network-inference.ipynb" download>Notebook</a> · <a href="notebooks/gene-network-inference.py" download>.py</a></dd></div></dl></header><section class="block prose"><p>从一个已知的稀疏高斯图模型（80 个基因：8 个枢纽各连 6
+个邻居，另加少量随机边）抽取 n 个样本。 n ≤ p
+时样本协方差不可逆，普通偏相关无法计算。按 Schäfer &amp;
+Strimmer（2005）的解析公式估计收缩强度 λ<em>， 把相关矩阵向单位阵收缩
+R</em> = λ<em>·I + (1−λ</em>)·R，再求逆得到偏相关；与 |相关|
+比较恢复真实边的 AUPR。 输出解读：λ*
+随样本量增大而减小。同一枢纽的两个邻居之间没有直接边，却有明显相关；偏相关把这类间接对压到接近
+0。 但 n 很小时偏相关估计噪声大、且收缩很强，AUPR 不一定高于相关排序；n
+增大后偏相关继续改进，相关排序则停在间接边造成的上限附近。
+本示例只演示点估计；GeneNet 还用局部 fdr
+判断哪些偏相关显著，这里未实现。</p>
+</section><section class="block"><h2><span class="tag">Output</span>输出图</h2><div class="ex-figs"><img src="gallery/gene-network-inference-4-0.png" alt="Schäfer–Strimmer 收缩估计偏相关（p &gt; n）：输出图 1" loading="lazy"></div></section><section class="block"><h2><span class="tag">Output</span>文字输出</h2><pre class="ex-out">n =   40（样本协方差奇异）：λ* = 0.79；AUPR |相关| = 0.526，AUPR 收缩偏相关 = 0.434（随机 0.020）
+n =  100（样本协方差可逆）：λ* = 0.69；AUPR |相关| = 0.809，AUPR 收缩偏相关 = 0.790（随机 0.020）
+n =  400（样本协方差可逆）：λ* = 0.34；AUPR |相关| = 0.898，AUPR 收缩偏相关 = 0.952（随机 0.020）
+n = 1600（样本协方差可逆）：λ* = 0.10；AUPR |相关| = 0.884，AUPR 收缩偏相关 = 1.000（随机 0.020）
+n = 400：间接对平均 |r| = 0.211，平均 |偏相关| = 0.044；真边平均 |r| = 0.395，平均 |偏相关| = 0.176</pre></section><section class="block prose"><h2><span class="tag">Code</span>代码</h2><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 从一个已知的稀疏高斯图模型（80 个基因：8 个枢纽各连 6 个邻居，另加少量随机边）抽取 n 个样本。</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># n ≤ p 时样本协方差不可逆，普通偏相关无法计算。按 Schäfer &amp; Strimmer（2005）的解析公式估计收缩强度 λ*，</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 把相关矩阵向单位阵收缩 R* = λ*·I + (1−λ*)·R，再求逆得到偏相关；与 |相关| 比较恢复真实边的 AUPR。</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 输出解读：λ* 随样本量增大而减小。同一枢纽的两个邻居之间没有直接边，却有明显相关；偏相关把这类间接对压到接近 0。</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 但 n 很小时偏相关估计噪声大、且收缩很强，AUPR 不一定高于相关排序；n 增大后偏相关继续改进，相关排序则停在间接边造成的上限附近。</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># 本示例只演示点估计；GeneNet 还用局部 fdr 判断哪些偏相关显著，这里未实现。</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> sparse_ggm(p<span class="op">=</span><span class="dv">80</span>, seed<span class="op">=</span><span class="dv">7</span>):</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    rng <span class="op">=</span> np.random.default_rng(seed)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    K <span class="op">=</span> np.eye(p)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> h <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, p, <span class="dv">10</span>):                               <span class="co"># 枢纽 0, 10, 20, ...，各连 6 个邻居</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(h <span class="op">+</span> <span class="dv">1</span>, h <span class="op">+</span> <span class="dv">7</span>):</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>            K[h, j] <span class="op">=</span> K[j, h] <span class="op">=</span> <span class="op">-</span><span class="fl">0.4</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">15</span>):</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>        i, j <span class="op">=</span> rng.choice(p, <span class="dv">2</span>, replace<span class="op">=</span><span class="va">False</span>)<span class="op">;</span> K[i, j] <span class="op">=</span> K[j, i] <span class="op">=</span> <span class="fl">0.2</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    K <span class="op">+=</span> (<span class="bu">abs</span>(np.linalg.eigvalsh(K).<span class="bu">min</span>()) <span class="op">+</span> <span class="fl">0.2</span>) <span class="op">*</span> np.eye(p)   <span class="co"># 保证正定</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    gold <span class="op">=</span> {(i, j) <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(p) <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(i <span class="op">+</span> <span class="dv">1</span>, p) <span class="cf">if</span> K[i, j] <span class="op">!=</span> <span class="dv">0</span>}</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.linalg.inv(K), gold</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> shrinkage_lambda(X):</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;Schäfer–Strimmer “目标 D”：相关矩阵向单位阵收缩的最优强度 λ*。返回 (λ*, 样本相关矩阵)。&quot;&quot;&quot;</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    n <span class="op">=</span> X.shape[<span class="dv">0</span>]</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    Z <span class="op">=</span> (X <span class="op">-</span> X.mean(<span class="dv">0</span>)) <span class="op">/</span> X.std(<span class="dv">0</span>, ddof<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    W <span class="op">=</span> Z[:, :, <span class="va">None</span>] <span class="op">*</span> Z[:, <span class="va">None</span>, :]                       <span class="co"># w_kij = z_ki z_kj</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    R <span class="op">=</span> W.<span class="bu">sum</span>(<span class="dv">0</span>) <span class="op">/</span> (n <span class="op">-</span> <span class="dv">1</span>)</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    var_r <span class="op">=</span> n <span class="op">/</span> (n <span class="op">-</span> <span class="dv">1</span>) <span class="op">**</span> <span class="dv">3</span> <span class="op">*</span> ((W <span class="op">-</span> W.mean(<span class="dv">0</span>)) <span class="op">**</span> <span class="dv">2</span>).<span class="bu">sum</span>(<span class="dv">0</span>)</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    off <span class="op">=</span> <span class="op">~</span>np.eye(X.shape[<span class="dv">1</span>], dtype<span class="op">=</span><span class="bu">bool</span>)</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="bu">float</span>(np.clip(var_r[off].<span class="bu">sum</span>() <span class="op">/</span> (R[off] <span class="op">**</span> <span class="dv">2</span>).<span class="bu">sum</span>(), <span class="dv">0</span>, <span class="dv">1</span>)), R</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> pcor_from_corr(R):</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>    O <span class="op">=</span> np.linalg.inv(R)<span class="op">;</span> d <span class="op">=</span> np.sqrt(np.diag(O))</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>    P <span class="op">=</span> <span class="op">-</span>O <span class="op">/</span> np.outer(d, d)<span class="op">;</span> np.fill_diagonal(P, <span class="dv">0</span>)<span class="op">;</span> <span class="cf">return</span> P</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> aupr(S, gold, p):</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>    iu <span class="op">=</span> np.triu_indices(p, <span class="dv">1</span>)<span class="op">;</span> y <span class="op">=</span> np.array([(i, j) <span class="kw">in</span> gold <span class="cf">for</span> i, j <span class="kw">in</span> <span class="bu">zip</span>(<span class="op">*</span>iu)])</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>    ys <span class="op">=</span> y[np.argsort(<span class="op">-</span>np.<span class="bu">abs</span>(S[iu]), kind<span class="op">=</span><span class="st">&quot;stable&quot;</span>)]</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.<span class="bu">sum</span>((np.cumsum(ys) <span class="op">/</span> np.arange(<span class="dv">1</span>, <span class="bu">len</span>(ys) <span class="op">+</span> <span class="dv">1</span>))[ys]) <span class="op">/</span> ys.<span class="bu">sum</span>(), y.mean()</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>Sigma, gold <span class="op">=</span> sparse_ggm()</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> Sigma.shape[<span class="dv">0</span>]</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>rng <span class="op">=</span> np.random.default_rng(<span class="dv">3</span>)</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>ns, curve <span class="op">=</span> [<span class="dv">40</span>, <span class="dv">100</span>, <span class="dv">400</span>, <span class="dv">1600</span>], []</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> n <span class="kw">in</span> ns:</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>    X <span class="op">=</span> rng.multivariate_normal(np.zeros(p), Sigma, size<span class="op">=</span>n)</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>    lam, R <span class="op">=</span> shrinkage_lambda(X)</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>    P <span class="op">=</span> pcor_from_corr(lam <span class="op">*</span> np.eye(p) <span class="op">+</span> (<span class="dv">1</span> <span class="op">-</span> lam) <span class="op">*</span> R)</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>    Rc <span class="op">=</span> R.copy()<span class="op">;</span> np.fill_diagonal(Rc, <span class="dv">0</span>)</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>    a_r, base <span class="op">=</span> aupr(Rc, gold, p)<span class="op">;</span> a_p, _ <span class="op">=</span> aupr(P, gold, p)</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>    note <span class="op">=</span> <span class="st">&quot;样本协方差奇异&quot;</span> <span class="cf">if</span> n <span class="op">&lt;=</span> p <span class="cf">else</span> <span class="st">&quot;样本协方差可逆&quot;</span></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;n = </span><span class="sc">{</span>n<span class="sc">:4d}</span><span class="ss">（</span><span class="sc">{</span>note<span class="sc">}</span><span class="ss">）：λ* = </span><span class="sc">{</span>lam<span class="sc">:.2f}</span><span class="ss">；AUPR |相关| = </span><span class="sc">{</span>a_r<span class="sc">:.3f}</span><span class="ss">，AUPR 收缩偏相关 = </span><span class="sc">{</span>a_p<span class="sc">:.3f}</span><span class="ss">（随机 </span><span class="sc">{</span>base<span class="sc">:.3f}</span><span class="ss">）&quot;</span>)</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>    curve.append((lam, a_r, a_p))</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="co"># 间接对：同一枢纽的两个邻居（且不是真边）</span></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> rng.multivariate_normal(np.zeros(p), Sigma, size<span class="op">=</span><span class="dv">400</span>)<span class="op">;</span> lam, R <span class="op">=</span> shrinkage_lambda(X)</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>P <span class="op">=</span> pcor_from_corr(lam <span class="op">*</span> np.eye(p) <span class="op">+</span> (<span class="dv">1</span> <span class="op">-</span> lam) <span class="op">*</span> R)</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>ind <span class="op">=</span> [(a, b) <span class="cf">for</span> h <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, p, <span class="dv">10</span>) <span class="cf">for</span> a <span class="kw">in</span> <span class="bu">range</span>(h <span class="op">+</span> <span class="dv">1</span>, h <span class="op">+</span> <span class="dv">7</span>) <span class="cf">for</span> b <span class="kw">in</span> <span class="bu">range</span>(a <span class="op">+</span> <span class="dv">1</span>, h <span class="op">+</span> <span class="dv">7</span>) <span class="cf">if</span> (a, b) <span class="kw">not</span> <span class="kw">in</span> gold]</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>dirs <span class="op">=</span> <span class="bu">sorted</span>(gold)</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;n = 400：间接对平均 |r| = </span><span class="sc">{</span>np<span class="sc">.</span>mean([<span class="bu">abs</span>(R[e]) <span class="cf">for</span> e <span class="kw">in</span> ind])<span class="sc">:.3f}</span><span class="ss">，平均 |偏相关| = </span><span class="sc">{</span>np<span class="sc">.</span>mean([<span class="bu">abs</span>(P[e]) <span class="cf">for</span> e <span class="kw">in</span> ind])<span class="sc">:.3f}</span><span class="ss">；&quot;</span></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>      <span class="ss">f&quot;真边平均 |r| = </span><span class="sc">{</span>np<span class="sc">.</span>mean([<span class="bu">abs</span>(R[e]) <span class="cf">for</span> e <span class="kw">in</span> dirs])<span class="sc">:.3f}</span><span class="ss">，平均 |偏相关| = </span><span class="sc">{</span>np<span class="sc">.</span>mean([<span class="bu">abs</span>(P[e]) <span class="cf">for</span> e <span class="kw">in</span> dirs])<span class="sc">:.3f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>lam_, a_r_, a_p_ <span class="op">=</span> np.array(curve).T</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">4</span>))</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].plot(ns, a_r_, <span class="st">&quot;s--&quot;</span>, label<span class="op">=</span><span class="st">&quot;|correlation|&quot;</span>)<span class="op">;</span> ax[<span class="dv">0</span>].plot(ns, a_p_, <span class="st">&quot;o-&quot;</span>, label<span class="op">=</span><span class="st">&quot;shrinkage partial correlation&quot;</span>)</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].plot(ns, lam_, <span class="st">&quot;^:&quot;</span>, color<span class="op">=</span><span class="st">&quot;0.4&quot;</span>, label<span class="op">=</span><span class="st">&quot;shrinkage intensity λ*&quot;</span>)</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].axvline(p, color<span class="op">=</span><span class="st">&quot;0.7&quot;</span>, lw<span class="op">=</span><span class="fl">0.8</span>)<span class="op">;</span> ax[<span class="dv">0</span>].set_xscale(<span class="st">&quot;log&quot;</span>)</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].set_xlabel(<span class="st">&quot;sample size n (vertical line: n = p)&quot;</span>)<span class="op">;</span> ax[<span class="dv">0</span>].set_ylabel(<span class="st">&quot;AUPR  /  λ*&quot;</span>)</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].set_title(<span class="st">&quot;Edge recovery vs sample size&quot;</span>)<span class="op">;</span> ax[<span class="dv">0</span>].legend(fontsize<span class="op">=</span><span class="dv">8</span>)</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> pairs, lab, mk <span class="kw">in</span> [(ind, <span class="st">&quot;indirect pairs (shared hub)&quot;</span>, <span class="st">&quot;o&quot;</span>), (dirs, <span class="st">&quot;true edges&quot;</span>, <span class="st">&quot;s&quot;</span>)]:</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>    ax[<span class="dv">1</span>].scatter([<span class="bu">abs</span>(R[e]) <span class="cf">for</span> e <span class="kw">in</span> pairs], [<span class="bu">abs</span>(P[e]) <span class="cf">for</span> e <span class="kw">in</span> pairs], s<span class="op">=</span><span class="dv">30</span>, marker<span class="op">=</span>mk, alpha<span class="op">=</span><span class="fl">0.7</span>, label<span class="op">=</span>lab)</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].set_xlabel(<span class="st">&quot;|correlation|  (n = 400)&quot;</span>)<span class="op">;</span> ax[<span class="dv">1</span>].set_ylabel(<span class="st">&quot;|partial correlation|&quot;</span>)</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].set_title(<span class="st">&quot;Partial correlation removes indirect pairs&quot;</span>)<span class="op">;</span> ax[<span class="dv">1</span>].legend()</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()<span class="op">;</span> plt.show()</span></code></pre></div>
+</section><section class="block"><h2><span class="tag">Run</span>在浏览器中运行</h2><p class="small">首次加载 Python 环境约需 20–40 秒；可以修改参数后重新运行。</p><div class="cell"><div class="cell-head"><h3>Schäfer–Strimmer 收缩估计偏相关（p &gt; n）</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea id="gene-network-inference-cell4" rows="30" spellcheck="false" aria-label="Schäfer–Strimmer 收缩估计偏相关（p &gt; n） 代码"># 从一个已知的稀疏高斯图模型（80 个基因：8 个枢纽各连 6 个邻居，另加少量随机边）抽取 n 个样本。
+# n ≤ p 时样本协方差不可逆，普通偏相关无法计算。按 Schäfer &amp; Strimmer（2005）的解析公式估计收缩强度 λ*，
+# 把相关矩阵向单位阵收缩 R* = λ*·I + (1−λ*)·R，再求逆得到偏相关；与 |相关| 比较恢复真实边的 AUPR。
+# 输出解读：λ* 随样本量增大而减小。同一枢纽的两个邻居之间没有直接边，却有明显相关；偏相关把这类间接对压到接近 0。
+# 但 n 很小时偏相关估计噪声大、且收缩很强，AUPR 不一定高于相关排序；n 增大后偏相关继续改进，相关排序则停在间接边造成的上限附近。
+# 本示例只演示点估计；GeneNet 还用局部 fdr 判断哪些偏相关显著，这里未实现。
+import numpy as np
+
+def sparse_ggm(p=80, seed=7):
+    rng = np.random.default_rng(seed)
+    K = np.eye(p)
+    for h in range(0, p, 10):                               # 枢纽 0, 10, 20, ...，各连 6 个邻居
+        for j in range(h + 1, h + 7):
+            K[h, j] = K[j, h] = -0.4
+    for _ in range(15):
+        i, j = rng.choice(p, 2, replace=False); K[i, j] = K[j, i] = 0.2
+    K += (abs(np.linalg.eigvalsh(K).min()) + 0.2) * np.eye(p)   # 保证正定
+    gold = {(i, j) for i in range(p) for j in range(i + 1, p) if K[i, j] != 0}
+    return np.linalg.inv(K), gold
+
+def shrinkage_lambda(X):
+    &quot;&quot;&quot;Schäfer–Strimmer “目标 D”：相关矩阵向单位阵收缩的最优强度 λ*。返回 (λ*, 样本相关矩阵)。&quot;&quot;&quot;
+    n = X.shape[0]
+    Z = (X - X.mean(0)) / X.std(0, ddof=1)
+    W = Z[:, :, None] * Z[:, None, :]                       # w_kij = z_ki z_kj
+    R = W.sum(0) / (n - 1)
+    var_r = n / (n - 1) ** 3 * ((W - W.mean(0)) ** 2).sum(0)
+    off = ~np.eye(X.shape[1], dtype=bool)
+    return float(np.clip(var_r[off].sum() / (R[off] ** 2).sum(), 0, 1)), R
+
+def pcor_from_corr(R):
+    O = np.linalg.inv(R); d = np.sqrt(np.diag(O))
+    P = -O / np.outer(d, d); np.fill_diagonal(P, 0); return P
+
+def aupr(S, gold, p):
+    iu = np.triu_indices(p, 1); y = np.array([(i, j) in gold for i, j in zip(*iu)])
+    ys = y[np.argsort(-np.abs(S[iu]), kind=&quot;stable&quot;)]
+    return np.sum((np.cumsum(ys) / np.arange(1, len(ys) + 1))[ys]) / ys.sum(), y.mean()
+
+Sigma, gold = sparse_ggm()
+p = Sigma.shape[0]
+rng = np.random.default_rng(3)
+ns, curve = [40, 100, 400, 1600], []
+for n in ns:
+    X = rng.multivariate_normal(np.zeros(p), Sigma, size=n)
+    lam, R = shrinkage_lambda(X)
+    P = pcor_from_corr(lam * np.eye(p) + (1 - lam) * R)
+    Rc = R.copy(); np.fill_diagonal(Rc, 0)
+    a_r, base = aupr(Rc, gold, p); a_p, _ = aupr(P, gold, p)
+    note = &quot;样本协方差奇异&quot; if n &lt;= p else &quot;样本协方差可逆&quot;
+    print(f&quot;n = {n:4d}（{note}）：λ* = {lam:.2f}；AUPR |相关| = {a_r:.3f}，AUPR 收缩偏相关 = {a_p:.3f}（随机 {base:.3f}）&quot;)
+    curve.append((lam, a_r, a_p))
+# 间接对：同一枢纽的两个邻居（且不是真边）
+X = rng.multivariate_normal(np.zeros(p), Sigma, size=400); lam, R = shrinkage_lambda(X)
+P = pcor_from_corr(lam * np.eye(p) + (1 - lam) * R)
+ind = [(a, b) for h in range(0, p, 10) for a in range(h + 1, h + 7) for b in range(a + 1, h + 7) if (a, b) not in gold]
+dirs = sorted(gold)
+print(f&quot;n = 400：间接对平均 |r| = {np.mean([abs(R[e]) for e in ind]):.3f}，平均 |偏相关| = {np.mean([abs(P[e]) for e in ind]):.3f}；&quot;
+      f&quot;真边平均 |r| = {np.mean([abs(R[e]) for e in dirs]):.3f}，平均 |偏相关| = {np.mean([abs(P[e]) for e in dirs]):.3f}&quot;)
+
+import matplotlib.pyplot as plt
+lam_, a_r_, a_p_ = np.array(curve).T
+fig, ax = plt.subplots(1, 2, figsize=(10, 4))
+ax[0].plot(ns, a_r_, &quot;s--&quot;, label=&quot;|correlation|&quot;); ax[0].plot(ns, a_p_, &quot;o-&quot;, label=&quot;shrinkage partial correlation&quot;)
+ax[0].plot(ns, lam_, &quot;^:&quot;, color=&quot;0.4&quot;, label=&quot;shrinkage intensity λ*&quot;)
+ax[0].axvline(p, color=&quot;0.7&quot;, lw=0.8); ax[0].set_xscale(&quot;log&quot;)
+ax[0].set_xlabel(&quot;sample size n (vertical line: n = p)&quot;); ax[0].set_ylabel(&quot;AUPR  /  λ*&quot;)
+ax[0].set_title(&quot;Edge recovery vs sample size&quot;); ax[0].legend(fontsize=8)
+for pairs, lab, mk in [(ind, &quot;indirect pairs (shared hub)&quot;, &quot;o&quot;), (dirs, &quot;true edges&quot;, &quot;s&quot;)]:
+    ax[1].scatter([abs(R[e]) for e in pairs], [abs(P[e]) for e in pairs], s=30, marker=mk, alpha=0.7, label=lab)
+ax[1].set_xlabel(&quot;|correlation|  (n = 400)&quot;); ax[1].set_ylabel(&quot;|partial correlation|&quot;)
+ax[1].set_title(&quot;Partial correlation removes indirect pairs&quot;); ax[1].legend()
+plt.tight_layout(); plt.show()</textarea><div class="out" aria-live="polite"></div></div></section><nav class="pager"><a href="ex-gene-network-inference-3.html"><small>上一个示例</small>互信息网络、CLR 背景校正与 ARACNe 的数据处理不等式</a><a href="ex-gene-network-inference-5.html"><small>下一个示例</small>基于回归的有向推断与先验知识整合（LASSO 路径 + 惩罚因子）</a></nav></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

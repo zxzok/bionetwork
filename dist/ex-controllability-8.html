@@ -1,0 +1,124 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>可观测性——根强连通分支与最少观测节点 · 生物医学网络科学</title><meta name="description" content="网络可控性与稳定性 · 代码示例：可观测性——根强连通分支与最少观测节点"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-dynamics"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html" aria-current="page">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics" open><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a><ol class="sub"><li><a href="controllability.network-control-systems.html"><span class="n">01</span>动态系统与网络控制</a></li><li><a href="controllability.linear-controllability.html"><span class="n">02</span>线性系统的可控性</a></li><li><a href="controllability.structural-controllability.html"><span class="n">03</span>结构可控性与最大匹配</a></li><li><a href="controllability.driver-nodes.html"><span class="n">04</span>驱动节点与网络结构</a></li><li><a href="controllability.control-centrality.html"><span class="n">05</span>控制中心性与可控子空间</a></li><li><a href="controllability.control-energy.html"><span class="n">06</span>控制能量与 Gramian 的数值问题</a></li><li><a href="controllability.target-control.html"><span class="n">07</span>目标控制与部分可控</a></li><li><a href="controllability.observability.html"><span class="n">08</span>可观测性与观测节点</a></li><li><a href="controllability.nonlinear-control.html"><span class="n">09</span>非线性网络的控制</a></li><li><a href="controllability.brain-network-control.html"><span class="n">10</span>脑网络控制：平均与模态可控性</a></li><li><a href="controllability.author-team-research.html"><span class="n">11</span>驱动节点的枚举、分类与自适应控制</a></li><li><a href="controllability.structural-robustness.html"><span class="n">12</span>结构鲁棒性</a></li><li><a href="controllability.dynamical-stability.html"><span class="n">13</span>动力学稳定性</a></li><li><a href="controllability.derivations.html"><span class="n">14</span>数学推导与算法</a></li><li><a href="controllability.frontiers.html"><span class="n">15</span>研究前沿与开放问题</a></li><li><a href="controllability.biomedical.html"><span class="n">16</span>生物医学应用</a></li><li><a href="controllability.limitations.html"><span class="n">17</span>适用范围与常见误用</a></li></ol></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="code.html">代码库</a> <span class="sep">/</span> <a href="code.html#dynamics">网络动力学与控制</a> <span class="sep">/</span> <a href="controllability.html">网络可控性与稳定性</a></nav><div class="eyebrow" style="margin-top:14px"><b>Example</b><span>09 / 12</span></div><h1>可观测性——根强连通分支与最少观测节点</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="controllability.html">网络可控性与稳定性</a></dd></div><div><dt>下载</dt><dd><a href="notebooks/controllability.ipynb" download>Notebook</a> · <a href="notebooks/controllability.py" download>.py</a></dd></div></dl></header><section class="block prose"><p>Liu、Slotine 与 Barabási（2013）：画推断图（若 x_j 出现在 x_i
+的方程中，则连 x_i -&gt; x_j）， 分解为强连通分支（SCC）；没有入边的“根
+SCC”每个至少要放一个观测节点——这是任何（非线性）系统可观测的必要条件。
+线性系统可借助对偶性：(A, C) 可观测 &lt;=&gt; (A^T, C^T)
+可控，所以最少观测节点数 = 反向网络的最少驱动节点数。 解读：根 SCC
+个数是下界；线性系统的充分观测集合通常更大（还要消除“扩张”）。</p>
+</section><section class="block"><h2><span class="tag">Output</span>输出图</h2><div class="ex-figs"><img src="gallery/controllability-8-0.png" alt="可观测性——根强连通分支与最少观测节点：输出图 1" loading="lazy"></div></section><section class="block"><h2><span class="tag">Output</span>文字输出</h2><pre class="ex-out">根 SCC 个数（任意动力学的必要观测节点数）= 44
+线性动力学的最少观测节点数（对偶：反向图最大匹配）= 68
+线性观测集合的可观测性秩 = 200 / 200
+只放根 SCC 观测节点时的线性可观测性秩 = 168 / 200（不足说明线性系统需要更多观测）</pre></section><section class="block prose"><h2><span class="tag">Code</span>代码</h2><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Liu、Slotine 与 Barabási（2013）：画推断图（若 x_j 出现在 x_i 的方程中，则连 x_i -&gt; x_j），</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 分解为强连通分支（SCC）；没有入边的“根 SCC”每个至少要放一个观测节点——这是任何（非线性）系统可观测的必要条件。</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 线性系统可借助对偶性：(A, C) 可观测 &lt;=&gt; (A^T, C^T) 可控，所以最少观测节点数 = 反向网络的最少驱动节点数。</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 解读：根 SCC 个数是下界；线性系统的充分观测集合通常更大（还要消除“扩张”）。</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> networkx <span class="im">as</span> nx</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> matching_drivers(G):</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    Bg <span class="op">=</span> nx.Graph()</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    top <span class="op">=</span> [(<span class="st">&quot;o&quot;</span>, u) <span class="cf">for</span> u <span class="kw">in</span> G]</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    Bg.add_nodes_from(top)<span class="op">;</span> Bg.add_nodes_from([(<span class="st">&quot;i&quot;</span>, v) <span class="cf">for</span> v <span class="kw">in</span> G])</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    Bg.add_edges_from(((<span class="st">&quot;o&quot;</span>, u), (<span class="st">&quot;i&quot;</span>, v)) <span class="cf">for</span> u, v <span class="kw">in</span> G.edges())</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    M <span class="op">=</span> nx.bipartite.hopcroft_karp_matching(Bg, top_nodes<span class="op">=</span>top)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    D <span class="op">=</span> [v <span class="cf">for</span> v <span class="kw">in</span> G <span class="cf">if</span> (<span class="st">&quot;i&quot;</span>, v) <span class="kw">not</span> <span class="kw">in</span> M]</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> D <span class="cf">if</span> D <span class="cf">else</span> [<span class="bu">next</span>(<span class="bu">iter</span>(G))]</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co"># 系统有向图 S：u -&gt; v 表示 u 影响 v（u 出现在 v 的方程中）；推断图 = S 的反向图</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>S <span class="op">=</span> nx.gnm_random_graph(<span class="dv">200</span>, <span class="dv">300</span>, directed<span class="op">=</span><span class="va">True</span>, seed<span class="op">=</span><span class="dv">5</span>)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>inference <span class="op">=</span> S.reverse(copy<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>cond <span class="op">=</span> nx.condensation(inference)</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>root_sccs <span class="op">=</span> [c <span class="cf">for</span> c <span class="kw">in</span> cond <span class="cf">if</span> cond.in_degree(c) <span class="op">==</span> <span class="dv">0</span>]</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>sensors_lower <span class="op">=</span> [<span class="bu">min</span>(cond.nodes[c][<span class="st">&quot;members&quot;</span>]) <span class="cf">for</span> c <span class="kw">in</span> root_sccs]     <span class="co"># 每个根 SCC 任取一个节点</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>sensors_linear <span class="op">=</span> matching_drivers(inference)                            <span class="co"># 线性情形：反向图上的驱动节点</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;根 SCC 个数（任意动力学的必要观测节点数）= </span><span class="sc">%d</span><span class="st">&quot;</span> <span class="op">%</span> <span class="bu">len</span>(root_sccs))</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;线性动力学的最少观测节点数（对偶：反向图最大匹配）= </span><span class="sc">%d</span><span class="st">&quot;</span> <span class="op">%</span> <span class="bu">len</span>(sensors_linear))</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="co"># 用 Kalman 可观测性矩阵在随机权重下检验线性观测集合</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> S.number_of_nodes()</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>rng <span class="op">=</span> np.random.default_rng(<span class="dv">0</span>)</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> np.zeros((n, n))</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> u, v <span class="kw">in</span> S.edges():</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>    A[v, u] <span class="op">=</span> rng.uniform(<span class="fl">0.5</span>, <span class="fl">1.5</span>)</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>A <span class="op">/=</span> <span class="bu">max</span>(<span class="fl">1.0</span>, np.<span class="bu">abs</span>(np.linalg.eigvals(A)).<span class="bu">max</span>())</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>C <span class="op">=</span> np.zeros((<span class="bu">len</span>(sensors_linear), n))<span class="op">;</span> C[np.arange(<span class="bu">len</span>(sensors_linear)), sensors_linear] <span class="op">=</span> <span class="fl">1.0</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>blocks, X <span class="op">=</span> [], C.copy()</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(n):</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>    blocks.append(X)<span class="op">;</span> X <span class="op">=</span> X <span class="op">@</span> A</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>O <span class="op">=</span> np.vstack(blocks)</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> np.linalg.svd(O, compute_uv<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;线性观测集合的可观测性秩 = </span><span class="sc">%d</span><span class="st"> / </span><span class="sc">%d</span><span class="st">&quot;</span> <span class="op">%</span> (<span class="bu">int</span>((s <span class="op">&gt;</span> <span class="fl">1e-10</span> <span class="op">*</span> s[<span class="dv">0</span>]).<span class="bu">sum</span>()), n))</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>C2 <span class="op">=</span> np.zeros((<span class="bu">len</span>(sensors_lower), n))<span class="op">;</span> C2[np.arange(<span class="bu">len</span>(sensors_lower)), sensors_lower] <span class="op">=</span> <span class="fl">1.0</span></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>blocks, X <span class="op">=</span> [], C2.copy()</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(n):</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>    blocks.append(X)<span class="op">;</span> X <span class="op">=</span> X <span class="op">@</span> A</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>s2 <span class="op">=</span> np.linalg.svd(np.vstack(blocks), compute_uv<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;只放根 SCC 观测节点时的线性可观测性秩 = </span><span class="sc">%d</span><span class="st"> / </span><span class="sc">%d</span><span class="st">（不足说明线性系统需要更多观测）&quot;</span></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>      <span class="op">%</span> (<span class="bu">int</span>((s2 <span class="op">&gt;</span> <span class="fl">1e-10</span> <span class="op">*</span> s2[<span class="dv">0</span>]).<span class="bu">sum</span>()), n))</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="fl">6.4</span>, <span class="fl">4.2</span>))</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>ax.semilogy(np.arange(<span class="dv">1</span>, <span class="bu">len</span>(s) <span class="op">+</span> <span class="dv">1</span>), s <span class="op">/</span> s[<span class="dv">0</span>], <span class="st">&quot;-&quot;</span>, lw<span class="op">=</span><span class="dv">2</span>, label<span class="op">=</span><span class="st">&quot;linear sensor set (</span><span class="sc">%d</span><span class="st"> sensors)&quot;</span> <span class="op">%</span> <span class="bu">len</span>(sensors_linear))</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>ax.semilogy(np.arange(<span class="dv">1</span>, <span class="bu">len</span>(s2) <span class="op">+</span> <span class="dv">1</span>), np.maximum(s2 <span class="op">/</span> s2[<span class="dv">0</span>], <span class="fl">1e-20</span>), <span class="st">&quot;--&quot;</span>, lw<span class="op">=</span><span class="dv">2</span>,</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>            label<span class="op">=</span><span class="st">&quot;root-SCC sensors only (</span><span class="sc">%d</span><span class="st">)&quot;</span> <span class="op">%</span> <span class="bu">len</span>(sensors_lower))</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>ax.axhline(<span class="fl">1e-10</span>, c<span class="op">=</span><span class="st">&quot;tab:red&quot;</span>, lw<span class="op">=</span><span class="fl">0.8</span>, ls<span class="op">=</span><span class="st">&quot;:&quot;</span>, label<span class="op">=</span><span class="st">&quot;rank tolerance&quot;</span>)</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>ax.set_ylim(<span class="fl">1e-20</span>, <span class="dv">2</span>)<span class="op">;</span> ax.set_xlabel(<span class="st">&quot;singular value index&quot;</span>)<span class="op">;</span> ax.set_ylabel(<span class="st">&quot;normalized singular value&quot;</span>)</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>ax.legend(fontsize<span class="op">=</span><span class="dv">8</span>)<span class="op">;</span> ax.set_title(<span class="st">&quot;Observability matrix spectrum: root SCCs are not enough&quot;</span>)</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()<span class="op">;</span> plt.show()</span></code></pre></div>
+</section><section class="block"><h2><span class="tag">Run</span>在浏览器中运行</h2><p class="small">首次加载 Python 环境约需 20–40 秒；可以修改参数后重新运行。</p><div class="cell"><div class="cell-head"><h3>可观测性——根强连通分支与最少观测节点</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea id="controllability-cell8" rows="30" spellcheck="false" aria-label="可观测性——根强连通分支与最少观测节点 代码"># Liu、Slotine 与 Barabási（2013）：画推断图（若 x_j 出现在 x_i 的方程中，则连 x_i -&gt; x_j），
+# 分解为强连通分支（SCC）；没有入边的“根 SCC”每个至少要放一个观测节点——这是任何（非线性）系统可观测的必要条件。
+# 线性系统可借助对偶性：(A, C) 可观测 &lt;=&gt; (A^T, C^T) 可控，所以最少观测节点数 = 反向网络的最少驱动节点数。
+# 解读：根 SCC 个数是下界；线性系统的充分观测集合通常更大（还要消除“扩张”）。
+import numpy as np
+import networkx as nx
+
+def matching_drivers(G):
+    Bg = nx.Graph()
+    top = [(&quot;o&quot;, u) for u in G]
+    Bg.add_nodes_from(top); Bg.add_nodes_from([(&quot;i&quot;, v) for v in G])
+    Bg.add_edges_from(((&quot;o&quot;, u), (&quot;i&quot;, v)) for u, v in G.edges())
+    M = nx.bipartite.hopcroft_karp_matching(Bg, top_nodes=top)
+    D = [v for v in G if (&quot;i&quot;, v) not in M]
+    return D if D else [next(iter(G))]
+
+# 系统有向图 S：u -&gt; v 表示 u 影响 v（u 出现在 v 的方程中）；推断图 = S 的反向图
+S = nx.gnm_random_graph(200, 300, directed=True, seed=5)
+inference = S.reverse(copy=True)
+cond = nx.condensation(inference)
+root_sccs = [c for c in cond if cond.in_degree(c) == 0]
+sensors_lower = [min(cond.nodes[c][&quot;members&quot;]) for c in root_sccs]     # 每个根 SCC 任取一个节点
+sensors_linear = matching_drivers(inference)                            # 线性情形：反向图上的驱动节点
+print(&quot;根 SCC 个数（任意动力学的必要观测节点数）= %d&quot; % len(root_sccs))
+print(&quot;线性动力学的最少观测节点数（对偶：反向图最大匹配）= %d&quot; % len(sensors_linear))
+
+# 用 Kalman 可观测性矩阵在随机权重下检验线性观测集合
+n = S.number_of_nodes()
+rng = np.random.default_rng(0)
+A = np.zeros((n, n))
+for u, v in S.edges():
+    A[v, u] = rng.uniform(0.5, 1.5)
+A /= max(1.0, np.abs(np.linalg.eigvals(A)).max())
+C = np.zeros((len(sensors_linear), n)); C[np.arange(len(sensors_linear)), sensors_linear] = 1.0
+blocks, X = [], C.copy()
+for _ in range(n):
+    blocks.append(X); X = X @ A
+O = np.vstack(blocks)
+s = np.linalg.svd(O, compute_uv=False)
+print(&quot;线性观测集合的可观测性秩 = %d / %d&quot; % (int((s &gt; 1e-10 * s[0]).sum()), n))
+C2 = np.zeros((len(sensors_lower), n)); C2[np.arange(len(sensors_lower)), sensors_lower] = 1.0
+blocks, X = [], C2.copy()
+for _ in range(n):
+    blocks.append(X); X = X @ A
+s2 = np.linalg.svd(np.vstack(blocks), compute_uv=False)
+print(&quot;只放根 SCC 观测节点时的线性可观测性秩 = %d / %d（不足说明线性系统需要更多观测）&quot;
+      % (int((s2 &gt; 1e-10 * s2[0]).sum()), n))
+
+import matplotlib.pyplot as plt
+fig, ax = plt.subplots(figsize=(6.4, 4.2))
+ax.semilogy(np.arange(1, len(s) + 1), s / s[0], &quot;-&quot;, lw=2, label=&quot;linear sensor set (%d sensors)&quot; % len(sensors_linear))
+ax.semilogy(np.arange(1, len(s2) + 1), np.maximum(s2 / s2[0], 1e-20), &quot;--&quot;, lw=2,
+            label=&quot;root-SCC sensors only (%d)&quot; % len(sensors_lower))
+ax.axhline(1e-10, c=&quot;tab:red&quot;, lw=0.8, ls=&quot;:&quot;, label=&quot;rank tolerance&quot;)
+ax.set_ylim(1e-20, 2); ax.set_xlabel(&quot;singular value index&quot;); ax.set_ylabel(&quot;normalized singular value&quot;)
+ax.legend(fontsize=8); ax.set_title(&quot;Observability matrix spectrum: root SCCs are not enough&quot;)
+plt.tight_layout(); plt.show()</textarea><div class="out" aria-live="polite"></div></div></section><nav class="pager"><a href="ex-controllability-7.html"><small>上一个示例</small>平均可控性与模态可控性（Gu 等 2015 的离散时间定义）及其与度的关系</a><a href="ex-controllability-9.html"><small>下一个示例</small>反馈顶点集控制——锁定少数节点把非线性网络推向指定吸引子</a></nav></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

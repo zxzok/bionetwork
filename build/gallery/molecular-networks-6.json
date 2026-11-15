@@ -1,0 +1,10 @@
+{
+ "topic": "molecular-networks",
+ "index": 6,
+ "title": "通量平衡分析（FBA）与反应敲除",
+ "hash": "301739d3e8b8f2c38dc321c76fa60f678c8b79a6",
+ "ok": true,
+ "figures": 1,
+ "stdout": "完整网络：最优生物量 = 5.0 ，通量 = {'R1_uptake': np.float64(10.0), 'R2_A→B': np.float64(5.0), 'R3_A→C': np.float64(5.0), 'R4_biomass': np.float64(5.0), 'R5_B→C': np.float64(0.0)}\n  敲除 R1_uptake    → 生物量 = -0.00\n  敲除 R2_A→B       → 生物量 = -0.00\n  敲除 R3_A→C       → 生物量 = 5.00\n  敲除 R4_biomass   → 生物量 = -0.00\n  敲除 R5_B→C       → 生物量 = 5.00\n去掉旁路 R5 后再敲除 R3 → 生物量 = -0.0",
+ "stderr": ""
+}

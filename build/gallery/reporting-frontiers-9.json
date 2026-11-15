@@ -1,0 +1,10 @@
+{
+ "topic": "reporting-frontiers",
+ "index": 9,
+ "title": "多层网络的超拉普拉斯矩阵与层间耦合",
+ "hash": "4b47d2aa8ade7ad7dab660da56604de807a897f7",
+ "ok": true,
+ "figures": 1,
+ "stdout": "λ2(层1) = 0.160，λ2(层2) = 0.134，λ2((L1+L2)/2) = 0.841\nDx = 0.01 时 λ2(超拉普拉斯) = 0.0200（≈ 2Dx = 0.02）；Dx = 100 时 = 0.834",
+ "stderr": ""
+}

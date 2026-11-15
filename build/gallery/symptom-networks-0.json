@@ -1,0 +1,10 @@
+{
+ "topic": "symptom-networks",
+ "index": 0,
+ "title": "相关网络与偏相关网络",
+ "hash": "573ff9a7fe47c41f292b487b49337beae6941c0b",
+ "ok": true,
+ "figures": 1,
+ "stdout": "真实边数： 10\n相关网络 |r| > 0.1 的边数： 17\n偏相关网络 |pcor| > 0.1 的边数： 10 ；其中真实边 10 条，虚假边 0 条\n例：睡眠问题–注意力差  r = 0.23，pcor = 0.04（真实网络中无直接边）",
+ "stderr": ""
+}

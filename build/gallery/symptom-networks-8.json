@@ -1,0 +1,10 @@
+{
+ "topic": "symptom-networks",
+ "index": 8,
+ "title": "网络干预分析（NIA）——把\"治疗分组\"作为网络中的一个节点",
+ "hash": "29e68c4e7fe54d688ee65e4c9cacefb51faa5d5a",
+ "ok": true,
+ "figures": 1,
+ "stdout": "症状          与分组的相关     与分组的偏相关\n睡眠问题           -0.37         -0.34\n疲乏             -0.16          0.02\n情绪低落           -0.11          0.03\n担忧             -0.08         -0.01",
+ "stderr": ""
+}

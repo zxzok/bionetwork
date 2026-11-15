@@ -1,0 +1,10 @@
+{
+ "topic": "robustness",
+ "index": 6,
+ "title": "保度换边优化 R 指标，得到\"洋葱\"结构（Schneider 等 2011）",
+ "hash": "100303c13f8e6bf9c2241085368bc1515117949d",
+ "ok": true,
+ "figures": 1,
+ "stdout": "初始 R = 0.125，同配系数 r = -0.130\n接受换边 175 次，优化后 R = 0.206，同配系数 r = 0.168",
+ "stderr": ""
+}

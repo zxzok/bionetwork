@@ -1,0 +1,10 @@
+{
+ "topic": "reporting-frontiers",
+ "index": 10,
+ "title": "节点嵌入——谱嵌入、node2vec 式随机游走嵌入与简单基线的链接预测比较",
+ "hash": "a34d854246970f43c7ff574f148b0994e32029de",
+ "ok": true,
+ "figures": 1,
+ "stdout": "每次划分：测试正例 11 条、负例 11 条；共 10 次划分\n谱嵌入（内积）                      AUC = 0.650 ± 0.126\nnode2vec 式 PPMI-SVD（内积）      AUC = 0.650 ± 0.085\n共同邻居                         AUC = 0.660 ± 0.107\nAdamic–Adar                  AUC = 0.697 ± 0.104",
+ "stderr": ""
+}

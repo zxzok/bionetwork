@@ -1,0 +1,80 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>大肠杆菌转录调控网络中的网络基序 · 生物医学网络科学</title><meta name="description" content="论文精读：Network motifs in the transcriptional regulation network of Escherichia coli"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-molecular"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html" aria-current="page">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular" open><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html" aria-current="page">生物分子网络与拓扑特征</a><ol class="sub"><li><a href="molecular-networks.network-types.html"><span class="n">01</span>生物分子网络的类型与数据来源</a></li><li><a href="molecular-networks.ppi-mapping.html"><span class="n">02</span>相互作用组图谱：检测方法、质量与偏倚</a></li><li><a href="molecular-networks.topology.html"><span class="n">03</span>分子网络的拓扑特征</a></li><li><a href="molecular-networks.metabolic-networks.html"><span class="n">04</span>代谢网络与通量平衡分析</a></li><li><a href="molecular-networks.signaling-networks.html"><span class="n">05</span>信号转导网络</a></li><li><a href="molecular-networks.protein-complexes.html"><span class="n">06</span>蛋白复合物与功能模块的检测</a></li><li><a href="molecular-networks.centrality-lethality.html"><span class="n">07</span>致死性与中心性：枢纽蛋白假说及其争议</a></li><li><a href="molecular-networks.disease-modules.html"><span class="n">08</span>人类疾病网络与疾病模块</a></li><li><a href="molecular-networks.network-motifs.html"><span class="n">09</span>网络基序：类别与动力学功能</a></li><li><a href="molecular-networks.differential-networks.html"><span class="n">10</span>条件特异性网络、差异网络与网络重连</a></li><li><a href="molecular-networks.multiomics-integration.html"><span class="n">11</span>多组学网络整合</a></li><li><a href="molecular-networks.derivations.html"><span class="n">12</span>数学推导与算法</a></li><li><a href="molecular-networks.frontiers.html"><span class="n">13</span>研究前沿与开放问题</a></li><li><a href="molecular-networks.biomedical.html"><span class="n">14</span>生物医学应用</a></li><li><a href="molecular-networks.limitations.html"><span class="n">15</span>适用范围与常见误用</a></li></ol></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><div class="lec-grid"><div style="min-width:0"><div class="lec-head"><nav class="crumb"><a href="papers.html">文献知识库</a> › 分子网络与基因调控</nav><div class="eyebrow"><b>经典论文</b><span>难度：入门</span></div><h1>大肠杆菌转录调控网络中的网络基序</h1><p class="porig big">Network motifs in the transcriptional regulation network of Escherichia coli</p><p class="small">Shen-Orr SS, Milo R, Mangan S, Alon U · <i>Nature Genetics</i> 2002 · <a href="https://doi.org/10.1038/ng881" target="_blank" rel="noopener">DOI: 10.1038/ng881</a></p><div class="chips"><span class="chip">网络基序</span><span class="chip">转录调控网络</span><span class="chip">前馈环</span><span class="chip">单输入模块</span><span class="chip">密集重叠调控子</span><span class="chip">随机化零模型</span></div><div class="objectives"><h2>一句话</h2><p style="margin:0">在大肠杆菌转录调控网络中发现前馈环、单输入模块、密集重叠调控子三类富集基序。</p><p class="small" style="margin:8px 0 0">相关专题：<a href="molecular-networks.html">生物分子网络与拓扑特征</a>、<a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></p></div></div><section class="block prose" id="notes"><h2 id="一句话看懂">一句话看懂</h2>
+<p>如果把大肠杆菌“哪个转录因子直接调控哪个操纵子”画成有向网络，会发现网络中反复出现三种小线路：前馈环、单输入模块和密集重叠调控子。它们出现的次数远高于随机重连后的网络，而且整张网络大体可以拆成这些“积木”。作者认为每种积木都有特定的信息处理功能。</p>
+<h2 id="研究背景与问题">研究背景与问题</h2>
+<p>到 2000
+年前后，大肠杆菌是转录调控研究得最透彻的生物，文献中已积累了数百条有实验支持的“转录因子–靶操纵子”直接调控关系。但这些关系拼起来是一张错综复杂的图，很难看出设计原则。</p>
+<p>序列分析中，“基序”是指比随机预期更频繁出现的短序列模式，往往对应结合位点等功能单元。作者把这个思想推广到网络：<strong>在网络中比随机预期更频繁出现的连接模式，是否也是功能单元？</strong></p>
+<h2 id="核心思想与方法">核心思想与方法</h2>
+<ol type="1">
+<li><strong>构建网络</strong>：从数据库和文献中整理大肠杆菌直接转录调控相互作用，节点是操纵子（转录因子也是节点），边从转录因子指向被调控的操纵子，并带有激活或抑制的符号。</li>
+<li><strong>子图计数</strong>：用新开发的算法系统枚举网络中的小子图（如所有三节点连接模式），以及更大规模的模式类别。</li>
+<li><strong>随机化零模型</strong>：生成大量随机网络，每个节点保持原来的入度和出度（以及自调控等特征），比较真实网络与随机网络中各模式的出现次数。</li>
+<li><strong>功能解释</strong>：结合已知的调控动力学和实验例子，讨论每类基序可能实现的功能。</li>
+</ol>
+<div class="callout-def">
+<p><strong>网络基序</strong>（network
+motif）：在真实网络中出现频率显著高于保持度序列的随机网络的子图连接模式。显著性常用
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Z</mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><msub><mi>N</mi><mtext mathvariant="normal">real</mtext></msub><mo>−</mo><mo stretchy="false" form="prefix">⟨</mo><msub><mi>N</mi><mtext mathvariant="normal">rand</mtext></msub><mo stretchy="false" form="postfix">⟩</mo></mrow><msub><mi>σ</mi><mtext mathvariant="normal">rand</mtext></msub></mfrac></mstyle></mrow><annotation encoding="application/x-tex">Z=\dfrac{N_{\text{real}}-\langle N_{\text{rand}}\rangle}{\sigma_{\text{rand}}}</annotation></semantics></math>
+衡量。</p>
+<p>本文的三类基序： - <strong>前馈环</strong>（FFL）：X 调控 Y，X 和 Y
+共同调控 Z。 -
+<strong>单输入模块</strong>（SIM）：一个转录因子调控一组操纵子，这些操纵子不受其他转录因子调控（常含自调控）。
+-
+<strong>密集重叠调控子</strong>（DOR）：一组转录因子以密集交叠的方式共同调控一组操纵子，可看作多输入的“门阵列”。</p>
+</div>
+<h2 id="主要发现">主要发现</h2>
+<ol type="1">
+<li><strong>三类基序显著富集</strong>：前馈环、单输入模块和密集重叠调控子的出现次数都显著高于随机网络，而其他三节点模式（如三节点反馈环）并不富集。网络中相当大一部分可以由这三类基序的重复出现来描述。</li>
+<li><strong>前馈环可以作为“持续性检测器”</strong>：在所有输入都是激活的“相干”前馈环中，Z
+需要 X 和 Y 同时作用才开启。短暂的 X 信号不足以让 Y
+积累起来，因而被过滤；只有持续的信号才能开启
+Z。这为细胞区分短暂噪声与真实环境变化提供了一种机制。</li>
+<li><strong>单输入模块可以产生时间程序</strong>：一个转录因子调控的多个操纵子，若各自对转录因子浓度的激活阈值不同，就会随转录因子浓度上升依次开启，产生按代谢或组装顺序排列的表达时间程序。</li>
+<li><strong>基序给出可读的全网图</strong>：作者用基序为单元重新绘制了已知的大肠杆菌转录网络，使原本难以阅读的线路图呈现出清晰的层次结构。</li>
+<li>作者提出，同样的方法可以用来寻找其他生物网络的基本“计算单元”。</li>
+</ol>
+<h2 id="怎样读这篇论文">怎样读这篇论文</h2>
+<p>全文很短。先读摘要和第一张图（三类基序的示意和真实例子），再看各基序在真实网络与随机网络中的计数比较，这是“富集”的证据。最后看用基序重绘的全网图，体会“降维”的效果。方法中的随机化算法建议配合
+Milo 等（2002,
+<em>Science</em>）一起读，后者把方法推广到多种网络。前馈环的动力学讨论可以配合<a
+href="molecular-networks.network-motifs.html">网络基序：自调控与前馈环</a>中的交互演示。</p>
+<h2 id="局限与后续工作">局限与后续工作</h2>
+<ul>
+<li><strong>零模型决定结论</strong>：Artzy-Randrup 等（2004,
+<em>Science</em>）的评论指出，若随机网络不保留空间或局部聚集等约束，某些模式会“虚假”富集；基序显著性依赖所选的零模型。</li>
+<li><strong>数据不完整</strong>：当时的网络只覆盖了一部分已知调控关系，且偏向研究充分的系统。</li>
+<li><strong>结构不等于功能</strong>：富集只是统计结果，功能需要实验检验。后续
+Mangan 与 Alon（2003,
+<em>PNAS</em>）系统分析了八种前馈环的动力学，Mangan 等（2003,
+<em>Journal of Molecular
+Biology</em>）在阿拉伯糖系统中实验证实了相干前馈环的“符号敏感延迟”；Kalir
+等（2001, <em>Science</em>）和 Zaslaver 等（2004, <em>Nature
+Genetics</em>）分别在鞭毛和氨基酸合成系统中观察到单输入模块的时序表达。</li>
+<li><strong>进化来源有争议</strong>：Mazurie 等（2005, <em>Genome
+Biology</em>）比较近缘酵母后认为，基序富集不一定反映对其动力学功能的选择；Ingram
+等（2006, <em>BMC
+Genomics</em>）也指出相同结构在不同参数下可产生不同动力学。</li>
+<li><strong>从基序到推断</strong>：DREAM5 评估（Marbach 等,
+2012）发现，不同推断方法对前馈环与级联的恢复能力系统不同，基序成为评估网络推断偏差的工具。</li>
+</ul>
+<h2 id="关联知识">关联知识</h2>
+<ul>
+<li><a
+href="molecular-networks.network-motifs.html">网络基序：自调控与前馈环</a>直接介绍本文的三类基序，<a
+href="molecular-networks.derivations.html">数学推导与算法</a>中有三节点基序富集检验的算法。</li>
+<li><a
+href="gene-network-inference.evaluation.html">推断结果的评估</a>讨论
+DREAM5
+时提到推断方法在前馈环上的偏差，可以和本文对照，理解为什么“直接调控”与“间接调控”难以区分。</li>
+<li>富集检验依赖零模型，这与脑网络中<a
+href="brain-connectome.topology.html">富人俱乐部</a>的归一化、<a
+href="dynamic-brain-networks.null-models.html">动态功能连接</a>的替代数据检验是同一个统计思想。</li>
+</ul>
+<h2 id="延伸思考">延伸思考</h2>
+<ol type="1">
+<li>如果随机网络只保持总边数而不保持每个节点的入度和出度，前馈环的富集程度会如何变化？为什么必须保持度序列？</li>
+<li>相干前馈环能过滤短暂信号。请设计一个实验（可用报告基因）检验某个具体前馈环是否真有这种功能，并说明对照组如何设置。</li>
+<li>转录调控网络推断时，前馈环中 X→Z 的直接边容易与 X→Y→Z
+的间接效应混淆。请说明为什么相关类方法与回归类方法在这里会表现不同。</li>
+</ol>
+</section><nav class="pager"><a href="paper-milo2002_motifs.html">← 网络基序：复杂网络的简单构件</a><a href="paper-cohen2003_immunization.html">计算机网络与人群的高效免疫策略 →</a></nav></div><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

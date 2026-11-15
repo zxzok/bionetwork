@@ -1,0 +1,10 @@
+{
+ "topic": "reporting-frontiers",
+ "index": 11,
+ "title": "从零实现两层图卷积网络（GCN）做半监督节点分类，并与标签传播比较",
+ "hash": "4375171e7863d9e0d408531995d3853a2dc387a6",
+ "ok": true,
+ "figures": 1,
+ "stdout": "GCN 准确率：0.87 ± 0.10；标签传播：0.91 ± 0.04（10 个随机标注集）",
+ "stderr": ""
+}

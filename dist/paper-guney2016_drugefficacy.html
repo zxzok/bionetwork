@@ -1,0 +1,103 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>基于网络的药物疗效计算机筛选 · 生物医学网络科学</title><meta name="description" content="论文精读：Network-based in silico drug efficacy screening"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-medicine"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html" aria-current="page">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine" open><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html" aria-current="page">疾病模块、网络邻近度与药物重定位</a><ol class="sub"><li><a href="network-medicine.framework.html"><span class="n">01</span>网络医学：把疾病看作网络的扰动</a></li><li><a href="network-medicine.disease-modules.html"><span class="n">02</span>疾病模块：定义与检测</a></li><li><a href="network-medicine.module-detection.html"><span class="n">03</span>疾病模块检测算法：从种子基因到完整模块</a></li><li><a href="network-medicine.network-propagation.html"><span class="n">04</span>网络传播：带重启随机游走与热扩散</a></li><li><a href="network-medicine.network-separation.html"><span class="n">05</span>疾病之间的网络分离度</a></li><li><a href="network-medicine.network-pharmacology.html"><span class="n">06</span>药物–靶点网络与网络药理学</a></li><li><a href="network-medicine.network-proximity.html"><span class="n">07</span>网络邻近度</a></li><li><a href="network-medicine.drug-combinations.html"><span class="n">08</span>药物组合的网络构型</a></li><li><a href="network-medicine.drug-repurposing.html"><span class="n">09</span>药物重定位：从网络预测到外部验证</a></li><li><a href="network-medicine.knowledge-graphs.html"><span class="n">10</span>异质网络、知识图谱与图机器学习</a></li><li><a href="network-medicine.link-prediction.html"><span class="n">11</span>链路预测与知识图谱嵌入</a></li><li><a href="network-medicine.validation-hierarchy.html"><span class="n">12</span>验证的层次：从回顾性基准到临床试验</a></li><li><a href="network-medicine.statistical-validation.html"><span class="n">13</span>统计要点：参考网络、度偏倚、显著性与外部验证</a></li><li><a href="network-medicine.author-team-research.html"><span class="n">14</span>基于网络可控性的靶点识别</a></li><li><a href="network-medicine.derivations.html"><span class="n">15</span>数学推导与算法</a></li><li><a href="network-medicine.frontiers.html"><span class="n">16</span>研究前沿与开放问题</a></li><li><a href="network-medicine.biomedical.html"><span class="n">17</span>生物医学应用</a></li><li><a href="network-medicine.limitations.html"><span class="n">18</span>适用范围与常见误用</a></li></ol></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><div class="lec-grid"><div style="min-width:0"><div class="lec-head"><nav class="crumb"><a href="papers.html">文献知识库</a> › 网络医学与药物网络 · 分子网络与基因调控</nav><div class="eyebrow"><b>经典论文</b><span>难度：进阶</span></div><h1>基于网络的药物疗效计算机筛选</h1><p class="porig big">Network-based in silico drug efficacy screening</p><p class="small">Guney E, Menche J, Vidal M, Barabási A-L · <i>Nature Communications</i> 2016 · <a href="https://doi.org/10.1038/ncomms10331" target="_blank" rel="noopener">DOI: 10.1038/ncomms10331</a></p><div class="chips"><span class="chip">网络邻近度</span><span class="chip">药物重定位</span><span class="chip">疾病模块</span><span class="chip">相互作用组</span><span class="chip">度保持随机化</span><span class="chip">姑息治疗</span></div><div class="objectives"><h2>一句话</h2><p style="margin:0">提出校正度偏倚的药物–疾病网络邻近度，发现有效药物的靶点更靠近疾病基因。</p><p class="small" style="margin:8px 0 0">相关专题：<a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a>、<a href="molecular-networks.html">生物分子网络与拓扑特征</a></p></div></div><section class="block prose" id="notes"><h2 id="一句话看懂">一句话看懂</h2>
+<p>把药物靶点和疾病基因都放到人类蛋白质相互作用组上，计算“靶点离疾病基因有多近”，再和随机挑选的同等度数的蛋白比较，得到一个
+z
+分数，称为<strong>邻近度</strong>。已知有效的药物通常更“近”；而那些在网络上离疾病很远的已上市药物，更多是缓解症状的姑息用药。</p>
+<h2 id="研究背景与问题">研究背景与问题</h2>
+<p>药物重定位（为老药找新适应症）常用的方法是比较药物之间的相似性（共享靶点、化学结构、副作用），或比较药物引起的表达变化与疾病表达谱。这些方法依赖已有知识，不能解释药物为什么有效。</p>
+<p>网络医学提出了疾病模块假说（Barabási 等,
+2011）：疾病基因聚集在相互作用组的局部区域。作者据此假设：药物要对某种疾病有效，其靶点应当位于疾病模块之内或紧邻区域。难点在于，相互作用组有强烈的研究偏倚，药物靶点和疾病基因往往是被研究多、连接多的蛋白，它们与任何蛋白的最短距离都偏短。</p>
+<h2 id="核心思想与方法">核心思想与方法</h2>
+<ol type="1">
+<li><strong>数据</strong>：人类相互作用组 13,329 个蛋白、141,150
+条相互作用；疾病基因取自 OMIM 和 GWAS 目录，只保留在互作组中至少有 20
+个疾病基因的疾病；药物靶点来自 DrugBank 中的 FDA
+批准药物，适应症取自已有数据库。最终分析 238 种药物和 78 种疾病，共 402
+对已知药物–疾病关系和 18,162 对未知关系。</li>
+<li><strong>距离度量</strong>：比较了五种靶点集合
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>
+与疾病基因集合
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+之间的距离，包括最近距离、平均最短距离、核函数距离、中心距离和分离度。</li>
+<li><strong>度保持的随机化</strong>：每次随机选取与
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+大小相同、度分布相近的蛋白（把度相近的节点分箱，每箱至少 100
+个节点），重复 1000 次，得到参考分布。</li>
+</ol>
+<div class="callout-def">
+<p><strong>最近距离</strong>：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mi>c</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>S</mi><mo>,</mo><mi>T</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mo stretchy="false" form="prefix">|</mo><mi>T</mi><mo stretchy="false" form="prefix">|</mo></mrow></mfrac></mstyle><msub><mo>∑</mo><mrow><mi>t</mi><mo>∈</mo><mi>T</mi></mrow></msub><msub><mrow><mi mathvariant="normal">min</mi><mo>&#8289;</mo></mrow><mrow><mi>s</mi><mo>∈</mo><mi>S</mi></mrow></msub><mi>d</mi><mo stretchy="false" form="prefix">(</mo><mi>s</mi><mo>,</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">d_c(S,T)=\dfrac{1}{|T|}\sum_{t\in T}\min_{s\in S} d(s,t)</annotation></semantics></math>，即每个靶点到最近疾病基因的最短路径长度的平均。</p>
+<p><strong>网络邻近度</strong>：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mi>d</mi><mo>−</mo><msub><mi>μ</mi><mi>d</mi></msub></mrow><msub><mi>σ</mi><mi>d</mi></msub></mfrac></mstyle></mrow><annotation encoding="application/x-tex">z=\dfrac{d-\mu_{d}}{\sigma_{d}}</annotation></semantics></math>，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>μ</mi><mi>d</mi></msub><annotation encoding="application/x-tex">\mu_d</annotation></semantics></math>、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>σ</mi><mi>d</mi></msub><annotation encoding="application/x-tex">\sigma_d</annotation></semantics></math>
+来自度保持随机化的参考分布。<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>
+越负，药物与疾病在网络上越近。作者把
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>≤</mo><mi>−</mi><mn>0.15</mn></mrow><annotation encoding="application/x-tex">z\le-0.15</annotation></semantics></math>
+定为“邻近”。</p>
+</div>
+<h2 id="主要发现">主要发现</h2>
+<ol type="1">
+<li><strong>最近距离表现最好</strong>：基于
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>d</mi><mi>c</mi></msub><annotation encoding="application/x-tex">d_c</annotation></semantics></math>
+的邻近度在区分已知与未知药物–疾病对上显著优于其他四种距离。这说明药物不必靠近疾病模块中的所有蛋白，只需作用于模块的一部分；多数药物的作用对象在疾病蛋白两步之内。</li>
+<li><strong>校正了度偏倚</strong>：原始最近距离与靶点度数显著负相关（Spearman
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mi>−</mi><mn>0.46</mn></mrow><annotation encoding="application/x-tex">\rho=-0.46</annotation></semantics></math>），而邻近度
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>
+与度数几乎无关（<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mi>−</mi><mn>0.01</mn></mrow><annotation encoding="application/x-tex">\rho=-0.01</annotation></semantics></math>）。</li>
+<li><strong>有效药物更邻近</strong>：402 对已知关系中有 237
+对（59%）邻近，而未知关系中为
+40%；邻近的药物–疾病对成为已知适应症的可能性约为远离者的两倍（比值比
+2.1）。邻近但尚未批准的组合在临床试验中显著富集。</li>
+<li><strong>靶点不必是疾病基因</strong>：在 340
+对靶点与疾病基因不重叠的已知关系中，有 176
+对仍然邻近，说明网络能揭示非直接作用的药物–疾病关系。</li>
+<li><strong>区分姑息与对因治疗</strong>：有 165
+对已知关系中药物与疾病并不邻近。作者用药品说明书识别出 50
+对姑息用药，并用不良事件报告计算相对疗效分数，发现姑息用药的邻近度显著较低，邻近药物的相对疗效也更高；作者据此提示帕金森病和若干炎症性疾病的部分用药可能存在疗效问题。</li>
+<li><strong>与其他方法比较</strong>：以邻近度定义的药物相似性（AUC
+81%）优于基于最短路径、化学结构、GO
+功能和表达谱的相似性；在可比的数据子集上，邻近度也优于基于表达谱逆转的方法（AUC
+63% 对 53%）。</li>
+</ol>
+<h2 id="怎样读这篇论文">怎样读这篇论文</h2>
+<p>先读图
+1，理解五种距离和随机化参考分布的含义，以及降糖药与抗白血病药的示例。然后读图
+2：不同距离的
+AUC、邻近度与度的去相关，以及已知/未知关系的邻近比例，这是方法有效性的核心证据。图
+4
+是姑息治疗分析，结论有趣但数据较间接，读时注意其证据强度。方法部分的分箱随机化值得精读，并可对照作者开源的代码。</p>
+<h2 id="局限与后续工作">局限与后续工作</h2>
+<ul>
+<li><strong>区分能力有限</strong>：已知关系中仍有约四成并不邻近，未知关系中也有四成邻近，邻近度更适合作为候选排序，而非疗效判定。</li>
+<li><strong>“未知”不是“无效”</strong>：未知药物–疾病对中包含大量尚未检验的有效组合，AUC
+的解释受此影响。</li>
+<li><strong>相互作用组不完整、无方向</strong>：网络不含激活或抑制、组织特异性与剂量信息；邻近只说明“可能影响疾病模块”，不能说明是改善还是加重。</li>
+<li><strong>证据类型是回顾性关联</strong>：分析基于已知适应症、说明书文字和自发上报的不良事件数据，这些数据有报告偏倚；“疗效问题”的提示是假设，需要临床研究检验。网络邻近也不等于因果作用机制，邻近的靶点不一定是好的干预靶点。</li>
+<li><strong>后续发展</strong>：Cheng 等（2018, <em>Nature
+Communications</em>）把邻近度与大规模医疗数据结合验证老药新用；Cheng
+等（2019, <em>Nature
+Communications</em>）提出药物组合的网络配置；新冠疫情期间，该框架被用于
+SARS-CoV-2 药物重定位（Gysi 等, 2021,
+<em>PNAS</em>）。这些后续工作也显示，网络预测需要实验或人群数据的独立验证。</li>
+</ul>
+<h2 id="关联知识">关联知识</h2>
+<ul>
+<li><a href="network-medicine.network-proximity.html">网络邻近度</a>、<a
+href="network-medicine.drug-repurposing.html">药物重定位：从网络预测到外部验证</a>和<a
+href="network-medicine.derivations.html">数学推导与算法</a>中的最近距离与度匹配
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>
+分数算法直接实现了本文方法；<a
+href="network-medicine.html#demos">疾病模块、网络邻近度与药物重定位</a>中的交互演示
+<code>proximity</code> 可以调节靶点位置观察 z 分数变化。</li>
+<li>度保持随机化的思想（见<a
+href="network-construction.null-models.html">零模型与空模型</a>）与<a
+href="molecular-networks.network-motifs.html">网络基序：自调控与前馈环</a>、<a
+href="brain-connectome.topology.html">拓扑指标：小世界、模块、枢纽与富人俱乐部</a>中富人俱乐部的零模型一致；<a
+href="molecular-networks.disease-modules.html">人类疾病网络与疾病模块</a>中的疾病模块概念是本文的出发点。</li>
+<li><a
+href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a>专题的<a
+href="network-medicine.limitations.html">适用范围与常见误用</a>中“疾病基因就是最好的药物靶点”的辨析，正对应本文“靶点不必是疾病基因”的发现。</li>
+</ul>
+<h2 id="延伸思考">延伸思考</h2>
+<ol type="1">
+<li>如果不做度保持随机化，直接用最近距离排序，哪类药物会被系统性高估？请用一个高连接靶点的例子说明。</li>
+<li>邻近度不区分激活与抑制。设计一种把药物引起的表达变化方向加入邻近度的方法，并说明需要哪些数据。</li>
+<li>论文用不良事件报告估计相对疗效。这类数据有哪些偏倚？若要检验“远离疾病模块的药物多为姑息用药”，你会设计什么样的研究？</li>
+</ol>
+</section><nav class="pager"><a href="paper-menche2015_interactome.html">← 借助不完整的相互作用组揭示疾病之间的关系</a><a href="paper-yan2017_celegans.html">网络控制原理预测秀丽隐杆线虫连接组中的神经元功能 →</a></nav></div><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

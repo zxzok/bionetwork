@@ -1,0 +1,10 @@
+{
+ "topic": "spreading",
+ "index": 3,
+ "title": "扩散中心性与独立级联",
+ "hash": "d3d17d0d21f9aed451b6a3646c153f2e09ff2889",
+ "ok": true,
+ "figures": 1,
+ "stdout": "度 前5: [33, 0, 32, 2, 1]\nDC 前5: [33, 0, 32, 2, 1]\nIC 规模 前5: [33, 0, 32, 2, 1]\nSpearman(度, IC) = 0.840\nSpearman(DC, IC) = 0.923",
+ "stderr": ""
+}

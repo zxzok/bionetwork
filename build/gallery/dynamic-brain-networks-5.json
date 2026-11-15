@@ -1,0 +1,10 @@
+{
+ "topic": "dynamic-brain-networks",
+ "index": 5,
+ "title": "边时间序列与高振幅共波动",
+ "hash": "ae2906a0d20cef56464124b00f9ce3356cc239b9",
+ "ok": true,
+ "figures": 1,
+ "stdout": "边时间序列的时间平均 与 皮尔逊 r 的最大差异 = 0.0\n最高 5% 帧重建的 FC 与整体 FC 的相关 = 0.96\n最低 5% 帧重建的 FC 与整体 FC 的相关 = 0.30\n随机 5% 帧重建的 FC 与整体 FC 的相关 = 0.82",
+ "stderr": ""
+}

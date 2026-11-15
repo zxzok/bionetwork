@@ -1,0 +1,78 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>Girvan–Newman 算法 · 生物医学网络科学</title><meta name="description" content="社团结构与社区发现 · 代码示例：Girvan–Newman 算法"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-theory"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html" aria-current="page">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory" open><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a><ol class="sub"><li><a href="community-structure.weak-ties.html"><span class="n">01</span>弱关系理论与社团的定义</a></li><li><a href="community-structure.hypotheses-definitions.html"><span class="n">02</span>社团的基本假设与形式化定义</a></li><li><a href="community-structure.modularity.html"><span class="n">03</span>模块度</a></li><li><a href="community-structure.girvan-newman.html"><span class="n">04</span>Girvan–Newman 算法与边介数</a></li><li><a href="community-structure.louvain-leiden.html"><span class="n">05</span>Louvain 与 Leiden 算法</a></li><li><a href="community-structure.spectral-hierarchical.html"><span class="n">06</span>谱方法与层次聚类</a></li><li><a href="community-structure.stochastic-block-model.html"><span class="n">07</span>随机块模型与统计推断</a></li><li><a href="community-structure.infomap.html"><span class="n">08</span>映射方程与 Infomap</a></li><li><a href="community-structure.detectability.html"><span class="n">09</span>可检测性阈值</a></li><li><a href="community-structure.overlapping-communities.html"><span class="n">10</span>重叠社团</a></li><li><a href="community-structure.multiresolution-consensus.html"><span class="n">11</span>多分辨率与共识聚类</a></li><li><a href="community-structure.multilayer-temporal.html"><span class="n">12</span>多层与时变网络的社团</a></li><li><a href="community-structure.method-comparison.html"><span class="n">13</span>社团发现方法的比较</a></li><li><a href="community-structure.partition-comparison.html"><span class="n">14</span>划分比较与基准检验</a></li><li><a href="community-structure.validation.html"><span class="n">15</span>社团结果的验证与解读</a></li><li><a href="community-structure.derivations.html"><span class="n">16</span>数学推导与算法</a></li><li><a href="community-structure.frontiers.html"><span class="n">17</span>研究前沿与开放问题</a></li><li><a href="community-structure.biomedical.html"><span class="n">18</span>生物医学应用</a></li><li><a href="community-structure.limitations.html"><span class="n">19</span>适用范围与常见误用</a></li></ol></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="code.html">代码库</a> <span class="sep">/</span> <a href="code.html#theory">网络基础理论</a> <span class="sep">/</span> <a href="community-structure.html">社团结构与社区发现</a></nav><div class="eyebrow" style="margin-top:14px"><b>Example</b><span>02 / 15</span></div><h1>Girvan–Newman 算法</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="community-structure.html">社团结构与社区发现</a></dd></div><div><dt>下载</dt><dd><a href="notebooks/community-structure.ipynb" download>Notebook</a> · <a href="notebooks/community-structure.py" download>.py</a></dd></div></dl></header><section class="block prose"><p>对空手道网络运行
+Girvan–Newman（反复删除边介数最大的边，每次删边后重新计算边介数），
+记录每一层划分的社团数与模块度，选出 Q 最大的一层；再把第一次分裂（2
+个社团）与真实两派比较。 输出：Q 在 5 个社团时达到最大（约
+0.40）；第一次分裂只有个别节点与真实分派不同。</p>
+</section><section class="block"><h2><span class="tag">Output</span>输出图</h2><div class="ex-figs"><img src="gallery/community-structure-1-0.png" alt="Girvan–Newman 算法：输出图 1" loading="lazy"></div></section><section class="block"><h2><span class="tag">Output</span>文字输出</h2><pre class="ex-out">社团数  2  Q = 0.360
+社团数  3  Q = 0.349
+社团数  4  Q = 0.363
+社团数  5  Q = 0.401
+社团数  6  Q = 0.393
+社团数  7  Q = 0.376
+社团数  8  Q = 0.358
+社团数  9  Q = 0.342
+社团数 10  Q = 0.333
+最佳：5 个社团，Q = 0.401
+第一次分裂中与真实分派不一致的节点: [2, 8]</pre></section><section class="block prose"><h2><span class="tag">Code</span>代码</h2><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 对空手道网络运行 Girvan–Newman（反复删除边介数最大的边，每次删边后重新计算边介数），</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 记录每一层划分的社团数与模块度，选出 Q 最大的一层；再把第一次分裂（2 个社团）与真实两派比较。</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 输出：Q 在 5 个社团时达到最大（约 0.40）；第一次分裂只有个别节点与真实分派不同。</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> networkx <span class="im">as</span> nx</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>K <span class="op">=</span> nx.karate_club_graph()</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>G <span class="op">=</span> nx.Graph(K.edges())</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>truth <span class="op">=</span> {n: K.nodes[n][<span class="st">&quot;club&quot;</span>] <span class="cf">for</span> n <span class="kw">in</span> K}</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>levels <span class="op">=</span> []                                   <span class="co"># [(社团数, Q, 划分), ...]</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> comms <span class="kw">in</span> nx.community.girvan_newman(G):</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    comms <span class="op">=</span> [<span class="bu">set</span>(c) <span class="cf">for</span> c <span class="kw">in</span> comms]</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    levels.append((<span class="bu">len</span>(comms), nx.community.modularity(G, comms), comms))</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">len</span>(comms) <span class="op">&gt;=</span> <span class="dv">10</span>:</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>        <span class="cf">break</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> n_c, q, _ <span class="kw">in</span> levels:</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;社团数 </span><span class="sc">%2d</span><span class="st">  Q = </span><span class="sc">%.3f</span><span class="st">&quot;</span> <span class="op">%</span> (n_c, q))</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>best <span class="op">=</span> <span class="bu">max</span>(levels, key<span class="op">=</span><span class="kw">lambda</span> x: x[<span class="dv">1</span>])</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;最佳：</span><span class="sc">%d</span><span class="st"> 个社团，Q = </span><span class="sc">%.3f</span><span class="st">&quot;</span> <span class="op">%</span> (best[<span class="dv">0</span>], best[<span class="dv">1</span>]))</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>first <span class="op">=</span> levels[<span class="dv">0</span>][<span class="dv">2</span>]</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>side_hi <span class="op">=</span> first[<span class="dv">0</span>] <span class="cf">if</span> <span class="dv">0</span> <span class="kw">in</span> first[<span class="dv">0</span>] <span class="cf">else</span> first[<span class="dv">1</span>]           <span class="co"># 教练 0 号所在的一侧</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>wrong <span class="op">=</span> [n <span class="cf">for</span> n <span class="kw">in</span> G <span class="cf">if</span> (n <span class="kw">in</span> side_hi) <span class="op">!=</span> (truth[n] <span class="op">==</span> <span class="st">&quot;Mr. Hi&quot;</span>)]</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;第一次分裂中与真实分派不一致的节点:&quot;</span>, wrong)</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>plt.plot([x[<span class="dv">0</span>] <span class="cf">for</span> x <span class="kw">in</span> levels], [x[<span class="dv">1</span>] <span class="cf">for</span> x <span class="kw">in</span> levels], <span class="st">&quot;o-&quot;</span>)</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&quot;number of communities&quot;</span>)</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&quot;modularity Q&quot;</span>)</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&quot;Girvan–Newman on karate club&quot;</span>)</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+</section><section class="block"><h2><span class="tag">Run</span>在浏览器中运行</h2><p class="small">首次加载 Python 环境约需 20–40 秒；可以修改参数后重新运行。</p><div class="cell"><div class="cell-head"><h3>Girvan–Newman 算法</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea id="community-structure-cell1" rows="30" spellcheck="false" aria-label="Girvan–Newman 算法 代码"># 对空手道网络运行 Girvan–Newman（反复删除边介数最大的边，每次删边后重新计算边介数），
+# 记录每一层划分的社团数与模块度，选出 Q 最大的一层；再把第一次分裂（2 个社团）与真实两派比较。
+# 输出：Q 在 5 个社团时达到最大（约 0.40）；第一次分裂只有个别节点与真实分派不同。
+import networkx as nx
+import matplotlib.pyplot as plt
+
+K = nx.karate_club_graph()
+G = nx.Graph(K.edges())
+truth = {n: K.nodes[n][&quot;club&quot;] for n in K}
+
+levels = []                                   # [(社团数, Q, 划分), ...]
+for comms in nx.community.girvan_newman(G):
+    comms = [set(c) for c in comms]
+    levels.append((len(comms), nx.community.modularity(G, comms), comms))
+    if len(comms) &gt;= 10:
+        break
+
+for n_c, q, _ in levels:
+    print(&quot;社团数 %2d  Q = %.3f&quot; % (n_c, q))
+best = max(levels, key=lambda x: x[1])
+print(&quot;最佳：%d 个社团，Q = %.3f&quot; % (best[0], best[1]))
+first = levels[0][2]
+side_hi = first[0] if 0 in first[0] else first[1]           # 教练 0 号所在的一侧
+wrong = [n for n in G if (n in side_hi) != (truth[n] == &quot;Mr. Hi&quot;)]
+print(&quot;第一次分裂中与真实分派不一致的节点:&quot;, wrong)
+
+plt.plot([x[0] for x in levels], [x[1] for x in levels], &quot;o-&quot;)
+plt.xlabel(&quot;number of communities&quot;)
+plt.ylabel(&quot;modularity Q&quot;)
+plt.title(&quot;Girvan–Newman on karate club&quot;)
+plt.show()</textarea><div class="out" aria-live="polite"></div></div></section><nav class="pager"><a href="ex-community-structure-0.html"><small>上一个示例</small>按定义计算模块度</a><a href="ex-community-structure-2.html"><small>下一个示例</small>Louvain、分辨率参数与随机网络的模块度</a></nav></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

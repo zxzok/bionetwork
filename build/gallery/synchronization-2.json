@@ -1,0 +1,10 @@
+{
+ "topic": "synchronization",
+ "index": 2,
+ "title": "模块化网络上的分层同步",
+ "hash": "7e7a3673633ea523b4fdc6ffb3254874565d7da0",
+ "ok": true,
+ "figures": 1,
+ "stdout": "t=20 时 r_local = 0.98, r_global = 0.46\nt=150 时 r_local = 1.00, r_global = 0.99",
+ "stderr": ""
+}

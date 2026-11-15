@@ -1,0 +1,10 @@
+{
+ "topic": "robustness",
+ "index": 7,
+ "title": "玩具代谢网络的单基因与双基因敲除——必需基因与合成致死对",
+ "hash": "ef480f96a8c9628dc5818aa05ad65cd8a75cfe95",
+ "ok": true,
+ "figures": 1,
+ "stdout": "必需基因: ['G1', 'G2', 'G8']\n合成致死对: [('G3', 'G4'), ('G5', 'G6'), ('G5', 'G7')]",
+ "stderr": ""
+}

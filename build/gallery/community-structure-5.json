@@ -1,0 +1,10 @@
+{
+ "topic": "community-structure",
+ "index": 5,
+ "title": "划分之间的比较——NMI、ARI 与信息变差（VI）",
+ "hash": "2d45f5c1f6ea4dbca214436fa494dcc3ebb3117d",
+ "ok": true,
+ "figures": 1,
+ "stdout": "(a) NMI = 0.479, ARI = 0.324, VI = 1.000 bit\n(b) 随机划分为  4 组: 平均 NMI = 0.019, 平均 ARI = +0.001\n(b) 随机划分为 20 组: 平均 NMI = 0.077, 平均 ARI = +0.001\n(b) 随机划分为 50 组: 平均 NMI = 0.169, 平均 ARI = -0.000",
+ "stderr": ""
+}

@@ -1,0 +1,83 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>酵母蛋白质相互作用网络中动态组织的模块性证据 · 生物医学网络科学</title><meta name="description" content="论文精读：Evidence for dynamically organized modularity in the yeast protein–protein interaction network"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-molecular"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html" aria-current="page">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular" open><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html" aria-current="page">生物分子网络与拓扑特征</a><ol class="sub"><li><a href="molecular-networks.network-types.html"><span class="n">01</span>生物分子网络的类型与数据来源</a></li><li><a href="molecular-networks.ppi-mapping.html"><span class="n">02</span>相互作用组图谱：检测方法、质量与偏倚</a></li><li><a href="molecular-networks.topology.html"><span class="n">03</span>分子网络的拓扑特征</a></li><li><a href="molecular-networks.metabolic-networks.html"><span class="n">04</span>代谢网络与通量平衡分析</a></li><li><a href="molecular-networks.signaling-networks.html"><span class="n">05</span>信号转导网络</a></li><li><a href="molecular-networks.protein-complexes.html"><span class="n">06</span>蛋白复合物与功能模块的检测</a></li><li><a href="molecular-networks.centrality-lethality.html"><span class="n">07</span>致死性与中心性：枢纽蛋白假说及其争议</a></li><li><a href="molecular-networks.disease-modules.html"><span class="n">08</span>人类疾病网络与疾病模块</a></li><li><a href="molecular-networks.network-motifs.html"><span class="n">09</span>网络基序：类别与动力学功能</a></li><li><a href="molecular-networks.differential-networks.html"><span class="n">10</span>条件特异性网络、差异网络与网络重连</a></li><li><a href="molecular-networks.multiomics-integration.html"><span class="n">11</span>多组学网络整合</a></li><li><a href="molecular-networks.derivations.html"><span class="n">12</span>数学推导与算法</a></li><li><a href="molecular-networks.frontiers.html"><span class="n">13</span>研究前沿与开放问题</a></li><li><a href="molecular-networks.biomedical.html"><span class="n">14</span>生物医学应用</a></li><li><a href="molecular-networks.limitations.html"><span class="n">15</span>适用范围与常见误用</a></li></ol></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><div class="lec-grid"><div style="min-width:0"><div class="lec-head"><nav class="crumb"><a href="papers.html">文献知识库</a> › 分子网络与基因调控 · 计算方法与研究规范</nav><div class="eyebrow"><b>经典论文</b><span>难度：进阶</span></div><h1>酵母蛋白质相互作用网络中动态组织的模块性证据</h1><p class="porig big">Evidence for dynamically organized modularity in the yeast protein–protein interaction network</p><p class="small">Han J-DJ, Bertin N, Hao T, Goldberg DS, Berriz GF, Zhang LV, et al. · <i>Nature</i> 2004 · <a href="https://doi.org/10.1038/nature02555" target="_blank" rel="noopener">DOI: 10.1038/nature02555</a></p><div class="chips"><span class="chip">蛋白质相互作用网络</span><span class="chip">枢纽</span><span class="chip">date hub</span><span class="chip">party hub</span><span class="chip">共表达</span><span class="chip">动态模块性</span></div><div class="objectives"><h2>一句话</h2><p style="margin:0">结合共表达把酵母互作组枢纽分为 party hub 与 date hub，提出动态组织的模块性。</p><p class="small" style="margin:8px 0 0">相关专题：<a href="molecular-networks.html">生物分子网络与拓扑特征</a>、<a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></p></div></div><section class="block prose" id="notes"><h2 id="一句话看懂">一句话看懂</h2>
+<p>静态的蛋白质相互作用图把所有可能的结合都画在一起，但细胞里的相互作用是分时间、分地点发生的。作者用基因表达数据给每个枢纽“加上时间维度”：有的枢纽和伙伴总是一起表达，像同时在场的“聚会型”（party
+hub）；有的枢纽和伙伴的表达不同步，像在不同时间分别赴约的“约会型”（date
+hub）。他们提出，date hub 负责把不同功能模块连起来，party hub
+则在模块内部起作用。</p>
+<h2 id="研究背景与问题">研究背景与问题</h2>
+<p>Jeong
+等（2001）发现酵母互作组中枢纽蛋白更可能是必需的，枢纽从此成为网络生物学的核心概念。但
+PPI
+网络是把各种实验条件下测到的相互作用叠加在一起的静态图：两条边同时出现在图上，并不意味着它们在同一时刻、同一位置存在。</p>
+<p>作者的问题是：如果加入相互作用在时间和空间上的调控信息，枢纽是否还是同一类东西？它们对网络的模块结构和细胞的鲁棒性分别起什么作用？</p>
+<h2 id="核心思想与方法">核心思想与方法</h2>
+<ol type="1">
+<li><strong>高置信度互作组</strong>：作者整合多种来源的酵母相互作用数据，保留得到多种证据支持的相互作用，构成“过滤后的酵母互作组”，以减少高通量数据的假阳性。</li>
+<li><strong>定义枢纽</strong>：按度选出连接最多的一部分蛋白作为枢纽。</li>
+<li><strong>共表达</strong>：在多个公开的酵母表达数据集（涵盖细胞周期、各种应激条件等）中，计算每个枢纽与其每个相互作用伙伴之间的皮尔逊相关系数（PCC），再求平均。</li>
+<li><strong>分类与检验</strong>：观察枢纽“平均
+PCC”的分布形状；比较删除两类枢纽对网络连通性的影响；用遗传相互作用数据检验两类枢纽的功能差异。</li>
+</ol>
+<div class="callout-def">
+<p><strong>party hub</strong>：与大多数伙伴共表达（平均 PCC
+高）的枢纽，被认为与伙伴同时结合，常见于稳定复合物，主要在模块<strong>内部</strong>起作用。</p>
+<p><strong>date hub</strong>：与伙伴共表达程度低（平均 PCC
+低）的枢纽，被认为在不同时间或位置结合不同伙伴，主要在模块<strong>之间</strong>起连接作用。</p>
+<p><strong>动态组织的模块性</strong>：细胞的模块结构不是固定的，date hub
+在不同条件下把不同模块连接起来，构成更高层次的组织。</p>
+</div>
+<h2 id="主要发现">主要发现</h2>
+<ol type="1">
+<li><strong>枢纽的平均共表达呈双峰分布</strong>：枢纽与伙伴的平均 PCC
+分布出现两个峰，提示存在两类性质不同的枢纽。这是区分 date hub 与 party
+hub 的主要依据（后来的批评指出，原文并未对双峰本身做显著性检验）。</li>
+<li><strong>删除 date hub 更破坏连通性</strong>：在模拟中，删除 date hub
+会使网络破碎成许多较小的连通片，而删除 party hub 则不会，说明 date hub
+更多处在连接不同区域的位置。</li>
+<li><strong>网络的鲁棒性需要重新理解</strong>：作者认为，枢纽敲除致死性约为非枢纽三倍（摘要引述的既往结果）这一现象背后，可能包含两类功能不同的枢纽。</li>
+<li><strong>遗传相互作用的支持</strong>：体内遗传相互作用数据也支持“date
+hub 组织蛋白质组、连接生物过程，party hub
+在模块内部发挥作用”的模型。</li>
+</ol>
+<h2 id="怎样读这篇论文">怎样读这篇论文</h2>
+<p>先读摘要和展示平均 PCC
+分布的图：双峰形态是一切讨论的起点，理解它要先理解“平均
+PCC”是怎么算的。然后读删除 date hub 与 party hub 的模拟图，对比<a
+href="controllability.structural-robustness.html">结构鲁棒性</a>中删除枢纽的攻击模拟。遗传相互作用部分可以快速浏览结论。读完本文后，务必接着读下面列出的反驳与再检验文章，这比本文本身更有参考价值。</p>
+<h2 id="局限与后续工作">局限与后续工作</h2>
+<p>本文是网络生物学中争议最集中的论文之一，正好用来体会“结论依赖数据与方法”：</p>
+<ul>
+<li><strong>对数据集的依赖</strong>：Batada 等（2006, <em>PLoS
+Biology</em>）用更新的高置信度互作数据和 25
+个表达数据集重新分析，指出原文未检验双峰的显著性；他们发现 date hub
+并不是网络耐受节点删除所必需的，两类枢纽的进化速率也没有差别，认为
+date/party 的划分“经不起推敲”。</li>
+<li><strong>原作者的回应</strong>：Bertin 等（2007, <em>PLoS
+Biology</em>）用更新数据与更细致的分析回应，认为在高质量数据中仍能看到“有组织的模块性”，双峰是否出现与表达数据集的选择和合并方式有关。</li>
+<li><strong>重新审视</strong>：Agarwal 等（2010, <em>PLoS Computational
+Biology</em>）用多种方法再检验，发现区分结果对数据集、表达条件和阈值都很敏感；他们认为与其把枢纽硬性一分为二，不如用连续的、基于模块结构的指标来描述枢纽的角色。</li>
+<li><strong>共表达不等于同时结合</strong>：mRNA
+共表达只是蛋白同时存在的间接代理，蛋白水平、亚细胞定位和翻译后修饰都没有考虑。</li>
+<li><strong>临床延伸是相关证据</strong>：Taylor 等（2009, <em>Nature
+Biotechnology</em>）把“模块间枢纽 vs
+模块内枢纽”的思路用于乳腺癌，发现枢纽与伙伴共表达模式的改变与预后相关。这类研究提供的是预后关联，不能说明这些枢纽是治疗靶点。</li>
+</ul>
+<h2 id="关联知识">关联知识</h2>
+<ul>
+<li><a
+href="molecular-networks.centrality-lethality.html">致死性与中心性：枢纽蛋白假说及其争议</a>在致死性–中心性之后介绍了本文，并指出其分类后来受到质疑，本文是该页的延伸阅读。</li>
+<li>用“参与系数”刻画节点在模块内还是跨模块的思路，与<a
+href="community-structure.html">社团结构与社区发现</a>中的模块结构以及<a
+href="brain-connectome.topology.html">拓扑指标：小世界、模块、枢纽与富人俱乐部</a>中连接枢纽、局部枢纽的划分是同一思想。</li>
+<li>本文提醒我们：中心性是静态图上的量，加入时间或条件信息后，“枢纽”的含义可能改变；这一点在<a
+href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a>中再次出现。</li>
+</ul>
+<h2 id="延伸思考">延伸思考</h2>
+<ol type="1">
+<li>平均 PCC
+的分布是否双峰，可能受哪些分析选择影响（表达数据集、是否合并条件、枢纽阈值）？请设计一个敏感性分析方案。</li>
+<li>如果用参与系数代替共表达来区分枢纽类型，结果应当与 date/party
+分类有多大一致性？两者分别依赖什么数据？</li>
+<li>在人类疾病研究中，怎样把“date hub
+连接模块”的想法转化为可检验的预测？这类预测在什么条件下才可能指向干预靶点？</li>
+</ol>
+</section><nav class="pager"><a href="paper-newman2003_review.html">← 复杂网络的结构与功能</a><a href="paper-zhang2005_wgcna.html">加权基因共表达网络分析的一般框架 →</a></nav></div><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

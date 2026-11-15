@@ -1,0 +1,10 @@
+{
+ "topic": "network-medicine",
+ "index": 0,
+ "title": "疾病基因是否聚成模块（最大连通分支 + 度匹配随机基线）",
+ "hash": "c68b0d8096831639f868a066651a54186c33c301",
+ "ok": true,
+ "figures": 1,
+ "stdout": "观察 LCC = 18，度匹配随机期望 = 2.8 ± 1.5，z = 10.3，经验 p = 0.003",
+ "stderr": ""
+}

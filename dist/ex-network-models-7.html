@@ -1,0 +1,120 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>复制–分化（duplication–divergence）模型与蛋白质网络的长尾 · 生物医学网络科学</title><meta name="description" content="小世界与无标度网络模型 · 代码示例：复制–分化（duplication–divergence）模型与蛋白质网络的长尾"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-theory"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html" aria-current="page">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory" open><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a><ol class="sub"><li><a href="network-models.small-world-phenomenon.html"><span class="n">01</span>小世界现象</a></li><li><a href="network-models.lattice-vs-random.html"><span class="n">02</span>规则网格与随机网络</a></li><li><a href="network-models.watts-strogatz.html"><span class="n">03</span>Watts–Strogatz 小世界模型</a></li><li><a href="network-models.scale-free.html"><span class="n">04</span>幂律度分布与无标度网络</a></li><li><a href="network-models.configuration-model.html"><span class="n">05</span>任意度分布网络的生成：配置模型与隐变量模型</a></li><li><a href="network-models.barabasi-albert.html"><span class="n">06</span>Barabási–Albert 优先连接模型</a></li><li><a href="network-models.preferential-attachment-measurement.html"><span class="n">07</span>测量优先连接与非线性优先连接</a></li><li><a href="network-models.preferential-attachment-origins.html"><span class="n">08</span>优先连接从何而来：链接选择、复制与优化</a></li><li><a href="network-models.fitness-model.html"><span class="n">09</span>适应度模型与玻色–爱因斯坦凝聚</a></li><li><a href="network-models.evolving-networks.html"><span class="n">10</span>演化网络的扩展模型</a></li><li><a href="network-models.duplication-divergence.html"><span class="n">11</span>复制–分化模型</a></li><li><a href="network-models.spatial-networks.html"><span class="n">12</span>空间网络与随机几何图</a></li><li><a href="network-models.identification.html"><span class="n">13</span>小世界与无标度的统计判别</a></li><li><a href="network-models.derivations.html"><span class="n">14</span>数学推导与算法</a></li><li><a href="network-models.frontiers.html"><span class="n">15</span>研究前沿与开放问题</a></li><li><a href="network-models.biomedical.html"><span class="n">16</span>生物医学应用</a></li><li><a href="network-models.limitations.html"><span class="n">17</span>适用范围与常见误用</a></li></ol></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="code.html">代码库</a> <span class="sep">/</span> <a href="code.html#theory">网络基础理论</a> <span class="sep">/</span> <a href="network-models.html">小世界与无标度网络模型</a></nav><div class="eyebrow" style="margin-top:14px"><b>Example</b><span>08 / 10</span></div><h1>复制–分化（duplication–divergence）模型与蛋白质网络的长尾</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="network-models.html">小世界与无标度网络模型</a></dd></div><div><dt>下载</dt><dd><a href="notebooks/network-models.ipynb" download>Notebook</a> · <a href="notebooks/network-models.py" download>.py</a></dd></div></dl></header><section class="block prose"><p>每一步随机选一个已有“基因” i 复制出 i’：i’ 以概率 q 保留 i
+的每条相互作用（分化 = 以 1-q 丢失）， 并以概率 p 与 i
+直接相连（同源二聚体）。为避免产生孤立节点，若 i’
+一条边都没保留就重新抽样（与多数文献的做法一致）。 比较
+q=0.3、0.5、0.7：平均度随网络规模的变化（均场预期 q&gt;1/2
+时持续增长）、最大度与聚集系数， 并用
+MLE（k_min=5）给出尾部指数的粗略估计。 输出：q=0.3 时平均度几乎不随 N
+变化；q≥0.5 时平均度随 N 增长（q=0.7 时网络迅速变稠密、尾部变平）； 三种
+q 下都出现度为数百的枢纽，聚集系数比同规模 ER 网络高一到两个数量级。</p>
+</section><section class="block"><h2><span class="tag">Output</span>输出图</h2><div class="ex-figs"><img src="gallery/network-models-7-0.png" alt="复制–分化（duplication–divergence）模型与蛋白质网络的长尾：输出图 1" loading="lazy"></div></section><section class="block"><h2><span class="tag">Output</span>文字输出</h2><pre class="ex-out">q=0.3: &lt;k&gt;(N=1000)=4.26, &lt;k&gt;(N=4000)=4.45, k_max=127, C=0.104（ER: 0.0016）, 尾部 γ≈2.46
+q=0.5: &lt;k&gt;(N=1000)=7.00, &lt;k&gt;(N=4000)=8.82, k_max=363, C=0.129（ER: 0.0022）, 尾部 γ≈2.08
+q=0.7: &lt;k&gt;(N=1000)=22.02, &lt;k&gt;(N=4000)=37.52, k_max=376, C=0.101（ER: 0.0093）, 尾部 γ≈1.57</pre></section><section class="block prose"><h2><span class="tag">Code</span>代码</h2><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 每一步随机选一个已有“基因” i 复制出 i&#39;：i&#39; 以概率 q 保留 i 的每条相互作用（分化 = 以 1-q 丢失），</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 并以概率 p 与 i 直接相连（同源二聚体）。为避免产生孤立节点，若 i&#39; 一条边都没保留就重新抽样（与多数文献的做法一致）。</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 比较 q=0.3、0.5、0.7：平均度随网络规模的变化（均场预期 q&gt;1/2 时持续增长）、最大度与聚集系数，</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 并用 MLE（k_min=5）给出尾部指数的粗略估计。</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 输出：q=0.3 时平均度几乎不随 N 变化；q≥0.5 时平均度随 N 增长（q=0.7 时网络迅速变稠密、尾部变平）；</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">#       三种 q 下都出现度为数百的枢纽，聚集系数比同规模 ER 网络高一到两个数量级。</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> networkx <span class="im">as</span> nx</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> duplication_divergence(n, q, p, seed<span class="op">=</span><span class="dv">0</span>):</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    rng <span class="op">=</span> np.random.default_rng(seed)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    G <span class="op">=</span> nx.Graph([(<span class="dv">0</span>, <span class="dv">1</span>)])</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> G.number_of_nodes() <span class="op">&lt;</span> n:</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>        new <span class="op">=</span> G.number_of_nodes()</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>        <span class="cf">while</span> <span class="va">True</span>:</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>            i <span class="op">=</span> <span class="bu">int</span>(rng.integers(new))</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>            kept <span class="op">=</span> [j <span class="cf">for</span> j <span class="kw">in</span> G.neighbors(i) <span class="cf">if</span> rng.random() <span class="op">&lt;</span> q]</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> kept:</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>                <span class="cf">break</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>        G.add_edges_from((new, j) <span class="cf">for</span> j <span class="kw">in</span> kept)</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> rng.random() <span class="op">&lt;</span> p:</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>            G.add_edge(new, i)</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> G</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>kbar, degs <span class="op">=</span> {}, {}                                 <span class="co"># 存下结果用于作图</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> q <span class="kw">in</span> [<span class="fl">0.3</span>, <span class="fl">0.5</span>, <span class="fl">0.7</span>]:</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    out <span class="op">=</span> []</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> n <span class="kw">in</span> [<span class="dv">1000</span>, <span class="dv">4000</span>]:</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>        G <span class="op">=</span> duplication_divergence(n, q, p<span class="op">=</span><span class="fl">0.1</span>, seed<span class="op">=</span><span class="dv">7</span>)</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>        out.append(<span class="dv">2</span> <span class="op">*</span> G.number_of_edges() <span class="op">/</span> n)</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>    k <span class="op">=</span> np.array([d <span class="cf">for</span> _, d <span class="kw">in</span> G.degree()], <span class="bu">float</span>)</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>    kmin <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>    tail <span class="op">=</span> k[k <span class="op">&gt;=</span> kmin]</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>    gam <span class="op">=</span> <span class="dv">1</span> <span class="op">+</span> <span class="bu">len</span>(tail) <span class="op">/</span> np.<span class="bu">sum</span>(np.log(tail <span class="op">/</span> (kmin <span class="op">-</span> <span class="fl">0.5</span>))) <span class="cf">if</span> <span class="bu">len</span>(tail) <span class="op">&gt;</span> <span class="dv">20</span> <span class="cf">else</span> <span class="bu">float</span>(<span class="st">&quot;nan&quot;</span>)</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>    er <span class="op">=</span> nx.gnm_random_graph(G.number_of_nodes(), G.number_of_edges(), seed<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;q=</span><span class="sc">%.1f</span><span class="st">: &lt;k&gt;(N=1000)=</span><span class="sc">%.2f</span><span class="st">, &lt;k&gt;(N=4000)=</span><span class="sc">%.2f</span><span class="st">, k_max=</span><span class="sc">%d</span><span class="st">, C=</span><span class="sc">%.3f</span><span class="st">（ER: </span><span class="sc">%.4f</span><span class="st">）, 尾部 γ≈</span><span class="sc">%.2f</span><span class="st">&quot;</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>          <span class="op">%</span> (q, out[<span class="dv">0</span>], out[<span class="dv">1</span>], k.<span class="bu">max</span>(), nx.average_clustering(G), nx.average_clustering(er), gam))</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>    kbar[q], degs[q] <span class="op">=</span> out, k</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="co"># 作图：左为平均度随规模的变化；右为 N=4000 时的度分布 CCDF</span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>fig, (ax1, ax2) <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">4</span>))</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (q, kb), mk <span class="kw">in</span> <span class="bu">zip</span>(kbar.items(), [<span class="st">&quot;o&quot;</span>, <span class="st">&quot;s&quot;</span>, <span class="st">&quot;^&quot;</span>]):</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>    ax1.plot([<span class="dv">1000</span>, <span class="dv">4000</span>], kb, mk <span class="op">+</span> <span class="st">&quot;-&quot;</span>, label<span class="op">=</span><span class="st">&quot;q = </span><span class="sc">%.1f</span><span class="st">&quot;</span> <span class="op">%</span> q)</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>    xs <span class="op">=</span> np.sort(np.unique(degs[q]))</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>    ax2.loglog(xs, [(degs[q] <span class="op">&gt;=</span> x).mean() <span class="cf">for</span> x <span class="kw">in</span> xs], mk, ms<span class="op">=</span><span class="dv">3</span>, label<span class="op">=</span><span class="st">&quot;q = </span><span class="sc">%.1f</span><span class="st">&quot;</span> <span class="op">%</span> q)</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>ax1.set_xlabel(<span class="st">&quot;network size N&quot;</span>)<span class="op">;</span> ax1.set_ylabel(<span class="st">&quot;average degree &lt;k&gt;&quot;</span>)<span class="op">;</span> ax1.legend(fontsize<span class="op">=</span><span class="dv">8</span>)</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>ax1.set_title(<span class="st">&quot;&lt;k&gt; grows with N when q &gt;= 1/2&quot;</span>, fontsize<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>ax2.set_xlabel(<span class="st">&quot;degree k&quot;</span>)<span class="op">;</span> ax2.set_ylabel(<span class="st">&quot;P(K &gt;= k)&quot;</span>)<span class="op">;</span> ax2.legend(fontsize<span class="op">=</span><span class="dv">8</span>)</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>ax2.set_title(<span class="st">&quot;Long-tailed degree distributions (N = 4000)&quot;</span>, fontsize<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()<span class="op">;</span> plt.show()</span></code></pre></div>
+</section><section class="block"><h2><span class="tag">Run</span>在浏览器中运行</h2><p class="small">首次加载 Python 环境约需 20–40 秒；可以修改参数后重新运行。</p><div class="cell"><div class="cell-head"><h3>复制–分化（duplication–divergence）模型与蛋白质网络的长尾</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea id="network-models-cell7" rows="30" spellcheck="false" aria-label="复制–分化（duplication–divergence）模型与蛋白质网络的长尾 代码"># 每一步随机选一个已有“基因” i 复制出 i&#x27;：i&#x27; 以概率 q 保留 i 的每条相互作用（分化 = 以 1-q 丢失），
+# 并以概率 p 与 i 直接相连（同源二聚体）。为避免产生孤立节点，若 i&#x27; 一条边都没保留就重新抽样（与多数文献的做法一致）。
+# 比较 q=0.3、0.5、0.7：平均度随网络规模的变化（均场预期 q&gt;1/2 时持续增长）、最大度与聚集系数，
+# 并用 MLE（k_min=5）给出尾部指数的粗略估计。
+# 输出：q=0.3 时平均度几乎不随 N 变化；q≥0.5 时平均度随 N 增长（q=0.7 时网络迅速变稠密、尾部变平）；
+#       三种 q 下都出现度为数百的枢纽，聚集系数比同规模 ER 网络高一到两个数量级。
+import networkx as nx
+import numpy as np
+
+
+def duplication_divergence(n, q, p, seed=0):
+    rng = np.random.default_rng(seed)
+    G = nx.Graph([(0, 1)])
+    while G.number_of_nodes() &lt; n:
+        new = G.number_of_nodes()
+        while True:
+            i = int(rng.integers(new))
+            kept = [j for j in G.neighbors(i) if rng.random() &lt; q]
+            if kept:
+                break
+        G.add_edges_from((new, j) for j in kept)
+        if rng.random() &lt; p:
+            G.add_edge(new, i)
+    return G
+
+
+kbar, degs = {}, {}                                 # 存下结果用于作图
+for q in [0.3, 0.5, 0.7]:
+    out = []
+    for n in [1000, 4000]:
+        G = duplication_divergence(n, q, p=0.1, seed=7)
+        out.append(2 * G.number_of_edges() / n)
+    k = np.array([d for _, d in G.degree()], float)
+    kmin = 5
+    tail = k[k &gt;= kmin]
+    gam = 1 + len(tail) / np.sum(np.log(tail / (kmin - 0.5))) if len(tail) &gt; 20 else float(&quot;nan&quot;)
+    er = nx.gnm_random_graph(G.number_of_nodes(), G.number_of_edges(), seed=1)
+    print(&quot;q=%.1f: &lt;k&gt;(N=1000)=%.2f, &lt;k&gt;(N=4000)=%.2f, k_max=%d, C=%.3f（ER: %.4f）, 尾部 γ≈%.2f&quot;
+          % (q, out[0], out[1], k.max(), nx.average_clustering(G), nx.average_clustering(er), gam))
+    kbar[q], degs[q] = out, k
+
+# 作图：左为平均度随规模的变化；右为 N=4000 时的度分布 CCDF
+import matplotlib.pyplot as plt
+
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 4))
+for (q, kb), mk in zip(kbar.items(), [&quot;o&quot;, &quot;s&quot;, &quot;^&quot;]):
+    ax1.plot([1000, 4000], kb, mk + &quot;-&quot;, label=&quot;q = %.1f&quot; % q)
+    xs = np.sort(np.unique(degs[q]))
+    ax2.loglog(xs, [(degs[q] &gt;= x).mean() for x in xs], mk, ms=3, label=&quot;q = %.1f&quot; % q)
+ax1.set_xlabel(&quot;network size N&quot;); ax1.set_ylabel(&quot;average degree &lt;k&gt;&quot;); ax1.legend(fontsize=8)
+ax1.set_title(&quot;&lt;k&gt; grows with N when q &gt;= 1/2&quot;, fontsize=10)
+ax2.set_xlabel(&quot;degree k&quot;); ax2.set_ylabel(&quot;P(K &gt;= k)&quot;); ax2.legend(fontsize=8)
+ax2.set_title(&quot;Long-tailed degree distributions (N = 4000)&quot;, fontsize=10)
+plt.tight_layout(); plt.show()</textarea><div class="out" aria-live="polite"></div></div></section><nav class="pager"><a href="ex-network-models-6.html"><small>上一个示例</small>Bianconi–Barabási 适应度模型——后来者居上</a><a href="ex-network-models-8.html"><small>下一个示例</small>随机几何图——空间嵌入带来的高聚类与“大世界”</a></nav></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

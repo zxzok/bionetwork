@@ -1,0 +1,404 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>网络构建与统计验证 · 生物医学网络科学</title><meta name="description" content="网络构建与统计验证：从影像、量表、表达谱和相互作用数据库到网络，再到可信结论：节点与边的定义、连接估计、阈值、零模型、统计推断与稳定性检验。"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-theory"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html" aria-current="page">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory" open><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html" aria-current="page">网络构建与统计验证</a><ol class="sub"><li><a href="network-construction.nodes-and-edges.html"><span class="n">01</span>节点与边的定义</a></li><li><a href="network-construction.edge-estimation.html"><span class="n">02</span>连接强度的估计</a></li><li><a href="network-construction.directed-edges.html"><span class="n">03</span>从时间序列推断有向边</a></li><li><a href="network-construction.thresholding.html"><span class="n">04</span>阈值、加权与稀疏化</a></li><li><a href="network-construction.uncertainty-propagation.html"><span class="n">05</span>边权不确定性向网络指标的传播</a></li><li><a href="network-construction.null-models.html"><span class="n">06</span>零模型与空模型</a></li><li><a href="network-construction.statistical-inference.html"><span class="n">07</span>统计推断与多重比较</a></li><li><a href="network-construction.network-distances.html"><span class="n">08</span>网络之间的距离与相似性</a></li><li><a href="network-construction.bias-and-missingness.html"><span class="n">09</span>测量误差、缺失与偏倚</a></li><li><a href="network-construction.sampling-incomplete.html"><span class="n">10</span>采样网络与不完整观测</a></li><li><a href="network-construction.stability-reproducibility.html"><span class="n">11</span>稳定性与可重复性</a></li><li><a href="network-construction.sample-size-power.html"><span class="n">12</span>样本量与统计功效</a></li><li><a href="network-construction.derivations.html"><span class="n">13</span>数学推导与算法</a></li><li><a href="network-construction.frontiers.html"><span class="n">14</span>研究前沿与开放问题</a></li><li><a href="network-construction.biomedical.html"><span class="n">15</span>生物医学应用</a></li><li><a href="network-construction.limitations.html"><span class="n">16</span>适用范围与常见误用</a></li></ol></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><div class="lec-grid"><article style="min-width:0"><header class="doc-head"><nav class="crumb"><a href="domains.html">知识领域</a> <span class="sep">/</span> <a href="d-theory.html">网络基础理论</a></nav><div class="eyebrow" style="margin-top:14px"><b>Network Foundations</b><span>Network construction and statistical validation</span></div><h1>网络构建与统计验证</h1><p class="dek">从影像、量表、表达谱和相互作用数据库到网络，再到可信结论：节点与边的定义、连接估计、阈值、零模型、统计推断与稳定性检验。</p><dl class="doc-meta"><div><dt>知识页面</dt><dd>16 页</dd></div><div><dt>阅读</dt><dd>约 50 分钟</dd></div><div><dt>代码示例</dt><dd>11 个</dd></div></dl><div class="chips"><span class="chip">网络构建</span><span class="chip">功能连接</span><span class="chip">偏相关</span><span class="chip">阈值化</span><span class="chip">零模型</span><span class="chip">置换检验</span><span class="chip">多重比较</span><span class="chip">稳定性</span><span class="chip">研究偏倚</span><span class="chip">Granger 因果</span><span class="chip">转移熵</span><span class="chip">采样网络</span><span class="chip">不确定性传播</span><span class="chip">统计功效</span></div></header><section class="block prose" id="overview"><p>网络分析中最容易被低估的一步，是“网络从哪里来”。一个脑网络、症状网络、共表达网络或蛋白质相互作用网络，都不是直接测量得到的对象，而是一连串建模决定的产物：什么算一个节点，什么算一条边，边权用什么统计量估计，保留哪些边，和什么样的参照对象比较，用什么方法控制假阳性。每一步都可能改变后面所有的拓扑指标，因此“网络构建”本身就是一个需要报告、检验和论证的统计推断问题。</p>
+<p>这一专题按数据流程组织：先讨论不同数据类型中节点与边的含义（<a
+href="network-construction.nodes-and-edges.html">节点与边的定义</a>），再讨论边权的估计与估计误差（<a
+href="network-construction.edge-estimation.html">连接强度的估计</a>）、从时间序列推断方向（<a
+href="network-construction.directed-edges.html">从时间序列推断有向边</a>）、从稠密矩阵到网络的稀疏化（<a
+href="network-construction.thresholding.html">阈值、加权与稀疏化</a>）、边权误差如何传到指标上（<a
+href="network-construction.uncertainty-propagation.html">边权不确定性向网络指标的传播</a>），然后是三类验证：与零模型比较（<a
+href="network-construction.null-models.html">零模型与空模型</a>）、组间比较与多重比较控制（<a
+href="network-construction.statistical-inference.html">统计推断与多重比较</a>、<a
+href="network-construction.network-distances.html">网络之间的距离与相似性</a>）、对数据缺陷与结果稳定性的检查（<a
+href="network-construction.bias-and-missingness.html">测量误差、缺失与偏倚</a>、<a
+href="network-construction.sampling-incomplete.html">采样网络与不完整观测</a>、<a
+href="network-construction.stability-reproducibility.html">稳定性与可重复性</a>），以及研究设计阶段的
+<a
+href="network-construction.sample-size-power.html">样本量与统计功效</a>。</p>
+<p>它与 <a href="network-metrics.html">网络结构指标与随机图</a>
+互为前后：后者定义指标，这里讨论指标在什么条件下可以被解释。各应用领域的具体流程分别见
+<a href="brain-connectome.html">脑连接组</a>、<a
+href="symptom-networks.html">症状网络</a>、<a
+href="gene-network-inference.html">基因调控网络推断</a> 与 <a
+href="network-medicine.html">网络医学</a>；分析报告的规范见 <a
+href="reproducible-research.html">可复现分析与敏感性分析</a>。</p>
+</section><section class="block" id="pages"><h2><span class="tag">Contents</span>知识页面</h2><div class="arts"><a class="art" href="network-construction.nodes-and-edges.html"><span class="no">01</span><span class="t">节点与边的定义</span><span class="d">节点：分析单元的选择 节点（node）是研究者选定的分析单元。它要求单元内部足够同质、单元之间可以区分，并且在不同个体或样本之间可以对应。 数据类型 常见节点 典型的节点定义问题 …</span></a><a class="art" href="network-construction.edge-estimation.html"><span class="no">02</span><span class="t">连接强度的估计</span><span class="d">相关与偏相关 对 个变量各有 个观测（时间点、被试或样本），最常用的边权是皮尔逊相关 。相关网络的问题是间接关联也会成边：若 ， 与 之间没有直接作用，相关仍可能很高。 偏相关（p…</span></a><a class="art" href="network-construction.directed-edges.html"><span class="no">03</span><span class="t">从时间序列推断有向边</span><span class="d">相关、偏相关和互信息都是对称的，得到的是无向网络。当每个节点有一段足够长、采样足够快的时间序列（神经元放电、EEG/MEG、颅内脑电、经验取样的症状自评、时间序列转录组）时，可以尝…</span></a><a class="art" href="network-construction.thresholding.html"><span class="no">04</span><span class="t">阈值、加权与稀疏化</span><span class="d">相关、偏相关或互信息给出的是一个稠密的加权矩阵。多数经典图论指标定义在二值网络上，于是需要决定保留哪些边。 几种做法 绝对阈值（absolute threshold）：保留 的边，…</span></a><a class="art" href="network-construction.uncertainty-propagation.html"><span class="no">05</span><span class="t">边权不确定性向网络指标的传播</span><span class="d">连接强度的估计 讨论了单条边的误差；但研究者报告的通常不是边，而是聚集系数、效率、模块度、中心性这些由所有边共同决定的指标。边权的误差如何传到指标上，是网络分析中最容易被跳过的一步…</span></a><a class="art" href="network-construction.null-models.html"><span class="no">06</span><span class="t">零模型与空模型</span><span class="d">一个指标的数值本身很少有意义。“聚集系数 0.25”是高还是低，取决于与什么比较。零模型（null model）是一组保留了真实网络某些性质、其余部分随机化的参照网络，用来回答“观…</span></a><a class="art" href="network-construction.statistical-inference.html"><span class="no">07</span><span class="t">统计推断与多重比较</span><span class="d">比较什么：三个层面 组间网络比较（如患者与对照）可以在三个层面进行，层面越细，比较次数越多，多重比较的负担越重： 1. 全局指标：每名被试计算全局效率、模块度等，组间做 检验或一般…</span></a><a class="art" href="network-construction.network-distances.html"><span class="no">08</span><span class="t">网络之间的距离与相似性</span><span class="d">统计推断与多重比较 讨论的是在边、节点或全局指标层面比较两组网络。另一类问题是直接问“两张网络有多不同”：同一被试两次扫描的网络是否相似，疾病组与对照组的网络整体是否不同，一个模型…</span></a><a class="art" href="network-construction.bias-and-missingness.html"><span class="no">09</span><span class="t">测量误差、缺失与偏倚</span><span class="d">前面各节默认数据是“干净”的。实际数据中，系统性误差往往比随机误差更危险，因为增加样本量不会消除它。 数据库研究偏倚 文献整理型的相互作用数据库（如 BioGRID; Stark …</span></a><a class="art" href="network-construction.sampling-incomplete.html"><span class="no">10</span><span class="t">采样网络与不完整观测</span><span class="d">测量误差、缺失与偏倚 讨论的是缺失“偏向哪里”；这里讨论缺失“如何改变网络指标”。几乎所有生物医学网络都是真实网络的一个样本：相互作用组只测了部分蛋白与蛋白对，连接组只纳入了部分脑…</span></a><a class="art" href="network-construction.stability-reproducibility.html"><span class="no">11</span><span class="t">稳定性与可重复性</span><span class="d">一个网络结论至少要经受四层检验：同一数据的重抽样（稳定性）、同一被试的重复测量（信度）、独立数据集（复现）、不同合理分析流程（稳健性）。 重抽样：bootstrap 与留一法 非参…</span></a><a class="art" href="network-construction.sample-size-power.html"><span class="no">12</span><span class="t">样本量与统计功效</span><span class="d">网络研究的功效问题有两层：估计网络本身需要多少数据（每个边权、每个指标的精度），以及检验组间差异或个体差异需要多少被试。这里只给出有公认推导或实证文献支持的经验规则；具体研究应按自…</span></a><a class="art" href="network-construction.derivations.html"><span class="no">13</span><span class="t">数学推导与算法</span><span class="d">A. Fisher z 变换与样本量 设 二元正态， 个独立样本，样本相关 的渐近方差为 。寻找变换 使方差不依赖 ：由 delta 方法 ，令 ，积分得 ，方差约为 ，小样本修正…</span></a><a class="art" href="network-construction.frontiers.html"><span class="no">14</span><span class="t">研究前沿与开放问题</span><span class="d">1. 把网络当作待估计的未知量。贝叶斯网络重建把观测、测量误差与网络结构放进同一生成模型（Newman, 2018；Peixoto, 2018；Peixoto, 2019, Phy…</span></a><a class="art" href="network-construction.biomedical.html"><span class="no">15</span><span class="t">生物医学应用</span><span class="d">脑网络的组间比较。 静息态功能连接研究中，常见的流程是：每名被试按图谱提取时间序列，计算 Fisher 相关矩阵，再在边层面用 NBS 或 FDR 做组间比较，在全局层面在一段密度…</span></a><a class="art" href="network-construction.limitations.html"><span class="no">16</span><span class="t">适用范围与常见误用</span><span class="d">1. 误用：把相关网络的边解释为直接作用或信息通路。→ 正解：相关包含间接关联；偏相关去掉了一部分间接关联，但可能引入对撞偏倚；直接作用需要物理连接证据，方向需要时间顺序或干预证据…</span></a></div></section><section class="block" id="demos"><h2><span class="tag">INTERACTIVE</span>交互可视化</h2><div class="demo" data-demo="brain_threshold"></div><div class="demo" data-demo="symptom"></div></section><section class="block" id="code"><h2><span class="tag">CODE</span>计算实现</h2><p class="small">11 个完整可运行的 Python 示例，每个都给出代码、输出图和解读；可在浏览器中直接运行，或下载 <a href="notebooks/network-construction.ipynb" download>Jupyter Notebook</a> · <a href="notebooks/network-construction.py" download>Python 脚本</a>。</p><div class="gallery"><a class="gcard" href="ex-network-construction-0.html"><span class="thumb"><img src="gallery/network-construction-0-0.png" alt="" loading="lazy"></span><span class="gt">阈值敏感性——同一个相关矩阵，不同绝对阈值下的拓扑指标</span></a><a class="gcard" href="ex-network-construction-1.html"><span class="thumb"><img src="gallery/network-construction-1-0.png" alt="" loading="lazy"></span><span class="gt">保度随机化（双边交换）零模型、z 分数与经验 p 值</span></a><a class="gcard" href="ex-network-construction-2.html"><span class="thumb"><img src="gallery/network-construction-2-0.png" alt="" loading="lazy"></span><span class="gt">置换检验比较两组网络——逐边 FDR 与基于网络的统计（NBS）</span></a><a class="gcard" href="ex-network-construction-3.html"><span class="thumb"><img src="gallery/network-construction-3-0.png" alt="" loading="lazy"></span><span class="gt">bootstrap 边稳定性与病例删除稳定性（偏相关网络）</span></a><a class="gcard" href="ex-network-construction-4.html"><span class="thumb"><img src="gallery/network-construction-4-0.png" alt="" loading="lazy"></span><span class="gt">比例阈值与密度匹配——整体连接强度差异如何“制造”拓扑差异</span></a><a class="gcard" href="ex-network-construction-5.html"><span class="thumb"><img src="gallery/network-construction-5-0.png" alt="" loading="lazy"></span><span class="gt">样本量、Fisher z 置信区间，以及相关与偏相关的差别</span></a><a class="gcard" href="ex-network-construction-6.html"><span class="thumb"><img src="gallery/network-construction-6-0.png" alt="" loading="lazy"></span><span class="gt">从时间序列推断有向边——Granger 因果、条件 GC 与转移熵（高斯情形）</span></a><a class="gcard" href="ex-network-construction-7.html"><span class="thumb"><img src="gallery/network-construction-7-0.png" alt="" loading="lazy"></span><span class="gt">采样网络——随机节点采样、随机边采样与滚雪球采样如何改变度分布与其他指标</span></a><a class="gcard" href="ex-network-construction-8.html"><span class="thumb"><img src="gallery/network-construction-8-0.png" alt="" loading="lazy"></span><span class="gt">边权不确定性向网络指标的传播——块 bootstrap、边入选概率与“指标的均值 ≠ 均值网络的指标”</span></a><a class="gcard" href="ex-network-construction-9.html"><span class="thumb"><img src="gallery/network-construction-9-0.png" alt="" loading="lazy"></span><span class="gt">样本量与功效——单条边的解析计算、整网边恢复的模拟，以及测量信度造成的衰减</span></a><a class="gcard" href="ex-network-construction-10.html"><span class="thumb"><img src="gallery/network-construction-10-0.png" alt="" loading="lazy"></span><span class="gt">比较两张网络——已知节点对应的距离、谱距离、WL 图核，以及基于距离的置换检验</span></a></div></section><section class="block prose" id="related"><h2><span class="tag">Links</span>关联知识</h2><ul>
+<li><a
+href="network-metrics.html">网络结构指标与随机图</a>：本专题检验的各种指标的定义，以及作为最基本零模型的
+ER 随机图。</li>
+<li><a href="network-models.html">小世界与无标度网络模型</a>：小世界系数
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ω</mi><annotation encoding="application/x-tex">\omega</annotation></semantics></math>
+的归一化都依赖零模型；度分布的统计检验。</li>
+<li><a
+href="community-structure.html">社团结构与社区发现</a>：模块度的期望项来自配置模型，模块划分的显著性需要零模型比较。</li>
+<li><a
+href="brain-connectome.html">脑连接组：结构与功能连接</a>：脑图谱、功能连接估计、阈值与头动控制在脑影像中的具体实施。</li>
+<li><a
+href="symptom-networks.html">症状网络与网络精神病学</a>：EBICglasso、中心性、CS
+系数与网络比较检验。</li>
+<li><a
+href="gene-network-inference.html">基因调控网络推断与共表达分析</a>：互信息、WGCNA
+软阈值与推断网络的金标准评估。</li>
+<li><a
+href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a>：不完整相互作用组、度匹配的零模型与网络邻近度的显著性。</li>
+<li><a
+href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a>：滑动窗口连接的有限样本波动与平稳零模型，与本专题的有向边推断、不确定性传播相衔接。</li>
+<li><a
+href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a>：把本专题的检验写进预先确定的分析计划与报告。</li>
+</ul>
+</section><section class="block prose" id="references"><h2><span class="tag">References</span>核心文献</h2><p><strong>零模型</strong></p>
+<ul>
+<li>Maslov S, Sneppen K. Specificity and stability in topology of
+protein networks. <em>Science</em>, 2002, 296: 910–913. DOI: <a
+href="https://doi.org/10.1126/science.1065103">10.1126/science.1065103</a></li>
+<li>Molloy M, Reed B. A critical point for random graphs with a given
+degree sequence. <em>Random Structures &amp; Algorithms</em>, 1995, 6:
+161–180. DOI: <a
+href="https://doi.org/10.1002/rsa.3240060204">10.1002/rsa.3240060204</a></li>
+<li>Fosdick BK, Larremore DB, Nishimura J, Ugander J. Configuring random
+graph models with fixed degree sequences. <em>SIAM Review</em>, 2018,
+60: 315–355. DOI: <a
+href="https://doi.org/10.1137/16M1087175">10.1137/16M1087175</a></li>
+<li>Rubinov M, Sporns O. Weight-conserving characterization of complex
+functional brain networks. <em>NeuroImage</em>, 2011, 56: 2068–2079.
+DOI: <a
+href="https://doi.org/10.1016/j.neuroimage.2011.03.069">10.1016/j.neuroimage.2011.03.069</a></li>
+<li>Zalesky A, Fornito A, Bullmore E. On the use of correlation as a
+measure of network connectivity. <em>NeuroImage</em>, 2012, 60:
+2096–2106. DOI: <a
+href="https://doi.org/10.1016/j.neuroimage.2012.02.001">10.1016/j.neuroimage.2012.02.001</a></li>
+<li>Alexander-Bloch AF, Shou H, Liu S, et al. On testing for spatial
+correspondence between maps of human brain structure and function.
+<em>NeuroImage</em>, 2018, 178: 540–551. DOI: <a
+href="https://doi.org/10.1016/j.neuroimage.2018.05.070">10.1016/j.neuroimage.2018.05.070</a></li>
+<li>Váša F, Mišić B. Null models in network neuroscience. <em>Nature
+Reviews Neuroscience</em>, 2022, 23: 493–504. DOI: <a
+href="https://doi.org/10.1038/s41583-022-00601-9">10.1038/s41583-022-00601-9</a></li>
+</ul>
+<p><strong>连接估计与阈值</strong></p>
+<ul>
+<li>Fisher RA. Frequency distribution of the values of the correlation
+coefficient in samples from an indefinitely large population.
+<em>Biometrika</em>, 1915, 10: 507–521. DOI: <a
+href="https://doi.org/10.2307/2331838">10.2307/2331838</a></li>
+<li>Ledoit O, Wolf M. A well-conditioned estimator for large-dimensional
+covariance matrices. <em>Journal of Multivariate Analysis</em>, 2004,
+88: 365–411. DOI: <a
+href="https://doi.org/10.1016/S0047-259X(03)00096-4">10.1016/S0047-259X(03)00096-4</a></li>
+<li>Friedman J, Hastie T, Tibshirani R. Sparse inverse covariance
+estimation with the graphical lasso. <em>Biostatistics</em>, 2008, 9:
+432–441. DOI: <a
+href="https://doi.org/10.1093/biostatistics/kxm045">10.1093/biostatistics/kxm045</a></li>
+<li>Smith SM, Miller KL, Salimi-Khorshidi G, et al. Network modelling
+methods for FMRI. <em>NeuroImage</em>, 2011, 54: 875–891. DOI: <a
+href="https://doi.org/10.1016/j.neuroimage.2010.08.063">10.1016/j.neuroimage.2010.08.063</a></li>
+<li>van Wijk BCM, Stam CJ, Daffertshofer A. Comparing brain networks of
+different size and connectivity density using graph theory. <em>PLoS
+ONE</em>, 2010, 5: e13701. DOI: <a
+href="https://doi.org/10.1371/journal.pone.0013701">10.1371/journal.pone.0013701</a></li>
+<li>van den Heuvel MP, de Lange SC, Zalesky A, et al. Proportional
+thresholding in resting-state fMRI functional connectivity networks and
+consequences for patient-control connectome studies: issues and
+recommendations. <em>NeuroImage</em>, 2017, 152: 437–449. DOI: <a
+href="https://doi.org/10.1016/j.neuroimage.2017.02.005">10.1016/j.neuroimage.2017.02.005</a></li>
+<li>Tewarie P, van Dellen E, Hillebrand A, Stam CJ. The minimum spanning
+tree: an unbiased method for brain network analysis.
+<em>NeuroImage</em>, 2015, 104: 177–188. DOI: <a
+href="https://doi.org/10.1016/j.neuroimage.2014.10.015">10.1016/j.neuroimage.2014.10.015</a></li>
+</ul>
+<p><strong>统计推断</strong></p>
+<ul>
+<li>Benjamini Y, Hochberg Y. Controlling the false discovery rate: a
+practical and powerful approach to multiple testing. <em>Journal of the
+Royal Statistical Society: Series B</em>, 1995, 57: 289–300. DOI: <a
+href="https://doi.org/10.1111/j.2517-6161.1995.tb02031.x">10.1111/j.2517-6161.1995.tb02031.x</a></li>
+<li>Nichols TE, Holmes AP. Nonparametric permutation tests for
+functional neuroimaging: a primer with examples. <em>Human Brain
+Mapping</em>, 2002, 15: 1–25. DOI: <a
+href="https://doi.org/10.1002/hbm.1058">10.1002/hbm.1058</a></li>
+<li>Zalesky A, Fornito A, Bullmore ET. Network-based statistic:
+identifying differences in brain networks. <em>NeuroImage</em>, 2010,
+53: 1197–1207. DOI: <a
+href="https://doi.org/10.1016/j.neuroimage.2010.06.041">10.1016/j.neuroimage.2010.06.041</a></li>
+<li>Phipson B, Smyth GK. Permutation p-values should never be zero:
+calculating exact p-values when permutations are randomly drawn.
+<em>Statistical Applications in Genetics and Molecular Biology</em>,
+2010, 9. DOI: <a
+href="https://doi.org/10.2202/1544-6115.1585">10.2202/1544-6115.1585</a></li>
+<li>Winkler AM, Ridgway GR, Webster MA, et al. Permutation inference for
+the general linear model. <em>NeuroImage</em>, 2014, 92: 381–397. DOI:
+<a
+href="https://doi.org/10.1016/j.neuroimage.2014.01.060">10.1016/j.neuroimage.2014.01.060</a></li>
+<li>van Borkulo CD, van Bork R, Boschloo L, et al. Comparing network
+structures on three aspects: a permutation test. <em>Psychological
+Methods</em>, 2023, 28: 1273–1285. DOI: <a
+href="https://doi.org/10.1037/met0000476">10.1037/met0000476</a></li>
+</ul>
+<p><strong>有向边推断</strong></p>
+<ul>
+<li>Granger CWJ. Investigating causal relations by econometric models
+and cross-spectral methods. <em>Econometrica</em>, 1969, 37: 424–438.
+DOI: <a href="https://doi.org/10.2307/1912791" target="_blank" rel="noopener">10.2307/1912791</a></li>
+<li>Geweke J. Measurement of linear dependence and feedback between
+multiple time series. <em>Journal of the American Statistical
+Association</em>, 1982, 77: 304–313. DOI: <a
+href="https://doi.org/10.1080/01621459.1982.10477803">10.1080/01621459.1982.10477803</a></li>
+<li>Schreiber T. Measuring information transfer. <em>Physical Review
+Letters</em>, 2000, 85: 461–464. DOI: <a
+href="https://doi.org/10.1103/PhysRevLett.85.461">10.1103/PhysRevLett.85.461</a></li>
+<li>Barnett L, Barrett AB, Seth AK. Granger causality and transfer
+entropy are equivalent for Gaussian variables. <em>Physical Review
+Letters</em>, 2009, 103: 238701. DOI: <a
+href="https://doi.org/10.1103/PhysRevLett.103.238701">10.1103/PhysRevLett.103.238701</a></li>
+<li>Friston KJ, Harrison L, Penny W. Dynamic causal modelling.
+<em>NeuroImage</em>, 2003, 19: 1273–1302. DOI: <a
+href="https://doi.org/10.1016/S1053-8119(03)00202-7">10.1016/S1053-8119(03)00202-7</a></li>
+<li>Friston KJ. Functional and effective connectivity: a review.
+<em>Brain Connectivity</em>, 2011, 1: 13–36. DOI: <a
+href="https://doi.org/10.1089/brain.2011.0008">10.1089/brain.2011.0008</a></li>
+<li>Vicente R, Wibral M, Lindner M, Pipa G. Transfer entropy—a
+model-free measure of effective connectivity for the neurosciences.
+<em>Journal of Computational Neuroscience</em>, 2011, 30: 45–67. DOI: <a
+href="https://doi.org/10.1007/s10827-010-0262-3">10.1007/s10827-010-0262-3</a></li>
+<li>Seth AK, Chorley P, Barnett LC. Granger causality analysis of fMRI
+BOLD signals is invariant to hemodynamic convolution but not
+downsampling. <em>NeuroImage</em>, 2013, 65: 540–555. DOI: <a
+href="https://doi.org/10.1016/j.neuroimage.2012.09.049">10.1016/j.neuroimage.2012.09.049</a></li>
+<li>Seth AK, Barrett AB, Barnett L. Granger causality analysis in
+neuroscience and neuroimaging. <em>Journal of Neuroscience</em>, 2015,
+35: 3293–3297. DOI: <a
+href="https://doi.org/10.1523/JNEUROSCI.4399-14.2015">10.1523/JNEUROSCI.4399-14.2015</a></li>
+</ul>
+<p><strong>采样、测量误差与网络重建</strong></p>
+<ul>
+<li>Stumpf MPH, Wiuf C, May RM. Subnets of scale-free networks are not
+scale-free: sampling properties of networks. <em>PNAS</em>, 2005, 102:
+4221–4224. DOI: <a
+href="https://doi.org/10.1073/pnas.0501179102">10.1073/pnas.0501179102</a></li>
+<li>Han JDJ, Dupuy D, Bertin N, et al. Effect of sampling on topology
+predictions of protein-protein interaction networks. <em>Nature
+Biotechnology</em>, 2005, 23: 839–844. DOI: <a
+href="https://doi.org/10.1038/nbt1116">10.1038/nbt1116</a></li>
+<li>Lee SH, Kim PJ, Jeong H. Statistical properties of sampled networks.
+<em>Physical Review E</em>, 2006, 73: 016102. DOI: <a
+href="https://doi.org/10.1103/PhysRevE.73.016102">10.1103/PhysRevE.73.016102</a></li>
+<li>Kossinets G. Effects of missing data in social networks. <em>Social
+Networks</em>, 2006, 28: 247–268. DOI: <a
+href="https://doi.org/10.1016/j.socnet.2005.07.002">10.1016/j.socnet.2005.07.002</a></li>
+<li>Stumpf MPH, Thorne T, de Silva E, et al. Estimating the size of the
+human interactome. <em>PNAS</em>, 2008, 105: 6959–6964. DOI: <a
+href="https://doi.org/10.1073/pnas.0708078105">10.1073/pnas.0708078105</a></li>
+<li>Newman MEJ. Network structure from rich but noisy data. <em>Nature
+Physics</em>, 2018, 14: 542–545. DOI: <a
+href="https://doi.org/10.1038/s41567-018-0076-1">10.1038/s41567-018-0076-1</a></li>
+<li>Peixoto TP. Reconstructing networks with unknown and heterogeneous
+errors. <em>Physical Review X</em>, 2018, 8: 041011. DOI: <a
+href="https://doi.org/10.1103/PhysRevX.8.041011">10.1103/PhysRevX.8.041011</a></li>
+<li>Peixoto TP. Network reconstruction and community detection from
+dynamics. <em>Physical Review Letters</em>, 2019, 123: 128301. DOI: <a
+href="https://doi.org/10.1103/PhysRevLett.123.128301">10.1103/PhysRevLett.123.128301</a></li>
+</ul>
+<p><strong>网络比较</strong></p>
+<ul>
+<li>Tantardini M, Ieva F, Tajoli L, Piccardi C. Comparing methods for
+comparing networks. <em>Scientific Reports</em>, 2019, 9: 17557. DOI: <a
+href="https://doi.org/10.1038/s41598-019-53708-y">10.1038/s41598-019-53708-y</a></li>
+<li>Wilson RC, Zhu P. A study of graph spectra for comparing graphs and
+trees. <em>Pattern Recognition</em>, 2008, 41: 2833–2841. DOI: <a
+href="https://doi.org/10.1016/j.patcog.2008.03.011">10.1016/j.patcog.2008.03.011</a></li>
+<li>Pržulj N. Biological network comparison using graphlet degree
+distribution. <em>Bioinformatics</em>, 2007, 23: e177–e183. DOI: <a
+href="https://doi.org/10.1093/bioinformatics/btl301">10.1093/bioinformatics/btl301</a></li>
+<li>Yaveroğlu ÖN, Malod-Dognin N, Davis D, et al. Revealing the hidden
+language of complex networks. <em>Scientific Reports</em>, 2014, 4:
+4547. DOI: <a
+href="https://doi.org/10.1038/srep04547">10.1038/srep04547</a></li>
+<li>Koutra D, Shah N, Vogelstein JT, Gallagher B, Faloutsos C. DeltaCon:
+principled massive-graph similarity function with attribution. <em>ACM
+Transactions on Knowledge Discovery from Data</em>, 2016, 10: 1–43. DOI:
+<a href="https://doi.org/10.1145/2824443" target="_blank" rel="noopener">10.1145/2824443</a></li>
+<li>Kriege NM, Johansson FD, Morris C. A survey on graph kernels.
+<em>Applied Network Science</em>, 2020, 5: 6. DOI: <a
+href="https://doi.org/10.1007/s41109-019-0195-3">10.1007/s41109-019-0195-3</a></li>
+<li>Bagrow JP, Bollt EM. An information-theoretic, all-scales approach
+to comparing networks. <em>Applied Network Science</em>, 2019, 4: 45.
+DOI: <a
+href="https://doi.org/10.1007/s41109-019-0156-x">10.1007/s41109-019-0156-x</a></li>
+<li>Hartle H, Klein B, McCabe S, et al. Network comparison and the
+within-ensemble graph distance. <em>Proceedings of the Royal Society
+A</em>, 2020, 476: 20190744. DOI: <a
+href="https://doi.org/10.1098/rspa.2019.0744">10.1098/rspa.2019.0744</a></li>
+</ul>
+<p><strong>样本量、信度与前沿</strong></p>
+<ul>
+<li>Spearman C. The proof and measurement of association between two
+things. <em>American Journal of Psychology</em>, 1904, 15: 72–101. DOI:
+<a href="https://doi.org/10.2307/1412159" target="_blank" rel="noopener">10.2307/1412159</a></li>
+<li>Epskamp S, Fried EI. A tutorial on regularized partial correlation
+networks. <em>Psychological Methods</em>, 2018, 23: 617–634. DOI: <a
+href="https://doi.org/10.1037/met0000167">10.1037/met0000167</a></li>
+<li>Constantin MA, Schuurman NK, Vermunt JK. A general Monte Carlo
+method for sample size analysis in the context of network models.
+<em>Psychological Methods</em>, 2026, 31: 385–405. DOI: <a
+href="https://doi.org/10.1037/met0000555">10.1037/met0000555</a></li>
+<li>Birn RM, Molloy EK, Patriat R, et al. The effect of scan length on
+the reliability of resting-state fMRI connectivity estimates.
+<em>NeuroImage</em>, 2013, 83: 550–558. DOI: <a
+href="https://doi.org/10.1016/j.neuroimage.2013.05.099">10.1016/j.neuroimage.2013.05.099</a></li>
+<li>Battiston F, Cencetti G, Iacopini I, et al. Networks beyond pairwise
+interactions: structure and dynamics. <em>Physics Reports</em>, 2020,
+874: 1–92. DOI: <a
+href="https://doi.org/10.1016/j.physrep.2020.05.004">10.1016/j.physrep.2020.05.004</a></li>
+<li>Dixit A, Parnas O, Li B, et al. Perturb-Seq: dissecting molecular
+circuits with scalable single-cell RNA profiling of pooled genetic
+screens. <em>Cell</em>, 2016, 167: 1853–1866. DOI: <a
+href="https://doi.org/10.1016/j.cell.2016.11.038">10.1016/j.cell.2016.11.038</a></li>
+</ul>
+<p><strong>偏倚、稳定性与综述</strong></p>
+<ul>
+<li>Gillis J, Pavlidis P. The impact of multifunctional genes on “guilt
+by association” analysis. <em>PLoS ONE</em>, 2011, 6: e17258. DOI: <a
+href="https://doi.org/10.1371/journal.pone.0017258">10.1371/journal.pone.0017258</a></li>
+<li>Gillis J, Pavlidis P. “Guilt by association” is the exception rather
+than the rule in gene networks. <em>PLoS Computational Biology</em>,
+2012, 8: e1002444. DOI: <a
+href="https://doi.org/10.1371/journal.pcbi.1002444">10.1371/journal.pcbi.1002444</a></li>
+<li>Luck K, Kim DK, Lambourne L, et al. A reference map of the human
+binary protein interactome. <em>Nature</em>, 2020, 580: 402–408. DOI: <a
+href="https://doi.org/10.1038/s41586-020-2188-x">10.1038/s41586-020-2188-x</a></li>
+<li>Power JD, Barnes KA, Snyder AZ, et al. Spurious but systematic
+correlations in functional connectivity MRI networks arise from subject
+motion. <em>NeuroImage</em>, 2012, 59: 2142–2154. DOI: <a
+href="https://doi.org/10.1016/j.neuroimage.2011.10.018">10.1016/j.neuroimage.2011.10.018</a></li>
+<li>Efron B. Bootstrap methods: another look at the jackknife.
+<em>Annals of Statistics</em>, 1979, 7: 1–26. DOI: <a
+href="https://doi.org/10.1214/aos/1176344552">10.1214/aos/1176344552</a></li>
+<li>Epskamp S, Borsboom D, Fried EI. Estimating psychological networks
+and their accuracy: a tutorial paper. <em>Behavior Research
+Methods</em>, 2018, 50: 195–212. DOI: <a
+href="https://doi.org/10.3758/s13428-017-0862-1">10.3758/s13428-017-0862-1</a></li>
+<li>Noble S, Scheinost D, Constable RT. A decade of test-retest
+reliability of functional connectivity: a systematic review and
+meta-analysis. <em>NeuroImage</em>, 2019, 203: 116157. DOI: <a
+href="https://doi.org/10.1016/j.neuroimage.2019.116157">10.1016/j.neuroimage.2019.116157</a></li>
+<li>Fornito A, Zalesky A, Breakspear M. Graph analysis of the human
+connectome: promise, progress, and pitfalls. <em>NeuroImage</em>, 2013,
+80: 426–444. DOI: <a
+href="https://doi.org/10.1016/j.neuroimage.2013.04.087">10.1016/j.neuroimage.2013.04.087</a></li>
+</ul>
+</section><section class="block" id="data"><h2><span class="tag">Data &amp; tools</span>相关数据与软件</h2><div class="rgrid"><a class="rcard" href="r-nilearn.html" data-dom="brain methods" data-k="nilearn 用于神经影像统计分析与机器学习的 python 库。"><span class="kind">软件/工具包</span><b>Nilearn</b><span class="d">用于神经影像统计分析与机器学习的 Python 库。</span></a><a class="rcard" href="r-schaefer-atlas.html" data-dom="brain" data-k="schaefer 2018 皮层分区 基于静息态功能连接的多分辨率大脑皮层分区。"><span class="kind">脑图谱</span><b>Schaefer 2018 皮层分区</b><span class="d">基于静息态功能连接的多分辨率大脑皮层分区。</span></a><a class="rcard" href="r-aal-atlas.html" data-dom="brain" data-k="aal / aal2 / aal3 图谱 基于 mni 单被试结构像的自动解剖标记分区。"><span class="kind">脑图谱</span><b>AAL / AAL2 / AAL3 图谱</b><span class="d">基于 MNI 单被试结构像的自动解剖标记分区。</span></a><a class="rcard" href="r-brainnetome-atlas.html" data-dom="brain" data-k="brainnetome atlas（脑网络组图谱） 基于连接模式划分的人脑图谱，含皮层与皮层下 246 个亚区。"><span class="kind">脑图谱</span><b>Brainnetome Atlas（脑网络组图谱）</b><span class="d">基于连接模式划分的人脑图谱，含皮层与皮层下 246 个亚区。</span></a><a class="rcard" href="r-networkcomparisontest.html" data-dom="symptom methods" data-k="networkcomparisontest（nct） 用置换检验比较两组网络结构的 r 包。"><span class="kind">软件/工具包</span><b>NetworkComparisonTest（NCT）</b><span class="d">用置换检验比较两组网络结构的 R 包。</span></a><a class="rcard" href="r-graph-tool.html" data-dom="theory methods" data-k="graph-tool 以 c++ 实现核心算法的高性能 python 网络分析库。"><span class="kind">软件/工具包</span><b>graph-tool</b><span class="d">以 C++ 实现核心算法的高性能 Python 网络分析库。</span></a></div></section><section class="block prose" id="resources"><h2><span class="tag">Further</span>延伸资源</h2><div class="table-wrap"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>类型</th>
+<th>资源</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>综述</td>
+<td>Váša &amp; Mišić 2022，<a
+href="https://doi.org/10.1038/s41583-022-00601-9">doi.org/10.1038/s41583-022-00601-9</a></td>
+<td>网络神经科学中零模型的分类与选择，适合作为零模型部分的总纲</td>
+</tr>
+<tr>
+<td>综述</td>
+<td>Fornito, Zalesky &amp; Breakspear 2013，<a
+href="https://doi.org/10.1016/j.neuroimage.2013.04.087">doi.org/10.1016/j.neuroimage.2013.04.087</a></td>
+<td>脑网络构建全流程的陷阱，节点、边、阈值、组间比较逐一讨论</td>
+</tr>
+<tr>
+<td>方法</td>
+<td>Fosdick 等 2018，<a
+href="https://doi.org/10.1137/16M1087175">doi.org/10.1137/16M1087175</a></td>
+<td>配置模型与双边交换抽样的严格讨论，适合需要自己实现零模型时阅读</td>
+</tr>
+<tr>
+<td>教程</td>
+<td>Epskamp, Borsboom &amp; Fried 2018，<a
+href="https://doi.org/10.3758/s13428-017-0862-1">doi.org/10.3758/s13428-017-0862-1</a></td>
+<td>边权 bootstrap、病例删除与 CS 系数的完整示范（开放获取）</td>
+</tr>
+<tr>
+<td>工具</td>
+<td><a href="https://sites.google.com/site/bctnet/" target="_blank" rel="noopener">Brain Connectivity
+Toolbox</a>（MATLAB）/ <a
+href="https://github.com/aestrivex/bctpy">bctpy</a>（Python）</td>
+<td>网络指标与多种零模型（含加权、带符号版本）的实现</td>
+</tr>
+<tr>
+<td>工具</td>
+<td><a
+href="https://netneurotools.readthedocs.io/">netneurotools</a></td>
+<td>Python 工具包，包含空间置换检验等零模型</td>
+</tr>
+<tr>
+<td>工具</td>
+<td>R 包 <a
+href="https://cran.r-project.org/package=bootnet">bootnet</a></td>
+<td>心理网络的估计、bootstrap 与稳定性分析</td>
+</tr>
+<tr>
+<td>教材</td>
+<td>Barabási, <em>Network Science</em>, Ch. 4 The Scale-Free
+Property（4.8 节：生成任意度分布的网络，含配置模型与保度随机化），<a
+href="http://networksciencebook.com/chapter/4">networksciencebook.com/chapter/4</a></td>
+<td>配置模型、完全随机化与保度随机化的图示讲解（CC BY-NC-SA 2.0）；Ch. 3
+Random Networks 给出 ER 零模型的基本性质</td>
+</tr>
+<tr>
+<td>教材</td>
+<td>Fornito A, Zalesky A, Bullmore ET. <em>Fundamentals of Brain Network
+Analysis</em>. Academic Press, 2016</td>
+<td>脑网络中节点与边的定义、连接矩阵、零模型与统计连接组学的系统讲解</td>
+</tr>
+<tr>
+<td>教材</td>
+<td>Newman MEJ. <em>Networks</em>（第 2 版）. Oxford University Press,
+2018</td>
+<td>网络统计量与测量误差的章节讨论误差类型、来源、估计与校正</td>
+</tr>
+<tr>
+<td>综述</td>
+<td>Seth, Barrett &amp; Barnett 2015，<a
+href="https://doi.org/10.1523/JNEUROSCI.4399-14.2015">doi.org/10.1523/JNEUROSCI.4399-14.2015</a></td>
+<td>Granger 因果在神经科学中的使用条件与常见误解，篇幅短，适合入门</td>
+</tr>
+<tr>
+<td>方法</td>
+<td>Tantardini 等 2019，<a
+href="https://doi.org/10.1038/s41598-019-53708-y">doi.org/10.1038/s41598-019-53708-y</a></td>
+<td>网络比较方法的分类（节点是否对应）与在合成网络上的系统比较</td>
+</tr>
+<tr>
+<td>工具</td>
+<td><a href="https://netrd.readthedocs.io/" target="_blank" rel="noopener">netrd</a>（Python）</td>
+<td>实现了数十种图距离与从时间序列重建网络的方法，可用于比较不同距离的行为</td>
+</tr>
+<tr>
+<td>工具</td>
+<td><a
+href="https://graph-tool.skewed.de/">graph-tool</a>（Python）</td>
+<td>包含 Peixoto 的贝叶斯网络重建与随机块模型推断</td>
+</tr>
+<tr>
+<td>数据</td>
+<td><a href="https://thebiogrid.org/" target="_blank" rel="noopener">BioGRID</a> / <a
+href="https://string-db.org/">STRING</a></td>
+<td>两类不同性质的相互作用数据库：前者为整理的实验证据，后者为整合的功能关联得分；可用来比较构网选择对结论的影响</td>
+</tr>
+</tbody>
+</table></div>
+</section><section class="block prose" id="questions"><h2><span class="tag">Open questions</span>开放问题</h2><ol type="1">
+<li>在你的数据中，“边”属于物理连接、统计关联、功能关联还是有向关系？如果要把它换成另一类边（例如从功能连接换成结构连接，或从文献整理的相互作用换成系统筛选数据），你预期哪些结论会改变？</li>
+<li>对同一个网络指标，ER、保度随机化和空间约束零模型可能给出相互矛盾的结论。你会怎样预先规定零模型，并在结果不一致时如何解读？</li>
+<li>当样本量只够估计一个稀疏的正则化网络时，“这条边不存在”的证据强度有多大？有没有办法区分“条件独立”与“功效不足”？</li>
+<li>研究偏倚、头动和批次效应都是与生物学变量相关的系统误差。在你熟悉的数据类型中，哪一种系统误差最可能被误读为生物学发现？可以设计什么样的阴性对照来检验？</li>
+<li>你的网络只观测了真实系统的一部分（部分基因、部分脑区、部分条目）。若采样比例减半，你的主要结论会如何变化？能否用进一步删除节点或边的模拟来回答？</li>
+<li>若要声称“A 脑区驱动 B
+脑区”，你的数据的采样间隔、测量噪声与可能遗漏的脑区是否允许这一结论？有哪些干预或对照分析可以加强它？</li>
+</ol>
+</section></article><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script><script src="assets/js/demos.js"></script></body></html>

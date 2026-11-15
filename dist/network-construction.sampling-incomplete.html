@@ -1,0 +1,75 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>采样网络与不完整观测 · 生物医学网络科学</title><meta name="description" content="网络构建与统计验证 · 采样网络与不完整观测"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-theory"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html" aria-current="page">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory" open><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a><ol class="sub"><li><a href="network-construction.nodes-and-edges.html"><span class="n">01</span>节点与边的定义</a></li><li><a href="network-construction.edge-estimation.html"><span class="n">02</span>连接强度的估计</a></li><li><a href="network-construction.directed-edges.html"><span class="n">03</span>从时间序列推断有向边</a></li><li><a href="network-construction.thresholding.html"><span class="n">04</span>阈值、加权与稀疏化</a></li><li><a href="network-construction.uncertainty-propagation.html"><span class="n">05</span>边权不确定性向网络指标的传播</a></li><li><a href="network-construction.null-models.html"><span class="n">06</span>零模型与空模型</a></li><li><a href="network-construction.statistical-inference.html"><span class="n">07</span>统计推断与多重比较</a></li><li><a href="network-construction.network-distances.html"><span class="n">08</span>网络之间的距离与相似性</a></li><li><a href="network-construction.bias-and-missingness.html"><span class="n">09</span>测量误差、缺失与偏倚</a></li><li><a href="network-construction.sampling-incomplete.html" aria-current="page"><span class="n">10</span>采样网络与不完整观测</a></li><li><a href="network-construction.stability-reproducibility.html"><span class="n">11</span>稳定性与可重复性</a></li><li><a href="network-construction.sample-size-power.html"><span class="n">12</span>样本量与统计功效</a></li><li><a href="network-construction.derivations.html"><span class="n">13</span>数学推导与算法</a></li><li><a href="network-construction.frontiers.html"><span class="n">14</span>研究前沿与开放问题</a></li><li><a href="network-construction.biomedical.html"><span class="n">15</span>生物医学应用</a></li><li><a href="network-construction.limitations.html"><span class="n">16</span>适用范围与常见误用</a></li></ol></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><div class="lec-grid"><article style="min-width:0"><header class="doc-head"><nav class="crumb"><a href="d-theory.html">网络基础理论</a> <span class="sep">/</span> <a href="network-construction.html">网络构建与统计验证</a></nav><div class="eyebrow" style="margin-top:14px"><b>网络构建与统计验证</b><span>10 / 16</span></div><h1>采样网络与不完整观测</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="network-construction.html">网络构建与统计验证</a></dd></div><div><dt>阅读</dt><dd>约 4 分钟</dd></div></dl></header><section class="block prose" id="notes"><p><a
+href="network-construction.bias-and-missingness.html">测量误差、缺失与偏倚</a>
+讨论的是缺失“偏向哪里”；这里讨论缺失“如何改变网络指标”。几乎所有生物医学网络都是真实网络的一个样本：相互作用组只测了部分蛋白与蛋白对，连接组只纳入了部分脑区或神经元，症状网络只纳入了量表中的条目。Newman《Networks》（第
+2
+版）专门讨论了网络数据中测量误差的类型、来源以及估计与校正方法，其中最基本的两类是漏检的边（假阴性）与多出的边（假阳性）。</p>
+<h3 id="三种采样方式">三种采样方式</h3>
+<div class="callout-def">
+<p><strong>随机节点采样</strong>：每个节点以概率
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+被纳入，网络为被纳入节点的诱导子图。对应“只研究了一部分基因或蛋白”。</p>
+<p><strong>随机边采样</strong>：每条边以概率
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+被检测到，节点全部保留。对应实验灵敏度有限、每次筛选只能捕获部分相互作用。</p>
+<p><strong>滚雪球采样</strong>（snowball
+sampling）：从少数种子节点出发，沿边逐层纳入邻居。对应“从已知疾病基因或药物靶点出发，查找其相互作用伙伴”。</p>
+</div>
+<p><strong>度分布</strong>。在随机节点采样下，原来度为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+的节点被保留后，其邻居各自以概率
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+被保留，观测度
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>k</mi><mo>′</mo></msup><mo>∼</mo><mrow><mi mathvariant="normal">B</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">l</mi></mrow><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo>,</mo><mi>p</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">k&#39;\sim\mathrm{Binomial}(k,p)</annotation></semantics></math>。于是平均度按
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+缩小，而观测度分布是原分布的二项“稀释”；用生成函数写为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>G</mi><mn>0</mn><mo>′</mo></msubsup><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mi>G</mi><mn>0</mn></msub><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>p</mi><mo>+</mo><mi>p</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">G&#39;_0(x)=G_0(1-p+px)</annotation></semantics></math>（推导见
+<a
+href="network-construction.derivations.html">数学推导与算法</a>）。随机边采样下每个节点的度同样按
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">B</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">l</mi></mrow><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo>,</mo><mi>q</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{Binomial}(k,q)</annotation></semantics></math>
+稀释。泊松分布经过二项稀释仍是泊松分布，因此 ER 随机图的子网仍是 ER
+图；幂律分布则不具有这种封闭性。Stumpf、Wiuf 与 May（2005,
+<em>PNAS</em>）由此指出，只有当全网与随机子网的度分布属于同一个分布族时，才能从子网外推全网的性质，而无标度分布不满足这一条件。</p>
+<p><strong>反方向的问题同样存在</strong>。Han 等（2005, <em>Nature
+Biotechnology</em>）对随机、指数、幂律和截断正态四种度分布的理论网络按当时酵母双杂交的覆盖率部分采样，得到的子网与已有的部分相互作用组图谱几乎无法区分；因此部分图谱的无标度外观不能可靠地外推到完整相互作用组（参见
+<a
+href="network-models.identification.html">无标度的统计判别</a>）。</p>
+<p><strong>其他指标</strong>。Lee、Kim 与 Jeong（2006, <em>Physical
+Review
+E</em>）系统比较了节点、边和滚雪球三种采样对度分布、介数分布、平均路径长度、同配性和聚集系数的影响，发现同一性质在不同采样方式下的偏差方向不同。几条可以手算验证的规律：</p>
+<ul>
+<li>全局传递性（三角形数 × 3 /
+连通三元组数）在随机节点采样下期望近似不变，因为三角形与三元组都需要 3
+个节点同时被保留；在随机边采样下约按
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+缩小，因为三角形需要 3 条边，三元组只需要 2 条。</li>
+<li>采样比例低时，节点采样会把网络打碎：代码示例中，在一个平均度为 6
+的重尾网络上保留 20%
+的节点，约三分之一的被保留节点成为孤立点，最大连通分支只含约一半的节点，基于最短路径的指标随之失去意义。</li>
+<li>节点在子网中的度与其真实度的相关随采样比例下降而迅速减弱（示例中
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mn>0.5</mn></mrow><annotation encoding="application/x-tex">p=0.5</annotation></semantics></math>
+时约
+0.95，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mn>0.2</mn></mrow><annotation encoding="application/x-tex">p=0.2</annotation></semantics></math>
+时约 0.3），按观测度识别“枢纽”变得不可靠。</li>
+<li>滚雪球采样偏向高度节点：被纳入的节点平均真实度明显高于全网平均（示例中约
+9.9 对
+6.0）。以疾病基因为种子扩展得到的局部网络，会系统性地高估枢纽的比例。</li>
+</ul>
+<div class="callout-bio">
+<p><strong>估计人类相互作用组的大小。</strong> Stumpf 等（2008,
+<em>PNAS</em>）利用子网采样理论，从多个真核生物的部分相互作用数据外推完整网络的边数，估计人类蛋白质相互作用约有
+65
+万对，比果蝇的大一个数量级。这一估计依赖随机节点采样模型与数据质量的假设，但它说明现有数据库只覆盖了真实相互作用组的一部分。</p>
+</div>
+<h3 id="修正与稳健化">修正与稳健化</h3>
+<ol type="1">
+<li><strong>按采样过程建模</strong>。若采样机制已知（例如每个蛋白对被检测的概率），可以把它写进似然。Newman（2018,
+<em>Nature
+Physics</em>）提出用期望最大化（EM）算法，从对同一网络的多次含噪测量中同时估计真实网络和测量的真/假阳性率；Peixoto（2018,
+<em>Physical Review
+X</em>）用贝叶斯方法在误差率未知且因边而异时重建网络。</li>
+<li><strong>敏感性分析</strong>。在已观测网络上进一步随机删除节点或边，观察结论随采样比例的变化趋势；若结论在删除
+10%–20% 的边后即消失，它很可能也对尚未观测的边敏感。</li>
+<li><strong>边界设定</strong>。Kossinets（2006, <em>Social
+Networks</em>）讨论了边界设定、无应答等缺失机制对社会网络统计量的影响；生物医学中纳入哪些基因、脑区或条目同样是采样决定，应写明理由。比率型指标（传递性、同配系数）通常比平均度这类广延量受采样影响小，但仍需检验。</li>
+</ol>
+</section><section class="block related-box"><h2>继续阅读</h2><ul><li>交互可视化：<a href="lab.html#brain_threshold">脑网络阈值敏感性</a>、<a href="lab.html#symptom">相关与偏相关症状网络</a></li><li>代码示例：<a href="ex-network-construction-0.html">阈值敏感性——同一个相关矩阵，不同绝对阈值下的拓扑指标</a>、<a href="ex-network-construction-1.html">保度随机化（双边交换）零模型、z 分数与经验 p 值</a>、<a href="ex-network-construction-2.html">置换检验比较两组网络——逐边 FDR 与基于网络的统计（NBS）</a>、<a href="ex-network-construction-3.html">bootstrap 边稳定性与病例删除稳定性（偏相关网络）</a></li></ul></section><nav class="pager"><a href="network-construction.bias-and-missingness.html"><small>上一页</small>测量误差、缺失与偏倚</a><a href="network-construction.stability-reproducibility.html"><small>下一页</small>稳定性与可重复性</a></nav></article><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

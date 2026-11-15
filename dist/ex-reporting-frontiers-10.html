@@ -1,0 +1,179 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>节点嵌入——谱嵌入、node2vec 式随机游走嵌入与简单基线的链接预测比较 · 生物医学网络科学</title><meta name="description" content="结果呈现与研究前沿 · 代码示例：节点嵌入——谱嵌入、node2vec 式随机游走嵌入与简单基线的链接预测比较"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-methods"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html" aria-current="page">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods" open><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a><ol class="sub"><li><a href="reporting-frontiers.figures.html"><span class="n">01</span>研究结果的图表呈现</a></li><li><a href="reporting-frontiers.network-visualization.html"><span class="n">02</span>网络可视化：原则与常见错误</a></li><li><a href="reporting-frontiers.report-structure.html"><span class="n">03</span>科学报告的结构与要点</a></li><li><a href="reporting-frontiers.cross-cutting-themes.html"><span class="n">04</span>贯穿网络科学的五条主线</a></li><li><a href="reporting-frontiers.higher-order.html"><span class="n">05</span>高阶相互作用：超图与单纯复形</a></li><li><a href="reporting-frontiers.topological-data-analysis.html"><span class="n">06</span>拓扑数据分析与持续同调入门</a></li><li><a href="reporting-frontiers.temporal-networks.html"><span class="n">07</span>时间网络</a></li><li><a href="reporting-frontiers.multilayer-networks.html"><span class="n">08</span>多层与相互依赖网络</a></li><li><a href="reporting-frontiers.network-embedding.html"><span class="n">09</span>网络表示学习：谱嵌入与随机游走嵌入</a></li><li><a href="reporting-frontiers.graph-neural-networks.html"><span class="n">10</span>图神经网络</a></li><li><a href="reporting-frontiers.interpretability-causality.html"><span class="n">11</span>网络科学中的可解释性与因果</a></li><li><a href="reporting-frontiers.frontiers.html"><span class="n">12</span>研究前沿与开放问题</a></li><li><a href="reporting-frontiers.derivations.html"><span class="n">13</span>数学推导与算法</a></li><li><a href="reporting-frontiers.biomedical.html"><span class="n">14</span>生物医学应用</a></li><li><a href="reporting-frontiers.limitations.html"><span class="n">15</span>适用范围与常见误用</a></li></ol></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="code.html">代码库</a> <span class="sep">/</span> <a href="code.html#methods">计算方法与研究规范</a> <span class="sep">/</span> <a href="reporting-frontiers.html">结果呈现与研究前沿</a></nav><div class="eyebrow" style="margin-top:14px"><b>Example</b><span>11 / 13</span></div><h1>节点嵌入——谱嵌入、node2vec 式随机游走嵌入与简单基线的链接预测比较</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="reporting-frontiers.html">结果呈现与研究前沿</a></dd></div><div><dt>下载</dt><dd><a href="notebooks/reporting-frontiers.ipynb" download>Notebook</a> · <a href="notebooks/reporting-frontiers.py" download>.py</a></dd></div></dl></header><section class="block prose"><p>从空手道网络中随机隐藏 15%
+的边作为测试正例，并抽同样数量的非边作为负例；只在剩余网络上学习。 (1)
+拉普拉斯特征映射：对称归一化拉普拉斯最小的非零特征向量作为 d 维坐标；
+(2) node2vec 式嵌入：二阶有偏随机游走（返回参数 p、进出参数
+q），统计窗口内共现， 做正点互信息（PPMI）矩阵并截断 SVD——这与
+DeepWalk/skip-gram 的矩阵分解解释相对应（Qiu 等 2018）； (3)
+基线：共同邻居数、Adamic–Adar 指数。打分用嵌入向量的内积，评价用 AUC。
+解读：比较的是 10 次随机划分的均值 ±
+标准差；方法之间的差距要和划分间的波动对照着看。
+任何嵌入方法都要和共同邻居这类无需训练的基线比较，且测试边不能参与嵌入的学习（否则就是泄漏）。</p>
+</section><section class="block"><h2><span class="tag">Output</span>输出图</h2><div class="ex-figs"><img src="gallery/reporting-frontiers-10-0.png" alt="节点嵌入——谱嵌入、node2vec 式随机游走嵌入与简单基线的链接预测比较：输出图 1" loading="lazy"></div></section><section class="block"><h2><span class="tag">Output</span>文字输出</h2><pre class="ex-out">每次划分：测试正例 11 条、负例 11 条；共 10 次划分
+谱嵌入（内积）                      AUC = 0.650 ± 0.126
+node2vec 式 PPMI-SVD（内积）      AUC = 0.650 ± 0.085
+共同邻居                         AUC = 0.660 ± 0.107
+Adamic–Adar                  AUC = 0.697 ± 0.104</pre></section><section class="block prose"><h2><span class="tag">Code</span>代码</h2><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 从空手道网络中随机隐藏 15% 的边作为测试正例，并抽同样数量的非边作为负例；只在剩余网络上学习。</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># (1) 拉普拉斯特征映射：对称归一化拉普拉斯最小的非零特征向量作为 d 维坐标；</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># (2) node2vec 式嵌入：二阶有偏随机游走（返回参数 p、进出参数 q），统计窗口内共现，</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">#     做正点互信息（PPMI）矩阵并截断 SVD——这与 DeepWalk/skip-gram 的矩阵分解解释相对应（Qiu 等 2018）；</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># (3) 基线：共同邻居数、Adamic–Adar 指数。打分用嵌入向量的内积，评价用 AUC。</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># 解读：比较的是 10 次随机划分的均值 ± 标准差；方法之间的差距要和划分间的波动对照着看。</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 任何嵌入方法都要和共同邻居这类无需训练的基线比较，且测试边不能参与嵌入的学习（否则就是泄漏）。</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> networkx <span class="im">as</span> nx</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> auc(pos, neg):</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    pos, neg <span class="op">=</span> np.asarray(pos), np.asarray(neg)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (np.<span class="bu">sum</span>(pos[:, <span class="va">None</span>] <span class="op">&gt;</span> neg[<span class="va">None</span>, :]) <span class="op">+</span> <span class="fl">0.5</span> <span class="op">*</span> np.<span class="bu">sum</span>(pos[:, <span class="va">None</span>] <span class="op">==</span> neg[<span class="va">None</span>, :])) <span class="op">/</span> (<span class="bu">len</span>(pos) <span class="op">*</span> <span class="bu">len</span>(neg))</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> node2vec_walks(G, num_walks, length, p, q, rng):</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    nbrs <span class="op">=</span> {v: <span class="bu">list</span>(G.neighbors(v)) <span class="cf">for</span> v <span class="kw">in</span> G}</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    walks <span class="op">=</span> []</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(num_walks):</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> s <span class="kw">in</span> rng.permutation(<span class="bu">list</span>(G.nodes())):</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>            walk <span class="op">=</span> [s]</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>            <span class="cf">while</span> <span class="bu">len</span>(walk) <span class="op">&lt;</span> length <span class="kw">and</span> nbrs[walk[<span class="op">-</span><span class="dv">1</span>]]:</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>                cur <span class="op">=</span> walk[<span class="op">-</span><span class="dv">1</span>]</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>                <span class="cf">if</span> <span class="bu">len</span>(walk) <span class="op">==</span> <span class="dv">1</span>:</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>                    walk.append(rng.choice(nbrs[cur]))<span class="op">;</span> <span class="cf">continue</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>                prev <span class="op">=</span> walk[<span class="op">-</span><span class="dv">2</span>]</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>                w <span class="op">=</span> np.array([<span class="dv">1</span> <span class="op">/</span> p <span class="cf">if</span> x <span class="op">==</span> prev <span class="cf">else</span> (<span class="fl">1.0</span> <span class="cf">if</span> G.has_edge(x, prev) <span class="cf">else</span> <span class="dv">1</span> <span class="op">/</span> q) <span class="cf">for</span> x <span class="kw">in</span> nbrs[cur]])</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>                walk.append(nbrs[cur][rng.choice(<span class="bu">len</span>(w), p<span class="op">=</span>w <span class="op">/</span> w.<span class="bu">sum</span>())])</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>            walks.append(walk)</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> walks</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> ppmi_svd_embedding(G, dim, rng, p<span class="op">=</span><span class="fl">1.0</span>, q<span class="op">=</span><span class="fl">1.0</span>, window<span class="op">=</span><span class="dv">3</span>):</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>    n <span class="op">=</span> G.number_of_nodes()</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>    C <span class="op">=</span> np.zeros((n, n))</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> walk <span class="kw">in</span> node2vec_walks(G, <span class="dv">20</span>, <span class="dv">20</span>, p, q, rng):</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> i, u <span class="kw">in</span> <span class="bu">enumerate</span>(walk):</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> v <span class="kw">in</span> walk[<span class="bu">max</span>(<span class="dv">0</span>, i <span class="op">-</span> window): i] <span class="op">+</span> walk[i <span class="op">+</span> <span class="dv">1</span>: i <span class="op">+</span> <span class="dv">1</span> <span class="op">+</span> window]:</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>                C[u, v] <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>    total <span class="op">=</span> C.<span class="bu">sum</span>()<span class="op">;</span> row <span class="op">=</span> C.<span class="bu">sum</span>(<span class="dv">1</span>, keepdims<span class="op">=</span><span class="va">True</span>)<span class="op">;</span> col <span class="op">=</span> C.<span class="bu">sum</span>(<span class="dv">0</span>, keepdims<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> np.errstate(divide<span class="op">=</span><span class="st">&quot;ignore&quot;</span>, invalid<span class="op">=</span><span class="st">&quot;ignore&quot;</span>):</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>        pmi <span class="op">=</span> np.log(C <span class="op">*</span> total <span class="op">/</span> (row <span class="op">*</span> col))</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>    M <span class="op">=</span> np.where(np.isfinite(pmi) <span class="op">&amp;</span> (pmi <span class="op">&gt;</span> <span class="dv">0</span>), pmi, <span class="fl">0.0</span>)</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>    U, S, _ <span class="op">=</span> np.linalg.svd(M)</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> U[:, :dim] <span class="op">*</span> np.sqrt(S[:dim])</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> spectral_embedding(G, dim):</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>    L <span class="op">=</span> nx.normalized_laplacian_matrix(G, nodelist<span class="op">=</span><span class="bu">range</span>(G.number_of_nodes())).toarray()</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>    vals, vecs <span class="op">=</span> np.linalg.eigh(L)</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> vecs[:, <span class="dv">1</span>:dim <span class="op">+</span> <span class="dv">1</span>]</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>G <span class="op">=</span> nx.karate_club_graph()</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>edges, non_edges <span class="op">=</span> <span class="bu">list</span>(G.edges()), <span class="bu">list</span>(nx.non_edges(G))</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>results <span class="op">=</span> {k: [] <span class="cf">for</span> k <span class="kw">in</span> [<span class="st">&quot;谱嵌入（内积）&quot;</span>, <span class="st">&quot;node2vec 式 PPMI-SVD（内积）&quot;</span>, <span class="st">&quot;共同邻居&quot;</span>, <span class="st">&quot;Adamic–Adar&quot;</span>]}</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> split <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span>):                                   <span class="co"># 10 次随机划分：单次划分的测试边太少，波动很大</span></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>    rng <span class="op">=</span> np.random.default_rng(split)</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>    test_pos <span class="op">=</span> [edges[i] <span class="cf">for</span> i <span class="kw">in</span> rng.choice(<span class="bu">len</span>(edges), <span class="bu">int</span>(<span class="fl">0.15</span> <span class="op">*</span> <span class="bu">len</span>(edges)), replace<span class="op">=</span><span class="va">False</span>)]</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>    test_neg <span class="op">=</span> [non_edges[i] <span class="cf">for</span> i <span class="kw">in</span> rng.choice(<span class="bu">len</span>(non_edges), <span class="bu">len</span>(test_pos), replace<span class="op">=</span><span class="va">False</span>)]</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>    G_train <span class="op">=</span> G.copy()<span class="op">;</span> G_train.remove_edges_from(test_pos)</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>    Z_spec <span class="op">=</span> spectral_embedding(G_train, <span class="dv">4</span>)</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>    Z_n2v <span class="op">=</span> ppmi_svd_embedding(G_train, <span class="dv">8</span>, rng, p<span class="op">=</span><span class="fl">1.0</span>, q<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>    scores <span class="op">=</span> {</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;谱嵌入（内积）&quot;</span>: <span class="kw">lambda</span> u, v: Z_spec[u] <span class="op">@</span> Z_spec[v],</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;node2vec 式 PPMI-SVD（内积）&quot;</span>: <span class="kw">lambda</span> u, v: Z_n2v[u] <span class="op">@</span> Z_n2v[v],</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;共同邻居&quot;</span>: <span class="kw">lambda</span> u, v: <span class="bu">len</span>(<span class="bu">list</span>(nx.common_neighbors(G_train, u, v))),</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;Adamic–Adar&quot;</span>: <span class="kw">lambda</span> u, v: <span class="bu">next</span>(nx.adamic_adar_index(G_train, [(u, v)]))[<span class="dv">2</span>],</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> name, f <span class="kw">in</span> scores.items():</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>        results[name].append(auc([f(u, v) <span class="cf">for</span> u, v <span class="kw">in</span> test_pos], [f(u, v) <span class="cf">for</span> u, v <span class="kw">in</span> test_neg]))</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;每次划分：测试正例 </span><span class="sc">{</span><span class="bu">len</span>(test_pos)<span class="sc">}</span><span class="ss"> 条、负例 </span><span class="sc">{</span><span class="bu">len</span>(test_neg)<span class="sc">}</span><span class="ss"> 条；共 10 次划分&quot;</span>)</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> name, r <span class="kw">in</span> results.items():</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="sc">{</span>name<span class="sc">:28s}</span><span class="ss"> AUC = </span><span class="sc">{</span>np<span class="sc">.</span>mean(r)<span class="sc">:.3f}</span><span class="ss"> ± </span><span class="sc">{</span>np<span class="sc">.</span>std(r)<span class="sc">:.3f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="co"># 作图：10 次随机划分的 AUC（点）与均值（横线）</span></span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="fl">6.4</span>, <span class="fl">4.2</span>))</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>en <span class="op">=</span> [<span class="st">&quot;spectral</span><span class="ch">\n</span><span class="st">embedding&quot;</span>, <span class="st">&quot;node2vec-style</span><span class="ch">\n</span><span class="st">PPMI-SVD&quot;</span>, <span class="st">&quot;common</span><span class="ch">\n</span><span class="st">neighbors&quot;</span>, <span class="st">&quot;Adamic-Adar&quot;</span>]</span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> j, r <span class="kw">in</span> <span class="bu">enumerate</span>(results.values()):</span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>    ax.plot(np.full(<span class="dv">10</span>, j) <span class="op">+</span> np.linspace(<span class="op">-</span><span class="fl">0.15</span>, <span class="fl">0.15</span>, <span class="dv">10</span>), r, <span class="st">&quot;o&quot;</span>, alpha<span class="op">=</span><span class="fl">0.6</span>, ms<span class="op">=</span><span class="dv">5</span>)</span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>    ax.hlines(np.mean(r), j <span class="op">-</span> <span class="fl">0.25</span>, j <span class="op">+</span> <span class="fl">0.25</span>, color<span class="op">=</span><span class="st">&quot;k&quot;</span>, lw<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>ax.axhline(<span class="fl">0.5</span>, color<span class="op">=</span><span class="st">&quot;gray&quot;</span>, ls<span class="op">=</span><span class="st">&quot;--&quot;</span>, label<span class="op">=</span><span class="st">&quot;chance&quot;</span>)</span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>ax.set_xticks(<span class="bu">range</span>(<span class="dv">4</span>))<span class="op">;</span> ax.set_xticklabels(en)<span class="op">;</span> ax.set_ylabel(<span class="st">&quot;link-prediction AUC&quot;</span>)<span class="op">;</span> ax.legend(fontsize<span class="op">=</span><span class="dv">8</span>)</span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">&quot;Split-to-split spread is as large as method differences&quot;</span>, fontsize<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()<span class="op">;</span> plt.show()</span></code></pre></div>
+</section><section class="block"><h2><span class="tag">Run</span>在浏览器中运行</h2><p class="small">首次加载 Python 环境约需 20–40 秒；可以修改参数后重新运行。</p><div class="cell"><div class="cell-head"><h3>节点嵌入——谱嵌入、node2vec 式随机游走嵌入与简单基线的链接预测比较</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea id="reporting-frontiers-cell10" rows="30" spellcheck="false" aria-label="节点嵌入——谱嵌入、node2vec 式随机游走嵌入与简单基线的链接预测比较 代码"># 从空手道网络中随机隐藏 15% 的边作为测试正例，并抽同样数量的非边作为负例；只在剩余网络上学习。
+# (1) 拉普拉斯特征映射：对称归一化拉普拉斯最小的非零特征向量作为 d 维坐标；
+# (2) node2vec 式嵌入：二阶有偏随机游走（返回参数 p、进出参数 q），统计窗口内共现，
+#     做正点互信息（PPMI）矩阵并截断 SVD——这与 DeepWalk/skip-gram 的矩阵分解解释相对应（Qiu 等 2018）；
+# (3) 基线：共同邻居数、Adamic–Adar 指数。打分用嵌入向量的内积，评价用 AUC。
+# 解读：比较的是 10 次随机划分的均值 ± 标准差；方法之间的差距要和划分间的波动对照着看。
+# 任何嵌入方法都要和共同邻居这类无需训练的基线比较，且测试边不能参与嵌入的学习（否则就是泄漏）。
+import numpy as np
+import networkx as nx
+
+def auc(pos, neg):
+    pos, neg = np.asarray(pos), np.asarray(neg)
+    return (np.sum(pos[:, None] &gt; neg[None, :]) + 0.5 * np.sum(pos[:, None] == neg[None, :])) / (len(pos) * len(neg))
+
+def node2vec_walks(G, num_walks, length, p, q, rng):
+    nbrs = {v: list(G.neighbors(v)) for v in G}
+    walks = []
+    for _ in range(num_walks):
+        for s in rng.permutation(list(G.nodes())):
+            walk = [s]
+            while len(walk) &lt; length and nbrs[walk[-1]]:
+                cur = walk[-1]
+                if len(walk) == 1:
+                    walk.append(rng.choice(nbrs[cur])); continue
+                prev = walk[-2]
+                w = np.array([1 / p if x == prev else (1.0 if G.has_edge(x, prev) else 1 / q) for x in nbrs[cur]])
+                walk.append(nbrs[cur][rng.choice(len(w), p=w / w.sum())])
+            walks.append(walk)
+    return walks
+
+def ppmi_svd_embedding(G, dim, rng, p=1.0, q=1.0, window=3):
+    n = G.number_of_nodes()
+    C = np.zeros((n, n))
+    for walk in node2vec_walks(G, 20, 20, p, q, rng):
+        for i, u in enumerate(walk):
+            for v in walk[max(0, i - window): i] + walk[i + 1: i + 1 + window]:
+                C[u, v] += 1
+    total = C.sum(); row = C.sum(1, keepdims=True); col = C.sum(0, keepdims=True)
+    with np.errstate(divide=&quot;ignore&quot;, invalid=&quot;ignore&quot;):
+        pmi = np.log(C * total / (row * col))
+    M = np.where(np.isfinite(pmi) &amp; (pmi &gt; 0), pmi, 0.0)
+    U, S, _ = np.linalg.svd(M)
+    return U[:, :dim] * np.sqrt(S[:dim])
+
+def spectral_embedding(G, dim):
+    L = nx.normalized_laplacian_matrix(G, nodelist=range(G.number_of_nodes())).toarray()
+    vals, vecs = np.linalg.eigh(L)
+    return vecs[:, 1:dim + 1]
+
+G = nx.karate_club_graph()
+edges, non_edges = list(G.edges()), list(nx.non_edges(G))
+results = {k: [] for k in [&quot;谱嵌入（内积）&quot;, &quot;node2vec 式 PPMI-SVD（内积）&quot;, &quot;共同邻居&quot;, &quot;Adamic–Adar&quot;]}
+for split in range(10):                                   # 10 次随机划分：单次划分的测试边太少，波动很大
+    rng = np.random.default_rng(split)
+    test_pos = [edges[i] for i in rng.choice(len(edges), int(0.15 * len(edges)), replace=False)]
+    test_neg = [non_edges[i] for i in rng.choice(len(non_edges), len(test_pos), replace=False)]
+    G_train = G.copy(); G_train.remove_edges_from(test_pos)
+    Z_spec = spectral_embedding(G_train, 4)
+    Z_n2v = ppmi_svd_embedding(G_train, 8, rng, p=1.0, q=0.5)
+    scores = {
+        &quot;谱嵌入（内积）&quot;: lambda u, v: Z_spec[u] @ Z_spec[v],
+        &quot;node2vec 式 PPMI-SVD（内积）&quot;: lambda u, v: Z_n2v[u] @ Z_n2v[v],
+        &quot;共同邻居&quot;: lambda u, v: len(list(nx.common_neighbors(G_train, u, v))),
+        &quot;Adamic–Adar&quot;: lambda u, v: next(nx.adamic_adar_index(G_train, [(u, v)]))[2],
+    }
+    for name, f in scores.items():
+        results[name].append(auc([f(u, v) for u, v in test_pos], [f(u, v) for u, v in test_neg]))
+print(f&quot;每次划分：测试正例 {len(test_pos)} 条、负例 {len(test_neg)} 条；共 10 次划分&quot;)
+for name, r in results.items():
+    print(f&quot;{name:28s} AUC = {np.mean(r):.3f} ± {np.std(r):.3f}&quot;)
+
+# 作图：10 次随机划分的 AUC（点）与均值（横线）
+import matplotlib.pyplot as plt
+fig, ax = plt.subplots(figsize=(6.4, 4.2))
+en = [&quot;spectral\nembedding&quot;, &quot;node2vec-style\nPPMI-SVD&quot;, &quot;common\nneighbors&quot;, &quot;Adamic-Adar&quot;]
+for j, r in enumerate(results.values()):
+    ax.plot(np.full(10, j) + np.linspace(-0.15, 0.15, 10), r, &quot;o&quot;, alpha=0.6, ms=5)
+    ax.hlines(np.mean(r), j - 0.25, j + 0.25, color=&quot;k&quot;, lw=2)
+ax.axhline(0.5, color=&quot;gray&quot;, ls=&quot;--&quot;, label=&quot;chance&quot;)
+ax.set_xticks(range(4)); ax.set_xticklabels(en); ax.set_ylabel(&quot;link-prediction AUC&quot;); ax.legend(fontsize=8)
+ax.set_title(&quot;Split-to-split spread is as large as method differences&quot;, fontsize=10)
+plt.tight_layout(); plt.show()</textarea><div class="out" aria-live="polite"></div></div></section><nav class="pager"><a href="ex-reporting-frontiers-9.html"><small>上一个示例</small>多层网络的超拉普拉斯矩阵与层间耦合</a><a href="ex-reporting-frontiers-11.html"><small>下一个示例</small>从零实现两层图卷积网络（GCN）做半监督节点分类，并与标签传播比较</a></nav></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

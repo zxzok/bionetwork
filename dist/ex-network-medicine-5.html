@@ -1,0 +1,189 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>药物组合的网络构型（两药分离度 + 各自与疾病模块的邻近度） · 生物医学网络科学</title><meta name="description" content="疾病模块、网络邻近度与药物重定位 · 代码示例：药物组合的网络构型（两药分离度 + 各自与疾病模块的邻近度）"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-medicine"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html" aria-current="page">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine" open><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a><ol class="sub"><li><a href="network-medicine.framework.html"><span class="n">01</span>网络医学：把疾病看作网络的扰动</a></li><li><a href="network-medicine.disease-modules.html"><span class="n">02</span>疾病模块：定义与检测</a></li><li><a href="network-medicine.module-detection.html"><span class="n">03</span>疾病模块检测算法：从种子基因到完整模块</a></li><li><a href="network-medicine.network-propagation.html"><span class="n">04</span>网络传播：带重启随机游走与热扩散</a></li><li><a href="network-medicine.network-separation.html"><span class="n">05</span>疾病之间的网络分离度</a></li><li><a href="network-medicine.network-pharmacology.html"><span class="n">06</span>药物–靶点网络与网络药理学</a></li><li><a href="network-medicine.network-proximity.html"><span class="n">07</span>网络邻近度</a></li><li><a href="network-medicine.drug-combinations.html"><span class="n">08</span>药物组合的网络构型</a></li><li><a href="network-medicine.drug-repurposing.html"><span class="n">09</span>药物重定位：从网络预测到外部验证</a></li><li><a href="network-medicine.knowledge-graphs.html"><span class="n">10</span>异质网络、知识图谱与图机器学习</a></li><li><a href="network-medicine.link-prediction.html"><span class="n">11</span>链路预测与知识图谱嵌入</a></li><li><a href="network-medicine.validation-hierarchy.html"><span class="n">12</span>验证的层次：从回顾性基准到临床试验</a></li><li><a href="network-medicine.statistical-validation.html"><span class="n">13</span>统计要点：参考网络、度偏倚、显著性与外部验证</a></li><li><a href="network-medicine.author-team-research.html"><span class="n">14</span>基于网络可控性的靶点识别</a></li><li><a href="network-medicine.derivations.html"><span class="n">15</span>数学推导与算法</a></li><li><a href="network-medicine.frontiers.html"><span class="n">16</span>研究前沿与开放问题</a></li><li><a href="network-medicine.biomedical.html"><span class="n">17</span>生物医学应用</a></li><li><a href="network-medicine.limitations.html"><span class="n">18</span>适用范围与常见误用</a></li></ol></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="code.html">代码库</a> <span class="sep">/</span> <a href="code.html#medicine">网络医学与药物网络</a> <span class="sep">/</span> <a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></nav><div class="eyebrow" style="margin-top:14px"><b>Example</b><span>06 / 07</span></div><h1>药物组合的网络构型（两药分离度 + 各自与疾病模块的邻近度）</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></dd></div><div><dt>下载</dt><dd><a href="notebooks/network-medicine.ipynb" download>Notebook</a> · <a href="notebooks/network-medicine.py" download>.py</a></dd></div></dl></header><section class="block prose"><p>思路来自 Cheng、Kovács 与 Barabási（2019）：对药物对 (A, B) 与疾病
+D，看三个量： s_AB：两药靶点集合的网络分离度（&lt;0 重叠，&gt;=0
+分离）； z_AD、z_BD：各药靶点与疾病模块的邻近度 z
+分数（度匹配随机靶点，z &lt; 0 视为“命中”模块邻域）。
+构造一个由两个相邻子模块组成的疾病模块，以及三种组合： 组合
+1：两药各靶向一个子模块（互补暴露）；组合
+2：两药靶向同一子模块（重叠暴露）； 组合
+3：一药靶向疾病模块，另一药靶向远处（单一暴露）。 输出解读：只有组合 1
+同时满足 s_AB &gt;= 0
+且两药都邻近疾病模块。阈值在这里为演示而设，真实分析需按原文校准。</p>
+</section><section class="block"><h2><span class="tag">Output</span>输出图</h2><div class="ex-figs"><img src="gallery/network-medicine-5-0.png" alt="药物组合的网络构型（两药分离度 + 各自与疾病模块的邻近度）：输出图 1" loading="lazy"></div></section><section class="block"><h2><span class="tag">Output</span>文字输出</h2><pre class="ex-out">组合1（拟互补暴露）：s_AB =  0.25，z_AD = -3.20，z_BD = -2.68 → 判为 互补暴露
+组合2（拟重叠暴露）：s_AB = -0.12，z_AD = -3.56，z_BD = -2.33 → 判为 重叠暴露
+组合3（拟单一暴露）：s_AB =  1.25，z_AD = -2.93，z_BD =  2.38 → 判为 单一/间接暴露</pre></section><section class="block prose"><h2><span class="tag">Code</span>代码</h2><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 思路来自 Cheng、Kovács 与 Barabási（2019）：对药物对 (A, B) 与疾病 D，看三个量：</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#   s_AB：两药靶点集合的网络分离度（&lt;0 重叠，&gt;=0 分离）；</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#   z_AD、z_BD：各药靶点与疾病模块的邻近度 z 分数（度匹配随机靶点，z &lt; 0 视为“命中”模块邻域）。</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 构造一个由两个相邻子模块组成的疾病模块，以及三种组合：</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">#   组合 1：两药各靶向一个子模块（互补暴露）；组合 2：两药靶向同一子模块（重叠暴露）；</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">#   组合 3：一药靶向疾病模块，另一药靶向远处（单一暴露）。</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 输出解读：只有组合 1 同时满足 s_AB &gt;= 0 且两药都邻近疾病模块。阈值在这里为演示而设，真实分析需按原文校准。</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> networkx <span class="im">as</span> nx</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>G <span class="op">=</span> nx.barabasi_albert_graph(<span class="dv">1500</span>, <span class="dv">2</span>, seed<span class="op">=</span><span class="dv">21</span>)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>deg <span class="op">=</span> <span class="bu">dict</span>(G.degree())</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>rng <span class="op">=</span> np.random.default_rng(<span class="dv">5</span>)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> grow(start, size, maxdeg<span class="op">=</span><span class="dv">12</span>):</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    mod <span class="op">=</span> {start}</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> <span class="bu">len</span>(mod) <span class="op">&lt;</span> size:</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>        fr <span class="op">=</span> {v <span class="cf">for</span> u <span class="kw">in</span> mod <span class="cf">for</span> v <span class="kw">in</span> G[u] <span class="cf">if</span> deg[v] <span class="op">&lt;=</span> maxdeg} <span class="op">-</span> mod</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>        sc <span class="op">=</span> {v: <span class="bu">sum</span>(<span class="dv">1</span> <span class="cf">for</span> u <span class="kw">in</span> G[v] <span class="cf">if</span> u <span class="kw">in</span> mod) <span class="cf">for</span> v <span class="kw">in</span> fr}</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>        b <span class="op">=</span> <span class="bu">max</span>(sc.values())</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>        mod.add(<span class="bu">int</span>(rng.choice(<span class="bu">sorted</span>(v <span class="cf">for</span> v <span class="kw">in</span> fr <span class="cf">if</span> sc[v] <span class="op">==</span> b))))</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> mod</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>sp_all <span class="op">=</span> <span class="bu">dict</span>(nx.all_pairs_shortest_path_length(G))</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>mid <span class="op">=</span> [v <span class="cf">for</span> v <span class="kw">in</span> G <span class="cf">if</span> <span class="dv">3</span> <span class="op">&lt;=</span> deg[v] <span class="op">&lt;=</span> <span class="dv">8</span>]</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>a0 <span class="op">=</span> mid[<span class="dv">0</span>]</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>b0 <span class="op">=</span> <span class="bu">next</span>(v <span class="cf">for</span> v <span class="kw">in</span> mid <span class="cf">if</span> sp_all[a0][v] <span class="op">==</span> <span class="dv">4</span>)          <span class="co"># 两个子模块的起点相距 4 步</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>far0 <span class="op">=</span> <span class="bu">max</span>(mid, key<span class="op">=</span><span class="kw">lambda</span> v: sp_all[a0][v])               <span class="co"># 远处起点</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>sub1, sub2 <span class="op">=</span> grow(a0, <span class="dv">15</span>), grow(b0, <span class="dv">15</span>)</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>disease <span class="op">=</span> <span class="bu">sorted</span>(sub1 <span class="op">|</span> sub2)</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> pick(module, k<span class="op">=</span><span class="dv">4</span>, avoid<span class="op">=</span>()):</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>    pool <span class="op">=</span> <span class="bu">sorted</span>(<span class="bu">set</span>(module) <span class="op">-</span> <span class="bu">set</span>(disease) <span class="op">-</span> <span class="bu">set</span>(avoid)) <span class="kw">or</span> <span class="bu">sorted</span>(<span class="bu">set</span>(module) <span class="op">-</span> <span class="bu">set</span>(avoid))</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="bu">sorted</span>(rng.choice(pool, size<span class="op">=</span>k, replace<span class="op">=</span><span class="va">False</span>).tolist())</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>ring1 <span class="op">=</span> {v <span class="cf">for</span> u <span class="kw">in</span> sub1 <span class="cf">for</span> v <span class="kw">in</span> G[u]} <span class="op">|</span> sub1               <span class="co"># 子模块 1 及其一步邻域</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>ring2 <span class="op">=</span> {v <span class="cf">for</span> u <span class="kw">in</span> sub2 <span class="cf">for</span> v <span class="kw">in</span> G[u]} <span class="op">|</span> sub2</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>far <span class="op">=</span> grow(far0, <span class="dv">15</span>)</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>drug <span class="op">=</span> {<span class="st">&quot;A1&quot;</span>: pick(ring1), <span class="st">&quot;B1&quot;</span>: pick(ring2),</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;A2&quot;</span>: pick(ring1), <span class="st">&quot;B2&quot;</span>: <span class="va">None</span>, <span class="st">&quot;A3&quot;</span>: pick(ring2), <span class="st">&quot;B3&quot;</span>: pick(far)}</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>drug[<span class="st">&quot;B2&quot;</span>] <span class="op">=</span> pick(ring1, avoid<span class="op">=</span>drug[<span class="st">&quot;A2&quot;</span>])</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> d_within(X):</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.mean([<span class="bu">min</span>(sp_all[x][y] <span class="cf">for</span> y <span class="kw">in</span> X <span class="cf">if</span> y <span class="op">!=</span> x) <span class="cf">for</span> x <span class="kw">in</span> X])</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> d_between(X, Y):</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.mean([<span class="bu">min</span>(sp_all[x][y] <span class="cf">for</span> y <span class="kw">in</span> Y) <span class="cf">for</span> x <span class="kw">in</span> X] <span class="op">+</span> [<span class="bu">min</span>(sp_all[y][x] <span class="cf">for</span> x <span class="kw">in</span> X) <span class="cf">for</span> y <span class="kw">in</span> Y])</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> separation(X, Y):</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> d_between(X, Y) <span class="op">-</span> (d_within(X) <span class="op">+</span> d_within(Y)) <span class="op">/</span> <span class="dv">2</span></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>by <span class="op">=</span> {}</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> v, d <span class="kw">in</span> deg.items(): by.setdefault(d, []).append(v)</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>bins, cur <span class="op">=</span> [], []</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> d <span class="kw">in</span> <span class="bu">sorted</span>(by):</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>    cur <span class="op">+=</span> by[d]</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">len</span>(cur) <span class="op">&gt;=</span> <span class="dv">50</span>: bins.append(cur)<span class="op">;</span> cur <span class="op">=</span> []</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> cur: bins[<span class="op">-</span><span class="dv">1</span>] <span class="op">+=</span> cur</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>node2bin <span class="op">=</span> {v: b <span class="cf">for</span> b <span class="kw">in</span> bins <span class="cf">for</span> v <span class="kw">in</span> b}</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> proximity_z(T, S, n_rand<span class="op">=</span><span class="dv">300</span>):</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>    dc <span class="op">=</span> <span class="kw">lambda</span> T_, S_: np.mean([<span class="bu">min</span>(sp_all[t][s] <span class="cf">for</span> s <span class="kw">in</span> S_) <span class="cf">for</span> t <span class="kw">in</span> T_])</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>    obs <span class="op">=</span> dc(T, S)</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>    rand <span class="op">=</span> [dc([<span class="bu">int</span>(rng.choice(node2bin[t])) <span class="cf">for</span> t <span class="kw">in</span> T], [<span class="bu">int</span>(rng.choice(node2bin[s])) <span class="cf">for</span> s <span class="kw">in</span> S])</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(n_rand)]</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (obs <span class="op">-</span> np.mean(rand)) <span class="op">/</span> np.std(rand)</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>combo <span class="op">=</span> []</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, label <span class="kw">in</span> [(<span class="dv">1</span>, <span class="st">&quot;组合1（拟互补暴露）&quot;</span>), (<span class="dv">2</span>, <span class="st">&quot;组合2（拟重叠暴露）&quot;</span>), (<span class="dv">3</span>, <span class="st">&quot;组合3（拟单一暴露）&quot;</span>)]:</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>    A, B <span class="op">=</span> drug[<span class="ss">f&quot;A</span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">&quot;</span>], drug[<span class="ss">f&quot;B</span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">&quot;</span>]</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>    sAB, zA, zB <span class="op">=</span> separation(A, B), proximity_z(A, disease), proximity_z(B, disease)</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>    hitA, hitB <span class="op">=</span> zA <span class="op">&lt;</span> <span class="op">-</span><span class="dv">1</span>, zB <span class="op">&lt;</span> <span class="op">-</span><span class="dv">1</span></span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> hitA <span class="kw">and</span> hitB:</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>        kind <span class="op">=</span> <span class="st">&quot;互补暴露&quot;</span> <span class="cf">if</span> sAB <span class="op">&gt;=</span> <span class="dv">0</span> <span class="cf">else</span> <span class="st">&quot;重叠暴露&quot;</span></span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> hitA <span class="kw">or</span> hitB:</span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>        kind <span class="op">=</span> <span class="st">&quot;单一/间接暴露&quot;</span></span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>        kind <span class="op">=</span> <span class="st">&quot;非暴露/独立作用&quot;</span></span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="sc">{</span>label<span class="sc">}</span><span class="ss">：s_AB = </span><span class="sc">{</span>sAB<span class="sc">:5.2f}</span><span class="ss">，z_AD = </span><span class="sc">{</span>zA<span class="sc">:5.2f}</span><span class="ss">，z_BD = </span><span class="sc">{</span>zB<span class="sc">:5.2f}</span><span class="ss"> → 判为 </span><span class="sc">{</span>kind<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>    combo.append((sAB, zA, zB))</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="fl">6.4</span>, <span class="fl">4.2</span>))</span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>vals <span class="op">=</span> np.array(combo)<span class="op">;</span> x <span class="op">=</span> np.arange(<span class="dv">3</span>)</span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> k, (lab, c, h) <span class="kw">in</span> <span class="bu">enumerate</span>([(<span class="st">&quot;s_AB (drug–drug separation)&quot;</span>, <span class="st">&quot;0.5&quot;</span>, <span class="st">&quot;&quot;</span>), (<span class="st">&quot;z_AD&quot;</span>, <span class="st">&quot;C0&quot;</span>, <span class="st">&quot;//&quot;</span>), (<span class="st">&quot;z_BD&quot;</span>, <span class="st">&quot;C1&quot;</span>, <span class="st">&quot;..&quot;</span>)]):</span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a>    ax.bar(x <span class="op">+</span> (k <span class="op">-</span> <span class="dv">1</span>) <span class="op">*</span> <span class="fl">0.26</span>, vals[:, k], <span class="fl">0.26</span>, color<span class="op">=</span>c, hatch<span class="op">=</span>h, label<span class="op">=</span>lab)</span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a>ax.axhline(<span class="dv">0</span>, color<span class="op">=</span><span class="st">&quot;k&quot;</span>, lw<span class="op">=</span><span class="fl">0.8</span>)<span class="op">;</span> ax.axhline(<span class="op">-</span><span class="dv">1</span>, color<span class="op">=</span><span class="st">&quot;C3&quot;</span>, ls<span class="op">=</span><span class="st">&quot;--&quot;</span>, lw<span class="op">=</span><span class="dv">1</span>, label<span class="op">=</span><span class="st">&quot;z = -1 (proximal to disease)&quot;</span>)</span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>ax.set_xticks(x)<span class="op">;</span> ax.set_xticklabels([<span class="st">&quot;combo 1</span><span class="ch">\n</span><span class="st">(complementary)&quot;</span>, <span class="st">&quot;combo 2</span><span class="ch">\n</span><span class="st">(overlapping)&quot;</span>, <span class="st">&quot;combo 3</span><span class="ch">\n</span><span class="st">(single)&quot;</span>])</span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">&quot;value&quot;</span>)<span class="op">;</span> ax.set_title(<span class="st">&quot;Complementary exposure: s_AB ≥ 0 and both z &lt; -1&quot;</span>)<span class="op">;</span> ax.legend(fontsize<span class="op">=</span><span class="dv">8</span>)</span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()<span class="op">;</span> plt.show()</span></code></pre></div>
+</section><section class="block"><h2><span class="tag">Run</span>在浏览器中运行</h2><p class="small">首次加载 Python 环境约需 20–40 秒；可以修改参数后重新运行。</p><div class="cell"><div class="cell-head"><h3>药物组合的网络构型（两药分离度 + 各自与疾病模块的邻近度）</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea id="network-medicine-cell5" rows="30" spellcheck="false" aria-label="药物组合的网络构型（两药分离度 + 各自与疾病模块的邻近度） 代码"># 思路来自 Cheng、Kovács 与 Barabási（2019）：对药物对 (A, B) 与疾病 D，看三个量：
+#   s_AB：两药靶点集合的网络分离度（&lt;0 重叠，&gt;=0 分离）；
+#   z_AD、z_BD：各药靶点与疾病模块的邻近度 z 分数（度匹配随机靶点，z &lt; 0 视为“命中”模块邻域）。
+# 构造一个由两个相邻子模块组成的疾病模块，以及三种组合：
+#   组合 1：两药各靶向一个子模块（互补暴露）；组合 2：两药靶向同一子模块（重叠暴露）；
+#   组合 3：一药靶向疾病模块，另一药靶向远处（单一暴露）。
+# 输出解读：只有组合 1 同时满足 s_AB &gt;= 0 且两药都邻近疾病模块。阈值在这里为演示而设，真实分析需按原文校准。
+import networkx as nx
+import numpy as np
+
+G = nx.barabasi_albert_graph(1500, 2, seed=21)
+deg = dict(G.degree())
+rng = np.random.default_rng(5)
+
+def grow(start, size, maxdeg=12):
+    mod = {start}
+    while len(mod) &lt; size:
+        fr = {v for u in mod for v in G[u] if deg[v] &lt;= maxdeg} - mod
+        sc = {v: sum(1 for u in G[v] if u in mod) for v in fr}
+        b = max(sc.values())
+        mod.add(int(rng.choice(sorted(v for v in fr if sc[v] == b))))
+    return mod
+
+sp_all = dict(nx.all_pairs_shortest_path_length(G))
+mid = [v for v in G if 3 &lt;= deg[v] &lt;= 8]
+a0 = mid[0]
+b0 = next(v for v in mid if sp_all[a0][v] == 4)          # 两个子模块的起点相距 4 步
+far0 = max(mid, key=lambda v: sp_all[a0][v])               # 远处起点
+sub1, sub2 = grow(a0, 15), grow(b0, 15)
+disease = sorted(sub1 | sub2)
+
+def pick(module, k=4, avoid=()):
+    pool = sorted(set(module) - set(disease) - set(avoid)) or sorted(set(module) - set(avoid))
+    return sorted(rng.choice(pool, size=k, replace=False).tolist())
+
+ring1 = {v for u in sub1 for v in G[u]} | sub1               # 子模块 1 及其一步邻域
+ring2 = {v for u in sub2 for v in G[u]} | sub2
+far = grow(far0, 15)
+drug = {&quot;A1&quot;: pick(ring1), &quot;B1&quot;: pick(ring2),
+        &quot;A2&quot;: pick(ring1), &quot;B2&quot;: None, &quot;A3&quot;: pick(ring2), &quot;B3&quot;: pick(far)}
+drug[&quot;B2&quot;] = pick(ring1, avoid=drug[&quot;A2&quot;])
+
+def d_within(X):
+    return np.mean([min(sp_all[x][y] for y in X if y != x) for x in X])
+def d_between(X, Y):
+    return np.mean([min(sp_all[x][y] for y in Y) for x in X] + [min(sp_all[y][x] for x in X) for y in Y])
+def separation(X, Y):
+    return d_between(X, Y) - (d_within(X) + d_within(Y)) / 2
+
+by = {}
+for v, d in deg.items(): by.setdefault(d, []).append(v)
+bins, cur = [], []
+for d in sorted(by):
+    cur += by[d]
+    if len(cur) &gt;= 50: bins.append(cur); cur = []
+if cur: bins[-1] += cur
+node2bin = {v: b for b in bins for v in b}
+
+def proximity_z(T, S, n_rand=300):
+    dc = lambda T_, S_: np.mean([min(sp_all[t][s] for s in S_) for t in T_])
+    obs = dc(T, S)
+    rand = [dc([int(rng.choice(node2bin[t])) for t in T], [int(rng.choice(node2bin[s])) for s in S])
+            for _ in range(n_rand)]
+    return (obs - np.mean(rand)) / np.std(rand)
+
+combo = []
+for i, label in [(1, &quot;组合1（拟互补暴露）&quot;), (2, &quot;组合2（拟重叠暴露）&quot;), (3, &quot;组合3（拟单一暴露）&quot;)]:
+    A, B = drug[f&quot;A{i}&quot;], drug[f&quot;B{i}&quot;]
+    sAB, zA, zB = separation(A, B), proximity_z(A, disease), proximity_z(B, disease)
+    hitA, hitB = zA &lt; -1, zB &lt; -1
+    if hitA and hitB:
+        kind = &quot;互补暴露&quot; if sAB &gt;= 0 else &quot;重叠暴露&quot;
+    elif hitA or hitB:
+        kind = &quot;单一/间接暴露&quot;
+    else:
+        kind = &quot;非暴露/独立作用&quot;
+    print(f&quot;{label}：s_AB = {sAB:5.2f}，z_AD = {zA:5.2f}，z_BD = {zB:5.2f} → 判为 {kind}&quot;)
+    combo.append((sAB, zA, zB))
+
+import matplotlib.pyplot as plt
+fig, ax = plt.subplots(figsize=(6.4, 4.2))
+vals = np.array(combo); x = np.arange(3)
+for k, (lab, c, h) in enumerate([(&quot;s_AB (drug–drug separation)&quot;, &quot;0.5&quot;, &quot;&quot;), (&quot;z_AD&quot;, &quot;C0&quot;, &quot;//&quot;), (&quot;z_BD&quot;, &quot;C1&quot;, &quot;..&quot;)]):
+    ax.bar(x + (k - 1) * 0.26, vals[:, k], 0.26, color=c, hatch=h, label=lab)
+ax.axhline(0, color=&quot;k&quot;, lw=0.8); ax.axhline(-1, color=&quot;C3&quot;, ls=&quot;--&quot;, lw=1, label=&quot;z = -1 (proximal to disease)&quot;)
+ax.set_xticks(x); ax.set_xticklabels([&quot;combo 1\n(complementary)&quot;, &quot;combo 2\n(overlapping)&quot;, &quot;combo 3\n(single)&quot;])
+ax.set_ylabel(&quot;value&quot;); ax.set_title(&quot;Complementary exposure: s_AB ≥ 0 and both z &lt; -1&quot;); ax.legend(fontsize=8)
+plt.tight_layout(); plt.show()</textarea><div class="out" aria-live="polite"></div></div></section><nav class="pager"><a href="ex-network-medicine-4.html"><small>上一个示例</small>网络传播——带重启随机游走（RWR）与热扩散的参数、度偏倚与去偏</a><a href="ex-network-medicine-6.html"><small>下一个示例</small>链路预测——共同邻居、资源分配与长度为 3 的路径（L3）</a></nav></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

@@ -1,0 +1,125 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>模块特征基因、模块–性状关联与 hub 基因 · 生物医学网络科学</title><meta name="description" content="基因调控网络推断与共表达分析 · 代码示例：模块特征基因、模块–性状关联与 hub 基因"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-molecular"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html" aria-current="page">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular" open><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a><ol class="sub"><li><a href="gene-network-inference.inference-problem.html"><span class="n">01</span>网络推断问题：从“一起变化”到“谁调控谁”</a></li><li><a href="gene-network-inference.method-landscape.html"><span class="n">02</span>方法家族全景：假设与数据要求</a></li><li><a href="gene-network-inference.wgcna.html"><span class="n">03</span>WGCNA：加权基因共表达网络分析</a></li><li><a href="gene-network-inference.module-interpretation.html"><span class="n">04</span>解读共表达模块时要追问的三件事</a></li><li><a href="gene-network-inference.module-preservation.html"><span class="n">05</span>模块保守性与可重复性检验</a></li><li><a href="gene-network-inference.differential-coexpression.html"><span class="n">06</span>差异共表达分析</a></li><li><a href="gene-network-inference.partial-correlation-shrinkage.html"><span class="n">07</span>偏相关、高斯图模型与收缩估计</a></li><li><a href="gene-network-inference.beyond-correlation.html"><span class="n">08</span>超越相关：信息论、树模型与单细胞方法</a></li><li><a href="gene-network-inference.bayesian-networks.html"><span class="n">09</span>贝叶斯网络与因果结构学习</a></li><li><a href="gene-network-inference.dynamic-models.html"><span class="n">10</span>动力学模型、时间序列与单细胞拟时序</a></li><li><a href="gene-network-inference.prior-knowledge.html"><span class="n">11</span>先验知识整合：TF–靶基因数据库、ChIP-seq 与 ATAC</a></li><li><a href="gene-network-inference.evaluation.html"><span class="n">12</span>推断结果的评估</a></li><li><a href="gene-network-inference.derivations.html"><span class="n">13</span>数学推导与算法</a></li><li><a href="gene-network-inference.frontiers.html"><span class="n">14</span>研究前沿与开放问题</a></li><li><a href="gene-network-inference.biomedical.html"><span class="n">15</span>生物医学应用</a></li><li><a href="gene-network-inference.limitations.html"><span class="n">16</span>适用范围与常见误用</a></li></ol></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="code.html">代码库</a> <span class="sep">/</span> <a href="code.html#molecular">分子网络与基因调控</a> <span class="sep">/</span> <a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></nav><div class="eyebrow" style="margin-top:14px"><b>Example</b><span>03 / 09</span></div><h1>模块特征基因、模块–性状关联与 hub 基因</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></dd></div><div><dt>下载</dt><dd><a href="notebooks/gene-network-inference.ipynb" download>Notebook</a> · <a href="notebooks/gene-network-inference.py" download>.py</a></dd></div></dl></header><section class="block prose"><p>对每个模块计算特征基因
+ME（标准化表达的第一主成分，符号与模块平均表达一致）及其解释的方差比例，
+计算 ME 与临床性状的相关；再计算模块成员度 kME = cor(基因表达, ME)，取
+kME 最高的 3 个基因作为 hub。
+为突出这一步，这里直接使用真实模块标签；实际分析中用 TOM
+聚类得到的模块。 输出解读：模块 1 的 ME 与性状显著相关；hub
+基因的真实载荷明显高于模块平均。 在本模拟中，模块 1
+的所有基因都只是同一个潜在因子的“读数”，hub 只是噪声最小的读数——
+这正是“hub 适合作标志物、不等于驱动者”的含义。</p>
+</section><section class="block"><h2><span class="tag">Output</span>输出图</h2><div class="ex-figs"><img src="gallery/gene-network-inference-2-0.png" alt="模块特征基因、模块–性状关联与 hub 基因：输出图 1" loading="lazy"></div></section><section class="block"><h2><span class="tag">Output</span>文字输出</h2><pre class="ex-out">模块1: ME 解释方差 = 0.59，ME–性状 r = 0.77, p = 7.9e-13; hub = [12, 29, 18], hub 真实载荷 = [0.92, 0.94, 0.93], 模块平均载荷 = 0.74
+模块2: ME 解释方差 = 0.67，ME–性状 r = 0.10, p = 4.6e-01; hub = [32, 33, 30], hub 真实载荷 = [0.87, 0.88, 0.9], 模块平均载荷 = 0.75
+模块3: ME 解释方差 = 0.57，ME–性状 r = -0.08, p = 5.6e-01; hub = [57, 65, 60], hub 真实载荷 = [0.93, 0.89, 0.88], 模块平均载荷 = 0.70
+模块4: ME 解释方差 = 0.57，ME–性状 r = 0.11, p = 3.8e-01; hub = [76, 85, 82], hub 真实载荷 = [0.89, 0.86, 0.84], 模块平均载荷 = 0.74</pre></section><section class="block prose"><h2><span class="tag">Code</span>代码</h2><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 对每个模块计算特征基因 ME（标准化表达的第一主成分，符号与模块平均表达一致）及其解释的方差比例，</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 计算 ME 与临床性状的相关；再计算模块成员度 kME = cor(基因表达, ME)，取 kME 最高的 3 个基因作为 hub。</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 为突出这一步，这里直接使用真实模块标签；实际分析中用 TOM 聚类得到的模块。</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 输出解读：模块 1 的 ME 与性状显著相关；hub 基因的真实载荷明显高于模块平均。</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 在本模拟中，模块 1 的所有基因都只是同一个潜在因子的“读数”，hub 只是噪声最小的读数——</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># 这正是“hub 适合作标志物、不等于驱动者”的含义。</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy <span class="im">import</span> stats</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> simulate(seed<span class="op">=</span><span class="dv">13</span>):</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    rng <span class="op">=</span> np.random.default_rng(seed)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    n, sizes <span class="op">=</span> <span class="dv">60</span>, [<span class="dv">30</span>, <span class="dv">25</span>, <span class="dv">20</span>, <span class="dv">15</span>]</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    trait <span class="op">=</span> rng.normal(size<span class="op">=</span>n)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    factors <span class="op">=</span> [<span class="fl">0.8</span> <span class="op">*</span> trait <span class="op">+</span> <span class="fl">0.6</span> <span class="op">*</span> rng.normal(size<span class="op">=</span>n)] <span class="op">+</span> [rng.normal(size<span class="op">=</span>n) <span class="cf">for</span> _ <span class="kw">in</span> sizes[<span class="dv">1</span>:]]</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    X, labels, load <span class="op">=</span> [], [], []</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> m, (s, f) <span class="kw">in</span> <span class="bu">enumerate</span>(<span class="bu">zip</span>(sizes, factors)):</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> l <span class="kw">in</span> rng.uniform(<span class="fl">0.5</span>, <span class="fl">0.95</span>, size<span class="op">=</span>s):</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>            X.append(l <span class="op">*</span> f <span class="op">+</span> np.sqrt(<span class="dv">1</span> <span class="op">-</span> l<span class="op">**</span><span class="dv">2</span>) <span class="op">*</span> rng.normal(size<span class="op">=</span>n))</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>            labels.append(m <span class="op">+</span> <span class="dv">1</span>)<span class="op">;</span> load.append(l)</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">30</span>):</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>        X.append(rng.normal(size<span class="op">=</span>n))<span class="op">;</span> labels.append(<span class="dv">0</span>)<span class="op">;</span> load.append(<span class="fl">0.0</span>)</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.array(X).T, np.array(labels), np.array(load), trait</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> eigengene(Xm):</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;Xm：样本 x 模块基因（已标准化）。返回 (第一主成分得分, 解释的方差比例)，得分符号与模块平均表达一致。&quot;&quot;&quot;</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    U, S, Vt <span class="op">=</span> np.linalg.svd(Xm, full_matrices<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    me <span class="op">=</span> U[:, <span class="dv">0</span>] <span class="op">*</span> S[<span class="dv">0</span>]</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> np.corrcoef(me, Xm.mean(axis<span class="op">=</span><span class="dv">1</span>))[<span class="dv">0</span>, <span class="dv">1</span>] <span class="op">&lt;</span> <span class="dv">0</span>:</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>        me <span class="op">=</span> <span class="op">-</span>me</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> me, S[<span class="dv">0</span>]<span class="op">**</span><span class="dv">2</span> <span class="op">/</span> np.<span class="bu">sum</span>(S<span class="op">**</span><span class="dv">2</span>)</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>X, true_lab, true_load, trait <span class="op">=</span> simulate()</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>Xz <span class="op">=</span> (X <span class="op">-</span> X.mean(<span class="dv">0</span>)) <span class="op">/</span> X.std(<span class="dv">0</span>)                              <span class="co"># 每个基因标准化</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>r_trait, kme_by_mod <span class="op">=</span> [], {}</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> m <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">5</span>):</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>    idx <span class="op">=</span> np.where(true_lab <span class="op">==</span> m)[<span class="dv">0</span>]</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>    me, ve <span class="op">=</span> eigengene(Xz[:, idx])</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>    r, p <span class="op">=</span> stats.pearsonr(me, trait)</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>    kme <span class="op">=</span> np.array([np.corrcoef(Xz[:, g], me)[<span class="dv">0</span>, <span class="dv">1</span>] <span class="cf">for</span> g <span class="kw">in</span> idx])</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>    top <span class="op">=</span> idx[np.argsort(<span class="op">-</span>kme)[:<span class="dv">3</span>]]</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;模块</span><span class="sc">{</span>m<span class="sc">}</span><span class="ss">: ME 解释方差 = </span><span class="sc">{</span>ve<span class="sc">:.2f}</span><span class="ss">，ME–性状 r = </span><span class="sc">{</span>r<span class="sc">:.2f}</span><span class="ss">, p = </span><span class="sc">{</span>p<span class="sc">:.1e}</span><span class="ss">; hub = </span><span class="sc">{</span>top<span class="sc">.</span>tolist()<span class="sc">}</span><span class="ss">, &quot;</span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>          <span class="ss">f&quot;hub 真实载荷 = </span><span class="sc">{</span>np<span class="sc">.</span><span class="bu">round</span>(true_load[top], <span class="dv">2</span>)<span class="sc">.</span>tolist()<span class="sc">}</span><span class="ss">, 模块平均载荷 = </span><span class="sc">{</span>true_load[idx]<span class="sc">.</span>mean()<span class="sc">:.2f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>    r_trait.append(r)<span class="op">;</span> kme_by_mod[m] <span class="op">=</span> (idx, kme, top)</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">4</span>))</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].bar([<span class="ss">f&quot;M</span><span class="sc">{</span>m<span class="sc">}</span><span class="ss">&quot;</span> <span class="cf">for</span> m <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">5</span>)], r_trait, color<span class="op">=</span>[<span class="st">&quot;C3&quot;</span>] <span class="op">+</span> [<span class="st">&quot;0.6&quot;</span>] <span class="op">*</span> <span class="dv">3</span>)</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].axhline(<span class="dv">0</span>, color<span class="op">=</span><span class="st">&quot;k&quot;</span>, lw<span class="op">=</span><span class="fl">0.8</span>)<span class="op">;</span> ax[<span class="dv">0</span>].set_ylabel(<span class="st">&quot;cor(module eigengene, trait)&quot;</span>)</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].set_title(<span class="st">&quot;Module–trait association&quot;</span>)</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>idx, kme, top <span class="op">=</span> kme_by_mod[<span class="dv">1</span>]</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].scatter(true_load[idx], kme, s<span class="op">=</span><span class="dv">40</span>, color<span class="op">=</span><span class="st">&quot;0.5&quot;</span>, label<span class="op">=</span><span class="st">&quot;module 1 genes&quot;</span>)</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].scatter(true_load[top], kme[np.isin(idx, top)], s<span class="op">=</span><span class="dv">90</span>, color<span class="op">=</span><span class="st">&quot;C3&quot;</span>, label<span class="op">=</span><span class="st">&quot;top-3 hubs (kME)&quot;</span>)</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].set_xlabel(<span class="st">&quot;true loading on latent factor&quot;</span>)<span class="op">;</span> ax[<span class="dv">1</span>].set_ylabel(<span class="st">&quot;module membership kME&quot;</span>)</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].set_title(<span class="st">&quot;Hubs = least noisy read-outs of the factor&quot;</span>)<span class="op">;</span> ax[<span class="dv">1</span>].legend()</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()<span class="op">;</span> plt.show()</span></code></pre></div>
+</section><section class="block"><h2><span class="tag">Run</span>在浏览器中运行</h2><p class="small">首次加载 Python 环境约需 20–40 秒；可以修改参数后重新运行。</p><div class="cell"><div class="cell-head"><h3>模块特征基因、模块–性状关联与 hub 基因</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea id="gene-network-inference-cell2" rows="30" spellcheck="false" aria-label="模块特征基因、模块–性状关联与 hub 基因 代码"># 对每个模块计算特征基因 ME（标准化表达的第一主成分，符号与模块平均表达一致）及其解释的方差比例，
+# 计算 ME 与临床性状的相关；再计算模块成员度 kME = cor(基因表达, ME)，取 kME 最高的 3 个基因作为 hub。
+# 为突出这一步，这里直接使用真实模块标签；实际分析中用 TOM 聚类得到的模块。
+# 输出解读：模块 1 的 ME 与性状显著相关；hub 基因的真实载荷明显高于模块平均。
+# 在本模拟中，模块 1 的所有基因都只是同一个潜在因子的“读数”，hub 只是噪声最小的读数——
+# 这正是“hub 适合作标志物、不等于驱动者”的含义。
+import numpy as np
+from scipy import stats
+
+def simulate(seed=13):
+    rng = np.random.default_rng(seed)
+    n, sizes = 60, [30, 25, 20, 15]
+    trait = rng.normal(size=n)
+    factors = [0.8 * trait + 0.6 * rng.normal(size=n)] + [rng.normal(size=n) for _ in sizes[1:]]
+    X, labels, load = [], [], []
+    for m, (s, f) in enumerate(zip(sizes, factors)):
+        for l in rng.uniform(0.5, 0.95, size=s):
+            X.append(l * f + np.sqrt(1 - l**2) * rng.normal(size=n))
+            labels.append(m + 1); load.append(l)
+    for _ in range(30):
+        X.append(rng.normal(size=n)); labels.append(0); load.append(0.0)
+    return np.array(X).T, np.array(labels), np.array(load), trait
+
+def eigengene(Xm):
+    &quot;&quot;&quot;Xm：样本 x 模块基因（已标准化）。返回 (第一主成分得分, 解释的方差比例)，得分符号与模块平均表达一致。&quot;&quot;&quot;
+    U, S, Vt = np.linalg.svd(Xm, full_matrices=False)
+    me = U[:, 0] * S[0]
+    if np.corrcoef(me, Xm.mean(axis=1))[0, 1] &lt; 0:
+        me = -me
+    return me, S[0]**2 / np.sum(S**2)
+
+X, true_lab, true_load, trait = simulate()
+Xz = (X - X.mean(0)) / X.std(0)                              # 每个基因标准化
+
+r_trait, kme_by_mod = [], {}
+for m in range(1, 5):
+    idx = np.where(true_lab == m)[0]
+    me, ve = eigengene(Xz[:, idx])
+    r, p = stats.pearsonr(me, trait)
+    kme = np.array([np.corrcoef(Xz[:, g], me)[0, 1] for g in idx])
+    top = idx[np.argsort(-kme)[:3]]
+    print(f&quot;模块{m}: ME 解释方差 = {ve:.2f}，ME–性状 r = {r:.2f}, p = {p:.1e}; hub = {top.tolist()}, &quot;
+          f&quot;hub 真实载荷 = {np.round(true_load[top], 2).tolist()}, 模块平均载荷 = {true_load[idx].mean():.2f}&quot;)
+    r_trait.append(r); kme_by_mod[m] = (idx, kme, top)
+
+import matplotlib.pyplot as plt
+fig, ax = plt.subplots(1, 2, figsize=(10, 4))
+ax[0].bar([f&quot;M{m}&quot; for m in range(1, 5)], r_trait, color=[&quot;C3&quot;] + [&quot;0.6&quot;] * 3)
+ax[0].axhline(0, color=&quot;k&quot;, lw=0.8); ax[0].set_ylabel(&quot;cor(module eigengene, trait)&quot;)
+ax[0].set_title(&quot;Module–trait association&quot;)
+idx, kme, top = kme_by_mod[1]
+ax[1].scatter(true_load[idx], kme, s=40, color=&quot;0.5&quot;, label=&quot;module 1 genes&quot;)
+ax[1].scatter(true_load[top], kme[np.isin(idx, top)], s=90, color=&quot;C3&quot;, label=&quot;top-3 hubs (kME)&quot;)
+ax[1].set_xlabel(&quot;true loading on latent factor&quot;); ax[1].set_ylabel(&quot;module membership kME&quot;)
+ax[1].set_title(&quot;Hubs = least noisy read-outs of the factor&quot;); ax[1].legend()
+plt.tight_layout(); plt.show()</textarea><div class="out" aria-live="polite"></div></div></section><nav class="pager"><a href="ex-gene-network-inference-1.html"><small>上一个示例</small>拓扑重叠矩阵（TOM）与层次聚类划分模块</a><a href="ex-gene-network-inference-3.html"><small>下一个示例</small>互信息网络、CLR 背景校正与 ARACNe 的数据处理不等式</a></nav></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

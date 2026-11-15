@@ -1,0 +1,10 @@
+{
+ "topic": "community-structure",
+ "index": 8,
+ "title": "Infomap 的目标函数——两层映射方程（map equation）",
+ "hash": "6385ac82ad15797ab7bf2db814337bcbdebd10e8",
+ "ok": true,
+ "figures": 1,
+ "stdout": "(a) 单一模块         Q = 0.000   L = 4.704 bit\n(a) 真实两派         Q = 0.358   L = 4.462 bit\n(a) Louvain(4 个) Q = 0.419   L = 4.336 bit\n(b) 10 个 K5: 每团一模块 Q=0.8091 L=3.067 | 两两合并 Q=0.7545 L=3.688\n(b) 30 个 K5: 每团一模块 Q=0.8758 L=3.211 | 两两合并 Q=0.8879 L=3.760\n(b) 60 个 K5: 每团一模块 Q=0.8924 L=3.302 | 两两合并 Q=0.9212 L=3.806",
+ "stderr": ""
+}

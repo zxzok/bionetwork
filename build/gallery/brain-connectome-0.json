@@ -1,0 +1,10 @@
+{
+ "topic": "brain-connectome",
+ "index": 0,
+ "title": "从 ROI 时间序列估计功能连接矩阵",
+ "hash": "23647afb5f8bd7dc91a7b0a5f7e26fe8e725db4d",
+ "ok": true,
+ "figures": 1,
+ "stdout": "系统内平均 r = 0.346\n系统间平均 r = 0.049\nFisher z 的取值范围： -0.15 ~ 0.69",
+ "stderr": ""
+}

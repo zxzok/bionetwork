@@ -1,0 +1,10 @@
+{
+ "topic": "dynamic-brain-networks",
+ "index": 2,
+ "title": "从窗口相关矩阵到“连接状态”（k-means）",
+ "hash": "a0d64e51a887dd043877449c86b4ee902db00dbe",
+ "ok": true,
+ "figures": 1,
+ "stdout": "窗口数 = 173 ；每个窗口的特征维数 = 15\nk = 2：与真实状态一致率 = 0.98，平均停留 = 43.2 个窗口\nk = 4：各“状态”窗口数 = [31, 49, 51, 42]，平均停留 = 7.9 个窗口",
+ "stderr": ""
+}

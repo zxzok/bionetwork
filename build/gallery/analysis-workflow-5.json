@@ -1,0 +1,10 @@
+{
+ "topic": "analysis-workflow",
+ "index": 5,
+ "title": "五个常见计算陷阱——自环、重边、孤立点、有向性、权重的含义",
+ "hash": "d5d58c123cfdc2ced5cfb63834455af976e3ac2e",
+ "ok": true,
+ "figures": 1,
+ "stdout": "(1) 节点3的度：无自环 3，有自环 5；自环数 1\n(2) A–B 权重：直接转换 2.0，显式求和 3.0；MultiGraph 边数 3 → Graph 边数 2\n(3) 平均度：含孤立点 1.00，去除后 1.60；密度 0.143 vs 0.400\n    平均最短路径： Graph is not connected.\n(4) PageRank（有向）： {'TF1': 0.116, 'TF2': 0.215, 'TF3': 0.299, 'TF4': 0.37}\n    PageRank（无向化）： {'TF1': 0.175, 'TF2': 0.325, 'TF3': 0.325, 'TF4': 0.175}\n    弱连通 True，强连通 False\n(5) A→C 最短路径：把 r 误当距离 ['A', 'C']；1/r ['A', 'B', 'C']；-log r ['A', 'B', 'C']\n    B 的介数：误用 r 0.00，用 1/r 1.00",
+ "stderr": ""
+}

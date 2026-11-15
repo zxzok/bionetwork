@@ -1,0 +1,10 @@
+{
+ "topic": "network-models",
+ "index": 2,
+ "title": "用最大似然估计度指数，并与最小二乘比较",
+ "hash": "dd611da74b79f6c4d08c753384cf6c8c342e7593",
+ "ok": true,
+ "figures": 1,
+ "stdout": "k_min=2: 使用 3000 个节点, MLE γ = 2.40\nk_min=4: 使用  904 个节点, MLE γ = 2.67\nk_min=6: 使用  426 个节点, MLE γ = 2.75\nk_min=8: 使用  250 个节点, MLE γ = 2.82\n直方图最小二乘估计 γ = 1.92",
+ "stderr": ""
+}

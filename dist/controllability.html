@@ -1,0 +1,346 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>网络可控性与稳定性 · 生物医学网络科学</title><meta name="description" content="网络可控性与稳定性：研究需要从哪些节点施加输入才能控制或观测网络状态、代价多大，以及网络在扰动下能否维持功能。"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-dynamics"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html" aria-current="page">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics" open><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html" aria-current="page">网络可控性与稳定性</a><ol class="sub"><li><a href="controllability.network-control-systems.html"><span class="n">01</span>动态系统与网络控制</a></li><li><a href="controllability.linear-controllability.html"><span class="n">02</span>线性系统的可控性</a></li><li><a href="controllability.structural-controllability.html"><span class="n">03</span>结构可控性与最大匹配</a></li><li><a href="controllability.driver-nodes.html"><span class="n">04</span>驱动节点与网络结构</a></li><li><a href="controllability.control-centrality.html"><span class="n">05</span>控制中心性与可控子空间</a></li><li><a href="controllability.control-energy.html"><span class="n">06</span>控制能量与 Gramian 的数值问题</a></li><li><a href="controllability.target-control.html"><span class="n">07</span>目标控制与部分可控</a></li><li><a href="controllability.observability.html"><span class="n">08</span>可观测性与观测节点</a></li><li><a href="controllability.nonlinear-control.html"><span class="n">09</span>非线性网络的控制</a></li><li><a href="controllability.brain-network-control.html"><span class="n">10</span>脑网络控制：平均与模态可控性</a></li><li><a href="controllability.author-team-research.html"><span class="n">11</span>驱动节点的枚举、分类与自适应控制</a></li><li><a href="controllability.structural-robustness.html"><span class="n">12</span>结构鲁棒性</a></li><li><a href="controllability.dynamical-stability.html"><span class="n">13</span>动力学稳定性</a></li><li><a href="controllability.derivations.html"><span class="n">14</span>数学推导与算法</a></li><li><a href="controllability.frontiers.html"><span class="n">15</span>研究前沿与开放问题</a></li><li><a href="controllability.biomedical.html"><span class="n">16</span>生物医学应用</a></li><li><a href="controllability.limitations.html"><span class="n">17</span>适用范围与常见误用</a></li></ol></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><div class="lec-grid"><article style="min-width:0"><header class="doc-head"><nav class="crumb"><a href="domains.html">知识领域</a> <span class="sep">/</span> <a href="d-dynamics.html">网络动力学与控制</a></nav><div class="eyebrow" style="margin-top:14px"><b>Dynamics &amp; Control</b><span>Network controllability and stability</span></div><h1>网络可控性与稳定性</h1><p class="dek">研究需要从哪些节点施加输入才能控制或观测网络状态、代价多大，以及网络在扰动下能否维持功能。</p><dl class="doc-meta"><div><dt>知识页面</dt><dd>17 页</dd></div><div><dt>阅读</dt><dd>约 62 分钟</dd></div><div><dt>讲解视频</dt><dd>1 段</dd></div><div><dt>代码示例</dt><dd>12 个</dd></div></dl><div class="chips"><span class="chip">可控性</span><span class="chip">Kalman 秩判据</span><span class="chip">PBH 判据</span><span class="chip">可控性 Gramian</span><span class="chip">结构可控性</span><span class="chip">精确可控性</span><span class="chip">最大匹配</span><span class="chip">驱动节点</span><span class="chip">控制中心性</span><span class="chip">控制能量</span><span class="chip">目标控制</span><span class="chip">可观测性</span><span class="chip">观测节点</span><span class="chip">反馈顶点集</span></div></header><section class="block prose" id="overview"><p>传播与同步描述的是网络上“会自己发生”的动力学（见<a
+href="spreading.html">网络上的传播与免疫</a>、<a
+href="synchronization.html">同步与协同动力学</a>）。网络控制换一个角度提问：<strong>如果我们想让网络进入某个目标状态，最少要从哪些节点施加外部输入？</strong>
+这就是网络的<strong>可控性</strong>（controllability）问题。对生物医学而言，它对应一个非常实际的问题——在一个基因调控网络或蛋白相互作用网络中，干预哪些分子（药物靶点）才能把细胞从疾病状态引导到健康状态？</p>
+<p>与可控性对偶的是<strong>可观测性</strong>（observability）：只测量少数分子、脑区或症状，能否推断整个系统的内部状态？它决定了生物标志物的选择，也是任何反馈控制的前提。在“能不能控、能不能看”之外，还有三个同样重要的问题：<strong>代价多大</strong>（控制能量）、<strong>只想控制一部分节点时怎么办</strong>（目标控制）、<strong>系统是非线性、多稳态时怎么办</strong>（反馈顶点集控制与布尔网络控制）。Liu
+与 Barabási（2016）的综述 <em>Control principles of complex systems</em>
+按这条线索组织了该领域，本专题的结构与之大体对应。</p>
+<p>本专题还讨论扰动下网络能否维持功能，并区分<strong>动力学稳定性</strong>（状态受扰后能否回到平衡）与<strong>结构鲁棒性</strong>（删去节点或边后是否仍连通）；后者的渗流理论与级联失效在<a
+href="robustness.html">网络鲁棒性、渗流与级联失效</a>中系统展开，本专题只保留与控制相关的要点。</p>
+<p>知识页面依次为：动态系统与网络控制的基本表述 →
+线性系统的可控性（Kalman 与 PBH 判据、可控性 Gramian）→
+结构可控性与最大匹配（含精确可控性）→ 驱动节点与网络结构 →
+控制中心性与可控子空间 → 控制能量与 Gramian 的数值问题 →
+目标控制与部分可控 → 可观测性与观测节点 → 非线性网络的控制 →
+脑网络控制：平均与模态可控性 → 驱动节点的枚举、分类与自适应控制 →
+结构鲁棒性 → 动力学稳定性。所需背景包括<a
+href="network-metrics.html">网络结构指标与随机图</a>中的有向图与度分布、<a
+href="spreading.html">网络上的传播与免疫</a>中的
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msup><mi>k</mi><mn>2</mn></msup><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle k^2\rangle</annotation></semantics></math>
+与渗流，以及<a
+href="synchronization.html">同步与协同动力学</a>中的特征值与线性化思路。</p>
+</section><section class="block" id="pages"><h2><span class="tag">Contents</span>知识页面</h2><div class="arts"><a class="art" href="controllability.network-control-systems.html"><span class="no">01</span><span class="t">动态系统与网络控制</span><span class="d">用状态向量 描述网络中 个节点的状态（如基因表达水平），在平衡点附近用线性时不变系统近似： 是 的系统矩阵， 表示节点 影响节点 （即有向边 ）； 是 维外部输入； 是 的输入矩阵…</span></a><a class="art" href="controllability.linear-controllability.html"><span class="no">02</span><span class="t">线性系统的可控性</span><span class="d">可控性：如果存在输入 ，能在有限时间内把系统从任意初始状态 驱动到任意目标状态 ，则系统 是可控的。 Kalman 秩判据： 可控，当且仅当可控性矩阵 满秩，即 。 直观例子 1：…</span></a><a class="art" href="controllability.structural-controllability.html"><span class="no">03</span><span class="t">结构可控性与最大匹配</span><span class="d">结构可控性 Lin（1974）提出结构可控性（structural controllability）：只考虑 、 中哪些元素为零、哪些不为零（即网络拓扑），不关心非零元素的具体数值…</span></a><a class="art" href="controllability.driver-nodes.html"><span class="no">04</span><span class="t">驱动节点与网络结构</span><span class="d">Liu 等（2011）分析了基因调控、食物网、代谢、神经元、互联网、社交等多类真实网络，以及模型网络，得到几条重要结论： 1. 驱动节点倾向于避开枢纽。直觉上应该控制连接最多的节点…</span></a><a class="art" href="controllability.control-centrality.html"><span class="no">05</span><span class="t">控制中心性与可控子空间</span><span class="d">最小输入定理回答“控制全部节点需要几个输入”。反过来也可以问：如果只能驱动一个节点，它能控制多大一部分系统？ 这对应可控子空间的维数，Liu、Slotine 与 Barabási（…</span></a><a class="art" href="controllability.control-energy.html"><span class="no">06</span><span class="t">控制能量与 Gramian 的数值问题</span><span class="d">秩判据只回答“能不能控”，控制能量回答“代价多大”。对线性系统，从 在时间 内到达 的最小能量为（推导见线性系统的可控性） 对单位长度的目标方向 ，能量介于 与 之间（ 为 Gra…</span></a><a class="art" href="controllability.target-control.html"><span class="no">07</span><span class="t">目标控制与部分可控</span><span class="d">药物治疗、神经调控往往只需要改变少数“目标”变量——致病蛋白的活性、某些肌肉的状态、某个脑区的活动——而其余节点状态任意。Gao、Liu、D&#x27;Souza 与 Barabási（20…</span></a><a class="art" href="controllability.observability.html"><span class="no">08</span><span class="t">可观测性与观测节点</span><span class="d">在控制一个系统之前，先要知道它处在状态空间的什么位置。细胞内成千上万种代谢物、蛋白不可能同时测量，临床上也只能采集少数指标。可观测性问：从少数可测变量（输出）的时间序列，能否唯一推…</span></a><a class="art" href="controllability.nonlinear-control.html"><span class="no">09</span><span class="t">非线性网络的控制</span><span class="d">线性化的局限 把非线性系统 在平衡点附近线性化，若线性化系统可控，则原系统在该点附近局部可控。但反过来不成立：线性化不可控时非线性系统仍可能可控；更重要的是，线性化结论只在平衡点的…</span></a><a class="art" href="controllability.brain-network-control.html"><span class="no">10</span><span class="t">脑网络控制：平均与模态可控性</span><span class="d">网络神经科学把控制理论用于结构连接组，问：从某个脑区施加输入（如经颅磁刺激、深部脑刺激，或内在的认知控制信号），能把全脑活动推向哪些状态、代价多大？这一方向称为网络控制理论（net…</span></a><a class="art" href="controllability.author-team-research.html"><span class="no">11</span><span class="t">驱动节点的枚举、分类与自适应控制</span><span class="d">本页介绍网络控制方向的一系列相关研究。核心问题是：一个网络的控制方案往往不唯一，节点在“所有可能的控制方案”中扮演什么角色？ 回答这个问题需要在不穷举所有方案的前提下刻画节点类型，…</span></a><a class="art" href="controllability.structural-robustness.html"><span class="no">12</span><span class="t">结构鲁棒性</span><span class="d">本页只概述与网络控制有关的结构鲁棒性要点；渗流理论、攻击策略、级联失效和相互依存网络的系统讲解见网络鲁棒性、渗流与级联失效。 鲁棒性（robustness）指系统在部分组件失效后维…</span></a><a class="art" href="controllability.dynamical-stability.html"><span class="no">13</span><span class="t">动力学稳定性</span><span class="d">结构鲁棒性问“删掉零件后还连通吗”，动力学稳定性问“状态受到扰动后还能回来吗”。 平衡态的线性稳定性：设 有平衡点 。在其附近线性化， ， 为雅可比矩阵。若 的所有特征值实部为负，…</span></a><a class="art" href="controllability.derivations.html"><span class="no">14</span><span class="t">数学推导与算法</span><span class="d">本页给出：A. 最小输入定理的来源与 Hopcroft–Karp 算法；B. 随机失效阈值 的推导与 Newman–Ziff 算法（更系统的渗流推导见网络鲁棒性、渗流与级联失效）；…</span></a><a class="art" href="controllability.frontiers.html"><span class="no">15</span><span class="t">研究前沿与开放问题</span><span class="d">1. 线性可控性能否推广到非线性生物网络？ 基因调控网络本质上是非线性、多稳态的。Zañudo、Yang 与 Albert（2017，PNAS）提出基于反馈顶点集的控制框架，在非线…</span></a><a class="art" href="controllability.biomedical.html"><span class="no">16</span><span class="t">生物医学应用</span><span class="d">致死性与鲁棒性。Jeong 等（2001，Nature）发现酵母蛋白相互作用网络中，高度蛋白被敲除后更可能致死，这与无标度网络“随机鲁棒、攻击脆弱”的性质一致：大多数随机突变落在低…</span></a><a class="art" href="controllability.limitations.html"><span class="no">17</span><span class="t">适用范围与常见误用</span><span class="d">1. 误用：认为控制网络应该从度最高的枢纽入手。→ 正解：Liu 等（2011）发现驱动节点倾向于避开枢纽；一个输入沿匹配只能独立控制一条路径，枢纽的大量下游需要更多独立输入。 2…</span></a></div></section><section class="block" id="video"><h2><span class="tag">VIDEO</span>讲解视频</h2><div class="video-main"><video controls preload="metadata" playsinline poster="media/videos/L07-core.jpg"><source src="media/videos/L07-core.mp4" type="video/mp4"><track kind="captions" srclang="zh" label="中文字幕" src="media/videos/L07-core.vtt"></video><div class="video-meta"><strong>控制一个网络需要几个开关：可控性与鲁棒性</strong><span>4 分 17 秒</span></div><details class="transcript"><summary>文字稿</summary><p>大家好，这一期我们换一个角度看网络，不再只是观察，而是要去控制它。如果想把一个细胞从疾病状态推回健康状态，应该干预哪些分子？这就是网络可控性要回答的问题，我们还会讨论网络在攻击下有多稳定。</p><p>我们先把网络写成一个线性系统，矩阵 A 描述节点之间谁影响谁。矩阵 B 说明外部输入加在哪些节点上，这些节点叫驱动节点。如果能把系统从任意状态推到任意目标状态，就说它是可控的。Kalman 判据告诉我们，把 B、AB、A 平方 B 等依次排开，矩阵满秩就可控。但真实生物网络的权重往往未知，而且网络一大，这个计算就很难做。</p><p>2011年，Liu、Slotine 和巴拉巴西给出了一个漂亮的解决办法。他们只看网络拓扑，把找驱动节点转化成了一个最大匹配问题。匹配是一组边，任意两条边既不共享起点，也不共享终点。图中高亮的是一个最大匹配，被匹配边指向的节点叫匹配节点。没有被匹配的节点，就是必须直接施加输入的驱动节点。以星形网络为例，中心只能匹配一个叶子，其余叶子都要单独驱动。</p><p>第一个反直觉的结论是，驱动节点往往不是枢纽，而是低度节点。第二，驱动节点的比例主要由度分布决定。网络越稀疏、度越不均匀，需要的驱动节点越多，基因调控网络就比较难控制。第四，最大匹配不唯一，所以驱动节点集合也不唯一，只有数目是确定的。</p><p>既然控制方案不唯一，节点在所有方案中扮演什么角色？这是后续研究关心的问题。我们提出输入图和交换定理，不用穷举，就能找出所有可能的驱动节点。进一步，我们把始终位于控制路径中间的节点称为控制核心点。在新冠蛋白网络中，控制核心点只占13.8%，比驱动节点少得多，更适合筛选药物靶点。对于随时间变化的网络，我们设计了自适应控制算法，减少驱动节点的频繁更换。在大学生症状网络中，非情绪模块更能控制情绪模块，关键症状来自失眠和压力量表。</p><p>下面我们讨论稳定性的另一面，结构鲁棒性。如果随机删除节点，无标度网络的巨分支下降得很慢，非常鲁棒。可如果专门攻击度最高的枢纽，删掉一小部分，网络就会碎裂。原因还是度的二阶矩，同一个性质让它既耐随机故障，又怕蓄意攻击。这和传播专题里的目标免疫是同一个道理，删除枢纽最能切断网络。</p><p>讲到这里，我们要特别注意区分两种不同含义的稳定性。结构鲁棒性问的是，删掉一些节点和边以后，网络还连不连通。动力学稳定性问的是，状态受到小扰动后，能不能回到原来的平衡。May 在1972年证明，随机构造的大系统，规模越大连接越密，越容易失稳。真实生物系统靠模块化、冗余和负反馈，在复杂中保持了稳定。</p><p>好，我们用四句话把这一期的要点小结一下。结构可控性只看拓扑，最大匹配之外的节点就是驱动节点。驱动节点往往避开枢纽，稀疏而异质的网络更难控制。控制核心点从维持网络状态的角度出发，为寻找药物靶点提供了新思路。无标度网络耐随机故障却怕蓄意攻击，结构鲁棒性和动力学稳定性要分开看。</p><p>请打开最大匹配和攻击实验两个交互演示，亲手找一找驱动节点。然后在代码示例里验证 Kalman 判据，比较随机网络和无标度网络。在分析流程专题里，我们会用真实数据把这些方法串起来。</p></details></div></section><section class="block" id="demos"><h2><span class="tag">INTERACTIVE</span>交互可视化</h2><div class="demo" data-demo="matching"></div><div class="demo" data-demo="attack"></div></section><section class="block" id="code"><h2><span class="tag">CODE</span>计算实现</h2><p class="small">12 个完整可运行的 Python 示例，每个都给出代码、输出图和解读；可在浏览器中直接运行，或下载 <a href="notebooks/controllability.ipynb" download>Jupyter Notebook</a> · <a href="notebooks/controllability.py" download>Python 脚本</a>。</p><div class="gallery"><a class="gcard" href="ex-controllability-0.html"><span class="thumb"><img src="gallery/controllability-0-0.png" alt="" loading="lazy"></span><span class="gt">用 Kalman 秩判据检验可控性</span></a><a class="gcard" href="ex-controllability-1.html"><span class="thumb"><img src="gallery/controllability-1-0.png" alt="" loading="lazy"></span><span class="gt">用最大匹配找驱动节点，并用 Kalman 判据验证</span></a><a class="gcard" href="ex-controllability-2.html"><span class="thumb"><img src="gallery/controllability-2-0.png" alt="" loading="lazy"></span><span class="gt">驱动节点比例与平均度、度异质性</span></a><a class="gcard" href="ex-controllability-3.html"><span class="thumb"><img src="gallery/controllability-3-0.png" alt="" loading="lazy"></span><span class="gt">PBH 判据与精确可控性——同一拓扑、不同权重需要的输入数不同</span></a><a class="gcard" href="ex-controllability-4.html"><span class="thumb"><img src="gallery/controllability-4-0.png" alt="" loading="lazy"></span><span class="gt">控制中心性——单个节点能控制的子空间维数</span></a><a class="gcard" href="ex-controllability-5.html"><span class="thumb"><img src="gallery/controllability-5-0.png" alt="" loading="lazy"></span><span class="gt">目标控制——只控制一部分节点需要多少驱动节点</span></a><a class="gcard" href="ex-controllability-6.html"><span class="thumb"><img src="gallery/controllability-6-0.png" alt="" loading="lazy"></span><span class="gt">控制能量、Gramian 条件数与“理论可控、数值不可控”</span></a><a class="gcard" href="ex-controllability-7.html"><span class="thumb"><img src="gallery/controllability-7-0.png" alt="" loading="lazy"></span><span class="gt">平均可控性与模态可控性（Gu 等 2015 的离散时间定义）及其与度的关系</span></a><a class="gcard" href="ex-controllability-8.html"><span class="thumb"><img src="gallery/controllability-8-0.png" alt="" loading="lazy"></span><span class="gt">可观测性——根强连通分支与最少观测节点</span></a><a class="gcard" href="ex-controllability-9.html"><span class="thumb"><img src="gallery/controllability-9-0.png" alt="" loading="lazy"></span><span class="gt">反馈顶点集控制——锁定少数节点把非线性网络推向指定吸引子</span></a><a class="gcard" href="ex-controllability-10.html"><span class="thumb"><img src="gallery/controllability-10-0.png" alt="" loading="lazy"></span><span class="gt">布尔网络的吸引子与最小钉扎控制集（穷举）</span></a><a class="gcard" href="ex-controllability-11.html"><span class="thumb"><img src="gallery/controllability-11-0.png" alt="" loading="lazy"></span><span class="gt">随机失效与蓄意攻击下的结构鲁棒性</span></a></div></section><section class="block prose" id="related"><h2><span class="tag">Links</span>关联知识</h2><ul>
+<li><a href="network-metrics.html">网络结构指标与随机图</a>、<a
+href="network-models.html">小世界与无标度网络模型</a>：有向图、度分布与随机图是最大匹配和渗流分析的基础；度异质性决定驱动节点比例，也决定“随机鲁棒、攻击脆弱”的两面性。</li>
+<li><a
+href="robustness.html">网络鲁棒性、渗流与级联失效</a>：结构鲁棒性的系统讲解，包括渗流理论、攻击策略、级联失效与相互依存网络。</li>
+<li><a href="spreading.html">网络上的传播与免疫</a>：同一个
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msup><mi>k</mi><mn>2</mn></msup><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle k^2\rangle</annotation></semantics></math>
+决定流行阈值与随机失效阈值；SIR 最终规模与键渗流等价。</li>
+<li><a
+href="synchronization.html">同步与协同动力学</a>：主稳定函数是平衡态线性稳定性分析在同步态上的推广；去同步刺激可看作网络控制问题。</li>
+<li><a
+href="molecular-networks.centrality-lethality.html">致死性与中心性</a>：蛋白相互作用网络中的致死性–中心性关系及其争议。</li>
+<li><a
+href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a>：控制核心点用于
+COVID-19 药物重定位与癌症维持基因识别。</li>
+<li><a
+href="symptom-networks.html">症状网络与网络精神病学</a>：模块控制框架用于大学新生的抑郁、焦虑、失眠与压力症状网络。</li>
+<li><a
+href="brain-connectome.html">脑连接组：结构与功能连接</a>：结构连接矩阵的构建是<a
+href="controllability.brain-network-control.html">脑网络控制</a>中平均与模态可控性的输入。</li>
+</ul>
+</section><section class="block" id="papers"><h2><span class="tag">Papers</span>论文精读</h2><div class="pgrid"><article class="pcard" data-own="0" data-dom="theory dynamics" data-k="on the evolution of random graphs论随机图的演化随机图 er 模型 阈值函数 巨连通分支 相变 双跳"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">网络基础理论</span><span class="pbadge dm">网络动力学与控制</span><span>Publications of the Mathematical Institute of the Hungarian Academy of Sciences · 1960</span></div><h3><a href="paper-erdos1960_randomgraphs.html">论随机图的演化</a></h3><p class="porig">On the evolution of random graphs<br><span>Erdős P, Rényi A</span></p><p class="psum">让随机图的边数逐渐增加，系统刻画各种结构在何时“突然”出现，发现巨连通分支在平均度为 1 处涌现。</p><div class="plec small">相关专题：<a href="network-metrics.html">网络结构指标与随机图</a> <a href="network-models.html">小世界与无标度网络模型</a> <a href="controllability.html">网络可控性与稳定性</a></div></article><article class="pcard" data-own="0" data-dom="dynamics theory" data-k="error and attack tolerance of complex networks复杂网络对随机故障与蓄意攻击的耐受性鲁棒性 随机故障 蓄意攻击 无标度网络 网络碎裂 渗流"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">网络动力学与控制</span><span class="pbadge dm">网络基础理论</span><span>Nature · 2000</span></div><h3><a href="paper-albert2000_attack.html">复杂网络对随机故障与蓄意攻击的耐受性</a></h3><p class="porig">Error and attack tolerance of complex networks<br><span>Albert R, Jeong H, Barabási A-L</span></p><p class="psum">比较随机图与无标度网络在随机删点和按度删点下的直径与碎裂过程，发现无标度网络“耐随机故障、怕蓄意攻击”。</p><div class="plec small">相关专题：<a href="controllability.html">网络可控性与稳定性</a> <a href="network-models.html">小世界与无标度网络模型</a></div></article><article class="pcard" data-own="0" data-dom="molecular theory dynamics" data-k="lethality and centrality in protein networks蛋白质网络中的致死性与中心性蛋白质相互作用网络 酵母 必需基因 枢纽 致死性–中心性规则"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">分子网络与基因调控</span><span class="pbadge dm">网络基础理论</span><span>Nature · 2001</span></div><h3><a href="paper-jeong2001_lethality.html">蛋白质网络中的致死性与中心性</a></h3><p class="porig">Lethality and centrality in protein networks<br><span>Jeong H, Mason SP, Barabási A-L, Oltvai ZN</span></p><p class="psum">在酵母蛋白质相互作用网络中发现度分布重尾，且度越高的蛋白敲除后越可能致死，提出“致死性–中心性”关系。</p><div class="plec small">相关专题：<a href="molecular-networks.html">生物分子网络与拓扑特征</a> <a href="network-models.html">小世界与无标度网络模型</a> <a href="controllability.html">网络可控性与稳定性</a></div></article><article class="pcard" data-own="0" data-dom="dynamics" data-k="efficient immunization strategies for computer networks and populations计算机网络与人群的高效免疫策略熟人免疫 免疫策略 友谊悖论 渗流 无标度网络 sir"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">网络动力学与控制</span><span>Physical Review Letters · 2003</span></div><h3><a href="paper-cohen2003_immunization.html">计算机网络与人群的高效免疫策略</a></h3><p class="porig">Efficient immunization strategies for computer networks and populations<br><span>Cohen R, Havlin S, ben-Avraham D</span></p><p class="psum">提出“随机选人、给他随机提名的熟人接种”的熟人免疫策略，不需全局信息即可大幅降低阻断流行所需的接种比例。</p><div class="plec small">相关专题：<a href="spreading.html">网络上的传播与免疫</a> <a href="controllability.html">网络可控性与稳定性</a></div></article><article class="pcard" data-own="0" data-dom="dynamics theory" data-k="catastrophic cascade of failures in interdependent networks相互依存网络中的灾难性级联失效相互依存网络 级联失效 渗流 一级相变 生成函数 鲁棒性"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">网络动力学与控制</span><span class="pbadge dm">网络基础理论</span><span>Nature · 2010</span></div><h3><a href="paper-buldyrev2010_cascade.html">相互依存网络中的灾难性级联失效</a></h3><p class="porig">Catastrophic cascade of failures in interdependent networks<br><span>Buldyrev SV, Parshani R, Paul G, Stanley HE, Havlin S</span></p><p class="psum">两个相互依赖的网络中，失效会来回传递并引发突变式崩溃；与单一网络相反，度分布越宽，相互依存网络越脆弱。</p><div class="plec small">相关专题：<a href="controllability.html">网络可控性与稳定性</a> <a href="network-models.html">小世界与无标度网络模型</a></div></article><article class="pcard" data-own="0" data-dom="dynamics" data-k="controllability of complex networks复杂网络的可控性结构可控性 驱动节点 最大匹配 最小输入定理 度分布"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">网络动力学与控制</span><span>Nature · 2011</span></div><h3><a href="paper-liu2011_controllability.html">复杂网络的可控性</a></h3><p class="porig">Controllability of complex networks<br><span>Liu Y-Y, Slotine J-J, Barabási A-L</span></p><p class="psum">把结构可控性转化为最大匹配，算出最少驱动节点数，发现其主要由度分布决定，且驱动节点倾向于避开枢纽。</p><div class="plec small">相关专题：<a href="controllability.html">网络可控性与稳定性</a></div></article><article class="pcard" data-own="0" data-dom="brain dynamics" data-k="rich-club organization of the human connectome人类连接组的富人俱乐部组织富人俱乐部 枢纽 连接组 弥散张量成像 零模型 网络韧性"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">脑网络与连接组</span><span class="pbadge dm">网络动力学与控制</span><span>Journal of Neuroscience · 2011</span></div><h3><a href="paper-vandenheuvel2011_richclub.html">人类连接组的富人俱乐部组织</a></h3><p class="porig">Rich-club organization of the human connectome<br><span>van den Heuvel MP, Sporns O</span></p><p class="psum">在 21 人结构网络中发现 12 个双侧枢纽互连远超随机预期，构成承担全局通信的富人俱乐部。</p><div class="plec small">相关专题：<a href="brain-connectome.html">脑连接组：结构与功能连接</a> <a href="controllability.html">网络可控性与稳定性</a></div></article><article class="pcard" data-own="0" data-dom="symptom dynamics" data-k="network analysis: an integrative approach to the structure of psychopathology网络分析：理解精神病理结构的整合性方法网络精神病学 症状网络 共同原因模型 反馈环 中心性 共病"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">症状网络与网络精神病学</span><span class="pbadge dm">网络动力学与控制</span><span>Annual Review of Clinical Psychology · 2013</span></div><h3><a href="paper-borsboom2013_psychopathology.html">网络分析：理解精神病理结构的整合性方法</a></h3><p class="porig">Network analysis: an integrative approach to the structure of psychopathology<br><span>Borsboom D, Cramer AOJ</span></p><p class="psum">系统阐述把精神障碍看作症状之间因果相互作用的网络观点，综述症状网络的构建、分析和模拟方法及其临床意义。</p><div class="plec small">相关专题：<a href="symptom-networks.html">症状网络与网络精神病学</a> <a href="controllability.html">网络可控性与稳定性</a></div></article><article class="pcard" data-own="0" data-dom="dynamics brain" data-k="controllability of structural brain networks结构脑网络的可控性网络控制理论 平均可控性 模态可控性 边界可控性 可控性格拉姆矩阵 结构连接组"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">网络动力学与控制</span><span class="pbadge dm">脑网络与连接组</span><span>Nature Communications · 2015</span></div><h3><a href="paper-gu2015_braincontrol.html">结构脑网络的可控性</a></h3><p class="porig">Controllability of structural brain networks<br><span>Gu S, Pasqualetti F, Cieslak M, Telesford QK, Yu AB, Kahn AE, et al.</span></p><p class="psum">把线性控制理论用于人脑结构网络，提出平均、模态、边界三种区域可控性及其系统分布。</p><div class="plec small">相关专题：<a href="controllability.html">网络可控性与稳定性</a> <a href="brain-connectome.html">脑连接组：结构与功能连接</a></div></article><article class="pcard" data-own="0" data-dom="dynamics brain" data-k="network control principles predict neuron function in the caenorhabditis elegans connectome网络控制原理预测秀丽隐杆线虫连接组中的神经元功能结构可控性 目标控制 连接组 秀丽隐杆线虫 神经元消融 运动控制"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">网络动力学与控制</span><span class="pbadge dm">脑网络与连接组</span><span>Nature · 2017</span></div><h3><a href="paper-yan2017_celegans.html">网络控制原理预测秀丽隐杆线虫连接组中的神经元功能</a></h3><p class="porig">Network control principles predict neuron function in the Caenorhabditis elegans connectome<br><span>Yan G, Vértes PE, Towlson EK, Chew YL, Walker DS, Schafer WR, et al.</span></p><p class="psum">用目标可控性分析线虫连接组，预测运动控制所需的神经元，并以单神经元消融实验验证 PDB 与 DD04/DD05。</p><div class="plec small">相关专题：<a href="controllability.html">网络可控性与稳定性</a> <a href="brain-connectome.html">脑连接组：结构与功能连接</a></div></article><article class="pcard" data-own="1" data-dom="dynamics" data-k="input graph: the hidden geometry in controlling complex networks输入图：控制复杂网络的隐藏几何结构输入图 控制邻接 交换定理 控制分支 双峰现象 最大匹配"><div class="pmeta"><span class="pbadge">研究论文</span><span class="pbadge dm">网络动力学与控制</span><span class="pbadge vid">▶ 视频</span><span>Scientific Reports · 2016</span></div><h3><a href="paper-zhang2016_inputgraph.html">输入图：控制复杂网络的隐藏几何结构</a></h3><p class="porig">Input graph: the hidden geometry in controlling complex networks<br><span>Zhang X, Lv T, Pu Y</span></p><p class="psum">用&quot;控制邻接&quot;构造输入图，证明交换定理并把节点控制类型归结为输入图的连通分支，解释了稠密网络的控制双峰现象。</p><div class="plec small">相关专题：<a href="controllability.html">网络可控性与稳定性</a></div></article><article class="pcard" data-own="1" data-dom="dynamics" data-k="an efficient algorithm for finding all possible input nodes for controlling complex networks寻找控制复杂网络的全部可能输入节点的高效算法可能输入节点 交替路径 hopcroft–karp 算法 替代节点 最大匹配"><div class="pmeta"><span class="pbadge">研究论文</span><span class="pbadge dm">网络动力学与控制</span><span class="pbadge vid">▶ 视频</span><span>Scientific Reports · 2017</span></div><h3><a href="paper-zhang2017_allinputs.html">寻找控制复杂网络的全部可能输入节点的高效算法</a></h3><p class="porig">An efficient algorithm for finding all possible input nodes for controlling complex networks<br><span>Zhang X, Han J, Zhang W</span></p><p class="psum">证明只需一个最大匹配及其交替路径即可找出全部可能输入节点，把复杂度降到与最大匹配相同，并输出每个输入节点的替代节点集。</p><div class="plec small">相关专题：<a href="controllability.html">网络可控性与稳定性</a></div></article><article class="pcard" data-own="1" data-dom="dynamics molecular medicine" data-k="cancer-keeper genes as therapeutic targets癌症维持基因作为治疗靶点癌症维持基因 控制枢纽 控制路径 结构可控性 膀胱癌"><div class="pmeta"><span class="pbadge">研究论文</span><span class="pbadge dm">网络动力学与控制</span><span class="pbadge dm">分子网络与基因调控</span><span class="pbadge vid">▶ 视频</span><span>iScience · 2023</span></div><h3><a href="paper-zhang2023_cancerkeeper.html">癌症维持基因作为治疗靶点</a></h3><p class="porig">Cancer-keeper genes as therapeutic targets<br><span>Zhang X, Pan C, Wei X, Yu M, Liu S, An J, et al.</span></p><p class="psum">提出在所有控制方案中都处于控制路径中间的控制枢纽，用作癌症维持基因，并在膀胱癌细胞和小鼠模型中检验部分候选。</p><div class="plec small">相关专题：<a href="controllability.html">网络可控性与稳定性</a> <a href="molecular-networks.html">生物分子网络与拓扑特征</a> <a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></div></article><article class="pcard" data-own="1" data-dom="symptom dynamics theory" data-k="module control of network analysis in psychopathology精神病理学网络分析中的模块控制症状网络 最小支配集 模块控制网络 控制频率 图形lasso louvain"><div class="pmeta"><span class="pbadge">研究论文</span><span class="pbadge dm">症状网络与网络精神病学</span><span class="pbadge dm">网络动力学与控制</span><span class="pbadge vid">▶ 视频</span><span>iScience · 2024</span></div><h3><a href="paper-pan2024_modulecontrol.html">精神病理学网络分析中的模块控制</a></h3><p class="porig">Module control of network analysis in psychopathology<br><span>Pan C, Zhang Q, Zhu Y, Kong S, Liu J, Zhang C, et al.</span></p><p class="psum">用最小支配集在模块尺度分析症状网络的控制关系，发现 2773 名大学新生中睡眠、压力模块结构上控制情绪模块。</p><div class="plec small">相关专题：<a href="symptom-networks.html">症状网络与网络精神病学</a> <a href="controllability.html">网络可控性与稳定性</a> <a href="community-structure.html">社团结构与社区发现</a></div></article><article class="pcard" data-own="1" data-dom="dynamics" data-k="adaptive control of dynamic networks动态网络的自适应控制动态网络 自适应控制 最小驱动节点集 最大匹配 额外控制代价"><div class="pmeta"><span class="pbadge">研究论文</span><span class="pbadge dm">网络动力学与控制</span><span class="pbadge vid">▶ 视频</span><span>IEEE Transactions on Network Science and Engineering · 2026</span></div><h3><a href="paper-pan2026_adaptivecontrol.html">动态网络的自适应控制</a></h3><p class="porig">Adaptive Control of Dynamic Networks<br><span>Pan C, Zhang X, Zheng H, Zhang Y, Su Z, Zhang C, et al.</span></p><p class="psum">在只知道历史拓扑的条件下，为动态网络每个快照实时选取驱动节点，并使前后驱动节点尽量一致以降低切换代价。</p><div class="plec small">相关专题：<a href="controllability.html">网络可控性与稳定性</a></div></article><article class="pcard" data-own="1" data-dom="dynamics" data-k="sparse internal control of language models语言模型的稀疏内部控制稀疏内部控制 局部目标可控性 驱动节点 driver-omp coverage-driver 激活引导 六轴评价"><div class="pmeta"><span class="pbadge">研究论文</span><span class="pbadge dm">网络动力学与控制</span><span class="pbadge vid">▶ 视频</span><span>NeurIPS（Main Track，poster） · 2026</span></div><h3><a href="paper-zhang2026_sparsecontrol.html">语言模型的稀疏内部控制</a></h3><p class="porig">Sparse Internal Control of Language Models<br><span>Zhang X</span></p><p class="psum">把目标控制的思想用到冻结语言模型内部：选少数内部站点做推理时干预来驱动目标行为，并用六轴协议区分哪些控制性质成立。</p><div class="plec small">相关专题：<a href="controllability.html">网络可控性与稳定性</a></div></article></div></section><section class="block prose" id="references"><h2><span class="tag">References</span>核心文献</h2><h3
+id="liuslotine-与-barabási-2011controllability-of-complex-networksnature">Liu、Slotine
+与 Barabási 2011：Controllability of complex networks（Nature）</h3>
+<ul>
+<li><strong>背景</strong>：控制论的可控性判据难以用于规模大、权重未知的真实网络。</li>
+<li><strong>核心发现</strong>：把结构可控性问题转化为最大匹配问题，给出最小输入定理；在多类真实网络中，驱动节点比例主要由度分布决定，稀疏和异质网络需要更多驱动节点，驱动节点倾向于避开枢纽。</li>
+<li><strong>阅读要点</strong>：理解有向图匹配与二分图匹配的对应；注意论文讨论的是线性动力学下“控制到任意状态”，对非线性生物系统的含义要谨慎。重点看图
+1（匹配与驱动节点示意）和图
+3（<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mi>D</mi></msub><annotation encoding="application/x-tex">n_D</annotation></semantics></math>
+与度分布的关系）。</li>
+<li><strong>延伸思考</strong>：给一个基因调控网络增加若干条“自调控”环（自环），驱动节点数会怎样变化？为什么？</li>
+</ul>
+<p>DOI：<a
+href="https://doi.org/10.1038/nature10011">10.1038/nature10011</a>；精读：<a
+href="paper-liu2011_controllability.html">Liu 2011</a></p>
+<h3
+id="albertjeong-与-barabási-2000error-and-attack-tolerance-of-complex-networksnature">Albert、Jeong
+与 Barabási 2000：Error and attack tolerance of complex
+networks（Nature）</h3>
+<ul>
+<li><strong>背景</strong>：互联网、万维网等系统在大量组件随机故障下仍能工作，原因是什么？</li>
+<li><strong>核心发现</strong>：无标度网络对随机删点高度鲁棒，对按度攻击极其脆弱；ER
+网络对两者表现相近。</li>
+<li><strong>阅读要点</strong>：区分巨分支比例与平均路径长度两种鲁棒性指标；注意攻击策略中“按初始度排序”与“每删一个节点重新计算度”的差别。</li>
+<li><strong>延伸思考</strong>：在蛋白相互作用网络中，“随机失效”和“蓄意攻击”分别对应什么生物学过程（突变、药物、病原体）？</li>
+</ul>
+<p>DOI：<a
+href="https://doi.org/10.1038/35019019">10.1038/35019019</a>；精读：<a
+href="paper-albert2000_attack.html">Albert 2000</a></p>
+<h3
+id="yan-等-2017network-control-principles-predict-neuron-function-in-the-caenorhabditis-elegans-connectomenature">Yan
+等 2017：Network control principles predict neuron function in the
+<em>Caenorhabditis elegans</em> connectome（Nature）</h3>
+<ul>
+<li><strong>背景</strong>：网络可控性的预测很少在真实生物系统中得到实验检验。</li>
+<li><strong>核心发现</strong>：基于线虫连接组的结构可控性分析，预测控制运动行为所需的神经元；消融实验验证了部分预测，并发现了此前未知其运动功能的神经元。</li>
+<li><strong>阅读要点</strong>：作者使用的是“目标可控性”（只控制与运动相关的肌肉），而非控制全部节点——这是把理论用于生物问题时很关键的调整。</li>
+<li><strong>延伸思考</strong>：如果把这一思路用于一个疾病相关的基因调控网络，“目标节点”应选什么？需要哪些实验来验证？</li>
+</ul>
+<p>DOI：<a
+href="https://doi.org/10.1038/nature24056">10.1038/nature24056</a>；精读：<a
+href="paper-yan2017_celegans.html">Yan 2017</a></p>
+<h3
+id="liu-与-barabási-2016control-principles-of-complex-systemsreviews-of-modern-physics">Liu
+与 Barabási 2016：Control principles of complex systems（Reviews of
+Modern Physics）</h3>
+<ul>
+<li><strong>背景</strong>：2011
+年后网络控制研究迅速增长，涉及结构可控性、控制能量、可观测性、非线性控制与集体行为控制，概念与假设各不相同。</li>
+<li><strong>核心内容</strong>：系统梳理线性系统的可控性（Kalman
+判据、结构可控性、最小输入问题、节点与边的角色、控制中心性、边动力学、自身动力学、控制能量）、非线性系统的可控性（可达性、线性化的局限、布尔网络）、可观测性（最少观测节点、目标可观测性、观测器设计、参数辨识与网络重建）、走向期望终态的方法（混沌控制、补偿扰动、反馈顶点集），以及同步与群集等集体行为的控制。</li>
+<li><strong>阅读要点</strong>：本专题的页面大体对应其第
+II（线性）、III（非线性）、IV（可观测性）、V.D（反馈顶点集）节；第 VII
+节的展望（稳定性、自适应网络、网络之网络、噪声）适合作为研究选题的起点。</li>
+<li><strong>延伸思考</strong>：综述中哪些结论依赖“参数相互独立”的结构假设？在你关心的生物网络中，这一假设是否合理？</li>
+</ul>
+<p>DOI：<a
+href="https://doi.org/10.1103/RevModPhys.88.035006">10.1103/RevModPhys.88.035006</a>；开放版本：<a
+href="https://arxiv.org/abs/1508.05384">arXiv:1508.05384</a></p>
+<h3
+id="gu-等-2015controllability-of-structural-brain-networksnature-communications">Gu
+等 2015：Controllability of structural brain networks（Nature
+Communications）</h3>
+<ul>
+<li><strong>背景</strong>：结构连接组是否决定了不同脑区在驱动脑状态转换中的分工？</li>
+<li><strong>核心发现</strong>：以弥散成像得到的结构连接为耦合矩阵，提出平均、模态与边界可控性；单个区域理论上可控全脑但能量极大；平均与模态可控性分别与加权度强正相关、强负相关，并分别富集于默认模式系统与认知控制系统。</li>
+<li><strong>阅读要点</strong>：注意归一化方式与离散时间模型；把结果与 Tu
+等（2018）的质疑和 Pasqualetti 等（2019）的回应对照阅读。</li>
+<li><strong>延伸思考</strong>：如果平均可控性与加权度的相关接近
+1，它还提供了哪些度之外的信息？如何设计检验？</li>
+</ul>
+<p>DOI：<a
+href="https://doi.org/10.1038/ncomms9414">10.1038/ncomms9414</a>；精读：<a
+href="paper-gu2015_braincontrol.html">Gu 2015</a></p>
+<h3
+id="gaoliudsouza-与-barabási-2014target-control-of-complex-networksnature-communications">Gao、Liu、D’Souza
+与 Barabási 2014：Target control of complex networks（Nature
+Communications）</h3>
+<ul>
+<li><strong>背景</strong>：控制整个网络既不可行也不必要，实际问题往往只涉及一部分节点。</li>
+<li><strong>核心发现</strong>：全控制的驱动节点集合高估了目标控制所需；提出
+k-walk
+理论（有向树中，到各目标路径长度互不相同时一个节点即可控制它们）和多输入的贪心算法；度异质网络在平均度较大时目标控制效率更高。</li>
+<li><strong>阅读要点</strong>：区分随机目标与局部目标两种方案；注意贪心算法给出的是近似解。</li>
+<li><strong>延伸思考</strong>：在一个疾病相关信号通路中，你会把哪些分子设为目标？非目标节点的状态需要约束吗？</li>
+</ul>
+<p>DOI：<a
+href="https://doi.org/10.1038/ncomms6415">10.1038/ncomms6415</a></p>
+<h3
+id="liuslotine-与-barabási-2013observability-of-complex-systemspnas">Liu、Slotine
+与 Barabási 2013：Observability of complex systems（PNAS）</h3>
+<ul>
+<li><strong>背景</strong>：细胞内变量不可能全部测量，能否从少数可测变量重建整个系统的状态？</li>
+<li><strong>核心发现</strong>：用推断图与强连通分支分解给出最少观测节点的必要条件（每个根
+SCC
+至少一个）；在生化反应系统中，这些观测节点不仅必要而且充分；并给出目标可观测性的观测节点选择方法，服务于生物标志物设计。</li>
+<li><strong>阅读要点</strong>：理解推断图的方向（与影响图相反）；比较线性系统中必要观测集与充分观测集的差异。</li>
+<li><strong>延伸思考</strong>：一个临床生物标志物面板在网络中应满足什么结构条件，才能推断不可直接测量的致病分子？</li>
+</ul>
+<p>DOI：<a
+href="https://doi.org/10.1073/pnas.1215508110">10.1073/pnas.1215508110</a></p>
+<h3
+id="zañudoyang-与-albert-2017structure-based-control-of-complex-networks-with-nonlinear-dynamicspnas">Zañudo、Yang
+与 Albert 2017：Structure-based control of complex networks with
+nonlinear dynamics（PNAS）</h3>
+<ul>
+<li><strong>背景</strong>：结构可控性基于线性动力学，而生物网络是非线性、多稳态的。</li>
+<li><strong>核心发现</strong>：在反馈顶点集控制理论基础上加入源节点，得到不依赖具体函数形式与参数、能把系统引导到任一自然吸引子的控制集合；在多类真实网络上与结构可控性比较，二者所需节点比例呈反向关系（基因调控网络中分别约
+1%–18% 与 75%–96%）；在基因调控网络的动力学模型中检验了预测。</li>
+<li><strong>阅读要点</strong>：理解“控制到任意状态”与“控制到吸引子”的区别；注意
+FVS
+是对所有满足条件的动力学都充分的集合，具体模型可能需要更少节点。</li>
+<li><strong>延伸思考</strong>：如果只知道网络结构和两种细胞表型的表达谱，如何用
+FVS 控制设计重编程策略？</li>
+</ul>
+<p>DOI：<a
+href="https://doi.org/10.1073/pnas.1617387114">10.1073/pnas.1617387114</a></p>
+<h3 id="其他文献按主题">其他文献（按主题）</h3>
+<ul>
+<li><strong>精确可控性</strong>：Yuan Z, Zhao C, Di Z, Wang WX, Lai YC.
+Exact controllability of complex networks. <em>Nature
+Communications</em> 2013;4:2447. <a
+href="https://doi.org/10.1038/ncomms3447">DOI</a></li>
+<li><strong>控制中心性</strong>：Liu YY, Slotine JJ, Barabási AL.
+Control centrality and hierarchical structure in complex networks.
+<em>PLoS ONE</em> 2012;7:e44459. <a
+href="https://doi.org/10.1371/journal.pone.0044459">DOI</a></li>
+<li><strong>控制轮廓</strong>：Ruths J, Ruths D. Control profiles of
+complex networks. <em>Science</em> 2014;343:1373–1376. <a
+href="https://doi.org/10.1126/science.1242063">DOI</a></li>
+<li><strong>边动力学</strong>：Nepusz T, Vicsek T. Controlling edge
+dynamics in complex networks. <em>Nature Physics</em> 2012;8:568–573. <a
+href="https://doi.org/10.1038/nphys2327">DOI</a></li>
+<li><strong>控制能量</strong>：Yan G 等. Controlling complex networks:
+how much energy is needed? <em>Physical Review Letters</em>
+2012;108:218703. <a
+href="https://doi.org/10.1103/PhysRevLett.108.218703">DOI</a>；Yan G 等.
+Spectrum of controlling and observing complex networks. <em>Nature
+Physics</em> 2015;11:779–786. <a
+href="https://doi.org/10.1038/nphys3422">DOI</a></li>
+<li><strong>Gramian 度量与数值问题</strong>：Pasqualetti F, Zampieri S,
+Bullo F. Controllability metrics, limitations and algorithms for complex
+networks. <em>IEEE Transactions on Control of Network Systems</em>
+2014;1:40–52. <a
+href="https://doi.org/10.1109/TCNS.2014.2310254">DOI</a>；Sun J, Motter
+AE. Controllability transition and nonlocality in network control.
+<em>Physical Review Letters</em> 2013;110:208701. <a
+href="https://doi.org/10.1103/PhysRevLett.110.208701">DOI</a></li>
+<li><strong>反馈顶点集控制</strong>：Fiedler B 等. Dynamics and control
+at feedback vertex sets. I. <em>Journal of Dynamics and Differential
+Equations</em> 2013;25:563–604. <a
+href="https://doi.org/10.1007/s10884-013-9312-7">DOI</a>；Mochizuki A
+等. Dynamics and control at feedback vertex sets. II. <em>Journal of
+Theoretical Biology</em> 2013;335:130–146. <a
+href="https://doi.org/10.1016/j.jtbi.2013.06.009">DOI</a></li>
+<li><strong>布尔网络与稳定基序</strong>：Akutsu T 等. Control of Boolean
+networks: hardness results and algorithms for tree structured networks.
+<em>Journal of Theoretical Biology</em> 2007;244:670–679. <a
+href="https://doi.org/10.1016/j.jtbi.2006.09.023">DOI</a>；Zañudo JGT,
+Albert R. Cell fate reprogramming by control of intracellular network
+dynamics. <em>PLoS Computational Biology</em> 2015;11:e1004193. <a
+href="https://doi.org/10.1371/journal.pcbi.1004193">DOI</a>；Murrugarra
+D 等. Identification of control targets in Boolean molecular network
+models via computational algebra. <em>BMC Systems Biology</em>
+2016;10:94. <a
+href="https://doi.org/10.1186/s12918-016-0332-x">DOI</a></li>
+<li><strong>生物医学应用</strong>：Vinayagam A 等. Controllability
+analysis of the directed human protein interaction network identifies
+disease genes and drug targets. <em>PNAS</em> 2016;113:4976–4981. <a
+href="https://doi.org/10.1073/pnas.1603992113">DOI</a>；Kanhaiya K 等.
+Controlling directed protein interaction networks in cancer.
+<em>Scientific Reports</em> 2017;7:10327. <a
+href="https://doi.org/10.1038/s41598-017-10491-y">DOI</a></li>
+<li><strong>脑网络控制及其争议</strong>：Tu C 等. Warnings and caveats
+in brain controllability. <em>NeuroImage</em> 2018;176:83–91. <a
+href="https://doi.org/10.1016/j.neuroimage.2018.04.010">DOI</a>；Pasqualetti
+F 等. RE: Warnings and caveats in brain controllability.
+<em>NeuroImage</em> 2019;197:586–588. <a
+href="https://doi.org/10.1016/j.neuroimage.2019.05.001">DOI</a>；Karrer
+TM 等. A practical guide to methodological considerations in the
+controllability of structural brain networks. <em>Journal of Neural
+Engineering</em> 2020;17:026031. <a
+href="https://doi.org/10.1088/1741-2552/ab6e8b">DOI</a>；Kim JZ 等. Role
+of graph architecture in controlling dynamical networks with
+applications to neural systems. <em>Nature Physics</em> 2018;14:91–98.
+<a href="https://doi.org/10.1038/nphys4268" target="_blank" rel="noopener">DOI</a>；Gu S 等. Optimal
+trajectories of brain state transitions. <em>NeuroImage</em>
+2017;148:305–317. <a
+href="https://doi.org/10.1016/j.neuroimage.2017.01.003">DOI</a></li>
+</ul>
+</section><section class="block" id="data"><h2><span class="tag">Data &amp; tools</span>相关数据与软件</h2><div class="rgrid"><a class="rcard" href="r-openworm.html" data-dom="brain dynamics" data-k="openworm 以秀丽隐杆线虫为对象的开放科学数字生物体建模项目。"><span class="kind">软件/工具包</span><b>OpenWorm</b><span class="d">以秀丽隐杆线虫为对象的开放科学数字生物体建模项目。</span></a><a class="rcard" href="r-wormwiring.html" data-dom="brain dynamics" data-k="wormwiring 线虫神经连接组数据与可视化网站。"><span class="kind">数据集</span><b>WormWiring</b><span class="d">线虫神经连接组数据与可视化网站。</span></a></div></section><section class="block prose" id="resources"><h2><span class="tag">Further</span>延伸资源</h2><div class="table-wrap"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>类型</th>
+<th>资源</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>教材</td>
+<td>Barabási《Network Science》第 8 章 Network Robustness（<a
+href="http://networksciencebook.com/chapter/8">链接</a>）</td>
+<td>Molloy–Reed 判据、随机失效与攻击、级联失效、连续度近似；CC BY-NC-SA
+2.0</td>
+</tr>
+<tr>
+<td>讲义</td>
+<td>Liu 与 Barabási, Control principles of complex systems（<a
+href="https://arxiv.org/abs/1508.05384">arXiv 免费版</a>；正式版 Rev Mod
+Phys 2016，<a
+href="https://doi.org/10.1103/RevModPhys.88.035006">DOI</a>）</td>
+<td>网络控制最全面的综述，本专题结构的主要参照：先读第 II
+节（线性与结构可控性、控制能量），再读第 IV 节（可观测性）与第 V.D
+节（反馈顶点集）</td>
+</tr>
+<tr>
+<td>教材说明</td>
+<td>Barabási《Network
+Science》在线版没有单独的网络控制章节；可控性部分以上述综述为准，鲁棒性部分对应第
+8 章</td>
+<td>结构鲁棒性的系统内容见<a
+href="robustness.html">网络鲁棒性、渗流与级联失效</a></td>
+</tr>
+<tr>
+<td>软件文档</td>
+<td>NetworkX 二分图匹配
+<code>networkx.algorithms.bipartite.hopcroft_karp_matching</code>；SciPy
+<code>scipy.linalg.solve_continuous_lyapunov</code> /
+<code>solve_discrete_lyapunov</code></td>
+<td>最大匹配求驱动节点、Lyapunov 方程求 Gramian 的标准实现，用法见<a
+href="controllability.html#code">代码示例</a></td>
+</tr>
+<tr>
+<td>中文视频</td>
+<td>陈关荣：复杂网络牵制控制及其能控性研究进展（<a
+href="https://www.bilibili.com/video/BV1zC4y1H7Gt/">B 站</a>）</td>
+<td>中文的网络能控性系统报告，正式报告约在
+13:38–1:27:00，以牵制控制为主</td>
+</tr>
+<tr>
+<td>中文视频</td>
+<td>单哥：复杂网络建模·网络鲁棒性（<a
+href="https://www.bilibili.com/video/BV1WR4y1G7kH/">B
+站</a>，P54–P60）</td>
+<td>约 45 分钟，从渗流理论到随机与度攻击，含 Python 代码</td>
+</tr>
+<tr>
+<td>英文视频</td>
+<td>Yang-Yu Liu：Controllability and Observability of Complex
+Systems（<a
+href="https://www.youtube.com/watch?v=wQtiJhcShSA">YouTube</a>）</td>
+<td>结构可控性原作者之一的讲座，约 1 小时；需境外网络</td>
+</tr>
+<tr>
+<td>交互演示</td>
+<td>NetLogo Web：Giant Component（<a
+href="https://www.netlogoweb.org/launch#https://www.netlogoweb.org/assets/modelslib/Sample%20Models/Networks/Giant%20Component.nlogo">链接</a>）</td>
+<td>观察巨分支的出现，对应<a
+href="controllability.structural-robustness.html">结构鲁棒性</a>中的渗流</td>
+</tr>
+<tr>
+<td>论文（生物医学）</td>
+<td>Yan 等 2017, Network control principles predict neuron function in
+the <em>C. elegans</em> connectome, Nature（<a
+href="https://doi.org/10.1038/nature24056">DOI</a>）</td>
+<td>见核心文献，可控性预测的实验检验</td>
+</tr>
+<tr>
+<td>论文（生物医学）</td>
+<td>Gu 等 2015, Controllability of structural brain networks, Nature
+Communications（<a
+href="https://doi.org/10.1038/ncomms9414">DOI</a>）</td>
+<td>开放获取；平均可控性与模态可控性，衔接<a
+href="brain-connectome.html">脑连接组</a>；精读：<a
+href="paper-gu2015_braincontrol.html">Gu 2015</a></td>
+</tr>
+<tr>
+<td>拓展（人工智能）</td>
+<td><a href="apps/sparse-control/index.html">Sparse Internal Control of
+Language Models</a>（NeurIPS 2026；<a
+href="apps/sparse-control/index.html">代码</a>）</td>
+<td>把“选少数驱动节点控制系统”的思想用到大语言模型内部：选择少量内部站点施加干预，并从可达、可反转、剂量响应、反馈、保持与复用六方面评价控制效果。见<a
+href="paper-zhang2026_sparsecontrol.html">论文精读</a></td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>提示：Barabási《Network
+Science》在线版需加载境外脚本，在中国大陆可能无法正常显示；标注“需境外网络”的为
+YouTube 资源。</p>
+</blockquote>
+</section><section class="block prose" id="questions"><h2><span class="tag">Open questions</span>开放问题</h2><ol type="1">
+<li>选择一个你熟悉的生物医学网络（如某信号通路、某疾病的症状网络、某脑区回路）。如果要“控制”它，控制目标是什么——控制全部节点，还是只把少数关键节点推向健康状态？线性结构可控性的哪些假设在这个系统中不成立？</li>
+<li>有研究提出“控制核心点”（在所有控制方案中都必须作为中间节点）可能比“驱动节点”更适合作为药物靶点候选。请从生物学和方法学两方面，各给出一条支持和一条质疑这一观点的理由，并设计一个可以检验它的分析或实验。</li>
+<li>对一个已知动力学方程的代谢通路或信号通路模型，画出它的推断图并找出根强连通分支。临床上实际可测的分子是否覆盖了每个根强连通分支？如果没有，哪些不可测分子在原理上就无法从现有测量中推断？</li>
+<li>同一个基因调控网络，用结构可控性（最大匹配）和反馈顶点集控制分别计算控制节点集合，两者的大小和成员可能相差很大。请说明两种框架在控制目标、动力学假设和控制动作上的差别，并讨论在“把肿瘤细胞推向凋亡表型”这一问题中应优先采用哪一种、还需要什么数据。</li>
+</ol>
+</section></article><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script><script src="assets/js/demos.js"></script></body></html>

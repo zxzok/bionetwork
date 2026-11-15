@@ -1,0 +1,128 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>聚集谱 C(k) 与层次模块网络（Ravasz–Barabási 型确定性模型） · 生物医学网络科学</title><meta name="description" content="度相关性与网络结构的高阶统计 · 代码示例：聚集谱 C(k) 与层次模块网络（Ravasz–Barabási 型确定性模型）"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-theory"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html" aria-current="page">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory" open><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a><ol class="sub"><li><a href="degree-correlations.joint-degree-distribution.html"><span class="n">01</span>联合度分布与条件度分布</a></li><li><a href="degree-correlations.knn-function.html"><span class="n">02</span>邻居平均度函数与相关指数</a></li><li><a href="degree-correlations.assortativity-coefficient.html"><span class="n">03</span>度相关系数 r</a></li><li><a href="degree-correlations.structural-cutoff.html"><span class="n">04</span>结构截断与结构性异配</a></li><li><a href="degree-correlations.randomization-tests.html"><span class="n">05</span>度保持随机化检验</a></li><li><a href="degree-correlations.generating-correlated-networks.html"><span class="n">06</span>生成具有度相关的网络</a></li><li><a href="degree-correlations.rich-club.html"><span class="n">07</span>富人俱乐部系数及其归一化</a></li><li><a href="degree-correlations.clustering-spectrum.html"><span class="n">08</span>聚集谱 C(k) 与层次模块性</a></li><li><a href="degree-correlations.k-core.html"><span class="n">09</span>k-核分解</a></li><li><a href="degree-correlations.impact-on-dynamics.html"><span class="n">10</span>度相关对网络过程的影响</a></li><li><a href="degree-correlations.derivations.html"><span class="n">11</span>数学推导与算法</a></li><li><a href="degree-correlations.biomedical.html"><span class="n">12</span>生物医学应用</a></li><li><a href="degree-correlations.limitations.html"><span class="n">13</span>适用范围与常见误用</a></li></ol></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="code.html">代码库</a> <span class="sep">/</span> <a href="code.html#theory">网络基础理论</a> <span class="sep">/</span> <a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></nav><div class="eyebrow" style="margin-top:14px"><b>Example</b><span>06 / 09</span></div><h1>聚集谱 C(k) 与层次模块网络（Ravasz–Barabási 型确定性模型）</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></dd></div><div><dt>下载</dt><dd><a href="notebooks/degree-correlations.ipynb" download>Notebook</a> · <a href="notebooks/degree-correlations.py" download>.py</a></dd></div></dl></header><section class="block prose"><p>递归构造层次网络：基本单元是 5 个节点的完全图（1 个中心 + 4
+个外围）；每一层把当前网络复制 4 份，
+并把各副本中“最底层外围节点”全部连到原网络的中心节点。 对比 BA
+网络：层次网络的 C(k) 随 k 近似按 k^(-1) 下降，BA 网络的 C(k) 基本与 k
+无关。 解读：C(k) 的负斜率是层次模块性的一个必要而非充分的信号；度相关与
+C(k) 的估计也相互影响。</p>
+</section><section class="block"><h2><span class="tag">Output</span>输出图</h2><div class="ex-figs"><img src="gallery/degree-correlations-5-0.png" alt="聚集谱 C(k) 与层次模块网络（Ravasz–Barabási 型确定性模型）：输出图 1" loading="lazy"></div></section><section class="block"><h2><span class="tag">Output</span>文字输出</h2><pre class="ex-out">层次网络: N = 625, 平均聚集系数 = 0.815, log C(k) ~ log k 斜率 = -1.11, 度相关 r = -0.129
+   部分 C(k): {4: 1.0, 5: 0.9, 6: 0.8, 7: 0.714, 20: 0.158, 84: 0.036, 340: 0.009}
+BA 网络: N = 625, 平均聚集系数 = 0.046, log C(k) ~ log k 斜率 = -0.13, 度相关 r = -0.069
+   部分 C(k): {3: 0.071, 8: 0.025, 13: 0.01, 18: 0.016, 23: 0.024, 35: 0.024, 80: 0.026}</pre></section><section class="block prose"><h2><span class="tag">Code</span>代码</h2><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 递归构造层次网络：基本单元是 5 个节点的完全图（1 个中心 + 4 个外围）；每一层把当前网络复制 4 份，</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 并把各副本中“最底层外围节点”全部连到原网络的中心节点。</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 对比 BA 网络：层次网络的 C(k) 随 k 近似按 k^(-1) 下降，BA 网络的 C(k) 基本与 k 无关。</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 解读：C(k) 的负斜率是层次模块性的一个必要而非充分的信号；度相关与 C(k) 的估计也相互影响。</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> networkx <span class="im">as</span> nx</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> hierarchical_network(levels<span class="op">=</span><span class="dv">3</span>):</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    G <span class="op">=</span> nx.complete_graph(<span class="dv">5</span>)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    center <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    periphery <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>]                 <span class="co"># 当前网络中“最外围”的节点</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(levels):</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>        n <span class="op">=</span> G.number_of_nodes()</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>        H <span class="op">=</span> G.copy()</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>        new_periph <span class="op">=</span> []</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> c <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">5</span>):</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>            offset <span class="op">=</span> c <span class="op">*</span> n</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>            H <span class="op">=</span> nx.union(H, nx.relabel_nodes(G, {v: v <span class="op">+</span> offset <span class="cf">for</span> v <span class="kw">in</span> G}))</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> p <span class="kw">in</span> periphery:</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>                H.add_edge(center, p <span class="op">+</span> offset)</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>                new_periph.append(p <span class="op">+</span> offset)</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>        G, periphery <span class="op">=</span> H, new_periph</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> G</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> ck_curve(G):</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    cl <span class="op">=</span> nx.clustering(G)</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    deg <span class="op">=</span> <span class="bu">dict</span>(G.degree())</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    out <span class="op">=</span> {}</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> k <span class="kw">in</span> <span class="bu">sorted</span>(<span class="bu">set</span>(deg.values())):</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> k <span class="op">&gt;=</span> <span class="dv">2</span>:</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>            out[k] <span class="op">=</span> np.mean([cl[i] <span class="cf">for</span> i <span class="kw">in</span> G <span class="cf">if</span> deg[i] <span class="op">==</span> k])</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> out</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>H <span class="op">=</span> hierarchical_network(levels<span class="op">=</span><span class="dv">3</span>)</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>B <span class="op">=</span> nx.barabasi_albert_graph(H.number_of_nodes(), <span class="dv">3</span>, seed<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> name, G <span class="kw">in</span> [(<span class="st">&quot;层次网络&quot;</span>, H), (<span class="st">&quot;BA 网络&quot;</span>, B)]:</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>    ck <span class="op">=</span> ck_curve(G)</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>    ks <span class="op">=</span> np.array([k <span class="cf">for</span> k <span class="kw">in</span> ck <span class="cf">if</span> ck[k] <span class="op">&gt;</span> <span class="dv">0</span>], <span class="bu">float</span>)</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>    cs <span class="op">=</span> np.array([ck[k] <span class="cf">for</span> k <span class="kw">in</span> ck <span class="cf">if</span> ck[k] <span class="op">&gt;</span> <span class="dv">0</span>])</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>    slope <span class="op">=</span> np.polyfit(np.log(ks), np.log(cs), <span class="dv">1</span>)[<span class="dv">0</span>]</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="sc">{</span>name<span class="sc">}</span><span class="ss">: N = </span><span class="sc">{</span>G<span class="sc">.</span>number_of_nodes()<span class="sc">}</span><span class="ss">, 平均聚集系数 = </span><span class="sc">{</span>nx<span class="sc">.</span>average_clustering(G)<span class="sc">:.3f}</span><span class="ss">, &quot;</span></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>          <span class="ss">f&quot;log C(k) ~ log k 斜率 = </span><span class="sc">{</span>slope<span class="sc">:.2f}</span><span class="ss">, 度相关 r = </span><span class="sc">{</span>nx<span class="sc">.</span>degree_assortativity_coefficient(G)<span class="sc">:+.3f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>    show <span class="op">=</span> <span class="bu">list</span>(ck.items())[:: <span class="bu">max</span>(<span class="dv">1</span>, <span class="bu">len</span>(ck) <span class="op">//</span> <span class="dv">6</span>)]</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;   部分 C(k):&quot;</span>, {k: <span class="bu">round</span>(<span class="bu">float</span>(v), <span class="dv">3</span>) <span class="cf">for</span> k, v <span class="kw">in</span> show})</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="co"># 作图：双对数坐标下的聚集谱 C(k)，并画出 k^-1 参考线</span></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="fl">6.4</span>, <span class="fl">4.2</span>))</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> G, lab, mk <span class="kw">in</span> [(H, <span class="st">&quot;hierarchical network&quot;</span>, <span class="st">&quot;o&quot;</span>), (B, <span class="st">&quot;BA network&quot;</span>, <span class="st">&quot;s&quot;</span>)]:</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>    ck <span class="op">=</span> {k: c <span class="cf">for</span> k, c <span class="kw">in</span> ck_curve(G).items() <span class="cf">if</span> c <span class="op">&gt;</span> <span class="dv">0</span>}</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>    ax.loglog(<span class="bu">list</span>(ck), <span class="bu">list</span>(ck.values()), mk, ms<span class="op">=</span><span class="dv">5</span>, alpha<span class="op">=</span><span class="fl">0.8</span>, label<span class="op">=</span>lab)</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>kref <span class="op">=</span> np.array([<span class="dv">4</span>, <span class="dv">100</span>])</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>ax.loglog(kref, <span class="fl">2.0</span> <span class="op">/</span> kref, <span class="st">&quot;k--&quot;</span>, lw<span class="op">=</span><span class="dv">1</span>, label<span class="op">=</span><span class="st">&quot;~ k^-1&quot;</span>)</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">&quot;degree k&quot;</span>)<span class="op">;</span> ax.set_ylabel(<span class="st">&quot;clustering spectrum C(k)&quot;</span>)</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">&quot;Hierarchical modularity: C(k) falls as k^-1, BA stays flat&quot;</span>)</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>ax.legend()<span class="op">;</span> plt.tight_layout()<span class="op">;</span> plt.show()</span></code></pre></div>
+</section><section class="block"><h2><span class="tag">Run</span>在浏览器中运行</h2><p class="small">首次加载 Python 环境约需 20–40 秒；可以修改参数后重新运行。</p><div class="cell"><div class="cell-head"><h3>聚集谱 C(k) 与层次模块网络（Ravasz–Barabási 型确定性模型）</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea id="degree-correlations-cell5" rows="30" spellcheck="false" aria-label="聚集谱 C(k) 与层次模块网络（Ravasz–Barabási 型确定性模型） 代码"># 递归构造层次网络：基本单元是 5 个节点的完全图（1 个中心 + 4 个外围）；每一层把当前网络复制 4 份，
+# 并把各副本中“最底层外围节点”全部连到原网络的中心节点。
+# 对比 BA 网络：层次网络的 C(k) 随 k 近似按 k^(-1) 下降，BA 网络的 C(k) 基本与 k 无关。
+# 解读：C(k) 的负斜率是层次模块性的一个必要而非充分的信号；度相关与 C(k) 的估计也相互影响。
+import numpy as np
+import networkx as nx
+
+
+def hierarchical_network(levels=3):
+    G = nx.complete_graph(5)
+    center = 0
+    periphery = [1, 2, 3, 4]                 # 当前网络中“最外围”的节点
+    for _ in range(levels):
+        n = G.number_of_nodes()
+        H = G.copy()
+        new_periph = []
+        for c in range(1, 5):
+            offset = c * n
+            H = nx.union(H, nx.relabel_nodes(G, {v: v + offset for v in G}))
+            for p in periphery:
+                H.add_edge(center, p + offset)
+                new_periph.append(p + offset)
+        G, periphery = H, new_periph
+    return G
+
+
+def ck_curve(G):
+    cl = nx.clustering(G)
+    deg = dict(G.degree())
+    out = {}
+    for k in sorted(set(deg.values())):
+        if k &gt;= 2:
+            out[k] = np.mean([cl[i] for i in G if deg[i] == k])
+    return out
+
+
+H = hierarchical_network(levels=3)
+B = nx.barabasi_albert_graph(H.number_of_nodes(), 3, seed=1)
+for name, G in [(&quot;层次网络&quot;, H), (&quot;BA 网络&quot;, B)]:
+    ck = ck_curve(G)
+    ks = np.array([k for k in ck if ck[k] &gt; 0], float)
+    cs = np.array([ck[k] for k in ck if ck[k] &gt; 0])
+    slope = np.polyfit(np.log(ks), np.log(cs), 1)[0]
+    print(f&quot;{name}: N = {G.number_of_nodes()}, 平均聚集系数 = {nx.average_clustering(G):.3f}, &quot;
+          f&quot;log C(k) ~ log k 斜率 = {slope:.2f}, 度相关 r = {nx.degree_assortativity_coefficient(G):+.3f}&quot;)
+    show = list(ck.items())[:: max(1, len(ck) // 6)]
+    print(&quot;   部分 C(k):&quot;, {k: round(float(v), 3) for k, v in show})
+
+# 作图：双对数坐标下的聚集谱 C(k)，并画出 k^-1 参考线
+import matplotlib.pyplot as plt
+fig, ax = plt.subplots(figsize=(6.4, 4.2))
+for G, lab, mk in [(H, &quot;hierarchical network&quot;, &quot;o&quot;), (B, &quot;BA network&quot;, &quot;s&quot;)]:
+    ck = {k: c for k, c in ck_curve(G).items() if c &gt; 0}
+    ax.loglog(list(ck), list(ck.values()), mk, ms=5, alpha=0.8, label=lab)
+kref = np.array([4, 100])
+ax.loglog(kref, 2.0 / kref, &quot;k--&quot;, lw=1, label=&quot;~ k^-1&quot;)
+ax.set_xlabel(&quot;degree k&quot;); ax.set_ylabel(&quot;clustering spectrum C(k)&quot;)
+ax.set_title(&quot;Hierarchical modularity: C(k) falls as k^-1, BA stays flat&quot;)
+ax.legend(); plt.tight_layout(); plt.show()</textarea><div class="out" aria-live="polite"></div></div></section><nav class="pager"><a href="ex-degree-correlations-4.html"><small>上一个示例</small>富人俱乐部系数 phi(k) 及其保度归一化 rho(k)</a><a href="ex-degree-correlations-6.html"><small>下一个示例</small>k-核分解——手写剥离算法并与 NetworkX 对照，比较核数与度</a></nav></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

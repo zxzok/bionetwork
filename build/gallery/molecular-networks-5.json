@@ -1,0 +1,10 @@
+{
+ "topic": "molecular-networks",
+ "index": 5,
+ "title": "互作组补全——共同邻居（L2）与长度为 3 的路径（L3）链路预测",
+ "hash": "11401c1f1a29a2997e0721fd4ef803d3d37851ca",
+ "ok": true,
+ "figures": 1,
+ "stdout": "节点 600，边 1843，隐藏 184 条\nAUC：L2（共同邻居）= 0.492，L3（度归一化）= 0.865",
+ "stderr": ""
+}

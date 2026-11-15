@@ -1,0 +1,164 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>动态网络的自适应控制 · 生物医学网络科学</title><meta name="description" content="论文精读：Adaptive Control of Dynamic Networks"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-dynamics"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html" aria-current="page">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics" open><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html" aria-current="page">网络可控性与稳定性</a><ol class="sub"><li><a href="controllability.network-control-systems.html"><span class="n">01</span>动态系统与网络控制</a></li><li><a href="controllability.linear-controllability.html"><span class="n">02</span>线性系统的可控性</a></li><li><a href="controllability.structural-controllability.html"><span class="n">03</span>结构可控性与最大匹配</a></li><li><a href="controllability.driver-nodes.html"><span class="n">04</span>驱动节点与网络结构</a></li><li><a href="controllability.control-centrality.html"><span class="n">05</span>控制中心性与可控子空间</a></li><li><a href="controllability.control-energy.html"><span class="n">06</span>控制能量与 Gramian 的数值问题</a></li><li><a href="controllability.target-control.html"><span class="n">07</span>目标控制与部分可控</a></li><li><a href="controllability.observability.html"><span class="n">08</span>可观测性与观测节点</a></li><li><a href="controllability.nonlinear-control.html"><span class="n">09</span>非线性网络的控制</a></li><li><a href="controllability.brain-network-control.html"><span class="n">10</span>脑网络控制：平均与模态可控性</a></li><li><a href="controllability.author-team-research.html"><span class="n">11</span>驱动节点的枚举、分类与自适应控制</a></li><li><a href="controllability.structural-robustness.html"><span class="n">12</span>结构鲁棒性</a></li><li><a href="controllability.dynamical-stability.html"><span class="n">13</span>动力学稳定性</a></li><li><a href="controllability.derivations.html"><span class="n">14</span>数学推导与算法</a></li><li><a href="controllability.frontiers.html"><span class="n">15</span>研究前沿与开放问题</a></li><li><a href="controllability.biomedical.html"><span class="n">16</span>生物医学应用</a></li><li><a href="controllability.limitations.html"><span class="n">17</span>适用范围与常见误用</a></li></ol></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><div class="lec-grid"><div style="min-width:0"><div class="lec-head"><nav class="crumb"><a href="papers.html">文献知识库</a> › 网络动力学与控制</nav><div class="eyebrow"><b>研究论文</b><span>难度：进阶</span></div><h1>动态网络的自适应控制</h1><p class="porig big">Adaptive Control of Dynamic Networks</p><p class="small">Pan C, Zhang X, Zheng H, Zhang Y, Su Z, Zhang C, et al. · <i>IEEE Transactions on Network Science and Engineering</i> 2026 · <a href="https://doi.org/10.1109/TNSE.2025.3605812" target="_blank" rel="noopener">DOI: 10.1109/TNSE.2025.3605812</a></p><div class="chips"><span class="chip">动态网络</span><span class="chip">自适应控制</span><span class="chip">最小驱动节点集</span><span class="chip">最大匹配</span><span class="chip">额外控制代价</span></div><div class="objectives"><h2>一句话</h2><p style="margin:0">在只知道历史拓扑的条件下，为动态网络每个快照实时选取驱动节点，并使前后驱动节点尽量一致以降低切换代价。</p><p class="small" style="margin:8px 0 0">相关专题：<a href="controllability.html">网络可控性与稳定性</a></p></div></div><section class="block" id="video"><h2><span class="tag">VIDEO</span>讲解视频</h2><div class="video-main"><video controls preload="metadata" playsinline poster="media/videos/pan2026_adaptivecontrol.jpg"><source src="media/videos/pan2026_adaptivecontrol.mp4" type="video/mp4"><track kind="captions" srclang="zh" label="中文字幕" src="media/videos/pan2026_adaptivecontrol.vtt"></video><div class="video-meta"><strong>动态网络的自适应控制</strong><span>3 分 48 秒</span></div><details class="transcript"><summary>文字稿</summary><p>大家好，这次我们精读一篇发表在IEEE TNSE上的论文。它讨论的问题是，当网络本身在不断变化时，我们该怎样持续地控制它。这篇论文直接建立在最大匹配和驱动节点这套结构可控性理论之上。</p><p>邮件往来、人际接触，还有细胞里的分子相互作用，连边都在不停变化。已有的时序网络控制方法，大多假设整个演化过程事先就知道。但在真实场景里，我们在当下只能看到过去和现在的网络。而且每更换一个驱动节点，就意味着要把控制器搬个家，这是额外代价。</p><p>我们先回顾一下，最大匹配里没有匹配边指向的节点就是驱动节点。关键在于，同一个网络的最大匹配往往不止一个。不同的最大匹配给出大小相同、但成员不同的驱动节点集。这就给了我们选择的余地，可以挑一个和上一时刻最像的方案。比如上一时刻用的是节点a和b，这一时刻如果还能用a和b，就一个都不用换。</p><p>论文把动态网络看成一串快照，每个快照内部的拓扑固定。额外控制代价，就是相邻快照之间新加入的驱动节点个数，再对所有时刻求和。我们的目标是在每个时刻都保证可控的前提下，让这个代价尽量小。这是一个在线的组合优化问题，而且是NP难的，所以我们采用启发式方法。</p><p>第一条是稳定性原则，历史上连边多、连边变化少的节点更适合当驱动节点。第二条是一致性原则，尽量保留上一时刻已经在用的驱动节点。两者冲突时，我们让一致性优先，因为它直接决定要换掉多少节点。</p><p>稳定性由两部分相乘，一是节点前后两个快照边集的相似度，二是度中心性。把最近几个快照的稳定性加起来，就得到这个节点的累计稳定性。再加上一项，如果节点在上一时刻是驱动节点，就额外加上一个足够大的值。论文证明，这样设计后，上一时刻的驱动节点得分一定高于其他节点。</p><p>第一步，从上一时刻的最大匹配出发，删去已经不存在的匹配边。第二步，为当前快照里的每个节点计算自适应控制指标。第三步，按指标从小到大搜索增广路径，得分高的节点更可能留下来当驱动节点。</p><p>我们在1860个由ER和无标度模型生成的合成动态网络上做了测试。在重连比例低于0.1的相对稳定网络上，额外控制代价几乎减半。无标度网络上两种算法代价之比平均为0.72，ER网络上为0.84。在20个真实动态网络上平均比值是0.81，变化慢的网络能降到0.50。网络剧烈变化时，指标失效，算法退化成普通最大匹配，不会比基线更差。</p><p>要注意，这是启发式算法，论文也承认它还没有相对全局最优的近似界。代价只统计新增的驱动节点，没有区分不同节点的实际干预成本。大家可以联系脑网络中的动态功能连接，想想怎样在变化的网络上选刺激位点。读完论文后，请完成页面上的思考题，我们下次再见。</p></details></div></section><section class="block prose" id="notes"><h2 id="一句话看懂">一句话看懂</h2>
+<p>网络在不断变化，每一时刻都要重新选驱动节点。由于最小驱动节点集往往不唯一，我们可以在“同样大小”的众多方案里，挑一个和上一时刻最像的方案，从而少换人、少花钱。这篇论文把这个想法形式化为<strong>自适应控制问题</strong>，并给出一个基于“部分匹配修复”的启发式算法
+AC。</p>
+<h2 id="研究背景与问题">研究背景与问题</h2>
+<p><a
+href="controllability.structural-controllability.html">结构可控性与最大匹配</a>中的结构可控性默认网络拓扑固定：用最大匹配求出最小驱动节点集（minimum
+driver node set,
+MDS），未被匹配边指向的节点就是驱动节点。但真实系统（邮件往来、人际接触、细胞内的分子相互作用）的连边随时间变化。</p>
+<p>已有的时序网络控制方法大多有一个隐含前提：<strong>整个演化过程事先已知</strong>，于是可以离线找一个对所有时刻都适用的全局驱动节点集。论文指出，这个前提在多数真实网络中不成立，因为未来的结构变化是随机的、难以预测的。</p>
+<p>于是问题变成：在时刻
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>，只看得到快照
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>G</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>G</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">G_1,\dots,G_t</annotation></semantics></math>，必须马上给出
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>G</mi><mi>t</mi></msub><annotation encoding="application/x-tex">G_t</annotation></semantics></math>
+的一个 MDS，使它能控制当前网络；同时，前后两个 MDS
+差别越小越好，因为每更换一个驱动节点，都意味着要把控制器“搬家”，产生额外代价。</p>
+<h2 id="核心思想与方法">核心思想与方法</h2>
+<h3 id="问题形式化">问题形式化</h3>
+<p>动态网络建模为快照序列，每个快照内拓扑固定、可看作线性时不变系统
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>x</mi><mo accent="true">̇</mo></mover><mo>=</mo><msub><mi>A</mi><mi>i</mi></msub><mi>x</mi><mo>+</mo><msub><mi>B</mi><mi>i</mi></msub><mi>u</mi></mrow><annotation encoding="application/x-tex">\dot{x}=A_i x+B_i u</annotation></semantics></math>。目标是得到驱动节点集序列
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mi>S</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><msub><mi>D</mi><mn>1</mn></msub><mo>,</mo><msub><mi>D</mi><mn>2</mn></msub><mo>,</mo><mi>…</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">DS=\{D_1,D_2,\dots\}</annotation></semantics></math>，每个
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>D</mi><mi>i</mi></msub><annotation encoding="application/x-tex">D_i</annotation></semantics></math>
+都必须是
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>G</mi><mi>i</mi></msub><annotation encoding="application/x-tex">G_i</annotation></semantics></math>
+的某个 MDS。</p>
+<div class="callout-def">
+<p><strong>额外控制代价</strong>（Extra Control Cost,
+ECC）：相邻快照之间新增驱动节点数之和
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">E</mi><mi mathvariant="normal">C</mi><mi mathvariant="normal">C</mi></mrow><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>2</mn></mrow><mi>T</mi></munderover><mo stretchy="false" form="prefix">|</mo><msub><mi>D</mi><mi>i</mi></msub><mo>−</mo><msub><mi>D</mi><mrow><mi>i</mi><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy="false" form="prefix">|</mo><mo>,</mo></mrow><annotation encoding="application/x-tex">\mathrm{ECC}=\sum_{i=2}^{T}|D_i-D_{i-1}|,</annotation></semantics></math>
+其中
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><msub><mi>D</mi><mi>i</mi></msub><mo>−</mo><msub><mi>D</mi><mrow><mi>i</mi><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy="false" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">|D_i-D_{i-1}|</annotation></semantics></math>
+是属于当前 MDS、但不属于上一个 MDS 的节点数。自适应控制的目标是在每个
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>D</mi><mi>i</mi></msub><annotation encoding="application/x-tex">D_i</annotation></semantics></math>
+都是合法 MDS 的约束下最小化 ECC。</p>
+</div>
+<p>论文说明这是一个在线组合优化问题，非凸且 NP
+难，因此不追求全局最优，而是设计启发式方法。</p>
+<p><strong>小例子</strong>：网络
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>→</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a\to b</annotation></semantics></math>、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>→</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">a\to c</annotation></semantics></math>。最大匹配只能选一条边，所以
+MDS 大小为 2，可以是
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{a,b\}</annotation></semantics></math>（匹配
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>→</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">a\to c</annotation></semantics></math>）或
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi>a</mi><mo>,</mo><mi>c</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{a,c\}</annotation></semantics></math>（匹配
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>→</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a\to b</annotation></semantics></math>）。如果上一时刻用的是
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{a,b\}</annotation></semantics></math>，这一时刻就应优先仍选
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{a,b\}</annotation></semantics></math>，ECC
+为 0；若随手选了
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi>a</mi><mo>,</mo><mi>c</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{a,c\}</annotation></semantics></math>，ECC
+就多 1。</p>
+<h3 id="两条原则与节点指标">两条原则与节点指标</h3>
+<ul>
+<li><strong>稳定性原则</strong>：在历史快照中连边多、连边变化少的节点更“稳定”，优先选作驱动节点。</li>
+<li><strong>一致性原则</strong>：尽量沿用上一时刻的驱动节点。论文明确把一致性放在稳定性之前。</li>
+</ul>
+<p>对节点
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>，先算相邻快照边集的
+Jaccard 相似度
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>S</mi><mi>t</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mfrac><mrow><mo stretchy="false" form="prefix">|</mo><msub><mi>E</mi><mi>t</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo><mo>∩</mo><msub><mi>E</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo></mrow><mrow><mo stretchy="false" form="prefix">|</mo><msub><mi>E</mi><mi>t</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo><mo>∪</mo><msub><mi>E</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">S_t(v)=\frac{|E_t(v)\cap E_{t-1}(v)|}{|E_t(v)\cup E_{t-1}(v)|}</annotation></semantics></math>，再乘以度中心性
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><msub><mi>C</mi><mi>t</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo><mo>∈</mo><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">DC_t(v)\in[0,2]</annotation></semantics></math>
+得到
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>σ</mi><mi>t</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\sigma_t(v)</annotation></semantics></math>，对最近
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>l</mi><annotation encoding="application/x-tex">l</annotation></semantics></math>
+个快照求和得稳定性
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mi>t</mi><msub><mi>b</mi><mi>t</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">stb_t(v)</annotation></semantics></math>。最终指标为
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>q</mi><mi>v</mi></msub><mo>=</mo><mn>2</mn><mi>l</mi><mo>⋅</mo><msub><mi>P</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mi>s</mi><mi>t</mi><msub><mi>b</mi><mi>t</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo><mo>,</mo></mrow><annotation encoding="application/x-tex">q_v = 2l\cdot P_{t-1}(v) + stb_t(v),</annotation></semantics></math>
+其中
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">P_{t-1}(v)</annotation></semantics></math>
+表示
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>
+是否在上一时刻的 MDS 中。由于
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mi>t</mi><msub><mi>b</mi><mi>t</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo><mo>∈</mo><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>2</mn><mi>l</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">stb_t(v)\in[0,2l]</annotation></semantics></math>，论文证明（性质
+1）：上一时刻的驱动节点的
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+值一定大于非驱动节点——这就是“一致性优先”的数学保证。</p>
+<h3 id="ac-算法部分匹配修复">AC 算法：部分匹配修复</h3>
+<ol type="1">
+<li>从上一时刻的最大匹配中删去已经消失的匹配边，得到一个“部分匹配”；</li>
+<li>计算每个节点的
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>；</li>
+<li>对未匹配节点按
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+从小到大的顺序搜索增广路径，扩展匹配直到找不到增广路径。</li>
+</ol>
+<p>直观上，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+小的节点先被“匹配掉”，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+大的节点更可能留作未匹配节点，也就是驱动节点。由于从旧匹配出发，网络只小改时修复工作量也小。若拓扑剧变导致指标失效，AC
+退化为按随机顺序做最大匹配，与基线等价——论文称之为算法的<strong>性能下界</strong>。</p>
+<h2 id="主要发现">主要发现</h2>
+<ol type="1">
+<li><strong>合成网络</strong>：共 1,860 个动态网络。SF 模型 31
+个静态实例（10,000 个节点，平均度 2.0–8.0、步长 0.2，度指数
+3），每个实例按 30 个重连比例
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>（0.01–0.30）生成
+100 个快照，得 930 个；ER 模型同样 930 个。基线 MM 为对每个快照独立求
+MDS 的最大匹配算法。AC 在全部参数下
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">E</mi><mi mathvariant="normal">C</mi><mi mathvariant="normal">C</mi></mrow><mrow><mi>A</mi><mi>C</mi></mrow></msub><mi>/</mi><msub><mrow><mi mathvariant="normal">E</mi><mi mathvariant="normal">C</mi><mi mathvariant="normal">C</mi></mrow><mrow><mi>M</mi><mi>M</mi></mrow></msub><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\mathrm{ECC}_{AC}/\mathrm{ECC}_{MM}&lt;1</annotation></semantics></math>；在相对稳定的网络（<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>&lt;</mo><mn>0.1</mn></mrow><annotation encoding="application/x-tex">r&lt;0.1</annotation></semantics></math>）上
+ECC 几乎减半。</li>
+<li><strong>网络类型差异</strong>：SF 网络平均比值 0.72，ER 网络
+0.84。论文解释为 SF 网络的度异质性与“偏好稳定节点”的指标相契合。</li>
+<li><strong>密度的影响</strong>：ER 网络平均度为 2.0 时比值 0.63，平均度
+8.0 时升至 0.85。原因是网络越稠密 MDS 越小，可选空间变窄。在 ER
+网络上平均度小于 4 时，AC 在 95% 的快照上优于 MM；SF 网络平均度小于 6
+时为 100%。ER 网络重连比例超过 0.50 后两者几乎相同。</li>
+<li><strong>真实网络</strong>：20
+个真实动态网络（邮件、人际接触、社交网络）上平均比值 0.81；变化较慢的
+email-Eu-core-temporal 与 contacts-prox-high-school-2013 为
+0.50，而高度动态的 sx-superuser、edit-enwikibooks 上两者相近。11
+个网络中 AC 在所有快照上都优于 MM，17 个网络中优于 MM 的快照超过
+80%。比值与相邻快照的节点、边相似度呈负相关。摘要将其概括为合成网络平均降低切换代价
+22%、真实网络 19%。</li>
+<li><strong>与其他偏好策略比较</strong>：在 121 个 1,000 节点 ER
+动态网络上，与按度偏好（DPB）、按 PageRank
+偏好（PPB）的匹配相比，四种方法 MDS 大小相同，但 AC
+的驱动节点并集更小、ECC 更低。</li>
+</ol>
+<h2 id="怎样读这篇论文">怎样读这篇论文</h2>
+<ul>
+<li>先读引言与图 1、图 3：弄清“只知道过去”的设定，以及同一快照有多个 MDS
+为什么能被利用。</li>
+<li>再读第 III 节 ECC 定义和第 IV-B 节公式 (2) 与性质
+1，这是全文的核心设计。</li>
+<li>用图 4 的小例子手动走一遍算法
+1，体会“旧匹配作为起点”和“搜索顺序”的作用。</li>
+<li>实验部分重点看图 5（比值热图）、图 7（MDS 大小随平均度下降）、表 III
+与图 9（相似度与性能的关系）。</li>
+<li>相关工作中的表 I
+可以快速浏览，用来定位本文与离线时序控制方法的区别。</li>
+</ul>
+<h2 id="局限与后续工作">局限与后续工作</h2>
+<ul>
+<li><strong>启发式且无近似界</strong>：作者在结论中承认，AC
+尚无相对于全局最优 ECC 的理论近似保证。</li>
+<li><strong>建模假设</strong>：仍是结构可控性框架，即线性动力学、权重“几乎任意”、快照内拓扑固定；ECC
+只计新增驱动节点，没有区分不同节点的实际干预成本。</li>
+<li><strong>对剧烈变化无能为力</strong>：相似度很低时只能退回到基线水平，这是设计上的保守，而非优势。</li>
+<li><strong>与相关研究的关系</strong>：算法依赖“MDS
+不唯一、可通过交替路径互换”这一事实，正是输入图与驱动节点枚举研究的基础（见<a
+href="controllability.author-team-research.html">驱动节点的枚举、分类与自适应控制</a>）。双层网络控制研究（zheng2026_duplex）把“让两个驱动节点集尽量重叠”的思想从时间维度推广到层间维度。论文引言也把蛋白网络、癌症维持基因、COVID-19
+药物等生物学应用列为动态控制的潜在场景，但本文实验本身没有使用生物数据。</li>
+</ul>
+<h2 id="关联知识">关联知识</h2>
+<ul>
+<li><a
+href="controllability.html">网络可控性与稳定性</a>：最大匹配、最小输入定理、驱动节点不唯一，是本文的出发点；<a
+href="controllability.author-team-research.html">驱动节点的枚举、分类与自适应控制</a>中有对本文的简述。</li>
+<li><a
+href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a>：动态功能连接把脑网络看成随时间变化的快照序列，与本文的快照建模完全同构，可以思考在动态脑网络上做“少切换”的刺激位点选择。</li>
+<li><a
+href="network-metrics.degree-density.html">度、平均度与密度</a>：度中心性是本文节点稳定性指标的组成部分；读完可以思考为什么作者把“度大”等同于“稳定”，这个假设在生物网络中是否成立。</li>
+</ul>
+<h2 id="延伸思考">延伸思考</h2>
+<ol type="1">
+<li>ECC
+只统计新加入的驱动节点。如果离开驱动节点集也有成本（例如撤除电极），目标函数应如何修改？AC
+的指标需要改动吗？</li>
+<li>论文发现参数
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>l</mi><annotation encoding="application/x-tex">l</annotation></semantics></math>
+取不同值结果相近。这对“需要保存多少历史”有什么启示？在什么样的真实网络中你预计
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>l</mi><annotation encoding="application/x-tex">l</annotation></semantics></math>
+会变得重要？</li>
+<li>设想用动态功能连接构造每个时间窗的脑网络并做自适应控制，你会如何检验“少切换”的方案在神经调控上是否真的更可行？</li>
+<li>当相邻快照几乎完全不同时，AC
+退化为基线。你能否设计一种利用“预测未来拓扑”的变体？它与本文“不依赖未来信息”的设定有什么冲突？</li>
+</ol>
+</section><nav class="pager"><a href="paper-pan2024_modulecontrol.html">← 精神病理学网络分析中的模块控制</a><a href="paper-zhang2026_flysynapse.html">共同接收者中的突触组织预测输入神经元之间的连接 →</a></nav></div><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

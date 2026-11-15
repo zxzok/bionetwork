@@ -1,0 +1,10 @@
+{
+ "topic": "spreading",
+ "index": 1,
+ "title": "用度分布估计 SIR 流行病阈值",
+ "hash": "59f0890045765070a152f7367db0cde13f3b4386",
+ "ok": true,
+ "figures": 1,
+ "stdout": "当前参数的传播性 T = 0.149\nER: T_c = 0.167  -> 低于阈值\nBA: T_c = 0.082  -> 高于阈值，可能暴发",
+ "stderr": ""
+}

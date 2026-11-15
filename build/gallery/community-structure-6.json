@@ -1,0 +1,10 @@
+{
+ "topic": "community-structure",
+ "index": 6,
+ "title": "随机块模型与可检测性阈值",
+ "hash": "abdac8e13588b644b7f9894fec96e98a8d9208f4",
+ "ok": true,
+ "figures": 1,
+ "stdout": "Δc/2√c = 0.5  (c_in=6.12, c_out=3.88)  overlap: Bethe Hessian 0.01, 模块度谱 0.01\nΔc/2√c = 0.9  (c_in=7.01, c_out=2.99)  overlap: Bethe Hessian 0.05, 模块度谱 0.09\nΔc/2√c = 1.1  (c_in=7.46, c_out=2.54)  overlap: Bethe Hessian 0.27, 模块度谱 0.06\nΔc/2√c = 1.5  (c_in=8.35, c_out=1.65)  overlap: Bethe Hessian 0.79, 模块度谱 0.71\nΔc/2√c = 2.0  (c_in=9.47, c_out=0.53)  overlap: Bethe Hessian 0.97, 模块度谱 0.96",
+ "stderr": ""
+}

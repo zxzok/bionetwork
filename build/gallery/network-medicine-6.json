@@ -1,0 +1,10 @@
+{
+ "topic": "network-medicine",
+ "index": 6,
+ "title": "链路预测——共同邻居、资源分配与长度为 3 的路径（L3）",
+ "hash": "f4b39cb8b0506c5e0ff6e0fd6ef0e49cfa5f8d9b",
+ "ok": true,
+ "figures": 1,
+ "stdout": "Watts–Strogatz（三角闭合强）：CN AUROC = 0.95，RA AUROC = 0.95，L3 AUROC = 0.95\n分块二分网络（无三角形）：CN AUROC = 0.48，RA AUROC = 0.48，L3 AUROC = 0.86",
+ "stderr": ""
+}

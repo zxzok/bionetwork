@@ -1,0 +1,10 @@
+{
+ "topic": "synchronization",
+ "index": 10,
+ "title": "PLV、PLI、wPLI、相干与虚部相干：容积传导的影响",
+ "hash": "ac3588518d7c956e79f1225e122490c43aee5200",
+ "ok": true,
+ "figures": 1,
+ "stdout": "e1-e2  PLV=0.89 (替代95%=0.25)  PLI=1.00  wPLI=1.00  |Coh|=0.74  |ImCoh|=0.56\ne1-e3  PLV=0.29 (替代95%=0.10)  PLI=0.01  wPLI=0.01  |Coh|=0.47  |ImCoh|=0.04\ne2-e3  PLV=0.28 (替代95%=0.11)  PLI=0.02  wPLI=0.04  |Coh|=0.42  |ImCoh|=0.03",
+ "stderr": ""
+}

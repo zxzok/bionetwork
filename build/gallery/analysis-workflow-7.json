@@ -1,0 +1,10 @@
+{
+ "topic": "analysis-workflow",
+ "index": 7,
+ "title": "布局算法比较与布局质量的定量检查",
+ "hash": "a194f3cb1d0628f717e799ef8609fc7254f0c492",
+ "ok": true,
+ "figures": 1,
+ "stdout": "spring        图距离–欧氏距离 ρ = 0.63，同模块/异模块平均距离比 = 0.39\nkamada_kawai  图距离–欧氏距离 ρ = 0.76，同模块/异模块平均距离比 = 0.42\nspectral      图距离–欧氏距离 ρ = 0.68，同模块/异模块平均距离比 = 0.17\nforceatlas2   图距离–欧氏距离 ρ = 0.71，同模块/异模块平均距离比 = 0.25\nmultipartite  图距离–欧氏距离 ρ = 0.03，同模块/异模块平均距离比 = 1.00",
+ "stderr": ""
+}

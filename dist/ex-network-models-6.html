@@ -1,0 +1,123 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>Bianconi–Barabási 适应度模型——后来者居上 · 生物医学网络科学</title><meta name="description" content="小世界与无标度网络模型 · 代码示例：Bianconi–Barabási 适应度模型——后来者居上"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-theory"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html" aria-current="page">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory" open><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a><ol class="sub"><li><a href="network-models.small-world-phenomenon.html"><span class="n">01</span>小世界现象</a></li><li><a href="network-models.lattice-vs-random.html"><span class="n">02</span>规则网格与随机网络</a></li><li><a href="network-models.watts-strogatz.html"><span class="n">03</span>Watts–Strogatz 小世界模型</a></li><li><a href="network-models.scale-free.html"><span class="n">04</span>幂律度分布与无标度网络</a></li><li><a href="network-models.configuration-model.html"><span class="n">05</span>任意度分布网络的生成：配置模型与隐变量模型</a></li><li><a href="network-models.barabasi-albert.html"><span class="n">06</span>Barabási–Albert 优先连接模型</a></li><li><a href="network-models.preferential-attachment-measurement.html"><span class="n">07</span>测量优先连接与非线性优先连接</a></li><li><a href="network-models.preferential-attachment-origins.html"><span class="n">08</span>优先连接从何而来：链接选择、复制与优化</a></li><li><a href="network-models.fitness-model.html"><span class="n">09</span>适应度模型与玻色–爱因斯坦凝聚</a></li><li><a href="network-models.evolving-networks.html"><span class="n">10</span>演化网络的扩展模型</a></li><li><a href="network-models.duplication-divergence.html"><span class="n">11</span>复制–分化模型</a></li><li><a href="network-models.spatial-networks.html"><span class="n">12</span>空间网络与随机几何图</a></li><li><a href="network-models.identification.html"><span class="n">13</span>小世界与无标度的统计判别</a></li><li><a href="network-models.derivations.html"><span class="n">14</span>数学推导与算法</a></li><li><a href="network-models.frontiers.html"><span class="n">15</span>研究前沿与开放问题</a></li><li><a href="network-models.biomedical.html"><span class="n">16</span>生物医学应用</a></li><li><a href="network-models.limitations.html"><span class="n">17</span>适用范围与常见误用</a></li></ol></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="code.html">代码库</a> <span class="sep">/</span> <a href="code.html#theory">网络基础理论</a> <span class="sep">/</span> <a href="network-models.html">小世界与无标度网络模型</a></nav><div class="eyebrow" style="margin-top:14px"><b>Example</b><span>07 / 10</span></div><h1>Bianconi–Barabási 适应度模型——后来者居上</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="network-models.html">小世界与无标度网络模型</a></dd></div><div><dt>下载</dt><dd><a href="notebooks/network-models.ipynb" download>Notebook</a> · <a href="notebooks/network-models.py" download>.py</a></dd></div></dl></header><section class="block prose"><p>每个节点带适应度 η（均匀分布于 [0,1]），新节点连向 i 的概率 ∝ η_i
+k_i。 模拟 N=20000、m=2 的网络；在 t=1000 时人为插入一个 η=1
+的“后来者”，追踪它与最早一批节点的度。 再按适应度分组，用 ln k_i 对
+ln(t/t_i) 回归估计动态指数 β(η)，与理论 β(η)=η/C<em>（均匀分布
+C</em>≈1.255）比较。 输出：t=1000
+才加入的高适应度节点，度数很快超过最早的节点；β(η) 随 η 近似线性增长，
+数值比理论 η/1.255 低约
+5–10%（有限时间与初始度的影响），但线性关系清楚。</p>
+</section><section class="block"><h2><span class="tag">Output</span>输出图</h2><div class="ex-figs"><img src="gallery/network-models-6-0.png" alt="Bianconi–Barabási 适应度模型——后来者居上：输出图 1" loading="lazy"></div></section><section class="block"><h2><span class="tag">Output</span>文字输出</h2><pre class="ex-out">t= 4000: 节点0(η=0.09) k=   2, 节点1(η=0.24) k=  20, 后来者(η=1, t_i=1000) k=  21
+t= 8000: 节点0(η=0.09) k=   2, 节点1(η=0.24) k=  23, 后来者(η=1, t_i=1000) k=  34
+t=12000: 节点0(η=0.09) k=   2, 节点1(η=0.24) k=  29, 后来者(η=1, t_i=1000) k=  51
+t=16000: 节点0(η=0.09) k=   2, 节点1(η=0.24) k=  30, 后来者(η=1, t_i=1000) k=  66
+t=19999: 节点0(η=0.09) k=   2, 节点1(η=0.24) k=  32, 后来者(η=1, t_i=1000) k=  79
+η∈[0.2,0.4): β 估计=0.220, 理论 η_mid/1.255=0.239
+η∈[0.4,0.6): β 估计=0.362, 理论 η_mid/1.255=0.398
+η∈[0.6,0.8): β 估计=0.509, 理论 η_mid/1.255=0.558
+η∈[0.8,1.0): β 估计=0.674, 理论 η_mid/1.255=0.717</pre></section><section class="block prose"><h2><span class="tag">Code</span>代码</h2><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 每个节点带适应度 η（均匀分布于 [0,1]），新节点连向 i 的概率 ∝ η_i k_i。</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 模拟 N=20000、m=2 的网络；在 t=1000 时人为插入一个 η=1 的“后来者”，追踪它与最早一批节点的度。</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 再按适应度分组，用 ln k_i 对 ln(t/t_i) 回归估计动态指数 β(η)，与理论 β(η)=η/C*（均匀分布 C*≈1.255）比较。</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 输出：t=1000 才加入的高适应度节点，度数很快超过最早的节点；β(η) 随 η 近似线性增长，</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">#       数值比理论 η/1.255 低约 5–10%（有限时间与初始度的影响），但线性关系清楚。</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>rng <span class="op">=</span> np.random.default_rng(<span class="dv">3</span>)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>N, m, t_late <span class="op">=</span> <span class="dv">20000</span>, <span class="dv">2</span>, <span class="dv">1000</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>eta <span class="op">=</span> rng.random(N)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>eta[t_late] <span class="op">=</span> <span class="fl">1.0</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>deg <span class="op">=</span> np.zeros(N)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>deg[: m <span class="op">+</span> <span class="dv">1</span>] <span class="op">=</span> m</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>track <span class="op">=</span> {<span class="dv">0</span>: [], <span class="dv">1</span>: [], t_late: []}</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> t <span class="kw">in</span> <span class="bu">range</span>(m <span class="op">+</span> <span class="dv">1</span>, N):</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    w <span class="op">=</span> eta[:t] <span class="op">*</span> deg[:t]</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    targets <span class="op">=</span> rng.choice(t, size<span class="op">=</span>m, replace<span class="op">=</span><span class="va">False</span>, p<span class="op">=</span>w <span class="op">/</span> w.<span class="bu">sum</span>())</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    deg[targets] <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    deg[t] <span class="op">=</span> m</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> t <span class="op">%</span> <span class="dv">200</span> <span class="op">==</span> <span class="dv">0</span>:                                <span class="co"># 记录轨迹用于作图</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> i <span class="kw">in</span> track:</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>            track[i].append((t, deg[i]))</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> t <span class="op">%</span> <span class="dv">4000</span> <span class="op">==</span> <span class="dv">0</span> <span class="kw">or</span> t <span class="op">==</span> N <span class="op">-</span> <span class="dv">1</span>:</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">&quot;t=</span><span class="sc">%5d</span><span class="st">: 节点0(η=</span><span class="sc">%.2f</span><span class="st">) k=</span><span class="sc">%4d</span><span class="st">, 节点1(η=</span><span class="sc">%.2f</span><span class="st">) k=</span><span class="sc">%4d</span><span class="st">, 后来者(η=1, t_i=</span><span class="sc">%d</span><span class="st">) k=</span><span class="sc">%4d</span><span class="st">&quot;</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>              <span class="op">%</span> (t, eta[<span class="dv">0</span>], deg[<span class="dv">0</span>], eta[<span class="dv">1</span>], deg[<span class="dv">1</span>], t_late, deg[t_late]))</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="co"># 估计 β(η)：对每个适应度区间，回归 ln(k_i/m) ~ β ln(N/t_i)，只用 t_i 足够早的节点</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>ti <span class="op">=</span> np.arange(N)</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>ok <span class="op">=</span> (ti <span class="op">&gt;</span> <span class="dv">10</span>) <span class="op">&amp;</span> (ti <span class="op">&lt;</span> N <span class="op">//</span> <span class="dv">5</span>)</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>betas <span class="op">=</span> []</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> lo <span class="kw">in</span> np.arange(<span class="fl">0.2</span>, <span class="fl">1.0</span>, <span class="fl">0.2</span>):</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>    sel <span class="op">=</span> ok <span class="op">&amp;</span> (eta <span class="op">&gt;=</span> lo) <span class="op">&amp;</span> (eta <span class="op">&lt;</span> lo <span class="op">+</span> <span class="fl">0.2</span>)</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>    x, y <span class="op">=</span> np.log(N <span class="op">/</span> ti[sel]), np.log(deg[sel] <span class="op">/</span> m)</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>    beta <span class="op">=</span> (x <span class="op">*</span> y).<span class="bu">sum</span>() <span class="op">/</span> (x <span class="op">*</span> x).<span class="bu">sum</span>()            <span class="co"># 过原点回归</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;η∈[</span><span class="sc">%.1f</span><span class="st">,</span><span class="sc">%.1f</span><span class="st">): β 估计=</span><span class="sc">%.3f</span><span class="st">, 理论 η_mid/1.255=</span><span class="sc">%.3f</span><span class="st">&quot;</span> <span class="op">%</span> (lo, lo <span class="op">+</span> <span class="fl">0.2</span>, beta, (lo <span class="op">+</span> <span class="fl">0.1</span>) <span class="op">/</span> <span class="fl">1.255</span>))</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>    betas.append((lo <span class="op">+</span> <span class="fl">0.1</span>, beta))</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="co"># 作图：左为度随时间的增长轨迹（双对数）；右为 β(η) 与理论直线</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>fig, (ax1, ax2) <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">4</span>))</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, ls, lab <span class="kw">in</span> [(<span class="dv">0</span>, <span class="st">&quot;-&quot;</span>, <span class="st">&quot;node 0 (eta = </span><span class="sc">%.2f</span><span class="st">)&quot;</span> <span class="op">%</span> eta[<span class="dv">0</span>]), (<span class="dv">1</span>, <span class="st">&quot;--&quot;</span>, <span class="st">&quot;node 1 (eta = </span><span class="sc">%.2f</span><span class="st">)&quot;</span> <span class="op">%</span> eta[<span class="dv">1</span>]),</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>                   (t_late, <span class="st">&quot;-&quot;</span>, <span class="st">&quot;latecomer t_i = </span><span class="sc">%d</span><span class="st"> (eta = 1)&quot;</span> <span class="op">%</span> t_late)]:</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>    tt, kk <span class="op">=</span> <span class="bu">zip</span>(<span class="op">*</span>[(t, k) <span class="cf">for</span> t, k <span class="kw">in</span> track[i] <span class="cf">if</span> t <span class="op">&gt;</span> i])</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>    ax1.loglog(tt, kk, ls, lw<span class="op">=</span><span class="dv">2</span>, label<span class="op">=</span>lab)</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>ax1.set_xlabel(<span class="st">&quot;time t&quot;</span>)<span class="op">;</span> ax1.set_ylabel(<span class="st">&quot;degree k_i(t)&quot;</span>)<span class="op">;</span> ax1.legend(fontsize<span class="op">=</span><span class="dv">8</span>)</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>ax1.set_title(<span class="st">&quot;The fittest latecomer overtakes early nodes&quot;</span>, fontsize<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>em, bt <span class="op">=</span> <span class="bu">zip</span>(<span class="op">*</span>betas)</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>ax2.plot(em, bt, <span class="st">&quot;o&quot;</span>, ms<span class="op">=</span><span class="dv">8</span>, label<span class="op">=</span><span class="st">&quot;estimated beta&quot;</span>)</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>ax2.plot([<span class="dv">0</span>, <span class="dv">1</span>], [<span class="dv">0</span>, <span class="dv">1</span> <span class="op">/</span> <span class="fl">1.255</span>], <span class="st">&quot;--&quot;</span>, color<span class="op">=</span><span class="st">&quot;0.4&quot;</span>, label<span class="op">=</span><span class="st">&quot;theory eta / 1.255&quot;</span>)</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>ax2.set_xlabel(<span class="st">&quot;fitness eta (bin centre)&quot;</span>)<span class="op">;</span> ax2.set_ylabel(<span class="st">&quot;dynamic exponent beta&quot;</span>)<span class="op">;</span> ax2.legend(fontsize<span class="op">=</span><span class="dv">8</span>)</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>ax2.set_title(<span class="st">&quot;beta grows linearly with fitness&quot;</span>, fontsize<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()<span class="op">;</span> plt.show()</span></code></pre></div>
+</section><section class="block"><h2><span class="tag">Run</span>在浏览器中运行</h2><p class="small">首次加载 Python 环境约需 20–40 秒；可以修改参数后重新运行。</p><div class="cell"><div class="cell-head"><h3>Bianconi–Barabási 适应度模型——后来者居上</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea id="network-models-cell6" rows="30" spellcheck="false" aria-label="Bianconi–Barabási 适应度模型——后来者居上 代码"># 每个节点带适应度 η（均匀分布于 [0,1]），新节点连向 i 的概率 ∝ η_i k_i。
+# 模拟 N=20000、m=2 的网络；在 t=1000 时人为插入一个 η=1 的“后来者”，追踪它与最早一批节点的度。
+# 再按适应度分组，用 ln k_i 对 ln(t/t_i) 回归估计动态指数 β(η)，与理论 β(η)=η/C*（均匀分布 C*≈1.255）比较。
+# 输出：t=1000 才加入的高适应度节点，度数很快超过最早的节点；β(η) 随 η 近似线性增长，
+#       数值比理论 η/1.255 低约 5–10%（有限时间与初始度的影响），但线性关系清楚。
+import numpy as np
+
+rng = np.random.default_rng(3)
+N, m, t_late = 20000, 2, 1000
+eta = rng.random(N)
+eta[t_late] = 1.0
+deg = np.zeros(N)
+deg[: m + 1] = m
+track = {0: [], 1: [], t_late: []}
+for t in range(m + 1, N):
+    w = eta[:t] * deg[:t]
+    targets = rng.choice(t, size=m, replace=False, p=w / w.sum())
+    deg[targets] += 1
+    deg[t] = m
+    if t % 200 == 0:                                # 记录轨迹用于作图
+        for i in track:
+            track[i].append((t, deg[i]))
+    if t % 4000 == 0 or t == N - 1:
+        print(&quot;t=%5d: 节点0(η=%.2f) k=%4d, 节点1(η=%.2f) k=%4d, 后来者(η=1, t_i=%d) k=%4d&quot;
+              % (t, eta[0], deg[0], eta[1], deg[1], t_late, deg[t_late]))
+
+# 估计 β(η)：对每个适应度区间，回归 ln(k_i/m) ~ β ln(N/t_i)，只用 t_i 足够早的节点
+ti = np.arange(N)
+ok = (ti &gt; 10) &amp; (ti &lt; N // 5)
+betas = []
+for lo in np.arange(0.2, 1.0, 0.2):
+    sel = ok &amp; (eta &gt;= lo) &amp; (eta &lt; lo + 0.2)
+    x, y = np.log(N / ti[sel]), np.log(deg[sel] / m)
+    beta = (x * y).sum() / (x * x).sum()            # 过原点回归
+    print(&quot;η∈[%.1f,%.1f): β 估计=%.3f, 理论 η_mid/1.255=%.3f&quot; % (lo, lo + 0.2, beta, (lo + 0.1) / 1.255))
+    betas.append((lo + 0.1, beta))
+
+# 作图：左为度随时间的增长轨迹（双对数）；右为 β(η) 与理论直线
+import matplotlib.pyplot as plt
+
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 4))
+for i, ls, lab in [(0, &quot;-&quot;, &quot;node 0 (eta = %.2f)&quot; % eta[0]), (1, &quot;--&quot;, &quot;node 1 (eta = %.2f)&quot; % eta[1]),
+                   (t_late, &quot;-&quot;, &quot;latecomer t_i = %d (eta = 1)&quot; % t_late)]:
+    tt, kk = zip(*[(t, k) for t, k in track[i] if t &gt; i])
+    ax1.loglog(tt, kk, ls, lw=2, label=lab)
+ax1.set_xlabel(&quot;time t&quot;); ax1.set_ylabel(&quot;degree k_i(t)&quot;); ax1.legend(fontsize=8)
+ax1.set_title(&quot;The fittest latecomer overtakes early nodes&quot;, fontsize=10)
+em, bt = zip(*betas)
+ax2.plot(em, bt, &quot;o&quot;, ms=8, label=&quot;estimated beta&quot;)
+ax2.plot([0, 1], [0, 1 / 1.255], &quot;--&quot;, color=&quot;0.4&quot;, label=&quot;theory eta / 1.255&quot;)
+ax2.set_xlabel(&quot;fitness eta (bin centre)&quot;); ax2.set_ylabel(&quot;dynamic exponent beta&quot;); ax2.legend(fontsize=8)
+ax2.set_title(&quot;beta grows linearly with fitness&quot;, fontsize=10)
+plt.tight_layout(); plt.show()</textarea><div class="out" aria-live="polite"></div></div></section><nav class="pager"><a href="ex-network-models-5.html"><small>上一个示例</small>非线性优先连接 Π(k) ∝ k^α 与“测量”优先连接</a><a href="ex-network-models-7.html"><small>下一个示例</small>复制–分化（duplication–divergence）模型与蛋白质网络的长尾</a></nav></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

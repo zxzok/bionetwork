@@ -1,0 +1,10 @@
+{
+ "topic": "network-basics",
+ "index": 3,
+ "title": "二分网络的投影——药物–靶点到药物–药物",
+ "hash": "131cd562c5faef03431cbcaddc2abe60a53b946e",
+ "ok": true,
+ "figures": 1,
+ "stdout": "是二分图吗？ True\nD1 - D3 共享靶点数 = 2\nD4 - D5 共享靶点数 = 2\nD1 - D2 共享靶点数 = 1\nD2 - D3 共享靶点数 = 1\nB B^T（对角元为各药物的靶点数）:\n[[2 1 2 0 0]\n [1 2 1 0 0]\n [2 1 3 0 0]\n [0 0 0 2 2]\n [0 0 0 2 2]]",
+ "stderr": ""
+}

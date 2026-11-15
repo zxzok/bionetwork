@@ -1,0 +1,10 @@
+{
+ "topic": "reporting-frontiers",
+ "index": 2,
+ "title": "鲁棒性——随机失效与蓄意攻击（双曲线对照图）",
+ "hash": "8fb84c7134f4cfd5113d0b00394814b8d8935c91",
+ "ok": true,
+ "figures": 1,
+ "stdout": "删除 20% 节点后，巨分支比例：随机删除 = 0.79，攻击枢纽 = 0.03",
+ "stderr": ""
+}

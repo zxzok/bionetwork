@@ -1,0 +1,10 @@
+{
+ "topic": "network-metrics",
+ "index": 8,
+ "title": "k 核分解（逐层剥离）",
+ "hash": "e761967972fd5da0c6e19c33903eb7a08b166472",
+ "ok": true,
+ "figures": 1,
+ "stdout": "与 NetworkX 一致: True\nk-shell 1: 1 个节点\nk-shell 2: 11 个节点\nk-shell 3: 12 个节点\nk-shell 4: 10 个节点\n最内核（4 核）成员: [0, 1, 2, 3, 7, 8, 13, 30, 32, 33]",
+ "stderr": ""
+}

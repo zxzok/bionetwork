@@ -1,0 +1,10 @@
+{
+ "topic": "reproducible-research",
+ "index": 7,
+ "title": "运行清单（provenance manifest）——记录环境、参数、种子与输入输出的哈希",
+ "hash": "f322b350ee57601e6beba4d590973be79d7149c7",
+ "ok": true,
+ "figures": 0,
+ "stdout": "{\n  \"python\": \"3.15.0\",\n  \"platform\": \"macOS-27.2-arm64-arm-64bit-Mach-O\",\n  \"packages\": {\n    \"networkx\": \"3.7\",\n    \"numpy\": \"2.5.4\",\n    \"scipy\": \"1.18.1\"\n  },\n  \"parameters\": {\n    \"algorithm\": \"louvain\",\n    \"resolution\": 1.0,\n    \"seed\": 20261115\n  },\n  \"inputs\": {\n    \"network.edgelist\": \"1b72d131cad3ad359a30ff4141707c9dc374606e59cd93bae6ef3a018ebdea95\"\n  },\n  \"outputs\": {\n    \"result_run0.json\": \"8ec16652fa98ccdd7a847a304721a36121b25596ffe0ec4ace3c723093c7d7d6\"\n  },\n  \"modularity_Q\": 0.5025\n}\n两次运行输出哈希一致： True",
+ "stderr": ""
+}

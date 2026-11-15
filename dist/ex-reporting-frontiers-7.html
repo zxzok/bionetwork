@@ -1,0 +1,119 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>持续同调入门——加权网络在阈值过滤下的贝蒂曲线 · 生物医学网络科学</title><meta name="description" content="结果呈现与研究前沿 · 代码示例：持续同调入门——加权网络在阈值过滤下的贝蒂曲线"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-methods"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html" aria-current="page">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods" open><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a><ol class="sub"><li><a href="reporting-frontiers.figures.html"><span class="n">01</span>研究结果的图表呈现</a></li><li><a href="reporting-frontiers.network-visualization.html"><span class="n">02</span>网络可视化：原则与常见错误</a></li><li><a href="reporting-frontiers.report-structure.html"><span class="n">03</span>科学报告的结构与要点</a></li><li><a href="reporting-frontiers.cross-cutting-themes.html"><span class="n">04</span>贯穿网络科学的五条主线</a></li><li><a href="reporting-frontiers.higher-order.html"><span class="n">05</span>高阶相互作用：超图与单纯复形</a></li><li><a href="reporting-frontiers.topological-data-analysis.html"><span class="n">06</span>拓扑数据分析与持续同调入门</a></li><li><a href="reporting-frontiers.temporal-networks.html"><span class="n">07</span>时间网络</a></li><li><a href="reporting-frontiers.multilayer-networks.html"><span class="n">08</span>多层与相互依赖网络</a></li><li><a href="reporting-frontiers.network-embedding.html"><span class="n">09</span>网络表示学习：谱嵌入与随机游走嵌入</a></li><li><a href="reporting-frontiers.graph-neural-networks.html"><span class="n">10</span>图神经网络</a></li><li><a href="reporting-frontiers.interpretability-causality.html"><span class="n">11</span>网络科学中的可解释性与因果</a></li><li><a href="reporting-frontiers.frontiers.html"><span class="n">12</span>研究前沿与开放问题</a></li><li><a href="reporting-frontiers.derivations.html"><span class="n">13</span>数学推导与算法</a></li><li><a href="reporting-frontiers.biomedical.html"><span class="n">14</span>生物医学应用</a></li><li><a href="reporting-frontiers.limitations.html"><span class="n">15</span>适用范围与常见误用</a></li></ol></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="code.html">代码库</a> <span class="sep">/</span> <a href="code.html#methods">计算方法与研究规范</a> <span class="sep">/</span> <a href="reporting-frontiers.html">结果呈现与研究前沿</a></nav><div class="eyebrow" style="margin-top:14px"><b>Example</b><span>08 / 13</span></div><h1>持续同调入门——加权网络在阈值过滤下的贝蒂曲线</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="reporting-frontiers.html">结果呈现与研究前沿</a></dd></div><div><dt>下载</dt><dd><a href="notebooks/reporting-frontiers.ipynb" download>Notebook</a> · <a href="notebooks/reporting-frontiers.py" download>.py</a></dd></div></dl></header><section class="block prose"><p>对一个加权网络，按边权从大到小逐步加入边（过滤），在每一步构造团复形（clique
+complex， 这里只取到三角形），计算 beta_0（连通分支数）与
+beta_1（未被三角形填满的环的数目）。
+两个模拟网络：环状几何网络（节点均匀排在圆周上，权重随距离衰减）与打乱权重的对照。
+解读：环状网络在中间阈值段出现持续存在的 beta_1 =
+1（一个大环），打乱后的网络 beta_1 的
+峰更早、更“碎”。持续同调把“在哪些阈值下存在多少个洞”作为特征，而不是只看一个阈值。</p>
+</section><section class="block"><h2><span class="tag">Output</span>输出图</h2><div class="ex-figs"><img src="gallery/reporting-frontiers-7-0.png" alt="持续同调入门——加权网络在阈值过滤下的贝蒂曲线：输出图 1" loading="lazy"></div></section><section class="block"><h2><span class="tag">Output</span>文字输出</h2><pre class="ex-out">环状网络：beta_1 = 1 持续的密度区间长度 ≈ 0.50（占过滤步数比例），beta_1 最大值 1
+打乱权重：beta_1 最大值 8，出现在密度 0.26</pre></section><section class="block prose"><h2><span class="tag">Code</span>代码</h2><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 对一个加权网络，按边权从大到小逐步加入边（过滤），在每一步构造团复形（clique complex，</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 这里只取到三角形），计算 beta_0（连通分支数）与 beta_1（未被三角形填满的环的数目）。</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 两个模拟网络：环状几何网络（节点均匀排在圆周上，权重随距离衰减）与打乱权重的对照。</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 解读：环状网络在中间阈值段出现持续存在的 beta_1 = 1（一个大环），打乱后的网络 beta_1 的</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 峰更早、更“碎”。持续同调把“在哪些阈值下存在多少个洞”作为特征，而不是只看一个阈值。</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> networkx <span class="im">as</span> nx</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> itertools <span class="im">import</span> combinations</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> betti_curve(W, n_steps<span class="op">=</span><span class="dv">40</span>):</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    n <span class="op">=</span> W.shape[<span class="dv">0</span>]</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    iu <span class="op">=</span> np.triu_indices(n, <span class="dv">1</span>)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    w_sorted <span class="op">=</span> np.sort(W[iu])[::<span class="op">-</span><span class="dv">1</span>]</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    thresholds <span class="op">=</span> w_sorted[np.linspace(<span class="dv">0</span>, <span class="bu">len</span>(w_sorted) <span class="op">-</span> <span class="dv">1</span>, n_steps).astype(<span class="bu">int</span>)]</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    b0, b1 <span class="op">=</span> [], []</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> t <span class="kw">in</span> thresholds:</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>        G <span class="op">=</span> nx.Graph()<span class="op">;</span> G.add_nodes_from(<span class="bu">range</span>(n))</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>        G.add_edges_from((i, j) <span class="cf">for</span> i, j <span class="kw">in</span> <span class="bu">zip</span>(<span class="op">*</span>iu) <span class="cf">if</span> W[i, j] <span class="op">&gt;=</span> t)</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>        E <span class="op">=</span> [<span class="bu">tuple</span>(<span class="bu">sorted</span>(e)) <span class="cf">for</span> e <span class="kw">in</span> G.edges()]</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>        T <span class="op">=</span> [<span class="bu">tuple</span>(<span class="bu">sorted</span>(c)) <span class="cf">for</span> c <span class="kw">in</span> nx.enumerate_all_cliques(G) <span class="cf">if</span> <span class="bu">len</span>(c) <span class="op">==</span> <span class="dv">3</span>]</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>        eidx <span class="op">=</span> {e: k <span class="cf">for</span> k, e <span class="kw">in</span> <span class="bu">enumerate</span>(E)}</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>        B1 <span class="op">=</span> np.zeros((n, <span class="bu">len</span>(E)))</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> k, (u, v) <span class="kw">in</span> <span class="bu">enumerate</span>(E):</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>            B1[u, k], B1[v, k] <span class="op">=</span> <span class="op">-</span><span class="dv">1</span>, <span class="dv">1</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>        B2 <span class="op">=</span> np.zeros((<span class="bu">len</span>(E), <span class="bu">len</span>(T)))</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> k, (a, b, c) <span class="kw">in</span> <span class="bu">enumerate</span>(T):</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>            B2[eidx[(b, c)], k], B2[eidx[(a, c)], k], B2[eidx[(a, b)], k] <span class="op">=</span> <span class="dv">1</span>, <span class="op">-</span><span class="dv">1</span>, <span class="dv">1</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>        r1 <span class="op">=</span> np.linalg.matrix_rank(B1) <span class="cf">if</span> <span class="bu">len</span>(E) <span class="cf">else</span> <span class="dv">0</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>        r2 <span class="op">=</span> np.linalg.matrix_rank(B2) <span class="cf">if</span> <span class="bu">len</span>(T) <span class="cf">else</span> <span class="dv">0</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>        b0.append(n <span class="op">-</span> r1)<span class="op">;</span> b1.append(<span class="bu">len</span>(E) <span class="op">-</span> r1 <span class="op">-</span> r2)</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>    density <span class="op">=</span> np.array([np.mean(W[iu] <span class="op">&gt;=</span> t) <span class="cf">for</span> t <span class="kw">in</span> thresholds])</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> density, np.array(b0), np.array(b1)</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">16</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>theta <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> np.arange(n) <span class="op">/</span> n</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>D <span class="op">=</span> np.<span class="bu">abs</span>(np.subtract.outer(theta, theta))<span class="op">;</span> D <span class="op">=</span> np.minimum(D, <span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">-</span> D)</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>rng <span class="op">=</span> np.random.default_rng(<span class="dv">0</span>)</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>W_ring <span class="op">=</span> np.exp(<span class="op">-</span>D <span class="op">/</span> <span class="fl">0.4</span>) <span class="op">+</span> <span class="fl">0.01</span> <span class="op">*</span> rng.random((n, n))<span class="op">;</span> W_ring <span class="op">=</span> (W_ring <span class="op">+</span> W_ring.T) <span class="op">/</span> <span class="dv">2</span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>np.fill_diagonal(W_ring, <span class="dv">0</span>)</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>iu <span class="op">=</span> np.triu_indices(n, <span class="dv">1</span>)</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>W_shuf <span class="op">=</span> np.zeros_like(W_ring)<span class="op">;</span> W_shuf[iu] <span class="op">=</span> rng.permutation(W_ring[iu])<span class="op">;</span> W_shuf <span class="op">+=</span> W_shuf.T</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>d1, b0r, b1r <span class="op">=</span> betti_curve(W_ring)</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>d2, b0s, b1s <span class="op">=</span> betti_curve(W_shuf)</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;环状网络：beta_1 = 1 持续的密度区间长度 ≈ </span><span class="sc">{</span>np<span class="sc">.</span><span class="bu">sum</span>(b1r <span class="op">==</span> <span class="dv">1</span>) <span class="op">/</span> <span class="bu">len</span>(b1r)<span class="sc">:.2f}</span><span class="ss">（占过滤步数比例），&quot;</span></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>      <span class="ss">f&quot;beta_1 最大值 </span><span class="sc">{</span>b1r<span class="sc">.</span><span class="bu">max</span>()<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;打乱权重：beta_1 最大值 </span><span class="sc">{</span>b1s<span class="sc">.</span><span class="bu">max</span>()<span class="sc">}</span><span class="ss">，出现在密度 </span><span class="sc">{</span>d2[np.argmax(b1s)]<span class="sc">:.2f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">3</span>), sharey<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> a, d, b0, b1, ttl <span class="kw">in</span> [(ax[<span class="dv">0</span>], d1, b0r, b1r, <span class="st">&quot;ring geometry&quot;</span>), (ax[<span class="dv">1</span>], d2, b0s, b1s, <span class="st">&quot;shuffled weights&quot;</span>)]:</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>    a.step(d, b0, where<span class="op">=</span><span class="st">&quot;post&quot;</span>, label<span class="op">=</span><span class="vs">r&quot;</span><span class="dv">$\b</span><span class="vs">eta_0</span><span class="dv">$</span><span class="vs">&quot;</span>)<span class="op">;</span> a.step(d, b1, where<span class="op">=</span><span class="st">&quot;post&quot;</span>, label<span class="op">=</span><span class="vs">r&quot;</span><span class="dv">$\b</span><span class="vs">eta_1</span><span class="dv">$</span><span class="vs">&quot;</span>)</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>    a.set_xlabel(<span class="st">&quot;edge density&quot;</span>)<span class="op">;</span> a.set_title(ttl)<span class="op">;</span> a.legend()</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].set_ylabel(<span class="st">&quot;Betti number&quot;</span>)</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()<span class="op">;</span> plt.show()</span></code></pre></div>
+</section><section class="block"><h2><span class="tag">Run</span>在浏览器中运行</h2><p class="small">首次加载 Python 环境约需 20–40 秒；可以修改参数后重新运行。</p><div class="cell"><div class="cell-head"><h3>持续同调入门——加权网络在阈值过滤下的贝蒂曲线</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea id="reporting-frontiers-cell7" rows="30" spellcheck="false" aria-label="持续同调入门——加权网络在阈值过滤下的贝蒂曲线 代码"># 对一个加权网络，按边权从大到小逐步加入边（过滤），在每一步构造团复形（clique complex，
+# 这里只取到三角形），计算 beta_0（连通分支数）与 beta_1（未被三角形填满的环的数目）。
+# 两个模拟网络：环状几何网络（节点均匀排在圆周上，权重随距离衰减）与打乱权重的对照。
+# 解读：环状网络在中间阈值段出现持续存在的 beta_1 = 1（一个大环），打乱后的网络 beta_1 的
+# 峰更早、更“碎”。持续同调把“在哪些阈值下存在多少个洞”作为特征，而不是只看一个阈值。
+import numpy as np
+import networkx as nx
+import matplotlib.pyplot as plt
+from itertools import combinations
+
+def betti_curve(W, n_steps=40):
+    n = W.shape[0]
+    iu = np.triu_indices(n, 1)
+    w_sorted = np.sort(W[iu])[::-1]
+    thresholds = w_sorted[np.linspace(0, len(w_sorted) - 1, n_steps).astype(int)]
+    b0, b1 = [], []
+    for t in thresholds:
+        G = nx.Graph(); G.add_nodes_from(range(n))
+        G.add_edges_from((i, j) for i, j in zip(*iu) if W[i, j] &gt;= t)
+        E = [tuple(sorted(e)) for e in G.edges()]
+        T = [tuple(sorted(c)) for c in nx.enumerate_all_cliques(G) if len(c) == 3]
+        eidx = {e: k for k, e in enumerate(E)}
+        B1 = np.zeros((n, len(E)))
+        for k, (u, v) in enumerate(E):
+            B1[u, k], B1[v, k] = -1, 1
+        B2 = np.zeros((len(E), len(T)))
+        for k, (a, b, c) in enumerate(T):
+            B2[eidx[(b, c)], k], B2[eidx[(a, c)], k], B2[eidx[(a, b)], k] = 1, -1, 1
+        r1 = np.linalg.matrix_rank(B1) if len(E) else 0
+        r2 = np.linalg.matrix_rank(B2) if len(T) else 0
+        b0.append(n - r1); b1.append(len(E) - r1 - r2)
+    density = np.array([np.mean(W[iu] &gt;= t) for t in thresholds])
+    return density, np.array(b0), np.array(b1)
+
+n = 16
+theta = 2 * np.pi * np.arange(n) / n
+D = np.abs(np.subtract.outer(theta, theta)); D = np.minimum(D, 2 * np.pi - D)
+rng = np.random.default_rng(0)
+W_ring = np.exp(-D / 0.4) + 0.01 * rng.random((n, n)); W_ring = (W_ring + W_ring.T) / 2
+np.fill_diagonal(W_ring, 0)
+iu = np.triu_indices(n, 1)
+W_shuf = np.zeros_like(W_ring); W_shuf[iu] = rng.permutation(W_ring[iu]); W_shuf += W_shuf.T
+
+d1, b0r, b1r = betti_curve(W_ring)
+d2, b0s, b1s = betti_curve(W_shuf)
+print(f&quot;环状网络：beta_1 = 1 持续的密度区间长度 ≈ {np.sum(b1r == 1) / len(b1r):.2f}（占过滤步数比例），&quot;
+      f&quot;beta_1 最大值 {b1r.max()}&quot;)
+print(f&quot;打乱权重：beta_1 最大值 {b1s.max()}，出现在密度 {d2[np.argmax(b1s)]:.2f}&quot;)
+
+fig, ax = plt.subplots(1, 2, figsize=(8, 3), sharey=True)
+for a, d, b0, b1, ttl in [(ax[0], d1, b0r, b1r, &quot;ring geometry&quot;), (ax[1], d2, b0s, b1s, &quot;shuffled weights&quot;)]:
+    a.step(d, b0, where=&quot;post&quot;, label=r&quot;$\beta_0$&quot;); a.step(d, b1, where=&quot;post&quot;, label=r&quot;$\beta_1$&quot;)
+    a.set_xlabel(&quot;edge density&quot;); a.set_title(ttl); a.legend()
+ax[0].set_ylabel(&quot;Betti number&quot;)
+plt.tight_layout(); plt.show()</textarea><div class="out" aria-live="polite"></div></div></section><nav class="pager"><a href="ex-reporting-frontiers-6.html"><small>上一个示例</small>单纯复形的贝蒂数——空心三角形与实心三角形</a><a href="ex-reporting-frontiers-8.html"><small>下一个示例</small>时间网络——时间一致路径与聚合网络的可达性</a></nav></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

@@ -1,0 +1,10 @@
+{
+ "topic": "symptom-networks",
+ "index": 3,
+ "title": "EBICglasso——图形 LASSO 加 EBIC 选择惩罚参数",
+ "hash": "988dfce528960d53ae49a54e85d09ebbfc93ea10",
+ "ok": true,
+ "figures": 1,
+ "stdout": "n = 500: 选中 λ = 0.093，边数 13，真实边命中 10/10，虚假边 3\n        真实边平均权重（真值 0.27）: 0.229\nn = 100: 选中 λ = 0.111，边数 16，真实边命中 9/10，虚假边 7\n        真实边平均权重（真值 0.27）: 0.221",
+ "stderr": ""
+}

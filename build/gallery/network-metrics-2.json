@@ -1,0 +1,10 @@
+{
+ "topic": "network-metrics",
+ "index": 2,
+ "title": "局部聚集系数、平均聚集系数与传递性",
+ "hash": "82fdbf556ac188c9fdd742f2fe81d03b6a37df8f",
+ "ok": true,
+ "figures": 1,
+ "stdout": "节点 0: 度=16, 邻居间边数=18, C_i=0.150, NetworkX=0.150\n平均聚集系数 = 0.571\n传递性       = 0.256\n度 <= 4 的节点平均 C_i = 0.667；度 >= 10 的节点平均 C_i = 0.175",
+ "stderr": ""
+}

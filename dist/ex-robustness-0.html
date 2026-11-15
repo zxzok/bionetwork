@@ -1,0 +1,164 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>生成函数求解点渗流与边渗流，并与 Newman–Ziff 模拟比较 · 生物医学网络科学</title><meta name="description" content="网络鲁棒性、渗流与级联失效 · 代码示例：生成函数求解点渗流与边渗流，并与 Newman–Ziff 模拟比较"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-dynamics"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html" aria-current="page">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics" open><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a><ol class="sub"><li><a href="robustness.percolation.html"><span class="n">01</span>渗流理论与网络碎裂</a></li><li><a href="robustness.generating-functions.html"><span class="n">02</span>生成函数方法与 Molloy–Reed 判据</a></li><li><a href="robustness.random-failure.html"><span class="n">03</span>随机失效与无标度网络</a></li><li><a href="robustness.targeted-attack.html"><span class="n">04</span>蓄意攻击：按度、介数与自适应攻击</a></li><li><a href="robustness.robustness-measures.html"><span class="n">05</span>鲁棒性度量：R 指标与功能性指标</a></li><li><a href="robustness.load-cascades.html"><span class="n">06</span>级联失效：负载重分配</a></li><li><a href="robustness.threshold-branching.html"><span class="n">07</span>阈值级联与分支过程</a></li><li><a href="robustness.interdependent-networks.html"><span class="n">08</span>相互依存网络与多层网络的渗流</a></li><li><a href="robustness.robustness-optimization.html"><span class="n">09</span>鲁棒性优化与网络设计</a></li><li><a href="robustness.biological-robustness.html"><span class="n">10</span>生物系统的鲁棒性：冗余、缓冲与必需性</a></li><li><a href="robustness.metabolic-knockouts.html"><span class="n">11</span>代谢网络的基因敲除与级联</a></li><li><a href="robustness.brain-lesions.html"><span class="n">12</span>脑损伤与病变的网络后果</a></li><li><a href="robustness.synthetic-lethality.html"><span class="n">13</span>合成致死与癌症治疗</a></li><li><a href="robustness.derivations.html"><span class="n">14</span>数学推导与算法</a></li><li><a href="robustness.frontiers.html"><span class="n">15</span>研究前沿与开放问题</a></li><li><a href="robustness.biomedical.html"><span class="n">16</span>生物医学应用</a></li><li><a href="robustness.limitations.html"><span class="n">17</span>适用范围与常见误用</a></li></ol></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="code.html">代码库</a> <span class="sep">/</span> <a href="code.html#dynamics">网络动力学与控制</a> <span class="sep">/</span> <a href="robustness.html">网络鲁棒性、渗流与级联失效</a></nav><div class="eyebrow" style="margin-top:14px"><b>Example</b><span>01 / 09</span></div><h1>生成函数求解点渗流与边渗流，并与 Newman–Ziff 模拟比较</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></dd></div><div><dt>下载</dt><dd><a href="notebooks/robustness.ipynb" download>Notebook</a> · <a href="notebooks/robustness.py" download>.py</a></dd></div></dl></header><section class="block prose"><p>对给定度分布，点渗流（每个节点以概率 phi 保留）：u = 1 - phi +
+phi<em>G1(u)，S = phi</em>(1 - G0(u))； 边渗流（每条边以概率 phi
+保留）：u = 1 - phi + phi*G1(u)，S = 1 - G0(u)。两者阈值相同：phi_c =
+<k>/(&lt;k^2&gt;-<k>)。 模拟用 Newman–Ziff
+算法：按随机顺序逐个”加回”节点（或边），用并查集维护最大分支，一次得到整条曲线。
+解读：理论曲线与模拟吻合；点渗流曲线始终低于边渗流曲线（删一个点等于删掉它的全部边），但两者在同一
+phi_c 处消失。</p>
+</section><section class="block"><h2><span class="tag">Output</span>输出图</h2><div class="ex-figs"><img src="gallery/robustness-0-0.png" alt="生成函数求解点渗流与边渗流，并与 Newman–Ziff 模拟比较：输出图 1" loading="lazy"></div></section><section class="block"><h2><span class="tag">Output</span>文字输出</h2><pre class="ex-out">ER &lt;k&gt;=3.98  理论 phi_c = 0.252 (即随机删除临界比例 f_c = 0.748)
+phi=0.2  点渗流 理论 0.000 模拟 0.006 | 边渗流 理论 0.000 模拟 0.010
+phi=0.3  点渗流 理论 0.091 模拟 0.084 | 边渗流 理论 0.302 模拟 0.307
+phi=0.5  点渗流 理论 0.398 模拟 0.399 | 边渗流 理论 0.796 模拟 0.794
+phi=0.8  点渗流 理论 0.762 模拟 0.763 | 边渗流 理论 0.953 模拟 0.953</pre></section><section class="block prose"><h2><span class="tag">Code</span>代码</h2><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 对给定度分布，点渗流（每个节点以概率 phi 保留）：u = 1 - phi + phi*G1(u)，S = phi*(1 - G0(u))；</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 边渗流（每条边以概率 phi 保留）：u = 1 - phi + phi*G1(u)，S = 1 - G0(u)。两者阈值相同：phi_c = &lt;k&gt;/(&lt;k^2&gt;-&lt;k&gt;)。</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 模拟用 Newman–Ziff 算法：按随机顺序逐个&quot;加回&quot;节点（或边），用并查集维护最大分支，一次得到整条曲线。</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 解读：理论曲线与模拟吻合；点渗流曲线始终低于边渗流曲线（删一个点等于删掉它的全部边），但两者在同一 phi_c 处消失。</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> networkx <span class="im">as</span> nx</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> moments_G(degs):</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    k <span class="op">=</span> np.arange(degs.<span class="bu">max</span>() <span class="op">+</span> <span class="dv">1</span>)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    P <span class="op">=</span> np.bincount(degs, minlength<span class="op">=</span><span class="bu">len</span>(k)) <span class="op">/</span> <span class="bu">len</span>(degs)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    G0 <span class="op">=</span> <span class="kw">lambda</span> x: np.<span class="bu">sum</span>(P <span class="op">*</span> x <span class="op">**</span> k)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    mk <span class="op">=</span> np.<span class="bu">sum</span>(k <span class="op">*</span> P)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    G1 <span class="op">=</span> <span class="kw">lambda</span> x: np.<span class="bu">sum</span>(k[<span class="dv">1</span>:] <span class="op">*</span> P[<span class="dv">1</span>:] <span class="op">*</span> x <span class="op">**</span> (k[<span class="dv">1</span>:] <span class="op">-</span> <span class="dv">1</span>)) <span class="op">/</span> mk</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> P, k, G0, G1</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> solve_u(G1, phi, iters<span class="op">=</span><span class="dv">2000</span>):</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    u <span class="op">=</span> <span class="fl">0.0</span>                                   <span class="co"># 从 0 开始迭代，收敛到最小非平凡解</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(iters):</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>        u <span class="op">=</span> <span class="dv">1</span> <span class="op">-</span> phi <span class="op">+</span> phi <span class="op">*</span> G1(u)</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> u</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> newman_ziff(G, mode<span class="op">=</span><span class="st">&quot;site&quot;</span>, reps<span class="op">=</span><span class="dv">20</span>, seed<span class="op">=</span><span class="dv">0</span>):</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    rng <span class="op">=</span> np.random.default_rng(seed)</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    nodes <span class="op">=</span> <span class="bu">list</span>(G.nodes())<span class="op">;</span> N <span class="op">=</span> <span class="bu">len</span>(nodes)<span class="op">;</span> edges <span class="op">=</span> <span class="bu">list</span>(G.edges())</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    out <span class="op">=</span> np.zeros(N <span class="op">+</span> <span class="dv">1</span> <span class="cf">if</span> mode <span class="op">==</span> <span class="st">&quot;site&quot;</span> <span class="cf">else</span> <span class="bu">len</span>(edges) <span class="op">+</span> <span class="dv">1</span>)</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(reps):</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>        parent <span class="op">=</span> {v: v <span class="cf">for</span> v <span class="kw">in</span> nodes}<span class="op">;</span> size <span class="op">=</span> {v: <span class="dv">1</span> <span class="cf">for</span> v <span class="kw">in</span> nodes}</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>        <span class="kw">def</span> find(x):</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>            <span class="cf">while</span> parent[x] <span class="op">!=</span> x:</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>                parent[x] <span class="op">=</span> parent[parent[x]]<span class="op">;</span> x <span class="op">=</span> parent[x]</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> x</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>        <span class="kw">def</span> union(a, b, smax):</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>            ra, rb <span class="op">=</span> find(a), find(b)</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> ra <span class="op">!=</span> rb:</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>                <span class="cf">if</span> size[ra] <span class="op">&lt;</span> size[rb]: ra, rb <span class="op">=</span> rb, ra</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>                parent[rb] <span class="op">=</span> ra<span class="op">;</span> size[ra] <span class="op">+=</span> size[rb]<span class="op">;</span> smax <span class="op">=</span> <span class="bu">max</span>(smax, size[ra])</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> smax</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>        curve <span class="op">=</span> [<span class="dv">0</span>]<span class="op">;</span> smax <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> mode <span class="op">==</span> <span class="st">&quot;site&quot;</span>:</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>            present <span class="op">=</span> <span class="bu">set</span>()</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> v <span class="kw">in</span> rng.permutation(N):</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>                v <span class="op">=</span> nodes[v]<span class="op">;</span> present.add(v)<span class="op">;</span> smax <span class="op">=</span> <span class="bu">max</span>(smax, <span class="dv">1</span>)</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>                <span class="cf">for</span> w <span class="kw">in</span> G[v]:</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>                    <span class="cf">if</span> w <span class="kw">in</span> present: smax <span class="op">=</span> union(v, w, smax)</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>                curve.append(smax)</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>            smax <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> e <span class="kw">in</span> rng.permutation(<span class="bu">len</span>(edges)):</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>                a, b <span class="op">=</span> edges[e]<span class="op">;</span> smax <span class="op">=</span> union(a, b, smax)<span class="op">;</span> curve.append(smax)</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>        out <span class="op">+=</span> np.array(curve) <span class="op">/</span> N</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> out <span class="op">/</span> reps</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>G <span class="op">=</span> nx.gnp_random_graph(<span class="dv">5000</span>, <span class="dv">4</span> <span class="op">/</span> <span class="dv">4999</span>, seed<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>degs <span class="op">=</span> np.array([d <span class="cf">for</span> _, d <span class="kw">in</span> G.degree()])</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>P, k, G0, G1 <span class="op">=</span> moments_G(degs)</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>phi_c <span class="op">=</span> degs.mean() <span class="op">/</span> (np.mean(degs <span class="op">**</span> <span class="dv">2</span>) <span class="op">-</span> degs.mean())</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;ER &lt;k&gt;=</span><span class="sc">%.2f</span><span class="st">  理论 phi_c = </span><span class="sc">%.3f</span><span class="st"> (即随机删除临界比例 f_c = </span><span class="sc">%.3f</span><span class="st">)&quot;</span> <span class="op">%</span> (degs.mean(), phi_c, <span class="dv">1</span> <span class="op">-</span> phi_c))</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>site <span class="op">=</span> newman_ziff(G, <span class="st">&quot;site&quot;</span>)<span class="op">;</span> bond <span class="op">=</span> newman_ziff(G, <span class="st">&quot;bond&quot;</span>)</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> phi <span class="kw">in</span> [<span class="fl">0.2</span>, <span class="fl">0.3</span>, <span class="fl">0.5</span>, <span class="fl">0.8</span>]:</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>    u <span class="op">=</span> solve_u(G1, phi)</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>    S_site, S_bond <span class="op">=</span> phi <span class="op">*</span> (<span class="dv">1</span> <span class="op">-</span> G0(u)), <span class="dv">1</span> <span class="op">-</span> G0(u)</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>    s_sim <span class="op">=</span> site[<span class="bu">int</span>(phi <span class="op">*</span> G.number_of_nodes())]<span class="op">;</span> b_sim <span class="op">=</span> bond[<span class="bu">int</span>(phi <span class="op">*</span> G.number_of_edges())]</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;phi=</span><span class="sc">%.1f</span><span class="st">  点渗流 理论 </span><span class="sc">%.3f</span><span class="st"> 模拟 </span><span class="sc">%.3f</span><span class="st"> | 边渗流 理论 </span><span class="sc">%.3f</span><span class="st"> 模拟 </span><span class="sc">%.3f</span><span class="st">&quot;</span> <span class="op">%</span> (phi, S_site, s_sim, S_bond, b_sim))</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>phis <span class="op">=</span> np.linspace(<span class="fl">0.01</span>, <span class="dv">1</span>, <span class="dv">60</span>)</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>S_th <span class="op">=</span> np.array([<span class="dv">1</span> <span class="op">-</span> G0(solve_u(G1, ph, iters<span class="op">=</span><span class="dv">500</span>)) <span class="cf">for</span> ph <span class="kw">in</span> phis])</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="fl">6.4</span>, <span class="fl">4.2</span>))</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>ax.plot(np.arange(<span class="bu">len</span>(site)) <span class="op">/</span> G.number_of_nodes(), site, c<span class="op">=</span><span class="st">&quot;tab:blue&quot;</span>, lw<span class="op">=</span><span class="dv">3</span>, alpha<span class="op">=</span><span class="fl">0.4</span>, label<span class="op">=</span><span class="st">&quot;site (Newman-Ziff)&quot;</span>)</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>ax.plot(np.arange(<span class="bu">len</span>(bond)) <span class="op">/</span> G.number_of_edges(), bond, c<span class="op">=</span><span class="st">&quot;tab:orange&quot;</span>, lw<span class="op">=</span><span class="dv">3</span>, alpha<span class="op">=</span><span class="fl">0.4</span>, label<span class="op">=</span><span class="st">&quot;bond (Newman-Ziff)&quot;</span>)</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>ax.plot(phis, phis <span class="op">*</span> S_th, <span class="st">&quot;--&quot;</span>, c<span class="op">=</span><span class="st">&quot;tab:blue&quot;</span>, label<span class="op">=</span><span class="st">&quot;site (theory)&quot;</span>)</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>ax.plot(phis, S_th, <span class="st">&quot;:&quot;</span>, c<span class="op">=</span><span class="st">&quot;tab:orange&quot;</span>, lw<span class="op">=</span><span class="dv">2</span>, label<span class="op">=</span><span class="st">&quot;bond (theory)&quot;</span>)</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>ax.axvline(phi_c, c<span class="op">=</span><span class="st">&quot;0.5&quot;</span>, lw<span class="op">=</span><span class="fl">0.8</span>)</span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">&quot;occupation probability phi&quot;</span>)<span class="op">;</span> ax.set_ylabel(<span class="st">&quot;giant component / N&quot;</span>)<span class="op">;</span> ax.legend()</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">&quot;Site and bond percolation vanish at the same phi_c = </span><span class="sc">%.2f</span><span class="st">&quot;</span> <span class="op">%</span> phi_c)</span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()<span class="op">;</span> plt.show()</span></code></pre></div>
+</section><section class="block"><h2><span class="tag">Run</span>在浏览器中运行</h2><p class="small">首次加载 Python 环境约需 20–40 秒；可以修改参数后重新运行。</p><div class="cell"><div class="cell-head"><h3>生成函数求解点渗流与边渗流，并与 Newman–Ziff 模拟比较</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea id="robustness-cell0" rows="30" spellcheck="false" aria-label="生成函数求解点渗流与边渗流，并与 Newman–Ziff 模拟比较 代码"># 对给定度分布，点渗流（每个节点以概率 phi 保留）：u = 1 - phi + phi*G1(u)，S = phi*(1 - G0(u))；
+# 边渗流（每条边以概率 phi 保留）：u = 1 - phi + phi*G1(u)，S = 1 - G0(u)。两者阈值相同：phi_c = &lt;k&gt;/(&lt;k^2&gt;-&lt;k&gt;)。
+# 模拟用 Newman–Ziff 算法：按随机顺序逐个&quot;加回&quot;节点（或边），用并查集维护最大分支，一次得到整条曲线。
+# 解读：理论曲线与模拟吻合；点渗流曲线始终低于边渗流曲线（删一个点等于删掉它的全部边），但两者在同一 phi_c 处消失。
+import numpy as np
+import networkx as nx
+
+def moments_G(degs):
+    k = np.arange(degs.max() + 1)
+    P = np.bincount(degs, minlength=len(k)) / len(degs)
+    G0 = lambda x: np.sum(P * x ** k)
+    mk = np.sum(k * P)
+    G1 = lambda x: np.sum(k[1:] * P[1:] * x ** (k[1:] - 1)) / mk
+    return P, k, G0, G1
+
+def solve_u(G1, phi, iters=2000):
+    u = 0.0                                   # 从 0 开始迭代，收敛到最小非平凡解
+    for _ in range(iters):
+        u = 1 - phi + phi * G1(u)
+    return u
+
+def newman_ziff(G, mode=&quot;site&quot;, reps=20, seed=0):
+    rng = np.random.default_rng(seed)
+    nodes = list(G.nodes()); N = len(nodes); edges = list(G.edges())
+    out = np.zeros(N + 1 if mode == &quot;site&quot; else len(edges) + 1)
+    for _ in range(reps):
+        parent = {v: v for v in nodes}; size = {v: 1 for v in nodes}
+        def find(x):
+            while parent[x] != x:
+                parent[x] = parent[parent[x]]; x = parent[x]
+            return x
+        def union(a, b, smax):
+            ra, rb = find(a), find(b)
+            if ra != rb:
+                if size[ra] &lt; size[rb]: ra, rb = rb, ra
+                parent[rb] = ra; size[ra] += size[rb]; smax = max(smax, size[ra])
+            return smax
+        curve = [0]; smax = 0
+        if mode == &quot;site&quot;:
+            present = set()
+            for v in rng.permutation(N):
+                v = nodes[v]; present.add(v); smax = max(smax, 1)
+                for w in G[v]:
+                    if w in present: smax = union(v, w, smax)
+                curve.append(smax)
+        else:
+            smax = 1
+            for e in rng.permutation(len(edges)):
+                a, b = edges[e]; smax = union(a, b, smax); curve.append(smax)
+        out += np.array(curve) / N
+    return out / reps
+
+G = nx.gnp_random_graph(5000, 4 / 4999, seed=1)
+degs = np.array([d for _, d in G.degree()])
+P, k, G0, G1 = moments_G(degs)
+phi_c = degs.mean() / (np.mean(degs ** 2) - degs.mean())
+print(&quot;ER &lt;k&gt;=%.2f  理论 phi_c = %.3f (即随机删除临界比例 f_c = %.3f)&quot; % (degs.mean(), phi_c, 1 - phi_c))
+site = newman_ziff(G, &quot;site&quot;); bond = newman_ziff(G, &quot;bond&quot;)
+for phi in [0.2, 0.3, 0.5, 0.8]:
+    u = solve_u(G1, phi)
+    S_site, S_bond = phi * (1 - G0(u)), 1 - G0(u)
+    s_sim = site[int(phi * G.number_of_nodes())]; b_sim = bond[int(phi * G.number_of_edges())]
+    print(&quot;phi=%.1f  点渗流 理论 %.3f 模拟 %.3f | 边渗流 理论 %.3f 模拟 %.3f&quot; % (phi, S_site, s_sim, S_bond, b_sim))
+
+import matplotlib.pyplot as plt
+phis = np.linspace(0.01, 1, 60)
+S_th = np.array([1 - G0(solve_u(G1, ph, iters=500)) for ph in phis])
+fig, ax = plt.subplots(figsize=(6.4, 4.2))
+ax.plot(np.arange(len(site)) / G.number_of_nodes(), site, c=&quot;tab:blue&quot;, lw=3, alpha=0.4, label=&quot;site (Newman-Ziff)&quot;)
+ax.plot(np.arange(len(bond)) / G.number_of_edges(), bond, c=&quot;tab:orange&quot;, lw=3, alpha=0.4, label=&quot;bond (Newman-Ziff)&quot;)
+ax.plot(phis, phis * S_th, &quot;--&quot;, c=&quot;tab:blue&quot;, label=&quot;site (theory)&quot;)
+ax.plot(phis, S_th, &quot;:&quot;, c=&quot;tab:orange&quot;, lw=2, label=&quot;bond (theory)&quot;)
+ax.axvline(phi_c, c=&quot;0.5&quot;, lw=0.8)
+ax.set_xlabel(&quot;occupation probability phi&quot;); ax.set_ylabel(&quot;giant component / N&quot;); ax.legend()
+ax.set_title(&quot;Site and bond percolation vanish at the same phi_c = %.2f&quot; % phi_c)
+plt.tight_layout(); plt.show()</textarea><div class="out" aria-live="polite"></div></div></section><nav class="pager"><a href="code.html#dynamics"><small>代码库</small>网络鲁棒性、渗流与级联失效</a><a href="ex-robustness-1.html"><small>下一个示例</small>随机失效与四种攻击策略的比较，并计算 R 指标</a></nav></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

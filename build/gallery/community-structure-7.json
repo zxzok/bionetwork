@@ -1,0 +1,10 @@
+{
+ "topic": "community-structure",
+ "index": 7,
+ "title": "标准 SBM 与度修正 SBM（DC-SBM）在空手道网络上的最大似然划分",
+ "hash": "3ef688e5619271e52548e58fcdac1d1c866bafef",
+ "ok": true,
+ "figures": 1,
+ "stdout": "标准 SBM: logL = -233.53，与真实两派一致的比例 = 0.53，两组大小 [5, 29]，两组平均度 12.8 / 3.2\nDC-SBM: logL = -739.39，与真实两派一致的比例 = 0.94，两组大小 [17, 17]，两组平均度 4.6 / 4.6\n真实两派在两种模型下的 logL：SBM -267.65，DC-SBM -743.21",
+ "stderr": ""
+}

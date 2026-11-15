@@ -1,0 +1,10 @@
+{
+ "topic": "network-metrics",
+ "index": 5,
+ "title": "中心性家族在同一网络上的比较",
+ "hash": "ebbb0eedda89682e2b99bb325065b77c72a058d0",
+ "ok": true,
+ "figures": 1,
+ "stdout": "星形图中心介数（归一化）= 1.0 ；叶子接近中心性 = 0.571（手算 4/7=0.571）\n路径图未归一化介数: {1: 0.0, 2: 3.0, 3: 4.0, 4: 3.0, 5: 0.0}\n最大特征值 λ1 = 6.726，Katz 取 α = 0.5/λ1 = 0.0743\ndegree       前 5: [33, 0, 32, 2, 1]\ncloseness    前 5: [0, 2, 33, 31, 8]\nharmonic     前 5: [33, 0, 2, 32, 31]\nbetweenness  前 5: [0, 33, 32, 2, 31]\neigenvector  前 5: [33, 0, 2, 32, 1]\nkatz         前 5: [33, 0, 32, 2, 1]\npagerank     前 5: [33, 0, 32, 2, 1]\nk-core       前 5: [0, 1, 2, 3, 7]\n\n与度中心性的 Spearman 秩相关：\n  degree       1.00\n  closeness    0.89\n  harmonic     0.87\n  betweenness  0.90\n  eigenvector  0.78\n  katz         0.93\n  pagerank     0.98\n  k-core       0.93",
+ "stderr": ""
+}

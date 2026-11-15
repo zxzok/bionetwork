@@ -1,0 +1,10 @@
+{
+ "topic": "network-basics",
+ "index": 6,
+ "title": "稀疏存储——边列表、CSR 与稠密矩阵的内存比较",
+ "hash": "ba3b7a01f2e41d01b2976ed40e9e835c26d67717",
+ "ok": true,
+ "figures": 1,
+ "stdout": "N = 20000, M = 100000, 密度 = 5.00e-04\n稠密矩阵约需 3.2 GB；CSR 实际占用 3.36 MB（952 倍差距）\n节点 0 的邻居（来自 CSR）: [1617, 4381, 9171, 9925, 13757, 16874, 17813]\nNetworkX 给出的邻居:       [1617, 4381, 9171, 9925, 13757, 16874, 17813]\nCSR 中 indptr 的差分就是度：与 NetworkX 一致吗？ True\n手工 CSR 与 SciPy CSR 相同吗？ True",
+ "stderr": ""
+}

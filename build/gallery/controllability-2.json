@@ -1,0 +1,10 @@
+{
+ "topic": "controllability",
+ "index": 2,
+ "title": "驱动节点比例与平均度、度异质性",
+ "hash": "f12bf84c574b59ce2a53059b9ef97893783c1a11",
+ "ok": true,
+ "figures": 1,
+ "stdout": "<k>=1  n_D(ER) = 0.444  n_D(SF) = 0.606\n<k>=2  n_D(ER) = 0.207  n_D(SF) = 0.438\n<k>=3  n_D(ER) = 0.072  n_D(SF) = 0.331\n<k>=4  n_D(ER) = 0.022  n_D(SF) = 0.228\n<k>=6  n_D(ER) = 0.004  n_D(SF) = 0.105\nSF 全网平均度 = 6.00，驱动节点平均度 = 2.30",
+ "stderr": ""
+}

@@ -1,0 +1,227 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>输入图：控制复杂网络的隐藏几何结构 · 生物医学网络科学</title><meta name="description" content="论文精读：Input graph: the hidden geometry in controlling complex networks"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-dynamics"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html" aria-current="page">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics" open><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html" aria-current="page">网络可控性与稳定性</a><ol class="sub"><li><a href="controllability.network-control-systems.html"><span class="n">01</span>动态系统与网络控制</a></li><li><a href="controllability.linear-controllability.html"><span class="n">02</span>线性系统的可控性</a></li><li><a href="controllability.structural-controllability.html"><span class="n">03</span>结构可控性与最大匹配</a></li><li><a href="controllability.driver-nodes.html"><span class="n">04</span>驱动节点与网络结构</a></li><li><a href="controllability.control-centrality.html"><span class="n">05</span>控制中心性与可控子空间</a></li><li><a href="controllability.control-energy.html"><span class="n">06</span>控制能量与 Gramian 的数值问题</a></li><li><a href="controllability.target-control.html"><span class="n">07</span>目标控制与部分可控</a></li><li><a href="controllability.observability.html"><span class="n">08</span>可观测性与观测节点</a></li><li><a href="controllability.nonlinear-control.html"><span class="n">09</span>非线性网络的控制</a></li><li><a href="controllability.brain-network-control.html"><span class="n">10</span>脑网络控制：平均与模态可控性</a></li><li><a href="controllability.author-team-research.html"><span class="n">11</span>驱动节点的枚举、分类与自适应控制</a></li><li><a href="controllability.structural-robustness.html"><span class="n">12</span>结构鲁棒性</a></li><li><a href="controllability.dynamical-stability.html"><span class="n">13</span>动力学稳定性</a></li><li><a href="controllability.derivations.html"><span class="n">14</span>数学推导与算法</a></li><li><a href="controllability.frontiers.html"><span class="n">15</span>研究前沿与开放问题</a></li><li><a href="controllability.biomedical.html"><span class="n">16</span>生物医学应用</a></li><li><a href="controllability.limitations.html"><span class="n">17</span>适用范围与常见误用</a></li></ol></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><div class="lec-grid"><div style="min-width:0"><div class="lec-head"><nav class="crumb"><a href="papers.html">文献知识库</a> › 网络动力学与控制</nav><div class="eyebrow"><b>研究论文</b><span>难度：进阶</span></div><h1>输入图：控制复杂网络的隐藏几何结构</h1><p class="porig big">Input graph: the hidden geometry in controlling complex networks</p><p class="small">Zhang X, Lv T, Pu Y · <i>Scientific Reports</i> 2016 · <a href="https://doi.org/10.1038/srep38209" target="_blank" rel="noopener">DOI: 10.1038/srep38209</a></p><div class="chips"><span class="chip">输入图</span><span class="chip">控制邻接</span><span class="chip">交换定理</span><span class="chip">控制分支</span><span class="chip">双峰现象</span><span class="chip">最大匹配</span></div><div class="objectives"><h2>一句话</h2><p style="margin:0">用&quot;控制邻接&quot;构造输入图，证明交换定理并把节点控制类型归结为输入图的连通分支，解释了稠密网络的控制双峰现象。</p><p class="small" style="margin:8px 0 0">相关专题：<a href="controllability.html">网络可控性与稳定性</a></p></div></div><section class="block" id="video"><h2><span class="tag">VIDEO</span>讲解视频</h2><div class="video-main"><video controls preload="metadata" playsinline poster="media/videos/zhang2016_inputgraph.jpg"><source src="media/videos/zhang2016_inputgraph.mp4" type="video/mp4"><track kind="captions" srclang="zh" label="中文字幕" src="media/videos/zhang2016_inputgraph.vtt"></video><div class="video-meta"><strong>输入图：控制复杂网络的隐藏几何结构</strong><span>4 分 7 秒</span></div><details class="transcript"><summary>文字稿</summary><p>大家好，这一期我们精读2016年发表的输入图论文。它要回答的问题是：一个网络有那么多种控制方案，它们之间到底有什么关系？</p><p>在结构可控性里我们讲过，最大匹配下没有被匹配的节点就是驱动节点。这篇论文里，我们把驱动节点称为输入节点，一组最少的输入节点叫最小输入节点集。麻烦在于最大匹配通常不唯一，最小输入节点集的数目可以随网络规模指数增长。把它们全部枚举出来是一个非常困难的计数问题，大网络上根本做不到。</p><p>第一，众多最小输入节点集之间，究竟存在什么样的联系？第二，是什么拓扑结构决定了一个节点能不能成为输入节点？第三，如果我们必须使用某些指定节点，怎样设计出合适的控制方案？</p><p>关键概念叫控制邻接，先看一个节点 c，它有一条指向 a 的非匹配边。同时 c 还有一条指向 b 的匹配边，也就是说 c 的匹配名额给了 b。这时我们就说 a 与 b 控制邻接，两者通过共同的上游节点 c 联系起来。交换定理告诉我们，如果 a 是输入节点，把 a 换成 b，得到的仍是一个最小输入节点集。</p><p>证明其实很直观，我们把 c 的匹配边从 b 挪到 a 上。匹配边的数目没有变，所以新的匹配仍然是最大匹配。这时 a 被匹配了，而 b 失去匹配入边，成为新的输入节点。每次交换只改动一条匹配边和一个输入节点，是对原方案最小的改动。一个推论是，只有入度为零的节点，才会出现在所有的控制方案里。</p><p>把原网络的边，换成控制邻接关系形成的新边，就得到了输入图。含有输入节点的连通分支叫输入分支，里面每个节点都可能成为输入节点。不含输入节点的分支叫匹配分支，里面的节点永远不会出现在任何方案中。所以节点的控制类型，完全由它所在分支的类型决定，而且与选哪个最大匹配无关。</p><p>在无标度网络里，随着平均度增大，最大控制分支越来越大，分支数目不断减少。到了稠密网络，基本只剩下一个巨控制分支，把大多数节点连在一起。巨分支是输入分支，多数节点都能当输入节点；是匹配分支，多数节点都是冗余节点。这就从拓扑上解释了稠密网络中集中控制与分布式控制的双峰现象。</p><p>既然同一分支类型相同，要改变大量节点的类型，只需改变分支的类型。在 Amazon0312 网络里，只加了极少量的边，就改变了约 76% 节点的类型。Facebook_0 网络加入 0.02% 的边，就改变了约 82% 节点的类型。翻转之后，很多网络所需的输入节点比例也明显下降，变得更容易控制。</p><p>如果某个蛋白无法被药物干预，我们沿输入图找一个邻居替换它就行。论文还指出，新发现的边只会让输入图的巨分支变大，不会削弱结论。所以在不完整的生物网络里，说某个蛋白是冗余节点，一定要格外谨慎。</p><p>总结一下，控制邻接和交换定理，刻画了不同控制方案之间的替换关系。输入图的连通分支决定节点类型，巨分支则解释了控制模式的双峰现象。2017 年我们据此给出了快速找出全部可能输入节点的算法。之后又分别用删边和反转边来改变网络的控制模式，大家可以接着读这几篇。建议大家用页面上的小例子亲手画一张输入图，再运行可控性专题的代码示例。</p></details></div></section><section class="block prose" id="notes"><h2 id="一句话看懂">一句话看懂</h2>
+<p>一个网络有成千上万种最小输入节点集（MIS），它们之间有什么关系？这篇论文把原网络的边换成反映”谁能替换谁”的新边，得到<strong>输入图</strong>（input
+graph）：输入节点在输入图中的邻居一定能替换它；同一连通分支中的节点控制类型相同。于是，复杂的控制关系被约化为输入图的几个连通分支，稠密网络中”大多数节点要么都能当输入节点、要么都不能”的<strong>双峰现象</strong>也由此得到拓扑解释。</p>
+<h2 id="研究背景与问题">研究背景与问题</h2>
+<p>本文把驱动节点称为<strong>输入节点</strong>（input
+node），把最小驱动节点集称为最小输入节点集（Minimum Input nodes Set,
+MIS）。如<a
+href="controllability.structural-controllability.html">结构可控性与最大匹配</a>中所述，MIS
+由最大匹配给出，但最大匹配不唯一，MIS
+的数目可随网络规模指数增长，枚举它们是 #P 问题。按节点是否出现在某个 MIS
+中，可以分为：</p>
+<ul>
+<li><strong>可能输入节点</strong>（possible input node）：至少出现在一个
+MIS 中；</li>
+<li><strong>冗余节点</strong>（redundant node）：不出现在任何 MIS
+中。</li>
+</ul>
+<p>Jia
+等（2013）发现稠密网络中这两类节点的比例呈双峰分布（集中控制与分布式控制），但其成因和改变节点类型的方法仍不清楚。论文要回答三个问题：（1）众多
+MIS
+之间是什么关系？（2）什么拓扑结构决定一个节点是不是可能输入节点？（3）如何设计包含指定节点的
+MIS？</p>
+<h2 id="核心思想与方法">核心思想与方法</h2>
+<h3 id="控制邻接与交换定理">控制邻接与交换定理</h3>
+<div class="callout-def">
+<p><strong>控制邻接</strong>（control adjacency）：给定最大匹配
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>，若存在节点
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>，使
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>→</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">c\to a</annotation></semantics></math>
+是非匹配边、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>→</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">c\to b</annotation></semantics></math>
+是匹配边，则称
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+与
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>
+控制邻接。</p>
+<p><strong>交换定理</strong>（Exchange Theorem）：设
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>
+是一个 MIS，若输入节点
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>∈</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">a\in D</annotation></semantics></math>
+的入度不为 0，则必存在与
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+控制邻接的节点
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>，并且
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>D</mi><mo>′</mo></msup><mo>=</mo><mi>D</mi><mo>\</mo><mo stretchy="false" form="prefix">{</mo><mi>a</mi><mo stretchy="false" form="postfix">}</mo><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mi>b</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">D&#39;=D\setminus\{a\}\cup\{b\}</annotation></semantics></math>
+也是一个 MIS。</p>
+</div>
+<p>证明思路很直观：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+是输入节点，没有匹配入边。取
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+的一条入边
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>→</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">c\to a</annotation></semantics></math>。如果
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+没有匹配出边，就可以把
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>→</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">c\to a</annotation></semantics></math>
+加入匹配，与”最大”矛盾；所以
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+必有匹配出边
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>→</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">c\to b</annotation></semantics></math>。把
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>→</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">c\to b</annotation></semantics></math>
+换成
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>→</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">c\to a</annotation></semantics></math>，匹配边数不变，仍是最大匹配，此时
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>
+失去匹配入边，成为新的输入节点。每次交换只改动一条匹配边、一个输入节点，是对原控制方案的<strong>最小改动</strong>。</p>
+<p>两个推论：一个节点出现在<strong>所有</strong> MIS
+中，当且仅当它的入度为 0；输入节点的控制邻接邻居数等于它的入度。</p>
+<p><strong>小例子</strong>：网络只有两条边
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>→</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">c\to a</annotation></semantics></math>、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>→</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">c\to b</annotation></semantics></math>。<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+入度为
+0，必为输入节点；<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+只能匹配一条出边。若匹配
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>→</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">c\to b</annotation></semantics></math>，MIS
+为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi>a</mi><mo>,</mo><mi>c</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{a,c\}</annotation></semantics></math>；<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+与
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>
+控制邻接，交换后得 MIS
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{b,c\}</annotation></semantics></math>。</p>
+<h3 id="输入图与控制分支">输入图与控制分支</h3>
+<div class="callout-def">
+<p><strong>输入图</strong>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>G</mi><mi>D</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>V</mi><mo>,</mo><msub><mi>E</mi><mi>D</mi></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">G_D(V,E_D)</annotation></semantics></math>：节点集与原网络相同；若
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>
+与
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math>
+控制邻接，则在输入图中连边
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>e</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><annotation encoding="application/x-tex">e_{ij}</annotation></semantics></math>。</p>
+<p><strong>控制路径</strong>：相邻节点两两控制邻接的节点序列；从节点
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+沿控制路径可达的全部节点构成<strong>控制可达集</strong>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo stretchy="false" form="prefix">(</mo><mi>n</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">C(n)</annotation></semantics></math>。</p>
+<p><strong>控制分支</strong>：输入图的连通分支分为两类——含有输入节点的<strong>输入分支</strong>（Input
+Component, IC）和不含输入节点的<strong>匹配分支</strong>（Matched
+Component, MC）。</p>
+</div>
+<p><strong>邻接推论</strong>：（1）对任一 MIS
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>
+和其中的输入节点
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo stretchy="false" form="prefix">(</mo><mi>n</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">C(n)</annotation></semantics></math>
+中的节点都是可能输入节点；（2）若某节点不属于
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>
+中任何输入节点的控制可达集，它就是冗余节点。因此<strong>输入分支中的节点全是可能输入节点，匹配分支中的节点全是冗余节点</strong>，节点类型由它所在分支的类型决定。论文还证明，控制分支的类型与选用哪个最大匹配无关。</p>
+<p>控制路径本质上是二分图中从非匹配入端出发的<strong>交替路径</strong>：非匹配边、匹配边交替出现。</p>
+<p><strong>一个稍大的例子</strong>：边为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>→</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">1\to2</annotation></semantics></math>、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>→</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">1\to3</annotation></semantics></math>、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>→</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">4\to3</annotation></semantics></math>、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>→</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">4\to5</annotation></semantics></math>、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>→</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">2\to6</annotation></semantics></math>，取最大匹配
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo>→</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>→</mo><mn>3</mn><mo>,</mo><mn>2</mn><mo>→</mo><mn>6</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{1\to2, 4\to3, 2\to6\}</annotation></semantics></math>，MIS
+为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{1,4,5\}</annotation></semantics></math>。由
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>→</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">4\to5</annotation></semantics></math>（非匹配）和
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>→</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">4\to3</annotation></semantics></math>（匹配）知
+5 与 3 控制邻接；由
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>→</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">1\to3</annotation></semantics></math>（非匹配）和
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>→</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">1\to2</annotation></semantics></math>（匹配）知
+3 与 2 控制邻接。所以
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo stretchy="false" form="prefix">(</mo><mn>5</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mn>5</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>2</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">C(5)=\{5,3,2\}</annotation></semantics></math>，网络另有
+MIS
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>3</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{1,4,3\}</annotation></semantics></math>、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>2</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{1,4,2\}</annotation></semantics></math>。节点
+6 只有一条入边且来自 2，而 2 没有别的出边，6
+不与任何输入节点控制邻接，单独构成匹配分支，是冗余节点。</p>
+<h3 id="改变控制分支的类型">改变控制分支的类型</h3>
+<p>既然同一分支类型相同，要改变大量节点的类型，只需改变分支类型：</p>
+<ul>
+<li><strong>IC →
+匹配分支</strong>：为分支中每个输入节点添加一条从<strong>非饱和节点</strong>（没有匹配出边的节点）指向它的边，使其被匹配；</li>
+<li><strong>匹配分支 → IC</strong>：若匹配分支被非饱和节点连接（称为
+UMC），先用类似方法把这些非饱和节点匹配掉，变成<strong>饱和匹配分支</strong>（SMC）；对
+SMC，找控制可达集最大的节点
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>，设其匹配入边为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>→</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">m\to n</annotation></semantics></math>，添加边
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>→</mo><mi>d</mi></mrow><annotation encoding="application/x-tex">m\to d</annotation></semantics></math>（<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>
+为某个输入节点），于是
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>
+与
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+控制邻接，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+的可达集整体变为可能输入节点。</li>
+</ul>
+<p>构建输入图的复杂度：最大匹配
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false" form="prefix">(</mo><msup><mi>N</mi><mn>0.5</mn></msup><mi>L</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">O(N^{0.5}L)</annotation></semantics></math>，每个节点做一次广度优先搜索
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false" form="prefix">(</mo><mi>L</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">O(L)</annotation></semantics></math>，最坏情况总计
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false" form="prefix">(</mo><mi>N</mi><mi>L</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">O(NL)</annotation></semantics></math>；而利用输入图为某个输入节点找替代节点只需
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math>。</p>
+<h2 id="主要发现">主要发现</h2>
+<ol type="1">
+<li><strong>复杂控制关系可约化为少数控制分支</strong>。Little Rock
+食物网、Political blogs 等网络的输入图只有几个连通分支（图
+2A、B）。</li>
+<li><strong>许多真实网络存在巨控制分支</strong>。表 1 的 37
+个真实网络中，TRN-Yeast-1 最大控制分支占 99.21%（输入分支），Consulting
+占 97.83%，Slashdot0902 占 91.23%。</li>
+<li><strong>巨分支解释双峰现象</strong>。在
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>=</mo><msup><mn>10</mn><mn>4</mn></msup></mrow><annotation encoding="application/x-tex">N=10^4</annotation></semantics></math>、入/出度指数均为
+3
+的无标度网络中，最大控制分支规模随平均度增大而增大，控制分支数目单调减少，稠密网络中只剩一个巨分支；巨分支是
+IC 则多数节点是可能输入节点，是 MC 则多数是冗余节点。</li>
+<li><strong>少量加边即可翻转控制模式</strong>。网络越稠密，所需加边比例越低。Amazon0312
+的最大分支是 SMC（占 83.61%），加边比例仅 0.00003% 即可改变 75.74%
+节点的类型；Facebook_0 加 0.02% 的边改变 81.84%。相反，稀疏的 E.Coli
+转录网络需加 34.78% 的边，仅改变 1.89%。</li>
+<li><strong>翻转后 MIS 显著变小</strong>（补充表 S2），例如 Ythan 食物网
+MIS 比例从 51.11% 降到 3.70%，TRN-Yeast-1 从 96.46% 降到
+0.70%，说明该方法也可用于优化可控性。</li>
+</ol>
+<h2 id="怎样读这篇论文">怎样读这篇论文</h2>
+<ul>
+<li>正文只有 4
+页结论性叙述，<strong>证明全在补充材料</strong>。建议顺序：正文图 1 →
+补充材料第 2 节（最大匹配与 Berge 定理）→ 3.1 交换定理证明 → 3.3
+邻接推论 → 回到正文图 2、图 3。</li>
+<li>图 1B 同时画出原网络、二分图和输入图，务必对照理解；图 1C 画出全部 6
+个 MIS 及其交换关系。</li>
+<li>表 1 中 I、U、S 分别表示
+IC、UMC、SMC；<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+是改变最大分支类型所需加边比例，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><msub><mi>n</mi><mi>D</mi></msub></mrow><annotation encoding="application/x-tex">\Delta n_D</annotation></semantics></math>
+是类型改变的节点比例。</li>
+<li>补充材料中 Lemma
+1（一个控制分支不能同时含输入节点又被非饱和节点连接）是理解 UMC/SMC
+区分的关键，可第二遍再读。</li>
+</ul>
+<h2 id="局限与后续工作">局限与后续工作</h2>
+<ul>
+<li>理论基于线性时不变系统和结构可控性；加边在许多真实系统（如蛋白相互作用）中难以实现。</li>
+<li>讨论部分指出两点限制：网络中可能存在当前 MIS
+无法到达的环，需要额外输入信号；同一输入分支中若两个输入节点在输入图中共享邻居，它们不能同时被替换。</li>
+<li>构建完整输入图最坏
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false" form="prefix">(</mo><mi>N</mi><mi>L</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">O(NL)</annotation></semantics></math>，对超大网络仍偏慢。</li>
+<li><strong>后续工作与相互关系</strong>：
+<ul>
+<li>本文是这一系列研究的理论枢纽，回答了 2014
+年偏好匹配论文留下的”所有可能 MDS”问题。</li>
+<li>Zhang、Han 与 Zhang（2017，Sci Rep）利用交替路径与本文的邻接推论，在
+Hopcroft–Karp
+算法的最后一步直接得到所有可能输入节点及每个输入节点的替代节点集，复杂度降为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false" form="prefix">(</mo><msup><mi>N</mi><mn>0.5</mn></msup><mi>L</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">O(N^{0.5}L)</annotation></semantics></math>。</li>
+<li>本文用加边改变控制模式；Zhang 与 Li（2019，Physica
+A）改用<strong>删边</strong>，Zhang、Zhu 与 Zhao（2021，Physica
+A）改用<strong>反转边</strong>，都以”切断驱动节点与巨输入分支的交替路径连接”为核心思想。</li>
+<li>交换定理也是后续研究基于控制路径给节点分 7
+类、寻找”控制核心点”的基础（见<a
+href="controllability.author-team-research.html">驱动节点的枚举、分类与自适应控制</a>）。</li>
+</ul></li>
+</ul>
+<h2 id="关联知识">关联知识</h2>
+<ul>
+<li><a
+href="controllability.author-team-research.html">驱动节点的枚举、分类与自适应控制</a>对本文做了概括；<a
+href="controllability.structural-controllability.html">结构可控性与最大匹配</a>中的最大匹配、二分图拆点是理解控制邻接的前提；<a
+href="controllability.driver-nodes.html">驱动节点与网络结构</a>提到的
+Jia 等（2013）控制模式双峰性，正是本文解释的对象。</li>
+<li><a
+href="network-metrics.components.html">连通分支与巨连通分支</a>中的连通分支概念在这里被用到一个”派生图”上：不是原网络的连通性，而是”可替换性”的连通性。</li>
+<li>在生物网络中，某些蛋白无法作为干预靶点。交换定理提供了一个
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math>
+的”换靶”操作：沿输入图找一个邻居替换即可。</li>
+</ul>
+<h2 id="延伸思考">延伸思考</h2>
+<ol type="1">
+<li>用本文的小例子（边
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>→</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">1\to2</annotation></semantics></math>、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>→</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">1\to3</annotation></semantics></math>、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>→</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">4\to3</annotation></semantics></math>、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>→</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">4\to5</annotation></semantics></math>、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>→</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">2\to6</annotation></semantics></math>）手工画出输入图，并验证节点
+6 是冗余节点。如果再加一条边
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>→</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">5\to6</annotation></semantics></math>，节点
+6 的类型会变吗？</li>
+<li>交换定理说”入度为 0 的节点出现在所有 MIS
+中”。在基因调控网络中，这类节点可能对应什么样的基因？</li>
+<li>本文指出新发现的边只会让输入图的巨分支变大。对于不完整的蛋白相互作用网络，这对”某蛋白是冗余节点”的结论意味着什么？</li>
+<li>分布式控制模式提供了很多可替换的控制方案。请从药物靶点选择和网络安全两个角度，分别讨论它的利与弊。</li>
+</ol>
+</section><nav class="pager"><a href="paper-broido2019_rare.html">← 无标度网络是罕见的</a><a href="paper-zhang2017_allinputs.html">寻找控制复杂网络的全部可能输入节点的高效算法 →</a></nav></div><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

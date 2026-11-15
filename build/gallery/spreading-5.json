@@ -1,0 +1,10 @@
+{
+ "topic": "spreading",
+ "index": 5,
+ "title": "边基仓室模型（EBCM）与精确随机模拟的比较",
+ "hash": "e26fe872fdf16e722d5ab0cf444369b9c7b87a1a",
+ "ok": true,
+ "figures": 1,
+ "stdout": "大暴发次数：15 / 30\n峰值 I：EBCM = 0.141，模拟 = 0.141\n最终规模：EBCM = 0.607，均匀混合 ODE = 0.931",
+ "stderr": ""
+}

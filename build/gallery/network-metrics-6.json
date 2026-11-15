@@ -1,0 +1,10 @@
+{
+ "topic": "network-metrics",
+ "index": 6,
+ "title": "用 Brandes 算法手工计算介数中心性",
+ "hash": "f0433b6d2223f0308313f70ecf1992b55ad38ae4",
+ "ok": true,
+ "figures": 1,
+ "stdout": "与 NetworkX 最大差异 = 1.42e-14\n介数最大的 3 个节点: [0, 33, 32] [231.1, 160.6, 76.7]",
+ "stderr": ""
+}

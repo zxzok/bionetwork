@@ -1,0 +1,230 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>共同接收者中的突触组织预测输入神经元之间的连接 · 生物医学网络科学</title><meta name="description" content="论文精读：Synaptic organization in shared receivers predicts connectivity between input neurons"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-brain"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html" aria-current="page">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain" open><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html" aria-current="page">脑连接组：结构与功能连接</a><ol class="sub"><li><a href="brain-connectome.connectome-concepts.html"><span class="n">01</span>连接组：结构连接与功能连接</a></li><li><a href="brain-connectome.parcellation.html"><span class="n">02</span>脑图谱与节点定义</a></li><li><a href="brain-connectome.structural-connectivity.html"><span class="n">03</span>结构连接：弥散 MRI 与纤维追踪</a></li><li><a href="brain-connectome.functional-connectivity.html"><span class="n">04</span>功能连接估计：相关与偏相关</a></li><li><a href="brain-connectome.preprocessing.html"><span class="n">05</span>预处理对功能连接的影响</a></li><li><a href="brain-connectome.effective-connectivity.html"><span class="n">06</span>有效连接：动态因果模型与格兰杰因果</a></li><li><a href="brain-connectome.thresholding.html"><span class="n">07</span>阈值与加权</a></li><li><a href="brain-connectome.weighted-metrics.html"><span class="n">08</span>加权脑网络指标与归一化</a></li><li><a href="brain-connectome.topology.html"><span class="n">09</span>拓扑指标：小世界、模块、枢纽与富人俱乐部</a></li><li><a href="brain-connectome.functional-systems.html"><span class="n">10</span>模块与功能系统</a></li><li><a href="brain-connectome.spatial-embedding.html"><span class="n">11</span>空间嵌入与布线代价</a></li><li><a href="brain-connectome.gradients.html"><span class="n">12</span>连接组梯度</a></li><li><a href="brain-connectome.group-comparison.html"><span class="n">13</span>组间比较与统计验证</a></li><li><a href="brain-connectome.individual-differences.html"><span class="n">14</span>个体指纹与个体差异</a></li><li><a href="brain-connectome.lesion-network-mapping.html"><span class="n">15</span>病变网络映射</a></li><li><a href="brain-connectome.pipeline.html"><span class="n">16</span>从 fMRI 到结论：分析流程与选择</a></li><li><a href="brain-connectome.derivations.html"><span class="n">17</span>数学推导与算法</a></li><li><a href="brain-connectome.frontiers.html"><span class="n">18</span>研究前沿与开放问题</a></li><li><a href="brain-connectome.biomedical.html"><span class="n">19</span>生物医学应用</a></li><li><a href="brain-connectome.limitations.html"><span class="n">20</span>适用范围与常见误用</a></li></ol></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><div class="lec-grid"><div style="min-width:0"><div class="lec-head"><nav class="crumb"><a href="papers.html">文献知识库</a> › 脑网络与连接组 · 网络基础理论 · 分子网络与基因调控</nav><div class="eyebrow"><b>研究论文</b><span>难度：研究</span></div><h1>共同接收者中的突触组织预测输入神经元之间的连接</h1><p class="porig big">Synaptic organization in shared receivers predicts connectivity between input neurons</p><p class="small">Zhang X · <i>在投稿件</i> 2026 · <a href="apps/flyscope/index.html" target="_blank" rel="noopener">原文链接</a></p><div class="chips"><span class="chip">连接组</span><span class="chip">突触位置</span><span class="chip">路径距离</span><span class="chip">下行神经元</span><span class="chip">果蝇</span><span class="chip">连接预测</span><span class="chip">物理网络</span></div><p style="margin:14px 0 0;display:flex;flex-wrap:wrap;gap:8px"><a class="btn" href="apps/flyscope/index.html" style="text-decoration:none">进入配套交互网站 →</a></p><div class="objectives"><h2>一句话</h2><p style="margin:0">在两个成年果蝇连接组中，相连输入源的突触在共同接收神经元上靠得更近，这种空间信息可帮助预测未见过的输入神经元之间的连接。</p><p class="small" style="margin:8px 0 0">相关专题：<a href="brain-connectome.html">脑连接组：结构与功能连接</a>、<a href="network-metrics.html">网络结构指标与随机图</a>、<a href="molecular-networks.html">生物分子网络与拓扑特征</a></p></div></div><section class="block" id="video"><h2><span class="tag">VIDEO</span>讲解视频</h2><div class="video-main"><video controls preload="metadata" playsinline poster="media/videos/zhang2026_flysynapse.jpg"><source src="media/videos/zhang2026_flysynapse.mp4" type="video/mp4"><track kind="captions" srclang="zh" label="中文字幕" src="media/videos/zhang2026_flysynapse.vtt"></video><div class="video-meta"><strong>共同接收者中的突触组织预测输入神经元之间的连接</strong><span>5 分 5 秒</span></div><details class="transcript"><summary>文字稿</summary><p>大家好，这一期我们精读一篇在投稿件，研究对象是果蝇的下行神经元。它想回答一个问题：神经元内部的突触位置，能不能告诉我们网络里别处的连接？</p><p>这项研究有一个配套网站叫 FlyScope，后面的很多画面都来自这个网站。</p><p>在脑连接组专题里，我们把连接组画成一张图，每个神经元是一个点。邻接矩阵告诉我们谁连着谁，连接多强，可它没有告诉我们连接落在哪里。真实的神经元是一棵伸展的树，输入可以落在同一个小分支，也可以相隔很远。连接图把这两种情况看成一样，这一部分信息就被丢掉了。</p><p>我们看一个三细胞的构型，输入源 A 和 B 都向同一个接收神经元 C 发出连接。能观察到的，是 C 的树突上哪些突触来自 A，哪些来自 B。我们关心的却是 A 到 B 这条连接，它的两个端点都不在 C 上。一条连接至少要有 5 条接触记录才算存在，这个阈值贯穿全文。</p><p>现在看核心发现，这是接收神经元 C 的树突，每个点都是一个输入突触。黄绿色的点来自来源 A，紫色的点来自伙伴 B。如果 A 本身也连向 B，那么 A 在 C 上的输入，会落在离 B 的输入更近的位置。</p><p>我们用一个简化的示意图再看一遍，A、B、D 三个输入落在同一棵树上。A 和 B 的突触落在同一侧分支上，彼此靠得很近，而 A 恰好也连向 B。不相连的 D，它的输入落在另一侧，离得更远。</p><p>这是网站上的结果页，在 MaleCNS 连接组里，相连输入源的输入平均近了约 9.4 微米。在独立重建的 FlyWire 连接组里，这个差值约为 8.0 微米，方向一致。八成以上的接收者都是这个方向，这正是论文图 1 的内容。</p><p>距离怎么量呢？我们不用直线距离，而是沿着神经元骨架走的最短路径。骨架本身就是一棵树，这其实就是网络结构指标里讲过的最短路径问题。第二个公式解决一个隐蔽的偏差：伙伴的输入位点越多，最近距离自然越小。所以我们把参照位点数统一成3个，对所有三点组合求最近距离的平均。</p><p>不同的源本来就落在不同位置，所以第二步我们把 A 在 C 上的输入完全固定。只改变伙伴，比较收到 A 输入的伙伴和完全没收到 A 输入的伙伴。在 MaleCNS 里，相连伙伴平均近了 9.14 微米，922 个接收者中有 749 个一致。在 FlyWire 里近了 10.15 微米，589 个接收者中有 483 个方向一致。</p><p>第三步是预测，我们用200个源细胞训练，再用另外200个完全不重叠的细胞测试。基线模型只用输入数目和接收者大小，一共4个特征。空间模型再加入离散度和距离摘要，一共20个特征。在 MaleCNS 里，平均精度从 0.089 提高到 0.161。在 FlyWire 里，从 0.069 提高到 0.114，而随机排序的水平只有约 0.03。</p><p>这和我们在脑影像里做的网络分析有什么关系呢？无论是脑区还是神经元，我们习惯把节点压缩成一个点，再去算网络指标。这篇论文提醒我们，节点内部的空间组织，也可能携带网络连接的信息。</p><p>首先，这是一篇在投稿件，还没有经过同行评审，结论可能修改。其次，相关不等于因果，三个细胞在同一区域交汇，就可能同时造成连接和靠近。每个果蝇数据集只代表一只动物，区间描述的是连接组内部的变异。线虫数据方向相同但样本很少，Platynereis 只有4条连接，方向也不一致。</p><p>总结一下，连接图只记录谁连谁，丢掉了输入落在树突上的位置。在两个果蝇连接组中，相连输入源的输入在共同接收者上靠得更近。这种空间信息可以帮助预测从未见过的神经元之间的连接。</p><p>网站上还列出了线虫和沙蚕幼体的数据，那两个物种的样本很少，只能作为探索性证据。</p><p>这是 FlyScope 的连接组浏览器，左边选择神经元，中间是骨架和输入位置。右边列出它的输入伙伴、输出伙伴和共享输入。建议大家打开网站，找到 DNge072，对照论文图 1 自己看一看输入落在哪里。</p></details></div></section><section class="block prose" id="notes"><h2 id="一句话看懂">一句话看懂</h2>
+<p>连接图只记录“谁连着谁”，却丢掉了输入落在接收神经元树突上的<strong>位置</strong>。这篇论文发现：如果两个输入源
+A、B 彼此相连，它们在共同接收神经元 C 上的输入往往靠得更近。在 MaleCNS
+和 FlyWire 两个成年果蝇连接组中，这种靠近平均约为 9.4 μm 和 8.0
+μm；把这类空间特征加入预测模型，对两个从未参与训练的输入神经元之间是否相连的判断明显变好，平均精度从
+0.089 提高到 0.161（MaleCNS）、从 0.069 提高到 0.114（FlyWire）。</p>
+<h2 id="研究背景与问题">研究背景与问题</h2>
+<p><a
+href="brain-connectome.connectome-concepts.html">连接组：结构连接与功能连接</a>中把连接组抽象成图，每个神经元是一个<strong>没有内部结构的点</strong>。但真实神经元是空间中伸展的树状结构：同样来自
+A 和 B、同样数目的突触，可以落在 C
+的同一小枝上，也可以分散在相距很远的分支上，连接图对两者一视同仁。</p>
+<p>“物理网络”（physical
+network）理论主张把空间伸展的节点本身也看成网络。秀丽隐杆线虫上的已有工作（Ruach
+等）发现，共享邻居更多的神经元，其突触在共同目标上更靠近。尚未回答的问题有两个：在<strong>固定输入位置</strong>之后，这种关系是否仍然存在？它能否用来推断<strong>之前没见过</strong>的神经元之间的连接？</p>
+<p>论文选择果蝇的<strong>下行神经元</strong>（descending neurons,
+DN）作为接收者。DN
+连接脑与腹神经索，身份可辨认、输入汇聚丰富，适合作为“共同接收者”。</p>
+<h2 id="核心思想与方法">核心思想与方法</h2>
+<figure>
+<img src="assets/img/flyscope/question.jpg" alt="三细胞设计：A 与 B 都连到接收者 C，A→B 这条边不经过 C，却可能体现在 A、B 的输入落在 C 上的位置（图片来自 FlyScope 网站）" loading="lazy">
+<figcaption>
+三细胞设计：A 与 B 都连到接收者 C，A→B 这条边不经过 C，却可能体现在 A、B
+的输入落在 C 上的位置（图片来自 FlyScope 网站）
+</figcaption>
+</figure>
+<h3
+id="三细胞设计共同接收者与输入源对">三细胞设计：共同接收者与输入源对</h3>
+<div class="callout-def">
+<p><strong>三细胞构型</strong>：输入源 A 和 B 都向接收神经元 C
+发出连接。可观测的信息是 C 上按来源标记的突触后位置（source-labelled
+input map）；要研究的是 A→B 这条连接。A→B 的两个端点都不在 C 上，但 A、B
+都是 C 的直接上游邻居，所以这是一个局部的三节点问题。</p>
+<p><strong>连接阈值</strong>：一条连接至少有 5
+条已发布的接触记录（contact record）才算存在；1–4
+条的情形在不同分析中或归入“其他”，或直接排除。</p>
+</div>
+<p>如果 A→B 存在，A→C、B→C、A→B 三条边正好构成<a
+href="molecular-networks.network-motifs.html">网络基序：自调控与前馈环</a>中的<strong>前馈环</strong>。论文问的是：只看
+C 身上的输入分布，能否读出前馈环中那条“不经过 C”的边？</p>
+<h3 id="路径距离">路径距离</h3>
+<div class="callout-def">
+<p><strong>路径距离</strong>：把突触后位置投影到 C
+的重建骨架（skeleton）最近的顶点上，沿骨架计算最短路径长度
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mi>C</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">d_C(x,y)</annotation></semantics></math>，单位为
+μm。对固定的 B→C 连接和脑区
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>，源输入位置
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+到最近一个 B 输入的距离为</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mrow><mi>B</mi><mi>C</mi><mi>r</mi></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><munder><mi mathvariant="normal">min</mi><mrow><mi>y</mi><mo>∈</mo><msub><mi>P</mi><mrow><mi>B</mi><mi>C</mi><mi>r</mi></mrow></msub></mrow></munder><msub><mi>d</mi><mi>C</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>,</mo></mrow><annotation encoding="application/x-tex">d_{BCr}(x)=\min_{y\in P_{BCr}} d_C(x,y),</annotation></semantics></math></p>
+<p>其中
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mrow><mi>B</mi><mi>C</mi><mi>r</mi></mrow></msub><annotation encoding="application/x-tex">P_{BCr}</annotation></semantics></math>
+是 B 在区域
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>
+内落在 C 上的输入位置集合。参照输入必须与源输入属于同一个脑区标签。</p>
+</div>
+<p>神经元骨架本身是一张树状图，路径距离就是<a
+href="network-metrics.paths-distance.html">路径、距离与最短路径算法</a>中的最短路径，只是边长为物理长度。改用欧氏距离，结论方向不变。</p>
+<h3
+id="第一步比较不同输入源源间比较">第一步：比较不同输入源（源间比较）</h3>
+<p>固定一条单向 DN 连接 B→C。向 C 输入的非 DN
+源分成两组：<strong>共享源</strong>（同时给 B 至少 5
+条记录）与<strong>其他源</strong>（给 B 的记录少于 5
+条）。对每条连接，计算两组源输入到最近 B
+输入的平均路径距离之差（共享减其他）。负值表示共享源的输入更靠近 B
+的输入。</p>
+<h3
+id="第二步控制混杂固定源输入位置">第二步：控制混杂——固定源输入位置</h3>
+<p>不同的源落在 C
+上的位置本来就可能不同。第二步因此<strong>固定</strong>源 A、接收者 C
+以及 A→C 的全部实际输入位置，只改变伙伴 DN：</p>
+<ul>
+<li>与 A 相连的伙伴 B（收到 A 至少 5 条记录）；</li>
+<li>替代伙伴 B′（收到 A 的记录为 0）；收到 1–4 条的伙伴排除。</li>
+</ul>
+<p>两类伙伴都向 C 输入，并限定在同一脑区、C 骨架的同一连通分量内。</p>
+<p>另一个混杂是伙伴在 C
+上的位点越多，“最近距离”自然越小。论文因此<strong>标准化参照位点数</strong>：从伙伴的
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+个不同位点中无放回均匀抽 3 个，计算到最近者距离的期望。按距离排序
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mrow><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow></msub><mo>≤</mo><mi>…</mi><mo>≤</mo><msub><mi>d</mi><mrow><mo stretchy="false" form="prefix">(</mo><mi>n</mi><mo stretchy="false" form="postfix">)</mo></mrow></msub></mrow><annotation encoding="application/x-tex">d_{(1)}\le\dots\le d_{(n)}</annotation></semantics></math>，第
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℓ</mi><annotation encoding="application/x-tex">\ell</annotation></semantics></math>
+近的位点成为三者中最近者的概率是
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mfrac linethickness="0"><mrow><mi>n</mi><mo>−</mo><mi>ℓ</mi></mrow><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mfrac linethickness="0"><mi>n</mi><mn>3</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\binom{n-\ell}{2}/\binom{n}{3}</annotation></semantics></math>，于是</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>d</mi><mo accent="true">̃</mo></mover><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>B</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><munderover><mo>∑</mo><mrow><mi>ℓ</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>n</mi><mo>−</mo><mn>2</mn></mrow></munderover><mfrac><mrow><mo stretchy="true" form="prefix">(</mo><mfrac linethickness="0"><mrow><mi>n</mi><mo>−</mo><mi>ℓ</mi></mrow><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mfrac linethickness="0"><mi>n</mi><mn>3</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow></mfrac><mspace width="0.167em"></mspace><msub><mi>d</mi><mrow><mo stretchy="false" form="prefix">(</mo><mi>ℓ</mi><mo stretchy="false" form="postfix">)</mo></mrow></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">\tilde d(x,B)=\sum_{\ell=1}^{n-2}\frac{\binom{n-\ell}{2}}{\binom{n}{3}}\,d_{(\ell)}.</annotation></semantics></math></p>
+<p>这是对所有三点子集的解析平均，不是挑最近的三个点，也不引入随机抽样误差。</p>
+<h3
+id="第三步预测未见过的输入神经元之间的连接">第三步：预测未见过的输入神经元之间的连接</h3>
+<p>这一步 A、B 都是非 DN 输入源，C 仍是 DN。用 200
+个源细胞之间的有向对训练，用另外<strong>不相交的</strong> 200
+个源细胞测试，测试对的两个端点都没参与拟合。目标是 A→B 是否达到 5
+条记录；A→B 的接触本身不在 C 上，也不进入预测特征。</p>
+<ul>
+<li><strong>计数模型</strong>（4 个特征）：A→C 记录数、B→C 记录数、C
+上可见输入记录数、C 骨架长度；</li>
+<li><strong>空间模型</strong>（20 个特征）：在上述 4
+个之外加入两源各自的空间离散度，以及 A、B
+输入之间的欧氏距离和骨架路径距离摘要（最小值、第 10
+百分位、中位数、近距离位点对比例等）。</li>
+</ul>
+<p>两者都用 L2
+正则化逻辑回归。每个可用的共同接收者给出一个概率，再对该源对的所有接收者取平均。</p>
+<div class="callout-def">
+<p><strong>平均精度</strong>（average precision,
+AP）：把候选连接按预测概率从高到低排序，沿精确率–召回率曲线做阶梯式求和。随机排序时
+AP 约等于测试集中正例的比例。连接稀疏时，AP
+更能反映排在前面的候选有多少是真的。</p>
+</div>
+<h2 id="主要发现">主要发现</h2>
+<figure>
+<img src="assets/img/flyscope/shared.jpg" alt="同一个接收者 C 上，来源 A（黄绿）与伙伴 B（紫）的输入位置（图片来自 FlyScope 网站）" loading="lazy">
+<figcaption>
+同一个接收者 C 上，来源 A（黄绿）与伙伴 B（紫）的输入位置（图片来自
+FlyScope 网站）
+</figcaption>
+</figure>
+<figure>
+<img src="assets/img/flyscope/results.jpg" alt="两个果蝇连接组中的三项逐步收紧的检验：共享来源更靠近、输入不变而伙伴不同、输入分布预测连接（图片来自 FlyScope 网站）" loading="lazy">
+<figcaption>
+两个果蝇连接组中的三项逐步收紧的检验：共享来源更靠近、输入不变而伙伴不同、输入分布预测连接（图片来自
+FlyScope 网站）
+</figcaption>
+</figure>
+<ol type="1">
+<li><strong>相连输入源的输入更靠近伙伴的输入</strong>。MaleCNS 13,318
+条连接中，共享源与其他源的平均路径距离为 60.77 μm 对 70.18 μm，差值
+−9.42 μm（95% 区间 −10.52 至 −8.31）；FlyWire 5,807 条连接中为 51.37 对
+59.36 μm，差值 −7.98 μm（−9.27 至
+−6.70）。按接收者平均，差值为负的比例为 82.7%（1,079 个）和 80.7%（720
+个），但也有方向相反的个例。</li>
+<li><strong>一个可辨认的环路</strong>。上行神经元 AN19B014 同时连接
+DNge006 和 DNge072，而 DNge006 也连向
+DNge072。在咽下神经节（GNG）中，这对 DN 的 12 个共享源（含
+AN19B014）的输入到最近 DNge006 输入的平均距离为 10.7 μm，其他非 DN
+输入为 19.0 μm。</li>
+<li><strong>固定源输入位置后关系仍然存在</strong>。MaleCNS
+中与源相连的伙伴为 64.40 μm，零输入伙伴为 73.54 μm，差值 −9.14
+μm（−11.21 至 −7.07），922 个接收者中 749 个方向一致；FlyWire 中为 62.79
+对 72.93 μm，差值 −10.15 μm（−12.15 至 −8.14），589 个中 483
+个一致。</li>
+<li><strong>空间特征改善对新细胞连接的预测</strong>。测试集正例比例只有
+4.30%（MaleCNS）和 3.08%（FlyWire）。加入空间特征后，平均精度从 0.089
+升至 0.161、从 0.069 升至 0.114；对数损失从 0.184 降至 0.165、从 0.142
+降至 0.125；补充材料中 AUROC 从 0.677 升至 0.800、从 0.712 升至
+0.807。</li>
+<li><strong>覆盖范围有限</strong>。39,800 个有向候选中，只有 30,702
+个（MaleCNS）和 21,822 个（FlyWire）有可用的共同接收者图谱而被打分；其中
+79.6% 和 72.7% 综合了至少两个接收者。</li>
+<li><strong>其他物种只是探索性证据</strong>。两个成年秀丽隐杆线虫重建中，固定源比较的差值为
+−9.88 μm 和 −5.39 μm，但只有 10 个和 13
+个接收者，其中一个源间比较的区间跨过 0。Platynereis 幼虫只得到 4
+条合格连接，方向不一致（平均 +6.09 μm），不能视为重复验证。</li>
+</ol>
+<h2 id="怎样读这篇论文">怎样读这篇论文</h2>
+<ul>
+<li><strong>阅读顺序</strong>：先读摘要和引言末段，弄清 A、B、C
+的角色如何变化（前两个分析中 B 是 DN 伙伴，第三个中 B 是非 DN
+源），再按图 1 → 图 3 顺序读结果并对照方法。</li>
+<li><strong>图 1</strong>：a 是源间比较示意；b 是 DNge072
+上的真实输入分布（橙点为共享源，灰点为其他输入，青色三角为 DNge006
+输入）；c 是两组距离的累积分布；d
+是每个接收者的差值分布，重点看负值占多数但并非全部。</li>
+<li><strong>图
+2</strong>：每个点是一个接收者，横纵轴分别是零输入伙伴和相连伙伴的距离，落在对角线下方表示相连伙伴更近。</li>
+<li><strong>图
+3</strong>：精确率–召回率曲线，虚线是正例比例（随机水平）；d、e
+两个柱状图给出对数损失和平均精度。注意图注写明这一对比没有置信区间和显著性检验。</li>
+<li><strong>可以先跳过</strong>：补充材料中的 DN
+互连预测与腹神经索输出分析，它们回答的是不同问题。线虫与 Platynereis 见
+Supplementary Note 8。</li>
+</ul>
+<p><strong>用 FlyScope 对照论文自己探索</strong>。配套网站 <a
+href="apps/flyscope/index.html">FlyScope</a>
+有中英文界面。建议这样用：</p>
+<ol type="1">
+<li>先看首页的 Circuits 与 Paper findings 部分，它用
+AN19B014–DNge006–DNge072 环路演示“共享输入”，对应图
+1b；首页神经元图为示意画法。</li>
+<li>打开论文示例环路，切换到 Shared input 视图，看 DNge072
+骨架上来自共享源与其他源的输入点，自己判断它们与 DNge006
+输入的远近，再和论文的 10.7 μm 对 19.0 μm 对照。</li>
+<li>在 Explore 的神经元库里按类型或 ID 搜索其他
+DN，查看伙伴列表和共享输入比较，挑一对相连的 DN
+重复观察，体会“总体方向一致但有反例”。</li>
+<li>网站还有 FlyWire、线虫和 Platynereis 页面，可对照主要发现第 6
+条。单个环路的印象不能替代总体统计。</li>
+</ol>
+<figure>
+<img src="assets/img/flyscope/explore.jpg" alt="FlyScope 连接组浏览器：左侧选择神经元，中间是骨架与输入位置，右侧是连接伙伴与共享输入（图片来自 FlyScope 网站）" loading="lazy">
+<figcaption>
+FlyScope
+连接组浏览器：左侧选择神经元，中间是骨架与输入位置，右侧是连接伙伴与共享输入（图片来自
+FlyScope 网站）
+</figcaption>
+</figure>
+<h2 id="局限与后续工作">局限与后续工作</h2>
+<ul>
+<li><strong>这是在投稿件，尚未经过同行评审</strong>。方法、数字和结论都可能在审稿后修改；早期版本以
+“Synaptic placement reflects shared input in Drosophila descending
+neurons” 为题发布在 arXiv
+上，内容与本文有差别，引用时请以正式发表版为准。</li>
+<li><strong>相关不等于因果</strong>。作者在讨论中明确指出，<strong>解剖机会</strong>可能是共同原因：A、B、C
+的树突和轴突在同一区域交汇，既容易形成 A→B 连接，也会让 A、B 的输入在 C
+上靠近。固定源输入位置、标准化参照位点数缩小了比较范围，但没有匹配更细的分支水平接触机会。结果与解剖约束、选择性布线或两者兼有都相容。路径距离是几何量，不直接等于电学上的整合效果。</li>
+<li><strong>样本单位</strong>。每个果蝇数据集只代表一只动物，区间描述的是连接组内部变异，不是个体间变异。</li>
+<li><strong>预测的边界</strong>。训练与测试细胞不相交，但类型可以重叠，接收者已知；每个连接组只做一次划分，对比没有区间估计；无共同接收者图谱的候选对不在评估之内。空间模型的优势也还不能拆分到“离散度”或“相对距离”。</li>
+<li><strong>后续方向</strong>（作者提出）：在新的接收者群体上检验、重复多次源划分、评估单个接收者的预测能力，并在保持分支水平接触机会的前提下比较分支内位置。论文也指出，只匹配连接与接触数目的连接组生成模型未必能重现这一关系。</li>
+</ul>
+<h2 id="关联知识">关联知识</h2>
+<ul>
+<li><a
+href="brain-connectome.connectome-concepts.html">连接组：结构连接与功能连接</a>介绍了微观尺度连接组。本文提醒我们：即使在突触级连接组里，把神经元压缩成“点”也会丢掉信息。</li>
+<li><a
+href="network-metrics.paths-distance.html">路径、距离与最短路径算法</a>中的最短路径：路径距离是神经元骨架这棵加权树上的最短路径。</li>
+<li><a
+href="molecular-networks.network-motifs.html">网络基序：自调控与前馈环</a>：A→C、B→C
+加上 A→B
+构成前馈环。本文可以理解为用节点内部的空间信息去预测前馈环中缺失的那条边，也是一种<strong>链路预测</strong>问题，并与共同邻居类方法有相通之处。</li>
+</ul>
+<h2 id="延伸思考">延伸思考</h2>
+<ol type="1">
+<li>论文用“到 3
+个随机参照位点的期望最近距离”标准化。如果不做这一步，伙伴输入位点数的差异会怎样让结果产生偏差？试举一个具体情境。</li>
+<li>作者认为解剖机会可能同时导致 A→B
+连接和输入靠近。请设计一个分析或实验，尽量区分“解剖约束”与“选择性布线”两种解释。</li>
+<li>空间模型把 AP 从 0.089 提高到 0.161，而随机水平约为
+0.043。你如何向一位实验神经科学家解释这一提升的实际意义？它能否直接用来指导电生理验证？</li>
+<li>在人脑 MRI
+连接组中，节点是脑区而不是神经元。“节点内部的空间组织携带网络信息”这一思想，在宏观尺度上可能有什么对应物？</li>
+</ol>
+</section><nav class="pager"><a href="paper-pan2026_adaptivecontrol.html">← 动态网络的自适应控制</a><a href="paper-zhang2026_sparsecontrol.html">语言模型的稀疏内部控制 →</a></nav></div><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

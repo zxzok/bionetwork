@@ -1,0 +1,10 @@
+{
+ "topic": "molecular-networks",
+ "index": 4,
+ "title": "AP-MS 拉下数据的 spoke 模型与 matrix 模型",
+ "hash": "0376bf06a22265fe8614f38f7ae39b5fbdd5529d",
+ "ok": true,
+ "figures": 1,
+ "stdout": "spoke ：边数 =  256，直接接触 =  111，非直接 =  145（精确率 0.43），覆盖全部直接接触的比例 = 0.42\nmatrix：边数 =  495，直接接触 =  213，非直接 =  282（精确率 0.43），覆盖全部直接接触的比例 = 0.80\n真实直接接触总数 = 265；蛋白数 = 232；诱饵数 = 69",
+ "stderr": ""
+}

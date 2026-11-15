@@ -1,0 +1,122 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>经验数据中的幂律分布 · 生物医学网络科学</title><meta name="description" content="论文精读：Power-law distributions in empirical data"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-theory"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html" aria-current="page">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory" open><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html" aria-current="page">小世界与无标度网络模型</a><ol class="sub"><li><a href="network-models.small-world-phenomenon.html"><span class="n">01</span>小世界现象</a></li><li><a href="network-models.lattice-vs-random.html"><span class="n">02</span>规则网格与随机网络</a></li><li><a href="network-models.watts-strogatz.html"><span class="n">03</span>Watts–Strogatz 小世界模型</a></li><li><a href="network-models.scale-free.html"><span class="n">04</span>幂律度分布与无标度网络</a></li><li><a href="network-models.configuration-model.html"><span class="n">05</span>任意度分布网络的生成：配置模型与隐变量模型</a></li><li><a href="network-models.barabasi-albert.html"><span class="n">06</span>Barabási–Albert 优先连接模型</a></li><li><a href="network-models.preferential-attachment-measurement.html"><span class="n">07</span>测量优先连接与非线性优先连接</a></li><li><a href="network-models.preferential-attachment-origins.html"><span class="n">08</span>优先连接从何而来：链接选择、复制与优化</a></li><li><a href="network-models.fitness-model.html"><span class="n">09</span>适应度模型与玻色–爱因斯坦凝聚</a></li><li><a href="network-models.evolving-networks.html"><span class="n">10</span>演化网络的扩展模型</a></li><li><a href="network-models.duplication-divergence.html"><span class="n">11</span>复制–分化模型</a></li><li><a href="network-models.spatial-networks.html"><span class="n">12</span>空间网络与随机几何图</a></li><li><a href="network-models.identification.html"><span class="n">13</span>小世界与无标度的统计判别</a></li><li><a href="network-models.derivations.html"><span class="n">14</span>数学推导与算法</a></li><li><a href="network-models.frontiers.html"><span class="n">15</span>研究前沿与开放问题</a></li><li><a href="network-models.biomedical.html"><span class="n">16</span>生物医学应用</a></li><li><a href="network-models.limitations.html"><span class="n">17</span>适用范围与常见误用</a></li></ol></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><div class="lec-grid"><div style="min-width:0"><div class="lec-head"><nav class="crumb"><a href="papers.html">文献知识库</a> › 网络基础理论 · 计算方法与研究规范</nav><div class="eyebrow"><b>经典论文</b><span>难度：进阶</span></div><h1>经验数据中的幂律分布</h1><p class="porig big">Power-law distributions in empirical data</p><p class="small">Clauset A, Shalizi CR, Newman MEJ · <i>SIAM Review</i> 2009 · <a href="https://doi.org/10.1137/070710111" target="_blank" rel="noopener">DOI: 10.1137/070710111</a></p><div class="chips"><span class="chip">幂律</span><span class="chip">最大似然估计</span><span class="chip">KS 统计量</span><span class="chip">拟合优度检验</span><span class="chip">似然比检验</span><span class="chip">对数正态分布</span></div><div class="objectives"><h2>一句话</h2><p style="margin:0">提出最大似然拟合、KS 选下界、自助法检验与似然比比较的幂律分析流程，并重新检验了 24 个数据集。</p><p class="small" style="margin:8px 0 0">相关专题：<a href="network-models.html">小世界与无标度网络模型</a>、<a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></p></div></div><section class="block prose" id="notes"><h2 id="一句话看懂">一句话看懂</h2>
+<p>“在双对数图上画直方图、拟合一条直线”既不能准确估计幂律指数，也不能说明数据是否真的服从幂律。作者给出了一套完整的统计流程：用最大似然估计指数，用
+KS
+距离确定幂律从哪里开始，用自助法检验拟合是否可信，再用似然比检验与其他重尾分布比较。</p>
+<h2 id="研究背景与问题">研究背景与问题</h2>
+<p>幂律分布
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>∝</mo><msup><mi>x</mi><mrow><mi>−</mi><mi>α</mi></mrow></msup></mrow><annotation encoding="application/x-tex">p(x)\propto x^{-\alpha}</annotation></semantics></math>
+出现在词频、城市人口、地震强度、引文数、网络度分布等大量场合。传统做法源自
+19 世纪 Pareto
+对财富分布的研究：把数据分箱画成双对数直方图，用最小二乘拟合直线，斜率就是
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mi>α</mi></mrow><annotation encoding="application/x-tex">-\alpha</annotation></semantics></math>。</p>
+<p>这样做有三个问题：尾部数据很少，直方图的噪声极大；对数变换后的最小二乘违反了回归的误差假设，估计有系统偏差；更根本的是，即使拟合出了一条漂亮的直线，也没有回答“数据是不是幂律”。对数正态、拉伸指数等分布在一两个数量级内同样可以看起来像直线。作者的问题是：怎样用有统计学依据的方法来判断和刻画幂律？</p>
+<h2 id="核心思想与方法">核心思想与方法</h2>
+<p>幂律通常只在尾部成立，所以模型有两个参数：指数
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+和幂律开始成立的下界
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mi mathvariant="normal">min</mi></msub><annotation encoding="application/x-tex">x_{\min}</annotation></semantics></math>。</p>
+<div class="callout-def">
+<p><strong>最大似然估计</strong>（连续情形）：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>α</mi><mo accent="true">̂</mo></mover><mo>=</mo><mn>1</mn><mo>+</mo><mi>n</mi><mo minsize="180%" maxsize="180%" stretchy="true" form="prefix">[</mo><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mstyle displaystyle="true"><mfrac><msub><mi>x</mi><mi>i</mi></msub><msub><mi>x</mi><mi mathvariant="normal">min</mi></msub></mfrac></mstyle><msup><mo minsize="180%" maxsize="180%" stretchy="true" form="postfix">]</mo><mrow><mi>−</mi><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">\hat\alpha=1+n\Big[\sum_{i=1}^{n}\ln\dfrac{x_i}{x_{\min}}\Big]^{-1}</annotation></semantics></math>，求和只对
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>≥</mo><msub><mi>x</mi><mi mathvariant="normal">min</mi></msub></mrow><annotation encoding="application/x-tex">x_i\ge x_{\min}</annotation></semantics></math>
+的
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+个观测进行。离散数据（如节点度）可用
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi mathvariant="normal">min</mi></msub><mo>−</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow><annotation encoding="application/x-tex">x_{\min}-\tfrac12</annotation></semantics></math>
+代替分母中的
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mi mathvariant="normal">min</mi></msub><annotation encoding="application/x-tex">x_{\min}</annotation></semantics></math>
+作近似；作者报告当
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi mathvariant="normal">min</mi></msub><mo>≳</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">x_{\min}\gtrsim6</annotation></semantics></math>
+时误差约在 1% 以内。</p>
+<p><strong>选择
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mi mathvariant="normal">min</mi></msub><annotation encoding="application/x-tex">x_{\min}</annotation></semantics></math></strong>：对每个候选值拟合
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>α</mi><mo accent="true">̂</mo></mover><annotation encoding="application/x-tex">\hat\alpha</annotation></semantics></math>，计算数据与模型累积分布之间的
+KS 距离
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo>=</mo><msub><mrow><mi mathvariant="normal">max</mi><mo>&#8289;</mo></mrow><mrow><mi>x</mi><mo>≥</mo><msub><mi>x</mi><mi mathvariant="normal">min</mi></msub></mrow></msub><mo stretchy="false" form="prefix">|</mo><mi>S</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mi>P</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">D=\max_{x\ge x_{\min}}|S(x)-P(x)|</annotation></semantics></math>，取使
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>
+最小的
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mi mathvariant="normal">min</mi></msub><annotation encoding="application/x-tex">x_{\min}</annotation></semantics></math>。</p>
+</div>
+<p>完整流程分三步：</p>
+<ol type="1">
+<li><strong>拟合</strong>：按上面的方法估计
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mi mathvariant="normal">min</mi></msub><annotation encoding="application/x-tex">x_{\min}</annotation></semantics></math>
+和
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>。</li>
+<li><strong>拟合优度检验</strong>：从拟合出的模型生成大量合成数据集（<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mi mathvariant="normal">min</mi></msub><annotation encoding="application/x-tex">x_{\min}</annotation></semantics></math>
+以下的部分从原始数据中重抽样），对每个合成集重复整个拟合过程并计算 KS
+距离，统计合成集距离大于实测距离的比例，作为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+值。若
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>≤</mo><mn>0.1</mn></mrow><annotation encoding="application/x-tex">p\le0.1</annotation></semantics></math>，拒绝幂律假设。合成集的个数，作者的经验法则是至少
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle><msup><mi>ε</mi><mrow><mi>−</mi><mn>2</mn></mrow></msup></mrow><annotation encoding="application/x-tex">\tfrac14\varepsilon^{-2}</annotation></semantics></math>；想让
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+值精确到 0.01，就需要约 2500 个。</li>
+<li><strong>与替代分布比较</strong>：对指数分布、拉伸指数、对数正态、带截断的幂律等，计算对数似然比
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>，并用
+Vuong 方法判断
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+的符号是否显著。若不显著，说明数据无法区分两个模型。</li>
+</ol>
+<p>需要强调的是：第 2 步的
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+值大，只说明“幂律是一个可信的模型”，并不排除其他模型同样可信，所以第 3
+步不可省略。</p>
+<h2 id="主要发现">主要发现</h2>
+<ol type="1">
+<li><strong>模拟研究</strong>：在已知参数的合成数据上，基于直方图的最小二乘估计有明显偏差，而且它给出的误差范围不会提示这种偏差；最大似然估计在样本量足够时准确。作者的经验是尾部样本
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≳</mo><mn>50</mn></mrow><annotation encoding="application/x-tex">n\gtrsim50</annotation></semantics></math>
+才能得到可靠的参数估计。</li>
+<li><strong>24 个经验数据集</strong>中，17
+个通过了拟合优度检验，与幂律相容；7 个被明确拒绝，包括 HTTP
+连接、地震、网页链接、森林火灾、财富、网页访问量和大肠杆菌代谢网络的度分布。</li>
+<li>只有英文文本中的<strong>词频</strong>一个数据集表现出“真正令人信服”的幂律：拟合很好，且没有任何替代分布占优。</li>
+<li><strong>对数正态很难排除</strong>：除 HTTP
+连接外，没有一个数据集能排除对数正态。蛋白质相互作用网络的度分布既是可信的幂律，也是可信的对数正态和拉伸指数。</li>
+<li>对约十个数据集（包括互联网的度分布），<strong>带截断的幂律</strong>明显优于纯幂律。</li>
+</ol>
+<h2 id="怎样读这篇论文">怎样读这篇论文</h2>
+<p>正文约 40 页，附录很长。建议的阅读顺序：</p>
+<ol type="1">
+<li>第 1 节和第 2 节前半部分，弄清连续与离散幂律的定义；</li>
+<li>第 3 节（参数估计）只记住两个公式和“用 KS 选
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mi mathvariant="normal">min</mi></msub><annotation encoding="application/x-tex">x_{\min}</annotation></semantics></math>”的思路；</li>
+<li>第 4 节（拟合优度）和第 5
+节（似然比检验）是全文核心，要读懂步骤；</li>
+<li>第 6 节的表格看 24
+个数据集各自的结论，重点看蛋白质、代谢网络和互联网三行；</li>
+<li>附录 A（最小二乘为什么失败）有兴趣再读；附录 B、C
+的推导可以跳过。</li>
+</ol>
+<p>实践中可直接使用作者推荐的软件实现，例如 Python 的
+<code>powerlaw</code> 包。</p>
+<h2 id="局限与后续工作">局限与后续工作</h2>
+<ul>
+<li><strong>独立同分布假设</strong>：方法假设观测值相互独立。网络的度序列受“度之和为偶数”等约束，节点之间并不独立；作者也承认数据的采样偏差（如蛋白质相互作用、互联网的不完整采样）没有被校正。</li>
+<li><strong>“可信”不等于“机制”</strong>：即使统计上支持幂律，也不能推出生成机制是优先连接，多种机制都能产生幂律。</li>
+<li><strong>阈值的选择</strong>：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>≤</mo><mn>0.1</mn></mrow><annotation encoding="application/x-tex">p\le0.1</annotation></semantics></math>
+的拒绝阈值、自助法中
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mi mathvariant="normal">min</mi></msub><annotation encoding="application/x-tex">x_{\min}</annotation></semantics></math>
+以下数据的处理方式都有一定任意性。</li>
+<li><strong>在网络科学中的延伸</strong>：Broido 与
+Clauset（2019）把这套流程用于近千个网络，结论是强无标度网络很少见，引发了关于“无标度”定义的激烈讨论。这场争论的焦点之一，就是幂律是否必须在统计上胜过对数正态，还是“重尾、存在枢纽”就够了。</li>
+</ul>
+<h2 id="关联知识">关联知识</h2>
+<ul>
+<li><a
+href="network-models.identification.html">小世界与无标度的统计判别</a>给出的四步流程（累积分布、最大似然、KS
+选下界、似然比比较）就来自本文，专题的<a
+href="network-models.html#resources">延伸资源</a>把它列为幂律拟合的标准方法；完整算法见<a
+href="molecular-networks.html">生物分子网络与拓扑特征</a>专题的<a
+href="molecular-networks.derivations.html">数学推导与算法</a>。</li>
+<li>在实际的网络分析中（见<a
+href="analysis-workflow.null-model-comparison.html">用模型网络与零模型解读真实网络</a>），报告度分布时应采用本文的方法，写清拟合区间、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+值和与替代分布的比较结果。</li>
+</ul>
+<h2 id="延伸思考">延伸思考</h2>
+<ol type="1">
+<li>为什么在双对数坐标上对直方图做最小二乘会产生系统偏差？试从“对数变换改变了误差结构”和“尾部计数很小”两方面解释。</li>
+<li>本文发现蛋白质相互作用网络的度分布既可以是幂律也可以是对数正态。如果你的结论依赖于“网络中存在枢纽蛋白”，你还需要区分这两种分布吗？如果你的结论依赖于“流行病阈值趋于零”呢？</li>
+<li>一个 300
+个节点的脑区网络，度分布的尾部大约有多少个样本？结合本文对样本量的建议，你会怎样描述这类网络的度分布？</li>
+</ol>
+</section><nav class="pager"><a href="paper-bullmore2009_brain.html">← 复杂脑网络：结构与功能系统的图论分析</a><a href="paper-buldyrev2010_cascade.html">相互依存网络中的灾难性级联失效 →</a></nav></div><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

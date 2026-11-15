@@ -1,0 +1,125 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>PLV、PLI、wPLI、相干与虚部相干：容积传导的影响 · 生物医学网络科学</title><meta name="description" content="同步与协同动力学 · 代码示例：PLV、PLI、wPLI、相干与虚部相干：容积传导的影响"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-dynamics"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html" aria-current="page">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics" open><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a><ol class="sub"><li><a href="synchronization.synchronization-types.html"><span class="n">01</span>同步现象与类型</a></li><li><a href="synchronization.kuramoto-model.html"><span class="n">02</span>Kuramoto 模型与序参量</a></li><li><a href="synchronization.network-kuramoto.html"><span class="n">03</span>网络拓扑与同步阈值</a></li><li><a href="synchronization.laplacian-spectrum.html"><span class="n">04</span>拉普拉斯谱与代数连通度</a></li><li><a href="synchronization.master-stability.html"><span class="n">05</span>主稳定函数与可同步性</a></li><li><a href="synchronization.hierarchical-sync.html"><span class="n">06</span>模块结构与分层同步</a></li><li><a href="synchronization.explosive-sync.html"><span class="n">07</span>爆发式同步</a></li><li><a href="synchronization.cluster-chimera.html"><span class="n">08</span>簇同步与奇异态</a></li><li><a href="synchronization.delay-noise.html"><span class="n">09</span>时滞与噪声</a></li><li><a href="synchronization.whole-brain-models.html"><span class="n">10</span>神经质量模型与全脑模型</a></li><li><a href="synchronization.phase-synchrony-estimation.html"><span class="n">11</span>从实测信号估计同步</a></li><li><a href="synchronization.consensus.html"><span class="n">12</span>共识动力学</a></li><li><a href="synchronization.derivations.html"><span class="n">13</span>数学推导与算法</a></li><li><a href="synchronization.frontiers.html"><span class="n">14</span>研究前沿与开放问题</a></li><li><a href="synchronization.biomedical.html"><span class="n">15</span>生物医学应用</a></li><li><a href="synchronization.limitations.html"><span class="n">16</span>适用范围与常见误用</a></li></ol></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="code.html">代码库</a> <span class="sep">/</span> <a href="code.html#dynamics">网络动力学与控制</a> <span class="sep">/</span> <a href="synchronization.html">同步与协同动力学</a></nav><div class="eyebrow" style="margin-top:14px"><b>Example</b><span>11 / 11</span></div><h1>PLV、PLI、wPLI、相干与虚部相干：容积传导的影响</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="synchronization.html">同步与协同动力学</a></dd></div><div><dt>下载</dt><dd><a href="notebooks/synchronization.ipynb" download>Notebook</a> · <a href="notebooks/synchronization.py" download>.py</a></dd></div></dl></header><section class="block prose"><p>构造两个真实源：s1 为 10 Hz 振荡（带相位噪声），s2 是 s1 延迟 20 ms
+的版本加独立噪声， 即两源之间存在“滞后的真实耦合”。另有一个无关源
+s3。电极信号是源的线性混合（容积传导）： e1 = s1 + 0.5 s3, e2 = s2 + 0.5
+s3, e3 = s3 + 噪声（e3 与 e1/e2 只通过 s3 的混合“相关”）。 对每对电极在
+8–12 Hz 带通后计算：PLV、PLI、wPLI、幅度相干 |Coh| 与虚部相干 |ImCoh|，
+并用时间平移替代数据（circular shift）得到 PLV 的 95% 零分布分位数。
+解读：e1–e3 只有零滞后的混合，PLV 与 |Coh| 显著偏高，而 PLI、wPLI、ImCoh
+接近 0； e1–e2 存在滞后耦合，所有指标都高。</p>
+</section><section class="block"><h2><span class="tag">Output</span>输出图</h2><div class="ex-figs"><img src="gallery/synchronization-10-0.png" alt="PLV、PLI、wPLI、相干与虚部相干：容积传导的影响：输出图 1" loading="lazy"></div></section><section class="block"><h2><span class="tag">Output</span>文字输出</h2><pre class="ex-out">e1-e2  PLV=0.89 (替代95%=0.25)  PLI=1.00  wPLI=1.00  |Coh|=0.74  |ImCoh|=0.56
+e1-e3  PLV=0.29 (替代95%=0.10)  PLI=0.01  wPLI=0.01  |Coh|=0.47  |ImCoh|=0.04
+e2-e3  PLV=0.28 (替代95%=0.11)  PLI=0.02  wPLI=0.04  |Coh|=0.42  |ImCoh|=0.03</pre></section><section class="block prose"><h2><span class="tag">Code</span>代码</h2><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 构造两个真实源：s1 为 10 Hz 振荡（带相位噪声），s2 是 s1 延迟 20 ms 的版本加独立噪声，</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 即两源之间存在“滞后的真实耦合”。另有一个无关源 s3。电极信号是源的线性混合（容积传导）：</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#   e1 = s1 + 0.5 s3,  e2 = s2 + 0.5 s3,  e3 = s3 + 噪声（e3 与 e1/e2 只通过 s3 的混合“相关”）。</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 对每对电极在 8–12 Hz 带通后计算：PLV、PLI、wPLI、幅度相干 |Coh| 与虚部相干 |ImCoh|，</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 并用时间平移替代数据（circular shift）得到 PLV 的 95% 零分布分位数。</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># 解读：e1–e3 只有零滞后的混合，PLV 与 |Coh| 显著偏高，而 PLI、wPLI、ImCoh 接近 0；</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">#       e1–e2 存在滞后耦合，所有指标都高。</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.signal <span class="im">import</span> butter, filtfilt, hilbert, csd, welch</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>fs, T <span class="op">=</span> <span class="dv">250</span>, <span class="dv">120</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> np.arange(<span class="bu">int</span>(fs <span class="op">*</span> T)) <span class="op">/</span> fs</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>rng <span class="op">=</span> np.random.default_rng(<span class="dv">0</span>)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>phase <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> <span class="dv">10</span> <span class="op">*</span> t <span class="op">+</span> np.cumsum(rng.standard_normal(t.size)) <span class="op">*</span> <span class="fl">0.05</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>s1 <span class="op">=</span> np.cos(phase) <span class="op">+</span> <span class="fl">0.5</span> <span class="op">*</span> rng.standard_normal(t.size)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>lag <span class="op">=</span> <span class="bu">int</span>(<span class="fl">0.020</span> <span class="op">*</span> fs)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>s2 <span class="op">=</span> np.roll(np.cos(phase), lag) <span class="op">+</span> <span class="fl">0.5</span> <span class="op">*</span> rng.standard_normal(t.size)</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>s3 <span class="op">=</span> np.cos(<span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> <span class="fl">10.5</span> <span class="op">*</span> t <span class="op">+</span> np.cumsum(rng.standard_normal(t.size)) <span class="op">*</span> <span class="fl">0.05</span>) <span class="op">+</span> <span class="fl">0.5</span> <span class="op">*</span> rng.standard_normal(t.size)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>e <span class="op">=</span> {<span class="st">&quot;e1&quot;</span>: s1 <span class="op">+</span> <span class="fl">0.5</span> <span class="op">*</span> s3, <span class="st">&quot;e2&quot;</span>: s2 <span class="op">+</span> <span class="fl">0.5</span> <span class="op">*</span> s3, <span class="st">&quot;e3&quot;</span>: s3 <span class="op">+</span> <span class="fl">0.5</span> <span class="op">*</span> rng.standard_normal(t.size)}</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>bb, aa <span class="op">=</span> butter(<span class="dv">4</span>, [<span class="dv">8</span>, <span class="dv">12</span>], btype<span class="op">=</span><span class="st">&quot;band&quot;</span>, fs<span class="op">=</span>fs)</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>an <span class="op">=</span> {k: hilbert(filtfilt(bb, aa, v)) <span class="cf">for</span> k, v <span class="kw">in</span> e.items()}</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> metrics(x, y):</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    S <span class="op">=</span> x <span class="op">*</span> np.conj(y)                               <span class="co"># 瞬时交叉谱</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    dphi <span class="op">=</span> np.angle(S)</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    plv <span class="op">=</span> <span class="bu">abs</span>(np.mean(np.exp(<span class="ot">1j</span> <span class="op">*</span> dphi)))</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    pli <span class="op">=</span> <span class="bu">abs</span>(np.mean(np.sign(np.sin(dphi))))</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    wpli <span class="op">=</span> <span class="bu">abs</span>(np.mean(S.imag)) <span class="op">/</span> np.mean(np.<span class="bu">abs</span>(S.imag))</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> plv, pli, wpli</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> coherence(x, y, band<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">12</span>)):</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>    f, Sxy <span class="op">=</span> csd(x, y, fs<span class="op">=</span>fs, nperseg<span class="op">=</span>fs <span class="op">*</span> <span class="dv">2</span>)</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>    _, Sxx <span class="op">=</span> welch(x, fs<span class="op">=</span>fs, nperseg<span class="op">=</span>fs <span class="op">*</span> <span class="dv">2</span>)<span class="op">;</span> _, Syy <span class="op">=</span> welch(y, fs<span class="op">=</span>fs, nperseg<span class="op">=</span>fs <span class="op">*</span> <span class="dv">2</span>)</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>    m <span class="op">=</span> (f <span class="op">&gt;=</span> band[<span class="dv">0</span>]) <span class="op">&amp;</span> (f <span class="op">&lt;=</span> band[<span class="dv">1</span>])</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>    coh <span class="op">=</span> Sxy[m] <span class="op">/</span> np.sqrt(Sxx[m] <span class="op">*</span> Syy[m])</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="bu">abs</span>(coh).mean(), <span class="bu">abs</span>(coh.imag).mean()</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>table <span class="op">=</span> {}</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> p, q <span class="kw">in</span> [(<span class="st">&quot;e1&quot;</span>, <span class="st">&quot;e2&quot;</span>), (<span class="st">&quot;e1&quot;</span>, <span class="st">&quot;e3&quot;</span>), (<span class="st">&quot;e2&quot;</span>, <span class="st">&quot;e3&quot;</span>)]:</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>    plv, pli, wpli <span class="op">=</span> metrics(an[p], an[q])</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>    ch, ich <span class="op">=</span> coherence(e[p], e[q])</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>    null <span class="op">=</span> [<span class="bu">abs</span>(np.mean(np.exp(<span class="ot">1j</span> <span class="op">*</span> np.angle(an[p] <span class="op">*</span> np.conj(np.roll(an[q], s))))))</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> s <span class="kw">in</span> rng.integers(fs <span class="op">*</span> <span class="dv">5</span>, t.size <span class="op">-</span> fs <span class="op">*</span> <span class="dv">5</span>, <span class="dv">200</span>)]</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>    table[p <span class="op">+</span> <span class="st">&quot;-&quot;</span> <span class="op">+</span> q] <span class="op">=</span> [plv, pli, wpli, ch, ich]</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;</span><span class="sc">%s</span><span class="st">-</span><span class="sc">%s</span><span class="st">  PLV=</span><span class="sc">%.2f</span><span class="st"> (替代95</span><span class="sc">%%</span><span class="st">=</span><span class="sc">%.2f</span><span class="st">)  PLI=</span><span class="sc">%.2f</span><span class="st">  wPLI=</span><span class="sc">%.2f</span><span class="st">  |Coh|=</span><span class="sc">%.2f</span><span class="st">  |ImCoh|=</span><span class="sc">%.2f</span><span class="st">&quot;</span></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>          <span class="op">%</span> (p, q, plv, np.quantile(null, <span class="fl">0.95</span>), pli, wpli, ch, ich))</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="fl">6.4</span>, <span class="fl">4.2</span>))</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>metric_names <span class="op">=</span> [<span class="st">&quot;PLV&quot;</span>, <span class="st">&quot;PLI&quot;</span>, <span class="st">&quot;wPLI&quot;</span>, <span class="st">&quot;|Coh|&quot;</span>, <span class="st">&quot;|ImCoh|&quot;</span>]</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.arange(<span class="bu">len</span>(metric_names))</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> j, ((pair, v), hatch) <span class="kw">in</span> <span class="bu">enumerate</span>(<span class="bu">zip</span>(table.items(), [<span class="st">&quot;&quot;</span>, <span class="st">&quot;//&quot;</span>, <span class="st">&quot;..&quot;</span>])):</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>    ax.bar(x <span class="op">+</span> (j <span class="op">-</span> <span class="dv">1</span>) <span class="op">*</span> <span class="fl">0.27</span>, v, <span class="fl">0.27</span>, hatch<span class="op">=</span>hatch, label<span class="op">=</span>pair, edgecolor<span class="op">=</span><span class="st">&quot;white&quot;</span>)</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>ax.set_xticks(x, metric_names)<span class="op">;</span> ax.set_ylabel(<span class="st">&quot;value&quot;</span>)<span class="op">;</span> ax.set_ylim(<span class="dv">0</span>, <span class="fl">1.05</span>)<span class="op">;</span> ax.legend()</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">&quot;Zero-lag mixing (e1-e3) fools PLV/Coh, not PLI/wPLI/ImCoh&quot;</span>, fontsize<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()<span class="op">;</span> plt.show()</span></code></pre></div>
+</section><section class="block"><h2><span class="tag">Run</span>在浏览器中运行</h2><p class="small">首次加载 Python 环境约需 20–40 秒；可以修改参数后重新运行。</p><div class="cell"><div class="cell-head"><h3>PLV、PLI、wPLI、相干与虚部相干：容积传导的影响</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea id="synchronization-cell10" rows="30" spellcheck="false" aria-label="PLV、PLI、wPLI、相干与虚部相干：容积传导的影响 代码"># 构造两个真实源：s1 为 10 Hz 振荡（带相位噪声），s2 是 s1 延迟 20 ms 的版本加独立噪声，
+# 即两源之间存在“滞后的真实耦合”。另有一个无关源 s3。电极信号是源的线性混合（容积传导）：
+#   e1 = s1 + 0.5 s3,  e2 = s2 + 0.5 s3,  e3 = s3 + 噪声（e3 与 e1/e2 只通过 s3 的混合“相关”）。
+# 对每对电极在 8–12 Hz 带通后计算：PLV、PLI、wPLI、幅度相干 |Coh| 与虚部相干 |ImCoh|，
+# 并用时间平移替代数据（circular shift）得到 PLV 的 95% 零分布分位数。
+# 解读：e1–e3 只有零滞后的混合，PLV 与 |Coh| 显著偏高，而 PLI、wPLI、ImCoh 接近 0；
+#       e1–e2 存在滞后耦合，所有指标都高。
+import numpy as np
+from scipy.signal import butter, filtfilt, hilbert, csd, welch
+
+fs, T = 250, 120
+t = np.arange(int(fs * T)) / fs
+rng = np.random.default_rng(0)
+phase = 2 * np.pi * 10 * t + np.cumsum(rng.standard_normal(t.size)) * 0.05
+s1 = np.cos(phase) + 0.5 * rng.standard_normal(t.size)
+lag = int(0.020 * fs)
+s2 = np.roll(np.cos(phase), lag) + 0.5 * rng.standard_normal(t.size)
+s3 = np.cos(2 * np.pi * 10.5 * t + np.cumsum(rng.standard_normal(t.size)) * 0.05) + 0.5 * rng.standard_normal(t.size)
+e = {&quot;e1&quot;: s1 + 0.5 * s3, &quot;e2&quot;: s2 + 0.5 * s3, &quot;e3&quot;: s3 + 0.5 * rng.standard_normal(t.size)}
+
+bb, aa = butter(4, [8, 12], btype=&quot;band&quot;, fs=fs)
+an = {k: hilbert(filtfilt(bb, aa, v)) for k, v in e.items()}
+
+def metrics(x, y):
+    S = x * np.conj(y)                               # 瞬时交叉谱
+    dphi = np.angle(S)
+    plv = abs(np.mean(np.exp(1j * dphi)))
+    pli = abs(np.mean(np.sign(np.sin(dphi))))
+    wpli = abs(np.mean(S.imag)) / np.mean(np.abs(S.imag))
+    return plv, pli, wpli
+
+def coherence(x, y, band=(8, 12)):
+    f, Sxy = csd(x, y, fs=fs, nperseg=fs * 2)
+    _, Sxx = welch(x, fs=fs, nperseg=fs * 2); _, Syy = welch(y, fs=fs, nperseg=fs * 2)
+    m = (f &gt;= band[0]) &amp; (f &lt;= band[1])
+    coh = Sxy[m] / np.sqrt(Sxx[m] * Syy[m])
+    return abs(coh).mean(), abs(coh.imag).mean()
+
+table = {}
+for p, q in [(&quot;e1&quot;, &quot;e2&quot;), (&quot;e1&quot;, &quot;e3&quot;), (&quot;e2&quot;, &quot;e3&quot;)]:
+    plv, pli, wpli = metrics(an[p], an[q])
+    ch, ich = coherence(e[p], e[q])
+    null = [abs(np.mean(np.exp(1j * np.angle(an[p] * np.conj(np.roll(an[q], s))))))
+            for s in rng.integers(fs * 5, t.size - fs * 5, 200)]
+    table[p + &quot;-&quot; + q] = [plv, pli, wpli, ch, ich]
+    print(&quot;%s-%s  PLV=%.2f (替代95%%=%.2f)  PLI=%.2f  wPLI=%.2f  |Coh|=%.2f  |ImCoh|=%.2f&quot;
+          % (p, q, plv, np.quantile(null, 0.95), pli, wpli, ch, ich))
+
+import matplotlib.pyplot as plt
+fig, ax = plt.subplots(figsize=(6.4, 4.2))
+metric_names = [&quot;PLV&quot;, &quot;PLI&quot;, &quot;wPLI&quot;, &quot;|Coh|&quot;, &quot;|ImCoh|&quot;]
+x = np.arange(len(metric_names))
+for j, ((pair, v), hatch) in enumerate(zip(table.items(), [&quot;&quot;, &quot;//&quot;, &quot;..&quot;])):
+    ax.bar(x + (j - 1) * 0.27, v, 0.27, hatch=hatch, label=pair, edgecolor=&quot;white&quot;)
+ax.set_xticks(x, metric_names); ax.set_ylabel(&quot;value&quot;); ax.set_ylim(0, 1.05); ax.legend()
+ax.set_title(&quot;Zero-lag mixing (e1-e3) fools PLV/Coh, not PLI/wPLI/ImCoh&quot;, fontsize=10)
+plt.tight_layout(); plt.show()</textarea><div class="out" aria-live="polite"></div></div></section><nav class="pager"><a href="ex-synchronization-9.html"><small>上一个示例</small>模块化“连接组”上的 Hopf 全脑模型：模拟功能连接与亚稳态</a><a href="synchronization.html"><small>回到专题</small>同步与协同动力学</a></nav></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

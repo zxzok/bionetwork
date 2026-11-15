@@ -1,0 +1,10 @@
+{
+ "topic": "spreading",
+ "index": 13,
+ "title": "传播溯源——Jordan 中心与基于观测点的估计",
+ "hash": "28ae83de21756fe8e2f33be38dce1bb63859d997",
+ "ok": true,
+ "figures": 1,
+ "stdout": "Jordan 中心(快照)  平均误差 = 0.31 跳，命中率 = 0.73\n观测点-随机         平均误差 = 1.13 跳，命中率 = 0.21\n观测点-介数         平均误差 = 1.28 跳，命中率 = 0.18",
+ "stderr": ""
+}

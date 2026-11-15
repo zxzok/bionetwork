@@ -1,0 +1,10 @@
+{
+ "topic": "community-structure",
+ "index": 9,
+ "title": "Leiden 算法、连通性检查与常数 Potts 模型（CPM）",
+ "hash": "ed9977452fd325d697b9d2610555f8615556a21a",
+ "ok": true,
+ "figures": 1,
+ "stdout": "(a) Louvain: Q = 0.3904 [0.3797, 0.4011]，社团数 12–15，不连通社团总数 0\n(a) Leiden : Q = 0.3909 [0.3772, 0.4018]，社团数 13–16，不连通社团总数 0\n(b) 10 个 K5：模块度(Louvain) 得 10 个社团；CPM(γ=0.5, Leiden) 得 10 个社团\n(b) 30 个 K5：模块度(Louvain) 得 18 个社团；CPM(γ=0.5, Leiden) 得 30 个社团\n(b) 60 个 K5：模块度(Louvain) 得 27 个社团；CPM(γ=0.5, Leiden) 得 60 个社团",
+ "stderr": ""
+}

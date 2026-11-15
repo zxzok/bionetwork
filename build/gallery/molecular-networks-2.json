@@ -1,0 +1,10 @@
+{
+ "topic": "molecular-networks",
+ "index": 2,
+ "title": "前馈环计数与保持入度/出度的随机化零模型（网络基序 Z 分数）",
+ "hash": "7b74ec7cd3aebeb54a6c2f57cf97b6ee3f0ec292",
+ "ok": true,
+ "figures": 1,
+ "stdout": "真实网络 FFL 数 = 37，随机化均值 = 9.5 ± 3.6，Z = 7.5，计数比 = 3.9",
+ "stderr": ""
+}

@@ -1,0 +1,10 @@
+{
+ "topic": "analysis-workflow",
+ "index": 3,
+ "title": "与 ER 随机图和保度随机化零模型比较",
+ "hash": "f8acf447d2663c37261cf4e584d8f1d13fda1eef",
+ "ok": true,
+ "figures": 1,
+ "stdout": "真实网络：      C = 0.573, L = 2.641, Q = 0.558\nER 零模型均值： C = 0.091, L = 2.487, Q = 0.333\n保度零模型均值：C = 0.199, L = 2.522, Q = 0.278\nz(ER)   C, L, Q = [48.5, 8.6, 18.8]\nz(保度) C, L, Q = [17.9, 2.0, 33.2]\n小世界系数 sigma = 5.92",
+ "stderr": ""
+}

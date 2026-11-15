@@ -1,0 +1,121 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>代谢网络与通量平衡分析 · 生物医学网络科学</title><meta name="description" content="生物分子网络与拓扑特征 · 代谢网络与通量平衡分析"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-molecular"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html" aria-current="page">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular" open><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a><ol class="sub"><li><a href="molecular-networks.network-types.html"><span class="n">01</span>生物分子网络的类型与数据来源</a></li><li><a href="molecular-networks.ppi-mapping.html"><span class="n">02</span>相互作用组图谱：检测方法、质量与偏倚</a></li><li><a href="molecular-networks.topology.html"><span class="n">03</span>分子网络的拓扑特征</a></li><li><a href="molecular-networks.metabolic-networks.html" aria-current="page"><span class="n">04</span>代谢网络与通量平衡分析</a></li><li><a href="molecular-networks.signaling-networks.html"><span class="n">05</span>信号转导网络</a></li><li><a href="molecular-networks.protein-complexes.html"><span class="n">06</span>蛋白复合物与功能模块的检测</a></li><li><a href="molecular-networks.centrality-lethality.html"><span class="n">07</span>致死性与中心性：枢纽蛋白假说及其争议</a></li><li><a href="molecular-networks.disease-modules.html"><span class="n">08</span>人类疾病网络与疾病模块</a></li><li><a href="molecular-networks.network-motifs.html"><span class="n">09</span>网络基序：类别与动力学功能</a></li><li><a href="molecular-networks.differential-networks.html"><span class="n">10</span>条件特异性网络、差异网络与网络重连</a></li><li><a href="molecular-networks.multiomics-integration.html"><span class="n">11</span>多组学网络整合</a></li><li><a href="molecular-networks.derivations.html"><span class="n">12</span>数学推导与算法</a></li><li><a href="molecular-networks.frontiers.html"><span class="n">13</span>研究前沿与开放问题</a></li><li><a href="molecular-networks.biomedical.html"><span class="n">14</span>生物医学应用</a></li><li><a href="molecular-networks.limitations.html"><span class="n">15</span>适用范围与常见误用</a></li></ol></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><div class="lec-grid"><article style="min-width:0"><header class="doc-head"><nav class="crumb"><a href="d-molecular.html">分子网络与基因调控</a> <span class="sep">/</span> <a href="molecular-networks.html">生物分子网络与拓扑特征</a></nav><div class="eyebrow" style="margin-top:14px"><b>生物分子网络与拓扑特征</b><span>04 / 15</span></div><h1>代谢网络与通量平衡分析</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="molecular-networks.html">生物分子网络与拓扑特征</a></dd></div><div><dt>阅读</dt><dd>约 5 分钟</dd></div></dl></header><section class="block prose" id="notes"><p>代谢网络是最早被系统分析的大规模分子网络，也是唯一一类边具有精确<strong>化学计量</strong>含义的分子网络：一个反应消耗多少底物、生成多少产物是确定的。因此，代谢网络既可以作为普通图来研究拓扑，也可以写成线性约束系统来预测通量。</p>
+<h3 id="三种图表示">三种图表示</h3>
+<div class="table-wrap"><table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>表示</th>
+<th>节点</th>
+<th>边</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>底物图（代谢物图）</td>
+<td>代谢物</td>
+<td>两个代谢物出现在同一反应的两侧（底物→产物）</td>
+<td>最常用于拓扑分析；一个反应会产生多条边</td>
+</tr>
+<tr>
+<td>反应图</td>
+<td>反应（酶）</td>
+<td>一个反应的产物是另一个反应的底物</td>
+<td>便于讨论酶的必需性</td>
+</tr>
+<tr>
+<td>二分图</td>
+<td>代谢物 + 反应</td>
+<td>代谢物 → 反应 → 代谢物（可带化学计量系数）</td>
+<td>信息无损，等价于化学计量矩阵</td>
+</tr>
+</tbody>
+</table></div>
+<p>Jeong 等（2000, <em>Nature</em>）比较了生命三域中 43
+种生物的代谢网络，报告它们具有相同的拓扑标度性质：度分布重尾、平均路径长度很短且不随网络规模增大而变长。这篇论文与酵母
+PPI 的工作一起，奠定了“细胞网络具有共同组织原则”的观点（Barabási &amp;
+Oltvai, 2004）。</p>
+<div class="callout-warn">
+<p><strong>货币代谢物会制造“枢纽”和“小世界”</strong>。ATP、ADP、NAD(P)H、水、CO₂
+等<strong>货币代谢物</strong>几乎参与所有反应。在底物图中保留它们，会人为造出巨大的枢纽并把路径长度压得很短。Ma
+&amp; Zeng（2003,
+<em>Bioinformatics</em>）去除货币代谢物后分析了代谢网络的巨强连通分支与“领结”结构；Arita（2004,
+<em>PNAS</em>）追踪碳原子在反应中的实际转移后发现，大肠杆菌代谢网络的平均路径长度比此前认为的长得多，“代谢世界并不小”。所以代谢网络的拓扑结论高度依赖于<strong>如何定义边</strong>：报告结果时必须说明是否去除了货币代谢物、用的是哪种图表示。</p>
+</div>
+<h3 id="化学计量矩阵与稳态约束">化学计量矩阵与稳态约束</h3>
+<div class="callout-def">
+<p><strong>化学计量矩阵</strong>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>∈</mo><msup><mi mathvariant="double-struck">ℝ</mi><mrow><mi>m</mi><mo>×</mo><mi>n</mi></mrow></msup></mrow><annotation encoding="application/x-tex">S\in\mathbb R^{m\times n}</annotation></semantics></math>：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+个代谢物、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+个反应，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>S</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><annotation encoding="application/x-tex">S_{ij}</annotation></semantics></math>
+是代谢物
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>
+在反应
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math>
+中的化学计量系数（产物为正，底物为负）。<strong>通量向量</strong>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>∈</mo><msup><mi mathvariant="double-struck">ℝ</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">v\in\mathbb R^n</annotation></semantics></math>
+给出每个反应的速率。代谢物浓度
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+满足
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle displaystyle="true"><mfrac><mrow><mi>d</mi><mi>x</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac></mstyle><mo>=</mo><mi>S</mi><mi>v</mi></mrow><annotation encoding="application/x-tex">\dfrac{dx}{dt}=Sv</annotation></semantics></math>。</p>
+</div>
+<p>代谢反应比细胞生长、基因表达快得多，因此常假设内部代谢物处于<strong>拟稳态</strong>：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mi>v</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">Sv=0</annotation></semantics></math>。再加上热力学（不可逆反应
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>j</mi></msub><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">v_j\ge0</annotation></semantics></math>）和酶容量、营养摄取速率等<strong>上下界</strong>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>l</mi><mi>j</mi></msub><mo>≤</mo><msub><mi>v</mi><mi>j</mi></msub><mo>≤</mo><msub><mi>u</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">l_j\le v_j\le u_j</annotation></semantics></math>，就把可能的通量限制在一个凸多面体中。这一框架称为<strong>基于约束的建模</strong>（constraint-based
+modeling），其优点是不需要难以测量的动力学参数。</p>
+<h3 id="通量平衡分析fba">通量平衡分析（FBA）</h3>
+<div class="callout-def">
+<p><strong>通量平衡分析</strong>（flux balance analysis, FBA；综述见
+Orth, Thiele &amp; Palsson, 2010, <em>Nature
+Biotechnology</em>）：在稳态与上下界约束下，求使某个目标函数最大的通量分布：
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mi mathvariant="normal">max</mi><mi>v</mi></munder><mspace width="0.278em"></mspace><msup><mi>c</mi><mi>⊤</mi></msup><mi>v</mi><mspace width="1.0em"></mspace><mtext mathvariant="normal">s.t.</mtext><mspace width="1.0em"></mspace><mi>S</mi><mi>v</mi><mo>=</mo><mn>0</mn><mo>,</mo><mspace width="0.278em"></mspace><mi>l</mi><mo>≤</mo><mi>v</mi><mo>≤</mo><mi>u</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">\max_{v}\; c^{\top}v\quad\text{s.t.}\quad Sv=0,\; l\le v\le u .</annotation></semantics></math>
+目标通常是“生物量反应”的通量（按细胞组分比例消耗前体的虚拟反应，代表生长速率）。这是一个线性规划问题。</p>
+</div>
+<p><strong>手算算例</strong>。三个代谢物 A、B、C，五个反应：R1 摄取 →
+A（<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><msub><mi>v</mi><mn>1</mn></msub><mo>≤</mo><mn>10</mn></mrow><annotation encoding="application/x-tex">0\le v_1\le 10</annotation></semantics></math>）；R2：A
+→ B；R3：A → C；R4：B + C → 生物量；R5：B → C（旁路）。稳态方程为</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mtext mathvariant="normal">A: </mtext><mspace width="0.333em"></mspace></mrow><msub><mi>v</mi><mn>1</mn></msub><mo>−</mo><msub><mi>v</mi><mn>2</mn></msub><mo>−</mo><msub><mi>v</mi><mn>3</mn></msub><mo>=</mo><mn>0</mn><mo>,</mo><mspace width="2.0em"></mspace><mrow><mtext mathvariant="normal">B: </mtext><mspace width="0.333em"></mspace></mrow><msub><mi>v</mi><mn>2</mn></msub><mo>−</mo><msub><mi>v</mi><mn>4</mn></msub><mo>−</mo><msub><mi>v</mi><mn>5</mn></msub><mo>=</mo><mn>0</mn><mo>,</mo><mspace width="2.0em"></mspace><mrow><mtext mathvariant="normal">C: </mtext><mspace width="0.333em"></mspace></mrow><msub><mi>v</mi><mn>3</mn></msub><mo>+</mo><msub><mi>v</mi><mn>5</mn></msub><mo>−</mo><msub><mi>v</mi><mn>4</mn></msub><mo>=</mo><mn>0</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">\text{A: } v_1-v_2-v_3=0,\qquad \text{B: } v_2-v_4-v_5=0,\qquad \text{C: } v_3+v_5-v_4=0 .</annotation></semantics></math></p>
+<p>三式相加得
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>1</mn></msub><mo>=</mo><mn>2</mn><msub><mi>v</mi><mn>4</mn></msub></mrow><annotation encoding="application/x-tex">v_1=2v_4</annotation></semantics></math>，故最大生物量通量
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>v</mi><mn>4</mn><mo>*</mo></msubsup><mo>=</mo><msubsup><mi>v</mi><mn>1</mn><mi mathvariant="normal">max</mi></msubsup><mi>/</mi><mn>2</mn><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">v_4^\ast=v_1^{\max}/2=5</annotation></semantics></math>。<strong>敲除</strong>
+R3（令
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>3</mn></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">v_3=0</annotation></semantics></math>）后，C
+只能经旁路 R5
+获得：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>5</mn></msub><mo>=</mo><msub><mi>v</mi><mn>4</mn></msub></mrow><annotation encoding="application/x-tex">v_5=v_4</annotation></semantics></math>，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>2</mn></msub><mo>=</mo><mn>2</mn><msub><mi>v</mi><mn>4</mn></msub></mrow><annotation encoding="application/x-tex">v_2=2v_4</annotation></semantics></math>，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>1</mn></msub><mo>=</mo><mn>2</mn><msub><mi>v</mi><mn>4</mn></msub></mrow><annotation encoding="application/x-tex">v_1=2v_4</annotation></semantics></math>，最大生物量仍为
+5——R3 是<strong>非必需</strong>的。若网络中没有 R5，敲除 R3 后 C
+无法生成，生物量为 0，R3 变为<strong>必需</strong>。这个例子说明，FBA
+判断“必需反应”时考虑的是整个网络的<strong>替代路径</strong>，而不是单个节点的度（代码见
+<a href="molecular-networks.html#code">FBA 与反应敲除</a>）。</p>
+<p>FBA 的常见扩展：</p>
+<ul>
+<li><strong>基因敲除预测</strong>：通过基因–蛋白–反应（GPR）关系把基因映射到反应，敲除基因即把相应反应的上下界设为
+0，比较敲除前后的最优生长率。</li>
+<li><strong>通量变异性分析</strong>（FVA）：最优解通常不唯一。固定目标值（或允许一定比例的次优），对每个反应分别求最小和最大通量，得到每个通量的可行区间。</li>
+<li><strong>MOMA、ROOM</strong>
+等：假设敲除后的细胞不立刻达到新的最优，而是尽量接近原通量分布。</li>
+<li><strong>基元通量模式</strong>（elementary flux mode; Schuster 等,
+2000）：稳态通量锥中不可再分解的最小通路，枚举它们可以系统地描述网络的全部“通路”，但数量随网络规模组合爆炸。</li>
+</ul>
+<h3 id="基因组尺度代谢模型的验证">基因组尺度代谢模型的验证</h3>
+<p>Edwards &amp; Palsson（2000, <em>PNAS</em>）构建了大肠杆菌 MG1655
+的基因组尺度代谢模型，并用它预测基因敲除表型。Ibarra 等（2002,
+<em>Nature</em>）发现大肠杆菌在甘油上起初生长并非最优，但在生长选择压力下经过约
+40 天（约 700 代）的适应性进化后，生长率达到了模型预测的最优值——这说明
+FBA
+的“最优性”假设更像是进化的终点，而不一定是任意时刻细胞的实际状态。人类代谢的全局重建始于
+Recon 1（Duarte 等, 2007,
+<em>PNAS</em>），在此基础上结合组织表达数据可以构建组织或肿瘤特异的代谢模型。</p>
+<div class="callout-bio">
+<p><strong>生物医学用途</strong>：基于约束的代谢模型被用于预测病原菌的必需代谢反应（候选抗菌靶点）、比较肿瘤与正常组织的代谢依赖（例如肿瘤特异的必需反应），以及解释先天性代谢病中酶缺陷的下游后果。它们的预测需要在敲除实验或代谢物测量中验证。</p>
+</div>
+<div class="callout-warn">
+<p>FBA
+的局限：（1）<strong>目标函数是假设</strong>，对多细胞生物中的分化细胞，“最大化生长”往往不成立；（2）不含调控与动力学，无法描述瞬态和浓度；（3）结果对营养条件（摄取上界）和模型中的缺口（gap）敏感；（4）最优解常不唯一，单独报告一个通量分布可能误导，应配合
+FVA。</p>
+</div>
+</section><section class="block related-box"><h2>继续阅读</h2><ul><li>交互可视化：<a href="lab.html#ffl">前馈环的滤波作用</a>、<a href="lab.html#attack">随机失效与蓄意攻击</a>、<a href="lab.html#modularity">模块度与社团划分</a></li><li>代码示例：<a href="ex-molecular-networks-0.html">重尾度分布与 Jeong 式统计</a>、<a href="ex-molecular-networks-1.html">删除枢纽与随机删除对巨连通分支的影响</a>、<a href="ex-molecular-networks-2.html">前馈环计数与保持入度/出度的随机化零模型（网络基序 Z 分数）</a>、<a href="ex-molecular-networks-3.html">一致型 1 型前馈环（与门）的持续性检测</a></li><li>论文精读：<a href="paper-barabasi1999_scaling.html">随机网络中标度律的涌现</a>、<a href="paper-jeong2001_lethality.html">蛋白质网络中的致死性与中心性</a>、<a href="paper-milo2002_motifs.html">网络基序：复杂网络的简单构件</a>、<a href="paper-shenorr2002_ecoli.html">大肠杆菌转录调控网络中的网络基序</a></li></ul></section><nav class="pager"><a href="molecular-networks.topology.html"><small>上一页</small>分子网络的拓扑特征</a><a href="molecular-networks.signaling-networks.html"><small>下一页</small>信号转导网络</a></nav></article><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

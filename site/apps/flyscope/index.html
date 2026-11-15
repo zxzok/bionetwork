@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0e100f">
+  <title>FlyScope · Connectome Explorer</title>
+  <meta name="description" content="Network topology is reflected within neurons. FlyScope explores where inputs land on shared receiving neurons in the MaleCNS and FlyWire connectomes, with real anatomy, synapses and circuits.">
+  <meta property="og:title" content="FlyScope · Network topology is reflected within neurons.">
+  <meta property="og:description" content="Explore neurons, synapses and the connections between them, and follow the paper's finding from network connections to input locations.">
+  <meta property="og:type" content="website">
+  
+  <meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="1440"><meta property="og:image:height" content="900">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/InterTight-latin.woff2" as="font" type="font/woff2" crossorigin>
+  
+  <link rel="stylesheet" href="fonts.css"><link rel="stylesheet" href="home.css">
+</head>
+<body>
+<a class="skip" href="#main" data-t="skip">Skip to content</a>
+
+<header class="site-header" id="site-header" data-theme="dark" data-top="true">
+  <div class="site-header__inner">
+    <a class="logo" href="" aria-label="FlyScope home" data-t-aria="home">FlyScope</a>
+    <span class="logo-sub" aria-hidden="true" data-t="explorerName">Connectome Explorer</span>
+    <nav class="site-nav" id="site-nav" aria-label="Sections" data-t-aria="sections">
+      <a href="#question" data-nav="question" data-t="navQuestion">Question</a>
+      <a href="#circuits" data-nav="circuits" data-t="navCircuits">Circuits</a>
+      <a href="#findings" data-nav="findings" data-t="navFindings">Paper findings</a>
+      <a href="#explore" data-nav="explore" data-t="navExplore">Explore</a>
+      <a href="#data" data-nav="data" data-t="navData">Data &amp; sources</a>
+      <a href="#paper" data-nav="paper" data-t="navPaper">Paper</a>
+    </nav>
+    <div class="lang-switch lang-switch--header" role="group" aria-label="Language" data-t-aria="language"><button data-lang="en" lang="en">EN</button><button data-lang="zh" lang="zh">中文</button></div>
+    <span class="site-header__rule" aria-hidden="true"></span>
+    <a class="btn-outline header-cta" href="#explore" data-href="explorer"><span data-t="launch">Launch explorer</span><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></a>
+    <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu"><span data-t="menu">Menu</span><i aria-hidden="true"></i></button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu" hidden>
+  <nav aria-label="Sections" data-t-aria="sections">
+    <a href="#question" data-t="navQuestion">Question</a>
+    <a href="#circuits" data-t="navCircuits">Circuits</a>
+    <a href="#findings" data-t="navFindings">Paper findings</a>
+    <a href="#explore" data-t="navExplore">Explore</a>
+    <a href="#data" data-t="navData">Data &amp; sources</a>
+    <a href="#paper" data-t="navPaper">Paper</a>
+  </nav>
+  <a class="btn-lime" href="#explore" data-href="explorer"><span data-t="launch">Launch explorer</span><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></a>
+  <div class="lang-switch" role="group" aria-label="Language"><button data-lang="en">English</button><button data-lang="zh">中文</button></div>
+</div>
+
+<main id="main">
+
+<!-- 01 · Hero -->
+<section class="hero" id="top" data-theme="dark" data-top="true">
+  <canvas class="art hero__art" id="art-hero" aria-hidden="true"></canvas>
+  <div class="hero__copy">
+    <p class="hero__meta"><span data-t="authorName">Xizhe Zhang</span></p>
+    <h1 class="display hero__title" data-t="heroTitle" data-t-html>Network topology<br>is reflected<br>within neurons.</h1>
+    <p class="hero__name"><span>FlyScope</span> · <span data-t="explorerName">Connectome Explorer</span></p>
+    <p class="hero__lead" data-t="heroLead">Inside a neuron, where inputs land reflects connections elsewhere in the network.</p>
+    <div class="hero__actions">
+      <a class="btn-lime btn-lime--hero" href="#explore" data-href="explorer"><span data-t="launch">Launch explorer</span><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></a>
+      <a class="text-link" href="#paper"><span data-t="readStudy">Read the study</span><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></a>
+    </div>
+  </div>
+  <div class="section-foot hero__foot">
+    <span class="kicker" data-t="heroKicker">01 / Connectome explorer</span>
+    <a class="scroll-cue" href="#question"><span data-t="scroll">Scroll to explore</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v15M6 13l6 6 6-6"/></svg></a>
+  </div>
+</section>
+
+<!-- 02 · The question: a node's inside, a distant edge -->
+<section class="question" id="question" data-theme="light" data-nav="question">
+  <div class="question__body">
+    <div class="question__text">
+      <p class="kicker kicker--lg" data-t="questionKicker">02 / The question</p>
+      <h2 class="display question__title" data-t="questionTitle" data-t-html>Look inside<br>the node.</h2>
+      <p class="question__lead" data-t="questionLead">A connectivity graph draws each neuron as a point. Inside, every input lands somewhere on the cell’s branches. Does that internal arrangement record connections elsewhere in the network?</p>
+      <ol class="qsteps">
+        <li><span class="qsteps__n">01</span><p><b data-t="q1t">Fix a connection.</b> <span data-t="q1">Partner B contacts receiving neuron C: five or more records one way, fewer than five back.</span></p></li>
+        <li><span class="qsteps__n">02</span><p><b data-t="q2t">Map the inputs.</b> <span data-t="q2">Each source input on C is measured along C’s own branches to the nearest input from B in the same brain region.</span></p></li>
+        <li><span class="qsteps__n">03</span><p><b data-t="q3t">Read the far edge.</b> <span data-t="q3">Sources wired to B, an edge that never touches C, land nearer B’s inputs. Input maps alone then predict A→B for unseen sources.</span></p></li>
+      </ol>
+    </div>
+    <figure class="lens-fig" id="lens-fig">
+      <div class="lens-fig__stage">
+      <svg class="lens-fig__net" viewBox="0 0 640 540" role="img" aria-labelledby="lens-cap">
+        <defs>
+          <marker id="net-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10z" fill="#0e100f"/></marker>
+        </defs>
+        <g class="net__bg">
+          <line x1="40" y1="200" x2="92" y2="118"/><line x1="40" y1="200" x2="120" y2="300"/><line x1="120" y1="300" x2="232" y2="262"/>
+          <line x1="150" y1="40" x2="92" y2="118"/><line x1="150" y1="40" x2="300" y2="74"/><line x1="300" y1="74" x2="420" y2="40"/>
+          <line x1="420" y1="40" x2="540" y2="96"/><line x1="540" y1="96" x2="430" y2="160"/><line x1="430" y1="160" x2="300" y2="74"/>
+          <line x1="120" y1="300" x2="70" y2="400"/><line x1="70" y1="400" x2="170" y2="470"/><line x1="170" y1="470" x2="232" y2="262"/>
+          <line x1="40" y1="200" x2="70" y2="400"/><line x1="430" y1="160" x2="232" y2="262"/><line x1="580" y1="200" x2="540" y2="96"/>
+        </g>
+        <g class="net__bgnodes">
+          <circle cx="40" cy="200" r="9"/><circle cx="150" cy="40" r="9"/><circle cx="120" cy="300" r="9"/><circle cx="420" cy="40" r="9"/>
+          <circle cx="540" cy="96" r="9"/><circle cx="430" cy="160" r="9"/><circle cx="70" cy="400" r="9"/><circle cx="170" cy="470" r="9"/><circle cx="580" cy="200" r="9"/>
+        </g>
+        <line class="net__edge" x1="104" y1="140" x2="214" y2="240" marker-end="url(#net-arrow)"/>
+        <line class="net__edge" x1="292" y1="100" x2="246" y2="232" marker-end="url(#net-arrow)"/>
+        <path class="net__far" d="M119 104 Q190 70 272 78" marker-end="url(#net-arrow)"/>
+        <g class="net__q"><circle cx="190" cy="82" r="17"/><text x="190" y="89" text-anchor="middle">?</text></g>
+        <path class="net__callout" d="M208 280 L350 470 M232 232 L469 230"/>
+        <circle class="net__node net__node--a" cx="92" cy="118" r="26"/><text class="net__letter" x="92" y="127" text-anchor="middle">A</text>
+        <circle class="net__node net__node--b" cx="300" cy="74" r="26"/><text class="net__letter" x="300" y="83" text-anchor="middle">B</text>
+        <circle class="net__node net__node--c" cx="232" cy="262" r="30"/><text class="net__letter net__letter--c" x="232" y="272" text-anchor="middle">C</text>
+        <text class="net__label" x="40" y="74" data-t="netA">Source A</text>
+        <text class="net__label" x="338" y="82" data-t="netB">Partner B</text>
+        <text class="net__label" x="164" y="330" text-anchor="end" data-t="netC">Receiver C</text>
+        <circle class="lens-fig__ring" cx="470" cy="380" r="156"/>
+        <text class="net__label net__label--lens" x="470" y="214" text-anchor="middle" data-t="insideC">Inside C</text>
+      </svg>
+      <canvas class="art lens-fig__art" id="art-lens" aria-hidden="true"></canvas>
+      </div>
+      <figcaption id="lens-cap"><span data-t="lensCaption">The edge A→B never touches C, yet it shows in where A and B land on C.</span>
+        <span class="lens-fig__key"><span><i class="sw sw--a"></i><span data-t="inputsA">Inputs from A</span></span><span><i class="sw sw--b"></i><span data-t="inputsB">Inputs from B</span></span><span><i class="sw sw--o"></i><span data-t="inputsOther">Other inputs</span></span></span></figcaption>
+    </figure>
+  </div>
+  <div class="section-foot question__foot">
+    <p class="question__held"><b data-t="heldLabel">Held fixed</b> <span data-t="held1">receiver and brain region</span> · <span data-t="held2">paths along C’s own branches</span> · <span data-t="held3">source cells withheld from fitting</span></p>
+    <span class="corner-label" data-t="schematicShort">Schematic</span>
+  </div>
+</section>
+
+<!-- 03 · Shared input -->
+<section class="shared" id="circuits" data-theme="band" data-nav="circuits">
+  <div class="band">
+    <div class="band__meta"><span class="band__brand">FlyScope</span><span data-t="sharedKicker">03 / Shared input</span></div>
+    <h2 class="display band__title" data-t="sharedTitle">One receiver. Multiple inputs.</h2>
+  </div>
+  <div class="shared__stage">
+    <canvas class="art" id="art-shared" role="img" aria-label="Schematic receiver C with inputs from source A and partner B" data-t-aria="sharedArt"></canvas>
+    <div class="shared__copy">
+      <h3 class="caps-title" data-t="sharedHeading">Shared input</h3>
+      <p class="shared__strong" data-t="sharedStrong">Inspect where sources meet.</p>
+      <p class="shared__text" data-t="sharedText">Compare input locations on a shared receiving neuron. Inputs from a source shared with partner B lie nearer B’s inputs.</p>
+    </div>
+    <div class="shared__side">
+    <ul class="legend" aria-label="Legend" data-t-aria="legend">
+      <li><i class="sw sw--receiver"></i><span data-t="receiverC">Receiver C</span></li>
+      <li><i class="sw sw--a"></i><span data-t="sourceA">Source A</span></li>
+      <li><i class="sw sw--b"></i><span data-t="partnerB">Partner B</span></li>
+    </ul>
+    <p class="shared__caption" id="shared-caption" aria-live="polite" data-t="captionSites">Each point is an input on receiver C, coloured by its source.</p>
+    </div>
+    <div class="shared__controls">
+      <div class="seg" role="group" aria-label="Drawing mode" data-t-aria="drawingMode">
+        <button aria-pressed="false" data-shared-mode="receiver" data-t="receiverView">Receiver view</button>
+        <button aria-pressed="true" data-shared-mode="sites" data-t="inputSites">Input sites</button>
+        <button aria-pressed="false" data-shared-mode="paths" data-t="paths">Paths</button>
+      </div>
+      <a class="underline-link" href="#explore" data-href="sharedInput"><span data-t="openShared">Open shared input</span><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></a>
+    </div>
+  </div>
+  <div class="section-foot shared__foot"><span class="corner-label" data-t="schematic">Schematic · not to scale</span></div>
+</section>
+
+<!-- 04 · Paper findings -->
+<section class="findings" id="findings" data-theme="light" data-nav="findings">
+  <canvas class="art findings__art" id="art-findings" role="img" aria-label="Schematic receiving neuron with one highlighted input branch" data-t-aria="findingsArt"></canvas>
+  <div class="findings__body">
+    <p class="kicker kicker--lg" data-t="findingsKicker">04 / Paper findings</p>
+    <h2 class="display findings__title" data-t="findingsTitle">Follow the finding.</h2>
+    <p class="findings__lead" data-t="findingsLead">From network connections to input locations.</p>
+    <ol class="steps" id="finding-steps">
+      <li><a href="#explore" data-href="circuit" data-step="1"><span class="steps__n">01</span><span class="steps__t" data-t="step1">Network topology</span><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></a></li>
+      <li><a href="#explore" data-href="placement" data-step="2"><span class="steps__n">02</span><span class="steps__t" data-t="step2">Receiving neuron</span><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></a></li>
+      <li><a href="#explore" data-href="sharedInput" data-step="3"><span class="steps__n">03</span><span class="steps__t" data-t="step3">Input organization</span><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></a></li>
+    </ol>
+    <a class="btn-ink" href="#explore" data-href="circuit"><span data-t="openExample">Open paper example</span><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></a>
+  </div>
+  <figure class="inset" id="inset">
+    <figcaption data-t="inputLocations">Input locations</figcaption>
+    <canvas class="art" id="art-inset" aria-hidden="true"></canvas>
+    <p class="inset__key"><span><i style="background:var(--lime)"></i><span data-t="sourceA">Source A</span></span><span><i style="background:var(--violet)"></i><span data-t="partnerB">Partner B</span></span></p>
+  </figure>
+  <div class="section-foot findings__foot">
+    <p class="findings__caption" id="finding-caption" aria-live="polite" data-t="caption0">Move from a circuit to its receiving neuron.</p>
+    <span class="corner-label" data-t="schematicShort">Schematic</span>
+  </div>
+</section>
+
+<!-- 05 · Results -->
+<section class="results" id="results" data-theme="dark" data-nav="findings">
+  <div class="results__body">
+    <p class="kicker kicker--lg" data-t="resultsKicker">05 / Results</p>
+    <h2 class="display results__title" data-t="resultsTitle">Two fly brains. One direction.</h2>
+    <p class="results__lead" data-t="resultsLead">The same relationship in MaleCNS and FlyWire, under three increasingly strict tests.</p>
+    <div class="rcards">
+      <article class="rcard">
+        <p class="rcard__n">01 / <span data-t="r1k">Between sources</span></p>
+        <h3 data-t="r1t">Shared sources sit closer</h3>
+        <p class="rcard__q" data-t="r1q">Mean path from a source input on C to the nearest partner input: sources that also contact B against all other sources.</p>
+        <div class="rcard__chart" data-chart="r1"></div>
+        <dl class="rcard__stats"><div><dt>−9.42 <small>µm</small></dt><dd data-t="r1s1">MaleCNS · 95% −10.52 to −8.31</dd></div><div><dt>−7.98 <small>µm</small></dt><dd data-t="r1s2">FlyWire · 95% −9.27 to −6.70</dd></div></dl>
+        <p class="rcard__note" data-t="r1n">Negative in 82.7% of 1,079 MaleCNS and 80.7% of 720 FlyWire receivers; 13,318 and 5,807 connections.</p>
+      </article>
+      <article class="rcard">
+        <p class="rcard__n">02 / <span data-t="r2k">Fixed inputs</span></p>
+        <h3 data-t="r2t">Same inputs, different partners</h3>
+        <p class="rcard__q" data-t="r2q">Source A, receiver C and A’s inputs held fixed; partners that receive A input against partners with none, at three reference sites each.</p>
+        <div class="rcard__chart" data-chart="r2"></div>
+        <dl class="rcard__stats"><div><dt>−9.14 <small>µm</small></dt><dd data-t="r2s1">MaleCNS · 95% −11.21 to −7.07</dd></div><div><dt>−10.15 <small>µm</small></dt><dd data-t="r2s2">FlyWire · 95% −12.15 to −8.14</dd></div></dl>
+        <p class="rcard__note" data-t="r2n">Same ordering in 749 of 922 MaleCNS and 483 of 589 FlyWire receivers.</p>
+      </article>
+      <article class="rcard">
+        <p class="rcard__n">03 / <span data-t="r3k">Unseen sources</span></p>
+        <h3 data-t="r3t">Input maps predict connections</h3>
+        <p class="rcard__q" data-t="r3q">Predicting A→B for 200 test sources disjoint from 200 training sources, from input maps on known receivers.</p>
+        <div class="rcard__chart" data-chart="r3"></div>
+        <dl class="rcard__stats"><div><dt>0.161 <small data-t="apShort">AP</small></dt><dd data-t="r3s1">MaleCNS · from 0.089 with counts and size only</dd></div><div><dt>0.114 <small data-t="apShort">AP</small></dt><dd data-t="r3s2">FlyWire · from 0.069</dd></div></dl>
+        <p class="rcard__note" data-t="r3n">Log loss 0.184 → 0.165 and 0.142 → 0.125; 30,702 and 21,822 scored pairs. Point estimates from one source split per specimen.</p>
+      </article>
+    </div>
+    <p class="results__aside" data-t="resultsAside" data-t-html>Beyond the fly brains, two adult <i>C. elegans</i> reconstructions also gave negative within-source differences (10 and 13 receivers), and a <i>Platynereis</i> larval population was too sparse to decide. These are associations within single specimens: anatomical opportunity, selective wiring, or both remain compatible.</p>
+  </div>
+</section>
+
+<!-- 06 · Explore -->
+<section class="explore" id="explore" data-theme="strip" data-nav="explore">
+  <div class="strip" aria-hidden="true"><span data-t="exploreKicker">06 / Explore</span></div>
+  <div class="explore__body">
+    <h2 class="display explore__title" data-t="exploreTitle">Explore the connectome.</h2>
+    <p class="explore__lead" data-t="exploreLead">Find a neuron. Follow its connections.</p>
+
+    <div class="app" id="preview" data-mode="morphology">
+      <div class="app__top">
+        <a class="app__select" href="#explore" data-href="explorer">MaleCNS<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
+        <a class="app__fit" href="#explore" data-href="receiver"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5"/></svg><span data-t="fit">Fit selection</span></a>
+      </div>
+      <div class="app__grid">
+        <aside class="app__library">
+          <h3 data-t="library">Neuron library</h3>
+          <a class="app__search" href="#explore" data-href="explorer"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg><span data-t="search">Search type or ID</span></a>
+          <div class="app__switch"><span class="is-on" data-t="circuitsTab">Circuits</span><a href="#explore" data-href="explorer" data-t="allNeurons">All neurons</a></div>
+          <ul class="app__tree" id="preview-tree">
+            <li><button aria-expanded="false" data-t="sensory">Sensory</button></li>
+            <li><button aria-expanded="false" data-t="visual">Visual</button></li>
+            <li><button aria-expanded="false" data-t="ascending">Ascending</button>
+              <ul hidden><li><a href="#explore" data-href="source">AN19B014</a></li></ul></li>
+            <li><button aria-expanded="true" data-t="descending">Descending</button>
+              <ul><li><a class="is-selected" href="#explore" data-href="receiver" aria-current="true">DNge072</a></li><li><a href="#explore" data-href="partner">DNge006</a></li></ul></li>
+            <li><button aria-expanded="false" data-t="interneuron">Interneuron</button></li>
+            <li><button aria-expanded="false" data-t="motor">Motor</button></li>
+          </ul>
+          <div class="app__scene">
+            <a href="#explore" data-href="receiver"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="m3 12 9 5 9-5M3 16l9 5 9-5"/></svg><span data-t="selected">Selected neurons</span></a>
+            <a href="#explore" data-href="circuit"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-6-4.5L6 21V3Z"/></svg><span data-t="inScene">In your scene</span></a>
+          </div>
+        </aside>
+        <div class="app__view">
+          <div class="app__canvas"><canvas class="art" id="art-preview" role="img" aria-label="Schematic receiving neuron with highlighted synapse sites" data-t-aria="previewArt"></canvas></div>
+          <div class="app__layers">
+            <label><input type="checkbox" data-layer="tree" checked><i aria-hidden="true"></i><span data-t="skeletons">Skeletons</span></label>
+            <label><input type="checkbox" data-layer="sites" checked><i aria-hidden="true"></i><span data-t="synapsePairs">Synapse pairs</span></label>
+            <label><input type="checkbox" data-layer="context"><i aria-hidden="true"></i><span data-t="somaContext">Soma context</span></label>
+            <span class="app__downloads"><a href="#explore" data-href="receiver"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M4 20h16"/></svg>PNG</a><a href="#explore" data-href="receiver"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M4 20h16"/></svg>CSV</a></span>
+          </div>
+        </div>
+        <aside class="app__inspector">
+          <h3 data-t="connectivity">Connectivity</h3>
+          <div class="app__switch" role="tablist">
+            <button role="tab" aria-selected="true" data-panel="connections" data-t="connections">Connections</button>
+            <button role="tab" aria-selected="false" data-panel="shared" data-t="sharedInput">Shared input</button>
+          </div>
+          <div class="app__panel" data-panel-body="connections">
+            <details class="app__row">
+              <summary data-t="inputPartners">Input partners</summary>
+              <ol class="app__partners">
+                <li><a href="#explore" data-href="source">AN19B014</a><span data-t="records120">120 records</span></li>
+                <li><a href="#explore" data-href="partner">DNge006</a><span data-t="records80">80 records</span></li>
+              </ol>
+            </details>
+            <details class="app__row">
+              <summary data-t="outputPartners">Output partners</summary>
+              <p class="app__note"><a href="#explore" data-href="receiver" data-t="outputNote">Open DNge072 in the explorer for every output partner ↗</a></p>
+            </details>
+            <a class="app__dropdown" href="#explore" data-href="receiver"><span data-t="inputOutput">Input + output</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
+            <a class="app__dropdown" href="#explore" data-href="receiver"><span data-t="allRegions">All regions</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
+          </div>
+          <div class="app__panel" data-panel-body="shared" hidden>
+            <p class="app__compare"><span data-t="compareWith">Compared with</span> <strong>DNge006</strong></p>
+            <dl class="app__facts">
+              <div><dt>12</dt><dd data-t="factSources">shared sources, 282 input records on DNge072</dd></div>
+              <div><dt>10.7 <small>µm</small></dt><dd data-t="factShared">mean path from a shared-source input to the nearest DNge006 input (GNG)</dd></div>
+              <div><dt>19.0 <small>µm</small></dt><dd data-t="factOther">for other non-DN inputs</dd></div>
+            </dl>
+            <a class="app__dropdown" href="#explore" data-href="sharedInput"><span data-t="openOnC">A + B inputs on C</span><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></a>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <div class="app-tabs" role="tablist" aria-label="Preview mode" data-t-aria="previewMode">
+      <button role="tab" aria-selected="true" data-mode="morphology" data-t="morphology">Morphology</button>
+      <button role="tab" aria-selected="false" data-mode="connectivity" data-t="connectivityTab">Connectivity</button>
+      <button role="tab" aria-selected="false" data-mode="shared" data-t="sharedInput">Shared input</button>
+    </div>
+    <p class="corner-label" data-t="previewLabel">Interface preview · schematic arbor</p>
+  </div>
+</section>
+
+<!-- 07 · Datasets -->
+<section class="data" id="data" data-theme="lime" data-nav="data">
+  <canvas class="art data__art" id="art-data" aria-hidden="true"></canvas>
+  <div class="data__body">
+    <h2 class="display data__title" data-t="dataTitle">Start with a neuron.</h2>
+    <p class="data__lead" data-t="dataLead">Choose a dataset. Explore its connections.</p>
+    <ol class="datasets">
+      <li><a href="#explore" data-href="male"><span class="datasets__n">01</span><span class="datasets__main"><span class="datasets__t">MaleCNS</span><span class="datasets__d" data-t="dMale">Male CNS · v1.0 · shared sources 9.42 µm nearer</span></span><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></a></li>
+      <li><a href="#data" data-href="flywire"><span class="datasets__n">02</span><span class="datasets__main"><span class="datasets__t">FlyWire</span><span class="datasets__d" data-t="dFlywire">Female brain · v783 · shared sources 7.98 µm nearer</span></span><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></a></li>
+      <li><a href="#data" data-href="celegans"><span class="datasets__n">03</span><span class="datasets__main"><span class="datasets__t"><i>C. elegans</i></span><span class="datasets__d" data-t="dWorm">Adult · datasets 7 &amp; 8 · exploratory, 10 and 13 receivers</span></span><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></a></li>
+      <li><a href="#data" data-href="platynereis"><span class="datasets__n">04</span><span class="datasets__main"><span class="datasets__t"><i>Platynereis</i></span><span class="datasets__d" data-t="dPlaty">Larval projections · too sparse to decide</span></span><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></a></li>
+    </ol>
+    <button class="text-link text-link--ink" id="open-sources"><span data-t="navData">Data &amp; sources</span><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></button>
+  </div>
+</section>
+
+<!-- 08 · The paper -->
+<section class="paper" id="paper" data-theme="light" data-nav="paper">
+  <div class="paper__body">
+    <p class="kicker kicker--lg" data-t="paperKicker">08 / The paper</p>
+    <h2 class="display paper__title" data-t="paperTitle">Read the study.</h2>
+    <div class="paper__grid">
+      <article class="paper__article">
+        <p class="paper__meta"><span data-t="authorName">Xizhe Zhang</span> · <span data-t="manuscript">Manuscript, 2026</span></p>
+        <h3 class="paper__name">Synaptic organization in shared receivers predicts connectivity between input neurons</h3>
+        
+        <h4 class="paper__h" data-t="abstractLabel">Abstract</h4>
+        <p class="paper__abstract" data-t="abstract" data-t-html>A neuronal connectivity graph records which cells are connected but discards the positions at which their inputs enter a receiving neuron. We asked whether this internal arrangement contains information about connections between the input neurons themselves. In two adult <i>Drosophila</i> connectomes, inputs from sources connected to a descending-neuron partner lay nearer that partner’s inputs on a shared receiver. Mean path-distance differences were 9.4 µm in MaleCNS and 8.0 µm in FlyWire. With source-input positions fixed and reference-site counts standardized, the relationship persisted across alternative partners. We then used source-labelled input maps on known receivers to predict connections between source cells excluded from model fitting. Adding spatial-distribution and distance features to input counts and receiver size increased average precision from 0.089 to 0.161 in MaleCNS and from 0.069 to 0.114 in FlyWire, with lower probability loss in both datasets. Predictions averaged information across eligible shared receivers. These findings connect the organization of inputs within neurons to connectivity among their sources and show that this spatial information is useful for inferring connections between unseen input cells.</p>
+        <ul class="paper__keys"><li data-t="kw1">synaptic organization</li><li data-t="kw2">connectomics</li><li data-t="kw3">physical networks</li><li data-t="kw4">descending neurons</li><li data-t="kw5" data-t-html><i>Drosophila</i></li></ul>
+      </article>
+      <aside class="paper__side">
+        <h4 class="paper__h" data-t="deeper">Go deeper</h4>
+        <ul class="deeper">
+          <li><a href="#explore" data-href="explorer"><b data-t="d1t">Launch the explorer</b><span data-t="d1">165,122 traced MaleCNS neurons, with their synapses and partners.</span><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></a></li>
+          <li><a href="#explore" data-href="circuit"><b data-t="d2t">Open the paper circuit</b><span data-t="d2">AN19B014 → DNge006 → DNge072 in physical space.</span><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></a></li>
+          <li><a href="#explore" data-href="sharedInput"><b data-t="d3t">A + B inputs on C</b><span data-t="d3">DNge072 shaded by the path to the nearest DNge006 input.</span><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></a></li>
+          <li><button type="button" data-open-sources><b data-t="d4t">Data &amp; sources</b><span data-t="d4">The public releases FlyScope reads, unchanged.</span><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></button></li>
+        </ul>
+        <h4 class="paper__h" data-t="cite">Cite this work</h4>
+        <p class="cite__text">Zhang, X. Synaptic organization in shared receivers predicts connectivity between input neurons. <span data-t="manuscriptCite">Manuscript</span> (2026).</p>
+        <pre class="cite__bib" id="bibtex">@unpublished{zhang2026synaptic,
+  title  = {Synaptic organization in shared receivers predicts connectivity between input neurons},
+  author = {Zhang, Xizhe},
+  note   = {Manuscript},
+  year   = {2026}
+}</pre>
+        <button type="button" class="btn-ink cite__copy" id="copy-bibtex"><span data-t="copyBib">Copy BibTeX</span></button>
+      </aside>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer" data-theme="dark">
+  <div class="site-footer__main">
+    <div class="wordmark"><span class="wordmark__name">FlyScope</span><span class="wordmark__sub" data-t="explorerCaps">Connectome explorer</span></div>
+    <div class="site-footer__actions">
+      <a class="btn-lime btn-lime--xl" href="#explore" data-href="explorer"><span data-t="launch">Launch explorer</span><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></a>
+      <div class="site-footer__links"><a href="#findings" data-t="navFindings">Paper findings</a><a href="#explore" data-href="circuit" data-t="paperExample">Paper example</a></div>
+    </div>
+  </div>
+  <div class="site-footer__bar">
+    <span>FlyScope</span>
+    <div class="lang-switch" role="group" aria-label="Language"><button data-lang="en">English</button><button data-lang="zh">中文</button></div>
+  </div>
+</footer>
+
+<dialog class="sources" id="sources-dialog" aria-labelledby="sources-title">
+  <button class="sources__close" id="close-sources" aria-label="Close" data-t-aria="close">×</button>
+  <p class="kicker" data-t="sourcesKicker">Data &amp; sources</p>
+  <h2 id="sources-title" data-t="sourcesTitle">Public reconstructions, unchanged.</h2>
+  <p data-t="sourcesIntro">FlyScope reads released connectome data without altering it. No new animals were acquired. Each dataset represents one animal.</p>
+  <dl class="sources__list">
+    <div><dt>MaleCNS v1.0</dt><dd data-t="srcMale">One male central nervous system: contact records (confidence ≥ 0.5), annotations and skeletons.</dd><dd><a href="https://male-cns.janelia.org/download/" target="_blank" rel="noreferrer">male-cns.janelia.org ↗</a></dd></div>
+    <div><dt>FlyWire / FAFB v783</dt><dd data-t="srcFlywire">One female brain: synapses, connectivity, matching skeletons and annotations.</dd><dd><a href="https://zenodo.org/records/10676866" target="_blank" rel="noreferrer">zenodo 10676866 ↗</a> · <a href="https://zenodo.org/records/10877326" target="_blank" rel="noreferrer">zenodo 10877326 ↗</a></dd></div>
+    <div><dt>BANC v888</dt><dd data-t="srcBanc">Brain-and-cord network background and identified cord-output analyses.</dd><dd><a href="https://doi.org/10.7910/DVN/7WTH1N" target="_blank" rel="noreferrer">doi:10.7910/DVN/7WTH1N ↗</a></dd></div>
+    <div><dt><i>C. elegans</i> · Dataset 7 &amp; 8</dt><dd data-t="srcWorm">Two adult reconstructions used for exploratory placement comparisons.</dd><dd><a href="https://github.com/dwitvliet/nature2021" target="_blank" rel="noreferrer">dwitvliet/nature2021 ↗</a></dd></div>
+    <div><dt><i>Platynereis</i></dt><dd data-t="srcPlaty">Three-day larval head-to-trunk projection cohort; sparse and exploratory.</dd><dd><a href="https://github.com/JekelyLab/Platynereis_3D_connectome_2024" target="_blank" rel="noreferrer">JekelyLab ↗</a></dd></div>
+  </dl>
+  <p class="sources__note" data-t="sourcesNote">The neuron drawings on this page are schematic illustrations. The explorer shows recorded skeletons and synapse coordinates.</p>
+  <p class="sources__cite"><span data-t="paperLabel">Paper</span> · Zhang X. <em>Synaptic organization in shared receivers predicts connectivity between input neurons.</em></p>
+</dialog>
+
+<script src="snap.js" data-snap="main > section" data-nav="0" defer></script>
+<script type="module" src="home.js"></script>
+<a href="../../index.html" style="position:fixed;left:max(12px,env(safe-area-inset-left,0px));bottom:max(12px,env(safe-area-inset-bottom,0px));z-index:9999;font:600 13px/1 system-ui,sans-serif;padding:9px 13px;border-radius:999px;background:#111;color:#fff;text-decoration:none;box-shadow:0 2px 10px rgba(0,0,0,.25)">← 生物医学网络科学</a></body>
+</html>

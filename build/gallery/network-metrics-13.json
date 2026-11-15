@@ -1,0 +1,10 @@
+{
+ "topic": "network-metrics",
+ "index": 13,
+ "title": "ER 网络平均距离随 N 的对数增长",
+ "hash": "ef7583959abe8bb1ef7be20a0e82438b28c33a86",
+ "ok": true,
+ "figures": 1,
+ "stdout": "N=  500: 模拟 <d>=3.68 | lnN/ln<k>=3.47 | 修正公式=3.65\nN= 2000: 模拟 <d>=4.43 | lnN/ln<k>=4.24 | 修正公式=4.42\nN= 8000: 模拟 <d>=5.24 | lnN/ln<k>=5.02 | 修正公式=5.19\nN=16000: 模拟 <d>=5.61 | lnN/ln<k>=5.40 | 修正公式=5.58",
+ "stderr": ""
+}

@@ -1,0 +1,10 @@
+{
+ "topic": "network-models",
+ "index": 1,
+ "title": "BA 网络与 ER 网络的度分布（CCDF）",
+ "hash": "027f22c7377189730d1a86e66ad2d62c3fcdd39e",
+ "ok": true,
+ "figures": 1,
+ "stdout": "BA: 平均度 4.00, 最大度 142\nER: 平均度 3.97, 最大度 13",
+ "stderr": ""
+}

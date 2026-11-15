@@ -1,0 +1,10 @@
+{
+ "topic": "network-basics",
+ "index": 10,
+ "title": "用欧拉路径做 de Bruijn 图序列组装，并核对几条图论基本定理",
+ "hash": "19404b37e064d08d18afcdb5289b60fee753d961",
+ "ok": true,
+ "figures": 1,
+ "stdout": "k-mer 数 = 边数 = 13 ；(k-1)-mer 节点数 = 10\n存在欧拉路径吗？ True\n重建序列: ATGGCGTGCAATGGCA\n与原序列相同吗？ True （序列含重复片段时，欧拉路径可能不唯一，此时组装结果存在歧义）\n握手定理 Σk = 2M： True\n6 节点环  二分图？True  存在奇数环？False 判据成立？True\n5 节点环  二分图？False 存在奇数环？True  判据成立？True\n随机树    二分图？True  存在奇数环？False 判据成立？True\n随机图    二分图？False 存在奇数环？True  判据成立？True\n树：N = 50，M = 49，M == N − 1？True",
+ "stderr": ""
+}

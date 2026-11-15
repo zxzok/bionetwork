@@ -1,0 +1,10 @@
+{
+ "topic": "degree-correlations",
+ "index": 7,
+ "title": "度相关如何改变巨连通分支、传播阈值与可同步性",
+ "hash": "e5d0a8c8cc6cb6bc1698deb566a1ebc3c1787f8e",
+ "ok": true,
+ "figures": 1,
+ "stdout": "保留边比例:            0.30    0.50    0.90\n同配 (p=0.5)   r=+0.38  巨分支占比 0.341  0.758  0.964 | lambda_1=5.93 (SIS 阈值≈0.169) | lambda_N/lambda_2=172.9\nER 原始        r=-0.01  巨分支占比 0.275  0.795  0.971 | lambda_1=5.23 (SIS 阈值≈0.191) | lambda_N/lambda_2=93.8\n异配 (p=0.5)   r=-0.36  巨分支占比 0.255  0.813  0.973 | lambda_1=4.92 (SIS 阈值≈0.203) | lambda_N/lambda_2=58.9",
+ "stderr": ""
+}

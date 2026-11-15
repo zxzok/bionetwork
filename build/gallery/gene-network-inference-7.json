@@ -1,0 +1,10 @@
+{
+ "topic": "gene-network-inference",
+ "index": 7,
+ "title": "模块保守性检验（简化版 modulePreservation 的 Z 统计量）",
+ "hash": "93faf0e1a03b34b036274cd32b3286560674c167",
+ "ok": true,
+ "figures": 1,
+ "stdout": "模块 1（25 基因）：meanCor = 0.48，cor.kIM = 0.73，cor.cor = 0.55；Zdensity = 43.1，Zconnectivity = 4.1，Zsummary = 23.6\n模块 2（20 基因）：meanCor = 0.01，cor.kIM = 0.47，cor.cor = 0.03；Zdensity = 0.1，Zconnectivity = 0.5，Zsummary = 0.3",
+ "stderr": ""
+}

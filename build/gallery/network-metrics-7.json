@@ -1,0 +1,10 @@
+{
+ "topic": "network-metrics",
+ "index": 7,
+ "title": "特征向量、Katz、PageRank 与 HITS 的幂迭代实现",
+ "hash": "f9b0309b699e8bb6a18afc369308a4b506bc6f06",
+ "ok": true,
+ "figures": 1,
+ "stdout": "λ1 = 1.000；特征向量中心性: [0.  0.  0.  0.4 0.2 0.4]\nKatz（α=0.500）: [0.143 0.214 0.321 0.674 0.48  0.383]  NetworkX 一致: True\nPageRank: [0.025 0.032 0.046 0.321 0.298 0.278]  NetworkX 一致: True\nauthority: [0.    0.177 0.323 0.5   0.    0.   ]  NetworkX 一致: True\nhub      : [0.354 0.292 0.177 0.    0.    0.177]  NetworkX 一致: True",
+ "stderr": ""
+}

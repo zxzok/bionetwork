@@ -1,0 +1,10 @@
+{
+ "topic": "molecular-networks",
+ "index": 7,
+ "title": "负自调控加快响应；不一致型 1 型前馈环产生脉冲并加速",
+ "hash": "2b68bc4e7aa64d9fe0a7e9c0ae52b4e368bf350e",
+ "ok": true,
+ "figures": 1,
+ "stdout": "简单调控 T1/2 = 0.691（理论 ln2 = 0.693）；负自调控 T1/2 = 0.147\nI1-FFL：Z 峰值 = 0.501，稳态 ≈ 0.201，T1/2 = 0.107；同稳态简单调控 T1/2 = 0.691",
+ "stderr": ""
+}

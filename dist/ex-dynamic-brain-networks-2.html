@@ -1,0 +1,158 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>从窗口相关矩阵到“连接状态”（k-means） · 生物医学网络科学</title><meta name="description" content="动态功能连接与多层脑网络 · 代码示例：从窗口相关矩阵到“连接状态”（k-means）"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-brain"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html" aria-current="page">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain" open><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a><ol class="sub"><li><a href="dynamic-brain-networks.method-landscape.html"><span class="n">01</span>方法谱系与基本假设</a></li><li><a href="dynamic-brain-networks.sliding-window.html"><span class="n">02</span>滑动窗口相关</a></li><li><a href="dynamic-brain-networks.wavelet-coherence.html"><span class="n">03</span>时频分析与小波相干</a></li><li><a href="dynamic-brain-networks.phase-synchrony.html"><span class="n">04</span>相位同步与瞬时相位方法</a></li><li><a href="dynamic-brain-networks.caps.html"><span class="n">05</span>共激活模式</a></li><li><a href="dynamic-brain-networks.edge-time-series.html"><span class="n">06</span>边时间序列</a></li><li><a href="dynamic-brain-networks.connectivity-states.html"><span class="n">07</span>连接状态</a></li><li><a href="dynamic-brain-networks.hmm.html"><span class="n">08</span>隐马尔可夫模型</a></li><li><a href="dynamic-brain-networks.state-number.html"><span class="n">09</span>状态数的选择与稳定性</a></li><li><a href="dynamic-brain-networks.sampling-variability.html"><span class="n">10</span>有限样本波动与窗口长度</a></li><li><a href="dynamic-brain-networks.null-models.html"><span class="n">11</span>平稳零模型检验</a></li><li><a href="dynamic-brain-networks.multilayer.html"><span class="n">12</span>多层网络</a></li><li><a href="dynamic-brain-networks.flexibility.html"><span class="n">13</span>网络灵活性与动态社团指标</a></li><li><a href="dynamic-brain-networks.sc-fc-coupling.html"><span class="n">14</span>结构–功能耦合</a></li><li><a href="dynamic-brain-networks.electrophysiology.html"><span class="n">15</span>EEG/MEG 网络与微状态</a></li><li><a href="dynamic-brain-networks.reliability.html"><span class="n">16</span>动态指标的重测信度</a></li><li><a href="dynamic-brain-networks.disease-reproducibility.html"><span class="n">17</span>疾病、发育与老化中的动态网络</a></li><li><a href="dynamic-brain-networks.derivations.html"><span class="n">18</span>数学推导与算法</a></li><li><a href="dynamic-brain-networks.frontiers.html"><span class="n">19</span>研究前沿与开放问题</a></li><li><a href="dynamic-brain-networks.biomedical.html"><span class="n">20</span>生物医学应用</a></li><li><a href="dynamic-brain-networks.limitations.html"><span class="n">21</span>适用范围与常见误用</a></li></ol></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="code.html">代码库</a> <span class="sep">/</span> <a href="code.html#brain">脑网络与连接组</a> <span class="sep">/</span> <a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></nav><div class="eyebrow" style="margin-top:14px"><b>Example</b><span>03 / 11</span></div><h1>从窗口相关矩阵到“连接状态”（k-means）</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></dd></div><div><dt>下载</dt><dd><a href="notebooks/dynamic-brain-networks.ipynb" download>Notebook</a> · <a href="notebooks/dynamic-brain-networks.py" download>.py</a></dd></div></dl></header><section class="block prose"><p>模拟 6 个脑区、900 个时间点，隐藏状态按 S1 → S2 → S1 → S2 交替（段长
+250/200/250/200）： S1 中脑区 0–2、3–5 各自共享潜在因子；S2 中脑区 0 与
+3、1 与 4、2 与 5 两两共享因子。 每个窗口取相关矩阵上三角拉平成 15
+维向量，用 k-means 聚类，计算与真实状态的一致率和平均停留时间。
+输出解读：k = 2 能较好地恢复状态，交界处的窗口混合两种模式；改用 k = 4
+时算法同样给出 4 个“状态”——
+聚类数需要独立的依据（敏感性分析、替代数据比较）。</p>
+</section><section class="block"><h2><span class="tag">Output</span>输出图</h2><div class="ex-figs"><img src="gallery/dynamic-brain-networks-2-0.png" alt="从窗口相关矩阵到“连接状态”（k-means）：输出图 1" loading="lazy"></div></section><section class="block"><h2><span class="tag">Output</span>文字输出</h2><pre class="ex-out">窗口数 = 173 ；每个窗口的特征维数 = 15
+k = 2：与真实状态一致率 = 0.98，平均停留 = 43.2 个窗口
+k = 4：各“状态”窗口数 = [31, 49, 51, 42]，平均停留 = 7.9 个窗口</pre></section><section class="block prose"><h2><span class="tag">Code</span>代码</h2><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 模拟 6 个脑区、900 个时间点，隐藏状态按 S1 → S2 → S1 → S2 交替（段长 250/200/250/200）：</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># S1 中脑区 0–2、3–5 各自共享潜在因子；S2 中脑区 0 与 3、1 与 4、2 与 5 两两共享因子。</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 每个窗口取相关矩阵上三角拉平成 15 维向量，用 k-means 聚类，计算与真实状态的一致率和平均停留时间。</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 输出解读：k = 2 能较好地恢复状态，交界处的窗口混合两种模式；改用 k = 4 时算法同样给出 4 个“状态”——</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 聚类数需要独立的依据（敏感性分析、替代数据比较）。</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.cluster.vq <span class="im">import</span> kmeans2</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> ar1_smooth(e, phi<span class="op">=</span><span class="fl">0.8</span>):</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    out <span class="op">=</span> np.zeros_like(e)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> t <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, e.shape[<span class="op">-</span><span class="dv">1</span>]):</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>        out[..., t] <span class="op">=</span> phi <span class="op">*</span> out[..., t <span class="op">-</span> <span class="dv">1</span>] <span class="op">+</span> e[..., t]</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> out</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> segment(state, T, rng):</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;模拟数据，仅用于演示方法：用潜在因子生成指定连接模式。&quot;&quot;&quot;</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    f <span class="op">=</span> rng.standard_normal((<span class="dv">3</span>, T))</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    X <span class="op">=</span> rng.standard_normal((<span class="dv">6</span>, T))</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    groups <span class="op">=</span> [[<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>], [<span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>]] <span class="cf">if</span> state <span class="op">==</span> <span class="dv">0</span> <span class="cf">else</span> [[<span class="dv">0</span>, <span class="dv">3</span>], [<span class="dv">1</span>, <span class="dv">4</span>], [<span class="dv">2</span>, <span class="dv">5</span>]]</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> g, members <span class="kw">in</span> <span class="bu">enumerate</span>(groups):</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> m <span class="kw">in</span> members:</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>            X[m] <span class="op">+=</span> <span class="fl">1.2</span> <span class="op">*</span> f[g]</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> ar1_smooth(X)</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> dwell(labels):</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;平均停留时间：连续处于同一状态的平均窗口数。&quot;&quot;&quot;</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    runs, cur <span class="op">=</span> [], <span class="dv">1</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> a, b <span class="kw">in</span> <span class="bu">zip</span>(labels[:<span class="op">-</span><span class="dv">1</span>], labels[<span class="dv">1</span>:]):</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> a <span class="op">==</span> b:</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>            cur <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>            runs.append(cur)</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>            cur <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>    runs.append(cur)</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.mean(runs)</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>rng <span class="op">=</span> np.random.default_rng(<span class="dv">3</span>)</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>lengths, states <span class="op">=</span> [<span class="dv">250</span>, <span class="dv">200</span>, <span class="dv">250</span>, <span class="dv">200</span>], [<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>]</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> np.hstack([segment(s, L, rng) <span class="cf">for</span> s, L <span class="kw">in</span> <span class="bu">zip</span>(states, lengths)])</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>truth_t <span class="op">=</span> np.concatenate([[s] <span class="op">*</span> L <span class="cf">for</span> s, L <span class="kw">in</span> <span class="bu">zip</span>(states, lengths)])</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>w, step <span class="op">=</span> <span class="dv">40</span>, <span class="dv">5</span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>iu <span class="op">=</span> np.triu_indices(<span class="dv">6</span>, k<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>starts <span class="op">=</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">0</span>, X.shape[<span class="dv">1</span>] <span class="op">-</span> w <span class="op">+</span> <span class="dv">1</span>, step))</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>V <span class="op">=</span> np.array([np.corrcoef(X[:, t:t <span class="op">+</span> w])[iu] <span class="cf">for</span> t <span class="kw">in</span> starts])            <span class="co"># (窗口数, 15)</span></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>truth_w <span class="op">=</span> np.array([np.<span class="bu">round</span>(truth_t[t:t <span class="op">+</span> w].mean()) <span class="cf">for</span> t <span class="kw">in</span> starts])   <span class="co"># 以窗口内多数状态为真值</span></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;窗口数 =&quot;</span>, V.shape[<span class="dv">0</span>], <span class="st">&quot;；每个窗口的特征维数 =&quot;</span>, V.shape[<span class="dv">1</span>])</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> k <span class="kw">in</span> [<span class="dv">2</span>, <span class="dv">4</span>]:</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>    _, lab <span class="op">=</span> kmeans2(V, k, seed<span class="op">=</span><span class="dv">0</span>, minit<span class="op">=</span><span class="st">&quot;++&quot;</span>)</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> k <span class="op">==</span> <span class="dv">2</span>:</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>        acc <span class="op">=</span> <span class="bu">max</span>(np.mean(lab <span class="op">==</span> truth_w), np.mean(lab <span class="op">!=</span> truth_w))   <span class="co"># 聚类标签与真值的对应关系任意</span></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f&quot;k = 2：与真实状态一致率 = </span><span class="sc">{</span>acc<span class="sc">:.2f}</span><span class="ss">，平均停留 = </span><span class="sc">{</span>dwell(lab)<span class="sc">:.1f}</span><span class="ss"> 个窗口&quot;</span>)</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f&quot;k = 4：各“状态”窗口数 = </span><span class="sc">{</span>np<span class="sc">.</span>bincount(lab, minlength<span class="op">=</span><span class="dv">4</span>)<span class="sc">.</span>tolist()<span class="sc">}</span><span class="ss">，&quot;</span></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>              <span class="ss">f&quot;平均停留 = </span><span class="sc">{</span>dwell(lab)<span class="sc">:.1f}</span><span class="ss"> 个窗口&quot;</span>)</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>cen2, lab2 <span class="op">=</span> kmeans2(V, <span class="dv">2</span>, seed<span class="op">=</span><span class="dv">0</span>, minit<span class="op">=</span><span class="st">&quot;++&quot;</span>)     <span class="co"># 与上面 k = 2 相同的设置，重新取出中心</span></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> np.mean(lab2 <span class="op">==</span> truth_w) <span class="op">&lt;</span> <span class="fl">0.5</span>:</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>    lab2, cen2 <span class="op">=</span> <span class="dv">1</span> <span class="op">-</span> lab2, cen2[::<span class="op">-</span><span class="dv">1</span>]</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">3</span>, figsize<span class="op">=</span>(<span class="dv">11</span>, <span class="fl">3.6</span>), gridspec_kw<span class="op">=</span>{<span class="st">&quot;width_ratios&quot;</span>: [<span class="fl">2.2</span>, <span class="dv">1</span>, <span class="dv">1</span>]})</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>tw <span class="op">=</span> np.array(starts) <span class="op">+</span> w <span class="op">/</span> <span class="dv">2</span></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>].step(tw, truth_w <span class="op">+</span> <span class="fl">0.04</span>, where<span class="op">=</span><span class="st">&quot;mid&quot;</span>, color<span class="op">=</span><span class="st">&quot;k&quot;</span>, lw<span class="op">=</span><span class="dv">2</span>, label<span class="op">=</span><span class="st">&quot;true state&quot;</span>)</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>].step(tw, lab2 <span class="op">-</span> <span class="fl">0.04</span>, where<span class="op">=</span><span class="st">&quot;mid&quot;</span>, color<span class="op">=</span><span class="st">&quot;#CC6677&quot;</span>, lw<span class="op">=</span><span class="fl">1.2</span>, ls<span class="op">=</span><span class="st">&quot;--&quot;</span>, label<span class="op">=</span><span class="st">&quot;k-means (k = 2)&quot;</span>)</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>].<span class="bu">set</span>(yticks<span class="op">=</span>[<span class="dv">0</span>, <span class="dv">1</span>], yticklabels<span class="op">=</span>[<span class="st">&quot;S1&quot;</span>, <span class="st">&quot;S2&quot;</span>], ylim<span class="op">=</span>(<span class="op">-</span><span class="fl">0.3</span>, <span class="fl">1.3</span>), xlabel<span class="op">=</span><span class="st">&quot;Time (window centre)&quot;</span>,</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>            title<span class="op">=</span><span class="st">&quot;Recovered state sequence&quot;</span>)</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>].legend(fontsize<span class="op">=</span><span class="dv">8</span>, loc<span class="op">=</span><span class="st">&quot;center right&quot;</span>)</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> c <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">2</span>):</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>    M <span class="op">=</span> np.eye(<span class="dv">6</span>)<span class="op">;</span> M[iu] <span class="op">=</span> cen2[c]<span class="op">;</span> M <span class="op">=</span> M <span class="op">+</span> np.triu(M, <span class="dv">1</span>).T</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>    im <span class="op">=</span> axes[c <span class="op">+</span> <span class="dv">1</span>].imshow(M, cmap<span class="op">=</span><span class="st">&quot;RdBu_r&quot;</span>, vmin<span class="op">=-</span><span class="dv">1</span>, vmax<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>    axes[c <span class="op">+</span> <span class="dv">1</span>].<span class="bu">set</span>(title<span class="op">=</span><span class="ss">f&quot;Centroid S</span><span class="sc">{</span>c <span class="op">+</span> <span class="dv">1</span><span class="sc">}</span><span class="ss">&quot;</span>, xticks<span class="op">=</span><span class="bu">range</span>(<span class="dv">6</span>), yticks<span class="op">=</span><span class="bu">range</span>(<span class="dv">6</span>))</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>fig.colorbar(im, ax<span class="op">=</span>axes[<span class="dv">2</span>], shrink<span class="op">=</span><span class="fl">0.8</span>, label<span class="op">=</span><span class="st">&quot;r&quot;</span>)</span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()<span class="op">;</span> plt.show()</span></code></pre></div>
+</section><section class="block"><h2><span class="tag">Run</span>在浏览器中运行</h2><p class="small">首次加载 Python 环境约需 20–40 秒；可以修改参数后重新运行。</p><div class="cell"><div class="cell-head"><h3>从窗口相关矩阵到“连接状态”（k-means）</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea id="dynamic-brain-networks-cell2" rows="30" spellcheck="false" aria-label="从窗口相关矩阵到“连接状态”（k-means） 代码"># 模拟 6 个脑区、900 个时间点，隐藏状态按 S1 → S2 → S1 → S2 交替（段长 250/200/250/200）：
+# S1 中脑区 0–2、3–5 各自共享潜在因子；S2 中脑区 0 与 3、1 与 4、2 与 5 两两共享因子。
+# 每个窗口取相关矩阵上三角拉平成 15 维向量，用 k-means 聚类，计算与真实状态的一致率和平均停留时间。
+# 输出解读：k = 2 能较好地恢复状态，交界处的窗口混合两种模式；改用 k = 4 时算法同样给出 4 个“状态”——
+# 聚类数需要独立的依据（敏感性分析、替代数据比较）。
+import numpy as np
+from scipy.cluster.vq import kmeans2
+
+def ar1_smooth(e, phi=0.8):
+    out = np.zeros_like(e)
+    for t in range(1, e.shape[-1]):
+        out[..., t] = phi * out[..., t - 1] + e[..., t]
+    return out
+
+def segment(state, T, rng):
+    &quot;&quot;&quot;模拟数据，仅用于演示方法：用潜在因子生成指定连接模式。&quot;&quot;&quot;
+    f = rng.standard_normal((3, T))
+    X = rng.standard_normal((6, T))
+    groups = [[0, 1, 2], [3, 4, 5]] if state == 0 else [[0, 3], [1, 4], [2, 5]]
+    for g, members in enumerate(groups):
+        for m in members:
+            X[m] += 1.2 * f[g]
+    return ar1_smooth(X)
+
+def dwell(labels):
+    &quot;&quot;&quot;平均停留时间：连续处于同一状态的平均窗口数。&quot;&quot;&quot;
+    runs, cur = [], 1
+    for a, b in zip(labels[:-1], labels[1:]):
+        if a == b:
+            cur += 1
+        else:
+            runs.append(cur)
+            cur = 1
+    runs.append(cur)
+    return np.mean(runs)
+
+rng = np.random.default_rng(3)
+lengths, states = [250, 200, 250, 200], [0, 1, 0, 1]
+X = np.hstack([segment(s, L, rng) for s, L in zip(states, lengths)])
+truth_t = np.concatenate([[s] * L for s, L in zip(states, lengths)])
+
+w, step = 40, 5
+iu = np.triu_indices(6, k=1)
+starts = list(range(0, X.shape[1] - w + 1, step))
+V = np.array([np.corrcoef(X[:, t:t + w])[iu] for t in starts])            # (窗口数, 15)
+truth_w = np.array([np.round(truth_t[t:t + w].mean()) for t in starts])   # 以窗口内多数状态为真值
+print(&quot;窗口数 =&quot;, V.shape[0], &quot;；每个窗口的特征维数 =&quot;, V.shape[1])
+
+for k in [2, 4]:
+    _, lab = kmeans2(V, k, seed=0, minit=&quot;++&quot;)
+    if k == 2:
+        acc = max(np.mean(lab == truth_w), np.mean(lab != truth_w))   # 聚类标签与真值的对应关系任意
+        print(f&quot;k = 2：与真实状态一致率 = {acc:.2f}，平均停留 = {dwell(lab):.1f} 个窗口&quot;)
+    else:
+        print(f&quot;k = 4：各“状态”窗口数 = {np.bincount(lab, minlength=4).tolist()}，&quot;
+              f&quot;平均停留 = {dwell(lab):.1f} 个窗口&quot;)
+
+import matplotlib.pyplot as plt
+cen2, lab2 = kmeans2(V, 2, seed=0, minit=&quot;++&quot;)     # 与上面 k = 2 相同的设置，重新取出中心
+if np.mean(lab2 == truth_w) &lt; 0.5:
+    lab2, cen2 = 1 - lab2, cen2[::-1]
+fig, axes = plt.subplots(1, 3, figsize=(11, 3.6), gridspec_kw={&quot;width_ratios&quot;: [2.2, 1, 1]})
+tw = np.array(starts) + w / 2
+axes[0].step(tw, truth_w + 0.04, where=&quot;mid&quot;, color=&quot;k&quot;, lw=2, label=&quot;true state&quot;)
+axes[0].step(tw, lab2 - 0.04, where=&quot;mid&quot;, color=&quot;#CC6677&quot;, lw=1.2, ls=&quot;--&quot;, label=&quot;k-means (k = 2)&quot;)
+axes[0].set(yticks=[0, 1], yticklabels=[&quot;S1&quot;, &quot;S2&quot;], ylim=(-0.3, 1.3), xlabel=&quot;Time (window centre)&quot;,
+            title=&quot;Recovered state sequence&quot;)
+axes[0].legend(fontsize=8, loc=&quot;center right&quot;)
+for c in range(2):
+    M = np.eye(6); M[iu] = cen2[c]; M = M + np.triu(M, 1).T
+    im = axes[c + 1].imshow(M, cmap=&quot;RdBu_r&quot;, vmin=-1, vmax=1)
+    axes[c + 1].set(title=f&quot;Centroid S{c + 1}&quot;, xticks=range(6), yticks=range(6))
+fig.colorbar(im, ax=axes[2], shrink=0.8, label=&quot;r&quot;)
+plt.tight_layout(); plt.show()</textarea><div class="out" aria-live="polite"></div></div></section><nav class="pager"><a href="ex-dynamic-brain-networks-1.html"><small>上一个示例</small>窗长的权衡与相位随机化零模型</a><a href="ex-dynamic-brain-networks-3.html"><small>下一个示例</small>相位同步与主导特征向量（LEiDA 思路）</a></nav></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

@@ -1,0 +1,10 @@
+{
+ "topic": "molecular-networks",
+ "index": 0,
+ "title": "重尾度分布与 Jeong 式统计",
+ "hash": "69ed9107fadfa9e58212f87330cf8ef0489c3054",
+ "ok": true,
+ "figures": 1,
+ "stdout": "BA：度 ≤ 5 的比例 = 0.857，度 > 15 的比例 = 0.025，最大度 = 105\nER：度 ≤ 5 的比例 = 0.790，度 > 15 的比例 = 0.000，最大度 = 14",
+ "stderr": ""
+}

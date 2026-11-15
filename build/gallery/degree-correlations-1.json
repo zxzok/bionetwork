@@ -1,0 +1,10 @@
+{
+ "topic": "degree-correlations",
+ "index": 1,
+ "title": "k_nn(k)、相关指数 mu、r 与 Spearman rho——三类网络对照",
+ "hash": "43c25ee4aaa78f745bf524de84ec51a79bfc445d",
+ "ok": true,
+ "figures": 1,
+ "stdout": "BA 原始: r = -0.081   Spearman rho = -0.299   拟合 mu = -0.15\n同配重连: r = +0.519   Spearman rho = +0.986   拟合 mu = +0.88\n异配重连: r = -0.274   Spearman rho = -0.956   拟合 mu = -0.65\n图已保存为 knn_three_networks.png",
+ "stderr": ""
+}

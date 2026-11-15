@@ -1,0 +1,200 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>二值症状的 Ising 模型——Gibbs 抽样与逐节点 L1 逻辑回归（eLasso 思路） · 生物医学网络科学</title><meta name="description" content="症状网络与网络精神病学 · 代码示例：二值症状的 Ising 模型——Gibbs 抽样与逐节点 L1 逻辑回归（eLasso 思路）"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-symptom"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html" aria-current="page">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom" open><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a><ol class="sub"><li><a href="symptom-networks.network-theory.html"><span class="n">01</span>共同原因模型与网络理论</a></li><li><a href="symptom-networks.gaussian-graphical-model.html"><span class="n">02</span>偏相关与高斯图模型</a></li><li><a href="symptom-networks.regularization.html"><span class="n">03</span>正则化估计：EBICglasso</a></li><li><a href="symptom-networks.ising-model.html"><span class="n">04</span>Ising 模型与二值症状数据</a></li><li><a href="symptom-networks.mixed-graphical-models.html"><span class="n">05</span>混合图模型与可预测性</a></li><li><a href="symptom-networks.dependence-vs-causation.html"><span class="n">06</span>横断面统计依赖与因果作用</a></li><li><a href="symptom-networks.centrality.html"><span class="n">07</span>症状中心性及其解释</a></li><li><a href="symptom-networks.bridge-centrality.html"><span class="n">08</span>桥中心性与共病</a></li><li><a href="symptom-networks.stability.html"><span class="n">09</span>抽样不确定性：边权准确性与中心性稳定性</a></li><li><a href="symptom-networks.sample-size.html"><span class="n">10</span>样本量与估计方法的选择</a></li><li><a href="symptom-networks.network-comparison.html"><span class="n">11</span>网络比较与跨样本复现</a></li><li><a href="symptom-networks.temporal-networks.html"><span class="n">12</span>个体动态网络：经验取样与时间序列</a></li><li><a href="symptom-networks.panel-networks.html"><span class="n">13</span>面板数据网络：CLPN 与 panel-GVAR</a></li><li><a href="symptom-networks.network-intervention.html"><span class="n">14</span>网络干预分析</a></li><li><a href="symptom-networks.clinical-controversies.html"><span class="n">15</span>临床应用与争议</a></li><li><a href="symptom-networks.module-control.html"><span class="n">16</span>症状网络的模块控制</a></li><li><a href="symptom-networks.derivations.html"><span class="n">17</span>数学推导与算法</a></li><li><a href="symptom-networks.frontiers.html"><span class="n">18</span>研究前沿与开放问题</a></li><li><a href="symptom-networks.biomedical.html"><span class="n">19</span>生物医学应用</a></li><li><a href="symptom-networks.limitations.html"><span class="n">20</span>适用范围与常见误用</a></li></ol></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="code.html">代码库</a> <span class="sep">/</span> <a href="code.html#symptom">症状网络与网络精神病学</a> <span class="sep">/</span> <a href="symptom-networks.html">症状网络与网络精神病学</a></nav><div class="eyebrow" style="margin-top:14px"><b>Example</b><span>05 / 10</span></div><h1>二值症状的 Ising 模型——Gibbs 抽样与逐节点 L1 逻辑回归（eLasso 思路）</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="symptom-networks.html">症状网络与网络精神病学</a></dd></div><div><dt>下载</dt><dd><a href="notebooks/symptom-networks.ipynb" download>Notebook</a> · <a href="notebooks/symptom-networks.py" download>.py</a></dd></div></dl></header><section class="block prose"><p>先用 Gibbs 抽样从已知 Ising 模型生成 0/1
+症状数据（模拟数据，仅用于演示方法）， 再对每个节点做 L1
+正则化逻辑回归（近端梯度法），用 EBIC（γ = 0.25）选 λ， 最后用 AND
+规则合并：β_ij 与 β_ji 都非零才保留边，边权取二者平均。 输出解读：n =
+1000 时边的有无基本恢复正确，但部分边权被 L1 惩罚明显压小（收缩偏倚），
+阈值估计也相应偏离真值。ω_ij 是”其余症状固定时，i 与 j
+的条件对数优势比”， 例如 ω = 1.2 意味着条件优势比 e^1.2 ≈ 3.3。阈值 τ
+为负表示其余症状都不出现时该症状倾向于不出现。</p>
+</section><section class="block"><h2><span class="tag">Output</span>输出图</h2><div class="ex-figs"><img src="gallery/symptom-networks-4-0.png" alt="二值症状的 Ising 模型——Gibbs 抽样与逐节点 L1 逻辑回归（eLasso 思路）：输出图 1" loading="lazy"></div></section><section class="block"><h2><span class="tag">Output</span>文字输出</h2><pre class="ex-out">各症状出现率： [0.31 0.3  0.29 0.32 0.32 0.27 0.3 ]
+真实边 7 条；估计边 7 条，命中 7，虚假 0
+  边 0-1: 真值 ω = 1.2，估计 0.82
+  边 0-6: 真值 ω = 1.0，估计 0.97
+  边 1-2: 真值 ω = 1.0，估计 0.43
+  边 2-3: 真值 ω = 0.8，估计 0.65
+  边 3-4: 真值 ω = 1.2，估计 1.23
+  边 4-5: 真值 ω = 1.0，估计 0.81
+  边 5-6: 真值 ω = 0.8，估计 0.78
+阈值估计 τ： [-1.37 -1.27 -1.23 -1.3  -1.48 -1.49 -1.43] （真值均为 −1.5）</pre></section><section class="block prose"><h2><span class="tag">Code</span>代码</h2><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 先用 Gibbs 抽样从已知 Ising 模型生成 0/1 症状数据（模拟数据，仅用于演示方法），</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 再对每个节点做 L1 正则化逻辑回归（近端梯度法），用 EBIC（γ = 0.25）选 λ，</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 最后用 AND 规则合并：β_ij 与 β_ji 都非零才保留边，边权取二者平均。</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 输出解读：n = 1000 时边的有无基本恢复正确，但部分边权被 L1 惩罚明显压小（收缩偏倚），</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 阈值估计也相应偏离真值。ω_ij 是&quot;其余症状固定时，i 与 j 的条件对数优势比&quot;，</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># 例如 ω = 1.2 意味着条件优势比 e^1.2 ≈ 3.3。阈值 τ 为负表示其余症状都不出现时该症状倾向于不出现。</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> <span class="dv">7</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>OMEGA <span class="op">=</span> np.zeros((p, p))</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i, j), w <span class="kw">in</span> {(<span class="dv">0</span>, <span class="dv">1</span>): <span class="fl">1.2</span>, (<span class="dv">1</span>, <span class="dv">2</span>): <span class="fl">1.0</span>, (<span class="dv">2</span>, <span class="dv">3</span>): <span class="fl">0.8</span>, (<span class="dv">3</span>, <span class="dv">4</span>): <span class="fl">1.2</span>, (<span class="dv">4</span>, <span class="dv">5</span>): <span class="fl">1.0</span>,</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>                  (<span class="dv">5</span>, <span class="dv">6</span>): <span class="fl">0.8</span>, (<span class="dv">0</span>, <span class="dv">6</span>): <span class="fl">1.0</span>}.items():</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    OMEGA[i, j] <span class="op">=</span> OMEGA[j, i] <span class="op">=</span> w</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>TAU <span class="op">=</span> np.full(p, <span class="op">-</span><span class="fl">1.5</span>)</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> gibbs_ising(omega, tau, n, sweeps<span class="op">=</span><span class="dv">200</span>, seed<span class="op">=</span><span class="dv">0</span>):</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;对 n 条独立链并行 Gibbs 抽样，每条链取最后一个状态作为一名被试。&quot;&quot;&quot;</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    rng <span class="op">=</span> np.random.default_rng(seed)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> rng.integers(<span class="dv">0</span>, <span class="dv">2</span>, size<span class="op">=</span>(n, <span class="bu">len</span>(tau))).astype(<span class="bu">float</span>)</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(sweeps):</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(tau)):</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>            eta <span class="op">=</span> tau[i] <span class="op">+</span> x <span class="op">@</span> omega[:, i]       <span class="co"># omega 对角为 0</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>            x[:, i] <span class="op">=</span> rng.random(n) <span class="op">&lt;</span> <span class="dv">1</span> <span class="op">/</span> (<span class="dv">1</span> <span class="op">+</span> np.exp(<span class="op">-</span>eta))</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> x</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> l1_logistic(Z, y, lam, beta0<span class="op">=</span><span class="va">None</span>, iters<span class="op">=</span><span class="dv">500</span>):</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;近端梯度：min −(1/n)Σ loglik + λ|β|₁（截距不惩罚）。&quot;&quot;&quot;</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    n, k <span class="op">=</span> Z.shape</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    A <span class="op">=</span> np.column_stack([np.ones(n), Z])</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    b <span class="op">=</span> np.zeros(k <span class="op">+</span> <span class="dv">1</span>) <span class="cf">if</span> beta0 <span class="kw">is</span> <span class="va">None</span> <span class="cf">else</span> beta0.copy()</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>    step <span class="op">=</span> <span class="fl">4.0</span> <span class="op">/</span> (np.linalg.norm(A, <span class="dv">2</span>) <span class="op">**</span> <span class="dv">2</span> <span class="op">/</span> n)</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(iters):</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>        mu <span class="op">=</span> <span class="dv">1</span> <span class="op">/</span> (<span class="dv">1</span> <span class="op">+</span> np.exp(<span class="op">-</span>A <span class="op">@</span> b))</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>        b <span class="op">=</span> b <span class="op">-</span> step <span class="op">*</span> (A.T <span class="op">@</span> (mu <span class="op">-</span> y) <span class="op">/</span> n)</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>        b[<span class="dv">1</span>:] <span class="op">=</span> np.sign(b[<span class="dv">1</span>:]) <span class="op">*</span> np.maximum(np.<span class="bu">abs</span>(b[<span class="dv">1</span>:]) <span class="op">-</span> step <span class="op">*</span> lam, <span class="dv">0</span>)</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> b</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> ising_elasso(X, gamma<span class="op">=</span><span class="fl">0.25</span>, n_lambda<span class="op">=</span><span class="dv">30</span>):</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>    n, p <span class="op">=</span> X.shape</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>    B <span class="op">=</span> np.zeros((p, p))</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>    tau_hat <span class="op">=</span> np.zeros(p)</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(p):</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>        Z, y <span class="op">=</span> np.delete(X, i, axis<span class="op">=</span><span class="dv">1</span>), X[:, i]</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>        lam_max <span class="op">=</span> np.<span class="bu">max</span>(np.<span class="bu">abs</span>(Z.T <span class="op">@</span> (y <span class="op">-</span> y.mean()))) <span class="op">/</span> n</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>        best, b <span class="op">=</span> <span class="va">None</span>, <span class="va">None</span></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> lam <span class="kw">in</span> np.exp(np.linspace(np.log(lam_max), np.log(<span class="fl">0.01</span> <span class="op">*</span> lam_max), n_lambda)):</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>            b <span class="op">=</span> l1_logistic(Z, y, lam, b)</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>            eta <span class="op">=</span> b[<span class="dv">0</span>] <span class="op">+</span> Z <span class="op">@</span> b[<span class="dv">1</span>:]</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>            ll <span class="op">=</span> np.<span class="bu">sum</span>(y <span class="op">*</span> eta <span class="op">-</span> np.log1p(np.exp(eta)))</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>            k <span class="op">=</span> <span class="bu">int</span>(np.<span class="bu">sum</span>(np.<span class="bu">abs</span>(b[<span class="dv">1</span>:]) <span class="op">&gt;</span> <span class="fl">1e-6</span>))</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>            ebic <span class="op">=</span> <span class="op">-</span><span class="dv">2</span> <span class="op">*</span> ll <span class="op">+</span> k <span class="op">*</span> np.log(n) <span class="op">+</span> <span class="dv">2</span> <span class="op">*</span> gamma <span class="op">*</span> k <span class="op">*</span> np.log(p <span class="op">-</span> <span class="dv">1</span>)</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> best <span class="kw">is</span> <span class="va">None</span> <span class="kw">or</span> ebic <span class="op">&lt;</span> best[<span class="dv">0</span>]:</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>                best <span class="op">=</span> (ebic, b.copy())</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>        B[i, np.arange(p) <span class="op">!=</span> i] <span class="op">=</span> best[<span class="dv">1</span>][<span class="dv">1</span>:]</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>        tau_hat[i] <span class="op">=</span> best[<span class="dv">1</span>][<span class="dv">0</span>]</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>    nz <span class="op">=</span> (np.<span class="bu">abs</span>(B) <span class="op">&gt;</span> <span class="fl">1e-6</span>) <span class="op">&amp;</span> (np.<span class="bu">abs</span>(B.T) <span class="op">&gt;</span> <span class="fl">1e-6</span>)  <span class="co"># AND 规则</span></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.where(nz, (B <span class="op">+</span> B.T) <span class="op">/</span> <span class="dv">2</span>, <span class="fl">0.0</span>), tau_hat</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> gibbs_ising(OMEGA, TAU, n<span class="op">=</span><span class="dv">1000</span>)</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;各症状出现率：&quot;</span>, np.<span class="bu">round</span>(X.mean(axis<span class="op">=</span><span class="dv">0</span>), <span class="dv">2</span>))</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>W, tau_hat <span class="op">=</span> ising_elasso(X)</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>iu <span class="op">=</span> np.triu_indices(p, <span class="dv">1</span>)</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>true_e <span class="op">=</span> {(i, j) <span class="cf">for</span> i, j <span class="kw">in</span> <span class="bu">zip</span>(<span class="op">*</span>iu) <span class="cf">if</span> OMEGA[i, j] <span class="op">!=</span> <span class="dv">0</span>}</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>est_e <span class="op">=</span> {(i, j) <span class="cf">for</span> i, j <span class="kw">in</span> <span class="bu">zip</span>(<span class="op">*</span>iu) <span class="cf">if</span> W[i, j] <span class="op">!=</span> <span class="dv">0</span>}</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;真实边 </span><span class="sc">{</span><span class="bu">len</span>(true_e)<span class="sc">}</span><span class="ss"> 条；估计边 </span><span class="sc">{</span><span class="bu">len</span>(est_e)<span class="sc">}</span><span class="ss"> 条，命中 </span><span class="sc">{</span><span class="bu">len</span>(est_e <span class="op">&amp;</span> true_e)<span class="sc">}</span><span class="ss">，虚假 </span><span class="sc">{</span><span class="bu">len</span>(est_e <span class="op">-</span> true_e)<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i, j) <span class="kw">in</span> <span class="bu">sorted</span>(true_e):</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;  边 </span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">-</span><span class="sc">{</span>j<span class="sc">}</span><span class="ss">: 真值 ω = </span><span class="sc">{</span>OMEGA[i, j]<span class="sc">:.1f}</span><span class="ss">，估计 </span><span class="sc">{</span>W[i, j]<span class="sc">:.2f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;阈值估计 τ：&quot;</span>, np.<span class="bu">round</span>(tau_hat, <span class="dv">2</span>), <span class="st">&quot;（真值均为 −1.5）&quot;</span>)</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> networkx <span class="im">as</span> nx</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="fl">4.2</span>))</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>pos <span class="op">=</span> nx.circular_layout(<span class="bu">range</span>(p))</span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>G <span class="op">=</span> nx.Graph()<span class="op">;</span> G.add_nodes_from(<span class="bu">range</span>(p))</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>G.add_weighted_edges_from((i, j, W[i, j]) <span class="cf">for</span> i, j <span class="kw">in</span> <span class="bu">zip</span>(<span class="op">*</span>iu) <span class="cf">if</span> W[i, j] <span class="op">!=</span> <span class="dv">0</span>)</span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> es, style, col <span class="kw">in</span> [([e <span class="cf">for</span> e <span class="kw">in</span> G.edges() <span class="cf">if</span> <span class="bu">tuple</span>(<span class="bu">sorted</span>(e)) <span class="kw">in</span> true_e], <span class="st">&quot;solid&quot;</span>, <span class="st">&quot;#4477AA&quot;</span>),</span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>                       ([e <span class="cf">for</span> e <span class="kw">in</span> G.edges() <span class="cf">if</span> <span class="bu">tuple</span>(<span class="bu">sorted</span>(e)) <span class="kw">not</span> <span class="kw">in</span> true_e], <span class="st">&quot;dashed&quot;</span>, <span class="st">&quot;#CC6677&quot;</span>)]:</span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>    nx.draw_networkx_edges(G, pos, edgelist<span class="op">=</span>es, ax<span class="op">=</span>axes[<span class="dv">0</span>], style<span class="op">=</span>style, edge_color<span class="op">=</span>col,</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>                           width<span class="op">=</span>[<span class="dv">3</span> <span class="op">*</span> <span class="bu">abs</span>(G[u][v][<span class="st">&quot;weight&quot;</span>]) <span class="cf">for</span> u, v <span class="kw">in</span> es])</span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>nx.draw_networkx_nodes(G, pos, ax<span class="op">=</span>axes[<span class="dv">0</span>], node_size<span class="op">=</span><span class="dv">180</span>, node_color<span class="op">=</span><span class="st">&quot;#DDDDDD&quot;</span>, edgecolors<span class="op">=</span><span class="st">&quot;k&quot;</span>)</span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>nx.draw_networkx_labels(G, {k: <span class="fl">1.2</span> <span class="op">*</span> v <span class="cf">for</span> k, v <span class="kw">in</span> pos.items()}, labels<span class="op">=</span>{i: <span class="ss">f&quot;S</span><span class="sc">{</span>i <span class="op">+</span> <span class="dv">1</span><span class="sc">}</span><span class="ss">&quot;</span> <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(p)}, ax<span class="op">=</span>axes[<span class="dv">0</span>], font_size<span class="op">=</span><span class="dv">9</span>)</span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>].set_title(<span class="ss">f&quot;Estimated Ising network (solid: true edge, dashed: false), n = </span><span class="sc">{</span><span class="bu">len</span>(X)<span class="sc">}</span><span class="ss">&quot;</span>, fontsize<span class="op">=</span><span class="dv">9</span>)</span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>].set_aspect(<span class="st">&quot;equal&quot;</span>)<span class="op">;</span> axes[<span class="dv">0</span>].axis(<span class="st">&quot;off&quot;</span>)<span class="op">;</span> axes[<span class="dv">0</span>].set_xlim(<span class="op">-</span><span class="fl">1.4</span>, <span class="fl">1.4</span>)<span class="op">;</span> axes[<span class="dv">0</span>].set_ylim(<span class="op">-</span><span class="fl">1.4</span>, <span class="fl">1.4</span>)</span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a>te <span class="op">=</span> <span class="bu">sorted</span>(true_e)</span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.arange(<span class="bu">len</span>(te))</span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">1</span>].bar(x <span class="op">-</span> <span class="fl">0.2</span>, [OMEGA[e] <span class="cf">for</span> e <span class="kw">in</span> te], <span class="fl">0.4</span>, color<span class="op">=</span><span class="st">&quot;#BBBBBB&quot;</span>, label<span class="op">=</span><span class="st">&quot;true omega&quot;</span>)</span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">1</span>].bar(x <span class="op">+</span> <span class="fl">0.2</span>, [W[e] <span class="cf">for</span> e <span class="kw">in</span> te], <span class="fl">0.4</span>, color<span class="op">=</span><span class="st">&quot;#4477AA&quot;</span>, label<span class="op">=</span><span class="st">&quot;eLasso estimate&quot;</span>)</span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">1</span>].set_xticks(x, [<span class="ss">f&quot;S</span><span class="sc">{</span>i <span class="op">+</span> <span class="dv">1</span><span class="sc">}</span><span class="ss">-S</span><span class="sc">{</span>j <span class="op">+</span> <span class="dv">1</span><span class="sc">}</span><span class="ss">&quot;</span> <span class="cf">for</span> i, j <span class="kw">in</span> te], fontsize<span class="op">=</span><span class="dv">8</span>)</span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">1</span>].<span class="bu">set</span>(ylabel<span class="op">=</span><span class="st">&quot;Edge weight (log-odds)&quot;</span>, title<span class="op">=</span><span class="st">&quot;L1 shrinks edge weights toward 0&quot;</span>)</span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">1</span>].legend(fontsize<span class="op">=</span><span class="dv">8</span>)</span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()<span class="op">;</span> plt.show()</span></code></pre></div>
+</section><section class="block"><h2><span class="tag">Run</span>在浏览器中运行</h2><p class="small">首次加载 Python 环境约需 20–40 秒；可以修改参数后重新运行。</p><div class="cell"><div class="cell-head"><h3>二值症状的 Ising 模型——Gibbs 抽样与逐节点 L1 逻辑回归（eLasso 思路）</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea id="symptom-networks-cell4" rows="30" spellcheck="false" aria-label="二值症状的 Ising 模型——Gibbs 抽样与逐节点 L1 逻辑回归（eLasso 思路） 代码"># 先用 Gibbs 抽样从已知 Ising 模型生成 0/1 症状数据（模拟数据，仅用于演示方法），
+# 再对每个节点做 L1 正则化逻辑回归（近端梯度法），用 EBIC（γ = 0.25）选 λ，
+# 最后用 AND 规则合并：β_ij 与 β_ji 都非零才保留边，边权取二者平均。
+# 输出解读：n = 1000 时边的有无基本恢复正确，但部分边权被 L1 惩罚明显压小（收缩偏倚），
+# 阈值估计也相应偏离真值。ω_ij 是&quot;其余症状固定时，i 与 j 的条件对数优势比&quot;，
+# 例如 ω = 1.2 意味着条件优势比 e^1.2 ≈ 3.3。阈值 τ 为负表示其余症状都不出现时该症状倾向于不出现。
+import numpy as np
+
+p = 7
+OMEGA = np.zeros((p, p))
+for (i, j), w in {(0, 1): 1.2, (1, 2): 1.0, (2, 3): 0.8, (3, 4): 1.2, (4, 5): 1.0,
+                  (5, 6): 0.8, (0, 6): 1.0}.items():
+    OMEGA[i, j] = OMEGA[j, i] = w
+TAU = np.full(p, -1.5)
+
+def gibbs_ising(omega, tau, n, sweeps=200, seed=0):
+    &quot;&quot;&quot;对 n 条独立链并行 Gibbs 抽样，每条链取最后一个状态作为一名被试。&quot;&quot;&quot;
+    rng = np.random.default_rng(seed)
+    x = rng.integers(0, 2, size=(n, len(tau))).astype(float)
+    for _ in range(sweeps):
+        for i in range(len(tau)):
+            eta = tau[i] + x @ omega[:, i]       # omega 对角为 0
+            x[:, i] = rng.random(n) &lt; 1 / (1 + np.exp(-eta))
+    return x
+
+def l1_logistic(Z, y, lam, beta0=None, iters=500):
+    &quot;&quot;&quot;近端梯度：min −(1/n)Σ loglik + λ|β|₁（截距不惩罚）。&quot;&quot;&quot;
+    n, k = Z.shape
+    A = np.column_stack([np.ones(n), Z])
+    b = np.zeros(k + 1) if beta0 is None else beta0.copy()
+    step = 4.0 / (np.linalg.norm(A, 2) ** 2 / n)
+    for _ in range(iters):
+        mu = 1 / (1 + np.exp(-A @ b))
+        b = b - step * (A.T @ (mu - y) / n)
+        b[1:] = np.sign(b[1:]) * np.maximum(np.abs(b[1:]) - step * lam, 0)
+    return b
+
+def ising_elasso(X, gamma=0.25, n_lambda=30):
+    n, p = X.shape
+    B = np.zeros((p, p))
+    tau_hat = np.zeros(p)
+    for i in range(p):
+        Z, y = np.delete(X, i, axis=1), X[:, i]
+        lam_max = np.max(np.abs(Z.T @ (y - y.mean()))) / n
+        best, b = None, None
+        for lam in np.exp(np.linspace(np.log(lam_max), np.log(0.01 * lam_max), n_lambda)):
+            b = l1_logistic(Z, y, lam, b)
+            eta = b[0] + Z @ b[1:]
+            ll = np.sum(y * eta - np.log1p(np.exp(eta)))
+            k = int(np.sum(np.abs(b[1:]) &gt; 1e-6))
+            ebic = -2 * ll + k * np.log(n) + 2 * gamma * k * np.log(p - 1)
+            if best is None or ebic &lt; best[0]:
+                best = (ebic, b.copy())
+        B[i, np.arange(p) != i] = best[1][1:]
+        tau_hat[i] = best[1][0]
+    nz = (np.abs(B) &gt; 1e-6) &amp; (np.abs(B.T) &gt; 1e-6)  # AND 规则
+    return np.where(nz, (B + B.T) / 2, 0.0), tau_hat
+
+X = gibbs_ising(OMEGA, TAU, n=1000)
+print(&quot;各症状出现率：&quot;, np.round(X.mean(axis=0), 2))
+W, tau_hat = ising_elasso(X)
+iu = np.triu_indices(p, 1)
+true_e = {(i, j) for i, j in zip(*iu) if OMEGA[i, j] != 0}
+est_e = {(i, j) for i, j in zip(*iu) if W[i, j] != 0}
+print(f&quot;真实边 {len(true_e)} 条；估计边 {len(est_e)} 条，命中 {len(est_e &amp; true_e)}，虚假 {len(est_e - true_e)}&quot;)
+for (i, j) in sorted(true_e):
+    print(f&quot;  边 {i}-{j}: 真值 ω = {OMEGA[i, j]:.1f}，估计 {W[i, j]:.2f}&quot;)
+print(&quot;阈值估计 τ：&quot;, np.round(tau_hat, 2), &quot;（真值均为 −1.5）&quot;)
+
+import networkx as nx
+import matplotlib.pyplot as plt
+fig, axes = plt.subplots(1, 2, figsize=(10, 4.2))
+pos = nx.circular_layout(range(p))
+G = nx.Graph(); G.add_nodes_from(range(p))
+G.add_weighted_edges_from((i, j, W[i, j]) for i, j in zip(*iu) if W[i, j] != 0)
+for es, style, col in [([e for e in G.edges() if tuple(sorted(e)) in true_e], &quot;solid&quot;, &quot;#4477AA&quot;),
+                       ([e for e in G.edges() if tuple(sorted(e)) not in true_e], &quot;dashed&quot;, &quot;#CC6677&quot;)]:
+    nx.draw_networkx_edges(G, pos, edgelist=es, ax=axes[0], style=style, edge_color=col,
+                           width=[3 * abs(G[u][v][&quot;weight&quot;]) for u, v in es])
+nx.draw_networkx_nodes(G, pos, ax=axes[0], node_size=180, node_color=&quot;#DDDDDD&quot;, edgecolors=&quot;k&quot;)
+nx.draw_networkx_labels(G, {k: 1.2 * v for k, v in pos.items()}, labels={i: f&quot;S{i + 1}&quot; for i in range(p)}, ax=axes[0], font_size=9)
+axes[0].set_title(f&quot;Estimated Ising network (solid: true edge, dashed: false), n = {len(X)}&quot;, fontsize=9)
+axes[0].set_aspect(&quot;equal&quot;); axes[0].axis(&quot;off&quot;); axes[0].set_xlim(-1.4, 1.4); axes[0].set_ylim(-1.4, 1.4)
+te = sorted(true_e)
+x = np.arange(len(te))
+axes[1].bar(x - 0.2, [OMEGA[e] for e in te], 0.4, color=&quot;#BBBBBB&quot;, label=&quot;true omega&quot;)
+axes[1].bar(x + 0.2, [W[e] for e in te], 0.4, color=&quot;#4477AA&quot;, label=&quot;eLasso estimate&quot;)
+axes[1].set_xticks(x, [f&quot;S{i + 1}-S{j + 1}&quot; for i, j in te], fontsize=8)
+axes[1].set(ylabel=&quot;Edge weight (log-odds)&quot;, title=&quot;L1 shrinks edge weights toward 0&quot;)
+axes[1].legend(fontsize=8)
+plt.tight_layout(); plt.show()</textarea><div class="out" aria-live="polite"></div></div></section><nav class="pager"><a href="ex-symptom-networks-3.html"><small>上一个示例</small>EBICglasso——图形 LASSO 加 EBIC 选择惩罚参数</a><a href="ex-symptom-networks-5.html"><small>下一个示例</small>桥中心性——抑郁与焦虑症状之间的&quot;桥&quot;</a></nav></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

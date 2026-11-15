@@ -1,0 +1,192 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>k_nn(k)、相关指数 mu、r 与 Spearman rho——三类网络对照 · 生物医学网络科学</title><meta name="description" content="度相关性与网络结构的高阶统计 · 代码示例：k_nn(k)、相关指数 mu、r 与 Spearman rho——三类网络对照"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-theory"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html" aria-current="page">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory" open><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a><ol class="sub"><li><a href="degree-correlations.joint-degree-distribution.html"><span class="n">01</span>联合度分布与条件度分布</a></li><li><a href="degree-correlations.knn-function.html"><span class="n">02</span>邻居平均度函数与相关指数</a></li><li><a href="degree-correlations.assortativity-coefficient.html"><span class="n">03</span>度相关系数 r</a></li><li><a href="degree-correlations.structural-cutoff.html"><span class="n">04</span>结构截断与结构性异配</a></li><li><a href="degree-correlations.randomization-tests.html"><span class="n">05</span>度保持随机化检验</a></li><li><a href="degree-correlations.generating-correlated-networks.html"><span class="n">06</span>生成具有度相关的网络</a></li><li><a href="degree-correlations.rich-club.html"><span class="n">07</span>富人俱乐部系数及其归一化</a></li><li><a href="degree-correlations.clustering-spectrum.html"><span class="n">08</span>聚集谱 C(k) 与层次模块性</a></li><li><a href="degree-correlations.k-core.html"><span class="n">09</span>k-核分解</a></li><li><a href="degree-correlations.impact-on-dynamics.html"><span class="n">10</span>度相关对网络过程的影响</a></li><li><a href="degree-correlations.derivations.html"><span class="n">11</span>数学推导与算法</a></li><li><a href="degree-correlations.biomedical.html"><span class="n">12</span>生物医学应用</a></li><li><a href="degree-correlations.limitations.html"><span class="n">13</span>适用范围与常见误用</a></li></ol></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="code.html">代码库</a> <span class="sep">/</span> <a href="code.html#theory">网络基础理论</a> <span class="sep">/</span> <a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></nav><div class="eyebrow" style="margin-top:14px"><b>Example</b><span>02 / 09</span></div><h1>k_nn(k)、相关指数 mu、r 与 Spearman rho——三类网络对照</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></dd></div><div><dt>下载</dt><dd><a href="notebooks/degree-correlations.ipynb" download>Notebook</a> · <a href="notebooks/degree-correlations.py" download>.py</a></dd></div></dl></header><section class="block prose"><p>从同一个度序列（BA 模型，N=3000, m=2）出发，用 Xulvi-Brunet–Sokolov
+重连得到同配版与异配版。
+重连只交换边的端点，所以三张网络的度序列完全相同，差别只在“谁连谁”。
+对每张网络：对数分箱计算 k_nn(k)，在双对数坐标下拟合 k_nn ~
+k^mu；同时报告 r 与边两端度的 Spearman rho。 解读：mu、r、rho
+的符号一致；同配版在高 k 处 k_nn 走平甚至下降，这是结构截断的痕迹。</p>
+</section><section class="block"><h2><span class="tag">Output</span>输出图</h2><div class="ex-figs"><img src="gallery/degree-correlations-1-0.png" alt="k_nn(k)、相关指数 mu、r 与 Spearman rho——三类网络对照：输出图 1" loading="lazy"></div></section><section class="block"><h2><span class="tag">Output</span>文字输出</h2><pre class="ex-out">BA 原始: r = -0.081   Spearman rho = -0.299   拟合 mu = -0.15
+同配重连: r = +0.519   Spearman rho = +0.986   拟合 mu = +0.88
+异配重连: r = -0.274   Spearman rho = -0.956   拟合 mu = -0.65
+图已保存为 knn_three_networks.png</pre></section><section class="block prose"><h2><span class="tag">Code</span>代码</h2><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 从同一个度序列（BA 模型，N=3000, m=2）出发，用 Xulvi-Brunet–Sokolov 重连得到同配版与异配版。</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 重连只交换边的端点，所以三张网络的度序列完全相同，差别只在“谁连谁”。</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 对每张网络：对数分箱计算 k_nn(k)，在双对数坐标下拟合 k_nn ~ k^mu；同时报告 r 与边两端度的 Spearman rho。</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 解读：mu、r、rho 的符号一致；同配版在高 k 处 k_nn 走平甚至下降，这是结构截断的痕迹。</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> networkx <span class="im">as</span> nx</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>matplotlib.use(<span class="st">&quot;Agg&quot;</span>)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> spearmanr</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>plt.rcParams[<span class="st">&quot;font.sans-serif&quot;</span>] <span class="op">=</span> [<span class="st">&quot;PingFang SC&quot;</span>, <span class="st">&quot;Microsoft YaHei&quot;</span>, <span class="st">&quot;SimHei&quot;</span>, <span class="st">&quot;Noto Sans CJK SC&quot;</span>, <span class="st">&quot;DejaVu Sans&quot;</span>]</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>plt.rcParams[<span class="st">&quot;axes.unicode_minus&quot;</span>] <span class="op">=</span> <span class="va">False</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> xbs_rewire(G, n_swaps, mode, p<span class="op">=</span><span class="fl">1.0</span>, seed<span class="op">=</span><span class="dv">0</span>):</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;Xulvi-Brunet &amp; Sokolov 重连：随机取两条边，把四个端点按度排序后，</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co">    以概率 p 按 mode 确定性配对（assortative: 大配大、小配小；disassortative: 大配小），</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co">    以概率 1-p 随机配对。拒绝产生自环或重边的交换，因此保持简单图与度序列。&quot;&quot;&quot;</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    rng <span class="op">=</span> np.random.default_rng(seed)</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    G <span class="op">=</span> G.copy()</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    deg <span class="op">=</span> <span class="bu">dict</span>(G.degree())</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    edges <span class="op">=</span> <span class="bu">list</span>(G.edges())</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    done <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> done <span class="op">&lt;</span> n_swaps:</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>        i, j <span class="op">=</span> rng.choice(<span class="bu">len</span>(edges), <span class="dv">2</span>, replace<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>        (a, b), (c, d) <span class="op">=</span> edges[i], edges[j]</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>        nodes <span class="op">=</span> [a, b, c, d]</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="bu">len</span>(<span class="bu">set</span>(nodes)) <span class="op">&lt;</span> <span class="dv">4</span>:</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>            <span class="cf">continue</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> rng.random() <span class="op">&lt;</span> p:</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>            s <span class="op">=</span> <span class="bu">sorted</span>(nodes, key<span class="op">=</span><span class="kw">lambda</span> x: deg[x], reverse<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>            new <span class="op">=</span> [(s[<span class="dv">0</span>], s[<span class="dv">1</span>]), (s[<span class="dv">2</span>], s[<span class="dv">3</span>])] <span class="cf">if</span> mode <span class="op">==</span> <span class="st">&quot;assortative&quot;</span> <span class="cf">else</span> [(s[<span class="dv">0</span>], s[<span class="dv">3</span>]), (s[<span class="dv">1</span>], s[<span class="dv">2</span>])]</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>            rng.shuffle(nodes)</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>            new <span class="op">=</span> [(nodes[<span class="dv">0</span>], nodes[<span class="dv">1</span>]), (nodes[<span class="dv">2</span>], nodes[<span class="dv">3</span>])]</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="bu">any</span>(G.has_edge(<span class="op">*</span>e) <span class="cf">for</span> e <span class="kw">in</span> new):</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>            <span class="cf">continue</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>        G.remove_edges_from([(a, b), (c, d)])</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>        G.add_edges_from(new)</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>        edges[i], edges[j] <span class="op">=</span> new</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>        done <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> G</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> knn_logbinned(G, n_bins<span class="op">=</span><span class="dv">12</span>):</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>    deg <span class="op">=</span> <span class="bu">dict</span>(G.degree())</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>    knn_i <span class="op">=</span> nx.average_neighbor_degree(G)</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>    k <span class="op">=</span> np.array([deg[i] <span class="cf">for</span> i <span class="kw">in</span> G], <span class="bu">float</span>)</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>    kn <span class="op">=</span> np.array([knn_i[i] <span class="cf">for</span> i <span class="kw">in</span> G], <span class="bu">float</span>)</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>    bins <span class="op">=</span> np.unique(np.<span class="bu">round</span>(np.logspace(<span class="dv">0</span>, np.log10(k.<span class="bu">max</span>() <span class="op">+</span> <span class="dv">1</span>), n_bins)))</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>    kc, kv <span class="op">=</span> [], []</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> lo, hi <span class="kw">in</span> <span class="bu">zip</span>(bins[:<span class="op">-</span><span class="dv">1</span>], bins[<span class="dv">1</span>:]):</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>        sel <span class="op">=</span> (k <span class="op">&gt;=</span> lo) <span class="op">&amp;</span> (k <span class="op">&lt;</span> hi)</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> sel.<span class="bu">sum</span>() <span class="op">&gt;=</span> <span class="dv">3</span>:</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>            kc.append(k[sel].mean())</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>            kv.append(kn[sel].mean())</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.array(kc), np.array(kv)</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> edge_spearman(G):</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>    deg <span class="op">=</span> <span class="bu">dict</span>(G.degree())</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> [deg[u] <span class="cf">for</span> u, v <span class="kw">in</span> G.edges()] <span class="op">+</span> [deg[v] <span class="cf">for</span> u, v <span class="kw">in</span> G.edges()]</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> [deg[v] <span class="cf">for</span> u, v <span class="kw">in</span> G.edges()] <span class="op">+</span> [deg[u] <span class="cf">for</span> u, v <span class="kw">in</span> G.edges()]</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> spearmanr(x, y)[<span class="dv">0</span>]</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>G0 <span class="op">=</span> nx.barabasi_albert_graph(<span class="dv">3000</span>, <span class="dv">2</span>, seed<span class="op">=</span><span class="dv">3</span>)</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>M <span class="op">=</span> G0.number_of_edges()</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>nets <span class="op">=</span> {</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;BA 原始&quot;</span>: G0,</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;同配重连&quot;</span>: xbs_rewire(G0, <span class="dv">3</span> <span class="op">*</span> M, <span class="st">&quot;assortative&quot;</span>, p<span class="op">=</span><span class="fl">1.0</span>, seed<span class="op">=</span><span class="dv">1</span>),</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;异配重连&quot;</span>: xbs_rewire(G0, <span class="dv">3</span> <span class="op">*</span> M, <span class="st">&quot;disassortative&quot;</span>, p<span class="op">=</span><span class="fl">1.0</span>, seed<span class="op">=</span><span class="dv">2</span>),</span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">5</span>, <span class="dv">4</span>))</span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> name, G <span class="kw">in</span> nets.items():</span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>    <span class="cf">assert</span> <span class="bu">sorted</span>(d <span class="cf">for</span> _, d <span class="kw">in</span> G.degree()) <span class="op">==</span> <span class="bu">sorted</span>(d <span class="cf">for</span> _, d <span class="kw">in</span> G0.degree())</span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>    kc, kv <span class="op">=</span> knn_logbinned(G)</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>    mu <span class="op">=</span> np.polyfit(np.log(kc), np.log(kv), <span class="dv">1</span>)[<span class="dv">0</span>]</span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>    r <span class="op">=</span> nx.degree_assortativity_coefficient(G)</span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>    rho <span class="op">=</span> edge_spearman(G)</span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="sc">{</span>name<span class="sc">}</span><span class="ss">: r = </span><span class="sc">{</span>r<span class="sc">:+.3f}</span><span class="ss">   Spearman rho = </span><span class="sc">{</span>rho<span class="sc">:+.3f}</span><span class="ss">   拟合 mu = </span><span class="sc">{</span>mu<span class="sc">:+.2f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>    ax.loglog(kc, kv, <span class="st">&quot;o-&quot;</span>, label<span class="op">=</span><span class="ss">f&quot;</span><span class="sc">{</span>name<span class="sc">}</span><span class="ss"> (r=</span><span class="sc">{</span>r<span class="sc">:+.2f}</span><span class="ss">)&quot;</span>)</span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> np.array([d <span class="cf">for</span> _, d <span class="kw">in</span> G0.degree()], <span class="bu">float</span>)</span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a>ax.axhline((k<span class="op">**</span><span class="dv">2</span>).mean() <span class="op">/</span> k.mean(), color<span class="op">=</span><span class="st">&quot;gray&quot;</span>, ls<span class="op">=</span><span class="st">&quot;--&quot;</span>, label<span class="op">=</span><span class="st">&quot;中性预测 &lt;k²&gt;/&lt;k&gt;&quot;</span>)</span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">&quot;度 k&quot;</span>)</span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">&quot;k_nn(k)&quot;</span>)</span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a>ax.legend(fontsize<span class="op">=</span><span class="dv">8</span>)</span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a>fig.tight_layout()</span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>fig.savefig(<span class="st">&quot;knn_three_networks.png&quot;</span>, dpi<span class="op">=</span><span class="dv">120</span>)</span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;图已保存为 knn_three_networks.png&quot;</span>)</span></code></pre></div>
+</section><section class="block"><h2><span class="tag">Run</span>在浏览器中运行</h2><p class="small">首次加载 Python 环境约需 20–40 秒；可以修改参数后重新运行。</p><div class="cell"><div class="cell-head"><h3>k_nn(k)、相关指数 mu、r 与 Spearman rho——三类网络对照</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea id="degree-correlations-cell1" rows="30" spellcheck="false" aria-label="k_nn(k)、相关指数 mu、r 与 Spearman rho——三类网络对照 代码"># 从同一个度序列（BA 模型，N=3000, m=2）出发，用 Xulvi-Brunet–Sokolov 重连得到同配版与异配版。
+# 重连只交换边的端点，所以三张网络的度序列完全相同，差别只在“谁连谁”。
+# 对每张网络：对数分箱计算 k_nn(k)，在双对数坐标下拟合 k_nn ~ k^mu；同时报告 r 与边两端度的 Spearman rho。
+# 解读：mu、r、rho 的符号一致；同配版在高 k 处 k_nn 走平甚至下降，这是结构截断的痕迹。
+import numpy as np
+import networkx as nx
+import matplotlib
+matplotlib.use(&quot;Agg&quot;)
+import matplotlib.pyplot as plt
+from scipy.stats import spearmanr
+
+plt.rcParams[&quot;font.sans-serif&quot;] = [&quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;SimHei&quot;, &quot;Noto Sans CJK SC&quot;, &quot;DejaVu Sans&quot;]
+plt.rcParams[&quot;axes.unicode_minus&quot;] = False
+
+
+def xbs_rewire(G, n_swaps, mode, p=1.0, seed=0):
+    &quot;&quot;&quot;Xulvi-Brunet &amp; Sokolov 重连：随机取两条边，把四个端点按度排序后，
+    以概率 p 按 mode 确定性配对（assortative: 大配大、小配小；disassortative: 大配小），
+    以概率 1-p 随机配对。拒绝产生自环或重边的交换，因此保持简单图与度序列。&quot;&quot;&quot;
+    rng = np.random.default_rng(seed)
+    G = G.copy()
+    deg = dict(G.degree())
+    edges = list(G.edges())
+    done = 0
+    while done &lt; n_swaps:
+        i, j = rng.choice(len(edges), 2, replace=False)
+        (a, b), (c, d) = edges[i], edges[j]
+        nodes = [a, b, c, d]
+        if len(set(nodes)) &lt; 4:
+            continue
+        if rng.random() &lt; p:
+            s = sorted(nodes, key=lambda x: deg[x], reverse=True)
+            new = [(s[0], s[1]), (s[2], s[3])] if mode == &quot;assortative&quot; else [(s[0], s[3]), (s[1], s[2])]
+        else:
+            rng.shuffle(nodes)
+            new = [(nodes[0], nodes[1]), (nodes[2], nodes[3])]
+        if any(G.has_edge(*e) for e in new):
+            continue
+        G.remove_edges_from([(a, b), (c, d)])
+        G.add_edges_from(new)
+        edges[i], edges[j] = new
+        done += 1
+    return G
+
+
+def knn_logbinned(G, n_bins=12):
+    deg = dict(G.degree())
+    knn_i = nx.average_neighbor_degree(G)
+    k = np.array([deg[i] for i in G], float)
+    kn = np.array([knn_i[i] for i in G], float)
+    bins = np.unique(np.round(np.logspace(0, np.log10(k.max() + 1), n_bins)))
+    kc, kv = [], []
+    for lo, hi in zip(bins[:-1], bins[1:]):
+        sel = (k &gt;= lo) &amp; (k &lt; hi)
+        if sel.sum() &gt;= 3:
+            kc.append(k[sel].mean())
+            kv.append(kn[sel].mean())
+    return np.array(kc), np.array(kv)
+
+
+def edge_spearman(G):
+    deg = dict(G.degree())
+    x = [deg[u] for u, v in G.edges()] + [deg[v] for u, v in G.edges()]
+    y = [deg[v] for u, v in G.edges()] + [deg[u] for u, v in G.edges()]
+    return spearmanr(x, y)[0]
+
+
+G0 = nx.barabasi_albert_graph(3000, 2, seed=3)
+M = G0.number_of_edges()
+nets = {
+    &quot;BA 原始&quot;: G0,
+    &quot;同配重连&quot;: xbs_rewire(G0, 3 * M, &quot;assortative&quot;, p=1.0, seed=1),
+    &quot;异配重连&quot;: xbs_rewire(G0, 3 * M, &quot;disassortative&quot;, p=1.0, seed=2),
+}
+fig, ax = plt.subplots(figsize=(5, 4))
+for name, G in nets.items():
+    assert sorted(d for _, d in G.degree()) == sorted(d for _, d in G0.degree())
+    kc, kv = knn_logbinned(G)
+    mu = np.polyfit(np.log(kc), np.log(kv), 1)[0]
+    r = nx.degree_assortativity_coefficient(G)
+    rho = edge_spearman(G)
+    print(f&quot;{name}: r = {r:+.3f}   Spearman rho = {rho:+.3f}   拟合 mu = {mu:+.2f}&quot;)
+    ax.loglog(kc, kv, &quot;o-&quot;, label=f&quot;{name} (r={r:+.2f})&quot;)
+k = np.array([d for _, d in G0.degree()], float)
+ax.axhline((k**2).mean() / k.mean(), color=&quot;gray&quot;, ls=&quot;--&quot;, label=&quot;中性预测 &lt;k²&gt;/&lt;k&gt;&quot;)
+ax.set_xlabel(&quot;度 k&quot;)
+ax.set_ylabel(&quot;k_nn(k)&quot;)
+ax.legend(fontsize=8)
+fig.tight_layout()
+fig.savefig(&quot;knn_three_networks.png&quot;, dpi=120)
+print(&quot;图已保存为 knn_three_networks.png&quot;)</textarea><div class="out" aria-live="polite"></div></div></section><nav class="pager"><a href="ex-degree-correlations-0.html"><small>上一个示例</small>按定义手算度相关系数 r 与 k_nn(k)，并与 NetworkX 对照</a><a href="ex-degree-correlations-2.html"><small>下一个示例</small>结构截断与“伪异配”——简单图约束本身就会产生负的 r</a></nav></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

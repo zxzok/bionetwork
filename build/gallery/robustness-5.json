@@ -1,0 +1,10 @@
+{
+ "topic": "robustness",
+ "index": 5,
+ "title": "相互依存 ER 网络的级联（Buldyrev 等 2010）",
+ "hash": "90e2195e8bd7b55f9edc89f7522c76f5ff55440d",
+ "ok": true,
+ "figures": 1,
+ "stdout": "理论：k*p_c = 2.4554，跳变处 k*mu_c = 1.2564\np=0.90  理论 mu=0.838  模拟 mu=0.837\np=0.75  理论 mu=0.637  模拟 mu=0.634\np=0.66  理论 mu=0.482  模拟 mu=0.472\np=0.62  理论 mu=0.369  模拟 mu=0.365\np=0.60  理论 mu=0.000  模拟 mu=0.000\np=0.55  理论 mu=0.000  模拟 mu=0.000",
+ "stderr": ""
+}

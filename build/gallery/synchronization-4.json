@@ -1,0 +1,10 @@
+{
+ "topic": "synchronization",
+ "index": 4,
+ "title": "常见图的拉普拉斯谱、特征值比与谱界",
+ "hash": "2a928d95f1e5eaf6c75c14f09f6bfb9229f5ee09",
+ "ok": true,
+ "figures": 1,
+ "stdout": "complete  mu2=10.000 muN=10.000 比值=1.00 | Fiedler 上界 10.000 | k_max+1=10\nstar      mu2=1.000 muN=10.000 比值=10.00 | Fiedler 上界 1.111 | k_max+1=10\nring      mu2=0.382 muN=4.000 比值=10.47 | Fiedler 上界 2.222 | k_max+1=3\npath      mu2=0.098 muN=3.902 比值=39.86 | Fiedler 上界 1.111 | k_max+1=3\n环        mu2=0.382  mu_N/mu_2=10.47  特征值相对原环均不减: True\n+1 条捷径   mu2=0.382  mu_N/mu_2=12.73  特征值相对原环均不减: True\n+2 条捷径   mu2=0.697  mu_N/mu_2=7.34  特征值相对原环均不减: True\nN=5000 WS 网络的 mu2（稀疏求解）= 0.1797",
+ "stderr": ""
+}

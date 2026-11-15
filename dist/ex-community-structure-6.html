@@ -1,0 +1,127 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>随机块模型与可检测性阈值 · 生物医学网络科学</title><meta name="description" content="社团结构与社区发现 · 代码示例：随机块模型与可检测性阈值"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-theory"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html" aria-current="page">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory" open><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a><ol class="sub"><li><a href="community-structure.weak-ties.html"><span class="n">01</span>弱关系理论与社团的定义</a></li><li><a href="community-structure.hypotheses-definitions.html"><span class="n">02</span>社团的基本假设与形式化定义</a></li><li><a href="community-structure.modularity.html"><span class="n">03</span>模块度</a></li><li><a href="community-structure.girvan-newman.html"><span class="n">04</span>Girvan–Newman 算法与边介数</a></li><li><a href="community-structure.louvain-leiden.html"><span class="n">05</span>Louvain 与 Leiden 算法</a></li><li><a href="community-structure.spectral-hierarchical.html"><span class="n">06</span>谱方法与层次聚类</a></li><li><a href="community-structure.stochastic-block-model.html"><span class="n">07</span>随机块模型与统计推断</a></li><li><a href="community-structure.infomap.html"><span class="n">08</span>映射方程与 Infomap</a></li><li><a href="community-structure.detectability.html"><span class="n">09</span>可检测性阈值</a></li><li><a href="community-structure.overlapping-communities.html"><span class="n">10</span>重叠社团</a></li><li><a href="community-structure.multiresolution-consensus.html"><span class="n">11</span>多分辨率与共识聚类</a></li><li><a href="community-structure.multilayer-temporal.html"><span class="n">12</span>多层与时变网络的社团</a></li><li><a href="community-structure.method-comparison.html"><span class="n">13</span>社团发现方法的比较</a></li><li><a href="community-structure.partition-comparison.html"><span class="n">14</span>划分比较与基准检验</a></li><li><a href="community-structure.validation.html"><span class="n">15</span>社团结果的验证与解读</a></li><li><a href="community-structure.derivations.html"><span class="n">16</span>数学推导与算法</a></li><li><a href="community-structure.frontiers.html"><span class="n">17</span>研究前沿与开放问题</a></li><li><a href="community-structure.biomedical.html"><span class="n">18</span>生物医学应用</a></li><li><a href="community-structure.limitations.html"><span class="n">19</span>适用范围与常见误用</a></li></ol></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="code.html">代码库</a> <span class="sep">/</span> <a href="code.html#theory">网络基础理论</a> <span class="sep">/</span> <a href="community-structure.html">社团结构与社区发现</a></nav><div class="eyebrow" style="margin-top:14px"><b>Example</b><span>07 / 15</span></div><h1>随机块模型与可检测性阈值</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="community-structure.html">社团结构与社区发现</a></dd></div><div><dt>下载</dt><dd><a href="notebooks/community-structure.ipynb" download>Notebook</a> · <a href="notebooks/community-structure.py" download>.py</a></dd></div></dl></header><section class="block prose"><p>用两组等大的种植划分模型（planted partition
+SBM）生成稀疏网络：组内连边概率 c_in/n，组间 c_out/n， 平均度 c = (c_in
++ c_out)/2 固定为 5。理论（Decelle 等 2011）给出：当 |c_in - c_out| ≤
+2√c 时， 任何算法都无法以优于随机猜测的准确率恢复分组。这里用 Bethe
+Hessian 谱方法 H(r) = (r²-1)I - rA + D，r = √c（Saade 等
+2014）与模块度矩阵谱二分恢复分组， 用“重叠度” overlap = 2·(正确比例) -
+1（0 为随机猜测，1 为完全恢复）衡量。 输出：overlap 在阈值（Δc/2√c =
+1）附近由约 0 开始上升；模块度谱方法在稀疏网络上通常更差。</p>
+</section><section class="block"><h2><span class="tag">Output</span>输出图</h2><div class="ex-figs"><img src="gallery/community-structure-6-0.png" alt="随机块模型与可检测性阈值：输出图 1" loading="lazy"></div></section><section class="block"><h2><span class="tag">Output</span>文字输出</h2><pre class="ex-out">Δc/2√c = 0.5  (c_in=6.12, c_out=3.88)  overlap: Bethe Hessian 0.01, 模块度谱 0.01
+Δc/2√c = 0.9  (c_in=7.01, c_out=2.99)  overlap: Bethe Hessian 0.05, 模块度谱 0.09
+Δc/2√c = 1.1  (c_in=7.46, c_out=2.54)  overlap: Bethe Hessian 0.27, 模块度谱 0.06
+Δc/2√c = 1.5  (c_in=8.35, c_out=1.65)  overlap: Bethe Hessian 0.79, 模块度谱 0.71
+Δc/2√c = 2.0  (c_in=9.47, c_out=0.53)  overlap: Bethe Hessian 0.97, 模块度谱 0.96</pre></section><section class="block prose"><h2><span class="tag">Code</span>代码</h2><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 用两组等大的种植划分模型（planted partition SBM）生成稀疏网络：组内连边概率 c_in/n，组间 c_out/n，</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 平均度 c = (c_in + c_out)/2 固定为 5。理论（Decelle 等 2011）给出：当 |c_in - c_out| ≤ 2√c 时，</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 任何算法都无法以优于随机猜测的准确率恢复分组。这里用 Bethe Hessian 谱方法</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># H(r) = (r²-1)I - rA + D，r = √c（Saade 等 2014）与模块度矩阵谱二分恢复分组，</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 用“重叠度” overlap = 2·(正确比例) - 1（0 为随机猜测，1 为完全恢复）衡量。</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># 输出：overlap 在阈值（Δc/2√c = 1）附近由约 0 开始上升；模块度谱方法在稀疏网络上通常更差。</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> networkx <span class="im">as</span> nx</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> scipy.sparse <span class="im">as</span> sp</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.sparse.linalg <span class="im">import</span> LinearOperator, eigsh</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>n, c <span class="op">=</span> <span class="dv">4000</span>, <span class="fl">5.0</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>half <span class="op">=</span> n <span class="op">//</span> <span class="dv">2</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>truth <span class="op">=</span> np.r_[np.zeros(half, <span class="bu">int</span>), np.ones(half, <span class="bu">int</span>)]</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>thr <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> np.sqrt(c)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> overlap(labels):</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    acc <span class="op">=</span> (labels <span class="op">==</span> truth).mean()</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="dv">2</span> <span class="op">*</span> <span class="bu">max</span>(acc, <span class="dv">1</span> <span class="op">-</span> acc) <span class="op">-</span> <span class="dv">1</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>curve <span class="op">=</span> []                                            <span class="co"># 存下结果用于作图</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> ratio <span class="kw">in</span> [<span class="fl">0.5</span>, <span class="fl">0.9</span>, <span class="fl">1.1</span>, <span class="fl">1.5</span>, <span class="fl">2.0</span>]:</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    dc <span class="op">=</span> ratio <span class="op">*</span> thr                                  <span class="co"># Δc = c_in - c_out</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    c_in, c_out <span class="op">=</span> c <span class="op">+</span> dc <span class="op">/</span> <span class="dv">2</span>, c <span class="op">-</span> dc <span class="op">/</span> <span class="dv">2</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    res_bh, res_mod <span class="op">=</span> [], []</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> seed <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">3</span>):</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>        G <span class="op">=</span> nx.stochastic_block_model([half, half], [[c_in <span class="op">/</span> n, c_out <span class="op">/</span> n], [c_out <span class="op">/</span> n, c_in <span class="op">/</span> n]], seed<span class="op">=</span>seed)</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>        A <span class="op">=</span> nx.to_scipy_sparse_array(G, nodelist<span class="op">=</span><span class="bu">range</span>(n), <span class="bu">format</span><span class="op">=</span><span class="st">&quot;csr&quot;</span>, dtype<span class="op">=</span><span class="bu">float</span>)</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>        k <span class="op">=</span> np.asarray(A.<span class="bu">sum</span>(<span class="dv">1</span>)).ravel()</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>        r <span class="op">=</span> np.sqrt(k.mean())</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>        H <span class="op">=</span> (r <span class="op">**</span> <span class="dv">2</span> <span class="op">-</span> <span class="dv">1</span>) <span class="op">*</span> sp.identity(n) <span class="op">-</span> r <span class="op">*</span> A <span class="op">+</span> sp.diags(k)</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>        vals, vecs <span class="op">=</span> eigsh(H, k<span class="op">=</span><span class="dv">2</span>, which<span class="op">=</span><span class="st">&quot;SA&quot;</span>)</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>        v <span class="op">=</span> vecs[:, np.argsort(vals)[<span class="dv">1</span>]]               <span class="co"># 第二小特征值的特征向量</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>        res_bh.append(overlap((v <span class="op">&gt;</span> <span class="dv">0</span>).astype(<span class="bu">int</span>)))</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>        <span class="co"># 模块度矩阵 B = A - k k^T/2m 的主特征向量（隐式矩阵乘法，不显式构造稠密 B）</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>        m2 <span class="op">=</span> k.<span class="bu">sum</span>()</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>        Bop <span class="op">=</span> LinearOperator((n, n), matvec<span class="op">=</span><span class="kw">lambda</span> x: A <span class="op">@</span> x <span class="op">-</span> k <span class="op">*</span> (k <span class="op">@</span> x) <span class="op">/</span> m2, dtype<span class="op">=</span><span class="bu">float</span>)</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>        _, u <span class="op">=</span> eigsh(Bop, k<span class="op">=</span><span class="dv">1</span>, which<span class="op">=</span><span class="st">&quot;LA&quot;</span>)</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>        res_mod.append(overlap((u[:, <span class="dv">0</span>] <span class="op">&gt;</span> <span class="dv">0</span>).astype(<span class="bu">int</span>)))</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Δc/2√c = </span><span class="sc">%.1f</span><span class="st">  (c_in=</span><span class="sc">%.2f</span><span class="st">, c_out=</span><span class="sc">%.2f</span><span class="st">)  overlap: Bethe Hessian </span><span class="sc">%.2f</span><span class="st">, 模块度谱 </span><span class="sc">%.2f</span><span class="st">&quot;</span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>          <span class="op">%</span> (ratio, c_in, c_out, np.mean(res_bh), np.mean(res_mod)))</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>    curve.append((ratio, np.mean(res_bh), np.mean(res_mod)))</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="co"># 作图：overlap 随 Δc/2√c 的变化，竖线为可检测性阈值</span></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>rs, ob, om <span class="op">=</span> <span class="bu">zip</span>(<span class="op">*</span>curve)</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="fl">6.4</span>, <span class="fl">4.2</span>))</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>ax.plot(rs, ob, <span class="st">&quot;o-&quot;</span>, label<span class="op">=</span><span class="st">&quot;Bethe Hessian&quot;</span>)</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>ax.plot(rs, om, <span class="st">&quot;s--&quot;</span>, label<span class="op">=</span><span class="st">&quot;modularity matrix&quot;</span>)</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>ax.axvline(<span class="dv">1</span>, color<span class="op">=</span><span class="st">&quot;0.5&quot;</span>, ls<span class="op">=</span><span class="st">&quot;:&quot;</span>, label<span class="op">=</span><span class="st">&quot;detectability threshold&quot;</span>)</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">&quot;(c_in - c_out) / (2 sqrt(c))&quot;</span>)<span class="op">;</span> ax.set_ylabel(<span class="st">&quot;overlap (0 = chance, 1 = perfect)&quot;</span>)</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>ax.set_ylim(<span class="op">-</span><span class="fl">0.05</span>, <span class="fl">1.05</span>)<span class="op">;</span> ax.legend(fontsize<span class="op">=</span><span class="dv">8</span>)</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">&quot;Sparse SBM (n = </span><span class="sc">%d</span><span class="st">, c = %.0f): recovery starts at the threshold&quot;</span> <span class="op">%</span> (n, c), fontsize<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()<span class="op">;</span> plt.show()</span></code></pre></div>
+</section><section class="block"><h2><span class="tag">Run</span>在浏览器中运行</h2><p class="small">首次加载 Python 环境约需 20–40 秒；可以修改参数后重新运行。</p><div class="cell"><div class="cell-head"><h3>随机块模型与可检测性阈值</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea id="community-structure-cell6" rows="30" spellcheck="false" aria-label="随机块模型与可检测性阈值 代码"># 用两组等大的种植划分模型（planted partition SBM）生成稀疏网络：组内连边概率 c_in/n，组间 c_out/n，
+# 平均度 c = (c_in + c_out)/2 固定为 5。理论（Decelle 等 2011）给出：当 |c_in - c_out| ≤ 2√c 时，
+# 任何算法都无法以优于随机猜测的准确率恢复分组。这里用 Bethe Hessian 谱方法
+# H(r) = (r²-1)I - rA + D，r = √c（Saade 等 2014）与模块度矩阵谱二分恢复分组，
+# 用“重叠度” overlap = 2·(正确比例) - 1（0 为随机猜测，1 为完全恢复）衡量。
+# 输出：overlap 在阈值（Δc/2√c = 1）附近由约 0 开始上升；模块度谱方法在稀疏网络上通常更差。
+import networkx as nx
+import numpy as np
+import scipy.sparse as sp
+from scipy.sparse.linalg import LinearOperator, eigsh
+
+n, c = 4000, 5.0
+half = n // 2
+truth = np.r_[np.zeros(half, int), np.ones(half, int)]
+thr = 2 * np.sqrt(c)
+
+
+def overlap(labels):
+    acc = (labels == truth).mean()
+    return 2 * max(acc, 1 - acc) - 1
+
+
+curve = []                                            # 存下结果用于作图
+for ratio in [0.5, 0.9, 1.1, 1.5, 2.0]:
+    dc = ratio * thr                                  # Δc = c_in - c_out
+    c_in, c_out = c + dc / 2, c - dc / 2
+    res_bh, res_mod = [], []
+    for seed in range(3):
+        G = nx.stochastic_block_model([half, half], [[c_in / n, c_out / n], [c_out / n, c_in / n]], seed=seed)
+        A = nx.to_scipy_sparse_array(G, nodelist=range(n), format=&quot;csr&quot;, dtype=float)
+        k = np.asarray(A.sum(1)).ravel()
+        r = np.sqrt(k.mean())
+        H = (r ** 2 - 1) * sp.identity(n) - r * A + sp.diags(k)
+        vals, vecs = eigsh(H, k=2, which=&quot;SA&quot;)
+        v = vecs[:, np.argsort(vals)[1]]               # 第二小特征值的特征向量
+        res_bh.append(overlap((v &gt; 0).astype(int)))
+        # 模块度矩阵 B = A - k k^T/2m 的主特征向量（隐式矩阵乘法，不显式构造稠密 B）
+        m2 = k.sum()
+        Bop = LinearOperator((n, n), matvec=lambda x: A @ x - k * (k @ x) / m2, dtype=float)
+        _, u = eigsh(Bop, k=1, which=&quot;LA&quot;)
+        res_mod.append(overlap((u[:, 0] &gt; 0).astype(int)))
+    print(&quot;Δc/2√c = %.1f  (c_in=%.2f, c_out=%.2f)  overlap: Bethe Hessian %.2f, 模块度谱 %.2f&quot;
+          % (ratio, c_in, c_out, np.mean(res_bh), np.mean(res_mod)))
+    curve.append((ratio, np.mean(res_bh), np.mean(res_mod)))
+
+# 作图：overlap 随 Δc/2√c 的变化，竖线为可检测性阈值
+import matplotlib.pyplot as plt
+
+rs, ob, om = zip(*curve)
+fig, ax = plt.subplots(figsize=(6.4, 4.2))
+ax.plot(rs, ob, &quot;o-&quot;, label=&quot;Bethe Hessian&quot;)
+ax.plot(rs, om, &quot;s--&quot;, label=&quot;modularity matrix&quot;)
+ax.axvline(1, color=&quot;0.5&quot;, ls=&quot;:&quot;, label=&quot;detectability threshold&quot;)
+ax.set_xlabel(&quot;(c_in - c_out) / (2 sqrt(c))&quot;); ax.set_ylabel(&quot;overlap (0 = chance, 1 = perfect)&quot;)
+ax.set_ylim(-0.05, 1.05); ax.legend(fontsize=8)
+ax.set_title(&quot;Sparse SBM (n = %d, c = %.0f): recovery starts at the threshold&quot; % (n, c), fontsize=10)
+plt.tight_layout(); plt.show()</textarea><div class="out" aria-live="polite"></div></div></section><nav class="pager"><a href="ex-community-structure-5.html"><small>上一个示例</small>划分之间的比较——NMI、ARI 与信息变差（VI）</a><a href="ex-community-structure-7.html"><small>下一个示例</small>标准 SBM 与度修正 SBM（DC-SBM）在空手道网络上的最大似然划分</a></nav></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

@@ -1,0 +1,10 @@
+{
+ "topic": "reproducible-research",
+ "index": 1,
+ "title": "随机种子敏感性——社团划分的可重复程度",
+ "hash": "403f0e283a2147de6390aae4036f3dbb424caec0",
+ "ok": true,
+ "figures": 1,
+ "stdout": "社团数范围 4–5；Q 范围 0.377–0.423；与种子 0 的 ARI 范围 0.63–1.00",
+ "stderr": ""
+}

@@ -1,0 +1,139 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>网络中的模块度与社团结构 · 生物医学网络科学</title><meta name="description" content="论文精读：Modularity and community structure in networks"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-theory"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html" aria-current="page">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory" open><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html" aria-current="page">社团结构与社区发现</a><ol class="sub"><li><a href="community-structure.weak-ties.html"><span class="n">01</span>弱关系理论与社团的定义</a></li><li><a href="community-structure.hypotheses-definitions.html"><span class="n">02</span>社团的基本假设与形式化定义</a></li><li><a href="community-structure.modularity.html"><span class="n">03</span>模块度</a></li><li><a href="community-structure.girvan-newman.html"><span class="n">04</span>Girvan–Newman 算法与边介数</a></li><li><a href="community-structure.louvain-leiden.html"><span class="n">05</span>Louvain 与 Leiden 算法</a></li><li><a href="community-structure.spectral-hierarchical.html"><span class="n">06</span>谱方法与层次聚类</a></li><li><a href="community-structure.stochastic-block-model.html"><span class="n">07</span>随机块模型与统计推断</a></li><li><a href="community-structure.infomap.html"><span class="n">08</span>映射方程与 Infomap</a></li><li><a href="community-structure.detectability.html"><span class="n">09</span>可检测性阈值</a></li><li><a href="community-structure.overlapping-communities.html"><span class="n">10</span>重叠社团</a></li><li><a href="community-structure.multiresolution-consensus.html"><span class="n">11</span>多分辨率与共识聚类</a></li><li><a href="community-structure.multilayer-temporal.html"><span class="n">12</span>多层与时变网络的社团</a></li><li><a href="community-structure.method-comparison.html"><span class="n">13</span>社团发现方法的比较</a></li><li><a href="community-structure.partition-comparison.html"><span class="n">14</span>划分比较与基准检验</a></li><li><a href="community-structure.validation.html"><span class="n">15</span>社团结果的验证与解读</a></li><li><a href="community-structure.derivations.html"><span class="n">16</span>数学推导与算法</a></li><li><a href="community-structure.frontiers.html"><span class="n">17</span>研究前沿与开放问题</a></li><li><a href="community-structure.biomedical.html"><span class="n">18</span>生物医学应用</a></li><li><a href="community-structure.limitations.html"><span class="n">19</span>适用范围与常见误用</a></li></ol></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><div class="lec-grid"><div style="min-width:0"><div class="lec-head"><nav class="crumb"><a href="papers.html">文献知识库</a> › 网络基础理论</nav><div class="eyebrow"><b>经典论文</b><span>难度：进阶</span></div><h1>网络中的模块度与社团结构</h1><p class="porig big">Modularity and community structure in networks</p><p class="small">Newman MEJ · <i>PNAS</i> 2006 · <a href="https://doi.org/10.1073/pnas.0601602103" target="_blank" rel="noopener">DOI: 10.1073/pnas.0601602103</a></p><div class="chips"><span class="chip">模块度</span><span class="chip">模块度矩阵</span><span class="chip">谱方法</span><span class="chip">主特征向量</span><span class="chip">社团发现</span><span class="chip">不可分子图</span></div><div class="objectives"><h2>一句话</h2><p style="margin:0">把模块度写成模块度矩阵的二次型，按其主特征向量的正负号二分网络，得到快速而高质量的社团发现算法。</p><p class="small" style="margin:8px 0 0">相关专题：<a href="community-structure.html">社团结构与社区发现</a></p></div></div><section class="block prose" id="notes"><h2 id="一句话看懂">一句话看懂</h2>
+<p>模块度可以写成
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mo>∝</mo><msup><mi mathvariant="bold-italic">𝒔</mi><mi>⊤</mi></msup><mi>B</mi><mi mathvariant="bold-italic">𝒔</mi></mrow><annotation encoding="application/x-tex">Q\propto\mathbf s^\top B\mathbf s</annotation></semantics></math>，其中
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+是“实际连边减去随机期望”的模块度矩阵。于是“找最好的二分”近似为“找
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+的最大特征值对应的特征向量，按分量正负分组”。如果
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+没有正特征值，算法会告诉你：这个网络不该再分。</p>
+<h2 id="研究背景与问题">研究背景与问题</h2>
+<p>寻找网络中的社团有两条传统：计算机科学中的<strong>图划分</strong>（graph
+partitioning），通常事先知道要分几组、每组多大，目标是让组间边最少；社会学和物理学中的<strong>社团发现</strong>，组数和大小都未知，而且网络可能根本没有好的划分。</p>
+<p>如果直接最小化组间边数又不限制组的大小，最优解永远是“全部放在一组”。Newman
+与
+Girvan（2004）提出的模块度解决了这个问题：好的划分不是组间边少，而是组间边<strong>比随机期望少</strong>。用模拟退火最大化模块度效果很好，但对大网络太慢。本文要回答：能否找到既快又好的模块度优化方法？</p>
+<h2 id="核心思想与方法">核心思想与方法</h2>
+<p>设网络有
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+个节点、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+条边，节点
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>
+的度为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>k</mi><mi>i</mi></msub><annotation encoding="application/x-tex">k_i</annotation></semantics></math>。在保持度的随机网络中，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>
+与
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math>
+之间的期望边数是
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>k</mi><mi>i</mi></msub><msub><mi>k</mi><mi>j</mi></msub><mi>/</mi><mn>2</mn><mi>m</mi></mrow><annotation encoding="application/x-tex">k_ik_j/2m</annotation></semantics></math>。对二分，令
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mi>i</mi></msub><mo>=</mo><mi>±</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">s_i=\pm1</annotation></semantics></math>
+表示节点属于哪一组。</p>
+<div class="callout-def">
+<p><strong>模块度矩阵</strong>：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>B</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><msub><mi>A</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>−</mo><mstyle displaystyle="true"><mfrac><mrow><msub><mi>k</mi><mi>i</mi></msub><msub><mi>k</mi><mi>j</mi></msub></mrow><mrow><mn>2</mn><mi>m</mi></mrow></mfrac></mstyle></mrow><annotation encoding="application/x-tex">B_{ij}=A_{ij}-\dfrac{k_ik_j}{2m}</annotation></semantics></math>。它是实对称矩阵，每行每列之和为零，因此
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>,</mo><mi>…</mi><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(1,1,\dots,1)</annotation></semantics></math>
+总是它特征值为 0 的特征向量。</p>
+<p><strong>模块度的二次型</strong>：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mn>4</mn><mi>m</mi></mrow></mfrac></mstyle><msub><mo>∑</mo><mrow><mi>i</mi><mi>j</mi></mrow></msub><msub><mi>B</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><msub><mi>s</mi><mi>i</mi></msub><msub><mi>s</mi><mi>j</mi></msub><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mn>4</mn><mi>m</mi></mrow></mfrac></mstyle><msup><mi mathvariant="bold-italic">𝒔</mi><mi>⊤</mi></msup><mi>B</mi><mi mathvariant="bold-italic">𝒔</mi></mrow><annotation encoding="application/x-tex">Q=\dfrac{1}{4m}\sum_{ij}B_{ij}s_is_j=\dfrac{1}{4m}\mathbf s^\top B\mathbf s</annotation></semantics></math>。</p>
+</div>
+<p>把
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="bold-italic">𝒔</mi><annotation encoding="application/x-tex">\mathbf s</annotation></semantics></math>
+展开为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+的特征向量的线性组合，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math>
+正比于
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∑</mo><mi>i</mi></msub><mo stretchy="false" form="prefix">(</mo><msubsup><mi mathvariant="bold-italic">𝒖</mi><mi>i</mi><mi>⊤</mi></msubsup><mi mathvariant="bold-italic">𝒔</mi><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><msub><mi>β</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\sum_i(\mathbf u_i^\top\mathbf s)^2\beta_i</annotation></semantics></math>，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>β</mi><mi>i</mi></msub><annotation encoding="application/x-tex">\beta_i</annotation></semantics></math>
+是特征值。若
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="bold-italic">𝒔</mi><annotation encoding="application/x-tex">\mathbf s</annotation></semantics></math>
+可以取任意实向量，最优解就是让它平行于主特征向量
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="bold-italic">𝒖</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\mathbf u_1</annotation></semantics></math>。但
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>s</mi><mi>i</mi></msub><annotation encoding="application/x-tex">s_i</annotation></semantics></math>
+只能取
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>±</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">\pm1</annotation></semantics></math>，作者采用与谱划分相同的近似：<strong>按
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="bold-italic">𝒖</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\mathbf u_1</annotation></semantics></math>
+各分量的正负号分组</strong>。</p>
+<p>这个方法有三个好的性质：</p>
+<ol type="1">
+<li><strong>不需要预设组的大小</strong>；</li>
+<li><strong>会拒绝划分</strong>：若
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+没有正特征值，主特征向量就是全 1
+向量，算法把所有节点留在一组。作者称这样的网络为“不可分的”（indivisible），并把社团定义为不可分的子图；</li>
+<li><strong>分量的大小有意义</strong>：分量绝对值大的节点对
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math>
+贡献大，接近 0 的节点处在两个社团的边界上。</li>
+</ol>
+<p><strong>多于两个社团</strong>：反复二分。关键细节是不能简单删掉组间边后对子图重算，因为那样度会改变，优化的就不是原网络的模块度。正确做法是对子图
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>
+使用广义模块度矩阵
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>B</mi><mrow><mi>i</mi><mi>j</mi></mrow><mrow><mo stretchy="false" form="prefix">(</mo><mi>g</mi><mo stretchy="false" form="postfix">)</mo></mrow></msubsup><mo>=</mo><msub><mi>B</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>−</mo><msub><mi>δ</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><msub><mo>∑</mo><mrow><mi>l</mi><mo>∈</mo><mi>g</mi></mrow></msub><msub><mi>B</mi><mrow><mi>i</mi><mi>l</mi></mrow></msub></mrow><annotation encoding="application/x-tex">B^{(g)}_{ij}=B_{ij}-\delta_{ij}\sum_{l\in g}B_{il}</annotation></semantics></math>，当某次划分对
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math>
+的贡献不为正时停止。</p>
+<p><strong>微调</strong>：谱二分之后，再用类似 Kernighan–Lin
+的方法逐个移动节点，使
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math>
+进一步增大。作者报告这一步通常只让
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math>
+再提高几个百分点，但正是这几个百分点让方法从“好”变成“优秀”。</p>
+<h2 id="主要发现">主要发现</h2>
+<ol type="1">
+<li><strong>空手道俱乐部</strong>：一次二分的结果与俱乐部实际分裂的两派完全一致；主特征向量中权重最大的几个节点对应两派的核心人物。</li>
+<li><strong>与其他算法比较</strong>（表
+1，六个网络）：本文方法得到的模块度在所有网络上都高于 Girvan–Newman
+算法和 Clauset–Newman–Moore 贪心算法；与 Duch–Arenas
+极值优化相比，千个节点以下的网络上相差不到千分之几，在更大的网络上更好。例如在约
+2.7 万节点的凝聚态物理合作网络上，三种方法的
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math>
+分别为 0.668（贪心）、0.679（极值优化）和 0.723（本文）。</li>
+<li><strong>政治书籍共购网络</strong>（105 本书）：找到 4
+个社团，其中一个几乎全是自由派书籍，一个几乎全是保守派，中间派书籍大多落在另外两个社团中。</li>
+<li><strong>政治博客网络</strong>（1225
+个博客）：最优划分恰好是两个社团，一个 638 个节点中 97% 是保守派，另一个
+587 个节点中 93% 是自由派，且两组都不可再分。</li>
+<li><strong>速度</strong>：稀疏网络上运行时间约为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false" form="prefix">(</mo><msup><mi>n</mi><mn>2</mn></msup><mrow><mi mathvariant="normal">log</mi><mo>&#8289;</mo></mrow><mi>n</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">O(n^2\log n)</annotation></semantics></math>，最大的合作网络在当时的个人计算机上约
+20 分钟完成。</li>
+</ol>
+<h2 id="怎样读这篇论文">怎样读这篇论文</h2>
+<p>全文只有 6 页，推导简洁，是理解“谱方法”最好的入口。建议先读式
+(1)–(3)，自己补上从
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math>
+的定义到二次型的一步代数；然后读“不可分”的讨论，这是本文最有思想深度的部分；再看图
+2（空手道俱乐部，节点灰度表示特征向量分量）和表
+1。关于复杂度的段落可以快速读过。</p>
+<h2 id="局限与后续工作">局限与后续工作</h2>
+<ul>
+<li><strong>模块度本身的问题</strong>：Fortunato 与
+Barthélemy（2007）证明了模块度的<strong>分辨率极限</strong>：在大网络中，规模小于约
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mrow><mn>2</mn><mi>m</mi></mrow></msqrt><annotation encoding="application/x-tex">\sqrt{2m}</annotation></semantics></math>
+量级的社团可能被合并，即使它们是明显的团块。Good
+等（2010）进一步发现，模块度的地形有大量接近最优的“高原”，不同划分的
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math>
+相差无几但结构差别很大。</li>
+<li><strong>随机网络也有高模块度</strong>：没有任何社团结构的随机图，其最大模块度也可能明显大于零，所以“<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math>
+较大”本身不能证明网络有社团。</li>
+<li><strong>规模</strong>：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false" form="prefix">(</mo><msup><mi>n</mi><mn>2</mn></msup><mrow><mi mathvariant="normal">log</mi><mo>&#8289;</mo></mrow><mi>n</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">O(n^2\log n)</annotation></semantics></math>
+对百万级网络仍然太慢。两年后的 <a
+href="paper-blondel2008_louvain.html">Louvain 算法</a>
+把规模推到了上亿节点。</li>
+<li><strong>从优化到推断</strong>：随机块模型（Karrer 与 Newman
+2011）等统计推断方法可以做模型选择、给出不确定性，并避免在无结构的网络中“找到”社团。Newman（2016）还证明了模块度最大化与某种随机块模型的极大似然等价。</li>
+</ul>
+<h2 id="关联知识">关联知识</h2>
+<ul>
+<li><a
+href="community-structure.spectral-hierarchical.html">谱方法与层次聚类</a>和<a
+href="community-structure.derivations.html">数学推导与算法</a>中“从模块度到谱二分”完整推导了本文的方法，包括
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="bold-italic">𝒔</mi><mi>⊤</mi></msup><mi>B</mi><mi mathvariant="bold-italic">𝒔</mi></mrow><annotation encoding="application/x-tex">\mathbf s^\top B\mathbf s</annotation></semantics></math>
+的展开、放松与取整、子图的广义模块度矩阵；<a
+href="community-structure.modularity.html">模块度</a>一节和推导部分讨论了分辨率极限。</li>
+<li>本文对“不可分”的处理，可以和<a
+href="community-structure.validation.html">社团结果的验证与解读</a>对照：算法是否应该允许“不分”，在生物网络中尤其重要。</li>
+</ul>
+<h2 id="延伸思考">延伸思考</h2>
+<ol type="1">
+<li>证明模块度矩阵每行之和为零。由此说明：为什么只要
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+有正特征值，主特征向量就一定同时含有正分量和负分量？</li>
+<li>本文把社团定义为“不可分的子图”。在一个基因共表达网络中，这个定义得到的社团可能很大。结合分辨率极限，你会怎样检查一个大社团是否还包含有生物学意义的子模块？</li>
+<li>主特征向量分量接近 0
+的节点处在两个社团的边界上。在蛋白质相互作用网络中，这类“边界蛋白”可能对应什么样的功能角色？</li>
+</ol>
+</section><nav class="pager"><a href="paper-zhang2005_wgcna.html">← 加权基因共表达网络分析的一般框架</a><a href="paper-goh2007_diseasenetwork.html">人类疾病网络 →</a></nav></div><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

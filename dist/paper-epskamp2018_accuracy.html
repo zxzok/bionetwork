@@ -1,0 +1,93 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>心理网络的估计及其准确性：教程 · 生物医学网络科学</title><meta name="description" content="论文精读：Estimating psychological networks and their accuracy: a tutorial paper"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-symptom"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html" aria-current="page">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom" open><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html" aria-current="page">症状网络与网络精神病学</a><ol class="sub"><li><a href="symptom-networks.network-theory.html"><span class="n">01</span>共同原因模型与网络理论</a></li><li><a href="symptom-networks.gaussian-graphical-model.html"><span class="n">02</span>偏相关与高斯图模型</a></li><li><a href="symptom-networks.regularization.html"><span class="n">03</span>正则化估计：EBICglasso</a></li><li><a href="symptom-networks.ising-model.html"><span class="n">04</span>Ising 模型与二值症状数据</a></li><li><a href="symptom-networks.mixed-graphical-models.html"><span class="n">05</span>混合图模型与可预测性</a></li><li><a href="symptom-networks.dependence-vs-causation.html"><span class="n">06</span>横断面统计依赖与因果作用</a></li><li><a href="symptom-networks.centrality.html"><span class="n">07</span>症状中心性及其解释</a></li><li><a href="symptom-networks.bridge-centrality.html"><span class="n">08</span>桥中心性与共病</a></li><li><a href="symptom-networks.stability.html"><span class="n">09</span>抽样不确定性：边权准确性与中心性稳定性</a></li><li><a href="symptom-networks.sample-size.html"><span class="n">10</span>样本量与估计方法的选择</a></li><li><a href="symptom-networks.network-comparison.html"><span class="n">11</span>网络比较与跨样本复现</a></li><li><a href="symptom-networks.temporal-networks.html"><span class="n">12</span>个体动态网络：经验取样与时间序列</a></li><li><a href="symptom-networks.panel-networks.html"><span class="n">13</span>面板数据网络：CLPN 与 panel-GVAR</a></li><li><a href="symptom-networks.network-intervention.html"><span class="n">14</span>网络干预分析</a></li><li><a href="symptom-networks.clinical-controversies.html"><span class="n">15</span>临床应用与争议</a></li><li><a href="symptom-networks.module-control.html"><span class="n">16</span>症状网络的模块控制</a></li><li><a href="symptom-networks.derivations.html"><span class="n">17</span>数学推导与算法</a></li><li><a href="symptom-networks.frontiers.html"><span class="n">18</span>研究前沿与开放问题</a></li><li><a href="symptom-networks.biomedical.html"><span class="n">19</span>生物医学应用</a></li><li><a href="symptom-networks.limitations.html"><span class="n">20</span>适用范围与常见误用</a></li></ol></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><div class="lec-grid"><div style="min-width:0"><div class="lec-head"><nav class="crumb"><a href="papers.html">文献知识库</a> › 症状网络与网络精神病学</nav><div class="eyebrow"><b>经典论文</b><span>难度：入门</span></div><h1>心理网络的估计及其准确性：教程</h1><p class="porig big">Estimating psychological networks and their accuracy: a tutorial paper</p><p class="small">Epskamp S, Borsboom D, Fried EI · <i>Behavior Research Methods</i> 2018 · <a href="https://doi.org/10.3758/s13428-017-0862-1" target="_blank" rel="noopener">DOI: 10.3758/s13428-017-0862-1</a></p><div class="chips"><span class="chip">症状网络</span><span class="chip">高斯图模型</span><span class="chip">bootstrap</span><span class="chip">CS 系数</span><span class="chip">bootnet</span><span class="chip">中心性稳定性</span></div><div class="objectives"><h2>一句话</h2><p style="margin:0">提出检验症状网络边权准确性与中心性稳定性的 bootstrap 流程和 CS 系数（R 包 bootnet）。</p><p class="small" style="margin:8px 0 0">相关专题：<a href="symptom-networks.html">症状网络与网络精神病学</a></p></div></div><section class="block prose" id="notes"><h2 id="一句话看懂">一句话看懂</h2>
+<p>症状网络通常只用几百人的样本估计，边和中心性的抽样误差很大。这篇教程给出三步检查：用
+bootstrap 求边权的置信区间；逐步删掉被试，看中心性排序还稳不稳（CS
+系数）；检验两条边或两个节点的中心性是否真的不同。在作者的示例中，常被大书特书的介数和接近中心性几乎完全不稳定。</p>
+<h2 id="研究背景与问题">研究背景与问题</h2>
+<p>网络精神病学把精神障碍看成症状之间相互作用形成的网络（见 Borsboom
+2017），2010
+年代中期相关研究迅速增多。典型做法是用横断面问卷数据估计偏相关网络，再计算中心性，挑出“最中心的症状”，并推测它是干预靶点。</p>
+<p>问题在于：大多数研究的样本量只有几百人，却要估计几十到上百个参数；很少有人报告这些估计有多精确。结果是，看起来清楚的网络图和中心性排序，可能大部分是抽样噪声。作者希望提供一个标准、易用的准确性检查流程。</p>
+<h2 id="核心思想与方法">核心思想与方法</h2>
+<p><strong>网络估计</strong>：连续或有序数据常用<strong>高斯图模型</strong>（GGM），边权是控制其余所有变量后的偏相关；用图形
+LASSO
+加正则化、以扩展贝叶斯信息准则（EBIC）选择惩罚强度，得到稀疏网络（EBICglasso）。</p>
+<p><strong>三步准确性检查</strong>：</p>
+<ol type="1">
+<li><strong>边权准确性</strong>：非参数
+bootstrap（有放回重抽被试）重复估计网络，得到每条边的置信区间。区间越宽，边权越不可靠。</li>
+<li><strong>中心性稳定性</strong>：病例删除
+bootstrap，逐步删去更大比例的被试，计算子样本中心性与全样本中心性的相关。</li>
+<li><strong>差异检验</strong>：基于 bootstrap
+检验两条边或两个节点的中心性之差的区间是否包含 0。</li>
+</ol>
+<div class="callout-def">
+<p><strong>相关稳定性系数</strong>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mi>S</mi><mo stretchy="false" form="prefix">(</mo><mtext mathvariant="normal">cor</mtext><mo>=</mo><mn>0.7</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">CS(\text{cor}=0.7)</annotation></semantics></math>：最多可以随机删去多大比例的被试，使得在
+95% 的重抽样中，子样本中心性与原样本中心性的相关仍不低于
+0.7。作者基于模拟建议：CS 系数不应低于 0.25，最好高于 0.5。</p>
+</div>
+<p>这些方法实现于 R 包
+<strong>bootnet</strong>，它同时提供统一的网络估计接口，可以调用
+EBICglasso、Ising 模型等多种估计方法。</p>
+<h2 id="主要发现">主要发现</h2>
+<ol type="1">
+<li><strong>模拟示例说明问题</strong>：作者用一个所有节点中心性其实相同的模拟网络展示，单次估计的中心性图会给人“某些节点明显更重要”的错误印象。</li>
+<li><strong>CS 阈值来自模拟</strong>：在 24,000
+个模拟数据集中，当真实中心性都相同时，CS
+系数随样本量增大也保持稳定、大多低于 0.5，约 75% 低于 0.25。据此提出
+0.25 与 0.5 两条经验阈值，并明确说明它们“有一定任意性”。</li>
+<li><strong>PTSD 实例</strong>：359
+名伴随物质滥用治疗的女性（完全或亚阈值 PTSD），17 个 PTSD 症状。多数边的
+bootstrap
+置信区间很宽；只有“惊跳–过度警觉”“疏离–兴趣丧失”“提醒时不安–闯入性想法”三条边可靠地强于其他边。</li>
+<li><strong>中心性稳定性差异很大</strong>：介数与接近中心性的 CS
+系数都只有 0.05，完全不能解释；强度为 0.44，达到 0.25 但未达
+0.5，作者认为其排序只能谨慎解读。</li>
+<li><strong>差异检验</strong>：例如强度最高的节点与另一个候选节点之间的强度差，bootstrap
+区间包含 0，说明“谁最中心”无法确定。</li>
+</ol>
+<h2 id="怎样读这篇论文">怎样读这篇论文</h2>
+<p>先读前两节（为什么要关心准确性、三类检查方法），再直接跟着教程部分在
+R 中运行代码，重现图
+3–6：网络与中心性图、边权置信区间图、病例删除稳定性曲线、差异检验矩阵。数据可从美国国家药物滥用研究所的数据共享网站获取。模拟研究一节看图
+7 和结论即可。附带的 R 代码比文字更值得精读。</p>
+<h2 id="局限与后续工作">局限与后续工作</h2>
+<ul>
+<li><strong>准确性 ≠ 可重复性 ≠ 因果</strong>：bootstrap
+只评估同一总体内的抽样误差，不能保证换一个样本、一种文化或一个量表时结果相同。Forbes
+等（2017, <em>Journal of Abnormal
+Psychology</em>）质疑症状网络的可重复性，引发与网络学派的公开争论；Fried
+等（2018, <em>Clinical Psychological Science</em>）在四个 PTSD
+样本中比较网络，发现既有相似也有明显差异。</li>
+<li><strong>中心性不等于干预靶点</strong>：即使强度中心性稳定，横断面偏相关网络也无法确定方向和因果，“最中心症状”可能只是测量重叠或共同原因的结果。Bringmann
+等（2019, <em>Journal of Abnormal
+Psychology</em>）系统讨论了中心性指标在心理网络中的适用性。</li>
+<li><strong>估计方法本身的争议</strong>：Williams 等（2019,
+<em>Multivariate Behavioral
+Research</em>）认为在样本量远大于变量数时，非正则化方法的假阳性控制可能更好；作者在文中也承认，中心性的抽样分布本身有偏，即使不做正则化，bootstrap
+区间也不能当作真正的 95%
+置信区间，只能作为准确性的粗略指示；如何构造中心性的无偏估计与真正的置信区间，作者列为未解决问题。</li>
+<li><strong>多重比较</strong>：差异检验图中未做多重比较校正，结果应视为探索性。</li>
+</ul>
+<h2 id="关联知识">关联知识</h2>
+<ul>
+<li><a
+href="symptom-networks.stability.html">抽样不确定性：边权准确性与中心性稳定性</a>和<a
+href="symptom-networks.derivations.html">数学推导与算法</a>中的病例删除
+bootstrap 算法直接来自本文；<a
+href="symptom-networks.regularization.html">正则化估计：EBICglasso</a>是本文网络估计的默认方法。</li>
+<li><a href="symptom-networks.html">症状网络与网络精神病学</a>专题的<a
+href="symptom-networks.limitations.html">适用范围与常见误用</a>中“必须报告边权置信区间和
+CS 系数”的要求，就是本文的核心主张。</li>
+<li>中心性不稳定、中心性不等于靶点的讨论，与<a
+href="molecular-networks.centrality-lethality.html">致死性与中心性：枢纽蛋白假说及其争议</a>和<a
+href="brain-connectome.topology.html">拓扑指标：小世界、模块、枢纽与富人俱乐部</a>中脑网络枢纽的解读问题是同一类推理。</li>
+</ul>
+<h2 id="延伸思考">延伸思考</h2>
+<ol type="1">
+<li>一项研究报告 20 个症状的网络，样本 250 人，强度中心性 CS 系数为
+0.13，作者却在讨论中强调“最中心症状应作为干预靶点”。请写出你的审稿意见。</li>
+<li>为什么介数和接近中心性通常比强度更不稳定？请从它们依赖最短路径的计算方式解释。</li>
+<li>若要检验“干预最中心症状比干预边缘症状更有效”，需要什么样的研究设计？横断面网络能提供哪些信息，不能提供哪些？</li>
+</ol>
+</section><nav class="pager"><a href="paper-yan2017_celegans.html">← 网络控制原理预测秀丽隐杆线虫连接组中的神经元功能</a><a href="paper-broido2019_rare.html">无标度网络是罕见的 →</a></nav></div><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

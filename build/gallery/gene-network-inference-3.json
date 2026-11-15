@@ -1,0 +1,10 @@
+{
+ "topic": "gene-network-inference",
+ "index": 3,
+ "title": "互信息网络、CLR 背景校正与 ARACNe 的数据处理不等式",
+ "hash": "a7b8d3c16d9428f519e5abaf4d18db8569aca551",
+ "ok": true,
+ "figures": 1,
+ "stdout": "真边 38 条 / 候选 435 条；其中 U 形调控 10 条\n|Pearson r|  AUROC = 0.815  AUPR = 0.620（随机 0.087，比值  7.1）  EPR =  6.6\n互信息 MI       AUROC = 0.980  AUPR = 0.825（随机 0.087，比值  9.4）  EPR =  8.1\nCLR          AUROC = 0.985  AUPR = 0.903（随机 0.087，比值 10.3）  EPR =  9.6\nARACNe(DPI)  AUROC = 0.936  AUPR = 0.881（随机 0.087，比值 10.1）  EPR =  9.6\nU 形调控边上的平均 |r| = 0.083 ；平均 MI = 0.295 ；全部候选对的平均 MI = 0.115",
+ "stderr": ""
+}

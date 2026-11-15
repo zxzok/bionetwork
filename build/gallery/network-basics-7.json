@@ -1,0 +1,10 @@
+{
+ "topic": "network-basics",
+ "index": 7,
+ "title": "网络文件格式——边列表、GML 与 GraphML 的读写差异",
+ "hash": "3771db330e4545849c9c4ad5ab83de5b0f71a21a",
+ "ok": true,
+ "figures": 0,
+ "stdout": "边列表文件内容:\nTP53 MDM2 0.999\nTP53 CHEK2 0.98\n\nGraphML 文件前 6 行:\n<?xml version='1.0' encoding='utf-8'?>\n<graphml xmlns=\"http://graphml.graphdrawing.org/xmlns\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd\">\n  <key id=\"d1\" for=\"edge\" attr.name=\"score\" attr.type=\"double\" />\n  <key id=\"d0\" for=\"node\" attr.name=\"kind\" attr.type=\"string\" />\n  <graph edgedefault=\"undirected\">\n    <node id=\"TP53\">\n\n原始     节点数 4，边数 2，BRCA2 在吗？True，TP53 的属性: {'kind': 'TF'}\n边列表    节点数 3，边数 2，BRCA2 在吗？False，TP53 的属性: {}\nGML    节点数 4，边数 2，BRCA2 在吗？True，TP53 的属性: {'kind': 'TF'}\nGraphML 节点数 4，边数 2，BRCA2 在吗？True，TP53 的属性: {'kind': 'TF'}\n读成 Graph：边数 1，权重 {'w': 0.9}（只保留了后一条）\n读成 MultiGraph：边数 2",
+ "stderr": ""
+}

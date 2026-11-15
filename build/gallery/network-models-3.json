@@ -1,0 +1,10 @@
+{
+ "topic": "network-models",
+ "index": 3,
+ "title": "判断一个真实网络是否“小世界”",
+ "hash": "edfaedd47a628d80996832435ccaf25961acc2d2",
+ "ok": true,
+ "figures": 1,
+ "stdout": "原网络: N=77, E=254, C=0.573, L=2.641\nER 参照:   C_rand=0.086, L_rand=2.485, σ=6.24\n保度参照:  C_rand=0.226, L_rand=2.530, σ=2.43",
+ "stderr": ""
+}

@@ -1,0 +1,414 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>网络上的传播与免疫 · 生物医学网络科学</title><meta name="description" content="网络上的传播与免疫：研究病原体、信息与行为如何沿网络传播，网络结构怎样决定流行阈值，以及如何选择免疫、追踪与干预对象。"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-dynamics"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html" aria-current="page">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics" open><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html" aria-current="page">网络上的传播与免疫</a><ol class="sub"><li><a href="spreading.spreading-on-networks.html"><span class="n">01</span>网络传播过程</a></li><li><a href="spreading.compartmental-models.html"><span class="n">02</span>均匀混合下的经典传播模型</a></li><li><a href="spreading.epidemic-threshold.html"><span class="n">03</span>度异质性与流行病阈值</a></li><li><a href="spreading.contact-networks.html"><span class="n">04</span>接触网络：数据与结构</a></li><li><a href="spreading.message-passing.html"><span class="n">05</span>配对近似、边基模型与消息传递</a></li><li><a href="spreading.temporal-networks.html"><span class="n">06</span>时间网络与阵发性</a></li><li><a href="spreading.metapopulation.html"><span class="n">07</span>集合种群与全球传播</a></li><li><a href="spreading.reproduction-number.html"><span class="n">08</span>再生数与超级传播</a></li><li><a href="spreading.immunization.html"><span class="n">09</span>免疫策略</a></li><li><a href="spreading.contact-tracing.html"><span class="n">10</span>接触追踪与监测</a></li><li><a href="spreading.social-contagion.html"><span class="n">11</span>信息与行为的传播</a></li><li><a href="spreading.influential-spreaders.html"><span class="n">12</span>影响力最大化与关键传播者</a></li><li><a href="spreading.source-localization.html"><span class="n">13</span>传播溯源</a></li><li><a href="spreading.derivations.html"><span class="n">14</span>数学推导与算法</a></li><li><a href="spreading.frontiers.html"><span class="n">15</span>研究前沿与开放问题</a></li><li><a href="spreading.biomedical.html"><span class="n">16</span>生物医学应用</a></li><li><a href="spreading.limitations.html"><span class="n">17</span>适用范围与常见误用</a></li></ol></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><div class="lec-grid"><article style="min-width:0"><header class="doc-head"><nav class="crumb"><a href="domains.html">知识领域</a> <span class="sep">/</span> <a href="d-dynamics.html">网络动力学与控制</a></nav><div class="eyebrow" style="margin-top:14px"><b>Dynamics &amp; Control</b><span>Spreading processes and immunization</span></div><h1>网络上的传播与免疫</h1><p class="dek">研究病原体、信息与行为如何沿网络传播，网络结构怎样决定流行阈值，以及如何选择免疫、追踪与干预对象。</p><dl class="doc-meta"><div><dt>知识页面</dt><dd>17 页</dd></div><div><dt>阅读</dt><dd>约 54 分钟</dd></div><div><dt>讲解视频</dt><dd>1 段</dd></div><div><dt>代码示例</dt><dd>14 个</dd></div></dl><div class="chips"><span class="chip">SIR</span><span class="chip">SIS</span><span class="chip">基本再生数</span><span class="chip">流行病阈值</span><span class="chip">度异质性</span><span class="chip">消息传递</span><span class="chip">时间网络</span><span class="chip">集合种群</span><span class="chip">接触追踪</span><span class="chip">免疫策略</span><span class="chip">复杂传染</span><span class="chip">影响力最大化</span><span class="chip">超级传播</span><span class="chip">传播溯源</span></div></header><section class="block prose" id="overview"><p>网络结构指标与网络模型描述的是网络“长什么样”：度分布、路径、聚集、社团。网络动力学进一步让网络“动起来”：节点带有状态，状态沿着边变化。传播（spreading）是最直观的一类网络动力学：病原体沿接触网络传播，谣言和健康行为沿社交网络扩散，药物与诊疗新知沿医生网络流动，错误折叠蛋白甚至可能沿脑连接组扩散。</p>
+<p>这一专题按“模型—结构—干预—推断”组织，围绕以下科学问题展开：</p>
+<ol type="1">
+<li><strong>经典模型</strong>：没有网络时，SI、SIS、SIR、SEIR
+模型说了什么，基本再生数
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>0</mn></msub><annotation encoding="application/x-tex">R_0</annotation></semantics></math>
+从何而来（<a
+href="spreading.compartmental-models.html">均匀混合下的经典传播模型</a>）。</li>
+<li><strong>结构如何决定阈值</strong>：度分布的异质性怎样改变流行病阈值，为什么无标度网络的阈值会趋近于
+0（<a
+href="spreading.epidemic-threshold.html">度异质性与流行病阈值</a>）；真实接触网络从哪里来、有什么结构（<a
+href="spreading.contact-networks.html">接触网络</a>）。</li>
+<li><strong>更精确的理论</strong>：平均场之外，配对近似、边基模型与消息传递如何把聚集、度相关与具体拓扑纳入计算（<a
+href="spreading.message-passing.html">配对近似、边基模型与消息传递</a>）。</li>
+<li><strong>超越静态度分布</strong>：接触随时间变化、成簇出现（阵发性），人群在城市间流动，这些怎样改变传播的速度与可预测性（<a
+href="spreading.temporal-networks.html">时间网络与阵发性</a>、<a
+href="spreading.metapopulation.html">集合种群与全球传播</a>）。</li>
+<li><strong>从数据估计传播</strong>：如何从发病曲线和传播链估计
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>0</mn></msub><annotation encoding="application/x-tex">R_0</annotation></semantics></math>、时变再生数
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mi>t</mi></msub><annotation encoding="application/x-tex">R_t</annotation></semantics></math>
+与超级传播程度（<a
+href="spreading.reproduction-number.html">再生数与超级传播</a>）。</li>
+<li><strong>干预</strong>：给谁接种、追踪谁、监测谁（<a
+href="spreading.immunization.html">免疫策略</a>、<a
+href="spreading.contact-tracing.html">接触追踪与监测</a>）。</li>
+<li><strong>信息与行为</strong>：社会传染与疾病传播有何不同，怎样选种子使影响最大，怎样从观测反推源头（<a
+href="spreading.social-contagion.html">信息与行为的传播</a>、<a
+href="spreading.influential-spreaders.html">影响力最大化与关键传播者</a>、<a
+href="spreading.source-localization.html">传播溯源</a>）。</li>
+</ol>
+<p>这些问题直接建立在<a
+href="network-metrics.html">网络结构指标与随机图</a>中的度分布和二阶矩
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msup><mi>k</mi><mn>2</mn></msup><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle k^2\rangle</annotation></semantics></math>，以及<a
+href="network-models.html">小世界与无标度网络模型</a>中的无标度网络之上。SIR
+的最终规模与键渗流等价，因此传播理论与<a
+href="robustness.html">网络鲁棒性、渗流与级联失效</a>共用同一套数学；“删去枢纽”既是蓄意攻击，也是目标免疫。流行阈值
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>k</mi><mo stretchy="false" form="postfix">⟩</mo><mi>/</mi><mo stretchy="false" form="prefix">⟨</mo><msup><mi>k</mi><mn>2</mn></msup><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle k\rangle/\langle k^2\rangle</annotation></semantics></math>
+的形式还会在<a
+href="synchronization.html">同步与协同动力学</a>的同步阈值中重现。</p>
+</section><section class="block" id="pages"><h2><span class="tag">Contents</span>知识页面</h2><div class="arts"><a class="art" href="spreading.spreading-on-networks.html"><span class="no">01</span><span class="t">网络传播过程</span><span class="d">“流行病”（epidemic）一词源自希腊语 epi（在……之上）与 demos（人群）。传播现象远不止传染病： 现象 网络 传播的“东西” --- --- --- 性传播疾病 性…</span></a><a class="art" href="spreading.compartmental-models.html"><span class="no">02</span><span class="t">均匀混合下的经典传播模型</span><span class="d">先假设均匀混合（homogeneous mixing）：每个人单位时间与 个随机选出的人接触，每次“感染者–易感者”接触以速率 传播。记 为三类人群所占比例。 SI 模型（只感染不…</span></a><a class="art" href="spreading.epidemic-threshold.html"><span class="no">03</span><span class="t">度异质性与流行病阈值</span><span class="d">均匀混合假设每个人能感染任何人。真实传播只能沿边进行，而且节点的度差别巨大。异质平均场（heterogeneous mean-field, HMF）方法把度相同的节点归为一类，记 …</span></a><a class="art" href="spreading.contact-networks.html"><span class="no">04</span><span class="t">接触网络：数据与结构</span><span class="d">理论结果都以“接触网络”为输入。对传染病而言，什么算一条边取决于传播途径：性传播疾病是性伴侣关系，呼吸道疾病是近距离（约 1–3 米内）的面对面接触，院内感染还包括共用病房、器械与…</span></a><a class="art" href="spreading.message-passing.html"><span class="no">05</span><span class="t">配对近似、边基模型与消息传递</span><span class="d">HMF 有两个关键缺陷：（1）它把同一度类的节点看成可互换的，丢掉了具体拓扑；（2）它忽略了相邻节点状态之间的动态相关——例如在 SIR 中，感染我的那个邻居不可能再被我感染，HM…</span></a><a class="art" href="spreading.temporal-networks.html"><span class="no">06</span><span class="t">时间网络与阵发性</span><span class="d">前面的理论都假设接触网络是静态的。Barabási 第 10.5 节“超越度分布”指出，真实接触还有三类结构会实质性地改变传播：时间顺序与阵发性、度相关、边权与社团。本页讨论时间与…</span></a><a class="art" href="spreading.metapopulation.html"><span class="no">07</span><span class="t">集合种群与全球传播</span><span class="d">在城市、国家尺度上追踪每个人的接触既不可能也无必要。集合种群模型（metapopulation model，又译复合种群模型）把人群分成若干“斑块”（城市、社区、医院），斑块内均匀…</span></a><a class="art" href="spreading.reproduction-number.html"><span class="no">08</span><span class="t">再生数与超级传播</span><span class="d">是传播理论的中心量，但它既不能直接观测，在网络上还有多种含义。本页讨论如何定义、估计并解释再生数，以及个体传播能力的异质性（超级传播）。 下一代矩阵 人群分为 类（年龄组、度类、地…</span></a><a class="art" href="spreading.immunization.html"><span class="no">09</span><span class="t">免疫策略</span><span class="d">控制疫情的三类手段在网络上的含义不同： - 降低传播率（口罩、手卫生、通风）：降低 ，即每条边的传播性 ； - 减少接触（隔离、停课、限制聚集规模）：删边，网络变稀疏； - 接种疫…</span></a><a class="art" href="spreading.contact-tracing.html"><span class="no">10</span><span class="t">接触追踪与监测</span><span class="d">疫苗出现之前，控制新发传染病主要依靠发现—隔离—追踪：发现病例并隔离，追踪其接触者并检疫。从网络角度，接触追踪就是沿着传播树的边去寻找尚未被发现的感染者。 什么决定追踪能否成功 F…</span></a><a class="art" href="spreading.social-contagion.html"><span class="no">11</span><span class="t">信息与行为的传播</span><span class="d">信息和行为的传播与病原体有一个关键区别：是否需要多次暴露。 独立级联模型（independent cascade, IC）：节点被激活后，有一次机会以概率 激活每个未激活的邻居。它…</span></a><a class="art" href="spreading.influential-spreaders.html"><span class="no">12</span><span class="t">影响力最大化与关键传播者</span><span class="d">“谁最能促进传播”有两种不同问法：单个节点作为种子能传多远（关键传播者识别），以及选一组 个种子使总传播范围最大（影响力最大化）。前者是排序问题，后者是组合优化问题——一组最好的种…</span></a><a class="art" href="spreading.source-localization.html"><span class="no">13</span><span class="t">传播溯源</span><span class="d">前面的问题都是“正向”的：已知源头与网络，预测传播。传播溯源（source localization）是反问题：已知网络和部分传播观测，推断源头（零号病人、谣言发起者、污染源）。它…</span></a><a class="art" href="spreading.derivations.html"><span class="no">14</span><span class="t">数学推导与算法</span><span class="d">本页补全前面各页用到的结果：A. SIS 阈值 的推导；B. SIR 最终规模与键渗流的对应；C. 精确的随机模拟算法；D. 活动驱动时间网络上的阈值；E. 淬火平均场与非回溯矩阵…</span></a><a class="art" href="spreading.frontiers.html"><span class="no">15</span><span class="t">研究前沿与开放问题</span><span class="d">1. 真实网络上的阈值到底由什么决定？ HMF 给出 ，淬火平均场给出 ，消息传递给出 ，三者在度分布相同的网络上可能相差很大。Castellano 与 Pastor-Satorr…</span></a><a class="art" href="spreading.biomedical.html"><span class="no">16</span><span class="t">生物医学应用</span><span class="d">传染病控制。网络流行病学的理论直接影响了公共卫生策略：针对高接触人群（如性传播疾病的核心人群）的干预、以接触追踪为基础的隔离，以及在疫苗短缺时优先接种高接触职业人群，都可以从 主导…</span></a><a class="art" href="spreading.limitations.html"><span class="no">17</span><span class="t">适用范围与常见误用</span><span class="d">1. 误用：把 当作病原体的生物学常数。→ 正解： 取决于传播概率、接触结构与感染持续时间；在网络上起作用的是邻居的平均剩余度 ，而非平均度。 2. 误用：认为无标度网络中任何疾病…</span></a></div></section><section class="block" id="video"><h2><span class="tag">VIDEO</span>讲解视频</h2><div class="video-main"><video controls preload="metadata" playsinline poster="media/videos/L05-core.jpg"><source src="media/videos/L05-core.mp4" type="video/mp4"><track kind="captions" srclang="zh" label="中文字幕" src="media/videos/L05-core.vtt"></video><div class="video-meta"><strong>网络上的传播：为什么枢纽决定了疫情的命运</strong><span>4 分 17 秒</span></div><details class="transcript"><summary>文字稿</summary><p>大家好，这一期我们让网络动起来，看看疾病和信息怎样沿着连接传播。前面我们研究的是网络的结构，这个专题开始研究网络上的过程。传播是最直观的一类网络动力学，也和公共卫生关系最密切。</p><p>第一个问题，不考虑网络时，经典的传播模型告诉了我们什么。第二个问题，把传播放到网络上，度分布怎样改变流行病阈值。第三个问题，疫苗有限的时候，应该优先给谁接种。</p><p>SIR 模型把人分成三类，易感者、感染者和移除者。感染者增加的速度，取决于传播概率、接触人数和易感者的比例。感染者减少的速度，取决于恢复率。两者一比，就得到基本再生数，也就是一个病人平均能感染几个人。比如流感的基本再生数如果是2，一个病人传两个，两个传四个，很快就会暴发。基本再生数大于1，疾病可以流行，小于1，疾病会自行熄灭。</p><p>现在把同样的模型放到一张网络上。红色的节点是感染者，它只能感染和自己直接相连的邻居。大家注意看，最先被感染的往往是那些连接很多的枢纽节点。枢纽一旦被感染，病原体就能迅速到达网络的各个角落。右边的曲线里，感染者比例先上升再下降，移除者比例最后趋于饱和。</p><p>2001年，Pastor-Satorras 和 Vespignani 给出了一个关键结果。网络上的流行病阈值，等于平均度除以度的二阶矩。度分布越不均匀，二阶矩越大，阈值就越低。对于无标度网络，网络越大二阶矩越大，阈值趋近于0。举个例子，平均度同样是6，随机网络的阈值约为0.17，无标度网络可能只有0.07。也就是说，再弱的传播能力，也可能引起大范围的流行。这是因为枢纽节点邻居多，既容易被感染，又能感染很多人。</p><p>那么疫苗有限的时候，应该给谁接种呢？如果随机接种，在无标度网络里几乎要给所有人接种才能阻断流行。如果优先接种连接最多的人，同样数量的疫苗效果要好得多。可现实中我们往往不知道谁的接触最多。一个巧妙的办法是熟人免疫，随机找一个人，请他推荐一位熟人去接种。因为沿着连接走，更容易走到枢纽，这个方法只用局部信息就接近目标免疫。在代码示例里，大家可以亲手验证，同样接种10%的人，三种策略的效果差别有多大。</p><p>信息和行为也会在网络上传播，但机制可能和病原体不同。病原体和大多数信息属于简单传染，一次有效接触就够了。而采纳一种健康行为，往往需要多个朋友的反复影响，这叫复杂传染。实验研究发现，健康行为在聚集程度高的网络里反而扩散得更多。2007年一项研究报告肥胖会在社会网络中传播，影响可达三度分隔。但后来有学者指出，相似的人更容易成为朋友，这种同质性很难和传染区分开。所以读这类研究时，一定要追问因果证据从哪里来。</p><p>好，我们用四句话把这一期的内容小结一下。基本再生数决定疾病能否流行，它依赖接触结构，不是病原体的常数。网络的度越不均匀，阈值越低，无标度网络的阈值趋近于0。免疫策略要利用网络结构，目标免疫和熟人免疫都比随机免疫有效。研究社会传播时，要警惕同质性和共同环境带来的假象。</p><p>接下来请打开交互演示，亲手比较不同网络和不同免疫策略。然后打开代码示例，用代码估计阈值，检验一下自己的理解。下一期我们讨论另一类网络动力学，同步。</p></details></div></section><section class="block" id="demos"><h2><span class="tag">INTERACTIVE</span>交互可视化</h2><div class="demo" data-demo="sir"></div><div class="demo" data-demo="attack"></div></section><section class="block" id="code"><h2><span class="tag">CODE</span>计算实现</h2><p class="small">14 个完整可运行的 Python 示例，每个都给出代码、输出图和解读；可在浏览器中直接运行，或下载 <a href="notebooks/spreading.ipynb" download>Jupyter Notebook</a> · <a href="notebooks/spreading.py" download>Python 脚本</a>。</p><div class="gallery"><a class="gcard" href="ex-spreading-0.html"><span class="thumb"><img src="gallery/spreading-0-0.png" alt="" loading="lazy"></span><span class="gt">网络上的离散时间 SIR 模拟（ER 与 BA 网络对比）</span></a><a class="gcard" href="ex-spreading-1.html"><span class="thumb"><img src="gallery/spreading-1-0.png" alt="" loading="lazy"></span><span class="gt">用度分布估计 SIR 流行病阈值</span></a><a class="gcard" href="ex-spreading-2.html"><span class="thumb"><img src="gallery/spreading-2-0.png" alt="" loading="lazy"></span><span class="gt">三种免疫策略的比较</span></a><a class="gcard" href="ex-spreading-3.html"><span class="thumb"><img src="gallery/spreading-3-0.png" alt="" loading="lazy"></span><span class="gt">扩散中心性与独立级联</span></a><a class="gcard" href="ex-spreading-4.html"><span class="thumb"><img src="gallery/spreading-4-0.png" alt="" loading="lazy"></span><span class="gt">三种阈值近似的比较——异质平均场、淬火平均场与非回溯矩阵</span></a><a class="gcard" href="ex-spreading-5.html"><span class="thumb"><img src="gallery/spreading-5-0.png" alt="" loading="lazy"></span><span class="gt">边基仓室模型（EBCM）与精确随机模拟的比较</span></a><a class="gcard" href="ex-spreading-6.html"><span class="thumb"><img src="gallery/spreading-6-0.png" alt="" loading="lazy"></span><span class="gt">活动驱动时间网络上的 SIS 阈值</span></a><a class="gcard" href="ex-spreading-7.html"><span class="thumb"><img src="gallery/spreading-7-0.png" alt="" loading="lazy"></span><span class="gt">集合种群模型与有效距离</span></a><a class="gcard" href="ex-spreading-8.html"><span class="thumb"><img src="gallery/spreading-8-0.png" alt="" loading="lazy"></span><span class="gt">超级传播——负二项后代分布、早期灭绝与“20/80”</span></a><a class="gcard" href="ex-spreading-9.html"><span class="thumb"><img src="gallery/spreading-9-0.png" alt="" loading="lazy"></span><span class="gt">从发病曲线估计时变再生数 R_t（Cori 方法）</span></a><a class="gcard" href="ex-spreading-10.html"><span class="thumb"><img src="gallery/spreading-10-0.png" alt="" loading="lazy"></span><span class="gt">向前追踪与向后追踪——传播树中的朋友悖论</span></a><a class="gcard" href="ex-spreading-11.html"><span class="thumb"><img src="gallery/spreading-11-0.png" alt="" loading="lazy"></span><span class="gt">影响力最大化——贪心算法与启发式中心性</span></a><a class="gcard" href="ex-spreading-12.html"><span class="thumb"><img src="gallery/spreading-12-0.png" alt="" loading="lazy"></span><span class="gt">复杂传染——阈值模型在聚集网络与随机网络上的级联</span></a><a class="gcard" href="ex-spreading-13.html"><span class="thumb"><img src="gallery/spreading-13-0.png" alt="" loading="lazy"></span><span class="gt">传播溯源——Jordan 中心与基于观测点的估计</span></a></div></section><section class="block prose" id="related"><h2><span class="tag">Links</span>关联知识</h2><ul>
+<li><a
+href="network-metrics.html">网络结构指标与随机图</a>：度分布、二阶矩
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msup><mi>k</mi><mn>2</mn></msup><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle k^2\rangle</annotation></semantics></math>、巨连通分支与
+ER 随机图，是流行阈值公式与最终规模方程的输入。</li>
+<li><a
+href="network-models.html">小世界与无标度网络模型</a>：无标度网络使
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msup><mi>k</mi><mn>2</mn></msup><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle k^2\rangle</annotation></semantics></math>
+发散、阈值消失；小世界捷径加速简单传染、却未必帮助复杂传染。</li>
+<li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a>：SIR
+最终规模与键渗流等价，免疫与蓄意攻击同为删点渗流，Watts
+阈值级联也是级联失效模型。</li>
+<li><a href="synchronization.html">同步与协同动力学</a>：网络 Kuramoto
+模型的临界耦合
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mi>c</mi></msub><mo>∝</mo><mo stretchy="false" form="prefix">⟨</mo><mi>k</mi><mo stretchy="false" form="postfix">⟩</mo><mi>/</mi><mo stretchy="false" form="prefix">⟨</mo><msup><mi>k</mi><mn>2</mn></msup><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">K_c\propto\langle k\rangle/\langle k^2\rangle</annotation></semantics></math>，与传播阈值形式相同。</li>
+<li><a
+href="community-structure.html">社团结构与社区发现</a>：社团结构减缓并截留传播，影响免疫与种子选择；非回溯矩阵同样用于社团发现。</li>
+<li><a
+href="degree-correlations.html">度相关性与网络结构的高阶统计</a>：同配与异配改变阈值；单纯复形等高阶结构对应复杂传染。</li>
+<li><a
+href="network-construction.html">网络构建与统计验证</a>：从接触记录、传感器与流动数据构建静态或时间接触网络，是传播分析的前提。</li>
+<li><a
+href="controllability.html">网络可控性与稳定性</a>：传播溯源中的观测点选择与可观测性中的最少观测节点问题结构相似；<a
+href="brain-connectome.html">脑连接组</a>上的网络扩散模型则是传播思想在神经退行性疾病中的应用。</li>
+</ul>
+</section><section class="block" id="papers"><h2><span class="tag">Papers</span>论文精读</h2><div class="pgrid"><article class="pcard" data-own="0" data-dom="dynamics theory" data-k="epidemic spreading in scale-free networks无标度网络上的流行病传播sis 模型 流行病阈值 无标度网络 异质平均场 计算机病毒"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">网络动力学与控制</span><span class="pbadge dm">网络基础理论</span><span>Physical Review Letters · 2001</span></div><h3><a href="paper-pastorsatorras2001_epidemic.html">无标度网络上的流行病传播</a></h3><p class="porig">Epidemic spreading in scale-free networks<br><span>Pastor-Satorras R, Vespignani A</span></p><p class="psum">用异质平均场分析无标度网络上的 SIS 模型，发现流行病阈值消失，解释了计算机病毒长期低水平流行的现象。</p><div class="plec small">相关专题：<a href="spreading.html">网络上的传播与免疫</a> <a href="network-models.html">小世界与无标度网络模型</a></div></article><article class="pcard" data-own="0" data-dom="dynamics" data-k="efficient immunization strategies for computer networks and populations计算机网络与人群的高效免疫策略熟人免疫 免疫策略 友谊悖论 渗流 无标度网络 sir"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">网络动力学与控制</span><span>Physical Review Letters · 2003</span></div><h3><a href="paper-cohen2003_immunization.html">计算机网络与人群的高效免疫策略</a></h3><p class="porig">Efficient immunization strategies for computer networks and populations<br><span>Cohen R, Havlin S, ben-Avraham D</span></p><p class="psum">提出“随机选人、给他随机提名的熟人接种”的熟人免疫策略，不需全局信息即可大幅降低阻断流行所需的接种比例。</p><div class="plec small">相关专题：<a href="spreading.html">网络上的传播与免疫</a> <a href="controllability.html">网络可控性与稳定性</a></div></article><article class="pcard" data-own="0" data-dom="dynamics theory" data-k="identification of influential spreaders in complex networks识别复杂网络中的关键传播者关键传播者 k-壳分解 核数 sir sis 中心性"><div class="pmeta"><span class="pbadge">经典</span><span class="pbadge dm">网络动力学与控制</span><span class="pbadge dm">网络基础理论</span><span>Nature Physics · 2010</span></div><h3><a href="paper-kitsak2010_spreaders.html">识别复杂网络中的关键传播者</a></h3><p class="porig">Identification of influential spreaders in complex networks<br><span>Kitsak M, Gallos LK, Havlin S, Liljeros F, Muchnik L, Stanley HE, et al.</span></p><p class="psum">发现单个传播源的影响力更取决于它在 k-壳分解中所处的层次，而不是度或介数；多个传播源还需彼此分散。</p><div class="plec small">相关专题：<a href="spreading.html">网络上的传播与免疫</a> <a href="network-metrics.html">网络结构指标与随机图</a></div></article></div></section><section class="block prose" id="references"><h2><span class="tag">References</span>核心文献</h2><h3
+id="pastor-satorras-与-vespignani-2001epidemic-spreading-in-scale-free-networks">Pastor-Satorras
+与 Vespignani 2001：Epidemic spreading in scale-free networks</h3>
+<ul>
+<li><strong>背景</strong>：经典流行病学基于均匀混合，存在有限的流行病阈值。20
+世纪 90
+年代末发现互联网等网络具有无标度度分布，而计算机病毒长期低水平流行的现象难以用经典理论解释。</li>
+<li><strong>核心发现</strong>：用异质平均场方法分析 SIS 模型，得到
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>λ</mi><mi>c</mi></msub><mo>=</mo><mo stretchy="false" form="prefix">⟨</mo><mi>k</mi><mo stretchy="false" form="postfix">⟩</mo><mi>/</mi><mo stretchy="false" form="prefix">⟨</mo><msup><mi>k</mi><mn>2</mn></msup><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\lambda_c=\langle k\rangle/\langle k^2\rangle</annotation></semantics></math>；对
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>γ</mi><mo>≤</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">\gamma\le3</annotation></semantics></math>
+的无标度网络，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>→</mo><mi>∞</mi></mrow><annotation encoding="application/x-tex">N\to\infty</annotation></semantics></math>
+时阈值消失，稳态流行率在
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>λ</mi><annotation encoding="application/x-tex">\lambda</annotation></semantics></math>
+很小时以指数形式趋近于 0。</li>
+<li><strong>阅读要点</strong>：区分“阈值为
+0”和“流行规模大”——在阈值附近流行率可以极小。注意 HMF
+忽略了度相关性与动态相关，后来的工作（淬火平均场、消息传递方法）修正了部分结论。</li>
+<li><strong>延伸思考</strong>：如果网络存在强的度–度同配性（高度节点相互连接），你预计阈值会升高还是降低？为什么？</li>
+</ul>
+<p>DOI：<a
+href="https://doi.org/10.1103/PhysRevLett.86.3200">10.1103/PhysRevLett.86.3200</a>；精读：<a
+href="paper-pastorsatorras2001_epidemic.html">Pastor-Satorras
+2001</a></p>
+<h3
+id="christakis-与-fowler-2007the-spread-of-obesity-in-a-large-social-network-over-32-years">Christakis
+与 Fowler 2007：The spread of obesity in a large social network over 32
+years</h3>
+<ul>
+<li><strong>背景</strong>：慢性病一般被视为个体风险因素的结果。作者借助弗雷明汉心脏研究中记录的亲友关系，构建
+12 067 人的纵向社会网络。</li>
+<li><strong>核心发现</strong>：肥胖在网络中成簇出现，关联延伸到三度分隔；朋友、兄弟姐妹、配偶变胖与个体变胖风险升高相关，邻居无显著关联，同性关系的关联更强，地理距离不影响关联强度。</li>
+<li><strong>阅读要点</strong>：这是观察性研究，识别“传染”依赖模型假设。对照阅读
+Cohen-Cole 与 Fletcher（2008）及 Shalizi 与
+Thomas（2011）的批评，思考同质性、共同环境与反向因果。可结合原文图 1
+的网络可视化阅读。</li>
+<li><strong>延伸思考</strong>：如果要在一所大学用随机化设计检验“运动习惯会在宿舍网络中传播”，应怎样设计干预和对照？</li>
+</ul>
+<p>DOI：<a
+href="https://doi.org/10.1056/NEJMsa066082">10.1056/NEJMsa066082</a></p>
+<h3
+id="cohenhavlin-与-ben-avraham-2003efficient-immunization-strategies-for-computer-networks-and-populations">Cohen、Havlin
+与 ben-Avraham 2003：Efficient immunization strategies for computer
+networks and populations</h3>
+<ul>
+<li><strong>背景</strong>：目标免疫需要知道每个人的度，现实中难以获得。</li>
+<li><strong>核心发现</strong>：随机选人、再接种其随机熟人的策略，只需局部信息，接种比例远低于随机免疫就能使网络失去巨连通分支，效果接近目标免疫。</li>
+<li><strong>阅读要点</strong>：分析基于渗流理论（删点后巨分支是否存在），与
+SIR 的最终规模问题等价；理解为什么“沿边采样”天然偏向高度节点。</li>
+<li><strong>延伸思考</strong>：在医院感染控制中，“熟人”可以对应什么？能否设计一个基于排班表的“熟人免疫”方案？</li>
+</ul>
+<p>DOI：<a
+href="https://doi.org/10.1103/PhysRevLett.91.247901">10.1103/PhysRevLett.91.247901</a>；精读：<a
+href="paper-cohen2003_immunization.html">Cohen 2003</a></p>
+<h3
+id="lloyd-smith-等-2005superspreading-and-the-effect-of-individual-variation-on-disease-emergence">Lloyd-Smith
+等 2005：Superspreading and the effect of individual variation on
+disease emergence</h3>
+<ul>
+<li><strong>背景</strong>：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>0</mn></msub><annotation encoding="application/x-tex">R_0</annotation></semantics></math>
+是平均数。SARS
+期间出现了多起“超级传播事件”，但对非性接触传播的疾病，个体传染性差异难以直接测量，其对暴发动力学的影响并不清楚。</li>
+<li><strong>核心发现</strong>：利用 8
+种直接传播疾病的接触追踪数据，发现个体再生数的分布常常高度偏斜；考虑这种异质性后，疾病更容易灭绝，暴发更罕见但更具爆炸性；针对个体的控制措施优于全人群均匀措施。作者还给出了超级传播事件的严格定义及其频率的预测方法。</li>
+<li><strong>阅读要点</strong>：理解负二项后代分布与离散参数
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>；把分支过程的灭绝概率
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>=</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>q</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">q=g(q)</annotation></semantics></math>
+与<a
+href="spreading.reproduction-number.html">再生数与超级传播</a>中的算例对照。</li>
+<li><strong>延伸思考</strong>：度异质的接触网络会产生怎样的离散参数？网络之外还有哪些因素会使
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+变小？</li>
+</ul>
+<p>DOI：<a
+href="https://doi.org/10.1038/nature04153">10.1038/nature04153</a></p>
+<h3
+id="brockmann-与-helbing-2013the-hidden-geometry-of-complex-network-driven-contagion-phenomena">Brockmann
+与 Helbing 2013：The hidden geometry of complex, network-driven
+contagion phenomena</h3>
+<ul>
+<li><strong>背景</strong>：全球流行的时空图案在地理地图上看起来杂乱无章，难以直观理解与预测。</li>
+<li><strong>核心发现</strong>：用由航空流量定义的有效距离
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mrow><mi>m</mi><mi>n</mi></mrow></msub><mo>=</mo><mn>1</mn><mo>−</mo><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><msub><mi>P</mi><mrow><mi>m</mi><mi>n</mi></mrow></msub></mrow><annotation encoding="application/x-tex">d_{mn}=1-\ln P_{mn}</annotation></semantics></math>
+替代地理距离，复杂图案化为从源头出发的近似匀速波；有效距离能可靠地预测到达时间，即使流行病学参数未知也能给出相对到达时间，并能识别传播的空间源头。方法在
+2009 年 H1N1 与 2003 年 SARS 数据上得到验证。</li>
+<li><strong>阅读要点</strong>：理解为什么
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">-\ln P</annotation></semantics></math>
+是“概率意义上的距离”（多段路径的概率相乘，对数相加）；对照<a
+href="spreading.metapopulation.html">集合种群与全球传播</a>的代码示例。</li>
+<li><strong>延伸思考</strong>：在一个城市内部的医院转诊网络上，可以怎样定义有效距离，用于预测耐药菌在医院间的到达顺序？</li>
+</ul>
+<p>DOI：<a
+href="https://doi.org/10.1126/science.1245200">10.1126/science.1245200</a></p>
+<h3
+id="kempekleinberg-与-tardos-2003maximizing-the-spread-of-influence-through-a-social-network">Kempe、Kleinberg
+与 Tardos 2003：Maximizing the spread of influence through a social
+network</h3>
+<ul>
+<li><strong>背景</strong>：病毒营销与公共卫生推广都要回答“先说服哪几个人”。此前多为启发式（选度最高者）。</li>
+<li><strong>核心发现</strong>：在独立级联与线性阈值模型下，影响力最大化是
+NP 难的；但期望传播范围是单调子模函数，贪心算法有
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><mn>1</mn><mi>/</mi><mi>e</mi></mrow><annotation encoding="application/x-tex">1-1/e</annotation></semantics></math>
+的近似保证，且在实验中优于度与中心性启发式。</li>
+<li><strong>阅读要点</strong>：掌握“活边图”论证子模性的技巧；理解为什么一组最好的种子不是单个排名前
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+的节点。</li>
+<li><strong>延伸思考</strong>：复杂传染（阈值较高）下传播范围是否仍为子模函数？如果不是，贪心算法会出什么问题？</li>
+</ul>
+<p>DOI：<a
+href="https://doi.org/10.1145/956750.956769">10.1145/956750.956769</a></p>
+<h3 id="其他引用文献">其他引用文献</h3>
+<p>正文中引用的其余文献：</p>
+<ul>
+<li>经典模型与再生数：Kermack 与 McKendrick 1927，<a
+href="https://doi.org/10.1098/rspa.1927.0118">10.1098/rspa.1927.0118</a>；Diekmann、Heesterbeek
+与 Metz 1990，<a
+href="https://doi.org/10.1007/BF00178324">10.1007/BF00178324</a>；Wallinga
+与 Teunis 2004，<a
+href="https://doi.org/10.1093/aje/kwh255">10.1093/aje/kwh255</a>；Wallinga
+与 Lipsitch 2007，<a
+href="https://doi.org/10.1098/rspb.2006.3754">10.1098/rspb.2006.3754</a>；Cori
+等 2013，<a
+href="https://doi.org/10.1093/aje/kwt133">10.1093/aje/kwt133</a>。</li>
+<li>网络阈值与理论方法：Newman 2002，<a
+href="https://doi.org/10.1103/PhysRevE.66.016128">10.1103/PhysRevE.66.016128</a>；Barthélemy
+等 2004，<a
+href="https://doi.org/10.1103/PhysRevLett.92.178701">10.1103/PhysRevLett.92.178701</a>；Kenah
+与 Robins 2007，<a
+href="https://doi.org/10.1103/PhysRevE.76.036113">10.1103/PhysRevE.76.036113</a>；Chakrabarti
+等 2008，<a
+href="https://doi.org/10.1145/1284680.1284681">10.1145/1284680.1284681</a>；Van
+Mieghem、Omic 与 Kooij 2009，<a
+href="https://doi.org/10.1109/TNET.2008.925623">10.1109/TNET.2008.925623</a>；Castellano
+与 Pastor-Satorras 2010，<a
+href="https://doi.org/10.1103/PhysRevLett.105.218701">10.1103/PhysRevLett.105.218701</a>；Keeling
+1999，<a
+href="https://doi.org/10.1098/rspb.1999.0716">10.1098/rspb.1999.0716</a>；Volz
+2008，<a
+href="https://doi.org/10.1007/s00285-007-0116-4">10.1007/s00285-007-0116-4</a>；Miller、Slim
+与 Volz 2012，<a
+href="https://doi.org/10.1098/rsif.2011.0403">10.1098/rsif.2011.0403</a>；Karrer
+与 Newman 2010，<a
+href="https://doi.org/10.1103/PhysRevE.82.016101">10.1103/PhysRevE.82.016101</a>；Gleeson
+2011，<a
+href="https://doi.org/10.1103/PhysRevLett.107.068701">10.1103/PhysRevLett.107.068701</a>。</li>
+<li>接触网络与时间网络：Liljeros 等 2001，<a
+href="https://doi.org/10.1038/35082140">10.1038/35082140</a>；Eubank 等
+2004，<a
+href="https://doi.org/10.1038/nature02541">10.1038/nature02541</a>；Mossong
+等 2008，<a
+href="https://doi.org/10.1371/journal.pmed.0050074">10.1371/journal.pmed.0050074</a>；Salathé
+等 2010，<a
+href="https://doi.org/10.1073/pnas.1009094108">10.1073/pnas.1009094108</a>；Rocha、Liljeros
+与 Holme 2011，<a
+href="https://doi.org/10.1371/journal.pcbi.1001109">10.1371/journal.pcbi.1001109</a>；Vanhems
+等 2013，<a
+href="https://doi.org/10.1371/journal.pone.0073970">10.1371/journal.pone.0073970</a>；Holme
+与 Saramäki 2012，<a
+href="https://doi.org/10.1016/j.physrep.2012.03.001">10.1016/j.physrep.2012.03.001</a>；Vazquez
+等 2007，<a
+href="https://doi.org/10.1103/PhysRevLett.98.158702">10.1103/PhysRevLett.98.158702</a>；Karsai
+等 2011，<a
+href="https://doi.org/10.1103/PhysRevE.83.025102">10.1103/PhysRevE.83.025102</a>；Perra
+等 2012，<a
+href="https://doi.org/10.1038/srep00469">10.1038/srep00469</a>；Valdano
+等 2015，<a
+href="https://doi.org/10.1103/PhysRevX.5.021005">10.1103/PhysRevX.5.021005</a>；Salathé
+与 Jones 2010，<a
+href="https://doi.org/10.1371/journal.pcbi.1000736">10.1371/journal.pcbi.1000736</a>。</li>
+<li>集合种群与全球传播：Hufnagel、Brockmann 与 Geisel 2004，<a
+href="https://doi.org/10.1073/pnas.0308344101">10.1073/pnas.0308344101</a>；Colizza
+等 2006，<a
+href="https://doi.org/10.1073/pnas.0510525103">10.1073/pnas.0510525103</a>；Colizza
+与 Vespignani 2007，<a
+href="https://doi.org/10.1103/PhysRevLett.99.148701">10.1103/PhysRevLett.99.148701</a>；Balcan
+等 2009，<a
+href="https://doi.org/10.1073/pnas.0906910106">10.1073/pnas.0906910106</a>；Chinazzi
+等 2020，<a
+href="https://doi.org/10.1126/science.aba9757">10.1126/science.aba9757</a>；Chang
+等 2021，<a
+href="https://doi.org/10.1038/s41586-020-2923-3">10.1038/s41586-020-2923-3</a>。</li>
+<li>免疫、追踪与监测：Pastor-Satorras 与 Vespignani 2002，<a
+href="https://doi.org/10.1103/PhysRevE.65.036104">10.1103/PhysRevE.65.036104</a>；Dezső
+与 Barabási 2002，<a
+href="https://doi.org/10.1103/PhysRevE.65.055103">10.1103/PhysRevE.65.055103</a>；Lloyd-Smith、Galvani
+与 Getz 2003，<a
+href="https://doi.org/10.1098/rspb.2003.2481">10.1098/rspb.2003.2481</a>；Eames
+与 Keeling 2003，<a
+href="https://doi.org/10.1098/rspb.2003.2554">10.1098/rspb.2003.2554</a>；Fraser
+等 2004，<a
+href="https://doi.org/10.1073/pnas.0307506101">10.1073/pnas.0307506101</a>；Christakis
+与 Fowler 2010，<a
+href="https://doi.org/10.1371/journal.pone.0012948">10.1371/journal.pone.0012948</a>；Ferretti
+等 2020，<a
+href="https://doi.org/10.1126/science.abb6936">10.1126/science.abb6936</a>；Kucharski
+等 2020，<a
+href="https://doi.org/10.1016/S1473-3099(20)30457-6">10.1016/S1473-3099(20)30457-6</a>；Adam
+等 2020，<a
+href="https://doi.org/10.1038/s41591-020-1092-0">10.1038/s41591-020-1092-0</a>；Kojaku
+等 2021，<a
+href="https://doi.org/10.1038/s41567-021-01187-2">10.1038/s41567-021-01187-2</a>；Donker、Wallinga
+与 Grundmann 2010，<a
+href="https://doi.org/10.1371/journal.pcbi.1000715">10.1371/journal.pcbi.1000715</a>。</li>
+<li>社会传染与影响力：Coleman、Katz 与 Menzel 1957，<a
+href="https://doi.org/10.2307/2785979">10.2307/2785979</a>；Granovetter
+1978，<a href="https://doi.org/10.1086/226707" target="_blank" rel="noopener">10.1086/226707</a>；Watts
+2002，<a
+href="https://doi.org/10.1073/pnas.082090499">10.1073/pnas.082090499</a>；Centola
+与 Macy 2007，<a
+href="https://doi.org/10.1086/521848">10.1086/521848</a>；Centola
+2010，<a
+href="https://doi.org/10.1126/science.1185231">10.1126/science.1185231</a>；Cohen-Cole
+与 Fletcher 2008，<a
+href="https://doi.org/10.1136/bmj.a2533">10.1136/bmj.a2533</a>；Funk 等
+2009，<a
+href="https://doi.org/10.1073/pnas.0810762106">10.1073/pnas.0810762106</a>；Kitsak
+等 2010，<a
+href="https://doi.org/10.1038/nphys1746">10.1038/nphys1746</a>；Iyengar、Van
+den Bulte 与 Valente 2011，<a
+href="https://doi.org/10.1287/mksc.1100.0566">10.1287/mksc.1100.0566</a>；Shalizi
+与 Thomas 2011，<a
+href="https://doi.org/10.1177/0049124111404820">10.1177/0049124111404820</a>；Banerjee
+等 2013，<a
+href="https://doi.org/10.1126/science.1236498">10.1126/science.1236498</a>；Kim
+等 2015，<a
+href="https://doi.org/10.1016/S0140-6736(15)60095-2">10.1016/S0140-6736(15)60095-2</a>；Morone
+与 Makse 2015，<a
+href="https://doi.org/10.1038/nature14604">10.1038/nature14604</a>；Iacopini
+等 2019，<a
+href="https://doi.org/10.1038/s41467-019-10431-6">10.1038/s41467-019-10431-6</a>。</li>
+<li>传播溯源：Shah 与 Zaman 2011，<a
+href="https://doi.org/10.1109/TIT.2011.2158885">10.1109/TIT.2011.2158885</a>；Pinto、Thiran
+与 Vetterli 2012，<a
+href="https://doi.org/10.1103/PhysRevLett.109.068702">10.1103/PhysRevLett.109.068702</a>；Lokhov
+等 2014，<a
+href="https://doi.org/10.1103/PhysRevE.90.012801">10.1103/PhysRevE.90.012801</a>；Zhang、Zhang、Lv
+与 Yin 2016，Identification of efficient observers for locating
+spreading source in complex networks，Physica A 442: 100–109，<a
+href="https://doi.org/10.1016/j.physa.2015.09.017">10.1016/j.physa.2015.09.017</a>。</li>
+<li>脑网络扩散：Raj、Kuceyeski 与 Weiner 2012，<a
+href="https://doi.org/10.1016/j.neuron.2011.12.040">10.1016/j.neuron.2011.12.040</a>。</li>
+</ul>
+</section><section class="block" id="data"><h2><span class="tag">Data &amp; tools</span>相关数据与软件</h2><div class="rgrid"><a class="rcard" href="r-snap-datasets.html" data-dom="theory methods" data-k="snap 大型网络数据集 斯坦福大学整理的大型真实网络数据集合。"><span class="kind">数据集</span><b>SNAP 大型网络数据集</b><span class="d">斯坦福大学整理的大型真实网络数据集合。</span></a></div></section><section class="block prose" id="resources"><h2><span class="tag">Further</span>延伸资源</h2><div class="table-wrap"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>类型</th>
+<th>资源</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>教材</td>
+<td>Barabási《Network Science》第 10 章 Spreading Phenomena（<a
+href="http://networksciencebook.com/chapter/10">链接</a>）</td>
+<td>SI/SIS/SIR、异质平均场推导、接触网络、超越度分布、免疫策略与流行病预测的主要参考；Advanced
+Topics 10.A–10.E 对应本专题的微观模型、网络解析解、目标免疫、SIR
+阈值与全球流行模型；CC BY-NC-SA 2.0</td>
+</tr>
+<tr>
+<td>教材</td>
+<td>Kiss、Miller 与 Simon 2017，Mathematics of Epidemics on
+Networks，Springer（<a
+href="https://doi.org/10.1007/978-3-319-50806-1">DOI</a>）</td>
+<td>配对近似、边基模型、消息传递与精确模拟的系统处理，对应<a
+href="spreading.message-passing.html">配对近似、边基模型与消息传递</a></td>
+</tr>
+<tr>
+<td>综述</td>
+<td>Pastor-Satorras 等 2015, Epidemic processes in complex networks, Rev
+Mod Phys（<a
+href="https://doi.org/10.1103/RevModPhys.87.925">DOI</a>）</td>
+<td>网络流行病学最全面的综述，先读第 1–4
+节；时间网络、集合种群与免疫见后续章节</td>
+</tr>
+<tr>
+<td>综述</td>
+<td>Holme 与 Saramäki 2012, Temporal networks, Physics Reports（<a
+href="https://doi.org/10.1016/j.physrep.2012.03.001">DOI</a>）</td>
+<td>时间网络的概念、度量与传播，对应<a
+href="spreading.temporal-networks.html">时间网络与阵发性</a></td>
+</tr>
+<tr>
+<td>中文视频</td>
+<td>中国大学 MOOC《复杂网络分析》7.2 网络上的疾病传播（<a
+href="https://www.icourse163.org/course/BNU-1206632825">链接</a>）</td>
+<td>13 分钟中文入门</td>
+</tr>
+<tr>
+<td>交互演示</td>
+<td>Complexity Explorables：Facebooked Flu Shots（<a
+href="https://www.complexity-explorables.org/explorables/facebooked-flu-shots/">链接</a>）</td>
+<td>在浏览器里比较随机免疫与熟人免疫，对应<a
+href="spreading.immunization.html">免疫策略</a></td>
+</tr>
+<tr>
+<td>交互演示</td>
+<td>Nicky Case：The Wisdom and/or Madness of Crowds（<a
+href="https://ncase.me/crowds/">链接</a>）</td>
+<td>交互文章，直观区分简单传染与复杂传染、阈值与级联，约 30 分钟</td>
+</tr>
+<tr>
+<td>英文视频</td>
+<td>Beveridge：NetSci 12-2 Epidemics on Networks（<a
+href="https://www.youtube.com/watch?v=B_64X8kqJ8k">YouTube</a>）</td>
+<td>6 分钟说明剩余度与传播阈值；需境外网络</td>
+</tr>
+<tr>
+<td>论文</td>
+<td>Kitsak 等 2010, Identification of influential spreaders in complex
+networks, Nature Physics（<a
+href="https://doi.org/10.1038/nphys1746">DOI</a>）</td>
+<td>k-壳与关键传播者，对应<a
+href="spreading.influential-spreaders.html">影响力最大化与关键传播者</a>；精读：<a
+href="paper-kitsak2010_spreaders.html">Kitsak 2010</a></td>
+</tr>
+<tr>
+<td>代码</td>
+<td>EoN（Epidemics on Networks）Python 包（<a
+href="https://epidemicsonnetworks.readthedocs.io/en/latest/">文档</a>）</td>
+<td>基于 NetworkX 的快速 SIS/SIR 模拟与配对近似、EBCM
+等方程模型，由该书作者之一维护，可替代代码示例中的手写模拟</td>
+</tr>
+<tr>
+<td>软件</td>
+<td>EpiEstim（R 包，Cori 等 2013）</td>
+<td>从发病曲线估计时变再生数
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mi>t</mi></msub><annotation encoding="application/x-tex">R_t</annotation></semantics></math>，对应<a
+href="spreading.reproduction-number.html">再生数与超级传播</a></td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>提示：Barabási《Network
+Science》在线版需加载境外脚本，在中国大陆可能无法正常显示；标注“需境外网络”的为
+YouTube 资源。</p>
+</blockquote>
+</section><section class="block prose" id="questions"><h2><span class="tag">Open questions</span>开放问题</h2><ol type="1">
+<li>选择一种你熟悉的疾病或健康行为（如结核、HPV、吸烟、抑郁情绪），说明它更接近简单传染还是复杂传染，在网络上应采用哪种干预策略，为什么？需要哪些数据来检验这一判断？</li>
+<li>如果手中有一份医院病区的医护–患者接触记录（时间戳 +
+两人编号），应如何构建网络（静态还是时序？加权还是不加权？），如何用本专题的方法评估院内感染风险并确定优先监测对象？</li>
+<li>同一张接触网络上，HMF、淬火平均场与消息传递给出的阈值相差一倍。你会如何设计模拟与敏感性分析，向公共卫生决策者说明“真实阈值”的不确定性？</li>
+<li>向后追踪在理论上更有效，但需要回溯更长时间、记录更多接触。在保护隐私的数字追踪框架下，你会如何权衡追踪深度、方向与数据保存期限？</li>
+<li>一次院内耐药菌暴发中，只知道若干患者的阳性检出日期和医院转诊记录。如何结合网络溯源方法与病原体基因组数据推断传入源头？哪些假设最可能不成立？</li>
+</ol>
+</section></article><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script><script src="assets/js/demos.js"></script></body></html>

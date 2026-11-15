@@ -1,0 +1,10 @@
+{
+ "topic": "synchronization",
+ "index": 5,
+ "title": "数值计算 Rössler 振子的主稳定函数并判断网络可同步性",
+ "hash": "57f190f4059676d892ebdacbee98b3071776ecca",
+ "ok": true,
+ "figures": 1,
+ "stdout": "alpha= 0.00  Lambda=+0.074\nalpha= 0.05  Lambda=+0.046\nalpha= 0.10  Lambda=+0.021\nalpha= 0.15  Lambda=-0.011\nalpha= 0.20  Lambda=-0.029\nalpha= 0.25  Lambda=-0.043\nalpha= 0.30  Lambda=-0.061\nalpha= 0.50  Lambda=-0.155\nalpha= 1.00  Lambda=-0.334\nalpha= 2.00  Lambda=-0.311\nalpha= 3.00  Lambda=-0.107\nalpha= 4.00  Lambda=-0.031\nalpha= 4.50  Lambda=-0.007\nalpha= 5.00  Lambda=+0.011\nalpha= 6.00  Lambda=+0.036\n稳定区约为 (0.135, 4.674)，alpha2/alpha1 约 34.7（有限积分时长，末位不可靠）\nWS p=0.00  mu_N/mu_2 =  156.4  可同步: False\nWS p=0.05  mu_N/mu_2 =   34.2  可同步: True\nWS p=0.20  mu_N/mu_2 =   18.7  可同步: True\nWS p=1.00  mu_N/mu_2 =    8.8  可同步: True",
+ "stderr": ""
+}

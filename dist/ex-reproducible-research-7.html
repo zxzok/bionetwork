@@ -1,0 +1,113 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>运行清单（provenance manifest）——记录环境、参数、种子与输入输出的哈希 · 生物医学网络科学</title><meta name="description" content="研究问题、可复现分析与敏感性分析 · 代码示例：运行清单（provenance manifest）——记录环境、参数、种子与输入输出的哈希"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-methods"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html" aria-current="page">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods" open><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a><ol class="sub"><li><a href="reproducible-research.research-questions.html"><span class="n">01</span>提出网络研究问题</a></li><li><a href="reproducible-research.preregistration.html"><span class="n">02</span>预注册与分析计划</a></li><li><a href="reproducible-research.reproducible-analysis.html"><span class="n">03</span>可复算的分析</a></li><li><a href="reproducible-research.computational-environment.html"><span class="n">04</span>计算环境与工作流</a></li><li><a href="reproducible-research.open-data-code.html"><span class="n">05</span>数据与代码共享</a></li><li><a href="reproducible-research.randomness-robustness.html"><span class="n">06</span>随机性控制</a></li><li><a href="reproducible-research.sensitivity-analysis.html"><span class="n">07</span>敏感性分析与替代解释</a></li><li><a href="reproducible-research.multiverse-analysis.html"><span class="n">08</span>多元宇宙分析与设定曲线</a></li><li><a href="reproducible-research.power-sample-size.html"><span class="n">09</span>统计功效与样本量</a></li><li><a href="reproducible-research.reporting-checklist.html"><span class="n">10</span>网络研究的报告清单</a></li><li><a href="reproducible-research.replication-cases.html"><span class="n">11</span>可重复性危机与负结果</a></li><li><a href="reproducible-research.ai-assistance.html"><span class="n">12</span>负责任地使用 AI 辅助</a></li><li><a href="reproducible-research.derivations.html"><span class="n">13</span>数学推导与算法</a></li><li><a href="reproducible-research.frontiers.html"><span class="n">14</span>研究前沿与开放问题</a></li><li><a href="reproducible-research.biomedical.html"><span class="n">15</span>生物医学应用</a></li><li><a href="reproducible-research.limitations.html"><span class="n">16</span>适用范围与常见误用</a></li></ol></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="code.html">代码库</a> <span class="sep">/</span> <a href="code.html#methods">计算方法与研究规范</a> <span class="sep">/</span> <a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></nav><div class="eyebrow" style="margin-top:14px"><b>Example</b><span>08 / 08</span></div><h1>运行清单（provenance manifest）——记录环境、参数、种子与输入输出的哈希</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></dd></div><div><dt>下载</dt><dd><a href="notebooks/reproducible-research.ipynb" download>Notebook</a> · <a href="notebooks/reproducible-research.py" download>.py</a></dd></div></dl></header><section class="block prose"><p>把一次网络分析需要复算的信息写进 JSON：Python
+与关键包版本、平台、参数、随机种子、 输入文件与输出结果的
+SHA-256。然后用同样的设置重跑一次，比较输出哈希是否一致。
+解读：哈希一致说明在同一环境下可复算；换机器或升级包后若哈希改变，可据清单逐项排查。
+浮点运算在不同平台或并行设置下可能有末位差异，此时应比较数值容差而非字节哈希。</p>
+</section><section class="block"><h2><span class="tag">Output</span>文字输出</h2><pre class="ex-out">{
+  &quot;python&quot;: &quot;3.15.0&quot;,
+  &quot;platform&quot;: &quot;macOS-27.2-arm64-arm-64bit-Mach-O&quot;,
+  &quot;packages&quot;: {
+    &quot;networkx&quot;: &quot;3.7&quot;,
+    &quot;numpy&quot;: &quot;2.5.4&quot;,
+    &quot;scipy&quot;: &quot;1.18.1&quot;
+  },
+  &quot;parameters&quot;: {
+    &quot;algorithm&quot;: &quot;louvain&quot;,
+    &quot;resolution&quot;: 1.0,
+    &quot;seed&quot;: 20261115
+  },
+  &quot;inputs&quot;: {
+    &quot;network.edgelist&quot;: &quot;1b72d131cad3ad359a30ff4141707c9dc374606e59cd93bae6ef3a018ebdea95&quot;
+  },
+  &quot;outputs&quot;: {
+    &quot;result_run0.json&quot;: &quot;8ec16652fa98ccdd7a847a304721a36121b25596ffe0ec4ace3c723093c7d7d6&quot;
+  },
+  &quot;modularity_Q&quot;: 0.5025
+}
+两次运行输出哈希一致： True</pre></section><section class="block prose"><h2><span class="tag">Code</span>代码</h2><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 把一次网络分析需要复算的信息写进 JSON：Python 与关键包版本、平台、参数、随机种子、</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 输入文件与输出结果的 SHA-256。然后用同样的设置重跑一次，比较输出哈希是否一致。</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 解读：哈希一致说明在同一环境下可复算；换机器或升级包后若哈希改变，可据清单逐项排查。</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 浮点运算在不同平台或并行设置下可能有末位差异，此时应比较数值容差而非字节哈希。</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> hashlib, json, platform, sys, tempfile</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> networkx <span class="im">as</span> nx</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> scipy</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> sha256(path):</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> hashlib.sha256(Path(path).read_bytes()).hexdigest()</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> run_analysis(edge_file, out_file, seed, resolution):</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    G <span class="op">=</span> nx.read_edgelist(edge_file, nodetype<span class="op">=</span><span class="bu">int</span>)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    comms <span class="op">=</span> nx.community.louvain_communities(G, seed<span class="op">=</span>seed, resolution<span class="op">=</span>resolution)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    Q <span class="op">=</span> nx.community.modularity(G, comms)</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    labels <span class="op">=</span> {v: i <span class="cf">for</span> i, c <span class="kw">in</span> <span class="bu">enumerate</span>(<span class="bu">sorted</span>(comms, key<span class="op">=</span><span class="bu">min</span>)) <span class="cf">for</span> v <span class="kw">in</span> c}</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    Path(out_file).write_text(json.dumps({<span class="st">&quot;Q&quot;</span>: <span class="bu">round</span>(Q, <span class="dv">10</span>), <span class="st">&quot;labels&quot;</span>: [labels[v] <span class="cf">for</span> v <span class="kw">in</span> <span class="bu">sorted</span>(G)]}))</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> Q</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>workdir <span class="op">=</span> Path(tempfile.mkdtemp())</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>edge_file <span class="op">=</span> workdir <span class="op">/</span> <span class="st">&quot;network.edgelist&quot;</span>                      <span class="co"># 模拟的“原始数据”</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>nx.write_edgelist(nx.random_partition_graph([<span class="dv">20</span>, <span class="dv">20</span>, <span class="dv">20</span>], <span class="fl">0.3</span>, <span class="fl">0.03</span>, seed<span class="op">=</span><span class="dv">5</span>), edge_file, data<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>params <span class="op">=</span> {<span class="st">&quot;algorithm&quot;</span>: <span class="st">&quot;louvain&quot;</span>, <span class="st">&quot;resolution&quot;</span>: <span class="fl">1.0</span>, <span class="st">&quot;seed&quot;</span>: <span class="dv">20261115</span>}</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>hashes <span class="op">=</span> []</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> run <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">2</span>):</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    out <span class="op">=</span> workdir <span class="op">/</span> <span class="ss">f&quot;result_run</span><span class="sc">{</span>run<span class="sc">}</span><span class="ss">.json&quot;</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    Q <span class="op">=</span> run_analysis(edge_file, out, params[<span class="st">&quot;seed&quot;</span>], params[<span class="st">&quot;resolution&quot;</span>])</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>    hashes.append(sha256(out))</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>manifest <span class="op">=</span> {</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;python&quot;</span>: sys.version.split()[<span class="dv">0</span>], <span class="st">&quot;platform&quot;</span>: platform.platform(),</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;packages&quot;</span>: {<span class="st">&quot;networkx&quot;</span>: nx.__version__, <span class="st">&quot;numpy&quot;</span>: np.__version__, <span class="st">&quot;scipy&quot;</span>: scipy.__version__},</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;parameters&quot;</span>: params,</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;inputs&quot;</span>: {edge_file.name: sha256(edge_file)},</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;outputs&quot;</span>: {<span class="st">&quot;result_run0.json&quot;</span>: hashes[<span class="dv">0</span>]},</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;modularity_Q&quot;</span>: <span class="bu">round</span>(Q, <span class="dv">4</span>),</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>(workdir <span class="op">/</span> <span class="st">&quot;manifest.json&quot;</span>).write_text(json.dumps(manifest, indent<span class="op">=</span><span class="dv">2</span>, ensure_ascii<span class="op">=</span><span class="va">False</span>))</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(json.dumps(manifest, indent<span class="op">=</span><span class="dv">2</span>, ensure_ascii<span class="op">=</span><span class="va">False</span>))</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;两次运行输出哈希一致：&quot;</span>, hashes[<span class="dv">0</span>] <span class="op">==</span> hashes[<span class="dv">1</span>])</span></code></pre></div>
+</section><section class="block"><h2><span class="tag">Run</span>在浏览器中运行</h2><p class="small">首次加载 Python 环境约需 20–40 秒；可以修改参数后重新运行。</p><div class="cell"><div class="cell-head"><h3>运行清单（provenance manifest）——记录环境、参数、种子与输入输出的哈希</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea id="reproducible-research-cell7" rows="30" spellcheck="false" aria-label="运行清单（provenance manifest）——记录环境、参数、种子与输入输出的哈希 代码"># 把一次网络分析需要复算的信息写进 JSON：Python 与关键包版本、平台、参数、随机种子、
+# 输入文件与输出结果的 SHA-256。然后用同样的设置重跑一次，比较输出哈希是否一致。
+# 解读：哈希一致说明在同一环境下可复算；换机器或升级包后若哈希改变，可据清单逐项排查。
+# 浮点运算在不同平台或并行设置下可能有末位差异，此时应比较数值容差而非字节哈希。
+import hashlib, json, platform, sys, tempfile
+from pathlib import Path
+import numpy as np
+import networkx as nx
+import scipy
+
+def sha256(path):
+    return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+
+def run_analysis(edge_file, out_file, seed, resolution):
+    G = nx.read_edgelist(edge_file, nodetype=int)
+    comms = nx.community.louvain_communities(G, seed=seed, resolution=resolution)
+    Q = nx.community.modularity(G, comms)
+    labels = {v: i for i, c in enumerate(sorted(comms, key=min)) for v in c}
+    Path(out_file).write_text(json.dumps({&quot;Q&quot;: round(Q, 10), &quot;labels&quot;: [labels[v] for v in sorted(G)]}))
+    return Q
+
+workdir = Path(tempfile.mkdtemp())
+edge_file = workdir / &quot;network.edgelist&quot;                      # 模拟的“原始数据”
+nx.write_edgelist(nx.random_partition_graph([20, 20, 20], 0.3, 0.03, seed=5), edge_file, data=False)
+
+params = {&quot;algorithm&quot;: &quot;louvain&quot;, &quot;resolution&quot;: 1.0, &quot;seed&quot;: 20261115}
+hashes = []
+for run in range(2):
+    out = workdir / f&quot;result_run{run}.json&quot;
+    Q = run_analysis(edge_file, out, params[&quot;seed&quot;], params[&quot;resolution&quot;])
+    hashes.append(sha256(out))
+
+manifest = {
+    &quot;python&quot;: sys.version.split()[0], &quot;platform&quot;: platform.platform(),
+    &quot;packages&quot;: {&quot;networkx&quot;: nx.__version__, &quot;numpy&quot;: np.__version__, &quot;scipy&quot;: scipy.__version__},
+    &quot;parameters&quot;: params,
+    &quot;inputs&quot;: {edge_file.name: sha256(edge_file)},
+    &quot;outputs&quot;: {&quot;result_run0.json&quot;: hashes[0]},
+    &quot;modularity_Q&quot;: round(Q, 4),
+}
+(workdir / &quot;manifest.json&quot;).write_text(json.dumps(manifest, indent=2, ensure_ascii=False))
+print(json.dumps(manifest, indent=2, ensure_ascii=False))
+print(&quot;两次运行输出哈希一致：&quot;, hashes[0] == hashes[1])</textarea><div class="out" aria-live="polite"></div></div></section><nav class="pager"><a href="ex-reproducible-research-6.html"><small>上一个示例</small>循环论证（double dipping）——用同一份数据选边又检验边</a><a href="reproducible-research.html"><small>回到专题</small>研究问题、可复现分析与敏感性分析</a></nav></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

@@ -1,0 +1,10 @@
+{
+ "topic": "controllability",
+ "index": 11,
+ "title": "随机失效与蓄意攻击下的结构鲁棒性",
+ "hash": "9ecb7ef5c63316756d254359b65c7f192d157f43",
+ "ok": true,
+ "figures": 1,
+ "stdout": "ER: kappa0 = 4.92, f_c 估计 = 0.745；删除 20% 后巨分支：随机 0.76，攻击 0.69\nBA: kappa0 = 11.13, f_c 估计 = 0.901；删除 20% 后巨分支：随机 0.79，攻击 0.02",
+ "stderr": ""
+}

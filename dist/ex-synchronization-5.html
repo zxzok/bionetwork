@@ -1,0 +1,170 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>数值计算 Rössler 振子的主稳定函数并判断网络可同步性 · 生物医学网络科学</title><meta name="description" content="同步与协同动力学 · 代码示例：数值计算 Rössler 振子的主稳定函数并判断网络可同步性"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-dynamics"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html" aria-current="page">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics" open><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a><ol class="sub"><li><a href="synchronization.synchronization-types.html"><span class="n">01</span>同步现象与类型</a></li><li><a href="synchronization.kuramoto-model.html"><span class="n">02</span>Kuramoto 模型与序参量</a></li><li><a href="synchronization.network-kuramoto.html"><span class="n">03</span>网络拓扑与同步阈值</a></li><li><a href="synchronization.laplacian-spectrum.html"><span class="n">04</span>拉普拉斯谱与代数连通度</a></li><li><a href="synchronization.master-stability.html"><span class="n">05</span>主稳定函数与可同步性</a></li><li><a href="synchronization.hierarchical-sync.html"><span class="n">06</span>模块结构与分层同步</a></li><li><a href="synchronization.explosive-sync.html"><span class="n">07</span>爆发式同步</a></li><li><a href="synchronization.cluster-chimera.html"><span class="n">08</span>簇同步与奇异态</a></li><li><a href="synchronization.delay-noise.html"><span class="n">09</span>时滞与噪声</a></li><li><a href="synchronization.whole-brain-models.html"><span class="n">10</span>神经质量模型与全脑模型</a></li><li><a href="synchronization.phase-synchrony-estimation.html"><span class="n">11</span>从实测信号估计同步</a></li><li><a href="synchronization.consensus.html"><span class="n">12</span>共识动力学</a></li><li><a href="synchronization.derivations.html"><span class="n">13</span>数学推导与算法</a></li><li><a href="synchronization.frontiers.html"><span class="n">14</span>研究前沿与开放问题</a></li><li><a href="synchronization.biomedical.html"><span class="n">15</span>生物医学应用</a></li><li><a href="synchronization.limitations.html"><span class="n">16</span>适用范围与常见误用</a></li></ol></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="code.html">代码库</a> <span class="sep">/</span> <a href="code.html#dynamics">网络动力学与控制</a> <span class="sep">/</span> <a href="synchronization.html">同步与协同动力学</a></nav><div class="eyebrow" style="margin-top:14px"><b>Example</b><span>06 / 11</span></div><h1>数值计算 Rössler 振子的主稳定函数并判断网络可同步性</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="synchronization.html">同步与协同动力学</a></dd></div><div><dt>下载</dt><dd><a href="notebooks/synchronization.ipynb" download>Notebook</a> · <a href="notebooks/synchronization.py" download>.py</a></dd></div></dl></header><section class="block prose"><p>节点动力学为 Rössler 系统（a=b=0.2, c=7），耦合只通过 x
+分量（H(x,y,z) = (x,0,0)）。 对每个 alpha 同时积分 Rössler
+轨道和变分方程 d zeta/dt = [DF(s) - alpha*E11] zeta，
+周期性重归一化求最大李雅普诺夫指数 Lambda(alpha)。读出 Lambda&lt;0
+的区间 (alpha1, alpha2)。 再用 alpha2/alpha1 判断几种 WS
+网络（N=100）是否存在使同步稳定的耦合强度 sigma。 解读：这类 MSF
+的稳定区是有限区间，特征值比 mu_N/mu_2 小于 alpha2/alpha1
+的网络才可能同步。</p>
+</section><section class="block"><h2><span class="tag">Output</span>输出图</h2><div class="ex-figs"><img src="gallery/synchronization-5-0.png" alt="数值计算 Rössler 振子的主稳定函数并判断网络可同步性：输出图 1" loading="lazy"></div></section><section class="block"><h2><span class="tag">Output</span>文字输出</h2><pre class="ex-out">alpha= 0.00  Lambda=+0.074
+alpha= 0.05  Lambda=+0.046
+alpha= 0.10  Lambda=+0.021
+alpha= 0.15  Lambda=-0.011
+alpha= 0.20  Lambda=-0.029
+alpha= 0.25  Lambda=-0.043
+alpha= 0.30  Lambda=-0.061
+alpha= 0.50  Lambda=-0.155
+alpha= 1.00  Lambda=-0.334
+alpha= 2.00  Lambda=-0.311
+alpha= 3.00  Lambda=-0.107
+alpha= 4.00  Lambda=-0.031
+alpha= 4.50  Lambda=-0.007
+alpha= 5.00  Lambda=+0.011
+alpha= 6.00  Lambda=+0.036
+稳定区约为 (0.135, 4.674)，alpha2/alpha1 约 34.7（有限积分时长，末位不可靠）
+WS p=0.00  mu_N/mu_2 =  156.4  可同步: False
+WS p=0.05  mu_N/mu_2 =   34.2  可同步: True
+WS p=0.20  mu_N/mu_2 =   18.7  可同步: True
+WS p=1.00  mu_N/mu_2 =    8.8  可同步: True</pre></section><section class="block prose"><h2><span class="tag">Code</span>代码</h2><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 节点动力学为 Rössler 系统（a=b=0.2, c=7），耦合只通过 x 分量（H(x,y,z) = (x,0,0)）。</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 对每个 alpha 同时积分 Rössler 轨道和变分方程 d zeta/dt = [DF(s) - alpha*E11] zeta，</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 周期性重归一化求最大李雅普诺夫指数 Lambda(alpha)。读出 Lambda&lt;0 的区间 (alpha1, alpha2)。</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 再用 alpha2/alpha1 判断几种 WS 网络（N=100）是否存在使同步稳定的耦合强度 sigma。</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 解读：这类 MSF 的稳定区是有限区间，特征值比 mu_N/mu_2 小于 alpha2/alpha1 的网络才可能同步。</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> networkx <span class="im">as</span> nx</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>a, b, c <span class="op">=</span> <span class="fl">0.2</span>, <span class="fl">0.2</span>, <span class="fl">7.0</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> F(s):</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    x, y, z <span class="op">=</span> s</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.array([<span class="op">-</span>y <span class="op">-</span> z, x <span class="op">+</span> a <span class="op">*</span> y, b <span class="op">+</span> z <span class="op">*</span> (x <span class="op">-</span> c)])</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> DF(s):</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    x, y, z <span class="op">=</span> s</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.array([[<span class="dv">0</span>, <span class="op">-</span><span class="dv">1</span>, <span class="op">-</span><span class="dv">1</span>], [<span class="dv">1</span>, a, <span class="dv">0</span>], [z, <span class="dv">0</span>, x <span class="op">-</span> c]])</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> rk4(f, u, h):</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    k1 <span class="op">=</span> f(u)<span class="op">;</span> k2 <span class="op">=</span> f(u <span class="op">+</span> h <span class="op">/</span> <span class="dv">2</span> <span class="op">*</span> k1)<span class="op">;</span> k3 <span class="op">=</span> f(u <span class="op">+</span> h <span class="op">/</span> <span class="dv">2</span> <span class="op">*</span> k2)<span class="op">;</span> k4 <span class="op">=</span> f(u <span class="op">+</span> h <span class="op">*</span> k3)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> u <span class="op">+</span> h <span class="op">/</span> <span class="dv">6</span> <span class="op">*</span> (k1 <span class="op">+</span> <span class="dv">2</span> <span class="op">*</span> k2 <span class="op">+</span> <span class="dv">2</span> <span class="op">*</span> k3 <span class="op">+</span> k4)</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>h <span class="op">=</span> <span class="fl">0.01</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>s0 <span class="op">=</span> np.array([<span class="fl">1.0</span>, <span class="fl">1.0</span>, <span class="fl">0.0</span>])</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">20000</span>):                                <span class="co"># 越过暂态</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    s0 <span class="op">=</span> rk4(F, s0, h)</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>E <span class="op">=</span> np.zeros((<span class="dv">3</span>, <span class="dv">3</span>))<span class="op">;</span> E[<span class="dv">0</span>, <span class="dv">0</span>] <span class="op">=</span> <span class="fl">1.0</span>                  <span class="co"># DH：只耦合 x</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> msf(alpha, T<span class="op">=</span><span class="fl">300.0</span>, renorm<span class="op">=</span><span class="dv">100</span>):</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    u <span class="op">=</span> np.r_[s0, np.ones(<span class="dv">3</span>) <span class="op">/</span> np.sqrt(<span class="dv">3</span>)]</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> f(u):</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>        s, z <span class="op">=</span> u[:<span class="dv">3</span>], u[<span class="dv">3</span>:]</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> np.r_[F(s), (DF(s) <span class="op">-</span> alpha <span class="op">*</span> E) <span class="op">@</span> z]</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>    S <span class="op">=</span> <span class="fl">0.0</span><span class="op">;</span> steps <span class="op">=</span> <span class="bu">int</span>(T <span class="op">/</span> h)</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> n <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, steps <span class="op">+</span> <span class="dv">1</span>):</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>        u <span class="op">=</span> rk4(f, u, h)</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> n <span class="op">%</span> renorm <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>            nz <span class="op">=</span> np.linalg.norm(u[<span class="dv">3</span>:])<span class="op">;</span> S <span class="op">+=</span> np.log(nz)<span class="op">;</span> u[<span class="dv">3</span>:] <span class="op">/=</span> nz</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> S <span class="op">/</span> T</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>alphas <span class="op">=</span> np.r_[<span class="fl">0.0</span>, <span class="fl">0.05</span>, <span class="fl">0.1</span>, <span class="fl">0.15</span>, <span class="fl">0.2</span>, <span class="fl">0.25</span>, <span class="fl">0.3</span>, <span class="fl">0.5</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="fl">4.5</span>, <span class="dv">5</span>, <span class="dv">6</span>]</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>lam <span class="op">=</span> np.array([msf(al) <span class="cf">for</span> al <span class="kw">in</span> alphas])</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> al, l <span class="kw">in</span> <span class="bu">zip</span>(alphas, lam):</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;alpha=</span><span class="sc">%5.2f</span><span class="st">  Lambda=</span><span class="sc">%+.3f</span><span class="st">&quot;</span> <span class="op">%</span> (al, l))</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> bisect(lo, hi, n<span class="op">=</span><span class="dv">7</span>):                             <span class="co"># Lambda 在 lo、hi 两端异号</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>    slo <span class="op">=</span> np.sign(msf(lo))</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(n):</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>        mid <span class="op">=</span> (lo <span class="op">+</span> hi) <span class="op">/</span> <span class="dv">2</span></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> np.sign(msf(mid)) <span class="op">==</span> slo: lo <span class="op">=</span> mid</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>: hi <span class="op">=</span> mid</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (lo <span class="op">+</span> hi) <span class="op">/</span> <span class="dv">2</span></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>a1, a2 <span class="op">=</span> bisect(<span class="fl">0.10</span>, <span class="fl">0.15</span>), bisect(<span class="fl">4.5</span>, <span class="fl">5.0</span>)</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;稳定区约为 (</span><span class="sc">%.3f</span><span class="st">, </span><span class="sc">%.3f</span><span class="st">)，alpha2/alpha1 约 </span><span class="sc">%.1f</span><span class="st">（有限积分时长，末位不可靠）&quot;</span> <span class="op">%</span> (a1, a2, a2 <span class="op">/</span> a1))</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>ratios <span class="op">=</span> []</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> p <span class="kw">in</span> [<span class="fl">0.0</span>, <span class="fl">0.05</span>, <span class="fl">0.2</span>, <span class="fl">1.0</span>]:</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>    G <span class="op">=</span> nx.connected_watts_strogatz_graph(<span class="dv">100</span>, <span class="dv">6</span>, p, seed<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>    mu <span class="op">=</span> np.sort(np.linalg.eigvalsh(nx.laplacian_matrix(G).toarray().astype(<span class="bu">float</span>)))</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>    R <span class="op">=</span> mu[<span class="op">-</span><span class="dv">1</span>] <span class="op">/</span> mu[<span class="dv">1</span>]</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>    ratios.append(R)</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;WS p=</span><span class="sc">%.2f</span><span class="st">  mu_N/mu_2 = </span><span class="sc">%6.1f</span><span class="st">  可同步: </span><span class="sc">%s</span><span class="st">&quot;</span> <span class="op">%</span> (p, R, R <span class="op">&lt;</span> a2 <span class="op">/</span> a1))</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>fig, (ax1, ax2) <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">4</span>))</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>ax1.axvspan(a1, a2, color<span class="op">=</span><span class="st">&quot;tab:green&quot;</span>, alpha<span class="op">=</span><span class="fl">0.15</span>, label<span class="op">=</span><span class="st">&quot;stable region&quot;</span>)</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>ax1.plot(alphas, lam, <span class="st">&quot;ko-&quot;</span>, ms<span class="op">=</span><span class="dv">4</span>)<span class="op">;</span> ax1.axhline(<span class="dv">0</span>, c<span class="op">=</span><span class="st">&quot;0.5&quot;</span>, lw<span class="op">=</span><span class="fl">0.8</span>)</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>ax1.set_xlabel(<span class="st">&quot;alpha = sigma * mu&quot;</span>)<span class="op">;</span> ax1.set_ylabel(<span class="st">&quot;max Lyapunov exponent Lambda(alpha)&quot;</span>)</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>ax1.legend()<span class="op">;</span> ax1.set_title(<span class="st">&quot;Roessler MSF (x-coupling)&quot;</span>)</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>ax2.bar([<span class="st">&quot;p=0&quot;</span>, <span class="st">&quot;p=0.05&quot;</span>, <span class="st">&quot;p=0.2&quot;</span>, <span class="st">&quot;p=1&quot;</span>], ratios, color<span class="op">=</span>[<span class="st">&quot;tab:blue&quot;</span> <span class="cf">if</span> R <span class="op">&lt;</span> a2 <span class="op">/</span> a1 <span class="cf">else</span> <span class="st">&quot;0.6&quot;</span> <span class="cf">for</span> R <span class="kw">in</span> ratios])</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>ax2.axhline(a2 <span class="op">/</span> a1, ls<span class="op">=</span><span class="st">&quot;--&quot;</span>, c<span class="op">=</span><span class="st">&quot;tab:red&quot;</span>, label<span class="op">=</span><span class="st">&quot;alpha2/alpha1 = </span><span class="sc">%.1f</span><span class="st">&quot;</span> <span class="op">%</span> (a2 <span class="op">/</span> a1))</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>ax2.set_yscale(<span class="st">&quot;log&quot;</span>)<span class="op">;</span> ax2.set_ylabel(<span class="st">&quot;eigenratio mu_N / mu_2&quot;</span>)<span class="op">;</span> ax2.legend()</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>ax2.set_title(<span class="st">&quot;WS networks below the line can synchronize&quot;</span>)</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()<span class="op">;</span> plt.show()</span></code></pre></div>
+</section><section class="block"><h2><span class="tag">Run</span>在浏览器中运行</h2><p class="small">首次加载 Python 环境约需 20–40 秒；可以修改参数后重新运行。</p><div class="cell"><div class="cell-head"><h3>数值计算 Rössler 振子的主稳定函数并判断网络可同步性</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea id="synchronization-cell5" rows="30" spellcheck="false" aria-label="数值计算 Rössler 振子的主稳定函数并判断网络可同步性 代码"># 节点动力学为 Rössler 系统（a=b=0.2, c=7），耦合只通过 x 分量（H(x,y,z) = (x,0,0)）。
+# 对每个 alpha 同时积分 Rössler 轨道和变分方程 d zeta/dt = [DF(s) - alpha*E11] zeta，
+# 周期性重归一化求最大李雅普诺夫指数 Lambda(alpha)。读出 Lambda&lt;0 的区间 (alpha1, alpha2)。
+# 再用 alpha2/alpha1 判断几种 WS 网络（N=100）是否存在使同步稳定的耦合强度 sigma。
+# 解读：这类 MSF 的稳定区是有限区间，特征值比 mu_N/mu_2 小于 alpha2/alpha1 的网络才可能同步。
+import numpy as np
+import networkx as nx
+
+a, b, c = 0.2, 0.2, 7.0
+def F(s):
+    x, y, z = s
+    return np.array([-y - z, x + a * y, b + z * (x - c)])
+def DF(s):
+    x, y, z = s
+    return np.array([[0, -1, -1], [1, a, 0], [z, 0, x - c]])
+
+def rk4(f, u, h):
+    k1 = f(u); k2 = f(u + h / 2 * k1); k3 = f(u + h / 2 * k2); k4 = f(u + h * k3)
+    return u + h / 6 * (k1 + 2 * k2 + 2 * k3 + k4)
+
+h = 0.01
+s0 = np.array([1.0, 1.0, 0.0])
+for _ in range(20000):                                # 越过暂态
+    s0 = rk4(F, s0, h)
+
+E = np.zeros((3, 3)); E[0, 0] = 1.0                  # DH：只耦合 x
+def msf(alpha, T=300.0, renorm=100):
+    u = np.r_[s0, np.ones(3) / np.sqrt(3)]
+    def f(u):
+        s, z = u[:3], u[3:]
+        return np.r_[F(s), (DF(s) - alpha * E) @ z]
+    S = 0.0; steps = int(T / h)
+    for n in range(1, steps + 1):
+        u = rk4(f, u, h)
+        if n % renorm == 0:
+            nz = np.linalg.norm(u[3:]); S += np.log(nz); u[3:] /= nz
+    return S / T
+
+alphas = np.r_[0.0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.5, 1, 2, 3, 4, 4.5, 5, 6]
+lam = np.array([msf(al) for al in alphas])
+for al, l in zip(alphas, lam):
+    print(&quot;alpha=%5.2f  Lambda=%+.3f&quot; % (al, l))
+def bisect(lo, hi, n=7):                             # Lambda 在 lo、hi 两端异号
+    slo = np.sign(msf(lo))
+    for _ in range(n):
+        mid = (lo + hi) / 2
+        if np.sign(msf(mid)) == slo: lo = mid
+        else: hi = mid
+    return (lo + hi) / 2
+a1, a2 = bisect(0.10, 0.15), bisect(4.5, 5.0)
+print(&quot;稳定区约为 (%.3f, %.3f)，alpha2/alpha1 约 %.1f（有限积分时长，末位不可靠）&quot; % (a1, a2, a2 / a1))
+
+ratios = []
+for p in [0.0, 0.05, 0.2, 1.0]:
+    G = nx.connected_watts_strogatz_graph(100, 6, p, seed=1)
+    mu = np.sort(np.linalg.eigvalsh(nx.laplacian_matrix(G).toarray().astype(float)))
+    R = mu[-1] / mu[1]
+    ratios.append(R)
+    print(&quot;WS p=%.2f  mu_N/mu_2 = %6.1f  可同步: %s&quot; % (p, R, R &lt; a2 / a1))
+
+import matplotlib.pyplot as plt
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 4))
+ax1.axvspan(a1, a2, color=&quot;tab:green&quot;, alpha=0.15, label=&quot;stable region&quot;)
+ax1.plot(alphas, lam, &quot;ko-&quot;, ms=4); ax1.axhline(0, c=&quot;0.5&quot;, lw=0.8)
+ax1.set_xlabel(&quot;alpha = sigma * mu&quot;); ax1.set_ylabel(&quot;max Lyapunov exponent Lambda(alpha)&quot;)
+ax1.legend(); ax1.set_title(&quot;Roessler MSF (x-coupling)&quot;)
+ax2.bar([&quot;p=0&quot;, &quot;p=0.05&quot;, &quot;p=0.2&quot;, &quot;p=1&quot;], ratios, color=[&quot;tab:blue&quot; if R &lt; a2 / a1 else &quot;0.6&quot; for R in ratios])
+ax2.axhline(a2 / a1, ls=&quot;--&quot;, c=&quot;tab:red&quot;, label=&quot;alpha2/alpha1 = %.1f&quot; % (a2 / a1))
+ax2.set_yscale(&quot;log&quot;); ax2.set_ylabel(&quot;eigenratio mu_N / mu_2&quot;); ax2.legend()
+ax2.set_title(&quot;WS networks below the line can synchronize&quot;)
+plt.tight_layout(); plt.show()</textarea><div class="out" aria-live="polite"></div></div></section><nav class="pager"><a href="ex-synchronization-4.html"><small>上一个示例</small>常见图的拉普拉斯谱、特征值比与谱界</a><a href="ex-synchronization-6.html"><small>下一个示例</small>度–频率关联导致的爆发式同步与滞后</a></nav></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

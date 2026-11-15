@@ -1,0 +1,10 @@
+{
+ "topic": "molecular-networks",
+ "index": 11,
+ "title": "差异共表达——Fisher z 检验与置换检验",
+ "hash": "2321a50605ae7771967e0915d9a5b40f06abbe0d",
+ "ok": true,
+ "figures": 1,
+ "stdout": "排名第一的基因对：(0, 1)，r_A = 0.75，r_B = 0.08，z = 4.82，q = 0.00062\n名义 p < 0.05 的基因对数 = 32 / 435；BH q < 0.05 的基因对数 = 1\n基因 0–1 置换检验 p ≈ 0.0005",
+ "stderr": ""
+}

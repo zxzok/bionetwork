@@ -1,0 +1,10 @@
+{
+ "topic": "controllability",
+ "index": 1,
+ "title": "用最大匹配找驱动节点，并用 Kalman 判据验证",
+ "hash": "0e6e5e4a8dbd65c0d06152dec1224986e7e43e01",
+ "ok": true,
+ "figures": 1,
+ "stdout": "驱动节点: [2, 3, 6, 9, 10]  N_D = 5\nKalman 秩 = 12 / 12",
+ "stderr": ""
+}

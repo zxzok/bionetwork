@@ -1,0 +1,131 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>随机网络中标度律的涌现 · 生物医学网络科学</title><meta name="description" content="论文精读：Emergence of scaling in random networks"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-theory"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html" aria-current="page">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory" open><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html" aria-current="page">小世界与无标度网络模型</a><ol class="sub"><li><a href="network-models.small-world-phenomenon.html"><span class="n">01</span>小世界现象</a></li><li><a href="network-models.lattice-vs-random.html"><span class="n">02</span>规则网格与随机网络</a></li><li><a href="network-models.watts-strogatz.html"><span class="n">03</span>Watts–Strogatz 小世界模型</a></li><li><a href="network-models.scale-free.html"><span class="n">04</span>幂律度分布与无标度网络</a></li><li><a href="network-models.configuration-model.html"><span class="n">05</span>任意度分布网络的生成：配置模型与隐变量模型</a></li><li><a href="network-models.barabasi-albert.html"><span class="n">06</span>Barabási–Albert 优先连接模型</a></li><li><a href="network-models.preferential-attachment-measurement.html"><span class="n">07</span>测量优先连接与非线性优先连接</a></li><li><a href="network-models.preferential-attachment-origins.html"><span class="n">08</span>优先连接从何而来：链接选择、复制与优化</a></li><li><a href="network-models.fitness-model.html"><span class="n">09</span>适应度模型与玻色–爱因斯坦凝聚</a></li><li><a href="network-models.evolving-networks.html"><span class="n">10</span>演化网络的扩展模型</a></li><li><a href="network-models.duplication-divergence.html"><span class="n">11</span>复制–分化模型</a></li><li><a href="network-models.spatial-networks.html"><span class="n">12</span>空间网络与随机几何图</a></li><li><a href="network-models.identification.html"><span class="n">13</span>小世界与无标度的统计判别</a></li><li><a href="network-models.derivations.html"><span class="n">14</span>数学推导与算法</a></li><li><a href="network-models.frontiers.html"><span class="n">15</span>研究前沿与开放问题</a></li><li><a href="network-models.biomedical.html"><span class="n">16</span>生物医学应用</a></li><li><a href="network-models.limitations.html"><span class="n">17</span>适用范围与常见误用</a></li></ol></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><div class="lec-grid"><div style="min-width:0"><div class="lec-head"><nav class="crumb"><a href="papers.html">文献知识库</a> › 网络基础理论 · 分子网络与基因调控</nav><div class="eyebrow"><b>经典论文</b><span>难度：入门</span></div><h1>随机网络中标度律的涌现</h1><p class="porig big">Emergence of scaling in random networks</p><p class="small">Barabási A-L, Albert R · <i>Science</i> 1999 · <a href="https://doi.org/10.1126/science.286.5439.509" target="_blank" rel="noopener">DOI: 10.1126/science.286.5439.509</a></p><div class="chips"><span class="chip">无标度</span><span class="chip">幂律度分布</span><span class="chip">增长</span><span class="chip">优先连接</span><span class="chip">BA 模型</span><span class="chip">平均场</span></div><div class="objectives"><h2>一句话</h2><p style="margin:0">报告多个真实网络的度分布尾部近似幂律，并提出“增长 + 优先连接”模型，用平均场方法推出指数 γ=3。</p><p class="small" style="margin:8px 0 0">相关专题：<a href="network-models.html">小世界与无标度网络模型</a>、<a href="molecular-networks.html">生物分子网络与拓扑特征</a></p></div></div><section class="block prose" id="notes"><h2 id="一句话看懂">一句话看懂</h2>
+<p>如果网络不断增长，并且新节点更愿意连向已经连接很多的节点（“富者愈富”），那么网络的度分布会自发形成幂律
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo><mo>∼</mo><msup><mi>k</mi><mrow><mi>−</mi><mi>γ</mi></mrow></msup></mrow><annotation encoding="application/x-tex">P(k)\sim k^{-\gamma}</annotation></semantics></math>，出现少数连接极多的枢纽；两个要素缺一不可。</p>
+<h2 id="研究背景与问题">研究背景与问题</h2>
+<p>ER 随机图和 WS
+小世界模型有一个共同点：度分布在均值附近集中，大度节点出现的概率随
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+指数衰减，几乎不可能出现枢纽。20 世纪 90
+年代末，计算机化的数据采集让研究者第一次拿到了大型网络的完整拓扑，例如电影演员合作网和万维网。作者发现这些网络的度分布都有一条很长的尾巴，而现有模型都无法产生这种分布。</p>
+<p>论文要回答两个问题：真实网络的度分布是否普遍呈幂律？什么样的生成机制能产生它？</p>
+<h2 id="核心思想与方法">核心思想与方法</h2>
+<p>作者指出 ER 和 WS 模型都忽略了真实网络的两个共同特点：</p>
+<ul>
+<li><strong>增长</strong>（growth）：真实网络是开放的，节点数不断增加（新演员、新网页、新论文）；</li>
+<li><strong>优先连接</strong>（preferential
+attachment）：新节点连向已有节点的概率不是均匀的，更倾向于连向“知名”的节点。</li>
+</ul>
+<div class="callout-def">
+<p><strong>BA 模型</strong>：从
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>m</mi><mn>0</mn></msub><annotation encoding="application/x-tex">m_0</annotation></semantics></math>
+个节点开始，每一步加入一个新节点，带
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mspace width="0.222em"></mspace><mo stretchy="false" form="prefix">(</mo><mo>≤</mo><msub><mi>m</mi><mn>0</mn></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">m\ (\le m_0)</annotation></semantics></math>
+条边连到
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+个不同的已有节点；连到节点
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>
+的概率为
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Π</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>k</mi><mi>i</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mfrac><msub><mi>k</mi><mi>i</mi></msub><mrow><munder><mo>∑</mo><mi>j</mi></munder><msub><mi>k</mi><mi>j</mi></msub></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">\Pi(k_i)=\frac{k_i}{\sum_j k_j}.</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+步后网络有
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>+</mo><msub><mi>m</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">t+m_0</annotation></semantics></math>
+个节点、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">mt</annotation></semantics></math>
+条边。</p>
+</div>
+<p>平均场推导的核心是把
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>k</mi><mi>i</mi></msub><annotation encoding="application/x-tex">k_i</annotation></semantics></math>
+当作连续变量：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>∂</mi><msub><mi>k</mi><mi>i</mi></msub><mi>/</mi><mi>∂</mi><mi>t</mi><mo>=</mo><msub><mi>k</mi><mi>i</mi></msub><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\partial k_i/\partial t = k_i/(2t)</annotation></semantics></math>，解得
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>k</mi><mi>i</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>m</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mi>/</mi><msub><mi>t</mi><mi>i</mi></msub><msup><mo stretchy="false" form="postfix">)</mo><mn>0.5</mn></msup></mrow><annotation encoding="application/x-tex">k_i(t)=m\,(t/t_i)^{0.5}</annotation></semantics></math>，其中
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mi>i</mi></msub><annotation encoding="application/x-tex">t_i</annotation></semantics></math>
+是节点
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>
+加入的时刻——越早加入的节点度越大。再假设节点在时间上均匀加入，计算
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>k</mi><mi>i</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>&lt;</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">P(k_i(t)&lt;k)</annotation></semantics></math>
+并对
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+求导，得到稳态解
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mfrac><mrow><mn>2</mn><msup><mi>m</mi><mn>2</mn></msup></mrow><msup><mi>k</mi><mn>3</mn></msup></mfrac><mo>,</mo></mrow><annotation encoding="application/x-tex">P(k)=\frac{2m^2}{k^3},</annotation></semantics></math>
+即
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>γ</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">\gamma=3</annotation></semantics></math>，且与
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+无关。</p>
+<p>为证明两个要素都必要，作者构造了两个对照模型：模型 A
+保留增长、去掉优先连接（均匀连接），模型 B
+保留优先连接、去掉增长（节点数固定，只加边）。</p>
+<h2 id="主要发现">主要发现</h2>
+<ol type="1">
+<li><strong>真实网络的幂律尾部</strong>：演员合作网
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>γ</mi><mtext mathvariant="normal">actor</mtext></msub><mo>=</mo><mn>2.3</mn><mo>±</mo><mn>0.1</mn></mrow><annotation encoding="application/x-tex">\gamma_{\text{actor}}=2.3\pm0.1</annotation></semantics></math>；万维网的入度
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>γ</mi><mtext mathvariant="normal">www</mtext></msub><mo>=</mo><mn>2.1</mn><mo>±</mo><mn>0.1</mn></mrow><annotation encoding="application/x-tex">\gamma_{\text{www}}=2.1\pm0.1</annotation></semantics></math>；美国西部电网（4941
+个节点）规模较小，标度区不明显，近似
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>γ</mi><mtext mathvariant="normal">power</mtext></msub><mo>≈</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">\gamma_{\text{power}}\approx4</annotation></semantics></math>；论文引用网络（引用
+Redner
+的结果）<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>γ</mi><mtext mathvariant="normal">cite</mtext></msub><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">\gamma_{\text{cite}}=3</annotation></semantics></math>。作者据此认为指数大致落在
+2.1 到 4 之间。</li>
+<li><strong>模型产生稳态幂律</strong>：数值模拟得到
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>γ</mi><mtext mathvariant="normal">model</mtext></msub><mo>=</mo><mn>2.9</mn><mo>±</mo><mn>0.1</mn></mrow><annotation encoding="application/x-tex">\gamma_{\text{model}}=2.9\pm0.1</annotation></semantics></math>，且分布形状不随网络规模变化。</li>
+<li><strong>两个要素缺一不可</strong>：模型 A 给出指数分布
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo><mo>∼</mo><msup><mi>e</mi><mrow><mi>−</mi><mi>β</mi><mi>k</mi></mrow></msup></mrow><annotation encoding="application/x-tex">P(k)\sim e^{-\beta k}</annotation></semantics></math>；模型
+B 早期像幂律但不稳定，大约
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>N</mi><mn>2</mn></msup><annotation encoding="application/x-tex">N^2</annotation></semantics></math>
+步后网络变成完全图。</li>
+<li><strong>“富者愈富”</strong>：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>k</mi><mi>i</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>∝</mo><msup><mi>t</mi><mn>0.5</mn></msup></mrow><annotation encoding="application/x-tex">k_i(t)\propto t^{0.5}</annotation></semantics></math>，老节点以牺牲新节点为代价持续积累连接。</li>
+<li><strong>指数可调</strong>：作者指出若一部分边是有向的，指数可变为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>γ</mi><mo stretchy="false" form="prefix">(</mo><mi>p</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>3</mn><mo>−</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">\gamma(p)=3-p</annotation></semantics></math>；非线性优先连接
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Π</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo><mo>∼</mo><msup><mi>k</mi><mi>α</mi></msup></mrow><annotation encoding="application/x-tex">\Pi(k)\sim k^\alpha</annotation></semantics></math>
+的模拟显示只有
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\alpha=1</annotation></semantics></math>
+时出现标度律。</li>
+</ol>
+<h2 id="怎样读这篇论文">怎样读这篇论文</h2>
+<p>先读引言最后一段（作者对全文论点的概括），然后看图 1
+的三个实证分布——注意它们都是在双对数坐标上用直线拟合的；接着读模型定义和图
+2（模型的度分布、对照模型、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>k</mi><mi>i</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">k_i(t)</annotation></semantics></math>
+的标度）；最后跟着正文把
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>γ</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">\gamma=3</annotation></semantics></math>
+的推导自己推一遍，这是全文最值得动手的部分。结尾关于社会与经济不平等的讨论可以略读。</p>
+<h2 id="局限与后续工作">局限与后续工作</h2>
+<ul>
+<li><strong>幂律证据的统计强度</strong>：原文的指数来自双对数图上的直线拟合，这在今天看来不够严格。Clauset、Shalizi
+与 Newman（2009）提出了最大似然估计加拟合优度检验的流程；Broido 与
+Clauset（2019）用这套方法检验近千个网络，发现严格意义上的无标度网络是少数，许多生物网络更接近对数正态或带截断的分布。Barabási
+等人则回应：有限规模、度相关性和测量偏倚会使理想幂律变形。这场争论至今仍有分歧，阅读时要区分“重尾”与“严格幂律”。</li>
+<li><strong>模型过于简化</strong>：BA 模型只能给出
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>γ</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">\gamma=3</annotation></semantics></math>；它的聚集系数随网络增大趋于
+0，与真实网络的高聚类不符；它预测“越老的节点度越大”，无法解释后来者居上。后续工作引入了节点适应度（fitness）、非线性优先连接、边的增删、老化等机制。</li>
+<li><strong>机制与现象的区分</strong>：模型能产生幂律，并不说明真实网络就是这样生成的。对于蛋白质相互作用网络，基因复制–分化模型提供了另一种同样能产生重尾分布的机制。</li>
+</ul>
+<h2 id="关联知识">关联知识</h2>
+<ul>
+<li><a href="network-models.barabasi-albert.html">Barabási–Albert
+优先连接模型</a>、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>γ</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">\gamma=3</annotation></semantics></math>
+的推导和<a
+href="network-models.identification.html">小世界与无标度的统计判别</a>中“无标度是否普遍”的讨论都以本文为起点；<a
+href="network-models.html#demos">小世界与无标度网络模型</a>中的交互演示可以直接观察优先连接如何产生枢纽。</li>
+<li><a
+href="molecular-networks.topology.html">分子网络的拓扑特征</a>讨论 PPI
+网络的“无标度之争”时，需要用到本文的模型和后来的统计检验方法（该专题的<a
+href="molecular-networks.derivations.html">数学推导与算法</a>给出了最大似然拟合的完整流程）。</li>
+<li>本文的枢纽概念直接引出了 Albert 等（2000）的鲁棒性研究和 Jeong
+等（2001）的致死性–中心性研究，见<a
+href="controllability.structural-robustness.html">结构鲁棒性</a>与<a
+href="molecular-networks.centrality-lethality.html">致死性与中心性：枢纽蛋白假说及其争议</a>。</li>
+</ul>
+<h2 id="延伸思考">延伸思考</h2>
+<ol type="1">
+<li>对蛋白质相互作用网络，“新节点加入”和“优先连接”分别可能对应什么生物学过程？这个类比在哪里会失效？</li>
+<li>原文把电网的指数估计为约 4，而电网只有 4941
+个节点。用今天的统计方法，你会如何判断这么小的网络是否支持幂律？</li>
+<li>BA 模型中
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>γ</mi><annotation encoding="application/x-tex">\gamma</annotation></semantics></math>
+与
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+无关。如果改为“新节点以概率
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+均匀连接、以概率
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">1-q</annotation></semantics></math>
+优先连接”，你预期
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>γ</mi><annotation encoding="application/x-tex">\gamma</annotation></semantics></math>
+会怎样变化？可以用平均场方法试推一下。</li>
+</ol>
+</section><nav class="pager"><a href="paper-watts1998_smallworld.html">← “小世界”网络的集体动力学</a><a href="paper-albert2000_attack.html">复杂网络对随机故障与蓄意攻击的耐受性 →</a></nav></div><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

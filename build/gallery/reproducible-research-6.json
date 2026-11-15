@@ -1,0 +1,10 @@
+{
+ "topic": "reproducible-research",
+ "index": 6,
+ "title": "循环论证（double dipping）——用同一份数据选边又检验边",
+ "hash": "6b1a218fb261bb2616fe52559b9ffc465f0411a8",
+ "ok": true,
+ "figures": 1,
+ "stdout": "纯噪声数据中“显著”比例：循环分析 1.00；独立分半 0.05（名义水平 0.05）",
+ "stderr": ""
+}

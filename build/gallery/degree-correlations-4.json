@@ -1,0 +1,10 @@
+{
+ "topic": "degree-correlations",
+ "index": 4,
+ "title": "富人俱乐部系数 phi(k) 及其保度归一化 rho(k)",
+ "hash": "fba8230b15d36da75d84f5fd7535f1fa9908b36e",
+ "ok": true,
+ "figures": 1,
+ "stdout": "BA 网络\n   k >   5: N_>k =  577, phi = 0.010, phi_rand = 0.012, rho = 0.85\n   k >  10: N_>k =  181, phi = 0.029, phi_rand = 0.037, rho = 0.78\n   k >  20: N_>k =   53, phi = 0.099, phi_rand = 0.117, rho = 0.85\n   k >  30: N_>k =   27, phi = 0.197, phi_rand = 0.203, rho = 0.97\n   k >  40: N_>k =   18, phi = 0.255, phi_rand = 0.268, rho = 0.95\n   k >  60: N_>k =    7, phi = 0.619, phi_rand = 0.410, rho = 1.51\n植入富人俱乐部\n   k >   5: N_>k =  577, phi = 0.011, phi_rand = 0.012, rho = 0.95\n   k >  10: N_>k =  181, phi = 0.055, phi_rand = 0.037, rho = 1.46\n   k >  20: N_>k =   53, phi = 0.505, phi_rand = 0.120, rho = 4.22\n   k >  30: N_>k =   27, phi = 1.000, phi_rand = 0.207, rho = 4.83\n   k >  40: N_>k =   18, phi = 1.000, phi_rand = 0.270, rho = 3.70\n   k >  60: N_>k =    7, phi = 1.000, phi_rand = 0.443, rho = 2.26",
+ "stderr": ""
+}

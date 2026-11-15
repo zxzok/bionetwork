@@ -1,0 +1,10 @@
+{
+ "topic": "reporting-frontiers",
+ "index": 6,
+ "title": "单纯复形的贝蒂数——空心三角形与实心三角形",
+ "hash": "881860bb318770935dc7be7bc18544f7d02ad39a",
+ "ok": true,
+ "figures": 1,
+ "stdout": "空心三角形：beta_0, beta_1, dim ker L1 = (1, 1, 1)\n实心三角形：beta_0, beta_1, dim ker L1 = (1, 0, 0)\n四边形环 + 一条孤立边：beta_0, beta_1, dim ker L1 = (2, 1, 1)",
+ "stderr": ""
+}

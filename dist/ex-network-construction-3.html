@@ -1,0 +1,182 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>bootstrap 边稳定性与病例删除稳定性（偏相关网络） · 生物医学网络科学</title><meta name="description" content="网络构建与统计验证 · 代码示例：bootstrap 边稳定性与病例删除稳定性（偏相关网络）"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-theory"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html" aria-current="page">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory" open><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a><ol class="sub"><li><a href="network-construction.nodes-and-edges.html"><span class="n">01</span>节点与边的定义</a></li><li><a href="network-construction.edge-estimation.html"><span class="n">02</span>连接强度的估计</a></li><li><a href="network-construction.directed-edges.html"><span class="n">03</span>从时间序列推断有向边</a></li><li><a href="network-construction.thresholding.html"><span class="n">04</span>阈值、加权与稀疏化</a></li><li><a href="network-construction.uncertainty-propagation.html"><span class="n">05</span>边权不确定性向网络指标的传播</a></li><li><a href="network-construction.null-models.html"><span class="n">06</span>零模型与空模型</a></li><li><a href="network-construction.statistical-inference.html"><span class="n">07</span>统计推断与多重比较</a></li><li><a href="network-construction.network-distances.html"><span class="n">08</span>网络之间的距离与相似性</a></li><li><a href="network-construction.bias-and-missingness.html"><span class="n">09</span>测量误差、缺失与偏倚</a></li><li><a href="network-construction.sampling-incomplete.html"><span class="n">10</span>采样网络与不完整观测</a></li><li><a href="network-construction.stability-reproducibility.html"><span class="n">11</span>稳定性与可重复性</a></li><li><a href="network-construction.sample-size-power.html"><span class="n">12</span>样本量与统计功效</a></li><li><a href="network-construction.derivations.html"><span class="n">13</span>数学推导与算法</a></li><li><a href="network-construction.frontiers.html"><span class="n">14</span>研究前沿与开放问题</a></li><li><a href="network-construction.biomedical.html"><span class="n">15</span>生物医学应用</a></li><li><a href="network-construction.limitations.html"><span class="n">16</span>适用范围与常见误用</a></li></ol></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="code.html">代码库</a> <span class="sep">/</span> <a href="code.html#theory">网络基础理论</a> <span class="sep">/</span> <a href="network-construction.html">网络构建与统计验证</a></nav><div class="eyebrow" style="margin-top:14px"><b>Example</b><span>04 / 11</span></div><h1>bootstrap 边稳定性与病例删除稳定性（偏相关网络）</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="network-construction.html">网络构建与统计验证</a></dd></div><div><dt>下载</dt><dd><a href="notebooks/network-construction.ipynb" download>Notebook</a> · <a href="notebooks/network-construction.py" download>.py</a></dd></div></dl></header><section class="block prose"><p>由一个已知的稀疏精度矩阵生成 n=300 名被试、p=8
+个条目的模拟量表数据，估计偏相关网络。 (1) 非参数
+bootstrap：有放回重抽样被试 1000 次，得到每条边的 95%
+分位数区间和“|偏相关|&gt;0.1 的比例”； (2) 病例删除：无放回地删去
+10%–70% 的被试，看强度中心性与全样本的相关，计算类似 CS 系数的指标。
+解读：真实的强边区间远离 0；多数不存在的边区间包含
+0，但同时考察几十条边时，总会有个别假边的 区间不含
+0，弱的真实边也可能与假边难以区分——逐边区间不是多重比较校正。这里为了自包含用了未正则化的偏相关，
+实际症状网络常用 EBICglasso，此时 bootstrap 区间会因收缩而偏向
+0，只宜用于判断边的可区分性。</p>
+</section><section class="block"><h2><span class="tag">Output</span>输出图</h2><div class="ex-figs"><img src="gallery/network-construction-3-0.png" alt="bootstrap 边稳定性与病例删除稳定性（偏相关网络）：输出图 1" loading="lazy"></div></section><section class="block"><h2><span class="tag">Output</span>文字输出</h2><pre class="ex-out">边      估计     95%区间            |w|&gt;0.1比例  真实存在
+0-1   +0.374  [+0.270, +0.474]   1.00        True
+5-6   +0.366  [+0.265, +0.456]   1.00        True
+4-5   +0.361  [+0.263, +0.456]   1.00        True
+2-3   +0.330  [+0.221, +0.435]   1.00        True
+1-2   +0.272  [+0.175, +0.366]   1.00        True
+6-7   +0.254  [+0.151, +0.358]   1.00        True
+2-4   +0.166  [+0.046, +0.287]   0.85        False
+1-4   -0.149  [-0.251, -0.041]   0.81        False
+2-7   +0.127  [+0.009, +0.233]   0.69        False
+3-4   +0.122  [+0.014, +0.231]   0.64        True
+0-7   -0.121  [-0.225, -0.009]   0.62        False
+0-4   +0.115  [+0.011, +0.213]   0.59        True
+区间不含 0：真实边 8/8 条，不存在的边 4/20 条
+删去 10% 被试：强度与全样本相关的中位数=0.97，r&gt;=0.7 的比例=1.00
+删去 20% 被试：强度与全样本相关的中位数=0.94，r&gt;=0.7 的比例=1.00
+删去 30% 被试：强度与全样本相关的中位数=0.90，r&gt;=0.7 的比例=0.97
+删去 40% 被试：强度与全样本相关的中位数=0.87，r&gt;=0.7 的比例=0.89
+删去 50% 被试：强度与全样本相关的中位数=0.81，r&gt;=0.7 的比例=0.78
+删去 60% 被试：强度与全样本相关的中位数=0.72，r&gt;=0.7 的比例=0.55
+删去 70% 被试：强度与全样本相关的中位数=0.61，r&gt;=0.7 的比例=0.35
+类 CS 系数（95% 的子样本中 r&gt;=0.7 时可删去的最大比例）= 0.3</pre></section><section class="block prose"><h2><span class="tag">Code</span>代码</h2><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 由一个已知的稀疏精度矩阵生成 n=300 名被试、p=8 个条目的模拟量表数据，估计偏相关网络。</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># (1) 非参数 bootstrap：有放回重抽样被试 1000 次，得到每条边的 95% 分位数区间和“|偏相关|&gt;0.1 的比例”；</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># (2) 病例删除：无放回地删去 10%–70% 的被试，看强度中心性与全样本的相关，计算类似 CS 系数的指标。</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 解读：真实的强边区间远离 0；多数不存在的边区间包含 0，但同时考察几十条边时，总会有个别假边的</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 区间不含 0，弱的真实边也可能与假边难以区分——逐边区间不是多重比较校正。这里为了自包含用了未正则化的偏相关，</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># 实际症状网络常用 EBICglasso，此时 bootstrap 区间会因收缩而偏向 0，只宜用于判断边的可区分性。</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>rng <span class="op">=</span> np.random.default_rng(<span class="dv">4</span>)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>p, n <span class="op">=</span> <span class="dv">8</span>, <span class="dv">300</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>K <span class="op">=</span> np.eye(p)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>true_edges <span class="op">=</span> [(<span class="dv">0</span>, <span class="dv">1</span>, <span class="fl">0.35</span>), (<span class="dv">1</span>, <span class="dv">2</span>, <span class="fl">0.3</span>), (<span class="dv">2</span>, <span class="dv">3</span>, <span class="fl">0.3</span>), (<span class="dv">3</span>, <span class="dv">4</span>, <span class="fl">0.25</span>), (<span class="dv">4</span>, <span class="dv">5</span>, <span class="fl">0.3</span>), (<span class="dv">5</span>, <span class="dv">6</span>, <span class="fl">0.25</span>), (<span class="dv">6</span>, <span class="dv">7</span>, <span class="fl">0.3</span>), (<span class="dv">0</span>, <span class="dv">4</span>, <span class="fl">0.2</span>)]</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, j, w <span class="kw">in</span> true_edges:</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    K[i, j] <span class="op">=</span> K[j, i] <span class="op">=</span> <span class="op">-</span>w                       <span class="co"># 精度矩阵负元素对应正偏相关</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>Sigma <span class="op">=</span> np.linalg.inv(K)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> rng.multivariate_normal(np.zeros(p), Sigma, size<span class="op">=</span>n)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> pcor(X):</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    P <span class="op">=</span> np.linalg.inv(np.corrcoef(X, rowvar<span class="op">=</span><span class="va">False</span>))</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    d <span class="op">=</span> np.sqrt(np.diag(P))</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    W <span class="op">=</span> <span class="op">-</span>P <span class="op">/</span> np.outer(d, d)</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    np.fill_diagonal(W, <span class="dv">0</span>)</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> W</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>iu <span class="op">=</span> np.triu_indices(p, <span class="dv">1</span>)</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>W0 <span class="op">=</span> pcor(X)</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>B <span class="op">=</span> <span class="dv">1000</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>boot <span class="op">=</span> np.empty((B, <span class="bu">len</span>(iu[<span class="dv">0</span>])))</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> b <span class="kw">in</span> <span class="bu">range</span>(B):</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    boot[b] <span class="op">=</span> pcor(X[rng.integers(n, size<span class="op">=</span>n)])[iu]</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>lo, hi <span class="op">=</span> np.percentile(boot, [<span class="fl">2.5</span>, <span class="fl">97.5</span>], axis<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>inc <span class="op">=</span> (np.<span class="bu">abs</span>(boot) <span class="op">&gt;</span> <span class="fl">0.1</span>).mean(axis<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>is_true <span class="op">=</span> np.zeros((p, p), <span class="bu">bool</span>)</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, j, _ <span class="kw">in</span> true_edges:</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>    is_true[i, j] <span class="op">=</span> is_true[j, i] <span class="op">=</span> <span class="va">True</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;边      估计     95%区间            |w|&gt;0.1比例  真实存在&quot;</span>)</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> k <span class="kw">in</span> np.argsort(<span class="op">-</span>np.<span class="bu">abs</span>(W0[iu]))[:<span class="dv">12</span>]:</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>    i, j <span class="op">=</span> iu[<span class="dv">0</span>][k], iu[<span class="dv">1</span>][k]</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">-</span><span class="sc">{</span>j<span class="sc">}</span><span class="ss">   </span><span class="sc">{</span>W0[i, j]<span class="sc">:+.3f}</span><span class="ss">  [</span><span class="sc">{</span>lo[k]<span class="sc">:+.3f}</span><span class="ss">, </span><span class="sc">{</span>hi[k]<span class="sc">:+.3f}</span><span class="ss">]   </span><span class="sc">{</span>inc[k]<span class="sc">:.2f}</span><span class="ss">        </span><span class="sc">{</span>is_true[i, j]<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>excl0 <span class="op">=</span> (lo <span class="op">&gt;</span> <span class="dv">0</span>) <span class="op">|</span> (hi <span class="op">&lt;</span> <span class="dv">0</span>)</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>t_vec <span class="op">=</span> is_true[iu]</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;区间不含 0：真实边 </span><span class="sc">{</span>excl0[t_vec]<span class="sc">.</span><span class="bu">sum</span>()<span class="sc">}</span><span class="ss">/</span><span class="sc">{</span>t_vec<span class="sc">.</span><span class="bu">sum</span>()<span class="sc">}</span><span class="ss"> 条，不存在的边 </span><span class="sc">{</span>excl0[<span class="op">~</span>t_vec]<span class="sc">.</span><span class="bu">sum</span>()<span class="sc">}</span><span class="ss">/</span><span class="sc">{</span>(<span class="op">~</span>t_vec)<span class="sc">.</span><span class="bu">sum</span>()<span class="sc">}</span><span class="ss"> 条&quot;</span>)</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="co"># 病例删除稳定性：强度中心性</span></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>s0 <span class="op">=</span> np.<span class="bu">abs</span>(W0).<span class="bu">sum</span>(axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>props <span class="op">=</span> [<span class="fl">0.1</span>, <span class="fl">0.2</span>, <span class="fl">0.3</span>, <span class="fl">0.4</span>, <span class="fl">0.5</span>, <span class="fl">0.6</span>, <span class="fl">0.7</span>]</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>cs <span class="op">=</span> <span class="fl">0.0</span></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>r_drop <span class="op">=</span> []                                   <span class="co"># 保存每个删除比例下的相关，用于作图</span></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> prop <span class="kw">in</span> props:</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>    keep <span class="op">=</span> <span class="bu">int</span>(<span class="bu">round</span>((<span class="dv">1</span> <span class="op">-</span> prop) <span class="op">*</span> n))</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>    r <span class="op">=</span> np.array([np.corrcoef(np.<span class="bu">abs</span>(pcor(X[rng.choice(n, keep, replace<span class="op">=</span><span class="va">False</span>)])).<span class="bu">sum</span>(axis<span class="op">=</span><span class="dv">1</span>), s0)[<span class="dv">0</span>, <span class="dv">1</span>]</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>                  <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">300</span>)])</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>    r_drop.append(r)</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>    frac <span class="op">=</span> (r <span class="op">&gt;=</span> <span class="fl">0.7</span>).mean()</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;删去 </span><span class="sc">{</span>prop<span class="sc">:.0%}</span><span class="ss"> 被试：强度与全样本相关的中位数=</span><span class="sc">{</span>np<span class="sc">.</span>median(r)<span class="sc">:.2f}</span><span class="ss">，r&gt;=0.7 的比例=</span><span class="sc">{</span>frac<span class="sc">:.2f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> frac <span class="op">&gt;=</span> <span class="fl">0.95</span>:</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>        cs <span class="op">=</span> prop</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;类 CS 系数（95% 的子样本中 r&gt;=0.7 时可删去的最大比例）= </span><span class="sc">{</span>cs<span class="sc">:.1f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="co"># 作图：全部边的 bootstrap 95% 区间（按估计值排序，真实边与不存在的边分色）；病例删除稳定性曲线</span></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="fl">4.2</span>))</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>o <span class="op">=</span> np.argsort(W0[iu])</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> j, k <span class="kw">in</span> <span class="bu">enumerate</span>(o):</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>    c <span class="op">=</span> <span class="st">&quot;C3&quot;</span> <span class="cf">if</span> t_vec[k] <span class="cf">else</span> <span class="st">&quot;0.5&quot;</span></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>    ax[<span class="dv">0</span>].plot([lo[k], hi[k]], [j, j], color<span class="op">=</span>c, lw<span class="op">=</span><span class="fl">1.5</span>)<span class="op">;</span> ax[<span class="dv">0</span>].plot(W0[iu][k], j, <span class="st">&quot;o&quot;</span>, color<span class="op">=</span>c, ms<span class="op">=</span><span class="dv">3</span>)</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].axvline(<span class="dv">0</span>, color<span class="op">=</span><span class="st">&quot;k&quot;</span>, lw<span class="op">=</span><span class="fl">0.8</span>)</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].plot([], [], color<span class="op">=</span><span class="st">&quot;C3&quot;</span>, label<span class="op">=</span><span class="st">&quot;true edge&quot;</span>)<span class="op">;</span> ax[<span class="dv">0</span>].plot([], [], color<span class="op">=</span><span class="st">&quot;0.5&quot;</span>, label<span class="op">=</span><span class="st">&quot;absent edge&quot;</span>)</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].set_xlabel(<span class="st">&quot;partial correlation (bootstrap 95</span><span class="sc">% i</span><span class="st">nterval)&quot;</span>)<span class="op">;</span> ax[<span class="dv">0</span>].set_yticks([])<span class="op">;</span> ax[<span class="dv">0</span>].legend(fontsize<span class="op">=</span><span class="dv">8</span>)</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].set_title(<span class="st">&quot;Strong true edges are far from 0&quot;</span>, fontsize<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].boxplot(r_drop, showfliers<span class="op">=</span><span class="va">False</span>)<span class="op">;</span> ax[<span class="dv">1</span>].set_xticklabels([<span class="ss">f&quot;</span><span class="sc">{</span>p_<span class="sc">:.0%}</span><span class="ss">&quot;</span> <span class="cf">for</span> p_ <span class="kw">in</span> props])</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].axhline(<span class="fl">0.7</span>, color<span class="op">=</span><span class="st">&quot;C3&quot;</span>, ls<span class="op">=</span><span class="st">&quot;--&quot;</span>, label<span class="op">=</span><span class="st">&quot;r = 0.7&quot;</span>)</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].set_xlabel(<span class="st">&quot;proportion of cases dropped&quot;</span>)<span class="op">;</span> ax[<span class="dv">1</span>].set_ylabel(<span class="st">&quot;corr. with full-sample strength&quot;</span>)</span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].set_title(<span class="ss">f&quot;Case-dropping stability (CS-like = </span><span class="sc">{</span>cs<span class="sc">:.1f}</span><span class="ss">)&quot;</span>, fontsize<span class="op">=</span><span class="dv">10</span>)<span class="op">;</span> ax[<span class="dv">1</span>].legend(fontsize<span class="op">=</span><span class="dv">8</span>)</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()<span class="op">;</span> plt.show()</span></code></pre></div>
+</section><section class="block"><h2><span class="tag">Run</span>在浏览器中运行</h2><p class="small">首次加载 Python 环境约需 20–40 秒；可以修改参数后重新运行。</p><div class="cell"><div class="cell-head"><h3>bootstrap 边稳定性与病例删除稳定性（偏相关网络）</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea id="network-construction-cell3" rows="30" spellcheck="false" aria-label="bootstrap 边稳定性与病例删除稳定性（偏相关网络） 代码"># 由一个已知的稀疏精度矩阵生成 n=300 名被试、p=8 个条目的模拟量表数据，估计偏相关网络。
+# (1) 非参数 bootstrap：有放回重抽样被试 1000 次，得到每条边的 95% 分位数区间和“|偏相关|&gt;0.1 的比例”；
+# (2) 病例删除：无放回地删去 10%–70% 的被试，看强度中心性与全样本的相关，计算类似 CS 系数的指标。
+# 解读：真实的强边区间远离 0；多数不存在的边区间包含 0，但同时考察几十条边时，总会有个别假边的
+# 区间不含 0，弱的真实边也可能与假边难以区分——逐边区间不是多重比较校正。这里为了自包含用了未正则化的偏相关，
+# 实际症状网络常用 EBICglasso，此时 bootstrap 区间会因收缩而偏向 0，只宜用于判断边的可区分性。
+import numpy as np
+
+rng = np.random.default_rng(4)
+p, n = 8, 300
+K = np.eye(p)
+true_edges = [(0, 1, 0.35), (1, 2, 0.3), (2, 3, 0.3), (3, 4, 0.25), (4, 5, 0.3), (5, 6, 0.25), (6, 7, 0.3), (0, 4, 0.2)]
+for i, j, w in true_edges:
+    K[i, j] = K[j, i] = -w                       # 精度矩阵负元素对应正偏相关
+Sigma = np.linalg.inv(K)
+X = rng.multivariate_normal(np.zeros(p), Sigma, size=n)
+
+def pcor(X):
+    P = np.linalg.inv(np.corrcoef(X, rowvar=False))
+    d = np.sqrt(np.diag(P))
+    W = -P / np.outer(d, d)
+    np.fill_diagonal(W, 0)
+    return W
+
+iu = np.triu_indices(p, 1)
+W0 = pcor(X)
+B = 1000
+boot = np.empty((B, len(iu[0])))
+for b in range(B):
+    boot[b] = pcor(X[rng.integers(n, size=n)])[iu]
+lo, hi = np.percentile(boot, [2.5, 97.5], axis=0)
+inc = (np.abs(boot) &gt; 0.1).mean(axis=0)
+is_true = np.zeros((p, p), bool)
+for i, j, _ in true_edges:
+    is_true[i, j] = is_true[j, i] = True
+print(&quot;边      估计     95%区间            |w|&gt;0.1比例  真实存在&quot;)
+for k in np.argsort(-np.abs(W0[iu]))[:12]:
+    i, j = iu[0][k], iu[1][k]
+    print(f&quot;{i}-{j}   {W0[i, j]:+.3f}  [{lo[k]:+.3f}, {hi[k]:+.3f}]   {inc[k]:.2f}        {is_true[i, j]}&quot;)
+excl0 = (lo &gt; 0) | (hi &lt; 0)
+t_vec = is_true[iu]
+print(f&quot;区间不含 0：真实边 {excl0[t_vec].sum()}/{t_vec.sum()} 条，不存在的边 {excl0[~t_vec].sum()}/{(~t_vec).sum()} 条&quot;)
+
+# 病例删除稳定性：强度中心性
+s0 = np.abs(W0).sum(axis=1)
+props = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7]
+cs = 0.0
+r_drop = []                                   # 保存每个删除比例下的相关，用于作图
+for prop in props:
+    keep = int(round((1 - prop) * n))
+    r = np.array([np.corrcoef(np.abs(pcor(X[rng.choice(n, keep, replace=False)])).sum(axis=1), s0)[0, 1]
+                  for _ in range(300)])
+    r_drop.append(r)
+    frac = (r &gt;= 0.7).mean()
+    print(f&quot;删去 {prop:.0%} 被试：强度与全样本相关的中位数={np.median(r):.2f}，r&gt;=0.7 的比例={frac:.2f}&quot;)
+    if frac &gt;= 0.95:
+        cs = prop
+print(f&quot;类 CS 系数（95% 的子样本中 r&gt;=0.7 时可删去的最大比例）= {cs:.1f}&quot;)
+
+# 作图：全部边的 bootstrap 95% 区间（按估计值排序，真实边与不存在的边分色）；病例删除稳定性曲线
+import matplotlib.pyplot as plt
+fig, ax = plt.subplots(1, 2, figsize=(10, 4.2))
+o = np.argsort(W0[iu])
+for j, k in enumerate(o):
+    c = &quot;C3&quot; if t_vec[k] else &quot;0.5&quot;
+    ax[0].plot([lo[k], hi[k]], [j, j], color=c, lw=1.5); ax[0].plot(W0[iu][k], j, &quot;o&quot;, color=c, ms=3)
+ax[0].axvline(0, color=&quot;k&quot;, lw=0.8)
+ax[0].plot([], [], color=&quot;C3&quot;, label=&quot;true edge&quot;); ax[0].plot([], [], color=&quot;0.5&quot;, label=&quot;absent edge&quot;)
+ax[0].set_xlabel(&quot;partial correlation (bootstrap 95% interval)&quot;); ax[0].set_yticks([]); ax[0].legend(fontsize=8)
+ax[0].set_title(&quot;Strong true edges are far from 0&quot;, fontsize=10)
+ax[1].boxplot(r_drop, showfliers=False); ax[1].set_xticklabels([f&quot;{p_:.0%}&quot; for p_ in props])
+ax[1].axhline(0.7, color=&quot;C3&quot;, ls=&quot;--&quot;, label=&quot;r = 0.7&quot;)
+ax[1].set_xlabel(&quot;proportion of cases dropped&quot;); ax[1].set_ylabel(&quot;corr. with full-sample strength&quot;)
+ax[1].set_title(f&quot;Case-dropping stability (CS-like = {cs:.1f})&quot;, fontsize=10); ax[1].legend(fontsize=8)
+plt.tight_layout(); plt.show()</textarea><div class="out" aria-live="polite"></div></div></section><nav class="pager"><a href="ex-network-construction-2.html"><small>上一个示例</small>置换检验比较两组网络——逐边 FDR 与基于网络的统计（NBS）</a><a href="ex-network-construction-4.html"><small>下一个示例</small>比例阈值与密度匹配——整体连接强度差异如何“制造”拓扑差异</a></nav></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

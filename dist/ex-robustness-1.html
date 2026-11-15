@@ -1,0 +1,140 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>随机失效与四种攻击策略的比较，并计算 R 指标 · 生物医学网络科学</title><meta name="description" content="网络鲁棒性、渗流与级联失效 · 代码示例：随机失效与四种攻击策略的比较，并计算 R 指标"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-dynamics"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html" aria-current="page">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics" open><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a><ol class="sub"><li><a href="robustness.percolation.html"><span class="n">01</span>渗流理论与网络碎裂</a></li><li><a href="robustness.generating-functions.html"><span class="n">02</span>生成函数方法与 Molloy–Reed 判据</a></li><li><a href="robustness.random-failure.html"><span class="n">03</span>随机失效与无标度网络</a></li><li><a href="robustness.targeted-attack.html"><span class="n">04</span>蓄意攻击：按度、介数与自适应攻击</a></li><li><a href="robustness.robustness-measures.html"><span class="n">05</span>鲁棒性度量：R 指标与功能性指标</a></li><li><a href="robustness.load-cascades.html"><span class="n">06</span>级联失效：负载重分配</a></li><li><a href="robustness.threshold-branching.html"><span class="n">07</span>阈值级联与分支过程</a></li><li><a href="robustness.interdependent-networks.html"><span class="n">08</span>相互依存网络与多层网络的渗流</a></li><li><a href="robustness.robustness-optimization.html"><span class="n">09</span>鲁棒性优化与网络设计</a></li><li><a href="robustness.biological-robustness.html"><span class="n">10</span>生物系统的鲁棒性：冗余、缓冲与必需性</a></li><li><a href="robustness.metabolic-knockouts.html"><span class="n">11</span>代谢网络的基因敲除与级联</a></li><li><a href="robustness.brain-lesions.html"><span class="n">12</span>脑损伤与病变的网络后果</a></li><li><a href="robustness.synthetic-lethality.html"><span class="n">13</span>合成致死与癌症治疗</a></li><li><a href="robustness.derivations.html"><span class="n">14</span>数学推导与算法</a></li><li><a href="robustness.frontiers.html"><span class="n">15</span>研究前沿与开放问题</a></li><li><a href="robustness.biomedical.html"><span class="n">16</span>生物医学应用</a></li><li><a href="robustness.limitations.html"><span class="n">17</span>适用范围与常见误用</a></li></ol></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="code.html">代码库</a> <span class="sep">/</span> <a href="code.html#dynamics">网络动力学与控制</a> <span class="sep">/</span> <a href="robustness.html">网络鲁棒性、渗流与级联失效</a></nav><div class="eyebrow" style="margin-top:14px"><b>Example</b><span>02 / 09</span></div><h1>随机失效与四种攻击策略的比较，并计算 R 指标</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></dd></div><div><dt>下载</dt><dd><a href="notebooks/robustness.ipynb" download>Notebook</a> · <a href="notebooks/robustness.py" download>.py</a></dd></div></dl></header><section class="block prose"><p>策略：random（随机删点）；ID（按初始度）；RD（每删一个节点重新计算度，自适应）；RB（每次重算介数，自适应）。
+R = (1/N) * sum_{Q=1}^{N} s(Q)，s(Q) 为删去 Q
+个节点后最大连通分支的节点比例（Schneider 等 2011）。 为节省时间，RB
+每删 1% 的节点才重算一次介数，并用 k=200 个源点近似介数。 解读：BA
+网络对随机失效的 R
+明显高于攻击；自适应攻击（RD、RB）比按初始度攻击更具破坏性；ER
+网络各策略差距较小。</p>
+</section><section class="block"><h2><span class="tag">Output</span>输出图</h2><div class="ex-figs"><img src="gallery/robustness-1-0.png" alt="随机失效与四种攻击策略的比较，并计算 R 指标：输出图 1" loading="lazy"></div></section><section class="block"><h2><span class="tag">Output</span>文字输出</h2><pre class="ex-out">BA(m=2)
+  random R = 0.424   f_c(1%规则) = 0.912
+  ID     R = 0.108   f_c(1%规则) = 0.291
+  RD     R = 0.102   f_c(1%规则) = 0.208
+  RB     R = 0.100   f_c(1%规则) = 0.231
+ER(&lt;k&gt;=4)
+  random R = 0.400   f_c(1%规则) = 0.798
+  ID     R = 0.251   f_c(1%规则) = 0.532
+  RD     R = 0.202   f_c(1%规则) = 0.327
+  RB     R = 0.215   f_c(1%规则) = 0.402
+星形 RD 攻击 R = 0.16 (手算 4/25 = 0.16)</pre></section><section class="block prose"><h2><span class="tag">Code</span>代码</h2><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 策略：random（随机删点）；ID（按初始度）；RD（每删一个节点重新计算度，自适应）；RB（每次重算介数，自适应）。</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># R = (1/N) * sum_{Q=1}^{N} s(Q)，s(Q) 为删去 Q 个节点后最大连通分支的节点比例（Schneider 等 2011）。</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 为节省时间，RB 每删 1% 的节点才重算一次介数，并用 k=200 个源点近似介数。</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 解读：BA 网络对随机失效的 R 明显高于攻击；自适应攻击（RD、RB）比按初始度攻击更具破坏性；ER 网络各策略差距较小。</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> networkx <span class="im">as</span> nx</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> attack_curve(G, strategy, seed<span class="op">=</span><span class="dv">0</span>, step_frac<span class="op">=</span><span class="fl">0.01</span>):</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    H <span class="op">=</span> G.copy()<span class="op">;</span> N <span class="op">=</span> G.number_of_nodes()<span class="op">;</span> rng <span class="op">=</span> np.random.default_rng(seed)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    lcc <span class="op">=</span> <span class="kw">lambda</span> H: <span class="bu">max</span>((<span class="bu">len</span>(c) <span class="cf">for</span> c <span class="kw">in</span> nx.connected_components(H)), default<span class="op">=</span><span class="dv">0</span>) <span class="op">/</span> N</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> strategy <span class="op">==</span> <span class="st">&quot;random&quot;</span>:</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>        order <span class="op">=</span> <span class="bu">list</span>(rng.permutation(<span class="bu">list</span>(G.nodes())))</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> strategy <span class="op">==</span> <span class="st">&quot;ID&quot;</span>:</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>        order <span class="op">=</span> <span class="bu">sorted</span>(G.nodes(), key<span class="op">=</span><span class="kw">lambda</span> v: <span class="op">-</span>G.degree(v))</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    s <span class="op">=</span> [lcc(H)]</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> H.number_of_nodes() <span class="op">&gt;</span> <span class="dv">0</span>:</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> strategy <span class="kw">in</span> (<span class="st">&quot;random&quot;</span>, <span class="st">&quot;ID&quot;</span>):</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>            batch <span class="op">=</span> [order[<span class="bu">len</span>(s) <span class="op">-</span> <span class="dv">1</span>]]</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>        <span class="cf">elif</span> strategy <span class="op">==</span> <span class="st">&quot;RD&quot;</span>:</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>            batch <span class="op">=</span> [<span class="bu">max</span>(H.degree, key<span class="op">=</span><span class="kw">lambda</span> x: x[<span class="dv">1</span>])[<span class="dv">0</span>]]</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:                                          <span class="co"># RB：分批重算近似介数</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>            m <span class="op">=</span> <span class="bu">max</span>(<span class="dv">1</span>, <span class="bu">int</span>(step_frac <span class="op">*</span> N))</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>            bc <span class="op">=</span> nx.betweenness_centrality(H, k<span class="op">=</span><span class="bu">min</span>(<span class="dv">200</span>, H.number_of_nodes()), seed<span class="op">=</span>seed)</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>            batch <span class="op">=</span> <span class="bu">sorted</span>(bc, key<span class="op">=</span>bc.get, reverse<span class="op">=</span><span class="va">True</span>)[:m]</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> v <span class="kw">in</span> batch:</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>            H.remove_node(v)</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>            s.append(lcc(H))</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.array(s)</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> R_index(s):</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> s[<span class="dv">1</span>:].<span class="bu">sum</span>() <span class="op">/</span> (<span class="bu">len</span>(s) <span class="op">-</span> <span class="dv">1</span>)</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> fc_one_percent(s):</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>    idx <span class="op">=</span> np.argmax(s <span class="op">&lt;</span> <span class="fl">0.01</span> <span class="op">*</span> s[<span class="dv">0</span>])</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> idx <span class="op">/</span> (<span class="bu">len</span>(s) <span class="op">-</span> <span class="dv">1</span>)</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>N <span class="op">=</span> <span class="dv">1000</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>nets <span class="op">=</span> {<span class="st">&quot;BA(m=2)&quot;</span>: nx.barabasi_albert_graph(N, <span class="dv">2</span>, seed<span class="op">=</span><span class="dv">3</span>),</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;ER(&lt;k&gt;=4)&quot;</span>: nx.gnm_random_graph(N, <span class="dv">2</span> <span class="op">*</span> N, seed<span class="op">=</span><span class="dv">3</span>)}</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>curves <span class="op">=</span> {}</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> name, G <span class="kw">in</span> nets.items():</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(name)</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> st <span class="kw">in</span> [<span class="st">&quot;random&quot;</span>, <span class="st">&quot;ID&quot;</span>, <span class="st">&quot;RD&quot;</span>, <span class="st">&quot;RB&quot;</span>]:</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>        s <span class="op">=</span> attack_curve(G, st)</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>        curves[name, st] <span class="op">=</span> s</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">&quot;  </span><span class="sc">%-6s</span><span class="st"> R = </span><span class="sc">%.3f</span><span class="st">   f_c(1</span><span class="sc">%%</span><span class="st">规则) = </span><span class="sc">%.3f</span><span class="st">&quot;</span> <span class="op">%</span> (st, R_index(s), fc_one_percent(s)))</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">4</span>), sharey<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> ax, name <span class="kw">in</span> <span class="bu">zip</span>(axes, nets):</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> st, ls <span class="kw">in</span> <span class="bu">zip</span>([<span class="st">&quot;random&quot;</span>, <span class="st">&quot;ID&quot;</span>, <span class="st">&quot;RD&quot;</span>, <span class="st">&quot;RB&quot;</span>], [<span class="st">&quot;-&quot;</span>, <span class="st">&quot;--&quot;</span>, <span class="st">&quot;-.&quot;</span>, <span class="st">&quot;:&quot;</span>]):</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>        s <span class="op">=</span> curves[name, st]</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>        ax.plot(np.arange(<span class="bu">len</span>(s)) <span class="op">/</span> (<span class="bu">len</span>(s) <span class="op">-</span> <span class="dv">1</span>), s, ls<span class="op">=</span>ls, lw<span class="op">=</span><span class="dv">2</span>, label<span class="op">=</span><span class="st">&quot;</span><span class="sc">%s</span><span class="st"> (R = </span><span class="sc">%.3f</span><span class="st">)&quot;</span> <span class="op">%</span> (st, R_index(s)))</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>    ax.set_xlim(<span class="dv">0</span>, <span class="fl">0.6</span>)<span class="op">;</span> ax.set_xlabel(<span class="st">&quot;fraction removed f&quot;</span>)<span class="op">;</span> ax.set_title(name)<span class="op">;</span> ax.legend(fontsize<span class="op">=</span><span class="dv">8</span>)</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>].set_ylabel(<span class="st">&quot;largest component s(f)&quot;</span>)</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>fig.suptitle(<span class="st">&quot;Adaptive attacks are most damaging, especially on BA&quot;</span>)</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()<span class="op">;</span> plt.show()</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="co"># 手算小例子：星形与路径（N = 5）</span></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>star <span class="op">=</span> nx.star_graph(<span class="dv">4</span>)<span class="op">;</span> path <span class="op">=</span> nx.path_graph(<span class="dv">5</span>)</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;星形 RD 攻击 R =&quot;</span>, <span class="bu">round</span>(R_index(attack_curve(star, <span class="st">&quot;RD&quot;</span>)), <span class="dv">3</span>), <span class="st">&quot;(手算 4/25 = 0.16)&quot;</span>)</span></code></pre></div>
+</section><section class="block"><h2><span class="tag">Run</span>在浏览器中运行</h2><p class="small">首次加载 Python 环境约需 20–40 秒；可以修改参数后重新运行。</p><div class="cell"><div class="cell-head"><h3>随机失效与四种攻击策略的比较，并计算 R 指标</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea id="robustness-cell1" rows="30" spellcheck="false" aria-label="随机失效与四种攻击策略的比较，并计算 R 指标 代码"># 策略：random（随机删点）；ID（按初始度）；RD（每删一个节点重新计算度，自适应）；RB（每次重算介数，自适应）。
+# R = (1/N) * sum_{Q=1}^{N} s(Q)，s(Q) 为删去 Q 个节点后最大连通分支的节点比例（Schneider 等 2011）。
+# 为节省时间，RB 每删 1% 的节点才重算一次介数，并用 k=200 个源点近似介数。
+# 解读：BA 网络对随机失效的 R 明显高于攻击；自适应攻击（RD、RB）比按初始度攻击更具破坏性；ER 网络各策略差距较小。
+import numpy as np
+import networkx as nx
+
+def attack_curve(G, strategy, seed=0, step_frac=0.01):
+    H = G.copy(); N = G.number_of_nodes(); rng = np.random.default_rng(seed)
+    lcc = lambda H: max((len(c) for c in nx.connected_components(H)), default=0) / N
+    if strategy == &quot;random&quot;:
+        order = list(rng.permutation(list(G.nodes())))
+    elif strategy == &quot;ID&quot;:
+        order = sorted(G.nodes(), key=lambda v: -G.degree(v))
+    s = [lcc(H)]
+    while H.number_of_nodes() &gt; 0:
+        if strategy in (&quot;random&quot;, &quot;ID&quot;):
+            batch = [order[len(s) - 1]]
+        elif strategy == &quot;RD&quot;:
+            batch = [max(H.degree, key=lambda x: x[1])[0]]
+        else:                                          # RB：分批重算近似介数
+            m = max(1, int(step_frac * N))
+            bc = nx.betweenness_centrality(H, k=min(200, H.number_of_nodes()), seed=seed)
+            batch = sorted(bc, key=bc.get, reverse=True)[:m]
+        for v in batch:
+            H.remove_node(v)
+            s.append(lcc(H))
+    return np.array(s)
+
+def R_index(s):
+    return s[1:].sum() / (len(s) - 1)
+
+def fc_one_percent(s):
+    idx = np.argmax(s &lt; 0.01 * s[0])
+    return idx / (len(s) - 1)
+
+N = 1000
+nets = {&quot;BA(m=2)&quot;: nx.barabasi_albert_graph(N, 2, seed=3),
+        &quot;ER(&lt;k&gt;=4)&quot;: nx.gnm_random_graph(N, 2 * N, seed=3)}
+curves = {}
+for name, G in nets.items():
+    print(name)
+    for st in [&quot;random&quot;, &quot;ID&quot;, &quot;RD&quot;, &quot;RB&quot;]:
+        s = attack_curve(G, st)
+        curves[name, st] = s
+        print(&quot;  %-6s R = %.3f   f_c(1%%规则) = %.3f&quot; % (st, R_index(s), fc_one_percent(s)))
+
+import matplotlib.pyplot as plt
+fig, axes = plt.subplots(1, 2, figsize=(10, 4), sharey=True)
+for ax, name in zip(axes, nets):
+    for st, ls in zip([&quot;random&quot;, &quot;ID&quot;, &quot;RD&quot;, &quot;RB&quot;], [&quot;-&quot;, &quot;--&quot;, &quot;-.&quot;, &quot;:&quot;]):
+        s = curves[name, st]
+        ax.plot(np.arange(len(s)) / (len(s) - 1), s, ls=ls, lw=2, label=&quot;%s (R = %.3f)&quot; % (st, R_index(s)))
+    ax.set_xlim(0, 0.6); ax.set_xlabel(&quot;fraction removed f&quot;); ax.set_title(name); ax.legend(fontsize=8)
+axes[0].set_ylabel(&quot;largest component s(f)&quot;)
+fig.suptitle(&quot;Adaptive attacks are most damaging, especially on BA&quot;)
+plt.tight_layout(); plt.show()
+
+# 手算小例子：星形与路径（N = 5）
+star = nx.star_graph(4); path = nx.path_graph(5)
+print(&quot;星形 RD 攻击 R =&quot;, round(R_index(attack_curve(star, &quot;RD&quot;)), 3), &quot;(手算 4/25 = 0.16)&quot;)</textarea><div class="out" aria-live="polite"></div></div></section><nav class="pager"><a href="ex-robustness-0.html"><small>上一个示例</small>生成函数求解点渗流与边渗流，并与 Newman–Ziff 模拟比较</a><a href="ex-robustness-2.html"><small>下一个示例</small>无标度网络的随机失效阈值与攻击阈值（连续度近似）</a></nav></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

@@ -1,0 +1,146 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>影响力最大化——贪心算法与启发式中心性 · 生物医学网络科学</title><meta name="description" content="网络上的传播与免疫 · 代码示例：影响力最大化——贪心算法与启发式中心性"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-dynamics"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html" aria-current="page">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics" open><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a><ol class="sub"><li><a href="spreading.spreading-on-networks.html"><span class="n">01</span>网络传播过程</a></li><li><a href="spreading.compartmental-models.html"><span class="n">02</span>均匀混合下的经典传播模型</a></li><li><a href="spreading.epidemic-threshold.html"><span class="n">03</span>度异质性与流行病阈值</a></li><li><a href="spreading.contact-networks.html"><span class="n">04</span>接触网络：数据与结构</a></li><li><a href="spreading.message-passing.html"><span class="n">05</span>配对近似、边基模型与消息传递</a></li><li><a href="spreading.temporal-networks.html"><span class="n">06</span>时间网络与阵发性</a></li><li><a href="spreading.metapopulation.html"><span class="n">07</span>集合种群与全球传播</a></li><li><a href="spreading.reproduction-number.html"><span class="n">08</span>再生数与超级传播</a></li><li><a href="spreading.immunization.html"><span class="n">09</span>免疫策略</a></li><li><a href="spreading.contact-tracing.html"><span class="n">10</span>接触追踪与监测</a></li><li><a href="spreading.social-contagion.html"><span class="n">11</span>信息与行为的传播</a></li><li><a href="spreading.influential-spreaders.html"><span class="n">12</span>影响力最大化与关键传播者</a></li><li><a href="spreading.source-localization.html"><span class="n">13</span>传播溯源</a></li><li><a href="spreading.derivations.html"><span class="n">14</span>数学推导与算法</a></li><li><a href="spreading.frontiers.html"><span class="n">15</span>研究前沿与开放问题</a></li><li><a href="spreading.biomedical.html"><span class="n">16</span>生物医学应用</a></li><li><a href="spreading.limitations.html"><span class="n">17</span>适用范围与常见误用</a></li></ol></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="code.html">代码库</a> <span class="sep">/</span> <a href="code.html#dynamics">网络动力学与控制</a> <span class="sep">/</span> <a href="spreading.html">网络上的传播与免疫</a></nav><div class="eyebrow" style="margin-top:14px"><b>Example</b><span>12 / 14</span></div><h1>影响力最大化——贪心算法与启发式中心性</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="spreading.html">网络上的传播与免疫</a></dd></div><div><dt>下载</dt><dd><a href="notebooks/spreading.ipynb" download>Notebook</a> · <a href="notebooks/spreading.py" download>.py</a></dd></div></dl></header><section class="block prose"><p>传播模型：每条边以概率 p 处于“通”状态（键渗流；等价于固定感染期的
+SIR，也是独立级联在无向图上的常用简化）。 种子集合 S 的传播范围 =
+含有至少一个种子的“通边分支”的节点总数，用 R
+个随机样本平均（共同随机数）。
+在同一组样本上做贪心选种：每一步加入边际增益最大的节点；期望传播范围是子模函数，贪心有
+(1-1/e) 保证。 与度最高、k-核最高、集体影响 CI_2 = (k_i-1) Σ_{d(i,j)=2}
+(k_j-1)（Morone 与 Makse 2015）比较，
+最后在另一组新样本上评估，避免“在训练样本上挑出幸运节点”的乐观偏差。
+网络：一个稠密大社团（枢纽都在这里）+ 7 个小社团，社团间只有极少的桥。
+解读：度、k-核、CI 的前 K
+名全部挤在大社团里，彼此重叠，甚至不如随机选种；贪心会把种子分散到各社团。</p>
+</section><section class="block"><h2><span class="tag">Output</span>输出图</h2><div class="ex-figs"><img src="gallery/spreading-11-0.png" alt="影响力最大化——贪心算法与启发式中心性：输出图 1" loading="lazy"></div></section><section class="block"><h2><span class="tag">Output</span>文字输出</h2><pre class="ex-out">贪心     期望传播范围 = 840.0
+度      期望传播范围 = 589.9
+k-核    期望传播范围 = 589.9
+CI_2   期望传播范围 = 589.6
+随机     期望传播范围 = 716.0</pre></section><section class="block prose"><h2><span class="tag">Code</span>代码</h2><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 传播模型：每条边以概率 p 处于“通”状态（键渗流；等价于固定感染期的 SIR，也是独立级联在无向图上的常用简化）。</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 种子集合 S 的传播范围 = 含有至少一个种子的“通边分支”的节点总数，用 R 个随机样本平均（共同随机数）。</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 在同一组样本上做贪心选种：每一步加入边际增益最大的节点；期望传播范围是子模函数，贪心有 (1-1/e) 保证。</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 与度最高、k-核最高、集体影响 CI_2 = (k_i-1) Σ_{d(i,j)=2} (k_j-1)（Morone 与 Makse 2015）比较，</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 最后在另一组新样本上评估，避免“在训练样本上挑出幸运节点”的乐观偏差。</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># 网络：一个稠密大社团（枢纽都在这里）+ 7 个小社团，社团间只有极少的桥。</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 解读：度、k-核、CI 的前 K 名全部挤在大社团里，彼此重叠，甚至不如随机选种；贪心会把种子分散到各社团。</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> networkx <span class="im">as</span> nx</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> scipy.sparse <span class="im">as</span> sp</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.sparse.csgraph <span class="im">import</span> connected_components</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>sizes <span class="op">=</span> [<span class="dv">600</span>] <span class="op">+</span> [<span class="dv">200</span>] <span class="op">*</span> <span class="dv">7</span>                 <span class="co"># 一个稠密大社团 + 7 个较稀疏的小社团</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>P <span class="op">=</span> [[(<span class="fl">0.02</span> <span class="cf">if</span> i <span class="op">==</span> <span class="dv">0</span> <span class="cf">else</span> <span class="fl">0.03</span>) <span class="cf">if</span> i <span class="op">==</span> j <span class="cf">else</span> <span class="fl">0.00002</span> <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">8</span>)] <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">8</span>)]</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>G <span class="op">=</span> nx.stochastic_block_model(sizes, P, seed<span class="op">=</span><span class="dv">7</span>)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>N, K <span class="op">=</span> G.number_of_nodes(), <span class="dv">10</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>edges <span class="op">=</span> np.array(G.edges())</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> np.array([d <span class="cf">for</span> _, d <span class="kw">in</span> G.degree()], <span class="bu">float</span>)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> <span class="fl">0.2</span>                                  <span class="co"># 每条边“通”的概率</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> samples(R, rng):</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    labs, sizes <span class="op">=</span> [], []</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(R):</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>        e <span class="op">=</span> edges[rng.random(<span class="bu">len</span>(edges)) <span class="op">&lt;</span> p]</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>        A <span class="op">=</span> sp.coo_matrix((np.ones(<span class="bu">len</span>(e)), (e[:, <span class="dv">0</span>], e[:, <span class="dv">1</span>])), shape<span class="op">=</span>(N, N))</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>        _, lab <span class="op">=</span> connected_components(A, directed<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>        labs.append(lab)<span class="op">;</span> sizes.append(np.bincount(lab))</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> labs, sizes</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> spread(S, labs, sizes):</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.mean([sz[np.unique(lab[<span class="bu">list</span>(S)])].<span class="bu">sum</span>() <span class="cf">for</span> lab, sz <span class="kw">in</span> <span class="bu">zip</span>(labs, sizes)])</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>train <span class="op">=</span> samples(<span class="dv">200</span>, np.random.default_rng(<span class="dv">0</span>))</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>seeds <span class="op">=</span> []</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>covered <span class="op">=</span> [np.zeros(<span class="bu">len</span>(sz), <span class="bu">bool</span>) <span class="cf">for</span> sz <span class="kw">in</span> train[<span class="dv">1</span>]]</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(K):</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>    gain <span class="op">=</span> np.zeros(N)</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> lab, sz, cov <span class="kw">in</span> <span class="bu">zip</span>(<span class="op">*</span>train, covered):</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>        gain <span class="op">+=</span> np.where(cov[lab], <span class="dv">0</span>, sz[lab])</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>    gain[seeds] <span class="op">=</span> <span class="op">-</span><span class="dv">1</span></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>    v <span class="op">=</span> <span class="bu">int</span>(np.argmax(gain))<span class="op">;</span> seeds.append(v)</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> lab, cov <span class="kw">in</span> <span class="bu">zip</span>(train[<span class="dv">0</span>], covered):</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>        cov[lab[v]] <span class="op">=</span> <span class="va">True</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>deg <span class="op">=</span> <span class="bu">dict</span>(G.degree())<span class="op">;</span> core <span class="op">=</span> nx.core_number(G)</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>ci <span class="op">=</span> {}</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> G:</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>    ring <span class="op">=</span> [j <span class="cf">for</span> j, d <span class="kw">in</span> nx.single_source_shortest_path_length(G, i, cutoff<span class="op">=</span><span class="dv">2</span>).items() <span class="cf">if</span> d <span class="op">==</span> <span class="dv">2</span>]</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>    ci[i] <span class="op">=</span> (deg[i] <span class="op">-</span> <span class="dv">1</span>) <span class="op">*</span> <span class="bu">sum</span>(deg[j] <span class="op">-</span> <span class="dv">1</span> <span class="cf">for</span> j <span class="kw">in</span> ring)</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>top <span class="op">=</span> <span class="kw">lambda</span> score: <span class="bu">sorted</span>(G, key<span class="op">=</span><span class="kw">lambda</span> v: (<span class="op">-</span>score[v], <span class="op">-</span>deg[v]))[:K]</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>test <span class="op">=</span> samples(<span class="dv">500</span>, np.random.default_rng(<span class="dv">1</span>))</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>rng <span class="op">=</span> np.random.default_rng(<span class="dv">2</span>)</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>vals <span class="op">=</span> []</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> name, S <span class="kw">in</span> [(<span class="st">&quot;贪心&quot;</span>, seeds), (<span class="st">&quot;度&quot;</span>, top(deg)), (<span class="st">&quot;k-核&quot;</span>, top(core)), (<span class="st">&quot;CI_2&quot;</span>, top(ci)),</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>                (<span class="st">&quot;随机&quot;</span>, <span class="bu">list</span>(rng.choice(N, K, replace<span class="op">=</span><span class="va">False</span>)))]:</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>    vals.append(spread(S, <span class="op">*</span>test))</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;</span><span class="sc">%-6s</span><span class="st"> 期望传播范围 = </span><span class="sc">%.1f</span><span class="st">&quot;</span> <span class="op">%</span> (name, vals[<span class="op">-</span><span class="dv">1</span>]))</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="fl">6.4</span>, <span class="fl">4.2</span>))</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>ax.bar([<span class="st">&quot;greedy&quot;</span>, <span class="st">&quot;degree&quot;</span>, <span class="st">&quot;k-core&quot;</span>, <span class="st">&quot;CI_2&quot;</span>, <span class="st">&quot;random&quot;</span>], vals,</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>       color<span class="op">=</span>[<span class="st">&quot;tab:blue&quot;</span>, <span class="st">&quot;0.6&quot;</span>, <span class="st">&quot;0.6&quot;</span>, <span class="st">&quot;0.6&quot;</span>, <span class="st">&quot;0.85&quot;</span>], width<span class="op">=</span><span class="fl">0.6</span>)</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">&quot;expected spread (held-out samples)&quot;</span>)</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">&quot;Greedy spreads seeds across communities (K = </span><span class="sc">%d</span><span class="st">)&quot;</span> <span class="op">%</span> K)</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()<span class="op">;</span> plt.show()</span></code></pre></div>
+</section><section class="block"><h2><span class="tag">Run</span>在浏览器中运行</h2><p class="small">首次加载 Python 环境约需 20–40 秒；可以修改参数后重新运行。</p><div class="cell"><div class="cell-head"><h3>影响力最大化——贪心算法与启发式中心性</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea id="spreading-cell11" rows="30" spellcheck="false" aria-label="影响力最大化——贪心算法与启发式中心性 代码"># 传播模型：每条边以概率 p 处于“通”状态（键渗流；等价于固定感染期的 SIR，也是独立级联在无向图上的常用简化）。
+# 种子集合 S 的传播范围 = 含有至少一个种子的“通边分支”的节点总数，用 R 个随机样本平均（共同随机数）。
+# 在同一组样本上做贪心选种：每一步加入边际增益最大的节点；期望传播范围是子模函数，贪心有 (1-1/e) 保证。
+# 与度最高、k-核最高、集体影响 CI_2 = (k_i-1) Σ_{d(i,j)=2} (k_j-1)（Morone 与 Makse 2015）比较，
+# 最后在另一组新样本上评估，避免“在训练样本上挑出幸运节点”的乐观偏差。
+# 网络：一个稠密大社团（枢纽都在这里）+ 7 个小社团，社团间只有极少的桥。
+# 解读：度、k-核、CI 的前 K 名全部挤在大社团里，彼此重叠，甚至不如随机选种；贪心会把种子分散到各社团。
+import numpy as np
+import networkx as nx
+import scipy.sparse as sp
+from scipy.sparse.csgraph import connected_components
+
+sizes = [600] + [200] * 7                 # 一个稠密大社团 + 7 个较稀疏的小社团
+P = [[(0.02 if i == 0 else 0.03) if i == j else 0.00002 for j in range(8)] for i in range(8)]
+G = nx.stochastic_block_model(sizes, P, seed=7)
+N, K = G.number_of_nodes(), 10
+edges = np.array(G.edges())
+k = np.array([d for _, d in G.degree()], float)
+p = 0.2                                  # 每条边“通”的概率
+
+def samples(R, rng):
+    labs, sizes = [], []
+    for _ in range(R):
+        e = edges[rng.random(len(edges)) &lt; p]
+        A = sp.coo_matrix((np.ones(len(e)), (e[:, 0], e[:, 1])), shape=(N, N))
+        _, lab = connected_components(A, directed=False)
+        labs.append(lab); sizes.append(np.bincount(lab))
+    return labs, sizes
+
+def spread(S, labs, sizes):
+    return np.mean([sz[np.unique(lab[list(S)])].sum() for lab, sz in zip(labs, sizes)])
+
+train = samples(200, np.random.default_rng(0))
+seeds = []
+covered = [np.zeros(len(sz), bool) for sz in train[1]]
+for _ in range(K):
+    gain = np.zeros(N)
+    for lab, sz, cov in zip(*train, covered):
+        gain += np.where(cov[lab], 0, sz[lab])
+    gain[seeds] = -1
+    v = int(np.argmax(gain)); seeds.append(v)
+    for lab, cov in zip(train[0], covered):
+        cov[lab[v]] = True
+
+deg = dict(G.degree()); core = nx.core_number(G)
+ci = {}
+for i in G:
+    ring = [j for j, d in nx.single_source_shortest_path_length(G, i, cutoff=2).items() if d == 2]
+    ci[i] = (deg[i] - 1) * sum(deg[j] - 1 for j in ring)
+top = lambda score: sorted(G, key=lambda v: (-score[v], -deg[v]))[:K]
+test = samples(500, np.random.default_rng(1))
+rng = np.random.default_rng(2)
+vals = []
+for name, S in [(&quot;贪心&quot;, seeds), (&quot;度&quot;, top(deg)), (&quot;k-核&quot;, top(core)), (&quot;CI_2&quot;, top(ci)),
+                (&quot;随机&quot;, list(rng.choice(N, K, replace=False)))]:
+    vals.append(spread(S, *test))
+    print(&quot;%-6s 期望传播范围 = %.1f&quot; % (name, vals[-1]))
+
+import matplotlib.pyplot as plt
+fig, ax = plt.subplots(figsize=(6.4, 4.2))
+ax.bar([&quot;greedy&quot;, &quot;degree&quot;, &quot;k-core&quot;, &quot;CI_2&quot;, &quot;random&quot;], vals,
+       color=[&quot;tab:blue&quot;, &quot;0.6&quot;, &quot;0.6&quot;, &quot;0.6&quot;, &quot;0.85&quot;], width=0.6)
+ax.set_ylabel(&quot;expected spread (held-out samples)&quot;)
+ax.set_title(&quot;Greedy spreads seeds across communities (K = %d)&quot; % K)
+plt.tight_layout(); plt.show()</textarea><div class="out" aria-live="polite"></div></div></section><nav class="pager"><a href="ex-spreading-10.html"><small>上一个示例</small>向前追踪与向后追踪——传播树中的朋友悖论</a><a href="ex-spreading-12.html"><small>下一个示例</small>复杂传染——阈值模型在聚集网络与随机网络上的级联</a></nav></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

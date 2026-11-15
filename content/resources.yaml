@@ -1,0 +1,722 @@
+# 生物医学网络科学 · 数据与软件资源库
+# 每个条目供网站生成中文资源介绍页。字段说明：
+#   id 小写 ASCII；domain/topics 对应 content/taxonomy.yaml；
+#   kind ∈ 数据库 | 软件/工具包 | 数据集 | 脑图谱 | 交互网站；
+#   cite 中的 DOI 均经 Crossref API 核验（2026-11-14）；未能核验的已注明。
+# 链接核验日期：2026-11-14。许可与访问条件会变动，以官方页面为准。
+
+- id: openneuro
+  name: OpenNeuro
+  url: https://openneuro.org/
+  domain: [brain]
+  kind: 数据库
+  summary: 按 BIDS 标准组织的开放神经影像数据共享平台。
+  questions: 检索公开的 MRI、EEG、MEG 等数据集，用于构建结构或功能脑网络、复现已发表研究或开展跨数据集验证。
+  data: 由研究者上传的大量数据集，涵盖 MRI、EEG、MEG 等神经影像与电生理模态，均按 BIDS 格式组织；每个数据集规模不一，以数据集页面为准。
+  access: 网页直接下载；也可用 OpenNeuro 命令行工具或 DataLad 获取（详见官方文档）。
+  limits: 上传者须同意数据在至多 36 个月的保留期后以 CC0 许可公开；具体数据集的说明与引用要求见各数据集页面。
+  tools: BIDS、fMRIPrep、MRIQC、Nilearn、DataLad
+  cite: 'Markiewicz CJ, et al. The OpenNeuro resource for sharing of neuroscience data. eLife 2021. DOI: 10.7554/eLife.71774；同时引用所用数据集自身的 DOI。'
+  topics: [brain-connectome, reproducible-research]
+- id: hcp
+  name: Human Connectome Project（HCP）
+  url: https://www.humanconnectome.org/
+  domain: [brain]
+  kind: 数据集
+  summary: 健康成人高质量多模态 MRI 与行为数据，连接组研究的基准数据。
+  questions: 描述健康成人的结构与功能连接组；研究个体差异与行为的关系；作为疾病研究的参照或方法学评测数据。
+  data: HCP Young Adult 的 1200 Subjects 发布包含 1,206 名 22–35 岁参与者，提供 3T 结构、扩散、静息与任务 fMRI，部分参与者有 7T 与 MEG 数据；另有发育、老化等扩展项目。
+  access: 在 ConnectomeDB（BALSA）注册后下载；也可通过 AWS S3 访问或订购硬盘（Connectome in a Box）。
+  limits: 开放数据须注册并同意 Open Access Data Use Terms，可能需要本单位伦理审批；家族结构、精确年龄等受限数据须另行申请并签署受限数据使用条款，发表时有限制。
+  tools: HCP Pipelines、Connectome Workbench（CIFTI）、FSL、FreeSurfer、ENIGMA Toolbox（内置 HCP 组平均连接组）
+  cite: 'Van Essen DC, et al. The WU-Minn Human Connectome Project: an overview. NeuroImage 2013. DOI: 10.1016/j.neuroimage.2013.05.041（另须按数据使用条款致谢 HCP）。'
+  topics: [brain-connectome, dynamic-brain-networks]
+- id: uk-biobank
+  name: UK Biobank
+  url: https://www.ukbiobank.ac.uk/
+  domain: [brain, medicine]
+  kind: 数据库
+  summary: 英国大型前瞻性人群队列，含遗传、健康记录与多模态脑影像。
+  questions: 在人群尺度上研究脑结构与功能连接和遗传、生活方式、疾病结局的关联；为脑网络指标提供大样本参照。
+  data: 大规模人群队列，包括问卷、体格测量、生物样本、基因组、健康记录关联数据，以及部分参与者的脑、心脏与全身影像；影像衍生指标（IDP）中包含功能连接矩阵等。
+  access: 须经 UK Biobank Access Management System 注册并提交研究申请，获批后在其研究分析平台中使用数据。
+  limits: 仅限经审核的健康相关、符合公共利益的研究，需申请并按数据层级缴费；官网显示新申请目前暂停，计划于 2026 年底恢复，以官方说明为准。不可自由下载或转发数据。
+  tools: UK Biobank Research Analysis Platform、FSL（影像流程）、Python/R
+  cite: '常用引用：Sudlow C, et al. UK Biobank: an open access resource ... PLoS Med 2015. DOI: 10.1371/journal.pmed.1001779；影像数据：Miller KL, et al. Nat Neurosci 2016. DOI: 10.1038/nn.4393。具体引用与致谢要求以申请协议为准。'
+  topics: [brain-connectome, network-medicine]
+- id: abide
+  name: ABIDE（自闭症脑影像数据交换）
+  url: https://fcon_1000.projects.nitrc.org/indi/abide/
+  domain: [brain]
+  kind: 数据集
+  summary: 多中心自闭症谱系障碍与对照的静息态 fMRI 及结构像数据。
+  questions: 比较自闭症与对照组的功能连接与网络拓扑；检验多站点效应与结果可重复性；训练基于连接组的分类模型。
+  data: ABIDE I 包含 16 个国际站点的 1,112 份数据（自闭症 539 例，对照 573 例），含静息态 fMRI、结构像与表型信息；另有 ABIDE II。Preprocessed Connectomes Project 提供多种流程预处理后的衍生数据（含 ROI 时间序列）。
+  access: 原始数据须登录 NITRC 并在 1000 Functional Connectomes Project/INDI 注册后下载；预处理衍生数据见 http://preprocessed-connectomes-project.org/abide/ ，也可用 nilearn.datasets.fetch_abide_pcp 获取。
+  limits: 官方页面注明仅限非商业研究使用，采用 CC BY-NC-SA 许可；须注明所用站点数据集并致谢资助来源。
+  tools: Nilearn、C-PAC、DPARSF、BCT
+  cite: 'Di Martino A, et al. The autism brain imaging data exchange. Mol Psychiatry 2014. DOI: 10.1038/mp.2013.78；ABIDE II：Di Martino A, et al. Sci Data 2017. DOI: 10.1038/sdata.2017.10。'
+  topics: [brain-connectome, reproducible-research]
+- id: enigma-toolbox
+  name: ENIGMA Toolbox
+  url: https://enigma-toolbox.readthedocs.io/
+  domain: [brain]
+  kind: 软件/工具包
+  summary: 提供 ENIGMA 疾病效应量、HCP 组平均连接组与可视化的工具箱。
+  questions: 把多中心脑形态学结果放到连接组背景下解释，例如检验疾病相关萎缩是否沿结构或功能连接分布、是否集中在枢纽区。
+  data: 内置 ENIGMA 联盟多种疾病的汇总统计、HCP 健康成人组平均功能与结构连接矩阵（多种分区），以及基因表达等脑图谱数据。
+  access: Python 与 MATLAB 版本；Python 版按文档从 GitHub 克隆后用 pip 安装；load_fc()、load_sc() 读取连接矩阵。
+  limits: 代码为 BSD-3-Clause 许可；所含 HCP 等数据另受原数据条款约束。
+  tools: Python、MATLAB、BCT、表面可视化（Desikan-Killiany、Glasser、Schaefer 分区）
+  cite: 'Larivière S, et al. The ENIGMA Toolbox: multiscale neural contextualization of multisite neuroimaging datasets. Nat Methods 2021. DOI: 10.1038/s41592-021-01186-4。'
+  topics: [brain-connectome, analysis-workflow]
+- id: bct-matlab
+  name: Brain Connectivity Toolbox（MATLAB）
+  url: https://sites.google.com/site/bctnet/
+  domain: [brain, theory]
+  kind: 软件/工具包
+  summary: 脑网络图论指标的标准 MATLAB 函数集。
+  questions: 计算加权或二值脑网络的度、聚类系数、路径长度、模块度、参与系数、富人俱乐部等指标，并生成保持度分布的随机化零模型。
+  data: MATLAB 函数集合，并附示例网络数据。
+  access: 从官网下载后加入 MATLAB 路径。
+  limits: 免费用于研究；许可以官网说明为准。
+  tools: MATLAB、GRETNA、BrainNet Viewer；Python 移植版见 bctpy
+  cite: 'Rubinov M, Sporns O. Complex network measures of brain connectivity: uses and interpretations. NeuroImage 2010. DOI: 10.1016/j.neuroimage.2009.10.003。'
+  topics: [brain-connectome, network-metrics, community-structure]
+- id: bctpy
+  name: bctpy（Brain Connectivity Toolbox for Python）
+  url: https://github.com/aestrivex/bctpy
+  domain: [brain, theory]
+  kind: 软件/工具包
+  summary: Brain Connectivity Toolbox 的 Python 移植版。
+  questions: 在 Python 工作流中计算脑网络图论指标，与 NumPy、Nilearn 输出的连接矩阵直接衔接。
+  data: Python 包，函数接口基本对应 MATLAB 版 BCT。
+  access: pip install bctpy
+  limits: GPL-3.0。
+  tools: NumPy、Nilearn、NetworkX
+  cite: '引用 BCT 方法论文：Rubinov M, Sporns O. NeuroImage 2010. DOI: 10.1016/j.neuroimage.2009.10.003。'
+  topics: [brain-connectome, network-metrics, analysis-workflow]
+- id: nilearn
+  name: Nilearn
+  url: https://nilearn.github.io/
+  domain: [brain, methods]
+  kind: 软件/工具包
+  summary: 用于神经影像统计分析与机器学习的 Python 库。
+  questions: 从 fMRI 数据和脑图谱提取区域时间序列，估计相关、偏相关或稀疏逆协方差功能连接矩阵，并可视化连接组。
+  data: Python 库，内置多种公开数据集与图谱的下载函数（如 fetch_development_fmri、fetch_abide_pcp、fetch_atlas_schaefer_2018）。
+  access: pip install nilearn
+  limits: BSD-3-Clause。
+  tools: scikit-learn、NiBabel、ConnectivityMeasure、NiftiLabelsMasker、BIDS
+  cite: 'Abraham A, et al. Machine learning for neuroimaging with scikit-learn. Front Neuroinform 2014. DOI: 10.3389/fninf.2014.00014；另可引用所用版本的 Zenodo DOI。'
+  topics: [brain-connectome, dynamic-brain-networks, network-construction]
+- id: gretna
+  name: GRETNA
+  url: https://www.nitrc.org/projects/gretna/
+  domain: [brain]
+  kind: 软件/工具包
+  summary: 基于 MATLAB 的图形界面脑网络构建与图论分析工具箱。
+  questions: 不编程地完成从预处理后影像到网络构建、阈值选择、全局与节点指标计算和组间统计的流程。
+  data: MATLAB 工具箱（依赖 SPM）。
+  access: 从 NITRC 页面下载并加入 MATLAB 路径。
+  limits: 开源软件，具体许可以 NITRC 页面说明为准。
+  tools: MATLAB、SPM、BrainNet Viewer、DPABI
+  cite: 'Wang J, et al. GRETNA: a graph theoretical network analysis toolbox for imaging connectomics. Front Hum Neurosci 2015. DOI: 10.3389/fnhum.2015.00386。'
+  topics: [brain-connectome, network-metrics]
+- id: brainnet-viewer
+  name: BrainNet Viewer
+  url: https://www.nitrc.org/projects/bnv/
+  domain: [brain, methods]
+  kind: 软件/工具包
+  summary: 绘制脑网络节点、边与皮层表面的 MATLAB 可视化工具。
+  questions: 把节点指标与连接矩阵映射到标准脑表面上，制作论文级脑网络图。
+  data: MATLAB 工具箱，附示例表面与节点文件。
+  access: 从 NITRC 页面下载；也有独立运行版本。
+  limits: 免费下载使用；许可以 NITRC 页面说明为准。
+  tools: MATLAB、.node/.edge 文件、GRETNA、DPABI
+  cite: 'Xia M, Wang J, He Y. BrainNet Viewer: a network visualization tool for human brain connectomics. PLoS One 2013. DOI: 10.1371/journal.pone.0068910。'
+  topics: [brain-connectome, reporting-frontiers]
+- id: schaefer-atlas
+  name: Schaefer 2018 皮层分区
+  url: https://github.com/ThomasYeoLab/CBIG/tree/master/stable_projects/brain_parcellation/Schaefer2018_LocalGlobal
+  domain: [brain]
+  kind: 脑图谱
+  summary: 基于静息态功能连接的多分辨率大脑皮层分区。
+  questions: 为功能或结构脑网络定义节点；在不同分辨率下检验网络结果对分区的敏感性。
+  data: 提供 100 至 1000 个分区的多种版本，并按 Yeo 7 或 17 网络标注，含 MNI 体积与 fsaverage、fs_LR 表面等格式。
+  access: 从 CBIG GitHub 仓库下载；也可用 nilearn.datasets.fetch_atlas_schaefer_2018 获取。
+  limits: CBIG 仓库为 MIT 许可；具体以仓库说明为准。
+  tools: Nilearn、FreeSurfer、Connectome Workbench、ENIGMA Toolbox
+  cite: 'Schaefer A, et al. Local-global parcellation of the human cerebral cortex from intrinsic functional connectivity MRI. Cereb Cortex 2018. DOI: 10.1093/cercor/bhx179。'
+  topics: [brain-connectome, network-construction]
+- id: aal-atlas
+  name: AAL / AAL2 / AAL3 图谱
+  url: https://www.gin.cnrs.fr/en/tools/aal/
+  domain: [brain]
+  kind: 脑图谱
+  summary: 基于 MNI 单被试结构像的自动解剖标记分区。
+  questions: 以解剖分区为节点构建脑网络；与功能分区比较时作为解剖参照。
+  data: AAL1、AAL2（重划眶额皮层）与 AAL3（增加前扣带、丘脑亚核及若干脑核团）三个版本，提供 SPM 格式文件与用户手册。
+  access: 官网下载 SPM12 版本压缩包；Nilearn 提供 fetch_atlas_aal。
+  limits: AAL3 v2 的 readme 加入了 GNU GPL 许可；其他版本以官网说明为准。
+  tools: SPM、Nilearn、DPABI、GRETNA
+  cite: 'AAL1：Tzourio-Mazoyer N, et al. NeuroImage 2002. DOI: 10.1006/nimg.2001.0978；AAL2：Rolls ET, et al. NeuroImage 2015. DOI: 10.1016/j.neuroimage.2015.07.075；AAL3：Rolls ET, et al. NeuroImage 2020. DOI: 10.1016/j.neuroimage.2019.116189（按所用版本引用）。'
+  topics: [brain-connectome, network-construction]
+- id: brainnetome-atlas
+  name: Brainnetome Atlas（脑网络组图谱）
+  url: https://atlas.brainnetome.org/
+  domain: [brain]
+  kind: 脑图谱
+  summary: 基于连接模式划分的人脑图谱，含皮层与皮层下 246 个亚区。
+  questions: 以连接模式一致的亚区作为网络节点；查询各亚区的解剖、功能与连接特征。
+  data: 两半球共 246 个亚区，提供最大概率图、概率图及解剖与功能连接模式，附在线查看器。
+  access: 官网下载页面获取；也在 NITRC 等平台发布。
+  limits: 许可以官网说明为准。
+  tools: SPM、FSL、Nilearn、Brainnetome Atlas Viewer
+  cite: 'Fan L, et al. The Human Brainnetome Atlas: a new brain atlas based on connectional architecture. Cereb Cortex 2016. DOI: 10.1093/cercor/bhw157。'
+  topics: [brain-connectome, network-construction]
+- id: neuromaps
+  name: neuromaps
+  url: https://netneurolab.github.io/neuromaps/
+  domain: [brain, methods]
+  kind: 软件/工具包
+  summary: 收集、转换并比较脑图谱的 Python 工具箱，含空间置换零模型。
+  questions: 检验脑网络指标的空间分布是否与受体密度、基因表达、代谢等图谱相关，并用保留空间自相关的零模型评估显著性。
+  data: Python 包，附带数十种来自已发表研究的脑图谱（annotations），以及不同表面与体积空间之间的转换功能。
+  access: 按官方文档安装（部分功能需要 Connectome Workbench）；用 neuromaps.datasets.fetch_annotation 下载图谱。
+  limits: 各图谱有各自的许可与引用要求，使用前须查看；代码许可以仓库说明为准。
+  tools: Python、Connectome Workbench、netneurotools、BrainSMASH
+  cite: 'Markello RD, et al. neuromaps: structural and functional interpretation of brain maps. Nat Methods 2022. DOI: 10.1038/s41592-022-01625-w；并引用所用图谱的原始文献。'
+  topics: [brain-connectome, reproducible-research]
+- id: qgraph
+  name: qgraph
+  url: https://cran.r-project.org/package=qgraph
+  domain: [symptom, methods]
+  kind: 软件/工具包
+  summary: 绘制与估计心理测量网络的 R 包。
+  questions: 估计偏相关与正则化网络（如 EBICglasso），计算中心性并绘制症状网络图。
+  data: R 包（CRAN）。
+  access: install.packages("qgraph")
+  limits: GPL-2。
+  tools: R、bootnet、psych、igraph
+  cite: 'Epskamp S, et al. qgraph: network visualizations of relationships in psychometric data. J Stat Softw 2012. DOI: 10.18637/jss.v048.i04。'
+  topics: [symptom-networks, reporting-frontiers]
+- id: bootnet
+  name: bootnet
+  url: https://cran.r-project.org/package=bootnet
+  domain: [symptom, methods]
+  kind: 软件/工具包
+  summary: 估计心理网络并用自助法评估边与中心性稳定性的 R 包。
+  questions: 估计横断面症状网络，评估边权置信区间、中心性稳定系数（CS 系数），并做边与中心性差异检验。
+  data: R 包（CRAN），统一封装多种网络估计方法。
+  access: install.packages("bootnet")
+  limits: GPL-2。
+  tools: R、qgraph、mgm、glasso、NetworkComparisonTest
+  cite: 'Epskamp S, Borsboom D, Fried EI. Estimating psychological networks and their accuracy: a tutorial paper. Behav Res Methods 2018. DOI: 10.3758/s13428-017-0862-1。'
+  topics: [symptom-networks, reproducible-research]
+- id: mgm
+  name: mgm
+  url: https://cran.r-project.org/package=mgm
+  domain: [symptom]
+  kind: 软件/工具包
+  summary: 估计混合图模型与时变网络的 R 包。
+  questions: 当症状、人口学和二分类变量同时存在时估计混合类型网络；从密集纵向数据估计时变或向量自回归网络，并计算可预测性。
+  data: R 包（CRAN）。
+  access: install.packages("mgm")
+  limits: GPL（≥2）。
+  tools: R、qgraph、bootnet
+  cite: 'Haslbeck JMB, Waldorp LJ. mgm: estimating time-varying mixed graphical models in high-dimensional data. J Stat Softw 2020. DOI: 10.18637/jss.v093.i08。'
+  topics: [symptom-networks]
+- id: networkcomparisontest
+  name: NetworkComparisonTest（NCT）
+  url: https://cran.r-project.org/package=NetworkComparisonTest
+  domain: [symptom, methods]
+  kind: 软件/工具包
+  summary: 用置换检验比较两组网络结构的 R 包。
+  questions: 检验两个群体（如治疗前后、男女、不同诊断组）的症状网络在整体结构、整体连接强度和单条边上是否不同。
+  data: R 包（CRAN）。
+  access: install.packages("NetworkComparisonTest")
+  limits: GPL-2。
+  tools: R、bootnet、qgraph
+  cite: 'van Borkulo CD, et al. Comparing network structures on three aspects: a permutation test. Psychol Methods 2023. DOI: 10.1037/met0000476。'
+  topics: [symptom-networks, network-construction]
+- id: psychonetrics
+  name: psychonetrics
+  url: https://cran.r-project.org/package=psychonetrics
+  domain: [symptom]
+  kind: 软件/工具包
+  summary: 以结构方程框架拟合与检验心理测量网络模型的 R 包。
+  questions: 对网络模型做确认性检验和多组比较；拟合面板数据与时间序列网络模型，并与潜变量模型比较。
+  data: R 包（CRAN）。
+  access: install.packages("psychonetrics")
+  limits: GPL-2。
+  tools: R、qgraph、lavaan
+  cite: CRAN 页面未提供指定引用文献，可在 R 中运行 citation("psychonetrics") 查看。
+  topics: [symptom-networks]
+- id: nhanes
+  name: NHANES（美国国家健康与营养调查）
+  url: https://wwwn.cdc.gov/nchs/nhanes/
+  domain: [symptom, medicine]
+  kind: 数据集
+  summary: 美国 CDC 的全国代表性健康调查，含 PHQ-9 等公开量表数据。
+  questions: 用 PHQ-9 条目估计抑郁症状网络；在人口学或健康状况亚组之间比较网络；把症状与体检、实验室指标联合建模。
+  data: 按调查周期（1999–2000 起至今）发布人口学、膳食、体检、实验室和问卷数据；例如 2021–2023 周期的 DPQ_L 文件含 6,337 名成人的 PHQ-9 条目。
+  access: 官网按周期和数据类别下载（SAS XPT 等格式，R 可用 haven::read_xpt 读取）；以 SEQN 合并不同文件。
+  limits: 公开数据可直接下载；部分数据为限制访问。复杂抽样设计须按官方分析指南使用权重。
+  tools: R（haven、survey）、bootnet、qgraph
+  cite: 无指定论文 DOI；按 NCHS 要求注明数据来源与调查周期。
+  topics: [symptom-networks]
+- id: string-db
+  name: STRING
+  url: https://string-db.org/
+  domain: [molecular, medicine]
+  kind: 数据库
+  summary: 整合实验、数据库、共表达与文本挖掘证据的蛋白功能关联网络。
+  questions: 为一组基因构建 PPI 网络并做功能富集；筛选高置信度互作用于疾病模块或网络邻近度分析。
+  data: 当前版本覆盖 12,535 个物种的蛋白，每条关联附各证据通道的置信度评分。
+  access: 网页查询；REST API；按物种下载全部互作文件；Cytoscape stringApp。
+  limits: CC BY 4.0，须注明 STRING 并说明所做修改。
+  tools: Cytoscape（stringApp）、igraph、NetworkX、STRINGdb（R）
+  cite: 'Szklarczyk D, et al. The STRING database in 2025: protein networks with directionality of regulation. Nucleic Acids Res 2025. DOI: 10.1093/nar/gkae1113。'
+  topics: [molecular-networks, network-medicine]
+- id: biogrid
+  name: BioGRID
+  url: https://thebiogrid.org/
+  domain: [molecular]
+  kind: 数据库
+  summary: 人工整理的蛋白、遗传与化学相互作用数据库。
+  questions: 获得实验支持的物理或遗传互作网络，研究度分布、枢纽基因与致死性的关系，或作为 PPI 的高可信来源。
+  data: 多物种的蛋白–蛋白、遗传相互作用，另含化学–蛋白关联与翻译后修饰数据。
+  access: 网页检索；下载页提供 TAB、PSI-MI 等格式全库文件；提供 REST API。
+  limits: 数据免费提供；数据许可的具体条款以官方说明为准。
+  tools: Cytoscape、igraph、NetworkX
+  cite: 'Oughtred R, et al. The BioGRID database: a comprehensive biomedical resource of curated protein, genetic, and chemical interactions. Protein Sci 2021. DOI: 10.1002/pro.3978。'
+  topics: [molecular-networks]
+- id: intact
+  name: IntAct
+  url: https://www.ebi.ac.uk/intact/
+  domain: [molecular]
+  kind: 数据库
+  summary: EMBL-EBI 维护、按 IMEx 标准整理的分子相互作用数据库。
+  questions: 检索带详细实验注释的分子互作，按检测方法筛选二元物理互作，构建 PPI 网络。
+  data: 从文献人工整理的分子相互作用，记录实验方法、宿主、相互作用类型等细节。
+  access: 网页检索；PSI-MI XML/MITAB 格式下载；PSICQUIC 等编程接口。
+  limits: 以 EMBL-EBI 使用条款及 IntAct 官方许可说明为准。
+  tools: Cytoscape、PSI-MI 格式、PSICQUIC
+  cite: 'del Toro N, et al. The IntAct database: efficient access to fine-grained molecular interaction data. Nucleic Acids Res 2022. DOI: 10.1093/nar/gkab1006。'
+  topics: [molecular-networks]
+- id: huri
+  name: HuRI（人类参考蛋白互作组）
+  url: https://interactome-atlas.org/
+  domain: [molecular, medicine]
+  kind: 数据集
+  summary: 系统酵母双杂交筛选得到的人类二元蛋白互作图谱。
+  questions: 在较少受研究偏倚影响的系统筛选网络上分析枢纽、模块与疾病基因位置，并与文献整理网络对比。
+  data: HuRI（HI-III-19）约 53,000 对 PPI，筛选约 17,500 个基因；另提供 HI-II-14、HI-I-05、HI-union 与文献二元互作集 Lit-BM。
+  access: 门户下载页提供 TSV（Ensembl 基因 ID）与 PSI-MI 格式文件。
+  limits: 官网未写明数据许可，以官方说明为准。
+  tools: PSI-MI、Cytoscape、igraph、NetworkX
+  cite: 'Luck K, et al. A reference map of the human binary protein interactome. Nature 2020. DOI: 10.1038/s41586-020-2188-x。'
+  topics: [molecular-networks, network-medicine]
+- id: trrust
+  name: TRRUST v2
+  url: https://www.grnpedia.org/trrust/
+  domain: [molecular]
+  kind: 数据库
+  summary: 文献挖掘加人工整理的人与小鼠转录调控关系数据库。
+  questions: 构建转录因子–靶基因有向网络，分析网络基序（如前馈环）；为调控网络推断结果提供参考。
+  data: 人类 8,444 条调控关系（800 个转录因子），小鼠 6,552 条，部分标注激活或抑制。
+  access: 官网下载 TSV 文件。
+  limits: CC BY-SA 4.0。
+  tools: NetworkX、igraph、Cytoscape
+  cite: 'Han H, et al. TRRUST v2: an expanded reference database of human and mouse transcriptional regulatory interactions. Nucleic Acids Res 2018. DOI: 10.1093/nar/gkx1013。'
+  topics: [molecular-networks, gene-network-inference]
+- id: collectri-dorothea
+  name: CollecTRI / DoRothEA
+  url: https://github.com/saezlab/CollecTRI
+  domain: [molecular]
+  kind: 数据库
+  summary: Saez 实验室整理的带符号转录因子调控子集合，用于推断 TF 活性。
+  questions: 从 bulk 或单细胞表达数据推断转录因子活性；作为调控网络先验知识，与数据驱动的推断网络比较。
+  data: CollecTRI 汇总多种资源得到带激活/抑制符号的 TF–靶基因关系；DoRothEA 为较早版本，按证据给出 A–E 置信等级。覆盖人和小鼠。
+  access: 通过 decoupler（Python：pip install decoupler；R：Bioconductor decoupleR）或 OmnipathR 获取；DoRothEA 另有 Bioconductor 包 dorothea。
+  limits: CollecTRI 与 dorothea 仓库为 GPL-3.0；所整合的上游资源各有许可。
+  tools: decoupler/decoupleR、OmniPath、Scanpy
+  cite: 'CollecTRI：Müller-Dott S, et al. Nucleic Acids Res 2023. DOI: 10.1093/nar/gkad841；DoRothEA：Garcia-Alonso L, et al. Genome Res 2019. DOI: 10.1101/gr.240663.118。'
+  topics: [gene-network-inference, molecular-networks]
+- id: gtex
+  name: GTEx（基因型–组织表达项目）
+  url: https://gtexportal.org/
+  domain: [molecular, medicine]
+  kind: 数据库
+  summary: 人体多组织基因表达与表达数量性状位点（eQTL）资源。
+  questions: 构建组织特异的共表达网络；把疾病模块或 PPI 网络限定在相关组织表达的基因上；研究遗传变异对表达的影响。
+  data: 来自多名逝世捐献者数十种组织的 RNA-seq 表达量、eQTL/sQTL 等汇总结果。
+  access: 门户网站浏览与下载开放数据；API。原始测序数据、基因型和详细表型须经 dbGaP 申请，在 AnVIL 中访问。
+  limits: 开放数据可直接下载；受保护数据须获批 dbGaP 申请。
+  tools: GTEx Portal、AnVIL/Terra、WGCNA
+  cite: 'The GTEx Consortium. The GTEx Consortium atlas of genetic regulatory effects across human tissues. Science 2020. DOI: 10.1126/science.aaz1776。'
+  topics: [gene-network-inference, network-medicine]
+- id: ncbi-geo
+  name: NCBI GEO（基因表达综合数据库）
+  url: https://www.ncbi.nlm.nih.gov/geo/
+  domain: [molecular]
+  kind: 数据库
+  summary: NCBI 的公共功能基因组数据仓库，收录芯片与测序表达数据。
+  questions: 查找疾病与对照的表达谱，用于 WGCNA 共表达网络、调控网络推断或差异网络分析。
+  data: 数十万个系列（Series）和数百万个样本，涵盖芯片与测序数据；每个数据集的规模与平台见各自页面。
+  access: 网页检索与下载；FTP；GEOquery（R）、GEOparse（Python）；GEO2R 在线分析。
+  limits: 公开数据无访问限制；使用时须引用原始数据集与相关论文。
+  tools: GEOquery、limma、WGCNA、DESeq2
+  cite: 'Barrett T, et al. NCBI GEO: archive for functional genomics data sets—update. Nucleic Acids Res 2013. DOI: 10.1093/nar/gks1193；并引用所用数据集（GSE 编号）的原始论文。'
+  topics: [gene-network-inference, molecular-networks]
+- id: tcga-gdc
+  name: TCGA / NCI Genomic Data Commons（GDC）
+  url: https://gdc.cancer.gov/
+  domain: [molecular, medicine]
+  kind: 数据库
+  summary: NCI 的癌症基因组数据共享平台，收录 TCGA 等项目数据。
+  questions: 构建癌症类型特异的共表达或调控网络；把突变、表达与临床结局放在网络中联合分析。
+  data: TCGA 等多个癌症基因组项目的测序、表达、拷贝数、甲基化、临床与生物样本数据。
+  access: GDC Data Portal 网页下载；GDC Data Transfer Tool 批量下载；GDC API；R 包 TCGAbiolinks。
+  limits: 高层级、不可识别个人的数据为开放访问；低层级测序、胚系变异等为受控访问，须经 dbGaP 授权与 eRA Commons 认证。
+  tools: GDC Data Portal、gdc-client、TCGAbiolinks
+  cite: 'Grossman RL, et al. Toward a shared vision for cancer genomic data. N Engl J Med 2016. DOI: 10.1056/NEJMp1607591；并按 GDC 指南引用具体项目。'
+  topics: [gene-network-inference, network-medicine]
+- id: wgcna
+  name: WGCNA
+  url: https://cran.r-project.org/package=WGCNA
+  domain: [molecular]
+  kind: 软件/工具包
+  summary: 加权基因共表达网络分析的 R 包。
+  questions: 从表达矩阵识别共表达模块，计算模块特征基因并与临床性状关联，筛选模块内枢纽基因。
+  data: R 包（CRAN），含软阈值选择、拓扑重叠矩阵（TOM）、层次聚类与模块检测等函数。
+  access: install.packages("WGCNA")（部分依赖来自 Bioconductor）
+  limits: GPL（≥2）。
+  tools: R、Bioconductor、Cytoscape（导出网络）
+  cite: 'Langfelder P, Horvath S. WGCNA: an R package for weighted correlation network analysis. BMC Bioinformatics 2008. DOI: 10.1186/1471-2105-9-559。'
+  topics: [gene-network-inference, community-structure]
+- id: genie3-arboreto
+  name: GENIE3 / arboreto
+  url: https://bioconductor.org/packages/GENIE3/
+  domain: [molecular]
+  kind: 软件/工具包
+  summary: 基于树模型从表达数据推断基因调控网络的方法及其可扩展实现。
+  questions: 从 bulk 或单细胞表达矩阵推断转录因子到靶基因的有向调控边，并按重要性排序。
+  data: GENIE3 为 Bioconductor R 包；arboreto 是 Python 实现，提供 GENIE3 与更快的 GRNBoost2，支持 Dask 并行。
+  access: R：BiocManager::install("GENIE3")；Python：pip install arboreto（GitHub：https://github.com/aertslab/arboreto）。
+  limits: arboreto 为 BSD-3-Clause；GENIE3 许可见 Bioconductor 页面。
+  tools: Bioconductor、Dask、pySCENIC、BEELINE
+  cite: 'GENIE3：Huynh-Thu VA, et al. PLoS One 2010. DOI: 10.1371/journal.pone.0012776；arboreto/GRNBoost2：Moerman T, et al. Bioinformatics 2019. DOI: 10.1093/bioinformatics/bty916。'
+  topics: [gene-network-inference]
+- id: scenic
+  name: SCENIC / pySCENIC
+  url: https://scenic.aertslab.org/
+  domain: [molecular]
+  kind: 软件/工具包
+  summary: 从单细胞转录组推断调控子并评估其活性的分析流程。
+  questions: 在单细胞数据中识别转录因子调控子，结合基序富集过滤间接靶点，并按调控子活性对细胞聚类。
+  data: R（SCENIC）与 Python（pySCENIC）实现；需下载 cisTarget 基序排序数据库（体积较大）。
+  access: pip install pyscenic；文档：https://pyscenic.readthedocs.io/ ；另有 Nextflow 流程与 Docker 镜像。
+  limits: pySCENIC 为 GPL-3.0；cisTarget 数据库的使用条款以官方说明为准。
+  tools: arboreto（GRNBoost2）、Scanpy、loom 格式、SCope
+  cite: 'Aibar S, et al. SCENIC: single-cell regulatory network inference and clustering. Nat Methods 2017. DOI: 10.1038/nmeth.4463；Van de Sande B, et al. Nat Protoc 2020. DOI: 10.1038/s41596-020-0336-2。'
+  topics: [gene-network-inference]
+- id: reactome
+  name: Reactome
+  url: https://reactome.org/
+  domain: [molecular, medicine]
+  kind: 数据库
+  summary: 人工整理、同行评审的开放通路知识库。
+  questions: 对网络模块或疾病基因做通路富集；把分子网络节点映射到反应与通路层级上解释功能。
+  data: 以人类为主的反应、通路与层级关系，并推断到其他物种。
+  access: 网页浏览与分析工具；文件下载；Content Service 与 Analysis Service API；R 包 ReactomePA 等。
+  limits: 数据为 CC0；软件多为 Apache 2.0；插图与图标为 CC BY 4.0。
+  tools: ReactomePA、Cytoscape ReactomeFIViz、BioPAX、SBML
+  cite: 'Ragueneau E, et al. The Reactome Knowledgebase 2026. Nucleic Acids Res（2025 年 11 月在线发表）. DOI: 10.1093/nar/gkaf1223（官网“Cite us”页列出最新论文）。'
+  topics: [molecular-networks, network-medicine]
+- id: kegg
+  name: KEGG
+  url: https://www.kegg.jp/
+  domain: [molecular, medicine]
+  kind: 数据库
+  summary: 京都基因与基因组百科全书，含通路图、直系同源与药物疾病信息。
+  questions: 对基因集合做代谢与信号通路富集；把网络模块映射到 KEGG 通路图上解释功能。
+  data: 人工绘制的通路图（KEGG PATHWAY）、KO 直系同源系统、基因组、化合物、药物与疾病等数据库。
+  access: 网页浏览；KEGG REST API；FTP 批量下载需订阅。
+  limits: 学术用户可免费使用网站；FTP 批量数据须订阅，用于提供服务的学术用户需取得服务提供者许可；非学术用户须获得商业许可。官方声明 KEGG 不是公共数据库，详见 https://www.kegg.jp/kegg/legal.html 。
+  tools: clusterProfiler、KEGGREST、Pathview
+  cite: 'Kanehisa M, et al. KEGG for characterizing genomes and pathways in the biosphere. Nucleic Acids Res 55 (2027). DOI: 10.1093/nar/gkag1042；Kanehisa M, Goto S. KEGG: Kyoto Encyclopedia of Genes and Genomes. Nucleic Acids Res 2000. DOI: 10.1093/nar/28.1.27（官网列出的其他引用见 kegg1.html）。'
+  topics: [molecular-networks, network-medicine]
+- id: gene-ontology
+  name: Gene Ontology（GO）
+  url: https://geneontology.org/
+  domain: [molecular]
+  kind: 数据库
+  summary: 描述基因功能的标准本体及注释资源。
+  questions: 对网络模块、枢纽基因或疾病模块做功能富集；用 GO 语义相似度衡量基因功能关联。
+  data: 分子功能、生物过程、细胞组分三大本体及多物种基因注释，另有 GO-CAM 模型。
+  access: 官网下载本体（OBO/OWL）与注释（GAF）文件；在线富集分析工具；API。
+  limits: CC BY 4.0。
+  tools: clusterProfiler、goatools、topGO、PANTHER
+  cite: 'Ashburner M, et al. Gene Ontology: tool for the unification of biology. Nat Genet 2000. DOI: 10.1038/75556；The Gene Ontology Consortium. The Gene Ontology knowledgebase in 2026. Nucleic Acids Res 2026. DOI: 10.1093/nar/gkaf1292。'
+  topics: [molecular-networks]
+- id: msigdb
+  name: MSigDB（分子特征数据库）
+  url: https://www.gsea-msigdb.org/gsea/msigdb/
+  domain: [molecular, medicine]
+  kind: 数据库
+  summary: 用于基因集富集分析（GSEA）的人和小鼠基因集合库。
+  questions: 检验网络模块或排序基因列表是否富集于标志性通路、转录因子靶点或扰动特征基因集。
+  data: 分为 Hallmark、通路、调控靶点、免疫特征等多个集合，分人类与小鼠两个版本。
+  access: 免费注册（邮箱登录）后下载 GMT 等格式；R 包 msigdbr 也可获取。
+  limits: v6.0–v7.5.1 与 v2022.1 及以上版本采用 Creative Commons 风格许可，部分基因集有附加条款（详见官网许可页）；v5.2 及更早版本为单用户内部研究许可。
+  tools: GSEA、fgsea、clusterProfiler、msigdbr
+  cite: 'Subramanian A, et al. Gene set enrichment analysis. PNAS 2005. DOI: 10.1073/pnas.0506580102；并视情况引用 Liberzon A, et al. Bioinformatics 2011. DOI: 10.1093/bioinformatics/btr260 和 Liberzon A, et al. Cell Syst 2015. DOI: 10.1016/j.cels.2015.12.004；以及基因集的原始来源。'
+  topics: [molecular-networks, network-medicine]
+- id: drugbank
+  name: DrugBank
+  url: https://go.drugbank.com/
+  domain: [medicine]
+  kind: 数据库
+  summary: 药物、靶点、作用机制与药物相互作用的综合知识库。
+  questions: 构建药物–靶点网络；计算药物靶点与疾病模块的网络邻近度，用于药物重定位假设。
+  data: 已批准与在研药物的结构、靶点、酶、转运体及药理注释（XML/CSV）。
+  access: 网页检索免费；学术下载需注册并申请学术许可。
+  limits: 学术许可免费，限学术、非商业目的；“开放数据”子集为 CC BY-NC 4.0。官网显示学术数据下载目前暂停，以官方说明为准。商业使用须购买许可。
+  tools: dbparser（R）、NetMedPy、Cytoscape
+  cite: 'Knox C, et al. DrugBank 6.0: the DrugBank Knowledgebase for 2024. Nucleic Acids Res 2024. DOI: 10.1093/nar/gkad976（官方引用指南：https://dev.drugbank.com/guides/drugbank/citing ）。'
+  topics: [network-medicine]
+- id: chembl
+  name: ChEMBL
+  url: https://www.ebi.ac.uk/chembl/
+  domain: [medicine]
+  kind: 数据库
+  summary: EMBL-EBI 人工整理的类药小分子生物活性数据库。
+  questions: 获取化合物–靶点活性数据，构建药物–靶点二分网络，或为网络药理学预测提供实验活性证据。
+  data: 从文献与数据库整理的化合物、靶点和生物活性测定数据，每个版本有独立 DOI。
+  access: 网页检索；数据库转储下载（多种格式）；REST API；Python 客户端 chembl_webresource_client。
+  limits: CC BY-SA 3.0。
+  tools: chembl_webresource_client、RDKit、Cytoscape
+  cite: 'Zdrazil B, et al. The ChEMBL Database in 2023. Nucleic Acids Res 2024. DOI: 10.1093/nar/gkad1004；并注明所用版本。'
+  topics: [network-medicine]
+- id: disgenet
+  name: DISGENET
+  url: https://disgenet.com/
+  domain: [medicine]
+  kind: 数据库
+  summary: 整合基因–疾病与变异–疾病关联的知识平台。
+  questions: 获取疾病相关基因集合，作为疾病模块分析的种子基因；比较疾病之间共享基因与网络分离度。
+  data: 基因–疾病与变异–疾病关联，附证据评分；免费学术方案只含专家整理部分（官网写明 14k+ 基因、18K+ 疾病）。
+  access: 网页平台；REST API；R 包；Cytoscape App（视许可方案而定）。
+  limits: 免费学术方案须申请，仅含专家整理数据；完整数据与更多 API 功能为付费方案。以官网说明为准。
+  tools: disgenet2r、Cytoscape、NetMedPy
+  cite: 'Piñero J, et al. The DisGeNET knowledge platform for disease genomics: 2019 update. Nucleic Acids Res 2020. DOI: 10.1093/nar/gkz1021（以官网最新引用要求为准）。'
+  topics: [network-medicine]
+- id: open-targets
+  name: Open Targets Platform
+  url: https://platform.opentargets.org/
+  domain: [medicine, molecular]
+  kind: 交互网站
+  summary: 汇总多来源证据的靶点–疾病关联与药物信息平台。
+  questions: 评估候选基因与疾病关联的证据强度；查询已知药物及其靶点，为网络医学结果做外部验证。
+  data: 靶点–疾病关联评分及其遗传、体细胞突变、已知药物、文献等证据，Parquet/JSON 全库下载。
+  access: 网页查询；GraphQL API；下载页批量下载。
+  limits: 数据为 CC0 1.0；部分上游来源可能另有许可。
+  tools: GraphQL、Spark/pandas（Parquet）
+  cite: 'Buniello A, et al. Open Targets Platform: facilitating therapeutic hypotheses building in drug discovery. Nucleic Acids Res 2025. DOI: 10.1093/nar/gkae1128。'
+  topics: [network-medicine]
+- id: hetionet
+  name: Hetionet
+  url: https://het.io/
+  domain: [medicine, molecular]
+  kind: 数据集
+  summary: 整合 29 个数据库的药物–基因–疾病异质知识网络。
+  questions: 在异质网络上用元路径方法预测药物适应证；练习知识图谱查询与药物重定位分析。
+  data: v1.0 含 47,031 个节点（11 类）和 2,250,197 条边（24 类）。
+  access: GitHub（https://github.com/hetio/hetionet ）下载 JSON、Neo4j、TSV 格式；在线 Neo4j 浏览器 https://neo4j.het.io/browser/ 。
+  limits: 原创内容为 CC0；整合的各上游资源许可不同，边属性中标注 license 字段。
+  tools: Neo4j（Cypher）、hetmatpy、NetworkX
+  cite: 'Himmelstein DS, et al. Systematic integration of biomedical knowledge prioritizes drugs for repurposing. eLife 2017. DOI: 10.7554/eLife.26726。'
+  topics: [network-medicine]
+- id: cmap-lincs
+  name: CMap / LINCS L1000
+  url: https://lincsproject.org/
+  domain: [medicine, molecular]
+  kind: 数据集
+  summary: 大规模药物与基因扰动后细胞转录谱资源。
+  questions: 以疾病表达特征反向匹配扰动特征，寻找可能逆转疾病状态的化合物；把扰动特征映射到分子网络上分析作用机制。
+  data: L1000 平台测得的大量化合物、基因敲低/过表达扰动谱（GCTx 格式，文件很大）。
+  access: NIH LINCS 项目网站汇总数据与工具；L1000 数据可从 GEO（如 GSE92742）下载。
+  limits: clue.io 页面公告已于 2026-01-31 退役，公开数据转由 GEO 提供；原 clue.io 数据和工具限学术非营利机构使用。以官方说明为准。
+  tools: cmapPy、GCTx、GEO
+  cite: 'Subramanian A, et al. A next generation Connectivity Map: L1000 platform and the first 1,000,000 profiles. Cell 2017. DOI: 10.1016/j.cell.2017.10.049。'
+  topics: [network-medicine]
+- id: networkx
+  name: NetworkX
+  url: https://networkx.org/
+  domain: [theory, methods, dynamics]
+  kind: 软件/工具包
+  summary: Python 中最常用的通用网络创建、分析与可视化库。
+  questions: 计算度分布、聚类、路径、中心性、社区等指标；生成 ER、WS、BA 等随机网络模型；作为课程练习的主要工具。
+  data: 纯 Python 库，适合中小规模网络；附大量算法与网络生成器。
+  access: pip install networkx
+  limits: BSD-3-Clause。
+  tools: Python、Matplotlib、pandas、igraph、graph-tool
+  cite: 'Hagberg AA, Schult DA, Swart PJ. Exploring network structure, dynamics, and function using NetworkX. Proceedings of the 7th Python in Science Conference 2008. DOI: 10.25080/TCWV9851。'
+  topics: [analysis-workflow, network-metrics, network-models, community-structure, network-basics]
+- id: igraph
+  name: igraph
+  url: https://igraph.org/
+  domain: [theory, methods]
+  kind: 软件/工具包
+  summary: 以 C 为核心、提供 R 与 Python 接口的高效网络分析库。
+  questions: 在较大规模网络上快速计算中心性、社区（Louvain、Leiden、Infomap 等）与随机图模型。
+  data: C 核心库，配有 R（igraph）与 Python（python-igraph）等接口。
+  access: pip install igraph；R：install.packages("igraph")
+  limits: python-igraph 为 GPL-2.0；其他组件许可以官网说明为准。
+  tools: R、Python、leidenalg、tidygraph
+  cite: Csárdi G, Nepusz T. The igraph software package for complex network research. InterJournal Complex Systems 2006（以官网引用说明为准）。
+  topics: [analysis-workflow, community-structure, network-metrics]
+- id: graph-tool
+  name: graph-tool
+  url: https://graph-tool.skewed.de/
+  domain: [theory, methods]
+  kind: 软件/工具包
+  summary: 以 C++ 实现核心算法的高性能 Python 网络分析库。
+  questions: 用随机块模型做贝叶斯社区推断；在大规模网络上做统计分析，并直接读取 Netzschleuder 网络库。
+  data: Python 模块（C++/Boost 核心），含随机块模型推断、网络重构、动力学与可视化功能。
+  access: conda install -c conda-forge graph-tool（也可用 Docker 或系统包管理器；不能用 pip 直接安装）。
+  limits: LGPL-3.0（以官网说明为准）。
+  tools: Python、Netzschleuder、Cairo
+  cite: Peixoto TP. The graph-tool python library. figshare 2014，DOI 10.6084/m9.figshare.1164194。
+  topics: [community-structure, network-construction, analysis-workflow]
+- id: cytoscape
+  name: Cytoscape
+  url: https://cytoscape.org/
+  domain: [molecular, methods]
+  kind: 软件/工具包
+  summary: 生物网络可视化与分析的开源桌面平台，有丰富插件生态。
+  questions: 导入 STRING 等数据库的 PPI 网络，进行布局、样式映射、聚类和富集分析，制作分子网络图。
+  data: Java 桌面软件，App Store 提供 stringApp、clusterMaker2、CytoHubba 等插件。
+  access: 官网下载安装包；R（RCy3）与 Python（py4cytoscape）可远程控制。
+  limits: LGPL-2.1（以官网说明为准）。
+  tools: stringApp、RCy3、py4cytoscape、SIF/GraphML/CX
+  cite: 'Shannon P, et al. Cytoscape: a software environment for integrated models of biomolecular interaction networks. Genome Res 2003. DOI: 10.1101/gr.1239303。'
+  topics: [molecular-networks, reporting-frontiers, analysis-workflow]
+- id: gephi
+  name: Gephi
+  url: https://gephi.org/
+  domain: [theory, methods]
+  kind: 软件/工具包
+  summary: 开源交互式网络可视化与探索软件。
+  questions: 对网络进行布局、按模块度或中心性着色，快速探索网络结构并导出高质量图片。
+  data: Java 桌面软件，支持 GEXF、GraphML、CSV 等格式，附统计模块与插件。
+  access: 官网下载安装包。
+  limits: GPL-3.0（GitHub 仓库）；以官网说明为准。
+  tools: GEXF、GraphML、NetworkX（导出）
+  cite: 'Bastian M, Heymann S, Jacomy M. Gephi: an open source software for exploring and manipulating networks. Proceedings of ICWSM 2009. DOI: 10.1609/icwsm.v3i1.13937。'
+  topics: [reporting-frontiers, analysis-workflow]
+- id: snap-datasets
+  name: SNAP 大型网络数据集
+  url: https://snap.stanford.edu/data/
+  domain: [theory, methods]
+  kind: 数据集
+  summary: 斯坦福大学整理的大型真实网络数据集合。
+  questions: 获取社交、通讯、引文、道路、生物等真实网络，练习度分布、小世界、社区发现与传播模拟。
+  data: 按类别列出的数十个网络数据集，每个附节点数、边数等统计；规模从数千到上亿条边不等。
+  access: 网页直接下载边列表文本文件；SNAP 软件库另有 C++ 与 Python 版本。
+  limits: 各数据集来源与许可不同，以各数据集页面说明为准。
+  tools: SNAP（C++/Python）、NetworkX、igraph
+  cite: 'Leskovec J, Sosič R. SNAP: a general-purpose network analysis and graph-mining library. ACM Trans Intell Syst Technol 2016. DOI: 10.1145/2898361；并引用所用数据集的原始论文。'
+  topics: [network-metrics, network-models, spreading, community-structure]
+- id: netzschleuder
+  name: Netzschleuder
+  url: https://networks.skewed.de/
+  domain: [theory, methods]
+  kind: 数据库
+  summary: graph-tool 作者维护的网络数据目录与仓库。
+  questions: 检索带元数据和引用信息的真实网络（包括生物、神经与生态网络），用于模型比较与方法评测。
+  data: 大量网络条目，标注有向/无向、二分、加权、时间戳等属性；部分条目包含多个网络。
+  access: 网页下载 gt、GraphML、GML、CSV 格式；JSON API；graph-tool 中用 gt.collection.ns["名称"] 直接加载。
+  limits: 网站显示 AGPLv3 标识，但未说明数据许可；各网络的来源与许可以条目说明为准，少数条目为受限访问。
+  tools: graph-tool、NetworkX、igraph
+  cite: 无统一引用论文；每个条目的 API 记录中给出原始来源的引用与 BibTeX。
+  topics: [network-models, community-structure, analysis-workflow]
+- id: pytorch-geometric
+  name: PyTorch Geometric（PyG）
+  url: https://pytorch-geometric.readthedocs.io/
+  domain: [methods, molecular]
+  kind: 软件/工具包
+  summary: 基于 PyTorch 的图神经网络库。
+  questions: 在分子图、PPI 网络或脑连接组上训练图神经网络，完成节点分类、链接预测与图分类。
+  data: Python 库，实现多种图卷积与消息传递层，内置大量基准图数据集。
+  access: pip install torch_geometric（需先安装 PyTorch）
+  limits: MIT。
+  tools: PyTorch、NetworkX、RDKit
+  cite: Fey M, Lenssen JE. Fast graph representation learning with PyTorch Geometric. ICLR 2019 Workshop（arXiv:1903.02428）。
+  topics: [reporting-frontiers, network-medicine]
+- id: flywire
+  name: FlyWire
+  url: https://flywire.ai/
+  domain: [brain]
+  kind: 数据集
+  summary: 成年雌性果蝇全脑电镜连接组。
+  questions: 分析完整脑尺度上神经元的连接分布、模块与环路；比较不同个体或不同性别连接组中的同类细胞。
+  data: 已校对神经元约 13.9 万个，突触超过 5000 万个，含神经递质预测与超过 10 万条细胞注释。
+  access: 通过 FlyWire Codex（https://codex.flywire.ai/ ）浏览与下载；其他访问方式见官网。
+  limits: 使用条款见官网 Terms 页面；须按官网引用指南引用。
+  tools: Codex、CAVE、navis、fafbseg
+  cite: 'Dorkenwald S, et al. Neuronal wiring diagram of an adult brain. Nature 2024. DOI: 10.1038/s41586-024-07558-y；Schlegel P, et al. Nature 2024. DOI: 10.1038/s41586-024-07686-5；Matsliah A, et al. Nature 2024. DOI: 10.1038/s41586-024-07981-1；神经递质预测：Eckstein N, et al. Cell 2024. DOI: 10.1016/j.cell.2024.03.016。'
+  topics: [brain-connectome, molecular-networks]
+- id: janelia-malecns
+  name: Janelia MaleCNS
+  url: https://male-cns.janelia.org/
+  domain: [brain]
+  kind: 数据集
+  summary: 雄性果蝇完整中枢神经系统（脑与腹神经索）电镜连接组。
+  questions: 研究脑与腹神经索之间的环路；比较雌雄连接组中的性别二态性。
+  data: 雄性果蝇完整中枢神经系统的神经元、突触、骨架与细胞类型注释。
+  access: neuPrint（数据集 male-cns:v1.0）交互查询；Clio 注释浏览；图像、注释、突触与骨架可下载或编程查询；另有 Cell Type Explorer。
+  limits: CC BY 4.0。
+  tools: neuPrint、neuprint-python、navis、Clio
+  cite: 'Berg S, et al. Sexual dimorphism in the complete Drosophila male central nervous system connectome. Cell 2026. DOI: 10.1016/j.cell.2026.08.015（预印本 DOI: 10.1101/2025.10.09.680999）。'
+  topics: [brain-connectome]
+- id: flyscope
+  name: FlyScope
+  url: https://flyscope.xizhe.net/
+  domain: [brain]
+  kind: 交互网站
+  summary: 果蝇等连接组在线浏览器，关注共享输入在树突上的位置。
+  questions: 比较两个输入神经元在同一接收神经元上的突触位置，探索输入位置与输入神经元之间连接的关系。
+  data: 以 MaleCNS v1.0 为主要数据，另接入 FlyWire/FAFB v783、BANC v888、秀丽隐杆线虫与沙蚕幼虫等公开数据；不修改原始数据。
+  access: 浏览器直接访问；神经元检索、骨架与突触视图、连接表，支持 PNG 与 CSV 导出。
+  limits: 网站未写明许可；所用各数据集遵循其原始来源的条款。
+  tools: MaleCNS、FlyWire、BANC、neuPrint
+  cite: Zhang X. Synaptic organization in shared receivers predicts connectivity between input neurons. 手稿，2026（暂无 DOI）；并引用所用原始数据集。
+  topics: [brain-connectome]
+- id: openworm
+  name: OpenWorm
+  url: https://openworm.org/
+  domain: [brain, dynamics]
+  kind: 软件/工具包
+  summary: 以秀丽隐杆线虫为对象的开放科学数字生物体建模项目。
+  questions: 把连接组与神经元、肌肉、身体力学模型结合，研究网络结构如何产生行为与动力学。
+  data: 包含 Sibernetic 身体模拟器、NeuroML 格式的线虫连接组、Geppetto 可视化平台等子项目。
+  access: 代码托管于 GitHub（https://github.com/openworm ）。
+  limits: 代码、数据与模型采用 MIT 许可。
+  tools: NeuroML、Sibernetic、Geppetto、c302
+  cite: '官网未指定引用；项目概述论文：Szigeti B, et al. OpenWorm: an open-science approach to modeling Caenorhabditis elegans. Front Comput Neurosci 2014. DOI: 10.3389/fncom.2014.00137。'
+  topics: [brain-connectome, synchronization, controllability]
+- id: wormwiring
+  name: WormWiring
+  url: https://wormwiring.org/
+  domain: [brain, dynamics]
+  kind: 数据集
+  summary: 线虫神经连接组数据与可视化网站。
+  questions: 获取秀丽隐杆线虫雌雄同体与雄性的化学突触和缝隙连接网络，分析枢纽、模体与可控性。
+  data: 雌雄同体与雄性的全动物连接数据（神经元间及神经元到肌肉等末端器官），含连接权重；另含 Pristionchus pacificus 的部分连接数据。
+  access: 网页下载 Excel/CSV 文件。
+  limits: 网站未写明许可，以官方说明为准。
+  tools: NetworkX、igraph、NeuroML
+  cite: 'Cook SJ, et al. Whole-animal connectomes of both Caenorhabditis elegans sexes. Nature 2019. DOI: 10.1038/s41586-019-1352-7；早期数据：Varshney LR, et al. PLoS Comput Biol 2011. DOI: 10.1371/journal.pcbi.1001066。'
+  topics: [brain-connectome, controllability, network-metrics]

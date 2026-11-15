@@ -1,0 +1,324 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>度相关性与网络结构的高阶统计 · 生物医学网络科学</title><meta name="description" content="度相关性与网络结构的高阶统计：度分布之外，谁和谁相连：联合度分布、同配与异配、结构截断、富人俱乐部、聚集谱与 k-核，以及它们对传播、渗流、同步与控制的影响。"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-theory"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html" aria-current="page">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory" open><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html" aria-current="page">度相关性与网络结构的高阶统计</a><ol class="sub"><li><a href="degree-correlations.joint-degree-distribution.html"><span class="n">01</span>联合度分布与条件度分布</a></li><li><a href="degree-correlations.knn-function.html"><span class="n">02</span>邻居平均度函数与相关指数</a></li><li><a href="degree-correlations.assortativity-coefficient.html"><span class="n">03</span>度相关系数 r</a></li><li><a href="degree-correlations.structural-cutoff.html"><span class="n">04</span>结构截断与结构性异配</a></li><li><a href="degree-correlations.randomization-tests.html"><span class="n">05</span>度保持随机化检验</a></li><li><a href="degree-correlations.generating-correlated-networks.html"><span class="n">06</span>生成具有度相关的网络</a></li><li><a href="degree-correlations.rich-club.html"><span class="n">07</span>富人俱乐部系数及其归一化</a></li><li><a href="degree-correlations.clustering-spectrum.html"><span class="n">08</span>聚集谱 C(k) 与层次模块性</a></li><li><a href="degree-correlations.k-core.html"><span class="n">09</span>k-核分解</a></li><li><a href="degree-correlations.impact-on-dynamics.html"><span class="n">10</span>度相关对网络过程的影响</a></li><li><a href="degree-correlations.derivations.html"><span class="n">11</span>数学推导与算法</a></li><li><a href="degree-correlations.biomedical.html"><span class="n">12</span>生物医学应用</a></li><li><a href="degree-correlations.limitations.html"><span class="n">13</span>适用范围与常见误用</a></li></ol></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><div class="lec-grid"><article style="min-width:0"><header class="doc-head"><nav class="crumb"><a href="domains.html">知识领域</a> <span class="sep">/</span> <a href="d-theory.html">网络基础理论</a></nav><div class="eyebrow" style="margin-top:14px"><b>Network Foundations</b><span>Degree correlations and higher-order structure</span></div><h1>度相关性与网络结构的高阶统计</h1><p class="dek">度分布之外，谁和谁相连：联合度分布、同配与异配、结构截断、富人俱乐部、聚集谱与 k-核，以及它们对传播、渗流、同步与控制的影响。</p><dl class="doc-meta"><div><dt>知识页面</dt><dd>13 页</dd></div><div><dt>阅读</dt><dd>约 29 分钟</dd></div><div><dt>代码示例</dt><dd>9 个</dd></div></dl><div class="chips"><span class="chip">度相关</span><span class="chip">同配性</span><span class="chip">异配性</span><span class="chip">联合度分布</span><span class="chip">邻居平均度</span><span class="chip">度相关系数</span><span class="chip">结构截断</span><span class="chip">富人俱乐部</span><span class="chip">聚集谱</span><span class="chip">层次模块性</span><span class="chip">k-核分解</span><span class="chip">度保持随机化</span></div></header><section class="block prose" id="overview"><p>度分布
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>p</mi><mi>k</mi></msub><annotation encoding="application/x-tex">p_k</annotation></semantics></math>
+只告诉我们“每个节点有多少条边”，没有说明“这些边连向谁”。两张度序列完全相同的网络，可以一张让枢纽彼此相连，另一张让枢纽各自统领一群低度节点。区分这两种连接方式的统计量就是<strong>度相关性</strong>（degree
+correlations）：一条边两端节点的度是否相互依赖。枢纽倾向于连接枢纽的网络称为<strong>同配</strong>（assortative），枢纽倾向于连接低度节点的称为<strong>异配</strong>（disassortative），两者都不明显的称为<strong>中性</strong>（neutral）。</p>
+<p>度相关是“度分布之后的下一层结构”。它最早由 Pastor-Satorras、Vázquez
+与 Vespignani（2001, <em>PRL</em>）在互联网拓扑中通过邻居平均度函数
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>k</mi><mrow><mi>n</mi><mi>n</mi></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">k_{nn}(k)</annotation></semantics></math>
+提出；Maslov 与 Sneppen（2002,
+<em>Science</em>）用保度随机化比较了酵母蛋白质相互作用网络与转录调控网络中枢纽之间的连接；Newman（2002,
+<em>PRL</em>；2003, <em>PRE</em>）引入了度相关系数
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>，并系统比较了社会、技术和生物网络。一个反复出现的经验规律是：社会网络多为同配，蛋白质相互作用、代谢、神经元等生物网络多为异配。但后续工作也表明，生物网络的异配有相当一部分可以由重尾度分布和“简单图不允许重边”这一约束解释，这就是<a
+href="degree-correlations.structural-cutoff.html">结构截断</a>问题。</p>
+<p>本专题从两点相关推进到更高阶的结构统计：</p>
+<ol type="1">
+<li><a
+href="degree-correlations.joint-degree-distribution.html">联合度分布与条件度分布</a>：度相关的完整描述；</li>
+<li><a href="degree-correlations.knn-function.html">邻居平均度函数
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>k</mi><mrow><mi>n</mi><mi>n</mi></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">k_{nn}(k)</annotation></semantics></math></a>
+与 <a
+href="degree-correlations.assortativity-coefficient.html">度相关系数
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math></a>：两种压缩描述及其局限；</li>
+<li><a
+href="degree-correlations.structural-cutoff.html">结构截断与结构性异配</a>、<a
+href="degree-correlations.randomization-tests.html">度保持随机化检验</a>：怎样判断观测到的相关是否超出了度序列本身的约束；</li>
+<li><a
+href="degree-correlations.generating-correlated-networks.html">生成具有度相关的网络</a>：模型与重连算法；</li>
+<li>更高阶的统计：<a
+href="degree-correlations.rich-club.html">富人俱乐部</a>、<a
+href="degree-correlations.clustering-spectrum.html">聚集谱与层次模块性</a>、<a
+href="degree-correlations.k-core.html">k-核分解</a>；</li>
+<li><a
+href="degree-correlations.impact-on-dynamics.html">度相关对网络过程的影响</a>：渗流、鲁棒性、传播、同步与可控性。</li>
+</ol>
+<p>它建立在<a
+href="network-metrics.html">网络结构指标与随机图</a>（度、度分布、聚集系数）和<a
+href="network-models.html">小世界与无标度网络模型</a>（配置模型、BA
+模型）之上；零模型的一般原理见<a
+href="network-construction.null-models.html">网络构建与统计验证</a>。本专题的全部代码示例见<a
+href="degree-correlations.html#code">代码示例</a>。</p>
+</section><section class="block" id="pages"><h2><span class="tag">Contents</span>知识页面</h2><div class="arts"><a class="art" href="degree-correlations.joint-degree-distribution.html"><span class="no">01</span><span class="t">联合度分布与条件度分布</span><span class="d">从“随机抽一个节点”到“随机抽一条边” 度相关的所有定义都以边为抽样单位。在无向网络中随机选一条边，再随机选它的一端，到达度为 的节点的概率不是 ，而是 因为度为 的节点有 条边可…</span></a><a class="art" href="degree-correlations.knn-function.html"><span class="no">02</span><span class="t">邻居平均度函数与相关指数</span><span class="d">定义 节点 的邻居平均度（average nearest-neighbor degree） 。 度相关函数 ：所有度为 的节点的 的平均， - 中性网络： ，与 无关（水平线）； …</span></a><a class="art" href="degree-correlations.assortativity-coefficient.html"><span class="no">03</span><span class="t">度相关系数 r</span><span class="d">定义 度相关系数（degree assortativity coefficient，Newman, 2002）：一条边两端节点度的 Pearson 相关系数， ； 同配， 中性， …</span></a><a class="art" href="degree-correlations.structural-cutoff.html"><span class="no">04</span><span class="t">结构截断与结构性异配</span><span class="d">简单图与度分布的冲突 在配置模型中，度为 与 的两个节点之间的期望边数约为 当两个节点的度都很大时，这个期望值可以超过 1。例如 、 的网络中，两个度为 55 与 46 的枢纽之间…</span></a><a class="art" href="degree-correlations.randomization-tests.html"><span class="no">05</span><span class="t">度保持随机化检验</span><span class="d">两种随机化 度相关的检验问题是：观测到的 或 是否超出了“同一度序列的随机网络”能产生的范围。Barabási 书第 7 章区分两种保度随机化： - R-S（保持简单图）：双边交换…</span></a><a class="art" href="degree-correlations.generating-correlated-networks.html"><span class="no">06</span><span class="t">生成具有度相关的网络</span><span class="d">常见模型的度相关 模型 度相关 说明 --- --- --- ER 随机图 中性 没有枢纽，也没有结构截断问题 配置模型（允许重边与自环） 中性 枢纽之间的“多余”边以重边形式存在…</span></a><a class="art" href="degree-correlations.rich-club.html"><span class="no">07</span><span class="t">富人俱乐部系数及其归一化</span><span class="d">定义 富人俱乐部系数（rich-club coefficient; Zhou &amp; Mondragón, 2004, IEEE Communications Letters）：度大于…</span></a><a class="art" href="degree-correlations.clustering-spectrum.html"><span class="no">08</span><span class="t">聚集谱 C(k) 与层次模块性</span><span class="d">三点相关 是两点相关。更高一阶的统计是：度为 的节点的两个邻居之间是否相连。聚集谱（clustering spectrum） 是度为 的节点局部聚集系数的平均。它对应条件概率 与“…</span></a><a class="art" href="degree-correlations.k-core.html"><span class="no">09</span><span class="t">k-核分解</span><span class="d">定义 -核（ -core; Seidman, 1983, Social Networks）：反复删除度小于 的节点后剩下的最大子图；其中每个节点在子图内的度都至少为 。 核数（co…</span></a><a class="art" href="degree-correlations.impact-on-dynamics.html"><span class="no">10</span><span class="t">度相关对网络过程的影响</span><span class="d">度相关改变的不只是一个描述性数字，它会改变发生在网络上的过程。下面的结论多来自模型网络，在真实生物网络中往往与模块、空间约束等因素同时存在。 巨连通分支与鲁棒性 Newman（20…</span></a><a class="art" href="degree-correlations.derivations.html"><span class="no">11</span><span class="t">数学推导与算法</span><span class="d">A. 细致平衡与中性网络的 由 的两种写法 及 ，得细致平衡 。 把 按 加权求和： 这一恒等式对任何相关结构都成立。若 随 发散，则必有某些 的 发散，矩阵 的最大特征值也无界，…</span></a><a class="art" href="degree-correlations.biomedical.html"><span class="no">12</span><span class="t">生物医学应用</span><span class="d">蛋白质相互作用网络：枢纽回避及其解释 酵母蛋白质相互作用网络是异配网络的典型例子：Newman（2003）报告 ；Maslov 与 Sneppen（2002）发现高度蛋白之间的连接…</span></a><a class="art" href="degree-correlations.limitations.html"><span class="no">13</span><span class="t">适用范围与常见误用</span><span class="d">1. 把负的 直接解释为“枢纽回避”的生物学机制。 重尾度分布的简单图本身就偏异配；必须与同一度序列的保度随机网络（R-S）比较，并报告零分布。 2. 跨网络比较 的绝对值。 依赖…</span></a></div></section><section class="block" id="demos"><h2><span class="tag">INTERACTIVE</span>交互可视化</h2><div class="demo" data-demo="ba"></div><div class="demo" data-demo="er"></div><div class="demo" data-demo="attack"></div><div class="demo" data-demo="sir"></div><div class="demo" data-demo="kuramoto"></div><div class="demo" data-demo="brain_threshold"></div></section><section class="block" id="code"><h2><span class="tag">CODE</span>计算实现</h2><p class="small">9 个完整可运行的 Python 示例，每个都给出代码、输出图和解读；可在浏览器中直接运行，或下载 <a href="notebooks/degree-correlations.ipynb" download>Jupyter Notebook</a> · <a href="notebooks/degree-correlations.py" download>Python 脚本</a>。</p><div class="gallery"><a class="gcard" href="ex-degree-correlations-0.html"><span class="thumb"><img src="gallery/degree-correlations-0-0.png" alt="" loading="lazy"></span><span class="gt">按定义手算度相关系数 r 与 k_nn(k)，并与 NetworkX 对照</span></a><a class="gcard" href="ex-degree-correlations-1.html"><span class="thumb"><img src="gallery/degree-correlations-1-0.png" alt="" loading="lazy"></span><span class="gt">k_nn(k)、相关指数 mu、r 与 Spearman rho——三类网络对照</span></a><a class="gcard" href="ex-degree-correlations-2.html"><span class="thumb"><img src="gallery/degree-correlations-2-0.png" alt="" loading="lazy"></span><span class="gt">结构截断与“伪异配”——简单图约束本身就会产生负的 r</span></a><a class="gcard" href="ex-degree-correlations-3.html"><span class="thumb"><img src="gallery/degree-correlations-3-0.png" alt="" loading="lazy"></span><span class="gt">度保持随机化检验——观测到的 r 是否超出度序列本身能解释的范围</span></a><a class="gcard" href="ex-degree-correlations-4.html"><span class="thumb"><img src="gallery/degree-correlations-4-0.png" alt="" loading="lazy"></span><span class="gt">富人俱乐部系数 phi(k) 及其保度归一化 rho(k)</span></a><a class="gcard" href="ex-degree-correlations-5.html"><span class="thumb"><img src="gallery/degree-correlations-5-0.png" alt="" loading="lazy"></span><span class="gt">聚集谱 C(k) 与层次模块网络（Ravasz–Barabási 型确定性模型）</span></a><a class="gcard" href="ex-degree-correlations-6.html"><span class="thumb"><img src="gallery/degree-correlations-6-0.png" alt="" loading="lazy"></span><span class="gt">k-核分解——手写剥离算法并与 NetworkX 对照，比较核数与度</span></a><a class="gcard" href="ex-degree-correlations-7.html"><span class="thumb"><img src="gallery/degree-correlations-7-0.png" alt="" loading="lazy"></span><span class="gt">度相关如何改变巨连通分支、传播阈值与可同步性</span></a><a class="gcard" href="ex-degree-correlations-8.html"><span class="thumb"><img src="gallery/degree-correlations-8-0.png" alt="" loading="lazy"></span><span class="gt">阈值化相关网络中的同配性——模块大小如何制造正的 r</span></a></div></section><section class="block prose" id="related"><h2><span class="tag">Links</span>关联知识</h2><ul>
+<li><a
+href="network-metrics.html">网络结构指标与随机图</a>：度、度分布与聚集系数的定义；ER
+随机图是中性网络的基准。</li>
+<li><a
+href="network-models.html">小世界与无标度网络模型</a>：配置模型、BA
+模型与无标度度分布；结构截断只在
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>&lt;</mo><mi>γ</mi><mo>&lt;</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">2&lt;\gamma&lt;3</annotation></semantics></math>
+时出现。</li>
+<li><a
+href="network-construction.null-models.html">网络构建与统计验证</a>：保度随机化、配置模型与经验
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+值的一般原理。</li>
+<li><a
+href="community-structure.html">社团结构与社区发现</a>：社团结构可以产生同配；类别同配系数与模块度同形。</li>
+<li><a
+href="spreading.html">网络上的传播与免疫</a>：相关网络中的传播阈值、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>-核与影响力传播者。</li>
+<li><a
+href="robustness.html">网络鲁棒性、渗流与级联失效</a>：同配与异配网络在随机失效与蓄意攻击下的差异。</li>
+<li><a href="synchronization.html">同步与协同动力学</a>与<a
+href="controllability.html">网络可控性与稳定性</a>：度相关改变可同步性与驱动节点数。</li>
+<li><a href="brain-connectome.html">脑连接组：结构与功能连接</a>与<a
+href="molecular-networks.html">生物分子网络与拓扑特征</a>：富人俱乐部、结构核心与
+PPI 的度异配。</li>
+</ul>
+</section><section class="block prose" id="references"><h2><span class="tag">References</span>核心文献</h2><p><strong>度相关的定义与测量</strong></p>
+<ul>
+<li>Pastor-Satorras R, Vázquez A, Vespignani A. Dynamical and
+correlation properties of the Internet. <em>Physical Review
+Letters</em>, 2001, 87: 258701. DOI: <a
+href="https://doi.org/10.1103/PhysRevLett.87.258701">10.1103/PhysRevLett.87.258701</a></li>
+<li>Vázquez A, Pastor-Satorras R, Vespignani A. Large-scale topological
+and dynamical properties of the Internet. <em>Physical Review E</em>,
+2002, 65: 066130. DOI: <a
+href="https://doi.org/10.1103/PhysRevE.65.066130">10.1103/PhysRevE.65.066130</a></li>
+<li>Newman MEJ. Assortative mixing in networks. <em>Physical Review
+Letters</em>, 2002, 89: 208701. DOI: <a
+href="https://doi.org/10.1103/PhysRevLett.89.208701">10.1103/PhysRevLett.89.208701</a></li>
+<li>Newman MEJ. Mixing patterns in networks. <em>Physical Review E</em>,
+2003, 67: 026126. DOI: <a
+href="https://doi.org/10.1103/PhysRevE.67.026126">10.1103/PhysRevE.67.026126</a></li>
+<li>Newman MEJ, Park J. Why social networks are different from other
+types of networks. <em>Physical Review E</em>, 2003, 68: 036122. DOI: <a
+href="https://doi.org/10.1103/PhysRevE.68.036122">10.1103/PhysRevE.68.036122</a></li>
+<li>Foster JG, Foster DV, Grassberger P, Paczuski M. Edge direction and
+the structure of networks. <em>PNAS</em>, 2010, 107: 10815–10820. DOI:
+<a
+href="https://doi.org/10.1073/pnas.0912671107">10.1073/pnas.0912671107</a></li>
+<li>Litvak N, van der Hofstad R. Uncovering disassortativity in large
+scale-free networks. <em>Physical Review E</em>, 2013, 87: 022801. DOI:
+<a
+href="https://doi.org/10.1103/PhysRevE.87.022801">10.1103/PhysRevE.87.022801</a></li>
+<li>Barrat A, Barthélemy M, Pastor-Satorras R, Vespignani A. The
+architecture of complex weighted networks. <em>PNAS</em>, 2004, 101:
+3747–3752. DOI: <a
+href="https://doi.org/10.1073/pnas.0400087101">10.1073/pnas.0400087101</a></li>
+<li>Feld SL. Why your friends have more friends than you do.
+<em>American Journal of Sociology</em>, 1991, 96: 1464–1477. DOI: <a
+href="https://doi.org/10.1086/229693">10.1086/229693</a></li>
+</ul>
+<p><strong>结构截断、零模型与生成模型</strong></p>
+<ul>
+<li>Maslov S, Sneppen K. Specificity and stability in topology of
+protein networks. <em>Science</em>, 2002, 296: 910–913. DOI: <a
+href="https://doi.org/10.1126/science.1065103">10.1126/science.1065103</a></li>
+<li>Boguñá M, Pastor-Satorras R, Vespignani A. Cut-offs and finite size
+effects in scale-free networks. <em>European Physical Journal B</em>,
+2004, 38: 205–209. DOI: <a
+href="https://doi.org/10.1140/epjb/e2004-00038-8">10.1140/epjb/e2004-00038-8</a></li>
+<li>Park J, Newman MEJ. Origin of degree correlations in the Internet
+and other networks. <em>Physical Review E</em>, 2003, 68: 026112. DOI:
+<a
+href="https://doi.org/10.1103/PhysRevE.68.026112">10.1103/PhysRevE.68.026112</a></li>
+<li>Johnson S, Torres JJ, Marro J, Muñoz MA. Entropic origin of
+disassortativity in complex networks. <em>Physical Review Letters</em>,
+2010, 104: 108702. DOI: <a
+href="https://doi.org/10.1103/PhysRevLett.104.108702">10.1103/PhysRevLett.104.108702</a></li>
+<li>Boguñá M, Pastor-Satorras R. Class of correlated random networks
+with hidden variables. <em>Physical Review E</em>, 2003, 68: 036112.
+DOI: <a
+href="https://doi.org/10.1103/PhysRevE.68.036112">10.1103/PhysRevE.68.036112</a></li>
+<li>Barrat A, Pastor-Satorras R. Rate equation approach for correlations
+in growing network models. <em>Physical Review E</em>, 2005, 71: 036127.
+DOI: <a
+href="https://doi.org/10.1103/PhysRevE.71.036127">10.1103/PhysRevE.71.036127</a></li>
+<li>Xulvi-Brunet R, Sokolov IM. Reshuffling scale-free networks: from
+random to assortative. <em>Physical Review E</em>, 2004, 70: 066102.
+DOI: <a
+href="https://doi.org/10.1103/PhysRevE.70.066102">10.1103/PhysRevE.70.066102</a></li>
+<li>Mahadevan P, Krioukov D, Fall K, Vahdat A. Systematic topology
+analysis and generation using degree correlations. <em>Proceedings of
+ACM SIGCOMM</em>, 2006: 135–146. DOI: <a
+href="https://doi.org/10.1145/1159913.1159930">10.1145/1159913.1159930</a></li>
+<li>Orsini C, Dankulov MM, Colomer-de-Simón P, et al. Quantifying
+randomness in real networks. <em>Nature Communications</em>, 2015, 6:
+8627. DOI: <a
+href="https://doi.org/10.1038/ncomms9627">10.1038/ncomms9627</a></li>
+<li>Fosdick BK, Larremore DB, Nishimura J, Ugander J. Configuring random
+graph models with fixed degree sequences. <em>SIAM Review</em>, 2018,
+60: 315–355. DOI: <a
+href="https://doi.org/10.1137/16M1087175">10.1137/16M1087175</a></li>
+</ul>
+<p><strong>富人俱乐部、聚集谱与 k-核</strong></p>
+<ul>
+<li>Zhou S, Mondragón RJ. The rich-club phenomenon in the Internet
+topology. <em>IEEE Communications Letters</em>, 2004, 8: 180–182. DOI:
+<a
+href="https://doi.org/10.1109/LCOMM.2004.823426">10.1109/LCOMM.2004.823426</a></li>
+<li>Colizza V, Flammini A, Serrano MA, Vespignani A. Detecting rich-club
+ordering in complex networks. <em>Nature Physics</em>, 2006, 2: 110–115.
+DOI: <a
+href="https://doi.org/10.1038/nphys209">10.1038/nphys209</a></li>
+<li>Opsahl T, Colizza V, Panzarasa P, Ramasco JJ. Prominence and
+control: the weighted rich-club effect. <em>Physical Review
+Letters</em>, 2008, 101: 168702. DOI: <a
+href="https://doi.org/10.1103/PhysRevLett.101.168702">10.1103/PhysRevLett.101.168702</a></li>
+<li>Ravasz E, Somera AL, Mongru DA, Oltvai ZN, Barabási AL. Hierarchical
+organization of modularity in metabolic networks. <em>Science</em>,
+2002, 297: 1551–1555. DOI: <a
+href="https://doi.org/10.1126/science.1073374">10.1126/science.1073374</a></li>
+<li>Ravasz E, Barabási AL. Hierarchical organization in complex
+networks. <em>Physical Review E</em>, 2003, 67: 026112. DOI: <a
+href="https://doi.org/10.1103/PhysRevE.67.026112">10.1103/PhysRevE.67.026112</a></li>
+<li>Soffer SN, Vázquez A. Network clustering coefficient without
+degree-correlation biases. <em>Physical Review E</em>, 2005, 71: 057101.
+DOI: <a
+href="https://doi.org/10.1103/PhysRevE.71.057101">10.1103/PhysRevE.71.057101</a></li>
+<li>Seidman SB. Network structure and minimum degree. <em>Social
+Networks</em>, 1983, 5: 269–287. DOI: <a
+href="https://doi.org/10.1016/0378-8733(83)90028-X">10.1016/0378-8733(83)90028-X</a></li>
+<li>Batagelj V, Zaveršnik M. Fast algorithms for determining
+(generalized) core groups in social networks. <em>Advances in Data
+Analysis and Classification</em>, 2011, 5: 129–145. DOI: <a
+href="https://doi.org/10.1007/s11634-010-0079-y">10.1007/s11634-010-0079-y</a></li>
+<li>Dorogovtsev SN, Goltsev AV, Mendes JFF. k-core organization of
+complex networks. <em>Physical Review Letters</em>, 2006, 96: 040601.
+DOI: <a
+href="https://doi.org/10.1103/PhysRevLett.96.040601">10.1103/PhysRevLett.96.040601</a></li>
+<li>Kitsak M, Gallos LK, Havlin S, et al. Identification of influential
+spreaders in complex networks. <em>Nature Physics</em>, 2010, 6:
+888–893. DOI: <a
+href="https://doi.org/10.1038/nphys1746">10.1038/nphys1746</a></li>
+</ul>
+<p><strong>对网络过程的影响</strong></p>
+<ul>
+<li>Boguñá M, Pastor-Satorras R. Epidemic spreading in correlated
+complex networks. <em>Physical Review E</em>, 2002, 66: 047104. DOI: <a
+href="https://doi.org/10.1103/PhysRevE.66.047104">10.1103/PhysRevE.66.047104</a></li>
+<li>Boguñá M, Pastor-Satorras R, Vespignani A. Absence of epidemic
+threshold in scale-free networks with degree correlations. <em>Physical
+Review Letters</em>, 2003, 90: 028701. DOI: <a
+href="https://doi.org/10.1103/PhysRevLett.90.028701">10.1103/PhysRevLett.90.028701</a></li>
+<li>Vázquez A, Moreno Y. Resilience to damage of graphs with degree
+correlations. <em>Physical Review E</em>, 2003, 67: 015101. DOI: <a
+href="https://doi.org/10.1103/PhysRevE.67.015101">10.1103/PhysRevE.67.015101</a></li>
+<li>di Bernardo M, Garofalo F, Sorrentino F. Effects of degree
+correlation on the synchronization of networks of oscillators.
+<em>International Journal of Bifurcation and Chaos</em>, 2007, 17:
+3499–3506. DOI: <a
+href="https://doi.org/10.1142/S0218127407019263">10.1142/S0218127407019263</a></li>
+<li>Pósfai M, Liu YY, Slotine JJ, Barabási AL. Effect of correlations on
+network controllability. <em>Scientific Reports</em>, 2013, 3: 1067.
+DOI: <a
+href="https://doi.org/10.1038/srep01067">10.1038/srep01067</a></li>
+</ul>
+<p><strong>生物医学应用</strong></p>
+<ul>
+<li>Jeong H, Mason SP, Barabási AL, Oltvai ZN. Lethality and centrality
+in protein networks. <em>Nature</em>, 2001, 411: 41–42. DOI: <a
+href="https://doi.org/10.1038/35075138">10.1038/35075138</a></li>
+<li>Han JDJ, Bertin N, Hao T, et al. Evidence for dynamically organized
+modularity in the yeast protein–protein interaction network.
+<em>Nature</em>, 2004, 430: 88–93. DOI: <a
+href="https://doi.org/10.1038/nature02555">10.1038/nature02555</a></li>
+<li>Wuchty S, Almaas E. Peeling the yeast protein network.
+<em>Proteomics</em>, 2005, 5: 444–449. DOI: <a
+href="https://doi.org/10.1002/pmic.200400962">10.1002/pmic.200400962</a></li>
+<li>Piraveenan M, Prokopenko M, Zomaya A. Assortative mixing in directed
+biological networks. <em>IEEE/ACM Transactions on Computational Biology
+and Bioinformatics</em>, 2012, 9: 66–78. DOI: <a
+href="https://doi.org/10.1109/TCBB.2010.80">10.1109/TCBB.2010.80</a></li>
+<li>Hagmann P, Cammoun L, Gigandet X, et al. Mapping the structural core
+of human cerebral cortex. <em>PLoS Biology</em>, 2008, 6: e159. DOI: <a
+href="https://doi.org/10.1371/journal.pbio.0060159">10.1371/journal.pbio.0060159</a></li>
+<li>van den Heuvel MP, Sporns O. Rich-club organization of the human
+connectome. <em>Journal of Neuroscience</em>, 2011, 31: 15775–15786.
+DOI: <a
+href="https://doi.org/10.1523/JNEUROSCI.3539-11.2011">10.1523/JNEUROSCI.3539-11.2011</a></li>
+<li>van den Heuvel MP, Kahn RS, Goñi J, Sporns O. High-cost,
+high-capacity backbone for global brain communication. <em>PNAS</em>,
+2012, 109: 11372–11377. DOI: <a
+href="https://doi.org/10.1073/pnas.1203593109">10.1073/pnas.1203593109</a></li>
+<li>Harriger L, van den Heuvel MP, Sporns O. Rich club organization of
+macaque cerebral cortex and its role in network communication. <em>PLoS
+ONE</em>, 2012, 7: e46497. DOI: <a
+href="https://doi.org/10.1371/journal.pone.0046497">10.1371/journal.pone.0046497</a></li>
+<li>Towlson EK, Vértes PE, Ahnert SE, Schafer WR, Bullmore ET. The rich
+club of the <em>C. elegans</em> neuronal connectome. <em>Journal of
+Neuroscience</em>, 2013, 33: 6380–6387. DOI: <a
+href="https://doi.org/10.1523/JNEUROSCI.3784-12.2013">10.1523/JNEUROSCI.3784-12.2013</a></li>
+<li>van den Heuvel MP, Sporns O, Collin G, et al. Abnormal rich club
+organization and functional brain dynamics in schizophrenia. <em>JAMA
+Psychiatry</em>, 2013, 70: 783. DOI: <a
+href="https://doi.org/10.1001/jamapsychiatry.2013.1328">10.1001/jamapsychiatry.2013.1328</a></li>
+</ul>
+</section><section class="block prose" id="resources"><h2><span class="tag">Further</span>延伸资源</h2><div class="table-wrap"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>类型</th>
+<th>资源</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>教材</td>
+<td>Barabási, <em>Network Science</em>, Ch. 7 Degree Correlations，<a
+href="http://networksciencebook.com/chapter/7">networksciencebook.com/chapter/7</a>（CC
+BY-NC-SA 2.0）</td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>e</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><annotation encoding="application/x-tex">e_{ij}</annotation></semantics></math>、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>k</mi><mrow><mi>n</mi><mi>n</mi></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">k_{nn}(k)</annotation></semantics></math>、相关指数、结构截断、R-S/R-M
+随机化、Xulvi-Brunet–Sokolov 算法；进阶专题
+7.A（<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>
+与
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math>
+的关系）与 7.B（结构截断推导）</td>
+</tr>
+<tr>
+<td>教材</td>
+<td>Newman, <em>Networks</em>（第 2 版, Oxford University Press,
+2018），同配混合与度相关相关章节</td>
+<td>类别与标量同配系数、相关网络上的渗流与传播的生成函数处理</td>
+</tr>
+<tr>
+<td>综述</td>
+<td>Newman 2003, <em>SIAM Review</em>（精读见 <a
+href="paper-newman2003_review.html">Newman 2003</a>）</td>
+<td>同配混合在复杂网络结构统计中的位置</td>
+</tr>
+<tr>
+<td>工具</td>
+<td>NetworkX：<code>degree_assortativity_coefficient</code>、<code>average_degree_connectivity</code>、<code>rich_club_coefficient</code>、<code>core_number</code>、<code>double_edge_swap</code>、<code>attribute_assortativity_coefficient</code></td>
+<td>本专题代码示例全部基于这些函数，并给出与定义的手算对照</td>
+</tr>
+<tr>
+<td>工具</td>
+<td><a href="https://sites.google.com/site/bctnet/" target="_blank" rel="noopener">Brain Connectivity
+Toolbox</a> / <a
+href="https://github.com/aestrivex/bctpy">bctpy</a></td>
+<td>加权与有向的同配系数、富人俱乐部系数（<code>rich_club_bu</code>、<code>rich_club_wu</code>
+等）、核分解与多种零模型；指标说明见 Rubinov &amp; Sporns（2010,
+<em>NeuroImage</em>，DOI: <a
+href="https://doi.org/10.1016/j.neuroimage.2009.10.003">10.1016/j.neuroimage.2009.10.003</a>）</td>
+</tr>
+<tr>
+<td>工具</td>
+<td><a href="https://igraph.org/" target="_blank" rel="noopener">igraph</a>（R / Python）</td>
+<td><code>assortativity_degree</code>、<code>knn</code>、<code>coreness</code>，适合大规模网络</td>
+</tr>
+<tr>
+<td>数据</td>
+<td><a href="https://thebiogrid.org/" target="_blank" rel="noopener">BioGRID</a></td>
+<td>可按实验类型（双杂交、亲和纯化）筛选相互作用，比较不同证据类型对度相关的影响</td>
+</tr>
+</tbody>
+</table></div>
+</section><section class="block prose" id="questions"><h2><span class="tag">Open questions</span>开放问题</h2><ol type="1">
+<li>对你熟悉的一个生物网络，度相关有多少可以由度序列和简单图约束解释（R-S
+随机化），多少需要额外的机制？如果再控制模块结构或空间距离，剩余的相关还存在吗？</li>
+<li>相互作用组的研究偏倚使被研究得多的蛋白既度高又更可能互相有记录。你预期这种偏倚使观测的度相关偏向同配还是异配？可以用系统性筛选数据（如人类二元相互作用参考图谱）做什么样的对照？</li>
+<li>富人俱乐部的归一化依赖零模型：保度、保持空间距离、保持权重分布的零模型可能给出不同结论。对一个具体的脑网络问题，你会预先规定哪一种，为什么？</li>
+<li>两点相关（<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>k</mi><mrow><mi>n</mi><mi>n</mi></mrow></msub><annotation encoding="application/x-tex">k_{nn}</annotation></semantics></math>）、三点相关（<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">C(k)</annotation></semantics></math>）和更高阶统计（<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>-核、dK
+序列）之间是什么关系？在什么条件下，掌握到 2K 或 2.5K
+就足以预测传播阈值或可控性，什么时候还需要更高阶的结构？</li>
+<li>在患者与对照的网络比较中，如果患者组
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>
+或
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ρ</mi><mtext mathvariant="normal">ran</mtext></msub><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\rho_{\text{ran}}(k)</annotation></semantics></math>
+不同，怎样区分“度相关结构改变”与“度分布、网络密度或模块大小改变”的间接效应？</li>
+</ol>
+</section></article><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script><script src="assets/js/demos.js"></script></body></html>

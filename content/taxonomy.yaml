@@ -1,0 +1,78 @@
+# 生物医学网络科学 · 知识体系
+# 领域（domain）是信息架构，不是学习顺序；专题（topic）是领域下的知识单元。
+# legacy: 旧版讲次（用于旧链接重定向与视频、演示、代码的对应）
+
+domains:
+  - id: theory
+    title: 网络基础理论
+    en: Network Foundations
+    short: 图论、拓扑、模型、推断
+    desc: 网络的数学表示、结构指标、统计特征、生成模型、组织结构，以及从原始测量到网络的构建与统计验证。
+  - id: dynamics
+    title: 网络动力学与控制
+    en: Dynamics & Control
+    short: 传播、同步、稳定性、可控性
+    desc: 网络上的状态演化：扩散与流行病传播、同步与耦合动力系统、稳定性与鲁棒性、线性与结构可控性及其在生物系统中的适用条件。
+  - id: brain
+    title: 脑网络与连接组
+    en: Brain Networks & Connectomics
+    short: 结构连接、功能连接、动态网络
+    desc: 从 MRI、fMRI、dMRI 与电生理数据出发，介绍脑图谱、连接估计、脑网络拓扑、动态功能连接、多层网络与脑网络控制。
+  - id: symptom
+    title: 症状网络与网络精神病学
+    en: Symptom Networks & Network Psychiatry
+    short: 高斯图模型、中心性、稳定性
+    desc: 症状网络的理论假设、量表数据、偏相关与正则化估计、中心性与稳定性、网络比较与个体动态网络。
+  - id: molecular
+    title: 分子网络与基因调控
+    en: Molecular & Gene Regulatory Networks
+    short: PPI、共表达、调控推断
+    desc: 蛋白质相互作用、转录调控与共表达网络，网络基序、WGCNA、网络推断方法与功能分析。
+  - id: medicine
+    title: 网络医学与药物网络
+    en: Network Medicine & Pharmacology
+    short: 疾病模块、邻近度、药物重定位
+    desc: 相互作用组、疾病模块、网络邻近度与分离度、药物–靶点–疾病网络、网络药物重定位与外部验证。
+  - id: methods
+    title: 计算方法与研究规范
+    en: Methods & Research Practice
+    short: 分析流程、可复现、结果呈现
+    desc: 网络分析的一般流程与工具、研究问题的提出、可复现计算、敏感性分析，以及结果呈现与研究前沿。
+
+topics:
+  - {id: network-basics, domain: theory, legacy: L01, title: 复杂系统与网络的数学表示, en: Complex systems and graph representations}
+  - {id: network-metrics, domain: theory, legacy: L02, title: 网络结构指标与随机图, en: Network metrics and random graphs}
+  - {id: network-models, domain: theory, legacy: L03, title: 小世界与无标度网络模型, en: Small-world and scale-free models}
+  - {id: community-structure, domain: theory, legacy: L04, title: 社团结构与社区发现, en: Community structure and detection}
+  - {id: degree-correlations, domain: theory, legacy: "", title: 度相关性与网络结构的高阶统计, en: Degree correlations and higher-order structure}
+  - {id: network-construction, domain: theory, legacy: "", title: 网络构建与统计验证, en: Network construction and statistical validation}
+  - {id: spreading, domain: dynamics, legacy: L05, title: 网络上的传播与免疫, en: Spreading processes and immunization}
+  - {id: synchronization, domain: dynamics, legacy: L06, title: 同步与协同动力学, en: Synchronization and collective dynamics}
+  - {id: robustness, domain: dynamics, legacy: "", title: 网络鲁棒性、渗流与级联失效, en: "Robustness, percolation and cascading failures"}
+  - {id: controllability, domain: dynamics, legacy: L07, title: 网络可控性与稳定性, en: Network controllability and stability}
+  - {id: brain-connectome, domain: brain, legacy: L09, title: 脑连接组：结构与功能连接, en: "The connectome: structural and functional connectivity"}
+  - {id: dynamic-brain-networks, domain: brain, legacy: L10, title: 动态功能连接与多层脑网络, en: Dynamic and multilayer brain networks}
+  - {id: symptom-networks, domain: symptom, legacy: L11, title: 症状网络与网络精神病学, en: Symptom networks and network psychiatry}
+  - {id: molecular-networks, domain: molecular, legacy: L12, title: 生物分子网络与拓扑特征, en: Biomolecular networks and their topology}
+  - {id: gene-network-inference, domain: molecular, legacy: L13, title: 基因调控网络推断与共表达分析, en: Gene network inference and co-expression}
+  - {id: network-medicine, domain: medicine, legacy: L14, title: 疾病模块、网络邻近度与药物重定位, en: "Disease modules, network proximity and drug repurposing"}
+  - {id: analysis-workflow, domain: methods, legacy: L08, title: 网络分析流程与 NetworkX 实践, en: Network analysis workflow with NetworkX}
+  - {id: reproducible-research, domain: methods, legacy: L15, title: 研究问题、可复现分析与敏感性分析, en: "Research questions, reproducibility and sensitivity analysis"}
+  - {id: reporting-frontiers, domain: methods, legacy: L16, title: 结果呈现与研究前沿, en: Presenting results and research frontiers}
+
+# 视频与专题的对应（不列出的视频不在网站上出现）
+videos:
+  network-basics: [L01-core]
+  network-metrics: [L02-core]
+  network-models: [L03-core, L03-1, L03-2, L03-3, L03-4, L03-5]
+  community-structure: [L04-core]
+  spreading: [L05-core]
+  synchronization: [L06-core]
+  controllability: [L07-core]
+  brain-connectome: [L09-core]
+  dynamic-brain-networks: [L10-core]
+  symptom-networks: [L11-core]
+  molecular-networks: [L12-core]
+  gene-network-inference: [L13-core]
+  network-medicine: [L14-core]
+  reproducible-research: [L15-core]

@@ -1,0 +1,10 @@
+{
+ "topic": "brain-connectome",
+ "index": 3,
+ "title": "格兰杰因果——神经层面正确，经过区域不同的血流动力学延迟后可能反向",
+ "hash": "c022d370609ca8a5682a0413714fe03373c73d72",
+ "ok": true,
+ "figures": 1,
+ "stdout": "神经信号（10 Hz）：F_x→y = 0.482，F_y→x = 0.000\nBOLD（TR=2 s），两区 HRF 峰值相同(5 s, 5 s)：F_x→y = 0.745，F_y→x = 0.161，判定方向 x→y\nBOLD（TR=2 s），y 区 HRF 更早(x: 6 s, y: 4.5 s)：F_x→y = 0.075，F_y→x = 0.272，判定方向 y→x",
+ "stderr": ""
+}

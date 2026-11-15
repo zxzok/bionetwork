@@ -1,0 +1,10 @@
+{
+ "topic": "reporting-frontiers",
+ "index": 4,
+ "title": "同一个网络的两种画法——节点–链接图与按社团排序的邻接矩阵",
+ "hash": "b2afa9ac818a07c1118e75bb5984207dad541751",
+ "ok": true,
+ "figures": 1,
+ "stdout": "节点 120，边 630，Louvain 社团数 4，Q = 0.561\n社团内边占全部边的比例 = 0.81",
+ "stderr": ""
+}

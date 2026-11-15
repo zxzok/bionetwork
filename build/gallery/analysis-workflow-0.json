@@ -1,0 +1,10 @@
+{
+ "topic": "analysis-workflow",
+ "index": 0,
+ "title": "读入边表、按置信度过滤并取最大连通分支",
+ "hash": "52db61297632c070077021539acdf17c961267e7",
+ "ok": true,
+ "figures": 1,
+ "stdout": "原始网络：10 个节点，12 条边\n过滤后（score >= 0.7，去自环）：10 个节点，9 条边\n最大连通分支：5 个节点，5 条边（丢弃 5 个节点：['GENE_F', 'GENE_G', 'GENE_H', 'GENE_I', 'GENE_J']）",
+ "stderr": ""
+}

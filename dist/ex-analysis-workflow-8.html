@@ -1,0 +1,301 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>完整案例——从模拟表达矩阵到共表达模块、枢纽基因与“疾病基因是否成团”的检验 · 生物医学网络科学</title><meta name="description" content="网络分析流程与 NetworkX 实践 · 代码示例：完整案例——从模拟表达矩阵到共表达模块、枢纽基因与“疾病基因是否成团”的检验"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-methods"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html" aria-current="page">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html">网络结构指标与随机图</a></li><li><a href="network-models.html">小世界与无标度网络模型</a></li><li><a href="community-structure.html">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html">网络上的传播与免疫</a></li><li><a href="synchronization.html">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods" open><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a><ol class="sub"><li><a href="analysis-workflow.workflow.html"><span class="n">01</span>网络分析的一般流程</a></li><li><a href="analysis-workflow.tool-selection.html"><span class="n">02</span>工具选择</a></li><li><a href="analysis-workflow.networkx-basics.html"><span class="n">03</span>NetworkX 上手</a></li><li><a href="analysis-workflow.data-io.html"><span class="n">04</span>数据读写与格式转换</a></li><li><a href="analysis-workflow.networkx-cheatsheet.html"><span class="n">05</span>NetworkX 速查表</a></li><li><a href="analysis-workflow.computational-pitfalls.html"><span class="n">06</span>常见计算陷阱</a></li><li><a href="analysis-workflow.large-scale.html"><span class="n">07</span>大规模网络的计算策略</a></li><li><a href="analysis-workflow.layouts.html"><span class="n">08</span>布局算法</a></li><li><a href="analysis-workflow.visualization.html"><span class="n">09</span>可视化工具与原则</a></li><li><a href="analysis-workflow.null-model-comparison.html"><span class="n">10</span>用模型网络与零模型解读真实网络</a></li><li><a href="analysis-workflow.case-study.html"><span class="n">11</span>完整案例：从表达矩阵到可检验的结论</a></li><li><a href="analysis-workflow.biomedical-datasets.html"><span class="n">12</span>常见生物医学网络数据与分析方向</a></li><li><a href="analysis-workflow.derivations.html"><span class="n">13</span>数学推导与算法</a></li><li><a href="analysis-workflow.frontiers.html"><span class="n">14</span>研究前沿与开放问题</a></li><li><a href="analysis-workflow.biomedical.html"><span class="n">15</span>生物医学应用</a></li><li><a href="analysis-workflow.limitations.html"><span class="n">16</span>适用范围与常见误用</a></li></ol></li><li><a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="code.html">代码库</a> <span class="sep">/</span> <a href="code.html#methods">计算方法与研究规范</a> <span class="sep">/</span> <a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></nav><div class="eyebrow" style="margin-top:14px"><b>Example</b><span>09 / 09</span></div><h1>完整案例——从模拟表达矩阵到共表达模块、枢纽基因与“疾病基因是否成团”的检验</h1><dl class="doc-meta"><div><dt>所属专题</dt><dd><a href="analysis-workflow.html">网络分析流程与 NetworkX 实践</a></dd></div><div><dt>下载</dt><dd><a href="notebooks/analysis-workflow.ipynb" download>Notebook</a> · <a href="notebooks/analysis-workflow.py" download>.py</a></dd></div></dl></header><section class="block prose"><p>数据：代码生成的模拟表达矩阵（200 个基因 × 60 个样本），含 4
+个由潜在因子驱动的共表达模块与 40 个噪声基因； 另设一个 12
+个基因的“疾病基因集”（8 个来自模块 0，4
+个随机）。全部为模拟数据，仅演示流程。 流程：质控（去除低方差基因）→
+Spearman 相关 → 置换得到的相关阈值与 Benjamini–Hochberg FDR 控制 →
+建网并报告孤立点 → Louvain 模块并与植入模块对照（ARI）→
+模块内连接度找枢纽基因 →
+疾病基因集诱导子图最大连通分支（LCC）与度匹配随机基因集比较（经验 p
+值）→ 换 FDR 水平做敏感性分析。
+解读：结论应写成“在本网络构建方式下，疾病基因集的 LCC
+显著大于度匹配随机期望，且对 FDR 水平稳健”，
+而不是“这些基因构成致病模块”。</p>
+</section><section class="block"><h2><span class="tag">Output</span>输出图</h2><div class="ex-figs"><img src="gallery/analysis-workflow-8-0.png" alt="完整案例——从模拟表达矩阵到共表达模块、枢纽基因与“疾病基因是否成团”的检验：输出图 1" loading="lazy"></div></section><section class="block"><h2><span class="tag">Output</span>文字输出</h2><pre class="ex-out">1) 质控后基因数：195（去除 5 个低方差基因）
+2) FDR=0.01 且 r&gt;0：2031 条边，密度 0.107，孤立基因 34 个（其中噪声基因 33 个）
+3) Louvain：4 个模块，Q = 0.745，与植入模块 ARI = 0.983
+4) 模块 0（41 个基因）枢纽：G032，模块内强度 23.2
+4) 模块 1（40 个基因）枢纽：G073，模块内强度 23.4
+4) 模块 2（40 个基因）枢纽：G103，模块内强度 21.0
+4) 模块 3（40 个基因）枢纽：G138，模块内强度 24.3
+5) 疾病基因集：11 个在网络中
+   LCC 大小：观测 9，度匹配随机 4.5 ± 1.0，z = 4.7，经验 p = 0.0030
+   内部边数：观测 24，度匹配随机 10.1 ± 2.7，z = 5.1，经验 p = 0.0030
+6) FDR=0.001：1390 边；LCC 7（随机 3.6，p=0.004）；内部边 18（随机 6.6，p=0.002）
+6) FDR=0.050：2536 边；LCC 9（随机 4.9，p=0.024）；内部边 26（随机 11.4，p=0.006）
+6) FDR=0.100：2805 边；LCC 9（随机 7.0，p=0.210）；内部边 26（随机 14.3，p=0.018）</pre></section><section class="block prose"><h2><span class="tag">Code</span>代码</h2><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 数据：代码生成的模拟表达矩阵（200 个基因 × 60 个样本），含 4 个由潜在因子驱动的共表达模块与 40 个噪声基因；</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#       另设一个 12 个基因的“疾病基因集”（8 个来自模块 0，4 个随机）。全部为模拟数据，仅演示流程。</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 流程：质控（去除低方差基因）→ Spearman 相关 → 置换得到的相关阈值与 Benjamini–Hochberg FDR 控制 →</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">#       建网并报告孤立点 → Louvain 模块并与植入模块对照（ARI）→ 模块内连接度找枢纽基因 →</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">#       疾病基因集诱导子图最大连通分支（LCC）与度匹配随机基因集比较（经验 p 值）→ 换 FDR 水平做敏感性分析。</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># 解读：结论应写成“在本网络构建方式下，疾病基因集的 LCC 显著大于度匹配随机期望，且对 FDR 水平稳健”，</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">#       而不是“这些基因构成致病模块”。</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> networkx <span class="im">as</span> nx</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> spearmanr, norm</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>rng <span class="op">=</span> np.random.default_rng(<span class="dv">2026</span>)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>n_samples, mod_sizes, n_noise <span class="op">=</span> <span class="dv">60</span>, [<span class="dv">40</span>, <span class="dv">40</span>, <span class="dv">40</span>, <span class="dv">40</span>], <span class="dv">40</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>blocks, X <span class="op">=</span> [], []</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> m, s <span class="kw">in</span> <span class="bu">enumerate</span>(mod_sizes):</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    f <span class="op">=</span> rng.normal(size<span class="op">=</span>n_samples)                                  <span class="co"># 模块的潜在驱动因子</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    load <span class="op">=</span> rng.uniform(<span class="fl">0.5</span>, <span class="fl">0.9</span>, size<span class="op">=</span>s)</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    X.append(load[:, <span class="va">None</span>] <span class="op">*</span> f[<span class="va">None</span>, :] <span class="op">+</span> np.sqrt(<span class="dv">1</span> <span class="op">-</span> load[:, <span class="va">None</span>] <span class="op">**</span> <span class="dv">2</span>) <span class="op">*</span> rng.normal(size<span class="op">=</span>(s, n_samples)))</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    blocks <span class="op">+=</span> [m] <span class="op">*</span> s</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>X.append(rng.normal(size<span class="op">=</span>(n_noise, n_samples)))<span class="op">;</span> blocks <span class="op">+=</span> [<span class="op">-</span><span class="dv">1</span>] <span class="op">*</span> n_noise</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> np.vstack(X) <span class="op">*</span> rng.uniform(<span class="fl">0.2</span>, <span class="fl">2.0</span>, size<span class="op">=</span>(<span class="bu">len</span>(blocks), <span class="dv">1</span>))      <span class="co"># 基因间表达尺度不同</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>X[<span class="op">-</span><span class="dv">5</span>:] <span class="op">*=</span> <span class="fl">0.01</span>                                                      <span class="co"># 5 个几乎不表达变化的基因</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>genes <span class="op">=</span> np.array([<span class="st">&quot;G</span><span class="sc">%03d</span><span class="st">&quot;</span> <span class="op">%</span> i <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(blocks))])<span class="op">;</span> blocks <span class="op">=</span> np.array(blocks)</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="co"># 1) 质控：去除方差最低的基因</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>keep <span class="op">=</span> X.var(axis<span class="op">=</span><span class="dv">1</span>) <span class="op">&gt;</span> <span class="fl">0.01</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>X, genes, blocks <span class="op">=</span> X[keep], genes[keep], blocks[keep]</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;1) 质控后基因数：</span><span class="sc">%d</span><span class="st">（去除 </span><span class="sc">%d</span><span class="st"> 个低方差基因）&quot;</span> <span class="op">%</span> (<span class="bu">len</span>(genes), <span class="bu">int</span>((<span class="op">~</span>keep).<span class="bu">sum</span>())))</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="co"># 2) Spearman 相关与 FDR 控制（大样本近似：Fisher z 变换后用正态分布求 p 值）</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>R <span class="op">=</span> spearmanr(X, axis<span class="op">=</span><span class="dv">1</span>).correlation</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>iu <span class="op">=</span> np.triu_indices(<span class="bu">len</span>(genes), <span class="dv">1</span>)</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> R[iu]</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>z <span class="op">=</span> np.arctanh(np.clip(r, <span class="op">-</span><span class="fl">0.999999</span>, <span class="fl">0.999999</span>)) <span class="op">*</span> np.sqrt((n_samples <span class="op">-</span> <span class="dv">3</span>) <span class="op">/</span> <span class="fl">1.06</span>)</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> norm.sf(np.<span class="bu">abs</span>(z))</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> bh_reject(p, q):</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>    order <span class="op">=</span> np.argsort(p)<span class="op">;</span> m <span class="op">=</span> <span class="bu">len</span>(p)</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>    passed <span class="op">=</span> p[order] <span class="op">&lt;=</span> q <span class="op">*</span> np.arange(<span class="dv">1</span>, m <span class="op">+</span> <span class="dv">1</span>) <span class="op">/</span> m</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>    k <span class="op">=</span> passed.nonzero()[<span class="dv">0</span>].<span class="bu">max</span>() <span class="op">+</span> <span class="dv">1</span> <span class="cf">if</span> passed.<span class="bu">any</span>() <span class="cf">else</span> <span class="dv">0</span></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>    rej <span class="op">=</span> np.zeros(m, <span class="bu">bool</span>)<span class="op">;</span> rej[order[:k]] <span class="op">=</span> <span class="va">True</span></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> rej</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> build(q, positive_only<span class="op">=</span><span class="va">True</span>):</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>    rej <span class="op">=</span> bh_reject(p, q) <span class="op">&amp;</span> ((r <span class="op">&gt;</span> <span class="dv">0</span>) <span class="cf">if</span> positive_only <span class="cf">else</span> <span class="va">True</span>)</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>    H <span class="op">=</span> nx.Graph()<span class="op">;</span> H.add_nodes_from(genes)</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>    H.add_weighted_edges_from((genes[i], genes[j], r_ij) <span class="cf">for</span> i, j, r_ij <span class="kw">in</span> <span class="bu">zip</span>(iu[<span class="dv">0</span>][rej], iu[<span class="dv">1</span>][rej], r[rej]))</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> H</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>G <span class="op">=</span> build(<span class="fl">0.01</span>)</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>iso <span class="op">=</span> [v <span class="cf">for</span> v <span class="kw">in</span> G <span class="cf">if</span> G.degree(v) <span class="op">==</span> <span class="dv">0</span>]</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;2) FDR=0.01 且 r&gt;0：</span><span class="sc">%d</span><span class="st"> 条边，密度 </span><span class="sc">%.3f</span><span class="st">，孤立基因 </span><span class="sc">%d</span><span class="st"> 个（其中噪声基因 </span><span class="sc">%d</span><span class="st"> 个）&quot;</span> <span class="op">%</span> (</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>    G.number_of_edges(), nx.density(G), <span class="bu">len</span>(iso), <span class="bu">int</span>(<span class="bu">sum</span>(blocks[genes <span class="op">==</span> v][<span class="dv">0</span>] <span class="op">==</span> <span class="op">-</span><span class="dv">1</span> <span class="cf">for</span> v <span class="kw">in</span> iso))))</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>G.remove_nodes_from(iso)</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="co"># 3) Louvain 模块与植入模块对照（调整兰德指数 ARI）</span></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> ari(a, b):</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>    <span class="im">from</span> math <span class="im">import</span> comb</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>    a <span class="op">=</span> np.unique(a, return_inverse<span class="op">=</span><span class="va">True</span>)[<span class="dv">1</span>]<span class="op">;</span> b <span class="op">=</span> np.unique(b, return_inverse<span class="op">=</span><span class="va">True</span>)[<span class="dv">1</span>]</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>    C <span class="op">=</span> np.zeros((a.<span class="bu">max</span>() <span class="op">+</span> <span class="dv">1</span>, b.<span class="bu">max</span>() <span class="op">+</span> <span class="dv">1</span>), <span class="bu">int</span>)</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i, j <span class="kw">in</span> <span class="bu">zip</span>(a, b): C[i, j] <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>    s <span class="op">=</span> <span class="bu">sum</span>(comb(<span class="bu">int</span>(x), <span class="dv">2</span>) <span class="cf">for</span> x <span class="kw">in</span> C.ravel())</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>    sa <span class="op">=</span> <span class="bu">sum</span>(comb(<span class="bu">int</span>(x), <span class="dv">2</span>) <span class="cf">for</span> x <span class="kw">in</span> C.<span class="bu">sum</span>(<span class="dv">1</span>))<span class="op">;</span> sb <span class="op">=</span> <span class="bu">sum</span>(comb(<span class="bu">int</span>(x), <span class="dv">2</span>) <span class="cf">for</span> x <span class="kw">in</span> C.<span class="bu">sum</span>(<span class="dv">0</span>))</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>    e <span class="op">=</span> sa <span class="op">*</span> sb <span class="op">/</span> comb(<span class="bu">len</span>(a), <span class="dv">2</span>)</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (s <span class="op">-</span> e) <span class="op">/</span> (<span class="fl">0.5</span> <span class="op">*</span> (sa <span class="op">+</span> sb) <span class="op">-</span> e)</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>comms <span class="op">=</span> nx.community.louvain_communities(G, weight<span class="op">=</span><span class="st">&quot;weight&quot;</span>, seed<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>lab <span class="op">=</span> {v: k <span class="cf">for</span> k, c <span class="kw">in</span> <span class="bu">enumerate</span>(comms) <span class="cf">for</span> v <span class="kw">in</span> c}</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>nodes <span class="op">=</span> <span class="bu">list</span>(G)</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>true <span class="op">=</span> [blocks[genes <span class="op">==</span> v][<span class="dv">0</span>] <span class="cf">for</span> v <span class="kw">in</span> nodes]</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;3) Louvain：</span><span class="sc">%d</span><span class="st"> 个模块，Q = </span><span class="sc">%.3f</span><span class="st">，与植入模块 ARI = </span><span class="sc">%.3f</span><span class="st">&quot;</span> <span class="op">%</span> (</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>    <span class="bu">len</span>(comms), nx.community.modularity(G, comms, weight<span class="op">=</span><span class="st">&quot;weight&quot;</span>), ari([lab[v] <span class="cf">for</span> v <span class="kw">in</span> nodes], true)))</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="co"># 4) 模块内连接度（模块内强度）最高的基因作为候选枢纽</span></span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> k, c <span class="kw">in</span> <span class="bu">enumerate</span>(<span class="bu">sorted</span>(comms, key<span class="op">=</span><span class="bu">len</span>, reverse<span class="op">=</span><span class="va">True</span>)[:<span class="dv">4</span>]):</span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>    sub <span class="op">=</span> G.subgraph(c)</span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>    hub <span class="op">=</span> <span class="bu">max</span>(sub.degree(weight<span class="op">=</span><span class="st">&quot;weight&quot;</span>), key<span class="op">=</span><span class="kw">lambda</span> x: x[<span class="dv">1</span>])</span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;4) 模块 </span><span class="sc">%d</span><span class="st">（</span><span class="sc">%d</span><span class="st"> 个基因）枢纽：</span><span class="sc">%s</span><span class="st">，模块内强度 </span><span class="sc">%.1f</span><span class="st">&quot;</span> <span class="op">%</span> (k, <span class="bu">len</span>(c), hub[<span class="dv">0</span>], hub[<span class="dv">1</span>]))</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a><span class="co"># 5) 疾病基因集是否成团：两种统计量（LCC 大小、集合内部边数）与度匹配随机基因集比较</span></span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>mod0 <span class="op">=</span> genes[blocks <span class="op">==</span> <span class="dv">0</span>]<span class="op">;</span> others <span class="op">=</span> genes[blocks <span class="op">!=</span> <span class="dv">0</span>]</span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>disease <span class="op">=</span> <span class="bu">list</span>(rng.choice(mod0, <span class="dv">8</span>, replace<span class="op">=</span><span class="va">False</span>)) <span class="op">+</span> <span class="bu">list</span>(rng.choice(others, <span class="dv">4</span>, replace<span class="op">=</span><span class="va">False</span>))</span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> stats(H, S):</span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a>    sub <span class="op">=</span> H.subgraph([v <span class="cf">for</span> v <span class="kw">in</span> S <span class="cf">if</span> v <span class="kw">in</span> H])</span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.array([<span class="bu">max</span>((<span class="bu">len</span>(c) <span class="cf">for</span> c <span class="kw">in</span> nx.connected_components(sub)), default<span class="op">=</span><span class="dv">0</span>), sub.number_of_edges()])</span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> degree_matched_test(H, S, n_perm<span class="op">=</span><span class="dv">1000</span>, n_bins<span class="op">=</span><span class="dv">10</span>, seed<span class="op">=</span><span class="dv">0</span>):</span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a>    rng_ <span class="op">=</span> np.random.default_rng(seed)</span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>    S <span class="op">=</span> [v <span class="cf">for</span> v <span class="kw">in</span> S <span class="cf">if</span> v <span class="kw">in</span> H]</span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a>    deg <span class="op">=</span> <span class="bu">dict</span>(H.degree())</span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a>    cuts <span class="op">=</span> np.quantile(<span class="bu">list</span>(deg.values()), np.linspace(<span class="dv">0</span>, <span class="dv">1</span>, n_bins <span class="op">+</span> <span class="dv">1</span>))</span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a>    bin_of <span class="op">=</span> {v: <span class="bu">min</span>(np.searchsorted(cuts, deg[v], side<span class="op">=</span><span class="st">&quot;right&quot;</span>) <span class="op">-</span> <span class="dv">1</span>, n_bins <span class="op">-</span> <span class="dv">1</span>) <span class="cf">for</span> v <span class="kw">in</span> H}</span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a>    pool <span class="op">=</span> {}</span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> v, b <span class="kw">in</span> bin_of.items(): pool.setdefault(b, []).append(v)</span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a>    obs <span class="op">=</span> stats(H, S)</span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a>    null <span class="op">=</span> []</span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(n_perm):</span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a>        R_ <span class="op">=</span> []</span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> v <span class="kw">in</span> S:                                     <span class="co"># 每个疾病基因换成同一度区间内的随机基因</span></span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a>            cand <span class="op">=</span> [u <span class="cf">for</span> u <span class="kw">in</span> pool[bin_of[v]] <span class="cf">if</span> u <span class="kw">not</span> <span class="kw">in</span> R_]</span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a>            R_.append(cand[rng_.integers(<span class="bu">len</span>(cand))])</span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a>        null.append(stats(H, R_))</span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a>    null <span class="op">=</span> np.array(null)</span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a>    pv <span class="op">=</span> (<span class="dv">1</span> <span class="op">+</span> (null <span class="op">&gt;=</span> obs).<span class="bu">sum</span>(<span class="dv">0</span>)) <span class="op">/</span> (n_perm <span class="op">+</span> <span class="dv">1</span>)</span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> obs, null.mean(<span class="dv">0</span>), null.std(<span class="dv">0</span>), pv</span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a>obs, mu, sd, pv <span class="op">=</span> degree_matched_test(G, disease)</span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;5) 疾病基因集：</span><span class="sc">%d</span><span class="st"> 个在网络中&quot;</span> <span class="op">%</span> <span class="bu">sum</span>(v <span class="kw">in</span> G <span class="cf">for</span> v <span class="kw">in</span> disease))</span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, name <span class="kw">in</span> <span class="bu">enumerate</span>([<span class="st">&quot;LCC 大小&quot;</span>, <span class="st">&quot;内部边数&quot;</span>]):</span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;   </span><span class="sc">%s</span><span class="st">：观测 </span><span class="sc">%d</span><span class="st">，度匹配随机 </span><span class="sc">%.1f</span><span class="st"> ± </span><span class="sc">%.1f</span><span class="st">，z = </span><span class="sc">%.1f</span><span class="st">，经验 p = </span><span class="sc">%.4f</span><span class="st">&quot;</span> <span class="op">%</span> (</span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a>        name, obs[i], mu[i], sd[i], (obs[i] <span class="op">-</span> mu[i]) <span class="op">/</span> sd[i], pv[i]))</span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a><span class="co"># 6) 敏感性分析：换 FDR 水平重建网络，两种统计量是否给出一致结论</span></span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a>sens <span class="op">=</span> [(<span class="fl">0.01</span>, obs[<span class="dv">0</span>], mu[<span class="dv">0</span>], sd[<span class="dv">0</span>])]                    <span class="co"># 保存 LCC 结果用于作图</span></span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> q <span class="kw">in</span> (<span class="fl">0.001</span>, <span class="fl">0.05</span>, <span class="fl">0.1</span>):</span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a>    H <span class="op">=</span> build(q)<span class="op">;</span> H.remove_nodes_from([v <span class="cf">for</span> v <span class="kw">in</span> H <span class="cf">if</span> H.degree(v) <span class="op">==</span> <span class="dv">0</span>])</span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a>    o, m_, s_, pv <span class="op">=</span> degree_matched_test(H, disease, n_perm<span class="op">=</span><span class="dv">500</span>, seed<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a>    sens.append((q, o[<span class="dv">0</span>], m_[<span class="dv">0</span>], s_[<span class="dv">0</span>]))</span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;6) FDR=</span><span class="sc">%.3f</span><span class="st">：</span><span class="sc">%d</span><span class="st"> 边；LCC </span><span class="sc">%d</span><span class="st">（随机 </span><span class="sc">%.1f</span><span class="st">，p=</span><span class="sc">%.3f</span><span class="st">）；内部边 </span><span class="sc">%d</span><span class="st">（随机 </span><span class="sc">%.1f</span><span class="st">，p=</span><span class="sc">%.3f</span><span class="st">）&quot;</span> <span class="op">%</span> (</span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a>        q, H.number_of_edges(), o[<span class="dv">0</span>], m_[<span class="dv">0</span>], pv[<span class="dv">0</span>], o[<span class="dv">1</span>], m_[<span class="dv">1</span>], pv[<span class="dv">1</span>]))</span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a><span class="co"># 作图：按 Louvain 模块排序的基因相关矩阵；不同 FDR 水平下疾病基因集 LCC 与度匹配随机期望</span></span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">4</span>))</span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a>idx <span class="op">=</span> {g: i <span class="cf">for</span> i, g <span class="kw">in</span> <span class="bu">enumerate</span>(genes)}</span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a>order <span class="op">=</span> [idx[v] <span class="cf">for</span> c <span class="kw">in</span> <span class="bu">sorted</span>(comms, key<span class="op">=</span><span class="bu">len</span>, reverse<span class="op">=</span><span class="va">True</span>) <span class="cf">for</span> v <span class="kw">in</span> <span class="bu">sorted</span>(c)]</span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a>im <span class="op">=</span> ax[<span class="dv">0</span>].imshow(R[np.ix_(order, order)], cmap<span class="op">=</span><span class="st">&quot;RdBu_r&quot;</span>, vmin<span class="op">=-</span><span class="dv">1</span>, vmax<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a>fig.colorbar(im, ax<span class="op">=</span>ax[<span class="dv">0</span>], label<span class="op">=</span><span class="st">&quot;Spearman r&quot;</span>)<span class="op">;</span> ax[<span class="dv">0</span>].set_xticks([])<span class="op">;</span> ax[<span class="dv">0</span>].set_yticks([])</span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].set_title(<span class="st">&quot;Gene correlations ordered by Louvain module&quot;</span>, fontsize<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a>sens.sort()</span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a>qs <span class="op">=</span> [s_[<span class="dv">0</span>] <span class="cf">for</span> s_ <span class="kw">in</span> sens]</span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].errorbar(qs, [s_[<span class="dv">2</span>] <span class="cf">for</span> s_ <span class="kw">in</span> sens], yerr<span class="op">=</span>[s_[<span class="dv">3</span>] <span class="cf">for</span> s_ <span class="kw">in</span> sens], fmt<span class="op">=</span><span class="st">&quot;s--&quot;</span>, color<span class="op">=</span><span class="st">&quot;0.5&quot;</span>, capsize<span class="op">=</span><span class="dv">3</span>,</span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a>               label<span class="op">=</span><span class="st">&quot;degree-matched random (mean +/- SD)&quot;</span>)</span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].plot(qs, [s_[<span class="dv">1</span>] <span class="cf">for</span> s_ <span class="kw">in</span> sens], <span class="st">&quot;o-&quot;</span>, color<span class="op">=</span><span class="st">&quot;C3&quot;</span>, label<span class="op">=</span><span class="st">&quot;disease gene set&quot;</span>)</span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].set_xscale(<span class="st">&quot;log&quot;</span>)<span class="op">;</span> ax[<span class="dv">1</span>].set_xlabel(<span class="st">&quot;FDR level q&quot;</span>)<span class="op">;</span> ax[<span class="dv">1</span>].set_ylabel(<span class="st">&quot;largest connected component size&quot;</span>)</span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].set_title(<span class="st">&quot;Disease-module signal is robust to FDR level&quot;</span>, fontsize<span class="op">=</span><span class="dv">10</span>)<span class="op">;</span> ax[<span class="dv">1</span>].legend(fontsize<span class="op">=</span><span class="dv">8</span>)</span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()<span class="op">;</span> plt.show()</span></code></pre></div>
+</section><section class="block"><h2><span class="tag">Run</span>在浏览器中运行</h2><p class="small">首次加载 Python 环境约需 20–40 秒；可以修改参数后重新运行。</p><div class="cell"><div class="cell-head"><h3>完整案例——从模拟表达矩阵到共表达模块、枢纽基因与“疾病基因是否成团”的检验</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea id="analysis-workflow-cell8" rows="30" spellcheck="false" aria-label="完整案例——从模拟表达矩阵到共表达模块、枢纽基因与“疾病基因是否成团”的检验 代码"># 数据：代码生成的模拟表达矩阵（200 个基因 × 60 个样本），含 4 个由潜在因子驱动的共表达模块与 40 个噪声基因；
+#       另设一个 12 个基因的“疾病基因集”（8 个来自模块 0，4 个随机）。全部为模拟数据，仅演示流程。
+# 流程：质控（去除低方差基因）→ Spearman 相关 → 置换得到的相关阈值与 Benjamini–Hochberg FDR 控制 →
+#       建网并报告孤立点 → Louvain 模块并与植入模块对照（ARI）→ 模块内连接度找枢纽基因 →
+#       疾病基因集诱导子图最大连通分支（LCC）与度匹配随机基因集比较（经验 p 值）→ 换 FDR 水平做敏感性分析。
+# 解读：结论应写成“在本网络构建方式下，疾病基因集的 LCC 显著大于度匹配随机期望，且对 FDR 水平稳健”，
+#       而不是“这些基因构成致病模块”。
+import numpy as np
+import networkx as nx
+from scipy.stats import spearmanr, norm
+
+rng = np.random.default_rng(2026)
+n_samples, mod_sizes, n_noise = 60, [40, 40, 40, 40], 40
+blocks, X = [], []
+for m, s in enumerate(mod_sizes):
+    f = rng.normal(size=n_samples)                                  # 模块的潜在驱动因子
+    load = rng.uniform(0.5, 0.9, size=s)
+    X.append(load[:, None] * f[None, :] + np.sqrt(1 - load[:, None] ** 2) * rng.normal(size=(s, n_samples)))
+    blocks += [m] * s
+X.append(rng.normal(size=(n_noise, n_samples))); blocks += [-1] * n_noise
+X = np.vstack(X) * rng.uniform(0.2, 2.0, size=(len(blocks), 1))      # 基因间表达尺度不同
+X[-5:] *= 0.01                                                      # 5 个几乎不表达变化的基因
+genes = np.array([&quot;G%03d&quot; % i for i in range(len(blocks))]); blocks = np.array(blocks)
+
+# 1) 质控：去除方差最低的基因
+keep = X.var(axis=1) &gt; 0.01
+X, genes, blocks = X[keep], genes[keep], blocks[keep]
+print(&quot;1) 质控后基因数：%d（去除 %d 个低方差基因）&quot; % (len(genes), int((~keep).sum())))
+
+# 2) Spearman 相关与 FDR 控制（大样本近似：Fisher z 变换后用正态分布求 p 值）
+R = spearmanr(X, axis=1).correlation
+iu = np.triu_indices(len(genes), 1)
+r = R[iu]
+z = np.arctanh(np.clip(r, -0.999999, 0.999999)) * np.sqrt((n_samples - 3) / 1.06)
+p = 2 * norm.sf(np.abs(z))
+
+def bh_reject(p, q):
+    order = np.argsort(p); m = len(p)
+    passed = p[order] &lt;= q * np.arange(1, m + 1) / m
+    k = passed.nonzero()[0].max() + 1 if passed.any() else 0
+    rej = np.zeros(m, bool); rej[order[:k]] = True
+    return rej
+
+def build(q, positive_only=True):
+    rej = bh_reject(p, q) &amp; ((r &gt; 0) if positive_only else True)
+    H = nx.Graph(); H.add_nodes_from(genes)
+    H.add_weighted_edges_from((genes[i], genes[j], r_ij) for i, j, r_ij in zip(iu[0][rej], iu[1][rej], r[rej]))
+    return H
+
+G = build(0.01)
+iso = [v for v in G if G.degree(v) == 0]
+print(&quot;2) FDR=0.01 且 r&gt;0：%d 条边，密度 %.3f，孤立基因 %d 个（其中噪声基因 %d 个）&quot; % (
+    G.number_of_edges(), nx.density(G), len(iso), int(sum(blocks[genes == v][0] == -1 for v in iso))))
+G.remove_nodes_from(iso)
+
+# 3) Louvain 模块与植入模块对照（调整兰德指数 ARI）
+def ari(a, b):
+    from math import comb
+    a = np.unique(a, return_inverse=True)[1]; b = np.unique(b, return_inverse=True)[1]
+    C = np.zeros((a.max() + 1, b.max() + 1), int)
+    for i, j in zip(a, b): C[i, j] += 1
+    s = sum(comb(int(x), 2) for x in C.ravel())
+    sa = sum(comb(int(x), 2) for x in C.sum(1)); sb = sum(comb(int(x), 2) for x in C.sum(0))
+    e = sa * sb / comb(len(a), 2)
+    return (s - e) / (0.5 * (sa + sb) - e)
+
+comms = nx.community.louvain_communities(G, weight=&quot;weight&quot;, seed=1)
+lab = {v: k for k, c in enumerate(comms) for v in c}
+nodes = list(G)
+true = [blocks[genes == v][0] for v in nodes]
+print(&quot;3) Louvain：%d 个模块，Q = %.3f，与植入模块 ARI = %.3f&quot; % (
+    len(comms), nx.community.modularity(G, comms, weight=&quot;weight&quot;), ari([lab[v] for v in nodes], true)))
+
+# 4) 模块内连接度（模块内强度）最高的基因作为候选枢纽
+for k, c in enumerate(sorted(comms, key=len, reverse=True)[:4]):
+    sub = G.subgraph(c)
+    hub = max(sub.degree(weight=&quot;weight&quot;), key=lambda x: x[1])
+    print(&quot;4) 模块 %d（%d 个基因）枢纽：%s，模块内强度 %.1f&quot; % (k, len(c), hub[0], hub[1]))
+
+# 5) 疾病基因集是否成团：两种统计量（LCC 大小、集合内部边数）与度匹配随机基因集比较
+mod0 = genes[blocks == 0]; others = genes[blocks != 0]
+disease = list(rng.choice(mod0, 8, replace=False)) + list(rng.choice(others, 4, replace=False))
+
+def stats(H, S):
+    sub = H.subgraph([v for v in S if v in H])
+    return np.array([max((len(c) for c in nx.connected_components(sub)), default=0), sub.number_of_edges()])
+
+def degree_matched_test(H, S, n_perm=1000, n_bins=10, seed=0):
+    rng_ = np.random.default_rng(seed)
+    S = [v for v in S if v in H]
+    deg = dict(H.degree())
+    cuts = np.quantile(list(deg.values()), np.linspace(0, 1, n_bins + 1))
+    bin_of = {v: min(np.searchsorted(cuts, deg[v], side=&quot;right&quot;) - 1, n_bins - 1) for v in H}
+    pool = {}
+    for v, b in bin_of.items(): pool.setdefault(b, []).append(v)
+    obs = stats(H, S)
+    null = []
+    for _ in range(n_perm):
+        R_ = []
+        for v in S:                                     # 每个疾病基因换成同一度区间内的随机基因
+            cand = [u for u in pool[bin_of[v]] if u not in R_]
+            R_.append(cand[rng_.integers(len(cand))])
+        null.append(stats(H, R_))
+    null = np.array(null)
+    pv = (1 + (null &gt;= obs).sum(0)) / (n_perm + 1)
+    return obs, null.mean(0), null.std(0), pv
+
+obs, mu, sd, pv = degree_matched_test(G, disease)
+print(&quot;5) 疾病基因集：%d 个在网络中&quot; % sum(v in G for v in disease))
+for i, name in enumerate([&quot;LCC 大小&quot;, &quot;内部边数&quot;]):
+    print(&quot;   %s：观测 %d，度匹配随机 %.1f ± %.1f，z = %.1f，经验 p = %.4f&quot; % (
+        name, obs[i], mu[i], sd[i], (obs[i] - mu[i]) / sd[i], pv[i]))
+
+# 6) 敏感性分析：换 FDR 水平重建网络，两种统计量是否给出一致结论
+sens = [(0.01, obs[0], mu[0], sd[0])]                    # 保存 LCC 结果用于作图
+for q in (0.001, 0.05, 0.1):
+    H = build(q); H.remove_nodes_from([v for v in H if H.degree(v) == 0])
+    o, m_, s_, pv = degree_matched_test(H, disease, n_perm=500, seed=1)
+    sens.append((q, o[0], m_[0], s_[0]))
+    print(&quot;6) FDR=%.3f：%d 边；LCC %d（随机 %.1f，p=%.3f）；内部边 %d（随机 %.1f，p=%.3f）&quot; % (
+        q, H.number_of_edges(), o[0], m_[0], pv[0], o[1], m_[1], pv[1]))
+
+# 作图：按 Louvain 模块排序的基因相关矩阵；不同 FDR 水平下疾病基因集 LCC 与度匹配随机期望
+import matplotlib.pyplot as plt
+fig, ax = plt.subplots(1, 2, figsize=(10, 4))
+idx = {g: i for i, g in enumerate(genes)}
+order = [idx[v] for c in sorted(comms, key=len, reverse=True) for v in sorted(c)]
+im = ax[0].imshow(R[np.ix_(order, order)], cmap=&quot;RdBu_r&quot;, vmin=-1, vmax=1)
+fig.colorbar(im, ax=ax[0], label=&quot;Spearman r&quot;); ax[0].set_xticks([]); ax[0].set_yticks([])
+ax[0].set_title(&quot;Gene correlations ordered by Louvain module&quot;, fontsize=10)
+sens.sort()
+qs = [s_[0] for s_ in sens]
+ax[1].errorbar(qs, [s_[2] for s_ in sens], yerr=[s_[3] for s_ in sens], fmt=&quot;s--&quot;, color=&quot;0.5&quot;, capsize=3,
+               label=&quot;degree-matched random (mean +/- SD)&quot;)
+ax[1].plot(qs, [s_[1] for s_ in sens], &quot;o-&quot;, color=&quot;C3&quot;, label=&quot;disease gene set&quot;)
+ax[1].set_xscale(&quot;log&quot;); ax[1].set_xlabel(&quot;FDR level q&quot;); ax[1].set_ylabel(&quot;largest connected component size&quot;)
+ax[1].set_title(&quot;Disease-module signal is robust to FDR level&quot;, fontsize=10); ax[1].legend(fontsize=8)
+plt.tight_layout(); plt.show()</textarea><div class="out" aria-live="polite"></div></div></section><nav class="pager"><a href="ex-analysis-workflow-7.html"><small>上一个示例</small>布局算法比较与布局质量的定量检查</a><a href="analysis-workflow.html"><small>回到专题</small>网络分析流程与 NetworkX 实践</a></nav></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

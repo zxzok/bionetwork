@@ -1,0 +1,10 @@
+{
+ "topic": "network-metrics",
+ "index": 9,
+ "title": "ER 网络的最大度与最小度（自然截断）",
+ "hash": "a83f0023624fdc90f47e4eff2f81ca0dd6102538",
+ "ok": true,
+ "figures": 1,
+ "stdout": "N=1e9, <k>=1000: k_max ≈ 1196, k_min ≈ 816\nN=1e5, <k>=10: 泊松估计 k_max≈27, k_min≈0；模拟 k_max=27, k_min=0",
+ "stderr": ""
+}
