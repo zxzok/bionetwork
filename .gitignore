@@ -16,3 +16,6 @@ content/ENRICH_BRIEF.md
 video/*
 !video/make_video.py
 !video/visuals.py
+!video/v2/
+video/v2/*
+!video/v2/*.py
