@@ -1,90 +1,100 @@
-# 生物医学网络科学 · Biomedical Network Science
+<div align="center">
 
-一部带交互功能的生物医学网络科学在线手册，网址 https://bionetwork.xizhe.net 。纯静态网站，构建产物在 `dist/`，可直接复制到任何静态托管或 Nginx 目录，不需要数据库或后端。
+<img src=".github/readme/logo.svg" width="88" alt="">
 
-## 信息架构
+# 生物医学网络科学
 
-七个知识领域（`content/taxonomy.yaml`），每个领域下若干专题，每个专题 = 一个专题主页 + 若干知识页面：
+**Biomedical Network Science**
 
-| 领域 | 专题 |
-|---|---|
-| 网络基础理论 | 复杂系统与网络的数学表示 · 网络结构指标与随机图 · 小世界与无标度网络模型 · 社团结构与社区发现 · 度相关性与网络结构的高阶统计 · 网络构建与统计验证 |
-| 网络动力学与控制 | 网络上的传播与免疫 · 同步与协同动力学 · 网络鲁棒性、渗流与级联失效 · 网络可控性与稳定性 |
-| 脑网络与连接组 | 脑连接组：结构与功能连接 · 动态功能连接与多层脑网络 |
-| 症状网络与网络精神病学 | 症状网络与网络精神病学 |
-| 分子网络与基因调控 | 生物分子网络与拓扑特征 · 基因调控网络推断与共表达分析 |
-| 网络医学与药物网络 | 疾病模块、网络邻近度与药物重定位 |
-| 计算方法与研究规范 | 网络分析流程与 NetworkX 实践 · 研究问题、可复现分析与敏感性分析 · 结果呈现与研究前沿 |
+一部免费开放的中文在线手册：复杂网络的理论与方法，以及它们在脑科学、精神医学、分子生物学和医学中的应用
 
+### [bionetwork.xizhe.net](https://bionetwork.xizhe.net)
 
-其他栏目：课程视频（按讲次组织的系列讲解，`courses.html`）、可视化实验室（14 个交互演示，可导出 PNG 与参数 JSON）、计算方法与代码库、文献知识库（43 篇论文精读）、数据与软件资源库（55 个资源，每个有中文介绍页）、知识索引（全站正式定义）、站内搜索（中英文与缩写同义词扩展）、关于本站。
+[课程视频](https://bionetwork.xizhe.net/courses.html) · [知识领域](https://bionetwork.xizhe.net/domains.html) · [可视化实验室](https://bionetwork.xizhe.net/lab.html) · [代码库](https://bionetwork.xizhe.net/code.html) · [文献](https://bionetwork.xizhe.net/papers.html) · [数据与软件](https://bionetwork.xizhe.net/resources.html) · [知识索引](https://bionetwork.xizhe.net/glossary.html)
 
-旧网址 `L01.html`…`L16.html` 自动跳转到对应专题；`guide.html` 跳到“关于本站”，`me.html`、`project.html` 跳到首页。
+<br>
 
-## 目录
+<a href="https://bionetwork.xizhe.net"><img src=".github/readme/home.jpg" width="880" alt="生物医学网络科学首页：知识地图"></a>
 
-| 路径 | 内容 |
-|---|---|
-| `content/taxonomy.yaml` | 领域、专题、旧讲次对应、视频与专题对应 |
-| `content/topics/<id>.md` | 专题内容（格式见 `CONTENT_SPEC.md` 第 7 节；每个 `## 标题 {#id}` 生成一个知识页面） |
-| `content/code/<id>.py` | 可运行的代码示例（第 8 节；构建时生成 Notebook） |
-| `content/papers/*.md` | 论文精读（第 6 节） |
-| `content/resources.yaml` | 数据与软件资源库 |
-| `content/scripts/*.json` | 讲解视频分镜与旁白 |
-| `site/apps/flyscope/`、`site/apps/sparse-control/` | 两个专题交互网站的站内副本（FlyScope 首页与 Sparse Internal Control 网站），构建时复制到 `dist/apps/`；FlyScope 的数据浏览器依赖其后端，站内版本中“进入探索”链接指向页面内的探索与数据小节 |
-| `site/assets/`、`site/hero.js` | 样式、前端脚本（`site.js` 阅读器与 Python 运行、`demos.js` 交互演示、`search.js` 站内搜索） |
-| `video/` | `visuals.py` 动画库，`make_video.py` 合成与渲染 |
-| `build.py` | 生成网站 |
-| `tools/run_examples.py` | 运行代码示例，生成代码库的输出图（`build/gallery/`） |
-| `.github/workflows/pages.yml` | 推送后把 `dist/` 发布到 GitHub Pages（bionetwork.xizhe.net） |
+</div>
 
-## 常用操作
+<br>
 
-```bash
-.venv/bin/python build.py
-```
+> 细胞里的蛋白质、大脑里的脑区、患者身上的症状、人群中的疾病，都可以看成一张网。
+> 节点是什么？边是什么？整张网有什么结构？结构又怎样决定功能？
 
-```bash
-python3 -m http.server 8790 --directory dist
-```
+本站从网络的数学表示讲起，一直讲到真实生物医学研究中的数据、方法、结果解释和证据判断。
 
-然后打开 http://localhost:8790 。
+<table>
+<tr>
+<td align="center"><b>19</b><br><sub>知识专题</sub></td>
+<td align="center"><b>300+</b><br><sub>知识页面</sub></td>
+<td align="center"><b>50+</b><br><sub>讲解视频</sub></td>
+<td align="center"><b>14</b><br><sub>交互可视化</sub></td>
+<td align="center"><b>200+</b><br><sub>Python 示例</sub></td>
+<td align="center"><b>43</b><br><sub>论文精读</sub></td>
+<td align="center"><b>55</b><br><sub>数据库与软件</sub></td>
+</tr>
+</table>
 
-- **新增知识页面**：在对应 `content/topics/<id>.md` 中加一节 `## 标题 {#英文-id}`，重新构建即可；搜索、目录、上下页自动更新。
-- **新增专题**：在 `taxonomy.yaml` 的 `topics` 中加一行，再写 `content/topics/<id>.md`。
-- **新增资源**：在 `resources.yaml` 中加一条（字段见文件内已有条目）。
-- **修改旁白后重新生成视频**（只重新合成改动过的句子）：在 `video/v2/` 中编辑对应的 `ep_<专题或论文>.py`，运行 `../../.venv/bin/python produce.py ep_<名称>`，再运行 `build.py`。
+## 看什么
 
-## 视频
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="https://bionetwork.xizhe.net/courses.html"><img src=".github/readme/courses.jpg" alt="课程视频"></a>
+<h3>🎬 课程视频</h3>
+按讲次组织的系列讲解：绪论、图论基础、网络模型、社团发现。每集七到十二分钟，配中文字幕和文字稿，可以按自己的节奏观看，下次打开从上次停下的地方继续。
+</td>
+<td width="50%" valign="top">
+<a href="https://bionetwork.xizhe.net/network-models.html"><img src=".github/readme/topic.jpg" alt="专题页面"></a>
+<h3>📖 知识专题</h3>
+每个专题有一个主页和若干深入的知识页面：定义与公式、推导、生物医学实例、适用范围与常见误用，引用处都给出 DOI。每个专题和每篇精读论文还各有一集动画讲解。
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<a href="https://bionetwork.xizhe.net/lab.html"><img src=".github/readme/lab.jpg" alt="可视化实验室"></a>
+<h3>🧪 可视化实验室</h3>
+拖动参数，即时观察网络结构与动力学的变化：邻接矩阵、随机图与巨连通分支、小世界、优先连接、传播与免疫、同步、可控性、脑网络阈值、网络邻近度……
+</td>
+<td width="50%" valign="top">
+<h3>💻 代码库</h3>
+两百多个完整、可运行的 Python 示例，附输出图与解读，可在浏览器中直接运行，也可下载为 Notebook。
+<h3>📚 文献知识库</h3>
+43 篇重要论文的中文精读：研究问题、设计、方法、结论、证据与局限。
+<h3>🗂️ 数据与软件</h3>
+55 个常用的生物医学网络数据库与分析软件，每个都有中文介绍。
+<h3>🔎 知识索引与搜索</h3>
+汇集全站的正式定义与公式；搜索支持中文、英文和常见缩写，如 FC、PPI、modularity。
+</td>
+</tr>
+</table>
 
-- 共 36 集：19 个专题各一集（`T-<专题>`），17 篇论文各一集（论文编号）。脚本在 `video/v2/`：manim 动画、文字页、本站交互演示的录屏，以及 YouTube 片段（`video/v2/media/`，片段起点在 `media/offsets.json`）。
-- 旁白使用本机 IndexTTS-2.5 语音合成，音色为作者本人声音（声音库中的“我的声音_讲解”），讲课语气强度 0.6，正常语速，重点句约 1.1 倍时长。按作者要求，画面与网页上都不标注合成说明，也不出现学校名称。
-- 规格：1920×1080，30 fps，H.264 + AAC，响度统一到 −16 LUFS；另有 `.vtt` 字幕与 `.txt` 文字稿。
-- 合成可分到另一台 Mac（ssh 主机 `m5`）：`video/v2/remote_synth.py`。旧版视频（L 系列）已移到 `video/old_v1_videos/`，不再发布。
+## 七个知识领域
 
-## 课程视频（courses.html）
+| | 领域 | 专题 |
+|:-:|---|---|
+| 🔵 | [**网络基础理论**](https://bionetwork.xizhe.net/d-theory.html) | 复杂系统与网络的数学表示 · 网络结构指标与随机图 · 小世界与无标度网络模型 · 社团结构与社区发现 · 度相关性与网络结构的高阶统计 · 网络构建与统计验证 |
+| 🟣 | [**网络动力学与控制**](https://bionetwork.xizhe.net/d-dynamics.html) | 网络上的传播与免疫 · 同步与协同动力学 · 网络鲁棒性、渗流与级联失效 · 网络可控性与稳定性 |
+| 🧠 | [**脑网络与连接组**](https://bionetwork.xizhe.net/d-brain.html) | 脑连接组：结构与功能连接 · 动态功能连接与多层脑网络 |
+| 🟠 | [**症状网络与网络精神病学**](https://bionetwork.xizhe.net/d-symptom.html) | 症状网络与网络精神病学 |
+| 🧬 | [**分子网络与基因调控**](https://bionetwork.xizhe.net/d-molecular.html) | 生物分子网络与拓扑特征 · 基因调控网络推断与共表达分析 |
+| 💊 | [**网络医学与药物网络**](https://bionetwork.xizhe.net/d-medicine.html) | 疾病模块、网络邻近度与药物重定位 |
+| ⚙️ | [**计算方法与研究规范**](https://bionetwork.xizhe.net/d-methods.html) | 网络分析流程与 NetworkX 实践 · 研究问题、可复现分析与敏感性分析 · 结果呈现与研究前沿 |
 
-- 来源是上一级目录的 `课程视频/<讲次>/NN_标题.mp4`（只用公开版，`课堂版/` 不发布），连同同名的 `.vtt`、`.txt`、`.jpg`，以及 `分集大纲.md`（标题、课件页码、主要内容）和 `讲稿/epNN.md`（“本集要点”）。
-- 新的一集做好后运行 `.venv/bin/python tools/lectures.py`，再运行 `build.py` 并推送。脚本把每集转成 720p（H.264，faststart）放在 `video/lectures_web/`，作为附件上传到 GitHub Release `lecture-videos`（视频总量超过 Pages 的 1 GB 上限，所以不放进 `dist/`）；字幕、文字稿和缩略图放在 `site/lectures/`，随网站发布；页面数据写入 `content/lectures.json`。大纲里有、视频还没做好的集显示为“制作中”。
-- 页面功能：按讲次切换的播放列表、上一集/下一集、播放速度、自动播放下一集、文字稿、观看进度与“继续观看”（只保存在学生自己的浏览器里）、全部讲次的分集表；每集都可以用 `courses.html#L2-03` 这样的链接直接打开。
+对每个生物医学领域，都尽量给出一条完整的知识链：
 
-## 部署注意
+**数据怎样得到** → **网络怎样构建** → **算法怎样使用** → **结果怎样解释** → **证据是否充分**
 
-- 浏览器内 Python 从 cdn.jsdelivr.net 加载 Pyodide；若网络无法访问，可把 Pyodide 发行包放到 `dist/pyodide/` 并修改 `site/assets/js/site.js` 中的 `PYODIDE` 地址。
-- 站内搜索读取 `assets/search-index.json`，需要通过网页服务器访问（直接双击 HTML 文件时搜索不可用）。
-- 公式在构建时转换成 MathML，不依赖外部脚本。
+## 适合谁
 
-## 页面设计
+- 学习网络科学的医学、生命科学和心理学专业学生
+- 想在自己的研究中使用网络方法的研究生与研究人员
+- 希望系统了解“网络视角下的生物医学”的读者
 
-- **整站导航**（参照 The Turing Way）：左侧可折叠的知识树（领域 → 专题 → 知识页面，当前页高亮），右侧本页目录，顶部站内搜索；窄屏下知识树收进“☰ 目录”抽屉。
-- **知识页面**（参照 Distill）：领域色顶线、阅读时间与核查日期、44rem 阅读栏、图形可用满栏宽；定义、注意、生物医学实例三种侧栏样式；页末自动汇总本页引用的 DOI。
-- **交互可视化**（参照 Seeing Theory）：宽度足够时左侧说明与参数、右侧图形；每个演示嵌入对应的知识页面（对应关系见 `build.py` 的 `DEMO_SECTION`），并可导出 PNG 与参数。
-- **代码库**（参照 Nilearn / NetworkX Gallery）：207 个示例按领域与专题组织为缩略图图库，每个示例有独立页面（说明、输出图、文字输出、高亮代码、浏览器内运行、Notebook 下载）。
-- **首页**：知识地图（专题按领域排成环，连线为专题间的相互引用）、知识领域、从数据到结论的知识链、可视化、代码图库、文献与参考资源。
+了解基本的线性代数、概率统计和一点 Python 会更顺利，但不是必需的：每个概念都从定义和例子讲起。
 
-修改代码示例后，先重新运行示例生成输出图（只重跑改动过的单元），再构建网站：
+## 内容来源
 
-```bash
-.venv/bin/python tools/run_examples.py
-.venv/bin/python build.py
-```
+理论内容依据原始论文、经典综述和官方技术文档写成，引用处都给出 DOI。外部资源的版权归原作者，本站只提供链接与介绍。发现错误或有建议，欢迎提交 [Issue](https://github.com/zxzok/bionetwork/issues)。

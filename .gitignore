@@ -19,3 +19,4 @@ video/*
 !video/v2/
 video/v2/*
 !video/v2/*.py
+开发说明.md
