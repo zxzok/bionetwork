@@ -39,6 +39,12 @@ SERIES = [
     {"n": 4, "dir": "社团发现", "title": "社团发现", "en": "Community detection",
      "dek": "弱关系、社团与模块度：从社会网络到蛋白质复合物和脑功能网络。",
      "topics": ["community-structure"]},
+    {"n": 5, "dir": "传播", "title": "网络上的传播", "en": "Spreading on networks",
+     "dek": "从黑死病到新冠：SI、SIS、SIR 模型，枢纽为何先被感染、阈值为何消失，以及疫苗应该先给谁。",
+     "topics": ["spreading", "robustness"]},
+    {"n": 6, "dir": "网络控制", "title": "网络控制", "en": "Network control",
+     "dek": "能不能只推动少数几个节点，就把整张网络带到想要的状态：可控性、驱动节点与生物医学中的控制。",
+     "topics": ["controllability"]},
 ]
 
 
@@ -78,6 +84,19 @@ def encode(src, out):
     tmp = out.with_suffix(".part.mp4")
     subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(src), "-vf", "scale=1280:-2", "-c:v", "libx264", "-preset", "medium",
                     "-crf", "25", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "96k", "-movflags", "+faststart", str(tmp)], check=True)
+    tmp.rename(out)
+
+
+ALT_DIR = "纪录片男声"
+
+
+def remux(web, alt, out):
+    """The web video stream with the second narrator's soundtrack (picture copied, not re-encoded)."""
+    if out.exists() and out.stat().st_mtime >= max(web.stat().st_mtime, alt.stat().st_mtime):
+        return
+    tmp = out.with_suffix(".part.mp4")
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(web), "-i", str(alt), "-map", "0:v", "-map", "1:a",
+                    "-c:v", "copy", "-c:a", "aac", "-b:a", "96k", "-shortest", "-movflags", "+faststart", str(tmp)], check=True)
     tmp.rename(out)
 
 
@@ -130,6 +149,18 @@ def main():
                     have[web.name] = size
                 if have.get(web.name) == size or (not upload and old_eps.get(eid, {}).get("ready")):
                     e.update(ready=True, duration=duration(web), size=size, src=URL + web.name)
+                # second narrator: same picture, other soundtrack (video/v2/intro/alt_track.py)
+                alt = src.parent / ALT_DIR / f"{src.stem}.m4a"
+                if alt.exists() and e["ready"]:
+                    web2 = WEB / f"{eid}-b.mp4"
+                    remux(web, alt, web2)
+                    size2 = web2.stat().st_size
+                    if upload and have.get(web2.name) != size2:
+                        print(f"{eid}: uploading second narrator {size2 / 1e6:.0f} MB", flush=True)
+                        subprocess.run(["gh", "release", "upload", RELEASE_TAG, str(web2), "-R", REPO, "--clobber"], check=True)
+                        have[web2.name] = size2
+                    if have.get(web2.name) == size2 or (not upload and old_eps.get(eid, {}).get("src2")):
+                        e["src2"] = URL + web2.name
             eps.append(e)
         series.append({k: s[k] for k in ("n", "title", "en", "dek", "topics")} | {"episodes": eps})
         print(f"第{s['n']}课 {s['title']}: {sum(e['ready'] for e in eps)}/{len(eps)} ready", flush=True)

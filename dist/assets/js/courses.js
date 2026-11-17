@@ -10,7 +10,8 @@
   const prefs = () => { try { return JSON.parse(localStorage.getItem(KEY + ":prefs")) || {}; } catch (e) { return {}; } };
   const savePrefs = (p) => { try { localStorage.setItem(KEY + ":prefs", JSON.stringify(p)); } catch (e) { /* unavailable */ } };
   let prog = load();
-  let pref = Object.assign({ rate: 1, auto: true }, prefs());
+  let pref = Object.assign({ rate: 1, auto: true, voice: 0 }, prefs());
+  const srcOf = (e) => (pref.voice === 1 && e.src2 ? e.src2 : e.src);
 
   const eps = [];
   DATA.series.forEach((s) => s.episodes.forEach((e) => { if (e.ready) eps.push(Object.assign({ series: s }, e)); }));
@@ -59,7 +60,7 @@
       video.pause();
       video.poster = `media/lectures/${id}.jpg`;
       video.innerHTML = "";
-      const src = document.createElement("source"); src.src = e.src; src.type = "video/mp4";
+      const src = document.createElement("source"); src.src = srcOf(e); src.type = "video/mp4";
       const tr = document.createElement("track"); tr.kind = "captions"; tr.srclang = "zh"; tr.label = "中文字幕"; tr.src = `media/lectures/${id}.vtt`;
       video.append(src, tr);
       video.load();
@@ -67,6 +68,7 @@
       pendingSeek = p && !p.done && p.t > 5 ? p.t : 0;
     }
     video.playbackRate = pref.rate;
+    paintVoice();
     // info panel
     $(".cv-where").innerHTML = `<b>第 ${e.series.n} 讲 · 第 ${e.ep} 集</b><span>${fmt(e.duration)}</span>`;
     $(".cv-title").textContent = e.full_title || e.title;
@@ -141,10 +143,28 @@
     const i = eps.indexOf(cur) + Number(b.dataset.step);
     if (eps[i]) play(eps[i].id, { autoplay: true });
   }));
-  const rateBtns = $$(".cv-speed button");
+  const rateBtns = $$(".cv-speed button[data-rate]");
   const paintRate = () => rateBtns.forEach((b) => b.setAttribute("aria-pressed", String(Number(b.dataset.rate) === pref.rate)));
   rateBtns.forEach((b) => b.addEventListener("click", () => { pref.rate = Number(b.dataset.rate); video.playbackRate = pref.rate; savePrefs(pref); paintRate(); }));
   video.addEventListener("ratechange", () => { if (video.playbackRate !== pref.rate) { pref.rate = video.playbackRate; savePrefs(pref); paintRate(); } });
+  // narrator: two soundtracks of the same picture; switching keeps the position and play state
+  const voiceBtns = $$(".cv-voice button");
+  function paintVoice() {
+    const box = $(".cv-voice");
+    if (box) box.hidden = !(cur && cur.src2);
+    voiceBtns.forEach((b) => b.setAttribute("aria-pressed", String(Number(b.dataset.voice) === pref.voice)));
+  }
+  voiceBtns.forEach((b) => b.addEventListener("click", () => {
+    const v = Number(b.dataset.voice);
+    if (v === pref.voice) return;
+    pref.voice = v; savePrefs(pref); paintVoice();
+    if (!cur || !cur.src2) return;
+    const t = video.currentTime, wasPlaying = !video.paused;
+    $("source", video).src = srcOf(cur);
+    pendingSeek = t;
+    video.load();
+    if (wasPlaying) video.play().catch(() => { /* needs a user gesture */ });
+  }));
   const auto = $("#cv-auto");
   auto.checked = pref.auto;
   auto.addEventListener("change", () => { pref.auto = auto.checked; savePrefs(pref); });

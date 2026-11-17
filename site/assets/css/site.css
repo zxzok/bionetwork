@@ -534,6 +534,7 @@ footer.site a:hover { color: var(--accent); }
 .cv-step { display: flex; gap: 6px; }
 .cv-speed { display: flex; align-items: center; gap: 2px; }
 .cv-speed span { margin-right: 6px; }
+.cv-speed[hidden] { display: none; }
 .cv-speed button { font: inherit; font-size: 13px; padding: 3px 8px; border: 1px solid transparent; border-radius: 6px; background: none; color: var(--ink-2); cursor: pointer; font-variant-numeric: tabular-nums; }
 .cv-speed button:hover { color: var(--ink); background: var(--sunk); }
 .cv-speed button[aria-pressed="true"] { color: var(--accent-ink); background: var(--accent-soft); border-color: color-mix(in srgb, var(--accent) 30%, transparent); font-weight: 600; }

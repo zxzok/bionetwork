@@ -1028,6 +1028,7 @@ def build_courses():
 <div class="cv-bar-row">
 <div class="cv-step"><button class="cv-btn" type="button" data-step="-1">‹ 上一集</button><button class="cv-btn" type="button" data-step="1">下一集 ›</button></div>
 <div class="cv-speed" role="group" aria-label="播放速度"><span>速度</span>{"".join(f'<button type="button" data-rate="{r}"{" aria-pressed=\"true\"" if r == 1 else ""}>{r:g}×</button>' for r in (0.75, 1, 1.25, 1.5, 2))}</div>
+<div class="cv-speed cv-voice" role="group" aria-label="旁白声音" hidden><span>旁白</span><button type="button" data-voice="0" aria-pressed="true">原声</button><button type="button" data-voice="1">纪录片男声</button></div>
 <label class="cv-toggle"><input type="checkbox" id="cv-auto" checked> 自动播放下一集</label>
 </div>
 <article class="cv-info">
