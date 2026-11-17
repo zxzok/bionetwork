@@ -203,7 +203,7 @@ def code_cells(tid):
 
 
 # ----------------------------------------------------------------------------- page chrome
-NAV = [("index.html", "首页", "home"), ("domains.html", "知识领域", "domains"), ("lab.html", "可视化实验室", "lab"),
+NAV = [("index.html", "首页", "home"), ("courses.html", "课程视频", "courses"), ("domains.html", "知识领域", "domains"), ("lab.html", "可视化实验室", "lab"),
        ("code.html", "代码库", "code"), ("papers.html", "文献", "papers"), ("resources.html", "数据与软件", "resources"),
        ("glossary.html", "知识索引", "glossary")]
 
@@ -248,7 +248,7 @@ def rail(topics, cur_topic=None, cur_sec=None, cur_domain=None):
         out.append("</ol></details>")
     out.append('<div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a>'
                '<a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a>'
-               '<a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div>')
+               '<a href="courses.html">课程视频</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div>')
     out.append("</nav>")
     return "".join(out)
 
@@ -263,7 +263,7 @@ def write_page(name, title, desc, active, body, topic=None, sec=None, scripts=("
     shell = (f'<div class="shell">{rail(TOPICS, topic, sec, dom)}<main id="main">{body}</main></div><div class="nav-scrim" hidden></div>' if with_rail
              else f'<div class="shell wide"><main id="main">{body}</main></div>')
     foot = ('<footer class="site"><div><b>' + SITE + '</b><span>' + SITE_EN + '</span>'
-            '<a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a>'
+            '<a href="courses.html">课程视频</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a>'
             '<a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer>')
     page = (f'<!doctype html><html lang="zh-CN"><head>{head(title, desc)}</head><body{cls}{body_attr}>{topbar(active)}{shell}{foot}{sc}</body></html>')
     (DIST / name).write_text(page, encoding="utf-8")
@@ -584,6 +584,7 @@ def build_index(papers):
 <figure class="kmap" style="margin:0"><canvas id="kmap" width="720" height="540" aria-label="本站知识专题之间的关联网络"></canvas><div class="kmap-legend">{legend}</div>
 <figcaption class="kmap-cap">知识地图：节点是专题，连线是专题之间的相互引用。点击节点进入专题。</figcaption></figure></section>
 <section class="home-sec"><span class="tag">Domains</span><h2>知识领域</h2><p class="small">七个相互关联的领域，从网络的数学表示到网络医学。</p><div class="dgrid">{"".join(dom_cards)}</div></section>
+{courses_home()}
 <section class="home-sec"><span class="tag">From data to conclusions</span><h2>每个生物医学领域的完整知识链</h2>
 <p class="small">脑网络、症状网络、分子网络与网络医学的专题都沿着同一条链展开。</p>
 <div class="chain"><div><i>01</i><b>数据怎样得到</b><span>影像、量表、表达谱、相互作用数据库，以及各自的偏倚。</span></div>
@@ -922,11 +923,128 @@ def build_search(papers, resources, terms):
     for tid in TOPIC_IDS:
         for t, _ in code_cells(tid)[1]:
             idx.append({"t": t, "u": f"{tid}.html#code", "k": "代码", "d": ttitle(tid), "s": "可运行的 Python 示例", "x": ""})
+    for ser in lectures_data()["series"]:
+        for e in ser["episodes"]:
+            if e["ready"]:
+                idx.append({"t": e["full_title"] or e["title"], "u": f"courses.html#{e['id']}", "k": "课程视频", "d": f"第 {ser['n']} 讲 {ser['title']} · 第 {e['ep']} 集",
+                            "s": e["points"] or e["content"], "x": e["content"] + " " + e["points"]})
     (DIST / "assets" / "search-index.json").write_text(json.dumps({"items": idx, "syn": SYNONYMS}, ensure_ascii=False), encoding="utf-8")
     body = ('<div class="lec-head"><h1>站内搜索</h1><form class="hero-search" role="search" onsubmit="return false"><input id="sq" type="search" '
             'placeholder="概念、算法、论文、数据集；支持英文与缩写，如 FC、PPI、modularity" aria-label="搜索"></form><p class="small" id="scount"></p></div>'
             '<div class="kinds" id="skinds"></div><ol class="results" id="sres"></ol><script src="assets/js/search.js"></script>')
     write_page("search.html", "站内搜索", "搜索生物医学网络科学的概念、算法、论文与数据", "", body)
+
+
+# ----------------------------------------------------------------------------- lecture videos (courses.html)
+def hms(sec, long=False):
+    sec = int(round(sec or 0))
+    h, m, s = sec // 3600, sec % 3600 // 60, sec % 60
+    if long:
+        return (f"{h} 小时 " if h else "") + f"{m} 分"
+    return f"{h}:{m:02d}:{s:02d}" if h else f"{m}:{s:02d}"
+
+
+def lectures_data():
+    f = CONTENT / "lectures.json"
+    return json.loads(f.read_text(encoding="utf-8")) if f.exists() else {"series": []}
+
+
+def courses_home():
+    cards = []
+    for s in lectures_data()["series"]:
+        r = [e for e in s["episodes"] if e["ready"]]
+        if not r:
+            continue
+        cards.append(f'<a class="cv-hcard" href="courses.html#{r[0]["id"]}"><img src="media/lectures/{r[0]["id"]}.jpg" alt="" loading="lazy" width="320" height="180">'
+                     f'<span class="cv-tab-n">第 {s["n"]} 讲</span><b>{E(s["title"])}</b><small>{len(r)} 集 · {hms(sum(e.get("duration") or 0 for e in r), True)}</small></a>')
+    if not cards:
+        return ""
+    return ('<section class="home-sec"><span class="tag">Lecture videos</span><h2>课程视频</h2><p class="small">按讲次组织的系列讲解，每集七到十二分钟，配中文字幕和文字稿。</p>'
+            f'<div class="cv-hgrid">{"".join(cards)}</div><p class="small" style="margin-top:12px"><a href="courses.html">进入课程视频 →</a></p></section>')
+
+
+def build_courses():
+    """课程视频: the lecture series, one player with a per-lesson playlist (data: content/lectures.json, see tools/lectures.py)."""
+    f = CONTENT / "lectures.json"
+    if not f.exists():
+        return
+    data = json.loads(f.read_text(encoding="utf-8"))
+    series = [s for s in data["series"] if s["episodes"]]
+    ready = [e for s in series for e in s["episodes"] if e["ready"]]
+    total = sum(e.get("duration") or 0 for e in ready)
+    first = next((s for s in series if any(e["ready"] for e in s["episodes"])), series[0])
+    e0 = next(e for e in first["episodes"] if e["ready"])
+
+    def ep_item(s, e):
+        n = f'<span class="cv-num">{e["ep"]:02d}</span>'
+        if not e["ready"]:
+            return (f'<li class="cv-ep soon"><span class="cv-ep-in">{n}<span class="cv-thumb blank" aria-hidden="true"></span>'
+                    f'<span class="cv-ep-t">{E(e["title"])}<small>制作中</small></span></span></li>')
+        return (f'<li class="cv-ep"><a class="cv-ep-in" href="#{e["id"]}" data-ep="{e["id"]}">{n}'
+                f'<span class="cv-thumb"><img src="media/lectures/{e["id"]}.jpg" alt="" loading="lazy" width="320" height="180"><span class="cv-bar"><i></i></span></span>'
+                f'<span class="cv-ep-t">{E(e["title"])}<small>{hms(e["duration"])}<span class="cv-done" aria-label="已看完">已看完</span></small></span></a></li>')
+
+    tabs = []
+    for s in series:
+        r = [e for e in s["episodes"] if e["ready"]]
+        dur = sum(e.get("duration") or 0 for e in r)
+        stat = f'{len(r)} 集 · {hms(dur, True)}' + (f' · 另有 {len(s["episodes"]) - len(r)} 集制作中' if len(r) < len(s["episodes"]) else "")
+        tabs.append(f'<button class="cv-tab" type="button" role="tab" data-series="{s["n"]}" aria-selected="{"true" if s is first else "false"}"'
+                    f'{" disabled" if not r else ""}><span class="cv-tab-n">第 {s["n"]} 讲</span><b>{E(s["title"])}</b>'
+                    f'<small>{stat}</small><span class="cv-meter" aria-hidden="true"><i></i></span></button>')
+
+    lists = []
+    for s in series:
+        rel = "".join(f'<a href="{t}.html">{E(ttitle(t))}</a>' for t in s["topics"] if t in TMETA)
+        lists.append(f'<div class="cv-pl" data-series="{s["n"]}"{"" if s is first else " hidden"}>'
+                     f'<div class="cv-pl-head"><span class="cv-pl-n">第 {s["n"]} 讲 · {E(s["en"])}</span><h2>{E(s["title"])}</h2>'
+                     f'<p>{E(s["dek"])}</p><p class="cv-pl-prog" data-prog="{s["n"]}"></p></div>'
+                     f'<ol class="cv-eps">{"".join(ep_item(s, e) for e in s["episodes"])}</ol>'
+                     + (f'<div class="cv-rel"><b>配套阅读</b>{rel}</div>' if rel else "") + '</div>')
+
+    syl = []
+    for s in series:
+        rows = []
+        for e in s["episodes"]:
+            what = e["content"] or e["points"]
+            t = (f'<a href="#{e["id"]}" data-ep="{e["id"]}">{E(e["full_title"] or e["title"])}</a>' if e["ready"] else E(e["full_title"] or e["title"]))
+            rows.append(f'<tr><td class="cv-c-n">{e["ep"]}</td><td class="cv-c-t">{t}</td><td class="cv-c-w">{E(what)}</td>'
+                        f'<td class="cv-c-p">{E(e["ppt"])}</td><td class="cv-c-d">{hms(e["duration"]) if e["ready"] else "制作中"}</td></tr>')
+        syl.append(f'<h3 id="syllabus-{s["n"]}"><span>第 {s["n"]} 讲</span>{E(s["title"])}</h3><div class="table-wrap"><table class="cv-syl">'
+                   '<thead><tr><th>集</th><th>标题</th><th>内容</th><th>课件页</th><th>时长</th></tr></thead>'
+                   f'<tbody>{"".join(rows)}</tbody></table></div>')
+
+    body = f"""<header class="doc-head cv-head"><div class="eyebrow"><b>课程视频</b><span>Lecture videos</span></div>
+<h1>课程视频</h1>
+<p class="dek">按讲次组织的系列讲解。每讲分成若干短集，每集七到十二分钟，配中文字幕和文字稿，可以按自己的节奏观看、暂停和回看。</p>
+<dl class="doc-meta"><div><dt>讲次</dt><dd>{len(series)} 讲</dd></div><div><dt>已上线</dt><dd>{len(ready)} 集</dd></div>
+<div><dt>总时长</dt><dd>{hms(total, True)}</dd></div><div><dt>字幕</dt><dd>中文字幕 · 文字稿</dd></div></dl></header>
+<div class="cv-resume" hidden><span class="cv-resume-t"></span><a class="cv-btn primary" href="#">继续观看</a></div>
+<div class="cv-tabs" role="tablist" aria-label="讲次">{"".join(tabs)}</div>
+<section class="cv-stage" aria-label="播放器">
+<div class="cv-main">
+<div class="cv-frame"><video id="cv-video" controls preload="metadata" playsinline poster="media/lectures/{e0["id"]}.jpg">
+<source src="{E(e0["src"])}" type="video/mp4"><track kind="captions" srclang="zh" label="中文字幕" src="media/lectures/{e0["id"]}.vtt"></video></div>
+<div class="cv-bar-row">
+<div class="cv-step"><button class="cv-btn" type="button" data-step="-1">‹ 上一集</button><button class="cv-btn" type="button" data-step="1">下一集 ›</button></div>
+<div class="cv-speed" role="group" aria-label="播放速度"><span>速度</span>{"".join(f'<button type="button" data-rate="{r}"{" aria-pressed=\"true\"" if r == 1 else ""}>{r:g}×</button>' for r in (0.75, 1, 1.25, 1.5, 2))}</div>
+<label class="cv-toggle"><input type="checkbox" id="cv-auto" checked> 自动播放下一集</label>
+</div>
+<article class="cv-info">
+<div class="eyebrow cv-where"><b>第 {first["n"]} 讲 · 第 {e0["ep"]} 集</b><span>{hms(e0["duration"])}</span></div>
+<h2 class="cv-title">{E(e0["full_title"])}</h2>
+<p class="cv-meta"></p>
+<div class="cv-points"><b>本集要点</b><p>{E(e0["points"])}</p></div>
+<details class="cv-tr"><summary>文字稿</summary><div class="cv-tr-body"></div></details>
+<p class="cv-keys small">键盘：空格 播放/暂停 · ← → 后退/前进 10 秒 · N 下一集</p>
+</article>
+</div>
+<aside class="cv-side">{"".join(lists)}</aside>
+</section>
+<section class="block cv-syllabus" id="syllabus"><h2><span class="tag">SYLLABUS</span>全部讲次与分集</h2>{"".join(syl)}</section>
+<script type="application/json" id="cv-data">{json.dumps(data, ensure_ascii=False).replace("</", "<\\/")}</script>"""
+    write_page("courses.html", "课程视频", f"{SITE}系列讲解视频：{'、'.join(s['title'] for s in series)}，共 {len(ready)} 集，配中文字幕与文字稿",
+               "courses", body, scripts=("site.js", "courses.js"), with_rail=False)
 
 
 # ----------------------------------------------------------------------------- about & redirects
@@ -936,6 +1054,7 @@ def build_about():
 每个领域包含若干专题；每个专题有一个主页（概述、视频、交互可视化、代码、论文与文献）和若干深入的知识页面。</p>
 <p>对每个生物医学领域，本站尽量提供一条完整的知识链：数据怎样得到、网络怎样构建、算法怎样使用、结果怎样解释、结论有哪些证据支持。</p></section>
 <section class="block prose"><h2>怎样使用</h2><ul><li>从<a href="domains.html">知识领域</a>进入，或在页面顶部直接<a href="search.html">搜索</a>概念、算法、论文和数据集（支持中英文与常见缩写）。</li>
+<li><a href="courses.html">课程视频</a>按讲次组织系列讲解，可以从头系统地看；每集配中文字幕和文字稿。</li>
 <li><a href="glossary.html">知识索引</a>汇集各专题的正式定义与公式。</li><li><a href="lab.html">可视化实验室</a>中的图形可以导出为 PNG 与参数文件，用于阅读和讨论。</li>
 <li><a href="code.html">代码库</a>中的示例可在浏览器中直接运行，也可下载为 Notebook。</li></ul></section>
 <section class="block prose"><h2>内容来源</h2><p>理论内容依据原始论文、经典综述和官方技术文档写成，每处引用都给出 DOI。外部资源版权归原作者，本站仅提供链接与介绍。发现错误欢迎指正。</p></section>"""
@@ -960,6 +1079,10 @@ def main():
     if (DIST / "apps").exists():
         shutil.rmtree(DIST / "apps")
     shutil.copytree(ROOT / "site" / "apps", DIST / "apps")
+    if (DIST / "media" / "lectures").exists():
+        shutil.rmtree(DIST / "media" / "lectures")
+    if (ROOT / "site" / "lectures").exists():
+        shutil.copytree(ROOT / "site" / "lectures", DIST / "media" / "lectures")
     TOPICS = load_topics()
     papers = load_papers()
     resources = load_resources()
@@ -987,6 +1110,7 @@ def main():
     build_glossary(terms, papers)
     build_search(papers, resources, terms)
     build_about()
+    build_courses()
     build_redirects()
     print(f"done: {len(TOPICS)} topics, {sum(len(t['_articles']) for t in TOPICS.values())} pages, {len(papers)} papers, {len(resources)} resources, {len(terms)} terms")
 

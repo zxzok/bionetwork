@@ -1,0 +1,423 @@
+{
+ "release": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/",
+ "series": [
+  {
+   "n": 1,
+   "title": "绪论",
+   "en": "Introduction",
+   "dek": "什么是网络，生物医学为什么需要网络：从蚂蚁、神经元到疾病和药物，看见系统背后的连接。",
+   "topics": [
+    "network-basics"
+   ],
+   "episodes": [
+    {
+     "id": "L1-01",
+     "ep": 1,
+     "title": "万物背后的网络",
+     "full_title": "万物背后的网络",
+     "ppt": "5–11、15–19",
+     "content": "",
+     "points": "八个看似无关的系统，背后都是一张网；秘密不在个体，而在个体之间。",
+     "ready": true,
+     "duration": 716.8,
+     "size": 68153361,
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-01.mp4"
+    },
+    {
+     "id": "L1-02",
+     "ep": 2,
+     "title": "世界有多小",
+     "full_title": "世界有多小：六度分隔与美第奇家族",
+     "ppt": "12–14",
+     "content": "",
+     "points": "社交网络里任意两人往往只隔几步；一个人（一个家族）的影响力，取决于他在网络中的位置。",
+     "ready": true,
+     "duration": 651.0,
+     "size": 62098456,
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-02.mp4"
+    },
+    {
+     "id": "L1-03",
+     "ep": 3,
+     "title": "复杂系统与涌现",
+     "full_title": "复杂系统与涌现",
+     "ppt": "21–27",
+     "content": "",
+     "points": "复杂系统的整体行为，来自组分之间的相互作用；整体会出现单个组分没有的性质——涌现；网络，是描述相互作用的骨架。",
+     "ready": true,
+     "duration": 658.8,
+     "size": 73368787,
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-03.mp4"
+    },
+    {
+     "id": "L1-04",
+     "ep": 4,
+     "title": "网络科学从哪里来",
+     "full_title": "网络科学从哪里来",
+     "ppt": "28–36",
+     "content": "",
+     "points": "网络的思想很早就有，但网络科学作为一门统一的学科，是在1998–1999年前后兴起的；推动它的，是数据的出现和规律的普适性；它的方法有四个特点。",
+     "ready": true,
+     "duration": 644.2,
+     "size": 51631581,
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-04.mp4"
+    },
+    {
+     "id": "L1-05",
+     "ep": 5,
+     "title": "网络改变世界（上）",
+     "full_title": "网络改变世界（上）：经济、医学与公共卫生",
+     "ppt": "37–43",
+     "content": "",
+     "points": "一门学科的影响，看它的应用；网络思维已经进入搜索、社交、药物研发、流行病预测和脑科学。",
+     "ready": true,
+     "duration": 668.8,
+     "size": 52721910,
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-05.mp4"
+    },
+    {
+     "id": "L1-06",
+     "ep": 6,
+     "title": "网络改变世界（下）",
+     "full_title": "网络改变世界（下）：组织、健康与科学本身",
+     "ppt": "44–59",
+     "content": "",
+     "points": "正式结构和真实网络常常不一样；健康状态可能沿社会网络“传染”，但相关不等于因果；网络科学本身，已经成了一场科学运动。",
+     "ready": true,
+     "duration": 579.3,
+     "size": 43741532,
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-06.mp4"
+    },
+    {
+     "id": "L1-07",
+     "ep": 7,
+     "title": "细胞与大脑里的网络",
+     "full_title": "细胞与大脑里的网络",
+     "ppt": "60–65",
+     "content": "",
+     "points": "看每一类生物网络，都问两个问题——节点是什么？边是什么？不同网络的边，含义完全不同。",
+     "ready": true,
+     "duration": 579.9,
+     "size": 30134576,
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-07.mp4"
+    },
+    {
+     "id": "L1-08",
+     "ep": 8,
+     "title": "疾病之间也有网络",
+     "full_title": "疾病之间也有网络",
+     "ppt": "66–68",
+     "content": "",
+     "points": "用二分网络和投影，把“疾病之间的关系”变成可以计算的网络；疾病基因在相互作用网络里聚成模块；网络可以帮助在疫情中快速寻找老药新用。",
+     "ready": true,
+     "duration": 579.1,
+     "size": 51710538,
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-08.mp4"
+    },
+    {
+     "id": "L1-09",
+     "ep": 9,
+     "title": "把你的问题画成网络",
+     "full_title": "把你的问题画成网络",
+     "ppt": "69–76",
+     "content": "",
+     "points": "构建网络，要说清楚节点、边、方向和权重、边的性质；同一个系统可以画成很多张网；最后用四道题检验这一讲。",
+     "ready": true,
+     "duration": 630.7,
+     "size": 57406552,
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-09.mp4"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "图论基础",
+   "en": "Graph theory",
+   "dek": "从哥尼斯堡七桥出发，学会用图描述网络：邻接矩阵、路径与连通、度、距离与聚集。",
+   "topics": [
+    "network-basics",
+    "network-metrics"
+   ],
+   "episodes": [
+    {
+     "id": "L2-01",
+     "ep": 1,
+     "title": "七座桥：图论的诞生",
+     "full_title": "七座桥：图论的诞生",
+     "ppt": "3–10",
+     "content": "哥尼斯堡七桥、欧拉的抽象与奇偶论证、一笔画判定、图的定义、网络与图",
+     "points": "欧拉把陆地变成点、把桥变成线，扔掉了距离和形状，只留下“谁和谁相连”；能否一笔走完，只取决于每个点连着几条线的奇偶；这种只看连接的数学，就是图论。",
+     "ready": true,
+     "duration": 564.4,
+     "size": 25925406,
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L2-01.mp4"
+    },
+    {
+     "id": "L2-02",
+     "ep": 2,
+     "title": "把网络装进计算机",
+     "full_title": "把网络装进计算机",
+     "ppt": "11–17",
+     "content": "节点与边、邻接矩阵、有向/无向、加权/无权、阈值化与对称化、简单图、二分图",
+     "points": "邻接矩阵把一张图变成一张数表；有向、加权决定了边能携带多少信息；阈值化和对称化会丢掉信息，要清楚自己丢掉了什么；简单图没有重边和自环。",
+     "ready": true,
+     "duration": 536.5,
+     "size": 39809458,
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L2-02.mp4"
+    },
+    {
+     "id": "L2-03",
+     "ep": 3,
+     "title": "路径与连通",
+     "full_title": "路径与连通",
+     "ppt": "18–21、33",
+     "content": "路径、回路、简单路径、圈（反馈环）、连通分支、疾病模块、强连通与弱连通",
+     "points": "路径是一串首尾相接的边，长度是边数；回路首尾重合，圈是不重复节点的回路；连通分支把网络分成互不往来的几块；有向图要区分强连通和弱连通。",
+     "ready": true,
+     "duration": 421.2,
+     "size": 29906070,
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L2-03.mp4"
+    },
+    {
+     "id": "L2-04",
+     "ep": 4,
+     "title": "强连通分支：网页的蝴蝶结",
+     "full_title": "强连通分支：网页的蝴蝶结",
+     "ppt": "22–28",
+     "content": "强连通分支的两条性质、缩点得DAG、Out∩In求分支、万维网与代谢网络的蝴蝶结",
+     "points": "强连通分支是“彼此都能到达”的最大节点集合；每个节点恰好属于一个强连通分支；把强连通分支缩成点，得到一张没有环的有向图；万维网和代谢网络都呈蝴蝶结形状。",
+     "ready": true,
+     "duration": 451.3,
+     "size": 35111223,
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L2-04.mp4"
+    },
+    {
+     "id": "L2-05",
+     "ep": 5,
+     "title": "度：一个节点有多少朋友",
+     "full_title": "度：一个节点有多少朋友",
+     "ppt": "29–32",
+     "content": "度、入度出度、源与汇、平均度、完全图、真实网络的稀疏性、度分布与枢纽",
+     "points": "度是与节点相连的边数，有向图分入度和出度；平均度等于2E除以N；真实网络远比完全图稀疏，邻接矩阵几乎全是0；度分布描述“连接”在节点之间怎么分配。",
+     "ready": true,
+     "duration": 454.7,
+     "size": 32642439,
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L2-05.mp4"
+    },
+    {
+     "id": "L2-06",
+     "ep": 6,
+     "title": "距离与聚集",
+     "full_title": "距离与聚集",
+     "ppt": "34–38",
+     "content": "距离、直径、平均路径长度、广度优先搜索、聚集系数、线虫神经网络的小世界",
+     "points": "距离是最短路径上的边数，有向图里距离不对称；直径是最大距离，平均路径长度是所有点对距离的平均；广度优先搜索一层层向外扩，算出一个点到所有点的距离；聚集系数衡量一个节点的邻居之间有多少彼此相连。",
+     "ready": true,
+     "duration": 470.4,
+     "size": 31296355,
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L2-06.mp4"
+    },
+    {
+     "id": "L2-07",
+     "ep": 7,
+     "title": "给一张真实网络做体检",
+     "full_title": "给一张真实网络做体检",
+     "ppt": "39–46",
+     "content": "MSN一亿八千万人网络的三项指标、与随机网络对比、networkx动手计算、本章练习",
+     "points": "度分布、路径长度、聚集系数是刻画网络的三把尺子；一亿八千万人的MSN网络，度分布长尾、平均距离6.6步、聚集系数远高于随机网络；用几行代码就能把这些指标算出来。",
+     "ready": true,
+     "duration": 505.8,
+     "size": 32416168,
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L2-07.mp4"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "网络模型",
+   "en": "Network models",
+   "dek": "随机网络、小世界与无标度：用模型回答“真实网络的这些数字正常吗”。",
+   "topics": [
+    "network-metrics",
+    "network-models",
+    "robustness"
+   ],
+   "episodes": [
+    {
+     "id": "L3-01",
+     "ep": 1,
+     "title": "这些数字正常吗",
+     "full_title": "这些数字正常吗",
+     "ppt": "31–33",
+     "content": "指标需要参照系；链状与网格网络的度、聚集、路径；零模型的思想；本章路线图",
+     "points": "一个指标本身不说话，要和参照系比较；规则网格的度和聚集系数是常数，但路径长度随规模线性或按根号增长，解释不了真实网络的短路径；所以需要一个“零模型”。",
+     "ready": true,
+     "duration": 272.3,
+     "size": 22210482,
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L3-01.mp4"
+    },
+    {
+     "id": "L3-02",
+     "ep": 2,
+     "title": "扔硬币造网络",
+     "full_title": "扔硬币造网络",
+     "ppt": "35–41",
+     "content": "ER随机网络 G(n,p)/G(n,m)；平均度 p(n−1)；二项/泊松度分布（一万节点模拟）；聚集系数 C = p",
+     "points": "G(n,p)是每对节点以概率p独立连边；平均度等于p(n−1)；度分布是二项分布，网络越大越集中在平均值附近，几乎不出现枢纽；聚集系数等于p，即平均度除以n，网络越大越小。",
+     "ready": false
+    },
+    {
+     "id": "L3-03",
+     "ep": 3,
+     "title": "巨大分支与六步之遥",
+     "full_title": "巨大分支与六步之遥",
+     "ppt": "42–54",
+     "content": "巨大连通分支的相变（模拟）；路径 ∝ log N；随机网络与真实网络的计分；度保持随机化与网络模体（前馈环）",
+     "points": "平均度超过1时，随机网络里突然出现一个巨大连通分支，这是一种相变；随机网络每走一步覆盖范围成倍扩大，所以路径长度只随log n增长；随机网络解释了短路径，解释不了高聚集和长尾；它最大的用处是作零模型，度保持随机化能帮我们发现“网络模体”。",
+     "ready": false
+    },
+    {
+     "id": "L3-04",
+     "ep": 4,
+     "title": "六度分隔",
+     "full_title": "六度分隔",
+     "ppt": "56–64",
+     "content": "贝肯数、埃尔德什数；米尔格拉姆实验及其批评；2003年电子邮件实验；“一百个朋友”的估算与三元闭包",
+     "points": "多个真实网络都表现出“路径短”；米尔格拉姆实验平均6.2步，但存在漏斗效应、样本少、退出率高等问题；2003年电子邮件实验校正后约7步；简单的指数增长估算忽略了朋友圈的重叠——真实网络既抱团、又很“小”，这就是下一集小世界模型要解释的谜题。",
+     "ready": false
+    },
+    {
+     "id": "L3-05",
+     "ep": 5,
+     "title": "小世界模型",
+     "full_title": "小世界模型",
+     "ppt": "65–72",
+     "content": "三张网络的小世界特征；WS模型与重连；C(p)、L(p) 曲线（模拟）；大脑的小世界与疾病中的改变",
+     "points": "从规则环出发，以概率p随机重连每条边；很小的p就能让路径长度大幅下降，而聚集系数几乎不变；小世界模型解释了高聚集与短路径的并存，却给不出枢纽；线虫和人脑的网络都具有小世界特征，许多脑疾病中这一特征会改变。",
+     "ready": false
+    },
+    {
+     "id": "L3-06",
+     "ep": 6,
+     "title": "幂律",
+     "full_title": "幂律",
+     "ppt": "74–86",
+     "content": "钟形与长尾；双对数坐标；各种网络的幂律指数；“无标度”的含义；生物网络与严格检验（Broido & Clauset 2019）",
+     "points": "随机网络的度分布是钟形，许多真实网络的度分布却有一条长尾，近似幂律P(k)∝k^(−α)；双对数坐标下幂律是直线；常见指数在2到3之间；幂律没有特征尺度，故称“无标度”；生物网络的长尾是稳健的，但严格意义上的幂律证据往往较弱。",
+     "ready": false
+    },
+    {
+     "id": "L3-07",
+     "ep": 7,
+     "title": "富者愈富",
+     "full_title": "富者愈富",
+     "ppt": "88–101",
+     "content": "BA模型（增长＋优先连接）；两万节点模拟与先来者优势；简化模型的指数；适应度；基因复制–分化",
+     "points": "增长加优先连接能产生幂律度分布（BA模型指数约为3）；越早加入的节点度越大，度大致随时间的平方根增长；简化模型的指数为1+1/(1−p)；优先连接解释不了“后来居上”，需要适应度等补充；蛋白质网络里，基因复制–分化是一种“隐含的”优先连接，同时带来枢纽和高聚集。",
+     "ready": false
+    },
+    {
+     "id": "L3-08",
+     "ep": 8,
+     "title": "鲁棒又脆弱",
+     "full_title": "鲁棒又脆弱",
+     "ppt": "102–105",
+     "content": "随机失效与攻击枢纽；鲁棒性模拟；必需基因与药物靶点；四个模型与酵母网络的比较；本章总结",
+     "points": "真实（重尾）网络对随机失效稳健、对攻击枢纽脆弱；模拟中无标度网络在移除约15%–20%的枢纽后几乎瓦解；细胞能耐受多数随机突变，而枢纽更可能是必需基因；四个模型与真实酵母蛋白质网络比较，小世界模型抓住了聚集，BA模型抓住了枢纽，没有一个模型能复现全部特征。",
+     "ready": false
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "社团发现",
+   "en": "Community detection",
+   "dek": "弱关系、社团与模块度：从社会网络到蛋白质复合物和脑功能网络。",
+   "topics": [
+    "community-structure"
+   ],
+   "episodes": [
+    {
+     "id": "L4-01",
+     "ep": 1,
+     "title": "弱关系的力量",
+     "full_title": "弱关系的力量",
+     "ppt": "2–8",
+     "content": "格兰诺维特的找工作调查；三元闭包；桥与局部桥；强三元闭包与局部桥定理；社会网络模拟（560人）",
+     "points": "找工作的信息常来自不太熟的熟人；三元闭包使圈子内部抱团；连接不同圈子的局部桥一定是弱关系；网络因此由紧密的团和团之间的弱连接组成。",
+     "ready": false
+    },
+    {
+     "id": "L4-02",
+     "ep": 2,
+     "title": "用数据检验弱关系",
+     "full_title": "用数据检验弱关系",
+     "ppt": "9–16",
+     "content": "Onnela 等 2007 年手机网络；邻居重叠度与边强度；按强度删边与按重叠度删边",
+     "points": "用邻居重叠度衡量一条边嵌入圈子有多深；手机网络中通话越多的边重叠度越高；先删弱关系网络很快瓦解，先删强关系网络能坚持更久——维系整体连通的是弱关系。",
+     "ready": false
+    },
+    {
+     "id": "L4-03",
+     "ep": 3,
+     "title": "什么是社团",
+     "full_title": "什么是社团",
+     "ppt": "17–26",
+     "content": "社团的定义；空手道俱乐部；大学橄榄球联赛；Facebook 自我网络；蛋白质复合物与功能模块",
+     "points": "社团是内部连接多、对外连接少的节点集合；好的算法找出的社团应对应真实的群体；在蛋白质网络中社团常对应复合物和通路，可用“关联有罪”预测未知蛋白的功能。",
+     "ready": false
+    },
+    {
+     "id": "L4-04",
+     "ep": 4,
+     "title": "拆桥",
+     "full_title": "拆桥",
+     "ppt": "27–36",
+     "content": "边介数；Girvan–Newman 算法；空手道俱乐部的首次分裂（34人中32人正确）；用广度优先搜索计算介数",
+     "points": "边介数是经过一条边的最短路径数，社团之间的边介数高；Girvan–Newman反复删除介数最高的边并重新计算，得到层次分解；在空手道俱乐部上第一次分裂就分对了34人中的32人；介数可用广度优先搜索加“分流”高效计算，但总计算量大，只适合小网络。",
+     "ready": false
+    },
+    {
+     "id": "L4-05",
+     "ep": 5,
+     "title": "给划分打分",
+     "full_title": "给划分打分",
+     "ppt": "37–42",
+     "content": "模块度定义；配置模型作零模型；两个三角形的手算（Q = 0.357）；用模块度选社团数（GN 最佳 Q = 0.385）",
+     "points": "模块度 = 社团内部实际的边数减去随机预期的边数；随机预期来自保持度序列的配置模型，节点i与j之间的预期边数为k_i·k_j/2m；Q大于0说明内部连接多于随机，常见的明显社团结构Q约在0.3–0.7；在层次树上取Q最高的一层，就确定了社团数。",
+     "ready": false
+    },
+    {
+     "id": "L4-06",
+     "ep": 6,
+     "title": "Louvain与Leiden",
+     "full_title": "Louvain与Leiden",
+     "ppt": "新增",
+     "content": "Louvain 两阶段（空手道 Q = 0.444）；Leiden 的改进；酵母网络 Q ≈ 0.66；随机网络也有 Q；分辨率极限（团环）",
+     "points": "Louvain通过“局部移动＋合并”反复最大化模块度，百万级网络几分钟完成；Leiden修正了社团内部不连通的问题，已成为单细胞聚类的默认方法；酵母蛋白质网络Q约0.66；随机网络也有不低的模块度，必须与随机对照比较；最大化模块度存在分辨率极限。",
+     "ready": false
+    },
+    {
+     "id": "L4-07",
+     "ep": 7,
+     "title": "一个节点多个社团",
+     "full_title": "一个节点多个社团",
+     "ppt": "43–56",
+     "content": "重叠社团；词语联想网络；团渗流 CPM 与 k-团滚动；CPM 四步（团重叠矩阵）；手机网络；极大团；ClusterONE",
+     "points": "真实网络中社团常常重叠；团渗流方法把通过相邻k-团（共享k−1个节点）连在一起的节点归为一个社团，自然允许重叠；步骤是找极大团、建团重叠矩阵、取阈值、找连通分支；蛋白质常同时属于多个复合物，重叠社团更符合生物学。",
+     "ready": false
+    },
+    {
+     "id": "L4-08",
+     "ep": 8,
+     "title": "社团在生物医学",
+     "full_title": "社团在生物医学",
+     "ppt": "新增",
+     "content": "大脑7个功能网络（Yeo 2011）；蛋白质复合物；疾病模块与研究偏倚；NetworkX 代码与结果表；论文写法；本章小结",
+     "points": "蛋白质复合物、疾病模块、脑功能系统是社团发现的三大应用；脑功能网络的社团划分（如Yeo等的7个网络）已成为脑影像研究的标准参照；用NetworkX几行代码即可完成社团发现，但一定要加随机对照，并用独立证据检验社团的生物学意义。",
+     "ready": false
+    }
+   ]
+  }
+ ]
+}
