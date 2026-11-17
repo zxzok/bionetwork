@@ -21,7 +21,8 @@
      "ready": true,
      "duration": 716.8,
      "size": 68153361,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-01.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-01.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-01-b.mp4"
     },
     {
      "id": "L1-02",
@@ -34,7 +35,8 @@
      "ready": true,
      "duration": 651.0,
      "size": 62098456,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-02.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-02.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-02-b.mp4"
     },
     {
      "id": "L1-03",
@@ -47,7 +49,8 @@
      "ready": true,
      "duration": 658.8,
      "size": 73368787,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-03.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-03.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-03-b.mp4"
     },
     {
      "id": "L1-04",
@@ -60,7 +63,8 @@
      "ready": true,
      "duration": 644.2,
      "size": 51631581,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-04.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-04.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-04-b.mp4"
     },
     {
      "id": "L1-05",
@@ -73,7 +77,8 @@
      "ready": true,
      "duration": 668.8,
      "size": 52721910,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-05.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-05.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-05-b.mp4"
     },
     {
      "id": "L1-06",
@@ -86,7 +91,8 @@
      "ready": true,
      "duration": 579.3,
      "size": 43741532,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-06.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-06.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-06-b.mp4"
     },
     {
      "id": "L1-07",
@@ -99,7 +105,8 @@
      "ready": true,
      "duration": 579.9,
      "size": 30134576,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-07.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-07.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-07-b.mp4"
     },
     {
      "id": "L1-08",
@@ -112,7 +119,8 @@
      "ready": true,
      "duration": 579.1,
      "size": 51710538,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-08.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-08.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-08-b.mp4"
     },
     {
      "id": "L1-09",
@@ -125,7 +133,8 @@
      "ready": true,
      "duration": 630.7,
      "size": 57406552,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-09.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-09.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-09-b.mp4"
     }
    ]
   },
@@ -150,7 +159,8 @@
      "ready": true,
      "duration": 564.4,
      "size": 25925406,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L2-01.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L2-01.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L2-01-b.mp4"
     },
     {
      "id": "L2-02",
@@ -163,7 +173,8 @@
      "ready": true,
      "duration": 536.5,
      "size": 39809458,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L2-02.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L2-02.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L2-02-b.mp4"
     },
     {
      "id": "L2-03",
@@ -176,7 +187,8 @@
      "ready": true,
      "duration": 421.2,
      "size": 30270543,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L2-03.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L2-03.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L2-03-b.mp4"
     },
     {
      "id": "L2-04",
@@ -189,7 +201,8 @@
      "ready": true,
      "duration": 451.3,
      "size": 35101195,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L2-04.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L2-04.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L2-04-b.mp4"
     },
     {
      "id": "L2-05",
@@ -202,7 +215,8 @@
      "ready": true,
      "duration": 454.7,
      "size": 32723406,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L2-05.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L2-05.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L2-05-b.mp4"
     },
     {
      "id": "L2-06",
@@ -215,7 +229,8 @@
      "ready": true,
      "duration": 470.4,
      "size": 31277146,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L2-06.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L2-06.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L2-06-b.mp4"
     },
     {
      "id": "L2-07",
@@ -228,7 +243,8 @@
      "ready": true,
      "duration": 505.8,
      "size": 32416168,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L2-07.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L2-07.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L2-07-b.mp4"
     }
    ]
   },
@@ -254,7 +270,8 @@
      "ready": true,
      "duration": 370.3,
      "size": 27391201,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L3-01.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L3-01.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L3-01-b.mp4"
     },
     {
      "id": "L3-02",
@@ -267,7 +284,8 @@
      "ready": true,
      "duration": 352.5,
      "size": 20816130,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L3-02.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L3-02.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L3-02-b.mp4"
     },
     {
      "id": "L3-03",
@@ -280,7 +298,8 @@
      "ready": true,
      "duration": 366.7,
      "size": 21359713,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L3-03.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L3-03.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L3-03-b.mp4"
     },
     {
      "id": "L3-04",
@@ -293,7 +312,8 @@
      "ready": true,
      "duration": 356.4,
      "size": 25214342,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L3-04.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L3-04.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L3-04-b.mp4"
     },
     {
      "id": "L3-05",
@@ -306,7 +326,8 @@
      "ready": true,
      "duration": 345.3,
      "size": 21053991,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L3-05.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L3-05.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L3-05-b.mp4"
     },
     {
      "id": "L3-06",
@@ -319,7 +340,8 @@
      "ready": true,
      "duration": 354.8,
      "size": 19171066,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L3-06.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L3-06.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L3-06-b.mp4"
     },
     {
      "id": "L3-07",
@@ -332,7 +354,8 @@
      "ready": true,
      "duration": 340.3,
      "size": 23692774,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L3-07.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L3-07.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L3-07-b.mp4"
     },
     {
      "id": "L3-08",
@@ -345,7 +368,8 @@
      "ready": true,
      "duration": 350.4,
      "size": 18538408,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L3-08.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L3-08.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L3-08-b.mp4"
     }
    ]
   },
@@ -369,7 +393,8 @@
      "ready": true,
      "duration": 301.4,
      "size": 30003951,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L4-01.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L4-01.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L4-01-b.mp4"
     },
     {
      "id": "L4-02",
@@ -382,7 +407,8 @@
      "ready": true,
      "duration": 290.7,
      "size": 22050406,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L4-02.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L4-02.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L4-02-b.mp4"
     },
     {
      "id": "L4-03",
@@ -395,7 +421,8 @@
      "ready": true,
      "duration": 287.2,
      "size": 23836657,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L4-03.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L4-03.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L4-03-b.mp4"
     },
     {
      "id": "L4-04",
@@ -408,7 +435,8 @@
      "ready": true,
      "duration": 300.4,
      "size": 21876209,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L4-04.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L4-04.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L4-04-b.mp4"
     },
     {
      "id": "L4-05",
@@ -421,7 +449,8 @@
      "ready": true,
      "duration": 306.8,
      "size": 33139695,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L4-05.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L4-05.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L4-05-b.mp4"
     },
     {
      "id": "L4-06",
@@ -434,7 +463,8 @@
      "ready": true,
      "duration": 340.2,
      "size": 24181859,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L4-06.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L4-06.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L4-06-b.mp4"
     },
     {
      "id": "L4-07",
@@ -447,7 +477,8 @@
      "ready": true,
      "duration": 301.9,
      "size": 30319442,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L4-07.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L4-07.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L4-07-b.mp4"
     },
     {
      "id": "L4-08",
@@ -460,7 +491,8 @@
      "ready": true,
      "duration": 281.6,
      "size": 20612545,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L4-08.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L4-08.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L4-08-b.mp4"
     }
    ]
   },
@@ -485,7 +517,8 @@
      "ready": true,
      "duration": 322.1,
      "size": 31292871,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L5-01.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L5-01.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L5-01-b.mp4"
     },
     {
      "id": "L5-02",
@@ -498,7 +531,8 @@
      "ready": true,
      "duration": 309.8,
      "size": 14470123,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L5-02.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L5-02.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L5-02-b.mp4"
     },
     {
      "id": "L5-03",
@@ -511,7 +545,8 @@
      "ready": true,
      "duration": 315.8,
      "size": 27692450,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L5-03.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L5-03.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L5-03-b.mp4"
     },
     {
      "id": "L5-04",
@@ -524,7 +559,8 @@
      "ready": true,
      "duration": 312.8,
      "size": 18634525,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L5-04.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L5-04.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L5-04-b.mp4"
     },
     {
      "id": "L5-05",
@@ -537,7 +573,8 @@
      "ready": true,
      "duration": 307.1,
      "size": 28355406,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L5-05.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L5-05.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L5-05-b.mp4"
     },
     {
      "id": "L5-06",
@@ -550,7 +587,8 @@
      "ready": true,
      "duration": 312.5,
      "size": 26519632,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L5-06.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L5-06.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L5-06-b.mp4"
     },
     {
      "id": "L5-07",
@@ -563,7 +601,8 @@
      "ready": true,
      "duration": 303.1,
      "size": 21209070,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L5-07.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L5-07.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L5-07-b.mp4"
     },
     {
      "id": "L5-08",
@@ -576,7 +615,8 @@
      "ready": true,
      "duration": 309.8,
      "size": 20288442,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L5-08.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L5-08.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L5-08-b.mp4"
     }
    ]
   },
@@ -600,7 +640,8 @@
      "ready": true,
      "duration": 323.0,
      "size": 25931226,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L6-01.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L6-01.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L6-01-b.mp4"
     },
     {
      "id": "L6-02",
@@ -613,7 +654,8 @@
      "ready": true,
      "duration": 320.0,
      "size": 31826506,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L6-02.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L6-02.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L6-02-b.mp4"
     },
     {
      "id": "L6-03",
@@ -626,7 +668,8 @@
      "ready": true,
      "duration": 306.2,
      "size": 25676306,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L6-03.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L6-03.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L6-03-b.mp4"
     },
     {
      "id": "L6-04",
@@ -639,7 +682,8 @@
      "ready": true,
      "duration": 316.2,
      "size": 26807808,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L6-04.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L6-04.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L6-04-b.mp4"
     },
     {
      "id": "L6-05",
@@ -652,7 +696,8 @@
      "ready": true,
      "duration": 328.3,
      "size": 27403597,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L6-05.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L6-05.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L6-05-b.mp4"
     },
     {
      "id": "L6-06",
@@ -665,7 +710,8 @@
      "ready": true,
      "duration": 313.3,
      "size": 23367069,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L6-06.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L6-06.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L6-06-b.mp4"
     },
     {
      "id": "L6-07",
@@ -678,7 +724,8 @@
      "ready": true,
      "duration": 320.1,
      "size": 27900747,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L6-07.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L6-07.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L6-07-b.mp4"
     },
     {
      "id": "L6-08",
@@ -691,7 +738,8 @@
      "ready": true,
      "duration": 315.5,
      "size": 23468124,
-     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L6-08.mp4"
+     "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L6-08.mp4",
+     "src2": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L6-08-b.mp4"
     }
    ]
   }
