@@ -201,8 +201,8 @@ class Episode(Narrated):
         n = 6
         E = [(0, 1), (0, 2), (1, 2), (2, 3), (3, 4), (3, 5), (4, 5)]
         names = "ABCDEF"
-        lines = VGroup(*[Text(f"{names[u]}  {names[v]}", font="Menlo", font_size=26, color=INK) for u, v in E]).arrange(DOWN, aligned_edge=LEFT, buff=0.18).move_to(LEFT * 5.4 + DOWN * 0.1)
-        head = Text("edges.txt", font="Menlo", font_size=22, color=MUTED).next_to(lines, UP, buff=0.3)
+        lines = VGroup(*[Text(f"{names[u]}  {names[v]}", font="Source Code Pro", font_size=26, color=INK) for u, v in E]).arrange(DOWN, aligned_edge=LEFT, buff=0.18).move_to(LEFT * 5.4 + DOWN * 0.1)
+        head = Text("edges.txt", font="Source Code Pro", font_size=22, color=MUTED).next_to(lines, UP, buff=0.3)
         s = 0.62
         cells = VGroup(*[Square(side_length=s, stroke_color=MUTED, stroke_width=1, fill_color=GOLD, fill_opacity=0) for _ in range(n * n)])
         cells.arrange_in_grid(n, n, buff=0).move_to(LEFT * 0.6 + DOWN * 0.3)
@@ -411,12 +411,12 @@ class Episode(Narrated):
             anims = [net.dots[v].animate.move_to(pos[v]) for v in G]
             anims += [Transform(e, Line(pos[u], pos[v], stroke_width=1.4, color=MUTED, stroke_opacity=0.4)) for (u, v), e in net.edges.items()]
             self.play(*anims, run_time=rt)
-        sl = Text("seed = 1", font="Menlo", font_size=26, color=MUTED).to_corner(UR, buff=0.6)
+        sl = Text("seed = 1", font="Source Code Pro", font_size=26, color=MUTED).to_corner(UR, buff=0.6)
         with self.say("l1") as d:
             self.play(FadeIn(tag), FadeIn(net.group), FadeIn(sl), run_time=1.0)
             for s, p in zip((7, 23), lays[1:]):
                 morph(p, 1.4)
-                self.play(Transform(sl, Text(f"seed = {s}", font="Menlo", font_size=26, color=MUTED).move_to(sl)), run_time=0.3)
+                self.play(Transform(sl, Text(f"seed = {s}", font="Source Code Pro", font_size=26, color=MUTED).move_to(sl)), run_time=0.3)
         with self.say("l2") as d:
             self.play(*[Indicate(net.dots[v], color=cof[v], scale_factor=1.4) for v in G], run_time=1.2)
         L = nx.laplacian_matrix(G).toarray().astype(float)

@@ -43,7 +43,7 @@ def grow_bars(bars, rt=1.2):
 def code_block(s, size=20, width=None):
     c = Code(code_string=s, language="python", formatter_style="monokai", add_line_numbers=False, background="window",
              background_config={"stroke_color": MUTED, "fill_color": PANEL, "corner_radius": 0.15},
-             paragraph_config={"font": "Menlo", "font_size": size})
+             paragraph_config={"font": "Source Code Pro", "font_size": size})
     if width:
         c.scale_to_fit_width(width)
     return c

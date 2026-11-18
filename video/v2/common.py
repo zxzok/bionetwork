@@ -29,6 +29,7 @@ from pathlib import Path
 
 import numpy as np
 from manim import *  # noqa: F401,F403
+import nxcache  # noqa: F401,E402  (identical networkx layouts on macOS and Linux render workers)
 
 ROOT = Path(__file__).resolve().parents[2]
 HERE = Path(__file__).resolve().parent
@@ -41,7 +42,21 @@ BASE = 1.0  # duration factor for ordinary lines (natural pace)
 SLOW = 1.1  # duration factor for 【慢】 key-point lines
 SR = 48000
 
-FONT = "PingFang SC"
+# Open fonts (SIL OFL) shipped in v2/fonts and registered here, so every render machine (macOS or Linux) draws the
+# same glyphs without installing anything: 思源黑体 for text, Source Code Pro for code. (Until 2026-11-17: PingFang SC
+# and Menlo, Apple system fonts that may not be used on non-Apple machines.)
+def _register_fonts():
+    try:
+        import manimpango
+        for p in sorted((HERE / "fonts").glob("*.otf")):
+            manimpango.register_font(str(p))
+    except Exception as e:  # noqa: BLE001
+        print("font registration failed:", e)
+
+
+_register_fonts()
+FONT = "Source Han Sans SC"
+MONO = "Source Code Pro"
 BG = "#10151f"
 PANEL = "#18202e"
 INK = "#e8ecf3"

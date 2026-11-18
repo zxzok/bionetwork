@@ -4,7 +4,7 @@
     .venv/bin/python tools/lectures.py            # scan, encode new episodes, upload, write the manifest
     .venv/bin/python tools/lectures.py --no-upload
 
-Source: ../课程视频/<series>/NN_<title>.mp4 (public edition only; 课堂版/ is never published),
+Source: ../课程视频/<series>/课堂版/NN_<title>_课堂版.mp4 (the classroom edition replaced the public one on 2026-11-17),
 with NN_<title>.vtt/.txt/.jpg beside it, 分集大纲.md (episode table) and 讲稿/epNN.md ("本集要点").
 Each episode is re-encoded for streaming (720p H.264, faststart) into video/lectures_web/ and uploaded as an
 asset of the GitHub release RELEASE_TAG; small files (captions, transcript, poster) go to site/lectures/ and are
@@ -19,7 +19,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT.parent / "课程视频"
-WEB = ROOT / "video" / "lectures_web"
+WEB = ROOT / "video" / "lectures_web" / "classroom"
+EDITION, SUFFIX = "课堂版", "_课堂版"  # the site serves the classroom edition (footage licensed)
 SMALL = ROOT / "site" / "lectures"
 MANIFEST = ROOT / "content" / "lectures.json"
 REPO = "zxzok/bionetwork"
@@ -79,31 +80,23 @@ def duration(p):
 
 
 def encode(src, out):
+    """Classroom renders are already 1080p H.264 at ~1 Mbit/s: copy the streams, moving the index to the front for streaming."""
     if out.exists() and out.stat().st_mtime >= src.stat().st_mtime:
         return
     tmp = out.with_suffix(".part.mp4")
-    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(src), "-vf", "scale=1280:-2", "-c:v", "libx264", "-preset", "medium",
-                    "-crf", "25", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "96k", "-movflags", "+faststart", str(tmp)], check=True)
-    tmp.rename(out)
-
-
-ALT_DIR = "纪录片男声"
-
-
-def remux(web, alt, out):
-    """The web video stream with the second narrator's soundtrack (picture copied, not re-encoded)."""
-    if out.exists() and out.stat().st_mtime >= max(web.stat().st_mtime, alt.stat().st_mtime):
-        return
-    tmp = out.with_suffix(".part.mp4")
-    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(web), "-i", str(alt), "-map", "0:v", "-map", "1:a",
-                    "-c:v", "copy", "-c:a", "aac", "-b:a", "96k", "-shortest", "-movflags", "+faststart", str(tmp)], check=True)
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(src), "-map", "0:v:0", "-map", "0:a:0", "-c", "copy",
+                    "-movflags", "+faststart", str(tmp)], check=True)
     tmp.rename(out)
 
 
 def poster(src, out):
-    if out.exists() and out.stat().st_mtime >= src.stat().st_mtime:
+    """A 640-wide still: the render's own .jpg if there is one, otherwise a frame 20 s in."""
+    jpg = src.with_suffix(".jpg")
+    base = jpg if jpg.exists() else src
+    if out.exists() and out.stat().st_mtime >= base.stat().st_mtime:
         return
-    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(src), "-vf", "scale=640:-2", "-q:v", "4", str(out)], check=True)
+    seek = [] if jpg.exists() else ["-ss", "20"]
+    subprocess.run(["ffmpeg", "-y", "-v", "error", *seek, "-i", str(base), "-frames:v", "1", "-vf", "scale=640:-2", "-q:v", "4", str(out)], check=True)
 
 
 def released():
@@ -125,14 +118,14 @@ def main():
     series = []
     for s in SERIES:
         rows = outline(s["dir"])
-        files = {int(m.group(1)): p for p in sorted((SRC / s["dir"]).glob("[0-9][0-9]_*.mp4"))
+        files = {int(m.group(1)): p for p in sorted((SRC / s["dir"] / EDITION).glob(f"[0-9][0-9]_*{SUFFIX}.mp4"))
                  if (m := re.match(r"(\d\d)_", p.name)) and p.with_suffix(".vtt").exists()}
         eps = []
         for ep in sorted(set(rows) | set(files)):
             eid = f"L{s['n']}-{ep:02d}"
             row = rows.get(ep, {})
             src = files.get(ep)
-            title = src.stem.split("_", 1)[1] if src else row.get("title", "")
+            title = src.stem.split("_", 1)[1].removesuffix(SUFFIX) if src else row.get("title", "")
             e = {"id": eid, "ep": ep, "title": title, "full_title": row.get("title", title), "ppt": row.get("ppt", ""),
                  "content": row.get("content", ""), "points": keypoints(s["dir"], ep), "ready": False}
             if src:
@@ -141,7 +134,7 @@ def main():
                 encode(src, web)
                 for ext in ("vtt", "txt"):
                     (SMALL / f"{eid}.{ext}").write_bytes(src.with_suffix(f".{ext}").read_bytes())
-                poster(src.with_suffix(".jpg"), SMALL / f"{eid}.jpg")
+                poster(src, SMALL / f"{eid}.jpg")
                 size = web.stat().st_size
                 if upload and have.get(web.name) != size:
                     print(f"{eid}: uploading {size / 1e6:.0f} MB", flush=True)
@@ -149,18 +142,6 @@ def main():
                     have[web.name] = size
                 if have.get(web.name) == size or (not upload and old_eps.get(eid, {}).get("ready")):
                     e.update(ready=True, duration=duration(web), size=size, src=URL + web.name)
-                # second narrator: same picture, other soundtrack (video/v2/intro/alt_track.py)
-                alt = src.parent / ALT_DIR / f"{src.stem}.m4a"
-                if alt.exists() and e["ready"]:
-                    web2 = WEB / f"{eid}-b.mp4"
-                    remux(web, alt, web2)
-                    size2 = web2.stat().st_size
-                    if upload and have.get(web2.name) != size2:
-                        print(f"{eid}: uploading second narrator {size2 / 1e6:.0f} MB", flush=True)
-                        subprocess.run(["gh", "release", "upload", RELEASE_TAG, str(web2), "-R", REPO, "--clobber"], check=True)
-                        have[web2.name] = size2
-                    if have.get(web2.name) == size2 or (not upload and old_eps.get(eid, {}).get("src2")):
-                        e["src2"] = URL + web2.name
             eps.append(e)
         series.append({k: s[k] for k in ("n", "title", "en", "dek", "topics")} | {"episodes": eps})
         print(f"第{s['n']}课 {s['title']}: {sum(e['ready'] for e in eps)}/{len(eps)} ready", flush=True)

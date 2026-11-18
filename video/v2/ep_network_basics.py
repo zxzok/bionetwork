@@ -553,7 +553,7 @@ class Episode(Narrated):
         with self.say("s2") as d:
             self.play(LaggedStart(*[FadeIn(p) for p in nz], lag_ratio=0.01), run_time=1.6)
             self.play(FadeIn(frac), run_time=0.8)
-        el = VGroup(*[Text(s, font="Menlo", font_size=26, color=INK) for s in ("P1    P7", "P1    P12", "P2    P9", "P3    P7", "P4    P15", "⋯")]
+        el = VGroup(*[Text(s, font="Source Code Pro", font_size=26, color=INK) for s in ("P1    P7", "P1    P12", "P2    P9", "P3    P7", "P4    P15", "⋯")]
                     ).arrange(DOWN, aligned_edge=LEFT, buff=0.2)
         box = SurroundingRectangle(el, color=MUTED, buff=0.3, corner_radius=0.12)
         elg = VGroup(box, el).move_to(RIGHT * 3.6 + DOWN * 0.2)
