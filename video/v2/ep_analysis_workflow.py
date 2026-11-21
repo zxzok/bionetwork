@@ -40,9 +40,9 @@ LINES = {
     "p2": "孤立点是没有边的节点。它拉低平均度，这里从二降到一点二五，还会让平均最短路径直接报错。",
     "p3": "再看方向。上面是一条调控链：有向时，中心性沿着方向递增；当成无向图，就变成首尾对称。",
     # weights
-    "q1": "最隐蔽的是权重。最短路径和介数把权重当距离：越大越远。",
-    "q2": "可相关系数和置信度是相似度：越大越近。直接传进去，最强的连接反而成了远路。",
-    "q3": "所以要先转换。常用两种：取倒数，或者取负对数。",
+    "x1": "最隐蔽的是权重。最短路径和介数把权重当距离：越大越远。",
+    "x2": "可相关系数和置信度是相似度：越大越近。直接传进去，最强的连接反而成了远路。",
+    "x3": "所以要先转换。常用两种：取倒数，或者取负对数。",
     "q3b": "取倒数，零点九变成一点一一，零点二变成五。取负对数时，路径长度对应沿途相似度的乘积。",
     "q4": "模块度和节点强度把权重当强度，不需要转换。最好两种属性分开存，调用时写明用哪个。",
     # communities
@@ -313,17 +313,17 @@ class Episode(Narrated):
     def weights(self):
         tag = self.chapter("二  权重：相似度还是距离")
         P, nodes, edges, labs = self.tri()
-        with self.say("q1") as d:
+        with self.say("x1") as d:
             self.play(FadeIn(tag), *[FadeIn(n) for n in nodes.values()], *[Create(e) for e in edges.values()], *[FadeIn(l) for l in labs.values()], run_time=1.0)
             rule = VGroup(T("最短路径 · 介数", 26, INK), T("权重 = 距离：越大越远", 26, RED)).arrange(DOWN, buff=0.15).move_to(RIGHT * 3.4 + UP * 2.0)
             self.play(FadeIn(rule), run_time=0.8)
-        with self.say("q2") as d:
+        with self.say("x2") as d:
             sim = VGroup(T("相关系数 · 置信度", 26, INK), T("权重 = 相似度：越大越近", 26, GREEN)).arrange(DOWN, buff=0.15).move_to(RIGHT * 3.4 + UP * 0.4)
             self.play(FadeIn(sim), run_time=0.8)
             self.play(edges[("甲", "乙")].animate.set_color(RED), edges[("乙", "丙")].animate.set_color(RED), run_time=0.6)
             far = T("被当成了远路", 24, RED).next_to(nodes["乙"], RIGHT, buff=0.3)
             self.play(FadeIn(far), run_time=0.6)
-        with self.say("q3") as d:
+        with self.say("x3") as d:
             self.play(FadeOut(far), *[e.animate.set_color(BLUE) for e in edges.values()], run_time=0.5)
             f1 = MathTex(r"d = \frac{1}{w}", font_size=44, color=INK)
             f2 = MathTex(r"d = -\log w", font_size=44, color=INK)

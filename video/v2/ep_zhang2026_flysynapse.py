@@ -279,7 +279,7 @@ class Episode(Narrated):
         self.remove(*keep)
         with self.say("t4b") as d:
             self.clip_on("ffl_pulse.mp4", "full", "本站交互演示：前馈环", start=0.3)
-        self.wait(max(0.05, 14.0 - (self.renderer.time - self._clip['t0'])))
+        self.wait(max(0.05, d + 1.0 - (self.renderer.time - self._clip['t0'])))  # demo only as long as its line (no silent stretch)
         self.clip_off()
         self.add(*keep)
         with self.say("t5") as d:

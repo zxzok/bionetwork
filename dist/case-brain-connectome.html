@@ -1,0 +1,239 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>真实数据案例 · 脑连接组：结构与功能连接 · 生物医学网络科学</title><meta name="description" content="脑连接组：结构与功能连接：用公开数据完成的一次完整分析"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-brain"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="courses.html">课程视频</a><a href="domains.html" aria-current="page">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html" data-lec="L01">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html" data-lec="L02">网络结构指标与随机图</a></li><li><a href="network-models.html" data-lec="L03">小世界与无标度网络模型</a></li><li><a href="community-structure.html" data-lec="L04">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html" data-lec="L05">网络上的传播与免疫</a></li><li><a href="synchronization.html" data-lec="L06">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html" data-lec="L07">网络可控性与稳定性</a></li></ol></details><details class="dom-brain" open><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html" data-lec="L09">脑连接组：结构与功能连接</a><ol class="sub"><li><a href="brain-connectome.connectome-concepts.html"><span class="n">01</span>连接组：结构连接与功能连接</a></li><li><a href="brain-connectome.parcellation.html"><span class="n">02</span>脑图谱与节点定义</a></li><li><a href="brain-connectome.structural-connectivity.html"><span class="n">03</span>结构连接：弥散 MRI 与纤维追踪</a></li><li><a href="brain-connectome.functional-connectivity.html"><span class="n">04</span>功能连接估计：相关与偏相关</a></li><li><a href="brain-connectome.preprocessing.html"><span class="n">05</span>预处理对功能连接的影响</a></li><li><a href="brain-connectome.effective-connectivity.html"><span class="n">06</span>有效连接：动态因果模型与格兰杰因果</a></li><li><a href="brain-connectome.thresholding.html"><span class="n">07</span>阈值与加权</a></li><li><a href="brain-connectome.weighted-metrics.html"><span class="n">08</span>加权脑网络指标与归一化</a></li><li><a href="brain-connectome.topology.html"><span class="n">09</span>拓扑指标：小世界、模块、枢纽与富人俱乐部</a></li><li><a href="brain-connectome.functional-systems.html"><span class="n">10</span>模块与功能系统</a></li><li><a href="brain-connectome.spatial-embedding.html"><span class="n">11</span>空间嵌入与布线代价</a></li><li><a href="brain-connectome.gradients.html"><span class="n">12</span>连接组梯度</a></li><li><a href="brain-connectome.group-comparison.html"><span class="n">13</span>组间比较与统计验证</a></li><li><a href="brain-connectome.individual-differences.html"><span class="n">14</span>个体指纹与个体差异</a></li><li><a href="brain-connectome.lesion-network-mapping.html"><span class="n">15</span>病变网络映射</a></li><li><a href="brain-connectome.pipeline.html"><span class="n">16</span>从 fMRI 到结论：分析流程与选择</a></li><li><a href="brain-connectome.derivations.html"><span class="n">17</span>数学推导与算法</a></li><li><a href="brain-connectome.frontiers.html"><span class="n">18</span>研究前沿与开放问题</a></li><li><a href="brain-connectome.biomedical.html"><span class="n">19</span>生物医学应用</a></li><li><a href="brain-connectome.limitations.html"><span class="n">20</span>适用范围与常见误用</a></li></ol></li><li><a href="dynamic-brain-networks.html" data-lec="L10">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html" data-lec="L11">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html" data-lec="L12">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html" data-lec="L13">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html" data-lec="L14">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html" data-lec="L08">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html" data-lec="L15">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html" data-lec="L16">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="courses.html">课程视频</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="d-brain.html">脑网络与连接组</a> <span class="sep">/</span> <a href="brain-connectome.html">脑连接组：结构与功能连接</a></nav><div class="eyebrow" style="margin-top:14px"><b>Case study</b><span>The connectome: structural and functional connectivity</span></div><h1>真实数据案例：脑连接组：结构与功能连接</h1><p class="dek">69 名健康成人的结构与功能连接组：组一致性阈值、小世界、富人俱乐部与结构–功能耦合</p><dl class="doc-meta"><div><dt>下载</dt><dd><a href="notebooks/case-brain-connectome.ipynb" download>Notebook</a> · <a href="data/lausanne68_sc_fc.csv" download>lausanne68_sc_fc.csv</a> · <a href="data/lausanne68_nodes.csv" download>lausanne68_nodes.csv</a></dd></div><div><dt>数据来源</dt><dd><a href="data-sources.html">数据来源与许可</a></dd></div><div><dt>浏览器</dt><dd><a class="lite-link" href="lite/notebooks/index.html?path=practice/case-brain-connectome.ipynb" target="_blank" rel="noopener">在 JupyterLite 中打开 ↗</a></dd></div></dl></header><section class="block ex-intro"><p class="small"><span class="py-status">代码可以直接在浏览器中运行，各段共享同一个 Python 会话：运行某一段时，前面尚未运行的段会先依次运行。首次加载 Python 环境约需 20–40 秒。</span> <button class="btn ghost run-all" type="button">从头运行全部</button></p></section><div class="case-body"><section class="block prose"># 69 名健康成人的结构与功能连接组：组一致性阈值、小世界、富人俱乐部与结构–功能耦合
+
+本案例用真实的弥散谱成像（DSI）结构连接和静息态 fMRI 功能连接，把[脑连接组](brain-connectome.html)专题的主要分析走一遍：构建组水平结构网络，计算聚集、效率和模块，与度保持随机网络比较，检验富人俱乐部，再看结构连接能在多大程度上解释功能连接，最后检查功能网络指标对阈值的依赖。
+
+**1. 数据来源**
+
+- 数据集：Griffa、Alemán-Gómez 与 Hagmann（2019）在 Zenodo 公开的 “Structural and functional connectome from 70 young healthy adults”，doi:[10.5281/zenodo.2872624](https://doi.org/10.5281/zenodo.2872624)，许可证 CC BY 4.0。下载日期 2026-11-20。
+- 被试与采集（据数据说明）：70 名健康成人（年龄 28.8 ± 9.1 岁，27 名女性），3T 扫描；DSI 序列重建纤维方向，确定性流线追踪；静息态 fMRI 共 280 个时间点，TR 1.92 s。
+- 结构连接的边权是**纤维密度**：两区之间的流线数，按流线平均长度和两区平均表面积归一化（Hagmann 等, 2008 的做法），用来部分校正追踪对长纤维的偏倚和脑区大小差异。功能连接是去除头动、白质和脑脊液信号并做 scrubbing 后的皮尔逊相关。
+- 本案例只用最粗的尺度：68 个皮层区（Desikan–Killiany 分区）。文件 `data/lausanne68_sc_fc.csv` 由原始 `.mat` 文件整理而来，处理步骤见 `data/SOURCES.md`。
+- 原文件不含脑区名称。脑区名称、半球、静息态子网络标签和坐标取自同一批数据的共识连接组记录（Shafiei 等, 2019, doi:[10.5281/zenodo.3067849](https://doi.org/10.5281/zenodo.3067849)，CC BY 4.0），整理为 `data/lausanne68_nodes.csv`；两份文件的节点顺序经组水平 SC、FC 的相关核对一致。节点 0–33 为右半球，34–67 为左半球，$i$ 与 $i+34$ 是同名脑区。</section><section class="block prose">## 2. 读入与清洗
+
+每行是一名被试的一种模态，列是上三角的 2278 条边（列名 `i-j`）。先还原成 $69\times68\times68$ 的对称矩阵，再做三项检查：矩阵对称、无缺失值；SC 非负、FC 在 $[-1,1]$ 内；每名被试结构网络的密度。</section><div class="cell seq-cell" data-i="0"><div class="cell-head"><h3>代码 1</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="30" spellcheck="false" aria-label="代码 1">import numpy as np
+import pandas as pd
+import networkx as nx
+import matplotlib.pyplot as plt
+from scipy.stats import spearmanr
+
+df = pd.read_csv(&quot;data/lausanne68_sc_fc.csv&quot;)
+N = 68
+iu = np.triu_indices(N, 1)
+assert list(df.columns[2:]) == [f&quot;{i}-{j}&quot; for i, j in zip(*iu)], &quot;列顺序与 triu_indices 不一致&quot;
+
+
+def to_matrices(mod):
+    V = df[df.modality == mod].iloc[:, 2:].to_numpy(float)
+    M = np.zeros((len(V), N, N))
+    M[:, iu[0], iu[1]] = V
+    return M + M.transpose(0, 2, 1)
+
+
+SC = to_matrices(&quot;SC&quot;)
+FC = to_matrices(&quot;FC&quot;)
+n_sub = SC.shape[0]
+print(&quot;被试数:&quot;, n_sub, &quot;；每人边数:&quot;, len(iu[0]))
+print(&quot;SC 缺失值:&quot;, np.isnan(SC).sum(), &quot; FC 缺失值:&quot;, np.isnan(FC).sum())
+print(&quot;SC 最小值 %.3g，FC 范围 [%.2f, %.2f]&quot; % (SC.min(), FC[:, iu[0], iu[1]].min(), FC[:, iu[0], iu[1]].max()))
+dens = (SC[:, iu[0], iu[1]] &gt; 0).mean(1)
+print(&quot;个体结构网络密度：均值 %.3f，范围 %.3f–%.3f&quot; % (dens.mean(), dens.min(), dens.max()))
+nz = SC[:, iu[0], iu[1]][SC[:, iu[0], iu[1]] &gt; 0]
+print(&quot;非零纤维密度跨越 %.1f 个数量级（第 1 到第 99 百分位）&quot; % np.log10(np.percentile(nz, 99) / np.percentile(nz, 1)))
+
+nodes = pd.read_csv(&quot;data/lausanne68_nodes.csv&quot;)
+assert (nodes.hemi[:34] == &quot;rh&quot;).all() and (nodes.hemi[34:] == &quot;lh&quot;).all()
+assert (nodes.region[:34].to_numpy() == nodes.region[34:].to_numpy()).all(), &quot;i 与 i+34 应为同名脑区&quot;
+hemi = np.where(nodes.hemi == &quot;rh&quot;, &quot;A&quot;, &quot;B&quot;)       # A = 右半球，B = 左半球
+lab_name = (nodes.short + &quot;-&quot; + nodes.hemi.str[0].str.upper()).to_numpy()   # 例如 PCUN-R
+same_hemi = hemi[:, None] == hemi[None, :]
+print(&quot;个体平均：半球内 SC 连接存在比例 %.2f，半球间 %.2f&quot;
+      % ((SC &gt; 0)[:, same_hemi &amp; ~np.eye(N, dtype=bool)].mean(), (SC &gt; 0)[:, ~same_hemi].mean()))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">纤维密度的分布极度偏斜、跨越几个数量级，这是专题页[边权的定义与归一化](brain-connectome.structural-connectivity.html)中提到的典型特征，所以后面比较边权时取对数或用秩相关。半球间的结构连接比半球内稀疏得多：胼胝体纤维集中在少数通路上，而且长程、穿过交叉区域的纤维本来就更难追踪到。</section><section class="block prose">## 3. 构网
+
+**结构网络**：用[组一致性阈值](brain-connectome.structural-connectivity.html)，只保留至少 50% 被试中都出现的连接，边权取所有被试纤维密度的平均。阈值从 30% 到 75% 时边数的变化也一并列出。
+
+**功能网络**：每名被试的 $r$ 做 Fisher $z$ 变换，平均后再反变换，得到组平均 FC。它几乎是全连接的，图论指标要么用加权形式，要么先阈值化（第 5 节）。</section><div class="cell seq-cell" data-i="1"><div class="cell-head"><h3>代码 2</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="30" spellcheck="false" aria-label="代码 2">presence = (SC &gt; 0).mean(0)
+for p in (0.3, 0.5, 0.75):
+    A_p = presence &gt;= p
+    np.fill_diagonal(A_p, False)
+    print(&quot;组一致性阈值 %.0f%%：%d 条边，密度 %.3f&quot; % (100 * p, A_p.sum() // 2, A_p.sum() / (N * (N - 1))))
+
+A = (presence &gt;= 0.5).astype(float)
+np.fill_diagonal(A, 0)
+W = np.where(A &gt; 0, SC.mean(0), 0.0)
+G = nx.from_numpy_array(A)
+print(&quot;组水平结构网络：%d 个节点，%d 条边，连通：%s&quot; % (G.number_of_nodes(), G.number_of_edges(), nx.is_connected(G)))
+
+Z = np.arctanh(np.clip(FC, -0.999, 0.999))
+FCg = np.tanh(Z.mean(0))
+np.fill_diagonal(FCg, 0)
+homo = np.array([FCg[i, i + 34] for i in range(34)])
+print(&quot;组平均 FC：全部边均值 %.3f；同源脑区对均值 %.3f；其余半球间边均值 %.3f&quot;
+      % (FCg[iu].mean(), homo.mean(), FCg[:34, 34:][~np.eye(34, dtype=bool)].mean()))
+
+fig, ax = plt.subplots(1, 2, figsize=(10, 4.2))
+im = ax[0].imshow(np.log10(W + 1e-5), cmap=&quot;viridis&quot;)
+ax[0].set_title(&quot;Group SC (log10 fibre density)&quot;)
+plt.colorbar(im, ax=ax[0], fraction=0.046)
+im = ax[1].imshow(FCg, cmap=&quot;RdBu_r&quot;, vmin=-0.8, vmax=0.8)
+ax[1].set_title(&quot;Group FC (Pearson r)&quot;)
+plt.colorbar(im, ax=ax[1], fraction=0.046)
+for a in ax:
+    a.axhline(33.5, color=&quot;k&quot;, lw=0.6)
+    a.axvline(33.5, color=&quot;k&quot;, lw=0.6)
+plt.tight_layout()</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">SC 矩阵的两个对角块（半球内）远比非对角块（半球间）稠密；FC 矩阵的非对角块里有一条清楚的“副对角线”，就是同源脑区对之间的强功能连接。</section><section class="block prose">## 4. 核心指标：分离、整合、模块与枢纽
+
+在二值结构网络上计算平均聚集系数 $C$、特征路径长度 $L$、全局效率 $E$；在加权网络上用 Louvain 做模块划分（固定随机种子，并重复 20 次检查稳定性），看模块与半球的对应关系；用度和参与系数区分“省内枢纽”和“连接枢纽”（见[拓扑指标](brain-connectome.topology.html)）。</section><div class="cell seq-cell" data-i="2"><div class="cell-head"><h3>代码 3</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="30" spellcheck="false" aria-label="代码 3">C = nx.average_clustering(G)
+L = nx.average_shortest_path_length(G)
+E = nx.global_efficiency(G)
+print(&quot;C = %.3f，L = %.3f，E = %.3f&quot; % (C, L, E))
+
+Gw = nx.from_numpy_array(W / W.max())
+parts = [nx.community.louvain_communities(Gw, weight=&quot;weight&quot;, seed=s) for s in range(20)]
+Qs = [nx.community.modularity(Gw, p, weight=&quot;weight&quot;) for p in parts]
+best = parts[int(np.argmax(Qs))]
+print(&quot;Louvain 20 次：Q = %.3f–%.3f，模块数 %s&quot; % (min(Qs), max(Qs), sorted({len(p) for p in parts})))
+lab = np.zeros(N, int)
+for k, c in enumerate(sorted(best, key=min)):
+    lab[list(c)] = k
+for k in range(lab.max() + 1):
+    members = np.where(lab == k)[0]
+    in_a = set(members[members &lt; 34])
+    in_b = set(members[members &gt;= 34] - 34)
+    note = &quot;，全部由成对的同源脑区组成&quot; if in_a and in_a == in_b else &quot;&quot;
+    print(&quot;  模块 %d：%2d 个节点，其中右半球 %2d 个、左半球 %2d 个%s&quot;
+          % (k, len(members), len(in_a), len(in_b), note))
+    if note:
+        print(&quot;     脑区：&quot;, &quot;, &quot;.join(sorted(nodes.region[sorted(in_a)])))
+
+deg = A.sum(1)
+kis = np.array([[A[i, lab == s].sum() for s in range(lab.max() + 1)] for i in range(N)])
+P = 1 - ((kis / deg[:, None]) ** 2).sum(1)
+order = np.argsort(deg)[::-1][:8]
+print(&quot;度最高的 8 个节点：&quot;, [lab_name[i] for i in order])
+print(&quot;  它们的度：&quot;, deg[order].astype(int).tolist())
+print(&quot;  参与系数：&quot;, np.round(P[order], 2).tolist())
+print(&quot;全部节点参与系数的中位数 %.2f&quot; % np.median(P))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">Louvain 多次运行给出的模块数（5 或 6 个）和 $Q$ 有小幅波动，这是模块度存在许多近似最优解的表现，正式分析应构建共识划分。两个最大的模块各自基本只占一个半球，说明结构模块首先反映了“半球”这一解剖事实；另外三个较小的模块横跨两半球，而且恰好由成对的同名脑区组成：内侧额叶与前扣带回、楔前叶与后扣带回一带、内侧枕叶视觉皮层。它们都位于大脑中线附近，两侧之间有胼胝体纤维直接相连，所以在模块划分中被“绑”在一起。
+
+度最高的节点是双侧顶上小叶、额上回、楔前叶和左侧岛叶——与专题页列举的结构枢纽（楔前叶/后扣带回、额上回、顶上小叶、岛叶）一致。它们中多数参与系数高于全部节点的中位数，连接分布在多个模块之间，更像“连接枢纽”；左侧岛叶的参与系数明显偏低，连接集中在本模块内。度与参与系数回答的是不同问题。</section><section class="block prose">## 5. 与零模型比较
+
+**(a) 小世界**：用 Maslov–Sneppen 度保持边交换（`nx.double_edge_swap`，每条边平均交换约 10 次）生成 20 个随机网络，计算 $C/C_{\text{rand}}$、$L/L_{\text{rand}}$ 和 $\sigma$。
+
+**(b) 富人俱乐部**：$\phi(k)$ 与度保持随机网络的 $\phi_{\text{rand}}(k)$ 之比 $\phi_{\text{norm}}(k)$。
+
+**(c) 结构–功能耦合**：有直接结构连接的脑区对，FC 是否更强？在这些脑区对中，纤维密度与 FC 的秩相关有多大？作为零模型，把 SC 边权在已有的边之间随机置换 1000 次。最后用脑区坐标检查空间距离的作用：近处的脑区既更容易有结构连接、FC 也更强，耦合中有多少只是二者共同依赖距离？这里用“对距离回归后的秩残差”之间的相关作为偏秩相关。</section><div class="cell seq-cell" data-i="3"><div class="cell-head"><h3>代码 4</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="30" spellcheck="false" aria-label="代码 4">rng = np.random.default_rng(0)
+Cr, Lr = [], []
+for s in range(20):
+    H = G.copy()
+    nx.double_edge_swap(H, nswap=10 * H.number_of_edges(), max_tries=10 ** 6, seed=int(rng.integers(1e9)))
+    if not nx.is_connected(H):
+        continue
+    Cr.append(nx.average_clustering(H))
+    Lr.append(nx.average_shortest_path_length(H))
+n_null = len(Cr)
+Cr, Lr = np.mean(Cr), np.mean(Lr)
+sigma = (C / Cr) / (L / Lr)
+print(&quot;度保持随机网络（%d 个连通样本）：C_rand = %.3f，L_rand = %.3f&quot; % (n_null, Cr, Lr))
+print(&quot;C/C_rand = %.2f，L/L_rand = %.2f，σ = %.2f&quot; % (C / Cr, L / Lr, sigma))
+
+ks = np.arange(5, 31)
+rc = nx.rich_club_coefficient(G, normalized=False)
+phi = np.array([rc.get(k, np.nan) for k in ks])
+phi_r = []
+for s in range(10):
+    H = G.copy()
+    nx.double_edge_swap(H, nswap=10 * H.number_of_edges(), max_tries=10 ** 6, seed=100 + s)
+    r = nx.rich_club_coefficient(H, normalized=False)
+    phi_r.append([r.get(k, np.nan) for k in ks])
+phi_r = np.nanmean(phi_r, 0)
+phi_norm = phi / phi_r
+n_rich = np.array([(deg &gt; k).sum() for k in ks])
+for k, f, fr, fn, nr in zip(ks, phi, phi_r, phi_norm, n_rich):
+    if k % 5 == 0:
+        print(&quot;k &gt; %2d：%2d 个节点，φ = %.2f，φ_rand = %.2f，φ_norm = %.2f&quot; % (k, nr, f, fr, fn))
+
+m = A[iu] &gt; 0
+fc_e = FCg[iu]
+print(&quot;有直接结构连接的脑区对：FC 均值 %.3f（%d 对）；没有的：%.3f（%d 对）&quot;
+      % (fc_e[m].mean(), m.sum(), fc_e[~m].mean(), (~m).sum()))
+rho_obs = spearmanr(W[iu][m], fc_e[m])[0]
+w_e = W[iu][m]
+null = [spearmanr(rng.permutation(w_e), fc_e[m])[0] for _ in range(1000)]
+print(&quot;有连接的脑区对中，纤维密度与 FC 的 Spearman ρ = %.3f；置换零分布 95%% 上界 %.3f&quot;
+      % (rho_obs, np.percentile(null, 95)))
+
+# 空间距离：连接概率与 FC 都随距离衰减，结构–功能耦合有多少只是“共同依赖距离”？
+xyz = nodes[[&quot;x&quot;, &quot;y&quot;, &quot;z&quot;]].to_numpy(float)
+dist = np.linalg.norm(xyz[:, None, :] - xyz[None, :, :], axis=2)
+d_e = dist[iu]
+same_e = same_hemi[iu]
+tert = np.quantile(d_e[same_e], [1 / 3, 2 / 3])
+for name_, lo, hi in ((&quot;近&quot;, 0, tert[0]), (&quot;中&quot;, tert[0], tert[1]), (&quot;远&quot;, tert[1], np.inf)):
+    mm = same_e &amp; (d_e &gt;= lo) &amp; (d_e &lt; hi)
+    print(&quot;半球内%s距离三分位：组网络连接概率 %.2f，平均 FC %.3f&quot; % (name_, m[mm].mean(), fc_e[mm].mean()))
+print(&quot;全部脑区对：FC 与距离的 Spearman ρ = %.3f&quot; % spearmanr(fc_e, d_e)[0])
+
+
+def rank_resid(y, x):
+    ry, rx = np.argsort(np.argsort(y)), np.argsort(np.argsort(x))
+    beta = np.polyfit(rx, ry, 1)
+    return ry - np.polyval(beta, rx)
+
+
+rho_partial = np.corrcoef(rank_resid(W[iu][m], d_e[m]), rank_resid(fc_e[m], d_e[m]))[0, 1]
+print(&quot;有连接的脑区对中，控制距离后纤维密度与 FC 的偏秩相关 = %.3f（未控制时 %.3f）&quot; % (rho_partial, rho_obs))
+
+# 同源脑区对的结构连接
+homo_sc = np.array([A[i, i + 34] for i in range(34)])
+print(&quot;34 对同源脑区中，组网络里有直接结构连接的有 %d 对；它们的 FC 均值 %.3f，无直接连接的 %.3f&quot;
+      % (homo_sc.sum(), homo[homo_sc &gt; 0].mean(), homo[homo_sc == 0].mean()))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 6. 阈值如何改变功能网络的“拓扑”
+
+对组平均 FC 做[比例阈值](brain-connectome.thresholding.html)（保留最强的正相关），在密度 5%–40% 上计算 $C$ 和 $E$，并与同边数 ER 随机图比较。</section><div class="cell seq-cell" data-i="4"><div class="cell-head"><h3>代码 5</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="20" spellcheck="false" aria-label="代码 5">def proportional(Fm, d):
+    w = Fm[iu]
+    k = int(round(d * len(w)))
+    keep = np.argsort(w)[::-1][:k]
+    H = nx.Graph()
+    H.add_nodes_from(range(N))
+    H.add_edges_from(zip(iu[0][keep], iu[1][keep]))
+    return H
+
+
+rows = []
+for d in (0.05, 0.10, 0.15, 0.20, 0.30, 0.40):
+    H = proportional(FCg, d)
+    R = nx.gnm_random_graph(N, H.number_of_edges(), seed=1)
+    rows.append((d, nx.average_clustering(H), nx.global_efficiency(H), nx.number_connected_components(H),
+                 nx.average_clustering(R)))
+print(&quot;密度   C      E      分量数  C/C_ER&quot;)
+for d, c, e, nc, cr in rows:
+    print(&quot;%.2f  %.3f  %.3f  %4d   %.2f&quot; % (d, c, e, nc, c / cr))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 7. 作图</section><div class="cell seq-cell" data-i="5"><div class="cell-head"><h3>代码 6</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="17" spellcheck="false" aria-label="代码 6">fig, ax = plt.subplots(1, 3, figsize=(14, 4))
+ax[0].scatter(np.log10(W[iu][m]), fc_e[m], s=8, alpha=0.5, label=&quot;direct SC&quot;)
+ax[0].set_xlabel(&quot;log10 fibre density&quot;)
+ax[0].set_ylabel(&quot;group FC&quot;)
+ax[0].set_title(&quot;SC-FC coupling, Spearman rho = %.2f&quot; % rho_obs)
+ax[1].plot(ks, phi_norm, &quot;o-&quot;, ms=3)
+ax[1].axhline(1, color=&quot;gray&quot;, ls=&quot;--&quot;)
+ax[1].set_xlabel(&quot;degree k&quot;)
+ax[1].set_ylabel(&quot;phi_norm(k)&quot;)
+ax[1].set_title(&quot;Rich club (degree-preserving null)&quot;)
+ax[2].plot([r[0] for r in rows], [r[1] for r in rows], &quot;o-&quot;, label=&quot;C&quot;)
+ax[2].plot([r[0] for r in rows], [r[2] for r in rows], &quot;s-&quot;, label=&quot;E&quot;)
+ax[2].set_xlabel(&quot;density&quot;)
+ax[2].legend()
+ax[2].set_title(&quot;FC metrics vs threshold&quot;)
+plt.tight_layout()</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 8. 解读与局限
+
+**结果**
+
+1. 组水平结构网络的聚集系数约为度保持随机网络的两倍，路径长度只长约 8%，$\sigma&gt;1$，与 Hagmann 等（2008）等结构网络研究报告的“高聚集、短路径”一致。
+2. 两个最大的结构模块各占一个半球，较小的模块由中线附近成对的同名脑区组成；度最高的是顶上小叶、额上回、楔前叶和岛叶，多数参与系数较高，但并非全部，仅凭度不能确定枢纽的角色。
+3. 未归一化的 $\phi(k)$ 随 $k$ 从约 0.27 升到 0.7，看起来像“富人俱乐部”；但度保持随机网络的 $\phi_{\text{rand}}(k)$ 几乎同样上升，$\phi_{\text{norm}}(k)$ 始终接近 1。也就是说，在这个 68 区、密度约 25% 的二值组网络中，高度节点之间的连接没有明显超出“度高所以更容易相连”的预期。这正是需要归一化的原因。它与 van den Heuvel &amp; Sporns（2011）在更高分辨率网络中报告的富人俱乐部并不矛盾：节点粗、网络稠密时，度最高的少数节点之间在随机网络里也几乎全连，留给“超出随机”的空间很小；改用更细的分区、加权富人俱乐部，或者更严格的一致性阈值，结论可能不同，应作为敏感性分析报告。
+4. 有直接结构连接的脑区对，FC 明显更强；在这些脑区对中，纤维密度与 FC 呈中等程度的正秩相关，远超置换零分布。同时，同源脑区之间即使在组网络中没有直接连接，FC 也很强——功能连接可以经由间接通路产生（Honey 等, 2009）。但空间距离是一个重要的共同因素：近处的脑区更容易有结构连接，FC 也更强；控制距离后，纤维密度与 FC 的偏秩相关从约 0.39 降到约 0.16，下降了一半以上——相当一部分“耦合”来自二者共同依赖距离。
+5. 功能网络的 $C$、$E$ 随密度单调变化，且低密度时网络会断开；只报告一个密度，结论就绑定在这个选择上。
+
+**局限**
+
+- 结构连接来自确定性流线追踪，存在系统性的假阳性和假阴性，长程连接尤其不可靠（见[重建偏倚](brain-connectome.structural-connectivity.html)）；组一致性阈值减少了假阳性，但也会删掉个体特异的真实连接。阈值从 30% 改到 75%，边数会改变近一倍。
+- 度保持随机网络破坏了空间嵌入：真实脑网络中相邻脑区更容易相连，单凭这一点就能抬高聚集。更严格的零模型应同时保持连接长度分布（见[空间嵌入与布线代价](brain-connectome.spatial-embedding.html)）。这里只用脑区坐标的欧氏距离做了一个粗略检查；坐标来自共识连接组文件，坐标空间未另行核实，只用于比较相对距离。
+- 只有 68 个皮层区，没有皮层下结构；节点数改变后所有指标的绝对值都会变（Zalesky 等, 2010），不宜与其他图谱的研究直接比较数值。
+- 组平均矩阵掩盖了个体差异；功能连接只有一次约 9 分钟的扫描，单条边的个体估计噪声较大。
+- 枢纽的解剖学解释依赖节点标签与分区：68 区的 Desikan–Killiany 分区中，顶上小叶、额上回等脑区面积很大，度高的一部分原因可能只是“节点大”。</section></div><nav class="pager"><a href="brain-connectome.html"><small>专题主页</small>脑连接组：结构与功能连接</a><a href="data-sources.html"><small>数据</small>数据来源与许可</a></nav><script type="application/json" id="ex-data">{"files": ["lausanne68_sc_fc.csv", "lausanne68_nodes.csv"], "tasks": []}</script></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="courses.html">课程视频</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

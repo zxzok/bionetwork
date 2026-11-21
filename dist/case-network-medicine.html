@@ -1,0 +1,228 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>真实数据案例 · 疾病模块、网络邻近度与药物重定位 · 生物医学网络科学</title><meta name="description" content="疾病模块、网络邻近度与药物重定位：用公开数据完成的一次完整分析"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-medicine"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="courses.html">课程视频</a><a href="domains.html" aria-current="page">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html" data-lec="L01">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html" data-lec="L02">网络结构指标与随机图</a></li><li><a href="network-models.html" data-lec="L03">小世界与无标度网络模型</a></li><li><a href="community-structure.html" data-lec="L04">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html" data-lec="L05">网络上的传播与免疫</a></li><li><a href="synchronization.html" data-lec="L06">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html" data-lec="L07">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html" data-lec="L09">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html" data-lec="L10">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html" data-lec="L11">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html" data-lec="L12">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html" data-lec="L13">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine" open><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html" data-lec="L14">疾病模块、网络邻近度与药物重定位</a><ol class="sub"><li><a href="network-medicine.framework.html"><span class="n">01</span>网络医学：把疾病看作网络的扰动</a></li><li><a href="network-medicine.disease-modules.html"><span class="n">02</span>疾病模块：定义与检测</a></li><li><a href="network-medicine.module-detection.html"><span class="n">03</span>疾病模块检测算法：从种子基因到完整模块</a></li><li><a href="network-medicine.network-propagation.html"><span class="n">04</span>网络传播：带重启随机游走与热扩散</a></li><li><a href="network-medicine.network-separation.html"><span class="n">05</span>疾病之间的网络分离度</a></li><li><a href="network-medicine.network-pharmacology.html"><span class="n">06</span>药物–靶点网络与网络药理学</a></li><li><a href="network-medicine.network-proximity.html"><span class="n">07</span>网络邻近度</a></li><li><a href="network-medicine.drug-combinations.html"><span class="n">08</span>药物组合的网络构型</a></li><li><a href="network-medicine.drug-repurposing.html"><span class="n">09</span>药物重定位：从网络预测到外部验证</a></li><li><a href="network-medicine.knowledge-graphs.html"><span class="n">10</span>异质网络、知识图谱与图机器学习</a></li><li><a href="network-medicine.link-prediction.html"><span class="n">11</span>链路预测与知识图谱嵌入</a></li><li><a href="network-medicine.validation-hierarchy.html"><span class="n">12</span>验证的层次：从回顾性基准到临床试验</a></li><li><a href="network-medicine.statistical-validation.html"><span class="n">13</span>统计要点：参考网络、度偏倚、显著性与外部验证</a></li><li><a href="network-medicine.author-team-research.html"><span class="n">14</span>基于网络可控性的靶点识别</a></li><li><a href="network-medicine.derivations.html"><span class="n">15</span>数学推导与算法</a></li><li><a href="network-medicine.frontiers.html"><span class="n">16</span>研究前沿与开放问题</a></li><li><a href="network-medicine.biomedical.html"><span class="n">17</span>生物医学应用</a></li><li><a href="network-medicine.limitations.html"><span class="n">18</span>适用范围与常见误用</a></li></ol></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html" data-lec="L08">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html" data-lec="L15">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html" data-lec="L16">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="courses.html">课程视频</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="d-medicine.html">网络医学与药物网络</a> <span class="sep">/</span> <a href="network-medicine.html">疾病模块、网络邻近度与药物重定位</a></nav><div class="eyebrow" style="margin-top:14px"><b>Case study</b><span>Disease modules, network proximity and drug repurposing</span></div><h1>真实数据案例：疾病模块、网络邻近度与药物重定位</h1><p class="dek">真实数据案例：11 种疾病的遗传关联基因在人类相互作用组中的模块、分离度与药物邻近度</p><dl class="doc-meta"><div><dt>下载</dt><dd><a href="notebooks/case-network-medicine.ipynb" download>Notebook</a> · <a href="data/string_human_physical_v12_s700.csv" download>string_human_physical_v12_s700.csv</a> · <a href="data/opentargets_disease_genes_ga.csv" download>opentargets_disease_genes_ga.csv</a> · <a href="data/opentargets_drug_targets.csv" download>opentargets_drug_targets.csv</a></dd></div><div><dt>数据来源</dt><dd><a href="data-sources.html">数据来源与许可</a></dd></div><div><dt>浏览器</dt><dd><a class="lite-link" href="lite/notebooks/index.html?path=practice/case-network-medicine.ipynb" target="_blank" rel="noopener">在 JupyterLite 中打开 ↗</a></dd></div></dl></header><section class="block ex-intro"><p class="small"><span class="py-status">代码可以直接在浏览器中运行，各段共享同一个 Python 会话：运行某一段时，前面尚未运行的段会先依次运行。首次加载 Python 环境约需 20–40 秒。</span> <button class="btn ghost run-all" type="button">从头运行全部</button></p></section><div class="case-body"><section class="block prose"># 真实数据案例：11 种疾病的遗传关联基因在人类相互作用组中的模块、分离度与药物邻近度
+
+**问题**：（1）遗传关联基因在蛋白相互作用网络中是否聚成可观测的疾病模块？（2）哪些疾病的模块彼此重叠，哪些相互分离？（3）已批准药物的靶点是否比其他药物更靠近其适应症的疾病模块？
+
+**数据来源**
+
+- 相互作用组：STRING v12.0 人类物理相互作用子网络，保留综合分数 ≥ 700 的边，86,519 条边、10,746 个蛋白（CC BY 4.0；Szklarczyk D, et al. *Nucleic Acids Res* 2023;51:D638–D646）。
+- 疾病基因：Open Targets Platform（数据版本 26.09）中 11 种疾病的遗传关联分数（genetic_association），文件保留分数 ≥ 0.5 的基因，本案例主分析取 ≥ 0.7（CC0 1.0；Buniello A, et al. *Nucleic Acids Res* 2025;53:D1467–D1475）。
+- 药物靶点：Open Targets 汇总的 ChEMBL 作用机制靶点，17 种药物；`approved_for` 列只标出这 11 种疾病中、临床阶段为“已批准”的适应症（ChEMBL 部分为 CC BY-SA 3.0；Zdrazil B, et al. *Nucleic Acids Res* 2024;52:D1180–D1192）。
+
+方法依次对应 [疾病模块](network-medicine.disease-modules.html)、[网络分离度](network-medicine.network-separation.html) 与 [网络邻近度](network-medicine.network-proximity.html)；度匹配的随机化见 [统计要点](network-medicine.statistical-validation.html)。最短路径用 scipy 的稀疏图广度优先搜索计算，浏览器里约需一两分钟。</section><div class="cell seq-cell" data-i="0"><div class="cell-head"><h3>代码 1</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="15" spellcheck="false" aria-label="代码 1">import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from scipy import sparse
+from scipy.sparse.csgraph import connected_components, shortest_path
+
+plt.rcParams[&quot;font.sans-serif&quot;] = [&quot;Noto Sans CJK SC&quot;, &quot;PingFang SC&quot;, &quot;Heiti SC&quot;, &quot;SimHei&quot;, &quot;DejaVu Sans&quot;]
+plt.rcParams[&quot;axes.unicode_minus&quot;] = False
+rng = np.random.default_rng(14)
+
+ppi = pd.read_csv(&quot;data/string_human_physical_v12_s700.csv&quot;)
+dg = pd.read_csv(&quot;data/opentargets_disease_genes_ga.csv&quot;)
+drugs = pd.read_csv(&quot;data/opentargets_drug_targets.csv&quot;).fillna(&quot;&quot;)
+print(&quot;相互作用：%d 条；疾病–基因关联（GA ≥ 0.5）：%d 行；药物：%d 种&quot; % (len(ppi), len(dg), len(drugs)))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 1 读入与清洗：取最大连通分支
+
+邻近度与分离度都基于最短路径，所以只在最大连通分支（LCC）上计算；落在 LCC 之外的疾病基因和靶点要报告丢掉了多少。</section><div class="cell seq-cell" data-i="1"><div class="cell-head"><h3>代码 2</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="24" spellcheck="false" aria-label="代码 2">nodes = pd.Index(sorted(set(ppi.protein1) | set(ppi.protein2)))
+ix = pd.Series(np.arange(len(nodes)), index=nodes)
+i, j = ix[ppi.protein1].values, ix[ppi.protein2].values
+Adj = sparse.coo_matrix((np.ones(len(i)), (i, j)), shape=(len(nodes),) * 2)
+Adj = ((Adj + Adj.T) &gt; 0).astype(np.int8).tocsr()
+ncomp, comp = connected_components(Adj, directed=False)
+big = np.bincount(comp).argmax()
+keep = np.where(comp == big)[0]
+G = Adj[keep][:, keep].tocsr()
+names = nodes[keep]
+gid = pd.Series(np.arange(len(names)), index=names)
+deg = np.asarray(G.sum(1)).ravel()
+N, M = G.shape[0], G.nnz // 2
+print(&quot;连通分支 %d 个；最大连通分支 %d 个节点、%d 条边，平均度 %.1f&quot; % (ncomp, N, M, deg.mean()))
+
+GA = 0.7
+diseases = dg.drop_duplicates(&quot;disease_id&quot;).set_index(&quot;disease_id&quot;)[&quot;disease&quot;]
+dsets = {}
+for did, name in diseases.items():
+    g = dg[(dg.disease_id == did) &amp; (dg.ga_score &gt;= GA)].gene
+    inn = [x for x in g if x in gid.index]
+    dsets[name] = np.array(sorted(gid[inn].values))
+    print(&quot;%-30s GA ≥ %.1f 的基因 %3d 个，在 LCC 中 %3d 个&quot; % (name, GA, len(g), len(inn)))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 2 构建度分箱，用于度匹配随机化
+
+节点按度升序排列，依次装箱，每箱至少 100 个节点；随机基因集中的每个基因都从与原基因同箱的节点中抽取。高度端的箱跨越的度范围较宽。</section><div class="cell seq-cell" data-i="2"><div class="cell-head"><h3>代码 3</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="25" spellcheck="false" aria-label="代码 3">order = np.argsort(deg, kind=&quot;stable&quot;)
+bin_of = np.empty(N, dtype=int)
+bins, cur = [], []
+for pos, v in enumerate(order):
+    cur.append(v)
+    nxt_same = pos + 1 &lt; N and deg[order[pos + 1]] == deg[v]     # 同一度数的节点放进同一个箱
+    if len(cur) &gt;= 100 and not nxt_same:
+        bins.append(np.array(cur)); cur = []
+if cur:                                                          # 剩下不足 100 个的并入最后一箱
+    bins[-1] = np.concatenate([bins[-1], cur])
+for k_, arr in enumerate(bins):
+    bin_of[arr] = k_
+print(&quot;度分箱 %d 个；最高箱的度范围 %d–%d&quot; % (len(bins), deg[bins[-1]].min(), deg[bins[-1]].max()))
+
+def degree_matched(S):
+    out = np.empty(len(S), dtype=int)
+    used = set()
+    for t, s in enumerate(S):
+        pool = bins[bin_of[s]]
+        c = rng.choice(pool)
+        while c in used:
+            c = rng.choice(pool)
+        used.add(c); out[t] = c
+    return out</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 3 核心指标一：疾病模块的大小（LCC）与显著性
+
+对每种疾病，取其基因在相互作用组中诱导的子图，记最大连通分支的大小 $S_\mathrm{LCC}$。零模型一：度匹配随机基因集（1000 次）；零模型二：从全网均匀随机抽取（不考虑度）。比较两种零模型给出的 $z$ 分数。</section><div class="cell seq-cell" data-i="3"><div class="cell-head"><h3>代码 4</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="22" spellcheck="false" aria-label="代码 4">def lcc_size(S):
+    sub = G[S][:, S]
+    _, c = connected_components(sub, directed=False)
+    return np.bincount(c).max() if len(S) else 0
+
+B = 1000
+rows = []
+for name, S in dsets.items():
+    obs = lcc_size(S)
+    null_d = np.array([lcc_size(degree_matched(S)) for _ in range(B)])
+    null_u = np.array([lcc_size(rng.choice(N, len(S), replace=False)) for _ in range(B)])
+    rows.append({&quot;疾病&quot;: name, &quot;基因数&quot;: len(S), &quot;LCC&quot;: obs,
+                 &quot;度匹配均值&quot;: null_d.mean(), &quot;z（度匹配）&quot;: (obs - null_d.mean()) / null_d.std(),
+                 &quot;p（度匹配）&quot;: (1 + (null_d &gt;= obs).sum()) / (B + 1),
+                 &quot;均匀均值&quot;: null_u.mean(), &quot;z（均匀）&quot;: (obs - null_u.mean()) / null_u.std()})
+mod = pd.DataFrame(rows).set_index(&quot;疾病&quot;)
+pd.set_option(&quot;display.width&quot;, 200)
+print(mod.round(2).to_string())
+alld = np.unique(np.concatenate(list(dsets.values())))
+print(&quot;\n全网平均度 %.1f；疾病基因平均度 %.1f（中位数 %d，全网中位数 %d）&quot;
+      % (deg.mean(), deg[alld].mean(), np.median(deg[alld]), np.median(deg)))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 4 核心指标二：疾病之间的网络分离度 $s_{AB}$
+
+$s_{AB}=\langle d_{AB}\rangle-\tfrac12(\langle d_{AA}\rangle+\langle d_{BB}\rangle)$。先从全部疾病基因出发做一次批量广度优先搜索，得到每个疾病基因到所有节点的距离，再按定义取最小值、求平均。$s_{AB}&lt;0$ 表示两个模块重叠或彼此穿插，$s_{AB}&gt;0$ 表示在网络中相互分离。同时记录两种疾病共有的基因数（Jaccard 指数）作对照。</section><div class="cell seq-cell" data-i="4"><div class="cell-head"><h3>代码 5</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="30" spellcheck="false" aria-label="代码 5">allg = np.unique(np.concatenate(list(dsets.values())))
+Dm = shortest_path(G, directed=False, unweighted=True, indices=allg)     # |allg| × N
+row = pd.Series(np.arange(len(allg)), index=allg)
+
+def d_within(S):
+    sub = Dm[row[S].values][:, S].copy()
+    np.fill_diagonal(sub, np.inf)
+    return sub.min(1).mean()
+
+def d_between(A_, B_):
+    sub = Dm[row[A_].values][:, B_]
+    return (sub.min(1).sum() + sub.min(0).sum()) / (len(A_) + len(B_))
+
+dn = list(dsets)
+dAA = {d: d_within(dsets[d]) for d in dn}
+sep = pd.DataFrame(0.0, index=dn, columns=dn)
+jac = pd.DataFrame(0.0, index=dn, columns=dn)
+for a in dn:
+    for b_ in dn:
+        if a != b_:
+            sep.loc[a, b_] = d_between(dsets[a], dsets[b_]) - (dAA[a] + dAA[b_]) / 2
+            sa, sb = set(dsets[a]), set(dsets[b_])
+            jac.loc[a, b_] = len(sa &amp; sb) / len(sa | sb)
+pairs = [(a, b_, sep.loc[a, b_], jac.loc[a, b_]) for k_, a in enumerate(dn) for b_ in dn[k_ + 1:]]
+pairs = pd.DataFrame(pairs, columns=[&quot;A&quot;, &quot;B&quot;, &quot;s_AB&quot;, &quot;Jaccard&quot;]).sort_values(&quot;s_AB&quot;)
+print(&quot;&lt;d_AA&gt;：&quot;, {d: round(v, 2) for d, v in dAA.items()})
+print(&quot;\n分离度最小（最重叠）的 6 对：\n&quot;, pairs.head(6).round(3).to_string(index=False))
+print(&quot;\n分离度最大的 6 对：\n&quot;, pairs.tail(6).round(3).to_string(index=False))
+nz = pairs[pairs.Jaccard == 0]
+print(&quot;\n没有共有基因的 %d 对中，s_AB &lt; 0 的有 %d 对&quot; % (len(nz), (nz.s_AB &lt; 0).sum()))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 5 核心指标三与零模型：药物靶点到疾病模块的邻近度
+
+最近距离 $d_c(S,T)=\frac1{|T|}\sum_{t\in T}\min_{s\in S}d(s,t)$。零模型：把靶点换成同度箱的随机节点（1000 次），得到 $z$ 分数。为了在浏览器中算得动，这里**只随机化靶点、疾病基因固定**；Guney 等（2016）的做法是两者都随机化，结论可能略有差异。</section><div class="cell seq-cell" data-i="5"><div class="cell-head"><h3>代码 6</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="22" spellcheck="false" aria-label="代码 6">min_to = {d: Dm[row[S].values].min(0) for d, S in dsets.items()}         # 每个节点到疾病模块的最近距离
+did_of = {v: k for k, v in diseases.items()}
+res = []
+for _, r in drugs.iterrows():
+    T = np.array([gid[t] for t in r.targets.split(&quot;;&quot;) if t in gid.index])
+    if len(T) == 0:
+        continue
+    approved = set(r.approved_for.split(&quot;;&quot;)) - {&quot;&quot;}
+    for d in dn:
+        m = min_to[d]
+        obs = m[T].mean()
+        null = np.array([m[degree_matched(T)].mean() for _ in range(B)])
+        z = (obs - null.mean()) / null.std() if null.std() &gt; 0 else np.nan
+        res.append({&quot;药物&quot;: r.drug, &quot;靶点数&quot;: len(T), &quot;疾病&quot;: d, &quot;d_c&quot;: obs, &quot;z&quot;: z,
+                    &quot;已批准&quot;: did_of[d] in approved})
+prox = pd.DataFrame(res)
+print(&quot;在 LCC 中有靶点的药物：%d 种；药物–疾病对：%d 个，其中已批准适应症 %d 对&quot;
+      % (prox[&quot;药物&quot;].nunique(), len(prox), prox[&quot;已批准&quot;].sum()))
+print(prox[prox[&quot;已批准&quot;]].round(2).sort_values(&quot;z&quot;).to_string(index=False))
+print(&quot;\n已批准对 z 的中位数 %.2f；其余对 %.2f&quot; % (prox[prox[&quot;已批准&quot;]].z.median(), prox[~prox[&quot;已批准&quot;]].z.median()))
+print(&quot;z &lt; -0.15 的比例：已批准 %.2f，其余 %.2f&quot; % ((prox[prox[&quot;已批准&quot;]].z &lt; -0.15).mean(), (prox[~prox[&quot;已批准&quot;]].z &lt; -0.15).mean()))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose"><p>已批准对与其余对的差别是否可能来自偶然？用置换检验：保持每种药物的已批准对数不变，在该药物的
+11 种疾病中随机重新指定“已批准”，重复 2000 次，看已批准对的
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>
+中位数有多少次不高于观测值。</p></section><div class="cell seq-cell" data-i="6"><div class="cell-head"><h3>代码 7</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="13" spellcheck="false" aria-label="代码 7">obs_med = prox[prox[&quot;已批准&quot;]].z.median()
+perm = []
+groups = [g_ for _, g_ in prox.groupby(&quot;药物&quot;)]
+for _ in range(2000):
+    zs = []
+    for g_ in groups:
+        k_ = int(g_[&quot;已批准&quot;].sum())
+        if k_:
+            zs.extend(rng.choice(g_.z.values, k_, replace=False))
+    perm.append(np.median(zs))
+perm = np.array(perm)
+print(&quot;观测中位数 %.2f；置换中位数的均值 %.2f；单侧 p = %.4f&quot; % (obs_med, perm.mean(), (1 + (perm &lt;= obs_med).sum()) / (len(perm) + 1)))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">**靶点本身就是疾病基因吗？** 检查每个已批准对中有多少靶点同时是该疾病的遗传关联基因（距离为 0）；去掉这些重叠靶点后重新计算 $z$（若一个靶点都不剩则记为缺失）。</section><div class="cell seq-cell" data-i="7"><div class="cell-head"><h3>代码 8</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="18" spellcheck="false" aria-label="代码 8">ov = []
+for _, r in prox[prox[&quot;已批准&quot;]].iterrows():
+    T = np.array([gid[t] for t in drugs.set_index(&quot;drug&quot;).loc[r[&quot;药物&quot;], &quot;targets&quot;].split(&quot;;&quot;) if t in gid.index])
+    Sset = set(dsets[r[&quot;疾病&quot;]])
+    T2 = np.array([t for t in T if t not in Sset])
+    m = min_to[r[&quot;疾病&quot;]]
+    if len(T2):
+        null = np.array([m[degree_matched(T2)].mean() for _ in range(B)])
+        z2 = (m[T2].mean() - null.mean()) / null.std() if null.std() &gt; 0 else np.nan
+    else:
+        z2 = np.nan
+    ov.append({&quot;药物&quot;: r[&quot;药物&quot;], &quot;疾病&quot;: r[&quot;疾病&quot;], &quot;靶点数&quot;: len(T), &quot;与疾病基因重叠&quot;: len(T) - len(T2),
+               &quot;z&quot;: r.z, &quot;去掉重叠后 z&quot;: z2})
+ov = pd.DataFrame(ov)
+print(ov.round(2).to_string(index=False))
+print(&quot;\n有重叠靶点的已批准对：%d / %d；去掉重叠后可计算的 %d 对，z 中位数 %.2f&quot;
+      % ((ov[&quot;与疾病基因重叠&quot;] &gt; 0).sum(), len(ov), ov[&quot;去掉重叠后 z&quot;].notna().sum(), ov[&quot;去掉重叠后 z&quot;].median()))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 6 作图
+
+左：两种零模型下疾病模块的 $z$ 分数；中：疾病之间的分离度矩阵；右：已批准与其他药物–疾病对的邻近度 $z$ 分数。</section><div class="cell seq-cell" data-i="8"><div class="cell-head"><h3>代码 9</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="29" spellcheck="false" aria-label="代码 9">fig, ax = plt.subplots(1, 3, figsize=(15, 4.6), gridspec_kw={&quot;width_ratios&quot;: [1, 1.25, 0.8]})
+o = mod.sort_values(&quot;z（度匹配）&quot;).index
+yy = np.arange(len(o))
+ax[0].scatter(mod.loc[o, &quot;z（均匀）&quot;], yy, marker=&quot;o&quot;, facecolors=&quot;none&quot;, edgecolors=&quot;#c0392b&quot;, label=&quot;均匀随机基线&quot;)
+ax[0].scatter(mod.loc[o, &quot;z（度匹配）&quot;], yy, marker=&quot;o&quot;, color=&quot;#3b6ea8&quot;, label=&quot;度匹配基线&quot;)
+ax[0].axvline(1.96, color=&quot;grey&quot;, ls=&quot;--&quot;, lw=1)
+ax[0].set_yticks(yy); ax[0].set_yticklabels(o, fontsize=8)
+ax[0].set_xlabel(&quot;疾病模块 LCC 的 z 分数&quot;)
+ax[0].set_title(&quot;两种随机基线给出的显著性不同&quot;)
+ax[0].legend(fontsize=8, loc=&quot;lower right&quot;)
+
+oo = sep.mean().sort_values().index
+lim = np.abs(sep.values).max()
+im = ax[1].imshow(sep.loc[oo, oo].values, cmap=&quot;RdBu&quot;, vmin=-lim, vmax=lim)
+ax[1].set_xticks(range(len(oo))); ax[1].set_xticklabels(oo, rotation=60, ha=&quot;right&quot;, fontsize=7)
+ax[1].set_yticks(range(len(oo))); ax[1].set_yticklabels(oo, fontsize=7)
+plt.colorbar(im, ax=ax[1], fraction=0.046, label=&quot;分离度 s_AB&quot;)
+ax[1].set_title(&quot;自身免疫病之间的模块彼此重叠（s_AB &lt; 0）&quot;)
+
+ax[2].boxplot([prox[~prox[&quot;已批准&quot;]].z.dropna(), prox[prox[&quot;已批准&quot;]].z.dropna()], widths=0.5)
+ax[2].set_xticks([1, 2]); ax[2].set_xticklabels([&quot;其他对&quot;, &quot;已批准适应症&quot;])
+for k_, flag in enumerate([False, True]):
+    v = prox[prox[&quot;已批准&quot;] == flag].z.dropna()
+    ax[2].scatter(np.full(len(v), k_ + 1) + rng.uniform(-0.12, 0.12, len(v)), v, s=8, alpha=0.5, color=&quot;#3b6ea8&quot;)
+ax[2].axhline(0, color=&quot;grey&quot;, lw=1)
+ax[2].set_ylabel(&quot;邻近度 z 分数（越负越近）&quot;)
+ax[2].set_title(&quot;已批准药物的靶点更靠近疾病模块&quot;)
+plt.tight_layout()</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">**敏感性：换一个遗传关联阈值。** 把 GA 阈值从 0.7 降到 0.5（基因数大约翻倍），重新计算疾病模块的度匹配 $z$ 分数（200 次随机化）。</section><div class="cell seq-cell" data-i="9"><div class="cell-head"><h3>代码 10</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="9" spellcheck="false" aria-label="代码 10">for name in dn:
+    did = did_of[name]
+    g = dg[(dg.disease_id == did) &amp; (dg.ga_score &gt;= 0.5)].gene
+    S5 = np.array(sorted(gid[[x for x in g if x in gid.index]].values))
+    obs = lcc_size(S5)
+    null = np.array([lcc_size(degree_matched(S5)) for _ in range(200)])
+    print(&quot;%-30s GA≥0.5：%3d 个基因，LCC %3d，z = %5.2f   （GA≥0.7 时 z = %5.2f）&quot;
+          % (name, len(S5), obs, (obs - null.mean()) / null.std(), mod.loc[name, &quot;z（度匹配）&quot;]))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 7 解读与局限
+
+**结果说明了什么**
+
+- **疾病模块**：11 种疾病中有 9 种的遗传关联基因在相互作用组中形成大于度匹配随机期望的连通分支（$p&lt;0.05$），但可观测模块只包含一部分疾病基因，例如阿尔茨海默病 43 个基因中 15 个连成一片。这与 Menche 等（2015）“相互作用组不完整、可观测模块偏小”的解释一致。精神分裂症与双相障碍的基因几乎不相连，GA ≥ 0.7 时模块不显著。
+- **零模型的方向**：这里均匀随机基线给出的 $z$ 反而比度匹配基线小，因为这批遗传关联基因的平均度（13.9）低于全网（17.4）。度偏倚的方向取决于基因集本身：基因集偏向枢纽时，不考虑度会夸大显著性；偏向低度节点时则会低估。所以要用度匹配基线，而不是猜测偏倚的方向。
+- **分离度**：克罗恩病与溃疡性结肠炎重叠最多（$s_{AB}=-0.66$），其次是精神分裂症与双相障碍、类风湿关节炎与系统性红斑狼疮；阿尔茨海默病、冠状动脉疾病与炎症性疾病相互分离（$s_{AB}\approx0.7$）。在这批数据中，$s_{AB}&lt;0$ 的疾病对都有共有基因；没有共有基因的 12 对全部 $s_{AB}&gt;0$。
+- **药物邻近度**：已批准适应症对的 $z$ 中位数约为 −1.8，低于其他药物–疾病对（约 −0.7），置换检验 $p&lt;0.01$。但两组分布重叠很大，单个药物–疾病对的 $z$ 不足以区分“有效”与“无效”。
+
+**局限**
+
+- **循环论证**：19 个已批准对中有 6 个的靶点本身就是该疾病的遗传关联基因（如格列本脲的 *ABCC8*/*KCNJ11* 之于 2 型糖尿病，乌司奴单抗的靶点之于炎症性肠病和银屑病），这些靶点的距离为 0，把 $z$ 拉得很低。去掉重叠靶点后 $z$ 变弱，但中位数仍约为 −1.8。严格的验证应排除重叠靶点，或使用独立来源的疾病基因。
+- **参照网络的偏倚**：STRING 物理子网络综合了实验、数据库与文本挖掘证据，研究越多的蛋白连接越多。度匹配只能部分校正这种“知识偏倚”。
+- **阈值与零模型的选择**：GA 阈值从 0.7 降到 0.5 后，精神分裂症的模块变得显著，多数疾病的 $z$ 也明显变大（基因多了，LCC 更大）。STRING 分数阈值、度分箱粒度和随机化方案（只随机化靶点还是两者都随机化）同样会改变 $z$。结论应报告这些选择下的稳定性（见 [研究问题、可复现分析与敏感性分析](reproducible-research.html) 的真实数据案例）。
+- **网络接近不等于疗效**：邻近度不含作用方向（激活还是抑制）、组织表达、剂量与毒性；它产生的是需要用人群数据和试验检验的假设，见 [验证的层次](network-medicine.validation-hierarchy.html)。</section></div><nav class="pager"><a href="network-medicine.html"><small>专题主页</small>疾病模块、网络邻近度与药物重定位</a><a href="data-sources.html"><small>数据</small>数据来源与许可</a></nav><script type="application/json" id="ex-data">{"files": ["string_human_physical_v12_s700.csv", "opentargets_disease_genes_ga.csv", "opentargets_drug_targets.csv"], "tasks": []}</script></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="courses.html">课程视频</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

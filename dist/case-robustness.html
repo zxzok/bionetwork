@@ -1,0 +1,233 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>真实数据案例 · 网络鲁棒性、渗流与级联失效 · 生物医学网络科学</title><meta name="description" content="网络鲁棒性、渗流与级联失效：用公开数据完成的一次完整分析"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-dynamics"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="courses.html">课程视频</a><a href="domains.html" aria-current="page">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html" data-lec="L01">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html" data-lec="L02">网络结构指标与随机图</a></li><li><a href="network-models.html" data-lec="L03">小世界与无标度网络模型</a></li><li><a href="community-structure.html" data-lec="L04">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics" open><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html" data-lec="L05">网络上的传播与免疫</a></li><li><a href="synchronization.html" data-lec="L06">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a><ol class="sub"><li><a href="robustness.percolation.html"><span class="n">01</span>渗流理论与网络碎裂</a></li><li><a href="robustness.generating-functions.html"><span class="n">02</span>生成函数方法与 Molloy–Reed 判据</a></li><li><a href="robustness.random-failure.html"><span class="n">03</span>随机失效与无标度网络</a></li><li><a href="robustness.targeted-attack.html"><span class="n">04</span>蓄意攻击：按度、介数与自适应攻击</a></li><li><a href="robustness.robustness-measures.html"><span class="n">05</span>鲁棒性度量：R 指标与功能性指标</a></li><li><a href="robustness.load-cascades.html"><span class="n">06</span>级联失效：负载重分配</a></li><li><a href="robustness.threshold-branching.html"><span class="n">07</span>阈值级联与分支过程</a></li><li><a href="robustness.interdependent-networks.html"><span class="n">08</span>相互依存网络与多层网络的渗流</a></li><li><a href="robustness.robustness-optimization.html"><span class="n">09</span>鲁棒性优化与网络设计</a></li><li><a href="robustness.biological-robustness.html"><span class="n">10</span>生物系统的鲁棒性：冗余、缓冲与必需性</a></li><li><a href="robustness.metabolic-knockouts.html"><span class="n">11</span>代谢网络的基因敲除与级联</a></li><li><a href="robustness.brain-lesions.html"><span class="n">12</span>脑损伤与病变的网络后果</a></li><li><a href="robustness.synthetic-lethality.html"><span class="n">13</span>合成致死与癌症治疗</a></li><li><a href="robustness.derivations.html"><span class="n">14</span>数学推导与算法</a></li><li><a href="robustness.frontiers.html"><span class="n">15</span>研究前沿与开放问题</a></li><li><a href="robustness.biomedical.html"><span class="n">16</span>生物医学应用</a></li><li><a href="robustness.limitations.html"><span class="n">17</span>适用范围与常见误用</a></li></ol></li><li><a href="controllability.html" data-lec="L07">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html" data-lec="L09">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html" data-lec="L10">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html" data-lec="L11">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html" data-lec="L12">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html" data-lec="L13">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html" data-lec="L14">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html" data-lec="L08">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html" data-lec="L15">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html" data-lec="L16">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="courses.html">课程视频</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="d-dynamics.html">网络动力学与控制</a> <span class="sep">/</span> <a href="robustness.html">网络鲁棒性、渗流与级联失效</a></nav><div class="eyebrow" style="margin-top:14px"><b>Case study</b><span>Robustness, percolation and cascading failures</span></div><h1>真实数据案例：网络鲁棒性、渗流与级联失效</h1><p class="dek">酵母蛋白相互作用网络的鲁棒性：随机失效、蓄意攻击与必需基因</p><dl class="doc-meta"><div><dt>下载</dt><dd><a href="notebooks/case-robustness.ipynb" download>Notebook</a> · <a href="data/yeast_ppi_biogrid.csv" download>yeast_ppi_biogrid.csv</a> · <a href="data/yeast_genes_essential.csv" download>yeast_genes_essential.csv</a></dd></div><div><dt>数据来源</dt><dd><a href="data-sources.html">数据来源与许可</a></dd></div><div><dt>浏览器</dt><dd><a class="lite-link" href="lite/notebooks/index.html?path=practice/case-robustness.ipynb" target="_blank" rel="noopener">在 JupyterLite 中打开 ↗</a></dd></div></dl></header><section class="block ex-intro"><p class="small"><span class="py-status">代码可以直接在浏览器中运行，各段共享同一个 Python 会话：运行某一段时，前面尚未运行的段会先依次运行。首次加载 Python 环境约需 20–40 秒。</span> <button class="btn ghost run-all" type="button">从头运行全部</button></p></section><div class="case-body"><section class="block prose"># 酵母蛋白相互作用网络的鲁棒性：随机失效、蓄意攻击与必需基因
+
+本案例用 BioGRID 中实验测定的酿酒酵母蛋白物理相互作用，完整做一次网络鲁棒性分析：由度分布算出 Molloy–Reed 判据与理论随机失效阈值，模拟随机删点、按初始度攻击、按自适应度攻击和按初始介数攻击，计算最大连通分支曲线、$f_c$ 与 R 指标，并与保度随机化网络和同规模 ER 网络比较；最后用 SGD 的基因敲除表型，检验“结构碎裂”与“功能丧失（致死）”是不是同一回事。所用定义与[渗流理论与网络碎裂](robustness.percolation.html)、[生成函数方法与 Molloy–Reed 判据](robustness.generating-functions.html)、[蓄意攻击](robustness.targeted-attack.html)、[鲁棒性度量](robustness.robustness-measures.html)、[生物系统的鲁棒性](robustness.biological-robustness.html)一致。
+
+## 1. 数据来源
+
+- 相互作用：BioGRID 5.0.263（文件 `BIOGRID-ORGANISM-Saccharomyces_cerevisiae_S288c-5.0.263.tab3.txt`，&lt;https://downloads.thebiogrid.org/BioGRID/Release-Archive/BIOGRID-5.0.263/&gt;，2026-11-20 下载）。许可证：MIT（&lt;https://wiki.thebiogrid.org/doku.php/terms_and_conditions&gt;）。引用：Oughtred R, et al.（2019）The BioGRID interaction database: 2019 update. *Nucleic Acids Research* 47(D1):D529–D541。
+- 整理：只保留物理相互作用（去掉遗传相互作用以及 Affinity Capture-RNA、Protein-RNA 两类蛋白–RNA 记录），按无序蛋白对合并，**只保留至少 2 篇独立文献报告过的蛋白对**，得到 `data/yeast_ppi_biogrid.csv`（25 006 对，`n_pub` 为支持文献数）。这一筛选去掉了大量只被单次高通量实验报告的相互作用，代价是网络更小、更偏向被研究得多的蛋白。
+- 必需性：酵母基因组数据库（SGD）表型注释 `phenotype_data.tab`（&lt;https://downloads.yeastgenome.org/curation/literature/phenotype_data.tab&gt;，2026-11-20 下载），许可证 CC BY 4.0。在实验类型为 “systematic mutation set”（全基因组缺失株集合）、突变类型为 null 的注释中，只有 “inviable” 的基因记为必需（1），只有 “viable” 的记为非必需（0），其余为空，见 `data/yeast_genes_essential.csv`。引用：Engel SR, et al.（2022）*Genetics* 220: iyab224。</section><section class="block prose">## 2. 读入与清洗
+
+检查自环与重复对，统计支持文献数的分布；必需性表中空值（注释冲突或缺失）的基因在分析必需性时排除，但仍保留在网络里。</section><div class="cell seq-cell" data-i="0"><div class="cell-head"><h3>代码 1</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="14" spellcheck="false" aria-label="代码 1">import time
+import numpy as np
+import pandas as pd
+import networkx as nx
+import matplotlib.pyplot as plt
+
+t0 = time.time()
+ppi = pd.read_csv(&quot;data/yeast_ppi_biogrid.csv&quot;)
+genes = pd.read_csv(&quot;data/yeast_genes_essential.csv&quot;)
+print(&quot;蛋白对 %d 条；自环 %d；重复对 %d&quot; % (len(ppi), (ppi.a == ppi.b).sum(), ppi.duplicated([&quot;a&quot;, &quot;b&quot;]).sum()))
+print(&quot;支持文献数 n_pub：中位数 %d，≥5 篇的占 %.1f%%&quot; % (ppi.n_pub.median(), 100 * (ppi.n_pub &gt;= 5).mean()))
+print(&quot;基因表 %d 个：必需 %d，非必需 %d，未定 %d&quot;
+      % (len(genes), (genes.essential == 1).sum(), (genes.essential == 0).sum(), genes.essential.isna().sum()))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 3. 构网
+
+节点是蛋白（以 ORF 系统名标识），无向边表示至少两篇文献报告的物理相互作用。鲁棒性分析在**最大连通分支**上进行（$N$ 取最大分支的节点数），这是渗流文献的通常做法。</section><div class="cell seq-cell" data-i="1"><div class="cell-head"><h3>代码 2</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="16" spellcheck="false" aria-label="代码 2">G0 = nx.from_pandas_edgelist(ppi, &quot;a&quot;, &quot;b&quot;)
+comps = sorted(nx.connected_components(G0), key=len, reverse=True)
+G = G0.subgraph(comps[0]).copy()
+print(&quot;全网 %d 个蛋白、%d 条边、%d 个连通分支；最大分支 %d 个蛋白（%.1f%%）、%d 条边&quot;
+      % (G0.number_of_nodes(), G0.number_of_edges(), len(comps), G.number_of_nodes(),
+         100 * G.number_of_nodes() / G0.number_of_nodes(), G.number_of_edges()))
+nodes = list(G.nodes())
+idx = {v: i for i, v in enumerate(nodes)}
+N = len(nodes)
+eu = np.array([(idx[u], idx[v]) for u, v in G.edges()])
+k = np.bincount(eu.ravel(), minlength=N).astype(float)
+sym = dict(zip(genes.orf, genes.symbol))
+print(&quot;&lt;k&gt; = %.2f，&lt;k^2&gt; = %.1f，最大度 %d（%s）&quot; % (k.mean(), (k**2).mean(), k.max(), sym.get(nodes[int(k.argmax())])))
+print(&quot;度最高的 10 个蛋白:&quot;, [sym.get(nodes[i]) for i in np.argsort(-k)[:10]])
+print(&quot;平均聚集系数 %.3f，度同配系数 %.3f&quot; % (nx.average_clustering(G), nx.degree_assortativity_coefficient(G)))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 4. 核心指标
+
+**（1）理论阈值。** $\kappa_0=\langle k^2\rangle/\langle k\rangle$；Molloy–Reed 判据 $\kappa_0&gt;2$ 时存在巨分支；配置模型的随机失效阈值 $f_c=1-1/(\kappa_0-1)$。对同样 $\langle k\rangle$ 的 ER 网络 $f_c^{ER}=1-1/\langle k\rangle$。
+
+**（2）模拟。** 四种删点策略：随机（random，20 次平均）、按初始度（ID）、按自适应度（RD，每删一个节点后重新计算度）、按初始介数（IB，用 500 个源点近似）。对每种删除顺序，倒序“加回”节点并用并查集维护连通分支（Newman–Ziff 思路），一次得到删去 $Q=0,1,\dots,N$ 个节点后的最大分支比例 $s(Q)$ 与第二大分支。由此计算
+
+- R 指标 $R=\frac1N\sum_{Q=1}^{N}s(Q)$（Schneider 等 2011）；
+- $f_c$ 的两种判定：**1% 规则**（最大分支首次低于原规模 1%）和**第二大分支峰值**。专题页提醒，不同规则可以相差不少，报告时要写明。</section><div class="cell seq-cell" data-i="2"><div class="cell-head"><h3>代码 3</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="30" spellcheck="false" aria-label="代码 3">rng = np.random.default_rng(7)
+
+def neighbors_of(eu, N):
+    nb = [[] for _ in range(N)]
+    for u, v in eu:
+        nb[u].append(v); nb[v].append(u)
+    return nb
+
+def curve_from_order(order, nb, N, n_check=400):
+    &quot;&quot;&quot;order：删除顺序（长度 N）。返回 s1[Q]：删去前 Q 个节点后最大分支的节点比例（每个 Q 都算），
+    以及 s2[Q]：第二大分支比例（只在约 n_check 个等间隔的 Q 上计算，其余为 nan）。&quot;&quot;&quot;
+    parent = np.arange(N); size = np.ones(N, int); present = np.zeros(N, bool)
+    def find(x):
+        while parent[x] != x:
+            parent[x] = parent[parent[x]]; x = parent[x]
+        return x
+    s1 = np.zeros(N + 1); s2 = np.full(N + 1, np.nan); s2[N] = 0.0
+    big = 0
+    roots = set()                               # 当前所有分支的根
+    every = max(1, N // n_check)
+    for step, v in enumerate(order[::-1]):      # 倒序加回
+        present[v] = True; roots.add(v); big = max(big, 1)
+        for w in nb[v]:
+            if present[w]:
+                a, b = find(v), find(w)
+                if a != b:
+                    if size[a] &lt; size[b]:
+                        a, b = b, a
+                    parent[b] = a; size[a] += size[b]; roots.discard(b)
+                    big = max(big, size[a])
+        Q = N - step - 1
+        s1[Q] = big / N
+        if Q % every == 0:
+            top = sorted((size[r] for r in roots), reverse=True)[:2]
+            s2[Q] = (top[1] / N) if len(top) &gt; 1 else 0.0
+    return s1, s2
+
+def adaptive_degree_order(eu, N):
+    nb = [set(x) for x in neighbors_of(eu, N)]
+    deg = np.array([len(x) for x in nb]); alive = np.ones(N, bool); order = []
+    import heapq
+    heap = [(-d, v) for v, d in enumerate(deg)]; heapq.heapify(heap)
+    while heap:
+        d, v = heapq.heappop(heap)
+        if not alive[v] or -d != deg[v]:
+            continue
+        alive[v] = False; order.append(v)
+        for w in nb[v]:
+            if alive[w]:
+                deg[w] -= 1; heapq.heappush(heap, (-deg[w], w))
+    return np.array(order)
+
+def all_curves(eu, N, n_random=20, betweenness=True, seed=0):
+    r = np.random.default_rng(seed)
+    nb = neighbors_of(eu, N)
+    deg = np.array([len(x) for x in nb])
+    out = {}
+    rs = [curve_from_order(r.permutation(N), nb, N) for _ in range(n_random)]
+    out[&quot;random&quot;] = (np.mean([x[0] for x in rs], axis=0), np.mean([x[1] for x in rs], axis=0))  # s2 的 nan 位置相同
+    out[&quot;ID&quot;] = curve_from_order(np.argsort(-deg, kind=&quot;stable&quot;), nb, N)
+    out[&quot;RD&quot;] = curve_from_order(adaptive_degree_order(eu, N), nb, N)
+    if betweenness:
+        H = nx.Graph(); H.add_nodes_from(range(N)); H.add_edges_from(eu)
+        bc = nx.betweenness_centrality(H, k=min(500, N), seed=seed)
+        out[&quot;IB&quot;] = curve_from_order(np.array(sorted(range(N), key=lambda v: -bc[v])), nb, N)
+    return out
+
+def R_index(s1):
+    return s1[1:].sum() / (len(s1) - 1)
+
+def fc_rules(s1, s2):
+    f = np.arange(len(s1)) / (len(s1) - 1)
+    one = f[np.argmax(s1 &lt; 0.01 * s1[0])]
+    peak = f[np.nanargmax(s2)]
+    return one, peak
+
+kappa = (k**2).mean() / k.mean()
+print(&quot;kappa_0 = &lt;k^2&gt;/&lt;k&gt; = %.2f（Molloy–Reed：&gt; 2 存在巨分支）&quot; % kappa)
+print(&quot;配置模型理论随机失效阈值 f_c = 1 - 1/(kappa_0 - 1) = %.3f；同 &lt;k&gt; 的 ER 理论值 1 - 1/&lt;k&gt; = %.3f&quot;
+      % (1 - 1 / (kappa - 1), 1 - 1 / k.mean()))
+
+real = all_curves(eu, N, seed=1)
+print(&quot;\n%-8s %8s %14s %18s&quot; % (&quot;策略&quot;, &quot;R&quot;, &quot;f_c(1%规则)&quot;, &quot;f_c(第二大分支峰)&quot;))
+for st, (s1, s2) in real.items():
+    print(&quot;%-8s %8.3f %14.3f %18.3f&quot; % (st, R_index(s1), *fc_rules(s1, s2)))
+f = np.arange(N + 1) / N
+for st in [&quot;random&quot;, &quot;ID&quot;, &quot;RD&quot;]:
+    s1 = real[st][0]
+    print(&quot;删去 5%% 的节点后（%s），最大分支剩 %.1f%%&quot; % (st, 100 * s1[int(0.05 * N)]))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">**必需基因。** 先看度与必需性的关系（[Jeong 等 2001](paper-jeong2001_lethality.html) 的经典观察），再做一个“功能 vs 结构”的对照：一次删去全部必需蛋白（细胞层面必然致死），看网络碎裂到什么程度，并与删去同样数目的随机蛋白、按度最高的蛋白比较。</section><div class="cell seq-cell" data-i="3"><div class="cell-head"><h3>代码 4</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="30" spellcheck="false" aria-label="代码 4">ess = np.array([genes.set_index(&quot;orf&quot;).essential.get(v, np.nan) for v in nodes])
+known = ~np.isnan(ess)
+print(&quot;最大分支中必需性已知的蛋白 %d 个，其中必需 %d 个（%.1f%%）&quot;
+      % (known.sum(), (ess == 1).sum(), 100 * np.nanmean(ess)))
+bins = [1, 2, 4, 8, 16, 32, 64, 1000]
+lab = pd.cut(k[known], bins, right=False)
+tab = pd.DataFrame({&quot;deg&quot;: lab, &quot;ess&quot;: ess[known]}).groupby(&quot;deg&quot;, observed=True).ess.agg([&quot;size&quot;, &quot;mean&quot;])
+tab.columns = [&quot;蛋白数&quot;, &quot;必需比例&quot;]
+print(tab.round(3).to_string())
+from scipy.stats import mannwhitneyu
+print(&quot;必需蛋白度的中位数 %.0f，非必需 %.0f；Mann–Whitney 单侧 p = %.1e&quot;
+      % (np.median(k[ess == 1]), np.median(k[ess == 0]),
+         mannwhitneyu(k[ess == 1], k[ess == 0], alternative=&quot;greater&quot;).pvalue))
+
+def lcc_after_removal(removed):
+    keep = np.ones(N, bool); keep[removed] = False
+    H = nx.Graph(); H.add_nodes_from(np.where(keep)[0])
+    H.add_edges_from(eu[keep[eu[:, 0]] &amp; keep[eu[:, 1]]])
+    return max(len(c) for c in nx.connected_components(H)) / N
+
+E_set = np.where(ess == 1)[0]
+m = len(E_set)
+lcc_ess = lcc_after_removal(E_set)
+lcc_rand = [lcc_after_removal(rng.choice(N, m, replace=False)) for _ in range(20)]
+lcc_top = lcc_after_removal(np.argsort(-k)[:m])
+print(&quot;\n删去 %d 个蛋白（%.1f%% 的节点）后的最大分支比例：&quot; % (m, 100 * m / N))
+print(&quot;  全部必需蛋白：%.3f&quot; % lcc_ess)
+print(&quot;  随机蛋白：    %.3f ± %.3f&quot; % (np.mean(lcc_rand), np.std(lcc_rand)))
+print(&quot;  度最高的蛋白：%.3f&quot; % lcc_top)</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 5. 与零模型比较
+
+两个零模型：（a）**保度随机化**（双边交换，每个蛋白的度不变），检验“鲁棒性是否只由度序列决定”；（b）**ER 网络**（同样 $N$、$L$），代表“没有度异质性”的情形。随机网络取其最大连通分支后再分析。专题页把“比随机化网络更鲁棒”（增强鲁棒性）作为可检验的命题，这里直接比较。</section><div class="cell seq-cell" data-i="4"><div class="cell-head"><h3>代码 5</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="23" spellcheck="false" aria-label="代码 5">def as_index_edges(H):
+    H = H.subgraph(max(nx.connected_components(H), key=len)).copy()
+    mp = {v: i for i, v in enumerate(H.nodes())}
+    return np.array([(mp[u], mp[v]) for u, v in H.edges()]), H.number_of_nodes(), H
+
+null_curves = {}
+Hc = G.copy()
+nx.double_edge_swap(Hc, nswap=5 * Hc.number_of_edges(), max_tries=10**7, seed=11)
+e_c, N_c, Hc = as_index_edges(Hc)
+null_curves[&quot;degree-preserving&quot;] = (all_curves(e_c, N_c, n_random=10, seed=2), N_c, Hc)
+He = nx.gnm_random_graph(N, G.number_of_edges(), seed=12)
+e_e, N_e, He = as_index_edges(He)
+null_curves[&quot;ER&quot;] = (all_curves(e_e, N_e, n_random=10, seed=3), N_e, He)
+
+print(&quot;%-20s %6s %8s %8s %8s %8s %12s %12s&quot; % (&quot;network&quot;, &quot;N&quot;, &quot;C&quot;, &quot;R_rand&quot;, &quot;R_ID&quot;, &quot;R_RD&quot;, &quot;fc_rand(1%)&quot;, &quot;fc_RD(1%)&quot;))
+rows = [(&quot;real&quot;, real, N, G)] + [(name, c, n, H) for name, (c, n, H) in null_curves.items()]
+for name, c, n, H in rows:
+    print(&quot;%-20s %6d %8.3f %8.3f %8.3f %8.3f %12.3f %12.3f&quot;
+          % (name, n, nx.average_clustering(H), R_index(c[&quot;random&quot;][0]), R_index(c[&quot;ID&quot;][0]), R_index(c[&quot;RD&quot;][0]),
+             fc_rules(*c[&quot;random&quot;])[0], fc_rules(*c[&quot;RD&quot;])[0]))
+kd = np.array([d for _, d in He.degree()], float)
+print(&quot;ER 网络 &lt;k&gt; = %.2f，kappa = %.2f；理论 f_c = %.3f&quot; % (kd.mean(), (kd**2).mean() / kd.mean(), 1 - 1 / ((kd**2).mean() / kd.mean() - 1)))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 6. 作图
+
+左上：度分布的互补累积分布（对数坐标），真实网络与 ER 网络；右上：真实网络在四种策略下的最大分支曲线 $s(f)$，虚线为第二大分支（放大 10 倍）；左下：随机失效与自适应攻击下，真实网络与两个零模型的对比；右下：按度分组的必需蛋白比例。</section><div class="cell seq-cell" data-i="5"><div class="cell-head"><h3>代码 6</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="30" spellcheck="false" aria-label="代码 6">fig, axes = plt.subplots(2, 2, figsize=(11, 8.5))
+ax = axes[0, 0]
+for name, deg in [(&quot;yeast PPI&quot;, k), (&quot;ER (same N, L)&quot;, kd)]:
+    x = np.sort(deg)
+    ax.loglog(x, 1 - np.arange(len(x)) / len(x), &quot;.&quot;, ms=3, label=name)
+ax.set_xlabel(&quot;degree k&quot;); ax.set_ylabel(&quot;P(K &gt;= k)&quot;); ax.legend(); ax.set_title(&quot;Degree distribution (CCDF)&quot;)
+
+ax = axes[0, 1]
+for st, ls in zip([&quot;random&quot;, &quot;ID&quot;, &quot;RD&quot;, &quot;IB&quot;], [&quot;-&quot;, &quot;--&quot;, &quot;-.&quot;, &quot;:&quot;]):
+    s1, s2 = real[st]
+    ax.plot(f, s1, ls=ls, lw=2, label=&quot;%s (R = %.3f)&quot; % (st, R_index(s1)))
+for st, col in [(&quot;random&quot;, &quot;C0&quot;), (&quot;RD&quot;, &quot;C2&quot;)]:
+    s2 = real[st][1]; ok = ~np.isnan(s2)
+    ax.plot(f[ok], 10 * s2[ok], c=col, lw=1, alpha=0.6, label=&quot;2nd component x10 (%s)&quot; % st)
+ax.set_xlabel(&quot;fraction removed f&quot;); ax.set_ylabel(&quot;largest component s(f)&quot;); ax.legend(fontsize=7)
+ax.set_title(&quot;Yeast PPI: failure vs attack&quot;)
+
+ax = axes[1, 0]
+for (name, c, n, _), col in zip(rows, [&quot;k&quot;, &quot;C1&quot;, &quot;C4&quot;]):
+    fx = np.arange(n + 1) / n
+    ax.plot(fx, c[&quot;random&quot;][0], c=col, lw=2, label=&quot;%s, random&quot; % name)
+    ax.plot(fx, c[&quot;RD&quot;][0], c=col, lw=2, ls=&quot;--&quot;, label=&quot;%s, adaptive degree&quot; % name)
+ax.set_xlabel(&quot;fraction removed f&quot;); ax.set_ylabel(&quot;s(f)&quot;); ax.legend(fontsize=7); ax.set_title(&quot;Real vs null models&quot;)
+
+ax = axes[1, 1]
+ax.bar(range(len(tab)), tab[&quot;必需比例&quot;], color=&quot;C3&quot;)
+ax.set_xticks(range(len(tab))); ax.set_xticklabels([&quot;%d-%d&quot; % (iv.left, iv.right - 1) for iv in tab.index], rotation=30)
+ax.axhline(np.nanmean(ess), c=&quot;k&quot;, ls=&quot;--&quot;, lw=1, label=&quot;overall&quot;)
+ax.set_xlabel(&quot;degree bin&quot;); ax.set_ylabel(&quot;fraction essential&quot;); ax.legend(); ax.set_title(&quot;Essentiality vs degree&quot;)
+plt.tight_layout()
+print(&quot;运行时间 %.1f 秒&quot; % (time.time() - t0))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 7. 解读与局限
+
+**结果。**
+
+1. **度异质与理论阈值**。最大分支含 3 860 个蛋白，$\langle k\rangle\approx12.9$，$\kappa_0\approx49$，远大于同 $\langle k\rangle$ 的 ER 网络（约 14）。配置模型理论给出随机失效阈值 $f_c\approx0.98$；模拟中按 1% 规则 $f_c\approx0.94$，按第二大分支峰值约 0.86。两种判定规则相差约 0.08，理论值又高于两者：理论假设无度相关、局部树状、无限大，而这里的网络有限且高度聚集（聚集系数约 0.38）。这正是专题页“不同规则可以相差不少”“理论值只是参照”的具体例子。
+2. **耐随机失效、怕攻击**。随机删点的 R 约 0.44，按初始度攻击约 0.21，自适应度攻击约 0.17；删去 5% 的节点，随机失效后最大分支仍有约 94%，按度攻击后只剩约 84%。自适应攻击比按初始度攻击更具破坏性（Holme 等 2002 的结论），按初始介数攻击（R 约 0.19）介于两者之间。与 ER 网络相比，酵母网络的随机失效阈值更高（0.94 vs 0.93，满足专题页“增强鲁棒性”的定义，但差距不大），而对自适应攻击远更脆弱（$f_c$ 约 0.29 vs 0.63，R 约 0.17 vs 0.41）——同一个大的 $\langle k^2\rangle$ 带来两面。
+3. **度序列解释了大部分**。保度随机化网络的各条曲线与真实网络很接近（R 相差约 0.01–0.02）：随机失效和自适应攻击下真实网络略差，按初始度攻击下略好。真实网络的聚集系数是随机化网络的约 10 倍，高聚集让部分边落在三角形里，对维持全局连通是“冗余”的，但这一效应在这里很小。所以在这个网络上，“耐随机、怕攻击”主要是度分布的性质，而不是更细的拓扑结构。
+4. **度与必需性**。必需蛋白的比例随度单调上升：度为 1 的蛋白中约 9% 必需，度 ≥ 64 的蛋白中约 57% 必需；必需蛋白的度中位数（14）远高于非必需蛋白（4）。这复现了 Jeong 等（2001）的经典观察。
+5. **结构碎裂 ≠ 功能丧失**。一次删去全部 939 个必需蛋白（约 24% 的节点），在细胞层面每一个都足以致死，网络却仍保留约 68% 的节点在最大分支中，只比删去同样数目的随机蛋白（约 71%）略低，远不如删去同样数目的最高度蛋白（约 47%）。也就是说，必需性并不主要通过“让网络碎裂”体现。这与专题页的论点一致：渗流意义上的结构鲁棒与细胞的功能鲁棒是两个层次；高度蛋白更可能必需，也可能是因为它们参与必需的复合物或相互作用（He 与 Zhang 2006；Zotenko 等 2008），而不是因为它们维持连通（详见[致死性与中心性](molecular-networks.centrality-lethality.html)）。
+
+**局限。**
+
+- BioGRID 汇集的是文献报告，被研究得多的蛋白度更高（研究偏倚），而“至少 2 篇文献”的筛选会放大这一偏倚；度与必需性的相关有一部分可能来自必需基因更受关注。专题页建议做敏感性分析，例如改用 `n_pub ≥ 1` 或 `n_pub ≥ 3`，或随机删去一部分边后重复。
+- 亲和纯化–质谱（Affinity Capture-MS）把复合物中的共纯化蛋白记为两两相互作用，会制造团块结构；不同实验系统的含义不同，这里没有区分。
+- 必需性来自缺失株集合在标准培养条件下的生长表型；许多“非必需”基因在其他条件下才显示表型，注释冲突的 222 个基因被排除在必需性分析之外。
+- 介数攻击只用了 500 个源点的近似，并且只按初始介数排序；自适应介数攻击通常更具破坏性，但计算量大得多。
+- 最大分支比例只是结构指标；它不说明剩余网络能否完成任何具体的细胞功能。</section></div><nav class="pager"><a href="robustness.html"><small>专题主页</small>网络鲁棒性、渗流与级联失效</a><a href="data-sources.html"><small>数据</small>数据来源与许可</a></nav><script type="application/json" id="ex-data">{"files": ["yeast_ppi_biogrid.csv", "yeast_genes_essential.csv"], "tasks": []}</script></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="courses.html">课程视频</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

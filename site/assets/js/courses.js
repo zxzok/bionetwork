@@ -46,6 +46,7 @@
   function showSeries(n) {
     $$(".cv-tab").forEach((t) => t.setAttribute("aria-selected", String(t.dataset.series === String(n))));
     $$(".cv-pl").forEach((p) => { p.hidden = p.dataset.series !== String(n); });
+    $$(".cv-qz").forEach((p) => { p.hidden = p.dataset.series !== String(n); });
   }
 
   function play(id, opts) {

@@ -19,8 +19,8 @@
      "content": "蚂蚁与神经元、细胞、大脑、交通、贸易、互联网、社交与媒体：八个系统背后的同一张网",
      "points": "八个看似无关的系统，背后都是一张网；秘密不在个体，而在个体之间。",
      "ready": true,
-     "duration": 939.7,
-     "size": 305909141,
+     "duration": 934.3,
+     "size": 300788186,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-01.mp4"
     },
     {
@@ -32,8 +32,8 @@
      "content": "米尔格拉姆的包裹实验、今天的分隔度数、短路径为何能找到、小世界无处不在、美第奇家族的度与介数",
      "points": "社交网络里任意两人往往只隔几步；一个人（一个家族）的影响力，取决于他在网络中的位置。",
      "ready": true,
-     "duration": 818.5,
-     "size": 225171814,
+     "duration": 822.8,
+     "size": 225984493,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-02.mp4"
     },
     {
@@ -45,8 +45,8 @@
      "content": "什么是复杂系统、涌现、凭空出现的堵车、椋鸟群、生命系统中的涌现、网络是复杂系统的骨架",
      "points": "复杂系统的整体行为，来自组分之间的相互作用；整体会出现单个组分没有的性质——涌现；网络，是描述相互作用的骨架。",
      "ready": true,
-     "duration": 708.8,
-     "size": 187622908,
+     "duration": 710.1,
+     "size": 187383604,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-03.mp4"
     },
     {
@@ -59,7 +59,7 @@
      "points": "网络的思想很早就有，但网络科学作为一门统一的学科，是在1998–1999年前后兴起的；推动它的，是数据的出现和规律的普适性；它的方法有四个特点。",
      "ready": true,
      "duration": 756.2,
-     "size": 119081217,
+     "size": 119141662,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-04.mp4"
     },
     {
@@ -71,8 +71,8 @@
      "content": "网络经济、从基因清单到网络地图、阿司匹林的网络、预测大流行、旅行限制、朋友更早得流感、脑连接图",
      "points": "一门学科的影响，看它的应用；网络思维已经进入搜索、社交、药物研发、流行病预测和脑科学。",
      "ready": true,
-     "duration": 668.8,
-     "size": 109801930,
+     "duration": 669.0,
+     "size": 111270171,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-05.mp4"
     },
     {
@@ -84,8 +84,8 @@
      "content": "组织里的隐形网络、健康会不会“传染”、学界的争论、“网络”的兴起、网络到底有多重要",
      "points": "正式结构和真实网络常常不一样；健康状态可能沿社会网络“传染”，但相关不等于因果；网络科学本身，已经成了一场科学运动。",
      "ready": true,
-     "duration": 579.3,
-     "size": 93137387,
+     "duration": 579.1,
+     "size": 93025484,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-06.mp4"
     },
     {
@@ -98,7 +98,7 @@
      "points": "看每一类生物网络，都问两个问题——节点是什么？边是什么？不同网络的边，含义完全不同。",
      "ready": true,
      "duration": 614.5,
-     "size": 117272270,
+     "size": 117332051,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-07.mp4"
     },
     {
@@ -110,8 +110,8 @@
      "content": "疾病–基因二分网络、投影成疾病网络、病历里的疾病网、疾病模块假说、新冠与老药新用",
      "points": "用二分网络和投影，把“疾病之间的关系”变成可以计算的网络；疾病基因在相互作用网络里聚成模块；网络可以帮助在疫情中快速寻找老药新用。",
      "ready": true,
-     "duration": 579.1,
-     "size": 118508759,
+     "duration": 585.1,
+     "size": 123800029,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-08.mp4"
     },
     {
@@ -123,8 +123,8 @@
      "content": "节点和边如何定义、阈值的影响、从数据库建网、常用数据库与工具、四个常见误区、小测",
      "points": "构建网络，要说清楚节点、边、方向和权重、边的性质；同一个系统可以画成很多张网；最后用四道题检验这一讲。",
      "ready": true,
-     "duration": 630.7,
-     "size": 124197143,
+     "duration": 628.0,
+     "size": 125938978,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L1-09.mp4"
     },
     {
@@ -174,8 +174,8 @@
      "content": "哥尼斯堡七桥、欧拉的抽象与奇偶论证、一笔画判定、图的定义、网络与图",
      "points": "欧拉把陆地变成点、把桥变成线，扔掉了距离和形状，只留下“谁和谁相连”；能否一笔走完，只取决于每个点连着几条线的奇偶；这种只看连接的数学，就是图论。",
      "ready": true,
-     "duration": 564.4,
-     "size": 58244880,
+     "duration": 569.3,
+     "size": 58752035,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L2-01.mp4"
     },
     {
@@ -188,7 +188,7 @@
      "points": "邻接矩阵把一张图变成一张数表；有向、加权决定了边能携带多少信息；阈值化和对称化会丢掉信息，要清楚自己丢掉了什么；简单图没有重边和自环。",
      "ready": true,
      "duration": 536.6,
-     "size": 83562738,
+     "size": 83520757,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L2-02.mp4"
     },
     {
@@ -201,7 +201,7 @@
      "points": "路径是一串首尾相接的边，长度是边数；回路首尾重合，圈是不重复节点的回路；连通分支把网络分成互不往来的几块；有向图要区分强连通和弱连通。",
      "ready": true,
      "duration": 421.3,
-     "size": 68000882,
+     "size": 68967127,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L2-03.mp4"
     },
     {
@@ -214,7 +214,7 @@
      "points": "强连通分支是“彼此都能到达”的最大节点集合；每个节点恰好属于一个强连通分支；把强连通分支缩成点，得到一张没有环的有向图；万维网和代谢网络都呈蝴蝶结形状。",
      "ready": true,
      "duration": 451.4,
-     "size": 83743748,
+     "size": 82970927,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L2-04.mp4"
     },
     {
@@ -226,8 +226,8 @@
      "content": "度、入度出度、源与汇、平均度、完全图、真实网络的稀疏性、度分布与枢纽",
      "points": "度是与节点相连的边数，有向图分入度和出度；平均度等于2E除以N；真实网络远比完全图稀疏，邻接矩阵几乎全是0；度分布描述“连接”在节点之间怎么分配。",
      "ready": true,
-     "duration": 454.7,
-     "size": 51470236,
+     "duration": 455.5,
+     "size": 51581253,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L2-05.mp4"
     },
     {
@@ -239,8 +239,8 @@
      "content": "距离、直径、平均路径长度、广度优先搜索、聚集系数、线虫神经网络的小世界",
      "points": "距离是最短路径上的边数，有向图里距离不对称；直径是最大距离，平均路径长度是所有点对距离的平均；广度优先搜索一层层向外扩，算出一个点到所有点的距离；聚集系数衡量一个节点的邻居之间有多少彼此相连。",
      "ready": true,
-     "duration": 470.4,
-     "size": 54942749,
+     "duration": 469.8,
+     "size": 55315709,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L2-06.mp4"
     },
     {
@@ -252,8 +252,8 @@
      "content": "MSN一亿八千万人网络的三项指标、与随机网络对比、networkx动手计算、本章练习",
      "points": "度分布、路径长度、聚集系数是刻画网络的三把尺子；一亿八千万人的MSN网络，度分布长尾、平均距离6.6步、聚集系数远高于随机网络；用几行代码就能把这些指标算出来。",
      "ready": true,
-     "duration": 506.4,
-     "size": 67266819,
+     "duration": 507.5,
+     "size": 68361423,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L2-07.mp4"
     },
     {
@@ -265,8 +265,8 @@
      "content": "行和是度、1的个数是2E；有向矩阵的行和与列和；密度；A² 数两步路线、A³ 的迹数三角形；酵母网络的稀疏矩阵；边列表与邻接表；networkx 里的互相转换",
      "points": "邻接矩阵的行和就是度，1的总数是边数的两倍；矩阵自乘一次，就数出了所有“两步走”的路线，对角线上还藏着三角形的个数；真实网络太稀疏，实际中用边列表和邻接表来存。",
      "ready": true,
-     "duration": 525.7,
-     "size": 52964134,
+     "duration": 520.3,
+     "size": 53125885,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L2-08.mp4"
     },
     {
@@ -305,7 +305,7 @@
      "points": "二分图有两类节点，边只连在两类之间；把它投影到一侧，就得到疾病网络或基因网络，投影的边权可以用矩阵乘法算出来；人类疾病网络显示，疾病通过共享基因彼此相连、按类别聚集；投影会制造大量三角形，解读要小心。",
      "ready": true,
      "duration": 500.4,
-     "size": 84056625,
+     "size": 83902461,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L2-11.mp4"
     },
     {
@@ -318,7 +318,7 @@
      "points": "聚集系数就是在数三角形；在空手道俱乐部上手算教练的聚集系数，只有0.15；度大的节点聚集系数往往低；“平均聚集系数”和“传递性”是两种全局算法，结果可以差一倍多；度为1的节点怎么处理、和什么随机网络比较，都要写清楚。",
      "ready": true,
      "duration": 491.5,
-     "size": 61023634,
+     "size": 61653750,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L2-12.mp4"
     },
     {
@@ -331,7 +331,7 @@
      "points": "疾病基因在相互作用组里聚成模块，但数据不全，只能看到模块的一部分；药物靶点到疾病基因的“最近距离”，用广度优先搜索就能算；真实网络里枢纽离谁都近，所以距离要和保持度的随机对照比，换算成z分数；两个疾病模块的网络分离度，能预测它们在临床上是否相伴出现。",
      "ready": true,
      "duration": 488.2,
-     "size": 66993829,
+     "size": 70028329,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L2-13.mp4"
     },
     {
@@ -344,7 +344,7 @@
      "points": "用五道题把第八到十三集串起来；六个最常见的误区——边的含义、方向被悄悄丢掉、阈值、不连通时的平均路径长度、只看一个数、简单图的约定；最后给出一份可以直接用在课程论文里的“网络体检报告”清单。",
      "ready": true,
      "duration": 490.5,
-     "size": 47136532,
+     "size": 60866102,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L2-14.mp4"
     }
    ]
@@ -369,8 +369,8 @@
      "content": "指标需要参照系；链状与网格网络的度、聚集、路径；零模型的思想（z分数、p值、安慰剂组类比）；心肌细胞的“网格”；本章路线图",
      "points": "一个指标本身不说话，要和参照系比较；规则网格的度和聚集系数是常数，但路径长度随规模线性或按根号增长，解释不了真实网络的短路径；所以需要一个“零模型”。",
      "ready": true,
-     "duration": 511.2,
-     "size": 55260831,
+     "duration": 513.4,
+     "size": 57607395,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L3-01.mp4"
     },
     {
@@ -382,8 +382,8 @@
      "content": "ER随机网络 G(n,p)/G(n,m)；平均度 p(n−1)；二项/泊松度分布（一万节点模拟）；聚集系数 C = p；网络密度与随机种子；“随机”的两个误解",
      "points": "G(n,p)是每对节点以概率p独立连边；平均度等于p(n−1)；度分布是二项分布，网络越大越集中在平均值附近，几乎不出现枢纽；聚集系数等于p，即平均度除以n，网络越大越小。",
      "ready": true,
-     "duration": 500.4,
-     "size": 44365197,
+     "duration": 501.1,
+     "size": 47172557,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L3-02.mp4"
     },
     {
@@ -395,8 +395,8 @@
      "content": "巨大连通分支的相变（模拟）；路径 ∝ log N；随机网络与真实网络的计分；巨大分支方程 S = 1 − e^(−⟨k⟩S)；共表达网络阈值的相变；度保持随机化与网络模体（前馈环）",
      "points": "平均度超过1时，随机网络里突然出现一个巨大连通分支，这是一种相变；随机网络每走一步覆盖范围成倍扩大，所以路径长度只随log n增长；随机网络解释了短路径，解释不了高聚集和长尾；它最大的用处是作零模型，度保持随机化能帮我们发现“网络模体”。",
      "ready": true,
-     "duration": 494.4,
-     "size": 36836681,
+     "duration": 494.1,
+     "size": 37258299,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L3-03.mp4"
     },
     {
@@ -408,8 +408,8 @@
      "content": "贝肯数、埃尔德什数；米尔格拉姆实验及其批评；2003年电子邮件实验；可导航性（Kleinberg）；“一百个朋友”的估算与三元闭包；细胞里的六度",
      "points": "多个真实网络都表现出“路径短”；米尔格拉姆实验平均6.2步，但存在漏斗效应、样本少、退出率高等问题；2003年电子邮件实验校正后约7步；简单的指数增长估算忽略了朋友圈的重叠——真实网络既抱团、又很“小”，这就是下一集小世界模型要解释的谜题。",
      "ready": true,
-     "duration": 496.8,
-     "size": 92754302,
+     "duration": 494.3,
+     "size": 81685773,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L3-04.mp4"
     },
     {
@@ -434,8 +434,8 @@
      "content": "钟形与长尾；双对数坐标；各种网络的幂律指数；“无标度”的含义；最大度与 α 的三个区间；互补累积分布；生物网络与严格检验（Broido & Clauset 2019）；疾病基因多在外围（Goh 2007）",
      "points": "随机网络的度分布是钟形，许多真实网络的度分布却有一条长尾，近似幂律P(k)∝k^(−α)；双对数坐标下幂律是直线；常见指数在2到3之间；幂律没有特征尺度，故称“无标度”；生物网络的长尾是稳健的，但严格意义上的幂律证据往往较弱。",
      "ready": true,
-     "duration": 506.3,
-     "size": 58617044,
+     "duration": 508.9,
+     "size": 59439426,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L3-06.mp4"
     },
     {
@@ -448,7 +448,7 @@
      "points": "增长加优先连接能产生幂律度分布（BA模型指数约为3）；越早加入的节点度越大，度大致随时间的平方根增长；简化模型的指数为1+1/(1−p)；优先连接解释不了“后来居上”，需要适应度等补充；蛋白质网络里，基因复制–分化是一种“隐含的”优先连接，同时带来枢纽和高聚集。",
      "ready": true,
      "duration": 510.7,
-     "size": 56006456,
+     "size": 55848533,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L3-07.mp4"
     },
     {
@@ -461,7 +461,7 @@
      "points": "真实（重尾）网络对随机失效稳健、对攻击枢纽脆弱；模拟中无标度网络在移除约15%–20%的枢纽后几乎瓦解；细胞能耐受多数随机突变，而枢纽更可能是必需基因；四个模型与真实酵母蛋白质网络比较，小世界模型抓住了聚集，BA模型抓住了枢纽，没有一个模型能复现全部特征。",
      "ready": true,
      "duration": 500.5,
-     "size": 67197239,
+     "size": 66397998,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L3-08.mp4"
     },
     {
@@ -474,7 +474,7 @@
      "points": "双边交换每一步都保持所有节点的度；交换足够多次，得到一千张保度随机网络，算出z分数和经验p值；同一张网络，用ER零模型显著、用保度零模型不显著，因为枢纽本身就会“制造”三角形；论文里要写清用了哪种零模型、造了多少张，并同时报告真实值、随机均值、标准差和经验p值。",
      "ready": true,
      "duration": 495.3,
-     "size": 57503938,
+     "size": 55985064,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L3-09.mp4"
     },
     {
@@ -487,7 +487,7 @@
      "points": "配置模型给每个节点装上和度一样多的“半边”，再随机两两配对；度序列(2,1,1)只有三种配对，三分之一带自环；沿一条边走到的人，平均度是⟨k²⟩/⟨k⟩，总不小于⟨k⟩，这就是朋友悖论，尾巴越重越明显；Molloy–Reed判据⟨k²⟩/⟨k⟩>2决定巨大分支是否出现；熟人免疫、“朋友”哨点和向后追踪，都在利用朋友悖论。",
      "ready": true,
      "duration": 503.1,
-     "size": 56753836,
+     "size": 56525122,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L3-10.mp4"
     },
     {
@@ -500,7 +500,7 @@
      "points": "随机几何图只连近邻，聚集系数高、路径长、没有枢纽；加入百分之一的长程边，路径大幅缩短，布线代价只增加一成多；大脑在布线代价和拓扑效率之间权衡，连接概率随距离指数衰减，简单的“距离×拓扑”生成模型能长出许多连接组特征；空间网络要用空间零模型，保度随机化会把短边换成长边，夸大真实网络的“特殊性”。",
      "ready": true,
      "duration": 498.9,
-     "size": 66789502,
+     "size": 66777623,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L3-11.mp4"
     },
     {
@@ -513,7 +513,7 @@
      "points": "作者问了三个问题——在规则与随机之间连续调节，网络怎样变？真实网络落在哪里？这对动力学有什么影响？用重连模型和两把尺子（L 与 C）回答；图2显示很少的捷径就让路径骤降而聚集几乎不变；表1显示演员、电网、线虫都是小世界；捷径让传染病传得更快、振子更易同步；局限是没有枢纽、判据是定性的；读三页的经典：先找问题，再看核心图表，最后读细节。",
      "ready": true,
      "duration": 503.8,
-     "size": 70064702,
+     "size": 72216876,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L3-12.mp4"
     },
     {
@@ -526,7 +526,7 @@
      "points": "1999年的论文用双对数图上的直线估计幂律指数，并提出增长＋优先连接模型；直线拟合又偏又不稳，Clauset 等给出最大似然、KS 选下界、拟合优度与似然比检验的流程；Broido 与 Clauset 用它检验 928 个网络，强无标度只占少数，对数正态往往同样好；各方回应的分歧在定义；共识是“重尾、有枢纽”很普遍，“严格幂律”要谨慎论证；写论文时报告形状、方法和比较，而不是一句“无标度”。",
      "ready": true,
      "duration": 496.9,
-     "size": 58337127,
+     "size": 55575142,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L3-13.mp4"
     },
     {
@@ -539,7 +539,7 @@
      "points": "四个模型一张表——规则格子、ER随机、WS小世界、BA无标度，以及三句话；课堂小测四题：ER的平均度与聚集系数、为什么少量重连就够、指数分布在双对数坐标下不是直线、枢纽为何致命而随机突变能被耐受；课后任务：把模型比较代码里的酵母网络换成自己的网络，与ER随机网络、度保持随机化网络各比一次；下一章：社团发现。",
      "ready": true,
      "duration": 514.8,
-     "size": 49575757,
+     "size": 49418041,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L3-14.mp4"
     }
    ]
@@ -563,7 +563,7 @@
      "points": "找工作的信息常来自不太熟的熟人；三元闭包使圈子内部抱团；连接不同圈子的局部桥一定是弱关系；网络因此由紧密的团和团之间的弱连接组成。",
      "ready": true,
      "duration": 552.8,
-     "size": 91988695,
+     "size": 97263355,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L4-01.mp4"
     },
     {
@@ -576,7 +576,7 @@
      "points": "用邻居重叠度衡量一条边嵌入圈子有多深；手机网络中通话越多的边重叠度越高；先删弱关系网络很快瓦解，先删强关系网络能坚持更久——维系整体连通的是弱关系。",
      "ready": true,
      "duration": 504.4,
-     "size": 54953850,
+     "size": 64073808,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L4-02.mp4"
     },
     {
@@ -589,7 +589,7 @@
      "points": "社团是内部连接多、对外连接少的节点集合；好的算法找出的社团应对应真实的群体；在蛋白质网络中社团常对应复合物和通路，可用“关联有罪”预测未知蛋白的功能。",
      "ready": true,
      "duration": 498.6,
-     "size": 83192890,
+     "size": 84542856,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L4-03.mp4"
     },
     {
@@ -614,8 +614,8 @@
      "content": "模块度定义；配置模型作零模型；两个三角形的手算（Q = 0.357）；用模块度选社团数（GN 最佳 Q = 0.385）；扩充：为何要和随机比、预期边数手算（16×17/156）、Q 的上限、划分数目（Bell 数）、四节点链手算、选社团数的操作、高分平台",
      "points": "模块度 = 社团内部实际的边数减去随机预期的边数；随机预期来自保持度序列的配置模型，节点i与j之间的预期边数为k_i·k_j/2m；Q大于0说明内部连接多于随机，常见的明显社团结构Q约在0.3–0.7；在层次树上取Q最高的一层，就确定了社团数。",
      "ready": true,
-     "duration": 512.8,
-     "size": 75036705,
+     "duration": 513.6,
+     "size": 50288910,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L4-05.mp4"
     },
     {
@@ -627,8 +627,8 @@
      "content": "Louvain 两阶段（空手道 Q = 0.444）；Leiden 的改进；酵母网络 Q ≈ 0.66；随机网络也有 Q；分辨率极限（团环）；扩充：速度对比（nd.edu 3 秒 vs 5034 秒）、空手道 Louvain Q≈0.44、挪动判据、随机种子、Louvain 缺陷的比例、单细胞分辨率、富集背景、保度随机化对照（本课程）、K5 团环的数、分辨率参数 γ",
      "points": "Louvain通过“局部移动＋合并”反复最大化模块度，百万级网络几分钟完成；Leiden修正了社团内部不连通的问题，已成为单细胞聚类的默认方法；酵母蛋白质网络Q约0.66；随机网络也有不低的模块度，必须与随机对照比较；最大化模块度存在分辨率极限。",
      "ready": true,
-     "duration": 522.0,
-     "size": 43341153,
+     "duration": 522.9,
+     "size": 45483497,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L4-06.mp4"
     },
     {
@@ -654,7 +654,7 @@
      "points": "蛋白质复合物、疾病模块、脑功能系统是社团发现的三大应用；脑功能网络的社团划分（如Yeo等的7个网络）已成为脑影像研究的标准参照；用NetworkX几行代码即可完成社团发现，但一定要加随机对照，并用独立证据检验社团的生物学意义。",
      "ready": true,
      "duration": 502.8,
-     "size": 44641380,
+     "size": 45797134,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L4-08.mp4"
     },
     {
@@ -667,7 +667,7 @@
      "points": "把模块度写成矩阵形式，二分问题放松后，最优解是模块度矩阵最大特征值对应的特征向量，按分量正负分组；空手道俱乐部上谱二分只错1人；分量接近零的节点归属最不确定；拉普拉斯矩阵的Fiedler向量给出最小割的近似；谱聚类取前K个特征向量再做k均值；稀疏网络中普通谱方法会失效。",
      "ready": true,
      "duration": 483.8,
-     "size": 68601879,
+     "size": 63701350,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L4-09.mp4"
     },
     {
@@ -693,7 +693,7 @@
      "points": "随机块模型假设每对节点是否相连只取决于它们所属的组；标准SBM会按度分组，度修正SBM在空手道俱乐部上基本找回两派；似然随组数增加而增大，要用贝叶斯推断或描述长度选组数，在随机网络上它倾向于给出“只有一组”；带分辨率的模块度相当于一个特殊的SBM，隐含“所有社团同样紧密”的假设。",
      "ready": true,
      "duration": 495.5,
-     "size": 63556400,
+     "size": 69109166,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L4-11.mp4"
     },
     {
@@ -718,8 +718,8 @@
      "content": "可检测性阈值（q = 2、c = 5 时 Δc ≈ 4.47）；困难区；NMI、ARI 与信息变差（六节点手算 ARI ≈ 0.32）；NMI 对社团数的偏差；GN 与 LFR 基准；元数据不是金标准（Peel 等 2017）",
      "points": "社团信号太弱时，存在一个阈值，低于它任何算法都无法恢复真实分组；两组、平均度5时，组内平均连边要比组间多约4.47条才可检测；比较划分常用NMI和ARI，一个节点放错就让ARI降到约0.32；NMI对社团数敏感，随机分成50组也有约0.17；LFR基准更接近真实网络；元数据不是金标准。",
      "ready": true,
-     "duration": 478.2,
-     "size": 41676203,
+     "duration": 478.3,
+     "size": 51722105,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L4-13.mp4"
     },
     {
@@ -732,7 +732,7 @@
      "points": "同一批节点在多个时间窗或多种关系下构成多层网络，多层模块度用层间耦合ω控制各层划分的一致程度；灵活性是节点在相邻时间层之间换社团的比例，运动学习研究中它能预测之后的学习表现；ω太小会夸大灵活性、太大会掩盖变化，需要与三类零模型比较；共识聚类提高稳定性但不保证正确；选方法先明确问题、至少用两类方法对照。",
      "ready": true,
      "duration": 474.1,
-     "size": 69529284,
+     "size": 76210248,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L4-14.mp4"
     }
    ]
@@ -756,8 +756,8 @@
      "content": "流行病一词；黑死病（法国→瑞典约4年）、1918年大流感、HIV、H1N1；人口密度与流动性；人群病与麻疹临界人口（Bartlett 1957）；SARS（8096例、774例死亡）沿航线“跳跃”；蠕虫王病毒；传播一定意味着网络；小地方为何留不住麻疹；Hufnagel 等航线模拟；Coleman 等医生采用新药；医院转诊网络与 MRSA（Donker 等 2010）；本章路线图",
      "points": "疾病、信息、行为和计算机病毒都可以看作“传播”；黑死病像波一样一年年推进，SARS却沿着航线跳到远方的大城市；传播只能沿着接触发生，所以谁和谁接触的那张网，决定了传播的路径、速度和范围。",
      "ready": true,
-     "duration": 518.3,
-     "size": 89621887,
+     "duration": 529.9,
+     "size": 90380525,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L5-01.mp4"
     },
     {
@@ -769,8 +769,8 @@
      "content": "Framingham 12067人、1971–2003；三度影响（约45%、20%、10%）；朋友+57%、互认+171%、单向+13%（不显著）；传染、同质选择与共同环境；痤疮与身高也能“传染”；结伴减肥试验；置换检验；相对风险与绝对风险；反向因果；思想实验：同质选择也能成团；读社会传染研究的三个问题；Centola 2010 随机实验",
      "points": "Christakis与Fowler用Framingham心脏研究的12067人发现肥胖在网络中成簇、关联延伸到三度关系；朋友变胖本人风险增加57%，互认的朋友达171%，方向不对称支持“影响”；但同质选择和共同环境也能产生相关，痤疮、身高也能“传染”，观察数据难以区分传染与选择。",
      "ready": true,
-     "duration": 504.7,
-     "size": 69475774,
+     "duration": 504.2,
+     "size": 68613276,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L5-02.mp4"
     },
     {
@@ -783,7 +783,7 @@
      "points": "均匀混合假设下，SI模型 di/dt = βi(1−i) 早期指数增长、晚期饱和，是一条S形曲线；SIS模型加上康复率μ，感染比例稳定在1 − μ/β（β⟨k⟩ = 0.5、μ = 0.2时为60%）；λ = β/μ 大于1才会暴发，小于1疫情自行消失，这就是阈值。",
      "ready": true,
      "duration": 501.6,
-     "size": 49091378,
+     "size": 49189313,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L5-03.mp4"
     },
     {
@@ -796,7 +796,7 @@
      "points": "SIR模型中康复者获得免疫，疫情在易感者“烧完”前就会结束；β⟨k⟩ = 0.5、μ = 0.2（R0 = 2.5）时峰值23.4%出现在t ≈ 24，最终89.2%的人被感染过；群体免疫阈值是1 − 1/R0，最终规模满足z = 1 − e^(−R0·z)；麻疹R0为12–18，需要92%–94%的人免疫；R0依赖接触网络和防控措施。",
      "ready": true,
      "duration": 499.6,
-     "size": 65367897,
+     "size": 65789703,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L5-04.mp4"
     },
     {
@@ -809,7 +809,7 @@
      "points": "传播只能沿着边进行；按度分组的异质平均场模型中，沿一条边走到度为k的节点的概率正比于kP(k)，所以枢纽先被感染；特征时间τ = ⟨k⟩/[β(⟨k²⟩ − ⟨k⟩)]，⟨k²⟩越大传得越快；1万个节点、平均度6的ER与BA网络，⟨k²⟩为41.9与106，SI感染一半人群需要99步与68步，前10步新感染者平均度为7.6与15.3。",
      "ready": true,
      "duration": 498.5,
-     "size": 69727952,
+     "size": 71697116,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L5-05.mp4"
     },
     {
@@ -822,7 +822,7 @@
      "points": "SIS在网络上的稳态中度越大的节点越常处于感染状态；流行病阈值λc = ⟨k⟩/⟨k²⟩，无标度网络中⟨k²⟩发散、阈值趋于零；模拟中ER阈值0.143、BA阈值0.057，λ = 0.10时ER上疫情消失而BA上稳定有6.4%感染；网络从1000增大到10万个节点，ER阈值不变、BA阈值从0.076降到0.045；Brockmann与Helbing的有效距离把航空网络上的“跳跃”传播重新变成同心圆的波。",
      "ready": true,
      "duration": 515.5,
-     "size": 54459415,
+     "size": 58193107,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L5-06.mp4"
     },
     {
@@ -835,7 +835,7 @@
      "points": "随机免疫的临界比例g_c = 1 − (μ/β)⟨k⟩/⟨k²⟩，在无标度网络中趋于1；靶向免疫优先免疫枢纽、压低⟨k²⟩；不知道谁是枢纽时，熟人免疫利用好友悖论（随机人平均度6，随机朋友平均度17.7）；BA网络模拟中免疫10%时，随机、熟人、靶向三种策略的疫情规模为47%、24.5%、0.3%；医院感染、HIV防控与流感哨兵监测都利用了接触的不均匀。",
      "ready": true,
      "duration": 505.5,
-     "size": 72197708,
+     "size": 72083740,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L5-07.mp4"
     },
     {
@@ -848,7 +848,7 @@
      "points": "蓝牙病毒沿人的移动传播、慢而广，彩信病毒沿通话网络传播、快却受市场份额限制，份额低于约0.1时可感染手机碎成小块（渗流相变）；一家800人企业的谣言源自一位处在桥位置的安全经理；新服务在社团内部成簇采用，强关系更能促成采纳；EoN代码中同样的病原体在ER上最终规模约0.3%、在BA上约18%。",
      "ready": true,
      "duration": 510.0,
-     "size": 63486035,
+     "size": 61335774,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L5-08.mp4"
     },
     {
@@ -861,7 +861,7 @@
      "points": "真实接触带着时间戳，传播只能沿时间相容路径走；把一段时间的接触压成一张静态图，会凭空造出不存在的路径、高估传播；人的活动是阵发的，等待时间悖论让平均剩余等待时间等于⟨Δt²⟩/(2⟨Δt⟩)，重尾间隔拖慢传播；活动驱动模型的阈值由活动性的一阶和二阶矩决定，20%高活跃个体使阈值从0.354降到0.270；传感器数据要报告时间窗口的敏感性。",
      "ready": true,
      "duration": 498.7,
-     "size": 99885524,
+     "size": 121838797,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L5-09.mp4"
     },
     {
@@ -874,7 +874,7 @@
      "points": "R0 不能直接观测，要从数据估计；多类人群时 R0 是下一代矩阵的最大特征值，在网络上它正好是 T(⟨k²⟩−⟨k⟩)/⟨k⟩，首发病例平均只传 T⟨k⟩ 人，会低估流行潜力；增长率换算 R 需要代际间隔：r = 0.2/天、均值 5 天，指数分布得 R = 2，固定 5 天得 2.72；均匀混合例子 r = 0.3、μ = 0.2 正好回到 R0 = 2.5；Wallinga–Teunis 的病例再生数与 Cori 的瞬时再生数；估计值对代际间隔、报告延迟和检测量都很敏感。",
      "ready": true,
      "duration": 472.0,
-     "size": 51232843,
+     "size": 58585464,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L5-10.mp4"
     },
     {
@@ -887,7 +887,7 @@
      "points": "单个种子的传播范围更取决于它在 k-壳分解中的层次，而不是度或介数，边缘的枢纽往往传不远；k-壳分解的手算步骤；扩散中心性把“能传几步”放进中心性；选一组种子要考虑重叠，传播范围是子模函数，贪心算法至少达到最优的 1 − 1/e ≈ 63%；代码示例中按度、k-核或 CI 选前 10 名约 590，随机约 716，贪心约 840；最优排序依赖传播强度。",
      "ready": true,
      "duration": 492.2,
-     "size": 62138083,
+     "size": 82652066,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L5-11.mp4"
     },
     {
@@ -900,7 +900,7 @@
      "points": "溯源是反问题，同一张快照可由许多源头和路径产生；谣言中心性数“与快照一致的感染顺序”，手算一条 5 个节点的链；Jordan 中心取到其他感染者最大距离最小的节点；基于观测点的方法用到达时间与距离；代码示例中早期快照上 Jordan 中心命中率约 73%，介数最高 5% 的观测点平均误差约 1.3 跳，反而不如随机观测点的约 1.1 跳；网络溯源只能缩小范围，需与流行病学调查和基因组测序互相印证。",
      "ready": true,
      "duration": 501.7,
-     "size": 62407301,
+     "size": 80678441,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L5-12.mp4"
     },
     {
@@ -913,7 +913,7 @@
      "points": "接触网络的数据来源各有局限，POLYMOD 在欧洲 8 国调查出按年龄的接触矩阵，学龄儿童之间接触最密；医院内的接触防护是控制 SARS 最有力的措施，R0 = 3 时只靠隔离需要把传播降到四分之一以下、发病到隔离少于 3 天；手机流动数据构建的美国 10 个大都市区网络（约 9800 万人）显示少数超级传播地点贡献大部分感染，限制每个地点的最大容纳人数比整体减少出行更有效；脑结构连接网络上的扩散模型重现了痴呆的萎缩模式；对疾病的“知晓”也在传播，能减小疫情。",
      "ready": true,
      "duration": 486.8,
-     "size": 74147189,
+     "size": 77142524,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L5-13.mp4"
     },
     {
@@ -926,7 +926,7 @@
      "points": "六个常见误用及正解（R0 不是常数；阈值为零不等于必然大流行；随机接种比例依赖网络；度最高不等于最佳传播者、前 K 名不等于最好的 K 个种子；聚集不等于传染；累积静态网络与只报平均最终规模的问题）；小测：一半度为 2、一半度为 6 的网络 ⟨k⟩ = 4、⟨k²⟩ = 20；SIS 中 β = 0.05、μ = 0.2、⟨k⟩ = 10 时稳态 0.6；ER 平均度 5 的 SIR 阈值 0.2；四个课后练习任务；全章小结与下一章预告。",
      "ready": true,
      "duration": 468.6,
-     "size": 40148797,
+     "size": 52774613,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L5-14.mp4"
     }
    ]
@@ -976,7 +976,7 @@
      "points": "驱动节点倾向于避开枢纽；只要度分布不变，驱动节点比例n_D就基本不变；网络越稀疏、度越不均匀，越难控制（平均度4时随机网络约0.21，γ = 2.2的无标度网络约0.58）；原因是枢纽在匹配里只能“带”一个下游节点；用NetworkX十几行代码就能算驱动节点。",
      "ready": true,
      "duration": 511.6,
-     "size": 77126951,
+     "size": 78247326,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L6-03.mp4"
     },
     {
@@ -1002,7 +1002,7 @@
      "points": "若c→a是非匹配边、c→b是匹配边，则a与b控制邻接，可以互相替换（交换定理）；从驱动节点出发沿交替路径能到达的节点都是可能的驱动节点，到不了的是冗余节点；把边换成控制邻接边得到输入图，其连通分支分为输入分支和匹配分支，巨分支的竞争解释了双峰现象；少量加边就能改变大量节点的类型；所有可能的驱动节点可在求一次最大匹配的时间内找出。",
      "ready": true,
      "duration": 516.3,
-     "size": 119638973,
+     "size": 119692977,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L6-05.mp4"
     },
     {
@@ -1015,7 +1015,7 @@
      "points": "Yan等（2017）用控制分析预测线虫运动所需的神经元，并被消融实验证实（PDB）；结构可控性已用于找不可或缺蛋白、目标控制与药物再利用；按控制路径把节点分成头、中、尾，所有方案合在一起得到七类节点；控制核心点在所有方案中都位于路径中间，数量少、与方案无关；COVID-19中找出1256个控制核心点，与药物靶点和病毒蛋白结合得到可药物化的候选。",
      "ready": true,
      "duration": 517.6,
-     "size": 67736947,
+     "size": 67766080,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L6-06.mp4"
     },
     {
@@ -1027,8 +1027,8 @@
      "content": "膀胱癌泛癌网络（7030个基因）；控制核心点660个 vs 驱动基因3115/5052；关键通路覆盖；敏感控制核心点、生存关联与实验检验；动态网络的更换代价、稳定性与一致性原则；合成与真实网络的结果和性能下限；扩充：不枚举也能找到控制核心点（7节点例子）、高度≠控制核心点、35个敏感候选的邻居、读论文的局限、动态网络小例子与权重 q、与脑功能连接的联系",
      "points": "不找“把细胞推向癌变”的驱动基因，而找“维持癌变状态”的基因——癌症网络中的控制核心点；膀胱癌网络7030个基因中，一个控制方案要3115个驱动基因，控制核心点只有660个，覆盖细胞周期、p53等关键通路；敏感控制核心点自身突变不突出、邻居改变显著，实验检验有正有负；动态网络中每个时刻都要重选驱动节点，按稳定性和一致性原则选择，可显著减少更换代价。",
      "ready": true,
-     "duration": 538.7,
-     "size": 79686235,
+     "duration": 537.5,
+     "size": 79696993,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L6-07.mp4"
     },
     {
@@ -1040,8 +1040,8 @@
      "content": "最小支配集（空手道俱乐部4个节点；随机 0.249、BA 0.182、酵母 0.186）；模块控制强度与模块控制网络（空手道俱乐部4模块、9个最小支配集）；2773名大一新生的症状网络：睡眠与压力模块驱动情绪模块；本讲小结与练习；扩充：5节点链手算支配集、整数规划与贪心、哨点监测、模块控制的合成实验、NPI/EPI 极化、控制频率（PHQ9 1.000）、横断面数据的局限与练习提示",
      "points": "无向网络常用支配集框架：每个节点要么被选中、要么有邻居被选中；空手道俱乐部只需4个节点，无标度网络反而比随机网络更容易被支配；把支配集的控制域按模块汇总，得到有向的模块控制网络；在2773名大一新生的症状网络中，睡眠与压力等非情绪模块更多地控制抑郁、焦虑等情绪模块，关键症状是对睡眠的主观满意度和对生活的掌控感。",
      "ready": true,
-     "duration": 550.5,
-     "size": 106884425,
+     "duration": 551.0,
+     "size": 107419693,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L6-08.mp4"
     },
     {
@@ -1053,8 +1053,8 @@
      "content": "控制能量与可控性 Gramian；两个可手算的例子；能量的标度律；Gramian 条件数与“理论可控、数值不可控”；控制中心性与可控子空间；对药物干预的启示",
      "points": "秩判据只回答“能不能控”，控制能量回答“代价多大”；最小能量由可控性 Gramian 决定，沿 Gramian 的长轴便宜、短轴昂贵；控制时间越短越贵，稳定系统维持偏离平衡也有下限；驱动节点越少，最难方向的能量增长得越快，甚至超出计算机的精度；一个输入只能沿一条不分叉的路径展开，出度高不等于控制中心性高。",
      "ready": true,
-     "duration": 535.2,
-     "size": 65720528,
+     "duration": 536.6,
+     "size": 70842789,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L6-09.mp4"
     },
     {
@@ -1093,7 +1093,7 @@
      "points": "把结构脑网络当作线性系统的耦合矩阵，问从一个脑区注入输入能把全脑推向哪里、代价多大；单个脑区理论上都可控，但格拉姆矩阵最小特征值均值只有约 2.5×10⁻²³，实际上极难；平均可控性（推向容易到达的状态）与加权度正相关 0.91，集中在默认模式系统附近；模态可控性（推向难以到达的状态）与加权度负相关 −0.99，集中在认知控制系统；边界可控性以注意系统为主；这些指标与度高度冗余、零模型也能复现，“控制”只是类比。",
      "ready": true,
      "duration": 529.1,
-     "size": 93596717,
+     "size": 96487924,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L6-12.mp4"
     },
     {
@@ -1105,8 +1105,8 @@
      "content": "卡尔曼秩判据、最大匹配找驱动节点、驱动节点比例与平均度和度异质性、精确可控性、随机失效与蓄意攻击：逐段运行与读结果",
      "points": "把前几集的结论放进代码里跑一遍。约定好边的方向（A[v,u]表示u指向v）；链可控、星不可控；最大匹配给出的驱动节点用卡尔曼判据验证满秩；平均度越高、度越均匀，驱动节点越少；权重全相等会落进例外，需要更多输入；无标度网络对随机失效稳、对蓄意攻击脆。所有数字都来自本课程代码的实际运行结果。",
      "ready": true,
-     "duration": 517.8,
-     "size": 90761027,
+     "duration": 524.7,
+     "size": 92161602,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L6-13.mp4"
     },
     {
@@ -1119,7 +1119,7 @@
      "points": "结构可控性最容易用错的几处（枢纽、唯一性、权重、驱动节点当药物靶点、相关网络、表型切换）；“数学上可控”与“实际能操控”的差距；研究前沿：非线性控制、控制能量、目标控制、观测与控制的联合设计、时变网络，以及把目标控制的思想用到语言模型内部；整讲回顾与思考题。",
      "ready": true,
      "duration": 522.2,
-     "size": 105247558,
+     "size": 105233733,
      "src": "https://github.com/zxzok/bionetwork/releases/download/lecture-videos/L6-14.mp4"
     }
    ]

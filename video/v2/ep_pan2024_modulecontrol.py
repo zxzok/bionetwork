@@ -269,7 +269,7 @@ class Episode(Narrated):
         self.remove(*keep2)
         with self.say("n2c") as d:
             self.clip_on("symptom_pcor.mp4", "full", "本站交互演示：相关与偏相关", start=0.3)
-        self.wait(max(0.05, 15.0 - (self.renderer.time - self._clip['t0'])))
+        self.wait(max(0.05, d + 1.0 - (self.renderer.time - self._clip['t0'])))  # demo only as long as its line (no silent stretch)
         self.clip_off()
         self.add(*[m for m in keep2 if m not in (bgp, pc)])
         with self.say("n3") as d:

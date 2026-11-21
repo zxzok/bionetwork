@@ -1,0 +1,180 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>真实数据案例 · 研究问题、可复现分析与敏感性分析 · 生物医学网络科学</title><meta name="description" content="研究问题、可复现分析与敏感性分析：用公开数据完成的一次完整分析"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-methods"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="courses.html">课程视频</a><a href="domains.html" aria-current="page">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html" data-lec="L01">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html" data-lec="L02">网络结构指标与随机图</a></li><li><a href="network-models.html" data-lec="L03">小世界与无标度网络模型</a></li><li><a href="community-structure.html" data-lec="L04">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html" data-lec="L05">网络上的传播与免疫</a></li><li><a href="synchronization.html" data-lec="L06">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html" data-lec="L07">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html" data-lec="L09">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html" data-lec="L10">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html" data-lec="L11">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html" data-lec="L12">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html" data-lec="L13">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html" data-lec="L14">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods" open><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html" data-lec="L08">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html" data-lec="L15">研究问题、可复现分析与敏感性分析</a><ol class="sub"><li><a href="reproducible-research.research-questions.html"><span class="n">01</span>提出网络研究问题</a></li><li><a href="reproducible-research.preregistration.html"><span class="n">02</span>预注册与分析计划</a></li><li><a href="reproducible-research.reproducible-analysis.html"><span class="n">03</span>可复算的分析</a></li><li><a href="reproducible-research.computational-environment.html"><span class="n">04</span>计算环境与工作流</a></li><li><a href="reproducible-research.open-data-code.html"><span class="n">05</span>数据与代码共享</a></li><li><a href="reproducible-research.randomness-robustness.html"><span class="n">06</span>随机性控制</a></li><li><a href="reproducible-research.sensitivity-analysis.html"><span class="n">07</span>敏感性分析与替代解释</a></li><li><a href="reproducible-research.multiverse-analysis.html"><span class="n">08</span>多元宇宙分析与设定曲线</a></li><li><a href="reproducible-research.power-sample-size.html"><span class="n">09</span>统计功效与样本量</a></li><li><a href="reproducible-research.reporting-checklist.html"><span class="n">10</span>网络研究的报告清单</a></li><li><a href="reproducible-research.replication-cases.html"><span class="n">11</span>可重复性危机与负结果</a></li><li><a href="reproducible-research.ai-assistance.html"><span class="n">12</span>负责任地使用 AI 辅助</a></li><li><a href="reproducible-research.derivations.html"><span class="n">13</span>数学推导与算法</a></li><li><a href="reproducible-research.frontiers.html"><span class="n">14</span>研究前沿与开放问题</a></li><li><a href="reproducible-research.biomedical.html"><span class="n">15</span>生物医学应用</a></li><li><a href="reproducible-research.limitations.html"><span class="n">16</span>适用范围与常见误用</a></li></ol></li><li><a href="reporting-frontiers.html" data-lec="L16">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="courses.html">课程视频</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="d-methods.html">计算方法与研究规范</a> <span class="sep">/</span> <a href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a></nav><div class="eyebrow" style="margin-top:14px"><b>Case study</b><span>Research questions, reproducibility and sensitivity analysis</span></div><h1>真实数据案例：研究问题、可复现分析与敏感性分析</h1><p class="dek">真实数据案例：给“疾病基因在相互作用组中聚集”做一次多元宇宙分析</p><dl class="doc-meta"><div><dt>下载</dt><dd><a href="notebooks/case-reproducible-research.ipynb" download>Notebook</a> · <a href="data/string_human_physical_v12_s700.csv" download>string_human_physical_v12_s700.csv</a> · <a href="data/opentargets_disease_genes_ga.csv" download>opentargets_disease_genes_ga.csv</a></dd></div><div><dt>数据来源</dt><dd><a href="data-sources.html">数据来源与许可</a></dd></div><div><dt>浏览器</dt><dd><a class="lite-link" href="lite/notebooks/index.html?path=practice/case-reproducible-research.ipynb" target="_blank" rel="noopener">在 JupyterLite 中打开 ↗</a></dd></div></dl></header><section class="block ex-intro"><p class="small"><span class="py-status">代码可以直接在浏览器中运行，各段共享同一个 Python 会话：运行某一段时，前面尚未运行的段会先依次运行。首次加载 Python 环境约需 20–40 秒。</span> <button class="btn ghost run-all" type="button">从头运行全部</button></p></section><div class="case-body"><section class="block prose"># 真实数据案例：给“疾病基因在相互作用组中聚集”做一次多元宇宙分析
+
+**问题**：在 [疾病模块](network-medicine.disease-modules.html) 分析里，“某疾病的基因形成显著模块”这个结论依赖一串分析选择：相互作用网络取多高的置信度阈值、疾病基因取多高的证据阈值、零模型是否保持度、随机化做多少次、用哪个随机种子。本案例把这些选择全部列出来，在所有组合（“宇宙”）下重算一遍，看哪些疾病的结论稳健、哪些只在特定选择下成立。
+
+**数据来源**（与 [网络医学的真实数据案例](network-medicine.html) 相同）
+
+- STRING v12.0 人类物理相互作用子网络，综合分数 ≥ 700（CC BY 4.0；Szklarczyk D, et al. *Nucleic Acids Res* 2023;51:D638–D646）。
+- Open Targets Platform（数据版本 26.09）11 种疾病的遗传关联分数 ≥ 0.5 的基因（CC0 1.0；Buniello A, et al. *Nucleic Acids Res* 2025;53:D1467–D1475）。
+
+对应的知识页：[可复算的分析](reproducible-research.reproducible-analysis.html)、[计算环境](reproducible-research.computational-environment.html)、[敏感性分析](reproducible-research.sensitivity-analysis.html)、[多元宇宙分析](reproducible-research.multiverse-analysis.html)、[随机性与稳健性](reproducible-research.randomness-robustness.html)。</section><section class="block prose">## 1 数据来源与计算环境：先记录，再分析
+
+可复算的第一步是把“用了什么”写下来：数据文件的校验和（文件内容变了，校验和就会变）、软件版本、全部参数和随机种子集中放在一个配置里。</section><div class="cell seq-cell" data-i="0"><div class="cell-head"><h3>代码 1</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="30" spellcheck="false" aria-label="代码 1">import hashlib
+import sys
+import platform
+import numpy as np
+import pandas as pd
+import scipy
+import matplotlib
+import matplotlib.pyplot as plt
+from itertools import product
+from scipy import sparse
+from scipy.sparse.csgraph import connected_components
+
+plt.rcParams[&quot;font.sans-serif&quot;] = [&quot;Noto Sans CJK SC&quot;, &quot;PingFang SC&quot;, &quot;Heiti SC&quot;, &quot;SimHei&quot;, &quot;DejaVu Sans&quot;]
+plt.rcParams[&quot;axes.unicode_minus&quot;] = False
+
+FILES = [&quot;data/string_human_physical_v12_s700.csv&quot;, &quot;data/opentargets_disease_genes_ga.csv&quot;]
+for f in FILES:
+    with open(f, &quot;rb&quot;) as fh:
+        print(&quot;%-45s sha256 = %s…&quot; % (f, hashlib.sha256(fh.read()).hexdigest()[:16]))
+print(&quot;Python %s | numpy %s | scipy %s | pandas %s | matplotlib %s | %s&quot;
+      % (sys.version.split()[0], np.__version__, scipy.__version__, pd.__version__, matplotlib.__version__, platform.machine()))
+
+CONFIG = {
+    &quot;string_threshold&quot;: [700, 800, 900],      # 相互作用组：STRING 综合分数阈值
+    &quot;ga_threshold&quot;: [0.5, 0.6, 0.7, 0.8],     # 疾病基因：遗传关联分数阈值
+    &quot;null_model&quot;: [&quot;度匹配&quot;, &quot;均匀&quot;],         # 零模型
+    &quot;n_random&quot;: 200,                          # 每个宇宙的随机化次数
+    &quot;seed&quot;: 15,                               # 主分析的随机种子
+    &quot;min_genes&quot;: 10,                          # 疾病基因少于此数的宇宙不计算
+    &quot;alpha&quot;: 0.05,
+}
+print(CONFIG)</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 2 读入与清洗
+
+每个 STRING 阈值都要重新取最大连通分支（LCC），因为阈值越高，网络越稀疏，落在 LCC 外的蛋白越多。疾病基因只保留在当前 LCC 中的部分。</section><div class="cell seq-cell" data-i="1"><div class="cell-head"><h3>代码 2</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="30" spellcheck="false" aria-label="代码 2">ppi = pd.read_csv(FILES[0])
+dg = pd.read_csv(FILES[1])
+diseases = list(dg.drop_duplicates(&quot;disease_id&quot;).disease)
+
+def build_network(th):
+    e = ppi[ppi.score &gt;= th]
+    nodes = pd.Index(sorted(set(e.protein1) | set(e.protein2)))
+    ix = pd.Series(np.arange(len(nodes)), index=nodes)
+    i, j = ix[e.protein1].values, ix[e.protein2].values
+    A = sparse.coo_matrix((np.ones(len(i)), (i, j)), shape=(len(nodes),) * 2)
+    A = ((A + A.T) &gt; 0).astype(np.int8).tocsr()
+    _, comp = connected_components(A, directed=False)
+    keep = np.where(comp == np.bincount(comp).argmax())[0]
+    G = A[keep][:, keep].tocsr()
+    return G, pd.Series(np.arange(len(keep)), index=nodes[keep])
+
+def degree_bins(deg, min_size=100):
+    order = np.argsort(deg, kind=&quot;stable&quot;)
+    bins, cur = [], []
+    for pos, v in enumerate(order):
+        cur.append(v)
+        if len(cur) &gt;= min_size and not (pos + 1 &lt; len(order) and deg[order[pos + 1]] == deg[v]):
+            bins.append(np.array(cur)); cur = []
+    if cur:
+        bins[-1] = np.concatenate([bins[-1], cur])
+    bin_of = np.empty(len(deg), dtype=int)
+    for k, arr in enumerate(bins):
+        bin_of[arr] = k
+    return bins, bin_of
+
+NET = {}
+for th in CONFIG[&quot;string_threshold&quot;]:
+    G, gid = build_network(th)
+    deg = np.asarray(G.sum(1)).ravel()
+    NET[th] = (G, gid, deg) + degree_bins(deg)
+    print(&quot;STRING ≥ %d：LCC %5d 个节点、%6d 条边，平均度 %.1f&quot; % (th, G.shape[0], G.nnz // 2, deg.mean()))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 3 构网与核心指标：每个宇宙中的模块大小与 $z$ 分数
+
+指标与网络医学案例相同：疾病基因诱导子图的最大连通分支大小 $S_\mathrm{LCC}$，与随机基因集比较得到 $z$ 分数和经验 $p$ 值 $p=(1+\#\{S^\mathrm{rand}\ge S\})/(B+1)$。</section><div class="cell seq-cell" data-i="2"><div class="cell-head"><h3>代码 3</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="30" spellcheck="false" aria-label="代码 3">def lcc_size(G, S):
+    if len(S) == 0:
+        return 0
+    _, c = connected_components(G[S][:, S], directed=False)
+    return np.bincount(c).max()
+
+def random_set(S, null, N, bins, bin_of, rng):
+    if null == &quot;均匀&quot;:
+        return rng.choice(N, len(S), replace=False)
+    out, used = [], set()
+    for s in S:
+        pool = bins[bin_of[s]]
+        c = rng.choice(pool)
+        while c in used:
+            c = rng.choice(pool)
+        used.add(c); out.append(c)
+    return np.array(out)
+
+def module_test(th, ga, disease, null, B, seed):
+    G, gid, deg, bins, bin_of = NET[th]
+    g = dg[(dg.disease == disease) &amp; (dg.ga_score &gt;= ga)].gene
+    S = gid[[x for x in g if x in gid.index]].values
+    if len(S) &lt; CONFIG[&quot;min_genes&quot;]:
+        return len(S), np.nan, np.nan, np.nan
+    rng = np.random.default_rng(seed)
+    obs = lcc_size(G, S)
+    null_d = np.array([lcc_size(G, random_set(S, null, G.shape[0], bins, bin_of, rng)) for _ in range(B)])
+    sd = null_d.std()
+    z = (obs - null_d.mean()) / sd if sd &gt; 0 else np.nan
+    return len(S), obs, z, (1 + (null_d &gt;= obs).sum()) / (B + 1)
+
+rows = []
+for th, ga, null in product(CONFIG[&quot;string_threshold&quot;], CONFIG[&quot;ga_threshold&quot;], CONFIG[&quot;null_model&quot;]):
+    for d in diseases:
+        n, obs, z, pv = module_test(th, ga, d, null, CONFIG[&quot;n_random&quot;], CONFIG[&quot;seed&quot;])
+        rows.append({&quot;STRING&quot;: th, &quot;GA&quot;: ga, &quot;零模型&quot;: null, &quot;疾病&quot;: d, &quot;基因数&quot;: n, &quot;LCC&quot;: obs, &quot;z&quot;: z, &quot;p&quot;: pv})
+uni = pd.DataFrame(rows)
+print(&quot;宇宙数（不含疾病维度）：%d；疾病 × 宇宙 共 %d 个结果，其中 %d 个因基因少于 %d 而未计算&quot;
+      % (len(uni) // len(diseases), len(uni), uni.z.isna().sum(), CONFIG[&quot;min_genes&quot;]))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 4 与零模型比较：每种疾病在多少个宇宙里“显著”
+
+对每种疾病，统计在全部宇宙中 $p&lt;0.05$ 的比例，并分零模型列出 $z$ 的中位数。比例接近 1 的结论稳健；比例在中间的结论取决于分析选择，应当如实报告这种依赖。</section><div class="cell seq-cell" data-i="3"><div class="cell-head"><h3>代码 4</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="8" spellcheck="false" aria-label="代码 4">uni[&quot;显著&quot;] = uni.p &lt; CONFIG[&quot;alpha&quot;]
+summ = uni.groupby(&quot;疾病&quot;).agg(宇宙数=(&quot;z&quot;, &quot;count&quot;), 显著比例=(&quot;显著&quot;, &quot;mean&quot;),
+                               z_最小=(&quot;z&quot;, &quot;min&quot;), z_中位数=(&quot;z&quot;, &quot;median&quot;), z_最大=(&quot;z&quot;, &quot;max&quot;))
+by_null = uni.pivot_table(index=&quot;疾病&quot;, columns=&quot;零模型&quot;, values=&quot;z&quot;, aggfunc=&quot;median&quot;)
+summ = summ.join(by_null.add_prefix(&quot;z 中位数·&quot;)).sort_values(&quot;显著比例&quot;)
+pd.set_option(&quot;display.width&quot;, 200)
+print(summ.round(2).to_string())</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">**分岔花园**：如果每种疾病都只报告“最好看”的那个宇宙，会得到什么印象？把每种疾病的最大 $z$ 与预先指定的主分析（STRING ≥ 700、GA ≥ 0.7、度匹配）对比。</section><div class="cell seq-cell" data-i="4"><div class="cell-head"><h3>代码 5</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="8" spellcheck="false" aria-label="代码 5">main = uni[(uni.STRING == 700) &amp; (uni.GA == 0.7) &amp; (uni[&quot;零模型&quot;] == &quot;度匹配&quot;)].set_index(&quot;疾病&quot;)
+best = uni.loc[uni.groupby(&quot;疾病&quot;).z.idxmax()].set_index(&quot;疾病&quot;)
+cmp_ = pd.DataFrame({&quot;主分析 z&quot;: main.z, &quot;主分析 p&quot;: main.p, &quot;最好看的 z&quot;: best.z,
+                     &quot;对应选择&quot;: best.STRING.astype(str) + &quot; / GA &quot; + best.GA.astype(str) + &quot; / &quot; + best[&quot;零模型&quot;]})
+print(cmp_.round(3).to_string())
+print(&quot;\n主分析中显著的疾病：%d / %d；“各取最好”时显著的疾病：%d / %d&quot;
+      % ((main.p &lt; 0.05).sum(), len(main), (best.p &lt; 0.05).sum(), len(best)))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 5 随机性：同一个宇宙，换随机种子会怎样？
+
+取一个处在边界上的疾病（主分析中 $p$ 最接近 0.05 的那个），在主分析宇宙中用 20 个不同种子，分别做 $B=100$ 和 $B=1000$ 次随机化，比较 $z$ 与 $p$ 的波动。$B=1000$ 的 20 次重复在浏览器里需要十几秒。</section><div class="cell seq-cell" data-i="5"><div class="cell-head"><h3>代码 6</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="11" spellcheck="false" aria-label="代码 6">edge_d = (main.p - 0.05).abs().idxmin()
+print(&quot;边界疾病：&quot;, edge_d, &quot;（主分析 p = %.3f）&quot; % main.loc[edge_d, &quot;p&quot;])
+seed_rows = []
+for B in (100, 1000):
+    for s in range(20):
+        _, _, z, pv = module_test(700, 0.7, edge_d, &quot;度匹配&quot;, B, 1000 + s)
+        seed_rows.append({&quot;B&quot;: B, &quot;seed&quot;: s, &quot;z&quot;: z, &quot;p&quot;: pv})
+seeds = pd.DataFrame(seed_rows)
+print(seeds.groupby(&quot;B&quot;).agg(z_均值=(&quot;z&quot;, &quot;mean&quot;), z_标准差=(&quot;z&quot;, &quot;std&quot;), p_最小=(&quot;p&quot;, &quot;min&quot;), p_最大=(&quot;p&quot;, &quot;max&quot;),
+                             p小于005的比例=(&quot;p&quot;, lambda v: (v &lt; 0.05).mean())).round(3).to_string())</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 6 作图：规格曲线（specification curve）
+
+上：所有“疾病 × 宇宙”结果的 $z$ 从小到大排列，实心点为 $p&lt;0.05$；下：每个结果对应的分析选择。这种图把“结论依赖哪些选择”一次性摊开，比只报告一个数字诚实得多。</section><div class="cell seq-cell" data-i="6"><div class="cell-head"><h3>代码 7</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="21" spellcheck="false" aria-label="代码 7">sc = uni.dropna(subset=[&quot;z&quot;]).sort_values(&quot;z&quot;).reset_index(drop=True)
+fig, ax = plt.subplots(2, 1, figsize=(12, 6.5), sharex=True, gridspec_kw={&quot;height_ratios&quot;: [2.2, 1.6]})
+x = np.arange(len(sc))
+ax[0].scatter(x[sc[&quot;显著&quot;]], sc.z[sc[&quot;显著&quot;]], s=10, color=&quot;#3b6ea8&quot;, label=&quot;p &lt; 0.05&quot;)
+ax[0].scatter(x[~sc[&quot;显著&quot;]], sc.z[~sc[&quot;显著&quot;]], s=10, facecolors=&quot;none&quot;, edgecolors=&quot;#c0392b&quot;, label=&quot;p ≥ 0.05&quot;)
+ax[0].axhline(1.96, color=&quot;grey&quot;, ls=&quot;--&quot;, lw=1)
+ax[0].set_ylabel(&quot;模块 LCC 的 z 分数&quot;)
+ax[0].set_yscale(&quot;symlog&quot;, linthresh=2)
+ax[0].legend(fontsize=8, loc=&quot;upper left&quot;)
+ax[0].set_title(&quot;同一问题的 %d 个分析结果：多数疾病在各种选择下都显著，少数疾病的结论取决于选择&quot; % len(sc))
+
+labels, ypos = [], 0
+for col, vals in [(&quot;零模型&quot;, CONFIG[&quot;null_model&quot;]), (&quot;GA&quot;, CONFIG[&quot;ga_threshold&quot;]), (&quot;STRING&quot;, CONFIG[&quot;string_threshold&quot;])]:
+    for v in vals:
+        m = (sc[col] == v).values
+        ax[1].scatter(x[m], np.full(m.sum(), ypos), s=3, marker=&quot;|&quot;, color=&quot;#333333&quot;)
+        labels.append(&quot;%s = %s&quot; % (col, v)); ypos += 1
+ax[1].set_yticks(range(len(labels))); ax[1].set_yticklabels(labels, fontsize=8)
+ax[1].set_xlabel(&quot;按 z 排序的结果&quot;)
+plt.tight_layout()</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 7 解读与局限
+
+**结果说明了什么**
+
+- 阿尔茨海默病、克罗恩病和类风湿关节炎在全部 24 个宇宙中都显著，银屑病和溃疡性结肠炎在 23 个中显著：“这些疾病的遗传关联基因在相互作用组中聚集”是稳健的结论，可以报告，同时附上规格曲线。
+- 双相障碍在任何宇宙中都不显著，精神分裂症只在约四分之一的宇宙中显著，2 型糖尿病和系统性红斑狼疮在一半左右的宇宙中显著。对这类疾病，合适的表述是“证据取决于基因集定义与零模型”，而不是挑一个显著的宇宙报告。2 型糖尿病尤其依赖零模型：度匹配基线下 $z$ 的中位数约 4.9，均匀基线下只有约 0.8。
+- 主分析与“各取最好”的对比显示了分岔花园的代价：显著的疾病数只从 9 种变成 10 种，但效应量被大幅抬高，例如 2 型糖尿病的 $z$ 从约 3.2 变成约 21，银屑病从约 6.9 变成约 25。防止这一点的办法是预先指定主分析（[预注册](reproducible-research.preregistration.html)），把其余宇宙作为敏感性分析完整报告。
+- 随机种子：在边界疾病上，$B=100$ 时不同种子给出的 $z$ 标准差约 0.7，$B=1000$ 时约 0.15。经验 $p$ 值的最小可能值是 $1/(B+1)$，所以 $B=200$ 时最显著的结果都显示为 $p\approx0.005$。随机化次数要和需要的精度匹配，并报告种子。
+
+**局限**
+
+- 这里的“宇宙”只覆盖了三个维度。真实分析还有更多选择：STRING 用物理子网络还是全部关联、度分箱的粒度、是否去掉 HLA 区域等高度相关的基因簇、用 LCC 还是平均最短距离作指标。
+- 各宇宙共享同一份数据，结果高度相关；“显著比例”不是独立重复的成功率，不能当作概率解读。
+- 稳健不等于正确：所有宇宙都依赖同一个不完整、偏向研究充分蛋白的相互作用组，系统性偏倚不会因为换阈值而消失。
+- 本案例的计算环境记录在第 1 步；在浏览器（Pyodide）与本机运行时，库版本不同，随机数生成器相同（numpy 的 PCG64），但个别数值仍可能有细微差别，这正是要记录版本的原因。</section></div><nav class="pager"><a href="reproducible-research.html"><small>专题主页</small>研究问题、可复现分析与敏感性分析</a><a href="data-sources.html"><small>数据</small>数据来源与许可</a></nav><script type="application/json" id="ex-data">{"files": ["string_human_physical_v12_s700.csv", "opentargets_disease_genes_ga.csv"], "tasks": []}</script></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="courses.html">课程视频</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

@@ -81,10 +81,12 @@ LINES = {
     "v5": "不过，它可能产生内部连接很差、甚至断开的社团。后来的莱顿算法加了一步细化，保证每个社团都是连通的。",
     # detectability
     "d1": "最后是第三部分：找到的社团可不可信。先看一种情况：社团真的存在，但信号很弱。",
-    "d2": "我们用随机块模型来生成网络：先把节点分成两组，组内连边的机会大，组间连边的机会小。左边，每个节点平均有九点五条组内的边、零点五条组间的边，两个社团一目了然。",
-    "d3": "右边，组间连边变多了：组内七点二，组间二点八。组内连边仍然是组间的两倍多，两个社团却已经混成一团。",
+    "d2": "我们用随机块模型来生成网络：先把节点分成两组，组内连边的机会大，组间连边的机会小。两个参数，c_in管组内，c_out管组间，平均度就是它们的平均值。",
+    "d2a": "左边，c_in是九点五，c_out是零点五，平均度是五。两个社团一目了然。",
+    "d3": "右边，组间连边变多了：c_in是七点二，c_out是二点八，平均度还是五。",
+    "d3b": "折算到每个节点，平均大约三点六条组内的边、一点四条组间的边。组内仍是组间的两倍多，两个社团却已经混成一团。",
     "d4": "【慢】理论证明：组内和组间的差距低于某个阈值时，任何算法都无法比随机猜测做得更好。",
-    "d4b": "公式左边，是组内和组间平均边数的差；右边，是组数乘以平均度的平方根。右边这个例子，差是四点四，阈值约是四点四七，正好落在阈值以下。",
+    "d4b": "公式左边，是c_in和c_out的差；右边，是组数乘以平均度的平方根。右边这个例子，差是四点四，阈值是二倍根号五，约四点四七，正好落在阈值以下。",
     "d5": "所以，算法没找到社团，不等于网络里没有社团结构。不是算法不够好，而是信息本身不够。",
     # biomedical
     "s1": "在生物医学里，社团往往对应功能单元，比如蛋白质网络里的复合物和通路。",
@@ -427,7 +429,8 @@ class Episode(Narrated):
         n = 160
 
         def sbm(cin, cout, seed):
-            p = [[cin / (n / 2), cout / (n / 2)], [cout / (n / 2), cin / (n / 2)]]
+            # the site's definition: connection probabilities c_in/n and c_out/n, mean degree c = (c_in + c_out) / 2
+            p = [[cin / n, cout / n], [cout / n, cin / n]]
             G = nx.stochastic_block_model([n // 2, n // 2], p, seed=seed)
             return G
         with self.say("d1") as d:
@@ -444,13 +447,20 @@ class Episode(Narrated):
         vw = NetView(Gw, pw, color=MUTED, rmin=0.06, rk=0, eo=0.25)
         for v in Gs:
             vs.dots[v].set_color(col(v)); vw.dots[v].set_color(col(v))
-        ls = VGroup(T("组内 9.5 · 组间 0.5", 24, INK)).next_to(vs.group, UP, buff=0.2)
-        lw = VGroup(T("组内 7.2 · 组间 2.8", 24, INK)).next_to(vw.group, UP, buff=0.2)
-        hdr = T("每个节点平均连边", 22, MUTED).move_to([0, 3.25, 0])
+        ls = VGroup(MathTex(r"c_{\mathrm{in}}=9.5,\ \ c_{\mathrm{out}}=0.5", font_size=34, color=INK)).next_to(vs.group, UP, buff=0.45)
+        lw = VGroup(MathTex(r"c_{\mathrm{in}}=7.2,\ \ c_{\mathrm{out}}=2.8", font_size=34, color=INK)).next_to(vw.group, UP, buff=0.45)
+        hdr = VGroup(T("随机块模型参数 · 两组 · 平均度", 22, MUTED),
+                     MathTex(r"c=(c_{\mathrm{in}}+c_{\mathrm{out}})/2=5", font_size=30, color=MUTED)).arrange(RIGHT, buff=0.2).move_to([1.2, 3.5, 0])
+        pn = T("每个节点约 3.6 条组内边 · 1.4 条组间边", 18, MUTED).next_to(lw, DOWN, buff=0.06)
         with self.say("d2") as d:
-            self.play(FadeIn(vs.group), FadeIn(ls), FadeIn(hdr), run_time=1.4)
+            self.play(FadeIn(hdr), run_time=1.0)
+            self.play(FadeIn(vs.group), run_time=1.4)
+        with self.say("d2a") as d:
+            self.play(FadeIn(ls), run_time=0.8)
         with self.say("d3") as d:
             self.play(FadeIn(vw.group), FadeIn(lw), run_time=1.4)
+        with self.say("d3b") as d:
+            self.play(FadeIn(pn), run_time=0.8)
         with self.say("d4") as d:
             th = MathTex(r"|c_{\mathrm{in}}-c_{\mathrm{out}}| \le q\sqrt{c}", font_size=46, color=GOLD)
             bg = BackgroundRectangle(th, fill_color=BG, fill_opacity=0.92, buff=0.25)

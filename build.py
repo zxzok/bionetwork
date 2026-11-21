@@ -9,20 +9,29 @@ Content sources
   content/code/<id>.py       runnable code examples
   content/papers/*.md        paper explainers
   content/resources.yaml     data & software library
+  content/quizzes, exercises, cases, data   self-tests, exercises, real-data cases (format: content/FORMATS.md)
+
+    .venv/bin/python build.py --lite     # also rebuild the JupyterLite site in dist/lite (slow; tools/build_lite.py)
+Validate content with tools/check_content.py; build.py itself runs no student code.
 Old lecture URLs (L01.html ...) are kept as redirects to the new topic pages.
 """
+import hashlib
 import html
 import json
+import os
 import re
 import shutil
 import subprocess
+import sys
 from pathlib import Path
 
 import yaml
 
 ROOT = Path(__file__).resolve().parent
-CONTENT = ROOT / "content"
-DIST = ROOT / "dist"
+CONTENT = Path(os.environ.get("BNS_CONTENT") or ROOT / "content")   # overrides are for testing only
+DIST = Path(os.environ.get("BNS_DIST") or ROOT / "dist")
+sys.path.insert(0, str(ROOT / "tools"))
+from check_content import cells as nb_cells  # noqa: E402  (one cell parser for the build and the validator)
 SITE = "生物医学网络科学"
 SITE_EN = "Biomedical Network Science"
 
@@ -254,7 +263,8 @@ def rail(topics, cur_topic=None, cur_sec=None, cur_domain=None):
         out.append(f'<li><a href="d-{d["id"]}.html"{" aria-current=\"page\"" if cur_domain == d["id"] and not cur_topic and cur_sec == "domain" else ""}>领域概览</a></li>')
         for t in ts:
             cur = ' aria-current="page"' if t == cur_topic and not cur_sec else ""
-            out.append(f'<li><a href="{t}.html"{cur}>{E(ttitle(t))}</a>')
+            lg = TMETA[t].get("legacy") or ""
+            out.append(f'<li><a href="{t}.html"{cur}{f" data-lec=\"{lg}\"" if lg else ""}>{E(ttitle(t))}</a>')
             if t == cur_topic and t in topics:
                 out.append('<ol class="sub">')
                 for i, (ti, si, _) in enumerate(topics[t]["_articles"], 1):
@@ -396,7 +406,8 @@ def code_block(tid, compact=False):
     cards = "".join(gcard(tid, i, t) for i, (t, _) in enumerate(cells))
     return (f'<section class="block" id="code"><h2><span class="tag">CODE</span>计算实现</h2>'
             f'<p class="small">{len(cells)} 个完整可运行的 Python 示例，每个都给出代码、输出图和解读；可在浏览器中直接运行，或下载 '
-            f'<a href="notebooks/{tid}.ipynb" download>Jupyter Notebook</a> · <a href="notebooks/{tid}.py" download>Python 脚本</a>。</p>'
+            f'<a href="notebooks/{tid}.ipynb" download>Jupyter Notebook</a> · <a href="notebooks/{tid}.py" download>Python 脚本</a>'
+            + (" · " + lite_link(f"examples/{tid}.ipynb") if LITE_ON else "") + '。</p>'
             f'<div class="gallery">{cards}</div></section>')
 
 
@@ -466,6 +477,7 @@ def build_topic(tid, papers, resources):
     b.append(videos_block(tid))
     b.append(demos_block(t))
     b.append(code_block(tid))
+    b.append(practice_block(tid))
     if sp.get("related"):
         b.append(f'<section class="block prose" id="related"><h2><span class="tag">Links</span>关联知识</h2>{pandoc(sp["related"])}</section>')
     ps = [p for p in papers if tid in p.get("topics", [])]
@@ -711,7 +723,8 @@ def build_code(notebook_rows):
             rows = min(30, max(10, code.count("\n") + 2))
             body = (doc_head([f'<a href="code.html">代码库</a>', f'<a href="code.html#{TMETA[t]["domain"]}">{E(DOM[TMETA[t]["domain"]]["title"])}</a>',
                               f'<a href="{t}.html">{E(ttitle(t))}</a>'], f'<b>Example</b><span>{i + 1:02d} / {len(cells):02d}</span>', ct, "",
-                             [("所属专题", f'<a href="{t}.html">{E(ttitle(t))}</a>'), ("下载", f'<a href="notebooks/{t}.ipynb" download>Notebook</a> · <a href="notebooks/{t}.py" download>.py</a>')])
+                             [("所属专题", f'<a href="{t}.html">{E(ttitle(t))}</a>'), ("下载", f'<a href="notebooks/{t}.ipynb" download>Notebook</a> · <a href="notebooks/{t}.py" download>.py</a>'),
+                              ("浏览器", lite_link(f"examples/{t}.ipynb"))])
                     + (f'<section class="block prose">{pandoc(desc)}</section>' if desc else "")
                     + (f'<section class="block"><h2><span class="tag">Output</span>输出图</h2><div class="ex-figs">{figs}</div></section>' if figs else "")
                     + (f'<section class="block"><h2><span class="tag">Output</span>文字输出</h2><pre class="ex-out">{E(out)}</pre></section>' if out else "")
@@ -836,7 +849,10 @@ def build_resources(resources):
             groups.append(f'<section class="block rgroup"><h2>{E(k)}</h2><div class="rgrid">{"".join(res_card(r) for r in rs)}</div></section>')
     body = (f'<div class="lec-head"><h1>数据与软件资源库</h1><p class="lead">生物医学网络研究常用的公共数据、数据库、脑图谱与分析软件。每个资源都有中文介绍：'
             f'适合回答的研究问题、数据类型、获取方式、访问限制、相关工具与引用要求。</p>'
-            f'<div class="pfilters">{btns}<input class="filter" id="res-filter" type="search" placeholder="名称或用途" aria-label="筛选资源"></div></div>{"".join(groups)}'
+            f'<div class="pfilters">{btns}<input class="filter" id="res-filter" type="search" placeholder="名称或用途" aria-label="筛选资源"></div></div>'
+            + ('<section class="block related-box"><h2>站内练习与案例所用的数据</h2><p class="small" style="margin:0">练习和真实数据案例使用的公开数据集，'
+               '以及每个数据集的来源、许可证与引用方式：<a href="data-sources.html">数据来源与许可 →</a></p></section>' if (DIST / "data").exists() else "")
+            + f'{"".join(groups)}'
             '<script>(function(){var dom="",q="";function apply(){document.querySelectorAll(".rcard").forEach(function(c){c.hidden=!((!dom||c.dataset.dom.split(" ").indexOf(dom)>=0)&&(!q||c.dataset.k.indexOf(q)>=0))});'
             'document.querySelectorAll(".rgroup").forEach(function(s){s.hidden=!s.querySelector(".rcard:not([hidden])")})}'
             'document.querySelectorAll(".pfilters [data-dom]").forEach(function(b){b.addEventListener("click",function(){dom=dom===b.dataset.dom?"":b.dataset.dom;document.querySelectorAll(".pfilters [data-dom]").forEach(function(x){x.setAttribute("aria-pressed",x.dataset.dom===dom)});apply()})});'
@@ -948,6 +964,29 @@ def build_search(papers, resources, terms):
             if e["ready"]:
                 idx.append({"t": e["full_title"] or e["title"], "u": f"courses.html#{e['id']}", "k": "课程视频", "d": f"第 {ser['n']} 讲 {ser['title']} · 第 {e['ep']} 集",
                             "s": e["points"] or e["content"], "x": e["content"] + " " + e["points"]})
+    for tid, pr in PRACTICE.items():
+        tt = ttitle(tid)
+        if pr.get("quiz"):
+            qs = [q for v in quiz_file(TMETA[tid]["legacy"]).values() for q in v]
+            idx.append({"t": f"自测题：{tt}", "u": f"quiz-{tid}.html", "k": "自测与练习", "d": tt, "s": f"{pr['quiz']} 题，即时反馈与解析",
+                        "x": plain_text(" ".join(str(q.get("q", "")) for q in qs), 3000)})
+        if pr.get("ex"):
+            _, tasks = parse_exercises(CONTENT / "exercises" / f"{TMETA[tid]['legacy']}.py")
+            idx.append({"t": f"动手练习：{tt}", "u": f"exercises-{tid}.html", "k": "自测与练习", "d": tt,
+                        "s": "；".join(x["title"] for x in tasks)[:110], "x": plain_text(" ".join(x["title"] + " " + x["md"] for x in tasks), 3000)})
+        if pr.get("case"):
+            cs = parse_case(CONTENT / "cases" / f"{tid}.py")
+            md = " ".join(c for k, c in cs if k == "markdown")
+            idx.append({"t": f"真实数据案例：{tt}", "u": f"case-{tid}.html", "k": "自测与练习", "d": tt, "s": plain_text(md, 110), "x": plain_text(md, 3000)})
+    for ser in lectures_data()["series"]:
+        qs = [q for v in quiz_file(f"V{ser['n']}").values() for q in v]
+        if qs:
+            idx.append({"t": f"第 {ser['n']} 讲测验：{ser['title']}", "u": f"quiz-V{ser['n']}.html", "k": "课程视频", "d": f"{len(qs)} 题",
+                        "s": "题目只考这一讲视频里讲过的内容", "x": plain_text(" ".join(str(q.get("q", "")) for q in qs), 2000)})
+    if (DIST / "data-sources.html").exists():
+        sp = CONTENT / "data" / "SOURCES.md"
+        idx.append({"t": "数据来源与许可", "u": "data-sources.html", "k": "数据与软件", "d": "练习与案例数据", "s": "站内练习和真实数据案例使用的公开数据集",
+                    "x": plain_text(sp.read_text(encoding="utf-8"), 3000) if sp.exists() else ""})
     (DIST / "assets" / "search-index.json").write_text(json.dumps({"items": idx, "syn": SYNONYMS}, ensure_ascii=False), encoding="utf-8")
     body = ('<div class="lec-head"><h1>站内搜索</h1><form class="hero-search" role="search" onsubmit="return false"><input id="sq" type="search" '
             'placeholder="概念、算法、论文、数据集；支持英文与缩写，如 FC、PPI、modularity" aria-label="搜索"></form><p class="small" id="scount"></p></div>'
@@ -1062,10 +1101,471 @@ def build_courses():
 </div>
 <aside class="cv-side">{"".join(lists)}</aside>
 </section>
+{course_quiz_panels(series)}
 <section class="block cv-syllabus" id="syllabus"><h2><span class="tag">SYLLABUS</span>全部讲次与分集</h2>{"".join(syl)}</section>
 <script type="application/json" id="cv-data">{json.dumps(data, ensure_ascii=False).replace("</", "<\\/")}</script>"""
     write_page("courses.html", "课程视频", f"{SITE}系列讲解视频：{'、'.join(s['title'] for s in series)}，共 {len(ready)} 集，配中文字幕与文字稿",
                "courses", body, scripts=("site.js", "courses.js"), with_rail=False)
+
+
+# ----------------------------------------------------------------------------- self-test, exercises, data cases (format: content/FORMATS.md)
+LEVELS = {1: "基础", 2: "应用", 3: "综合"}
+LITE_APP = "lite/notebooks/index.html?path="   # JupyterLite (tools/build_lite.py); links appear once dist/lite exists
+LITE_ON = False
+
+
+def lite_link(path, label="在 JupyterLite 中打开"):
+    return f'<a class="lite-link" href="{LITE_APP}{path}" target="_blank" rel="noopener">{label} ↗</a>' if LITE_ON else ""
+
+
+def md_batch(items):
+    """Render many short markdown strings with a single pandoc call."""
+    if not items:
+        return []
+    src = "\n".join(f"::: {{#mdb{i} .mdb}}\n{s}\n:::\n" for i, s in enumerate(items))
+    out = pandoc(src)
+    got = dict(re.findall(r'<div id="mdb(\d+)" class="mdb">\n?(.*?)\n?</div>(?=\s*(?:<div id="mdb\d+" class="mdb">|\Z))', out, re.S))
+    return [got.get(str(i), E(s)) for i, s in enumerate(items)]
+
+
+def unwrap_p(h):
+    h = h.strip()
+    m = re.fullmatch(r"<p>(.*)</p>", h, re.S)
+    return m.group(1) if m and "<p>" not in m.group(1) else h
+
+
+def quiz_file(qid):
+    p = CONTENT / "quizzes" / f"{qid}.json"
+    if not p.exists():
+        return {}
+    try:
+        d = json.loads(p.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as e:   # a file being edited: skip it, the validator reports it
+        print(f"  ! {p.name}: {e}")
+        return {}
+    return {k: v for k, v in d.items() if isinstance(v, list) and v}
+
+
+def quiz_js(items):
+    """Quiz items -> data for site.js, with question, options and explanation rendered to HTML (MathML)."""
+    mds, slots = [], []
+    for q in items:
+        t = q.get("type", "single")
+        row = {"q": len(mds)}
+        mds.append(str(q.get("q", "")))
+        if t in ("single", "multi"):
+            row["o"] = []
+            for o in q.get("options") or []:
+                row["o"].append(len(mds))
+                mds.append(str(o))
+        if q.get("code"):
+            row["c"] = len(mds)
+            mds.append("```python\n" + str(q["code"]).rstrip() + "\n```")
+        row["x"] = len(mds)
+        mds.append(str(q.get("explain", "")))
+        slots.append(row)
+    html_ = md_batch(mds)
+    out = []
+    for q, row in zip(items, slots):
+        t = q.get("type", "single")
+        d = {"t": t, "q": unwrap_p(html_[row["q"]]), "a": q.get("answer"), "x": unwrap_p(html_[row["x"]])}
+        if "o" in row:
+            d["o"] = [unwrap_p(html_[k]) for k in row["o"]]
+        elif t == "code":
+            d["o"] = [f"<code>{E(str(o))}</code>" for o in q.get("options") or []]
+        if "c" in row:
+            d["c"] = html_[row["c"]]
+        if t == "numeric":
+            d["tol"] = q.get("tol", 0)
+            if q.get("unit"):
+                d["u"] = str(q["unit"])
+        if q.get("level") in LEVELS:
+            d["lv"] = q["level"]
+        see = str(q.get("see") or "")
+        if see:
+            sid = see.split("#")[0].removesuffix(".html")
+            if (sid.split(".")[0] in TOPICS) or (DIST / see.split("#")[0]).exists():
+                d["see"] = see
+                d["st"] = see_title(sid)
+        out.append(d)
+    return out
+
+
+def see_title(sid):
+    tid, _, sec = sid.partition(".")
+    if tid in TOPICS:
+        if not sec:
+            return TOPICS[tid]["title"]
+        for ti, si, _ in TOPICS[tid]["_articles"]:
+            if si == sec:
+                return ti
+    return ""
+
+
+def quiz_box(key, lec, kind, n):
+    return f'<div class="quiz" data-quiz="{key}" data-lec="{lec}" data-kind="{kind}" aria-live="polite"><p class="small">共 {n} 题，正在载入…</p></div>'
+
+
+def quiz_script(data):
+    return '<script>window.QUIZ=Object.assign(window.QUIZ||{},' + json.dumps(data, ensure_ascii=False).replace("</", "<\\/") + ");</script>"
+
+
+def quiz_levels(items):
+    c = {lv: sum(1 for q in items if q.get("level") == lv) for lv in LEVELS}
+    return " · ".join(f"{LEVELS[lv]} {n}" for lv, n in c.items() if n)
+
+
+QUIZ_HELP = ('<p class="small quiz-help">选择或填写后立即显示对错与解析；多选题和计算题需点“提交”。作答记录只保存在你自己的浏览器中，'
+             '全部答完且答对七成以上时，目录中相应条目会打上 ✓。</p>')
+
+
+def lec_topic(lid):
+    tid = LEGACY.get(lid)
+    return tid if tid in TOPICS else None
+
+
+PRACTICE = {}   # tid -> {"quiz": n, "ex": n_tasks, "case": bool}
+
+
+def build_quizzes():
+    """quiz-<topic>.html from content/quizzes/Lnn.json; quiz-Vn.html from Vn.json (also shown on courses.html)."""
+    for lid in sorted(LEGACY):
+        tid = lec_topic(lid)
+        d = quiz_file(lid)
+        if not tid or not d:
+            continue
+        t = TOPICS[tid]
+        data, secs = {}, []
+        for kind, label, dek in (("pre", "先想一想", "阅读前用几道题检查已有的直觉，答错也没关系，读完再回来对照。"),
+                                 ("post", "自测题", "读完本专题后检验理解程度：概念、计算与综合分析。")):
+            qs = d.get(kind) or []
+            if not qs:
+                continue
+            data[f"{lid}-{kind}"] = quiz_js(qs)
+            lv = quiz_levels(qs)
+            secs.append(f'<section class="block" id="{kind}"><h2><span class="tag">{"Warm-up" if kind == "pre" else "Self-test"}</span>{label}</h2>'
+                        f'<p class="small">{len(qs)} 题{"（" + lv + "）" if lv else ""}。{dek}</p>{quiz_box(f"{lid}-{kind}", lid, kind, len(qs))}</section>')
+        n = sum(len(v) for v in d.values())
+        PRACTICE.setdefault(tid, {})["quiz"] = n
+        links = [f'<a href="{tid}.html">专题主页</a>']
+        if (CONTENT / "exercises" / f"{lid}.py").exists():
+            links.append(f'<a href="exercises-{tid}.html">动手练习</a>')
+        if (CONTENT / "cases" / f"{tid}.py").exists():
+            links.append(f'<a href="case-{tid}.html">真实数据案例</a>')
+        body = (doc_head([f'<a href="d-{t["domain"]}.html">{E(DOM[t["domain"]]["title"])}</a>', f'<a href="{tid}.html">{E(t["title"])}</a>'],
+                         f'<b>Self-test</b><span>{E(t.get("en", ""))}</span>', f"自测题：{t['title']}", "", [("题量", f"{n} 题"), ("相关", " · ".join(links))])
+                + QUIZ_HELP + "".join(secs) + quiz_script(data))
+        write_page(f"quiz-{tid}.html", f"自测题 · {t['title']}", f"{t['title']}：自测题与解析", "domains", body, tid, sec="quiz")
+    for s in lectures_data()["series"]:
+        qid = f"V{s['n']}"
+        d = quiz_file(qid)
+        qs = [q for v in d.values() for q in v]
+        if not qs:
+            continue
+        lv = quiz_levels(qs)
+        body = (doc_head(['<a href="courses.html">课程视频</a>', f'<a href="courses.html#syllabus-{s["n"]}">第 {s["n"]} 讲 {E(s["title"])}</a>'],
+                         f'<b>Lecture quiz</b><span>{E(s["en"])}</span>', f"第 {s['n']} 讲测验：{s['title']}",
+                         "题目只考这一讲视频里讲过的内容，可以边看边做。", [("题量", f"{len(qs)} 题"), ("难度", lv), ("视频", f'<a href="courses.html#{s["episodes"][0]["id"]}">观看本讲视频</a>')])
+                + QUIZ_HELP + f'<section class="block">{quiz_box(qid, qid, "post", len(qs))}</section>' + quiz_script({qid: quiz_js(qs)}))
+        write_page(f"quiz-{qid}.html", f"第 {s['n']} 讲测验 · {s['title']}", f"课程视频第 {s['n']} 讲《{s['title']}》测验", "courses", body, with_rail=False)
+
+
+def course_quiz_panels(series):
+    """'本讲测验' panels on courses.html, one per lecture, toggled with the lecture tabs."""
+    data, out = {}, []
+    for s in series:
+        qid = f"V{s['n']}"
+        qs = [q for v in quiz_file(qid).values() for q in v]
+        if not qs:
+            continue
+        data[qid] = quiz_js(qs)
+        out.append(f'<details class="cv-qz" data-series="{s["n"]}"{"" if s is series[0] else " hidden"}>'
+                   f'<summary data-lec="{qid}"><b>本讲测验</b><span>第 {s["n"]} 讲 {E(s["title"])} · {len(qs)} 题</span></summary>'
+                   f'<div class="cv-qz-body"><p class="small">题目只考这一讲视频里讲过的内容。选择后立即显示对错与解析；作答记录只保存在本浏览器。'
+                   f'<a href="quiz-{qid}.html">在单独页面中打开 →</a></p>{quiz_box(qid, qid, "post", len(qs))}</div></details>')
+    if not out:
+        return ""
+    return f'<section class="cv-quizzes" aria-label="本讲测验">{"".join(out)}</section>{quiz_script(data)}'
+
+
+# --- exercises
+def md_cell_text(body):
+    """'# text' comment lines of a markdown cell -> markdown."""
+    return "\n".join(re.sub(r"^# ?", "", ln) if ln.startswith("#") else ln for ln in body.strip("\n").splitlines()).strip()
+
+
+def split_hint(md):
+    m = re.search(r"(?m)^\s*(?:\*\*)?提示(?:\*\*)?\s*[:：]", md)
+    return (md[:m.start()].strip(), md[m.end():].strip()) if m else (md, "")
+
+
+def parse_exercises(path):
+    """content/exercises/Lnn.py -> (intro_md, [task]); task = {title, md, hint, setup, starter, solution, check}.
+    Also reads the older one-cell-per-task files (# %% 任务1：…) so pages exist while content is being rewritten."""
+    cs = nb_cells(path.read_text(encoding="utf-8"))
+    intro, tasks = [], []
+    new = any(k in ("starter", "solution", "check") for k, _, _ in cs)
+    for kind, title, body in cs:
+        if kind == "markdown":
+            m = re.match(r"task\s*(\d+)\s*[:：.]?\s*(.*)", title, re.I)
+            if m:
+                md, hint = split_hint(md_cell_text(body))
+                tasks.append({"title": m.group(2).strip() or f"任务 {m.group(1)}", "md": md, "hint": hint,
+                              "setup": "", "starter": "", "solution": "", "check": ""})
+            elif tasks:
+                tasks[-1]["md"] += "\n\n" + md_cell_text(body)
+            else:
+                intro.append((title + "\n\n" if title else "") + md_cell_text(body))
+        elif new:
+            if not tasks:
+                tasks.append({"title": "准备", "md": "", "hint": "", "setup": "", "starter": "", "solution": "", "check": ""})
+            k = kind if kind in ("setup", "starter", "solution", "check") else "setup"
+            tasks[-1][k] = (tasks[-1][k] + "\n\n" + body.strip("\n")).strip("\n")
+        else:   # legacy: "# %% 任务1：标题", leading comments = statement, rest = code to edit
+            lines = body.strip("\n").splitlines()
+            j = 0
+            while j < len(lines) and lines[j].startswith("#"):
+                j += 1
+            md, hint = split_hint(md_cell_text("\n".join(lines[:j])))
+            tasks.append({"title": re.sub(r"^任务\s*\d+\s*[:：]\s*", "", title), "md": md, "hint": hint, "setup": "",
+                          "starter": "\n".join(lines[j:]).strip("\n"), "solution": "", "check": ""})
+    return "\n\n".join(intro).strip(), tasks
+
+
+DATA_RE = re.compile(r"""["']data/([\w.\-]+)["']""")
+
+
+def data_refs(*codes):
+    out = []
+    for c in codes:
+        for f in DATA_RE.findall(c or ""):
+            if f not in out:
+                out.append(f)
+    return out
+
+
+def nb_json(cells_):
+    doc = {"cells": [], "metadata": {"kernelspec": {"name": "python3", "display_name": "Python 3", "language": "python"},
+                                     "language_info": {"name": "python"}}, "nbformat": 4, "nbformat_minor": 5}
+    for i, (kind, src, *tags) in enumerate(cells_):
+        c = {"cell_type": kind, "id": f"c{i:03d}", "metadata": {"tags": tags} if tags else {}, "source": src.strip("\n").splitlines(True)}
+        if kind == "code":
+            c.update({"execution_count": None, "outputs": []})
+        doc["cells"].append(c)
+    return json.dumps(doc, ensure_ascii=False, indent=1)
+
+
+def ex_notebooks(tid, intro, tasks, data):
+    head = f"# 动手练习：{ttitle(tid)}\n\n来自《{SITE}》（{SITE_EN}）。"
+    tip = ("\n\n每个任务先运行“准备”格，再在“你的代码”格中完成 TODO，最后运行“核对”格：打印 ✓ 表示通过，"
+           "否则会给出提示。" + ("数据文件放在与本笔记本同级的 `data/` 文件夹中。" if data else ""))
+    for ver in ("student", "solution") if any(t["solution"] for t in tasks) else ("student",):
+        cs = [("markdown", head + (" 参考答案版。" if ver == "solution" else tip))]
+        if intro:
+            cs.append(("markdown", intro))
+        for k, t in enumerate(tasks, 1):
+            md = f"## 任务 {k}：{t['title']}\n\n{t['md']}" + (f"\n\n> **提示：** {t['hint']}" if t["hint"] else "")
+            cs.append(("markdown", md))
+            if t["setup"]:
+                cs.append(("code", "# 准备（直接运行）\n" + t["setup"], "setup"))
+            code = t["solution"] if ver == "solution" and t["solution"] else t["starter"]
+            if code:
+                cs.append(("code", code, "solution" if ver == "solution" else "starter"))
+            if t["check"]:
+                cs.append(("code", "# 核对（不用修改）\n" + t["check"], "check"))
+        name = f"exercises-{tid}" + ("-solution" if ver == "solution" else "")
+        (DIST / "notebooks" / f"{name}.ipynb").write_text(nb_json(cs), encoding="utf-8")
+
+
+def code_html(code):
+    return pandoc("```python\n" + code.rstrip() + "\n```")
+
+
+def build_exercises():
+    for lid in sorted(LEGACY):
+        tid = lec_topic(lid)
+        p = CONTENT / "exercises" / f"{lid}.py"
+        if not tid or not p.exists():
+            continue
+        intro, tasks = parse_exercises(p)
+        if not tasks:
+            continue
+        t = TOPICS[tid]
+        data = data_refs(*(x[k] for x in tasks for k in ("setup", "starter", "solution", "check")))
+        ex_notebooks(tid, intro, tasks, data)
+        has_sol = any(x["solution"] for x in tasks)
+        PRACTICE.setdefault(tid, {})["ex"] = len(tasks)
+        mds = md_batch([x["md"] or " " for x in tasks] + [x["hint"] or " " for x in tasks] + [intro or " "])
+        n = len(tasks)
+        parts, ex = [], {"files": data, "tasks": []}
+        for k, x in enumerate(tasks):
+            ex["tasks"].append({"setup": x["setup"], "check": x["check"]})
+            rows = min(28, max(8, x["starter"].count("\n") + 2))
+            setup = (f'<details class="ex-setup"><summary>准备代码（运行时自动执行）</summary>{code_html(x["setup"])}</details>' if x["setup"] else "")
+            sol = (f'<details class="ex-sol"><summary>查看参考答案</summary>{code_html(x["solution"])}'
+                   f'<p class="small">参考答案只是一种写法；只要核对通过，其他写法同样正确。</p></details>' if x["solution"] else "")
+            hint = f'<details class="ex-hint"><summary>提示</summary><div class="prose">{mds[n + k]}</div></details>' if x["hint"] else ""
+            check_note = "运行时依次执行准备代码、你的代码和自动核对。" if x["check"] else "运行你的代码。"
+            parts.append(f'<section class="block ex-task" id="task-{k + 1}"><h2><span class="tag">Task {k + 1}</span>{E(x["title"])}</h2>'
+                         f'<div class="prose">{mds[k] if x["md"] else ""}</div>{hint}{setup}'
+                         f'<div class="cell ex-cell" data-task="{k}"><div class="cell-head"><h3>你的代码</h3><div>'
+                         f'<button class="btn run" type="button">在浏览器中运行</button> <button class="btn ghost reset" type="button">还原</button> '
+                         f'<button class="btn ghost copy" type="button">复制</button></div></div>'
+                         f'<textarea rows="{rows}" spellcheck="false" aria-label="任务 {k + 1} 代码">{E(x["starter"])}</textarea>'
+                         f'<div class="ex-result" aria-live="polite"></div><div class="out" aria-live="polite"></div></div>'
+                         f'<p class="small">{check_note}</p>{sol}</section>')
+        dl = [f'<a href="notebooks/exercises-{tid}.ipynb" download>学生版 Notebook</a>']
+        if has_sol:
+            dl.append(f'<a href="notebooks/exercises-{tid}-solution.ipynb" download>答案版 Notebook</a>')
+        if data:
+            dl.append("数据：" + "、".join(f'<a href="data/{f}" download>{E(f)}</a>' for f in data))
+        lite = lite_link(f"practice/exercises-{tid}.ipynb")
+        toc = "".join(f'<li><a href="#task-{k + 1}">{E(x["title"])}</a></li>' for k, x in enumerate(tasks))
+        body = (doc_head([f'<a href="d-{t["domain"]}.html">{E(DOM[t["domain"]]["title"])}</a>', f'<a href="{tid}.html">{E(t["title"])}</a>'],
+                         f'<b>Exercises</b><span>{E(t.get("en", ""))}</span>', f"动手练习：{t['title']}",
+                         "每个任务给出说明、起始代码和自动核对；可以直接在浏览器中运行，也可以下载 Notebook 在本地完成。",
+                         [("任务", f"{n} 个"), ("下载", " · ".join(dl)), ("浏览器", lite)])
+                + (f'<section class="block prose">{mds[2 * n]}</section>' if intro else "")
+                + '<section class="block ex-intro"><p class="small"><span class="py-status">首次运行需加载 Python 环境（约 20–40 秒），之后每次运行只需一两秒。'
+                  '各任务共享同一个 Python 会话。</span></p><ol class="ex-toc">' + toc + '</ol></section>'
+                + "".join(parts)
+                + f'<nav class="pager"><a href="{tid}.html"><small>专题主页</small>{E(t["title"])}</a>'
+                + (f'<a href="quiz-{tid}.html"><small>自测题</small>{E(t["title"])}</a>' if (CONTENT / "quizzes" / f"{lid}.json").exists() else "") + "</nav>"
+                + '<script type="application/json" id="ex-data">' + json.dumps(ex, ensure_ascii=False).replace("</", "<\\/") + "</script>")
+        write_page(f"exercises-{tid}.html", f"动手练习 · {t['title']}", f"{t['title']}：可在浏览器中运行并自动核对的练习", "domains", body, tid, sec="exercises")
+
+
+# --- real-data cases
+CASE_OUT = ROOT / "build" / "cases"   # cached outputs from tools/run_cases.py (optional)
+
+
+def parse_case(path):
+    out = []
+    for kind, title, body in nb_cells(path.read_text(encoding="utf-8")):
+        if kind == "markdown":
+            out.append(("markdown", ((f"## {title}\n\n" if title else "") + md_cell_text(body)).strip()))
+        else:
+            out.append(("code", body.strip("\n")))
+    return [c for c in out if c[1]]
+
+
+def build_cases():
+    d = CONTENT / "cases"
+    if not d.exists():
+        return
+    (DIST / "gallery" / "cases").mkdir(parents=True, exist_ok=True)
+    for p in sorted(d.glob("*.py")):
+        tid = p.stem
+        if tid not in TOPICS:
+            print(f"  ! case {p.name}: no topic with this id")
+            continue
+        t = TOPICS[tid]
+        cs = parse_case(p)
+        if not cs:
+            continue
+        data = data_refs(*(c for k, c in cs if k == "code"))
+        (DIST / "notebooks" / f"case-{tid}.ipynb").write_text(nb_json(
+            [("markdown", f"# 真实数据案例：{t['title']}\n\n来自《{SITE}》（{SITE_EN}）。数据文件放在与本笔记本同级的 `data/` 文件夹中。")] + cs), encoding="utf-8")
+        cache = {}
+        cp = CASE_OUT / f"{tid}.json"
+        if cp.exists():
+            cache = json.loads(cp.read_text(encoding="utf-8"))
+            if cache.get("hash") != hashlib.sha1(p.read_bytes()).hexdigest():
+                cache = {"stale": True, **cache}
+            for png in CASE_OUT.glob(f"{tid}-*.png"):
+                shutil.copy(png, DIST / "gallery" / "cases" / png.name)
+        mds = md_batch([c for k, c in cs if k == "markdown"])
+        parts, mi, ci = [], 0, 0
+        for k, c in cs:
+            if k == "markdown":
+                parts.append(f'<section class="block prose">{mds[mi]}</section>')
+                mi += 1
+                continue
+            res = (cache.get("cells") or {}).get(str(ci), {}) if not cache.get("stale") else {}
+            if res.get("error"):
+                res = {}
+            figs = "".join(f'<img src="gallery/cases/{tid}-{ci}-{j}.png" alt="第 {ci + 1} 段代码的输出图 {j + 1}" loading="lazy">' for j in range(res.get("figures", 0)))
+            txt = (res.get("stdout") or "").strip()
+            saved = (f'<div class="case-saved"><span class="small">预先运行的结果</span>' + (f'<pre class="ex-out">{E(txt)}</pre>' if txt else "") + figs + "</div>") if (txt or figs) else ""
+            rows = min(30, max(6, c.count("\n") + 2))
+            parts.append(f'<div class="cell seq-cell" data-i="{ci}"><div class="cell-head"><h3>代码 {ci + 1}</h3><div>'
+                         f'<button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> '
+                         f'<button class="btn ghost copy" type="button">复制</button></div></div>'
+                         f'<textarea rows="{rows}" spellcheck="false" aria-label="代码 {ci + 1}">{E(c)}</textarea><div class="out" aria-live="polite"></div>{saved}</div>')
+            ci += 1
+        PRACTICE.setdefault(tid, {})["case"] = True
+        dl = [f'<a href="notebooks/case-{tid}.ipynb" download>Notebook</a>'] + [f'<a href="data/{f}" download>{E(f)}</a>' for f in data]
+        title = re.sub(r"^#+\s*", "", next((c.splitlines()[0] for k, c in cs if k == "markdown" and c.startswith("#")), "")) or t["title"]
+        body = (doc_head([f'<a href="d-{t["domain"]}.html">{E(DOM[t["domain"]]["title"])}</a>', f'<a href="{tid}.html">{E(t["title"])}</a>'],
+                         f'<b>Case study</b><span>{E(t.get("en", ""))}</span>', f"真实数据案例：{t['title']}",
+                         E(title) if title != t["title"] else "",
+                         [("下载", " · ".join(dl)), ("数据来源", '<a href="data-sources.html">数据来源与许可</a>'), ("浏览器", lite_link(f"practice/case-{tid}.ipynb"))])
+                + '<section class="block ex-intro"><p class="small"><span class="py-status">代码可以直接在浏览器中运行，各段共享同一个 Python 会话：运行某一段时，前面尚未运行的段会先依次运行。'
+                  '首次加载 Python 环境约需 20–40 秒。</span> <button class="btn ghost run-all" type="button">从头运行全部</button></p></section>'
+                + f'<div class="case-body">{"".join(parts)}</div>'
+                + f'<nav class="pager"><a href="{tid}.html"><small>专题主页</small>{E(t["title"])}</a><a href="data-sources.html"><small>数据</small>数据来源与许可</a></nav>'
+                + '<script type="application/json" id="ex-data">' + json.dumps({"files": data, "tasks": []}, ensure_ascii=False) + "</script>")
+        write_page(f"case-{tid}.html", f"真实数据案例 · {t['title']}", f"{t['title']}：用公开数据完成的一次完整分析", "domains", body, tid, sec="case")
+
+
+def human_size(n):
+    return f"{n / 1e6:.1f} MB" if n >= 1e6 else f"{max(1, round(n / 1e3))} KB"
+
+
+def publish_data():
+    """content/data/* -> dist/data/ (pages, Pyodide) and dist/notebooks/data/ (next to the downloadable notebooks)."""
+    src = CONTENT / "data"
+    files = sorted(f for f in src.glob("*") if f.is_file() and not f.name.startswith(".")) if src.exists() else []
+    for dst in (DIST / "data", DIST / "notebooks" / "data"):
+        if dst.exists():
+            shutil.rmtree(dst)
+        if files:
+            dst.mkdir(parents=True)
+            for f in files:
+                shutil.copy(f, dst / f.name)
+    return files
+
+
+def build_data_sources(files):
+    if not files:
+        return False
+    sp = CONTENT / "data" / "SOURCES.md"
+    md = sp.read_text(encoding="utf-8") if sp.exists() else ""
+    md = re.sub(r"\A#\s+[^\n]*\n", "", md)   # the page has its own title
+    used = {}
+    for p in sorted((CONTENT / "cases").glob("*.py")) if (CONTENT / "cases").exists() else []:
+        for f in data_refs(p.read_text(encoding="utf-8")):
+            used.setdefault(f, []).append(f'<a href="case-{p.stem}.html">案例：{E(ttitle(p.stem))}</a>')
+    for p in sorted((CONTENT / "exercises").glob("L*.py")):
+        tid = lec_topic(p.stem)
+        if tid:
+            for f in data_refs(p.read_text(encoding="utf-8")):
+                used.setdefault(f, []).append(f'<a href="exercises-{tid}.html">练习：{E(ttitle(tid))}</a>')
+    rows = "".join(f'<tr><td><a href="data/{f.name}" download><code>{E(f.name)}</code></a></td><td>{human_size(f.stat().st_size)}</td>'
+                   f'<td>{"、".join(used.get(f.name, [])) or "—"}</td></tr>' for f in files if f.name != "SOURCES.md")
+    body = (doc_head(['<a href="resources.html">数据与软件</a>'], "<b>Data sources</b>", "数据来源与许可",
+                     "站内练习和真实数据案例使用的公开数据集：来源、许可证、引用方式与下载日期。所有文件都可以直接下载，也会自动载入浏览器中的 Python 环境。")
+            + f'<section class="block"><h2><span class="tag">Files</span>数据文件</h2><div class="table-wrap"><table><thead><tr><th>文件</th><th>大小</th><th>用于</th></tr></thead>'
+              f'<tbody>{rows}</tbody></table></div><p class="small">在本地运行 Notebook 时，把数据文件放在与 Notebook 同级的 <code>data/</code> 文件夹中'
+              f'（下载的 Notebook 与 <a href="notebooks/data/">notebooks/data/</a> 的布局相同）。来源说明原文：<a href="data/SOURCES.md">SOURCES.md</a>。</p></section>'
+            + (f'<section class="block prose" id="sources">{pandoc(md)}</section>' if md.strip() else ""))
+    write_page("data-sources.html", "数据来源与许可", "站内练习与案例所用公开数据集的来源、许可证与引用", "resources", body)
+    return True
+
+
+def practice_block(tid):
+    """Topic home: links to the self-test, exercises and case study of this topic."""
+    p = PRACTICE.get(tid) or {}
+    cards = []
+    if p.get("quiz"):
+        cards.append(f'<a class="pcard-link" href="quiz-{tid}.html" data-lec="{TMETA[tid].get("legacy", "")}"><b>自测题</b><span>{p["quiz"]} 题，即时反馈与解析</span></a>')
+    if p.get("ex"):
+        cards.append(f'<a class="pcard-link" href="exercises-{tid}.html"><b>动手练习</b><span>{p["ex"]} 个任务，浏览器中运行并自动核对</span></a>')
+    if p.get("case"):
+        cards.append(f'<a class="pcard-link" href="case-{tid}.html"><b>真实数据案例</b><span>公开数据上的一次完整分析</span></a>')
+    if not cards:
+        return ""
+    return f'<section class="block" id="practice"><h2><span class="tag">Practice</span>自测、练习与案例</h2><div class="pgrid practice-grid">{"".join(cards)}</div></section>'
 
 
 # ----------------------------------------------------------------------------- about & redirects
@@ -1116,6 +1616,19 @@ def main():
     for f in DIST.glob("*.html"):  # remove pages from older builds
         if not f.name.startswith(("paper-",)):
             f.unlink()
+    global LITE_ON
+    want_lite = "--lite" in sys.argv
+    LITE_ON = want_lite or (DIST / "lite" / "jupyter-lite.json").exists()
+    rows = build_notebooks()
+    data_files = publish_data()
+    build_quizzes()
+    build_exercises()
+    build_cases()
+    build_data_sources(data_files)
+    if want_lite:
+        r = subprocess.run([sys.executable, str(ROOT / "tools" / "build_lite.py")], env={**os.environ, "BNS_DIST": str(DIST)})
+        if r.returncode:
+            raise SystemExit("JupyterLite build failed")
     for tid in TOPICS:
         print("topic", tid, len(TOPICS[tid]["_articles"]), flush=True)
         build_topic(tid, papers, resources)
@@ -1123,7 +1636,6 @@ def main():
     build_domains(papers, resources)
     build_index(papers)
     build_lab()
-    rows = build_notebooks()
     build_code(rows)
     build_papers(papers)
     build_resources(resources)

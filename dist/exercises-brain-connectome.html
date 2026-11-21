@@ -1,0 +1,301 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>动手练习 · 脑连接组：结构与功能连接 · 生物医学网络科学</title><meta name="description" content="脑连接组：结构与功能连接：可在浏览器中运行并自动核对的练习"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-brain"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="courses.html">课程视频</a><a href="domains.html" aria-current="page">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html" data-lec="L01">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html" data-lec="L02">网络结构指标与随机图</a></li><li><a href="network-models.html" data-lec="L03">小世界与无标度网络模型</a></li><li><a href="community-structure.html" data-lec="L04">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html" data-lec="L05">网络上的传播与免疫</a></li><li><a href="synchronization.html" data-lec="L06">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html" data-lec="L07">网络可控性与稳定性</a></li></ol></details><details class="dom-brain" open><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html" data-lec="L09">脑连接组：结构与功能连接</a><ol class="sub"><li><a href="brain-connectome.connectome-concepts.html"><span class="n">01</span>连接组：结构连接与功能连接</a></li><li><a href="brain-connectome.parcellation.html"><span class="n">02</span>脑图谱与节点定义</a></li><li><a href="brain-connectome.structural-connectivity.html"><span class="n">03</span>结构连接：弥散 MRI 与纤维追踪</a></li><li><a href="brain-connectome.functional-connectivity.html"><span class="n">04</span>功能连接估计：相关与偏相关</a></li><li><a href="brain-connectome.preprocessing.html"><span class="n">05</span>预处理对功能连接的影响</a></li><li><a href="brain-connectome.effective-connectivity.html"><span class="n">06</span>有效连接：动态因果模型与格兰杰因果</a></li><li><a href="brain-connectome.thresholding.html"><span class="n">07</span>阈值与加权</a></li><li><a href="brain-connectome.weighted-metrics.html"><span class="n">08</span>加权脑网络指标与归一化</a></li><li><a href="brain-connectome.topology.html"><span class="n">09</span>拓扑指标：小世界、模块、枢纽与富人俱乐部</a></li><li><a href="brain-connectome.functional-systems.html"><span class="n">10</span>模块与功能系统</a></li><li><a href="brain-connectome.spatial-embedding.html"><span class="n">11</span>空间嵌入与布线代价</a></li><li><a href="brain-connectome.gradients.html"><span class="n">12</span>连接组梯度</a></li><li><a href="brain-connectome.group-comparison.html"><span class="n">13</span>组间比较与统计验证</a></li><li><a href="brain-connectome.individual-differences.html"><span class="n">14</span>个体指纹与个体差异</a></li><li><a href="brain-connectome.lesion-network-mapping.html"><span class="n">15</span>病变网络映射</a></li><li><a href="brain-connectome.pipeline.html"><span class="n">16</span>从 fMRI 到结论：分析流程与选择</a></li><li><a href="brain-connectome.derivations.html"><span class="n">17</span>数学推导与算法</a></li><li><a href="brain-connectome.frontiers.html"><span class="n">18</span>研究前沿与开放问题</a></li><li><a href="brain-connectome.biomedical.html"><span class="n">19</span>生物医学应用</a></li><li><a href="brain-connectome.limitations.html"><span class="n">20</span>适用范围与常见误用</a></li></ol></li><li><a href="dynamic-brain-networks.html" data-lec="L10">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html" data-lec="L11">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html" data-lec="L12">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html" data-lec="L13">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html" data-lec="L14">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html" data-lec="L08">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html" data-lec="L15">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html" data-lec="L16">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="courses.html">课程视频</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="d-brain.html">脑网络与连接组</a> <span class="sep">/</span> <a href="brain-connectome.html">脑连接组：结构与功能连接</a></nav><div class="eyebrow" style="margin-top:14px"><b>Exercises</b><span>The connectome: structural and functional connectivity</span></div><h1>动手练习：脑连接组：结构与功能连接</h1><p class="dek">每个任务给出说明、起始代码和自动核对；可以直接在浏览器中运行，也可以下载 Notebook 在本地完成。</p><dl class="doc-meta"><div><dt>任务</dt><dd>6 个</dd></div><div><dt>下载</dt><dd><a href="notebooks/exercises-brain-connectome.ipynb" download>学生版 Notebook</a> · <a href="notebooks/exercises-brain-connectome-solution.ipynb" download>答案版 Notebook</a> · 数据：<a href="data/lausanne68_sc_fc.csv" download>lausanne68_sc_fc.csv</a></dd></div><div><dt>浏览器</dt><dd><a class="lite-link" href="lite/notebooks/index.html?path=practice/exercises-brain-connectome.ipynb" target="_blank" rel="noopener">在 JupyterLite 中打开 ↗</a></dd></div></dl></header><section class="block ex-intro"><p class="small"><span class="py-status">首次运行需加载 Python 环境（约 20–40 秒），之后每次运行只需一两秒。各任务共享同一个 Python 会话。</span></p><ol class="ex-toc"><li><a href="#task-1">从“BOLD 时间序列”到功能连接矩阵</a></li><li><a href="#task-2">比例阈值——同一矩阵，不同密度，指标如何变</a></li><li><a href="#task-3">枢纽排序稳定吗？参与系数</a></li><li><a href="#task-4">加权指标与整体缩放</a></li><li><a href="#task-5">绝对阈值如何“制造”组间差异</a></li><li><a href="#task-6">小分析：真实结构连接组的度与功能连接强度</a></li></ol></section><section class="block ex-task" id="task-1"><h2><span class="tag">Task 1</span>从“BOLD 时间序列”到功能连接矩阵</h2><div class="prose"><p>本练习前 5 个任务使用 numpy
+生成的<strong>模拟数据</strong>，只用于演示方法，不代表真实人脑。模拟设定：40
+个“脑区”分属 4 个“功能系统”（每个 10 个脑区），200
+个时间点；每个脑区的信号 = 所属系统的共同波动 + 微弱的全脑共同波动 +
+独立噪声；脑区 9 额外接收系统 1 的信号，模拟一个跨系统的“连接枢纽”。</p>
+<p>计算：</p>
+<ul>
+<li><code>R</code>：40×40 的皮尔逊相关矩阵（<code>np.corrcoef</code>
+默认每一行是一个变量）；</li>
+<li><code>Z</code>：Fisher
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>
+变换后的矩阵（先把对角线设为 0，避免
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">artanh</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>∞</mi></mrow><annotation encoding="application/x-tex">\operatorname{artanh}(1)=\infty</annotation></semantics></math>）；</li>
+<li><code>r_within</code>、<code>r_between</code>：同一系统内（不含对角线）与不同系统之间的平均
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>。</li>
+</ul>
+<p>期望看到：系统内平均相关明显高于系统间；热图呈 4
+个对角块。系统间平均相关略大于
+0，来自模拟中的全脑共同波动（类比真实数据中的全局信号）。</p></div><details class="ex-hint"><summary>提示</summary><div class="prose"><p><code>same = labels[:, None] == labels[None, :]</code>
+给出“同一系统”的布尔矩阵。</p></div></details><details class="ex-setup"><summary>准备代码（运行时自动执行）</summary><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> networkx <span class="im">as</span> nx</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> simulate_bold(n_mod<span class="op">=</span><span class="dv">4</span>, per<span class="op">=</span><span class="dv">10</span>, T<span class="op">=</span><span class="dv">200</span>, seed<span class="op">=</span><span class="dv">0</span>):</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;模拟数据，仅用于演示方法。返回 (时间序列 N×T, 系统标签)。&quot;&quot;&quot;</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    rng <span class="op">=</span> np.random.default_rng(seed)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    labels <span class="op">=</span> np.repeat(np.arange(n_mod), per)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    sys_sig <span class="op">=</span> rng.standard_normal((n_mod, T))</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    glob <span class="op">=</span> rng.standard_normal(T)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    load <span class="op">=</span> rng.uniform(<span class="fl">0.4</span>, <span class="fl">1.0</span>, size<span class="op">=</span>n_mod <span class="op">*</span> per)     <span class="co"># 各脑区对本系统的载荷不同</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    X <span class="op">=</span> load[:, <span class="va">None</span>] <span class="op">*</span> sys_sig[labels] <span class="op">+</span> <span class="fl">0.3</span> <span class="op">*</span> glob <span class="op">+</span> rng.standard_normal((n_mod <span class="op">*</span> per, T))</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    X[<span class="dv">9</span>] <span class="op">+=</span> <span class="fl">0.8</span> <span class="op">*</span> sys_sig[<span class="dv">1</span>]                            <span class="co"># 脑区 9：跨系统连接枢纽</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> X, labels</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>X, labels <span class="op">=</span> simulate_bold()</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>N <span class="op">=</span> X.shape[<span class="dv">0</span>]</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>same <span class="op">=</span> labels[:, <span class="va">None</span>] <span class="op">==</span> labels[<span class="va">None</span>, :]</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>off <span class="op">=</span> <span class="op">~</span>np.eye(N, dtype<span class="op">=</span><span class="bu">bool</span>)</span></code></pre></div>
+</details><div class="cell ex-cell" data-task="0"><div class="cell-head"><h3>你的代码</h3><div><button class="btn run" type="button">在浏览器中运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="8" spellcheck="false" aria-label="任务 1 代码">R = None          # TODO: 相关矩阵
+Z = None          # TODO: Fisher z（对角线先置 0）
+r_within = None   # TODO
+r_between = None  # TODO</textarea><div class="ex-result" aria-live="polite"></div><div class="out" aria-live="polite"></div></div><p class="small">运行时依次执行准备代码、你的代码和自动核对。</p><details class="ex-sol"><summary>查看参考答案</summary><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>R <span class="op">=</span> np.corrcoef(X)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>R0 <span class="op">=</span> R.copy()</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>np.fill_diagonal(R0, <span class="dv">0</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>Z <span class="op">=</span> np.arctanh(R0)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>r_within <span class="op">=</span> R[same <span class="op">&amp;</span> off].mean()</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>r_between <span class="op">=</span> R[<span class="op">~</span>same].mean()</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;系统内平均 r = </span><span class="sc">%.3f</span><span class="st">，系统间平均 r = </span><span class="sc">%.3f</span><span class="st">&quot;</span> <span class="op">%</span> (r_within, r_between))</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>plt.imshow(R, cmap<span class="op">=</span><span class="st">&quot;RdBu_r&quot;</span>, vmin<span class="op">=-</span><span class="dv">1</span>, vmax<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>plt.colorbar(label<span class="op">=</span><span class="st">&quot;r&quot;</span>)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&quot;Simulated FC matrix&quot;</span>)</span></code></pre></div>
+<p class="small">参考答案只是一种写法；只要核对通过，其他写法同样正确。</p></details></section><section class="block ex-task" id="task-2"><h2><span class="tag">Task 2</span>比例阈值——同一矩阵，不同密度，指标如何变</h2><div class="prose"><p>写函数
+<code>proportional_threshold(R, density)</code>：在上三角中保留
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>r</mi><mo stretchy="false" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">|r|</annotation></semantics></math>
+最大的前
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mrow><mi mathvariant="normal">round</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mtext mathvariant="normal">density</mtext><mo>×</mo><mi>N</mi><mo stretchy="false" form="prefix">(</mo><mi>N</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mn>2</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">m=\operatorname{round}(\text{density}\times N(N-1)/2)</annotation></semantics></math>
+条边，返回含全部
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+个节点的无向图。</p>
+<p>然后在密度 0.05、0.10、0.20、0.30、0.40
+上计算平均聚集系数和全局效率，分别存入列表
+<code>C_list</code>、<code>E_list</code>，并把每个密度下的连通分量数存入
+<code>n_comp</code>。</p>
+<p>期望看到：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>
+随密度单调上升；<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>
+先升后降（系统内的强边用完后，新增的是跨系统的弱边）；低密度时网络断成多个分量。思考：只报告一个密度，会得出什么不同的结论？</p></div><details class="ex-hint"><summary>提示</summary><div class="prose"><p><code>iu = np.triu_indices(N, k=1)</code>；<code>np.argsort(w)[::-1][:m]</code>
+取最大的 m 个。</p></div></details><div class="cell ex-cell" data-task="1"><div class="cell-head"><h3>你的代码</h3><div><button class="btn run" type="button">在浏览器中运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="10" spellcheck="false" aria-label="任务 2 代码">def proportional_threshold(R, density):
+    N = R.shape[0]
+    # TODO: 取上三角 |r|，排序后保留前 m 条，建图并返回
+    return None
+
+
+densities = [0.05, 0.10, 0.20, 0.30, 0.40]
+C_list, E_list, n_comp = [], [], []
+# TODO: 对每个密度建图并计算指标</textarea><div class="ex-result" aria-live="polite"></div><div class="out" aria-live="polite"></div></div><p class="small">运行时依次执行准备代码、你的代码和自动核对。</p><details class="ex-sol"><summary>查看参考答案</summary><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> proportional_threshold(R, density):</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    N <span class="op">=</span> R.shape[<span class="dv">0</span>]</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    iu <span class="op">=</span> np.triu_indices(N, k<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    w <span class="op">=</span> np.<span class="bu">abs</span>(R[iu])</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    m <span class="op">=</span> <span class="bu">int</span>(<span class="bu">round</span>(density <span class="op">*</span> <span class="bu">len</span>(w)))</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    keep <span class="op">=</span> np.argsort(w)[::<span class="op">-</span><span class="dv">1</span>][:m]</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    G <span class="op">=</span> nx.Graph()</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    G.add_nodes_from(<span class="bu">range</span>(N))</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    G.add_edges_from(<span class="bu">zip</span>(iu[<span class="dv">0</span>][keep], iu[<span class="dv">1</span>][keep]))</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> G</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>densities <span class="op">=</span> [<span class="fl">0.05</span>, <span class="fl">0.10</span>, <span class="fl">0.20</span>, <span class="fl">0.30</span>, <span class="fl">0.40</span>]</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>C_list, E_list, n_comp <span class="op">=</span> [], [], []</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> d <span class="kw">in</span> densities:</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    G <span class="op">=</span> proportional_threshold(R, d)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    C_list.append(nx.average_clustering(G))</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    E_list.append(nx.global_efficiency(G))</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    n_comp.append(nx.number_connected_components(G))</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;密度 </span><span class="sc">%.2f</span><span class="st">：边 </span><span class="sc">%3d</span><span class="st">，C = </span><span class="sc">%.3f</span><span class="st">，E = </span><span class="sc">%.3f</span><span class="st">，分量数 </span><span class="sc">%d</span><span class="st">&quot;</span> <span class="op">%</span> (d, G.number_of_edges(), C_list[<span class="op">-</span><span class="dv">1</span>], E_list[<span class="op">-</span><span class="dv">1</span>], n_comp[<span class="op">-</span><span class="dv">1</span>]))</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>plt.figure()</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>plt.plot(densities, C_list, <span class="st">&quot;o-&quot;</span>, label<span class="op">=</span><span class="st">&quot;C&quot;</span>)</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>plt.plot(densities, E_list, <span class="st">&quot;s-&quot;</span>, label<span class="op">=</span><span class="st">&quot;E&quot;</span>)</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&quot;density&quot;</span>)</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>plt.legend()</span></code></pre></div>
+<p class="small">参考答案只是一种写法；只要核对通过，其他写法同样正确。</p></details></section><section class="block ex-task" id="task-3"><h2><span class="tag">Task 3</span>枢纽排序稳定吗？参与系数</h2><div class="prose"><p>已知模块标签 <code>labels</code>，写函数
+<code>participation(G, labels)</code>，返回每个节点的参与系数
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi>i</mi></msub><mo>=</mo><mn>1</mn><mo>−</mo><munder><mo>∑</mo><mi>s</mi></munder><msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><msub><mi>k</mi><mrow><mi>i</mi><mi>s</mi></mrow></msub><msub><mi>k</mi><mi>i</mi></msub></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>,</mo></mrow><annotation encoding="application/x-tex">P_i = 1-\sum_s\left(\frac{k_{is}}{k_i}\right)^2,</annotation></semantics></math>
+度为 0 的节点令
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi>i</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">P_i=0</annotation></semantics></math>。分别在密度
+0.10 和 0.30 下计算 <code>P10</code>、<code>P30</code>，并给出脑区 9
+在两种密度下的名次 <code>rank9_10</code>、<code>rank9_30</code>（名次 =
+参与系数严格大于它的节点数 + 1）。</p>
+<p>期望看到：低密度时脑区 9
+的跨系统边还没进入网络，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mn>9</mn></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">P_9=0</annotation></semantics></math>；高密度时它跃居前列——“谁是连接枢纽”依赖阈值。</p></div><details class="ex-hint"><summary>提示</summary><div class="prose"><p><code>np.bincount([labels[j] for j in G.neighbors(i)], minlength=4)</code>
+给出
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>k</mi><mrow><mi>i</mi><mi>s</mi></mrow></msub><annotation encoding="application/x-tex">k_{is}</annotation></semantics></math>。</p></div></details><details class="ex-setup"><summary>准备代码（运行时自动执行）</summary><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> proportional_threshold_ref(R, density):</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    N <span class="op">=</span> R.shape[<span class="dv">0</span>]</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    iu <span class="op">=</span> np.triu_indices(N, k<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    w <span class="op">=</span> np.<span class="bu">abs</span>(R[iu])</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    keep <span class="op">=</span> np.argsort(w)[::<span class="op">-</span><span class="dv">1</span>][:<span class="bu">int</span>(<span class="bu">round</span>(density <span class="op">*</span> <span class="bu">len</span>(w)))]</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    G <span class="op">=</span> nx.Graph()</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    G.add_nodes_from(<span class="bu">range</span>(N))</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    G.add_edges_from(<span class="bu">zip</span>(iu[<span class="dv">0</span>][keep], iu[<span class="dv">1</span>][keep]))</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> G</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>R_ref <span class="op">=</span> np.corrcoef(X)</span></code></pre></div>
+</details><div class="cell ex-cell" data-task="2"><div class="cell-head"><h3>你的代码</h3><div><button class="btn run" type="button">在浏览器中运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="10" spellcheck="false" aria-label="任务 3 代码">def participation(G, labels):
+    P = np.zeros(G.number_of_nodes())
+    # TODO
+    return P
+
+
+P10 = None
+P30 = None
+rank9_10, rank9_30 = None, None</textarea><div class="ex-result" aria-live="polite"></div><div class="out" aria-live="polite"></div></div><p class="small">运行时依次执行准备代码、你的代码和自动核对。</p><details class="ex-sol"><summary>查看参考答案</summary><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> participation(G, labels):</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    n_mod <span class="op">=</span> labels.<span class="bu">max</span>() <span class="op">+</span> <span class="dv">1</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    P <span class="op">=</span> np.zeros(G.number_of_nodes())</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> G.nodes():</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>        k <span class="op">=</span> G.degree(i)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> k <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>            <span class="cf">continue</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>        kis <span class="op">=</span> np.bincount([labels[j] <span class="cf">for</span> j <span class="kw">in</span> G.neighbors(i)], minlength<span class="op">=</span>n_mod)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        P[i] <span class="op">=</span> <span class="dv">1</span> <span class="op">-</span> np.<span class="bu">sum</span>((kis <span class="op">/</span> k) <span class="op">**</span> <span class="dv">2</span>)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> P</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>P10 <span class="op">=</span> participation(proportional_threshold_ref(R_ref, <span class="fl">0.10</span>), labels)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>P30 <span class="op">=</span> participation(proportional_threshold_ref(R_ref, <span class="fl">0.30</span>), labels)</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>rank9_10 <span class="op">=</span> <span class="bu">int</span>((P10 <span class="op">&gt;</span> P10[<span class="dv">9</span>]).<span class="bu">sum</span>()) <span class="op">+</span> <span class="dv">1</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>rank9_30 <span class="op">=</span> <span class="bu">int</span>((P30 <span class="op">&gt;</span> P30[<span class="dv">9</span>]).<span class="bu">sum</span>()) <span class="op">+</span> <span class="dv">1</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;密度 0.10：P_9 = </span><span class="sc">%.2f</span><span class="st">，名次 </span><span class="sc">%d</span><span class="st">；参与系数最高的 5 个：</span><span class="sc">%s</span><span class="st">&quot;</span> <span class="op">%</span> (P10[<span class="dv">9</span>], rank9_10, np.argsort(P10)[::<span class="op">-</span><span class="dv">1</span>][:<span class="dv">5</span>].tolist()))</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;密度 0.30：P_9 = </span><span class="sc">%.2f</span><span class="st">，名次 </span><span class="sc">%d</span><span class="st">；参与系数最高的 5 个：</span><span class="sc">%s</span><span class="st">&quot;</span> <span class="op">%</span> (P30[<span class="dv">9</span>], rank9_30, np.argsort(P30)[::<span class="op">-</span><span class="dv">1</span>][:<span class="dv">5</span>].tolist()))</span></code></pre></div>
+<p class="small">参考答案只是一种写法；只要核对通过，其他写法同样正确。</p></details></section><section class="block ex-task" id="task-4"><h2><span class="tag">Task 4</span>加权指标与整体缩放</h2><div class="prose"><p>用正相关构造加权网络
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>=</mo><mrow><mi mathvariant="normal">max</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>R</mi><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">W=\max(R,0)</annotation></semantics></math>（对角线为
+0）。</p>
+<ol type="1">
+<li>写函数 <code>weighted_efficiency(W)</code>：把权重转为长度
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ℓ</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mn>1</mn><mi>/</mi><msub><mi>w</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\ell_{ij}=1/w_{ij}</annotation></semantics></math>，用
+Dijkstra 求最短路径长度
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>d</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>w</mi></msubsup><annotation encoding="application/x-tex">d^w_{ij}</annotation></semantics></math>，返回
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>E</mi><mi>w</mi></msup><mo>=</mo><mfrac><mn>1</mn><mrow><mi>N</mi><mo stretchy="false" form="prefix">(</mo><mi>N</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow></mfrac><msub><mo>∑</mo><mrow><mi>i</mi><mo>≠</mo><mi>j</mi></mrow></msub><mn>1</mn><mi>/</mi><msubsup><mi>d</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>w</mi></msubsup></mrow><annotation encoding="application/x-tex">E^w=\frac{1}{N(N-1)}\sum_{i\ne j}1/d^w_{ij}</annotation></semantics></math>；</li>
+<li>计算 <code>Ew</code> 和把所有权重乘以 0.7 后的
+<code>Ew_scaled</code>；</li>
+<li>用 <code>nx.average_clustering(G, weight="weight")</code>（Onnela
+定义）计算 <code>Cw</code> 和缩放后的 <code>Cw_scaled</code>。</li>
+</ol>
+<p>期望看到：<code>Ew_scaled / Ew</code> 恰为 0.7，而
+<code>Cw_scaled == Cw</code>。这就是专题页说的：整体 FC
+偏弱的一组，不加处理的加权效率必然偏低，加权聚集系数却不受影响。</p></div><details class="ex-hint"><summary>提示</summary><div class="prose"><p><code>nx.from_numpy_array(W)</code> 会把矩阵元素存为边属性
+<code>weight</code>；再给每条边加一个属性
+<code>dist = 1/weight</code>，然后
+<code>nx.all_pairs_dijkstra_path_length(G, weight="dist")</code>。</p></div></details><details class="ex-setup"><summary>准备代码（运行时自动执行）</summary><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>W <span class="op">=</span> np.clip(np.corrcoef(X), <span class="dv">0</span>, <span class="va">None</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>np.fill_diagonal(W, <span class="dv">0</span>)</span></code></pre></div>
+</details><div class="cell ex-cell" data-task="3"><div class="cell-head"><h3>你的代码</h3><div><button class="btn run" type="button">在浏览器中运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="8" spellcheck="false" aria-label="任务 4 代码">def weighted_efficiency(W):
+    # TODO
+    return None
+
+
+Ew, Ew_scaled = None, None
+Cw, Cw_scaled = None, None</textarea><div class="ex-result" aria-live="polite"></div><div class="out" aria-live="polite"></div></div><p class="small">运行时依次执行准备代码、你的代码和自动核对。</p><details class="ex-sol"><summary>查看参考答案</summary><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> to_graph(W):</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    G <span class="op">=</span> nx.from_numpy_array(W)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> u, v, d <span class="kw">in</span> G.edges(data<span class="op">=</span><span class="va">True</span>):</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>        d[<span class="st">&quot;dist&quot;</span>] <span class="op">=</span> <span class="fl">1.0</span> <span class="op">/</span> d[<span class="st">&quot;weight&quot;</span>]</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> G</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> weighted_efficiency(W):</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    G <span class="op">=</span> to_graph(W)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    n <span class="op">=</span> W.shape[<span class="dv">0</span>]</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    total <span class="op">=</span> <span class="fl">0.0</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i, lengths <span class="kw">in</span> nx.all_pairs_dijkstra_path_length(G, weight<span class="op">=</span><span class="st">&quot;dist&quot;</span>):</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>        total <span class="op">+=</span> <span class="bu">sum</span>(<span class="fl">1.0</span> <span class="op">/</span> L <span class="cf">for</span> j, L <span class="kw">in</span> lengths.items() <span class="cf">if</span> j <span class="op">!=</span> i)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> total <span class="op">/</span> (n <span class="op">*</span> (n <span class="op">-</span> <span class="dv">1</span>))</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>Ew <span class="op">=</span> weighted_efficiency(W)</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>Ew_scaled <span class="op">=</span> weighted_efficiency(<span class="fl">0.7</span> <span class="op">*</span> W)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>Cw <span class="op">=</span> nx.average_clustering(to_graph(W), weight<span class="op">=</span><span class="st">&quot;weight&quot;</span>)</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>Cw_scaled <span class="op">=</span> nx.average_clustering(to_graph(<span class="fl">0.7</span> <span class="op">*</span> W), weight<span class="op">=</span><span class="st">&quot;weight&quot;</span>)</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;E_w = </span><span class="sc">%.4f</span><span class="st">，缩放后 </span><span class="sc">%.4f</span><span class="st">（比值 </span><span class="sc">%.3f</span><span class="st">）；C_w = </span><span class="sc">%.4f</span><span class="st">，缩放后 </span><span class="sc">%.4f</span><span class="st">&quot;</span> <span class="op">%</span> (Ew, Ew_scaled, Ew_scaled <span class="op">/</span> Ew, Cw, Cw_scaled))</span></code></pre></div>
+<p class="small">参考答案只是一种写法；只要核对通过，其他写法同样正确。</p></details></section><section class="block ex-task" id="task-5"><h2><span class="tag">Task 5</span>绝对阈值如何“制造”组间差异</h2><div class="prose"><p>模拟两组各 15 名被试：对照组用
+<code>simulate_bold(seed=s)</code>，“患者”组把系统信号载荷整体乘以
+0.75（<code>simulate_weak(seed=s)</code>，网络组织完全相同，只是整体 FC
+更弱）。对每名被试：</p>
+<ul>
+<li>绝对阈值：保留
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>&gt;</mo><mn>0.3</mn></mrow><annotation encoding="application/x-tex">r&gt;0.3</annotation></semantics></math>
+的边，计算密度和全局效率；</li>
+<li>比例阈值：密度固定为 0.15（用任务 3 的
+<code>proportional_threshold_ref</code>），计算全局效率。</li>
+</ul>
+<p>把两组的平均值存为
+<code>dens_abs = (对照, 患者)</code>、<code>E_abs = (对照, 患者)</code>、<code>E_prop = (对照, 患者)</code>。</p>
+<p>期望看到：绝对阈值下患者网络更稀疏、效率更低；比例阈值把密度拉平后，效率差异明显缩小（但不一定为
+0——见专题页关于比例阈值会纳入更多噪声边的讨论）。</p></div><details class="ex-hint"><summary>提示</summary><div class="prose"><p>二值图可用 <code>nx.from_numpy_array((R &gt; 0.3) &amp; off)</code>
+构造，注意先去掉对角线。</p></div></details><details class="ex-setup"><summary>准备代码（运行时自动执行）</summary><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> simulate_weak(n_mod<span class="op">=</span><span class="dv">4</span>, per<span class="op">=</span><span class="dv">10</span>, T<span class="op">=</span><span class="dv">200</span>, seed<span class="op">=</span><span class="dv">0</span>, scale<span class="op">=</span><span class="fl">0.75</span>):</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;与 simulate_bold 相同，但系统信号的载荷整体乘以 scale（模拟数据）。&quot;&quot;&quot;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    rng <span class="op">=</span> np.random.default_rng(seed)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    labels <span class="op">=</span> np.repeat(np.arange(n_mod), per)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    sys_sig <span class="op">=</span> rng.standard_normal((n_mod, T))</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    glob <span class="op">=</span> rng.standard_normal(T)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    load <span class="op">=</span> scale <span class="op">*</span> rng.uniform(<span class="fl">0.4</span>, <span class="fl">1.0</span>, size<span class="op">=</span>n_mod <span class="op">*</span> per)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    X <span class="op">=</span> load[:, <span class="va">None</span>] <span class="op">*</span> sys_sig[labels] <span class="op">+</span> <span class="fl">0.3</span> <span class="op">*</span> glob <span class="op">+</span> rng.standard_normal((n_mod <span class="op">*</span> per, T))</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    X[<span class="dv">9</span>] <span class="op">+=</span> scale <span class="op">*</span> <span class="fl">0.8</span> <span class="op">*</span> sys_sig[<span class="dv">1</span>]</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> X, labels</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>seeds_ctrl <span class="op">=</span> <span class="bu">range</span>(<span class="dv">100</span>, <span class="dv">115</span>)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>seeds_pat <span class="op">=</span> <span class="bu">range</span>(<span class="dv">200</span>, <span class="dv">215</span>)</span></code></pre></div>
+</details><div class="cell ex-cell" data-task="4"><div class="cell-head"><h3>你的代码</h3><div><button class="btn run" type="button">在浏览器中运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="8" spellcheck="false" aria-label="任务 5 代码">dens_abs = None   # TODO: (对照组平均密度, 患者组平均密度)
+E_abs = None      # TODO
+E_prop = None     # TODO</textarea><div class="ex-result" aria-live="polite"></div><div class="out" aria-live="polite"></div></div><p class="small">运行时依次执行准备代码、你的代码和自动核对。</p><details class="ex-sol"><summary>查看参考答案</summary><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> group_metrics(sim, seeds):</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    d_a, e_a, e_p <span class="op">=</span> [], [], []</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> s <span class="kw">in</span> seeds:</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>        Rs <span class="op">=</span> np.corrcoef(sim(seed<span class="op">=</span>s)[<span class="dv">0</span>])</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>        Ga <span class="op">=</span> nx.from_numpy_array(((Rs <span class="op">&gt;</span> <span class="fl">0.3</span>) <span class="op">&amp;</span> off).astype(<span class="bu">int</span>))</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>        d_a.append(nx.density(Ga))</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>        e_a.append(nx.global_efficiency(Ga))</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>        e_p.append(nx.global_efficiency(proportional_threshold_ref(Rs, <span class="fl">0.15</span>)))</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.mean(d_a), np.mean(e_a), np.mean(e_p)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> group_metrics(simulate_bold, seeds_ctrl)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>q <span class="op">=</span> group_metrics(simulate_weak, seeds_pat)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>dens_abs, E_abs, E_prop <span class="op">=</span> (c[<span class="dv">0</span>], q[<span class="dv">0</span>]), (c[<span class="dv">1</span>], q[<span class="dv">1</span>]), (c[<span class="dv">2</span>], q[<span class="dv">2</span>])</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;绝对阈值：密度 </span><span class="sc">%.3f</span><span class="st"> vs </span><span class="sc">%.3f</span><span class="st">，效率 </span><span class="sc">%.3f</span><span class="st"> vs </span><span class="sc">%.3f</span><span class="st">&quot;</span> <span class="op">%</span> (dens_abs <span class="op">+</span> E_abs))</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;比例阈值：效率 </span><span class="sc">%.3f</span><span class="st"> vs </span><span class="sc">%.3f</span><span class="st">&quot;</span> <span class="op">%</span> E_prop)</span></code></pre></div>
+<p class="small">参考答案只是一种写法；只要核对通过，其他写法同样正确。</p></details></section><section class="block ex-task" id="task-6"><h2><span class="tag">Task 6</span>小分析：真实结构连接组的度与功能连接强度</h2><div class="prose"><p>用真实数据 <code>data/lausanne68_sc_fc.csv</code>（69 名健康成人、68
+个皮层区的结构与功能连接，CC BY 4.0；出处见本讲的真实数据案例和
+<code>data/SOURCES.md</code>）。setup 已把它读成
+<code>SC</code>、<code>FC</code> 两个
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>69</mn><mo>×</mo><mn>68</mn><mo>×</mo><mn>68</mn></mrow><annotation encoding="application/x-tex">69\times68\times68</annotation></semantics></math>
+数组。</p>
+<p>自己决定一个组一致性比例 <code>consistency</code>（0.3–0.8
+之间），只保留至少这一比例被试中都出现的结构连接，得到二值组网络；计算每个脑区的结构度
+<code>deg_sc</code>（长度 68）和组平均功能连接的强度
+<code>fc_strength</code>（先对每人做 Fisher
+z、平均后反变换，再按行求和，不含对角线）；最后计算二者的 Spearman 相关
+<code>rho</code>。</p>
+<p>换两三个 <code>consistency</code>
+试一试：结构度高的脑区，功能连接也更强吗？这个关系对阈值敏感吗？可能的混杂是什么（例如脑区大小、追踪偏倚）？</p></div><details class="ex-setup"><summary>准备代码（运行时自动执行）</summary><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> spearmanr</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>_df <span class="op">=</span> pd.read_csv(<span class="st">&quot;data/lausanne68_sc_fc.csv&quot;</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>_iu <span class="op">=</span> np.triu_indices(<span class="dv">68</span>, <span class="dv">1</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> _mats(mod):</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    V <span class="op">=</span> _df[_df.modality <span class="op">==</span> mod].iloc[:, <span class="dv">2</span>:].to_numpy(<span class="bu">float</span>)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    M <span class="op">=</span> np.zeros((<span class="bu">len</span>(V), <span class="dv">68</span>, <span class="dv">68</span>))</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    M[:, _iu[<span class="dv">0</span>], _iu[<span class="dv">1</span>]] <span class="op">=</span> V</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> M <span class="op">+</span> M.transpose(<span class="dv">0</span>, <span class="dv">2</span>, <span class="dv">1</span>)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>SC, FC <span class="op">=</span> _mats(<span class="st">&quot;SC&quot;</span>), _mats(<span class="st">&quot;FC&quot;</span>)</span></code></pre></div>
+</details><div class="cell ex-cell" data-task="5"><div class="cell-head"><h3>你的代码</h3><div><button class="btn run" type="button">在浏览器中运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="8" spellcheck="false" aria-label="任务 6 代码">consistency = 0.5
+deg_sc = None
+fc_strength = None
+rho = None</textarea><div class="ex-result" aria-live="polite"></div><div class="out" aria-live="polite"></div></div><p class="small">运行时依次执行准备代码、你的代码和自动核对。</p><details class="ex-sol"><summary>查看参考答案</summary><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>consistency <span class="op">=</span> <span class="fl">0.5</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> ((SC <span class="op">&gt;</span> <span class="dv">0</span>).mean(<span class="dv">0</span>) <span class="op">&gt;=</span> consistency).astype(<span class="bu">float</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>np.fill_diagonal(A, <span class="dv">0</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>deg_sc <span class="op">=</span> A.<span class="bu">sum</span>(<span class="dv">1</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>F <span class="op">=</span> np.tanh(np.arctanh(np.clip(FC, <span class="op">-</span><span class="fl">0.999</span>, <span class="fl">0.999</span>)).mean(<span class="dv">0</span>))</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>np.fill_diagonal(F, <span class="dv">0</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>fc_strength <span class="op">=</span> F.<span class="bu">sum</span>(<span class="dv">1</span>)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>rho <span class="op">=</span> spearmanr(deg_sc, fc_strength).statistic</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;一致性 %.0f</span><span class="sc">%%</span><span class="st">：结构网络 </span><span class="sc">%d</span><span class="st"> 条边；结构度与 FC 强度的 Spearman ρ = </span><span class="sc">%.2f</span><span class="st">&quot;</span> <span class="op">%</span> (<span class="dv">100</span> <span class="op">*</span> consistency, A.<span class="bu">sum</span>() <span class="op">/</span> <span class="dv">2</span>, rho))</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>plt.figure()</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>plt.scatter(deg_sc, fc_strength, s<span class="op">=</span><span class="dv">12</span>)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&quot;structural degree&quot;</span>)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&quot;FC strength&quot;</span>)</span></code></pre></div>
+<p class="small">参考答案只是一种写法；只要核对通过，其他写法同样正确。</p></details></section><nav class="pager"><a href="brain-connectome.html"><small>专题主页</small>脑连接组：结构与功能连接</a><a href="quiz-brain-connectome.html"><small>自测题</small>脑连接组：结构与功能连接</a></nav><script type="application/json" id="ex-data">{"files": ["lausanne68_sc_fc.csv"], "tasks": [{"setup": "import numpy as np\nimport networkx as nx\nimport matplotlib.pyplot as plt\n\n\ndef simulate_bold(n_mod=4, per=10, T=200, seed=0):\n    \"\"\"模拟数据，仅用于演示方法。返回 (时间序列 N×T, 系统标签)。\"\"\"\n    rng = np.random.default_rng(seed)\n    labels = np.repeat(np.arange(n_mod), per)\n    sys_sig = rng.standard_normal((n_mod, T))\n    glob = rng.standard_normal(T)\n    load = rng.uniform(0.4, 1.0, size=n_mod * per)     # 各脑区对本系统的载荷不同\n    X = load[:, None] * sys_sig[labels] + 0.3 * glob + rng.standard_normal((n_mod * per, T))\n    X[9] += 0.8 * sys_sig[1]                            # 脑区 9：跨系统连接枢纽\n    return X, labels\n\n\nX, labels = simulate_bold()\nN = X.shape[0]\nsame = labels[:, None] == labels[None, :]\noff = ~np.eye(N, dtype=bool)", "check": "assert R is not None and Z is not None, \"R 或 Z 还没有赋值\"\nassert R.shape == (40, 40), \"R 应为 40×40；检查 np.corrcoef 的输入是否是“脑区 × 时间”\"\nassert np.allclose(R, R.T) and np.allclose(np.diag(R), 1), \"相关矩阵应对称、对角线为 1\"\nassert np.all(np.isfinite(Z)), \"Z 中有无穷大：做 arctanh 之前要把对角线设为 0\"\nassert abs(Z[0, 1] - np.arctanh(R[0, 1])) < 1e-9, \"Z 应等于 arctanh(R)（对角线除外）\"\nassert abs(r_within - 0.346) < 0.01, \"系统内平均 r 应约为 0.35；记得去掉对角线上的 1\"\nassert abs(r_between - 0.049) < 0.01, \"系统间平均 r 应约为 0.05\"\nprint(\"✓ 任务 1 通过\")"}, {"setup": "", "check": "G_chk = proportional_threshold(R, 0.10)\nassert G_chk is not None, \"proportional_threshold 还没有返回图\"\nassert G_chk.number_of_nodes() == 40, \"图中应包含全部 40 个节点（包括孤立节点）；先 add_nodes_from(range(N))\"\nassert G_chk.number_of_edges() == 78, \"密度 0.10 应保留 round(0.10×780) = 78 条边\"\nassert len(E_list) == 5 and all(a < b for a, b in zip(E_list, E_list[1:])), \"全局效率应随密度单调上升\"\nassert abs(C_list[2] - 0.878) < 0.01, \"密度 0.20 时 C 应约为 0.88；检查是否按 |r| 从大到小保留\"\nassert C_list[-1] < C_list[2], \"C 应先升后降：密度 0.40 时低于 0.20 时\"\nassert n_comp[0] > 1 and n_comp[-1] == 1, \"低密度时网络应断开，高密度时连通\"\nprint(\"✓ 任务 2 通过\")"}, {"setup": "def proportional_threshold_ref(R, density):\n    N = R.shape[0]\n    iu = np.triu_indices(N, k=1)\n    w = np.abs(R[iu])\n    keep = np.argsort(w)[::-1][:int(round(density * len(w)))]\n    G = nx.Graph()\n    G.add_nodes_from(range(N))\n    G.add_edges_from(zip(iu[0][keep], iu[1][keep]))\n    return G\n\n\nR_ref = np.corrcoef(X)", "check": "assert P10 is not None and P30 is not None, \"P10、P30 还没有计算\"\nassert len(P30) == 40 and np.all((P30 >= 0) & (P30 <= 0.75 + 1e-9)), \"P 应在 0 到 1 − 1/4 = 0.75 之间\"\nassert abs(P10[9]) < 1e-9, \"密度 0.10 时脑区 9 的边都在系统 0 内，P_9 应为 0\"\nassert abs(P30[9] - 0.59) < 0.02, \"密度 0.30 时 P_9 应约为 0.59\"\nassert rank9_30 <= 3, \"密度 0.30 时脑区 9 的参与系数应排在前 3\"\nprint(\"✓ 任务 3 通过\")"}, {"setup": "W = np.clip(np.corrcoef(X), 0, None)\nnp.fill_diagonal(W, 0)", "check": "assert Ew is not None and Ew_scaled is not None, \"Ew、Ew_scaled 还没有计算\"\nassert abs(Ew - 0.172) < 0.005, \"E_w 应约为 0.172；检查是否把权重转成了长度 1/w（强连接 = 短路径）\"\nassert abs(Ew_scaled / Ew - 0.7) < 1e-6, \"所有权重乘以 0.7 后，加权效率也应恰好乘以 0.7\"\nassert Cw is not None and abs(Cw - Cw_scaled) < 1e-9, \"Onnela 加权聚集系数按最大权重归一化，整体缩放不应改变它\"\nprint(\"✓ 任务 4 通过\")"}, {"setup": "def simulate_weak(n_mod=4, per=10, T=200, seed=0, scale=0.75):\n    \"\"\"与 simulate_bold 相同，但系统信号的载荷整体乘以 scale（模拟数据）。\"\"\"\n    rng = np.random.default_rng(seed)\n    labels = np.repeat(np.arange(n_mod), per)\n    sys_sig = rng.standard_normal((n_mod, T))\n    glob = rng.standard_normal(T)\n    load = scale * rng.uniform(0.4, 1.0, size=n_mod * per)\n    X = load[:, None] * sys_sig[labels] + 0.3 * glob + rng.standard_normal((n_mod * per, T))\n    X[9] += scale * 0.8 * sys_sig[1]\n    return X, labels\n\n\nseeds_ctrl = range(100, 115)\nseeds_pat = range(200, 215)", "check": "assert dens_abs is not None and E_abs is not None and E_prop is not None, \"三个结果还没有赋值\"\nassert dens_abs[1] < dens_abs[0], \"整体 FC 更弱时，绝对阈值下患者网络应更稀疏\"\nassert E_abs[1] < E_abs[0], \"绝对阈值下患者组效率应更低\"\nassert abs(E_prop[0] - E_prop[1]) < abs(E_abs[0] - E_abs[1]), \"比例阈值拉平密度后，效率差异应小于绝对阈值下的差异\"\nprint(\"✓ 任务 5 通过\")"}, {"setup": "import pandas as pd\nfrom scipy.stats import spearmanr\n\n_df = pd.read_csv(\"data/lausanne68_sc_fc.csv\")\n_iu = np.triu_indices(68, 1)\n\n\ndef _mats(mod):\n    V = _df[_df.modality == mod].iloc[:, 2:].to_numpy(float)\n    M = np.zeros((len(V), 68, 68))\n    M[:, _iu[0], _iu[1]] = V\n    return M + M.transpose(0, 2, 1)\n\n\nSC, FC = _mats(\"SC\"), _mats(\"FC\")", "check": "assert 0.3 <= consistency <= 0.8, \"consistency 请取 0.3–0.8 之间\"\nassert deg_sc is not None and np.shape(deg_sc) == (68,), \"deg_sc 应是长度 68 的数组\"\nassert fc_strength is not None and np.shape(fc_strength) == (68,), \"fc_strength 应是长度 68 的数组\"\nassert np.all(np.asarray(deg_sc) >= 0) and np.max(deg_sc) <= 67, \"结构度应在 0–67 之间\"\nassert rho is not None and -1 <= rho <= 1, \"rho 应是 −1 到 1 之间的相关系数\"\nprint(\"✓ 任务 6 通过\")"}]}</script></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="courses.html">课程视频</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

@@ -1,0 +1,151 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>真实数据案例 · 复杂系统与网络的数学表示 · 生物医学网络科学</title><meta name="description" content="复杂系统与网络的数学表示：用公开数据完成的一次完整分析"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-theory"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="courses.html">课程视频</a><a href="domains.html" aria-current="page">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory" open><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html" data-lec="L01">复杂系统与网络的数学表示</a><ol class="sub"><li><a href="network-basics.complex-systems.html"><span class="n">01</span>复杂系统与涌现</a></li><li><a href="network-basics.history.html"><span class="n">02</span>网络科学简史</a></li><li><a href="network-basics.network-classes.html"><span class="n">03</span>网络的类别：技术、信息、社会与生物网络</a></li><li><a href="network-basics.graph-types.html"><span class="n">04</span>图的定义与基本类型</a></li><li><a href="network-basics.bipartite-networks.html"><span class="n">05</span>二分网络与多部网络</a></li><li><a href="network-basics.multilayer-hypergraphs.html"><span class="n">06</span>多层网络、时间网络与超图</a></li><li><a href="network-basics.adjacency-matrix.html"><span class="n">07</span>邻接矩阵</a></li><li><a href="network-basics.laplacian-matrices.html"><span class="n">08</span>关联矩阵、度矩阵与拉普拉斯矩阵</a></li><li><a href="network-basics.edge-list-sparsity.html"><span class="n">09</span>边列表与稀疏性</a></li><li><a href="network-basics.data-formats.html"><span class="n">10</span>网络数据格式与数据来源</a></li><li><a href="network-basics.graph-theorems.html"><span class="n">11</span>图论基本定理与手算算例</a></li><li><a href="network-basics.biomedical-network-types.html"><span class="n">12</span>生物医学中的网络类型</a></li><li><a href="network-basics.network-thinking.html"><span class="n">13</span>网络思维与网络医学</a></li><li><a href="network-basics.derivations.html"><span class="n">14</span>数学推导与算法</a></li><li><a href="network-basics.frontiers.html"><span class="n">15</span>研究前沿与开放问题</a></li><li><a href="network-basics.biomedical.html"><span class="n">16</span>生物医学应用</a></li><li><a href="network-basics.limitations.html"><span class="n">17</span>适用范围与常见误用</a></li></ol></li><li><a href="network-metrics.html" data-lec="L02">网络结构指标与随机图</a></li><li><a href="network-models.html" data-lec="L03">小世界与无标度网络模型</a></li><li><a href="community-structure.html" data-lec="L04">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html" data-lec="L05">网络上的传播与免疫</a></li><li><a href="synchronization.html" data-lec="L06">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html" data-lec="L07">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html" data-lec="L09">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html" data-lec="L10">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html" data-lec="L11">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html" data-lec="L12">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html" data-lec="L13">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html" data-lec="L14">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html" data-lec="L08">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html" data-lec="L15">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html" data-lec="L16">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="courses.html">课程视频</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="d-theory.html">网络基础理论</a> <span class="sep">/</span> <a href="network-basics.html">复杂系统与网络的数学表示</a></nav><div class="eyebrow" style="margin-top:14px"><b>Case study</b><span>Complex systems and graph representations</span></div><h1>真实数据案例：复杂系统与网络的数学表示</h1><p class="dek">从原始相互作用记录到网络：人类 DNA 修复蛋白的 BioGRID 数据</p><dl class="doc-meta"><div><dt>下载</dt><dd><a href="notebooks/case-network-basics.ipynb" download>Notebook</a> · <a href="data/biogrid_human_dna_repair_records.csv" download>biogrid_human_dna_repair_records.csv</a></dd></div><div><dt>数据来源</dt><dd><a href="data-sources.html">数据来源与许可</a></dd></div><div><dt>浏览器</dt><dd><a class="lite-link" href="lite/notebooks/index.html?path=practice/case-network-basics.ipynb" target="_blank" rel="noopener">在 JupyterLite 中打开 ↗</a></dd></div></dl></header><section class="block ex-intro"><p class="small"><span class="py-status">代码可以直接在浏览器中运行，各段共享同一个 Python 会话：运行某一段时，前面尚未运行的段会先依次运行。首次加载 Python 环境约需 20–40 秒。</span> <button class="btn ghost run-all" type="button">从头运行全部</button></p></section><div class="case-body"><section class="block prose"># 从原始相互作用记录到网络：人类 DNA 修复蛋白的 BioGRID 数据
+
+数据库里下载下来的并不是一张“图”，而是一行一行的实验记录。同一对蛋白可能被几十篇文献、几种实验方法反复报道；有的记录是蛋白与自身结合；有的是物理结合，有的是遗传相互作用。本案例从这些原始记录出发，一步步做出[图的定义与基本类型](network-basics.graph-types.html)里的各种决定，并把结果写成[邻接矩阵](network-basics.adjacency-matrix.html)、[边列表与稀疏矩阵](network-basics.edge-list-sparsity.html)、[拉普拉斯矩阵](network-basics.laplacian-matrices.html)和[二分网络的投影](network-basics.bipartite-networks.html)。
+
+**1. 数据来源**
+
+- 相互作用记录：BioGRID 5.0.263 人类数据（`BIOGRID-ORGANISM-Homo_sapiens-5.0.263.tab3.txt`），下载自 `https://downloads.thebiogrid.org/BioGRID/Release-Archive/BIOGRID-5.0.263/`（2026-11-20）。许可证：**MIT**。引用：Oughtred R 等, The BioGRID interaction database: 2019 update, *Nucleic Acids Research* 2019, DOI [10.1093/nar/gky1079](https://doi.org/10.1093/nar/gky1079)。
+- 基因集：Reactome 第 98 版通路 R-HSA-73894“DNA Repair”（346 个基因），许可证 **CC0**。引用：Milacic M 等, The Reactome Pathway Knowledgebase 2024, *Nucleic Acids Research* 2024, DOI [10.1093/nar/gkad1025](https://doi.org/10.1093/nar/gkad1025)。
+- 裁剪：只保留两个相互作用者都在这 346 个基因中的人类记录，**不合并重复**，存为 `data/biogrid_human_dna_repair_records.csv`。每行一条记录：两个基因符号、实验方法、类型（physical / genetic）、通量（低通量 / 高通量）、文献编号。
+
+选 DNA 修复通路，是因为它的成员（BRCA1、TP53、ATM、PCNA 等）被研究得很多，正好能看清“记录很多、网络不大”的现象，也能看出研究偏倚。</section><section class="block prose">## 2. 读入与清洗
+
+先清点原始记录：一共有多少行、多少种实验方法、物理与遗传各占多少、有多少条是蛋白与自身的相互作用（自环）。</section><div class="cell seq-cell" data-i="0"><div class="cell-head"><h3>代码 1</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="22" spellcheck="false" aria-label="代码 1">import collections
+import numpy as np
+import pandas as pd
+import networkx as nx
+import scipy.sparse as sp
+import matplotlib.pyplot as plt
+from networkx.algorithms import bipartite
+
+rec = pd.read_csv(&quot;data/biogrid_human_dna_repair_records.csv&quot;)
+print(&quot;记录数:&quot;, len(rec), &quot;；列:&quot;, list(rec.columns))
+print(&quot;\n物理 / 遗传:\n&quot;, rec[&quot;system_type&quot;].value_counts().to_string())
+print(&quot;\n记录最多的 5 种实验方法:\n&quot;, rec[&quot;experimental_system&quot;].value_counts().head(5).to_string())
+print(&quot;\n通量:\n&quot;, rec[&quot;throughput&quot;].value_counts().to_string())
+self_rec = rec[rec.interactor_a == rec.interactor_b]
+print(&quot;\n自身相互作用记录:&quot;, len(self_rec), &quot;条，涉及&quot;, self_rec.interactor_a.nunique(), &quot;个蛋白&quot;)
+
+# 无序基因对：A–B 与 B–A 是同一对
+rec[&quot;pair&quot;] = [tuple(sorted(p)) for p in zip(rec.interactor_a, rec.interactor_b)]
+per_pair = rec.groupby(&quot;pair&quot;).size()
+print(&quot;\n不同的无序基因对:&quot;, len(per_pair), &quot;；平均每对&quot;, round(len(rec) / len(per_pair), 2), &quot;条记录&quot;)
+print(&quot;记录最多的 5 对:\n&quot;, per_pair.sort_values(ascending=False).head(5).to_string())</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 3. 构网：多重图 → 简单图 → 加权图
+
+同一份数据可以得到几种不同的图，选哪种取决于研究问题：
+
+- **多重图**：每条记录一条边，保留了全部重复与自环；
+- **简单无向图**：同一对只留一条边，去掉自环——这是多数网络指标默认的输入；
+- **加权图**：把“支持这对相互作用的独立文献数”作为边权 $w_{ij}$，权重粗略反映证据的多少（不是结合强度）；
+- 只保留物理相互作用、并要求至少 2 篇文献支持，是常见的“高可信”过滤。
+
+物理结合是对称关系，所以这里都用无向图；表中 A、B 两列的先后只是记录格式，不代表方向。</section><div class="cell seq-cell" data-i="1"><div class="cell-head"><h3>代码 2</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="15" spellcheck="false" aria-label="代码 2">phys = rec[rec.system_type == &quot;physical&quot;]
+MG = nx.MultiGraph()
+MG.add_edges_from(zip(phys.interactor_a, phys.interactor_b))
+print(&quot;多重图：节点 %d，边 %d，自环 %d&quot; % (MG.number_of_nodes(), MG.number_of_edges(), nx.number_of_selfloops(MG)))
+
+no_self = phys[phys.interactor_a != phys.interactor_b]
+w = no_self.groupby(&quot;pair&quot;)[&quot;publication&quot;].nunique()       # 每对的独立文献数
+G = nx.Graph()
+for (a, b), k in w.items():
+    G.add_edge(a, b, weight=int(k))
+print(&quot;简单加权图：节点 %d，边 %d&quot; % (G.number_of_nodes(), G.number_of_edges()))
+G2 = nx.Graph([(a, b) for (a, b), k in w.items() if k &gt;= 2])
+print(&quot;至少 2 篇文献支持：节点 %d，边 %d（保留了 %.0f%% 的边）&quot;
+      % (G2.number_of_nodes(), G2.number_of_edges(), 100 * G2.number_of_edges() / G.number_of_edges()))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 4. 核心量：度、密度、矩阵表示
+
+对简单图验证握手定理 $\sum_i k_i = 2M$，计算密度 $\rho = 2M/[N(N-1)]$。再把它写成三种矩阵：
+
+- 邻接矩阵 $A$：对称、对角线为 0；用稀疏格式存储时只记非零元素；
+- 拉普拉斯矩阵 $L = D - A$：每行和为 0；零特征值的个数等于连通分支数；
+- 关联矩阵 $B$（$N\times M$，每列两个 1）：满足 $BB^{\mathsf T} = D + A$。</section><div class="cell seq-cell" data-i="2"><div class="cell-head"><h3>代码 3</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="24" spellcheck="false" aria-label="代码 3">nodes = sorted(G.nodes())
+N, M = G.number_of_nodes(), G.number_of_edges()
+deg = dict(G.degree())
+print(&quot;度之和 = %d，2M = %d&quot; % (sum(deg.values()), 2 * M))
+print(&quot;平均度 = %.2f，密度 = %.4f&quot; % (2 * M / N, nx.density(G)))
+top = sorted(deg.items(), key=lambda x: -x[1])[:8]
+print(&quot;度最高的 8 个蛋白:&quot;, top)
+
+A = nx.to_scipy_sparse_array(G, nodelist=nodes, weight=None, format=&quot;csr&quot;)
+print(&quot;\n邻接矩阵 %d×%d，非零元素 %d（= 2M），对称: %s&quot; % (N, N, A.nnz, (A != A.T).nnz == 0))
+dense_bytes = N * N * 8
+sparse_bytes = A.data.nbytes + A.indices.nbytes + A.indptr.nbytes
+print(&quot;稠密存储 %.0f KB，CSR 稀疏存储 %.0f KB&quot; % (dense_bytes / 1024, sparse_bytes / 1024))
+
+L = nx.laplacian_matrix(G, nodelist=nodes, weight=None).toarray().astype(float)
+ev = np.linalg.eigvalsh(L)
+print(&quot;L 的行和全为 0:&quot;, np.allclose(L.sum(axis=1), 0))
+print(&quot;接近 0 的特征值个数 = %d，连通分支数 = %d&quot; % ((ev &lt; 1e-8).sum(), nx.number_connected_components(G)))
+print(&quot;代数连通度 λ2 = %.3f&quot; % ev[1])
+
+B = nx.incidence_matrix(G, nodelist=nodes).toarray()
+Ad = A.toarray()
+print(&quot;B 的形状:&quot;, B.shape, &quot;；B·Bᵀ = D + A:&quot;, np.allclose(B @ B.T, np.diag(Ad.sum(1)) + Ad))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">**二分网络与投影。** 记录里的“文献编号”把数据变成了“蛋白–文献”二分网络：一篇文献连向它报道过的所有蛋白。投影到蛋白一侧，就得到“共同出现在同一篇文献中”的网络。投影会制造大量三角形：一篇报道了 $n$ 个蛋白的高通量文献，投影后就是一个 $n(n-1)/2$ 条边的完全子图。</section><div class="cell seq-cell" data-i="3"><div class="cell-head"><h3>代码 4</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="15" spellcheck="false" aria-label="代码 4">Bp = nx.Graph()
+Bp.add_nodes_from(nodes, bipartite=0)
+papers = sorted(no_self.publication.unique())
+Bp.add_nodes_from(papers, bipartite=1)
+Bp.add_edges_from({(a, p) for a, b, p in zip(no_self.interactor_a, no_self.interactor_b, no_self.publication)} |
+                  {(b, p) for a, b, p in zip(no_self.interactor_a, no_self.interactor_b, no_self.publication)})
+pdeg = {p: Bp.degree(p) for p in papers}
+print(&quot;文献数 %d；每篇文献涉及的蛋白数：中位数 %d，最多 %d&quot; %
+      (len(papers), np.median(list(pdeg.values())), max(pdeg.values())))
+P = bipartite.projected_graph(Bp, nodes)
+print(&quot;投影网络：边 %d，是相互作用网络边数的 %.1f 倍&quot; % (P.number_of_edges(), P.number_of_edges() / M))
+print(&quot;三角形数：相互作用网络 %d，投影网络 %d&quot; %
+      (sum(nx.triangles(G).values()) // 3, sum(nx.triangles(P).values()) // 3))
+print(&quot;相互作用网络的每条边都在投影里:&quot;, all(P.has_edge(u, v) for u, v in G.edges()))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 5. 与零模型比较
+
+**度的不均匀性。** 用同样 $N$、$M$ 的 ER 随机图 $G(N,M)$ 作参照，看真实网络的最大度和度的方差是不是远超随机。
+
+**物理层与遗传层的重叠。** 把物理相互作用和遗传相互作用看成同一组节点上的两层（[多层网络](network-basics.multilayer-hypergraphs.html)）。如果两层互不相关，遗传层的边落在物理层边上的个数服从超几何分布；比较观测重叠与这个期望。</section><div class="cell seq-cell" data-i="4"><div class="cell-head"><h3>代码 5</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="23" spellcheck="false" aria-label="代码 5">rng = np.random.default_rng(1)
+kmax_null, var_null = [], []
+for s in range(200):
+    R = nx.gnm_random_graph(N, M, seed=int(rng.integers(1e9)))
+    d = np.array([k for _, k in R.degree()])
+    kmax_null.append(d.max())
+    var_null.append(d.var())
+d_obs = np.array(list(deg.values()))
+print(&quot;最大度：观测 %d，ER 平均 %.1f（200 个样本中最大 %d）&quot; % (d_obs.max(), np.mean(kmax_null), max(kmax_null)))
+print(&quot;度方差：观测 %.1f，ER 平均 %.1f&quot; % (d_obs.var(), np.mean(var_null)))
+
+from scipy.stats import hypergeom
+gen = rec[(rec.system_type == &quot;genetic&quot;) &amp; (rec.interactor_a != rec.interactor_b)]
+gen_pairs = set(gen.pair)
+phys_pairs = set(w.index)
+layer_nodes = sorted({x for p in gen_pairs | phys_pairs for x in p})
+n_all_pairs = len(layer_nodes) * (len(layer_nodes) - 1) // 2
+overlap = len(gen_pairs &amp; phys_pairs)
+expected = len(gen_pairs) * len(phys_pairs) / n_all_pairs
+p_val = hypergeom.sf(overlap - 1, n_all_pairs, len(phys_pairs), len(gen_pairs))
+print(&quot;\n遗传层 %d 对，物理层 %d 对，可能的基因对 %d&quot; % (len(gen_pairs), len(phys_pairs), n_all_pairs))
+print(&quot;两层重叠：观测 %d 对，随机期望 %.1f 对，超几何检验 p = %.1e&quot; % (overlap, expected, p_val))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 6. 作图
+
+左：按度从高到低排列节点后的邻接矩阵（每个点是一条边），能看出少数高度节点占据了大量边。中：每对蛋白的记录数分布，长尾说明“同一对被反复报道”很常见。右：度分布的直方图（对数纵轴）。</section><div class="cell seq-cell" data-i="5"><div class="cell-head"><h3>代码 6</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="16" spellcheck="false" aria-label="代码 6">order = [n for n, _ in sorted(deg.items(), key=lambda x: -x[1])]
+Ao = nx.to_scipy_sparse_array(G, nodelist=order, weight=None)
+fig, ax = plt.subplots(1, 3, figsize=(13, 4))
+ax[0].spy(Ao, markersize=0.3, color=&quot;#2b6cb0&quot;)
+ax[0].set_title(&quot;adjacency (nodes sorted by degree)&quot;)
+cnt = per_pair.value_counts().sort_index()
+ax[1].bar(cnt.index[:30], cnt.values[:30], color=&quot;#718096&quot;)
+ax[1].set_xlabel(&quot;records per gene pair&quot;)
+ax[1].set_ylabel(&quot;number of pairs&quot;)
+ax[1].set_yscale(&quot;log&quot;)
+ax[2].hist(d_obs, bins=40, color=&quot;#dd6b20&quot;)
+ax[2].set_yscale(&quot;log&quot;)
+ax[2].set_xlabel(&quot;degree k&quot;)
+ax[2].set_ylabel(&quot;number of proteins&quot;)
+fig.tight_layout()</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 7. 解读与局限
+
+**结果。** 18 308 条原始记录只对应 5 052 个基因对，平均每对 3.62 条记录，BARD1–BRCA1 一对就有 118 条；713 条记录是蛋白与自身结合（涉及 183 个蛋白，多为同源二聚化等），在简单图里被去掉。物理相互作用占 98.7%，遗传相互作用只有 245 条。只用物理记录、去掉自环、合并重复后，简单图有 303 个蛋白、4 727 条边，平均度 31.2，密度约 0.10——对于一张通路内部的网络，这已相当稠密，全蛋白质组网络的密度要低得多。只保留“至少 2 篇文献支持”的边，只剩 2 010 条（43%），可见过滤条件对网络大小影响很大，必须写进方法。
+
+邻接矩阵对称、非零元素数等于 $2M=9454$；拉普拉斯矩阵只有 1 个零特征值，说明这张网络是连通的；$BB^{\mathsf T}=D+A$ 在真实数据上同样成立。即使只有 303 个节点，CSR 稀疏格式也只占稠密存储的约五分之一，网络越大、越稀疏，这个差距越悬殊。蛋白–文献二分网络中，一半的文献只涉及 2 个蛋白，但最大的一篇涉及 228 个；投影后的边数是相互作用网络的 7.7 倍，三角形多了约 94 倍：“出现在同一篇文献里”不等于“相互作用”，投影网络的聚集程度主要是少数大文献造成的。
+
+度最高的是单链 DNA 结合蛋白复合物 RPA 的三个亚基（RPA1 166、RPA2 163、RPA3 144）以及 BRCA1、TP53、TOPBP1、泛素 UBC。最大度 166 远高于同等规模 ER 图的最大度（200 个样本中最大 55），度方差约是 ER 的 26 倍。遗传层与物理层重叠 74 对，是随机期望（22 对）的 3 倍多，说明两类证据指向相关的生物学关系；但它们仍是两种不同含义的边，不宜不加说明地合并。
+
+**局限。**
+
+- **研究偏倚**：BRCA1、TP53、PCNA 等明星分子被研究得多，记录和边都多；高度部分反映的是“被关注的程度”，不全是生物学重要性（见[适用范围与常见误用](network-basics.limitations.html)）。
+- **节点集合是人为选定的**：只看 Reactome 中 DNA 修复通路的成员，通路外的伙伴全被截掉；这是一张诱导子图，度和密度都不能推广到全蛋白质组。
+- **记录数不等于证据强度**：一篇高通量文献可以贡献大量记录，同一实验室的重复报道也不独立；这里用“独立文献数”作边权只是粗略做法。
+- **物理结合不说明功能关系与方向**：亲和纯化可能捕获间接结合（同一复合物中的成员），双杂交可能有假阳性。泛素 UBC 成为枢纽，部分是因为许多蛋白被泛素共价修饰后一起被捕获，这与“两个蛋白稳定结合”不是一回事。
+- BioGRID 持续更新，换一个版本，记录数会变；分析时应记录版本号和下载日期（见[网络数据格式与数据来源](network-basics.data-formats.html)）。</section></div><nav class="pager"><a href="network-basics.html"><small>专题主页</small>复杂系统与网络的数学表示</a><a href="data-sources.html"><small>数据</small>数据来源与许可</a></nav><script type="application/json" id="ex-data">{"files": ["biogrid_human_dna_repair_records.csv"], "tasks": []}</script></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="courses.html">课程视频</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

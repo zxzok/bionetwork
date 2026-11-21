@@ -81,9 +81,9 @@ LINES = {
     "x2": "尾巴很快掉了下去，变成指数分布，枢纽消失了。",
     "b7": "知识页面里也有这个模型的演示。网络一个节点一个节点地长大；右边是双对数坐标下的度分布，红色的大节点是枢纽。",
     # duplication & fitness
-    "q1": "可是蛋白质并不会主动挑选热门伙伴。在生物网络里，优先连接可能来自基因复制。",
-    "q2": "一个基因被复制，新拷贝起初和原来一模一样，继承了全部的相互作用伙伴。",
-    "q3": "随后两个拷贝慢慢分化，新拷贝丢掉其中一部分相互作用。",
+    "gd1": "可是蛋白质并不会主动挑选热门伙伴。在生物网络里，优先连接可能来自基因复制。",
+    "gd2": "一个基因被复制，新拷贝起初和原来一模一样，继承了全部的相互作用伙伴。",
+    "gd3": "随后两个拷贝慢慢分化，新拷贝丢掉其中一部分相互作用。",
     "q4": "关键在于：度大的蛋白，邻居多；邻居被复制的机会也多，所以它更容易获得新边。",
     "q4b": "【慢】不需要任何全局信息，效果上就是优先连接。",
     "q5": "另一个扩展是适应度，也就是每个节点与生俱来的吸引力。公式里，连接的概率，正比于适应度乘以度。",
@@ -557,19 +557,19 @@ class Episode(Narrated):
         G = nx.Graph([(0, 1), (0, 2), (0, 3), (0, 4), (0, 5), (1, 2), (3, 6), (4, 7), (5, 8), (6, 9), (2, 10), (8, 11), (6, 7)])
         pos = fit(nx.kamada_kawai_layout(G), (-5.6, 0.4, -2.8, 2.4))
         v = NetView(G, pos, color=GREEN, rmin=0.11, rk=0.02, eo=0.55)
-        with self.say("q1") as d:
+        with self.say("gd1") as d:
             self.play(FadeIn(tag), FadeIn(v.group), run_time=1.2)
         x = 6
         nbrs = list(G.neighbors(x))
         px = pos[x] + np.array([0.9, -0.6, 0])
         copy = Dot(px, radius=0.11 + 0.02 * np.sqrt(len(nbrs)), color=GOLD)
         inh = {w: Line(px, pos[w], color=GOLD, stroke_width=3) for w in nbrs}
-        with self.say("q2") as d:
+        with self.say("gd2") as d:
             self.play(Indicate(v.dots[x], color=GOLD, scale_factor=1.6), run_time=0.8)
             self.play(TransformFromCopy(v.dots[x], copy), run_time=0.8)
             self.play(LaggedStart(*[Create(l) for l in inh.values()], lag_ratio=0.3), run_time=1.2)
         lost = nbrs[:2]
-        with self.say("q3") as d:
+        with self.say("gd3") as d:
             self.play(*[inh[w].animate.set_color(RED) for w in lost], run_time=0.6)
             self.play(*[FadeOut(inh[w]) for w in lost], run_time=0.8)
             self.play(*[inh[w].animate.set_color(MUTED).set_stroke(width=2) for w in nbrs if w not in lost], run_time=0.5)

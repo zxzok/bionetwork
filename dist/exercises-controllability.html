@@ -1,0 +1,361 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>动手练习 · 网络可控性与稳定性 · 生物医学网络科学</title><meta name="description" content="网络可控性与稳定性：可在浏览器中运行并自动核对的练习"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-dynamics"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="courses.html">课程视频</a><a href="domains.html" aria-current="page">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html" data-lec="L01">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html" data-lec="L02">网络结构指标与随机图</a></li><li><a href="network-models.html" data-lec="L03">小世界与无标度网络模型</a></li><li><a href="community-structure.html" data-lec="L04">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics" open><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html" data-lec="L05">网络上的传播与免疫</a></li><li><a href="synchronization.html" data-lec="L06">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html" data-lec="L07">网络可控性与稳定性</a><ol class="sub"><li><a href="controllability.network-control-systems.html"><span class="n">01</span>动态系统与网络控制</a></li><li><a href="controllability.linear-controllability.html"><span class="n">02</span>线性系统的可控性</a></li><li><a href="controllability.structural-controllability.html"><span class="n">03</span>结构可控性与最大匹配</a></li><li><a href="controllability.driver-nodes.html"><span class="n">04</span>驱动节点与网络结构</a></li><li><a href="controllability.control-centrality.html"><span class="n">05</span>控制中心性与可控子空间</a></li><li><a href="controllability.control-energy.html"><span class="n">06</span>控制能量与 Gramian 的数值问题</a></li><li><a href="controllability.target-control.html"><span class="n">07</span>目标控制与部分可控</a></li><li><a href="controllability.observability.html"><span class="n">08</span>可观测性与观测节点</a></li><li><a href="controllability.nonlinear-control.html"><span class="n">09</span>非线性网络的控制</a></li><li><a href="controllability.brain-network-control.html"><span class="n">10</span>脑网络控制：平均与模态可控性</a></li><li><a href="controllability.author-team-research.html"><span class="n">11</span>驱动节点的枚举、分类与自适应控制</a></li><li><a href="controllability.structural-robustness.html"><span class="n">12</span>结构鲁棒性</a></li><li><a href="controllability.dynamical-stability.html"><span class="n">13</span>动力学稳定性</a></li><li><a href="controllability.derivations.html"><span class="n">14</span>数学推导与算法</a></li><li><a href="controllability.frontiers.html"><span class="n">15</span>研究前沿与开放问题</a></li><li><a href="controllability.biomedical.html"><span class="n">16</span>生物医学应用</a></li><li><a href="controllability.limitations.html"><span class="n">17</span>适用范围与常见误用</a></li></ol></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html" data-lec="L09">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html" data-lec="L10">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html" data-lec="L11">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html" data-lec="L12">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html" data-lec="L13">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html" data-lec="L14">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html" data-lec="L08">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html" data-lec="L15">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html" data-lec="L16">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="courses.html">课程视频</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="d-dynamics.html">网络动力学与控制</a> <span class="sep">/</span> <a href="controllability.html">网络可控性与稳定性</a></nav><div class="eyebrow" style="margin-top:14px"><b>Exercises</b><span>Network controllability and stability</span></div><h1>动手练习：网络可控性与稳定性</h1><p class="dek">每个任务给出说明、起始代码和自动核对；可以直接在浏览器中运行，也可以下载 Notebook 在本地完成。</p><dl class="doc-meta"><div><dt>任务</dt><dd>6 个</dd></div><div><dt>下载</dt><dd><a href="notebooks/exercises-controllability.ipynb" download>学生版 Notebook</a> · <a href="notebooks/exercises-controllability-solution.ipynb" download>答案版 Notebook</a> · 数据：<a href="data/collectri_human_tf_target_ccby_curated.csv" download>collectri_human_tf_target_ccby_curated.csv</a></dd></div><div><dt>浏览器</dt><dd><a class="lite-link" href="lite/notebooks/index.html?path=practice/exercises-controllability.ipynb" target="_blank" rel="noopener">在 JupyterLite 中打开 ↗</a></dd></div></dl></header><section class="block ex-intro"><p class="small"><span class="py-status">首次运行需加载 Python 环境（约 20–40 秒），之后每次运行只需一两秒。各任务共享同一个 Python 会话。</span></p><ol class="ex-toc"><li><a href="#task-1">Kalman 秩判据</a></li><li><a href="#task-2">用最大匹配找驱动节点</a></li><li><a href="#task-3">控制的鲁棒性：哪些边是关键边</a></li><li><a href="#task-4">驱动节点比例与平均度、度异质性</a></li><li><a href="#task-5">随机失效与蓄意攻击</a></li><li><a href="#task-6">小分析：人类转录调控网络有多难控制</a></li></ol></section><section class="block ex-task" id="task-1"><h2><span class="tag">Task 1</span>Kalman 秩判据</h2><div class="prose"><p>线性系统
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi mathvariant="bold-italic">𝒙</mi><mo accent="true">̇</mo></mover><mo>=</mo><mi>A</mi><mi mathvariant="bold-italic">𝒙</mi><mo>+</mo><mi>B</mi><mi mathvariant="bold-italic">𝒖</mi></mrow><annotation encoding="application/x-tex">\dot{\mathbf x}=A\mathbf x+B\mathbf u</annotation></semantics></math>
+中，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>≠</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">A_{ij}\neq0</annotation></semantics></math>
+表示有向边
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi><mo>→</mo><mi>i</mi></mrow><annotation encoding="application/x-tex">j\to i</annotation></semantics></math>，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+的每一列对应一个驱动节点。可控性矩阵
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">𝒞</mi><mo>=</mo><mo stretchy="false" form="prefix">[</mo><mi>B</mi><mo>,</mo><mspace width="0.278em"></mspace><mi>A</mi><mi>B</mi><mo>,</mo><mspace width="0.278em"></mspace><msup><mi>A</mi><mn>2</mn></msup><mi>B</mi><mo>,</mo><mspace width="0.278em"></mspace><mi>…</mi><mo>,</mo><mspace width="0.278em"></mspace><msup><mi>A</mi><mrow><mi>N</mi><mo>−</mo><mn>1</mn></mrow></msup><mi>B</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathcal C=[B,\;AB,\;A^2B,\;\dots,\;A^{N-1}B]</annotation></semantics></math>
+满秩（<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">rank</mi><mo>&#8289;</mo></mrow><mi mathvariant="script">𝒞</mi><mo>=</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">\operatorname{rank}\mathcal C=N</annotation></semantics></math>）时系统可控。</p>
+<ol type="1">
+<li>补全函数 <code>ctrb_rank(A, B)</code>，返回
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="script">𝒞</mi><annotation encoding="application/x-tex">\mathcal C</annotation></semantics></math>
+的秩；</li>
+<li>用 setup 里的随机非零权重，分别计算：链
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>→</mo><mn>1</mn><mo>→</mo><mn>2</mn><mo>→</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">0\to1\to2\to3</annotation></semantics></math>
+只驱动节点 0 的秩 <code>r_chain</code>；星
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>→</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>→</mo><mn>2</mn><mo>,</mo><mn>0</mn><mo>→</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">0\to1,0\to2,0\to3</annotation></semantics></math>
+只驱动节点 0 的秩 <code>r_star</code>；星形再加驱动节点 2、3 的秩
+<code>r_star3</code>。</li>
+</ol>
+<p>期望看到：链可控（秩 4）；星只驱动中心时不可控（秩
+2，三个叶子只能收到同一个信号）；星加上两个叶子后可控。</p></div><details class="ex-hint"><summary>提示</summary><div class="prose"><p><code>np.hstack([np.linalg.matrix_power(A, k) @ B for k in range(n)])</code>。</p></div></details><details class="ex-setup"><summary>准备代码（运行时自动执行）</summary><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> networkx <span class="im">as</span> nx</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> system_matrix(edges, n, seed<span class="op">=</span><span class="dv">0</span>):</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;边 u-&gt;v 写在 A[v, u]，权重取 0.5–1.5 之间的随机数。&quot;&quot;&quot;</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    rng <span class="op">=</span> np.random.default_rng(seed)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    A <span class="op">=</span> np.zeros((n, n))</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> u, v <span class="kw">in</span> edges:</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>        A[v, u] <span class="op">=</span> rng.uniform(<span class="fl">0.5</span>, <span class="fl">1.5</span>)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> A</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> input_matrix(drivers, n):</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    B <span class="op">=</span> np.zeros((n, <span class="bu">len</span>(drivers)))</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> j, d <span class="kw">in</span> <span class="bu">enumerate</span>(drivers):</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>        B[d, j] <span class="op">=</span> <span class="fl">1.0</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> B</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>chain <span class="op">=</span> [(<span class="dv">0</span>, <span class="dv">1</span>), (<span class="dv">1</span>, <span class="dv">2</span>), (<span class="dv">2</span>, <span class="dv">3</span>)]</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>star <span class="op">=</span> [(<span class="dv">0</span>, <span class="dv">1</span>), (<span class="dv">0</span>, <span class="dv">2</span>), (<span class="dv">0</span>, <span class="dv">3</span>)]</span></code></pre></div>
+</details><div class="cell ex-cell" data-task="0"><div class="cell-head"><h3>你的代码</h3><div><button class="btn run" type="button">在浏览器中运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="10" spellcheck="false" aria-label="任务 1 代码">def ctrb_rank(A, B):
+    n = A.shape[0]
+    # TODO: 拼出 C = [B, AB, ..., A^{n-1} B]，返回 np.linalg.matrix_rank(C)
+    return None
+
+
+r_chain = None   # TODO: 链，只驱动节点 0
+r_star = None    # TODO: 星，只驱动节点 0
+r_star3 = None   # TODO: 星，驱动节点 0、2、3</textarea><div class="ex-result" aria-live="polite"></div><div class="out" aria-live="polite"></div></div><p class="small">运行时依次执行准备代码、你的代码和自动核对。</p><details class="ex-sol"><summary>查看参考答案</summary><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> ctrb_rank(A, B):</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    n <span class="op">=</span> A.shape[<span class="dv">0</span>]</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    C <span class="op">=</span> np.hstack([np.linalg.matrix_power(A, k) <span class="op">@</span> B <span class="cf">for</span> k <span class="kw">in</span> <span class="bu">range</span>(n)])</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="bu">int</span>(np.linalg.matrix_rank(C))</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>r_chain <span class="op">=</span> ctrb_rank(system_matrix(chain, <span class="dv">4</span>), input_matrix([<span class="dv">0</span>], <span class="dv">4</span>))</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>r_star <span class="op">=</span> ctrb_rank(system_matrix(star, <span class="dv">4</span>), input_matrix([<span class="dv">0</span>], <span class="dv">4</span>))</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>r_star3 <span class="op">=</span> ctrb_rank(system_matrix(star, <span class="dv">4</span>), input_matrix([<span class="dv">0</span>, <span class="dv">2</span>, <span class="dv">3</span>], <span class="dv">4</span>))</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;链, 驱动</span><span class="sc">{0}</span><span class="st">:       rank = </span><span class="sc">%d</span><span class="st"> / 4&quot;</span> <span class="op">%</span> r_chain)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;星, 驱动</span><span class="sc">{0}</span><span class="st">:       rank = </span><span class="sc">%d</span><span class="st"> / 4&quot;</span> <span class="op">%</span> r_star)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;星, 驱动{0, 2, 3}: rank = </span><span class="sc">%d</span><span class="st"> / 4&quot;</span> <span class="op">%</span> r_star3)</span></code></pre></div>
+<p class="small">参考答案只是一种写法；只要核对通过，其他写法同样正确。</p></details></section><section class="block ex-task" id="task-2"><h2><span class="tag">Task 2</span>用最大匹配找驱动节点</h2><div class="prose"><p>最小输入定理：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>N</mi><mi>D</mi></msub><mo>=</mo><mrow><mi mathvariant="normal">max</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>N</mi><mo>−</mo><mo stretchy="false" form="prefix">|</mo><msup><mi>M</mi><mo>*</mo></msup><mo stretchy="false" form="prefix">|</mo><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">N_D=\max(N-|M^*|,1)</annotation></semantics></math>。计算方法：把有向图拆成二分图，每个节点
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>
+有出端 <code>("o", u)</code> 和入端 <code>("i", u)</code>，有向边
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>→</mo><mi>v</mi></mrow><annotation encoding="application/x-tex">u\to v</annotation></semantics></math>
+连接
+<code>("o", u)</code>–<code>("i", v)</code>。最大匹配后，<strong>入端没有被匹配</strong>的节点就是驱动节点；若全部匹配（完美匹配），任选
+1 个节点。</p>
+<ol type="1">
+<li>补全 <code>driver_nodes(G)</code>，返回驱动节点列表；</li>
+<li>对 setup 中的随机有向网络 <code>G</code>（12 个节点、18
+条边），求驱动节点 <code>D</code>；</li>
+<li>用任务 1 的 Kalman 判据验证：只驱动 <code>D</code>
+中的节点，随机权重下可控性矩阵的秩 <code>rank_D</code> 应等于 12。</li>
+</ol>
+<p>期望看到：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>N</mi><mi>D</mi></msub><annotation encoding="application/x-tex">N_D</annotation></semantics></math>
+等于
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+减去匹配边数；<code>rank_D = 12</code>。</p></div><details class="ex-hint"><summary>提示</summary><div class="prose"><p><code>nx.bipartite.hopcroft_karp_matching</code>
+返回的字典对每条匹配边存了两次（两个方向），所以匹配边数是
+<code>len(M) // 2</code>；判断入端是否被匹配用
+<code>("i", v) in M</code>。</p></div></details><details class="ex-setup"><summary>准备代码（运行时自动执行）</summary><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>G <span class="op">=</span> nx.gnm_random_graph(<span class="dv">12</span>, <span class="dv">18</span>, directed<span class="op">=</span><span class="va">True</span>, seed<span class="op">=</span><span class="dv">4</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>A_G <span class="op">=</span> system_matrix(G.edges(), <span class="dv">12</span>, seed<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>A_G <span class="op">/=</span> <span class="bu">max</span>(<span class="fl">1.0</span>, np.<span class="bu">abs</span>(np.linalg.eigvals(A_G)).<span class="bu">max</span>())   <span class="co"># 缩放，避免高次幂数值溢出</span></span></code></pre></div>
+</details><div class="cell ex-cell" data-task="1"><div class="cell-head"><h3>你的代码</h3><div><button class="btn run" type="button">在浏览器中运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="14" spellcheck="false" aria-label="任务 2 代码">def driver_nodes(G):
+    Bg = nx.Graph()
+    top = [(&quot;o&quot;, u) for u in G]
+    Bg.add_nodes_from(top)
+    Bg.add_nodes_from([(&quot;i&quot;, v) for v in G])
+    Bg.add_edges_from(((&quot;o&quot;, u), (&quot;i&quot;, v)) for u, v in G.edges())
+    M = nx.bipartite.hopcroft_karp_matching(Bg, top_nodes=top)
+    # TODO: 返回入端 (&quot;i&quot;, v) 不在 M 中的节点 v 组成的列表；若为空，返回 [任一节点]
+    return None
+
+
+D = None        # TODO: driver_nodes(G)
+rank_D = None   # TODO: ctrb_rank(A_G, input_matrix(D, 12))</textarea><div class="ex-result" aria-live="polite"></div><div class="out" aria-live="polite"></div></div><p class="small">运行时依次执行准备代码、你的代码和自动核对。</p><details class="ex-sol"><summary>查看参考答案</summary><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> driver_nodes(G):</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    Bg <span class="op">=</span> nx.Graph()</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    top <span class="op">=</span> [(<span class="st">&quot;o&quot;</span>, u) <span class="cf">for</span> u <span class="kw">in</span> G]</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    Bg.add_nodes_from(top)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    Bg.add_nodes_from([(<span class="st">&quot;i&quot;</span>, v) <span class="cf">for</span> v <span class="kw">in</span> G])</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    Bg.add_edges_from(((<span class="st">&quot;o&quot;</span>, u), (<span class="st">&quot;i&quot;</span>, v)) <span class="cf">for</span> u, v <span class="kw">in</span> G.edges())</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    M <span class="op">=</span> nx.bipartite.hopcroft_karp_matching(Bg, top_nodes<span class="op">=</span>top)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    D <span class="op">=</span> [v <span class="cf">for</span> v <span class="kw">in</span> G <span class="cf">if</span> (<span class="st">&quot;i&quot;</span>, v) <span class="kw">not</span> <span class="kw">in</span> M]</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> D <span class="cf">if</span> D <span class="cf">else</span> [<span class="bu">next</span>(<span class="bu">iter</span>(G))]</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>D <span class="op">=</span> driver_nodes(G)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>rank_D <span class="op">=</span> ctrb_rank(A_G, input_matrix(D, <span class="dv">12</span>))</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;驱动节点:&quot;</span>, D, <span class="st">&quot; N_D =&quot;</span>, <span class="bu">len</span>(D))</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;只驱动这些节点时 Kalman 秩 =&quot;</span>, rank_D, <span class="st">&quot;/ 12&quot;</span>)</span></code></pre></div>
+<p class="small">参考答案只是一种写法；只要核对通过，其他写法同样正确。</p></details></section><section class="block ex-task" id="task-3"><h2><span class="tag">Task 3</span>控制的鲁棒性：哪些边是关键边</h2><div class="prose"><p>删除一条边后，若所需驱动节点数
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>N</mi><mi>D</mi></msub><annotation encoding="application/x-tex">N_D</annotation></semantics></math>
+<strong>增加</strong>，这条边称为<strong>关键边</strong>（critical
+edge，Liu 等
+2011）。网络删掉一条边后可能仍然连通，却需要更多输入——连通鲁棒性和控制鲁棒性是两回事。</p>
+<p>对 setup 中的随机有向网络 <code>H</code>（20 个节点、30 条边）：</p>
+<ol type="1">
+<li>计算原网络的驱动节点数 <code>nd0</code>；</li>
+<li>逐条删除每条边（在副本上删），找出全部关键边，存为列表
+<code>critical</code>（元素是 <code>(u, v)</code> 元组）；</li>
+<li>计算关键边占全部边的比例 <code>frac_critical</code>。</li>
+</ol>
+<p>期望看到：只有一部分边是关键边；删除非关键边时
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>N</mi><mi>D</mi></msub><annotation encoding="application/x-tex">N_D</annotation></semantics></math>
+不变（删边不会让
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>N</mi><mi>D</mi></msub><annotation encoding="application/x-tex">N_D</annotation></semantics></math>
+减少）。</p></div><details class="ex-hint"><summary>提示</summary><div class="prose"><p>setup 提供了参考实现
+<code>driver_nodes_ref</code>，后面的任务也会用到它。<code>H2 = H.copy(); H2.remove_edge(u, v)</code>。</p></div></details><details class="ex-setup"><summary>准备代码（运行时自动执行）</summary><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> driver_nodes_ref(G):</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    Bg <span class="op">=</span> nx.Graph()</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    top <span class="op">=</span> [(<span class="st">&quot;o&quot;</span>, u) <span class="cf">for</span> u <span class="kw">in</span> G]</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    Bg.add_nodes_from(top)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    Bg.add_nodes_from([(<span class="st">&quot;i&quot;</span>, v) <span class="cf">for</span> v <span class="kw">in</span> G])</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    Bg.add_edges_from(((<span class="st">&quot;o&quot;</span>, u), (<span class="st">&quot;i&quot;</span>, v)) <span class="cf">for</span> u, v <span class="kw">in</span> G.edges())</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    M <span class="op">=</span> nx.bipartite.hopcroft_karp_matching(Bg, top_nodes<span class="op">=</span>top)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    D <span class="op">=</span> [v <span class="cf">for</span> v <span class="kw">in</span> G <span class="cf">if</span> (<span class="st">&quot;i&quot;</span>, v) <span class="kw">not</span> <span class="kw">in</span> M]</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> D <span class="cf">if</span> D <span class="cf">else</span> [<span class="bu">next</span>(<span class="bu">iter</span>(G))]</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>H <span class="op">=</span> nx.gnm_random_graph(<span class="dv">20</span>, <span class="dv">30</span>, directed<span class="op">=</span><span class="va">True</span>, seed<span class="op">=</span><span class="dv">7</span>)</span></code></pre></div>
+</details><div class="cell ex-cell" data-task="2"><div class="cell-head"><h3>你的代码</h3><div><button class="btn run" type="button">在浏览器中运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="8" spellcheck="false" aria-label="任务 3 代码">nd0 = None            # TODO: 原网络的 N_D
+critical = None       # TODO: 删除后 N_D 增加的边 (u, v) 列表
+frac_critical = None  # TODO: len(critical) / 边数</textarea><div class="ex-result" aria-live="polite"></div><div class="out" aria-live="polite"></div></div><p class="small">运行时依次执行准备代码、你的代码和自动核对。</p><details class="ex-sol"><summary>查看参考答案</summary><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>nd0 <span class="op">=</span> <span class="bu">len</span>(driver_nodes_ref(H))</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>critical <span class="op">=</span> []</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> u, v <span class="kw">in</span> H.edges():</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    H2 <span class="op">=</span> H.copy()</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    H2.remove_edge(u, v)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">len</span>(driver_nodes_ref(H2)) <span class="op">&gt;</span> nd0:</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>        critical.append((u, v))</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>frac_critical <span class="op">=</span> <span class="bu">len</span>(critical) <span class="op">/</span> H.number_of_edges()</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;原网络 N_D =&quot;</span>, nd0)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;关键边 </span><span class="sc">%d</span><span class="st"> 条（占 %.0f</span><span class="sc">%%</span><span class="st">）:&quot;</span> <span class="op">%</span> (<span class="bu">len</span>(critical), <span class="dv">100</span> <span class="op">*</span> frac_critical), critical)</span></code></pre></div>
+<p class="small">参考答案只是一种写法；只要核对通过，其他写法同样正确。</p></details></section><section class="block ex-task" id="task-4"><h2><span class="tag">Task 4</span>驱动节点比例与平均度、度异质性</h2><div class="prose"><p>Liu 等（2011）发现：驱动节点比例
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>n</mi><mi>D</mi></msub><mo>=</mo><msub><mi>N</mi><mi>D</mi></msub><mi>/</mi><mi>N</mi></mrow><annotation encoding="application/x-tex">n_D=N_D/N</annotation></semantics></math>
+主要由度分布决定；网络越稀疏、度越异质，越难控制；驱动节点倾向于避开枢纽。</p>
+<p>对
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>=</mo><mn>1000</mn></mrow><annotation encoding="application/x-tex">N=1000</annotation></semantics></math>
+的有向 ER 网络和有向无标度网络（setup
+中的静态模型，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>γ</mi><mo>=</mo><mn>2.5</mn></mrow><annotation encoding="application/x-tex">\gamma=2.5</annotation></semantics></math>），在边数
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>=</mo><mi>c</mi><mi>N</mi></mrow><annotation encoding="application/x-tex">L=cN</annotation></semantics></math>（<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">c=1,2,3,4,6</annotation></semantics></math>，即平均<strong>出度</strong>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>，每个节点的入度＋出度平均为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>c</mi></mrow><annotation encoding="application/x-tex">2c</annotation></semantics></math>）下：</p>
+<ol type="1">
+<li>计算两类网络的
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mi>D</mi></msub><annotation encoding="application/x-tex">n_D</annotation></semantics></math>，按
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+的顺序存入列表 <code>nd_er</code>、<code>nd_sf</code>；</li>
+<li>在
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">c=3</annotation></semantics></math>
+的无标度网络 <code>G_sf3</code>
+上，计算全网节点的平均总度（入度＋出度）<code>deg_all</code>
+和驱动节点的平均总度 <code>deg_driver</code>。</li>
+</ol>
+<p>期望看到：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+越大
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mi>D</mi></msub><annotation encoding="application/x-tex">n_D</annotation></semantics></math>
+越小；同一
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+下无标度网络的
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mi>D</mi></msub><annotation encoding="application/x-tex">n_D</annotation></semantics></math>
+更高；驱动节点的平均度低于全网平均度。</p></div><details class="ex-hint"><summary>提示</summary><div class="prose"><p><code>G.degree()</code> 在有向图上给出入度＋出度。</p></div></details><details class="ex-setup"><summary>准备代码（运行时自动执行）</summary><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> sf_directed(N, c, gamma<span class="op">=</span><span class="fl">2.5</span>, seed<span class="op">=</span><span class="dv">0</span>):</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;静态模型：节点权重 w_i ∝ i^{-1/(gamma-1)}，按权重分别抽取起点和终点，共 L = c N 条边（无自环、无重边）。&quot;&quot;&quot;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    rng <span class="op">=</span> np.random.default_rng(seed)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    w <span class="op">=</span> np.arange(<span class="dv">1</span>, N <span class="op">+</span> <span class="dv">1</span>) <span class="op">**</span> (<span class="op">-</span><span class="fl">1.0</span> <span class="op">/</span> (gamma <span class="op">-</span> <span class="dv">1</span>))</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    w <span class="op">/=</span> w.<span class="bu">sum</span>()</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    L <span class="op">=</span> <span class="bu">int</span>(c <span class="op">*</span> N)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    codes <span class="op">=</span> np.array([], dtype<span class="op">=</span>np.int64)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> codes.size <span class="op">&lt;</span> L:</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        u <span class="op">=</span> rng.choice(N, <span class="dv">4</span> <span class="op">*</span> L, p<span class="op">=</span>w)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>        v <span class="op">=</span> rng.choice(N, <span class="dv">4</span> <span class="op">*</span> L, p<span class="op">=</span>w)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>        codes <span class="op">=</span> np.concatenate([codes, (u <span class="op">*</span> N <span class="op">+</span> v)[u <span class="op">!=</span> v]])</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>        _, idx <span class="op">=</span> np.unique(codes, return_index<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>        codes <span class="op">=</span> codes[np.sort(idx)]</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    G <span class="op">=</span> nx.DiGraph()</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    G.add_nodes_from(<span class="bu">range</span>(N))</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    G.add_edges_from((<span class="bu">int</span>(x <span class="op">//</span> N), <span class="bu">int</span>(x <span class="op">%</span> N)) <span class="cf">for</span> x <span class="kw">in</span> codes[:L])</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> G</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>N <span class="op">=</span> <span class="dv">1000</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>cs <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">6</span>]</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>nets_er <span class="op">=</span> [nx.gnm_random_graph(N, c <span class="op">*</span> N, directed<span class="op">=</span><span class="va">True</span>, seed<span class="op">=</span>c) <span class="cf">for</span> c <span class="kw">in</span> cs]</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>nets_sf <span class="op">=</span> [sf_directed(N, c, seed<span class="op">=</span>c) <span class="cf">for</span> c <span class="kw">in</span> cs]</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>G_sf3 <span class="op">=</span> nets_sf[cs.index(<span class="dv">3</span>)]</span></code></pre></div>
+</details><div class="cell ex-cell" data-task="3"><div class="cell-head"><h3>你的代码</h3><div><button class="btn run" type="button">在浏览器中运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="8" spellcheck="false" aria-label="任务 4 代码">nd_er = []   # TODO: 对 nets_er 中每个网络追加 len(driver_nodes_ref(G)) / N
+nd_sf = []   # TODO: 对 nets_sf 同样计算
+deg_all = None      # TODO: G_sf3 全网平均总度
+deg_driver = None   # TODO: G_sf3 驱动节点的平均总度</textarea><div class="ex-result" aria-live="polite"></div><div class="out" aria-live="polite"></div></div><p class="small">运行时依次执行准备代码、你的代码和自动核对。</p><details class="ex-sol"><summary>查看参考答案</summary><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>nd_er <span class="op">=</span> [<span class="bu">len</span>(driver_nodes_ref(G)) <span class="op">/</span> N <span class="cf">for</span> G <span class="kw">in</span> nets_er]</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>nd_sf <span class="op">=</span> [<span class="bu">len</span>(driver_nodes_ref(G)) <span class="op">/</span> N <span class="cf">for</span> G <span class="kw">in</span> nets_sf]</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>deg <span class="op">=</span> <span class="bu">dict</span>(G_sf3.degree())</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>D3 <span class="op">=</span> driver_nodes_ref(G_sf3)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>deg_all <span class="op">=</span> <span class="bu">float</span>(np.mean(<span class="bu">list</span>(deg.values())))</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>deg_driver <span class="op">=</span> <span class="bu">float</span>(np.mean([deg[v] <span class="cf">for</span> v <span class="kw">in</span> D3]))</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> c, a, b <span class="kw">in</span> <span class="bu">zip</span>(cs, nd_er, nd_sf):</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;c = </span><span class="sc">%d</span><span class="st">   n_D(ER) = </span><span class="sc">%.3f</span><span class="st">   n_D(SF) = </span><span class="sc">%.3f</span><span class="st">&quot;</span> <span class="op">%</span> (c, a, b))</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;SF (c=3)：全网平均度 </span><span class="sc">%.2f</span><span class="st">，驱动节点平均度 </span><span class="sc">%.2f</span><span class="st">&quot;</span> <span class="op">%</span> (deg_all, deg_driver))</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="fl">4.5</span>, <span class="fl">3.2</span>))</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>ax.plot(cs, nd_er, <span class="st">&quot;o-&quot;</span>, label<span class="op">=</span><span class="st">&quot;ER&quot;</span>)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>ax.plot(cs, nd_sf, <span class="st">&quot;s-&quot;</span>, label<span class="op">=</span><span class="st">&quot;SF (gamma = 2.5)&quot;</span>)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">&quot;mean out-degree c = L/N&quot;</span>)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">&quot;n_D&quot;</span>)</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>ax.set_yscale(<span class="st">&quot;log&quot;</span>)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>ax.legend()</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>fig.tight_layout()</span></code></pre></div>
+<p class="small">参考答案只是一种写法；只要核对通过，其他写法同样正确。</p></details></section><section class="block ex-task" id="task-5"><h2><span class="tag">Task 5</span>随机失效与蓄意攻击</h2><div class="prose"><p>对 BA
+网络（<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>=</mo><mn>1000</mn></mrow><annotation encoding="application/x-tex">N=1000</annotation></semantics></math>，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">m=2</annotation></semantics></math>）和边数相同的
+ER 网络，逐步删除比例
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+的节点：随机删除，或按<strong>初始</strong>度从高到低删除（攻击）。记录删除后最大连通分支占原网络
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+的比例。</p>
+<ol type="1">
+<li>补全 <code>giant_curve(G, order)</code>：对 <code>fs</code> 中每个
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>，删去
+<code>order</code> 中前 <code>int(f * N)</code>
+个节点，返回最大分支比例的列表；</li>
+<li>用它得到四条曲线，存入字典 <code>curves</code>，键为
+<code>("ER", "random")</code>、<code>("ER", "attack")</code>、<code>("BA", "random")</code>、<code>("BA", "attack")</code>；随机顺序用
+setup 中的 <code>rand_order</code>；</li>
+<li>用
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>c</mi></msub><mo>=</mo><mn>1</mn><mo>−</mo><mn>1</mn><mi>/</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>κ</mi><mn>0</mn></msub><mo>−</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f_c=1-1/(\kappa_0-1)</annotation></semantics></math>、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>κ</mi><mn>0</mn></msub><mo>=</mo><mo stretchy="false" form="prefix">⟨</mo><msup><mi>k</mi><mn>2</mn></msup><mo stretchy="false" form="postfix">⟩</mo><mi>/</mi><mo stretchy="false" form="prefix">⟨</mo><mi>k</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\kappa_0=\langle k^2\rangle/\langle k\rangle</annotation></semantics></math>
+估计两个网络的随机失效阈值，存入字典
+<code>fc = {"ER": …, "BA": …}</code>。</li>
+</ol>
+<p>期望看到：BA 网络的
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>κ</mi><mn>0</mn></msub><annotation encoding="application/x-tex">\kappa_0</annotation></semantics></math>
+和理论
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mi>c</mi></msub><annotation encoding="application/x-tex">f_c</annotation></semantics></math>
+更高；按度攻击时 BA 网络比 ER 网络碎得更快。</p></div><details class="ex-hint"><summary>提示</summary><div class="prose"><p><code>max((len(c) for c in nx.connected_components(H)), default=0) / N</code>。</p></div></details><details class="ex-setup"><summary>准备代码（运行时自动执行）</summary><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>N <span class="op">=</span> <span class="dv">1000</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>G_ba <span class="op">=</span> nx.barabasi_albert_graph(N, <span class="dv">2</span>, seed<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>G_er <span class="op">=</span> nx.gnm_random_graph(N, G_ba.number_of_edges(), seed<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>nets <span class="op">=</span> {<span class="st">&quot;ER&quot;</span>: G_er, <span class="st">&quot;BA&quot;</span>: G_ba}</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>fs <span class="op">=</span> np.linspace(<span class="dv">0</span>, <span class="fl">0.9</span>, <span class="dv">19</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>rand_order <span class="op">=</span> <span class="bu">list</span>(np.random.default_rng(<span class="dv">0</span>).permutation(N))</span></code></pre></div>
+</details><div class="cell ex-cell" data-task="4"><div class="cell-head"><h3>你的代码</h3><div><button class="btn run" type="button">在浏览器中运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="11" spellcheck="false" aria-label="任务 5 代码">def giant_curve(G, order):
+    out = []
+    for f in fs:
+        # TODO: 在 G 的副本上删去 order[: int(f * N)]，记录最大连通分支 / N
+        pass
+    return out
+
+
+curves = {}   # TODO: 四条曲线
+fc = {}       # TODO: {&quot;ER&quot;: ..., &quot;BA&quot;: ...}</textarea><div class="ex-result" aria-live="polite"></div><div class="out" aria-live="polite"></div></div><p class="small">运行时依次执行准备代码、你的代码和自动核对。</p><details class="ex-sol"><summary>查看参考答案</summary><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> giant_curve(G, order):</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    out <span class="op">=</span> []</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> f <span class="kw">in</span> fs:</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>        Hc <span class="op">=</span> G.copy()</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>        Hc.remove_nodes_from(order[: <span class="bu">int</span>(f <span class="op">*</span> N)])</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>        out.append(<span class="bu">max</span>((<span class="bu">len</span>(c) <span class="cf">for</span> c <span class="kw">in</span> nx.connected_components(Hc)), default<span class="op">=</span><span class="dv">0</span>) <span class="op">/</span> N)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> out</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>curves, fc <span class="op">=</span> {}, {}</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> name, Gx <span class="kw">in</span> nets.items():</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    attack_order <span class="op">=</span> [v <span class="cf">for</span> v, _ <span class="kw">in</span> <span class="bu">sorted</span>(Gx.degree(), key<span class="op">=</span><span class="kw">lambda</span> x: <span class="op">-</span>x[<span class="dv">1</span>])]</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    curves[(name, <span class="st">&quot;random&quot;</span>)] <span class="op">=</span> giant_curve(Gx, rand_order)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    curves[(name, <span class="st">&quot;attack&quot;</span>)] <span class="op">=</span> giant_curve(Gx, attack_order)</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    k <span class="op">=</span> np.array([d <span class="cf">for</span> _, d <span class="kw">in</span> Gx.degree()], dtype<span class="op">=</span><span class="bu">float</span>)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    kappa0 <span class="op">=</span> (k<span class="op">**</span><span class="dv">2</span>).mean() <span class="op">/</span> k.mean()</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    fc[name] <span class="op">=</span> <span class="dv">1</span> <span class="op">-</span> <span class="dv">1</span> <span class="op">/</span> (kappa0 <span class="op">-</span> <span class="dv">1</span>)</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;</span><span class="sc">%s</span><span class="st">: kappa0 = </span><span class="sc">%.2f</span><span class="st">，理论 f_c = </span><span class="sc">%.3f</span><span class="st">&quot;</span> <span class="op">%</span> (name, kappa0, fc[name]))</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="fl">4.5</span>, <span class="fl">3.2</span>))</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (name, mode), y <span class="kw">in</span> curves.items():</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    ax.plot(fs, y, <span class="st">&quot;-&quot;</span> <span class="cf">if</span> name <span class="op">==</span> <span class="st">&quot;ER&quot;</span> <span class="cf">else</span> <span class="st">&quot;--&quot;</span>, label<span class="op">=</span><span class="st">&quot;</span><span class="sc">%s</span><span class="st"> </span><span class="sc">%s</span><span class="st">&quot;</span> <span class="op">%</span> (name, mode))</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">&quot;fraction removed f&quot;</span>)</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">&quot;giant component / N&quot;</span>)</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>ax.legend(fontsize<span class="op">=</span><span class="dv">8</span>)</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>fig.tight_layout()</span></code></pre></div>
+<p class="small">参考答案只是一种写法；只要核对通过，其他写法同样正确。</p></details></section><section class="block ex-task" id="task-6"><h2><span class="tag">Task 6</span>小分析：人类转录调控网络有多难控制</h2><div class="prose"><p>用真实数据
+<code>data/collectri_human_tf_target_ccby_curated.csv</code>（CollecTRI
+人类 TF→靶基因调控关系中有 CC BY 4.0
+人工整理来源支持的子集；出处见本专题的真实数据案例和
+<code>data/SOURCES.md</code>）。setup 已把它读成整数编号的有向边数组
+<code>u → v</code>（去掉了重复边和自环），并提供快速计算驱动节点数的函数
+<code>n_driver(u, v, N)</code>（用 SciPy 的二分图最大匹配，结果与
+Hopcroft–Karp 相同）。</p>
+<p>自己设计并完成：</p>
+<ol type="1">
+<li>真实网络的驱动节点比例 <code>nd_real</code>；</li>
+<li>保度随机化：打乱靶基因列 <code>v</code>（每个 TF
+的出度、每个基因的入度保持不变），去掉由此产生的自环和重复边，重复
+<code>n_rand</code> 次（自己定，至少 3 次），把每次的
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mi>D</mi></msub><annotation encoding="application/x-tex">n_D</annotation></semantics></math>
+存入列表 <code>nd_rand</code>；</li>
+<li>源节点（没有入边）占驱动节点的比例 <code>frac_source</code>。</li>
+</ol>
+<p>然后想一想：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mi>D</mi></msub><annotation encoding="application/x-tex">n_D</annotation></semantics></math>
+和保度随机网络接近吗？这支持“度分布决定可控性”吗？驱动节点主要来自哪里——与控制轮廓中“转录调控网络以外部扩张为主”的说法对得上吗？这些驱动节点能直接当作药物靶点吗？（见专题页对“结构上需要的驱动节点
+≠ 可操作的干预靶点”的讨论。）</p></div><details class="ex-setup"><summary>准备代码（运行时自动执行）</summary><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.sparse <span class="im">import</span> csr_matrix</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.sparse.csgraph <span class="im">import</span> maximum_bipartite_matching</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>_df <span class="op">=</span> pd.read_csv(<span class="st">&quot;data/collectri_human_tf_target_ccby_curated.csv&quot;</span>).drop_duplicates([<span class="st">&quot;tf&quot;</span>, <span class="st">&quot;target&quot;</span>])</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>_df <span class="op">=</span> _df[_df.tf <span class="op">!=</span> _df.target]</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>genes <span class="op">=</span> <span class="bu">sorted</span>(<span class="bu">set</span>(_df.tf) <span class="op">|</span> <span class="bu">set</span>(_df.target))</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>_idx <span class="op">=</span> {g: i <span class="cf">for</span> i, g <span class="kw">in</span> <span class="bu">enumerate</span>(genes)}</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>N_real <span class="op">=</span> <span class="bu">len</span>(genes)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>u <span class="op">=</span> _df.tf.<span class="bu">map</span>(_idx).to_numpy()</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>v <span class="op">=</span> _df.target.<span class="bu">map</span>(_idx).to_numpy()</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> n_driver(u, v, N):</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;N_D = max(N − |M*|, 1)，二分图：出端 u（行）— 入端 v（列）。&quot;&quot;&quot;</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    M <span class="op">=</span> csr_matrix((np.ones(<span class="bu">len</span>(u)), (u, v)), shape<span class="op">=</span>(N, N))</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    match <span class="op">=</span> maximum_bipartite_matching(M, perm_type<span class="op">=</span><span class="st">&quot;column&quot;</span>)</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="bu">max</span>(N <span class="op">-</span> <span class="bu">int</span>((match <span class="op">&gt;=</span> <span class="dv">0</span>).<span class="bu">sum</span>()), <span class="dv">1</span>)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;N = </span><span class="sc">%d</span><span class="st"> 个基因，L = </span><span class="sc">%d</span><span class="st"> 条调控边&quot;</span> <span class="op">%</span> (N_real, <span class="bu">len</span>(u)))</span></code></pre></div>
+</details><div class="cell ex-cell" data-task="5"><div class="cell-head"><h3>你的代码</h3><div><button class="btn run" type="button">在浏览器中运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="8" spellcheck="false" aria-label="任务 6 代码">n_rand = 5
+nd_real = None      # TODO: n_driver(u, v, N_real) / N_real
+nd_rand = []        # TODO: n_rand 次保度随机化的 n_D
+frac_source = None  # TODO: 源节点数 / N_D（源节点：入度为 0）</textarea><div class="ex-result" aria-live="polite"></div><div class="out" aria-live="polite"></div></div><p class="small">运行时依次执行准备代码、你的代码和自动核对。</p><details class="ex-sol"><summary>查看参考答案</summary><div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>n_rand <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>nd_real <span class="op">=</span> n_driver(u, v, N_real) <span class="op">/</span> N_real</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>rng <span class="op">=</span> np.random.default_rng(<span class="dv">2026</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>nd_rand <span class="op">=</span> []</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(n_rand):</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    vp <span class="op">=</span> rng.permutation(v)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    keep <span class="op">=</span> u <span class="op">!=</span> vp</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    pairs <span class="op">=</span> np.unique(np.stack([u[keep], vp[keep]], axis<span class="op">=</span><span class="dv">1</span>), axis<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    nd_rand.append(n_driver(pairs[:, <span class="dv">0</span>], pairs[:, <span class="dv">1</span>], N_real) <span class="op">/</span> N_real)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>kin <span class="op">=</span> np.bincount(v, minlength<span class="op">=</span>N_real)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>frac_source <span class="op">=</span> (kin <span class="op">==</span> <span class="dv">0</span>).<span class="bu">sum</span>() <span class="op">/</span> n_driver(u, v, N_real)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;真实网络 n_D = </span><span class="sc">%.3f</span><span class="st">&quot;</span> <span class="op">%</span> nd_real)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;保度随机化 n_D = </span><span class="sc">%.3f</span><span class="st"> ± </span><span class="sc">%.3f</span><span class="st">（</span><span class="sc">%d</span><span class="st"> 次）&quot;</span> <span class="op">%</span> (np.mean(nd_rand), np.std(nd_rand), n_rand))</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;驱动节点中源节点占 </span><span class="sc">%.1f%%</span><span class="st">&quot;</span> <span class="op">%</span> (<span class="dv">100</span> <span class="op">*</span> frac_source))</span></code></pre></div>
+<p class="small">参考答案只是一种写法；只要核对通过，其他写法同样正确。</p></details></section><nav class="pager"><a href="controllability.html"><small>专题主页</small>网络可控性与稳定性</a><a href="quiz-controllability.html"><small>自测题</small>网络可控性与稳定性</a></nav><script type="application/json" id="ex-data">{"files": ["collectri_human_tf_target_ccby_curated.csv"], "tasks": [{"setup": "import numpy as np\nimport networkx as nx\nimport matplotlib.pyplot as plt\n\n\ndef system_matrix(edges, n, seed=0):\n    \"\"\"边 u->v 写在 A[v, u]，权重取 0.5–1.5 之间的随机数。\"\"\"\n    rng = np.random.default_rng(seed)\n    A = np.zeros((n, n))\n    for u, v in edges:\n        A[v, u] = rng.uniform(0.5, 1.5)\n    return A\n\n\ndef input_matrix(drivers, n):\n    B = np.zeros((n, len(drivers)))\n    for j, d in enumerate(drivers):\n        B[d, j] = 1.0\n    return B\n\n\nchain = [(0, 1), (1, 2), (2, 3)]\nstar = [(0, 1), (0, 2), (0, 3)]", "check": "assert ctrb_rank(np.eye(2), np.ones((2, 1))) is not None, \"ctrb_rank 还返回 None，请补全函数\"\nassert ctrb_rank(np.array([[0.0, 0.0], [1.0, 0.0]]), np.array([[1.0], [0.0]])) == 2, \"两节点链 0→1 驱动节点 0 应满秩 2；检查 A 的幂次是否从 0 取到 n−1\"\nassert ctrb_rank(np.zeros((3, 3)), np.eye(3)[:, :1]) == 1, \"A=0 时只有 B 本身一列有效，秩应为 1\"\nassert r_chain == 4, \"链 0→1→2→3 只驱动节点 0 应可控（秩 4）；检查是否用了 system_matrix(chain, 4)\"\nassert r_star == 2, \"星形只驱动中心时秩应为 2：B 一个方向，AB 一个方向，A²B = 0\"\nassert r_star3 == 4, \"星形再驱动叶子 2、3 后应可控（秩 4）；检查 input_matrix([0, 2, 3], 4)\"\nprint(\"✓ 任务 1 通过\")"}, {"setup": "G = nx.gnm_random_graph(12, 18, directed=True, seed=4)\nA_G = system_matrix(G.edges(), 12, seed=1)\nA_G /= max(1.0, np.abs(np.linalg.eigvals(A_G)).max())   # 缩放，避免高次幂数值溢出", "check": "assert D is not None and rank_D is not None, \"D、rank_D 还没有赋值\"\nassert driver_nodes(nx.DiGraph(chain)) == [0], \"链 0→1→2→3 的驱动节点应只有 [0]\"\nassert len(driver_nodes(nx.DiGraph(star))) == 3, \"星形 0→1,2,3 应有 3 个驱动节点（中心只能匹配一个叶子，另外两个叶子和中心本身未匹配）\"\nassert len(driver_nodes(nx.cycle_graph(5, create_using=nx.DiGraph))) == 1, \"有向环存在完美匹配，N_D 应为 1（不能返回空列表）\"\n_B = nx.Graph()\n_B.add_nodes_from([(\"o\", u) for u in G] + [(\"i\", v) for v in G])\n_B.add_edges_from(((\"o\", u), (\"i\", v)) for u, v in G.edges())\n_m = len(nx.bipartite.hopcroft_karp_matching(_B, top_nodes=[(\"o\", u) for u in G])) // 2\nassert len(D) == max(12 - _m, 1), \"N_D 应等于 N − |M*| = %d；检查是否只数了入端未匹配的节点\" % max(12 - _m, 1)\nassert set(D) <= set(G.nodes()), \"D 里应是 G 的节点编号，而不是 ('i', v) 这样的元组\"\nassert rank_D == 12, \"只驱动 D 时 Kalman 秩应为 12；检查 input_matrix(D, 12) 和 ctrb_rank\"\nprint(\"✓ 任务 2 通过\")"}, {"setup": "def driver_nodes_ref(G):\n    Bg = nx.Graph()\n    top = [(\"o\", u) for u in G]\n    Bg.add_nodes_from(top)\n    Bg.add_nodes_from([(\"i\", v) for v in G])\n    Bg.add_edges_from(((\"o\", u), (\"i\", v)) for u, v in G.edges())\n    M = nx.bipartite.hopcroft_karp_matching(Bg, top_nodes=top)\n    D = [v for v in G if (\"i\", v) not in M]\n    return D if D else [next(iter(G))]\n\n\nH = nx.gnm_random_graph(20, 30, directed=True, seed=7)", "check": "assert nd0 is not None and critical is not None and frac_critical is not None, \"nd0、critical、frac_critical 还没有赋值\"\nassert nd0 == len(driver_nodes_ref(H)), \"nd0 应为原网络的驱动节点数\"\n_ref = set()\nfor _u, _v in H.edges():\n    _H2 = H.copy()\n    _H2.remove_edge(_u, _v)\n    if len(driver_nodes_ref(_H2)) > nd0:\n        _ref.add((_u, _v))\n_got = set(map(tuple, critical))\nassert _got <= set(H.edges()), \"critical 里应是 H 的边 (u, v)；检查方向是否写反\"\nassert _got == _ref, \"关键边应有 %d 条，你找到 %d 条；检查是否在副本上删边、是否用“>”而不是“!=”比较\" % (len(_ref), len(_got))\nassert abs(frac_critical - len(_ref) / H.number_of_edges()) < 1e-9, \"frac_critical = 关键边数 / 总边数\"\nprint(\"✓ 任务 3 通过\")"}, {"setup": "def sf_directed(N, c, gamma=2.5, seed=0):\n    \"\"\"静态模型：节点权重 w_i ∝ i^{-1/(gamma-1)}，按权重分别抽取起点和终点，共 L = c N 条边（无自环、无重边）。\"\"\"\n    rng = np.random.default_rng(seed)\n    w = np.arange(1, N + 1) ** (-1.0 / (gamma - 1))\n    w /= w.sum()\n    L = int(c * N)\n    codes = np.array([], dtype=np.int64)\n    while codes.size < L:\n        u = rng.choice(N, 4 * L, p=w)\n        v = rng.choice(N, 4 * L, p=w)\n        codes = np.concatenate([codes, (u * N + v)[u != v]])\n        _, idx = np.unique(codes, return_index=True)\n        codes = codes[np.sort(idx)]\n    G = nx.DiGraph()\n    G.add_nodes_from(range(N))\n    G.add_edges_from((int(x // N), int(x % N)) for x in codes[:L])\n    return G\n\n\nN = 1000\ncs = [1, 2, 3, 4, 6]\nnets_er = [nx.gnm_random_graph(N, c * N, directed=True, seed=c) for c in cs]\nnets_sf = [sf_directed(N, c, seed=c) for c in cs]\nG_sf3 = nets_sf[cs.index(3)]", "check": "assert len(nd_er) == 5 and len(nd_sf) == 5, \"nd_er、nd_sf 应各有 5 个值，对应 c = 1, 2, 3, 4, 6\"\nassert all(0 < x <= 1 for x in nd_er + nd_sf), \"n_D 应在 (0, 1] 之间；检查是否除以了 N\"\nassert all(nd_er[i] > nd_er[i + 1] for i in range(4)), \"ER 网络的 n_D 应随平均度增大而下降\"\nassert all(s > e for s, e in zip(nd_sf, nd_er)), \"同一平均度下无标度网络的 n_D 应高于 ER 网络；检查两个列表是否写反\"\nassert abs(nd_er[0] - len(driver_nodes_ref(nets_er[0])) / N) < 1e-9, \"nd_er[0] 应为 c = 1 的 ER 网络的 N_D / N\"\nassert deg_all is not None and deg_driver is not None, \"deg_all、deg_driver 还没有赋值\"\nassert abs(deg_all - 2 * G_sf3.number_of_edges() / N) < 1e-6, \"全网平均总度应为 2L/N = 6；检查是否用了 G_sf3.degree()\"\nassert deg_driver < deg_all, \"驱动节点的平均度应低于全网平均度（驱动节点避开枢纽）\"\nprint(\"✓ 任务 4 通过\")"}, {"setup": "N = 1000\nG_ba = nx.barabasi_albert_graph(N, 2, seed=1)\nG_er = nx.gnm_random_graph(N, G_ba.number_of_edges(), seed=1)\nnets = {\"ER\": G_er, \"BA\": G_ba}\nfs = np.linspace(0, 0.9, 19)\nrand_order = list(np.random.default_rng(0).permutation(N))", "check": "_keys = {(\"ER\", \"random\"), (\"ER\", \"attack\"), (\"BA\", \"random\"), (\"BA\", \"attack\")}\nassert set(curves) == _keys, \"curves 应有四个键：(ER/BA, random/attack)\"\nassert all(len(y) == len(fs) for y in curves.values()), \"每条曲线的长度应等于 len(fs) = 19；检查 giant_curve 是否 append 了结果\"\nassert all(abs(y[0] - max(len(c) for c in nx.connected_components(nets[n])) / N) < 1e-9 for (n, _), y in curves.items()), \"f = 0 时应为原网络最大分支比例；检查是否除以了原网络的 N\"\n_i = int(np.argmin(np.abs(fs - 0.1)))\nassert curves[(\"BA\", \"attack\")][_i] < curves[(\"BA\", \"random\")][_i], \"删去 10% 节点时，BA 网络在攻击下的最大分支应小于随机失效下的\"\nassert curves[(\"BA\", \"attack\")][_i] < curves[(\"ER\", \"attack\")][_i], \"按度攻击 10% 节点后，BA 网络应比 ER 网络碎得更厉害\"\nfor _n, _G in nets.items():\n    _k = np.array([d for _, d in _G.degree()], dtype=float)\n    _f = 1 - 1 / ((_k**2).mean() / _k.mean() - 1)\n    assert abs(fc[_n] - _f) < 1e-3, \"%s 的 f_c 应约为 %.3f；kappa0 = <k²>/<k>，注意 <k²> 是度平方的平均，不是平均度的平方\" % (_n, _f)\nassert fc[\"BA\"] > fc[\"ER\"], \"BA 网络度更异质，理论 f_c 应高于 ER 网络\"\nprint(\"✓ 任务 5 通过\")"}, {"setup": "import pandas as pd\nfrom scipy.sparse import csr_matrix\nfrom scipy.sparse.csgraph import maximum_bipartite_matching\n\n_df = pd.read_csv(\"data/collectri_human_tf_target_ccby_curated.csv\").drop_duplicates([\"tf\", \"target\"])\n_df = _df[_df.tf != _df.target]\ngenes = sorted(set(_df.tf) | set(_df.target))\n_idx = {g: i for i, g in enumerate(genes)}\nN_real = len(genes)\nu = _df.tf.map(_idx).to_numpy()\nv = _df.target.map(_idx).to_numpy()\n\n\ndef n_driver(u, v, N):\n    \"\"\"N_D = max(N − |M*|, 1)，二分图：出端 u（行）— 入端 v（列）。\"\"\"\n    M = csr_matrix((np.ones(len(u)), (u, v)), shape=(N, N))\n    match = maximum_bipartite_matching(M, perm_type=\"column\")\n    return max(N - int((match >= 0).sum()), 1)\n\n\nprint(\"N = %d 个基因，L = %d 条调控边\" % (N_real, len(u)))", "check": "assert nd_real is not None and frac_source is not None, \"nd_real、frac_source 还没有赋值\"\nassert 0 < nd_real <= 1, \"n_D 是比例，应在 (0, 1] 之间；检查是否除以了 N_real\"\nassert isinstance(nd_rand, (list, tuple, np.ndarray)) and len(nd_rand) >= 3, \"nd_rand 至少应有 3 次随机化的结果\"\nassert len(nd_rand) == n_rand, \"nd_rand 的长度应等于 n_rand\"\nassert all(0 < x <= 1 for x in nd_rand), \"每次随机化的 n_D 也应在 (0, 1] 之间\"\nassert 0 <= frac_source <= 1, \"源节点一定是驱动节点，frac_source 应在 [0, 1] 之间；检查分母是否是驱动节点数\"\nprint(\"✓ 任务 6 通过\")"}]}</script></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="courses.html">课程视频</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

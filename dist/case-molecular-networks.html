@@ -1,0 +1,224 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>真实数据案例 · 生物分子网络与拓扑特征 · 生物医学网络科学</title><meta name="description" content="生物分子网络与拓扑特征：用公开数据完成的一次完整分析"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-molecular"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="courses.html">课程视频</a><a href="domains.html" aria-current="page">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html" data-lec="L01">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html" data-lec="L02">网络结构指标与随机图</a></li><li><a href="network-models.html" data-lec="L03">小世界与无标度网络模型</a></li><li><a href="community-structure.html" data-lec="L04">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html" data-lec="L05">网络上的传播与免疫</a></li><li><a href="synchronization.html" data-lec="L06">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html" data-lec="L07">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html" data-lec="L09">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html" data-lec="L10">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html" data-lec="L11">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular" open><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html" data-lec="L12">生物分子网络与拓扑特征</a><ol class="sub"><li><a href="molecular-networks.network-types.html"><span class="n">01</span>生物分子网络的类型与数据来源</a></li><li><a href="molecular-networks.ppi-mapping.html"><span class="n">02</span>相互作用组图谱：检测方法、质量与偏倚</a></li><li><a href="molecular-networks.topology.html"><span class="n">03</span>分子网络的拓扑特征</a></li><li><a href="molecular-networks.metabolic-networks.html"><span class="n">04</span>代谢网络与通量平衡分析</a></li><li><a href="molecular-networks.signaling-networks.html"><span class="n">05</span>信号转导网络</a></li><li><a href="molecular-networks.protein-complexes.html"><span class="n">06</span>蛋白复合物与功能模块的检测</a></li><li><a href="molecular-networks.centrality-lethality.html"><span class="n">07</span>致死性与中心性：枢纽蛋白假说及其争议</a></li><li><a href="molecular-networks.disease-modules.html"><span class="n">08</span>人类疾病网络与疾病模块</a></li><li><a href="molecular-networks.network-motifs.html"><span class="n">09</span>网络基序：类别与动力学功能</a></li><li><a href="molecular-networks.differential-networks.html"><span class="n">10</span>条件特异性网络、差异网络与网络重连</a></li><li><a href="molecular-networks.multiomics-integration.html"><span class="n">11</span>多组学网络整合</a></li><li><a href="molecular-networks.derivations.html"><span class="n">12</span>数学推导与算法</a></li><li><a href="molecular-networks.frontiers.html"><span class="n">13</span>研究前沿与开放问题</a></li><li><a href="molecular-networks.biomedical.html"><span class="n">14</span>生物医学应用</a></li><li><a href="molecular-networks.limitations.html"><span class="n">15</span>适用范围与常见误用</a></li></ol></li><li><a href="gene-network-inference.html" data-lec="L13">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html" data-lec="L14">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html" data-lec="L08">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html" data-lec="L15">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html" data-lec="L16">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="courses.html">课程视频</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="d-molecular.html">分子网络与基因调控</a> <span class="sep">/</span> <a href="molecular-networks.html">生物分子网络与拓扑特征</a></nav><div class="eyebrow" style="margin-top:14px"><b>Case study</b><span>Biomolecular networks and their topology</span></div><h1>真实数据案例：生物分子网络与拓扑特征</h1><p class="dek">酵母蛋白质相互作用网络：重尾度分布、度异配、中心性–致死性与蓄意攻击</p><dl class="doc-meta"><div><dt>下载</dt><dd><a href="notebooks/case-molecular-networks.ipynb" download>Notebook</a> · <a href="data/yeast_string_v12_experimental.csv" download>yeast_string_v12_experimental.csv</a> · <a href="data/yeast_genes_essentiality.csv" download>yeast_genes_essentiality.csv</a></dd></div><div><dt>数据来源</dt><dd><a href="data-sources.html">数据来源与许可</a></dd></div><div><dt>浏览器</dt><dd><a class="lite-link" href="lite/notebooks/index.html?path=practice/case-molecular-networks.ipynb" target="_blank" rel="noopener">在 JupyterLite 中打开 ↗</a></dd></div></dl></header><section class="block ex-intro"><p class="small"><span class="py-status">代码可以直接在浏览器中运行，各段共享同一个 Python 会话：运行某一段时，前面尚未运行的段会先依次运行。首次加载 Python 环境约需 20–40 秒。</span> <button class="btn ghost run-all" type="button">从头运行全部</button></p></section><div class="case-body"><section class="block prose"># 酵母蛋白质相互作用网络：重尾度分布、度异配、中心性–致死性与蓄意攻击
+
+本案例把[生物分子网络与拓扑特征](molecular-networks.html)专题的核心问题放到真实数据上：一张由实验证据构建的酿酒酵母蛋白质相互作用（PPI）网络是否重尾、是否“无标度”？枢纽之间是否倾向于不相连？Jeong 等（2001）的“中心性–致死性”规律在今天的数据里还成立吗，它对证据阈值敏感吗？
+
+**1. 数据来源**
+
+- 相互作用：STRING v12.0（Szklarczyk 等, 2023）酿酒酵母（物种编号 4932）的完整证据通道文件，许可证 CC BY 4.0。文件 `data/yeast_string_v12_experimental.csv` 只保留**本物种直接实验证据**通道 `experiments` ≥ 400 的蛋白对（不含从其他物种转移来的证据，也不含共表达、文本挖掘等功能关联通道）。
+- 必需性：酵母基因组数据库（SGD，CC BY 4.0）的表型注释中，来自酵母全基因组缺失研究 Giaever 等（2002, *Nature*）的结果：缺失突变体 “inviable” 记为必需（1），“viable” 记为非必需（0），该研究未注释的记为缺失。文件 `data/yeast_genes_essentiality.csv`。
+- 下载日期 2026-11-20，处理步骤见 `data/SOURCES.md`。
+- 注意：STRING 的 `experiments` 通道整合了多种实验类型（如酵母双杂交、亲和纯化–质谱等），边既可能是直接二元结合，也可能是共复合物关系（见[相互作用组图谱](molecular-networks.ppi-mapping.html)）。</section><section class="block prose">## 2. 读入与清洗
+
+检查重复边与自环，把必需性标签对上节点，并看 400/700/900 三个阈值下网络的规模。主分析用 ≥ 700（STRING 所说的“高置信度”分数段），其余两个阈值做敏感性分析。</section><div class="cell seq-cell" data-i="0"><div class="cell-head"><h3>代码 1</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="26" spellcheck="false" aria-label="代码 1">import numpy as np
+import pandas as pd
+import networkx as nx
+import matplotlib.pyplot as plt
+from scipy.optimize import minimize
+
+edges = pd.read_csv(&quot;data/yeast_string_v12_experimental.csv&quot;)
+genes = pd.read_csv(&quot;data/yeast_genes_essentiality.csv&quot;)
+print(&quot;边表 %d 行；重复蛋白对 %d；自环 %d&quot; % (len(edges), edges.duplicated([&quot;orf1&quot;, &quot;orf2&quot;]).sum(), (edges.orf1 == edges.orf2).sum()))
+ess = dict(zip(genes.orf, genes.essential))
+name = dict(zip(genes.orf, genes.gene))
+print(&quot;基因表 %d 个 ORF：必需 %d，非必需 %d，未注释 %d&quot;
+      % (len(genes), (genes.essential == 1).sum(), (genes.essential == 0).sum(), genes.essential.isna().sum()))
+
+
+def build(th):
+    e = edges[edges.experiments &gt;= th]
+    return nx.from_pandas_edgelist(e, &quot;orf1&quot;, &quot;orf2&quot;)
+
+
+nets = {th: build(th) for th in (400, 700, 900)}
+for th, H in nets.items():
+    gc = max(nx.connected_components(H), key=len)
+    print(&quot;experiments ≥ %d：%5d 个蛋白，%6d 条边，平均度 %.1f，最大连通分支 %d 个蛋白&quot;
+          % (th, H.number_of_nodes(), H.number_of_edges(), 2 * H.number_of_edges() / H.number_of_nodes(), len(gc)))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 3. 构网
+
+主网络取 experiments ≥ 700 的最大连通分支。</section><div class="cell seq-cell" data-i="1"><div class="cell-head"><h3>代码 2</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="10" spellcheck="false" aria-label="代码 2">G0 = nets[700]
+G = G0.subgraph(max(nx.connected_components(G0), key=len)).copy()
+deg = dict(G.degree())
+k = np.array(list(deg.values()))
+print(&quot;主网络：%d 个蛋白，%d 条边；度的中位数 %d，均值 %.1f，最大 %d&quot; % (G.number_of_nodes(), G.number_of_edges(), np.median(k), k.mean(), k.max()))
+hubs = sorted(deg, key=deg.get, reverse=True)[:10]
+print(&quot;度最高的 10 个蛋白：&quot;, &quot;, &quot;.join(&quot;%s(%d)&quot; % (name.get(h, h), deg[h]) for h in hubs))
+lab = np.array([ess.get(v, np.nan) for v in G])
+print(&quot;主网络中有必需性注释的蛋白 %d 个，其中必需 %.1f%%&quot; % (np.sum(~np.isnan(lab)), 100 * np.nanmean(lab)))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 4. 核心指标
+
+### 4.1 度分布：重尾，但是“幂律”吗？
+
+画互补累积分布（CCDF）。对 $k\ge k_{\min}$ 的尾部用离散幂律的近似最大似然估计指数 $\hat\alpha=1+n\big/\sum\ln\!\big(k_i/(k_{\min}-\tfrac12)\big)$，并按 Clauset 等的做法选使 KS 距离最小的 $k_{\min}$（推导见[数学推导与算法](molecular-networks.derivations.html)）。再用同一尾部数据拟合离散化的对数正态分布，比较两者的对数似然。</section><div class="cell seq-cell" data-i="2"><div class="cell-head"><h3>代码 3</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="30" spellcheck="false" aria-label="代码 3">def fit_powerlaw(k, kmin):
+    t = k[k &gt;= kmin]
+    a = 1 + len(t) / np.sum(np.log(t / (kmin - 0.5)))
+    ks_ = np.arange(kmin, t.max() + 1)
+    emp = np.array([(t &gt;= x).mean() for x in ks_])
+    mod = (ks_ / kmin) ** (1 - a)
+    return a, np.max(np.abs(emp - mod)), len(t)
+
+
+cands = [m for m in range(2, 60) if (k &gt;= m).sum() &gt;= 100]
+fits = [(m,) + fit_powerlaw(k, m) for m in cands]
+kmin, alpha, D, n_tail = min(fits, key=lambda r: r[2])
+print(&quot;最佳 k_min = %d：尾部 %d 个蛋白，α = %.2f，KS 距离 %.3f&quot; % (kmin, n_tail, alpha, D))
+
+tail = k[k &gt;= kmin].astype(float)
+support = np.arange(kmin, 5000)
+from scipy.special import zeta
+from scipy.stats import norm
+ll_pl = -alpha * np.log(tail).sum() - len(tail) * np.log(zeta(alpha, kmin))
+
+
+def ll_lognorm(par):
+    mu, s = par[0], abs(par[1]) + 1e-6
+    cdf = norm.cdf((np.log(support + 0.5) - mu) / s) - norm.cdf((np.log(support - 0.5) - mu) / s)
+    pmf = cdf / cdf.sum()
+    return -np.sum(np.log(pmf[(tail - kmin).astype(int)] + 1e-300))
+
+
+res = minimize(ll_lognorm, [np.log(tail).mean(), np.log(tail).std()], method=&quot;Nelder-Mead&quot;)
+ll_ln = -res.fun
+print(&quot;尾部对数似然：幂律 %.1f，对数正态 %.1f，差（对数正态 − 幂律）%.1f&quot; % (ll_pl, ll_ln, ll_ln - ll_pl))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">### 4.2 聚集、路径与度相关
+
+平均聚集系数、平均最短路径长度（从 300 个随机起点做广度优先搜索估计）和度同配系数 $r$。</section><div class="cell seq-cell" data-i="3"><div class="cell-head"><h3>代码 4</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="12" spellcheck="false" aria-label="代码 4">C = nx.average_clustering(G)
+rng = np.random.default_rng(3)
+nodes = list(G)
+src = rng.choice(len(nodes), 300, replace=False)
+Ls = []
+for s in src:
+    dist = nx.single_source_shortest_path_length(G, nodes[s])
+    Ls.extend(v for v in dist.values() if v &gt; 0)
+L = np.mean(Ls)
+r = nx.degree_assortativity_coefficient(G)
+print(&quot;C = %.3f，L ≈ %.2f，度同配系数 r = %.3f&quot; % (C, L, r))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">### 4.3 中心性–致死性
+
+仿照 Jeong 等（2001）按度分组统计必需比例，再做逻辑回归：必需 ~ $\log k$。</section><div class="cell seq-cell" data-i="4"><div class="cell-head"><h3>代码 5</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="30" spellcheck="false" aria-label="代码 5">df = pd.DataFrame({&quot;orf&quot;: nodes, &quot;k&quot;: [deg[v] for v in nodes], &quot;ess&quot;: [ess.get(v, np.nan) for v in nodes]}).dropna()
+bins = [(1, 5), (6, 15), (16, 50), (51, 10 ** 6)]
+print(&quot;度区间     蛋白数  占比    必需比例&quot;)
+for lo, hi in bins:
+    m = (df.k &gt;= lo) &amp; (df.k &lt;= hi)
+    print(&quot;%4d–%-6s %5d  %5.1f%%   %5.1f%%&quot; % (lo, &quot;∞&quot; if hi &gt; 10 ** 5 else hi, m.sum(), 100 * m.mean(), 100 * df.ess[m].mean()))
+
+
+def logit_fit(x, y):
+    Xd = np.column_stack([np.ones_like(x), x])
+    b = np.zeros(2)
+    for _ in range(50):                       # 牛顿–拉弗森（IRLS）
+        pr = 1 / (1 + np.exp(-Xd @ b))
+        H = Xd.T @ (Xd * (pr * (1 - pr))[:, None])
+        step = np.linalg.solve(H, Xd.T @ (y - pr))
+        b += step
+        if np.max(np.abs(step)) &lt; 1e-10:
+            break
+    se = np.sqrt(np.diag(np.linalg.inv(H)))
+    return b, se
+
+
+b, se = logit_fit(np.log(df.k.to_numpy(float)), df.ess.to_numpy(float))
+print(&quot;逻辑回归：log k 的系数 %.3f（SE %.3f），度每翻一倍，必需的优势比 × %.2f&quot; % (b[1], se[1], np.exp(b[1] * np.log(2))))
+
+# 枢纽是谁？按 STRING 首选基因名粗分：RPL*/RPS* 为胞质核糖体蛋白
+df[&quot;gene&quot;] = df.orf.map(name).fillna(&quot;&quot;)
+df[&quot;ribo&quot;] = df.gene.str.match(r&quot;^RP[LS]\d&quot;)
+big = df.k &gt; 50
+print(&quot;度 &gt; 50 的 %d 个蛋白中，核糖体蛋白 %d 个（%.0f%%）&quot;
+      % (big.sum(), (big &amp; df.ribo).sum(), 100 * (big &amp; df.ribo).mean() / big.mean()))
+print(&quot;  其中核糖体蛋白必需比例 %.1f%%，非核糖体蛋白 %.1f%%&quot;
+      % (100 * df.ess[big &amp; df.ribo].mean(), 100 * df.ess[big &amp; ~df.ribo].mean()))
+paralog = df[df.ribo &amp; df.gene.str.match(r&quot;^RP[LS]\d+[AB]$&quot;)]
+print(&quot;  名称以 A/B 结尾（成对旁系同源基因）的核糖体蛋白 %d 个，必需比例 %.1f%%&quot; % (len(paralog), 100 * paralog.ess.mean()))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 5. 与零模型比较
+
+**(a) 度保持随机网络**（Maslov–Sneppen 边交换，5 个样本）：真实网络的聚集系数和度同配系数是否超出“只由度序列决定”的预期？
+
+**(b) 标签置换**：把必需性标签在有注释的蛋白之间随机打乱 1000 次，检验两件事——必需蛋白的平均度是否高于随机预期；必需蛋白之间的边是否多于随机预期（必需蛋白在网络中聚集）。
+
+**(c) 证据阈值敏感性**：在 400、700、900 三个阈值的网络上重复逻辑回归。</section><div class="cell seq-cell" data-i="5"><div class="cell-head"><h3>代码 6</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="30" spellcheck="false" aria-label="代码 6">Cr, rr = [], []
+for s in range(5):
+    H = G.copy()
+    nx.double_edge_swap(H, nswap=5 * H.number_of_edges(), max_tries=10 ** 7, seed=20 + s)
+    Cr.append(nx.average_clustering(H))
+    rr.append(nx.degree_assortativity_coefficient(H))
+print(&quot;(a) 度保持随机网络：C_rand = %.3f ± %.3f（真实 %.3f）；r_rand = %.3f ± %.3f（真实 %.3f）&quot;
+      % (np.mean(Cr), np.std(Cr), C, np.mean(rr), np.std(rr), r))
+
+ann = df.set_index(&quot;orf&quot;).ess
+ann_nodes = ann.index.to_numpy()
+ann_lab = ann.to_numpy().astype(int)
+kk = df.set_index(&quot;orf&quot;).k.loc[ann_nodes].to_numpy()
+pos = {v: i for i, v in enumerate(ann_nodes)}
+eu = np.array([(pos[u], pos[v]) for u, v in G.edges() if u in pos and v in pos])
+
+
+def stats(labels):
+    return kk[labels == 1].mean() - kk[labels == 0].mean(), np.sum(labels[eu[:, 0]] * labels[eu[:, 1]])
+
+
+obs_dk, obs_ee = stats(ann_lab)
+perm = np.array([stats(rng.permutation(ann_lab)) for _ in range(1000)])
+print(&quot;(b) 必需与非必需蛋白的平均度差 %.1f；置换零分布均值 %.2f，p = %.4f&quot;
+      % (obs_dk, perm[:, 0].mean(), (np.sum(perm[:, 0] &gt;= obs_dk) + 1) / 1001))
+print(&quot;    必需–必需边 %d 条；置换期望 %.0f ± %.0f，富集倍数 %.2f，p = %.4f&quot;
+      % (obs_ee, perm[:, 1].mean(), perm[:, 1].std(), obs_ee / perm[:, 1].mean(), (np.sum(perm[:, 1] &gt;= obs_ee) + 1) / 1001))
+
+print(&quot;(c) 阈值敏感性：&quot;)
+for th, H in nets.items():
+    d_ = pd.DataFrame({&quot;k&quot;: [H.degree(v) for v in H], &quot;ess&quot;: [ess.get(v, np.nan) for v in H]}).dropna()
+    bb, ss = logit_fit(np.log(d_.k.to_numpy(float)), d_.ess.to_numpy(float))
+    print(&quot;    ≥ %d：%d 个有注释蛋白，必需比例 %.1f%%，log k 系数 %.3f（SE %.3f）&quot;
+          % (th, len(d_), 100 * d_.ess.mean(), bb[1], ss[1]))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">### 5.1 随机删除与蓄意攻击
+
+按度从高到低删除节点（每次重算度的“自适应攻击”太慢，这里按初始度排序），与随机删除比较最大连通分支的相对大小。</section><div class="cell seq-cell" data-i="6"><div class="cell-head"><h3>代码 7</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="16" spellcheck="false" aria-label="代码 7">def giant_curve(G, order, fracs):
+    out = []
+    Nn = G.number_of_nodes()
+    for f in fracs:
+        H = G.copy()
+        H.remove_nodes_from(order[:int(f * Nn)])
+        out.append(len(max(nx.connected_components(H), key=len)) / Nn if H.number_of_nodes() else 0)
+    return np.array(out)
+
+
+fracs = np.array([0, 0.02, 0.05, 0.1, 0.15, 0.2, 0.3])
+attack = giant_curve(G, sorted(G, key=deg.get, reverse=True), fracs)
+rand = giant_curve(G, list(rng.permutation(list(G))), fracs)
+for f, a_, r_ in zip(fracs, attack, rand):
+    print(&quot;删除 %4.0f%%：随机删除后巨分支 %.2f，攻击枢纽后 %.2f&quot; % (100 * f, r_, a_))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 6. 作图</section><div class="cell seq-cell" data-i="7"><div class="cell-head"><h3>代码 8</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="24" spellcheck="false" aria-label="代码 8">fig, ax = plt.subplots(1, 3, figsize=(15, 4))
+ks = np.sort(np.unique(k))
+ax[0].loglog(ks, [(k &gt;= x).mean() for x in ks], &quot;o&quot;, ms=3, label=&quot;data&quot;)
+xx = np.arange(kmin, k.max() + 1)
+ax[0].loglog(xx, (k &gt;= kmin).mean() * (xx / kmin) ** (1 - alpha), &quot;r-&quot;, label=&quot;power law, alpha=%.2f&quot; % alpha)
+ax[0].set_xlabel(&quot;degree k&quot;)
+ax[0].set_ylabel(&quot;P(K &gt;= k)&quot;)
+ax[0].legend()
+ax[0].set_title(&quot;Degree CCDF (experiments &gt;= 700)&quot;)
+lbl = [&quot;1-5&quot;, &quot;6-15&quot;, &quot;16-50&quot;, &quot;&gt;50&quot;]
+fr = [df.ess[(df.k &gt;= lo) &amp; (df.k &lt;= hi)].mean() for lo, hi in bins]
+ax[1].bar(lbl, fr, color=&quot;gray&quot;)
+ax[1].axhline(df.ess.mean(), color=&quot;k&quot;, ls=&quot;--&quot;)
+ax[1].set_xlabel(&quot;degree bin&quot;)
+ax[1].set_ylabel(&quot;fraction essential&quot;)
+ax[1].set_title(&quot;Centrality-lethality&quot;)
+ax[2].plot(fracs, rand, &quot;o-&quot;, label=&quot;random removal&quot;)
+ax[2].plot(fracs, attack, &quot;s-&quot;, label=&quot;hub attack&quot;)
+ax[2].set_xlabel(&quot;fraction removed&quot;)
+ax[2].set_ylabel(&quot;giant component / N&quot;)
+ax[2].legend()
+ax[2].set_title(&quot;Robustness&quot;)
+plt.tight_layout()</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 7. 解读与局限
+
+**结果**
+
+1. **重尾、有枢纽，但“严格幂律”证据不足。** 度从 1 到两百多，中位数只有 6。尾部可以拟合出一个幂律指数，但离散对数正态分布对同一尾部的对数似然明显更高，这与 Broido &amp; Clauset（2019）的结论一致：说“重尾、存在枢纽”是稳妥的，说“无标度”需要更强的证据。
+2. **度最高的 10 个蛋白全是核糖体蛋白。** 共复合物证据（如亲和纯化–质谱）会把一个大复合物的成员两两连起来；核糖体由许多蛋白组成，于是在网络中形成一个巨大的稠密团，成员的度都在 200 以上。这直接造成了两个“反教科书”的结果：
+   - 聚集系数约为度保持随机网络的 3.7 倍，而度同配系数 $r\approx0.57$，**强烈同配**——与早期 Y2H 数据报告的度异配（Maslov &amp; Sneppen, 2002）方向相反。随机网络的 $r$ 为负，说明这种同配不是度序列本身决定的，而是大复合物内部“高度节点连高度节点”的结果。专题页提醒过，度相关这类性质对数据来源非常敏感（Batada 等, 2006）。
+   - **蓄意攻击并不比随机删除破坏性大多少。** 度最高的节点挤在同一个团里，删掉它们只是拆掉了这个团，并不切断网络其余部分之间的联系。“重尾网络对攻击枢纽脆弱”的经典结论（见[网络鲁棒性](robustness.html)）依赖于枢纽分散地连接各个部分；枢纽集中在一个模块时，结论不再成立。
+3. **中心性–致死性大体成立，但不是单调的。** 必需比例从度 1–5 组的约 16% 升到 16–50 组的约 53%，逻辑回归中 $\log k$ 的系数在三个阈值下都显著为正；但度 &gt; 50 的一组反而下降。这一组中约四分之一是核糖体蛋白，它们的必需比例只有约 17%，而同组非核糖体蛋白约 54%；这些核糖体蛋白绝大多数由成对的旁系同源基因编码（如 RPS4A/RPS4B，必需比例约 5%），单个拷贝缺失常可由另一个拷贝补偿。网络位置之外，基因重复这类**网络以外的**因素同样决定必需性。
+4. **必需蛋白彼此聚集**：必需–必需边约为标签置换期望的 2.4 倍。这与“必需复合物/模块”解释相容——必需蛋白集中在内部连接稠密的复合物中，成员的度天然较高（Zotenko 等, 2008）；也与 Yu 等（2008）观察到的必需蛋白聚集一致。本数据没有复合物注释，无法像专题页建议的那样在控制复合物后检验度的独立作用（练习 L12 的任务 5 用模拟数据演示了这种混杂）。
+5. **阈值改变网络的组成。** 阈值从 400 提到 900，网络从约 4900 个蛋白缩到约 2200 个，必需比例从 22% 升到 35%：高分证据更多地落在研究充分、常为必需的蛋白上。$\log k$ 的系数随阈值变化，说明效应量本身不是一个与数据处理无关的常数。
+
+**局限**
+
+- STRING 的 `experiments` 通道混合了二元与共复合物证据；共复合物数据会人为制造大量三角形和高连接的“枢纽”（本例的核糖体），正是这一点让度与必需性在复合物层面混杂。只用二元（如 Y2H）证据重做，结论可能不同。
+- 用基因名前缀识别核糖体蛋白只是粗略做法，可靠的复合物注释应来自专门的数据库。
+- 研究偏倚：被研究得多的蛋白有更多实验记录，度被系统抬高；本案例没有文献数等协变量可供控制。
+- 必需性只来自一项实验（Giaever 等, 2002）和一种培养条件；条件特异的必需性未纳入。
+- 幂律与对数正态的比较只用了似然差，没有做 Vuong 检验或 bootstrap 拟合优度检验；$k_{\min}$ 的选择也会改变指数估计。
+- 攻击按初始度排序，没有每步重算度，会略微低估自适应攻击的破坏力。</section></div><nav class="pager"><a href="molecular-networks.html"><small>专题主页</small>生物分子网络与拓扑特征</a><a href="data-sources.html"><small>数据</small>数据来源与许可</a></nav><script type="application/json" id="ex-data">{"files": ["yeast_string_v12_experimental.csv", "yeast_genes_essentiality.csv"], "tasks": []}</script></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="courses.html">课程视频</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

@@ -94,7 +94,7 @@ def speed_of(text):
 
 def tts_text(text):
     s = clean(text)
-    for a, b in (("Barabási", "巴拉巴西"), ("Erdős", "埃尔德什"), ("Rényi", "雷尼"), ("–", "-")):
+    for a, b in (("Barabási", "巴拉巴西"), ("Erdős", "埃尔德什"), ("Rényi", "雷尼"), ("–", "-"), ("c_in", "C in"), ("c_out", "C out")):
         s = s.replace(a, b)
     return s
 

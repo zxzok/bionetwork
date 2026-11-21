@@ -242,17 +242,23 @@ class Episode(Narrated):
             dots[v] = Dot(pos[v], radius=rad(2), color=BLUE)
         init = [Line(pos[u], pos[v], stroke_width=1.6, color=BLUE, stroke_opacity=0.5) for u, v in [(0, 1), (1, 2), (0, 2)]]
 
-        def add(i, rt):
-            t, tg = steps[i]
-            d = Dot(pos[t], radius=rad(m), color=GOLD)
-            ls = [Line(pos[t], pos[v], stroke_width=1.6, color=GOLD, stroke_opacity=0.9) for v in tg]
-            self.play(FadeIn(d, scale=1.6), *[Create(l) for l in ls], run_time=rt * 0.6)
-            for v in tg:
-                cur[v] += 1
-            cur[t] = m
-            self.play(d.animate.set_color(BLUE), *[l.animate.set_stroke(BLUE, opacity=0.5) for l in ls],
-                      *[dots[v].animate.scale_to_fit_width(2 * rad(cur[v])) for v in tg], run_time=rt * 0.4)
-            dots[t] = d
+        def add(i, rt, n=1):
+            """Add nodes i .. i+n-1 together (n > 1 when many nodes must fit into one narration line)."""
+            new = [(steps[j][0], steps[j][1]) for j in range(i, min(i + n, len(steps)))]
+            ds = {t: Dot(pos[t], radius=rad(m), color=GOLD) for t, _ in new}
+            ls = [Line(pos[t], pos[v], stroke_width=1.6, color=GOLD, stroke_opacity=0.9) for t, tg in new for v in tg]
+            self.play(*[FadeIn(d, scale=1.6) for d in ds.values()], *[Create(l) for l in ls], run_time=rt * 0.6)
+            for t, tg in new:
+                for v in tg:
+                    cur[v] += 1
+                cur[t] = m
+            grown = {v for _, tg in new for v in tg if v in dots}
+            self.play(*[d.animate.set_color(BLUE) for d in ds.values()], *[l.animate.set_stroke(BLUE, opacity=0.5) for l in ls],
+                      *[dots[v].animate.scale_to_fit_width(2 * rad(cur[v])) for v in grown], run_time=rt * 0.4)
+            for t, _ in new:
+                dots[t] = ds[t]
+                if cur[t] != m:  # a node of this batch already got new links inside the batch
+                    ds[t].scale_to_fit_width(2 * rad(cur[t]))
         with self.say("g1"):
             self.play(FadeIn(tag), *[GrowFromCenter(d) for d in dots.values()], *[Create(l) for l in init], run_time=1.2)
         with self.say("g2") as dd:
@@ -299,8 +305,11 @@ class Episode(Narrated):
         with self.say("g6") as dd:
             self.play(FadeOut(VGroup(f, segs, br, bl, link, ptr, num, den)), run_time=0.5)
             rest = list(range(done, len(steps)))
-            for i in rest:
-                add(i, max(0.12, (dd * 0.85 - 0.5) / len(rest)))
+            # fit the rest of the growth into the line (each batch >= 0.3 s so no animation is shorter than a few frames)
+            nb = max(1, min(len(rest), int((dd - 0.5 - 0.8 - 0.4) / 0.3)))
+            per = int(np.ceil(len(rest) / nb))
+            for i in range(done, len(steps), per):
+                add(i, (dd - 0.5 - 0.8 - 0.4) / nb, per)
             hubs = sorted(cur, key=lambda v: -cur[v])[:3]
             self.play(*[Indicate(dots[h], color=RED, scale_factor=1.5) for h in hubs], run_time=0.8)
         clip_lines(self, "ba_demo.mp4", ["d1", "d2"], "本站交互演示：BA 优先连接", start=0.5, box="full")

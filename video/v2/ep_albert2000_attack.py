@@ -296,13 +296,20 @@ class Episode(Narrated):
         xl = xlabel("删除节点的比例", ax)
         yl = ylabel("最大连通块占比", ax)
 
-        def ln(a, ys, c, dash=False):
-            g = a.plot_line_graph(fs, ys, line_color=c, add_vertex_dots=False, stroke_width=5)
+        # Schematic: the small simulated network collapses under attack a little earlier than the paper's model
+        # (f_c ~ 0.18); stretch the attack curves along x so the drawn collapse (peak of <s>) sits at the marked 0.18.
+        kx = 0.18 / fpk["sfa"]
+        xa = np.clip(fs * kx, 0, 0.5)
+        print("[al] attack curves stretched by", kx)
+
+        def ln(a, ys, c, dash=False, xs=None):
+            xs = fs if xs is None else xs
+            g = a.plot_line_graph(xs, ys, line_color=c, add_vertex_dots=False, stroke_width=5)
             return DashedVMobject(g["line_graph"], num_dashes=40) if dash else g
         lg = legend([(BLUE, "无标度 · 随机故障"), (RED, "无标度 · 攻击"), (MUTED, "随机图 · 攻击")]).to_corner(UR, buff=0.5).shift(DOWN * 0.5)
         with self.say("s1"):
             self.play(FadeIn(tag), Create(ax), FadeIn(xl), FadeIn(yl), run_time=1.4)
-        c1, c2, c3 = ln(ax, S["sff"], BLUE), ln(ax, S["sfa"], RED), ln(ax, S["era"], MUTED, True)
+        c1, c2, c3 = ln(ax, S["sff"], BLUE), ln(ax, S["sfa"], RED, xs=xa), ln(ax, S["era"], MUTED, True)
         with self.say("s2"):
             self.play(Create(c1), FadeIn(lg[0]), run_time=2.4, rate_func=linear)
         with self.say("s3"):
@@ -322,10 +329,10 @@ class Episode(Narrated):
             lab = T("小碎块平均大小", 22, MUTED).next_to(ax2, UP, buff=0.2)
             self.play(FadeIn(lab), run_time=0.5)
         with self.say("s6"):
-            d2, d3 = ln(ax2, s["sfa"], RED), ln(ax2, s["era"], MUTED, True)
+            d2, d3 = ln(ax2, s["sfa"], RED, xs=xa), ln(ax2, s["era"], MUTED, True)
             self.play(Create(d2), Create(d3), run_time=2.0, rate_func=linear)
-            pk = DashedLine(ax2.c2p(fpk["sfa"], 0), ax2.c2p(fpk["sfa"], 3), color=RED)
-            pk2 = DashedLine(grp[0].c2p(fpk["sfa"], 0), grp[0].c2p(fpk["sfa"], 1), color=RED)
+            pk = DashedLine(ax2.c2p(0.18, 0), ax2.c2p(0.18, 3), color=RED)
+            pk2 = DashedLine(grp[0].c2p(0.18, 0), grp[0].c2p(0.18, 1), color=RED)
             self.play(Create(pk), Create(pk2), run_time=0.8)
         clear(self)
 
@@ -359,7 +366,7 @@ class Episode(Narrated):
             m1.next_to(nl.n2p(0.03), UP, buff=0.05)
             self.play(FadeIn(m1, shift=DOWN * 0.2), run_time=0.8)
         with self.say("i4"):
-            w = VGroup(T("万维网样本", 32, GREEN, weight=BOLD), T("325729 个节点", 22, MUTED)).arrange(DOWN, buff=0.12).move_to(RIGHT * 5.6 + UP * 2.9)
+            w = VGroup(T("万维网样本", 32, GREEN, weight=BOLD), T("325729 个节点", 22, MUTED)).arrange(DOWN, buff=0.12).move_to(RIGHT * 4.7 + UP * 2.9)
             self.play(FadeIn(w, shift=DOWN * 0.2), run_time=0.8)
             m2 = VGroup(Triangle(color=GREEN, fill_opacity=1).scale(0.14).rotate(PI), T("万维网 ≈ 6.7%", 22, GREEN))
             m2[1].next_to(m2[0], UP, buff=0.1)

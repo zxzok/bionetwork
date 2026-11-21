@@ -1,0 +1,3385 @@
+id,preferred_name,annotation
+Q0045,COX1,Subunit I of cytochrome c oxidase (Complex IV)
+Q0065,AI4,Truncated non-functional cytochrome oxidase 1
+Q0070,AI5_ALPHA,Truncated non-functional cytochrome oxidase 1
+Q0080,ATP8,ATP synthase protein 8
+Q0085,ATP6,Subunit a of the F0 sector of mitochondrial F1F0 ATP synthase
+Q0105,COB,Cytochrome b
+Q0110,BI2,Cytochrome b mRNA maturase bI2
+Q0115,BI3,Cytochrome b mRNA maturase bI3
+Q0120,BI4,"Truncated, nonfunctional cytochrome b"
+Q0130,OLI1,F0-ATP synthase subunit c (ATPase-associated proteolipid)
+Q0140,VAR1,Mitochondrial ribosomal protein of the small subunit
+Q0250,COX2,Subunit II of cytochrome c oxidase (Complex IV)
+Q0275,COX3,Subunit III of cytochrome c oxidase (Complex IV)
+YAL001C,TFC3,Subunit of RNA polymerase III transcription initiation factor complex
+YAL002W,VPS8,Vacuolar protein sorting-associated protein 8
+YAL003W,EFB1,Translation elongation factor 1 beta
+YAL005C,SSA1,Heat shock protein SSA1
+YAL007C,ERP2,Protein ERP2
+YAL008W,FUN14,Protein FUN14
+YAL009W,SPO7,Sporulation-specific protein SPO7
+YAL010C,MDM10,Mitochondrial distribution and morphology protein 10
+YAL011W,SWC3,SWR1-complex protein 3
+YAL012W,CYS3,Cystathionine gamma-lyase
+YAL013W,DEP1,Transcriptional regulatory protein DEP1
+YAL014C,SYN8,Syntaxin-8
+YAL015C,NTG1,Endonuclease III homolog 1
+YAL016W,TPD3,Regulatory subunit A of the heterotrimeric PP2A complex
+YAL020C,ATS1,Protein required for modification of wobble nucleosides in tRNA
+YAL021C,CCR4,Glucose-repressible alcohol dehydrogenase transcriptional effector
+YAL023C,PMT2,Dolichyl-phosphate-mannose--protein mannosyltransferase 2
+YAL024C,LTE1,Guanine nucleotide exchange factor LTE1
+YAL025C,MAK16,Essential nuclear protein
+YAL026C,DRS2,Probable phospholipid-transporting ATPase DRS2
+YAL027W,SAW1,5'- and 3'-flap DNA binding protein
+YAL029C,MYO4,Myosin-4
+YAL030W,SNC1,Synaptobrevin homolog 1
+YAL032C,PRP45,Pre-mRNA-processing protein 45
+YAL033W,POP5,Ribonuclease P/MRP protein subunit POP5
+YAL034C,FUN19,SWIRM domain-containing protein FUN19
+YAL034W-A,MTW1,Kinetochore-associated protein MTW1
+YAL035W,FUN12,Translation initiation factor eIF5B
+YAL036C,RBG1,Ribosome-interacting GTPase 1
+YAL038W,CDC19,Pyruvate kinase
+YAL039C,CYC3,Cytochrome c heme lyase (holocytochrome c synthase)
+YAL040C,CLN3,G1/S-specific cyclin CLN3
+YAL041W,CDC24,Cell division control protein 24
+YAL042W,ERV46,Protein localized to COPII-coated vesicles
+YAL043C,PTA1,Pre-tRNA-processing protein PTA1
+YAL044C,GCV3,H subunit of the mitochondrial glycine decarboxylase complex
+YAL047C,SPC72,Spindle pole component SPC72
+YAL048C,GEM1,"Outer mitochondrial membrane GTPase, subunit of the ERMES complex"
+YAL051W,OAF1,Oleate-activated transcription factor
+YAL054C,ACS1,Acetyl-coA synthetase isoform
+YAL055W,PEX22,Peroxisome assembly protein 22
+YAL058W,CNE1,Calnexin
+YAL059W,ECM1,Shuttling pre-60S factor ECM1
+YAL060W,BDH1,"NAD-dependent (R,R)-butanediol dehydrogenase"
+YAL061W,BDH2,Probable diacetyl reductase [(R)-acetoin forming] 2
+YAL062W,GDH3,NADP(+)-dependent glutamate dehydrogenase
+YAR002C-A,ERP1,Protein ERP1
+YAR002W,NUP60,FG-nucleoporin component of central core of the nuclear pore complex
+YAR003W,SWD1,COMPASS component SWD1
+YAR007C,RFA1,Subunit of heterotrimeric Replication Protein A (RPA)
+YAR008W,SEN34,Subunit of the tRNA splicing endonuclease
+YAR014C,BUD14,Protein involved in bud-site selection
+YAR019C,CDC15,Cell division control protein 15
+YAR033W,MST28,Multicopy suppressor of SEC21 protein 28
+YAR035W,YAT1,Outer mitochondrial carnitine acetyltransferase
+YAR042W,SWH1,Protein similar to mammalian oxysterol-binding protein
+YAR050W,FLO1,Lectin-like protein involved in flocculation
+YAR071W,PHO11,One of three repressible acid phosphatases
+YBL002W,HTB2,Histone H2B
+YBL003C,HTA2,Histone H2A
+YBL004W,UTP20,U3 small nucleolar RNA-associated protein 20
+YBL005W,PDR3,Transcription factor PDR3
+YBL006C,LDB7,Chromatin structure-remodeling complex protein RSC14
+YBL007C,SLA1,Actin cytoskeleton-regulatory complex protein SLA1
+YBL008W,HIR1,Protein HIR1
+YBL011W,SCT1,Glycerol-3-phosphate O-acyltransferase 1
+YBL014C,RRN6,RNA polymerase I-specific transcription initiation factor RRN6
+YBL016W,FUS3,Mitogen-activated serine/threonine protein kinase involved in mating
+YBL017C,PEP1,Vacuolar protein sorting/targeting protein VPS10
+YBL018C,POP8,Ribonucleases P/MRP protein subunit POP8
+YBL019W,APN2,DNA-(apurinic or apyrimidinic site) lyase 2
+YBL021C,HAP3,Transcriptional activator HAP3
+YBL023C,MCM2,Protein involved in DNA replication
+YBL025W,RRN10,Protein involved in promoting high level transcription of rDNA
+YBL026W,LSM2,U6 snRNA-associated Sm-like protein LSm2
+YBL027W,RPL19B,Ribosomal 60S subunit protein L19B
+YBL028C,YBL028C,UPF0642 protein YBL028C
+YBL032W,HEK2,Heterogeneous nuclear rnp K-like protein 2
+YBL035C,POL12,B subunit of DNA polymerase alpha-primase complex
+YBL037W,APL3,Alpha-adaptin
+YBL038W,MRPL16,Mitochondrial ribosomal protein of the large subunit
+YBL039C,URA7,Major CTP synthase isozyme (see also URA8)
+YBL039W-B,YBL039W-B,Uncharacterized protein YBL039W-B
+YBL040C,ERD2,ER lumen protein-retaining receptor
+YBL041W,PRE7,Beta 6 subunit of the 20S proteasome.
+YBL045C,COR1,Core subunit of the ubiquinol-cytochrome c reductase complex
+YBL046W,PSY4,Regulatory subunit of protein phosphatase PP4
+YBL047C,EDE1,EH domain-containing and endocytosis protein 1
+YBL049W,MOH1,Protein yippee-like MOH1
+YBL050W,SEC17,Alpha-soluble NSF attachment protein
+YBL051C,PIN4,RNA-binding protein PIN4
+YBL052C,SAS3,Histone acetyltransferase catalytic subunit of NuA3 complex
+YBL054W,TOD6,Transcriptional regulatory protein TOD6
+YBL056W,PTC3,Type 2C protein phosphatase (PP2C)
+YBL058W,SHP1,UBX domain-containing substrate adaptor for Cdc48p
+YBL061C,SKT5,Protein SKT5
+YBL063W,KIP1,Kinesin-like protein KIP1
+YBL064C,PRX1,Mitochondrial peroxiredoxin with thioredoxin peroxidase activity
+YBL067C,UBP13,Ubiquitin-specific protease that cleaves Ub-protein fusions
+YBL068W,PRS4,Ribose-phosphate pyrophosphokinase 4
+YBL071W-A,KTI11,Diphthamide biosynthesis protein 3
+YBL072C,RPS8A,Protein component of the small (40S) ribosomal subunit
+YBL074C,AAR2,A1 cistron-splicing factor AAR2
+YBL075C,SSA3,Heat shock protein SSA3
+YBL076C,ILS1,"Isoleucine--tRNA ligase, cytoplasmic"
+YBL078C,ATG8,Autophagy-related protein 8
+YBL079W,NUP170,Nucleoporin NUP170
+YBL080C,PET112,"Glutamyl-tRNA(Gln) amidotransferase subunit B, mitochondrial"
+YBL084C,CDC27,Subunit of the Anaphase-Promoting Complex/Cyclosome (APC/C)
+YBL085W,BOI1,Protein implicated in polar growth
+YBL087C,RPL23A,Ribosomal 60S subunit protein L23A
+YBL088C,TEL1,Serine/threonine-protein kinase TEL1
+YBL090W,MRP21,Mitochondrial ribosomal protein of the small subunit
+YBL091C,MAP2,Methionine aminopeptidase
+YBL091C-A,SCS22,Vesicle-associated membrane protein-associated protein SCS22
+YBL092W,RPL32,Ribosomal 60S subunit protein L32
+YBL093C,ROX3,Subunit of the RNA polymerase II mediator complex
+YBL097W,BRN1,Subunit of the condensin complex
+YBL099W,ATP1,Alpha subunit of the F1 sector of mitochondrial F1F0 ATP synthase
+YBL101C,ECM21,Protein involved in regulating endocytosis of plasma membrane proteins
+YBL102W,SFT2,Tetra-spanning membrane protein found mostly in the late Golgi
+YBL103C,RTG3,Retrograde regulation protein 3
+YBL104C,SEA4,SEH-associated protein 4
+YBL105C,PKC1,Protein serine/threonine kinase
+YBR001C,NTH2,"Putative neutral trehalase, required for thermotolerance"
+YBR002C,RER2,Forms the dehydrodolichyl diphosphate syntase (DDS) complex with NUS1
+YBR004C,GPI18,GPI mannosyltransferase 2
+YBR009C,HHF1,Histone H4
+YBR010W,HHT1,Histone H3
+YBR011C,IPP1,Cytoplasmic inorganic pyrophosphatase (PPase)
+YBR017C,KAP104,Importin subunit beta-2
+YBR018C,GAL7,Galactose-1-phosphate uridyl transferase
+YBR020W,GAL1,Galactokinase
+YBR023C,CHS3,Chitin synthase III
+YBR024W,SCO2,Protein anchored to mitochondrial inner membrane
+YBR026C,ETR1,"Enoyl-[acyl-carrier-protein] reductase, mitochondrial"
+YBR031W,RPL4A,Ribosomal 60S subunit protein L4A
+YBR035C,PDX3,Pyridoxine (pyridoxamine) phosphate oxidase
+YBR036C,CSG2,Mannosyl phosphorylinositol ceramide synthase regulatory protein CSG2
+YBR037C,SCO1,Copper-binding protein of mitochondrial inner membrane
+YBR038W,CHS2,Chitin synthase II
+YBR039W,ATP3,Gamma subunit of the F1 sector of mitochondrial F1F0 ATP synthase
+YBR041W,FAT1,Very long chain fatty acyl-CoA synthetase and fatty acid transporter
+YBR044C,TCM62,Mitochondrial chaperone TCM62
+YBR045C,GIP1,GLC7-interacting protein 1
+YBR048W,RPS11B,Protein component of the small (40S) ribosomal subunit
+YBR050C,REG2,Protein REG2
+YBR052C,RFS1,Protein of unknown function
+YBR055C,PRP6,Splicing factor
+YBR057C,MUM2,Protein essential for meiotic DNA replication and sporulation
+YBR058C,UBP14,Ubiquitin carboxyl-terminal hydrolase 14
+YBR058C-A,TSC3,Protein that stimulates the activity of serine palmitoyltransferase
+YBR059C,AKL1,Serine/threonine-protein kinase AKL1
+YBR060C,ORC2,Subunit of the origin recognition complex (ORC)
+YBR061C,TRM7,2'-O-ribose methyltransferase
+YBR065C,ECM2,Pre-mRNA-splicing factor SLT11
+YBR066C,NRG2,Probable transcriptional regulator NRG2
+YBR069C,TAT1,Valine/tyrosine/tryptophan amino-acid permease 1
+YBR070C,ALG14,UDP-N-acetylglucosamine transferase subunit ALG14
+YBR072W,HSP26,Small heat shock protein (sHSP) with chaperone activity
+YBR073W,RDH54,DNA-dependent ATPase
+YBR077C,SLM4,Protein SLM4
+YBR079C,RPG1,eIF3a subunit of the eukaryotic translation initiation factor 3 (eIF3)
+YBR080C,SEC18,Vesicular-fusion protein SEC18
+YBR081C,SPT7,Transcriptional activator SPT7
+YBR082C,UBC4,Ubiquitin-conjugating enzyme (E2)
+YBR083W,TEC1,Transcription factor targeting filamentation genes and Ty1 expression
+YBR084C-A,RPL19A,Ribosomal 60S subunit protein L19A
+YBR084W,MIS1,"C-1-tetrahydrofolate synthase, mitochondrial"
+YBR087W,RFC5,Subunit of heteropentameric Replication factor C (RF-C)
+YBR088C,POL30,Proliferating cell nuclear antigen (PCNA)
+YBR091C,TIM12,Mitochondrial import inner membrane translocase subunit TIM12
+YBR092C,PHO3,Constitutively expressed acid phosphatase similar to Pho5p
+YBR093C,PHO5,Repressible acid phosphatase
+YBR094W,PBY1,Probable tubulin--tyrosine ligase PBY1
+YBR095C,RXT2,Transcriptional regulatory protein RXT2
+YBR097W,VPS15,Serine/threonine-protein kinase VPS15
+YBR098W,MMS4,Subunit of structure-specific Mms4p-Mus81p endonuclease
+YBR101C,FES1,Hsp70 (Ssa1p) nucleotide exchange factor
+YBR102C,EXO84,Exocyst complex component EXO84
+YBR103W,SIF2,SIR4-interacting protein SIF2
+YBR105C,VID24,Vacuolar import and degradation protein 24
+YBR107C,IML3,Inner kinetochore subunit IML3
+YBR109C,CMD1,Calmodulin
+YBR111W-A,SUS1,Transcription and mRNA export factor SUS1
+YBR112C,CYC8,General transcriptional co-repressor
+YBR114W,RAD16,Nucleotide excision repair (NER) protein
+YBR115C,LYS2,Alpha aminoadipate reductase
+YBR117C,TKL2,Transketolase
+YBR118W,TEF2,Translational elongation factor EF-1 alpha
+YBR119W,MUD1,U1 snRNP A protein
+YBR120C,CBP6,Cytochrome B pre-mRNA-processing protein 6
+YBR121C,GRS1,"Glycine--tRNA ligase 1, mitochondrial"
+YBR122C,MRPL36,Mitochondrial ribosomal protein of the large subunit
+YBR123C,TFC1,Subunit of RNA polymerase III transcription initiation factor complex
+YBR125C,PTC4,Cytoplasmic type 2C protein phosphatase (PP2C)
+YBR126C,TPS1,"Alpha,alpha-trehalose-phosphate synthase [UDP-forming] 56 kDa subunit"
+YBR127C,VMA2,V-type proton ATPase subunit B
+YBR128C,ATG14,Autophagy-related protein 14
+YBR130C,SHE3,SWI5-dependent HO expression protein 3
+YBR131W,CCZ1,Vacuolar fusion protein CCZ1
+YBR133C,HSL7,Protein arginine N-methyltransferase
+YBR135W,CKS1,Cyclin-dependent protein kinase regulatory subunit and adaptor
+YBR136W,MEC1,Serine/threonine-protein kinase MEC1
+YBR137W,YBR137W,UPF0303 protein YBR137W
+YBR142W,MAK5,Essential nucleolar protein
+YBR143C,SUP45,Polypeptide release factor (eRF1) in translation termination
+YBR146W,MRPS9,Mitochondrial ribosomal protein of the small subunit.
+YBR148W,YSW1,Spore-specific protein YSW1
+YBR152W,SPP381,Pre-mRNA-splicing factor SPP381
+YBR154C,RPB5,RNA polymerase subunit ABC27
+YBR155W,CNS1,Hsp70/Hsp90 co-chaperone CNS1
+YBR156C,SLI15,Inner centromere protein-related protein SLI15
+YBR158W,AMN1,Antagonist of mitotic exit network protein 1
+YBR159W,IFA38,Very-long-chain 3-oxoacyl-CoA reductase
+YBR160W,CDC28,Cyclin-dependent kinase (CDK) catalytic subunit
+YBR164C,ARL1,ADP-ribosylation factor-like protein 1
+YBR167C,POP7,Ribonucleases P/MRP protein subunit POP7
+YBR168W,PEX32,Peroxisomal integral membrane protein
+YBR169C,SSE2,Member of Hsp110 subclass of the heat shock protein 70 (HSP70) family
+YBR170C,NPL4,Nuclear protein localization protein 4
+YBR171W,SEC66,Translocation protein SEC66
+YBR173C,UMP1,Chaperone required for correct maturation of the 20S proteasome
+YBR175W,SWD3,COMPASS component SWD3
+YBR179C,FZO1,Mitofusin
+YBR181C,RPS6B,Protein component of the small (40S) ribosomal subunit
+YBR182C,SMP1,MADS-box transcription factor involved in osmotic stress response
+YBR183W,YPC1,Alkaline ceramidase
+YBR185C,MBA1,Membrane-associated mitochondrial ribosome receptor
+YBR186W,PCH2,Pachytene checkpoint protein 2
+YBR188C,NTC20,Pre-mRNA-splicing factor NTC20
+YBR189W,RPS9B,Protein component of the small (40S) ribosomal subunit
+YBR191W,RPL21A,Ribosomal 60S subunit protein L21A
+YBR193C,MED8,Subunit of the RNA polymerase II mediator complex
+YBR195C,MSI1,Subunit of chromatin assembly factor I (CAF-1)
+YBR196C,PGI1,Glycolytic enzyme phosphoglucose isomerase
+YBR198C,TAF5,Subunit (90 kDa) of TFIID and SAGA complexes
+YBR200W,BEM1,Bud emergence protein 1
+YBR201W,DER1,Degradation in the endoplasmic reticulum protein 1
+YBR202W,MCM7,DNA replication licensing factor MCM7
+YBR205W,KTR3,Probable mannosyltransferase KTR3
+YBR207W,FTH1,Putative high affinity iron transporter
+YBR208C,"DUR1,2",Allophanate hydrolase
+YBR211C,AME1,Inner kinetochore subunit AME1
+YBR212W,NGR1,RNA binding protein that negatively regulates growth rate
+YBR215W,HPC2,Histone promoter control protein 2
+YBR217W,ATG12,Ubiquitin-like protein ATG12
+YBR218C,PYC2,Pyruvate carboxylase isoform
+YBR221C,PDB1,E1 beta subunit of the pyruvate dehydrogenase (PDH) complex
+YBR222C,PCS60,Oxalyl-CoA synthetase
+YBR225W,YBR225W,Uncharacterized protein YBR225W
+YBR228W,SLX1,Endonuclease involved in DNA recombination and repair
+YBR229C,ROT2,Glucosidase II catalytic subunit
+YBR230C,OM14,Mitochondrial outer membrane receptor for cytosolic ribosomes
+YBR231C,SWC5,SWR1-complex protein 5
+YBR233W-A,DAD3,Essential subunit of the Dam1 complex (aka DASH complex)
+YBR234C,ARC40,Subunit of the ARP2/3 complex
+YBR236C,ABD1,mRNA cap guanine-N7 methyltransferase
+YBR237W,PRP5,Pre-mRNA-processing ATP-dependent RNA helicase PRP5
+YBR238C,YBR238C,Mitochondrial membrane protein
+YBR241C,YBR241C,Probable metabolite transport protein YBR241C
+YBR243C,ALG7,UDP-N-acetylglucosamine--dolichyl-phosphate N-acetylglucosaminephosphotransferas
+YBR245C,ISW1,ISWI chromatin-remodeling complex ATPase ISW1
+YBR247C,ENP1,Protein associated with U3 and U14 snoRNAs
+YBR249C,ARO4,"Phospho-2-dehydro-3-deoxyheptonate aldolase, tyrosine-inhibited"
+YBR251W,MRPS5,Mitochondrial ribosomal protein of the small subunit.
+YBR252W,DUT1,Deoxyuridine 5'-triphosphate nucleotidohydrolase
+YBR253W,SRB6,Subunit of the RNA polymerase II mediator complex
+YBR254C,TRS20,Core component of transport protein particle (TRAPP) complexes I-III
+YBR256C,RIB5,Riboflavin synthase
+YBR257W,POP4,RNases MRP/P 32.9 kDa subunit
+YBR258C,SHG1,COMPASS component SHG1
+YBR260C,RGD1,GTPase-activating protein (RhoGAP) for Rho3p and Rho4p
+YBR262C,MIC12,Component of the MICOS complex
+YBR263W,SHM1,Mitochondrial serine hydroxymethyltransferase
+YBR267W,REI1,Cytoplasmic pre-60S factor
+YBR268W,MRPL37,Mitochondrial ribosomal protein of the large subunit.
+YBR270C,BIT2,Subunit of TORC2 membrane-associated complex
+YBR272C,HSM3,DNA mismatch repair protein HSM3
+YBR273C,UBX7,UBX (ubiquitin regulatory X) domain-containing protein
+YBR274W,CHK1,Serine/threonine-protein kinase CHK1
+YBR275C,RIF1,Telomere length regulator protein RIF1
+YBR278W,DPB3,Third-largest subunit of DNA polymerase II (DNA polymerase epsilon)
+YBR279W,PAF1,RNA polymerase II-associated protein 1
+YBR281C,DUG2,Probable di- and tripeptidase DUG2
+YBR282W,MRPL27,Mitochondrial ribosomal protein of the large subunit
+YBR283C,SSH1,Subunit of the Ssh1 translocon complex
+YBR288C,APM3,Mu3-like subunit of the clathrin associated protein complex (AP-3)
+YBR289W,SNF5,Subunit of the SWI/SNF chromatin remodeling complex
+YBR295W,PCA1,Cadmium transporting P-type ATPase
+YCL005W-A,VMA9,Vacuolar H+ ATPase subunit e of the V-ATPase V0 subcomplex
+YCL008C,STP22,Suppressor protein STP22 of temperature-sensitive alpha-factor receptor and argi
+YCL009C,ILV6,"Acetolactate synthase small subunit, mitochondrial"
+YCL010C,SGF29,SAGA-associated factor 29
+YCL011C,GBP2,Single-strand telomeric DNA-binding protein GBP2
+YCL016C,DCC1,Sister chromatid cohesion protein DCC1
+YCL017C,NFS1,"Cysteine desulfurase, mitochondrial"
+YCL024W,KCC4,Probable serine/threonine-protein kinase KCC4
+YCL025C,AGP1,Low-affinity amino acid permease with broad substrate range
+YCL028W,RNQ1,[PIN(+)] prion
+YCL029C,BIK1,Nuclear fusion protein BIK1
+YCL031C,RRP7,Ribosomal RNA-processing protein 7
+YCL032W,STE50,Adaptor protein for various signaling pathways
+YCL037C,SRO9,Cytoplasmic RNA-binding protein
+YCL039W,GID7,Glucose-induced degradation protein 7
+YCL043C,PDI1,Protein disulfide isomerase
+YCL044C,MGR1,Subunit of the mitochondrial (mt) i-AAA protease supercomplex
+YCL045C,EMC1,Member of conserved endoplasmic reticulum membrane complex
+YCL047C,POF1,Nicotinamide mononucleotide-specific adenylyltransferase (NMNAT)
+YCL050C,APA1,AP4A phosphorylase
+YCL052C,PBN1,Protein PBN1
+YCL054W,SPB1,27S pre-rRNA (guanosine(2922)-2'-O)-methyltransferase
+YCL055W,KAR4,Karyogamy protein KAR4
+YCL057C-A,MIC10,Conserved component of the MICOS complex
+YCL059C,KRR1,KRR1 small subunit processome component
+YCL061C,MRC1,S-phase checkpoint protein required for DNA replication
+YCL063W,VAC17,Vacuole-related protein 17
+YCL064C,CHA1,Catabolic L-serine/threonine dehydratase
+YCL066W,HMLALPHA1,Silenced copy of ALPHA1 at HML
+YCL067C,HMLALPHA2,Silenced copy of ALPHA2 at HML
+YCR002C,CDC10,Cell division control protein 10
+YCR003W,MRPL32,Mitochondrial ribosomal protein of the large subunit
+YCR004C,YCP4,Flavoprotein-like protein YCP4
+YCR005C,CIT2,"Citrate synthase, peroxisomal isozyme involved in glyoxylate cycle"
+YCR009C,RVS161,Reduced viability upon starvation protein 161
+YCR016W,YCR016W,Uncharacterized protein YCR016W
+YCR020C-A,MAK31,"N-alpha-acetyltransferase 38, NatC auxiliary subunit"
+YCR020W-B,HTL1,High temperature lethal protein 1
+YCR024C,SLM5,"Asparagine--tRNA ligase, mitochondrial"
+YCR026C,NPP1,Ectonucleotide pyrophosphatase/phosphodiesterase 1
+YCR027C,RHB1,Rheb-like protein RHB1
+YCR030C,SYP1,Suppressor of yeast profilin deletion
+YCR031C,RPS14A,Protein component of the small (40S) ribosomal subunit
+YCR033W,SNT1,Probable DNA-binding protein SNT1
+YCR034W,ELO2,Elongation of fatty acids protein 2
+YCR035C,RRP43,Exosome non-catalytic core component
+YCR037C,PHO87,Low-affinity inorganic phosphate (Pi) transporter
+YCR038C,BUD5,Bud site selection protein 5
+YCR039C,MATALPHA2,Homeobox-domain protein
+YCR042C,TAF2,TFIID subunit (150 kDa)
+YCR043C,YCR043C,Uncharacterized protein YCR043C
+YCR046C,IMG1,Mitochondrial ribosomal protein of the large subunit
+YCR047C,BUD23,Methyltransferase that methylates residue G1575 of 18S rRNA
+YCR048W,ARE1,Sterol O-acyltransferase 1
+YCR052W,RSC6,Component of the RSC chromatin remodeling complex
+YCR057C,PWP2,Periodic tryptophan protein 2
+YCR060W,TAH1,TPR repeat-containing protein associated with Hsp90
+YCR063W,BUD31,Pre-mRNA-splicing factor BUD31
+YCR066W,RAD18,Postreplication repair E3 ubiquitin-protein ligase RAD18
+YCR067C,SED4,Putative guanine nucleotide-exchange factor SED4
+YCR068W,ATG15,Putative lipase ATG15
+YCR071C,IMG2,Mitochondrial ribosomal protein of the large subunit
+YCR072C,RSA4,WD-repeat protein involved in ribosome biogenesis
+YCR073C,SSK22,Serine/threonine-protein kinase SSK22
+YCR075W-A,EGO2,Uncharacterized protein YCR075W-A
+YCR076C,FUB1,Silencing boundary-establishment protein FUB1
+YCR077C,PAT1,DNA topoisomerase 2-associated protein PAT1
+YCR081W,SRB8,Subunit of the RNA polymerase II mediator complex
+YCR082W,AHC2,Component of the ADA histone acetyltransferase complex
+YCR084C,TUP1,General transcriptional corepressor TUP1
+YCR086W,CSM1,Monopolin complex subunit CSM1
+YCR088W,ABP1,Actin-binding protein of the cortical actin cytoskeleton
+YCR092C,MSH3,Mismatch repair protein
+YCR093W,CDC39,General negative regulator of transcription subunit 1
+YCR094W,CDC50,Cell division control protein 50
+YCR095C,OCA4,Cytoplasmic protein required for replication of Brome mosaic virus
+YCR096C,HMRA2,Silenced copy of a2 at HMR
+YCR097W,HMRA1,Silenced copy of a1 at HMR
+YCR105W,ADH7,NADPH-dependent medium chain alcohol dehydrogenase
+YDL002C,NHP10,Non-histone protein 10
+YDL003W,MCD1,Sister chromatid cohesion protein 1
+YDL004W,ATP16,Delta subunit of the central stalk of mitochondrial F1F0 ATP synthase
+YDL005C,MED2,Subunit of the RNA polymerase II mediator complex
+YDL007W,RPT2,ATPase of the 19S regulatory particle of the 26S proteasome
+YDL008W,APC11,"Catalytic core subunit, Anaphase-Promoting Complex/Cyclosome (APC/C)"
+YDL013W,SLX5,Subunit of the Slx5-Slx8 SUMO-targeted Ub ligase (STUbL) complex
+YDL014W,NOP1,rRNA 2'-O-methyltransferase fibrillarin
+YDL015C,TSC13,Very-long-chain enoyl-CoA reductase
+YDL017W,CDC7,Cell division control protein 7
+YDL018C,ERP3,Protein with similarity to Emp24p and Erv25p
+YDL021W,GPM2,Homolog of Gpm1p phosphoglycerate mutase
+YDL022W,GPD1,NAD-dependent glycerol-3-phosphate dehydrogenase
+YDL024C,DIA3,Probable acid phosphatase DIA3
+YDL029W,ARP2,Actin-related protein 2
+YDL030W,PRP9,Pre-mRNA-splicing factor PRP9
+YDL031W,DBP10,Putative ATP-dependent RNA helicase of the DEAD-box protein family
+YDL035C,GPR1,Plasma membrane G protein coupled receptor (GPCR)
+YDL040C,NAT1,Subunit of protein N-terminal acetyltransferase NatA
+YDL042C,SIR2,Conserved NAD+ dependent histone deacetylase of the Sirtuin family
+YDL043C,PRP11,Pre-mRNA-splicing factor PRP11
+YDL044C,MTF2,Mitochondrial transcription factor 2
+YDL045W-A,MRP10,Mitochondrial ribosomal protein of the small subunit
+YDL047W,SIT4,Serine/threonine-protein phosphatase PP1-1
+YDL051W,LHP1,La protein homolog
+YDL052C,SLC1,1-acyl-sn-glycerol-3-phosphate acyltransferase
+YDL053C,PBP4,Pbp1p binding protein
+YDL056W,MBP1,Transcription factor
+YDL058W,USO1,Essential protein involved in vesicle-mediated ER to Golgi transport
+YDL059C,RAD59,Protein involved DNA double-strand break repair
+YDL060W,TSR1,Ribosome biogenesis protein TSR1
+YDL061C,RPS29B,Protein component of the small (40S) ribosomal subunit
+YDL063C,SYO1,Synchronized import protein 1
+YDL064W,UBC9,SUMO-conjugating enzyme involved in the Smt3p conjugation pathway
+YDL065C,PEX19,Chaperone and import receptor for newly-synthesized class I PMPs
+YDL066W,IDP1,Mitochondrial NADP-specific isocitrate dehydrogenase
+YDL067C,COX9,Subunit VIIa of cytochrome c oxidase (Complex IV)
+YDL070W,BDF2,Bromodomain-containing factor 2
+YDL072C,YET3,Endoplasmic reticulum transmembrane protein 3
+YDL074C,BRE1,E3 ubiquitin ligase
+YDL075W,RPL31A,Ribosomal 60S subunit protein L31A
+YDL076C,RXT3,Transcriptional regulatory protein RXT3
+YDL077C,VAM6,Vacuolar morphogenesis protein 6
+YDL078C,MDH3,Peroxisomal malate dehydrogenase
+YDL080C,THI3,Thiamine metabolism regulatory protein THI3
+YDL081C,RPP1A,60S acidic ribosomal protein P1-alpha
+YDL082W,RPL13A,Ribosomal 60S subunit protein L13A
+YDL083C,RPS16B,Protein component of the small (40S) ribosomal subunit
+YDL084W,SUB2,ATP-dependent RNA helicase SUB2
+YDL087C,LUC7,Essential protein associated with the U1 snRNP complex
+YDL088C,ASM4,FG-nucleoporin component of central core of nuclear pore complex (NPC)
+YDL089W,NUR1,Nuclear rim protein 1
+YDL090C,RAM1,Beta subunit of the CAAX farnesyltransferase (FTase)
+YDL091C,UBX3,UBX domain-containing protein 3
+YDL092W,SRP14,Signal recognition particle (SRP) subunit
+YDL093W,PMT5,Dolichyl-phosphate-mannose--protein mannosyltransferase 5
+YDL095W,PMT1,Dolichyl-phosphate-mannose--protein mannosyltransferase 1
+YDL097C,RPN6,"Essential, non-ATPase regulatory subunit of the 26S proteasome lid"
+YDL098C,SNU23,23 kDa U4/U6.U5 small nuclear ribonucleoprotein component
+YDL099W,BUG1,Binder of USO1 and GRH1 protein 1
+YDL100C,GET3,ATPase GET3
+YDL101C,DUN1,DNA damage response protein kinase DUN1
+YDL102W,POL3,Catalytic subunit of DNA polymerase delta
+YDL105W,NSE4,Non-structural maintenance of chromosome element 4
+YDL106C,PHO2,Regulatory protein PHO2
+YDL108W,KIN28,Serine/threonine-protein kinase KIN28
+YDL110C,TMA17,Translation machinery-associated protein 17
+YDL111C,RRP42,Exosome non-catalytic core component
+YDL113C,ATG20,Autophagy-related protein 20
+YDL115C,IWR1,RNA polymerase II nuclear localization protein IWR1
+YDL116W,NUP84,Subunit of the Nup84p subcomplex of the nuclear pore complex (NPC)
+YDL117W,CYK3,SH3-domain protein located in the bud neck and cytokinetic actin ring
+YDL120W,YFH1,Frataxin homolog intermediate form
+YDL122W,UBP1,Ubiquitin carboxyl-terminal hydrolase 1
+YDL126C,CDC48,Cell division control protein 48
+YDL127W,PCL2,PHO85 cyclin-2
+YDL130W,RPP1B,60S acidic ribosomal protein P1-beta
+YDL130W-A,STF1,"ATPase-stabilizing factor 9 kDa, mitochondrial"
+YDL131W,LYS21,"Homocitrate synthase, mitochondrial"
+YDL132W,CDC53,Cell division control protein 53
+YDL133C-A,RPL41B,Ribosomal 60S subunit protein L41B
+YDL134C,PPH21,Catalytic subunit of protein phosphatase 2A (PP2A)
+YDL135C,RDI1,Rho GDP dissociation inhibitor
+YDL136W,RPL35B,Ribosomal 60S subunit protein L35B
+YDL137W,ARF2,ADP-ribosylation factor
+YDL139C,SCM3,Protein SCM3
+YDL140C,RPO21,RNA polymerase II largest subunit B220
+YDL143W,CCT4,T-complex protein 1 subunit delta
+YDL145C,COP1,Alpha subunit of COPI vesicle coatomer complex
+YDL146W,LDB17,Protein involved in the regulation of endocytosis
+YDL147W,RPN5,Subunit of the CSN and 26S proteasome lid complexes
+YDL148C,NOP14,Nucleolar protein
+YDL149W,ATG9,Autophagy-related protein 9
+YDL150W,RPC53,RNA polymerase III subunit C53
+YDL153C,SAS10,Something about silencing protein 10
+YDL154W,MSH5,Protein of the MutS family
+YDL155W,CLB3,G2/mitotic-specific cyclin-3
+YDL156W,CMR1,DNA damage-binding protein CMR1
+YDL159W,STE7,Serine/threonine-protein kinase STE7
+YDL160C,DHH1,"Cytoplasmic DEAD-box helicase, stimulates mRNA decapping"
+YDL160C-A,MHF2,Inner kinetochore subunit MHF2
+YDL161W,ENT1,Epsin-1
+YDL164C,CDC9,DNA ligase I found in nucleus and mitochondria
+YDL165W,CDC36,General negative regulator of transcription subunit 2
+YDL166C,FAP7,Adenylate kinase isoenzyme 6 homolog FAP7
+YDL168W,SFA1,Bifunctional alcohol dehydrogenase and formaldehyde dehydrogenase
+YDL171C,GLT1,NAD(+)-dependent glutamate synthase (GOGAT)
+YDL174C,DLD1,Major mitochondrial D-lactate dehydrogenase
+YDL175C,AIR2,Protein AIR2
+YDL176W,YDL176W,Uncharacterized protein YDL176W
+YDL178W,DLD2,D-2-hydroxyglutarate--pyruvate transhydrogenase DLD2
+YDL179W,PCL9,PHO85 cyclin-9
+YDL181W,INH1,"ATPase inhibitor, mitochondrial"
+YDL182W,LYS20,Homocitrate synthase isozyme and functions in DNA repair
+YDL184C,RPL41A,Ribosomal 60S subunit protein L41A
+YDL185W,VMA1,Subunit A of the V1 peripheral membrane domain of V-ATPase
+YDL188C,PPH22,Catalytic subunit of protein phosphatase 2A (PP2A)
+YDL189W,RBS1,RNA-binding suppressor of PAS kinase protein 1
+YDL190C,UFD2,E4 ubiquitin-protein ligase UFD2
+YDL191W,RPL35A,Ribosomal 60S subunit protein L35A
+YDL192W,ARF1,ADP-ribosylation factor
+YDL193W,NUS1,Forms dehydrodolichyl diphosphate syntase complex with RER2 or SRT1
+YDL195W,SEC31,Protein transport protein SEC31
+YDL201W,TRM8,Noncatalytic subunit of a tRNA methyltransferase complex
+YDL202W,MRPL11,Mitochondrial ribosomal protein of the large subunit
+YDL204W,RTN2,Reticulon-like protein 2
+YDL207W,GLE1,Cytoplasmic nucleoporin required for polyadenylated mRNA export
+YDL208W,NHP2,H/ACA ribonucleoprotein complex subunit NHP2
+YDL209C,CWC2,Pre-mRNA-splicing factor CWC2
+YDL213C,NOP6,Nucleolar protein 6
+YDL215C,GDH2,NAD(+)-dependent glutamate dehydrogenase
+YDL216C,RRI1,Catalytic subunit of the COP9 signalosome (CSN) complex
+YDL217C,TIM22,Mitochondrial import inner membrane translocase subunit TIM22
+YDL220C,CDC13,Cell division control protein 13
+YDL224C,WHI4,Protein WHI4
+YDL225W,SHS1,Seventh homolog of septin 1
+YDL226C,GCS1,ADP-ribosylation factor GTPase activating protein (ARF GAP)
+YDL227C,HO,Homothallic switching endonuclease
+YDL229W,SSB1,Cytoplasmic ATPase that is a ribosome-associated molecular chaperone
+YDL232W,OST4,Dolichyl-diphosphooligosaccharide--protein glycosyltransferase subunit OST4
+YDL233W,MFG1,Regulator of filamentous growth
+YDL234C,GYP7,GTPase-activating protein for yeast Rab family members
+YDL235C,YPD1,Osmotic stress-responsive phosphorelay intermediate sensor protein
+YDL246C,SOR2,Sorbitol dehydrogenase
+YDR001C,NTH1,"Neutral trehalase, degrades trehalose"
+YDR002W,YRB1,Ran-specific GTPase-activating protein 1
+YDR004W,RAD57,DNA repair protein RAD57
+YDR005C,MAF1,Highly conserved negative regulator of RNA polymerase III
+YDR007W,TRP1,Phosphoribosylanthranilate isomerase
+YDR009W,GAL3,Protein GAL3
+YDR012W,RPL4B,Ribosomal 60S subunit protein L4B
+YDR013W,PSF1,"Subunit of the GINS complex (Sld5p, Psf1p, Psf2p, Psf3p)"
+YDR014W,RAD61,Protein RAD61
+YDR016C,DAD1,Essential subunit of the Dam1 complex (aka DASH complex)
+YDR017C,KCS1,Inositol hexakisphosphate and inositol heptakisphosphate kinase
+YDR019C,GCV1,T subunit of the mitochondrial glycine decarboxylase complex
+YDR020C,DAS2,Putative uridine kinase DAS2
+YDR021W,FAL1,ATP-dependent RNA helicase FAL1
+YDR022C,ATG31,Autophagy-related protein 31
+YDR023W,SES1,"Serine--tRNA ligase, cytoplasmic"
+YDR025W,RPS11A,Protein component of the small (40S) ribosomal subunit
+YDR027C,VPS54,Vacuolar protein sorting-associated protein 54
+YDR028C,REG1,Regulatory subunit of type 1 protein phosphatase Glc7p
+YDR032C,PST2,Protoplast secreted protein 2
+YDR035W,ARO3,"Phospho-2-dehydro-3-deoxyheptonate aldolase, phenylalanine-inhibited"
+YDR036C,EHD3,"3-hydroxyisobutyryl-CoA hydrolase, mitochondrial"
+YDR037W,KRS1,"Lysine--tRNA ligase, cytoplasmic"
+YDR041W,RSM10,Mitochondrial ribosomal protein of the small subunit
+YDR043C,NRG1,Transcriptional regulator NRG1
+YDR045C,RPC11,RNA polymerase III subunit C11
+YDR049W,VMS1,Protein VMS1
+YDR052C,DBF4,Regulatory subunit of Cdc7p-Dbf4p kinase complex
+YDR054C,CDC34,Ubiquitin-conjugating enzyme (E2)
+YDR056C,EMC10,Putative protein of unknown function
+YDR057W,YOS9,Protein OS-9 homolog
+YDR058C,TGL2,Lipase 2
+YDR059C,UBC5,Ubiquitin-conjugating enzyme
+YDR060W,MAK21,Ribosome biogenesis protein MAK21
+YDR062W,LCB2,Component of serine palmitoyltransferase
+YDR063W,AIM7,Protein that interacts with Arp2/3 complex
+YDR064W,RPS13,Protein component of the small (40S) ribosomal subunit
+YDR069C,DOA4,Ubiquitin hydrolase
+YDR071C,PAA1,Polyamine N-acetyltransferase 1
+YDR073W,SNF11,Transcription regulatory protein SNF11
+YDR074W,TPS2,Trehalose-phosphatase
+YDR075W,PPH3,Catalytic subunit of protein phosphatase PP4 complex
+YDR076W,RAD55,DNA repair protein RAD55
+YDR077W,SED1,Cell wall protein SED1
+YDR078C,SHU2,Suppressor of hydroxyurea sensitivity protein 2
+YDR079C-A,TFB5,Component of RNA polymerase II general transcription factor TFIIH
+YDR080W,VPS41,Vacuolar protein sorting-associated protein 41
+YDR082W,STN1,Protein STN1
+YDR083W,RRP8,25S rRNA (adenine(645)-N(1))-methyltransferase
+YDR084C,TVP23,Integral membrane protein
+YDR085C,AFR1,Protein required for pheromone-induced projection (shmoo) formation
+YDR086C,SSS1,Protein transport protein SSS1
+YDR087C,RRP1,Ribosomal RNA-processing protein 1
+YDR088C,SLU7,Pre-mRNA-splicing factor SLU7
+YDR089W,VTC5,Uncharacterized protein YDR089W
+YDR091C,RLI1,Translation initiation factor RLI1
+YDR092W,UBC13,E2 ubiquitin-conjugating enzyme
+YDR093W,DNF2,Phospholipid-transporting ATPase DNF2
+YDR097C,MSH6,Protein required for mismatch repair in mitosis and meiosis
+YDR098C,GRX3,Monothiol glutaredoxin-3
+YDR099W,BMH2,"14-3-3 protein, minor isoform"
+YDR101C,ARX1,Probable metalloprotease ARX1
+YDR103W,STE5,Protein STE5
+YDR106W,ARP10,Actin-like protein ARP10
+YDR108W,TRS85,Trafficking protein particle complex III-specific subunit 85
+YDR110W,FOB1,Nucleolar protein that binds the rDNA replication fork barrier site
+YDR111C,ALT2,Probable alanine aminotransferase
+YDR113C,PDS1,Securin
+YDR115W,MRX14,Putative mitochondrial ribosomal protein of the large subunit
+YDR116C,MRPL1,Mitochondrial ribosomal protein of the large subunit.
+YDR117C,TMA64,Translation machinery-associated protein 64
+YDR118W,APC4,Subunit of the Anaphase-Promoting Complex/Cyclosome (APC/C)
+YDR119W-A,COX26,"Cytochrome c oxidase subunit 26, mitochondrial"
+YDR121W,DPB4,Subunit of DNA pol epsilon and of ISW2 chromatin accessibility complex
+YDR122W,KIN1,Serine/threonine protein kinase involved in regulation of exocytosis
+YDR123C,INO2,Protein INO2
+YDR127W,ARO1,3-phosphoshikimate 1-carboxyvinyltransferase
+YDR128W,MTC5,Maintenance of telomere capping protein 5
+YDR129C,SAC6,"Fimbrin, actin-bundling protein"
+YDR130C,FIN1,Filament protein FIN1
+YDR132C,YDR132C,Uncharacterized protein YDR132C
+YDR135C,YCF1,Metal resistance protein YCF1
+YDR137W,RGP1,Subunit of a Golgi membrane exchange factor (Ric1p-Rgp1p)
+YDR138W,HPR1,Subunit of THO/TREX complexes
+YDR139C,RUB1,NEDD8-like protein RUB1
+YDR140W,MTQ2,eRF1 methyltransferase catalytic subunit MTQ2
+YDR141C,DOP1,Protein dopey
+YDR142C,PEX7,Peroxisomal signal receptor for peroxisomal matrix proteins
+YDR144C,MKC7,Aspartic proteinase MKC7
+YDR145W,TAF12,Subunit (61/68 kDa) of TFIID and SAGA complexes
+YDR147W,EKI1,Ethanolamine kinase
+YDR148C,KGD2,2-oxoglutarate dehydrogenase E2 component (dihydrolipoamide succinyltransferase)
+YDR150W,NUM1,Protein required for nuclear migration
+YDR151C,CTH1,mRNA decay factor CTH1
+YDR152W,GIR2,Protein GIR2
+YDR153C,ENT5,Epsin-5
+YDR155C,CPR1,Cytoplasmic peptidyl-prolyl cis-trans isomerase (cyclophilin)
+YDR156W,RPA14,RNA polymerase I subunit A14.
+YDR159W,SAC3,Nuclear mRNA export protein SAC3
+YDR160W,SSY1,SPS-sensor component SSY1
+YDR161W,ACL4,Specific assembly chaperone for ribosomal protein Rpl4p
+YDR162C,NBP2,NAP1-binding protein 2
+YDR163W,CWC15,Pre-mRNA-splicing factor CWC15
+YDR164C,SEC1,Sm-like protein involved in docking and fusion of exocytic vesicles
+YDR165W,TRM82,Catalytic subunit of a tRNA methyltransferase complex
+YDR166C,SEC5,Essential 107kDa subunit of the exocyst complex
+YDR167W,TAF10,Subunit (145 kDa) of TFIID and SAGA complexes
+YDR168W,CDC37,Essential Hsp90p co-chaperone
+YDR170C,SEC7,Protein transport protein SEC7
+YDR171W,HSP42,Small heat shock protein (sHSP) with chaperone activity
+YDR172W,SUP35,Eukaryotic peptide chain release factor GTP-binding subunit
+YDR173C,ARG82,Inositol polyphosphate multikinase (IPMK)
+YDR174W,HMO1,Chromatin associated high mobility group (HMG) family member
+YDR175C,RSM24,Mitochondrial ribosomal protein of the small subunit.
+YDR176W,NGG1,Subunit of chromatin modifying histone acetyltransferase complexes
+YDR177W,UBC1,Ubiquitin-conjugating enzyme
+YDR178W,SDH4,"Succinate dehydrogenase [ubiquinone] cytochrome b small subunit, mitochondrial"
+YDR179C,CSN9,Subunit of the Cop9 signalosome
+YDR180W,SCC2,Sister chromatid cohesion protein 2
+YDR181C,SAS4,Something about silencing protein 4
+YDR182W,CDC1,Cell division control protein 1
+YDR185C,UPS3,Mitochondrial protein of unknown function
+YDR186C,SND1,Protein involved in SRP-independent targeting of substrates to the ER
+YDR188W,CCT6,T-complex protein 1 subunit zeta
+YDR189W,SLY1,Hydrophilic protein involved in ER/Golgi vesicle trafficking
+YDR190C,RVB1,RuvB-like protein 1
+YDR192C,NUP42,FG-nucleoporin component of central core of the nuclear pore complex
+YDR195W,REF2,RNA end formation protein 2
+YDR196C,CAB5,Dephospho-CoA kinase CAB5
+YDR200C,VPS64,Vacuolar protein sorting-associated protein 64
+YDR201W,SPC19,Essential subunit of the Dam1 complex (aka DASH complex)
+YDR202C,RAV2,Regulator of V-ATPase in vacuolar membrane protein 2
+YDR204W,COQ4,Protein with a role in ubiquinone (Coenzyme Q) biosynthesis
+YDR205W,MSC2,Endoplasmic reticulum zinc transporter
+YDR206W,EBS1,Protein involved in translation inhibition and nonsense-mediated decay
+YDR207C,UME6,Transcriptional regulatory protein UME6
+YDR208W,MSS4,Phosphatidylinositol-4-phosphate 5-kinase
+YDR211W,GCD6,Catalytic epsilon subunit of the translation initiation factor eIF2B
+YDR212W,TCP1,Alpha subunit of chaperonin-containing T-complex
+YDR214W,AHA1,Hsp90 co-chaperone AHA1
+YDR217C,RAD9,DNA damage-dependent checkpoint protein
+YDR218C,SPR28,Sporulation-regulated protein 28
+YDR221W,GTB1,"Glucosidase II beta subunit, forms a complex with alpha subunit Rot2p"
+YDR224C,HTB1,Histone H2B
+YDR225W,HTA1,Histone H2A
+YDR226W,ADK1,"Adenylate kinase, required for purine metabolism"
+YDR227W,SIR4,Regulatory protein SIR4
+YDR228C,PCF11,Protein PCF11
+YDR231C,COX20,Mitochondrial inner membrane protein
+YDR233C,RTN1,Reticulon-like protein 1
+YDR235W,PRP42,U1 small nuclear ribonucleoprotein component PRP42
+YDR236C,FMN1,"Riboflavin kinase, produces riboflavin monophosphate (FMN)"
+YDR237W,MRPL7,Mitochondrial ribosomal protein of the large subunit
+YDR238C,SEC26,Coatomer subunit beta
+YDR240C,SNU56,56 kDa U1 small nuclear ribonucleoprotein component
+YDR243C,PRP28,Pre-mRNA-splicing ATP-dependent RNA helicase PRP28
+YDR244W,PEX5,Peroxisomal membrane signal receptor for peroxisomal matrix proteins
+YDR245W,MNN10,"Probable alpha-1,6-mannosyltransferase MNN10"
+YDR246W,TRS23,Core component of transport protein particle (TRAPP) complexes I-III
+YDR247W,VHS1,Serine/threonine-protein kinase VHS1
+YDR252W,BTT1,Heterotrimeric nascent polypeptide-associated complex beta3 subunit
+YDR253C,MET32,Transcriptional regulator MET32
+YDR254W,CHL4,Inner kinetochore subunit CHL4
+YDR255C,RMD5,E3 ubiquitin-protein ligase RMD5
+YDR256C,CTA1,Catalase A
+YDR258C,HSP78,"Heat shock protein 78, mitochondrial"
+YDR260C,SWM1,Subunit of the anaphase-promoting complex (APC)
+YDR261C,EXG2,"Glucan 1,3-beta-glucosidase 2"
+YDR264C,AKR1,Palmitoyltransferase AKR1
+YDR265W,PEX10,Peroxisome biogenesis factor 10
+YDR267C,CIA1,Component of cytosolic iron-sulfur protein assembly (CIA) machinery
+YDR268W,MSW1,"Tryptophan--tRNA ligase, mitochondrial"
+YDR270W,CCC2,Cu(+2)-transporting P-type ATPase
+YDR272W,GLO2,"Hydroxyacylglutathione hydrolase, cytoplasmic isozyme"
+YDR273W,DON1,Donuts protein 1
+YDR279W,RNH202,Ribonuclease H2 subunit
+YDR280W,RRP45,Exosome non-catalytic core component
+YDR283C,GCN2,eIF-2-alpha kinase GCN2
+YDR284C,DPP1,Diacylglycerol pyrophosphate (DGPP) phosphatase
+YDR287W,INM2,Inositol monophosphatase
+YDR288W,NSE3,Non-structural maintenance of chromosome element 3
+YDR289C,RTT103,Regulator of Ty1 transposition protein 103
+YDR292C,SRP101,Signal recognition particle (SRP) receptor alpha subunit
+YDR293C,SSD1,Protein SSD1
+YDR295C,HDA2,Subunit of the HDA1 histone deacetylase complex
+YDR296W,MHR1,Mitochondrial ribosomal protein of the large subunit
+YDR298C,ATP5,Subunit 5 of the stator stalk of mitochondrial F1F0 ATP synthase
+YDR299W,BFR2,Protein BFR2
+YDR300C,PRO1,Glutamate 5-kinase
+YDR301W,CFT1,Protein CFT1
+YDR302W,GPI11,Glycosylphosphatidylinositol anchor biosynthesis protein 11
+YDR303C,RSC3,Chromatin structure-remodeling complex protein RSC3
+YDR308C,SRB7,Subunit of the RNA polymerase II mediator complex
+YDR309C,GIC2,GTPase-interacting component 2
+YDR310C,SUM1,Suppressor of mar1-1 protein
+YDR311W,TFB1,Subunit of TFIIH and nucleotide excision repair factor 3 complexes
+YDR312W,SSF2,Ribosome biogenesis protein SSF2
+YDR314C,RAD34,Protein involved in nucleotide excision repair (NER)
+YDR318W,MCM21,Inner kinetochore subunit MCM21
+YDR320C,SWA2,Auxilin-like clathrin uncoating factor SWA2
+YDR320C-A,DAD4,Essential subunit of the Dam1 complex (aka DASH complex)
+YDR321W,ASP1,"Cytosolic L-asparaginase, involved in asparagine catabolism"
+YDR322C-A,TIM11,Subunit e of mitochondrial F1F0-ATPase
+YDR322W,MRPL35,Mitochondrial ribosomal protein of the large subunit
+YDR323C,PEP7,Adaptor protein involved in vesicle-mediated vacuolar protein sorting
+YDR324C,UTP4,U3 small nucleolar RNA-associated protein 4
+YDR325W,YCG1,Subunit of the condensin complex
+YDR328C,SKP1,Evolutionarily conserved kinetochore protein
+YDR329C,PEX3,Peroxisomal biogenesis factor 3
+YDR330W,UBX5,UBX domain-containing protein that interacts with Cdc48p
+YDR331W,GPI8,GPI-anchor transamidase
+YDR333C,RQC1,Component of the ribosome quality control complex (RQC)
+YDR334W,SWR1,Helicase SWR1
+YDR335W,MSN5,Protein MSN5
+YDR337W,MRPS28,Mitochondrial ribosomal protein of the small subunit.
+YDR339C,FCF1,rRNA-processing protein FCF1
+YDR341C,YDR341C,"Arginine--tRNA ligase, cytoplasmic"
+YDR345C,HXT3,Low affinity glucose transporter of the major facilitator superfamily
+YDR347W,MRP1,Mitochondrial ribosomal protein of the small subunit
+YDR353W,TRR1,Cytoplasmic thioredoxin reductase
+YDR354W,TRP4,Anthranilate phosphoribosyl transferase
+YDR356W,SPC110,Inner plaque spindle pole body (SPB) component
+YDR357C,CNL1,Subunit of the BLOC-1 complex involved in endosomal maturation
+YDR359C,EAF1,Chromatin modification-related protein EAF1
+YDR361C,BCP1,Essential protein involved in nuclear export of Mss4p
+YDR362C,TFC6,Subunit of RNA polymerase III transcription initiation factor complex
+YDR363W,ESC2,Sumo-like domain protein
+YDR363W-A,SEM1,26S proteasome complex subunit SEM1
+YDR364C,CDC40,Pre-mRNA-processing factor 17
+YDR365C,ESF1,Pre-rRNA-processing protein ESF1
+YDR367W,KEI1,Component of inositol phosphorylceramide (IPC) synthase
+YDR369C,XRS2,Protein required for DNA repair
+YDR371W,CTS2,Putative chitinase
+YDR372C,VPS74,Vacuolar protein sorting-associated protein 74
+YDR373W,FRQ1,N-myristoylated calcium-binding protein
+YDR374W-A,WIP1,Inner kinetochore subunit WIP1
+YDR376W,ARH1,"Probable NADPH:adrenodoxin oxidoreductase, mitochondrial"
+YDR377W,ATP17,Subunit f of the F0 sector of mitochondrial F1F0 ATP synthase
+YDR378C,LSM6,U6 snRNA-associated Sm-like protein LSm6
+YDR379W,RGA2,GTPase-activating protein for polarity-establishment protein Cdc42p
+YDR381W,YRA1,Nuclear polyadenylated RNA-binding protein
+YDR382W,RPP2B,60S acidic ribosomal protein P2-beta
+YDR383C,NKP1,Central kinetochore protein and subunit of the Ctf19 complex
+YDR385W,EFT2,"Elongation factor 2 (EF-2), also encoded by EFT1"
+YDR386W,MUS81,Subunit of structure-specific Mms4p-Mus81p endonuclease
+YDR388W,RVS167,Reduced viability upon starvation protein 167
+YDR390C,UBA2,Ubiquitin-activating enzyme E1-like
+YDR392W,SPT3,Protein SPT3
+YDR394W,RPT3,ATPase of the 19S regulatory particle of the 26S proteasome
+YDR397C,NCB2,Subunit of a heterodimeric NC2 transcription regulator complex
+YDR398W,UTP5,U3 small nucleolar RNA-associated protein 5
+YDR399W,HPT1,Dimeric hypoxanthine-guanine phosphoribosyltransferase
+YDR404C,RPB7,RNA polymerase II subunit B16
+YDR405W,MRP20,Mitochondrial ribosomal protein of the large subunit.
+YDR406W,PDR15,ATP-dependent permease PDR15
+YDR407C,TRS120,Trafficking protein particle complex II-specific subunit 120
+YDR408C,ADE8,Phosphoribosylglycinamide formyltransferase
+YDR409W,SIZ1,SUMO E3 ligase
+YDR411C,DFM1,DER1-like family member protein 1
+YDR412W,RRP17,Ribosomal RNA-processing protein 17
+YDR416W,SYF1,Pre-mRNA-splicing factor SYF1
+YDR418W,RPL12B,Ribosomal 60S subunit protein L12B
+YDR419W,RAD30,DNA polymerase eta
+YDR420W,HKR1,Signaling mucin HKR1
+YDR422C,SIP1,Alternate beta-subunit of the Snf1p kinase complex
+YDR424C,DYN2,"Cytoplasmic light chain dynein, microtubule motor protein"
+YDR425W,SNX41,Sorting nexin
+YDR427W,RPN9,Non-ATPase regulatory subunit of the 26S proteasome
+YDR429C,TIF35,eIF3g subunit of the eukaryotic translation initiation factor 3 (eIF3)
+YDR430C,CYM1,Mitochondrial presequence protease
+YDR432W,NPL3,Nucleolar protein 3
+YDR434W,GPI17,GPI transamidase component GPI17
+YDR436W,PPZ2,Serine/threonine-protein phosphatase PP-Z2
+YDR437W,GPI19,Subunit of GPI-GlcNAc transferase involved in synthesis of GlcNAc-PI
+YDR439W,LRS4,Monopolin complex subunit LRS4
+YDR440W,DOT1,"Histone-lysine N-methyltransferase, H3 lysine-79 specific"
+YDR441C,APT2,Potential adenine phosphoribosyltransferase
+YDR443C,SSN2,Subunit of the RNA polymerase II mediator complex
+YDR447C,RPS17B,Ribosomal protein 51 (rp51) of the small (40s) subunit
+YDR448W,ADA2,Transcriptional adapter 2
+YDR449C,UTP6,Nucleolar protein
+YDR450W,RPS18A,Protein component of the small (40S) ribosomal subunit
+YDR451C,YHP1,Homeobox protein YHP1
+YDR453C,TSA2,Peroxiredoxin TSA2
+YDR454C,GUK1,Guanylate kinase
+YDR458C,HEH2,Inner nuclear membrane (INM) protein
+YDR460W,TFB3,Subunit of TFIIH and nucleotide excision repair factor 3 complexes
+YDR461W,MFA1,Mating pheromone a-factor
+YDR462W,MRPL28,Mitochondrial ribosomal protein of the large subunit
+YDR466W,PKH3,Serine/threonine-protein kinase PKH3
+YDR468C,TLG1,Essential t-SNARE that mediates fusion of vesicles with the late Golgi
+YDR469W,SDC1,COMPASS component SDC1
+YDR470C,UGO1,Outer membrane component of the mitochondrial fusion machinery
+YDR471W,RPL27B,Ribosomal 60S subunit protein L27B
+YDR472W,TRS31,Core component of transport protein particle (TRAPP) complexes I-III
+YDR473C,PRP3,U4/U6 small nuclear ribonucleoprotein PRP3
+YDR477W,SNF1,AMP-activated S/T protein kinase
+YDR478W,SNM1,Ribonuclease MRP complex subunit
+YDR480W,DIG2,Down-regulator of invasive growth 2
+YDR481C,PHO8,Repressible vacuolar alkaline phosphatase
+YDR482C,CWC21,Pre-mRNA-splicing factor CWC21
+YDR483W,KRE2,Glycolipid 2-alpha-mannosyltransferase
+YDR484W,VPS52,Vacuolar protein sorting-associated protein 52
+YDR485C,VPS72,Vacuolar protein sorting-associated protein 72
+YDR486C,VPS60,Protein involved in late endosome to vacuole transport
+YDR488C,PAC11,WD repeat-containing protein PAC11
+YDR489W,SLD5,"Subunit of the GINS complex (Sld5p, Psf1p, Psf2p, Psf3p)"
+YDR490C,PKH1,Serine/threonine-protein kinase PKH1
+YDR494W,RSM28,Mitochondrial ribosomal protein of the small subunit
+YDR495C,VPS3,Vacuolar protein sorting-associated protein 3
+YDR496C,PUF6,Pumilio-homology domain protein
+YDR498C,SEC20,Membrane glycoprotein v-SNARE
+YDR499W,LCD1,Essential protein required for the DNA integrity checkpoint pathways
+YDR500C,RPL37B,Ribosomal 60S subunit protein L37B
+YDR502C,SAM2,S-adenosylmethionine synthase 2
+YDR503C,LPP1,Lipid phosphate phosphatase
+YDR507C,GIN4,Serine/threonine-protein kinase GIN4
+YDR508C,GNP1,High-affinity glutamine permease
+YDR510W,SMT3,Ubiquitin-like protein of the SUMO family
+YDR515W,SLF1,RNA binding protein that associates with polysomes
+YDR517W,GRH1,GRASP65 homolog protein 1
+YDR525W-A,SNA2,Protein of unknown function
+YDR529C,QCR7,Subunit 7 of ubiquinol cytochrome-c reductase (Complex III)
+YDR530C,APA2,"Diadenosine 5',5'''-P1,P4-tetraphosphate phosphorylase II"
+YDR532C,KRE28,Spindle pole body component KRE28
+YEL002C,WBP1,Dolichyl-diphosphooligosaccharide--protein glycosyltransferase subunit WBP1
+YEL003W,GIM4,Prefoldin subunit 2
+YEL005C,VAB2,Subunit of the BLOC-1 complex involved in endosomal maturation
+YEL009C,GCN4,General control protein GCN4
+YEL013W,VAC8,Vacuolar protein 8
+YEL015W,EDC3,Enhancer of mRNA-decapping protein 3
+YEL016C,NPP2,Ectonucleotide pyrophosphatase/phosphodiesterase 2
+YEL018W,EAF5,Chromatin modification-related protein EAF5
+YEL019C,MMS21,Highly conserved SUMO E3 ligase subunit of SMC5-SMC6 complex
+YEL020C,PXP1,Putative 2-hydroxyacyl-CoA lyase
+YEL020W-A,TIM9,Mitochondrial import inner membrane translocase subunit TIM9
+YEL022W,GEA2,Guanine nucleotide exchange factor for ADP ribosylation factors (ARFs)
+YEL024W,RIP1,Ubiquinol-cytochrome-c reductase
+YEL026W,SNU13,13 kDa ribonucleoprotein-associated protein
+YEL027W,VMA3,V-type proton ATPase subunit c
+YEL029C,BUD16,Putative pyridoxal kinase
+YEL030W,ECM10,Heat shock protein of the Hsp70 family
+YEL032W,MCM3,DNA replication licensing factor MCM3
+YEL034W,HYP2,Eukaryotic translation initiation factor 5A-1
+YEL036C,ANP1,"Subunit of the alpha-1,6 mannosyltransferase complex"
+YEL037C,RAD23,UV excision repair protein RAD23
+YEL039C,CYC7,"Cytochrome c isoform 2, expressed under hypoxic conditions"
+YEL041W,YEF1,ATP-NADH kinase
+YEL044W,IES6,Chromatin-remodeling complex subunit IES6
+YEL047C,FRD1,Soluble fumarate reductase
+YEL048C,TCA17,TRAPP-associated protein TCA17
+YEL050C,RML2,Mitochondrial ribosomal protein of the large subunit (L2)
+YEL051W,VMA8,Subunit D of the V1 peripheral membrane domain of V-ATPase
+YEL053C,MAK10,"N-alpha-acetyltransferase 35, NatC auxiliary subunit"
+YEL054C,RPL12A,Ribosomal 60S subunit protein L12A
+YEL055C,POL5,rDNA transcriptional regulator POL5
+YEL056W,HAT2,Subunit of the Hat1p-Hat2p histone acetyltransferase complex
+YEL057C,SDD1,Uncharacterized protein YEL057C
+YEL059C-A,SOM1,"Protein SOM1, mitochondrial"
+YEL060C,PRB1,Cerevisin
+YEL062W,NPR2,Nitrogen permease regulator 2
+YEL066W,HPA3,D-amino-acid N-acetyltransferase HPA3
+YEL071W,DLD3,D-2-hydroxyglutarate--pyruvate transhydrogenase DLD3
+YER001W,MNN1,"Alpha-1,3-mannosyltransferase"
+YER002W,NOP16,Nucleolar protein 16
+YER005W,YND1,Apyrase with wide substrate specificity
+YER006W,NUG1,Nuclear GTP-binding protein NUG1
+YER007C-A,TMA20,Translation machinery-associated protein 20
+YER008C,SEC3,Subunit of the exocyst complex
+YER009W,NTF2,Nuclear transport factor 2
+YER012W,PRE1,Beta 4 subunit of the 20S proteasome
+YER013W,PRP22,DEAH-box RNA-dependent ATPase/ATP-dependent RNA helicase
+YER016W,BIM1,Protein BIM1
+YER017C,AFG3,Mitochondrial respiratory chain complexes assembly protein AFG3
+YER018C,SPC25,Kinetochore protein SPC25
+YER019C-A,SBH2,Ssh1p-Sss1p-Sbh2p complex component
+YER020W,GPA2,Guanine nucleotide-binding protein alpha-2 subunit
+YER021W,RPN3,Essential non-ATPase regulatory subunit of the 26S proteasome lid
+YER022W,SRB4,Subunit of the RNA polymerase II mediator complex
+YER023W,PRO3,Delta 1-pyrroline-5-carboxylate reductase
+YER024W,YAT2,Carnitine O-acetyltransferase YAT2
+YER025W,GCD11,Gamma subunit of the translation initiation factor eIF2
+YER027C,GAL83,One of three possible beta-subunits of the Snf1 kinase complex
+YER029C,SMB1,Small nuclear ribonucleoprotein-associated protein B
+YER030W,CHZ1,Histone chaperone for Htz1p/H2A-H2B dimer
+YER031C,YPT31,GTP-binding protein YPT31/YPT8
+YER035W,EDC2,Enhancer of mRNA-decapping protein 2
+YER036C,ARB1,ABC transporter ATP-binding protein ARB1
+YER038C,KRE29,DNA repair protein KRE29
+YER040W,GLN3,Nitrogen regulatory protein GLN3
+YER042W,MXR1,Methionine-S-sulfoxide reductase
+YER044C,ERG28,Ergosterol biosynthetic protein 28
+YER048W-A,ISD11,Protein ISD11
+YER049W,TPA1,"Prolyl 3,4-dihydroxylase TPA1"
+YER050C,RSM18,Mitochondrial ribosomal protein of the small subunit
+YER051W,JHD1,JmjC domain family histone demethylase specific for H3-K36
+YER054C,GIP2,GLC7-interacting protein 2
+YER056C-A,RPL34A,Ribosomal 60S subunit protein L34A
+YER058W,PET117,"Protein PET117, mitochondrial"
+YER059W,PCL6,Pho85p cyclin of the Pho80p subfamily
+YER061C,CEM1,3-oxoacyl-[acyl-carrier-protein] synthase homolog
+YER062C,GPP2,Glycerol-1-phosphate phosphohydrolase 2
+YER063W,THO1,Protein THO1
+YER065C,ICL1,Isocitrate lyase
+YER068W,MOT2,General negative regulator of transcription subunit 4
+YER070W,RNR1,Ribonucleoside-diphosphate reductase large chain 1
+YER071C,TDA2,Topoisomerase I damage affected protein 2
+YER072W,VTC1,Regulatory subunit of the vacuolar transporter chaperone (VTC) complex
+YER074W,RPS24A,Protein component of the small (40S) ribosomal subunit
+YER075C,PTP3,Tyrosine-protein phosphatase 3
+YER081W,SER3,D-3-phosphoglycerate dehydrogenase 1
+YER082C,UTP7,Nucleolar protein
+YER083C,GET2,Golgi to ER traffic protein 2
+YER086W,ILV1,"Threonine dehydratase, mitochondrial"
+YER087C-B,SBH1,Protein transport protein SBH1
+YER087W,AIM10,"Probable proline--tRNA ligase, mitochondrial"
+YER088C,DOT6,Transcriptional regulatory protein DOT6
+YER089C,PTC2,Type 2C protein phosphatase (PP2C)
+YER090W,TRP2,Anthranilate synthase
+YER091C,MET6,5-methyltetrahydropteroyltriglutamate--homocysteine methyltransferase
+YER092W,IES5,Ino eighty subunit 5
+YER093C,TSC11,Subunit of TORC2 (Tor2p-Lst8p-Avo1-Avo2-Tsc11p-Bit61p)
+YER094C,PUP3,Beta 3 subunit of the 20S proteasome
+YER095W,RAD51,DNA repair protein RAD51
+YER098W,UBP9,Ubiquitin-specific protease that cleaves ubiquitin-protein fusions
+YER099C,PRS2,Ribose-phosphate pyrophosphokinase 2
+YER100W,UBC6,Ubiquitin-conjugating enzyme involved in ERAD
+YER102W,RPS8B,Protein component of the small (40S) ribosomal subunit
+YER103W,SSA4,Heat shock protein that is highly induced upon stress
+YER105C,NUP157,Nucleoporin NUP157
+YER106W,MAM1,Monopolin complex subunit MAM1
+YER107C,GLE2,Nucleoporin GLE2
+YER110C,KAP123,Importin subunit beta-4
+YER111C,SWI4,Regulatory protein SWI4
+YER112W,LSM4,U6 snRNA-associated Sm-like protein LSm4
+YER113C,TMN3,Transmembrane 9 superfamily member 3
+YER114C,BOI2,"Protein implicated in polar growth, functionally redundant with Boi1p"
+YER116C,SLX8,Subunit of Slx5-Slx8 SUMO-targeted ubiquitin ligase (STUbL) complex
+YER117W,RPL23B,Ribosomal 60S subunit protein L23B
+YER118C,SHO1,High osmolarity signaling protein SHO1
+YER120W,SCS2,"Integral ER membrane protein, regulates phospholipid metabolism"
+YER122C,GLO3,ADP-ribosylation factor GTPase activating protein (ARF GAP)
+YER125W,RSP5,NEDD4 family E3 ubiquitin ligase
+YER126C,NSA2,Ribosome biogenesis protein NSA2
+YER127W,LCP5,U3 small nucleolar ribonucleoprotein protein LCP5
+YER128W,VFA1,VPS4-associated protein 1
+YER129W,SAK1,Upstream serine/threonine kinase for the SNF1 complex
+YER131W,RPS26B,Protein component of the small (40S) ribosomal subunit
+YER133W,GLC7,Serine/threonine-protein phosphatase PP1-2
+YER136W,GDI1,Rab GDP-dissociation inhibitor
+YER139C,RTR1,RNA polymerase II subunit B1 CTD phosphatase RTR1
+YER141W,COX15,Cytochrome c oxidase assembly protein COX15
+YER143W,DDI1,DNA damage-inducible v-SNARE binding protein
+YER144C,UBP5,Putative ubiquitin-specific protease
+YER145C,FTR1,High affinity iron permease
+YER146W,LSM5,U6 snRNA-associated Sm-like protein LSm5
+YER147C,SCC4,MAU2 chromatid cohesion factor homolog
+YER148W,SPT15,TATA-binding protein (TBP)
+YER149C,PEA2,Protein PEA2
+YER150W,SPI1,GPI-anchored cell wall protein involved in weak acid resistance
+YER151C,UBP3,Ubiquitin carboxyl-terminal hydrolase 3
+YER157W,COG3,Essential component of the conserved oligomeric Golgi complex
+YER159C,BUR6,Subunit of a heterodimeric NC2 transcription regulator complex
+YER162C,RAD4,Protein that recognizes and binds damaged DNA (with Rad23p) during NER
+YER164W,CHD1,Chromo domain-containing protein 1
+YER165W,PAB1,"Polyadenylate-binding protein, cytoplasmic and nuclear"
+YER166W,DNF1,Phospholipid-transporting ATPase DNF1
+YER168C,CCA1,"CCA tRNA nucleotidyltransferase, mitochondrial"
+YER170W,ADK2,"GTP:AMP phosphotransferase, mitochondrial"
+YER171W,RAD3,5' to 3' DNA helicase
+YER172C,BRR2,Pre-mRNA-splicing helicase BRR2
+YER173W,RAD24,Checkpoint protein
+YER174C,GRX4,Monothiol glutaredoxin-4
+YER176W,ECM32,Putative ATP-dependent RNA helicase ECM32
+YER177W,BMH1,"14-3-3 protein, major isoform"
+YER178W,PDA1,E1 alpha subunit of the pyruvate dehydrogenase (PDH) complex
+YER179W,DMC1,Meiotic recombination protein DMC1
+YFL002C,SPB4,Putative ATP-dependent RNA helicase
+YFL003C,MSH4,MutS protein homolog 4
+YFL004W,VTC2,Regulatory subunit of the vacuolar transporter chaperone (VTC) complex
+YFL005W,SEC4,Ras-related protein SEC4
+YFL007W,BLM10,Proteasome activator
+YFL008W,SMC1,Structural maintenance of chromosomes protein 1
+YFL009W,CDC4,Cell division control protein 4
+YFL010C,WWM1,WW domain containing protein of unknown function
+YFL013C,IES1,Subunit of the INO80 chromatin remodeling complex
+YFL017W-A,SMX2,Small nuclear ribonucleoprotein G
+YFL018C,LPD1,"Dihydrolipoyl dehydrogenase, mitochondrial"
+YFL022C,FRS2,Alpha subunit of cytoplasmic phenylalanyl-tRNA synthetase
+YFL023W,BUD27,Bud site selection protein 27
+YFL024C,EPL1,Enhancer of polycomb-like protein 1
+YFL026W,STE2,Receptor for alpha-factor pheromone
+YFL027C,GYP8,GTPase-activating protein for yeast Rab family members
+YFL028C,CAF16,CCR4-associated factor 16
+YFL030W,AGX1,Alanine--glyoxylate aminotransferase 1
+YFL033C,RIM15,Serine/threonine-protein kinase RIM15
+YFL034C-A,RPL22B,Ribosomal 60S subunit protein L22A
+YFL034C-B,MOB2,Activator of Cbk1p kinase
+YFL036W,RPO41,Mitochondrial RNA polymerase
+YFL037W,TUB2,Beta-tubulin
+YFL038C,YPT1,GTP-binding protein YPT1
+YFL039C,ACT1,Actin
+YFL041W,FET5,Iron transport multicopper oxidase FET5
+YFL044C,OTU1,Ubiquitin thioesterase OTU1
+YFL048C,EMP47,Protein EMP47
+YFL049W,SWP82,SWI/SNF global transcription activator complex subunit SWP82
+YFL053W,DAK2,Dihydroxyacetone kinase
+YFL054C,AQY3,Aquaglycerol porin AQY3
+YFL059W,SNZ3,Probable pyridoxal 5'-phosphate synthase subunit SNZ3
+YFL060C,SNO3,Probable pyridoxal 5'-phosphate synthase subunit SNO3
+YFL061W,DDI2,Cyanamide hydratase that detoxifies cyanamide
+YFR001W,LOC1,60S ribosomal subunit assembly/export protein LOC1
+YFR002W,NIC96,Linker nucleoporin component of the nuclear pore complex (NPC)
+YFR003C,YPI1,Regulatory subunit of the type I protein phosphatase (PP1) Glc7p
+YFR004W,RPN11,Ubiquitin carboxyl-terminal hydrolase RPN11
+YFR005C,SAD1,Pre-mRNA-splicing factor SAD1
+YFR008W,FAR7,Factor arrest protein 7
+YFR009W,GCN20,Protein GCN20
+YFR010W,UBP6,Ubiquitin-specific protease
+YFR011C,MIC19,Component of the MICOS complex
+YFR013W,IOC3,ISWI one complex protein 3
+YFR015C,GSY1,Glycogen [starch] synthase isoform 1
+YFR016C,YFR016C,Uncharacterized protein YFR016C
+YFR019W,FAB1,1-phosphatidylinositol-3-phosphate 5-kinase
+YFR021W,ATG18,Autophagy-related protein 18
+YFR022W,ROG3,Protein ROG3
+YFR024C-A,LSB3,Protein containing a C-terminal SH3 domain
+YFR027W,ECO1,N-acetyltransferase ECO1
+YFR028C,CDC14,Tyrosine-protein phosphatase CDC14
+YFR029W,PTR3,SPS-sensor component PTR3
+YFR030W,MET10,Sulfite reductase [NADPH] flavoprotein component
+YFR031C,SMC2,Structural maintenance of chromosomes protein 2
+YFR031C-A,RPL2A,Ribosomal 60S subunit protein L2A
+YFR032C-A,RPL29,Ribosomal 60S subunit protein L29
+YFR033C,QCR6,Subunit 6 of the ubiquinol cytochrome-c reductase complex
+YFR034C,PHO4,Phosphate system positive regulatory protein PHO4
+YFR036W,CDC26,Subunit of the Anaphase-Promoting Complex/Cyclosome (APC/C)
+YFR037C,RSC8,Chromatin structure-remodeling complex protein RSC8
+YFR040W,SAP155,SIT4-associating protein SAP155
+YFR043C,IRC6,Increased recombination centers protein 6
+YFR044C,DUG1,Cys-Gly metallodipeptidase DUG1
+YFR046C,CNN1,Inner kinetochore subunit CNN1
+YFR049W,YMR31,"37S ribosomal protein YMR-31, mitochondrial"
+YFR050C,PRE4,Beta 7 subunit of the 20S proteasome
+YFR051C,RET2,Delta subunit of the coatomer complex (COPI)
+YFR052W,RPN12,Subunit of the 19S regulatory particle of the 26S proteasome lid
+YFR053C,HXK1,Hexokinase-1
+YFR055W,IRC7,Putative cystathionine beta-lyase
+YGL001C,ERG26,"Sterol-4-alpha-carboxylate 3-dehydrogenase, decarboxylating"
+YGL002W,ERP6,Protein ERP6
+YGL003C,CDH1,Activator of anaphase-promoting complex/cyclosome (APC/C)
+YGL004C,RPN14,26S proteasome regulatory subunit RPN14
+YGL005C,COG7,Component of the conserved oligomeric Golgi complex
+YGL006W,PMC1,Vacuolar Ca2+ ATPase involved in depleting cytosol of Ca2+ ions
+YGL008C,PMA1,Plasma membrane P2-type H+-ATPase
+YGL011C,SCL1,Alpha 1 subunit of the 20S proteasome
+YGL012W,ERG4,C-24(28) sterol reductase
+YGL013C,PDR1,Transcription factor that regulates the pleiotropic drug response
+YGL015C,YGL015C,Uncharacterized protein YGL015C
+YGL016W,KAP122,Importin beta-like protein KAP122
+YGL019W,CKB1,Beta regulatory subunit of casein kinase 2 (CK2)
+YGL020C,GET1,Golgi to ER traffic protein 1
+YGL022W,STT3,Dolichyl-diphosphooligosaccharide--protein glycosyltransferase subunit STT3
+YGL023C,PIB2,Protein of unknown function
+YGL025C,PGD1,Subunit of the RNA polymerase II mediator complex
+YGL026C,TRP5,Tryptophan synthase
+YGL029W,CGR1,rRNA-processing protein CGR1
+YGL030W,RPL30,Ribosomal 60S subunit protein L30
+YGL031C,RPL24A,Ribosomal 60S subunit protein L24A
+YGL032C,AGA2,Adhesion subunit of a-agglutinin of a-cells
+YGL033W,HOP2,Homologous-pairing protein 2
+YGL035C,MIG1,Regulatory protein MIG1
+YGL036W,YGL036W,Uncharacterized protein YGL036W
+YGL043W,DST1,General transcription elongation factor TFIIS
+YGL044C,RNA15,mRNA 3'-end-processing protein RNA15
+YGL045W,RIM8,pH-response regulator protein palF/RIM8
+YGL047W,ALG13,UDP-N-acetylglucosamine transferase subunit ALG13
+YGL048C,RPT6,ATPase of the 19S regulatory particle of the 26S proteasome
+YGL049C,TIF4632,Translation initiation factor eIF4G
+YGL051W,MST27,Multicopy suppressor of SEC21 protein 27
+YGL055W,OLE1,Acyl-CoA desaturase 1
+YGL058W,RAD6,Ubiquitin-conjugating enzyme (E2)
+YGL061C,DUO1,Essential subunit of the Dam1 complex (aka DASH complex)
+YGL062W,PYC1,Pyruvate carboxylase isoform
+YGL066W,SGF73,SAGA-associated factor 73
+YGL067W,NPY1,NADH diphosphatase (pyrophosphatase)
+YGL068W,MNP1,Mitochondrial ribosomal protein of the large subunit
+YGL070C,RPB9,RNA polymerase II subunit B12.6
+YGL071W,AFT1,Iron-regulated transcriptional activator AFT1
+YGL073W,HSF1,Trimeric heat shock transcription factor
+YGL075C,MPS2,Monopolar spindle protein 2
+YGL076C,RPL7A,Ribosomal 60S subunit protein L7A
+YGL078C,DBP3,ATP-dependent RNA helicase DBP3
+YGL079W,KXD1,Subunit of the BLOC-1 complex involved in endosomal maturation
+YGL080W,MPC1,Highly conserved subunit of mitochondrial pyruvate carrier (MPC)
+YGL086W,MAD1,Coiled-coil protein involved in spindle-assembly checkpoint
+YGL087C,MMS2,Ubiquitin-conjugating enzyme variant
+YGL089C,MF(ALPHA)2,"Mating pheromone alpha-factor, made by alpha cells"
+YGL090W,LIF1,Ligase-interacting factor 1
+YGL091C,NBP35,Cytosolic Fe-S cluster assembly factor NBP35
+YGL092W,NUP145,Nucleoporin NUP145C
+YGL093W,SPC105,Spindle pole body component SPC105
+YGL094C,PAN2,Catalytic subunit of the Pan2p-Pan3p poly(A)-ribonuclease complex
+YGL095C,VPS45,Protein of the Sec1p/Munc-18 family
+YGL097W,SRM1,Nucleotide exchange factor for Gsp1p
+YGL098W,USE1,Essential SNARE protein localized to the ER
+YGL099W,LSG1,Large subunit GTPase 1
+YGL100W,SEH1,Nucleoporin SEH1
+YGL103W,RPL28,Ribosomal 60S subunit protein L28
+YGL104C,VPS73,Mitochondrial protein
+YGL105W,ARC1,tRNA-aminoacylation cofactor ARC1
+YGL106W,MLC1,Essential light chain for Myo1p
+YGL110C,CUE3,Protein of unknown function
+YGL111W,NSA1,Ribosome biogenesis protein NSA1
+YGL112C,TAF6,Subunit (60 kDa) of TFIID and SAGA complexes
+YGL113W,SLD3,Protein involved in the initiation of DNA replication
+YGL115W,SNF4,Activating gamma subunit of the AMP-activated Snf1p kinase complex
+YGL116W,CDC20,Activator of anaphase-promoting complex/cyclosome (APC/C)
+YGL119W,COQ8,"Atypical kinase COQ8, mitochondrial"
+YGL120C,PRP43,Pre-mRNA-splicing factor ATP-dependent RNA helicase PRP43
+YGL121C,GPG1,Proposed gamma subunit of the heterotrimeric G protein
+YGL122C,NAB2,Nuclear polyadenylated RNA-binding protein
+YGL123W,RPS2,Protein component of the small (40S) subunit
+YGL124C,MON1,Vacuolar fusion protein MON1
+YGL125W,MET13,Major isozyme of methylenetetrahydrofolate reductase
+YGL127C,SOH1,Subunit of the RNA polymerase II mediator complex
+YGL128C,CWC23,Pre-mRNA-splicing factor CWC23
+YGL129C,RSM23,Mitochondrial ribosomal protein of the small subunit
+YGL130W,CEG1,mRNA-capping enzyme subunit alpha
+YGL131C,SNT2,"Subunit of Snt2C complex, RING finger ubiquitin ligase (E3)"
+YGL133W,ITC1,Imitation switch two complex protein 1
+YGL134W,PCL10,Pho85p cyclin
+YGL135W,RPL1B,Ribosomal 60S subunit protein L1B
+YGL137W,SEC27,Coatomer subunit beta
+YGL145W,TIP20,Peripheral membrane protein required for COPI vesicle fusion to the ER
+YGL147C,RPL9A,Ribosomal 60S subunit protein L9A
+YGL150C,INO80,Chromatin-remodeling ATPase INO80
+YGL151W,NUT1,Component of the RNA polymerase II mediator complex
+YGL153W,PEX14,Peroxisomal membrane protein PEX14
+YGL155W,CDC43,Beta subunit of geranylgeranyltransferase type I
+YGL156W,AMS1,Alpha-mannosidase
+YGL161C,YIP5,Protein that interacts with Rab GTPases
+YGL163C,RAD54,DNA repair and recombination protein RAD54
+YGL167C,PMR1,Calcium-transporting ATPase 1
+YGL171W,ROK1,ATP-dependent RNA helicase ROK1
+YGL172W,NUP49,FG-nucleoporin component of central core of the nuclear pore complex
+YGL173C,XRN1,5'-3' exoribonuclease 1
+YGL174W,BUD13,Pre-mRNA-splicing factor CWC26
+YGL175C,SAE2,DNA endonuclease SAE2
+YGL178W,MPT5,Suppressor protein MPT5
+YGL180W,ATG1,Serine/threonine-protein kinase ATG1
+YGL183C,MND1,Protein required for recombination and meiotic nuclear division
+YGL184C,STR3,Peroxisomal cystathionine beta-lyase
+YGL187C,COX4,Subunit IV of cytochrome c oxidase
+YGL189C,RPS26A,Protein component of the small (40S) ribosomal subunit
+YGL190C,CDC55,Regulatory subunit B of protein phosphatase 2A (PP2A)
+YGL191W,COX13,Subunit VIa of cytochrome c oxidase
+YGL192W,IME4,N6-adenosine-methyltransferase IME4
+YGL194C,HOS2,Histone deacetylase and subunit of Set3 and Rpd3L complexes
+YGL195W,GCN1,eIF-2-alpha kinase activator GCN1
+YGL197W,MDS3,Putative component of the TOR regulatory pathway
+YGL198W,YIP4,Protein that interacts with Rab GTPases
+YGL200C,EMP24,Endosomal protein P24B
+YGL201C,MCM6,DNA replication licensing factor MCM6
+YGL202W,ARO8,Aromatic/aminoadipate aminotransferase 1
+YGL205W,POX1,Fatty-acyl coenzyme A oxidase
+YGL206C,CHC1,Clathrin heavy chain
+YGL207W,SPT16,Subunit of the heterodimeric FACT complex (Spt16p-Pob3p)
+YGL208W,SIP2,One of three beta subunits of the Snf1 kinase complex
+YGL210W,YPT32,GTP-binding protein YPT32/YPT11
+YGL211W,NCS6,Cytoplasmic tRNA 2-thiolation protein 1
+YGL212W,VAM7,Vacuolar SNARE protein
+YGL213C,SKI8,Antiviral protein SKI8
+YGL216W,KIP3,Kinesin-like protein KIP3
+YGL219C,MDM34,Mitochondrial distribution and morphology protein 34
+YGL220W,BOL2,BolA-like protein 2
+YGL222C,EDC1,Enhancer of mRNA-decapping protein 1
+YGL223C,COG1,Essential component of the conserved oligomeric Golgi complex
+YGL224C,SDT1,Suppressor of disruption of TFIIS
+YGL226C-A,OST5,Dolichyl-diphosphooligosaccharide--protein glycosyltransferase subunit OST5
+YGL226W,MTC3,"Maintenance of telomere capping protein 3, mitochondrial"
+YGL227W,VID30,Vacuolar import and degradation protein 30
+YGL229C,SAP4,SIT4-associating protein SAP4
+YGL231C,EMC4,Member of conserved ER transmembrane complex
+YGL233W,SEC15,Essential 113 kDa subunit of the exocyst complex
+YGL236C,MTO1,Mitochondrial protein
+YGL237C,HAP2,Transcriptional activator HAP2
+YGL238W,CSE1,Importin alpha re-exporter
+YGL240W,DOC1,Anaphase-promoting complex subunit DOC1
+YGL241W,KAP114,Importin subunit beta-5
+YGL242C,YGL242C,Ankyrin repeat-containing protein YGL242C
+YGL244W,RTF1,RNA polymerase-associated protein RTF1
+YGL245W,GUS1,"Glutamate--tRNA ligase, cytoplasmic"
+YGL246C,RAI1,Nuclear protein with decapping endonuclease activity
+YGL248W,PDE1,"3',5'-cyclic-nucleotide phosphodiesterase 1"
+YGL249W,ZIP2,Meiosis-specific protein
+YGL251C,HFM1,Meiosis specific DNA helicase
+YGL253W,HXK2,Hexokinase-2
+YGL255W,ZRT1,Zinc-regulated transporter 1
+YGR002C,SWC4,SWR1-complex protein 4
+YGR003W,CUL3,Cullin-3
+YGR004W,PEX31,Peroxisomal integral membrane protein
+YGR005C,TFG2,TFIIF (Transcription Factor II) middle subunit
+YGR006W,PRP18,Pre-mRNA-splicing factor 18
+YGR009C,SEC9,t-SNARE protein required for secretory vesicle-plasma membrane fusion
+YGR010W,NMA2,Nicotinic acid mononucleotide adenylyltransferase
+YGR012W,MCY1,Putative cysteine synthase
+YGR013W,SNU71,U1 small nuclear ribonucleoprotein component SNU71
+YGR014W,MSB2,Signaling mucin MSB2
+YGR017W,YGR017W,Uncharacterized protein YGR017W
+YGR020C,VMA7,Subunit F of the V1 peripheral membrane domain of V-ATPase
+YGR023W,MTL1,Protein MTL1
+YGR027C,RPS25A,Protein component of the small (40S) ribosomal subunit
+YGR028W,MSP1,Protein MSP1
+YGR029W,ERV1,Flavin-linked sulfhydryl oxidase of the mitochondrial IMS
+YGR030C,POP6,Ribonucleases P/MRP protein subunit POP6
+YGR032W,GSC2,"Catalytic subunit of 1,3-beta-glucan synthase"
+YGR033C,TIM21,Mitochondrial import inner membrane translocase subunit TIM21
+YGR034W,RPL26B,Ribosomal 60S subunit protein L26B
+YGR038W,ORM1,Protein that mediates sphingolipid homeostasis
+YGR040W,KSS1,Mitogen-activated protein kinase (MAPK)
+YGR043C,NQM1,Transaldolase of unknown function
+YGR047C,TFC4,Subunit of RNA polymerase III transcription initiation factor complex
+YGR048W,UFD1,Ubiquitin fusion degradation protein 1
+YGR054W,YGR054W,Eukaryotic initiation factor eIF2A
+YGR056W,RSC1,Chromatin structure-remodeling complex subunit RSC1
+YGR057C,LST7,Protein LST7
+YGR058W,PEF1,Peflin
+YGR059W,SPR3,Sporulation-regulated protein 3
+YGR060W,ERG25,Methylsterol monooxygenase
+YGR062C,COX18,"Cytochrome c oxidase assembly protein COX18, mitochondrial"
+YGR063C,SPT4,Spt4p/5p (DSIF) transcription elongation factor complex subunit
+YGR066C,YGR066C,Uncharacterized protein YGR066C
+YGR068C,ART5,Arrestin-related trafficking adapter 5
+YGR070W,ROM1,Guanine nucleotide exchange factor (GEF) for Rho1p
+YGR071C,ENV11,Late endosome and vacuole interface protein 11
+YGR072W,UPF3,Component of the nonsense-mediated mRNA decay (NMD) pathway
+YGR074W,SMD1,Small nuclear ribonucleoprotein Sm D1
+YGR075C,PRP38,Pre-mRNA-splicing factor 38
+YGR076C,MRPL25,Mitochondrial ribosomal protein of the large subunit
+YGR077C,PEX8,Peroxisomal biogenesis factor 8
+YGR078C,PAC10,Prefoldin subunit 3
+YGR080W,TWF1,Twinfilin-1
+YGR081C,SLX9,Ribosome biogenesis protein SLX9
+YGR082W,TOM20,Mitochondrial import receptor subunit TOM20
+YGR083C,GCD2,Delta subunit of the translation initiation factor eIF2B
+YGR084C,MRP13,Mitochondrial ribosomal protein of the small subunit.
+YGR085C,RPL11B,Ribosomal 60S subunit protein L11B
+YGR086C,PIL1,Sphingolipid long chain base-responsive protein PIL1
+YGR087C,PDC6,Minor isoform of pyruvate decarboxylase
+YGR088W,CTT1,Cytosolic catalase T
+YGR090W,UTP22,U3 small nucleolar RNA-associated protein 22
+YGR091W,PRP31,Pre-mRNA-processing factor 31
+YGR092W,DBF2,Cell cycle protein kinase DBF2
+YGR093W,DRN1,CWF19-like protein DRN1
+YGR094W,VAS1,"Valine--tRNA ligase, mitochondrial"
+YGR095C,RRP46,Exosome non-catalytic core component
+YGR098C,ESP1,Separin
+YGR099W,TEL2,Telomere length regulation protein TEL2
+YGR102C,GTF1,"Glutamyl-tRNA(Gln) amidotransferase subunit F, mitochondrial"
+YGR103W,NOP7,Pescadillo homolog
+YGR104C,SRB5,Subunit of the RNA polymerase II mediator complex
+YGR105W,VMA21,Integral membrane protein required for V-ATPase function
+YGR106C,VOA1,ER protein that functions in assembly of the V0 sector of V-ATPase
+YGR108W,CLB1,G2/mitotic-specific cyclin-1
+YGR109C,CLB6,S-phase entry cyclin-6
+YGR113W,DAM1,Essential subunit of the Dam1 complex (aka DASH complex)
+YGR116W,SPT6,Transcription elongation factor SPT6
+YGR118W,RPS23A,Ribosomal protein 28 (rp28) of the small (40S) ribosomal subunit
+YGR119C,NUP57,FG-nucleoporin component of central core of the nuclear pore complex
+YGR120C,COG2,Essential component of the conserved oligomeric Golgi complex
+YGR121C,MEP1,Ammonium transporter MEP1
+YGR123C,PPT1,Protein serine/threonine phosphatase
+YGR124W,ASN2,Asparagine synthetase
+YGR128C,UTP8,U3 small nucleolar RNA-associated protein 8
+YGR129W,SYF2,Pre-mRNA-splicing factor SYF2
+YGR132C,PHB1,Prohibitin-1
+YGR133W,PEX4,Ubiquitin-conjugating enzyme E2-21 kDa
+YGR134W,CAF130,Protein CAF130
+YGR135W,PRE9,Alpha 3 subunit of the 20S proteasome
+YGR136W,LSB1,LAS seventeen-binding protein 1
+YGR138C,TPO2,Polyamine transporter of the major facilitator superfamily
+YGR140W,CBF2,Essential kinetochore protein
+YGR145W,ENP2,Ribosome biogenesis protein ENP2
+YGR148C,RPL24B,Ribosomal 60S subunit protein L24B
+YGR150C,CCM1,Mitochondrial group I intron splicing factor CCM1
+YGR152C,RSR1,Ras-related protein RSR1
+YGR155W,CYS4,Cystathionine beta-synthase
+YGR156W,PTI1,Protein PTI1
+YGR157W,CHO2,Phosphatidylethanolamine methyltransferase (PEMT)
+YGR158C,MTR3,Exosome non-catalytic core component
+YGR159C,NSR1,Nucleolar protein that binds nuclear localization sequences
+YGR161C,RTS3,Putative component of the protein phosphatase type 2A complex.
+YGR162W,TIF4631,Translation initiation factor eIF4G
+YGR163W,GTR2,GTP-binding protein GTR2
+YGR165W,MRPS35,Mitochondrial ribosomal protein of the small subunit
+YGR166W,TRS65,Trafficking protein particle complex II-specific subunit 65
+YGR167W,CLC1,Clathrin light chain
+YGR169C-A,LSO2,Protein with a potential role in response to iron deprivation
+YGR170W,PSD2,Phosphatidylserine decarboxylase 2 alpha chain
+YGR171C,MSM1,"Methionine--tRNA ligase, mitochondrial"
+YGR172C,YIP1,Integral membrane protein
+YGR173W,RBG2,Ribosome-interacting GTPase 2
+YGR175C,ERG1,Squalene epoxidase
+YGR178C,PBP1,PAB1-binding protein 1
+YGR179C,OKP1,Inner kinetochore subunit OKP1
+YGR180C,RNR4,Ribonucleoside-diphosphate reductase small chain 2
+YGR181W,TIM13,Mitochondrial import inner membrane translocase subunit TIM13
+YGR183C,QCR9,Subunit 9 of ubiquinol cytochrome-c reductase (Complex III)
+YGR184C,UBR1,E3 ubiquitin ligase (N-recognin)
+YGR185C,TYS1,"Tyrosine--tRNA ligase, cytoplasmic"
+YGR186W,TFG1,TFIIF (Transcription Factor II) largest subunit
+YGR187C,HGH1,Nonessential protein of unknown function
+YGR188C,BUB1,Protein kinase involved in the cell cycle checkpoint into anaphase
+YGR192C,TDH3,"Glyceraldehyde-3-phosphate dehydrogenase (GAPDH), isozyme 3"
+YGR193C,PDX1,E3-binding protein of the mitochondrial pyruvate dehydrogenase complex
+YGR195W,SKI6,Exosome non-catalytic core component
+YGR196C,FYV8,Protein of unknown function
+YGR198W,YPP1,Cargo-transport protein involved in endocytosis
+YGR200C,ELP2,Subunit of Elongator complex
+YGR201C,YGR201C,Putative elongation factor 1 gamma homolog
+YGR202C,PCT1,Cholinephosphate cytidylyltransferase
+YGR204W,ADE3,"C-1-tetrahydrofolate synthase, cytoplasmic"
+YGR206W,MVB12,Multivesicular body sorting factor 12
+YGR207C,CIR1,Probable electron transfer flavoprotein subunit beta
+YGR209C,TRX2,Thioredoxin-2
+YGR214W,RPS0A,Ribosomal 40S subunit protein S0A
+YGR215W,RSM27,Mitochondrial ribosomal protein of the small subunit.
+YGR216C,GPI1,Phosphatidylinositol N-acetylglucosaminyltransferase subunit GPI1
+YGR217W,CCH1,Calcium-channel protein CCH1
+YGR218W,CRM1,Exportin-1
+YGR220C,MRPL9,Mitochondrial ribosomal protein of the large subunit.
+YGR225W,AMA1,Meiosis-specific APC/C activator protein AMA1
+YGR231C,PHB2,Prohibitin-2
+YGR232W,NAS6,Probable 26S proteasome regulatory subunit p28
+YGR233C,PHO81,Phosphate system positive regulatory protein PHO81
+YGR235C,MIC26,MICOS subunit MIC26
+YGR238C,KEL2,Kelch repeat-containing protein 2
+YGR239C,PEX21,Peroxin required for peroxisomal matrix protein targeting
+YGR240C,PFK1,Alpha subunit of heterooctameric phosphofructokinase
+YGR243W,MPC3,Highly conserved subunit of the mitochondrial pyruvate carrier (MPC)
+YGR244C,LSC2,Beta subunit of succinyl-CoA ligase
+YGR245C,SDA1,Protein required for actin organization and passage through Start
+YGR246C,BRF1,TFIIIB B-related factor
+YGR250C,RIE1,Uncharacterized RNA-binding protein YGR250C
+YGR251W,NOP19,Nucleolar protein 19
+YGR252W,GCN5,Catalytic subunit of ADA and SAGA histone acetyltransferase complexes
+YGR253C,PUP2,Alpha 5 subunit of the 20S proteasome
+YGR254W,ENO1,"Enolase I, a phosphopyruvate hydratase"
+YGR255C,COQ6,Flavin-dependent monooxygenase involved in ubiquinone biosynthesis
+YGR256W,GND2,6-phosphogluconate dehydrogenase (decarboxylating)
+YGR258C,RAD2,DNA repair protein RAD2
+YGR261C,APL6,Beta3-like subunit of the yeast AP-3 complex
+YGR262C,BUD32,Protein kinase
+YGR264C,MES1,"Methionine--tRNA ligase, cytoplasmic"
+YGR267C,FOL2,"GTP-cyclohydrolase I, catalyzes first step in folic acid biosynthesis"
+YGR268C,HUA1,Proline-rich protein HUA1
+YGR271C-A,EFG1,rRNA-processing protein EFG1
+YGR271W,SLH1,Antiviral helicase SLH1
+YGR274C,TAF1,"TFIID subunit, involved in RNA pol II transcription initiation"
+YGR275W,RTT102,Regulator of Ty1 transposition protein 102
+YGR276C,RNH70,RNA exonuclease 1
+YGR277C,CAB4,Phosphopantetheine adenylyltransferase
+YGR278W,CWC22,Pre-mRNA-splicing factor CWC22
+YGR280C,PXR1,Essential protein involved in rRNA and snoRNA maturation
+YGR281W,YOR1,Oligomycin resistance ATP-dependent permease YOR1
+YGR282C,BGL2,"Endo-beta-1,3-glucanase"
+YGR283C,YGR283C,Putative methyltransferase
+YGR285C,ZUO1,Zuotin
+YHL001W,RPL14B,Ribosomal 60S subunit protein L14B
+YHL002W,HSE1,Class E vacuolar protein-sorting machinery protein HSE1
+YHL003C,LAG1,Ceramide synthase component
+YHL004W,MRP4,Mitochondrial ribosomal protein of the small subunit.
+YHL006C,SHU1,Suppressor of HU sensitivity involved in recombination protein 1
+YHL007C,STE20,Serine/threonine-protein kinase STE20
+YHL011C,PRS3,Ribose-phosphate pyrophosphokinase 3
+YHL012W,YHL012W,Probable UTP--glucose-1-phosphate uridylyltransferase
+YHL015W,RPS20,Protein component of the small (40S) ribosomal subunit
+YHL019C,APM2,Protein of unknown function
+YHL020C,OPI1,Transcriptional repressor OPI1
+YHL022C,SPO11,Meiosis-specific protein that initiates meiotic recombination
+YHL023C,NPR3,Nitrogen permease regulator 3
+YHL025W,SNF6,Transcription regulatory protein SNF6
+YHL027W,RIM101,pH-response transcription factor pacC/RIM101
+YHL029C,OCA5,Oxidant-induced cell-cycle arrest protein 5
+YHL030W,ECM29,Proteasome component ECM29
+YHL031C,GOS1,Golgi SNAP receptor complex member 1
+YHL032C,GUT1,Glycerol kinase
+YHL033C,RPL8A,Ribosomal 60S subunit protein L8A
+YHR001W,OSH7,Oxysterol-binding protein
+YHR001W-A,QCR10,Subunit of the ubiqunol-cytochrome c oxidoreductase complex
+YHR004C,NEM1,Nuclear envelope morphology protein 1
+YHR005C,GPA1,Guanine nucleotide-binding protein alpha-1 subunit
+YHR005C-A,TIM10,Mitochondrial import inner membrane translocase subunit TIM10
+YHR007C,ERG11,Lanosterol 14-alpha-demethylase
+YHR008C,SOD2,Mitochondrial manganese superoxide dismutase
+YHR010W,RPL27A,Ribosomal 60S subunit protein L27A
+YHR011W,DIA4,"Serine--tRNA ligase, mitochondrial"
+YHR012W,VPS29,Vacuolar protein sorting-associated protein 29
+YHR013C,ARD1,Subunit of protein N-terminal acetyltransferase NatA
+YHR016C,YSC84,Actin-binding protein
+YHR019C,DED81,"Asparagine--tRNA ligase, cytoplasmic"
+YHR020W,YHR020W,Putative proline--tRNA ligase YHR020W
+YHR021C,RPS27B,Protein component of the small (40S) ribosomal subunit
+YHR023W,MYO1,Myosin-1
+YHR024C,MAS2,Alpha subunit of the mitochondrial processing protease (MPP)
+YHR026W,VMA16,Subunit c'' of the vacuolar ATPase
+YHR027C,RPN1,Non-ATPase base subunit of the 19S RP of the 26S proteasome
+YHR030C,SLT2,Mitogen-activated protein kinase SLT2/MPK1
+YHR031C,RRM3,DNA helicase involved in rDNA replication and Ty1 transposition
+YHR033W,YHR033W,Uncharacterized protein YHR033W
+YHR034C,PIH1,Protein interacting with Hsp90 1
+YHR035W,NEL1,GTPase-activating protein NEL1
+YHR038W,RRF1,"Ribosome-recycling factor, mitochondrial"
+YHR039C-A,VMA10,Subunit G of the V1 peripheral membrane domain of V-ATPase
+YHR040W,BCD1,Box C/D snoRNA protein 1
+YHR041C,SRB2,Subunit of the RNA polymerase II mediator complex
+YHR042W,NCP1,NADP-cytochrome P450 reductase
+YHR046C,INM1,Inositol monophosphatase
+YHR051W,COX6,Subunit VI of cytochrome c oxidase (Complex IV)
+YHR052W,CIC1,Proteasome-interacting protein CIC1
+YHR053C,CUP1-1,Metallothionein
+YHR055C,CUP1-2,Metallothionein
+YHR056C,RSC30,Chromatin structure-remodeling complex protein RSC30
+YHR058C,MED6,Subunit of the RNA polymerase II mediator complex
+YHR059W,FYV4,"Protein FYV4, mitochondrial"
+YHR060W,VMA22,Protein that is required for vacuolar H+-ATPase (V-ATPase) function
+YHR061C,GIC1,GTPase-interacting component 1
+YHR062C,RPP1,Ribonuclease P/MRP protein subunit RPP1
+YHR064C,SSZ1,Ribosome-associated complex subunit SSZ1
+YHR065C,RRP3,ATP-dependent rRNA helicase RRP3
+YHR066W,SSF1,Ribosome biogenesis protein SSF1
+YHR067W,HTD2,Mitochondrial 3-hydroxyacyl-thioester dehydratase
+YHR068W,DYS1,Deoxyhypusine synthase
+YHR069C,RRP4,Exosome non-catalytic core component
+YHR071W,PCL5,PHO85 cyclin-5
+YHR072W,ERG7,Lanosterol synthase
+YHR072W-A,NOP10,Subunit of box H/ACA snoRNP complex
+YHR073W,OSH3,Member of an oxysterol-binding protein family
+YHR075C,PPE1,Protein phosphatase methylesterase 1
+YHR076W,PTC7,Type 2C serine/threonine protein phosphatase (PP2C)
+YHR077C,NMD2,Protein involved in the nonsense-mediated mRNA decay (NMD) pathway
+YHR079C,IRE1,Serine/threonine-protein kinase/endoribonuclease IRE1
+YHR079C-A,SAE3,Pachytene arrest protein SAE3
+YHR081W,LRP1,Nuclear exosome-associated nucleic acid binding protein
+YHR083W,SAM35,Component of the sorting and assembly machinery (SAM) complex
+YHR084W,STE12,Protein STE12
+YHR085W,IPI1,Pre-rRNA-processing protein IPI1
+YHR086W,NAM8,"RNA binding protein, component of the U1 snRNP protein"
+YHR088W,RPF1,Ribosome production factor 1
+YHR089C,GAR1,H/ACA ribonucleoprotein complex subunit GAR1
+YHR090C,YNG2,Chromatin modification-related protein YNG2
+YHR091C,MSR1,"Arginine--tRNA ligase, mitochondrial"
+YHR096C,HXT5,Hexose transporter with moderate affinity for glucose
+YHR098C,SFB3,SED5-binding protein 3
+YHR099W,TRA1,Transcription-associated protein 1
+YHR102W,KIC1,Serine/threonine-protein kinase KIC1
+YHR106W,TRR2,Mitochondrial thioredoxin reductase
+YHR107C,CDC12,Cell division control protein 12
+YHR108W,GGA2,ADP-ribosylation factor-binding protein GGA2
+YHR109W,CTM1,Cytochrome c lysine methyltransferase
+YHR110W,ERP5,Protein with similarity to Emp24p and Erv25p
+YHR111W,UBA4,Adenylyltransferase and sulfurtransferase UBA4
+YHR113W,APE4,Cytoplasmic aspartyl aminopeptidase with possible vacuole function
+YHR114W,BZZ1,SH3 domain protein implicated in regulating actin polymerization
+YHR115C,DMA1,Ubiquitin-protein ligase (E3)
+YHR117W,TOM71,Protein TOM71
+YHR118C,ORC6,Subunit of the origin recognition complex (ORC)
+YHR119W,SET1,"Histone-lysine N-methyltransferase, H3 lysine-4 specific"
+YHR121W,LSM12,Protein of unknown function that may function in RNA processing
+YHR122W,CIA2,MIP18 family protein YHR122W
+YHR123W,EPT1,"Sn-1,2-diacylglycerol ethanolamine- and cholinephosphotranferase"
+YHR129C,ARP1,Centractin
+YHR133C,NSG1,Protein involved in regulation of sterol biosynthesis
+YHR135C,YCK1,Palmitoylated plasma membrane-bound casein kinase I (CK1) isoform
+YHR137W,ARO9,Aromatic aminotransferase II
+YHR141C,RPL42B,Ribosomal 60S subunit protein L42B
+YHR143W-A,RPC10,"RNA polymerase subunit ABC10-alpha, found in RNA pol I, II, and III"
+YHR147C,MRPL6,Mitochondrial ribosomal protein of the large subunit.
+YHR148W,IMP3,U3 small nucleolar ribonucleoprotein protein IMP3
+YHR153C,SPO16,Sporulation-specific protein 16
+YHR154W,RTT107,Regulator of Ty1 transposition protein 107
+YHR156C,LIN1,Protein LIN1
+YHR157W,REC104,Protein involved in early stages of meiotic recombination
+YHR158C,KEL1,Kelch repeat-containing protein 1
+YHR160C,PEX18,Peroxin
+YHR162W,MPC2,Highly conserved subunit of the mitochondrial pyruvate carrier (MPC)
+YHR164C,DNA2,Tripartite DNA replication factor
+YHR165C,PRP8,Pre-mRNA-splicing factor 8
+YHR166C,CDC23,Subunit of the Anaphase-Promoting Complex/Cyclosome (APC/C)
+YHR167W,THP2,Subunit of the THO and TREX complexes
+YHR169W,DBP8,"ATPase, putative RNA helicase of the DEAD-box family"
+YHR170W,NMD3,Protein involved in nuclear export of the large ribosomal subunit
+YHR171W,ATG7,Ubiquitin-like modifier-activating enzyme ATG7
+YHR172W,SPC97,Spindle pole body component SPC97
+YHR174W,ENO2,"Enolase II, a phosphopyruvate hydratase"
+YHR183W,GND1,6-phosphogluconate dehydrogenase (decarboxylating)
+YHR185C,PFS1,Sporulation protein required for prospore membrane formation
+YHR186C,KOG1,Subunit of TORC1
+YHR187W,IKI1,Subunit of hexameric RecA-like ATPase Elp456 Elongator subcomplex
+YHR188C,GPI16,GPI transamidase component GPI16
+YHR190W,ERG9,Squalene synthase
+YHR191C,CTF8,Chromosome transmission fidelity protein 8
+YHR193C,EGD2,Alpha subunit of the nascent polypeptide-associated complex (NAC)
+YHR195W,NVJ1,Nucleus-vacuole junction protein 1
+YHR196W,UTP9,Nucleolar protein
+YHR197W,RIX1,Pre-rRNA-processing protein RIX1
+YHR199C-A,NBL1,N-terminal-borealin-like protein
+YHR200W,RPN10,Non-ATPase base subunit of the 19S RP of the 26S proteasome
+YHR203C,RPS4B,Protein component of the small (40S) ribosomal subunit
+YHR204W,MNL1,ER degradation-enhancing alpha-mannosidase-like protein 1
+YHR205W,SCH9,Serine/threonine-protein kinase SCH9
+YHR206W,SKN7,Transcription factor SKN7
+YHR208W,BAT1,"Branched-chain-amino-acid aminotransferase, mitochondrial"
+YHR215W,PHO12,One of three repressible acid phosphatases
+YHR216W,IMD2,Inosine-5'-monophosphate dehydrogenase 2
+YIL002C,INP51,"Phosphatidylinositol 4,5-bisphosphate 5-phosphatase"
+YIL003W,CFD1,Cytosolic Fe-S cluster assembly factor CFD1
+YIL004C,BET1,Type II membrane protein required for vesicular transport
+YIL007C,NAS2,Probable 26S proteasome regulatory subunit p27
+YIL008W,URM1,Ubiquitin-related modifier 1
+YIL009C-A,EST3,Telomere replication protein EST3
+YIL016W,SNL1,HSP70 co-chaperone SNL1
+YIL017C,VID28,Vacuolar import and degradation protein 28
+YIL018W,RPL2B,Ribosomal 60S subunit protein L2B
+YIL019W,FAF1,Protein required for pre-rRNA processing
+YIL021W,RPB3,RNA polymerase II third largest subunit B44
+YIL022W,TIM44,Mitochondrial import inner membrane translocase subunit TIM44
+YIL026C,IRR1,Subunit of the cohesin complex
+YIL027C,EMC5,Member of conserved ER transmembrane complex
+YIL030C,SSM4,ERAD-associated E3 ubiquitin-protein ligase DOA10
+YIL031W,ULP2,Ubiquitin-like-specific protease 2
+YIL033C,BCY1,Regulatory subunit of the cyclic AMP-dependent protein kinase (PKA)
+YIL034C,CAP2,Beta subunit of the capping protein heterodimer (Cap1p and Cap2p)
+YIL035C,CKA1,Alpha catalytic subunit of casein kinase 2 (CK2)
+YIL036W,CST6,ATF/CREB activator 2
+YIL038C,NOT3,General negative regulator of transcription subunit 3
+YIL045W,PIG2,GSY2-interacting protein PIG2
+YIL046W,MET30,F-box protein containing five copies of the WD40 motif
+YIL052C,RPL34B,Ribosomal 60S subunit protein L34B
+YIL053W,GPP1,Glycerol-1-phosphate phosphohydrolase 1
+YIL061C,SNP1,U1 small nuclear ribonucleoprotein 70 kDa homolog
+YIL062C,ARC15,Subunit of the ARP2/3 complex
+YIL063C,YRB2,Ran-specific GTPase-activating protein 2
+YIL065C,FIS1,Protein involved in mitochondrial fission and peroxisome abundance
+YIL066C,RNR3,Ribonucleoside-diphosphate reductase large chain 2
+YIL068C,SEC6,Essential 88kDa subunit of the exocyst complex
+YIL069C,RPS24B,Protein component of the small (40S) ribosomal subunit
+YIL070C,MAM33,Mitochondrial acidic protein MAM33
+YIL071C,PCI8,Possible shared subunit of Cop9 signalosome (CSN) and eIF3
+YIL072W,HOP1,Meiosis-specific protein required for chromosome synapsis
+YIL073C,SPO22,Sporulation-specific protein 22
+YIL074C,SER33,D-3-phosphoglycerate dehydrogenase 2
+YIL075C,RPN2,Subunit of the 26S proteasome
+YIL076W,SEC28,Epsilon-COP subunit of the coatomer
+YIL078W,THS1,"Threonine--tRNA ligase, cytoplasmic"
+YIL079C,AIR1,Zinc knuckle protein
+YIL082W,YIL082W,Retrotransposon TYA Gag gene co-transcribed with TYB Pol
+YIL083C,CAB2,Phosphopantothenate--cysteine ligase CAB2
+YIL084C,SDS3,Transcriptional regulatory protein SDS3
+YIL091C,UTP25,U3 small nucleolar RNA-associated protein 25
+YIL093C,RSM25,Mitochondrial ribosomal protein of the small subunit.
+YIL094C,LYS12,"Homoisocitrate dehydrogenase, mitochondrial"
+YIL097W,FYV10,Protein FYV10
+YIL103W,DPH1,2-(3-amino-3-carboxypropyl)histidine synthase subunit 1
+YIL104C,SHQ1,Chaperone protein
+YIL105C,SLM1,"Phosphatidylinositol 4,5-bisphosphate-binding protein SLM1"
+YIL106W,MOB1,DBF2 kinase activator protein MOB1
+YIL107C,PFK26,6-phosphofructo-2-kinase
+YIL109C,SEC24,Protein transport protein SEC24
+YIL111W,COX5B,Subunit Vb of cytochrome c oxidase
+YIL112W,HOS4,Protein HOS4
+YIL115C,NUP159,FG-nucleoporin component of central core of the nuclear pore complex
+YIL116W,HIS5,Histidinol-phosphate aminotransferase
+YIL118W,RHO3,GTP-binding protein RHO3
+YIL125W,KGD1,"2-oxoglutarate dehydrogenase, mitochondrial"
+YIL126W,STH1,Nuclear protein STH1/NPS1
+YIL127C,RRT14,Regulator of rDNA transcription protein 14
+YIL128W,MET18,DNA repair/transcription protein MET18/MMS19
+YIL129C,TAO3,Cell morphogenesis protein PAG1
+YIL131C,FKH1,Fork head protein homolog 1
+YIL132C,CSM2,Chromosome segregation in meiosis protein 2
+YIL133C,RPL16A,Ribosomal 60S subunit protein L16A
+YIL137C,TMA108,Protein TMA108
+YIL139C,REV7,Accessory subunit of DNA polymerase zeta
+YIL142W,CCT2,T-complex protein 1 subunit beta
+YIL143C,SSL2,General transcription and DNA repair factor IIH helicase subunit XPB
+YIL144W,NDC80,Component of the kinetochore-associated Ndc80 complex
+YIL146C,ATG32,Autophagy-related protein 32
+YIL147C,SLN1,Osmosensing histidine protein kinase SLN1
+YIL148W,RPL40A,Ubiquitin-ribosomal 60S subunit protein L40A fusion protein
+YIL149C,MLP2,Myosin-like protein associated with the nuclear envelope
+YIL150C,MCM10,Minichromosome maintenance protein 10
+YIL153W,RRD1,Peptidyl-prolyl cis/trans-isomerase
+YIL155C,GUT2,Mitochondrial glycerol-3-phosphate dehydrogenase
+YIL159W,BNR1,BNI1-related protein 1
+YIL160C,POT1,"3-ketoacyl-CoA thiolase, peroxisomal"
+YIL161W,YIL161W,Uncharacterized protein YIL161W
+YIR001C,SGN1,Cytoplasmic RNA-binding protein
+YIR002C,MPH1,3'-5' DNA helicase involved in error-free bypass of DNA lesions
+YIR003W,AIM21,Protein of unknown function
+YIR005W,IST3,Component of the U2 snRNP
+YIR006C,PAN1,Part of actin cytoskeleton-regulatory complex Pan1p-Sla1p-End3p
+YIR008C,PRI1,Subunit of DNA primase
+YIR009W,MSL1,U2 small nuclear ribonucleoprotein B'
+YIR010W,DSN1,Kinetochore-associated protein DSN1
+YIR012W,SQT1,Ribosome assembly protein SQT1
+YIR014W,YIR014W,Vacuole localized DSC protein 1
+YIR015W,RPR2,Ribonuclease P protein subunit RPR2
+YIR017C,MET28,bZIP transcriptional activator in the Cbf1p-Met4p-Met28p complex
+YIR022W,SEC11,18kDa catalytic subunit of the Signal Peptidase Complex (SPC)
+YIR024C,INA22,Inner membrane assembly complex subunit 22
+YIR025W,MND2,Subunit of the Anaphase-Promoting Complex/Cyclosome (APC/C)
+YIR026C,YVH1,Tyrosine-protein phosphatase YVH1
+YIR031C,DAL7,Malate synthase
+YIR034C,LYS1,"Saccharopine dehydrogenase (NAD+, L-lysine-forming)"
+YIR035C,YIR035C,Uncharacterized oxidoreductase YIR035C
+YIR038C,GTT1,ER associated glutathione S-transferase
+YJL001W,PRE3,Beta 1 subunit of the 20S proteasome
+YJL002C,OST1,Dolichyl-diphosphooligosaccharide--protein glycosyltransferase subunit 1
+YJL004C,SYS1,Protein SYS1
+YJL005W,CYR1,Adenylate cyclase
+YJL006C,CTK2,Beta subunit of C-terminal domain kinase I (CTDK-I)
+YJL008C,CCT8,T-complex protein 1 subunit theta
+YJL010C,NOP9,Nucleolar protein 9
+YJL011C,RPC17,RNA polymerase III subunit C17
+YJL012C,VTC4,Vacuolar transporter chaperone 4
+YJL013C,MAD3,Subunit of spindle-assembly checkpoint complex
+YJL014W,CCT3,T-complex protein 1 subunit gamma
+YJL019W,MPS3,Spindle pole body assembly component MPS3
+YJL020C,BBC1,Myosin tail region-interacting protein MTI1
+YJL023C,PET130,Protein required for respiratory growth
+YJL024C,APS3,AP-3 complex subunit sigma
+YJL025W,RRN7,RNA polymerase I-specific transcription initiation factor RRN7
+YJL026W,RNR2,Ribonucleoside-diphosphate reductase small chain 1
+YJL029C,VPS53,Vacuolar protein sorting-associated protein 53
+YJL030W,MAD2,Component of the spindle-assembly checkpoint complex
+YJL031C,BET4,Alpha subunit of Type II geranylgeranyltransferase
+YJL033W,HCA4,DEAD box RNA helicase
+YJL034W,KAR2,Endoplasmic reticulum chaperone BiP
+YJL035C,TAD2,Subunit of tRNA-specific adenosine-34 deaminase
+YJL036W,SNX4,Sorting nexin
+YJL039C,NUP192,Nucleoporin NUP192
+YJL041W,NSP1,FG-nucleoporin component of central core of the nuclear pore complex
+YJL044C,GYP6,GTPase-activating protein (GAP) for yeast Rab family member Ypt6p
+YJL045W,YJL045W,"Succinate dehydrogenase [ubiquinone] flavoprotein subunit 2, mitochondrial"
+YJL047C,RTT101,Cullin-8
+YJL048C,UBX6,UBX (ubiquitin regulatory X) domain-containing protein
+YJL049W,CHM7,Uncharacterized protein YJL049W
+YJL050W,MTR4,ATP-dependent 3'-5' RNA helicase of the DExD/H family
+YJL052W,TDH1,"Glyceraldehyde-3-phosphate dehydrogenase (GAPDH), isozyme 1"
+YJL053W,PEP8,Carboxypeptidase Y-deficient protein 8
+YJL054W,TIM54,Mitochondrial import inner membrane translocase subunit TIM54
+YJL058C,BIT61,Subunit of TORC2 membrane-associated complex
+YJL060W,BNA3,Probable kynurenine--oxoglutarate transaminase BNA3
+YJL061W,NUP82,Linker nucleoporin component of the nuclear pore complex (NPC)
+YJL062W,LAS21,GPI ethanolamine phosphate transferase 2
+YJL063C,MRPL8,Mitochondrial ribosomal protein of the large subunit.
+YJL065C,DLS1,Protein DLS1
+YJL068C,YJL068C,Esterase that can function as an S-formylglutathione hydrolase
+YJL069C,UTP18,Small-subunit processome protein involved in pre-18S rRNA maturation
+YJL070C,YJL070C,Inactive deaminase YJL070C
+YJL071W,ARG2,"Amino-acid acetyltransferase, mitochondrial"
+YJL072C,PSF2,"Subunit of the GINS complex (Sld5p, Psf1p, Psf2p, Psf3p)"
+YJL073W,JEM1,DnaJ-like chaperone required for nuclear membrane fusion during mating
+YJL074C,SMC3,Structural maintenance of chromosomes protein 3
+YJL076W,NET1,Nucleolar protein NET1
+YJL080C,SCP160,Protein SCP160
+YJL081C,ARP4,Nuclear actin-related protein involved in chromatin remodeling
+YJL085W,EXO70,Subunit of the exocyst complex
+YJL089W,SIP4,Protein SIP4
+YJL090C,DPB11,DNA replication initiation protein
+YJL092W,SRS2,DNA helicase and DNA-dependent ATPase
+YJL095W,BCK1,Serine/threonine-protein kinase BCK1/SLK1/SSP31
+YJL096W,MRPL49,Mitochondrial ribosomal protein of the large subunit.
+YJL097W,PHS1,Very-long-chain (3R)-3-hydroxyacyl-CoA dehydratase PHS1
+YJL098W,SAP185,SIT4-associating protein SAP185
+YJL099W,CHS6,Chitin biosynthesis protein CHS6
+YJL100W,LSB6,Type II phosphatidylinositol 4-kinase
+YJL104W,PAM16,Subunit of the import motor (PAM complex)
+YJL106W,IME2,Serine/threonine protein kinase involved in activation of meiosis
+YJL109C,UTP10,Nucleolar protein
+YJL110C,GZF3,GATA zinc finger protein
+YJL111W,CCT7,T-complex protein 1 subunit eta
+YJL112W,MDV1,Peripheral protein of cytosolic face of mitochondrial outer membrane
+YJL115W,ASF1,Histone chaperone ASF1
+YJL117W,PHO86,Inorganic phosphate transporter PHO86
+YJL122W,ALB1,Ribosome biogenesis protein ALB1
+YJL124C,LSM1,Sm-like protein LSm1
+YJL125C,GCD14,tRNA (adenine(58)-N(1))-methyltransferase catalytic subunit TRM61
+YJL128C,PBS2,MAP kinase kinase of the HOG signaling pathway
+YJL130C,URA2,Glutamine-dependent carbamoyl-phosphate synthase
+YJL134W,LCB3,Long-chain base-1-phosphate phosphatase
+YJL136C,RPS21B,Protein component of the small (40S) ribosomal subunit
+YJL137C,GLG2,Glycogenin-2
+YJL138C,TIF2,Translation initiation factor eIF4A
+YJL140W,RPB4,RNA polymerase II subunit B32
+YJL141C,YAK1,Dual specificity protein kinase YAK1
+YJL143W,TIM17,Mitochondrial import inner membrane translocase subunit TIM17
+YJL148W,RPA34,RNA polymerase I subunit A34.5
+YJL149W,DAS1,F-box protein DAS1
+YJL151C,SNA3,Protein involved in efficient MVB sorting of proteins to the vacuole
+YJL154C,VPS35,Vacuolar protein sorting-associated protein 35
+YJL155C,FBP26,"Fructose-2,6-bisphosphatase, required for glucose metabolism"
+YJL156C,SSY5,SPS-sensor serine protease component SSY5
+YJL157C,FAR1,CDK inhibitor and nuclear anchor
+YJL158C,CIS3,Cell wall mannoprotein CIS3
+YJL164C,TPK1,cAMP-dependent protein kinase catalytic subunit
+YJL166W,QCR8,Subunit 8 of ubiquinol cytochrome-c reductase (Complex III)
+YJL167W,ERG20,Farnesyl pyrophosphate synthetase
+YJL168C,SET2,"Histone-lysine N-methyltransferase, H3 lysine-36 specific"
+YJL173C,RFA3,Subunit of heterotrimeric Replication Protein A (RPA)
+YJL176C,SWI3,Subunit of the SWI/SNF chromatin remodeling complex
+YJL177W,RPL17B,Ribosomal 60S subunit protein L17B
+YJL178C,ATG27,Autophagy-related protein 27
+YJL179W,PFD1,Subunit of heterohexameric prefoldin
+YJL183W,MNN11,"Probable alpha-1,6-mannosyltransferase MNN11"
+YJL184W,GON7,Component of the EKC/KEOPS protein complex
+YJL185C,ATG36,Autophagy-related protein 36
+YJL187C,SWE1,Mitosis inhibitor protein kinase SWE1
+YJL189W,RPL39,Ribosomal 60S subunit protein L39
+YJL190C,RPS22A,Protein component of the small (40S) ribosomal subunit
+YJL191W,RPS14B,Protein component of the small (40S) ribosomal subunit
+YJL192C,SOP4,ER-membrane protein
+YJL194W,CDC6,Cell division control protein 6
+YJL196C,ELO1,Elongation of fatty acids protein 1
+YJL198W,PHO90,Low-affinity phosphate transporter
+YJL201W,ECM25,Non-essential protein of unknown function
+YJL203W,PRP21,Pre-mRNA-splicing factor PRP21
+YJL204C,RCY1,Recyclin-1
+YJL208C,NUC1,Major mitochondrial nuclease
+YJL210W,PEX2,Peroxisomal biogenesis factor 2
+YJL218W,YJL218W,Putative acetyltransferase
+YJR002W,MPP10,U3 small nucleolar RNA-associated protein MPP10
+YJR005W,APL1,Beta-adaptin
+YJR006W,POL31,Subunit of DNA polymerase delta (polymerase III)
+YJR007W,SUI2,Alpha subunit of the translation initiation factor eIF2
+YJR009C,TDH2,"Glyceraldehyde-3-phosphate dehydrogenase (GAPDH), isozyme 2"
+YJR010C-A,SPC1,Subunit of the signal peptidase complex (SPC)
+YJR010W,MET3,Sulfate adenylyltransferase
+YJR011C,YJR011C,Uncharacterized protein YJR011C
+YJR013W,GPI14,GPI mannosyltransferase 1
+YJR014W,TMA22,Translation machinery-associated protein 22
+YJR017C,ESS1,Peptidyl-prolyl cis-trans isomerase ESS1
+YJR019C,TES1,Peroxisomal acyl-CoA thioesterase
+YJR022W,LSM8,U6 snRNA-associated Sm-like protein LSm8
+YJR031C,GEA1,Guanine nucleotide exchange factor for ADP ribosylation factors (ARFs)
+YJR032W,CPR7,Peptidyl-prolyl cis-trans isomerase (cyclophilin)
+YJR033C,RAV1,Regulator of V-ATPase in vacuolar membrane protein 1
+YJR035W,RAD26,DNA repair and recombination protein RAD26
+YJR036C,HUL4,Protein with similarity to hect domain E3 ubiquitin-protein ligases
+YJR041C,URB2,Protein required for normal metabolism of the rRNA primary transcript
+YJR042W,NUP85,Nucleoporin NUP85
+YJR043C,POL32,Third subunit of DNA polymerase delta
+YJR044C,VPS55,Vacuolar protein sorting-associated protein 55
+YJR045C,SSC1,"Heat shock protein SSC1, mitochondrial"
+YJR046W,TAH11,Cell division cycle protein CDT1
+YJR048W,CYC1,"Cytochrome c, isoform 1"
+YJR049C,UTR1,ATP-NADH kinase
+YJR050W,ISY1,Pre-mRNA-splicing factor ISY1
+YJR051W,OSM1,"Fumarate reductase, catalyzes the reduction of fumarate to succinate"
+YJR052W,RAD7,Nucleotide excision repair (NER) protein
+YJR053W,BFA1,Mitotic check point protein BFA1
+YJR055W,HIT1,Protein involved in C/D snoRNP assembly
+YJR057W,CDC8,Thymidylate and uridylate kinase
+YJR058C,APS2,AP-2 complex subunit sigma
+YJR060W,CBF1,Centromere-binding protein 1
+YJR063W,RPA12,RNA polymerase I subunit A12.2
+YJR064W,CCT5,T-complex protein 1 subunit epsilon
+YJR065C,ARP3,Actin-related protein 3
+YJR066W,TOR1,Serine/threonine-protein kinase TOR1
+YJR067C,YAE1,Protein that forms a complex with Lto1p and Rli1p
+YJR068W,RFC2,Subunit of heteropentameric Replication factor C (RF-C)
+YJR069C,HAM1,Inosine triphosphate pyrophosphatase
+YJR072C,NPA3,GPN-loop GTPase 1
+YJR073C,OPI3,Phosphatidyl-N-methylethanolamine N-methyltransferase
+YJR074W,MOG1,Conserved nuclear protein that interacts with GTP-Gsp1p
+YJR075W,HOC1,Putative glycosyltransferase HOC1
+YJR076C,CDC11,Cell division control protein 11
+YJR082C,EAF6,Chromatin modification-related protein EAF6
+YJR084W,YJR084W,Cop9 signalosome complex subunit 12
+YJR086W,STE18,G protein gamma subunit
+YJR088C,EMC2,Member of conserved ER transmembrane complex
+YJR089W,BIR1,Protein BIR1
+YJR090C,GRR1,F-box protein component of an SCF ubiquitin-ligase complex
+YJR092W,BUD4,Anillin-like protein involved in bud-site selection
+YJR093C,FIP1,Subunit of cleavage polyadenylation factor (CPF)
+YJR094C,IME1,Meiosis-inducing protein 1
+YJR094W-A,RPL43B,Ribosomal 60S subunit protein L43B
+YJR099W,YUH1,Ubiquitin C-terminal hydrolase
+YJR101W,RSM26,Mitochondrial ribosomal protein of the small subunit.
+YJR102C,VPS25,Vacuolar protein-sorting-associated protein 25
+YJR103W,URA8,Minor CTP synthase isozyme (see also URA7)
+YJR104C,SOD1,Cytosolic copper-zinc superoxide dismutase
+YJR109C,CPA2,Carbamoyl-phosphate synthase arginine-specific large chain
+YJR110W,YMR1,Phosphoinositide 3-phosphatase
+YJR112W,NNF1,Kinetochore-associated protein NNF1
+YJR113C,RSM7,Mitochondrial ribosomal protein of the small subunit
+YJR117W,STE24,CAAX prenyl protease 1
+YJR119C,JHD2,JmjC domain family histone demethylase
+YJR121W,ATP2,Beta subunit of the F1 sector of mitochondrial F1F0 ATP synthase
+YJR122W,IBA57,"Putative transferase CAF17, mitochondrial"
+YJR123W,RPS5,Protein component of the small (40S) ribosomal subunit
+YJR125C,ENT3,Epsin-3
+YJR130C,STR2,"Cystathionine gamma-synthase, converts cysteine into cystathionine"
+YJR131W,MNS1,"Endoplasmic reticulum mannosyl-oligosaccharide 1,2-alpha-mannosidase"
+YJR133W,XPT1,Xanthine phosphoribosyltransferase 1
+YJR134C,SGM1,Protein of unknown function
+YJR135C,MCM22,Inner kinetochore subunit MCM22
+YJR135W-A,TIM8,Mitochondrial import inner membrane translocase subunit TIM8
+YJR136C,TTI2,TEL2-interacting protein 2
+YJR137C,MET5,Sulfite reductase beta subunit
+YJR138W,IML1,GTPase-activating protein (GAP) subunit of the Iml1p/SEACIT complex
+YJR140C,HIR3,Histone transcription regulator 3
+YJR141W,IPA1,Uncharacterized protein YJR141W
+YJR143C,PMT4,Dolichyl-phosphate-mannose--protein mannosyltransferase 4
+YJR145C,RPS4A,Protein component of the small (40S) ribosomal subunit
+YJR148W,BAT2,"Branched-chain-amino-acid aminotransferase, cytosolic"
+YJR154W,YJR154W,Uncharacterized protein YJR154W
+YJR159W,SOR1,Sorbitol dehydrogenase
+YKL001C,MET14,Adenylylsulfate kinase
+YKL002W,DID4,DOA4-independent degradation protein 4
+YKL003C,MRP17,Mitochondrial ribosomal protein of the small subunit
+YKL004W,AUR1,Inositol phosphorylceramide synthase catalytic subunit AUR1
+YKL005C,BYE1,Transcription factor BYE1
+YKL006C-A,SFT1,Intra-Golgi v-SNARE
+YKL006W,RPL14A,Ribosomal 60S subunit protein L14A
+YKL007W,CAP1,Alpha subunit of the capping protein heterodimer (Cap1p and Cap2p)
+YKL008C,LAC1,Ceramide synthase component
+YKL009W,MRT4,Protein involved in mRNA turnover and ribosome assembly
+YKL010C,UFD4,Ubiquitin-protein ligase (E3)
+YKL012W,PRP40,Pre-mRNA-processing protein PRP40
+YKL013C,ARC19,Subunit of the ARP2/3 complex
+YKL014C,URB1,Protein required for the normal accumulation of 25S and 5.8S rRNAs
+YKL015W,PUT3,Proline utilization trans-activator
+YKL016C,ATP7,Subunit d of the stator stalk of mitochondrial F1F0 ATP synthase
+YKL017C,HCS1,Hexameric DNA polymerase alpha-associated DNA helicase A
+YKL018W,SWD2,COMPASS component SWD2
+YKL019W,RAM2,Protein farnesyltransferase/geranylgeranyltransferase type-1 subunit alpha
+YKL020C,SPT23,ER membrane protein involved in regulation of OLE1 transcription
+YKL022C,CDC16,Subunit of the anaphase-promoting complex/cyclosome (APC/C)
+YKL023W,YKL023W,Uncharacterized protein YKL023W
+YKL024C,URA6,Uridylate kinase
+YKL025C,PAN3,Essential subunit of the Pan2p-Pan3p poly(A)-ribonuclease complex
+YKL028W,TFA1,Transcription initiation factor IIE subunit alpha
+YKL033W,TTI1,TEL2-interacting protein 1
+YKL034W,TUL1,Transmembrane E3 ubiquitin-protein ligase 1
+YKL035W,UGP1,UTP--glucose-1-phosphate uridylyltransferase
+YKL038W,RGT1,Glucose-responsive transcription factor
+YKL041W,VPS24,Vacuolar protein-sorting-associated protein 24
+YKL042W,SPC42,Central plaque component of spindle pole body (SPB)
+YKL045W,PRI2,Subunit of DNA primase
+YKL046C,DCW1,"Mannan endo-1,6-alpha-mannosidase DCW1"
+YKL048C,ELM1,Serine/threonine-protein kinase ELM1
+YKL049C,CSE4,Histone H3-like centromere protein
+YKL052C,ASK1,Essential subunit of the Dam1 complex (aka DASH complex)
+YKL053C-A,MDM35,Mitochondrial distribution and morphology protein 35
+YKL055C,OAR1,Mitochondrial 3-oxoacyl-[acyl-carrier-protein] reductase
+YKL057C,NUP120,Nucleoporin NUP120
+YKL058W,TOA2,TFIIA small subunit
+YKL059C,MPE1,Protein MPE1
+YKL061W,BLI1,Subunit of the BLOC-1 complex involved in endosomal maturation
+YKL062W,MSN4,Zinc finger protein MSN4
+YKL067W,YNK1,Nucleoside diphosphate kinase
+YKL068W,NUP100,FG-nucleoporin component of central core of the nuclear pore complex
+YKL072W,STB6,Protein that binds Sin3p in a two-hybrid assay
+YKL073W,LHS1,Heat shock protein 70 homolog LHS1
+YKL074C,MUD2,Splicing factor MUD2
+YKL078W,DHR2,Predominantly nucleolar DEAH-box ATP-dependent RNA helicase
+YKL079W,SMY1,Kinesin-related protein SMY1
+YKL080W,VMA5,Subunit C of the V1 peripheral membrane domain of V-ATPase
+YKL081W,TEF4,Gamma subunit of translational elongation factor eEF1B
+YKL082C,RRP14,"Essential protein, constituent of 66S pre-ribosomal particles"
+YKL085W,MDH1,Mitochondrial malate dehydrogenase
+YKL087C,CYT2,Cytochrome c1 heme lyase
+YKL088W,CAB3,Coenzyme A biosynthesis protein 3
+YKL089W,MIF2,Inner kinetochore subunit MIF2
+YKL090W,CUE2,Ubiquitin-binding protein CUE2
+YKL092C,BUD2,Inhibitory regulator protein BUD2/CLA2
+YKL094W,YJU3,Monoglyceride lipase (MGL)
+YKL095W,YJU2,Splicing factor YJU2
+YKL099C,UTP11,U3 small nucleolar RNA-associated protein 11
+YKL101W,HSL1,Probable serine/threonine-protein kinase HSL1
+YKL103C,APE1,Vacuolar aminopeptidase yscI
+YKL104C,GFA1,Glutamine--fructose-6-phosphate aminotransferase [isomerizing]
+YKL106W,AAT1,Mitochondrial aspartate aminotransferase
+YKL108W,SLD2,DNA replication regulator SLD2
+YKL109W,HAP4,Transcriptional activator HAP4
+YKL110C,KTI12,Protein that plays a role in modification of tRNA wobble nucleosides
+YKL112W,ABF1,ARS-binding factor 1
+YKL113C,RAD27,Flap endonuclease 1
+YKL114C,APN1,DNA-(apurinic or apyrimidinic site) lyase 1
+YKL117W,SBA1,Co-chaperone protein SBA1
+YKL119C,VPH2,Integral membrane protein required for V-ATPase function
+YKL122C,SRP21,Subunit of the signal recognition particle (SRP)
+YKL125W,RRN3,Protein required for transcription of rDNA by RNA polymerase I
+YKL126W,YPK1,Serine/threonine-protein kinase YPK1
+YKL127W,PGM1,"Phosphoglucomutase, minor isoform"
+YKL129C,MYO3,Myosin-3
+YKL130C,SHE2,SWI5-dependent HO expression protein 2
+YKL132C,RMA1,Probable folylpolyglutamate synthase
+YKL135C,APL2,AP-1 complex subunit beta-1
+YKL138C,MRPL31,Mitochondrial ribosomal protein of the large subunit.
+YKL138C-A,HSK3,Essential subunit of the Dam1 complex (aka DASH complex)
+YKL139W,CTK1,Catalytic (alpha) subunit of C-terminal domain kinase I (CTDK-I)
+YKL140W,TGL1,Sterol esterase TGL1
+YKL141W,SDH3,Subunit of succinate dehydrogenase and of TIM22 translocase
+YKL142W,MRP8,Uncharacterized protein MRP8
+YKL143W,LTV1,Protein LTV1
+YKL144C,RPC25,RNA polymerase III subunit C25
+YKL145W,RPT1,ATPase of the 19S regulatory particle of the 26S proteasome
+YKL146W,AVT3,Vacuolar transporter
+YKL148C,SDH1,Flavoprotein subunit of succinate dehydrogenase
+YKL149C,DBR1,RNA lariat debranching enzyme
+YKL152C,GPM1,Tetrameric phosphoglycerate mutase
+YKL154W,SRP102,Signal recognition particle (SRP) receptor beta subunit
+YKL155C,RSM22,Mitochondrial ribosomal protein of the small subunit
+YKL156W,RPS27A,Protein component of the small (40S) ribosomal subunit
+YKL160W,ELF1,Transcription elongation factor with a conserved zinc finger domain
+YKL163W,PIR3,O-glycosylated covalently-bound cell wall protein
+YKL166C,TPK3,cAMP-dependent protein kinase catalytic subunit
+YKL167C,MRP49,Mitochondrial ribosomal protein of the large subunit
+YKL170W,MRPL38,Mitochondrial ribosomal protein of the large subunit
+YKL172W,EBP2,rRNA-processing protein EBP2
+YKL173W,SNU114,Pre-mRNA-splicing factor SNU114
+YKL176C,LST4,Subunit of the Lst4p-Lst7p GTPase activating protein complex for Gtr2p
+YKL180W,RPL17A,Ribosomal 60S subunit protein L17A
+YKL181W,PRS1,Ribose-phosphate pyrophosphokinase 1
+YKL182W,FAS1,3-hydroxyacyl-[acyl-carrier-protein] dehydratase
+YKL183W,LOT5,Protein of unknown function
+YKL185W,ASH1,Transcriptional regulatory protein ASH1
+YKL186C,MTR2,mRNA transport regulator
+YKL188C,PXA2,Peroxisomal long-chain fatty acid import protein 1
+YKL189W,HYM1,Protein HYM1
+YKL190W,CNB1,Calcineurin B
+YKL191W,DPH2,2-(3-amino-3-carboxypropyl)histidine synthase subunit 2
+YKL192C,ACP1,Mitochondrial matrix acyl carrier protein
+YKL193C,SDS22,Regulatory subunit of the type 1 protein phosphatase (PP1) Glc7p
+YKL194C,MST1,"Threonine--tRNA ligase, mitochondrial"
+YKL195W,MIA40,Import and assembly protein in mitochondrial intermembrane space
+YKL196C,YKT6,Synaptobrevin homolog YKT6
+YKL197C,PEX1,Peroxisomal ATPase PEX1
+YKL203C,TOR2,Serine/threonine-protein kinase TOR2
+YKL204W,EAP1,"eIF4E-associated protein, competes with eIF4G for binding to eIF4E"
+YKL205W,LOS1,Exportin-T
+YKL206C,ADD66,Protein involved in 20S proteasome assembly
+YKL207W,EMC3,Member of conserved ER transmembrane complex
+YKL210W,UBA1,Ubiquitin activating enzyme (E1)
+YKL211C,TRP3,Multifunctional tryptophan biosynthesis protein
+YKL212W,SAC1,Phosphoinositide phosphatase SAC1
+YKL213C,DOA1,WD repeat protein required for ubiquitin-mediated protein degradation
+YKL214C,YRA2,RNA annealing protein YRA2
+YKR001C,VPS1,Vacuolar protein sorting-associated protein 1
+YKR002W,PAP1,Poly(A) polymerase
+YKR003W,OSH6,Member of an oxysterol-binding protein family
+YKR006C,MRPL13,Mitochondrial ribosomal protein of the large subunit
+YKR007W,MEH1,Protein MEH1
+YKR008W,RSC4,Chromatin structure-remodeling complex subunit RSC4
+YKR010C,TOF2,Topoisomerase 1-associated factor 2
+YKR014C,YPT52,GTP-binding protein YPT52
+YKR016W,MIC60,Component of the MICOS complex
+YKR020W,VPS51,Vacuolar protein sorting-associated protein 51
+YKR022C,NTR2,Pre-mRNA-splicing factor NTR2
+YKR023W,YKR023W,Uncharacterized protein YKR023W
+YKR024C,DBP7,Putative ATP-dependent RNA helicase of the DEAD-box family
+YKR025W,RPC37,RNA polymerase III subunit C37.
+YKR026C,GCN3,Alpha subunit of translation initiation factor eIF2B
+YKR027W,BCH2,Protein BCH2
+YKR028W,SAP190,SIT4-associating protein SAP190
+YKR029C,SET3,Defining member of the SET3 histone deacetylase complex
+YKR035W-A,DID2,Class E protein of the vacuolar protein-sorting (Vps) pathway
+YKR036C,CAF4,CCR4-associated factor 4
+YKR037C,SPC34,Essential subunit of the Dam1 complex (aka DASH complex)
+YKR038C,KAE1,tRNA N6-adenosine threonylcarbamoyltransferase
+YKR041W,YKR041W,Uncharacterized protein YKR041W
+YKR048C,NAP1,Nucleosome assembly protein
+YKR051W,YKR051W,Transmembrane protein 184 homolog YKR051W
+YKR053C,YSR3,Dihydrosphingosine 1-phosphate phosphatase
+YKR054C,DYN1,Cytoplasmic heavy chain dynein
+YKR055W,RHO4,GTP-binding protein RHO4
+YKR057W,RPS21A,Protein component of the small (40S) ribosomal subunit
+YKR058W,GLG1,Glycogenin-1
+YKR059W,TIF1,Translation initiation factor eIF4A
+YKR060W,UTP30,Ribosome biogenesis protein UTP30
+YKR062W,TFA2,TFIIE small subunit
+YKR063C,LAS1,Protein LAS1
+YKR065C,PAM17,"Presequence translocated-associated motor subunit PAM17, mitochondrial"
+YKR066C,CCP1,Mitochondrial cytochrome-c peroxidase
+YKR067W,GPT2,Glycerol-3-phosphate O-acyltransferase 2
+YKR068C,BET3,Core component of transport protein particle (TRAPP) complexes I-III
+YKR071C,DRE2,Component of the cytosolic Fe-S protein assembly (CIA) machinery
+YKR072C,SIS2,Phosphopantothenoylcysteine decarboxylase subunit SIS2
+YKR077W,MSA2,Putative transcriptional activator
+YKR079C,TRZ1,Ribonuclease Z
+YKR080W,MTD1,Methylenetetrahydrofolate dehydrogenase [NAD(+)]
+YKR081C,RPF2,Ribosome biogenesis protein RPF2
+YKR082W,NUP133,Nucleoporin NUP133
+YKR083C,DAD2,Essential subunit of the Dam1 complex (aka DASH complex)
+YKR084C,HBS1,Elongation factor 1 alpha-like protein
+YKR085C,MRPL20,Mitochondrial ribosomal protein of the large subunit.
+YKR086W,PRP16,DEAH-box RNA helicase involved in second catalytic step of splicing and in exon 
+YKR089C,TGL4,Lipase 4
+YKR091W,SRL3,Protein SRL3
+YKR092C,SRP40,Suppressor protein SRP40
+YKR094C,RPL40B,Ubiquitin-ribosomal 60S subunit protein L40B fusion protein
+YKR095W,MLP1,Myosin-like protein associated with the nuclear envelope
+YKR095W-A,PCC1,Component of the EKC/KEOPS protein complex
+YKR101W,SIR1,Regulatory protein SIR1
+YLL001W,DNM1,Dynamin-related protein DNM1
+YLL002W,RTT109,Histone acetyltransferase
+YLL003W,SFI1,Protein SFI1
+YLL004W,ORC3,Subunit of the origin recognition complex (ORC)
+YLL006W,MMM1,Maintenance of mitochondrial morphology protein 1
+YLL007C,LMO1,ELMO family protein LMO1
+YLL008W,DRS1,ATP-dependent RNA helicase DRS1
+YLL009C,COX17,Copper metallochaperone that transfers copper to Sco1p and Cox11p
+YLL010C,PSR1,Phosphatase PSR1
+YLL011W,SOF1,Protein required for biogenesis of 40S (small) ribosomal subunit
+YLL012W,YEH1,Sterol esterase 1
+YLL013C,PUF3,mRNA-binding protein PUF3
+YLL014W,EMC6,Member of conserved ER transmembrane complex
+YLL015W,BPT1,Bile pigment transporter 1
+YLL018C,DPS1,"Aspartate--tRNA ligase, cytoplasmic"
+YLL021W,SPA2,Protein SPA2
+YLL022C,HIF1,HAT1-interacting factor 1
+YLL023C,POM33,Pore membrane protein of 33 kDa
+YLL024C,SSA2,Heat shock protein SSA2
+YLL026W,HSP104,Disaggregase
+YLL027W,ISA1,Iron-sulfur assembly protein 1
+YLL031C,GPI13,GPI ethanolamine phosphate transferase 3
+YLL032C,YLL032C,KH domain-containing protein YLL032C
+YLL034C,RIX7,Ribosome biogenesis ATPase RIX7
+YLL035W,GRC3,Polynucleotide 5'-hydroxyl-kinase GRC3
+YLL036C,PRP19,Pre-mRNA-processing factor 19
+YLL039C,UBI4,Polyubiquitin
+YLL041C,SDH2,Iron-sulfur protein subunit of succinate dehydrogenase
+YLL042C,ATG10,Ubiquitin-like-conjugating enzyme ATG10
+YLL043W,FPS1,Glycerol uptake/efflux facilitator protein
+YLL045C,RPL8B,Ribosomal 60S subunit protein L8B
+YLL049W,LDB18,Protein LDB18
+YLL050C,COF1,"Cofilin, involved in pH-dependent actin filament depolarization"
+YLL058W,YLL058W,Putative protein of unknown function with similarity to Str2p
+YLL062C,MHT1,Homocysteine S-methyltransferase 1
+YLR002C,NOC3,Nucleolar complex-associated protein 3
+YLR003C,CMS1,Protein CMS1
+YLR005W,SSL1,Subunit of the core form of RNA polymerase transcription factor TFIIH
+YLR006C,SSK1,Osmolarity two-component system protein SSK1
+YLR007W,NSE1,Non-structural maintenance of chromosomes element 1
+YLR008C,PAM18,Subunit of the import motor (PAM complex)
+YLR009W,RLP24,Essential protein required for ribosomal large subunit biogenesis
+YLR010C,TEN1,Telomere length regulation protein TEN1
+YLR015W,BRE2,COMPASS component BRE2
+YLR016C,PML1,Pre-mRNA leakage protein 1
+YLR018C,POM34,Nucleoporin POM34
+YLR019W,PSR2,Probable phosphatase PSR2
+YLR021W,IRC25,Proteasome chaperone 3
+YLR022C,SDO1,Ribosome maturation protein SDO1
+YLR024C,UBR2,Cytoplasmic ubiquitin-protein ligase (E3)
+YLR025W,SNF7,Vacuolar-sorting protein SNF7
+YLR026C,SED5,Integral membrane protein SED5
+YLR027C,AAT2,"Aspartate aminotransferase, cytoplasmic"
+YLR028C,ADE16,Phosphoribosylaminoimidazolecarboxamide formyltransferase
+YLR029C,RPL15A,Ribosomal 60S subunit protein L15A
+YLR032W,RAD5,DNA repair protein RAD5
+YLR033W,RSC58,Chromatin structure-remodeling complex protein RSC58
+YLR035C,MLH2,Protein involved in mismatch repair and meiotic recombination
+YLR038C,COX12,Subunit VIb of cytochrome c oxidase
+YLR039C,RIC1,Guanine nucleotide exchange factor subunit RIC1
+YLR043C,TRX1,Thioredoxin-1
+YLR044C,PDC1,Major of three pyruvate decarboxylase isozymes
+YLR045C,STU2,Protein STU2
+YLR048W,RPS0B,Protein component of the small (40S) ribosomal subunit
+YLR051C,FCF2,rRNA-processing protein FCF2
+YLR052W,IES3,Subunit of the INO80 chromatin remodeling complex.
+YLR055C,SPT8,Transcription factor SPT8
+YLR056W,ERG3,Delta(7)-sterol 5(6)-desaturase
+YLR057W,MNL2,Putative endoplasmic reticulum mannosidase MNL2
+YLR058C,SHM2,Cytosolic serine hydroxymethyltransferase
+YLR059C,REX2,"Oligoribonuclease, mitochondrial"
+YLR060W,FRS1,Beta subunit of cytoplasmic phenylalanyl-tRNA synthetase
+YLR061W,RPL22A,Ribosomal 60S subunit protein L22A
+YLR065C,ENV10,Protein involved in SRP-independent targeting of substrates to the ER
+YLR066W,SPC3,Subunit of signal peptidase complex
+YLR068W,FYV7,rRNA-processing protein FYV7
+YLR071C,RGR1,Subunit of the RNA polymerase II mediator complex
+YLR072W,LAM6,Membrane-anchored lipid-binding protein LAM6
+YLR073C,RFU1,Regulator of free ubiquitin chains 1
+YLR074C,BUD20,Bud site selection protein 20
+YLR075W,RPL10,Ribosomal 60S subunit protein L10
+YLR078C,BOS1,Protein transport protein BOS1
+YLR079W,SIC1,Protein SIC1
+YLR080W,EMP46,Protein EMP46
+YLR084C,RAX2,Bud site selection protein RAX2
+YLR085C,ARP6,Actin-like protein ARP6
+YLR086W,SMC4,Structural maintenance of chromosomes protein 4
+YLR088W,GAA1,Subunit of the GPI:protein transamidase complex
+YLR089C,ALT1,"Probable alanine aminotransferase, mitochondrial"
+YLR093C,NYV1,v-SNARE component of the vacuolar SNARE complex
+YLR095C,IOC2,ISWI one complex protein 2
+YLR097C,HRT3,F-box protein HRT3
+YLR100W,ERG27,3-keto sterol reductase
+YLR102C,APC9,Subunit of the Anaphase-Promoting Complex/Cyclosome (APC/C)
+YLR103C,CDC45,Cell division control protein 45
+YLR105C,SEN2,Subunit of the tRNA splicing endonuclease
+YLR106C,MDN1,Midasin
+YLR107W,REX3,RNA exonuclease
+YLR109W,AHP1,Thiol-specific peroxiredoxin
+YLR113W,HOG1,Mitogen-activated protein kinase involved in osmoregulation
+YLR115W,CFT2,Cleavage factor two protein 2
+YLR116W,MSL5,Branchpoint-bridging protein
+YLR117C,CLF1,Pre-mRNA-splicing factor CLF1
+YLR119W,SRN2,Protein SRN2
+YLR120C,YPS1,Aspartic proteinase 3 subunit alpha
+YLR127C,APC2,Subunit of the Anaphase-Promoting Complex/Cyclosome (APC/C)
+YLR128W,DCN1,Scaffold-type E3 ligase
+YLR129W,DIP2,Nucleolar protein
+YLR130C,ZRT2,Zinc-regulated transporter 2
+YLR133W,CKI1,Choline kinase
+YLR134W,PDC5,Minor isoform of pyruvate decarboxylase
+YLR135W,SLX4,Structure-specific endonuclease subunit SLX4
+YLR136C,TIS11,mRNA decay factor CTH2
+YLR141W,RRN5,Protein involved in transcription of rDNA by RNA polymerase I
+YLR142W,PUT1,Proline oxidase
+YLR145W,RMP1,Ribonuclease MRP protein subunit RMP1
+YLR146C,SPE4,Spermine synthase
+YLR147C,SMD3,Small nuclear ribonucleoprotein Sm D3
+YLR148W,PEP3,Component of CORVET membrane tethering complex
+YLR150W,STM1,Suppressor protein STM1
+YLR153C,ACS2,Acetyl-coA synthetase isoform
+YLR154C,RNH203,Ribonuclease H2 subunit
+YLR155C,ASP3-1,Cell-wall L-asparaginase II involved in asparagine catabolism
+YLR163C,MAS1,Beta subunit of the mitochondrial processing protease (MPP)
+YLR164W,SHH4,Mitochondrial inner membrane protein SHH4
+YLR166C,SEC10,Essential 100kDa subunit of the exocyst complex
+YLR167W,RPS31,Fusion protein cleaved to yield ribosomal protein S31 and ubiquitin
+YLR168C,UPS2,Mitochondrial intermembrane space protein
+YLR170C,APS1,Small subunit of the clathrin-associated adaptor complex AP-1
+YLR174W,IDP2,Cytosolic NADP-specific isocitrate dehydrogenase
+YLR175W,CBF5,H/ACA ribonucleoprotein complex subunit CBF5
+YLR178C,TFS1,"Inhibitor of carboxypeptidase Y (Prc1p), and Ras GAP (Ira2p)"
+YLR180W,SAM1,S-adenosylmethionine synthase 1
+YLR181C,VTA1,Vacuolar protein sorting-associated protein VTA1
+YLR182W,SWI6,Regulatory protein SWI6
+YLR183C,TOS4,Protein TOS4
+YLR185W,RPL37A,Ribosomal 60S subunit protein L37A
+YLR186W,EMG1,Ribosomal RNA small subunit methyltransferase NEP1
+YLR187W,SKG3,Protein of unknown function
+YLR190W,MMR1,Mitochondrial MYO2 receptor-related protein 1
+YLR191W,PEX13,Peroxisomal membrane protein PAS20
+YLR192C,HCR1,eIF3j component of translation initiation factor 3 (eIF3)
+YLR193C,UPS1,"Protein UPS1, mitochondrial"
+YLR196W,PWP1,Periodic tryptophan protein 1
+YLR197W,NOP56,Nucleolar protein 56
+YLR199C,PBA1,Proteasome chaperone 1
+YLR200W,YKE2,Prefoldin subunit 6
+YLR201C,COQ9,Protein required for ubiquinone biosynthesis and respiratory growth
+YLR204W,QRI5,Mitochondrial inner membrane protein
+YLR206W,ENT2,Epsin-2
+YLR207W,HRD3,ERAD-associated E3 ubiquitin-protein ligase component HRD3
+YLR208W,SEC13,Protein transport protein SEC13
+YLR210W,CLB4,G2/mitotic-specific cyclin-4
+YLR211C,ATG38,Autophagy-related protein 38
+YLR212C,TUB4,Gamma-tubulin
+YLR215C,CDC123,Cell division cycle protein 123
+YLR216C,CPR6,Peptidyl-prolyl cis-trans isomerase (cyclophilin)
+YLR221C,RSA3,Ribosome assembly protein 3
+YLR222C,UTP13,Nucleolar protein
+YLR223C,IFH1,Protein IFH1
+YLR226W,BUR2,Protein BUR2
+YLR229C,CDC42,Cell division control protein 42
+YLR233C,EST1,Telomere elongation protein EST1
+YLR234W,TOP3,DNA Topoisomerase III
+YLR238W,FAR10,Protein involved in recovery from arrest in response to pheromone
+YLR240W,VPS34,Phosphatidylinositol (PI) 3-kinase that synthesizes PI-3-phosphate
+YLR243W,GPN3,GPN-loop GTPase 3
+YLR244C,MAP1,Methionine aminopeptidase
+YLR246W,ERF2,Subunit of a palmitoyltransferase
+YLR248W,RCK2,Serine/threonine-protein kinase RCK2
+YLR249W,YEF3,Translation elongation factor 3
+YLR254C,NDL1,Homolog of nuclear distribution factor NudE
+YLR258W,GSY2,Glycogen [starch] synthase isoform 2
+YLR259C,HSP60,"Heat shock protein 60, mitochondrial"
+YLR260W,LCB5,Minor sphingoid long-chain base kinase
+YLR262C,YPT6,GTP-binding protein YPT6
+YLR263W,RED1,Protein component of the synaptonemal complex axial elements
+YLR264W,RPS28B,Protein component of the small (40S) ribosomal subunit
+YLR265C,NEJ1,Non-homologous end-joining protein 1
+YLR268W,SEC22,R-SNARE protein
+YLR270W,DCS1,m7GpppX diphosphatase
+YLR272C,YCS4,Subunit of the condensin complex
+YLR273C,PIG1,Putative targeting subunit for type-1 protein phosphatase Glc7p
+YLR274W,MCM5,Minichromosome maintenance protein 5
+YLR275W,SMD2,Small nuclear ribonucleoprotein Sm D2
+YLR276C,DBP9,ATP-dependent RNA helicase DBP9
+YLR277C,YSH1,Endoribonuclease
+YLR284C,ECI1,"Peroxisomal delta3,delta2-enoyl-CoA isomerase"
+YLR286C,CTS1,Endochitinase
+YLR287C-A,RPS30A,Protein component of the small (40S) ribosomal subunit
+YLR288C,MEC3,DNA damage and meiotic pachytene checkpoint protein
+YLR289W,GUF1,"Translation factor GUF1, mitochondrial"
+YLR291C,GCD7,Beta subunit of the translation initiation factor eIF2B
+YLR292C,SEC72,Translocation protein SEC72
+YLR293C,GSP1,GTP-binding nuclear protein GSP1/CNR1
+YLR295C,ATP14,Subunit h of the F0 sector of mitochondrial F1F0 ATP synthase
+YLR298C,YHC1,U1 small nuclear ribonucleoprotein C
+YLR300W,EXG1,"Glucan 1,3-beta-glucosidase I/II"
+YLR303W,MET17,Homocysteine/cysteine synthase
+YLR305C,STT4,Phosphatidylinositol-4-kinase
+YLR306W,UBC12,NEDD8-conjugating enzyme UBC12
+YLR307W,CDA1,Chitin deacetylase
+YLR308W,CDA2,Chitin deacetylase
+YLR309C,IMH1,Golgin IMH1
+YLR310C,CDC25,Cell division control protein 25
+YLR312C,ATG39,Autophagy-related protein 39
+YLR312W-A,MRPL15,Mitochondrial ribosomal protein of the large subunit
+YLR314C,CDC3,Cell division control protein 3
+YLR315W,NKP2,Central kinetochore protein and subunit of the Ctf19 complex
+YLR316C,TAD3,Subunit of tRNA-specific adenosine-34 deaminase
+YLR318W,EST2,Reverse transcriptase subunit of the telomerase holoenzyme
+YLR319C,BUD6,Bud site selection protein 6
+YLR320W,MMS22,E3 ubiquitin-protein ligase substrate receptor MMS22
+YLR321C,SFH1,Chromatin structure-remodeling complex subunit SFH1
+YLR323C,CWC24,Pre-mRNA-splicing factor CWC24
+YLR324W,PEX30,ER-resident protein involved in peroxisomal biogenesis
+YLR325C,RPL38,Ribosomal 60S subunit protein L38
+YLR328W,NMA1,Nicotinic acid mononucleotide adenylyltransferase
+YLR329W,REC102,Protein involved in early stages of meiotic recombination
+YLR330W,CHS5,Chitin biosynthesis protein CHS5
+YLR332W,MID2,Cell wall integrity sensor MID2
+YLR333C,RPS25B,Protein component of the small (40S) ribosomal subunit
+YLR335W,NUP2,Nucleoporin involved in nucleocytoplasmic transport
+YLR336C,SGD1,Suppressor of glycerol defect protein 1
+YLR337C,VRP1,"Verprolin, proline-rich actin-associated protein"
+YLR340W,RPP0,Conserved ribosomal protein P0 of the ribosomal stalk
+YLR342W,FKS1,"1,3-beta-glucan synthase component FKS1"
+YLR344W,RPL26A,Ribosomal 60S subunit protein L26A
+YLR345W,YLR345W,"Putative 6-phosphofructo-2-kinase/fructose-2,6-bisphosphatase YLR345W"
+YLR347C,KAP95,Importin subunit beta-1
+YLR350W,ORM2,Protein that mediates sphingolipid homeostasis
+YLR352W,YLR352W,F-box protein YLR352W
+YLR354C,TAL1,"Transaldolase, enzyme in the non-oxidative pentose phosphate pathway"
+YLR357W,RSC2,Chromatin structure-remodeling complex subunit RSC2
+YLR360W,VPS38,Vacuolar protein sorting-associated protein 38
+YLR362W,STE11,Serine/threonine-protein kinase STE11
+YLR367W,RPS22B,Protein component of the small (40S) ribosomal subunit
+YLR369W,SSQ1,"Heat shock protein SSQ1, mitochondrial"
+YLR370C,ARC18,Subunit of the ARP2/3 complex
+YLR371W,ROM2,Guanine nucleotide exchange factor (GEF) for Rho1p and Rho2p
+YLR372W,ELO3,Elongation of fatty acids protein 3
+YLR373C,VID22,Vacuolar import and degradation protein 22
+YLR376C,PSY3,Platinum sensitivity protein 3
+YLR377C,FBP1,"Fructose-1,6-bisphosphatase"
+YLR378C,SEC61,Conserved ER protein translocation channel
+YLR381W,CTF3,Inner kinetochore subunit CTF3
+YLR382C,NAM2,"Leucine--tRNA ligase, mitochondrial"
+YLR383W,SMC6,Structural maintenance of chromosomes protein 6
+YLR384C,IKI3,Subunit of Elongator complex
+YLR385C,SWC7,SWR1-complex protein 7
+YLR386W,VAC14,Vacuole morphology and inheritance protein 14
+YLR387C,REH1,Cytoplasmic 60S subunit biogenesis factor
+YLR388W,RPS29A,Protein component of the small (40S) ribosomal subunit
+YLR393W,ATP10,Mitochondrial ATPase complex subunit ATP10
+YLR394W,CST9,Chromosome stability protein 9
+YLR395C,COX8,Subunit VIII of cytochrome c oxidase (Complex IV)
+YLR396C,VPS33,Vacuolar protein sorting-associated protein 33
+YLR397C,AFG2,ATPase family gene 2 protein
+YLR398C,SKI2,Antiviral helicase SKI2
+YLR399C,BDF1,Bromodomain-containing factor 1
+YLR403W,SFP1,Transcription factor SFP1
+YLR404W,SEI1,Seipin involved in lipid droplet (LD) assembly
+YLR406C,RPL31B,Ribosomal 60S subunit protein L31B
+YLR408C,BLS1,Subunit of the BLOC-1 complex involved in endosomal maturation
+YLR409C,UTP21,U3 small nucleolar RNA-associated protein 21
+YLR417W,VPS36,Vacuolar protein-sorting-associated protein 36
+YLR418C,CDC73,Cell division control protein 73
+YLR419W,YLR419W,Putative ATP-dependent RNA helicase YLR419W
+YLR421C,RPN13,Subunit of the 19S regulatory particle of the 26S proteasome lid
+YLR422W,DCK1,DOCK-like protein 1
+YLR423C,ATG17,Autophagy-related protein 17
+YLR424W,SPP382,Pre-mRNA-splicing factor SPP382
+YLR425W,TUS1,Guanine nucleotide exchange factor (GEF) that modulates Rho1p activity
+YLR430W,SEN1,Helicase SEN1
+YLR431C,ATG23,Autophagy-related protein 23
+YLR432W,IMD3,Inosine-5'-monophosphate dehydrogenase 3
+YLR433C,CNA1,Serine/threonine-protein phosphatase 2B catalytic subunit A1
+YLR435W,TSR2,Pre-rRNA-processing protein TSR2
+YLR436C,ECM30,Protein of unknown function
+YLR438C-A,LSM3,U6 snRNA-associated Sm-like protein LSm3
+YLR439W,MRPL4,Mitochondrial ribosomal protein of the large subunit
+YLR440C,SEC39,Protein transport protein SEC39
+YLR441C,RPS1A,Ribosomal protein 10 (rp10) of the small (40S) subunit
+YLR442C,SIR3,Regulatory protein SIR3
+YLR443W,ECM7,Protein ECM7
+YLR447C,VMA6,Subunit d of the V0 integral membrane domain of V-ATPase
+YLR448W,RPL6B,Ribosomal 60S subunit protein L6B
+YLR449W,FPR4,FK506-binding protein 4
+YLR450W,HMG2,HMG-CoA reductase
+YLR452C,SST2,Protein SST2
+YLR453C,RIF2,Protein that binds to the Rap1p C-terminus
+YLR455W,PDP3,PWWP domain-containing protein YLR455W
+YLR457C,NBP1,NAP1-binding protein
+YLR459W,GAB1,GPI transamidase subunit
+YML001W,YPT7,Rab family GTPase
+YML005W,TRM12,tRNA wybutosine-synthesizing protein 2
+YML008C,ERG6,Delta(24)-sterol C-methyltransferase
+YML009C,MRPL39,Mitochondrial ribosomal protein of the large subunit.
+YML010W,SPT5,Spt4p/5p (DSIF) transcription elongation factor complex subunit
+YML011C,RAD33,Protein involved in nucleotide excision repair
+YML012W,ERV25,Endoplasmic reticulum vesicle protein 25
+YML013W,UBX2,UBX domain-containing protein 2
+YML014W,TRM9,tRNA methyltransferase
+YML015C,TAF11,TFIID subunit (40 kDa)
+YML016C,PPZ1,Serine/threonine-protein phosphatase PP-Z1
+YML017W,PSP2,Protein PSP2
+YML019W,OST6,Dolichyl-diphosphooligosaccharide--protein glycosyltransferase subunit OST6
+YML022W,APT1,Adenine phosphoribosyltransferase
+YML023C,NSE5,Non-structural maintenance of chromosome element 5
+YML024W,RPS17A,Ribosomal protein 51 (rp51) of the small (40s) subunit
+YML025C,YML6,Mitochondrial ribosomal protein of the large subunit
+YML026C,RPS18B,Protein component of the small (40S) ribosomal subunit
+YML027W,YOX1,Homeobox protein YOX1
+YML028W,TSA1,Peroxiredoxin TSA1
+YML029W,USA1,U1 SNP1-associating protein 1
+YML030W,RCF1,"Respiratory supercomplex factor 1, mitochondrial"
+YML031W,NDC1,Nucleoporin NDC1
+YML032C,RAD52,DNA repair and recombination protein RAD52
+YML034W,SRC1,Inner nuclear membrane protein
+YML035C,AMD1,AMP deaminase
+YML036W,CGI121,Component of the EKC/KEOPS complex
+YML041C,VPS71,Vacuolar protein sorting-associated protein 71
+YML042W,CAT2,"Carnitine O-acetyltransferase, mitochondrial"
+YML043C,RRN11,RNA polymerase I-specific transcription initiation factor RRN11
+YML046W,PRP39,Pre-mRNA-processing factor 39
+YML049C,RSE1,Pre-mRNA-splicing factor RSE1
+YML051W,GAL80,Galactose/lactose metabolism regulatory protein GAL80
+YML053C,YML053C,Uncharacterized protein YML053C
+YML054C,CYB2,"Cytochrome b2, mitochondrial"
+YML055W,SPC2,Subunit of signal peptidase complex
+YML056C,IMD4,Inosine-5'-monophosphate dehydrogenase 4
+YML057W,CMP2,Serine/threonine-protein phosphatase 2B catalytic subunit A2
+YML058W,SML1,Ribonucleotide reductase inhibitor
+YML059C,NTE1,Lysophospholipase NTE1
+YML061C,PIF1,"DNA helicase, potent G-quadruplex DNA binder/unwinder"
+YML062C,MFT1,Subunit of the THO complex
+YML063W,RPS1B,Ribosomal protein 10 (rp10) of the small (40S) subunit
+YML064C,TEM1,GTP-binding protein of the Ras superfamily
+YML065W,ORC1,Largest subunit of the origin recognition complex
+YML067C,ERV41,Protein localized to COPII-coated vesicles
+YML069W,POB3,Subunit of the heterodimeric FACT complex (Spt16p-Pob3p)
+YML070W,DAK1,Dihydroxyacetone kinase
+YML071C,COG8,Component of the conserved oligomeric Golgi complex
+YML073C,RPL6A,Ribosomal 60S subunit protein L6A
+YML074C,FPR3,FK506-binding nuclear protein
+YML075C,HMG1,HMG-CoA reductase
+YML077W,BET5,Core component of transport protein particle (TRAPP) complexes I-III
+YML081C-A,ATP18,Subunit of the mitochondrial F1F0 ATP synthase
+YML082W,YML082W,Putative cystathionine gamma-synthase YML082W
+YML085C,TUB1,Tubulin alpha-1 chain
+YML088W,UFO1,F-box receptor protein
+YML091C,RPM2,Protein subunit of mitochondrial RNase P
+YML092C,PRE8,Alpha 2 subunit of the 20S proteasome
+YML093W,UTP14,U3 small nucleolar RNA-associated protein 14
+YML094W,GIM5,Prefoldin subunit 5
+YML095C,RAD10,DNA repair protein RAD10
+YML098W,TAF13,TFIID subunit (19 kDa)
+YML099C,ARG81,Arginine metabolism regulation protein II
+YML100W,TSL1,Large subunit of trehalose 6-phosphate synthase/phosphatase complex
+YML102W,CAC2,"Subunit of chromatin assembly factor I (CAF-1), with Rlf2p and Msi1p"
+YML103C,NUP188,Nucleoporin NUP188
+YML105C,SEC65,Subunit of the signal recognition particle (SRP)
+YML106W,URA5,Major orotate phosphoribosyltransferase (OPRTase) isozyme
+YML109W,ZDS2,Protein with a role in regulating Swe1p-dependent polarized growth
+YML110C,COQ5,"2-methoxy-6-polyprenyl-1,4-benzoquinol methylase, mitochondrial"
+YML111W,BUL2,Ubiquitin ligase-binding protein BUL2
+YML112W,CTK3,Gamma subunit of C-terminal domain kinase I
+YML114C,TAF8,TFIID subunit (65 kDa)
+YML115C,VAN1,Component of the mannan polymerase I
+YML119W,YML119W,Putative protein of unknown function
+YML121W,GTR1,GTP-binding protein GTR1
+YML123C,PHO84,High-affinity inorganic phosphate (Pi) transporter
+YML124C,TUB3,Tubulin alpha-3 chain
+YML126C,ERG13,3-hydroxy-3-methylglutaryl-CoA (HMG-CoA) synthase
+YML127W,RSC9,Chromatin structure-remodeling complex subunit RSC9
+YML130C,ERO1,Endoplasmic oxidoreductin-1
+YMR001C,CDC5,Cell cycle serine/threonine-protein kinase CDC5/MSD2
+YMR004W,MVP1,Sorting nexin MVP1
+YMR005W,TAF4,TFIID subunit (48 kDa)
+YMR006C,PLB2,Phospholipase B (lysophospholipase) involved in lipid metabolism
+YMR008C,PLB1,Phospholipase B (lysophospholipase) involved in lipid metabolism
+YMR014W,BUD22,Bud site selection protein 22
+YMR015C,ERG5,Cytochrome P450 61
+YMR017W,SPO20,Sporulation-specific protein 20
+YMR018W,PEX9,Peroxisomal targeting signal receptor 9
+YMR020W,FMS1,Polyamine oxidase
+YMR022W,UBC7,Ubiquitin-conjugating enzyme E2 7
+YMR023C,MSS1,"tRNA modification GTPase MSS1, mitochondrial"
+YMR024W,MRPL3,Mitochondrial ribosomal protein of the large subunit
+YMR025W,CSI1,Cop9 signalosome-interactor 1
+YMR026C,PEX12,Peroxisome assembly protein 12
+YMR028W,TAP42,Type 2A phosphatase-associated protein 42
+YMR029C,FAR8,Protein involved in recovery from arrest in response to pheromone
+YMR031C,EIS1,Eisosome protein 1
+YMR032W,HOF1,Cytokinesis protein 2
+YMR033W,ARP9,Actin-like protein ARP9
+YMR035W,IMP2-2,Catalytic subunit of mitochondrial inner membrane peptidase complex
+YMR036C,MIH1,M-phase inducer phosphatase
+YMR037C,MSN2,Zinc finger protein MSN2
+YMR038C,CCS1,Copper chaperone for superoxide dismutase Sod1p
+YMR039C,SUB1,Transcriptional regulator
+YMR042W,ARG80,Arginine metabolism regulation protein I
+YMR043W,MCM1,Transcription factor
+YMR044W,IOC4,ISWI one complex protein 4
+YMR047C,NUP116,FG-nucleoporin component of central core of the nuclear pore complex
+YMR048W,CSM3,Chromosome segregation in meiosis protein 3
+YMR049C,ERB1,Ribosome biogenesis protein ERB1
+YMR052W,FAR3,Factor arrest protein 3
+YMR053C,STB2,Protein that interacts with Sin3p in a two-hybrid assay
+YMR054W,STV1,"V-type proton ATPase subunit a, Golgi isoform"
+YMR055C,BUB2,Mitotic check point protein BUB2
+YMR058W,FET3,Iron transport multicopper oxidase FET3
+YMR059W,SEN15,Subunit of the tRNA splicing endonuclease
+YMR060C,SAM37,Component of the Sorting and Assembly Machinery (SAM) complex
+YMR061W,RNA14,mRNA 3'-end-processing protein RNA14
+YMR062C,ARG7,Mitochondrial ornithine acetyltransferase
+YMR063W,RIM9,pH-response regulator protein palI/RIM9
+YMR065W,KAR5,Protein required for nuclear membrane fusion during karyogamy
+YMR067C,UBX4,UBX domain-containing protein that interacts with Cdc48p
+YMR068W,AVO2,Target of rapamycin complex 2 subunit AVO2
+YMR075W,RCO1,Transcriptional regulatory protein RCO1
+YMR076C,PDS5,Cohesion maintenance factor
+YMR077C,VPS20,Vacuolar protein sorting-associated protein 20
+YMR078C,CTF18,Chromosome transmission fidelity protein 18
+YMR079W,SEC14,SEC14 cytosolic factor
+YMR080C,NAM7,ATP-dependent RNA helicase of the SFI superfamily
+YMR084W,YMR084W,Putative glutamine--fructose-6-phosphate aminotransferase [isomerizing]
+YMR086W,SEG1,Eisosome protein SEG1
+YMR089C,YTA12,Mitochondrial respiratory chain complexes assembly protein YTA12
+YMR091C,NPL6,Chromatin structure-remodeling complex subunit RSC7
+YMR092C,AIP1,Actin-interacting protein 1
+YMR093W,UTP15,Nucleolar protein
+YMR094W,CTF13,Subunit of the CBF3 complex
+YMR095C,SNO1,Pyridoxal 5'-phosphate synthase subunit SNO1
+YMR096W,SNZ1,Pyridoxal 5'-phosphate synthase subunit SNZ1
+YMR097C,MTG1,Mitochondrial GTPase 1
+YMR099C,YMR099C,Glucose-6-phosphate 1-epimerase (hexose-6-phosphate mutarotase)
+YMR100W,MUB1,MYND-type zinc finger protein MUB1
+YMR101C,SRT1,Forms the dehydrodolichyl diphosphate syntase (DDS) complex with NUS1
+YMR105C,PGM2,Phosphoglucomutase
+YMR106C,YKU80,ATP-dependent DNA helicase II subunit 2
+YMR108W,ILV2,"Acetolactate synthase catalytic subunit, mitochondrial"
+YMR109W,MYO5,Myosin-5
+YMR112C,MED11,Subunit of the RNA polymerase II mediator complex
+YMR113W,FOL3,"Dihydrofolate synthetase, involved in folic acid biosynthesis"
+YMR115W,MGR3,Subunit of the mitochondrial (mt) i-AAA protease supercomplex
+YMR116C,ASC1,G-protein beta subunit and guanine dissociation inhibitor for Gpa2p
+YMR117C,SPC24,Kinetochore protein SPC24
+YMR118C,SHH3,Putative mitochondrial inner membrane protein of unknown function
+YMR119W,ASI1,Protein ASI1
+YMR120C,ADE17,Phosphoribosylaminoimidazolecarboxamide formyltransferase
+YMR121C,RPL15B,Ribosomal 60S subunit protein L15B
+YMR124W,EPO1,Uncharacterized protein YMR124W
+YMR125W,STO1,Large subunit of the nuclear mRNA cap-binding protein complex
+YMR127C,SAS2,Histone acetyltransferase (HAT) catalytic subunit of the SAS complex
+YMR128W,ECM16,Essential DEAH-box ATP-dependent RNA helicase specific to U3 snoRNP
+YMR129W,POM152,Nucleoporin POM152
+YMR131C,RRB1,Ribosome assembly protein RRB1
+YMR134W,ERG29,Uncharacterized protein YMR134W
+YMR135C,GID8,Glucose-induced degradation protein 8
+YMR139W,RIM11,Serine/threonine-protein kinase RIM11/MSD1
+YMR140W,SIP5,Protein of unknown function
+YMR142C,RPL13B,Ribosomal 60S subunit protein L13B
+YMR143W,RPS16A,Protein component of the small (40S) ribosomal subunit
+YMR146C,TIF34,eIF3i subunit of the eukaryotic translation initiation factor 3 (eIF3)
+YMR149W,SWP1,Dolichyl-diphosphooligosaccharide--protein glycosyltransferase subunit SWP1
+YMR150C,IMP1,Catalytic subunit of mitochondrial inner membrane peptidase complex
+YMR152W,YIM1,Protein of unknown function
+YMR153W,NUP53,FG-nucleoporin component of central core of nuclear pore complex (NPC)
+YMR154C,RIM13,Calpain-like cysteine protease
+YMR158W,MRPS8,Mitochondrial ribosomal protein of the small subunit.
+YMR159C,ATG16,Conserved protein involved in autophagy
+YMR162C,DNF3,Probable phospholipid-transporting ATPase DNF3
+YMR163C,INP2,Inheritance of peroxisomes protein 2
+YMR164C,MSS11,Transcription activator MSS11
+YMR165C,PAH1,Phosphatidic acid phosphohydrolase 1
+YMR167W,MLH1,Protein required for mismatch repair in mitosis and meiosis
+YMR168C,CEP3,Essential kinetochore protein
+YMR172W,HOT1,High-osmolarity-induced transcription protein 1
+YMR174C,PAI3,Cytoplasmic proteinase A (Pep4p) inhibitor
+YMR176W,ECM5,Protein ECM5
+YMR183C,SSO2,Protein SSO2
+YMR186W,HSC82,ATP-dependent molecular chaperone HSC82
+YMR188C,MRPS17,Mitochondrial ribosomal protein of the small subunit.
+YMR189W,GCV2,P subunit of the mitochondrial glycine decarboxylase complex
+YMR190C,SGS1,ATP-dependent helicase SGS1
+YMR192W,GYL1,Probable GTPase-activating protein GYL1
+YMR193W,MRPL24,Mitochondrial ribosomal protein of the large subunit
+YMR194W,RPL36A,Ribosomal 60S subunit protein L36A
+YMR197C,VTI1,t-SNARE VTI1
+YMR198W,CIK1,Spindle pole body-associated protein CIK1
+YMR199W,CLN1,G1/S-specific cyclin CLN1
+YMR201C,RAD14,Protein that recognizes and binds damaged DNA during NER
+YMR202W,ERG2,C-8 sterol isomerase
+YMR203W,TOM40,Mitochondrial import receptor subunit TOM40
+YMR204C,INP1,Peripheral membrane protein of peroxisomes
+YMR205C,PFK2,Beta subunit of heterooctameric phosphofructokinase
+YMR207C,HFA1,"Acetyl-CoA carboxylase, mitochondrial"
+YMR208W,ERG12,Mevalonate kinase
+YMR212C,EFR3,Protein required for Stt4-containing PI kinase complex localization
+YMR213W,CEF1,Pre-mRNA-splicing factor CEF1
+YMR214W,SCJ1,DnaJ-related protein SCJ1
+YMR218C,TRS130,Trafficking protein particle complex II-specific subunit 130
+YMR219W,ESC1,Silent chromatin protein ESC1
+YMR223W,UBP8,Ubiquitin carboxyl-terminal hydrolase 8
+YMR224C,MRE11,Double-strand break repair protein MRE11
+YMR227C,TAF7,TFIID subunit (67 kDa)
+YMR228W,MTF1,Mitochondrial RNA polymerase specificity factor
+YMR229C,RRP5,rRNA biogenesis protein RRP5
+YMR230W,RPS10B,Protein component of the small (40S) ribosomal subunit
+YMR231W,PEP5,"Histone E3 ligase, component of CORVET membrane tethering complex"
+YMR232W,FUS2,Cell fusion regulator
+YMR233W,TRI1,Protein TRI1
+YMR235C,RNA1,GTPase activating protein (GAP) for Gsp1p
+YMR236W,TAF9,Subunit (17 kDa) of TFIID and SAGA complexes
+YMR237W,BCH1,Protein BCH1
+YMR238W,DFG5,"Mannan endo-1,6-alpha-mannosidase DFG5"
+YMR240C,CUS1,Cold sensitive U2 snRNA suppressor 1
+YMR242C,RPL20A,Ribosomal 60S subunit protein L20A
+YMR243C,ZRC1,Zinc/cadmium resistance protein
+YMR244C-A,COA6,Protein involved in cytochrome c oxidase (Complex IV) assembly
+YMR247C,RKR1,RING domain E3 ubiquitin ligase
+YMR255W,GFD1,mRNA transport factor GFD1
+YMR256C,COX7,Subunit VII of cytochrome c oxidase (Complex IV)
+YMR258C,ROY1,GTPase inhibitor with similarity to F-box proteins
+YMR259C,TRM732,tRNA (cytidine(32)-2'-O)-methyltransferase non-catalytic subunit TRM732
+YMR260C,TIF11,Translation initiation factor eIF1A
+YMR261C,TPS3,Regulatory subunit of trehalose-6-phosphate synthase/phosphatase
+YMR263W,SAP30,Transcriptional regulatory protein SAP30
+YMR264W,CUE1,Coupling of ubiquitin conjugation to ER degradation protein 1
+YMR267W,PPA2,Mitochondrial inorganic pyrophosphatase
+YMR268C,PRP24,U4/U6 snRNA-associated-splicing factor PRP24
+YMR270C,RRN9,RNA polymerase I-specific transcription initiation factor RRN9
+YMR271C,URA10,Minor orotate phosphoribosyltransferase (OPRTase) isozyme
+YMR273C,ZDS1,Protein with a role in regulating Swe1p-dependent polarized growth
+YMR274C,RCE1,Type II CAAX prenyl protease
+YMR275C,BUL1,Ubiquitin ligase-binding protein BUL1
+YMR276W,DSK2,Nuclear-enriched ubiquitin-like polyubiquitin-binding protein
+YMR277W,FCP1,Carboxy-terminal domain (CTD) phosphatase
+YMR278W,PRM15,Phosphoribomutase
+YMR280C,CAT8,Regulatory protein CAT8
+YMR284W,YKU70,ATP-dependent DNA helicase II subunit 1
+YMR286W,MRPL33,Mitochondrial ribosomal protein of the large subunit.
+YMR287C,DSS1,3'-5' exoribonuclease
+YMR288W,HSH155,U2-snRNP associated splicing factor
+YMR290C,HAS1,ATP-dependent RNA helicase
+YMR291W,TDA1,Serine/threonine-protein kinase TDA1
+YMR293C,HER2,"Glutamyl-tRNA(Gln) amidotransferase subunit A, mitochondrial"
+YMR294W,JNM1,Nuclear migration protein JNM1
+YMR296C,LCB1,Component of serine palmitoyltransferase
+YMR297W,PRC1,"Vacuolar carboxypeptidase Y (proteinase C, CPY)"
+YMR298W,LIP1,Ceramide synthase subunit
+YMR299C,DYN3,Dynein light intermediate chain (LIC)
+YMR300C,ADE4,Amidophosphoribosyltransferase
+YMR304W,UBP15,Ubiquitin carboxyl-terminal hydrolase 15
+YMR306W,FKS3,"1,3-beta-glucan synthase component FKS3"
+YMR308C,PSE1,Importin subunit beta-3
+YMR309C,NIP1,eIF3c subunit of the eukaryotic translation initiation factor 3 (eIF3)
+YMR310C,YMR310C,Putative methyltransferase
+YMR312W,ELP6,Subunit of hexameric RecA-like ATPase Elp456 Elongator subcomplex
+YMR313C,TGL3,Lipase 3
+YMR314W,PRE5,Alpha 6 subunit of the 20S proteasome
+YMR318C,ADH6,NADPH-dependent medium chain alcohol dehydrogenase
+YNL001W,DOM34,Protein that facilitates ribosomal subunit dissociation
+YNL002C,RLP7,Ribosome biogenesis protein RLP7
+YNL004W,HRB1,Protein HRB1
+YNL005C,MRP7,Mitochondrial ribosomal protein of the large subunit.
+YNL006W,LST8,Target of rapamycin complex subunit LST8
+YNL007C,SIS1,Protein SIS1
+YNL008C,ASI3,Protein ASI3
+YNL009W,IDP3,Peroxisomal NADP-dependent isocitrate dehydrogenase
+YNL014W,HEF3,Translational elongation factor EF-3
+YNL016W,PUB1,Nuclear and cytoplasmic polyadenylated RNA-binding protein PUB1
+YNL020C,ARK1,Actin-regulating kinase 1
+YNL021W,HDA1,Histone deacetylase HDA1
+YNL023C,FAP1,Protein that binds to Fpr1p
+YNL025C,SSN8,Cyclin-like component of the RNA polymerase II holoenzyme
+YNL026W,SAM50,Component of the Sorting and Assembly Machinery (SAM) complex
+YNL030W,HHF2,Histone H4
+YNL031C,HHT2,Histone H3
+YNL032W,SIW14,Inositol phosphatase SIW14
+YNL037C,IDH1,Subunit of mitochondrial NAD(+)-dependent isocitrate dehydrogenase
+YNL038W,GPI15,Phosphatidylinositol N-acetylglucosaminyltransferase subunit GPI15
+YNL039W,BDP1,Essential subunit of RNA polymerase III transcription factor (TFIIIB)
+YNL041C,COG6,Component of the conserved oligomeric Golgi complex
+YNL044W,YIP3,Prenylated Rab acceptor 1
+YNL047C,SLM2,"Phosphatidylinositol 4,5-bisphosphate-binding protein SLM2"
+YNL049C,SFB2,SED5-binding protein 2
+YNL051W,COG5,Component of the conserved oligomeric Golgi complex
+YNL052W,COX5A,Subunit Va of cytochrome c oxidase
+YNL053W,MSG5,Tyrosine-protein phosphatase MSG5
+YNL054W,VAC7,Integral vacuolar membrane protein
+YNL055C,POR1,Mitochondrial porin (voltage-dependent anion channel)
+YNL056W,OCA2,Tyrosine-protein phosphatase-like protein OCA2
+YNL059C,ARP5,Nuclear actin-related protein involved in chromatin remodeling
+YNL061W,NOP2,rRNA m5C methyltransferase
+YNL062C,GCD10,tRNA (adenine(58)-N(1))-methyltransferase non-catalytic subunit TRM6
+YNL064C,YDJ1,Mitochondrial protein import protein MAS5
+YNL067W,RPL9B,Ribosomal 60S subunit protein L9B
+YNL068C,FKH2,Fork head protein homolog 2
+YNL069C,RPL16B,Ribosomal 60S subunit protein L16B
+YNL070W,TOM7,Mitochondrial import receptor subunit TOM7
+YNL071W,LAT1,Dihydrolipoamide acetyltransferase component (E2) of the PDC
+YNL072W,RNH201,Ribonuclease H2 catalytic subunit
+YNL073W,MSK1,"Lysine--tRNA ligase, mitochondrial"
+YNL075W,IMP4,U3 small nucleolar ribonucleoprotein protein IMP4
+YNL076W,MKS1,Pleiotropic negative transcriptional regulator
+YNL077W,APJ1,J domain-containing protein APJ1
+YNL078W,NIS1,Protein localized in the bud neck at G2/M phase
+YNL079C,TPM1,Tropomyosin-1
+YNL081C,SWS2,Putative mitochondrial ribosomal protein of the small subunit
+YNL082W,PMS1,ATP-binding protein required for mismatch repair
+YNL083W,SAL1,Truncated non-functional calcium-binding mitochondrial carrier SAL1-1
+YNL084C,END3,Actin cytoskeleton-regulatory complex protein END3
+YNL086W,SNN1,Subunit of the BLOC-1 complex involved in endosomal maturation
+YNL087W,TCB2,Tricalbin-2
+YNL088W,TOP2,DNA topoisomerase 2
+YNL091W,NST1,Stress response protein NST1
+YNL093W,YPT53,GTP-binding protein YPT53
+YNL094W,APP1,"Phosphatidate phosphatase, converts phosphatidate to diacylglycerol"
+YNL096C,RPS7B,Protein component of the small (40S) ribosomal subunit
+YNL097C,PHO23,Transcriptional regulatory protein PHO23
+YNL098C,RAS2,Ras-like protein 2
+YNL099C,OCA1,Putative protein tyrosine phosphatase
+YNL100W,MIC27,Component of the MICOS complex
+YNL101W,AVT4,Vacuolar transporter
+YNL102W,POL1,Catalytic subunit of the DNA polymerase I alpha-primase complex
+YNL103W,MET4,Leucine-zipper transcriptional activator
+YNL104C,LEU4,Alpha-isopropylmalate synthase (2-isopropylmalate synthase)
+YNL106C,INP52,"Phosphatidylinositol 4,5-bisphosphate 5-phosphatase"
+YNL107W,YAF9,Protein AF-9 homolog
+YNL110C,NOP15,Ribosome biogenesis protein 15
+YNL111C,CYB5,Cytochrome b5
+YNL112W,DBP2,ATP-dependent RNA helicase of the DEAD-box protein family
+YNL113W,RPC19,RNA polymerase subunit AC19
+YNL116W,DMA2,Ubiquitin-protein ligase (E3)
+YNL117W,MLS1,"Malate synthase, enzyme of the glyoxylate cycle"
+YNL118C,DCP2,m7GpppN-mRNA hydrolase
+YNL119W,NCS2,Cytoplasmic tRNA 2-thiolation protein 2
+YNL121C,TOM70,Mitochondrial import receptor subunit TOM70
+YNL122C,YNL122C,Mitochondrial ribosomal protein of the large subunit
+YNL124W,NAF1,H/ACA ribonucleoprotein complex non-core subunit NAF1
+YNL126W,SPC98,Spindle pole body component SPC98
+YNL127W,FAR11,Factor arrest protein 11
+YNL128W,TEP1,"Probable phosphatidylinositol 3,4,5-trisphosphate 3-phosphatase TEP1"
+YNL130C,CPT1,Cholinephosphotransferase
+YNL131W,TOM22,Mitochondrial import receptor subunit TOM22
+YNL132W,KRE33,RNA cytidine acetyltransferase
+YNL135C,FPR1,FK506-binding protein 1
+YNL136W,EAF7,Chromatin modification-related protein EAF7
+YNL137C,NAM9,"37S ribosomal protein NAM9, mitochondrial"
+YNL138W,SRV2,CAP (cyclase-associated protein)
+YNL138W-A,YSF3,RDS3 complex subunit 10
+YNL139C,THO2,Subunit of the THO complex
+YNL140C,YNL140C,Uncharacterized protein YNL140C
+YNL142W,MEP2,Ammonium transporter MEP2
+YNL145W,MFA2,Mating pheromone a-factor
+YNL147W,LSM7,U6 snRNA-associated Sm-like protein LSm7
+YNL151C,RPC31,RNA polymerase III subunit C31
+YNL152W,INN1,Ingression protein 1
+YNL153C,GIM3,Prefoldin subunit 4
+YNL154C,YCK2,Palmitoylated plasma membrane-bound casein kinase I (CK1) isoform
+YNL158W,PGA1,GPI mannosyltransferase 2 subunit PGA1
+YNL159C,ASI2,Protein ASI2
+YNL161W,CBK1,Serine/threonine-protein kinase CBK1
+YNL162W,RPL42A,Ribosomal 60S subunit protein L42A
+YNL163C,RIA1,Ribosome assembly protein 1
+YNL167C,SKO1,CRE-binding bZIP protein SKO1
+YNL169C,PSD1,Phosphatidylserine decarboxylase of the mitochondrial inner membrane
+YNL172W,APC1,Largest subunit of the Anaphase-Promoting Complex/Cyclosome
+YNL177C,MRPL22,Mitochondrial ribosomal protein of the large subunit.
+YNL178W,RPS3,Protein component of the small (40S) ribosomal subunit
+YNL180C,RHO5,GTP-binding protein RHO5
+YNL182C,IPI3,Pre-rRNA-processing protein IPI3
+YNL185C,MRPL19,Mitochondrial ribosomal protein of the large subunit.
+YNL186W,UBP10,Ubiquitin carboxyl-terminal hydrolase 10
+YNL187W,SWT21,Protein involved in mRNA splicing
+YNL188W,KAR1,Cell division control protein KAR1
+YNL189W,SRP1,Importin subunit alpha
+YNL191W,DUG3,Component of glutamine amidotransferase (GATase II)
+YNL192W,CHS1,Chitin synthase I
+YNL196C,SLZ1,Sporulation-specific protein with a leucine zipper motif
+YNL197C,WHI3,RNA binding protein that sequesters CLN3 mRNA in cytoplasmic foci
+YNL199C,GCR2,Transcriptional activator of genes involved in glycolysis
+YNL201C,PSY2,Subunit of protein phosphatase PP4 complex
+YNL206C,RTT106,Histone chaperone
+YNL207W,RIO2,Serine/threonine-protein kinase RIO2
+YNL209W,SSB2,Cytoplasmic ATPase that is a ribosome-associated molecular chaperone
+YNL214W,PEX17,Membrane peroxin of the peroxisomal importomer complex
+YNL215W,IES2,Ino eighty subunit 2
+YNL216W,RAP1,DNA-binding protein RAP1
+YNL221C,POP1,Ribonucleases P/MRP protein subunit POP1
+YNL222W,SSU72,RNA polymerase II subunit A C-terminal domain phosphatase SSU72
+YNL223W,ATG4,Conserved cysteine protease required for autophagy
+YNL224C,SQS1,Protein that stimulates the ATPase and helicase activities of Prp43p
+YNL225C,CNM67,Chaotic nuclear migration protein 67
+YNL227C,JJJ1,J protein JJJ1
+YNL229C,URE2,Nitrogen catabolite repression transcriptional regulator
+YNL230C,ELA1,Elongin-A
+YNL232W,CSL4,Exosome non-catalytic core component
+YNL233W,BNI4,Protein BNI4
+YNL236W,SIN4,Subunit of the RNA polymerase II mediator complex
+YNL240C,NAR1,Cytosolic Fe-S cluster assembly factor NAR1
+YNL242W,ATG2,Autophagy-related protein 2
+YNL243W,SLA2,Adaptor protein that links actin to clathrin and endocytosis
+YNL244C,SUI1,Translation initiation factor eIF1
+YNL245C,CWC25,Pre-mRNA-splicing factor CWC25
+YNL246W,VPS75,Vacuolar protein sorting-associated protein 75
+YNL248C,RPA49,RNA polymerase I subunit A49
+YNL250W,RAD50,DNA repair protein RAD50
+YNL251C,NRD1,Protein NRD1
+YNL252C,MRPL17,Mitochondrial ribosomal protein of the large subunit.
+YNL253W,TEX1,Protein involved in mRNA export
+YNL255C,GIS2,Zinc finger protein GIS2
+YNL258C,DSL1,Peripheral membrane protein needed for Golgi-to-ER retrograde traffic
+YNL259C,ATX1,Metal homeostasis factor ATX1
+YNL260C,LTO1,Essential protein that forms a complex with Rli1p and Yae1p
+YNL261W,ORC5,Subunit of the origin recognition complex (ORC)
+YNL262W,POL2,Catalytic subunit of DNA polymerase (II) epsilon
+YNL263C,YIF1,Integral membrane protein
+YNL265C,IST1,Vacuolar protein sorting-associated protein IST1
+YNL267W,PIK1,Phosphatidylinositol 4-kinase
+YNL271C,BNI1,Protein BNI1
+YNL272C,SEC2,Guanyl-nucleotide exchange factor for the small G-protein Sec4p
+YNL273W,TOF1,Topoisomerase 1-associated factor 1
+YNL278W,CAF120,Part of the CCR4-NOT transcriptional regulatory complex
+YNL280C,ERG24,C-14 sterol reductase
+YNL281W,HCH1,Hsp90 co-chaperone HCH1
+YNL282W,POP3,Ribonucleases P/MRP protein subunit POP3
+YNL283C,WSC2,Cell wall integrity and stress response component 2
+YNL284C,MRPL10,Mitochondrial ribosomal protein of the large subunit
+YNL286W,CUS2,Putative checkpoint factor in transcription
+YNL287W,SEC21,Gamma subunit of coatomer
+YNL288W,CAF40,Protein CAF40
+YNL289W,PCL1,PHO85 cyclin-1
+YNL290W,RFC3,Subunit of heteropentameric Replication factor C (RF-C)
+YNL291C,MID1,Stretch-activated cation channel MID1
+YNL292W,PUS4,Pseudouridine synthase
+YNL293W,MSB3,Rab GTPase-activating protein
+YNL294C,RIM21,pH-response regulator protein palH/RIM21
+YNL297C,MON2,Protein with a role in endocytosis and vacuole integrity
+YNL298W,CLA4,Serine/threonine-protein kinase CLA4
+YNL299W,TRF5,Non-canonical poly(A) polymerase
+YNL301C,RPL18B,Ribosomal 60S subunit protein L18B
+YNL302C,RPS19B,Protein component of the small (40S) ribosomal subunit
+YNL304W,YPT11,GTP-binding protein YPT11
+YNL306W,MRPS18,Mitochondrial ribosomal protein of the small subunit
+YNL308C,KRI1,Protein KRI1
+YNL309W,STB1,Protein with role in regulation of MBF-specific transcription at Start
+YNL310C,ZIM17,Protein co-chaperone with a zinc finger motif
+YNL311C,SKP2,F-box protein of unknown function
+YNL312W,RFA2,Subunit of heterotrimeric Replication Protein A (RPA)
+YNL317W,PFS2,Polyadenylation factor subunit 2
+YNL323W,LEM3,Alkylphosphocholine resistance protein LEM3
+YNL325C,FIG4,"Phosphatidylinositol 3,5-bisphosphate (PtdIns[3,5]P) phosphatase"
+YNL328C,MDJ2,Mitochondrial DnaJ homolog 2
+YNL329C,PEX6,Peroxisomal ATPase PEX6
+YNL330C,RPD3,"Histone deacetylase, component of both the Rpd3S and Rpd3L complexes"
+YNL333W,SNZ2,Probable pyridoxal 5'-phosphate synthase subunit SNZ2
+YNL334C,SNO2,Probable pyridoxal 5'-phosphate synthase subunit SNO2
+YNL335W,DDI3,Cyanamide hydratase that detoxifies cyanamide
+YNR001C,CIT1,"Citrate synthase, mitochondrial"
+YNR003C,RPC34,RNA polymerase III subunit C34
+YNR006W,VPS27,Vacuolar protein sorting-associated protein 27
+YNR007C,ATG3,Autophagy-related protein 3
+YNR008W,LRO1,Acyltransferase that catalyzes diacylglycerol esterification
+YNR009W,NRM1,Transcription factor NRM1
+YNR010W,CSE2,Subunit of the RNA polymerase II mediator complex
+YNR011C,PRP2,Pre-mRNA-splicing factor ATP-dependent RNA helicase-like protein PRP2
+YNR012W,URK1,Uridine/cytidine kinase
+YNR013C,PHO91,Low-affinity vacuolar phosphate transporter
+YNR016C,ACC1,"Acetyl-CoA carboxylase, biotin containing enzyme"
+YNR017W,TIM23,Essential component of the TIM23 complex
+YNR018W,RCF2,"Respiratory supercomplex factor 2, mitochondrial"
+YNR019W,ARE2,Sterol O-acyltransferase 2
+YNR020C,ATP23,Putative metalloprotease of the mitochondrial inner membrane
+YNR022C,MRPL50,Mitochondrial ribosomal protein of the large subunit
+YNR023W,SNF12,Transcription regulatory protein SNF12
+YNR024W,MPP6,M-phase phosphoprotein 6 homolog
+YNR026C,SEC12,Guanine nucleotide exchange factor (GEF)
+YNR027W,BUD17,Putative pyridoxal kinase
+YNR031C,SSK2,MAP kinase kinase kinase of HOG1 mitogen-activated signaling pathway
+YNR032C-A,HUB1,Ubiquitin-like protein modifier
+YNR032W,PPG1,Serine/threonine-protein phosphatase PP2A-like PPG1
+YNR033W,ABZ1,Para-aminobenzoate (PABA) synthase
+YNR034W,SOL1,6-phosphogluconolactonase-like protein 1
+YNR035C,ARC35,Subunit of the ARP2/3 complex
+YNR036C,MRPS12,"37S ribosomal protein S12, mitochondrial"
+YNR037C,RSM19,Mitochondrial ribosomal protein of the small subunit
+YNR038W,DBP6,ATP-dependent RNA helicase DBP6
+YNR039C,ZRG17,Protein ZRG17
+YNR044W,AGA1,Anchorage subunit of a-agglutinin of a-cells
+YNR046W,TRM112,Multifunctional methyltransferase subunit TRM112
+YNR048W,YNR048W,Potential noncatalytic subunit for phospholipid translocase Dnf3p
+YNR049C,MSO1,Protein MSO1
+YNR051C,BRE5,UBP3-associated protein BRE5
+YNR052C,POP2,Poly(A) ribonuclease POP2
+YNR053C,NOG2,Nucleolar GTP-binding protein 2
+YNR054C,ESF2,Pre-rRNA-processing protein ESF2
+YNR059W,MNT4,"Probable alpha-1,3-mannosyltransferase MNT4"
+YOL001W,PHO80,PHO85 cyclin PHO80
+YOL004W,SIN3,Transcriptional regulatory protein SIN3
+YOL005C,RPB11,RNA polymerase II subunit B12.5
+YOL006C,TOP1,DNA topoisomerase 1
+YOL009C,MDM12,Mitochondrial distribution and morphology protein 12
+YOL010W,RCL1,RNA 3'-terminal phosphate cyclase-like protein
+YOL011W,PLB3,Phospholipase B (lysophospholipase) involved in lipid metabolism
+YOL012C,HTZ1,Histone variant H2AZ
+YOL013C,HRD1,ERAD-associated E3 ubiquitin-protein ligase HRD1
+YOL017W,ESC8,Protein involved in telomeric and mating-type locus silencing
+YOL018C,TLG2,t-SNARE affecting a late Golgi compartment protein 2
+YOL021C,DIS3,Exosome core complex catalytic subunit
+YOL023W,IFM1,Mitochondrial translation initiation factor 2.
+YOL031C,SIL1,Nucleotide exchange factor for the ER lumenal Hsp70 chaperone Kar2p
+YOL033W,MSE1,"Glutamate--tRNA ligase, mitochondrial"
+YOL034W,SMC5,Structural maintenance of chromosomes protein 5
+YOL038W,PRE6,Alpha 4 subunit of the 20S proteasome
+YOL039W,RPP2A,60S acidic ribosomal protein P2-alpha
+YOL040C,RPS15,Protein component of the small (40S) ribosomal subunit
+YOL041C,NOP12,Nucleolar protein involved in pre-25S rRNA processing
+YOL042W,NGL1,RNA exonuclease NGL1
+YOL043C,NTG2,Endonuclease III homolog 2
+YOL044W,PEX15,Tail-anchored type II integral peroxisomal membrane protein
+YOL051W,GAL11,Subunit of the RNA polymerase II mediator complex
+YOL055C,THI20,Hydroxymethylpyrimidine/phosphomethylpyrimidine kinase THI20
+YOL056W,GPM3,Homolog of Gpm1p phosphoglycerate mutase
+YOL059W,GPD2,"Glycerol-3-phosphate dehydrogenase [NAD(+)] 2, mitochondrial"
+YOL061W,PRS5,Ribose-phosphate pyrophosphokinase 5
+YOL062C,APM4,Cargo-binding mu subunit of AP-2
+YOL063C,CRT10,Protein involved in transcriptional regulation of RNR2 and RNR3
+YOL064C,MET22,Bisphosphate-3'-nucleotidase
+YOL067C,RTG1,Retrograde regulation protein 1
+YOL068C,HST1,NAD-dependent protein deacetylase HST1
+YOL069W,NUF2,Kinetochore protein NUF2
+YOL070C,NBA1,Protein of unknown function
+YOL071W,SDH5,"Succinate dehydrogenase assembly factor 2, mitochondrial"
+YOL072W,THP1,Nuclear mRNA export protein THP1
+YOL073C,DSC2,Multi-transmembrane subunit of the DSC ubiquitin ligase complex
+YOL076W,MDM20,Non-catalytic subunit of the NatB N-terminal acetyltransferase
+YOL077C,BRX1,Ribosome biogenesis protein BRX1
+YOL077W-A,ATP19,Subunit k of the mitochondrial F1F0 ATP synthase
+YOL078W,AVO1,Target of rapamycin complex 2 subunit AVO1
+YOL081W,IRA2,Inhibitory regulator protein IRA2
+YOL082W,ATG19,Autophagy-related protein 19
+YOL083W,ATG34,Autophagy-related protein 34
+YOL086W-A,MHF1,Inner kinetochore subunit MHF1
+YOL087C,DUF1,DUB-associated factor 1
+YOL090W,MSH2,Protein that binds to DNA mismatches
+YOL094C,RFC4,Subunit of heteropentameric Replication factor C (RF-C)
+YOL096C,COQ3,O-methyltransferase
+YOL097C,WRS1,"Tryptophan--tRNA ligase, cytoplasmic"
+YOL100W,PKH2,Serine/threonine-protein kinase PKH2
+YOL104C,NDJ1,Non-disjunction protein 1
+YOL105C,WSC3,Cell wall integrity and stress response component 3
+YOL108C,INO4,Protein INO4
+YOL110W,SHR5,Ras modification protein ERF4
+YOL111C,MDY2,Ubiquitin-like protein MDY2
+YOL112W,MSB4,GTPase-activating protein of the Ras superfamily
+YOL113W,SKM1,Serine/threonine-protein kinase SKM1
+YOL114C,PTH4,Putative uncharacterized protein YOL114C
+YOL115W,PAP2,Non-canonical poly(A) polymerase
+YOL117W,RRI2,Subunit of the COP9 signalosome (CSN) complex
+YOL120C,RPL18A,Ribosomal 60S subunit protein L18A
+YOL121C,RPS19A,Protein component of the small (40S) ribosomal subunit
+YOL123W,HRP1,Nuclear polyadenylated RNA-binding protein 4
+YOL124C,TRM11,Catalytic subunit of adoMet-dependent tRNA methyltransferase complex
+YOL126C,MDH2,Cytoplasmic malate dehydrogenase
+YOL127W,RPL25,Ribosomal 60S subunit protein L25
+YOL129W,VPS68,Vacuolar membrane protein of unknown function
+YOL133W,HRT1,RING-box protein HRT1
+YOL135C,MED7,Subunit of the RNA polymerase II mediator complex
+YOL136C,PFK27,6-phosphofructo-2-kinase
+YOL138C,RTC1,Restriction of telomere capping protein 1
+YOL139C,CDC33,mRNA cap binding protein and translation initiation factor eIF4E
+YOL142W,RRP40,Exosome non-catalytic core component
+YOL143C,RIB4,Lumazine synthase (DMRL synthase)
+YOL144W,NOP8,Nucleolar protein required for 60S ribosomal subunit biogenesis.
+YOL145C,CTR9,RNA polymerase-associated protein CTR9
+YOL146W,PSF3,"Subunit of the GINS complex (Sld5p, Psf1p, Psf2p, Psf3p)"
+YOL147C,PEX11,Peroxisomal protein required for medium-chain fatty acid oxidation
+YOL148C,SPT20,Transcription factor SPT20
+YOL149W,DCP1,Subunit of the Dcp1p-Dcp2p decapping enzyme complex
+YOR001W,RRP6,Nuclear exosome exonuclease component
+YOR003W,YSP3,Putative precursor of the subtilisin-like protease III
+YOR004W,UTP23,rRNA-processing protein UTP23
+YOR005C,DNL4,DNA ligase required for nonhomologous end-joining (NHEJ)
+YOR007C,SGT2,Small glutamine-rich tetratricopeptide repeat-containing protein 2
+YOR008C,SLG1,Protein SLG1
+YOR014W,RTS1,Serine/threonine-protein phosphatase 2A 56 kDa regulatory subunit delta isoform
+YOR016C,ERP4,Protein ERP4
+YOR018W,ROD1,Protein ROD1
+YOR020C,HSP10,"10 kDa heat shock protein, mitochondrial"
+YOR020W-A,YOR020W-A,Uncharacterized protein YOR020W-A
+YOR023C,AHC1,Protein AHC1
+YOR026W,BUB3,Cell cycle arrest protein BUB3
+YOR027W,STI1,Heat shock protein STI1
+YOR030W,DFG16,Protein DFG16
+YOR033C,EXO1,Exodeoxyribonuclease 1
+YOR036W,PEP12,Syntaxin PEP12
+YOR038C,HIR2,Protein HIR2
+YOR039W,CKB2,Beta' regulatory subunit of casein kinase 2 (CK2)
+YOR040W,GLO4,"Hydroxyacylglutathione hydrolase, mitochondrial"
+YOR042W,CUE5,Ubiquitin-binding protein
+YOR043W,WHI2,Growth regulation protein
+YOR045W,TOM6,Mitochondrial import receptor subunit TOM6
+YOR046C,DBP5,Cytoplasmic ATP-dependent RNA helicase of the DEAD-box family
+YOR047C,STD1,Protein involved in control of glucose-regulated gene expression
+YOR048C,RAT1,5'-3' exoribonuclease 2
+YOR054C,VHS3,Phosphopantothenoylcysteine decarboxylase subunit VHS3
+YOR056C,NOB1,20S-pre-rRNA D-site endonuclease NOB1
+YOR057W,SGT1,Cochaperone protein
+YOR060C,SLD7,Mitochondrial morphogenesis protein SLD7
+YOR061W,CKA2,Alpha' catalytic subunit of casein kinase 2 (CK2)
+YOR063W,RPL3,Ribosomal 60S subunit protein L3
+YOR064C,YNG1,Protein YNG1
+YOR065W,CYT1,"Cytochrome c1, heme protein, mitochondrial"
+YOR069W,VPS5,Nexin-1 homolog
+YOR070C,GYP1,Cis-golgi GTPase-activating protein (GAP) for yeast Rabs
+YOR073W,SGO1,Shugoshin
+YOR075W,UFE1,Syntaxin UFE1
+YOR076C,SKI7,Superkiller protein 7
+YOR078W,BUD21,Bud site selection protein 21
+YOR080W,DIA2,Protein DIA2
+YOR081C,TGL5,Lipase 5
+YOR083W,WHI5,G1-specific transcriptional repressor WHI5
+YOR085W,OST3,Dolichyl-diphosphooligosaccharide--protein glycosyltransferase subunit 3
+YOR089C,VPS21,Vacuolar protein sorting-associated protein 21
+YOR091W,TMA46,Translation machinery-associated protein 46
+YOR093C,CMR2,Uncharacterized protein YOR093C
+YOR094W,ARF3,Glucose-repressible ADP-ribosylation factor
+YOR096W,RPS7A,Protein component of the small (40S) ribosomal subunit
+YOR098C,NUP1,FG-nucleoporin component of central core of the nuclear pore complex
+YOR099W,KTR1,"Alpha-1,2-mannosyltransferase"
+YOR101W,RAS1,Ras-like protein 1
+YOR103C,OST2,Dolichyl-diphosphooligosaccharide--protein glycosyltransferase subunit OST2
+YOR106W,VAM3,Syntaxin-like vacuolar t-SNARE
+YOR107W,RGS2,Negative regulator of glucose-induced cAMP signaling
+YOR108W,LEU9,Alpha-isopropylmalate synthase II (2-isopropylmalate synthase)
+YOR109W,INP53,"Phosphatidylinositol 4,5-bisphosphate 5-phosphatase"
+YOR110W,TFC7,RNA pol III transcription initiation factor complex (TFIIIC) subunit
+YOR111W,YOR111W,dTTP/UTP pyrophosphatase
+YOR115C,TRS33,"Core component of TRAPP complexes I, II and IV"
+YOR116C,RPO31,RNA polymerase III largest subunit C160
+YOR117W,RPT5,ATPase of the 19S regulatory particle of the 26S proteasome
+YOR119C,RIO1,Serine/threonine-protein kinase RIO1
+YOR122C,PFY1,Profilin
+YOR123C,LEO1,RNA polymerase-associated protein LEO1
+YOR124C,UBP2,Ubiquitin carboxyl-terminal hydrolase 2
+YOR125C,CAT5,"5-demethoxyubiquinone hydroxylase, mitochondrial"
+YOR127W,RGA1,GTPase-activating protein for polarity-establishment protein Cdc42p
+YOR132W,VPS17,Vacuolar protein sorting-associated protein 17
+YOR133W,EFT1,"Elongation factor 2 (EF-2), also encoded by EFT2"
+YOR136W,IDH2,Subunit of mitochondrial NAD(+)-dependent isocitrate dehydrogenase
+YOR138C,RUP1,UBA domain-containing protein RUP1
+YOR141C,ARP8,Actin-like protein ARP8
+YOR142W,LSC1,Alpha subunit of succinyl-CoA ligase
+YOR143C,THI80,Thiamine pyrophosphokinase
+YOR144C,ELG1,Telomere length regulation protein ELG1
+YOR145C,PNO1,Pre-rRNA-processing protein PNO1
+YOR148C,SPP2,Pre-mRNA-splicing factor SPP2
+YOR150W,MRPL23,Mitochondrial ribosomal protein of the large subunit
+YOR151C,RPB2,RNA polymerase II second largest subunit B150
+YOR152C,ATG40,Autophagy-related protein 40
+YOR153W,PDR5,Pleiotropic ABC efflux transporter of multiple drugs
+YOR155C,ISN1,IMP-specific 5'-nucleotidase 1
+YOR157C,PUP1,Beta 2 subunit of the 20S proteasome
+YOR158W,PET123,Mitochondrial ribosomal protein of the small subunit
+YOR159C,SME1,Small nuclear ribonucleoprotein E
+YOR160W,MTR10,mRNA transport regulator MTR10
+YOR164C,GET4,Protein involved in inserting tail-anchored proteins into ER membranes
+YOR167C,RPS28A,Protein component of the small (40S) ribosomal subunit
+YOR168W,GLN4,Glutamine--tRNA ligase
+YOR171C,LCB4,Sphingoid long-chain base kinase
+YOR173W,DCS2,Inactive diphosphatase DCS2
+YOR174W,MED4,Subunit of the RNA polymerase II mediator complex
+YOR175C,ALE1,Broad-specificity lysophospholipid acyltransferase
+YOR176W,HEM15,Ferrochelatase
+YOR178C,GAC1,Regulatory subunit for Glc7p type-1 protein phosphatase (PP1)
+YOR179C,SYC1,Protein SYC1
+YOR180C,DCI1,Peroxisomal protein
+YOR181W,LAS17,Proline-rich protein LAS17
+YOR182C,RPS30B,Protein component of the small (40S) ribosomal subunit
+YOR185C,GSP2,GTP-binding nuclear protein GSP2/CNR2
+YOR187W,TUF1,Mitochondrial translation elongation factor Tu (EF-Tu)
+YOR189W,IES4,Ino eighty subunit 4
+YOR190W,SPR1,"Sporulation-specific exo-1,3-beta-glucanase"
+YOR193W,PEX27,Peripheral peroxisomal membrane protein
+YOR194C,TOA1,TFIIA large subunit
+YOR195W,SLK19,Kinetochore-associated protein
+YOR198C,BFR1,Nuclear segregation protein BFR1
+YOR204W,DED1,ATP-dependent DEAD (Asp-Glu-Ala-Asp)-box RNA helicase
+YOR206W,NOC2,Nucleolar complex protein 2
+YOR207C,RET1,Second-largest subunit of RNA polymerase III
+YOR208W,PTP2,Tyrosine-protein phosphatase 2
+YOR210W,RPB10,RNA polymerase subunit ABC10-beta
+YOR211C,MGM1,"Mitochondrial GTPase, present in complex with Ugo1p and Fzo1p"
+YOR212W,STE4,G protein beta subunit
+YOR213C,SAS5,Something about silencing protein 5
+YOR217W,RFC1,Subunit of heteropentameric Replication factor C (RF-C)
+YOR221C,MCT1,"Malonyl CoA-acyl carrier protein transacylase, mitochondrial"
+YOR223W,DSC3,Subunit of the DSC ubiquitin ligase complex
+YOR224C,RPB8,RNA polymerase subunit ABC14.5
+YOR226C,ISU2,Mitochondrial protein required for iron-sulfur protein synthesis
+YOR229W,WTM2,Transcriptional modulator
+YOR230W,WTM1,Transcriptional modulator
+YOR231W,MKK1,MAPKK involved in the protein kinase C signaling pathway
+YOR232W,MGE1,"GrpE protein homolog, mitochondrial"
+YOR234C,RPL33B,Ribosomal 60S subunit protein L33B
+YOR239W,ABP140,tRNA(Thr) (cytosine(32)-N(3))-methyltransferase
+YOR241W,MET7,Folylpolyglutamate synthetase
+YOR243C,PUS7,Pseudouridine synthase
+YOR244W,ESA1,Catalytic subunit of the histone acetyltransferase complex (NuA4)
+YOR249C,APC5,Subunit of the Anaphase-Promoting Complex/Cyclosome (APC/C)
+YOR250C,CLP1,Component of the cleavage and polyadenylation factor I (CF I)
+YOR251C,TUM1,Thiosulfate sulfurtransferase TUM1
+YOR253W,NAT5,N-alpha-acetyltransferase NAT5
+YOR254C,SEC63,Protein translocation protein SEC63
+YOR257W,CDC31,Cell division control protein 31
+YOR259C,RPT4,26S proteasome subunit RPT4
+YOR260W,GCD1,Gamma subunit of the translation initiation factor eIF2B
+YOR261C,RPN8,Essential non-ATPase regulatory subunit of the 26S proteasome
+YOR262W,GPN2,GPN-loop GTPase 2
+YOR264W,DSE3,Protein DSE3
+YOR265W,RBL2,Tubulin-specific chaperone A
+YOR269W,PAC1,Nuclear distribution protein PAC1
+YOR270C,VPH1,Subunit a of vacuolar-ATPase V0 domain
+YOR272W,YTM1,Ribosome biogenesis protein YTM1
+YOR275C,RIM20,pH-response regulator protein palA/RIM20
+YOR276W,CAF20,Cap-associated protein CAF20
+YOR279C,RFM1,Repression factor of MSEs protein 1
+YOR281C,PLP2,Phosducin-like protein 2
+YOR287C,RRP36,rRNA biogenesis protein RRP36
+YOR290C,SNF2,Transcription regulatory protein SNF2
+YOR293W,RPS10A,Protein component of the small (40S) ribosomal subunit
+YOR294W,RRS1,Regulator of ribosome biosynthesis
+YOR295W,UAF30,Subunit of UAF (upstream activation factor) complex
+YOR297C,TIM18,Mitochondrial import inner membrane translocase subunit TIM18
+YOR298C-A,MBF1,Multiprotein-bridging factor 1
+YOR299W,BUD7,Bud site selection protein 7
+YOR301W,RAX1,Protein involved in bud site selection during bipolar budding
+YOR303W,CPA1,Carbamoyl-phosphate synthase arginine-specific small chain
+YOR304W,ISW2,ISWI chromatin-remodeling complex ATPase ISW2
+YOR308C,SNU66,66 kDa U4/U6.U5 small nuclear ribonucleoprotein component
+YOR310C,NOP58,Nucleolar protein 58
+YOR311C,DGK1,Diacylglycerol kinase
+YOR312C,RPL20B,Ribosomal 60S subunit protein L20B
+YOR316C,COT1,Cobalt uptake protein COT1
+YOR319W,HSH49,Protein HSH49
+YOR321W,PMT3,Dolichyl-phosphate-mannose--protein mannosyltransferase 3
+YOR326W,MYO2,Myosin-2
+YOR327C,SNC2,Synaptobrevin homolog 2
+YOR328W,PDR10,ATP-dependent permease PDR10
+YOR332W,VMA4,Subunit E of the V1 domain of the vacuolar H+-ATPase (V-ATPase)
+YOR339C,UBC11,Ubiquitin-conjugating enzyme
+YOR340C,RPA43,RNA polymerase I subunit A43
+YOR341W,RPA190,RNA polymerase I largest subunit A190
+YOR346W,REV1,DNA repair protein REV1
+YOR347C,PYK2,Pyruvate kinase
+YOR351C,MEK1,Meiosis-specific serine/threonine protein kinase
+YOR352W,TFB6,Uncharacterized protein YOR352W
+YOR353C,SOG2,Leucine-rich repeat-containing protein SOG2
+YOR357C,SNX3,Sorting nexin for late-Golgi enzymes
+YOR358W,HAP5,Transcriptional activator HAP5
+YOR360C,PDE2,"3',5'-cyclic-nucleotide phosphodiesterase 2"
+YOR361C,PRT1,eIF3b subunit of the eukaryotic translation initiation factor 3 (eIF3)
+YOR362C,PRE10,Alpha 7 subunit of the 20S proteasome
+YOR363C,PIP2,Peroxisome proliferation transcriptional regulator
+YOR367W,SCP1,Transgelin
+YOR368W,RAD17,Checkpoint protein
+YOR369C,RPS12,Protein component of the small (40S) ribosomal subunit
+YOR370C,MRS6,Rab proteins geranylgeranyltransferase component A
+YOR371C,GPB1,Guanine nucleotide-binding protein subunit beta 1
+YOR372C,NDD1,Nuclear division defective protein 1
+YOR373W,NUD1,Protein NUD1
+YOR375C,GDH1,NADP(+)-dependent glutamate dehydrogenase
+YPL001W,HAT1,Catalytic subunit of the Hat1p-Hat2p histone acetyltransferase complex
+YPL002C,SNF8,Vacuolar-sorting protein SNF8
+YPL003W,ULA1,NEDD8-activating enzyme E1 regulatory subunit
+YPL004C,LSP1,Sphingolipid long chain base-responsive protein LSP1
+YPL007C,TFC8,Subunit of RNA polymerase III transcription initiation factor complex
+YPL008W,CHL1,Probable DNA helicase
+YPL009C,RQC2,Ribosome quality control complex subunit 2
+YPL010W,RET3,Zeta subunit of the coatomer complex (COPI)
+YPL011C,TAF3,TFIID subunit (47 kDa)
+YPL012W,RRP12,Protein required for export of the ribosomal subunits
+YPL013C,MRPS16,Mitochondrial ribosomal protein of the small subunit.
+YPL016W,SWI1,Subunit of the SWI/SNF chromatin remodeling complex
+YPL017C,IRC15,Increased recombination centers protein 15
+YPL018W,CTF19,Inner kinetochore subunit CTF19
+YPL019C,VTC3,Regulatory subunit of the vacuolar transporter chaperone (VTC) complex
+YPL020C,ULP1,Ubiquitin-like-specific protease 1
+YPL022W,RAD1,Single-stranded DNA endonuclease (with Rad10p)
+YPL023C,MET12,Methylenetetrahydrofolate reductase 1
+YPL024W,RMI1,RecQ-mediated genome instability protein 1
+YPL028W,ERG10,Acetyl-CoA C-acetyltransferase (acetoacetyl-CoA thiolase)
+YPL029W,SUV3,ATP-dependent RNA helicase
+YPL031C,PHO85,Cyclin-dependent kinase
+YPL036W,PMA2,Plasma membrane H+-ATPase
+YPL037C,EGD1,Subunit beta1 of the nascent polypeptide-associated complex (NAC)
+YPL038W,MET31,Transcriptional regulator MET31
+YPL040C,ISM1,"Isoleucine--tRNA ligase, mitochondrial"
+YPL042C,SSN3,Meiotic mRNA stability protein kinase SSN3
+YPL043W,NOP4,Nucleolar protein
+YPL045W,VPS16,Vacuolar protein sorting-associated protein 16
+YPL046C,ELC1,Elongin-C
+YPL047W,SGF11,SAGA-associated factor 11
+YPL048W,CAM1,Elongation factor 1-gamma 1
+YPL049C,DIG1,Down-regulator of invasive growth 1
+YPL050C,MNN9,Mannan polymerase complexes subunit MNN9
+YPL051W,ARL3,ADP-ribosylation factor-like protein 3
+YPL055C,LGE1,Transcriptional regulatory protein LGE1
+YPL057C,SUR1,Mannosylinositol phosphorylceramide (MIPC) synthase catalytic subunit
+YPL059W,GRX5,"Monothiol glutaredoxin-5, mitochondrial"
+YPL063W,TIM50,Essential component of the TIM23 complex
+YPL064C,CWC27,Peptidyl-prolyl isomerase CWC27
+YPL065W,VPS28,Vacuolar protein sorting-associated protein 28
+YPL066W,RGL1,RHO1 GEF localizing protein 1
+YPL069C,BTS1,Geranylgeranyl diphosphate synthase (GGPS)
+YPL070W,MUK1,Protein MUK1
+YPL075W,GCR1,Transcriptional activator of genes involved in glycolysis
+YPL076W,GPI2,Phosphatidylinositol N-acetylglucosaminyltransferase GPI2 subunit
+YPL078C,ATP4,Subunit b of the stator stalk of mitochondrial F1F0 ATP synthase
+YPL079W,RPL21B,Ribosomal 60S subunit protein L21B
+YPL081W,RPS9A,Protein component of the small (40S) ribosomal subunit
+YPL082C,MOT1,TATA-binding protein-associated factor MOT1
+YPL083C,SEN54,Subunit of the tRNA splicing endonuclease
+YPL084W,BRO1,Vacuolar-sorting protein BRO1
+YPL085W,SEC16,COPII vesicle coat protein required for ER transport vesicle budding
+YPL086C,ELP3,Subunit of Elongator complex
+YPL087W,YDC1,"Alkaline dihydroceramidase, involved in sphingolipid metabolism"
+YPL089C,RLM1,MADS-box transcription factor
+YPL090C,RPS6A,Protein component of the small (40S) ribosomal subunit
+YPL091W,GLR1,Cytosolic and mitochondrial glutathione oxidoreductase
+YPL093W,NOG1,Nucleolar GTP-binding protein 1
+YPL094C,SEC62,Translocation protein SEC62
+YPL096C-A,ERI1,Phosphatidylinositol N-acetylglucosaminyltransferase ERI1 subunit
+YPL096W,PNG1,Peptide-N(4)-(N-acetyl-beta-glucosaminyl)asparagine amidase
+YPL097W,MSY1,"Tyrosine--tRNA ligase, mitochondrial"
+YPL098C,MGR2,Protein MGR2
+YPL099C,INA17,Inner membrane assembly complex subunit 17
+YPL100W,ATG21,Autophagy-related protein 21
+YPL101W,ELP4,Subunit of hexameric RecA-like ATPase Elp456 Elongator subcomplex
+YPL104W,MSD1,"Aspartate--tRNA ligase, mitochondrial"
+YPL106C,SSE1,ATPase component of heat shock protein Hsp90 chaperone complex
+YPL112C,PEX25,Peripheral peroxisomal membrane peroxin
+YPL115C,BEM3,GTPase-activating protein BEM3
+YPL118W,MRP51,Mitochondrial ribosomal protein of the small subunit
+YPL119C,DBP1,Putative ATP-dependent RNA helicase of the DEAD-box protein family
+YPL120W,VPS30,Vacuolar protein sorting-associated protein 30
+YPL121C,MEI5,Meiosis-specific protein involved in meiotic recombination
+YPL122C,TFB2,Subunit of TFIIH and nucleotide excision repair factor 3 complexes
+YPL124W,SPC29,Inner plaque spindle pole body (SPB) component
+YPL126W,NAN1,NET1-associated nuclear protein 1
+YPL127C,HHO1,"Histone H1, linker histone with roles in meiosis and sporulation"
+YPL128C,TBF1,Protein TBF1
+YPL129W,TAF14,Transcription initiation factor TFIID subunit 14
+YPL131W,RPL5,Ribosomal 60S subunit protein L5
+YPL135W,ISU1,Conserved protein of the mitochondrial matrix
+YPL138C,SPP1,COMPASS component SPP1
+YPL139C,UME1,Transcriptional regulatory protein UME1
+YPL140C,MKK2,MAPKK involved in the protein kinase C signaling pathway
+YPL143W,RPL33A,Ribosomal 60S subunit protein L33A
+YPL144W,POC4,Proteasome chaperone 4
+YPL146C,NOP53,Nucleolar protein
+YPL147W,PXA1,Peroxisomal long-chain fatty acid import protein 2
+YPL149W,ATG5,Autophagy protein 5
+YPL151C,PRP46,Pre-mRNA-splicing factor PRP46
+YPL152W,RRD2,Serine/threonine-protein phosphatase 2A activator 2
+YPL153C,RAD53,Serine/threonine-protein kinase RAD53
+YPL154C,PEP4,Saccharopepsin
+YPL155C,KIP2,Kinesin-like protein KIP2
+YPL160W,CDC60,"Leucine--tRNA ligase, cytoplasmic"
+YPL161C,BEM4,Bud emergence protein 4
+YPL164C,MLH3,Protein involved in DNA mismatch repair and meiotic recombination
+YPL166W,ATG29,Autophagy-related protein 29
+YPL167C,REV3,Catalytic subunit of DNA polymerase zeta
+YPL169C,MEX67,mRNA export factor MEX67
+YPL173W,MRPL40,Mitochondrial ribosomal protein of the large subunit.
+YPL174C,NIP100,Protein NIP100
+YPL175W,SPT14,Phosphatidylinositol N-acetylglucosaminyltransferase GPI3 subunit
+YPL178W,CBC2,Nuclear cap-binding protein subunit 2
+YPL179W,PPQ1,Serine/threonine-protein phosphatase PPQ
+YPL180W,TCO89,Subunit of TORC1 (Tor1p or Tor2p-Kog1p-Lst8p-Tco89p)
+YPL181W,CTI6,Component of the Rpd3L histone deacetylase complex
+YPL183C,RTT10,Regulator of Ty1 transposition protein 10
+YPL183W-A,RTC6,"54S ribosomal protein RTC6, mitochondrial"
+YPL187W,MF(ALPHA)1,"Mating pheromone alpha-factor, made by alpha cells"
+YPL190C,NAB3,"RNA-binding protein, subunit of Nrd1 complex (Nrd1p-Nab3p-Sen1p)"
+YPL192C,PRM3,Pheromone-regulated membrane protein 3
+YPL193W,RSA1,Protein involved in the assembly of 60S ribosomal subunits
+YPL194W,DDC1,DNA damage checkpoint protein
+YPL195W,APL5,Delta adaptin-like subunit of the clathrin associated protein complex
+YPL198W,RPL7B,Ribosomal 60S subunit protein L7B
+YPL200W,CSM4,Protein required for accurate chromosome segregation during meiosis
+YPL201C,YIG1,Protein that interacts with glycerol 3-phosphatase
+YPL203W,TPK2,cAMP-dependent protein kinase catalytic subunit
+YPL204W,HRR25,Conserved casein kinase
+YPL207W,TYW1,S-adenosyl-L-methionine-dependent tRNA 4-demethylwyosine synthase
+YPL208W,RKM1,SET-domain lysine-N-methyltransferase
+YPL209C,IPL1,Spindle assembly checkpoint kinase
+YPL210C,SRP72,Core component of the signal recognition particle (SRP)
+YPL211W,NIP7,Nucleolar protein required for 60S ribosome subunit biogenesis
+YPL213W,LEA1,U2 small nuclear ribonucleoprotein A
+YPL215W,CBP3,Mitochondrial protein required for assembly of cytochrome bc1 complex
+YPL217C,BMS1,Ribosome biogenesis protein BMS1
+YPL218W,SAR1,ARF family GTPase
+YPL219W,PCL8,Cyclin
+YPL220W,RPL1A,Ribosomal 60S subunit protein L1A
+YPL226W,NEW1,[NU+] prion formation protein 1
+YPL228W,CET1,mRNA-capping enzyme subunit beta
+YPL231W,FAS2,3-oxoacyl-[acyl-carrier-protein] reductase
+YPL232W,SSO1,Protein SSO1
+YPL233W,NSL1,Kinetochore-associated protein NSL1
+YPL234C,VMA11,Vacuolar ATPase V0 domain subunit c'
+YPL235W,RVB2,RuvB-like protein 2
+YPL237W,SUI3,Beta subunit of the translation initiation factor eIF2
+YPL239W,YAR1,Ankyrin repeat-containing protein YAR1
+YPL240C,HSP82,ATP-dependent molecular chaperone HSP82
+YPL242C,IQG1,Ras GTPase-activating-like protein IQG1
+YPL243W,SRP68,Core component of the signal recognition particle (SRP) complex
+YPL246C,RBD2,Rhomboid protein 2
+YPL247C,YPL247C,WD repeat-containing protein YPL247C
+YPL248C,GAL4,Regulatory protein GAL4
+YPL249C,GYP5,GTPase-activating protein (GAP) for yeast Rab family members
+YPL249C-A,RPL36B,Ribosomal 60S subunit protein L36B
+YPL252C,YAH1,"Adrenodoxin homolog, mitochondrial"
+YPL253C,VIK1,Spindle pole body-associated protein VIK1
+YPL254W,HFI1,Transcriptional coactivator HFI1/ADA1
+YPL255W,BBP1,Protein required for the spindle pole body (SPB) duplication
+YPL256C,CLN2,G1/S-specific cyclin CLN2
+YPL258C,THI21,Hydroxymethylpyrimidine/phosphomethylpyrimidine kinase THI21
+YPL259C,APM1,Mu1-like medium subunit of the AP-1 complex
+YPL262W,FUM1,"Fumarate hydratase, mitochondrial"
+YPL266W,DIM1,Essential 18S rRNA dimethylase (dimethyladenosine transferase)
+YPL267W,ACM1,APC/C-CDH1 modulator 1
+YPL268W,PLC1,"1-phosphatidylinositol 4,5-bisphosphate phosphodiesterase 1"
+YPL269W,KAR9,Karyogamy protein KAR9
+YPL271W,ATP15,Epsilon subunit of the F1 sector of mitochondrial F1F0 ATP synthase
+YPL273W,SAM4,Homocysteine S-methyltransferase 2
+YPR001W,CIT3,Dual specificity mitochondrial citrate and methylcitrate synthase
+YPR004C,AIM45,"Probable electron transfer flavoprotein subunit alpha, mitochondrial"
+YPR006C,ICL2,2-methylisocitrate lyase of the mitochondrial matrix
+YPR007C,REC8,Meiotic recombination protein REC8
+YPR010C,RPA135,RNA polymerase I second largest subunit A135.
+YPR016C,TIF6,Eukaryotic translation initiation factor 6
+YPR017C,DSS4,Protein DSS4
+YPR018W,RLF2,Largest subunit (p90) of the Chromatin Assembly Complex (CAF-1)
+YPR019W,MCM4,DNA replication licensing factor MCM4
+YPR020W,ATP20,Subunit g of the mitochondrial F1F0 ATP synthase
+YPR023C,EAF3,Chromatin modification-related protein EAF3
+YPR024W,YME1,Catalytic subunit of i-AAA protease complex
+YPR025C,CCL1,Cyclin associated with protein kinase Kin28p
+YPR026W,ATH1,Acid trehalase required for utilization of extracellular trehalose
+YPR028W,YOP1,Protein YOP1
+YPR029C,APL4,AP-1 complex subunit gamma-1
+YPR030W,CSR2,Transcription factor CSR2
+YPR031W,NTO1,NuA3 HAT complex component NTO1
+YPR032W,SRO7,Lethal(2) giant larvae protein homolog SRO7
+YPR034W,ARP7,Actin-related protein 7
+YPR036W,VMA13,Subunit H of the V1 peripheral membrane domain of V-ATPase
+YPR040W,TIP41,Type 2A phosphatase activator TIP41
+YPR041W,TIF5,Translation initiation factor eIF5
+YPR042C,PUF2,PUF family mRNA-binding protein
+YPR043W,RPL43A,Ribosomal 60S subunit protein L43A
+YPR045C,THP3,Protein that may have a role in transcription elongation
+YPR046W,MCM16,Inner kinetochore subunit MCM16
+YPR047W,MSF1,"Phenylalanine--tRNA ligase, mitochondrial"
+YPR048W,TAH18,NADPH-dependent diflavin oxidoreductase 1
+YPR049C,ATG11,Autophagy-related protein 11
+YPR051W,MAK3,N-alpha-acetyltransferase 30
+YPR052C,NHP6A,Non-histone chromosomal protein 6A
+YPR054W,SMK1,Middle sporulation-specific mitogen-activated protein kinase (MAPK)
+YPR055W,SEC8,Essential 121 kDa subunit of the exocyst complex
+YPR056W,TFB4,General transcription and DNA repair factor IIH subunit TFB4
+YPR057W,BRR1,Pre-mRNA-splicing factor BRR1
+YPR066W,UBA3,NEDD8-activating enzyme E1 catalytic subunit
+YPR067W,ISA2,Iron-sulfur assembly protein 2
+YPR070W,MED1,Subunit of the RNA polymerase II mediator complex
+YPR072W,NOT5,General negative regulator of transcription subunit 5
+YPR073C,LTP1,Protein phosphotyrosine phosphatase of unknown cellular role
+YPR074C,TKL1,Transketolase
+YPR075C,OPY2,Protein OPY2
+YPR080W,TEF1,Translational elongation factor EF-1 alpha
+YPR081C,GRS2,Glycine--tRNA ligase 2
+YPR082C,DIB1,Spliceosomal protein DIB1
+YPR083W,MDM36,Mitochondrial protein
+YPR085C,ASA1,ASTRA-associated protein 1
+YPR086W,SUA7,Transcription factor TFIIB
+YPR088C,SRP54,Signal recognition particle (SRP) subunit (homolog of mammalian SRP54)
+YPR094W,RDS3,Pre-mRNA-splicing factor RDS3
+YPR100W,MRPL51,Mitochondrial ribosomal protein of the large subunit.
+YPR101W,SNT309,Pre-mRNA-splicing factor SNT309
+YPR102C,RPL11A,Ribosomal 60S subunit protein L11A
+YPR103W,PRE2,Beta 5 subunit of the 20S proteasome
+YPR104C,FHL1,Pre-rRNA-processing protein FHL1
+YPR105C,COG4,Essential component of the conserved oligomeric Golgi complex
+YPR106W,ISR1,Serine/threonine-protein kinase ISR1
+YPR107C,YTH1,mRNA 3'-end-processing protein YTH1
+YPR108W,RPN7,Essential non-ATPase regulatory subunit of the 26S proteasome
+YPR109W,YPR109W,Golgi/endosome-localized DSC protein 1
+YPR110C,RPC40,RNA polymerase subunit AC40
+YPR111W,DBF20,Serine/threonine-protein kinase DBF20
+YPR112C,MRD1,Multiple RNA-binding domain-containing protein 1
+YPR116W,RRG8,Protein of unknown function
+YPR119W,CLB2,G2/mitotic-specific cyclin-2
+YPR120C,CLB5,S-phase entry cyclin-5
+YPR127W,YPR127W,Putative pyridoxal reductase
+YPR129W,SCD6,Protein SCD6
+YPR131C,NAT3,Catalytic subunit of the NatB N-terminal acetyltransferase
+YPR132W,RPS23B,Ribosomal protein 28 (rp28) of the small (40S) ribosomal subunit
+YPR133C,SPN1,Transcription factor SPN1
+YPR133W-A,TOM5,Mitochondrial import receptor subunit TOM5
+YPR135W,CTF4,DNA polymerase alpha-binding protein
+YPR137W,RRP9,Ribosomal RNA-processing protein 9
+YPR138C,MEP3,Ammonium transporter MEP3
+YPR139C,LOA1,Lysophosphatidic acid acyltransferase
+YPR141C,KAR3,Kinesin-like protein KAR3
+YPR143W,RRP15,Nucleolar protein
+YPR144C,NOC4,Nucleolar protein
+YPR145W,ASN1,Asparagine synthetase
+YPR152C,URN1,Pre-mRNA-splicing factor URN1
+YPR154W,PIN3,[PSI+] inducibility protein 3
+YPR156C,TPO3,Polyamine transporter of the major facilitator superfamily
+YPR160W,GPH1,Glycogen phosphorylase required for the mobilization of glycogen
+YPR161C,SGV1,Serine/threonine-protein kinase BUR1
+YPR162C,ORC4,Subunit of the origin recognition complex (ORC)
+YPR163C,TIF3,Translation initiation factor eIF-4B
+YPR164W,MMS1,Subunit of E3 ubiquitin ligase complex involved in replication repair
+YPR165W,RHO1,GTP-binding protein of the rho subfamily of Ras-like proteins
+YPR166C,MRP2,Mitochondrial ribosomal protein of the small subunit.
+YPR168W,NUT2,Subunit of the RNA polymerase II mediator complex
+YPR170W-B,YPR170W-B,Uncharacterized protein YPR170W-B
+YPR171W,BSP1,Protein BSP1
+YPR173C,VPS4,AAA-ATPase involved in multivesicular body (MVB) protein sorting
+YPR175W,DPB2,Second largest subunit of DNA polymerase II (DNA polymerase epsilon)
+YPR176C,BET2,Beta subunit of Type II geranylgeranyltransferase
+YPR178W,PRP4,U4/U6 small nuclear ribonucleoprotein PRP4
+YPR179C,HDA3,Subunit of the HDA1 histone deacetylase complex
+YPR180W,AOS1,DNA damage tolerance protein RHC31
+YPR181C,SEC23,"GTPase-activating protein, stimulates the GTPase activity of Sar1p"
+YPR182W,SMX3,Small nuclear ribonucleoprotein F
+YPR184W,GDB1,"Amylo-alpha-1,6-glucosidase"
+YPR185W,ATG13,Autophagy-related protein 13
+YPR186C,PZF1,Transcription factor IIIA (TFIIIA)
+YPR187W,RPO26,RNA polymerase subunit ABC23
+YPR188C,MLC2,Regulatory light chain for the type II myosin Myo1p
+YPR189W,SKI3,Superkiller protein 3
+YPR190C,RPC82,RNA polymerase III subunit C82.
+YPR191W,QCR2,Subunit 2 of ubiquinol cytochrome-c reductase (Complex III)
+YPR193C,HPA2,Tetrameric histone acetyltransferase

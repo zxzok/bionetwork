@@ -287,7 +287,7 @@ class Episode(Narrated):
 
     # ------------------------------------------------------------------ Molloy-Reed
     def molloy_reed(self):
-        tag = self.chapter("二  一个直观判据")
+        tag = self.chapter("一  一个直观判据")
         G = sf_graph(70, 2.3, seed=21, kmax=14)
         pos = fit(nx.kamada_kawai_layout(G), (-6.4, -0.4, -3.2, 3.2))
         net = NetView(G, pos, eo=0.35)
@@ -338,7 +338,7 @@ class Episode(Narrated):
 
     # ------------------------------------------------------------------ scale-free vs random
     def scale_free(self):
-        tag = self.chapter("三  枢纽的两面")
+        tag = self.chapter("二  枢纽的两面")
         Ge = nx.gnm_random_graph(90, 120, seed=5)
         Ge = Ge.subgraph(max(nx.connected_components(Ge), key=len)).copy()
         Gs = sf_graph(110, 2.2, seed=9, kmax=40)
@@ -412,7 +412,7 @@ class Episode(Narrated):
 
     # ------------------------------------------------------------------ yeast
     def yeast(self):
-        tag = self.chapter("四  酵母的蛋白质网络")
+        tag = self.chapter("二  酵母的蛋白质网络")
         cell = Ellipse(width=6.0, height=4.6, color=GREEN, stroke_width=4).shift(LEFT * 3.2 + DOWN * 0.2)
         G = sf_graph(60, 2.3, seed=31, kmax=14)
         net = NetView(G, fit(nx.kamada_kawai_layout(G), (-5.6, -0.8, -1.9, 1.6)), color=GREEN, eo=0.4)
@@ -456,7 +456,7 @@ class Episode(Narrated):
 
     # ------------------------------------------------------------------ cascade
     def cascade(self):
-        tag = self.chapter("五  级联失效")
+        tag = self.chapter("三  级联失效")
         G = nx.triangular_lattice_graph(5, 10)
         G = nx.convert_node_labels_to_integers(G, label_attribute="xy")
         pos = fit({v: np.array(G.nodes[v]["xy"], float) + np.array([0.5 * (G.nodes[v]["xy"][1] % 2), 0]) for v in G}, (-6.0, 6.0, -2.8, 2.6))
@@ -562,7 +562,7 @@ class Episode(Narrated):
 
     # ------------------------------------------------------------------ brain
     def brain(self):
-        tag = self.chapter("六  脑网络中的枢纽")
+        tag = self.chapter("三  脑网络中的枢纽")
         cols = [BLUE, GREEN, VIOLET, GOLD]
         centers = [np.array(c) for c in ([-3.2, 1.5], [3.2, 1.5], [-3.2, -1.9], [3.2, -1.9])]
         G = nx.Graph()

@@ -1,0 +1,433 @@
+pathway_id,pathway,gene
+R-HSA-6799198,Complex I biogenesis,ACAD9
+R-HSA-6799198,Complex I biogenesis,COA1
+R-HSA-6799198,Complex I biogenesis,DMAC1
+R-HSA-6799198,Complex I biogenesis,DMAC2
+R-HSA-6799198,Complex I biogenesis,ECSIT
+R-HSA-6799198,Complex I biogenesis,FOXRED1
+R-HSA-6799198,Complex I biogenesis,HSCB
+R-HSA-6799198,Complex I biogenesis,HSPA9
+R-HSA-6799198,Complex I biogenesis,LYRM2
+R-HSA-6799198,Complex I biogenesis,MT-ND1
+R-HSA-6799198,Complex I biogenesis,MT-ND2
+R-HSA-6799198,Complex I biogenesis,MT-ND3
+R-HSA-6799198,Complex I biogenesis,MT-ND4
+R-HSA-6799198,Complex I biogenesis,MT-ND5
+R-HSA-6799198,Complex I biogenesis,MT-ND6
+R-HSA-6799198,Complex I biogenesis,NDUFA1
+R-HSA-6799198,Complex I biogenesis,NDUFA10
+R-HSA-6799198,Complex I biogenesis,NDUFA11
+R-HSA-6799198,Complex I biogenesis,NDUFA12
+R-HSA-6799198,Complex I biogenesis,NDUFA13
+R-HSA-6799198,Complex I biogenesis,NDUFA2
+R-HSA-6799198,Complex I biogenesis,NDUFA3
+R-HSA-6799198,Complex I biogenesis,NDUFA5
+R-HSA-6799198,Complex I biogenesis,NDUFA6
+R-HSA-6799198,Complex I biogenesis,NDUFA7
+R-HSA-6799198,Complex I biogenesis,NDUFA8
+R-HSA-6799198,Complex I biogenesis,NDUFA9
+R-HSA-6799198,Complex I biogenesis,NDUFAB1
+R-HSA-6799198,Complex I biogenesis,NDUFAF1
+R-HSA-6799198,Complex I biogenesis,NDUFAF2
+R-HSA-6799198,Complex I biogenesis,NDUFAF3
+R-HSA-6799198,Complex I biogenesis,NDUFAF4
+R-HSA-6799198,Complex I biogenesis,NDUFAF5
+R-HSA-6799198,Complex I biogenesis,NDUFAF6
+R-HSA-6799198,Complex I biogenesis,NDUFAF7
+R-HSA-6799198,Complex I biogenesis,NDUFAF8
+R-HSA-6799198,Complex I biogenesis,NDUFB1
+R-HSA-6799198,Complex I biogenesis,NDUFB10
+R-HSA-6799198,Complex I biogenesis,NDUFB11
+R-HSA-6799198,Complex I biogenesis,NDUFB2
+R-HSA-6799198,Complex I biogenesis,NDUFB3
+R-HSA-6799198,Complex I biogenesis,NDUFB4
+R-HSA-6799198,Complex I biogenesis,NDUFB5
+R-HSA-6799198,Complex I biogenesis,NDUFB6
+R-HSA-6799198,Complex I biogenesis,NDUFB7
+R-HSA-6799198,Complex I biogenesis,NDUFB8
+R-HSA-6799198,Complex I biogenesis,NDUFB9
+R-HSA-6799198,Complex I biogenesis,NDUFC1
+R-HSA-6799198,Complex I biogenesis,NDUFC2
+R-HSA-6799198,Complex I biogenesis,NDUFS1
+R-HSA-6799198,Complex I biogenesis,NDUFS2
+R-HSA-6799198,Complex I biogenesis,NDUFS3
+R-HSA-6799198,Complex I biogenesis,NDUFS4
+R-HSA-6799198,Complex I biogenesis,NDUFS5
+R-HSA-6799198,Complex I biogenesis,NDUFS6
+R-HSA-6799198,Complex I biogenesis,NDUFS7
+R-HSA-6799198,Complex I biogenesis,NDUFS8
+R-HSA-6799198,Complex I biogenesis,NDUFV1
+R-HSA-6799198,Complex I biogenesis,NDUFV2
+R-HSA-6799198,Complex I biogenesis,NDUFV3
+R-HSA-6799198,Complex I biogenesis,NUBPL
+R-HSA-6799198,Complex I biogenesis,OXA1L
+R-HSA-6799198,Complex I biogenesis,PYURF
+R-HSA-6799198,Complex I biogenesis,SFXN4
+R-HSA-6799198,Complex I biogenesis,TIMMDC1
+R-HSA-6799198,Complex I biogenesis,TMEM126A
+R-HSA-6799198,Complex I biogenesis,TMEM126B
+R-HSA-6799198,Complex I biogenesis,TMEM186
+R-HSA-379716,Cytosolic tRNA aminoacylation,AARS1
+R-HSA-379716,Cytosolic tRNA aminoacylation,AIMP1
+R-HSA-379716,Cytosolic tRNA aminoacylation,AIMP2
+R-HSA-379716,Cytosolic tRNA aminoacylation,CARS1
+R-HSA-379716,Cytosolic tRNA aminoacylation,DARS1
+R-HSA-379716,Cytosolic tRNA aminoacylation,EEF1E1
+R-HSA-379716,Cytosolic tRNA aminoacylation,EPRS1
+R-HSA-379716,Cytosolic tRNA aminoacylation,FARSA
+R-HSA-379716,Cytosolic tRNA aminoacylation,FARSB
+R-HSA-379716,Cytosolic tRNA aminoacylation,GARS1
+R-HSA-379716,Cytosolic tRNA aminoacylation,HARS1
+R-HSA-379716,Cytosolic tRNA aminoacylation,IARS1
+R-HSA-379716,Cytosolic tRNA aminoacylation,KARS1
+R-HSA-379716,Cytosolic tRNA aminoacylation,LARS1
+R-HSA-379716,Cytosolic tRNA aminoacylation,MARS1
+R-HSA-379716,Cytosolic tRNA aminoacylation,NARS1
+R-HSA-379716,Cytosolic tRNA aminoacylation,PPA1
+R-HSA-379716,Cytosolic tRNA aminoacylation,QARS1
+R-HSA-379716,Cytosolic tRNA aminoacylation,RARS1
+R-HSA-379716,Cytosolic tRNA aminoacylation,SARS1
+R-HSA-379716,Cytosolic tRNA aminoacylation,TARS1
+R-HSA-379716,Cytosolic tRNA aminoacylation,VARS1
+R-HSA-379716,Cytosolic tRNA aminoacylation,WARS1
+R-HSA-379716,Cytosolic tRNA aminoacylation,YARS1
+R-HSA-9907900,Proteasome assembly,ADRM1
+R-HSA-9907900,Proteasome assembly,PAAF1
+R-HSA-9907900,Proteasome assembly,POMP
+R-HSA-9907900,Proteasome assembly,PSMA1
+R-HSA-9907900,Proteasome assembly,PSMA2
+R-HSA-9907900,Proteasome assembly,PSMA3
+R-HSA-9907900,Proteasome assembly,PSMA4
+R-HSA-9907900,Proteasome assembly,PSMA5
+R-HSA-9907900,Proteasome assembly,PSMA6
+R-HSA-9907900,Proteasome assembly,PSMA7
+R-HSA-9907900,Proteasome assembly,PSMA8
+R-HSA-9907900,Proteasome assembly,PSMB1
+R-HSA-9907900,Proteasome assembly,PSMB10
+R-HSA-9907900,Proteasome assembly,PSMB11
+R-HSA-9907900,Proteasome assembly,PSMB2
+R-HSA-9907900,Proteasome assembly,PSMB3
+R-HSA-9907900,Proteasome assembly,PSMB4
+R-HSA-9907900,Proteasome assembly,PSMB5
+R-HSA-9907900,Proteasome assembly,PSMB6
+R-HSA-9907900,Proteasome assembly,PSMB7
+R-HSA-9907900,Proteasome assembly,PSMB8
+R-HSA-9907900,Proteasome assembly,PSMB9
+R-HSA-9907900,Proteasome assembly,PSMC1
+R-HSA-9907900,Proteasome assembly,PSMC2
+R-HSA-9907900,Proteasome assembly,PSMC3
+R-HSA-9907900,Proteasome assembly,PSMC4
+R-HSA-9907900,Proteasome assembly,PSMC5
+R-HSA-9907900,Proteasome assembly,PSMC6
+R-HSA-9907900,Proteasome assembly,PSMD1
+R-HSA-9907900,Proteasome assembly,PSMD10
+R-HSA-9907900,Proteasome assembly,PSMD11
+R-HSA-9907900,Proteasome assembly,PSMD12
+R-HSA-9907900,Proteasome assembly,PSMD13
+R-HSA-9907900,Proteasome assembly,PSMD14
+R-HSA-9907900,Proteasome assembly,PSMD2
+R-HSA-9907900,Proteasome assembly,PSMD3
+R-HSA-9907900,Proteasome assembly,PSMD4
+R-HSA-9907900,Proteasome assembly,PSMD5
+R-HSA-9907900,Proteasome assembly,PSMD6
+R-HSA-9907900,Proteasome assembly,PSMD7
+R-HSA-9907900,Proteasome assembly,PSMD8
+R-HSA-9907900,Proteasome assembly,PSMD9
+R-HSA-9907900,Proteasome assembly,PSME1
+R-HSA-9907900,Proteasome assembly,PSME2
+R-HSA-9907900,Proteasome assembly,PSME3
+R-HSA-9907900,Proteasome assembly,PSME4
+R-HSA-9907900,Proteasome assembly,PSMF1
+R-HSA-9907900,Proteasome assembly,PSMG1
+R-HSA-9907900,Proteasome assembly,PSMG2
+R-HSA-9907900,Proteasome assembly,PSMG3
+R-HSA-9907900,Proteasome assembly,PSMG4
+R-HSA-9907900,Proteasome assembly,SEM1
+R-HSA-191273,Cholesterol biosynthesis,ACAT2
+R-HSA-191273,Cholesterol biosynthesis,ARV1
+R-HSA-191273,Cholesterol biosynthesis,CYP51A1
+R-HSA-191273,Cholesterol biosynthesis,DHCR24
+R-HSA-191273,Cholesterol biosynthesis,DHCR7
+R-HSA-191273,Cholesterol biosynthesis,EBP
+R-HSA-191273,Cholesterol biosynthesis,FDFT1
+R-HSA-191273,Cholesterol biosynthesis,FDPS
+R-HSA-191273,Cholesterol biosynthesis,GGPS1
+R-HSA-191273,Cholesterol biosynthesis,HMGCR
+R-HSA-191273,Cholesterol biosynthesis,HMGCS1
+R-HSA-191273,Cholesterol biosynthesis,HSD17B7
+R-HSA-191273,Cholesterol biosynthesis,IDI1
+R-HSA-191273,Cholesterol biosynthesis,IDI2
+R-HSA-191273,Cholesterol biosynthesis,LBR
+R-HSA-191273,Cholesterol biosynthesis,LSS
+R-HSA-191273,Cholesterol biosynthesis,MSMO1
+R-HSA-191273,Cholesterol biosynthesis,MVD
+R-HSA-191273,Cholesterol biosynthesis,MVK
+R-HSA-191273,Cholesterol biosynthesis,NSDHL
+R-HSA-191273,Cholesterol biosynthesis,PLPP6
+R-HSA-191273,Cholesterol biosynthesis,PMVK
+R-HSA-191273,Cholesterol biosynthesis,SC5D
+R-HSA-191273,Cholesterol biosynthesis,SQLE
+R-HSA-191273,Cholesterol biosynthesis,SREBF1
+R-HSA-191273,Cholesterol biosynthesis,SREBF2
+R-HSA-191273,Cholesterol biosynthesis,TM7SF2
+R-HSA-68962,Activation of the pre-replicative complex,CDC45
+R-HSA-68962,Activation of the pre-replicative complex,CDC6
+R-HSA-68962,Activation of the pre-replicative complex,CDC7
+R-HSA-68962,Activation of the pre-replicative complex,CDK2
+R-HSA-68962,Activation of the pre-replicative complex,CDT1
+R-HSA-68962,Activation of the pre-replicative complex,DBF4
+R-HSA-68962,Activation of the pre-replicative complex,GMNN
+R-HSA-68962,Activation of the pre-replicative complex,MCM10
+R-HSA-68962,Activation of the pre-replicative complex,MCM2
+R-HSA-68962,Activation of the pre-replicative complex,MCM3
+R-HSA-68962,Activation of the pre-replicative complex,MCM4
+R-HSA-68962,Activation of the pre-replicative complex,MCM5
+R-HSA-68962,Activation of the pre-replicative complex,MCM6
+R-HSA-68962,Activation of the pre-replicative complex,MCM7
+R-HSA-68962,Activation of the pre-replicative complex,MCM8
+R-HSA-68962,Activation of the pre-replicative complex,ORC1
+R-HSA-68962,Activation of the pre-replicative complex,ORC2
+R-HSA-68962,Activation of the pre-replicative complex,ORC3
+R-HSA-68962,Activation of the pre-replicative complex,ORC4
+R-HSA-68962,Activation of the pre-replicative complex,ORC5
+R-HSA-68962,Activation of the pre-replicative complex,ORC6
+R-HSA-68962,Activation of the pre-replicative complex,POLA1
+R-HSA-68962,Activation of the pre-replicative complex,POLA2
+R-HSA-68962,Activation of the pre-replicative complex,POLE
+R-HSA-68962,Activation of the pre-replicative complex,POLE2
+R-HSA-68962,Activation of the pre-replicative complex,POLE3
+R-HSA-68962,Activation of the pre-replicative complex,POLE4
+R-HSA-68962,Activation of the pre-replicative complex,PRIM1
+R-HSA-68962,Activation of the pre-replicative complex,PRIM2
+R-HSA-68962,Activation of the pre-replicative complex,RPA1
+R-HSA-68962,Activation of the pre-replicative complex,RPA2
+R-HSA-68962,Activation of the pre-replicative complex,RPA3
+R-HSA-68962,Activation of the pre-replicative complex,RPA4
+R-HSA-5389840,Mitochondrial translation elongation,AURKAIP1
+R-HSA-5389840,Mitochondrial translation elongation,CHCHD1
+R-HSA-5389840,Mitochondrial translation elongation,DAP3
+R-HSA-5389840,Mitochondrial translation elongation,ERAL1
+R-HSA-5389840,Mitochondrial translation elongation,GADD45GIP1
+R-HSA-5389840,Mitochondrial translation elongation,GFM1
+R-HSA-5389840,Mitochondrial translation elongation,KGD4
+R-HSA-5389840,Mitochondrial translation elongation,MRPL1
+R-HSA-5389840,Mitochondrial translation elongation,MRPL10
+R-HSA-5389840,Mitochondrial translation elongation,MRPL11
+R-HSA-5389840,Mitochondrial translation elongation,MRPL12
+R-HSA-5389840,Mitochondrial translation elongation,MRPL13
+R-HSA-5389840,Mitochondrial translation elongation,MRPL14
+R-HSA-5389840,Mitochondrial translation elongation,MRPL15
+R-HSA-5389840,Mitochondrial translation elongation,MRPL16
+R-HSA-5389840,Mitochondrial translation elongation,MRPL17
+R-HSA-5389840,Mitochondrial translation elongation,MRPL18
+R-HSA-5389840,Mitochondrial translation elongation,MRPL19
+R-HSA-5389840,Mitochondrial translation elongation,MRPL2
+R-HSA-5389840,Mitochondrial translation elongation,MRPL20
+R-HSA-5389840,Mitochondrial translation elongation,MRPL21
+R-HSA-5389840,Mitochondrial translation elongation,MRPL22
+R-HSA-5389840,Mitochondrial translation elongation,MRPL23
+R-HSA-5389840,Mitochondrial translation elongation,MRPL24
+R-HSA-5389840,Mitochondrial translation elongation,MRPL27
+R-HSA-5389840,Mitochondrial translation elongation,MRPL28
+R-HSA-5389840,Mitochondrial translation elongation,MRPL3
+R-HSA-5389840,Mitochondrial translation elongation,MRPL30
+R-HSA-5389840,Mitochondrial translation elongation,MRPL32
+R-HSA-5389840,Mitochondrial translation elongation,MRPL33
+R-HSA-5389840,Mitochondrial translation elongation,MRPL34
+R-HSA-5389840,Mitochondrial translation elongation,MRPL35
+R-HSA-5389840,Mitochondrial translation elongation,MRPL36
+R-HSA-5389840,Mitochondrial translation elongation,MRPL37
+R-HSA-5389840,Mitochondrial translation elongation,MRPL38
+R-HSA-5389840,Mitochondrial translation elongation,MRPL39
+R-HSA-5389840,Mitochondrial translation elongation,MRPL4
+R-HSA-5389840,Mitochondrial translation elongation,MRPL40
+R-HSA-5389840,Mitochondrial translation elongation,MRPL41
+R-HSA-5389840,Mitochondrial translation elongation,MRPL42
+R-HSA-5389840,Mitochondrial translation elongation,MRPL43
+R-HSA-5389840,Mitochondrial translation elongation,MRPL44
+R-HSA-5389840,Mitochondrial translation elongation,MRPL45
+R-HSA-5389840,Mitochondrial translation elongation,MRPL46
+R-HSA-5389840,Mitochondrial translation elongation,MRPL47
+R-HSA-5389840,Mitochondrial translation elongation,MRPL48
+R-HSA-5389840,Mitochondrial translation elongation,MRPL49
+R-HSA-5389840,Mitochondrial translation elongation,MRPL50
+R-HSA-5389840,Mitochondrial translation elongation,MRPL51
+R-HSA-5389840,Mitochondrial translation elongation,MRPL52
+R-HSA-5389840,Mitochondrial translation elongation,MRPL53
+R-HSA-5389840,Mitochondrial translation elongation,MRPL54
+R-HSA-5389840,Mitochondrial translation elongation,MRPL55
+R-HSA-5389840,Mitochondrial translation elongation,MRPL57
+R-HSA-5389840,Mitochondrial translation elongation,MRPL58
+R-HSA-5389840,Mitochondrial translation elongation,MRPL9
+R-HSA-5389840,Mitochondrial translation elongation,MRPS10
+R-HSA-5389840,Mitochondrial translation elongation,MRPS11
+R-HSA-5389840,Mitochondrial translation elongation,MRPS12
+R-HSA-5389840,Mitochondrial translation elongation,MRPS14
+R-HSA-5389840,Mitochondrial translation elongation,MRPS15
+R-HSA-5389840,Mitochondrial translation elongation,MRPS16
+R-HSA-5389840,Mitochondrial translation elongation,MRPS17
+R-HSA-5389840,Mitochondrial translation elongation,MRPS18A
+R-HSA-5389840,Mitochondrial translation elongation,MRPS18B
+R-HSA-5389840,Mitochondrial translation elongation,MRPS18C
+R-HSA-5389840,Mitochondrial translation elongation,MRPS2
+R-HSA-5389840,Mitochondrial translation elongation,MRPS21
+R-HSA-5389840,Mitochondrial translation elongation,MRPS22
+R-HSA-5389840,Mitochondrial translation elongation,MRPS23
+R-HSA-5389840,Mitochondrial translation elongation,MRPS24
+R-HSA-5389840,Mitochondrial translation elongation,MRPS25
+R-HSA-5389840,Mitochondrial translation elongation,MRPS26
+R-HSA-5389840,Mitochondrial translation elongation,MRPS27
+R-HSA-5389840,Mitochondrial translation elongation,MRPS28
+R-HSA-5389840,Mitochondrial translation elongation,MRPS30
+R-HSA-5389840,Mitochondrial translation elongation,MRPS31
+R-HSA-5389840,Mitochondrial translation elongation,MRPS33
+R-HSA-5389840,Mitochondrial translation elongation,MRPS34
+R-HSA-5389840,Mitochondrial translation elongation,MRPS35
+R-HSA-5389840,Mitochondrial translation elongation,MRPS5
+R-HSA-5389840,Mitochondrial translation elongation,MRPS6
+R-HSA-5389840,Mitochondrial translation elongation,MRPS7
+R-HSA-5389840,Mitochondrial translation elongation,MRPS9
+R-HSA-5389840,Mitochondrial translation elongation,MT-ATP6
+R-HSA-5389840,Mitochondrial translation elongation,MT-ATP8
+R-HSA-5389840,Mitochondrial translation elongation,MT-CO1
+R-HSA-5389840,Mitochondrial translation elongation,MT-CO2
+R-HSA-5389840,Mitochondrial translation elongation,MT-CO3
+R-HSA-5389840,Mitochondrial translation elongation,MT-CYB
+R-HSA-5389840,Mitochondrial translation elongation,MT-ND1
+R-HSA-5389840,Mitochondrial translation elongation,MT-ND2
+R-HSA-5389840,Mitochondrial translation elongation,MT-ND3
+R-HSA-5389840,Mitochondrial translation elongation,MT-ND4
+R-HSA-5389840,Mitochondrial translation elongation,MT-ND4L
+R-HSA-5389840,Mitochondrial translation elongation,MT-ND5
+R-HSA-5389840,Mitochondrial translation elongation,MT-ND6
+R-HSA-5389840,Mitochondrial translation elongation,MT-RNR1
+R-HSA-5389840,Mitochondrial translation elongation,MT-RNR2
+R-HSA-5389840,Mitochondrial translation elongation,MT-TV
+R-HSA-5389840,Mitochondrial translation elongation,OXA1L
+R-HSA-5389840,Mitochondrial translation elongation,PTCD3
+R-HSA-5389840,Mitochondrial translation elongation,TSFM
+R-HSA-5389840,Mitochondrial translation elongation,TUFM
+R-HSA-71403,Citric acid cycle (TCA cycle),ACAT1
+R-HSA-71403,Citric acid cycle (TCA cycle),ACO2
+R-HSA-71403,Citric acid cycle (TCA cycle),CS
+R-HSA-71403,Citric acid cycle (TCA cycle),CSKMT
+R-HSA-71403,Citric acid cycle (TCA cycle),DLD
+R-HSA-71403,Citric acid cycle (TCA cycle),DLST
+R-HSA-71403,Citric acid cycle (TCA cycle),FH
+R-HSA-71403,Citric acid cycle (TCA cycle),FXN
+R-HSA-71403,Citric acid cycle (TCA cycle),IDH2
+R-HSA-71403,Citric acid cycle (TCA cycle),IDH3A
+R-HSA-71403,Citric acid cycle (TCA cycle),IDH3B
+R-HSA-71403,Citric acid cycle (TCA cycle),IDH3G
+R-HSA-71403,Citric acid cycle (TCA cycle),ISCA1
+R-HSA-71403,Citric acid cycle (TCA cycle),ISCA2
+R-HSA-71403,Citric acid cycle (TCA cycle),ISCU
+R-HSA-71403,Citric acid cycle (TCA cycle),KGD4
+R-HSA-71403,Citric acid cycle (TCA cycle),LYRM4
+R-HSA-71403,Citric acid cycle (TCA cycle),MDH2
+R-HSA-71403,Citric acid cycle (TCA cycle),NFS1
+R-HSA-71403,Citric acid cycle (TCA cycle),NNT
+R-HSA-71403,Citric acid cycle (TCA cycle),OGDH
+R-HSA-71403,Citric acid cycle (TCA cycle),SDHA
+R-HSA-71403,Citric acid cycle (TCA cycle),SDHAF1
+R-HSA-71403,Citric acid cycle (TCA cycle),SDHAF2
+R-HSA-71403,Citric acid cycle (TCA cycle),SDHAF3
+R-HSA-71403,Citric acid cycle (TCA cycle),SDHAF4
+R-HSA-71403,Citric acid cycle (TCA cycle),SDHB
+R-HSA-71403,Citric acid cycle (TCA cycle),SDHC
+R-HSA-71403,Citric acid cycle (TCA cycle),SDHD
+R-HSA-71403,Citric acid cycle (TCA cycle),SIRT3
+R-HSA-71403,Citric acid cycle (TCA cycle),SUCLA2
+R-HSA-71403,Citric acid cycle (TCA cycle),SUCLG1
+R-HSA-71403,Citric acid cycle (TCA cycle),SUCLG2
+R-HSA-71403,Citric acid cycle (TCA cycle),TRAP1
+R-HSA-1474290,Collagen formation,ADAMTS14
+R-HSA-1474290,Collagen formation,ADAMTS2
+R-HSA-1474290,Collagen formation,ADAMTS3
+R-HSA-1474290,Collagen formation,BMP1
+R-HSA-1474290,Collagen formation,CD151
+R-HSA-1474290,Collagen formation,COL10A1
+R-HSA-1474290,Collagen formation,COL11A1
+R-HSA-1474290,Collagen formation,COL11A2
+R-HSA-1474290,Collagen formation,COL12A1
+R-HSA-1474290,Collagen formation,COL13A1
+R-HSA-1474290,Collagen formation,COL14A1
+R-HSA-1474290,Collagen formation,COL15A1
+R-HSA-1474290,Collagen formation,COL16A1
+R-HSA-1474290,Collagen formation,COL17A1
+R-HSA-1474290,Collagen formation,COL18A1
+R-HSA-1474290,Collagen formation,COL19A1
+R-HSA-1474290,Collagen formation,COL1A1
+R-HSA-1474290,Collagen formation,COL1A2
+R-HSA-1474290,Collagen formation,COL20A1
+R-HSA-1474290,Collagen formation,COL21A1
+R-HSA-1474290,Collagen formation,COL22A1
+R-HSA-1474290,Collagen formation,COL23A1
+R-HSA-1474290,Collagen formation,COL24A1
+R-HSA-1474290,Collagen formation,COL25A1
+R-HSA-1474290,Collagen formation,COL26A1
+R-HSA-1474290,Collagen formation,COL27A1
+R-HSA-1474290,Collagen formation,COL28A1
+R-HSA-1474290,Collagen formation,COL2A1
+R-HSA-1474290,Collagen formation,COL3A1
+R-HSA-1474290,Collagen formation,COL4A1
+R-HSA-1474290,Collagen formation,COL4A2
+R-HSA-1474290,Collagen formation,COL4A3
+R-HSA-1474290,Collagen formation,COL4A4
+R-HSA-1474290,Collagen formation,COL4A5
+R-HSA-1474290,Collagen formation,COL4A6
+R-HSA-1474290,Collagen formation,COL5A1
+R-HSA-1474290,Collagen formation,COL5A2
+R-HSA-1474290,Collagen formation,COL5A3
+R-HSA-1474290,Collagen formation,COL6A1
+R-HSA-1474290,Collagen formation,COL6A2
+R-HSA-1474290,Collagen formation,COL6A3
+R-HSA-1474290,Collagen formation,COL6A5
+R-HSA-1474290,Collagen formation,COL6A6
+R-HSA-1474290,Collagen formation,COL7A1
+R-HSA-1474290,Collagen formation,COL8A1
+R-HSA-1474290,Collagen formation,COL8A2
+R-HSA-1474290,Collagen formation,COL9A1
+R-HSA-1474290,Collagen formation,COL9A2
+R-HSA-1474290,Collagen formation,COL9A3
+R-HSA-1474290,Collagen formation,COLGALT1
+R-HSA-1474290,Collagen formation,COLGALT2
+R-HSA-1474290,Collagen formation,CRTAP
+R-HSA-1474290,Collagen formation,CTSB
+R-HSA-1474290,Collagen formation,CTSL
+R-HSA-1474290,Collagen formation,CTSS
+R-HSA-1474290,Collagen formation,CTSV
+R-HSA-1474290,Collagen formation,DST
+R-HSA-1474290,Collagen formation,ITGA6
+R-HSA-1474290,Collagen formation,ITGB4
+R-HSA-1474290,Collagen formation,LAMA3
+R-HSA-1474290,Collagen formation,LAMB3
+R-HSA-1474290,Collagen formation,LAMC2
+R-HSA-1474290,Collagen formation,LOX
+R-HSA-1474290,Collagen formation,LOXL1
+R-HSA-1474290,Collagen formation,LOXL2
+R-HSA-1474290,Collagen formation,LOXL3
+R-HSA-1474290,Collagen formation,LOXL4
+R-HSA-1474290,Collagen formation,MMP13
+R-HSA-1474290,Collagen formation,MMP20
+R-HSA-1474290,Collagen formation,MMP3
+R-HSA-1474290,Collagen formation,MMP7
+R-HSA-1474290,Collagen formation,MMP9
+R-HSA-1474290,Collagen formation,P3H1
+R-HSA-1474290,Collagen formation,P3H2
+R-HSA-1474290,Collagen formation,P3H3
+R-HSA-1474290,Collagen formation,P4HA1
+R-HSA-1474290,Collagen formation,P4HA2
+R-HSA-1474290,Collagen formation,P4HA3
+R-HSA-1474290,Collagen formation,P4HB
+R-HSA-1474290,Collagen formation,PCOLCE
+R-HSA-1474290,Collagen formation,PCOLCE2
+R-HSA-1474290,Collagen formation,PLEC
+R-HSA-1474290,Collagen formation,PLOD1
+R-HSA-1474290,Collagen formation,PLOD2
+R-HSA-1474290,Collagen formation,PLOD3
+R-HSA-1474290,Collagen formation,PPIB
+R-HSA-1474290,Collagen formation,PXDN
+R-HSA-1474290,Collagen formation,SERPINH1
+R-HSA-1474290,Collagen formation,TLL1
+R-HSA-1474290,Collagen formation,TLL2

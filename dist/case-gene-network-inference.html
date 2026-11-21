@@ -1,0 +1,243 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>真实数据案例 · 基因调控网络推断与共表达分析 · 生物医学网络科学</title><meta name="description" content="基因调控网络推断与共表达分析：用公开数据完成的一次完整分析"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-molecular"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="courses.html">课程视频</a><a href="domains.html" aria-current="page">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory"><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html" data-lec="L01">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html" data-lec="L02">网络结构指标与随机图</a></li><li><a href="network-models.html" data-lec="L03">小世界与无标度网络模型</a></li><li><a href="community-structure.html" data-lec="L04">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html" data-lec="L05">网络上的传播与免疫</a></li><li><a href="synchronization.html" data-lec="L06">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html" data-lec="L07">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html" data-lec="L09">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html" data-lec="L10">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html" data-lec="L11">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular" open><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html" data-lec="L12">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html" data-lec="L13">基因调控网络推断与共表达分析</a><ol class="sub"><li><a href="gene-network-inference.inference-problem.html"><span class="n">01</span>网络推断问题：从“一起变化”到“谁调控谁”</a></li><li><a href="gene-network-inference.method-landscape.html"><span class="n">02</span>方法家族全景：假设与数据要求</a></li><li><a href="gene-network-inference.wgcna.html"><span class="n">03</span>WGCNA：加权基因共表达网络分析</a></li><li><a href="gene-network-inference.module-interpretation.html"><span class="n">04</span>解读共表达模块时要追问的三件事</a></li><li><a href="gene-network-inference.module-preservation.html"><span class="n">05</span>模块保守性与可重复性检验</a></li><li><a href="gene-network-inference.differential-coexpression.html"><span class="n">06</span>差异共表达分析</a></li><li><a href="gene-network-inference.partial-correlation-shrinkage.html"><span class="n">07</span>偏相关、高斯图模型与收缩估计</a></li><li><a href="gene-network-inference.beyond-correlation.html"><span class="n">08</span>超越相关：信息论、树模型与单细胞方法</a></li><li><a href="gene-network-inference.bayesian-networks.html"><span class="n">09</span>贝叶斯网络与因果结构学习</a></li><li><a href="gene-network-inference.dynamic-models.html"><span class="n">10</span>动力学模型、时间序列与单细胞拟时序</a></li><li><a href="gene-network-inference.prior-knowledge.html"><span class="n">11</span>先验知识整合：TF–靶基因数据库、ChIP-seq 与 ATAC</a></li><li><a href="gene-network-inference.evaluation.html"><span class="n">12</span>推断结果的评估</a></li><li><a href="gene-network-inference.derivations.html"><span class="n">13</span>数学推导与算法</a></li><li><a href="gene-network-inference.frontiers.html"><span class="n">14</span>研究前沿与开放问题</a></li><li><a href="gene-network-inference.biomedical.html"><span class="n">15</span>生物医学应用</a></li><li><a href="gene-network-inference.limitations.html"><span class="n">16</span>适用范围与常见误用</a></li></ol></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html" data-lec="L14">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html" data-lec="L08">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html" data-lec="L15">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html" data-lec="L16">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="courses.html">课程视频</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="d-molecular.html">分子网络与基因调控</a> <span class="sep">/</span> <a href="gene-network-inference.html">基因调控网络推断与共表达分析</a></nav><div class="eyebrow" style="margin-top:14px"><b>Case study</b><span>Gene network inference and co-expression</span></div><h1>真实数据案例：基因调控网络推断与共表达分析</h1><p class="dek">真实数据案例：乳腺癌活检的加权基因共表达网络</p><dl class="doc-meta"><div><dt>下载</dt><dd><a href="notebooks/case-gene-network-inference.ipynb" download>Notebook</a> · <a href="data/breast_gds4057_expr_top1000.csv" download>breast_gds4057_expr_top1000.csv</a> · <a href="data/breast_gds4057_samples.csv" download>breast_gds4057_samples.csv</a> · <a href="data/string_human_physical_v12_s700.csv" download>string_human_physical_v12_s700.csv</a></dd></div><div><dt>数据来源</dt><dd><a href="data-sources.html">数据来源与许可</a></dd></div><div><dt>浏览器</dt><dd><a class="lite-link" href="lite/notebooks/index.html?path=practice/case-gene-network-inference.ipynb" target="_blank" rel="noopener">在 JupyterLite 中打开 ↗</a></dd></div></dl></header><section class="block ex-intro"><p class="small"><span class="py-status">代码可以直接在浏览器中运行，各段共享同一个 Python 会话：运行某一段时，前面尚未运行的段会先依次运行。首次加载 Python 环境约需 20–40 秒。</span> <button class="btn ghost run-all" type="button">从头运行全部</button></p></section><div class="case-body"><section class="block prose"># 真实数据案例：乳腺癌活检的加权基因共表达网络
+
+**问题**：在 103 例乳腺癌化疗前活检中，基因能否压缩成少数几个共表达模块？哪个模块与雌激素受体（ER）状态关联最强，它的 hub 基因是谁？共表达边与已知的蛋白物理相互作用重叠多少，偏相关能否把重叠提高？
+
+**数据来源**
+
+- 表达谱：NCBI GEO 数据集 GDS4057（系列 GSE22093，Affymetrix HG-U133A），HER2 阴性乳腺癌化疗前活检 103 例，其中 ER（免疫组化）阳性 42 例、阴性 56 例、缺失 5 例。原文：Iwamoto T, Bianchini G, et al. *J Natl Cancer Inst* 2011;103:264–272。NCBI 对 GEO 数据的使用和再分发不设限制。为控制文件大小，只保留了表达量不低于中位数的基因中方差最大的 1000 个（处理步骤见 `data/SOURCES.md`）。
+- 参照网络：STRING v12.0 人类物理相互作用子网络，综合分数 ≥ 700（CC BY 4.0；Szklarczyk D, et al. *Nucleic Acids Res* 2023;51:D638–D646）。
+
+分析步骤按 [WGCNA](gene-network-inference.wgcna.html) 的标准流程：选软阈值幂次 → 拓扑重叠 → 层次聚类切树 → 模块特征基因与性状关联 → hub 基因；随后用 [推断结果的评估](gene-network-inference.evaluation.html) 中的 AUPR 把共表达边、收缩偏相关与 STRING 物理相互作用比较。为了在浏览器里也能运行，这里用 numpy/scipy 自己实现各步，切树用固定高度代替动态剪切。</section><div class="cell seq-cell" data-i="0"><div class="cell-head"><h3>代码 1</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="15" spellcheck="false" aria-label="代码 1">import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from scipy import stats
+from scipy.cluster.hierarchy import linkage, fcluster
+from scipy.spatial.distance import squareform
+
+plt.rcParams[&quot;font.sans-serif&quot;] = [&quot;Noto Sans CJK SC&quot;, &quot;PingFang SC&quot;, &quot;Heiti SC&quot;, &quot;SimHei&quot;, &quot;DejaVu Sans&quot;]
+plt.rcParams[&quot;axes.unicode_minus&quot;] = False
+
+expr = pd.read_csv(&quot;data/breast_gds4057_expr_top1000.csv&quot;, index_col=&quot;gene&quot;)
+samples = pd.read_csv(&quot;data/breast_gds4057_samples.csv&quot;, index_col=&quot;sample&quot;)
+print(&quot;表达矩阵（基因 × 样本）：&quot;, expr.shape)
+print(samples[&quot;er_ihc&quot;].value_counts().to_dict())</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 1 读入与清洗
+
+WGCNA 的 FAQ 建议先检查离群样本。这里用样本间相关的平均值找离群样本：若某个样本与其他样本的平均相关比全体低 3 个标准差以上，就剔除。随后把每个基因在样本间标准化。ER 缺失的 5 例保留在网络构建中（构网不需要性状），只在模块–性状关联时剔除。</section><div class="cell seq-cell" data-i="1"><div class="cell-head"><h3>代码 2</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="13" spellcheck="false" aria-label="代码 2">X = expr.T.loc[samples.index]                    # 样本 × 基因
+cs = np.corrcoef(X.values)                       # 样本 × 样本相关
+np.fill_diagonal(cs, np.nan)
+mean_c = np.nanmean(cs, axis=1)
+z_out = (mean_c - mean_c.mean()) / mean_c.std()
+keep = z_out &gt; -3
+print(&quot;样本平均相关范围：%.3f – %.3f；剔除离群样本 %d 个&quot; % (mean_c.min(), mean_c.max(), (~keep).sum()))
+X = X.loc[keep]
+Z = (X - X.mean()) / X.std(ddof=0)
+n, p = Z.shape
+genes = np.array(Z.columns)
+print(&quot;用于构网：%d 个样本、%d 个基因&quot; % (n, p))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 2 构网：有符号软阈值与无标度拟合
+
+有符号网络 $a_{ij}=\left(\frac{1+r_{ij}}{2}\right)^{\beta}$ 只把同向变化的基因连起来。对 $\beta = 2,4,\dots,20$ 计算无标度拟合指数（$\log_{10}p(k)$ 对 $\log_{10}k$ 回归的 $R^2$ 乘以斜率的负号），选首次达到 0.8 的最小 $\beta$。有符号网络通常需要的 $\beta$ 比无符号网络大（无符号 $|r|^\beta$ 中弱相关压得更快）。</section><div class="cell seq-cell" data-i="2"><div class="cell-head"><h3>代码 3</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="17" spellcheck="false" aria-label="代码 3">Rg = np.corrcoef(Z.values.T)                     # 基因 × 基因相关
+
+def sft_fit(A, nbins=10):
+    k = A.sum(axis=1) - 1.0                      # 去掉对角线 a_ii = 1
+    cnt, edges = np.histogram(k, bins=nbins)
+    mid = (edges[:-1] + edges[1:]) / 2
+    ok = cnt &gt; 0
+    res = stats.linregress(np.log10(mid[ok]), np.log10(cnt[ok] / cnt.sum()))
+    return -np.sign(res.slope) * res.rvalue ** 2, k.mean()
+
+betas = list(range(2, 21, 2))
+fit = [sft_fit(((1 + Rg) / 2) ** b) for b in betas]
+for b, (f, mk) in zip(betas, fit):
+    print(&quot;beta = %2d  拟合指数 = %5.2f  平均连接度 = %7.1f&quot; % (b, f, mk))
+beta = next((b for b, (f, _) in zip(betas, fit) if f &gt;= 0.8), betas[-1])
+print(&quot;选定 beta =&quot;, beta)</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 3 拓扑重叠、层次聚类与切树
+
+$\mathrm{TOM}_{ij}=\dfrac{l_{ij}+a_{ij}}{\min(k_i,k_j)+1-a_{ij}}$。以 $1-\mathrm{TOM}$ 为距离做平均连锁聚类，在固定高度 0.85 切树，少于 20 个基因的簇记为 0（相当于 WGCNA 的灰色“未归类”）。固定高度切树比 WGCNA 的动态剪切粗糙，第 6 步之后会检验结果对切树高度和 $\beta$ 是否敏感。</section><div class="cell seq-cell" data-i="3"><div class="cell-head"><h3>代码 4</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="21" spellcheck="false" aria-label="代码 4">A = ((1 + Rg) / 2) ** beta
+np.fill_diagonal(A, 0.0)
+k = A.sum(axis=1)
+L = A @ A
+TOM = (L + A) / (np.minimum.outer(k, k) + 1 - A)
+np.fill_diagonal(TOM, 1.0)
+D = 1 - TOM
+np.fill_diagonal(D, 0.0)
+tree = linkage(squareform(D, checks=False), method=&quot;average&quot;)
+
+def cut(tree, h, min_size=20):
+    c = fcluster(tree, t=h, criterion=&quot;distance&quot;)
+    ids, cnt = np.unique(c, return_counts=True)
+    big = [i for i, m in sorted(zip(ids, cnt), key=lambda t: -t[1]) if m &gt;= min_size]
+    return np.array([big.index(x) + 1 if x in big else 0 for x in c])
+
+H = 0.85
+mods = cut(tree, H)
+sizes = pd.Series(mods).value_counts().sort_index()
+print(&quot;切树高度 %.3f；模块大小（0 = 未归类）：&quot; % H, sizes.to_dict())</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 4 模块特征基因、模块–性状关联与 hub 基因
+
+模块特征基因（ME）取模块内标准化表达的第一主成分，符号与模块平均表达一致。ER 状态编码为 0/1，ME 与 ER 的点二列相关即皮尔逊相关。hub 用模块成员度 $k_\mathrm{ME}=\mathrm{cor}(x_i,\mathrm{ME})$ 排序。</section><div class="cell seq-cell" data-i="4"><div class="cell-head"><h3>代码 5</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="25" spellcheck="false" aria-label="代码 5">def eigengene(M):
+    U, S, Vt = np.linalg.svd(M - M.mean(0), full_matrices=False)
+    me = U[:, 0] * S[0]
+    return me if np.corrcoef(me, M.mean(1))[0, 1] &gt; 0 else -me
+
+er = samples.loc[Z.index, &quot;er_ihc&quot;].map({&quot;+&quot;: 1, &quot;-&quot;: 0})
+has_er = er.notna().values
+rows = []
+MEs = {}
+for m in range(1, mods.max() + 1):
+    idx = np.where(mods == m)[0]
+    me = eigengene(Z.values[:, idx])
+    MEs[m] = me
+    r, pv = stats.pearsonr(me[has_er], er.values[has_er])
+    kme = np.array([np.corrcoef(Z.values[:, i], me)[0, 1] for i in idx])
+    top = genes[idx][np.argsort(-kme)[:6]]
+    var_expl = np.linalg.svd(Z.values[:, idx] - Z.values[:, idx].mean(0), compute_uv=False)
+    rows.append({&quot;模块&quot;: m, &quot;基因数&quot;: len(idx), &quot;ME 解释方差&quot;: (var_expl[0] ** 2 / (var_expl ** 2).sum()),
+                 &quot;r(ME, ER)&quot;: r, &quot;p&quot;: pv, &quot;hub（kME 前 6）&quot;: &quot;, &quot;.join(top)})
+tab = pd.DataFrame(rows).set_index(&quot;模块&quot;)
+pd.set_option(&quot;display.width&quot;, 200)
+print(tab.round({&quot;ME 解释方差&quot;: 2, &quot;r(ME, ER)&quot;: 2}).to_string(formatters={&quot;p&quot;: &quot;{:.1e}&quot;.format}))
+best = tab[&quot;r(ME, ER)&quot;].abs().idxmax()
+print(&quot;\n与 ER 关联最强的模块：&quot;, best)</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">下面看几个熟悉的标志基因分别落在哪个模块：ER 通路相关的 *ESR1*、*GATA3*、*FOXA1*、*XBP1*，增殖相关的 *TOP2A*、*FOXM1*，免疫细胞标志 *PTPRC*，基质（成纤维细胞）标志 *COL1A1*，基底样标志 *KRT5*。</section><div class="cell seq-cell" data-i="5"><div class="cell-head"><h3>代码 6</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="8" spellcheck="false" aria-label="代码 6">markers = [&quot;ESR1&quot;, &quot;GATA3&quot;, &quot;FOXA1&quot;, &quot;XBP1&quot;, &quot;SPDEF&quot;, &quot;TOP2A&quot;, &quot;FOXM1&quot;, &quot;PTPRC&quot;, &quot;COL1A1&quot;, &quot;KRT5&quot;]
+gi = {g: i for i, g in enumerate(genes)}
+for g in markers:
+    if g in gi:
+        m = mods[gi[g]]
+        r_er = stats.pearsonr(Z.values[has_er, gi[g]], er.values[has_er])[0]
+        print(&quot;%-7s 模块 %d   r(表达, ER) = %+.2f&quot; % (g, m, r_er))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 5 与零模型比较
+
+**模块是否只是随机波动？** 零模型：对每个基因独立打乱它在样本间的顺序，保留每个基因的表达分布，破坏基因间的相关。在打乱的数据上重复相同的流程（同一 $\beta$、同一切树高度和最小模块大小），看还能找到多少模块，以及树上最低的合并高度。
+
+**ME–ER 关联是否靠“挑最强模块”得来？** 对 ER 标签做 1000 次置换，每次取所有模块中最大的 $|r|$，得到“挑最强模块”这一做法本身的零分布。</section><div class="cell seq-cell" data-i="6"><div class="cell-head"><h3>代码 7</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="30" spellcheck="false" aria-label="代码 7">rng = np.random.default_rng(2026)
+
+def mean_within_tom(T, lab):
+    vals = []
+    for m in range(1, lab.max() + 1):
+        idx = np.where(lab == m)[0]
+        sub = T[np.ix_(idx, idx)]
+        vals.append(sub[~np.eye(len(idx), dtype=bool)].mean())
+    return np.mean(vals) if vals else np.nan
+
+obs_tom = mean_within_tom(TOM, mods)
+null_tom, null_nmod = [], []
+for rep in range(5):
+    Zs = np.column_stack([rng.permutation(Z.values[:, j]) for j in range(p)])
+    Rs = np.corrcoef(Zs.T)
+    As = ((1 + Rs) / 2) ** beta
+    np.fill_diagonal(As, 0.0)
+    ks = As.sum(1)
+    Ts = (As @ As + As) / (np.minimum.outer(ks, ks) + 1 - As)
+    np.fill_diagonal(Ts, 1.0)
+    Ds = 1 - Ts
+    np.fill_diagonal(Ds, 0.0)
+    ts = linkage(squareform(Ds, checks=False), method=&quot;average&quot;)
+    ms = cut(ts, H)
+    null_nmod.append(int(ms.max()))
+    null_tom.append(ts[:, 2].min())
+print(&quot;真实数据：%d 个模块，模块内平均 TOM = %.3f，树上最低合并高度 = %.3f&quot; % (mods.max(), obs_tom, tree[:, 2].min()))
+print(&quot;打乱数据（5 次）：模块数&quot;, null_nmod, &quot;，最低合并高度&quot;, np.round(null_tom, 3))
+
+ME_mat = np.column_stack([MEs[m][has_er] for m in MEs])
+y = er.values[has_er]
+obs_max = np.abs([stats.pearsonr(ME_mat[:, j], y)[0] for j in range(ME_mat.shape[1])]).max()
+perm_max = np.array([np.abs([np.corrcoef(ME_mat[:, j], rng.permutation(y))[0, 1]
+                             for j in range(ME_mat.shape[1])]).max() for _ in range(1000)])
+print(&quot;最强模块 |r| = %.2f；置换零分布 95%% 分位数 = %.2f；置换 p &lt; %.3f&quot;
+      % (obs_max, np.quantile(perm_max, 0.95), max((perm_max &gt;= obs_max).mean(), 1 / 1000)))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">**共表达边与物理相互作用的重叠。** 在这 1000 个基因中，把 STRING 物理相互作用（分数 ≥ 700）当作“参照边”，用 AUPR 比较三种打分：$|r|$、有符号邻接 $a_{ij}$（与 $r$ 同序）和 Schäfer–Strimmer 收缩偏相关的绝对值。随机打分的 AUPR 等于参照边比例 $\pi$。注意 STRING 物理子网络不含共表达通道，但它本身不完整，而且偏向研究充分的蛋白，所以这只是“与已知物理相互作用的一致程度”，不是推断的准确率。</section><div class="cell seq-cell" data-i="7"><div class="cell-head"><h3>代码 8</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="30" spellcheck="false" aria-label="代码 8">ppi = pd.read_csv(&quot;data/string_human_physical_v12_s700.csv&quot;)
+gset = set(genes)
+ppi = ppi[ppi.protein1.isin(gset) &amp; ppi.protein2.isin(gset)]
+truth = np.zeros((p, p), dtype=bool)
+for a, b in zip(ppi.protein1, ppi.protein2):
+    truth[gi[a], gi[b]] = truth[gi[b], gi[a]] = True
+iu = np.triu_indices(p, 1)
+y_true = truth[iu]
+pi = y_true.mean()
+
+def shrink_pcor(Zm):
+    nn = Zm.shape[0]
+    Rm = np.corrcoef(Zm.T)
+    zc = (Zm - Zm.mean(0)) / Zm.std(0, ddof=1)
+    var_r = np.zeros_like(Rm)
+    for i in range(Zm.shape[1]):             # 逐行计算，避免 n × p × p 的大数组
+        w = zc[:, [i]] * zc                  # n × p
+        var_r[i] = nn / (nn - 1) ** 3 * ((w - w.mean(0)) ** 2).sum(0)
+    off = ~np.eye(Zm.shape[1], dtype=bool)
+    lam = min(1.0, max(0.0, var_r[off].sum() / (Rm[off] ** 2).sum()))
+    Om = np.linalg.inv(lam * np.eye(Zm.shape[1]) + (1 - lam) * Rm)
+    d = np.sqrt(np.diag(Om))
+    return -Om / np.outer(d, d), lam
+
+def aupr(score, y):
+    o = np.argsort(-score, kind=&quot;stable&quot;)
+    yy = y[o]
+    tp = np.cumsum(yy)
+    prec = tp / np.arange(1, len(yy) + 1)
+    return prec[yy].mean()
+
+def early_precision(score, y):
+    kk = y.sum()
+    return y[np.argsort(-score, kind=&quot;stable&quot;)[:kk]].mean()
+
+P, lam = shrink_pcor(Z.values)
+scores = {&quot;|r|&quot;: np.abs(Rg)[iu], &quot;有符号邻接 a_ij&quot;: A[iu], &quot;|收缩偏相关|&quot;: np.abs(P)[iu]}
+print(&quot;候选基因对 %d 个，参照边 %d 条，pi = %.4f；收缩强度 lambda* = %.2f&quot; % (len(y_true), y_true.sum(), pi, lam))
+res = {}
+for name, s in scores.items():
+    res[name] = (aupr(s, y_true), early_precision(s, y_true))
+    print(&quot;%-16s AUPR = %.4f（%.1f 倍随机）  早期精度 = %.3f&quot; % (name, res[name][0], res[name][0] / pi, res[name][1]))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 6 作图
+
+左：选 $\beta$ 的无标度拟合曲线；中：与 ER 关联最强的模块，ME 在 ER 阳性与阴性样本中的分布；右：三种打分前 $k$ 条边中“已知物理相互作用”的比例（精确率曲线），虚线为随机水平 $\pi$。</section><div class="cell seq-cell" data-i="8"><div class="cell-head"><h3>代码 9</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="29" spellcheck="false" aria-label="代码 9">fig, ax = plt.subplots(1, 3, figsize=(13, 3.8))
+ax[0].plot(betas, [f for f, _ in fit], &quot;o-&quot;, color=&quot;#3b6ea8&quot;)
+ax[0].axhline(0.8, color=&quot;#c0392b&quot;, ls=&quot;--&quot;, lw=1)
+ax[0].axvline(beta, color=&quot;grey&quot;, ls=&quot;:&quot;, lw=1)
+ax[0].set_xlabel(&quot;软阈值幂次 β&quot;)
+ax[0].set_ylabel(&quot;无标度拟合指数&quot;)
+ax[0].set_title(&quot;选 β：首次达到 0.8 的最小幂次&quot;)
+
+me = MEs[best][has_er]
+ax[1].boxplot([me[y == 0], me[y == 1]], widths=0.5)
+ax[1].set_xticks([1, 2])
+ax[1].set_xticklabels([&quot;ER−&quot;, &quot;ER+&quot;])
+for j, grp in enumerate([me[y == 0], me[y == 1]]):
+    ax[1].scatter(np.full(len(grp), j + 1) + rng.uniform(-0.12, 0.12, len(grp)), grp, s=9, alpha=0.6, color=&quot;#3b6ea8&quot;)
+ax[1].set_ylabel(&quot;模块特征基因（ME）&quot;)
+ax[1].set_title(&quot;模块 %d 的 ME 随 ER 状态明显不同（r = %.2f）&quot; % (best, tab.loc[best, &quot;r(ME, ER)&quot;]))
+
+kmax = 2000
+for name, s in scores.items():
+    yy = y_true[np.argsort(-s, kind=&quot;stable&quot;)][:kmax]
+    ax[2].plot(np.arange(1, kmax + 1), np.cumsum(yy) / np.arange(1, kmax + 1), label=name)
+ax[2].axhline(pi, color=&quot;grey&quot;, ls=&quot;--&quot;, lw=1, label=&quot;随机 π&quot;)
+ax[2].set_xscale(&quot;log&quot;)
+ax[2].set_xlabel(&quot;按得分排名的前 k 个基因对&quot;)
+ax[2].set_ylabel(&quot;其中属于 STRING 物理相互作用的比例&quot;)
+ax[2].set_title(&quot;排名最前的共表达边富集已知相互作用&quot;)
+ax[2].legend(fontsize=8)
+plt.tight_layout()</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">**敏感性：模块对切树高度和 $\beta$ 敏感吗？** 在 $\beta\in\{4,6,8\}$ 与切树高度 $\{0.80,0.85,0.90\}$ 的 9 种组合下重新划分，看主分析中的 ER 模块能否找回：对每种组合，计算新划分中与它重叠最大的模块的 Jaccard 指数（1 为完全相同，0 为该模块已不存在）。</section><div class="cell seq-cell" data-i="9"><div class="cell-head"><h3>代码 10</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="16" spellcheck="false" aria-label="代码 10">best_set = set(np.where(mods == best)[0])
+for b2 in (beta - 2, beta, beta + 2):
+    A2 = ((1 + Rg) / 2) ** b2
+    np.fill_diagonal(A2, 0.0)
+    k2 = A2.sum(1)
+    T2 = (A2 @ A2 + A2) / (np.minimum.outer(k2, k2) + 1 - A2)
+    np.fill_diagonal(T2, 1.0)
+    D2 = 1 - T2
+    np.fill_diagonal(D2, 0.0)
+    t2 = linkage(squareform(D2, checks=False), method=&quot;average&quot;)
+    for qh in (0.80, 0.85, 0.90):
+        m2 = cut(t2, qh)
+        jac = max(len(best_set &amp; set(np.where(m2 == c)[0])) / len(best_set | set(np.where(m2 == c)[0]))
+                  for c in range(1, m2.max() + 1)) if m2.max() &gt; 0 else 0
+        print(&quot;beta = %2d  切树高度 %.2f：%2d 个模块，与主分析 ER 模块的最大 Jaccard = %.2f&quot; % (b2, qh, m2.max(), jac))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 7 解读与局限
+
+**结果说明了什么**
+
+- 1000 个高变基因中约 400 个归入 4 个模块，其余为未归类。模块内的拓扑重叠远高于打乱数据：打乱后树上最低的合并高度约 0.97，在同样的切树规则下一个模块也找不到，说明模块结构不是随机波动。
+- 按 hub 基因看，4 个模块分别对应基质/成纤维细胞（*DCN*、*FBN1*、*VCAN*、*MMP2*）、髓系免疫细胞与抗原呈递（*ITGB2*、*CYBB*、*MS4A6A*、*PTPRC*）、ER 通路与管腔上皮（*MLPH*、*FOXA1*、*XBP1*、*AGR2*、*ESR1*）以及免疫球蛋白（B 细胞/浆细胞）。其中三个模块更像是在测量活检中各类细胞的比例，而不是某条调控程序。
+- 与 ER 关联最强的是 ER 通路模块（ME 与 ER 的 $r\approx0.47$），“挑最强模块”的置换检验也远超零分布。这与乳腺癌分子分型的已知结果一致：ER 状态是乳腺癌转录组中最强的变异来源之一。增殖基因（*TOP2A*、*FOXM1* 等）在这 1000 个基因里只有 8 个，没有形成达到 20 个基因的模块。
+- 排名靠前的共表达边中，已知物理相互作用的比例是随机的二十多倍，但绝对比例仍然很低（前 509 对中不到 10%）：大部分强共表达基因对并没有物理相互作用。共表达说明“一起变化”，不说明“结合”或“调控”。收缩偏相关在这里反而低于 $|r|$，见下面的局限。
+
+**局限**
+
+- **模块由什么驱动**：组织活检的模块往往反映细胞组成（增殖细胞、免疫浸润、基质比例），见 [解读共表达模块时要追问的三件事](gene-network-inference.module-interpretation.html)。ER 模块的 hub 是 ER 状态的好**标志物**，不等于上游调控者。
+- **切树方式**：敏感性分析显示，固定高度切树对 $\beta$ 很敏感。$\beta$ 改变后 TOM 的整体尺度随之改变，同一高度对应的模块粒度完全不同，ER 模块可能并入大模块或被拆散而低于 20 个基因。实际分析应在每个 $\beta$ 下重新选高度，或使用动态剪切，并报告模块对这些选择的稳定性（见 [研究问题、可复现分析与敏感性分析](reproducible-research.sensitivity-analysis.html)）。
+- **基因预筛**：只用了 1000 个高变基因，模块大小与 $\beta$ 都依赖这一筛选；完整分析应在全部表达基因上进行。
+- **单一队列**：模块是否在独立队列中重现，需要做 [模块保守性检验](gene-network-inference.module-preservation.html)。
+- **参照网络的偏倚**：STRING 物理相互作用不完整，且偏向研究充分的蛋白。偏相关在 $n \approx 100$、$p = 1000$ 时只能依靠收缩估计；它去掉的是“经由其他基因的间接相关”，而同一细胞类型的标志基因恰恰因为共同随细胞比例变化而高度相关，偏相关会把它们之间的边削弱。这与 [偏相关与收缩估计](gene-network-inference.partial-correlation-shrinkage.html) 中“样本少时偏相关不一定优于相关排序”的结论一致，两者 AUPR 的高低不应被泛化为方法优劣。</section></div><nav class="pager"><a href="gene-network-inference.html"><small>专题主页</small>基因调控网络推断与共表达分析</a><a href="data-sources.html"><small>数据</small>数据来源与许可</a></nav><script type="application/json" id="ex-data">{"files": ["breast_gds4057_expr_top1000.csv", "breast_gds4057_samples.csv", "string_human_physical_v12_s700.csv"], "tasks": []}</script></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="courses.html">课程视频</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

@@ -1,0 +1,247 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="claude:viewport-fit-sides" content="cover"><title>真实数据案例 · 网络构建与统计验证 · 生物医学网络科学</title><meta name="description" content="网络构建与统计验证：用公开数据完成的一次完整分析"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap"><link rel="stylesheet" href="assets/css/site.css"><script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script></head><body class="dom-theory"><header class="topbar"><div class="topbar-inner"><button class="menu-btn" type="button" aria-label="打开知识目录" aria-expanded="false">☰ 目录</button><a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" opacity=".55"><line x1="6" y1="7" x2="18" y2="5"/><line x1="6" y1="7" x2="13" y2="19"/><line x1="18" y1="5" x2="13" y2="19"/><line x1="18" y1="5" x2="22" y2="15"/><line x1="13" y1="19" x2="22" y2="15"/></g><circle cx="6" cy="7" r="3" fill="#3047c2"/><circle cx="18" cy="5" r="2.4" fill="#3047c2"/><circle cx="13" cy="19" r="4" fill="#d9661f"/><circle cx="22" cy="15" r="2.2" fill="#3047c2"/></svg><span>生物医学网络科学<small>Biomedical Network Science</small></span></a><nav class="topnav" aria-label="主导航"><a href="index.html">首页</a><a href="courses.html">课程视频</a><a href="domains.html" aria-current="page">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a></nav><form class="top-search" action="search.html" role="search"><input type="search" name="q" placeholder="搜索概念、算法、论文…" aria-label="站内搜索"></form><button class="theme-btn" type="button" aria-label="切换深浅色">◐</button></div></header><div class="shell"><nav class="rail tree" aria-label="知识体系"><details class="dom-theory" open><summary>网络基础理论</summary><ol><li><a href="d-theory.html">领域概览</a></li><li><a href="network-basics.html" data-lec="L01">复杂系统与网络的数学表示</a></li><li><a href="network-metrics.html" data-lec="L02">网络结构指标与随机图</a></li><li><a href="network-models.html" data-lec="L03">小世界与无标度网络模型</a></li><li><a href="community-structure.html" data-lec="L04">社团结构与社区发现</a></li><li><a href="degree-correlations.html">度相关性与网络结构的高阶统计</a></li><li><a href="network-construction.html">网络构建与统计验证</a><ol class="sub"><li><a href="network-construction.nodes-and-edges.html"><span class="n">01</span>节点与边的定义</a></li><li><a href="network-construction.edge-estimation.html"><span class="n">02</span>连接强度的估计</a></li><li><a href="network-construction.directed-edges.html"><span class="n">03</span>从时间序列推断有向边</a></li><li><a href="network-construction.thresholding.html"><span class="n">04</span>阈值、加权与稀疏化</a></li><li><a href="network-construction.uncertainty-propagation.html"><span class="n">05</span>边权不确定性向网络指标的传播</a></li><li><a href="network-construction.null-models.html"><span class="n">06</span>零模型与空模型</a></li><li><a href="network-construction.statistical-inference.html"><span class="n">07</span>统计推断与多重比较</a></li><li><a href="network-construction.network-distances.html"><span class="n">08</span>网络之间的距离与相似性</a></li><li><a href="network-construction.bias-and-missingness.html"><span class="n">09</span>测量误差、缺失与偏倚</a></li><li><a href="network-construction.sampling-incomplete.html"><span class="n">10</span>采样网络与不完整观测</a></li><li><a href="network-construction.stability-reproducibility.html"><span class="n">11</span>稳定性与可重复性</a></li><li><a href="network-construction.sample-size-power.html"><span class="n">12</span>样本量与统计功效</a></li><li><a href="network-construction.derivations.html"><span class="n">13</span>数学推导与算法</a></li><li><a href="network-construction.frontiers.html"><span class="n">14</span>研究前沿与开放问题</a></li><li><a href="network-construction.biomedical.html"><span class="n">15</span>生物医学应用</a></li><li><a href="network-construction.limitations.html"><span class="n">16</span>适用范围与常见误用</a></li></ol></li></ol></details><details class="dom-dynamics"><summary>网络动力学与控制</summary><ol><li><a href="d-dynamics.html">领域概览</a></li><li><a href="spreading.html" data-lec="L05">网络上的传播与免疫</a></li><li><a href="synchronization.html" data-lec="L06">同步与协同动力学</a></li><li><a href="robustness.html">网络鲁棒性、渗流与级联失效</a></li><li><a href="controllability.html" data-lec="L07">网络可控性与稳定性</a></li></ol></details><details class="dom-brain"><summary>脑网络与连接组</summary><ol><li><a href="d-brain.html">领域概览</a></li><li><a href="brain-connectome.html" data-lec="L09">脑连接组：结构与功能连接</a></li><li><a href="dynamic-brain-networks.html" data-lec="L10">动态功能连接与多层脑网络</a></li></ol></details><details class="dom-symptom"><summary>症状网络与网络精神病学</summary><ol><li><a href="d-symptom.html">领域概览</a></li><li><a href="symptom-networks.html" data-lec="L11">症状网络与网络精神病学</a></li></ol></details><details class="dom-molecular"><summary>分子网络与基因调控</summary><ol><li><a href="d-molecular.html">领域概览</a></li><li><a href="molecular-networks.html" data-lec="L12">生物分子网络与拓扑特征</a></li><li><a href="gene-network-inference.html" data-lec="L13">基因调控网络推断与共表达分析</a></li></ol></details><details class="dom-medicine"><summary>网络医学与药物网络</summary><ol><li><a href="d-medicine.html">领域概览</a></li><li><a href="network-medicine.html" data-lec="L14">疾病模块、网络邻近度与药物重定位</a></li></ol></details><details class="dom-methods"><summary>计算方法与研究规范</summary><ol><li><a href="d-methods.html">领域概览</a></li><li><a href="analysis-workflow.html" data-lec="L08">网络分析流程与 NetworkX 实践</a></li><li><a href="reproducible-research.html" data-lec="L15">研究问题、可复现分析与敏感性分析</a></li><li><a href="reporting-frontiers.html" data-lec="L16">结果呈现与研究前沿</a></li></ol></details><div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a><a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="courses.html">课程视频</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div></nav><main id="main"><header class="doc-head"><nav class="crumb"><a href="d-theory.html">网络基础理论</a> <span class="sep">/</span> <a href="network-construction.html">网络构建与统计验证</a></nav><div class="eyebrow" style="margin-top:14px"><b>Case study</b><span>Network construction and statistical validation</span></div><h1>真实数据案例：网络构建与统计验证</h1><p class="dek">从表达矩阵到共表达网络：相关、偏相关、阈值选择与统计验证</p><dl class="doc-meta"><div><dt>下载</dt><dd><a href="notebooks/case-network-construction.ipynb" download>Notebook</a> · <a href="data/hpa_celline_rna_panel56.csv" download>hpa_celline_rna_panel56.csv</a></dd></div><div><dt>数据来源</dt><dd><a href="data-sources.html">数据来源与许可</a></dd></div><div><dt>浏览器</dt><dd><a class="lite-link" href="lite/notebooks/index.html?path=practice/case-network-construction.ipynb" target="_blank" rel="noopener">在 JupyterLite 中打开 ↗</a></dd></div></dl></header><section class="block ex-intro"><p class="small"><span class="py-status">代码可以直接在浏览器中运行，各段共享同一个 Python 会话：运行某一段时，前面尚未运行的段会先依次运行。首次加载 Python 环境约需 20–40 秒。</span> <button class="btn ghost run-all" type="button">从头运行全部</button></p></section><div class="case-body"><section class="block prose"># 从表达矩阵到共表达网络：相关、偏相关、阈值选择与统计验证
+
+本案例从 1206 个人类细胞系的 RNA 测序数据出发，构建 56 个基因的共表达网络，并逐步检验每一个构网决定：用相关还是偏相关、阈值怎么定、多重比较怎么校正、结果在重抽样下是否稳定、样本量小时会怎样。所用的公式（Fisher $z$ 变换、BH 程序、偏相关、经验 $p$ 值、bootstrap）与[网络构建与统计验证](network-construction.html)专题页一致。
+
+**1. 数据来源**
+
+- 数据：Human Protein Atlas（HPA，proteinatlas.org）细胞系转录组数据 `rna_celline.tsv`，下载地址 `https://www.proteinatlas.org/download/tsv/rna_celline.tsv.zip`（2026-11-20 下载，压缩包内文件日期为 2023-05-24）。这是 HPA 对 1206 个细胞系做的 RNA-seq，表达量为标准化后的 nTPM。
+- 许可证：HPA 声明其数据库中可受版权保护的部分按 **CC BY 4.0** 许可（`https://www.proteinatlas.org/about/licence`）。引用：Uhlén M 等, Tissue-based map of the human proteome, *Science* 2015, DOI [10.1126/science.1260419](https://doi.org/10.1126/science.1260419)；Jin H 等, Systematic transcriptional analysis of human cell lines for gene expression landscape and tumor representation, *Nature Communications* 2023, DOI [10.1038/s41467-023-41132-w](https://doi.org/10.1038/s41467-023-41132-w)。
+- 裁剪：只保留 56 个基因的 nTPM，整理成“细胞系 × 基因”的宽表 `data/hpa_celline_rna_panel56.csv`（保留一位小数）。
+- 基因的选择：按常用的标记基因归为 7 组，每组 8 个——上皮（EPCAM、CDH1、角蛋白、紧密连接蛋白等）、间质（VIM、ZEB1、胶原等）、造血细胞（PTPRC 等）、MHC II 类抗原提呈（HLA-DR/DP/DM、CD74、CIITA）、细胞增殖（MKI67、TOP2A、周期蛋白等）、神经/神经内分泌（CHGA、SYP、ASCL1 等）、干扰素刺激基因（IFIT1、ISG15、MX1 等）。这一分组是**分析前定下的先验标签**，只用来检验构出的网络能否找回已知的共表达模块，不是网络的“真值”。</section><section class="block prose">## 2. 读入与清洗
+
+表达量是右偏的计数型数据，先做 $\log_2(\mathrm{nTPM}+1)$ 变换。再检查每个基因在多少细胞系里几乎不表达（nTPM &lt; 1）：大量零值会让皮尔逊相关被少数高表达样本主导，这是解读时要记住的一点。</section><div class="cell seq-cell" data-i="0"><div class="cell-head"><h3>代码 1</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="20" spellcheck="false" aria-label="代码 1">import time
+import numpy as np
+import pandas as pd
+import networkx as nx
+import matplotlib.pyplot as plt
+from scipy import stats
+
+t0 = time.time()
+X = pd.read_csv(&quot;data/hpa_celline_rna_panel56.csv&quot;, index_col=0)
+print(&quot;细胞系 × 基因:&quot;, X.shape, &quot;；缺失值:&quot;, int(X.isna().sum().sum()))
+Y = np.log2(X + 1.0)
+genes = list(Y.columns)
+p, n = len(genes), len(Y)
+group_names = [&quot;epithelial&quot;, &quot;mesenchymal&quot;, &quot;hematopoietic&quot;, &quot;MHC-II&quot;, &quot;proliferation&quot;, &quot;neuro/NE&quot;, &quot;interferon&quot;]
+grp = np.repeat(np.arange(7), 8)                     # 文件中基因已按组排列，每组 8 个
+low = (X &lt; 1).mean()
+print(&quot;nTPM &lt; 1 的细胞系比例：中位数 %.2f，最高 %.2f（%s）&quot; % (low.median(), low.max(), low.idxmax()))
+for g in range(7):
+    print(&quot;  %-14s %s&quot; % (group_names[g], &quot;, &quot;.join(genes[8 * g:8 * g + 8])))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 3. 构网：相关矩阵与偏相关矩阵
+
+- **皮尔逊相关** $r_{ij}$：间接关联也会成边（$A\to B\to C$ 时 $A$、$C$ 也相关）。
+- **偏相关** $\rho_{ij\cdot\text{rest}}=-\Theta_{ij}/\sqrt{\Theta_{ii}\Theta_{jj}}$，$\Theta=\Sigma^{-1}$ 为精度矩阵。这里 $n=1206$ 远大于 $p=56$，样本协方差矩阵可以直接求逆；若 $n$ 与 $p$ 同量级，就需要收缩估计或图形 LASSO（见[连接强度的估计](network-construction.edge-estimation.html)）。
+- 作为稳健性检查，再算一次斯皮尔曼秩相关，看它与皮尔逊相关是否一致。</section><div class="cell seq-cell" data-i="1"><div class="cell-head"><h3>代码 2</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="15" spellcheck="false" aria-label="代码 2">Yv = Y.values
+R = np.corrcoef(Yv, rowvar=False)
+Theta = np.linalg.inv(np.cov(Yv, rowvar=False))
+dg = np.sqrt(np.diag(Theta))
+P = -Theta / np.outer(dg, dg)
+np.fill_diagonal(P, 1.0)
+iu = np.triu_indices(p, 1)
+r, pr = R[iu], P[iu]
+rs = stats.spearmanr(Yv).correlation[iu]
+same = grp[iu[0]] == grp[iu[1]]
+print(&quot;基因对数 m = p(p-1)/2 = %d，其中同组 %d 对&quot; % (len(r), same.sum()))
+print(&quot;同组 |r| 中位数 %.2f，异组 |r| 中位数 %.2f&quot; % (np.median(abs(r[same])), np.median(abs(r[~same]))))
+print(&quot;皮尔逊与斯皮尔曼相关的相关: %.3f&quot; % np.corrcoef(r, rs)[0, 1])
+print(&quot;|r| &gt; 0.5 的对数 %d；|偏相关| &gt; 0.2 的对数 %d&quot; % ((abs(r) &gt; 0.5).sum(), (abs(pr) &gt; 0.2).sum()))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 4. 核心步骤：逐边检验、多重比较与阈值选择
+
+**单条边的检验**。在零假设 $\rho=0$ 下，Fisher 变换 $z=\operatorname{artanh}(r)$ 近似正态，方差约 $1/(n-3)$；对偏相关，要再减去被控制的变量数 $p-2$，方差约 $1/(n-(p-2)-3)$。
+
+**多重比较**。一共 1540 次检验，用 BH 程序把 FDR 控制在 $q=0.05$；另用置换的最大统计量法控制族错误率（FWE）：每次把每个基因的取值在细胞系之间独立打乱（破坏所有基因间的依赖），记录所有基因对中最大的 $|r|$，取 200 次置换的 95% 分位数作为阈值。
+
+然后把几种常见的构网规则放在一起比较：显著性阈值（BH、FWE）、绝对阈值 $|r|&gt;0.5$、偏相关显著性，以及保留最强 10% 的比例阈值。每种规则下计算边数、密度、正边比例、同组边比例和平均聚集系数。</section><div class="cell seq-cell" data-i="2"><div class="cell-head"><h3>代码 3</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="30" spellcheck="false" aria-label="代码 3">def bh(pvals, q=0.05):
+    m = len(pvals)
+    o = np.argsort(pvals)
+    ok = pvals[o] &lt;= q * np.arange(1, m + 1) / m
+    k = np.max(np.where(ok)[0]) + 1 if ok.any() else 0
+    rej = np.zeros(m, bool)
+    rej[o[:k]] = True
+    return rej
+
+p_r = 2 * stats.norm.sf(np.abs(np.arctanh(r)) * np.sqrt(n - 3))
+p_pr = 2 * stats.norm.sf(np.abs(np.arctanh(pr)) * np.sqrt(n - (p - 2) - 3))
+
+rng = np.random.default_rng(2026)
+B_perm = 200
+max_abs = np.empty(B_perm)
+for b in range(B_perm):
+    Yp = np.column_stack([rng.permutation(Yv[:, j]) for j in range(p)])
+    max_abs[b] = np.abs(np.corrcoef(Yp, rowvar=False)[iu]).max()
+tau_fwe = np.quantile(max_abs, 0.95)
+print(&quot;置换零分布：最大 |r| 的 95%% 分位数 = %.3f&quot; % tau_fwe)
+
+def graph_from(mask, w):
+    G = nx.Graph()
+    G.add_nodes_from(range(p))
+    G.add_weighted_edges_from((i, j, x) for i, j, x in zip(iu[0][mask], iu[1][mask], w[mask]))
+    return G
+
+top10 = np.zeros(len(r), bool)
+top10[np.argsort(-np.abs(r))[: int(round(0.10 * len(r)))]] = True
+rules = {
+    &quot;corr, BH q&lt;0.05&quot;: (bh(p_r), r),
+    &quot;corr, perm FWE&quot;: (np.abs(r) &gt; tau_fwe, r),
+    &quot;corr, |r|&gt;0.5&quot;: (np.abs(r) &gt; 0.5, r),
+    &quot;corr, top 10%&quot;: (top10, r),
+    &quot;partial, BH q&lt;0.05&quot;: (bh(p_pr), pr),
+}
+rows = []
+for name, (mask, w) in rules.items():
+    G = graph_from(mask, w)
+    rows.append(dict(rule=name, edges=int(mask.sum()), density=nx.density(G), pos_frac=(w[mask] &gt; 0).mean(),
+                     within_group=same[mask].mean(), clustering=nx.average_clustering(G)))
+table = pd.DataFrame(rows).set_index(&quot;rule&quot;)
+print(table.round(3).to_string())
+print(&quot;说明：随机连边时同组边比例的期望 = %.3f&quot; % same.mean())</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">**社团能否找回先验分组？** 在 $|r|&gt;0.5$ 的网络（只用正边）和偏相关 BH 网络（只用正边）上用 Louvain 算法找社团，用调整兰德指数（ARI，1 为完全一致、0 为随机水平）与 7 个先验组比较；同时计算先验分组本身的模块度 $Q$。</section><div class="cell seq-cell" data-i="3"><div class="cell-head"><h3>代码 4</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="24" spellcheck="false" aria-label="代码 4">def ari(a, b):
+    a, b = np.asarray(a), np.asarray(b)
+    _, ai = np.unique(a, return_inverse=True)
+    _, bi = np.unique(b, return_inverse=True)
+    C = np.zeros((ai.max() + 1, bi.max() + 1))
+    np.add.at(C, (ai, bi), 1)
+    c2 = lambda x: x * (x - 1) / 2
+    s, sa, sb = c2(C).sum(), c2(C.sum(1)).sum(), c2(C.sum(0)).sum()
+    e = sa * sb / c2(len(a))
+    return (s - e) / (0.5 * (sa + sb) - e)
+
+prior = [set(np.where(grp == g)[0]) for g in range(7)]
+for name in [&quot;corr, |r|&gt;0.5&quot;, &quot;partial, BH q&lt;0.05&quot;]:
+    mask, w = rules[name]
+    G = graph_from(mask &amp; (w &gt; 0), w)
+    comms = nx.community.louvain_communities(G, seed=1)
+    lab = np.empty(p, int)
+    for c, S in enumerate(comms):
+        lab[list(S)] = c
+    print(&quot;%-20s 正边 %3d 条：Louvain 社团 %d 个，Q = %.3f；先验分组的 Q = %.3f；ARI = %.2f&quot;
+          % (name, G.number_of_edges(), len(comms), nx.community.modularity(G, comms),
+             nx.community.modularity(G, prior), ari(lab, grp)))
+G_main = graph_from(rules[&quot;corr, |r|&gt;0.5&quot;][0] &amp; (r &gt; 0), r)</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 5. 与零模型比较
+
+两个问题、两个零模型：
+
+1. **“这些边是不是噪声？”**——用上一步的置换零模型：在打乱后的数据上用同样的 BH 规则构网，期望几乎没有边。
+2. **“这个网络的聚集是否超出度序列能解释的程度？”**——对 $|r|&gt;0.5$ 的正边网络做保度随机化（双边交换，每次交换 $10L$ 次，100 个随机网络），比较平均聚集系数和先验分组的模块度，报告 $z$ 分数与经验 $p$ 值 $\hat p=(1+\#\{X_m\ge X_{\rm obs}\})/(M+1)$。
+
+要注意专题页强调的一点：相关矩阵必须半正定，强相关具有“传递性”，所以相关网络的聚集系数本来就会高于保度随机网络（Zalesky 等 2012）。保度零模型下显著，不能直接说明有特殊的生物学组织；先验分组的模块度高，才是“找回了已知模块”的证据。</section><div class="cell seq-cell" data-i="4"><div class="cell-head"><h3>代码 5</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="23" spellcheck="false" aria-label="代码 5">n_null_edges = []
+for b in range(20):
+    Yp = np.column_stack([rng.permutation(Yv[:, j]) for j in range(p)])
+    rp = np.corrcoef(Yp, rowvar=False)[iu]
+    n_null_edges.append(bh(2 * stats.norm.sf(np.abs(np.arctanh(rp)) * np.sqrt(n - 3))).sum())
+print(&quot;置换数据上 BH 网络的边数（20 次）: 均值 %.2f，最大 %d&quot; % (np.mean(n_null_edges), max(n_null_edges)))
+
+M_null = 100
+C_obs = nx.average_clustering(G_main)
+Q_obs = nx.community.modularity(G_main, prior)
+Lm = G_main.number_of_edges()
+C_null, Q_null = [], []
+for b in range(M_null):
+    H = G_main.copy()
+    nx.double_edge_swap(H, nswap=10 * Lm, max_tries=100 * Lm, seed=int(rng.integers(1 &lt;&lt; 31)))
+    C_null.append(nx.average_clustering(H))
+    Q_null.append(nx.community.modularity(H, prior))
+C_null, Q_null = np.array(C_null), np.array(Q_null)
+for name, x, xn in [(&quot;平均聚集系数&quot;, C_obs, C_null), (&quot;先验分组模块度&quot;, Q_obs, Q_null)]:
+    z = (x - xn.mean()) / xn.std(ddof=1)
+    ph = (1 + (xn &gt;= x).sum()) / (M_null + 1)
+    print(&quot;%-8s 观测 %.3f；保度零模型 %.3f ± %.3f；z = %.1f；经验 p = %.3f&quot; % (name, x, xn.mean(), xn.std(ddof=1), z, ph))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">**稳定性：bootstrap 与样本量。** 有放回地重抽样细胞系 200 次，把“相关 → 阈值”整个流程放进循环，记录每条边的入选频率。入选频率在 0.2–0.8 之间的边，就是“阈值附近、入选与否近似抛硬币”的边。再随机抽 50 个细胞系重复构网，看小样本下 BH 网络与全样本网络的差别——这对应专题页“样本量与统计功效”的讨论。</section><div class="cell seq-cell" data-i="5"><div class="cell-head"><h3>代码 6</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="30" spellcheck="false" aria-label="代码 6">B_boot = 200
+freq_abs = np.zeros(len(r))
+freq_pbh = np.zeros(len(r))
+C_boot = []
+for b in range(B_boot):
+    ix = rng.integers(0, n, n)
+    Yb = Yv[ix]
+    rb = np.corrcoef(Yb, rowvar=False)[iu]
+    Tb = np.linalg.inv(np.cov(Yb, rowvar=False))
+    db = np.sqrt(np.diag(Tb))
+    prb = (-Tb / np.outer(db, db))[iu]
+    mb = np.abs(rb) &gt; 0.5
+    freq_abs += mb
+    freq_pbh += bh(2 * stats.norm.sf(np.abs(np.arctanh(prb)) * np.sqrt(n - (p - 2) - 3)))
+    C_boot.append(nx.average_clustering(graph_from(mb &amp; (rb &gt; 0), rb)))
+freq_abs /= B_boot
+freq_pbh /= B_boot
+for name, f, mask in [(&quot;|r|&gt;0.5&quot;, freq_abs, rules[&quot;corr, |r|&gt;0.5&quot;][0]), (&quot;偏相关 BH&quot;, freq_pbh, rules[&quot;partial, BH q&lt;0.05&quot;][0])]:
+    print(&quot;%-10s 全样本选中 %d 条；bootstrap 入选频率 &gt;= 0.95 的边 %d 条；0.2–0.8 之间 %d 条&quot;
+          % (name, mask.sum(), (f &gt;= 0.95).sum(), ((f &gt; 0.2) &amp; (f &lt; 0.8)).sum()))
+print(&quot;|r|&gt;0.5 正边网络的平均聚集系数：全样本 %.3f，bootstrap 95%% 区间 [%.3f, %.3f]&quot;
+      % (C_obs, *np.quantile(C_boot, [0.025, 0.975])))
+
+full_bh = bh(p_r)
+for n_sub in [50, 200]:
+    found, overlap = [], []
+    for b in range(20):
+        ix = rng.choice(n, n_sub, replace=False)
+        rsub = np.corrcoef(Yv[ix], rowvar=False)[iu]
+        sel = bh(2 * stats.norm.sf(np.abs(np.arctanh(rsub)) * np.sqrt(n_sub - 3)))
+        found.append(sel.sum())
+        overlap.append((sel &amp; full_bh).sum() / max(sel.sum(), 1))
+    print(&quot;n = %4d：BH 网络平均 %.0f 条边（全样本 %d 条），其中 %.1f%% 也在全样本网络里&quot;
+          % (n_sub, np.mean(found), full_bh.sum(), 100 * np.mean(overlap)))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 6. 作图
+
+上左：按先验分组排列的相关矩阵，组内方块清晰可见。上右：$|r|&gt;0.5$ 正边网络，颜色为先验分组。下左：在 5%–30% 的密度范围内扫描比例阈值，看平均聚集系数和先验分组模块度如何随密度变化（每个密度下也算一次保度零模型的均值作对照）。下右：两种规则下 bootstrap 入选频率的分布。</section><div class="cell seq-cell" data-i="6"><div class="cell-head"><h3>代码 7</h3><div><button class="btn run" type="button">运行</button> <button class="btn ghost reset" type="button">还原</button> <button class="btn ghost copy" type="button">复制</button></div></div><textarea rows="30" spellcheck="false" aria-label="代码 7">fig, axes = plt.subplots(2, 2, figsize=(12, 10))
+ax = axes[0, 0]
+im = ax.imshow(R, cmap=&quot;RdBu_r&quot;, vmin=-1, vmax=1)
+for k in range(1, 7):
+    ax.axhline(8 * k - 0.5, color=&quot;k&quot;, lw=0.6)
+    ax.axvline(8 * k - 0.5, color=&quot;k&quot;, lw=0.6)
+ax.set_xticks(np.arange(4, 56, 8)); ax.set_xticklabels(group_names, rotation=45, ha=&quot;right&quot;, fontsize=8)
+ax.set_yticks(np.arange(4, 56, 8)); ax.set_yticklabels(group_names, fontsize=8)
+ax.set_title(&quot;Pearson correlation, log2(nTPM+1), n = %d cell lines&quot; % n)
+plt.colorbar(im, ax=ax, fraction=0.046)
+
+ax = axes[0, 1]
+cols = plt.cm.tab10(np.arange(7))
+pos = nx.spring_layout(G_main, seed=3, k=0.35)
+nx.draw_networkx_edges(G_main, pos, ax=ax, alpha=0.35)
+nx.draw_networkx_nodes(G_main, pos, ax=ax, node_size=90, node_color=[cols[grp[i]] for i in G_main])
+nx.draw_networkx_labels(G_main, pos, ax=ax, labels={i: genes[i] for i in G_main}, font_size=6)
+for g in range(7):
+    ax.scatter([], [], color=cols[g], label=group_names[g])
+ax.legend(fontsize=7, loc=&quot;lower left&quot;); ax.axis(&quot;off&quot;)
+ax.set_title(&quot;|r| &gt; 0.5, positive edges (%d)&quot; % G_main.number_of_edges())
+
+ax = axes[1, 0]
+dens = np.arange(0.05, 0.31, 0.025)
+order = np.argsort(-r)                     # 只取正相关，从强到弱
+Cs, Qs, Cn, Qn = [], [], [], []
+for d in dens:
+    k = int(round(d * len(r)))
+    mask = np.zeros(len(r), bool); mask[order[:k]] = True
+    G = graph_from(mask, r)
+    Cs.append(nx.average_clustering(G)); Qs.append(nx.community.modularity(G, prior))
+    cn, qn = [], []
+    for b in range(10):
+        H = G.copy()
+        nx.double_edge_swap(H, nswap=5 * k, max_tries=100 * k, seed=int(rng.integers(1 &lt;&lt; 31)))
+        cn.append(nx.average_clustering(H)); qn.append(nx.community.modularity(H, prior))
+    Cn.append(np.mean(cn)); Qn.append(np.mean(qn))
+ax.plot(dens, Cs, &quot;o-&quot;, label=&quot;clustering (data)&quot;)
+ax.plot(dens, Cn, &quot;o--&quot;, label=&quot;clustering (degree-preserving)&quot;)
+ax.plot(dens, Qs, &quot;s-&quot;, label=&quot;Q of prior groups (data)&quot;)
+ax.plot(dens, Qn, &quot;s--&quot;, label=&quot;Q of prior groups (degree-preserving)&quot;)
+ax.set_xlabel(&quot;edge density (strongest positive correlations kept)&quot;); ax.legend(fontsize=8)
+ax.set_title(&quot;Density sweep 5%-30%&quot;)
+
+ax = axes[1, 1]
+for f, lab in [(freq_abs, &quot;|r| &gt; 0.5&quot;), (freq_pbh, &quot;partial corr, BH&quot;)]:
+    ax.hist(f[f &gt; 0], bins=20, range=(0, 1), alpha=0.6, label=lab)
+ax.set_xlabel(&quot;bootstrap selection frequency (edges selected at least once)&quot;); ax.set_ylabel(&quot;edges&quot;)
+ax.set_yscale(&quot;log&quot;); ax.legend(); ax.set_title(&quot;Edge stability, %d bootstrap resamples&quot; % B_boot)
+plt.tight_layout()
+print(&quot;总运行时间 %.1f 秒&quot; % (time.time() - t0))</textarea><div class="out" aria-live="polite"></div></div><section class="block prose">## 7. 解读与局限
+
+**结果怎么读**（具体数字以上面的运行输出为准）：
+
+- **统计显著不等于强关联。** $n=1206$ 时，BH 校正后约八成的基因对都“显著”，网络几乎是稠密的，而且大部分边在组间、过半是负相关。置换的最大统计量阈值也只有 $|r|\approx0.12$。样本很大时，显著性阈值回答的是“相关是否恰好为 0”，并不能帮助挑出有意义的结构；这时需要同时考虑效应量（如 $|r|&gt;0.5$）或改用偏相关。
+- **置换零模型下几乎没有边**，说明 BH 网络里的边不是随机噪声造成的；问题不在假阳性，而在“真实但很弱、多为间接”的关联太多。
+- **绝对阈值 $|r|&gt;0.5$ 的网络**以正边、同组边为主，Louvain 社团与先验分组高度一致，先验分组的模块度也远高于保度零模型。这些组大致对应细胞系的来源谱系（上皮、间质、造血、神经内分泌）以及增殖、干扰素反应、抗原提呈等程序。
+- **偏相关**控制其余 54 个基因后，许多组间的间接关联消失，但仍有大量弱的偏相关通过 BH 校正（其中不少是负的组间边，所以同组边比例不高）。只看正的偏相关边时，Louvain 社团与 7 个先验组完全一致（ARI = 1）：组内的“直接关联”是正的，组间关联多半经由其他基因传递。专题页也提醒：偏相关仍然不是因果，还可能在对撞结构中制造关联。
+- **聚集系数**在保度零模型下显著偏高，但相关网络的传递性本来就会抬高聚集系数，这一结果单独不能作为“特殊组织”的证据。密度扫描显示，聚集系数和模块度都随密度改变，结论应在一段密度范围内报告，而不是只报一个阈值。
+- **稳定性**：$|r|&gt;0.5$ 网络的大多数边在 bootstrap 中入选频率接近 1，只有少数阈值附近的边入选频率在 0.2–0.8 之间；偏相关 BH 网络则不同，频率在 0.2–0.8 之间的边比全样本选中的边还多——这些都是很弱的偏相关，是否“显著”几乎取决于抽到哪些细胞系。整体指标可以比单条边稳定得多：$|r|&gt;0.5$ 网络平均聚集系数的 bootstrap 区间很窄。小样本（$n=50$）时 BH 网络只剩下最强的一部分边，而且这些边几乎都出现在全样本网络里；所以“在小样本里没有边”不代表没有关联，只是功效不足。
+
+**局限**：
+
+- 细胞系不是组织：多年体外培养会改变表达，不同来源的细胞系在库中的比例也不均衡。相关性主要由“这是哪一类细胞系”驱动，网络因此更像“谱系标记的共现图”，而不是细胞内的调控网络。若要研究某一种细胞内的共表达，应在同一谱系内部构网，或把谱系作为协变量回归掉。
+- 56 个基因是按先验分组挑选的，先验分组能被找回部分是选择方式造成的；在全基因组规模上（$p\gg n$）需要收缩估计、图形 LASSO 或 WGCNA 一类的方法，阈值和多重比较的负担也完全不同。
+- $\log_2(x+1)$ 变换后，大量接近 0 的值仍会影响皮尔逊相关；斯皮尔曼相关与之高度一致，说明主要结论不依赖这一点，但没有检验更复杂的非线性依赖（如互信息）。
+- Fisher $z$ 检验假设样本独立、近似二元正态；来自同一患者或同一实验室的细胞系并不完全独立，有效样本量可能小于 1206。</section></div><nav class="pager"><a href="network-construction.html"><small>专题主页</small>网络构建与统计验证</a><a href="data-sources.html"><small>数据</small>数据来源与许可</a></nav><script type="application/json" id="ex-data">{"files": ["hpa_celline_rna_panel56.csv"], "tasks": []}</script></main></div><div class="nav-scrim" hidden></div><footer class="site"><div><b>生物医学网络科学</b><span>Biomedical Network Science</span><a href="courses.html">课程视频</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer><script src="assets/js/site.js"></script></body></html>

@@ -164,16 +164,18 @@ class Episode(Narrated):
             q = T("缺少参照", 36, INK).next_to(big, DOWN, buff=0.4)
             self.play(FadeIn(q), run_time=0.6)
         hi = max(C, max(rs)) * 1.15
-        ax = axes([0, round(hi, 1) + 0.1, 0.1], [0, 40, 20], 9.0, 3.6, xnums=list(np.round(np.arange(0, hi + 0.1, 0.1), 1)), fs=20).move_to(DOWN * 0.8)
+        edges = np.linspace(0, round(hi, 1) + 0.1, 61)
+        ytop = int(np.ceil(np.histogram(rs, bins=edges)[0].max() * 1.1 / 10) * 10)  # y-limit from the data
+        ax = axes([0, round(hi, 1) + 0.1, 0.1], [0, ytop, ytop], 9.0, 3.6, xnums=list(np.round(np.arange(0, hi + 0.1, 0.1), 1)), fs=20).move_to(DOWN * 0.8)
         xl = xlabel(ax, "平均聚集系数", 22, 0.3)
-        bars, _ = hist_bars(ax, rs, np.linspace(0, round(hi, 1) + 0.1, 61), MUTED)
+        bars, _ = hist_bars(ax, rs, edges, MUTED)
         with self.say("g3") as d:
             self.play(FadeOut(q), lab.animate.scale(0.7).move_to(UP * 2.6 + RIGHT * 3.5), big.animate.scale(0.45).move_to(UP * 2.0 + RIGHT * 3.5), run_time=0.8)
             self.play(Create(ax), FadeIn(xl), run_time=0.8)
             self.play(grow_bars(bars, 1.2))
-            rl = Line(ax.c2p(C, 0), ax.c2p(C, 36), color=GOLD, stroke_width=5)
+            rl = Line(ax.c2p(C, 0), ax.c2p(C, ytop * 0.9), color=GOLD, stroke_width=5)
             self.play(Create(rl), run_time=0.6)
-            nl = T("保度随机网络", 22, MUTED).next_to(bars, UP, buff=0.15)
+            nl = T("保度随机网络", 22, MUTED).next_to(bars, UP, buff=0.15).align_to(bars, LEFT).shift(RIGHT * 0.15)
             self.play(FadeIn(nl), run_time=0.4)
         with self.say("g4") as d:
             zl = MathTex(rf"z \approx {z:.0f}", font_size=44, color=GOLD).next_to(rl, LEFT, buff=0.3).shift(UP * 0.8)
@@ -255,9 +257,12 @@ class Episode(Narrated):
         G = nx.barabasi_albert_graph(3000, 2, seed=6)
         k = np.array([d for _, d in G.degree()])
         kmax = k.max()
-        ax = axes([0, 160, 40], [0, 900, 300], 5.4, 3.8, xnums=[0, 40, 80, 120, 160], ynums=[0, 300, 600, 900], fs=18).move_to(LEFT * 3.4 + DOWN * 0.3)
-        xl, yl = xlabel(ax, "度", 22, 0.3), ylabel(ax, "节点数", 22)
-        bars, cnt = hist_bars(ax, np.minimum(k, 159), np.arange(0, 162, 4), BLUE)
+        edges = np.arange(0, 162, 4)
+        ystep = int(np.ceil(np.histogram(np.minimum(k, 159), bins=edges)[0].max() * 1.05 / 3 / 100) * 100)  # y-limit from the data
+        ax = axes([0, 160, 40], [0, 3 * ystep, ystep], 5.2, 3.8, xnums=[0, 40, 80, 120, 160], ynums=[ystep, 2 * ystep, 3 * ystep], fs=18).move_to(LEFT * 3.2 + DOWN * 0.3)
+        # axis label above the y-axis (horizontal) so it stays inside the frame
+        xl, yl = xlabel(ax, "度", 22, 0.3), T("节点数", 22, MUTED).next_to(ax, UP, buff=0.15).align_to(ax.y_axis.numbers, LEFT)
+        bars, cnt = hist_bars(ax, np.minimum(k, 159), edges, BLUE)
         with self.say("d1") as d:
             self.play(FadeIn(tag), Create(ax), FadeIn(xl), FadeIn(yl), run_time=0.8)
             self.play(grow_bars(bars, 1.4))

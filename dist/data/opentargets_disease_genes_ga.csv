@@ -1,0 +1,2728 @@
+disease_id,disease,gene,ga_score
+MONDO_0004979,asthma,FLG,0.9785
+MONDO_0004979,asthma,IL7R,0.9704
+MONDO_0004979,asthma,IL13,0.9610
+MONDO_0004979,asthma,OTULINL,0.9587
+MONDO_0004979,asthma,IL4R,0.9585
+MONDO_0004979,asthma,TNFRSF8,0.9575
+MONDO_0004979,asthma,BACH2,0.9545
+MONDO_0004979,asthma,D2HGDH,0.9461
+MONDO_0004979,asthma,TSLP,0.9442
+MONDO_0004979,asthma,IRAG1,0.9409
+MONDO_0004979,asthma,IL33R,0.9385
+MONDO_0004979,asthma,LPP,0.9350
+MONDO_0004979,asthma,IL33,0.9337
+MONDO_0004979,asthma,PRKCQ,0.9334
+MONDO_0004979,asthma,GATA3,0.9282
+MONDO_0004979,asthma,SMAD3,0.9246
+MONDO_0004979,asthma,NPNT,0.9205
+MONDO_0004979,asthma,TBL1XR1,0.9179
+MONDO_0004979,asthma,TLR1,0.9168
+MONDO_0004979,asthma,SUOX,0.9165
+MONDO_0004979,asthma,IL6R,0.9156
+MONDO_0004979,asthma,RUNX1,0.9140
+MONDO_0004979,asthma,JAZF1,0.9122
+MONDO_0004979,asthma,TESPA1,0.9053
+MONDO_0004979,asthma,IL21R,0.9022
+MONDO_0004979,asthma,APOE,0.9009
+MONDO_0004979,asthma,IL6,0.9006
+MONDO_0004979,asthma,BCL2L11,0.8852
+MONDO_0004979,asthma,PTPRC,0.8783
+MONDO_0004979,asthma,PLXNC1,0.8730
+MONDO_0004979,asthma,GNA15,0.8611
+MONDO_0004979,asthma,NRROS,0.8592
+MONDO_0004979,asthma,STAT6,0.8574
+MONDO_0004979,asthma,TNFSF4,0.8573
+MONDO_0004979,asthma,ZNF652,0.8572
+MONDO_0004979,asthma,SLC7A10,0.8556
+MONDO_0004979,asthma,ADORA1,0.8546
+MONDO_0004979,asthma,SERPING1,0.8529
+MONDO_0004979,asthma,FTO,0.8528
+MONDO_0004979,asthma,IL2RA,0.8524
+MONDO_0004979,asthma,RAD51B,0.8518
+MONDO_0004979,asthma,WDR36,0.8500
+MONDO_0004979,asthma,SHARPIN,0.8493
+MONDO_0004979,asthma,ADAMTSL3,0.8473
+MONDO_0004979,asthma,RUNX3,0.8472
+MONDO_0004979,asthma,SLC39A8,0.8463
+MONDO_0004979,asthma,NOD2,0.8452
+MONDO_0004979,asthma,CDHR3,0.8419
+MONDO_0004979,asthma,ZNF217,0.8374
+MONDO_0004979,asthma,IRF1,0.8365
+MONDO_0004979,asthma,ELAVL2,0.8348
+MONDO_0004979,asthma,GLIS3,0.8309
+MONDO_0004979,asthma,ITGB8,0.8204
+MONDO_0004979,asthma,CSF2,0.8204
+MONDO_0004979,asthma,CD247,0.8204
+MONDO_0004979,asthma,GSDMB,0.8179
+MONDO_0004979,asthma,LRRC32,0.8157
+MONDO_0004979,asthma,AHI1,0.8153
+MONDO_0004979,asthma,FCER1G,0.8147
+MONDO_0004979,asthma,USP8,0.8135
+MONDO_0004979,asthma,TPD52L3,0.8108
+MONDO_0004979,asthma,IL18RAP,0.8095
+MONDO_0004979,asthma,NFKBIA,0.8075
+MONDO_0004979,asthma,HHEX,0.8074
+MONDO_0004979,asthma,TNFRSF11A,0.8054
+MONDO_0004979,asthma,IL5,0.8030
+MONDO_0004979,asthma,GADD45G,0.8024
+MONDO_0004979,asthma,RPS26,0.8015
+MONDO_0004979,asthma,KLF5,0.8001
+MONDO_0004979,asthma,ZBTB10,0.7983
+MONDO_0004979,asthma,GLB1,0.7950
+MONDO_0004979,asthma,HDAC7,0.7923
+MONDO_0004979,asthma,TSPAN8,0.7827
+MONDO_0004979,asthma,IL18R1,0.7825
+MONDO_0004979,asthma,IPCEF1,0.7821
+MONDO_0004979,asthma,NDFIP1,0.7819
+MONDO_0004979,asthma,TRAF3,0.7819
+MONDO_0004979,asthma,TLR10,0.7815
+MONDO_0004979,asthma,MUC16,0.7796
+MONDO_0004979,asthma,ZPBP2,0.7785
+MONDO_0004979,asthma,SH2B3,0.7783
+MONDO_0004979,asthma,IRF4,0.7755
+MONDO_0004979,asthma,IL36R,0.7750
+MONDO_0004979,asthma,CD28,0.7724
+MONDO_0004979,asthma,ID4,0.7721
+MONDO_0004979,asthma,TGFBR1,0.7711
+MONDO_0004979,asthma,SERPINB7,0.7706
+MONDO_0004979,asthma,PRR5L,0.7664
+MONDO_0004979,asthma,FADS2,0.7634
+MONDO_0004979,asthma,SLC22A5,0.7631
+MONDO_0004979,asthma,CCL20,0.7626
+MONDO_0004979,asthma,BLTP1,0.7619
+MONDO_0004979,asthma,TNFAIP8,0.7574
+MONDO_0004979,asthma,RIN3,0.7560
+MONDO_0004979,asthma,ZFP36L1,0.7556
+MONDO_0004979,asthma,SPSB1,0.7546
+MONDO_0004979,asthma,COL16A1,0.7511
+MONDO_0004979,asthma,ALOX15,0.7502
+MONDO_0004979,asthma,POLI,0.7474
+MONDO_0004979,asthma,TBX21,0.7472
+MONDO_0004979,asthma,CYP26B1,0.7464
+MONDO_0004979,asthma,CSF3,0.7446
+MONDO_0004979,asthma,RORA,0.7426
+MONDO_0004979,asthma,ZNF512B,0.7375
+MONDO_0004979,asthma,NEK6,0.7347
+MONDO_0004979,asthma,PPARG,0.7275
+MONDO_0004979,asthma,MECOM,0.7274
+MONDO_0004979,asthma,ENSG00000293584,0.7270
+MONDO_0004979,asthma,SEPTIN8,0.7243
+MONDO_0004979,asthma,SLC25A46,0.7237
+MONDO_0004979,asthma,IL2,0.7207
+MONDO_0004979,asthma,EXD1,0.7181
+MONDO_0004979,asthma,TCF7,0.7177
+MONDO_0004979,asthma,ID2,0.7160
+MONDO_0004979,asthma,SIK2,0.7158
+MONDO_0004979,asthma,TPCN2,0.7127
+MONDO_0004979,asthma,GSAP,0.7093
+MONDO_0004979,asthma,TPRG1,0.7087
+MONDO_0004979,asthma,HHIP,0.7083
+MONDO_0004979,asthma,NSMCE1,0.7070
+MONDO_0004979,asthma,IP6K3,0.7032
+MONDO_0004979,asthma,TMEM232,0.7022
+MONDO_0004979,asthma,FOXP1,0.7021
+MONDO_0004979,asthma,IL4,0.7014
+MONDO_0004979,asthma,MYC,0.6963
+MONDO_0004979,asthma,CYFIP2,0.6954
+MONDO_0004979,asthma,NFATC2,0.6936
+MONDO_0004979,asthma,GNPDA1,0.6893
+MONDO_0004979,asthma,ADAMTS9,0.6884
+MONDO_0004979,asthma,SLC9A4,0.6879
+MONDO_0004979,asthma,ARPP21,0.6862
+MONDO_0004979,asthma,JAK2,0.6859
+MONDO_0004979,asthma,IL1R1,0.6853
+MONDO_0004979,asthma,ZBTB38,0.6843
+MONDO_0004979,asthma,SMARCE1,0.6826
+MONDO_0004979,asthma,ARRDC1,0.6803
+MONDO_0004979,asthma,ITPKB,0.6757
+MONDO_0004979,asthma,PTPRK,0.6751
+MONDO_0004979,asthma,GAL3ST2,0.6725
+MONDO_0004979,asthma,IER5L,0.6712
+MONDO_0004979,asthma,NEU4,0.6711
+MONDO_0004979,asthma,GCHFR,0.6704
+MONDO_0004979,asthma,IL2RB,0.6703
+MONDO_0004979,asthma,SLC45A1,0.6682
+MONDO_0004979,asthma,PRAG1,0.6678
+MONDO_0004979,asthma,CNN2,0.6668
+MONDO_0004979,asthma,CLEC16A,0.6653
+MONDO_0004979,asthma,CARD11,0.6637
+MONDO_0004979,asthma,TNFAIP3,0.6590
+MONDO_0004979,asthma,ADAM19,0.6589
+MONDO_0004979,asthma,ABCB5,0.6574
+MONDO_0004979,asthma,ESR1,0.6525
+MONDO_0004979,asthma,TNFSF15,0.6513
+MONDO_0004979,asthma,CADM3,0.6510
+MONDO_0004979,asthma,ABO,0.6505
+MONDO_0004979,asthma,ZDHHC12,0.6494
+MONDO_0004979,asthma,TLR6,0.6491
+MONDO_0004979,asthma,BCL2,0.6488
+MONDO_0004979,asthma,IL21,0.6462
+MONDO_0004979,asthma,MAP4K4,0.6457
+MONDO_0004979,asthma,EMSY,0.6455
+MONDO_0004979,asthma,DPP4,0.6420
+MONDO_0004979,asthma,SBNO2,0.6409
+MONDO_0004979,asthma,RERE,0.6396
+MONDO_0004979,asthma,MYOCD,0.6393
+MONDO_0004979,asthma,ARHGAP15,0.6353
+MONDO_0004979,asthma,STAU2,0.6331
+MONDO_0004979,asthma,ICE2,0.6324
+MONDO_0004979,asthma,RFC1,0.6280
+MONDO_0004979,asthma,SLC22A4,0.6265
+MONDO_0004979,asthma,ADAP1,0.6249
+MONDO_0004979,asthma,ETS1,0.6249
+MONDO_0004979,asthma,RYBP,0.6225
+MONDO_0004979,asthma,PPP1R1B,0.6221
+MONDO_0004979,asthma,PLCL2,0.6214
+MONDO_0004979,asthma,MBD2,0.6196
+MONDO_0004979,asthma,DAW1,0.6192
+MONDO_0004979,asthma,GLDC,0.6183
+MONDO_0004979,asthma,UBAC2,0.6147
+MONDO_0004979,asthma,ATG5,0.6139
+MONDO_0004979,asthma,IL1R2,0.6119
+MONDO_0004979,asthma,SPPL3,0.6118
+MONDO_0004979,asthma,KCNG2,0.6067
+MONDO_0004979,asthma,NFKB1,0.6050
+MONDO_0004979,asthma,NFILZ,0.6049
+MONDO_0004979,asthma,SGO1,0.6047
+MONDO_0004979,asthma,AFF3,0.6039
+MONDO_0004979,asthma,NCOA1,0.6032
+MONDO_0004979,asthma,IKZF3,0.6003
+MONDO_0004979,asthma,LCE1D,0.6000
+MONDO_0004979,asthma,RUVBL1,0.5999
+MONDO_0004979,asthma,SH3PXD2A,0.5981
+MONDO_0004979,asthma,ADO,0.5965
+MONDO_0004979,asthma,ADAMTS4,0.5957
+MONDO_0004979,asthma,FUCA2,0.5954
+MONDO_0004979,asthma,IGF2BP1,0.5950
+MONDO_0004979,asthma,NMT1,0.5927
+MONDO_0004979,asthma,KIF11,0.5913
+MONDO_0004979,asthma,PEX14,0.5893
+MONDO_0004979,asthma,COL6A3,0.5878
+MONDO_0004979,asthma,FBXO38,0.5876
+MONDO_0004979,asthma,ZNF558,0.5857
+MONDO_0004979,asthma,TET2,0.5843
+MONDO_0004979,asthma,SEC61B,0.5843
+MONDO_0004979,asthma,ARMC2,0.5842
+MONDO_0004979,asthma,SPATA32,0.5831
+MONDO_0004979,asthma,MUC5AC,0.5802
+MONDO_0004979,asthma,ERGIC1,0.5783
+MONDO_0004979,asthma,BCL3,0.5782
+MONDO_0004979,asthma,IFIH1,0.5777
+MONDO_0004979,asthma,ZFYVE26,0.5773
+MONDO_0004979,asthma,TNFSF11,0.5765
+MONDO_0004979,asthma,ITPR3,0.5764
+MONDO_0004979,asthma,TGFBR3,0.5755
+MONDO_0004979,asthma,STAT5B,0.5751
+MONDO_0004979,asthma,KLB,0.5750
+MONDO_0004979,asthma,PRDM6,0.5739
+MONDO_0004979,asthma,PBX3,0.5721
+MONDO_0004979,asthma,RAPGEF6,0.5717
+MONDO_0004979,asthma,RMC1,0.5695
+MONDO_0004979,asthma,PGAP3,0.5692
+MONDO_0004979,asthma,PITPNM2,0.5684
+MONDO_0004979,asthma,RANBP6,0.5650
+MONDO_0004979,asthma,ZNF703,0.5646
+MONDO_0004979,asthma,CD226,0.5616
+MONDO_0004979,asthma,PHB1,0.5604
+MONDO_0004979,asthma,TTC19,0.5594
+MONDO_0004979,asthma,IL1B,0.5578
+MONDO_0004979,asthma,ERC2,0.5566
+MONDO_0004979,asthma,SDF4,0.5556
+MONDO_0004979,asthma,TNFRSF6B,0.5553
+MONDO_0004979,asthma,RTL1,0.5552
+MONDO_0004979,asthma,ITPKA,0.5543
+MONDO_0004979,asthma,RBM17,0.5537
+MONDO_0004979,asthma,THSD4,0.5515
+MONDO_0004979,asthma,CD200R1,0.5510
+MONDO_0004979,asthma,ICOS,0.5491
+MONDO_0004979,asthma,PHF5A,0.5487
+MONDO_0004979,asthma,AAGAB,0.5486
+MONDO_0004979,asthma,RHCE,0.5475
+MONDO_0004979,asthma,PIK3C3,0.5472
+MONDO_0004979,asthma,LAYN,0.5448
+MONDO_0004979,asthma,PTP4A1,0.5447
+MONDO_0004979,asthma,APOLTP,0.5437
+MONDO_0004979,asthma,UBE2U,0.5426
+MONDO_0004979,asthma,SLC9A2,0.5423
+MONDO_0004979,asthma,MFHAS1,0.5419
+MONDO_0004979,asthma,MLLT10,0.5411
+MONDO_0004979,asthma,TM9SF2,0.5405
+MONDO_0004979,asthma,EGFLAM,0.5384
+MONDO_0004979,asthma,LBH,0.5381
+MONDO_0004979,asthma,MMP16,0.5378
+MONDO_0004979,asthma,COG6,0.5367
+MONDO_0004979,asthma,ACTL9,0.5360
+MONDO_0004979,asthma,CTSF,0.5349
+MONDO_0004979,asthma,USH2A,0.5347
+MONDO_0004979,asthma,TEF,0.5340
+MONDO_0004979,asthma,PDCD1,0.5316
+MONDO_0004979,asthma,AIMP1,0.5315
+MONDO_0004979,asthma,MAPT,0.5313
+MONDO_0004979,asthma,GRAMD4,0.5304
+MONDO_0004979,asthma,MAP3K20,0.5303
+MONDO_0004979,asthma,PTGER4,0.5303
+MONDO_0004979,asthma,XKR6,0.5295
+MONDO_0004979,asthma,OTULIN,0.5270
+MONDO_0004979,asthma,MDH1,0.5267
+MONDO_0004979,asthma,PTPN22,0.5265
+MONDO_0004979,asthma,FADS3,0.5258
+MONDO_0004979,asthma,FGF10,0.5251
+MONDO_0004979,asthma,UHRF2,0.5242
+MONDO_0004979,asthma,FLG2,0.5236
+MONDO_0004979,asthma,EMC2,0.5202
+MONDO_0004979,asthma,SMAD2,0.5200
+MONDO_0004979,asthma,TNFSF8,0.5182
+MONDO_0004979,asthma,CSF2RA,0.5165
+MONDO_0004979,asthma,HIVEP2,0.5165
+MONDO_0004979,asthma,UBASH3A,0.5160
+MONDO_0004979,asthma,SOX9,0.5149
+MONDO_0004979,asthma,TSLIG3A,0.5149
+MONDO_0004979,asthma,SPRED2,0.5136
+MONDO_0004979,asthma,FOXK1,0.5134
+MONDO_0004979,asthma,DGLUCY,0.5129
+MONDO_0004979,asthma,TMEM272,0.5126
+MONDO_0004979,asthma,HIVEP1,0.5122
+MONDO_0004979,asthma,PDE4D,0.5114
+MONDO_0004979,asthma,SLC2A13,0.5113
+MONDO_0004979,asthma,ANKH,0.5103
+MONDO_0004979,asthma,PHF2,0.5102
+MONDO_0004979,asthma,SOX4,0.5098
+MONDO_0004979,asthma,TNC,0.5098
+MONDO_0004979,asthma,CDC42SE2,0.5095
+MONDO_0004979,asthma,MSANTD1,0.5072
+MONDO_0004979,asthma,DMAC1,0.5055
+MONDO_0004979,asthma,KCNU1,0.5037
+MONDO_0004979,asthma,RTP2,0.5018
+MONDO_0004979,asthma,MYO1B,0.5013
+MONDO_0004979,asthma,NCBP1,0.5002
+MONDO_0005148,type 2 diabetes mellitus,FTO,0.9800
+MONDO_0005148,type 2 diabetes mellitus,CTRB1,0.9591
+MONDO_0005148,type 2 diabetes mellitus,CTRB2,0.9561
+MONDO_0005148,type 2 diabetes mellitus,UBE2E2,0.9496
+MONDO_0005148,type 2 diabetes mellitus,HNF1A,0.9464
+MONDO_0005148,type 2 diabetes mellitus,JAZF1,0.9464
+MONDO_0005148,type 2 diabetes mellitus,APOE,0.9453
+MONDO_0005148,type 2 diabetes mellitus,RASGRP1,0.9305
+MONDO_0005148,type 2 diabetes mellitus,GCK,0.9304
+MONDO_0005148,type 2 diabetes mellitus,KL,0.9282
+MONDO_0005148,type 2 diabetes mellitus,WFS1,0.9274
+MONDO_0005148,type 2 diabetes mellitus,TFAP2B,0.9255
+MONDO_0005148,type 2 diabetes mellitus,LPL,0.9244
+MONDO_0005148,type 2 diabetes mellitus,KCNJ11,0.9215
+MONDO_0005148,type 2 diabetes mellitus,RREB1,0.9196
+MONDO_0005148,type 2 diabetes mellitus,ABCC8,0.9174
+MONDO_0005148,type 2 diabetes mellitus,ABO,0.9158
+MONDO_0005148,type 2 diabetes mellitus,ANKH,0.9139
+MONDO_0005148,type 2 diabetes mellitus,TLE1,0.9095
+MONDO_0005148,type 2 diabetes mellitus,MTNR1B,0.9078
+MONDO_0005148,type 2 diabetes mellitus,PROX1,0.9053
+MONDO_0005148,type 2 diabetes mellitus,HMGA2,0.9043
+MONDO_0005148,type 2 diabetes mellitus,DGKB,0.9029
+MONDO_0005148,type 2 diabetes mellitus,FGFR4,0.9013
+MONDO_0005148,type 2 diabetes mellitus,GCKR,0.8990
+MONDO_0005148,type 2 diabetes mellitus,ADCY5,0.8984
+MONDO_0005148,type 2 diabetes mellitus,PPARG,0.8977
+MONDO_0005148,type 2 diabetes mellitus,SLC2A2,0.8938
+MONDO_0005148,type 2 diabetes mellitus,FBRSL1,0.8934
+MONDO_0005148,type 2 diabetes mellitus,INHBB,0.8914
+MONDO_0005148,type 2 diabetes mellitus,ETV1,0.8904
+MONDO_0005148,type 2 diabetes mellitus,ENPP1,0.8895
+MONDO_0005148,type 2 diabetes mellitus,SLC22A3,0.8890
+MONDO_0005148,type 2 diabetes mellitus,GPSM1,0.8884
+MONDO_0005148,type 2 diabetes mellitus,PNPLA3,0.8878
+MONDO_0005148,type 2 diabetes mellitus,GRP,0.8874
+MONDO_0005148,type 2 diabetes mellitus,SLC12A8,0.8849
+MONDO_0005148,type 2 diabetes mellitus,BCL2L11,0.8829
+MONDO_0005148,type 2 diabetes mellitus,KCNQ1,0.8814
+MONDO_0005148,type 2 diabetes mellitus,EYA2,0.8797
+MONDO_0005148,type 2 diabetes mellitus,ZFHX3,0.8759
+MONDO_0005148,type 2 diabetes mellitus,PRC1,0.8734
+MONDO_0005148,type 2 diabetes mellitus,IGF2BP2,0.8730
+MONDO_0005148,type 2 diabetes mellitus,ST6GAL1,0.8726
+MONDO_0005148,type 2 diabetes mellitus,TENT5C,0.8717
+MONDO_0005148,type 2 diabetes mellitus,WSCD2,0.8710
+MONDO_0005148,type 2 diabetes mellitus,MYO5C,0.8686
+MONDO_0005148,type 2 diabetes mellitus,HNF4A,0.8656
+MONDO_0005148,type 2 diabetes mellitus,SLC30A8,0.8643
+MONDO_0005148,type 2 diabetes mellitus,GLIS3,0.8628
+MONDO_0005148,type 2 diabetes mellitus,NKX6-3,0.8621
+MONDO_0005148,type 2 diabetes mellitus,NFATC2,0.8605
+MONDO_0005148,type 2 diabetes mellitus,SPRED2,0.8605
+MONDO_0005148,type 2 diabetes mellitus,GP2,0.8593
+MONDO_0005148,type 2 diabetes mellitus,NEUROG3,0.8579
+MONDO_0005148,type 2 diabetes mellitus,PTGFRN,0.8567
+MONDO_0005148,type 2 diabetes mellitus,CCND1,0.8560
+MONDO_0005148,type 2 diabetes mellitus,TRIM66,0.8556
+MONDO_0005148,type 2 diabetes mellitus,ARAP1,0.8548
+MONDO_0005148,type 2 diabetes mellitus,SINHCAF,0.8544
+MONDO_0005148,type 2 diabetes mellitus,GIGYF1,0.8523
+MONDO_0005148,type 2 diabetes mellitus,ZMIZ1,0.8508
+MONDO_0005148,type 2 diabetes mellitus,NLGN1,0.8493
+MONDO_0005148,type 2 diabetes mellitus,TET2,0.8452
+MONDO_0005148,type 2 diabetes mellitus,ONECUT1,0.8446
+MONDO_0005148,type 2 diabetes mellitus,CTBP1,0.8405
+MONDO_0005148,type 2 diabetes mellitus,LRMDA,0.8397
+MONDO_0005148,type 2 diabetes mellitus,HNF1B,0.8392
+MONDO_0005148,type 2 diabetes mellitus,HHEX,0.8390
+MONDO_0005148,type 2 diabetes mellitus,AUTS2,0.8387
+MONDO_0005148,type 2 diabetes mellitus,KLF14,0.8383
+MONDO_0005148,type 2 diabetes mellitus,CDKN2B,0.8380
+MONDO_0005148,type 2 diabetes mellitus,SCTR,0.8370
+MONDO_0005148,type 2 diabetes mellitus,GTF2I,0.8353
+MONDO_0005148,type 2 diabetes mellitus,TRPS1,0.8344
+MONDO_0005148,type 2 diabetes mellitus,LONRF1,0.8338
+MONDO_0005148,type 2 diabetes mellitus,HHIP,0.8338
+MONDO_0005148,type 2 diabetes mellitus,BEND3,0.8332
+MONDO_0005148,type 2 diabetes mellitus,KCNK17,0.8323
+MONDO_0005148,type 2 diabetes mellitus,ACSL1,0.8308
+MONDO_0005148,type 2 diabetes mellitus,CPA1,0.8304
+MONDO_0005148,type 2 diabetes mellitus,EBF2,0.8298
+MONDO_0005148,type 2 diabetes mellitus,CDKN1B,0.8296
+MONDO_0005148,type 2 diabetes mellitus,JADE2,0.8272
+MONDO_0005148,type 2 diabetes mellitus,ARID5B,0.8255
+MONDO_0005148,type 2 diabetes mellitus,RFX6,0.8249
+MONDO_0005148,type 2 diabetes mellitus,ATP5F1E,0.8246
+MONDO_0005148,type 2 diabetes mellitus,GNPDA2,0.8245
+MONDO_0005148,type 2 diabetes mellitus,ITGA1,0.8238
+MONDO_0005148,type 2 diabetes mellitus,HDAC9,0.8207
+MONDO_0005148,type 2 diabetes mellitus,CTTNBP2,0.8206
+MONDO_0005148,type 2 diabetes mellitus,TTN,0.8194
+MONDO_0005148,type 2 diabetes mellitus,TFRC,0.8187
+MONDO_0005148,type 2 diabetes mellitus,PML,0.8179
+MONDO_0005148,type 2 diabetes mellitus,ANK1,0.8164
+MONDO_0005148,type 2 diabetes mellitus,TYK2,0.8163
+MONDO_0005148,type 2 diabetes mellitus,MBNL1,0.8144
+MONDO_0005148,type 2 diabetes mellitus,CEP68,0.8140
+MONDO_0005148,type 2 diabetes mellitus,GRID1,0.8125
+MONDO_0005148,type 2 diabetes mellitus,PCDH17,0.8124
+MONDO_0005148,type 2 diabetes mellitus,HIVEP2,0.8117
+MONDO_0005148,type 2 diabetes mellitus,NUS1,0.8109
+MONDO_0005148,type 2 diabetes mellitus,CPNE4,0.8107
+MONDO_0005148,type 2 diabetes mellitus,PLXND1,0.8101
+MONDO_0005148,type 2 diabetes mellitus,PAX4,0.8098
+MONDO_0005148,type 2 diabetes mellitus,PEAK1,0.8092
+MONDO_0005148,type 2 diabetes mellitus,RGS17,0.8089
+MONDO_0005148,type 2 diabetes mellitus,ATXN7,0.8076
+MONDO_0005148,type 2 diabetes mellitus,RSPO3,0.8076
+MONDO_0005148,type 2 diabetes mellitus,SH2B3,0.8055
+MONDO_0005148,type 2 diabetes mellitus,BDNF,0.8018
+MONDO_0005148,type 2 diabetes mellitus,PDE3A,0.8013
+MONDO_0005148,type 2 diabetes mellitus,ZNF257,0.8011
+MONDO_0005148,type 2 diabetes mellitus,CDKAL1,0.7988
+MONDO_0005148,type 2 diabetes mellitus,CAMK1D,0.7980
+MONDO_0005148,type 2 diabetes mellitus,TCF7L2,0.7975
+MONDO_0005148,type 2 diabetes mellitus,CYTH1,0.7960
+MONDO_0005148,type 2 diabetes mellitus,PSMD6,0.7943
+MONDO_0005148,type 2 diabetes mellitus,ACVR1C,0.7932
+MONDO_0005148,type 2 diabetes mellitus,ETS1,0.7914
+MONDO_0005148,type 2 diabetes mellitus,CMIP,0.7902
+MONDO_0005148,type 2 diabetes mellitus,FBXW7,0.7885
+MONDO_0005148,type 2 diabetes mellitus,CCND2,0.7882
+MONDO_0005148,type 2 diabetes mellitus,HMG20A,0.7881
+MONDO_0005148,type 2 diabetes mellitus,NHSL1,0.7880
+MONDO_0005148,type 2 diabetes mellitus,SLC39A11,0.7879
+MONDO_0005148,type 2 diabetes mellitus,DNMT3A,0.7830
+MONDO_0005148,type 2 diabetes mellitus,WDR11,0.7808
+MONDO_0005148,type 2 diabetes mellitus,BCL2,0.7808
+MONDO_0005148,type 2 diabetes mellitus,ZNF236,0.7807
+MONDO_0005148,type 2 diabetes mellitus,TP53INP1,0.7798
+MONDO_0005148,type 2 diabetes mellitus,PAM,0.7776
+MONDO_0005148,type 2 diabetes mellitus,TSPAN8,0.7771
+MONDO_0005148,type 2 diabetes mellitus,TSHZ2,0.7762
+MONDO_0005148,type 2 diabetes mellitus,LEPR,0.7758
+MONDO_0005148,type 2 diabetes mellitus,GLP1R,0.7751
+MONDO_0005148,type 2 diabetes mellitus,LAMA1,0.7739
+MONDO_0005148,type 2 diabetes mellitus,IRS1,0.7739
+MONDO_0005148,type 2 diabetes mellitus,MINDY1,0.7728
+MONDO_0005148,type 2 diabetes mellitus,PPP3CA,0.7721
+MONDO_0005148,type 2 diabetes mellitus,SLC1A2,0.7704
+MONDO_0005148,type 2 diabetes mellitus,UBE2E3,0.7680
+MONDO_0005148,type 2 diabetes mellitus,SLC16A11,0.7672
+MONDO_0005148,type 2 diabetes mellitus,MSRA,0.7668
+MONDO_0005148,type 2 diabetes mellitus,RNF6,0.7661
+MONDO_0005148,type 2 diabetes mellitus,PCBD1,0.7660
+MONDO_0005148,type 2 diabetes mellitus,ARPP21,0.7653
+MONDO_0005148,type 2 diabetes mellitus,PGM1,0.7640
+MONDO_0005148,type 2 diabetes mellitus,CDH7,0.7639
+MONDO_0005148,type 2 diabetes mellitus,FANCL,0.7637
+MONDO_0005148,type 2 diabetes mellitus,IL12B,0.7636
+MONDO_0005148,type 2 diabetes mellitus,MED23,0.7627
+MONDO_0005148,type 2 diabetes mellitus,CAMK2B,0.7618
+MONDO_0005148,type 2 diabetes mellitus,MEF2C,0.7594
+MONDO_0005148,type 2 diabetes mellitus,CENPW,0.7591
+MONDO_0005148,type 2 diabetes mellitus,PLEKHA1,0.7574
+MONDO_0005148,type 2 diabetes mellitus,CDKN1C,0.7549
+MONDO_0005148,type 2 diabetes mellitus,KLHL42,0.7547
+MONDO_0005148,type 2 diabetes mellitus,MEOX2,0.7539
+MONDO_0005148,type 2 diabetes mellitus,RBMS1,0.7534
+MONDO_0005148,type 2 diabetes mellitus,VPS33B,0.7524
+MONDO_0005148,type 2 diabetes mellitus,VPS13C,0.7524
+MONDO_0005148,type 2 diabetes mellitus,ZC3H11B,0.7515
+MONDO_0005148,type 2 diabetes mellitus,UNC5C,0.7513
+MONDO_0005148,type 2 diabetes mellitus,FAIM2,0.7500
+MONDO_0005148,type 2 diabetes mellitus,ZZEF1,0.7496
+MONDO_0005148,type 2 diabetes mellitus,PATJ,0.7487
+MONDO_0005148,type 2 diabetes mellitus,UBE3C,0.7484
+MONDO_0005148,type 2 diabetes mellitus,JPH1,0.7481
+MONDO_0005148,type 2 diabetes mellitus,OLFM4,0.7474
+MONDO_0005148,type 2 diabetes mellitus,SNTB1,0.7467
+MONDO_0005148,type 2 diabetes mellitus,GPR26,0.7449
+MONDO_0005148,type 2 diabetes mellitus,EYA1,0.7432
+MONDO_0005148,type 2 diabetes mellitus,ZEB2,0.7430
+MONDO_0005148,type 2 diabetes mellitus,TCF4,0.7423
+MONDO_0005148,type 2 diabetes mellitus,FXYD2,0.7418
+MONDO_0005148,type 2 diabetes mellitus,YKT6,0.7414
+MONDO_0005148,type 2 diabetes mellitus,PDZRN4,0.7408
+MONDO_0005148,type 2 diabetes mellitus,PRIM1,0.7406
+MONDO_0005148,type 2 diabetes mellitus,SSR1,0.7405
+MONDO_0005148,type 2 diabetes mellitus,AOAH,0.7403
+MONDO_0005148,type 2 diabetes mellitus,LRFN2,0.7392
+MONDO_0005148,type 2 diabetes mellitus,GRB14,0.7380
+MONDO_0005148,type 2 diabetes mellitus,MPPED2,0.7377
+MONDO_0005148,type 2 diabetes mellitus,PPP2R3A,0.7375
+MONDO_0005148,type 2 diabetes mellitus,DMRTA2,0.7375
+MONDO_0005148,type 2 diabetes mellitus,MAGI2,0.7373
+MONDO_0005148,type 2 diabetes mellitus,PPIP5K2,0.7368
+MONDO_0005148,type 2 diabetes mellitus,FGFR3,0.7364
+MONDO_0005148,type 2 diabetes mellitus,LRRC74A,0.7363
+MONDO_0005148,type 2 diabetes mellitus,NEGR1,0.7360
+MONDO_0005148,type 2 diabetes mellitus,HEY2,0.7356
+MONDO_0005148,type 2 diabetes mellitus,DHFR2,0.7349
+MONDO_0005148,type 2 diabetes mellitus,ENSG00000293584,0.7339
+MONDO_0005148,type 2 diabetes mellitus,MAML3,0.7329
+MONDO_0005148,type 2 diabetes mellitus,ERBB4,0.7325
+MONDO_0005148,type 2 diabetes mellitus,CRHR2,0.7317
+MONDO_0005148,type 2 diabetes mellitus,LINGO2,0.7312
+MONDO_0005148,type 2 diabetes mellitus,LRRC1,0.7306
+MONDO_0005148,type 2 diabetes mellitus,SSPN,0.7300
+MONDO_0005148,type 2 diabetes mellitus,IRS2,0.7297
+MONDO_0005148,type 2 diabetes mellitus,PELO,0.7296
+MONDO_0005148,type 2 diabetes mellitus,VPS53,0.7285
+MONDO_0005148,type 2 diabetes mellitus,ALDH2,0.7271
+MONDO_0005148,type 2 diabetes mellitus,CHD1L,0.7265
+MONDO_0005148,type 2 diabetes mellitus,MC4R,0.7261
+MONDO_0005148,type 2 diabetes mellitus,MYC,0.7250
+MONDO_0005148,type 2 diabetes mellitus,MRPS30,0.7243
+MONDO_0005148,type 2 diabetes mellitus,ADH1B,0.7236
+MONDO_0005148,type 2 diabetes mellitus,GALNT3,0.7236
+MONDO_0005148,type 2 diabetes mellitus,NYNRIN,0.7233
+MONDO_0005148,type 2 diabetes mellitus,IL13,0.7229
+MONDO_0005148,type 2 diabetes mellitus,TM4SF4,0.7209
+MONDO_0005148,type 2 diabetes mellitus,AKAP6,0.7208
+MONDO_0005148,type 2 diabetes mellitus,RELN,0.7204
+MONDO_0005148,type 2 diabetes mellitus,ADAMTS9,0.7204
+MONDO_0005148,type 2 diabetes mellitus,BEND7,0.7171
+MONDO_0005148,type 2 diabetes mellitus,KCNH7,0.7167
+MONDO_0005148,type 2 diabetes mellitus,KSR2,0.7165
+MONDO_0005148,type 2 diabetes mellitus,JPH2,0.7161
+MONDO_0005148,type 2 diabetes mellitus,NKX6-1,0.7161
+MONDO_0005148,type 2 diabetes mellitus,SLC39A10,0.7152
+MONDO_0005148,type 2 diabetes mellitus,GRB10,0.7140
+MONDO_0005148,type 2 diabetes mellitus,AKT2,0.7139
+MONDO_0005148,type 2 diabetes mellitus,PARP8,0.7123
+MONDO_0005148,type 2 diabetes mellitus,BAK1,0.7118
+MONDO_0005148,type 2 diabetes mellitus,SLCO6A1,0.7117
+MONDO_0005148,type 2 diabetes mellitus,PTPN22,0.7103
+MONDO_0005148,type 2 diabetes mellitus,TSEN15,0.7099
+MONDO_0005148,type 2 diabetes mellitus,SLC38A11,0.7087
+MONDO_0005148,type 2 diabetes mellitus,IGF1R,0.7072
+MONDO_0005148,type 2 diabetes mellitus,RAP1GAP,0.7067
+MONDO_0005148,type 2 diabetes mellitus,STXBP6,0.7051
+MONDO_0005148,type 2 diabetes mellitus,PDCD4,0.7040
+MONDO_0005148,type 2 diabetes mellitus,TMEM18,0.7039
+MONDO_0005148,type 2 diabetes mellitus,PIM3,0.7033
+MONDO_0005148,type 2 diabetes mellitus,WIPI1,0.7030
+MONDO_0005148,type 2 diabetes mellitus,INS,0.7022
+MONDO_0005148,type 2 diabetes mellitus,SGIP1,0.7017
+MONDO_0005148,type 2 diabetes mellitus,STEAP1,0.7013
+MONDO_0005148,type 2 diabetes mellitus,TH,0.7010
+MONDO_0005148,type 2 diabetes mellitus,PTEN,0.7007
+MONDO_0005148,type 2 diabetes mellitus,HCN1,0.7007
+MONDO_0005148,type 2 diabetes mellitus,CALCR,0.6994
+MONDO_0005148,type 2 diabetes mellitus,GDAP1L1,0.6985
+MONDO_0005148,type 2 diabetes mellitus,MON1B,0.6985
+MONDO_0005148,type 2 diabetes mellitus,ANGPTL4,0.6981
+MONDO_0005148,type 2 diabetes mellitus,SGCG,0.6978
+MONDO_0005148,type 2 diabetes mellitus,FHIT,0.6977
+MONDO_0005148,type 2 diabetes mellitus,PLPPR1,0.6972
+MONDO_0005148,type 2 diabetes mellitus,DGKD,0.6962
+MONDO_0005148,type 2 diabetes mellitus,PABPC4,0.6950
+MONDO_0005148,type 2 diabetes mellitus,LIPC,0.6948
+MONDO_0005148,type 2 diabetes mellitus,STARD10,0.6931
+MONDO_0005148,type 2 diabetes mellitus,LCORL,0.6926
+MONDO_0005148,type 2 diabetes mellitus,FNDC3B,0.6923
+MONDO_0005148,type 2 diabetes mellitus,ZBTB38,0.6911
+MONDO_0005148,type 2 diabetes mellitus,PEPD,0.6910
+MONDO_0005148,type 2 diabetes mellitus,PTPRG,0.6909
+MONDO_0005148,type 2 diabetes mellitus,CADPS,0.6899
+MONDO_0005148,type 2 diabetes mellitus,BACE2,0.6898
+MONDO_0005148,type 2 diabetes mellitus,CASR,0.6896
+MONDO_0005148,type 2 diabetes mellitus,OASL,0.6892
+MONDO_0005148,type 2 diabetes mellitus,ZNF536,0.6892
+MONDO_0005148,type 2 diabetes mellitus,ACE,0.6887
+MONDO_0005148,type 2 diabetes mellitus,L3MBTL3,0.6886
+MONDO_0005148,type 2 diabetes mellitus,UHRF1,0.6882
+MONDO_0005148,type 2 diabetes mellitus,TOX3,0.6876
+MONDO_0005148,type 2 diabetes mellitus,IL2RA,0.6874
+MONDO_0005148,type 2 diabetes mellitus,P2RY1,0.6871
+MONDO_0005148,type 2 diabetes mellitus,OCIAD2,0.6871
+MONDO_0005148,type 2 diabetes mellitus,VGLL3,0.6868
+MONDO_0005148,type 2 diabetes mellitus,PSAT1,0.6864
+MONDO_0005148,type 2 diabetes mellitus,PCM1,0.6862
+MONDO_0005148,type 2 diabetes mellitus,DENND1A,0.6860
+MONDO_0005148,type 2 diabetes mellitus,CBLN4,0.6859
+MONDO_0005148,type 2 diabetes mellitus,PDE4B,0.6836
+MONDO_0005148,type 2 diabetes mellitus,MRAS,0.6833
+MONDO_0005148,type 2 diabetes mellitus,ETS2,0.6827
+MONDO_0005148,type 2 diabetes mellitus,ZC3H4,0.6826
+MONDO_0005148,type 2 diabetes mellitus,KCNJ12,0.6819
+MONDO_0005148,type 2 diabetes mellitus,NFAT5,0.6799
+MONDO_0005148,type 2 diabetes mellitus,ROBO2,0.6794
+MONDO_0005148,type 2 diabetes mellitus,NLRC3,0.6789
+MONDO_0005148,type 2 diabetes mellitus,POC5,0.6781
+MONDO_0005148,type 2 diabetes mellitus,DMRT2,0.6779
+MONDO_0005148,type 2 diabetes mellitus,JARID2,0.6777
+MONDO_0005148,type 2 diabetes mellitus,QKI,0.6767
+MONDO_0005148,type 2 diabetes mellitus,TRAF3IP2,0.6759
+MONDO_0005148,type 2 diabetes mellitus,TIGAR,0.6754
+MONDO_0005148,type 2 diabetes mellitus,GUCY1B1,0.6752
+MONDO_0005148,type 2 diabetes mellitus,IL23R,0.6750
+MONDO_0005148,type 2 diabetes mellitus,KCNK16,0.6747
+MONDO_0005148,type 2 diabetes mellitus,SORBS2,0.6741
+MONDO_0005148,type 2 diabetes mellitus,RAI1,0.6728
+MONDO_0005148,type 2 diabetes mellitus,HUWE1,0.6726
+MONDO_0005148,type 2 diabetes mellitus,CNTN2,0.6721
+MONDO_0005148,type 2 diabetes mellitus,CDC123,0.6721
+MONDO_0005148,type 2 diabetes mellitus,C2CD4A,0.6707
+MONDO_0005148,type 2 diabetes mellitus,ATP8B2,0.6697
+MONDO_0005148,type 2 diabetes mellitus,ZFP64,0.6687
+MONDO_0005148,type 2 diabetes mellitus,TENM4,0.6684
+MONDO_0005148,type 2 diabetes mellitus,ACTN1,0.6684
+MONDO_0005148,type 2 diabetes mellitus,USP48,0.6682
+MONDO_0005148,type 2 diabetes mellitus,STK24,0.6671
+MONDO_0005148,type 2 diabetes mellitus,ARG1,0.6671
+MONDO_0005148,type 2 diabetes mellitus,TSHZ3,0.6668
+MONDO_0005148,type 2 diabetes mellitus,NFIB,0.6663
+MONDO_0005148,type 2 diabetes mellitus,ELAVL2,0.6659
+MONDO_0005148,type 2 diabetes mellitus,SPRY4,0.6643
+MONDO_0005148,type 2 diabetes mellitus,DUSP9,0.6638
+MONDO_0005148,type 2 diabetes mellitus,TOMM7,0.6634
+MONDO_0005148,type 2 diabetes mellitus,PLEKHM3,0.6631
+MONDO_0005148,type 2 diabetes mellitus,FSCN3,0.6625
+MONDO_0005148,type 2 diabetes mellitus,NUDT12,0.6613
+MONDO_0005148,type 2 diabetes mellitus,ZFPM2,0.6609
+MONDO_0005148,type 2 diabetes mellitus,AP3B1,0.6608
+MONDO_0005148,type 2 diabetes mellitus,IGF2BP1,0.6603
+MONDO_0005148,type 2 diabetes mellitus,KLLN,0.6599
+MONDO_0005148,type 2 diabetes mellitus,C3orf70,0.6594
+MONDO_0005148,type 2 diabetes mellitus,PTCH1,0.6590
+MONDO_0005148,type 2 diabetes mellitus,ZC3H12C,0.6586
+MONDO_0005148,type 2 diabetes mellitus,SPHKAP,0.6576
+MONDO_0005148,type 2 diabetes mellitus,TAFA5,0.6570
+MONDO_0005148,type 2 diabetes mellitus,MYO19,0.6570
+MONDO_0005148,type 2 diabetes mellitus,TET1,0.6569
+MONDO_0005148,type 2 diabetes mellitus,SLC12A2,0.6568
+MONDO_0005148,type 2 diabetes mellitus,NEUROD1,0.6565
+MONDO_0005148,type 2 diabetes mellitus,LTBP3,0.6564
+MONDO_0005148,type 2 diabetes mellitus,ARL15,0.6562
+MONDO_0005148,type 2 diabetes mellitus,KCNU1,0.6556
+MONDO_0005148,type 2 diabetes mellitus,PDX1,0.6553
+MONDO_0005148,type 2 diabetes mellitus,SKI,0.6552
+MONDO_0005148,type 2 diabetes mellitus,KIF18A,0.6542
+MONDO_0005148,type 2 diabetes mellitus,SLIT2,0.6536
+MONDO_0005148,type 2 diabetes mellitus,GOLIM4,0.6526
+MONDO_0005148,type 2 diabetes mellitus,CEBPB,0.6524
+MONDO_0005148,type 2 diabetes mellitus,NYAP2,0.6512
+MONDO_0005148,type 2 diabetes mellitus,IFNLR1,0.6512
+MONDO_0005148,type 2 diabetes mellitus,HK1,0.6511
+MONDO_0005148,type 2 diabetes mellitus,ADRB1,0.6504
+MONDO_0005148,type 2 diabetes mellitus,FAM185A,0.6496
+MONDO_0005148,type 2 diabetes mellitus,ITIH4,0.6495
+MONDO_0005148,type 2 diabetes mellitus,ABCB10,0.6495
+MONDO_0005148,type 2 diabetes mellitus,SMARCAD1,0.6480
+MONDO_0005148,type 2 diabetes mellitus,KIF11,0.6479
+MONDO_0005148,type 2 diabetes mellitus,SOS2,0.6469
+MONDO_0005148,type 2 diabetes mellitus,ADCY9,0.6459
+MONDO_0005148,type 2 diabetes mellitus,QSER1,0.6457
+MONDO_0005148,type 2 diabetes mellitus,TSC22D2,0.6452
+MONDO_0005148,type 2 diabetes mellitus,ERN1,0.6450
+MONDO_0005148,type 2 diabetes mellitus,ETAA1,0.6447
+MONDO_0005148,type 2 diabetes mellitus,SIDT1,0.6441
+MONDO_0005148,type 2 diabetes mellitus,ARPIN,0.6440
+MONDO_0005148,type 2 diabetes mellitus,CHMP4B,0.6435
+MONDO_0005148,type 2 diabetes mellitus,FGFR2,0.6429
+MONDO_0005148,type 2 diabetes mellitus,TRAF3,0.6428
+MONDO_0005148,type 2 diabetes mellitus,PSTPIP1,0.6425
+MONDO_0005148,type 2 diabetes mellitus,BPTF,0.6419
+MONDO_0005148,type 2 diabetes mellitus,SETD5,0.6411
+MONDO_0005148,type 2 diabetes mellitus,ATRAID,0.6407
+MONDO_0005148,type 2 diabetes mellitus,EIF5A2,0.6403
+MONDO_0005148,type 2 diabetes mellitus,CEP120,0.6393
+MONDO_0005148,type 2 diabetes mellitus,CACNA2D3,0.6388
+MONDO_0005148,type 2 diabetes mellitus,ZHX3,0.6388
+MONDO_0005148,type 2 diabetes mellitus,C12orf42,0.6379
+MONDO_0005148,type 2 diabetes mellitus,SPRY2,0.6375
+MONDO_0005148,type 2 diabetes mellitus,PISD,0.6374
+MONDO_0005148,type 2 diabetes mellitus,SHROOM3,0.6366
+MONDO_0005148,type 2 diabetes mellitus,SMAD3,0.6363
+MONDO_0005148,type 2 diabetes mellitus,PLEKHM2,0.6360
+MONDO_0005148,type 2 diabetes mellitus,BMF,0.6359
+MONDO_0005148,type 2 diabetes mellitus,CCNH,0.6358
+MONDO_0005148,type 2 diabetes mellitus,FN3KRP,0.6341
+MONDO_0005148,type 2 diabetes mellitus,PCGF3,0.6337
+MONDO_0005148,type 2 diabetes mellitus,PKIG,0.6330
+MONDO_0005148,type 2 diabetes mellitus,PPP1R3A,0.6321
+MONDO_0005148,type 2 diabetes mellitus,IGF2BP3,0.6314
+MONDO_0005148,type 2 diabetes mellitus,EBF1,0.6310
+MONDO_0005148,type 2 diabetes mellitus,PENK,0.6307
+MONDO_0005148,type 2 diabetes mellitus,LAMC1,0.6305
+MONDO_0005148,type 2 diabetes mellitus,RCCD1,0.6290
+MONDO_0005148,type 2 diabetes mellitus,PIK3C3,0.6289
+MONDO_0005148,type 2 diabetes mellitus,RAB11FIP4,0.6287
+MONDO_0005148,type 2 diabetes mellitus,RIT2,0.6287
+MONDO_0005148,type 2 diabetes mellitus,SAG,0.6285
+MONDO_0005148,type 2 diabetes mellitus,NCR3LG1,0.6274
+MONDO_0005148,type 2 diabetes mellitus,PRKD1,0.6271
+MONDO_0005148,type 2 diabetes mellitus,MOB1B,0.6271
+MONDO_0005148,type 2 diabetes mellitus,MANSC4,0.6270
+MONDO_0005148,type 2 diabetes mellitus,GDF6,0.6264
+MONDO_0005148,type 2 diabetes mellitus,MAEA,0.6261
+MONDO_0005148,type 2 diabetes mellitus,ARF5,0.6238
+MONDO_0005148,type 2 diabetes mellitus,FOCAD,0.6238
+MONDO_0005148,type 2 diabetes mellitus,CTLA4,0.6237
+MONDO_0005148,type 2 diabetes mellitus,AGMO,0.6236
+MONDO_0005148,type 2 diabetes mellitus,PLEKHH2,0.6229
+MONDO_0005148,type 2 diabetes mellitus,LTO1,0.6225
+MONDO_0005148,type 2 diabetes mellitus,NRXN3,0.6222
+MONDO_0005148,type 2 diabetes mellitus,MYBL2,0.6220
+MONDO_0005148,type 2 diabetes mellitus,LIPJ,0.6212
+MONDO_0005148,type 2 diabetes mellitus,HMGA1,0.6200
+MONDO_0005148,type 2 diabetes mellitus,BCL11B,0.6195
+MONDO_0005148,type 2 diabetes mellitus,TM6SF2,0.6193
+MONDO_0005148,type 2 diabetes mellitus,FBXO11,0.6192
+MONDO_0005148,type 2 diabetes mellitus,THBS1,0.6191
+MONDO_0005148,type 2 diabetes mellitus,FOXA2,0.6190
+MONDO_0005148,type 2 diabetes mellitus,MITF,0.6175
+MONDO_0005148,type 2 diabetes mellitus,GPD2,0.6174
+MONDO_0005148,type 2 diabetes mellitus,VWA5B1,0.6169
+MONDO_0005148,type 2 diabetes mellitus,FST,0.6168
+MONDO_0005148,type 2 diabetes mellitus,DMAC1,0.6153
+MONDO_0005148,type 2 diabetes mellitus,LRP12,0.6142
+MONDO_0005148,type 2 diabetes mellitus,ZBTB20,0.6142
+MONDO_0005148,type 2 diabetes mellitus,RARB,0.6140
+MONDO_0005148,type 2 diabetes mellitus,SIX3,0.6139
+MONDO_0005148,type 2 diabetes mellitus,PDE8B,0.6132
+MONDO_0005148,type 2 diabetes mellitus,APOBR,0.6130
+MONDO_0005148,type 2 diabetes mellitus,SIRPA,0.6130
+MONDO_0005148,type 2 diabetes mellitus,AP3S2,0.6123
+MONDO_0005148,type 2 diabetes mellitus,MAGI1,0.6116
+MONDO_0005148,type 2 diabetes mellitus,SEC23IP,0.6113
+MONDO_0005148,type 2 diabetes mellitus,IL13RA1,0.6107
+MONDO_0005148,type 2 diabetes mellitus,SOX7,0.6106
+MONDO_0005148,type 2 diabetes mellitus,C2CD4B,0.6101
+MONDO_0005148,type 2 diabetes mellitus,SLCO4A1,0.6098
+MONDO_0005148,type 2 diabetes mellitus,ABCA1,0.6089
+MONDO_0005148,type 2 diabetes mellitus,TIMP4,0.6087
+MONDO_0005148,type 2 diabetes mellitus,BLK,0.6079
+MONDO_0005148,type 2 diabetes mellitus,KLF11,0.6079
+MONDO_0005148,type 2 diabetes mellitus,TNRC6A,0.6076
+MONDO_0005148,type 2 diabetes mellitus,GIPR,0.6074
+MONDO_0005148,type 2 diabetes mellitus,EVI2A,0.6071
+MONDO_0005148,type 2 diabetes mellitus,BMAL1,0.6071
+MONDO_0005148,type 2 diabetes mellitus,CYRIA,0.6069
+MONDO_0005148,type 2 diabetes mellitus,SNX11,0.6065
+MONDO_0005148,type 2 diabetes mellitus,ADARB1,0.6063
+MONDO_0005148,type 2 diabetes mellitus,ATP2A3,0.6052
+MONDO_0005148,type 2 diabetes mellitus,TOM1,0.6049
+MONDO_0005148,type 2 diabetes mellitus,EMSY,0.6048
+MONDO_0005148,type 2 diabetes mellitus,TANK,0.6043
+MONDO_0005148,type 2 diabetes mellitus,GPAT4,0.6041
+MONDO_0005148,type 2 diabetes mellitus,SPPL3,0.6040
+MONDO_0005148,type 2 diabetes mellitus,RDH14,0.6037
+MONDO_0005148,type 2 diabetes mellitus,NCAM1,0.6036
+MONDO_0005148,type 2 diabetes mellitus,JAG1,0.6029
+MONDO_0005148,type 2 diabetes mellitus,SORT1,0.6023
+MONDO_0005148,type 2 diabetes mellitus,ATP1B2,0.6021
+MONDO_0005148,type 2 diabetes mellitus,MEIS1,0.6018
+MONDO_0005148,type 2 diabetes mellitus,DLK1,0.6009
+MONDO_0005148,type 2 diabetes mellitus,SEPTIN9,0.6003
+MONDO_0005148,type 2 diabetes mellitus,BRD3,0.6001
+MONDO_0005148,type 2 diabetes mellitus,UMOD,0.6001
+MONDO_0005148,type 2 diabetes mellitus,AOC1,0.5996
+MONDO_0005148,type 2 diabetes mellitus,EPB41L4A,0.5991
+MONDO_0005148,type 2 diabetes mellitus,ID4,0.5986
+MONDO_0005148,type 2 diabetes mellitus,ANKDD1B,0.5982
+MONDO_0005148,type 2 diabetes mellitus,RBFOX1,0.5980
+MONDO_0005148,type 2 diabetes mellitus,INSR,0.5975
+MONDO_0005148,type 2 diabetes mellitus,ADAMTS18,0.5973
+MONDO_0005148,type 2 diabetes mellitus,IFIH1,0.5972
+MONDO_0005148,type 2 diabetes mellitus,THADA,0.5971
+MONDO_0005148,type 2 diabetes mellitus,ETV5,0.5969
+MONDO_0005148,type 2 diabetes mellitus,TMEM106B,0.5968
+MONDO_0005148,type 2 diabetes mellitus,KLB,0.5965
+MONDO_0005148,type 2 diabetes mellitus,NOS2,0.5963
+MONDO_0005148,type 2 diabetes mellitus,LEP,0.5962
+MONDO_0005148,type 2 diabetes mellitus,TNFAIP3,0.5957
+MONDO_0005148,type 2 diabetes mellitus,SEC16B,0.5953
+MONDO_0005148,type 2 diabetes mellitus,CEBPG,0.5952
+MONDO_0005148,type 2 diabetes mellitus,ZNF664,0.5949
+MONDO_0005148,type 2 diabetes mellitus,BCL11A,0.5948
+MONDO_0005148,type 2 diabetes mellitus,COMT,0.5948
+MONDO_0005148,type 2 diabetes mellitus,ADO,0.5944
+MONDO_0005148,type 2 diabetes mellitus,ZNRF3,0.5942
+MONDO_0005148,type 2 diabetes mellitus,SLC22A2,0.5940
+MONDO_0005148,type 2 diabetes mellitus,HTT,0.5937
+MONDO_0005148,type 2 diabetes mellitus,NRF1,0.5916
+MONDO_0005148,type 2 diabetes mellitus,CACNA1D,0.5915
+MONDO_0005148,type 2 diabetes mellitus,SV2A,0.5914
+MONDO_0005148,type 2 diabetes mellitus,TMEM132B,0.5913
+MONDO_0005148,type 2 diabetes mellitus,SLC67A1,0.5913
+MONDO_0005148,type 2 diabetes mellitus,CLCNKA,0.5911
+MONDO_0005148,type 2 diabetes mellitus,TFEB,0.5906
+MONDO_0005148,type 2 diabetes mellitus,PI16,0.5903
+MONDO_0005148,type 2 diabetes mellitus,NR2F1,0.5903
+MONDO_0005148,type 2 diabetes mellitus,ADA,0.5896
+MONDO_0005148,type 2 diabetes mellitus,SNX29,0.5894
+MONDO_0005148,type 2 diabetes mellitus,LIN7A,0.5891
+MONDO_0005148,type 2 diabetes mellitus,PTPDC1,0.5887
+MONDO_0005148,type 2 diabetes mellitus,HAUS6,0.5886
+MONDO_0005148,type 2 diabetes mellitus,FITM2,0.5880
+MONDO_0005148,type 2 diabetes mellitus,SELL,0.5876
+MONDO_0005148,type 2 diabetes mellitus,MAU2,0.5874
+MONDO_0005148,type 2 diabetes mellitus,SYT14,0.5862
+MONDO_0005148,type 2 diabetes mellitus,FOXP1,0.5860
+MONDO_0005148,type 2 diabetes mellitus,MAD1L1,0.5856
+MONDO_0005148,type 2 diabetes mellitus,FAM53A,0.5855
+MONDO_0005148,type 2 diabetes mellitus,MBOAT1,0.5853
+MONDO_0005148,type 2 diabetes mellitus,SHQ1,0.5851
+MONDO_0005148,type 2 diabetes mellitus,LRRK1,0.5841
+MONDO_0005148,type 2 diabetes mellitus,CAPN10,0.5840
+MONDO_0005148,type 2 diabetes mellitus,NAV1,0.5837
+MONDO_0005148,type 2 diabetes mellitus,FOLH1,0.5837
+MONDO_0005148,type 2 diabetes mellitus,COL27A1,0.5835
+MONDO_0005148,type 2 diabetes mellitus,PARD3B,0.5828
+MONDO_0005148,type 2 diabetes mellitus,CPEB3,0.5827
+MONDO_0005148,type 2 diabetes mellitus,DNASE1,0.5827
+MONDO_0005148,type 2 diabetes mellitus,ZNF268,0.5809
+MONDO_0005148,type 2 diabetes mellitus,RASEF,0.5803
+MONDO_0005148,type 2 diabetes mellitus,C12orf43,0.5798
+MONDO_0005148,type 2 diabetes mellitus,TLE4,0.5798
+MONDO_0005148,type 2 diabetes mellitus,REL,0.5797
+MONDO_0005148,type 2 diabetes mellitus,SLCO4C1,0.5796
+MONDO_0005148,type 2 diabetes mellitus,GRM8,0.5785
+MONDO_0005148,type 2 diabetes mellitus,NFATC1,0.5780
+MONDO_0005148,type 2 diabetes mellitus,LHX2,0.5766
+MONDO_0005148,type 2 diabetes mellitus,COLGALT2,0.5761
+MONDO_0005148,type 2 diabetes mellitus,PPP2R2C,0.5759
+MONDO_0005148,type 2 diabetes mellitus,FOXN3,0.5758
+MONDO_0005148,type 2 diabetes mellitus,SHBG,0.5755
+MONDO_0005148,type 2 diabetes mellitus,HMBS,0.5754
+MONDO_0005148,type 2 diabetes mellitus,FADS2,0.5747
+MONDO_0005148,type 2 diabetes mellitus,SARDH,0.5747
+MONDO_0005148,type 2 diabetes mellitus,NELL1,0.5744
+MONDO_0005148,type 2 diabetes mellitus,ZNF281,0.5738
+MONDO_0005148,type 2 diabetes mellitus,NOL4,0.5733
+MONDO_0005148,type 2 diabetes mellitus,GFI1,0.5728
+MONDO_0005148,type 2 diabetes mellitus,PRMT6,0.5717
+MONDO_0005148,type 2 diabetes mellitus,CA10,0.5706
+MONDO_0005148,type 2 diabetes mellitus,INPP4B,0.5695
+MONDO_0005148,type 2 diabetes mellitus,CYP7B1,0.5695
+MONDO_0005148,type 2 diabetes mellitus,CTSH,0.5693
+MONDO_0005148,type 2 diabetes mellitus,NOTCH2,0.5693
+MONDO_0005148,type 2 diabetes mellitus,NUP133,0.5692
+MONDO_0005148,type 2 diabetes mellitus,TRMT9B,0.5683
+MONDO_0005148,type 2 diabetes mellitus,NPC1,0.5674
+MONDO_0005148,type 2 diabetes mellitus,RPAP1,0.5669
+MONDO_0005148,type 2 diabetes mellitus,DDI1,0.5667
+MONDO_0005148,type 2 diabetes mellitus,BACH2,0.5662
+MONDO_0005148,type 2 diabetes mellitus,ARVCF,0.5659
+MONDO_0005148,type 2 diabetes mellitus,CNTN4,0.5651
+MONDO_0005148,type 2 diabetes mellitus,TLR4,0.5645
+MONDO_0005148,type 2 diabetes mellitus,REEP3,0.5639
+MONDO_0005148,type 2 diabetes mellitus,ZNF76,0.5637
+MONDO_0005148,type 2 diabetes mellitus,OTULINL,0.5636
+MONDO_0005148,type 2 diabetes mellitus,ESR1,0.5628
+MONDO_0005148,type 2 diabetes mellitus,ANAPC4,0.5627
+MONDO_0005148,type 2 diabetes mellitus,DDX20,0.5593
+MONDO_0005148,type 2 diabetes mellitus,IL10,0.5592
+MONDO_0005148,type 2 diabetes mellitus,ENPP3,0.5590
+MONDO_0005148,type 2 diabetes mellitus,GBA2,0.5588
+MONDO_0005148,type 2 diabetes mellitus,SCD5,0.5588
+MONDO_0005148,type 2 diabetes mellitus,BRI3,0.5587
+MONDO_0005148,type 2 diabetes mellitus,MNT,0.5587
+MONDO_0005148,type 2 diabetes mellitus,KDM2B,0.5581
+MONDO_0005148,type 2 diabetes mellitus,WDR7,0.5581
+MONDO_0005148,type 2 diabetes mellitus,EXD2,0.5580
+MONDO_0005148,type 2 diabetes mellitus,KCNB2,0.5580
+MONDO_0005148,type 2 diabetes mellitus,PDE3B,0.5579
+MONDO_0005148,type 2 diabetes mellitus,CCSER1,0.5579
+MONDO_0005148,type 2 diabetes mellitus,LDB2,0.5577
+MONDO_0005148,type 2 diabetes mellitus,CD180,0.5559
+MONDO_0005148,type 2 diabetes mellitus,ADRA2A,0.5556
+MONDO_0005148,type 2 diabetes mellitus,CCDC9B,0.5556
+MONDO_0005148,type 2 diabetes mellitus,ZFP36L2,0.5555
+MONDO_0005148,type 2 diabetes mellitus,PDGFC,0.5553
+MONDO_0005148,type 2 diabetes mellitus,LDLRAD4,0.5546
+MONDO_0005148,type 2 diabetes mellitus,TM4SF1,0.5545
+MONDO_0005148,type 2 diabetes mellitus,IFT38,0.5545
+MONDO_0005148,type 2 diabetes mellitus,PIK3R1,0.5528
+MONDO_0005148,type 2 diabetes mellitus,ARL6IP6,0.5521
+MONDO_0005148,type 2 diabetes mellitus,DACH1,0.5512
+MONDO_0005148,type 2 diabetes mellitus,GALNT10,0.5512
+MONDO_0005148,type 2 diabetes mellitus,ST8SIA4,0.5493
+MONDO_0005148,type 2 diabetes mellitus,FAF1,0.5487
+MONDO_0005148,type 2 diabetes mellitus,UBAP1,0.5486
+MONDO_0005148,type 2 diabetes mellitus,CCDC92,0.5481
+MONDO_0005148,type 2 diabetes mellitus,VEGFA,0.5479
+MONDO_0005148,type 2 diabetes mellitus,GBP6,0.5479
+MONDO_0005148,type 2 diabetes mellitus,RALY,0.5472
+MONDO_0005148,type 2 diabetes mellitus,NT5C2,0.5471
+MONDO_0005148,type 2 diabetes mellitus,CHORDC1,0.5466
+MONDO_0005148,type 2 diabetes mellitus,LHFPL3,0.5465
+MONDO_0005148,type 2 diabetes mellitus,SETBP1,0.5460
+MONDO_0005148,type 2 diabetes mellitus,SNAPC2,0.5458
+MONDO_0005148,type 2 diabetes mellitus,CERKL,0.5455
+MONDO_0005148,type 2 diabetes mellitus,GAD1,0.5450
+MONDO_0005148,type 2 diabetes mellitus,SLC7A7,0.5448
+MONDO_0005148,type 2 diabetes mellitus,JMJD1C,0.5447
+MONDO_0005148,type 2 diabetes mellitus,NCOR2,0.5444
+MONDO_0005148,type 2 diabetes mellitus,NUDT5,0.5443
+MONDO_0005148,type 2 diabetes mellitus,ZC3H13,0.5440
+MONDO_0005148,type 2 diabetes mellitus,AZI2,0.5428
+MONDO_0005148,type 2 diabetes mellitus,SIPA1,0.5428
+MONDO_0005148,type 2 diabetes mellitus,OBI1,0.5428
+MONDO_0005148,type 2 diabetes mellitus,MED27,0.5427
+MONDO_0005148,type 2 diabetes mellitus,CCDC146,0.5426
+MONDO_0005148,type 2 diabetes mellitus,CCDC107,0.5421
+MONDO_0005148,type 2 diabetes mellitus,KIF3C,0.5418
+MONDO_0005148,type 2 diabetes mellitus,JAKMIP1,0.5417
+MONDO_0005148,type 2 diabetes mellitus,NTNG1,0.5411
+MONDO_0005148,type 2 diabetes mellitus,RAB29,0.5405
+MONDO_0005148,type 2 diabetes mellitus,GSAP,0.5404
+MONDO_0005148,type 2 diabetes mellitus,TMEM60,0.5400
+MONDO_0005148,type 2 diabetes mellitus,SLX4,0.5399
+MONDO_0005148,type 2 diabetes mellitus,ATG16L1,0.5398
+MONDO_0005148,type 2 diabetes mellitus,PNOC,0.5394
+MONDO_0005148,type 2 diabetes mellitus,WNT7B,0.5394
+MONDO_0005148,type 2 diabetes mellitus,NDUFS4,0.5393
+MONDO_0005148,type 2 diabetes mellitus,GGNBP2,0.5389
+MONDO_0005148,type 2 diabetes mellitus,CAT,0.5385
+MONDO_0005148,type 2 diabetes mellitus,DYRK2,0.5374
+MONDO_0005148,type 2 diabetes mellitus,RBPJ,0.5373
+MONDO_0005148,type 2 diabetes mellitus,SAMM50,0.5370
+MONDO_0005148,type 2 diabetes mellitus,DCSTAMP,0.5370
+MONDO_0005148,type 2 diabetes mellitus,CLEC14A,0.5365
+MONDO_0005148,type 2 diabetes mellitus,CRY2,0.5364
+MONDO_0005148,type 2 diabetes mellitus,SYCE1L,0.5364
+MONDO_0005148,type 2 diabetes mellitus,ADRA1B,0.5364
+MONDO_0005148,type 2 diabetes mellitus,PTPRR,0.5360
+MONDO_0005148,type 2 diabetes mellitus,TBCE,0.5355
+MONDO_0005148,type 2 diabetes mellitus,TAL1,0.5355
+MONDO_0005148,type 2 diabetes mellitus,GMDS,0.5354
+MONDO_0005148,type 2 diabetes mellitus,SGCZ,0.5350
+MONDO_0005148,type 2 diabetes mellitus,OSGIN1,0.5348
+MONDO_0005148,type 2 diabetes mellitus,COL13A1,0.5348
+MONDO_0005148,type 2 diabetes mellitus,SYT10,0.5348
+MONDO_0005148,type 2 diabetes mellitus,ANKS6,0.5340
+MONDO_0005148,type 2 diabetes mellitus,HSD17B12,0.5334
+MONDO_0005148,type 2 diabetes mellitus,ROBO1,0.5333
+MONDO_0005148,type 2 diabetes mellitus,AZIN1,0.5330
+MONDO_0005148,type 2 diabetes mellitus,INPP5D,0.5330
+MONDO_0005148,type 2 diabetes mellitus,FOXK1,0.5327
+MONDO_0005148,type 2 diabetes mellitus,COPB1,0.5326
+MONDO_0005148,type 2 diabetes mellitus,FGD5,0.5322
+MONDO_0005148,type 2 diabetes mellitus,LPP,0.5316
+MONDO_0005148,type 2 diabetes mellitus,ARHGAP22,0.5310
+MONDO_0005148,type 2 diabetes mellitus,TMEM144,0.5308
+MONDO_0005148,type 2 diabetes mellitus,NCALD,0.5306
+MONDO_0005148,type 2 diabetes mellitus,L2HGDH,0.5300
+MONDO_0005148,type 2 diabetes mellitus,GSE1,0.5299
+MONDO_0005148,type 2 diabetes mellitus,CD320,0.5299
+MONDO_0005148,type 2 diabetes mellitus,NSUN3,0.5298
+MONDO_0005148,type 2 diabetes mellitus,GCC1,0.5292
+MONDO_0005148,type 2 diabetes mellitus,RMC1,0.5287
+MONDO_0005148,type 2 diabetes mellitus,PRDM14,0.5286
+MONDO_0005148,type 2 diabetes mellitus,ZBTB46,0.5284
+MONDO_0005148,type 2 diabetes mellitus,USP28,0.5284
+MONDO_0005148,type 2 diabetes mellitus,LINGO1,0.5284
+MONDO_0005148,type 2 diabetes mellitus,VWC2,0.5283
+MONDO_0005148,type 2 diabetes mellitus,MRC2,0.5282
+MONDO_0005148,type 2 diabetes mellitus,INAFM2,0.5280
+MONDO_0005148,type 2 diabetes mellitus,FAM13A,0.5279
+MONDO_0005148,type 2 diabetes mellitus,SBF2,0.5267
+MONDO_0005148,type 2 diabetes mellitus,PIK3C2B,0.5265
+MONDO_0005148,type 2 diabetes mellitus,SNF8,0.5263
+MONDO_0005148,type 2 diabetes mellitus,ZBED3,0.5260
+MONDO_0005148,type 2 diabetes mellitus,PTPRD,0.5259
+MONDO_0005148,type 2 diabetes mellitus,TNFRSF6B,0.5257
+MONDO_0005148,type 2 diabetes mellitus,MAP2K5,0.5256
+MONDO_0005148,type 2 diabetes mellitus,CFAP61,0.5255
+MONDO_0005148,type 2 diabetes mellitus,CEL,0.5253
+MONDO_0005148,type 2 diabetes mellitus,BHLHE22,0.5251
+MONDO_0005148,type 2 diabetes mellitus,TECPR1,0.5249
+MONDO_0005148,type 2 diabetes mellitus,GDF7,0.5249
+MONDO_0005148,type 2 diabetes mellitus,SOX12,0.5249
+MONDO_0005148,type 2 diabetes mellitus,ZFPM1,0.5246
+MONDO_0005148,type 2 diabetes mellitus,PLEKHG1,0.5245
+MONDO_0005148,type 2 diabetes mellitus,AFF3,0.5242
+MONDO_0005148,type 2 diabetes mellitus,ZNF385D,0.5239
+MONDO_0005148,type 2 diabetes mellitus,GNAS,0.5239
+MONDO_0005148,type 2 diabetes mellitus,PINX1,0.5238
+MONDO_0005148,type 2 diabetes mellitus,BRD3OS,0.5235
+MONDO_0005148,type 2 diabetes mellitus,CDKN2C,0.5233
+MONDO_0005148,type 2 diabetes mellitus,CDC42BPA,0.5229
+MONDO_0005148,type 2 diabetes mellitus,FBN2,0.5222
+MONDO_0005148,type 2 diabetes mellitus,EFNA5,0.5216
+MONDO_0005148,type 2 diabetes mellitus,B3GNT2,0.5210
+MONDO_0005148,type 2 diabetes mellitus,DNAJC10,0.5209
+MONDO_0005148,type 2 diabetes mellitus,TFEC,0.5201
+MONDO_0005148,type 2 diabetes mellitus,NREP,0.5198
+MONDO_0005148,type 2 diabetes mellitus,IRX6,0.5197
+MONDO_0005148,type 2 diabetes mellitus,SGPL1,0.5190
+MONDO_0005148,type 2 diabetes mellitus,SEC22A,0.5186
+MONDO_0005148,type 2 diabetes mellitus,RBL2,0.5183
+MONDO_0005148,type 2 diabetes mellitus,MLDHR,0.5179
+MONDO_0005148,type 2 diabetes mellitus,FEZF1,0.5174
+MONDO_0005148,type 2 diabetes mellitus,ADRA1D,0.5170
+MONDO_0005148,type 2 diabetes mellitus,DAAM2,0.5163
+MONDO_0005148,type 2 diabetes mellitus,SLC30A1,0.5158
+MONDO_0005148,type 2 diabetes mellitus,ECE2,0.5156
+MONDO_0005148,type 2 diabetes mellitus,FIBCD1,0.5155
+MONDO_0005148,type 2 diabetes mellitus,CCM2,0.5149
+MONDO_0005148,type 2 diabetes mellitus,FMO5,0.5148
+MONDO_0005148,type 2 diabetes mellitus,PGRMC2,0.5137
+MONDO_0005148,type 2 diabetes mellitus,SYNDIG1,0.5137
+MONDO_0005148,type 2 diabetes mellitus,MYO16,0.5130
+MONDO_0005148,type 2 diabetes mellitus,CRYBA1,0.5127
+MONDO_0005148,type 2 diabetes mellitus,PRKN,0.5115
+MONDO_0005148,type 2 diabetes mellitus,HTRA1,0.5112
+MONDO_0005148,type 2 diabetes mellitus,CDIN1,0.5109
+MONDO_0005148,type 2 diabetes mellitus,EML5,0.5107
+MONDO_0005148,type 2 diabetes mellitus,RGS6,0.5104
+MONDO_0005148,type 2 diabetes mellitus,WBP1L,0.5103
+MONDO_0005148,type 2 diabetes mellitus,IGSF21,0.5097
+MONDO_0005148,type 2 diabetes mellitus,HMHB1,0.5096
+MONDO_0005148,type 2 diabetes mellitus,TCF12,0.5092
+MONDO_0005148,type 2 diabetes mellitus,PDE1A,0.5089
+MONDO_0005148,type 2 diabetes mellitus,NDST4,0.5086
+MONDO_0005148,type 2 diabetes mellitus,PPP1R13B,0.5082
+MONDO_0005148,type 2 diabetes mellitus,TCEA2,0.5072
+MONDO_0005148,type 2 diabetes mellitus,PDILT,0.5059
+MONDO_0005148,type 2 diabetes mellitus,AGTR2,0.5055
+MONDO_0005148,type 2 diabetes mellitus,MDGA2,0.5054
+MONDO_0005148,type 2 diabetes mellitus,SLC2A4RG,0.5047
+MONDO_0005148,type 2 diabetes mellitus,CDKL2,0.5047
+MONDO_0005148,type 2 diabetes mellitus,FAT3,0.5046
+MONDO_0005148,type 2 diabetes mellitus,USP44,0.5043
+MONDO_0005148,type 2 diabetes mellitus,MAN1A2,0.5040
+MONDO_0005148,type 2 diabetes mellitus,POU5F1B,0.5039
+MONDO_0005148,type 2 diabetes mellitus,SCN2A,0.5036
+MONDO_0005148,type 2 diabetes mellitus,BPIFB1,0.5022
+MONDO_0005148,type 2 diabetes mellitus,WNT6,0.5019
+MONDO_0005148,type 2 diabetes mellitus,PPP2R2A,0.5017
+MONDO_0005148,type 2 diabetes mellitus,BMPR1B,0.5012
+MONDO_0005148,type 2 diabetes mellitus,ANKRD55,0.5008
+MONDO_0005148,type 2 diabetes mellitus,EXOC6,0.5008
+MONDO_0005148,type 2 diabetes mellitus,PLA2G2F,0.5004
+MONDO_0005148,type 2 diabetes mellitus,APPL1,0.5003
+MONDO_0005148,type 2 diabetes mellitus,ZFAND3,0.5003
+MONDO_0004975,Alzheimer disease,PSEN1,0.9545
+MONDO_0004975,Alzheimer disease,CR1,0.9332
+MONDO_0004975,Alzheimer disease,APP,0.9271
+MONDO_0004975,Alzheimer disease,TREM2,0.9181
+MONDO_0004975,Alzheimer disease,APOE,0.9115
+MONDO_0004975,Alzheimer disease,PSEN2,0.9106
+MONDO_0004975,Alzheimer disease,PLCG2,0.9090
+MONDO_0004975,Alzheimer disease,APOC1,0.8978
+MONDO_0004975,Alzheimer disease,MS4A6A,0.8939
+MONDO_0004975,Alzheimer disease,APH1B,0.8918
+MONDO_0004975,Alzheimer disease,ACE,0.8880
+MONDO_0004975,Alzheimer disease,ABI3,0.8673
+MONDO_0004975,Alzheimer disease,MME,0.8673
+MONDO_0004975,Alzheimer disease,NCK2,0.8639
+MONDO_0004975,Alzheimer disease,CD33,0.8624
+MONDO_0004975,Alzheimer disease,ABCA7,0.8616
+MONDO_0004975,Alzheimer disease,BIN1,0.8613
+MONDO_0004975,Alzheimer disease,SHARPIN,0.8613
+MONDO_0004975,Alzheimer disease,LIPC,0.8610
+MONDO_0004975,Alzheimer disease,ATP8B4,0.8584
+MONDO_0004975,Alzheimer disease,EPHA1,0.8547
+MONDO_0004975,Alzheimer disease,CTSB,0.8354
+MONDO_0004975,Alzheimer disease,HFE,0.8270
+MONDO_0004975,Alzheimer disease,H2BC4,0.8270
+MONDO_0004975,Alzheimer disease,GRN,0.8170
+MONDO_0004975,Alzheimer disease,RASGEF1C,0.8164
+MONDO_0004975,Alzheimer disease,PILRA,0.8044
+MONDO_0004975,Alzheimer disease,PICALM,0.8033
+MONDO_0004975,Alzheimer disease,MPO,0.7998
+MONDO_0004975,Alzheimer disease,RBCK1,0.7924
+MONDO_0004975,Alzheimer disease,LRRC25,0.7908
+MONDO_0004975,Alzheimer disease,ADAM10,0.7887
+MONDO_0004975,Alzheimer disease,SORL1,0.7885
+MONDO_0004975,Alzheimer disease,PTK2B,0.7843
+MONDO_0004975,Alzheimer disease,IL34,0.7765
+MONDO_0004975,Alzheimer disease,CASS4,0.7681
+MONDO_0004975,Alzheimer disease,CD2AP,0.7652
+MONDO_0004975,Alzheimer disease,RIN3,0.7628
+MONDO_0004975,Alzheimer disease,ABCA1,0.7554
+MONDO_0004975,Alzheimer disease,USP6NL,0.7540
+MONDO_0004975,Alzheimer disease,JAZF1,0.7496
+MONDO_0004975,Alzheimer disease,DOCK4,0.7496
+MONDO_0004975,Alzheimer disease,SLC26A1,0.7479
+MONDO_0004975,Alzheimer disease,CTSH,0.7430
+MONDO_0004975,Alzheimer disease,TSPAN14,0.7414
+MONDO_0004975,Alzheimer disease,CLU,0.7280
+MONDO_0004975,Alzheimer disease,TSPOAP1,0.7266
+MONDO_0004975,Alzheimer disease,SIGLEC9,0.7204
+MONDO_0004975,Alzheimer disease,NECTIN2,0.7139
+MONDO_0004975,Alzheimer disease,RHOH,0.7075
+MONDO_0004975,Alzheimer disease,ANO5,0.7069
+MONDO_0004975,Alzheimer disease,EGFR,0.6963
+MONDO_0004975,Alzheimer disease,SLC24A4,0.6952
+MONDO_0004975,Alzheimer disease,MS4A6E,0.6915
+MONDO_0004975,Alzheimer disease,PRSS8,0.6892
+MONDO_0004975,Alzheimer disease,GLIS3,0.6887
+MONDO_0004975,Alzheimer disease,CDH13,0.6876
+MONDO_0004975,Alzheimer disease,BLNK,0.6856
+MONDO_0004975,Alzheimer disease,DGKQ,0.6838
+MONDO_0004975,Alzheimer disease,INPP5D,0.6795
+MONDO_0004975,Alzheimer disease,MGAT5,0.6773
+MONDO_0004975,Alzheimer disease,OTULIN,0.6672
+MONDO_0004975,Alzheimer disease,SERPINF2,0.6660
+MONDO_0004975,Alzheimer disease,CNTNAP2,0.6613
+MONDO_0004975,Alzheimer disease,CCDC6,0.6607
+MONDO_0004975,Alzheimer disease,LILRA5,0.6591
+MONDO_0004975,Alzheimer disease,MTSS2,0.6524
+MONDO_0004975,Alzheimer disease,SCIMP,0.6490
+MONDO_0004975,Alzheimer disease,PTPRC,0.6465
+MONDO_0004975,Alzheimer disease,ZFHX3,0.6399
+MONDO_0004975,Alzheimer disease,ECHDC3,0.6321
+MONDO_0004975,Alzheimer disease,KANSL1,0.6308
+MONDO_0004975,Alzheimer disease,PDE4B,0.6266
+MONDO_0004975,Alzheimer disease,FBXL22,0.6255
+MONDO_0004975,Alzheimer disease,MAF,0.6251
+MONDO_0004975,Alzheimer disease,FERMT2,0.6233
+MONDO_0004975,Alzheimer disease,TRIB1,0.6202
+MONDO_0004975,Alzheimer disease,VWC2,0.6185
+MONDO_0004975,Alzheimer disease,HS3ST1,0.6152
+MONDO_0004975,Alzheimer disease,IDUA,0.6141
+MONDO_0004975,Alzheimer disease,CLNK,0.6100
+MONDO_0004975,Alzheimer disease,TBX5,0.6045
+MONDO_0004975,Alzheimer disease,KHDRBS2,0.6020
+MONDO_0004975,Alzheimer disease,PRDM9,0.6009
+MONDO_0004975,Alzheimer disease,IL6R,0.5999
+MONDO_0004975,Alzheimer disease,CNN2,0.5974
+MONDO_0004975,Alzheimer disease,GAB2,0.5902
+MONDO_0004975,Alzheimer disease,ZNF652,0.5872
+MONDO_0004975,Alzheimer disease,EPB41L1,0.5863
+MONDO_0004975,Alzheimer disease,CEP170,0.5859
+MONDO_0004975,Alzheimer disease,NBPF4,0.5858
+MONDO_0004975,Alzheimer disease,NOX4,0.5834
+MONDO_0004975,Alzheimer disease,PVR,0.5824
+MONDO_0004975,Alzheimer disease,ZNF568,0.5824
+MONDO_0004975,Alzheimer disease,SEMA3F,0.5814
+MONDO_0004975,Alzheimer disease,CAPS,0.5806
+MONDO_0004975,Alzheimer disease,HCN4,0.5798
+MONDO_0004975,Alzheimer disease,FCER1G,0.5781
+MONDO_0004975,Alzheimer disease,FBN1,0.5779
+MONDO_0004975,Alzheimer disease,NEGR1,0.5773
+MONDO_0004975,Alzheimer disease,ATP5F1C,0.5750
+MONDO_0004975,Alzheimer disease,SDK1,0.5744
+MONDO_0004975,Alzheimer disease,TCN2,0.5726
+MONDO_0004975,Alzheimer disease,ZFTA,0.5670
+MONDO_0004975,Alzheimer disease,CCRL2,0.5668
+MONDO_0004975,Alzheimer disease,ACKR2,0.5654
+MONDO_0004975,Alzheimer disease,MINDY2,0.5640
+MONDO_0004975,Alzheimer disease,IGFBP3,0.5622
+MONDO_0004975,Alzheimer disease,SEMA6D,0.5598
+MONDO_0004975,Alzheimer disease,TFAP2B,0.5585
+MONDO_0004975,Alzheimer disease,PSME4,0.5573
+MONDO_0004975,Alzheimer disease,RASA1,0.5552
+MONDO_0004975,Alzheimer disease,AOPEP,0.5549
+MONDO_0004975,Alzheimer disease,MTHFD1L,0.5544
+MONDO_0004975,Alzheimer disease,EPHB4,0.5530
+MONDO_0004975,Alzheimer disease,SIGLEC11,0.5527
+MONDO_0004975,Alzheimer disease,APOC4,0.5502
+MONDO_0004975,Alzheimer disease,ARHGAP45,0.5494
+MONDO_0004975,Alzheimer disease,CSF1R,0.5471
+MONDO_0004975,Alzheimer disease,MT-ND1,0.5471
+MONDO_0004975,Alzheimer disease,ENSG00000288712,0.5461
+MONDO_0004975,Alzheimer disease,STK24,0.5448
+MONDO_0004975,Alzheimer disease,MELK,0.5445
+MONDO_0004975,Alzheimer disease,DOCK3,0.5441
+MONDO_0004975,Alzheimer disease,SH2B3,0.5436
+MONDO_0004975,Alzheimer disease,CAV1,0.5432
+MONDO_0004975,Alzheimer disease,MOB3B,0.5426
+MONDO_0004975,Alzheimer disease,NCOR2,0.5360
+MONDO_0004975,Alzheimer disease,KCNJ3,0.5342
+MONDO_0004975,Alzheimer disease,TCF7L2,0.5325
+MONDO_0004975,Alzheimer disease,LIPG,0.5312
+MONDO_0004975,Alzheimer disease,CDC14C,0.5267
+MONDO_0004975,Alzheimer disease,NRF1,0.5266
+MONDO_0004975,Alzheimer disease,KLC3,0.5262
+MONDO_0004975,Alzheimer disease,ZMAT4,0.5261
+MONDO_0004975,Alzheimer disease,SAP30L,0.5260
+MONDO_0004975,Alzheimer disease,LDLR,0.5256
+MONDO_0004975,Alzheimer disease,ADGRA3,0.5255
+MONDO_0004975,Alzheimer disease,RABEP1,0.5235
+MONDO_0004975,Alzheimer disease,SPATA31D1,0.5214
+MONDO_0004975,Alzheimer disease,C1S,0.5214
+MONDO_0004975,Alzheimer disease,KMT2C,0.5212
+MONDO_0004975,Alzheimer disease,ADAMTS4,0.5204
+MONDO_0004975,Alzheimer disease,PHOSPHO1,0.5199
+MONDO_0004975,Alzheimer disease,SEMA3C,0.5194
+MONDO_0004975,Alzheimer disease,DENND3,0.5174
+MONDO_0004975,Alzheimer disease,WWOX,0.5171
+MONDO_0004975,Alzheimer disease,SCARA3,0.5163
+MONDO_0004975,Alzheimer disease,ARHGAP15,0.5153
+MONDO_0004975,Alzheimer disease,VEGFC,0.5144
+MONDO_0004975,Alzheimer disease,SCARB1,0.5144
+MONDO_0004975,Alzheimer disease,LILRB2,0.5142
+MONDO_0004975,Alzheimer disease,SYBU,0.5141
+MONDO_0004975,Alzheimer disease,OR4C45,0.5139
+MONDO_0004975,Alzheimer disease,BARHL2,0.5124
+MONDO_0004975,Alzheimer disease,TCTN2,0.5121
+MONDO_0004975,Alzheimer disease,FAM20B,0.5119
+MONDO_0004975,Alzheimer disease,ZNF880,0.5107
+MONDO_0004975,Alzheimer disease,MMS22L,0.5079
+MONDO_0004975,Alzheimer disease,ADGRB3,0.5079
+MONDO_0004975,Alzheimer disease,ULK4,0.5075
+MONDO_0004975,Alzheimer disease,ARID1B,0.5075
+MONDO_0004975,Alzheimer disease,MGMT,0.5058
+MONDO_0004975,Alzheimer disease,HS3ST5,0.5054
+MONDO_0004975,Alzheimer disease,FARP1,0.5053
+MONDO_0004975,Alzheimer disease,FAM20C,0.5053
+MONDO_0004975,Alzheimer disease,DDX18,0.5051
+MONDO_0004975,Alzheimer disease,PRRX1,0.5023
+MONDO_0004975,Alzheimer disease,TEAD1,0.5023
+MONDO_0004975,Alzheimer disease,CMPK2,0.5021
+MONDO_0004975,Alzheimer disease,ZNF717,0.5018
+MONDO_0004975,Alzheimer disease,RIMS1,0.5008
+MONDO_0004975,Alzheimer disease,PDE7B,0.5003
+MONDO_0004975,Alzheimer disease,MMP3,0.5000
+MONDO_0008383,rheumatoid arthritis,TYK2,0.9732
+MONDO_0008383,rheumatoid arthritis,CTLA4,0.9615
+MONDO_0008383,rheumatoid arthritis,CD40,0.9502
+MONDO_0008383,rheumatoid arthritis,SH2B3,0.9419
+MONDO_0008383,rheumatoid arthritis,IL12B,0.9190
+MONDO_0008383,rheumatoid arthritis,IL2RA,0.9132
+MONDO_0008383,rheumatoid arthritis,IL6R,0.8978
+MONDO_0008383,rheumatoid arthritis,SYNGR1,0.8923
+MONDO_0008383,rheumatoid arthritis,UBASH3A,0.8898
+MONDO_0008383,rheumatoid arthritis,RASGRP1,0.8857
+MONDO_0008383,rheumatoid arthritis,IRF5,0.8832
+MONDO_0008383,rheumatoid arthritis,GATA3,0.8829
+MONDO_0008383,rheumatoid arthritis,LBH,0.8795
+MONDO_0008383,rheumatoid arthritis,IL23R,0.8768
+MONDO_0008383,rheumatoid arthritis,PADI4,0.8726
+MONDO_0008383,rheumatoid arthritis,TRAF3IP2,0.8715
+MONDO_0008383,rheumatoid arthritis,SUOX,0.8674
+MONDO_0008383,rheumatoid arthritis,ARID5B,0.8601
+MONDO_0008383,rheumatoid arthritis,NFKBIE,0.8562
+MONDO_0008383,rheumatoid arthritis,FCRL3,0.8536
+MONDO_0008383,rheumatoid arthritis,PLCL2,0.8388
+MONDO_0008383,rheumatoid arthritis,BLK,0.8365
+MONDO_0008383,rheumatoid arthritis,STAT4,0.8308
+MONDO_0008383,rheumatoid arthritis,CD83,0.8259
+MONDO_0008383,rheumatoid arthritis,EOMES,0.8254
+MONDO_0008383,rheumatoid arthritis,CCR6,0.8219
+MONDO_0008383,rheumatoid arthritis,RUNX1,0.8177
+MONDO_0008383,rheumatoid arthritis,AFF3,0.8116
+MONDO_0008383,rheumatoid arthritis,FLT3,0.8087
+MONDO_0008383,rheumatoid arthritis,ITPR3,0.8081
+MONDO_0008383,rheumatoid arthritis,CLNK,0.8030
+MONDO_0008383,rheumatoid arthritis,PTPN22,0.7989
+MONDO_0008383,rheumatoid arthritis,MACIR,0.7987
+MONDO_0008383,rheumatoid arthritis,BCL2L11,0.7969
+MONDO_0008383,rheumatoid arthritis,B3GNT2,0.7948
+MONDO_0008383,rheumatoid arthritis,TMEM151B,0.7941
+MONDO_0008383,rheumatoid arthritis,BACH2,0.7940
+MONDO_0008383,rheumatoid arthritis,TNFAIP3,0.7891
+MONDO_0008383,rheumatoid arthritis,RAD51B,0.7874
+MONDO_0008383,rheumatoid arthritis,ANKRD55,0.7857
+MONDO_0008383,rheumatoid arthritis,TAGAP,0.7837
+MONDO_0008383,rheumatoid arthritis,AIRE,0.7789
+MONDO_0008383,rheumatoid arthritis,PADI2,0.7789
+MONDO_0008383,rheumatoid arthritis,RTKN2,0.7777
+MONDO_0008383,rheumatoid arthritis,ICOS,0.7756
+MONDO_0008383,rheumatoid arthritis,FCGR2A,0.7659
+MONDO_0008383,rheumatoid arthritis,SPRED2,0.7634
+MONDO_0008383,rheumatoid arthritis,IFNGR2,0.7580
+MONDO_0008383,rheumatoid arthritis,CD226,0.7485
+MONDO_0008383,rheumatoid arthritis,TNFRSF1A,0.7470
+MONDO_0008383,rheumatoid arthritis,PTPN2,0.7428
+MONDO_0008383,rheumatoid arthritis,TNIP1,0.7398
+MONDO_0008383,rheumatoid arthritis,ERAP1,0.7389
+MONDO_0008383,rheumatoid arthritis,FAM8A1,0.7340
+MONDO_0008383,rheumatoid arthritis,ETS1,0.7338
+MONDO_0008383,rheumatoid arthritis,IFNAR2,0.7311
+MONDO_0008383,rheumatoid arthritis,TNFSF4,0.7298
+MONDO_0008383,rheumatoid arthritis,MMEL1,0.7270
+MONDO_0008383,rheumatoid arthritis,NRSN1,0.7248
+MONDO_0008383,rheumatoid arthritis,IL13,0.7232
+MONDO_0008383,rheumatoid arthritis,IRF4,0.7175
+MONDO_0008383,rheumatoid arthritis,IL12RB2,0.7159
+MONDO_0008383,rheumatoid arthritis,NFKBIA,0.7134
+MONDO_0008383,rheumatoid arthritis,C1orf141,0.7122
+MONDO_0008383,rheumatoid arthritis,GPR35,0.7106
+MONDO_0008383,rheumatoid arthritis,CCN4,0.7081
+MONDO_0008383,rheumatoid arthritis,TNFSF15,0.7074
+MONDO_0008383,rheumatoid arthritis,CCL21,0.7068
+MONDO_0008383,rheumatoid arthritis,AARS2,0.7063
+MONDO_0008383,rheumatoid arthritis,DRC5,0.7048
+MONDO_0008383,rheumatoid arthritis,REL,0.7017
+MONDO_0008383,rheumatoid arthritis,NCF2,0.7015
+MONDO_0008383,rheumatoid arthritis,TREH,0.6995
+MONDO_0008383,rheumatoid arthritis,ETV7,0.6994
+MONDO_0008383,rheumatoid arthritis,TET3,0.6991
+MONDO_0008383,rheumatoid arthritis,PRKCQ,0.6946
+MONDO_0008383,rheumatoid arthritis,INAVA,0.6942
+MONDO_0008383,rheumatoid arthritis,JAK1,0.6935
+MONDO_0008383,rheumatoid arthritis,DAP,0.6923
+MONDO_0008383,rheumatoid arthritis,ARAP1,0.6901
+MONDO_0008383,rheumatoid arthritis,CIITA,0.6868
+MONDO_0008383,rheumatoid arthritis,NOS2,0.6863
+MONDO_0008383,rheumatoid arthritis,TLR1,0.6839
+MONDO_0008383,rheumatoid arthritis,CD2,0.6831
+MONDO_0008383,rheumatoid arthritis,NOD2,0.6759
+MONDO_0008383,rheumatoid arthritis,ELMO1,0.6759
+MONDO_0008383,rheumatoid arthritis,USP8,0.6723
+MONDO_0008383,rheumatoid arthritis,IL10,0.6713
+MONDO_0008383,rheumatoid arthritis,KCNK2,0.6689
+MONDO_0008383,rheumatoid arthritis,COG6,0.6679
+MONDO_0008383,rheumatoid arthritis,RNASET2,0.6678
+MONDO_0008383,rheumatoid arthritis,MLN,0.6670
+MONDO_0008383,rheumatoid arthritis,JAZF1,0.6662
+MONDO_0008383,rheumatoid arthritis,SMAD3,0.6653
+MONDO_0008383,rheumatoid arthritis,PLD4,0.6612
+MONDO_0008383,rheumatoid arthritis,NAB1,0.6607
+MONDO_0008383,rheumatoid arthritis,WDFY4,0.6562
+MONDO_0008383,rheumatoid arthritis,ERBB3,0.6525
+MONDO_0008383,rheumatoid arthritis,TRAF1,0.6479
+MONDO_0008383,rheumatoid arthritis,TCF7,0.6454
+MONDO_0008383,rheumatoid arthritis,ENO4,0.6434
+MONDO_0008383,rheumatoid arthritis,CXCL13,0.6371
+MONDO_0008383,rheumatoid arthritis,HDGFL1,0.6296
+MONDO_0008383,rheumatoid arthritis,RBPJ,0.6296
+MONDO_0008383,rheumatoid arthritis,GNG4,0.6285
+MONDO_0008383,rheumatoid arthritis,IRAK1,0.6254
+MONDO_0008383,rheumatoid arthritis,ZNF438,0.6252
+MONDO_0008383,rheumatoid arthritis,IFIH1,0.6238
+MONDO_0008383,rheumatoid arthritis,TXNDC11,0.6163
+MONDO_0008383,rheumatoid arthritis,GRHL2,0.6160
+MONDO_0008383,rheumatoid arthritis,FDX2,0.6144
+MONDO_0008383,rheumatoid arthritis,TEC,0.6074
+MONDO_0008383,rheumatoid arthritis,PSTPIP1,0.6050
+MONDO_0008383,rheumatoid arthritis,MAF,0.6021
+MONDO_0008383,rheumatoid arthritis,TNFSF18,0.6016
+MONDO_0008383,rheumatoid arthritis,CD6,0.5985
+MONDO_0008383,rheumatoid arthritis,SYT1,0.5977
+MONDO_0008383,rheumatoid arthritis,ATG5,0.5975
+MONDO_0008383,rheumatoid arthritis,FAM167A,0.5965
+MONDO_0008383,rheumatoid arthritis,TESPA1,0.5937
+MONDO_0008383,rheumatoid arthritis,ADGRL2,0.5935
+MONDO_0008383,rheumatoid arthritis,NFKB1,0.5918
+MONDO_0008383,rheumatoid arthritis,OPCML,0.5912
+MONDO_0008383,rheumatoid arthritis,CCR3,0.5886
+MONDO_0008383,rheumatoid arthritis,UQCC2,0.5884
+MONDO_0008383,rheumatoid arthritis,SWAP70,0.5868
+MONDO_0008383,rheumatoid arthritis,SSPN,0.5862
+MONDO_0008383,rheumatoid arthritis,RUNX3,0.5861
+MONDO_0008383,rheumatoid arthritis,ZNF774,0.5859
+MONDO_0008383,rheumatoid arthritis,FSCN1,0.5841
+MONDO_0008383,rheumatoid arthritis,IQGAP1,0.5831
+MONDO_0008383,rheumatoid arthritis,NFATC1,0.5818
+MONDO_0008383,rheumatoid arthritis,FOSL2,0.5801
+MONDO_0008383,rheumatoid arthritis,LMO4,0.5775
+MONDO_0008383,rheumatoid arthritis,DNAH17,0.5764
+MONDO_0008383,rheumatoid arthritis,PRDM1,0.5756
+MONDO_0008383,rheumatoid arthritis,FLRT2,0.5726
+MONDO_0008383,rheumatoid arthritis,CXCR2,0.5710
+MONDO_0008383,rheumatoid arthritis,BAK1,0.5704
+MONDO_0008383,rheumatoid arthritis,TPD52,0.5680
+MONDO_0008383,rheumatoid arthritis,FSIP2,0.5676
+MONDO_0008383,rheumatoid arthritis,ZC3H12C,0.5668
+MONDO_0008383,rheumatoid arthritis,TTC34,0.5660
+MONDO_0008383,rheumatoid arthritis,CBFA2T3,0.5650
+MONDO_0008383,rheumatoid arthritis,FUT2,0.5647
+MONDO_0008383,rheumatoid arthritis,TLR4,0.5630
+MONDO_0008383,rheumatoid arthritis,NKX2-3,0.5629
+MONDO_0008383,rheumatoid arthritis,ZC3H11A,0.5629
+MONDO_0008383,rheumatoid arthritis,ZBED6,0.5629
+MONDO_0008383,rheumatoid arthritis,PTGER4,0.5619
+MONDO_0008383,rheumatoid arthritis,GPR174,0.5593
+MONDO_0008383,rheumatoid arthritis,CCR1,0.5588
+MONDO_0008383,rheumatoid arthritis,XRCC4,0.5574
+MONDO_0008383,rheumatoid arthritis,ZNF366,0.5558
+MONDO_0008383,rheumatoid arthritis,PRKCB,0.5555
+MONDO_0008383,rheumatoid arthritis,TNFSF11,0.5555
+MONDO_0008383,rheumatoid arthritis,CDK5RAP2,0.5549
+MONDO_0008383,rheumatoid arthritis,MAGI3,0.5540
+MONDO_0008383,rheumatoid arthritis,LEF1,0.5539
+MONDO_0008383,rheumatoid arthritis,TEAD3,0.5538
+MONDO_0008383,rheumatoid arthritis,TNRC18,0.5536
+MONDO_0008383,rheumatoid arthritis,CCR2,0.5518
+MONDO_0008383,rheumatoid arthritis,UBE2L3,0.5513
+MONDO_0008383,rheumatoid arthritis,ZNF468,0.5495
+MONDO_0008383,rheumatoid arthritis,DCLRE1B,0.5495
+MONDO_0008383,rheumatoid arthritis,CFAP20DC,0.5473
+MONDO_0008383,rheumatoid arthritis,CHRNG,0.5471
+MONDO_0008383,rheumatoid arthritis,ZNF385D,0.5465
+MONDO_0008383,rheumatoid arthritis,FADS2,0.5462
+MONDO_0008383,rheumatoid arthritis,IFNLR1,0.5456
+MONDO_0008383,rheumatoid arthritis,FCGR2B,0.5448
+MONDO_0008383,rheumatoid arthritis,CCDC88B,0.5440
+MONDO_0008383,rheumatoid arthritis,DNASE1L3,0.5438
+MONDO_0008383,rheumatoid arthritis,NR5A2,0.5428
+MONDO_0008383,rheumatoid arthritis,PACSIN1,0.5425
+MONDO_0008383,rheumatoid arthritis,FRG2C,0.5416
+MONDO_0008383,rheumatoid arthritis,ZNF704,0.5407
+MONDO_0008383,rheumatoid arthritis,SLC39A11,0.5378
+MONDO_0008383,rheumatoid arthritis,RIPOR2,0.5357
+MONDO_0008383,rheumatoid arthritis,ZNF679,0.5354
+MONDO_0008383,rheumatoid arthritis,TASL,0.5340
+MONDO_0008383,rheumatoid arthritis,ADAMTS2,0.5338
+MONDO_0008383,rheumatoid arthritis,CARD9,0.5334
+MONDO_0008383,rheumatoid arthritis,PCDH20,0.5332
+MONDO_0008383,rheumatoid arthritis,C1orf21,0.5320
+MONDO_0008383,rheumatoid arthritis,RPLP1,0.5309
+MONDO_0008383,rheumatoid arthritis,POU3F1,0.5301
+MONDO_0008383,rheumatoid arthritis,DMPK,0.5288
+MONDO_0008383,rheumatoid arthritis,DMAC1,0.5280
+MONDO_0008383,rheumatoid arthritis,CCDC91,0.5277
+MONDO_0008383,rheumatoid arthritis,BANK1,0.5274
+MONDO_0008383,rheumatoid arthritis,ARHGAP26,0.5274
+MONDO_0008383,rheumatoid arthritis,ABTB3,0.5256
+MONDO_0008383,rheumatoid arthritis,L1CAM,0.5252
+MONDO_0008383,rheumatoid arthritis,ZPLD1,0.5248
+MONDO_0008383,rheumatoid arthritis,CEP57,0.5245
+MONDO_0008383,rheumatoid arthritis,CARMIL1,0.5236
+MONDO_0008383,rheumatoid arthritis,PHTF1,0.5219
+MONDO_0008383,rheumatoid arthritis,CDKN2B,0.5212
+MONDO_0008383,rheumatoid arthritis,DGKQ,0.5206
+MONDO_0008383,rheumatoid arthritis,CBLB,0.5200
+MONDO_0008383,rheumatoid arthritis,GUCY1A2,0.5194
+MONDO_0008383,rheumatoid arthritis,IL4R,0.5181
+MONDO_0008383,rheumatoid arthritis,IL19,0.5179
+MONDO_0008383,rheumatoid arthritis,POSTN,0.5166
+MONDO_0008383,rheumatoid arthritis,NPAS2,0.5161
+MONDO_0008383,rheumatoid arthritis,LONRF2,0.5152
+MONDO_0008383,rheumatoid arthritis,CCDC196,0.5145
+MONDO_0008383,rheumatoid arthritis,LHFPL6,0.5139
+MONDO_0008383,rheumatoid arthritis,ANXA3,0.5127
+MONDO_0008383,rheumatoid arthritis,ZFP36L1,0.5117
+MONDO_0008383,rheumatoid arthritis,CPXCR1,0.5101
+MONDO_0008383,rheumatoid arthritis,EEF2KMT,0.5098
+MONDO_0008383,rheumatoid arthritis,ARGLU1,0.5096
+MONDO_0008383,rheumatoid arthritis,GLIS3,0.5090
+MONDO_0008383,rheumatoid arthritis,VWC2,0.5078
+MONDO_0008383,rheumatoid arthritis,MST1,0.5065
+MONDO_0008383,rheumatoid arthritis,SASH1,0.5057
+MONDO_0008383,rheumatoid arthritis,PPARD,0.5052
+MONDO_0008383,rheumatoid arthritis,KSR1,0.5039
+MONDO_0008383,rheumatoid arthritis,RSRP1,0.5038
+MONDO_0008383,rheumatoid arthritis,SPIN4,0.5035
+MONDO_0008383,rheumatoid arthritis,PDGFB,0.5028
+MONDO_0008383,rheumatoid arthritis,IL18R1,0.5028
+MONDO_0008383,rheumatoid arthritis,RHD,0.5016
+MONDO_0008383,rheumatoid arthritis,ALDH1A1,0.5006
+MONDO_0008383,rheumatoid arthritis,TNFRSF14,0.5000
+MONDO_0005011,Crohn disease,IL23R,0.9462
+MONDO_0005011,Crohn disease,NOD2,0.9250
+MONDO_0005011,Crohn disease,IL12B,0.9248
+MONDO_0005011,Crohn disease,TNFSF15,0.9113
+MONDO_0005011,Crohn disease,IL10,0.8955
+MONDO_0005011,Crohn disease,GPR35,0.8926
+MONDO_0005011,Crohn disease,TYK2,0.8619
+MONDO_0005011,Crohn disease,PTPN22,0.8609
+MONDO_0005011,Crohn disease,LACC1,0.8480
+MONDO_0005011,Crohn disease,NFKBIA,0.8387
+MONDO_0005011,Crohn disease,SMAD3,0.8298
+MONDO_0005011,Crohn disease,FUT2,0.8197
+MONDO_0005011,Crohn disease,JAK2,0.8163
+MONDO_0005011,Crohn disease,ITGA4,0.8156
+MONDO_0005011,Crohn disease,CD40,0.8132
+MONDO_0005011,Crohn disease,BACH2,0.8110
+MONDO_0005011,Crohn disease,SH2B3,0.8105
+MONDO_0005011,Crohn disease,PTPN2,0.8079
+MONDO_0005011,Crohn disease,JAZF1,0.8079
+MONDO_0005011,Crohn disease,IL2RA,0.8031
+MONDO_0005011,Crohn disease,FOSL2,0.8009
+MONDO_0005011,Crohn disease,CDKAL1,0.7994
+MONDO_0005011,Crohn disease,IFNGR2,0.7808
+MONDO_0005011,Crohn disease,NKX2-3,0.7791
+MONDO_0005011,Crohn disease,RASGRP1,0.7778
+MONDO_0005011,Crohn disease,TAGAP,0.7733
+MONDO_0005011,Crohn disease,RUNX3,0.7663
+MONDO_0005011,Crohn disease,GALC,0.7613
+MONDO_0005011,Crohn disease,FOS,0.7539
+MONDO_0005011,Crohn disease,IRF5,0.7481
+MONDO_0005011,Crohn disease,ZBTB38,0.7451
+MONDO_0005011,Crohn disease,PDGFB,0.7450
+MONDO_0005011,Crohn disease,GPR65,0.7441
+MONDO_0005011,Crohn disease,SP140,0.7412
+MONDO_0005011,Crohn disease,NDFIP1,0.7407
+MONDO_0005011,Crohn disease,IL27,0.7405
+MONDO_0005011,Crohn disease,IL12RB2,0.7273
+MONDO_0005011,Crohn disease,MAP3K8,0.7233
+MONDO_0005011,Crohn disease,TNFSF8,0.7218
+MONDO_0005011,Crohn disease,CCL2,0.7183
+MONDO_0005011,Crohn disease,ATG16L1,0.7164
+MONDO_0005011,Crohn disease,ADCY7,0.7138
+MONDO_0005011,Crohn disease,KSR1,0.7132
+MONDO_0005011,Crohn disease,BCL2L11,0.7120
+MONDO_0005011,Crohn disease,BANK1,0.7103
+MONDO_0005011,Crohn disease,KLF3,0.7065
+MONDO_0005011,Crohn disease,ABO,0.7035
+MONDO_0005011,Crohn disease,CCDC122,0.7016
+MONDO_0005011,Crohn disease,SNX20,0.6993
+MONDO_0005011,Crohn disease,PPP5C,0.6979
+MONDO_0005011,Crohn disease,RSPO3,0.6977
+MONDO_0005011,Crohn disease,ELMO1,0.6970
+MONDO_0005011,Crohn disease,PTGER4,0.6965
+MONDO_0005011,Crohn disease,INAVA,0.6947
+MONDO_0005011,Crohn disease,SLC7A10,0.6883
+MONDO_0005011,Crohn disease,SLC39A8,0.6882
+MONDO_0005011,Crohn disease,MST1,0.6874
+MONDO_0005011,Crohn disease,PUS10,0.6824
+MONDO_0005011,Crohn disease,SETBP1,0.6806
+MONDO_0005011,Crohn disease,CARD9,0.6784
+MONDO_0005011,Crohn disease,GCKR,0.6757
+MONDO_0005011,Crohn disease,MMP9,0.6748
+MONDO_0005011,Crohn disease,CELA3B,0.6719
+MONDO_0005011,Crohn disease,BIRC3,0.6648
+MONDO_0005011,Crohn disease,SBNO2,0.6625
+MONDO_0005011,Crohn disease,ZNF831,0.6608
+MONDO_0005011,Crohn disease,C1orf141,0.6583
+MONDO_0005011,Crohn disease,PRDM1,0.6564
+MONDO_0005011,Crohn disease,ELF1,0.6562
+MONDO_0005011,Crohn disease,TNRC18,0.6548
+MONDO_0005011,Crohn disease,IL18RAP,0.6536
+MONDO_0005011,Crohn disease,TNFSF4,0.6513
+MONDO_0005011,Crohn disease,CYLD,0.6478
+MONDO_0005011,Crohn disease,ZFP36L1,0.6469
+MONDO_0005011,Crohn disease,IRF1,0.6404
+MONDO_0005011,Crohn disease,SPRED2,0.6391
+MONDO_0005011,Crohn disease,TSPAN14,0.6368
+MONDO_0005011,Crohn disease,ADCY3,0.6323
+MONDO_0005011,Crohn disease,CUL2,0.6279
+MONDO_0005011,Crohn disease,ADAD1,0.6266
+MONDO_0005011,Crohn disease,PTPRC,0.6248
+MONDO_0005011,Crohn disease,NFKB1,0.6238
+MONDO_0005011,Crohn disease,ADAP1,0.6229
+MONDO_0005011,Crohn disease,IL21,0.6198
+MONDO_0005011,Crohn disease,LPP,0.6169
+MONDO_0005011,Crohn disease,IKZF1,0.6162
+MONDO_0005011,Crohn disease,IRGM,0.6147
+MONDO_0005011,Crohn disease,LDLRAP1,0.6139
+MONDO_0005011,Crohn disease,NCF4,0.6108
+MONDO_0005011,Crohn disease,THEMIS,0.6100
+MONDO_0005011,Crohn disease,DENND1B,0.6083
+MONDO_0005011,Crohn disease,LILRB3,0.6081
+MONDO_0005011,Crohn disease,ANKRD55,0.6071
+MONDO_0005011,Crohn disease,APOBR,0.6060
+MONDO_0005011,Crohn disease,OSMR,0.6019
+MONDO_0005011,Crohn disease,TNFSF11,0.6013
+MONDO_0005011,Crohn disease,SNAPC4,0.6011
+MONDO_0005011,Crohn disease,IL6R,0.6002
+MONDO_0005011,Crohn disease,IL7R,0.6001
+MONDO_0005011,Crohn disease,HGFAC,0.5995
+MONDO_0005011,Crohn disease,CIITA,0.5991
+MONDO_0005011,Crohn disease,CSF2RB,0.5988
+MONDO_0005011,Crohn disease,CD6,0.5985
+MONDO_0005011,Crohn disease,CCL20,0.5971
+MONDO_0005011,Crohn disease,KCNH8,0.5963
+MONDO_0005011,Crohn disease,TPRG1,0.5938
+MONDO_0005011,Crohn disease,TNFRSF1A,0.5937
+MONDO_0005011,Crohn disease,STAT3,0.5928
+MONDO_0005011,Crohn disease,APOE,0.5914
+MONDO_0005011,Crohn disease,RTEL1,0.5909
+MONDO_0005011,Crohn disease,B3GNT2,0.5889
+MONDO_0005011,Crohn disease,SYNGR1,0.5884
+MONDO_0005011,Crohn disease,IL18R1,0.5879
+MONDO_0005011,Crohn disease,AKAP11,0.5854
+MONDO_0005011,Crohn disease,SLC22A4,0.5848
+MONDO_0005011,Crohn disease,USP34,0.5845
+MONDO_0005011,Crohn disease,UBASH3A,0.5806
+MONDO_0005011,Crohn disease,DAP,0.5779
+MONDO_0005011,Crohn disease,RIPK2,0.5757
+MONDO_0005011,Crohn disease,ATRAID,0.5755
+MONDO_0005011,Crohn disease,FCGR2A,0.5751
+MONDO_0005011,Crohn disease,NKD1,0.5744
+MONDO_0005011,Crohn disease,ACOXL,0.5742
+MONDO_0005011,Crohn disease,LITAF,0.5713
+MONDO_0005011,Crohn disease,CXCR2,0.5710
+MONDO_0005011,Crohn disease,SP110,0.5699
+MONDO_0005011,Crohn disease,RNASET2,0.5695
+MONDO_0005011,Crohn disease,GTF2I,0.5691
+MONDO_0005011,Crohn disease,ZC3H12C,0.5668
+MONDO_0005011,Crohn disease,TNFRSF6B,0.5665
+MONDO_0005011,Crohn disease,SLC9A4,0.5662
+MONDO_0005011,Crohn disease,TRIB1,0.5656
+MONDO_0005011,Crohn disease,CD226,0.5648
+MONDO_0005011,Crohn disease,NCOR2,0.5631
+MONDO_0005011,Crohn disease,TLR4,0.5630
+MONDO_0005011,Crohn disease,FRMPD2,0.5599
+MONDO_0005011,Crohn disease,MUC1,0.5585
+MONDO_0005011,Crohn disease,CPEB4,0.5564
+MONDO_0005011,Crohn disease,SOX4,0.5560
+MONDO_0005011,Crohn disease,TUBD1,0.5554
+MONDO_0005011,Crohn disease,CAMK2G,0.5552
+MONDO_0005011,Crohn disease,SHC1,0.5550
+MONDO_0005011,Crohn disease,RAPGEF6,0.5532
+MONDO_0005011,Crohn disease,ENSG00000293584,0.5480
+MONDO_0005011,Crohn disease,MGAT5,0.5459
+MONDO_0005011,Crohn disease,IFNLR1,0.5456
+MONDO_0005011,Crohn disease,ADO,0.5454
+MONDO_0005011,Crohn disease,FADS2,0.5443
+MONDO_0005011,Crohn disease,PRKCB,0.5429
+MONDO_0005011,Crohn disease,NR5A2,0.5428
+MONDO_0005011,Crohn disease,BATF,0.5425
+MONDO_0005011,Crohn disease,MUC19,0.5402
+MONDO_0005011,Crohn disease,MFSD12,0.5399
+MONDO_0005011,Crohn disease,ELP6,0.5390
+MONDO_0005011,Crohn disease,FOXP1,0.5388
+MONDO_0005011,Crohn disease,FADS3,0.5381
+MONDO_0005011,Crohn disease,SLC39A11,0.5378
+MONDO_0005011,Crohn disease,PSMA6,0.5367
+MONDO_0005011,Crohn disease,NRIP1,0.5358
+MONDO_0005011,Crohn disease,MACIR,0.5347
+MONDO_0005011,Crohn disease,MARCHF11,0.5312
+MONDO_0005011,Crohn disease,SOCS1,0.5306
+MONDO_0005011,Crohn disease,MSRA,0.5261
+MONDO_0005011,Crohn disease,TNFAIP3,0.5251
+MONDO_0005011,Crohn disease,WDR36,0.5237
+MONDO_0005011,Crohn disease,POMC,0.5229
+MONDO_0005011,Crohn disease,IL19,0.5194
+MONDO_0005011,Crohn disease,GPSM1,0.5193
+MONDO_0005011,Crohn disease,SLC2A4RG,0.5175
+MONDO_0005011,Crohn disease,MYL2,0.5171
+MONDO_0005011,Crohn disease,SLC22A5,0.5160
+MONDO_0005011,Crohn disease,CD200,0.5152
+MONDO_0005011,Crohn disease,HORMAD1,0.5150
+MONDO_0005011,Crohn disease,CUL1,0.5106
+MONDO_0005011,Crohn disease,TTC33,0.5078
+MONDO_0005011,Crohn disease,CYP2J2,0.5063
+MONDO_0005011,Crohn disease,SATB1,0.5052
+MONDO_0005011,Crohn disease,HORMAD2,0.5049
+MONDO_0005011,Crohn disease,RASA2,0.5022
+MONDO_0005011,Crohn disease,DNMT3A,0.5010
+MONDO_0005101,ulcerative colitis,IL23R,0.9411
+MONDO_0005101,ulcerative colitis,IL10,0.9178
+MONDO_0005101,ulcerative colitis,GPR35,0.8900
+MONDO_0005101,ulcerative colitis,IL12B,0.8864
+MONDO_0005101,ulcerative colitis,FCGR2A,0.8700
+MONDO_0005101,ulcerative colitis,TNFSF15,0.8644
+MONDO_0005101,ulcerative colitis,JAK2,0.8458
+MONDO_0005101,ulcerative colitis,SMAD3,0.8218
+MONDO_0005101,ulcerative colitis,ADCY7,0.8214
+MONDO_0005101,ulcerative colitis,IRF5,0.8173
+MONDO_0005101,ulcerative colitis,CXCR2,0.8171
+MONDO_0005101,ulcerative colitis,NR5A2,0.8141
+MONDO_0005101,ulcerative colitis,NKX2-3,0.8018
+MONDO_0005101,ulcerative colitis,IRF8,0.7913
+MONDO_0005101,ulcerative colitis,MST1,0.7683
+MONDO_0005101,ulcerative colitis,INAVA,0.7619
+MONDO_0005101,ulcerative colitis,SLC39A11,0.7580
+MONDO_0005101,ulcerative colitis,NXPE1,0.7567
+MONDO_0005101,ulcerative colitis,TMCO4,0.7560
+MONDO_0005101,ulcerative colitis,PDGFB,0.7452
+MONDO_0005101,ulcerative colitis,NFKB1,0.7380
+MONDO_0005101,ulcerative colitis,PRKCB,0.7378
+MONDO_0005101,ulcerative colitis,SATB2,0.7328
+MONDO_0005101,ulcerative colitis,OTUD3,0.7224
+MONDO_0005101,ulcerative colitis,RNF186,0.7182
+MONDO_0005101,ulcerative colitis,GPR12,0.7134
+MONDO_0005101,ulcerative colitis,PUS10,0.7051
+MONDO_0005101,ulcerative colitis,MAP3K8,0.7040
+MONDO_0005101,ulcerative colitis,PTPN22,0.7014
+MONDO_0005101,ulcerative colitis,DLD,0.7006
+MONDO_0005101,ulcerative colitis,PRDM1,0.6957
+MONDO_0005101,ulcerative colitis,CCRL2,0.6952
+MONDO_0005101,ulcerative colitis,GPSM1,0.6719
+MONDO_0005101,ulcerative colitis,IL17REL,0.6707
+MONDO_0005101,ulcerative colitis,PTGER4,0.6684
+MONDO_0005101,ulcerative colitis,SLC26A3,0.6681
+MONDO_0005101,ulcerative colitis,FCGR2B,0.6672
+MONDO_0005101,ulcerative colitis,IL2RA,0.6619
+MONDO_0005101,ulcerative colitis,IL18R1,0.6522
+MONDO_0005101,ulcerative colitis,CARD9,0.6518
+MONDO_0005101,ulcerative colitis,RORC,0.6468
+MONDO_0005101,ulcerative colitis,CCL20,0.6333
+MONDO_0005101,ulcerative colitis,LCOR,0.6325
+MONDO_0005101,ulcerative colitis,CDKAL1,0.6297
+MONDO_0005101,ulcerative colitis,ID4,0.6228
+MONDO_0005101,ulcerative colitis,INSL6,0.6106
+MONDO_0005101,ulcerative colitis,TLR4,0.6091
+MONDO_0005101,ulcerative colitis,OSMR,0.6089
+MONDO_0005101,ulcerative colitis,TNRC18,0.6065
+MONDO_0005101,ulcerative colitis,IL6R,0.6002
+MONDO_0005101,ulcerative colitis,SH2B3,0.5997
+MONDO_0005101,ulcerative colitis,CD6,0.5985
+MONDO_0005101,ulcerative colitis,STAT3,0.5978
+MONDO_0005101,ulcerative colitis,TNFAIP3,0.5955
+MONDO_0005101,ulcerative colitis,TNFRSF1A,0.5937
+MONDO_0005101,ulcerative colitis,LPP,0.5911
+MONDO_0005101,ulcerative colitis,CD274,0.5911
+MONDO_0005101,ulcerative colitis,CD40,0.5891
+MONDO_0005101,ulcerative colitis,NOD2,0.5877
+MONDO_0005101,ulcerative colitis,GNA12,0.5842
+MONDO_0005101,ulcerative colitis,CCL2,0.5829
+MONDO_0005101,ulcerative colitis,UBASH3A,0.5806
+MONDO_0005101,ulcerative colitis,FOSL2,0.5801
+MONDO_0005101,ulcerative colitis,CXCR1,0.5800
+MONDO_0005101,ulcerative colitis,PARK7,0.5796
+MONDO_0005101,ulcerative colitis,RASGRP1,0.5688
+MONDO_0005101,ulcerative colitis,ZC3H12C,0.5668
+MONDO_0005101,ulcerative colitis,JAZF1,0.5652
+MONDO_0005101,ulcerative colitis,BACH2,0.5647
+MONDO_0005101,ulcerative colitis,FUT2,0.5647
+MONDO_0005101,ulcerative colitis,TTC34,0.5641
+MONDO_0005101,ulcerative colitis,SEMA6D,0.5632
+MONDO_0005101,ulcerative colitis,NCOR2,0.5631
+MONDO_0005101,ulcerative colitis,IL18RAP,0.5621
+MONDO_0005101,ulcerative colitis,BTBD3,0.5618
+MONDO_0005101,ulcerative colitis,LSP1,0.5598
+MONDO_0005101,ulcerative colitis,TNFRSF6B,0.5561
+MONDO_0005101,ulcerative colitis,DAP,0.5526
+MONDO_0005101,ulcerative colitis,ANK3,0.5505
+MONDO_0005101,ulcerative colitis,PTPN2,0.5500
+MONDO_0005101,ulcerative colitis,ERGIC1,0.5480
+MONDO_0005101,ulcerative colitis,THSD7A,0.5476
+MONDO_0005101,ulcerative colitis,SMURF1,0.5471
+MONDO_0005101,ulcerative colitis,TET2,0.5469
+MONDO_0005101,ulcerative colitis,TPRG1,0.5460
+MONDO_0005101,ulcerative colitis,SOCS1,0.5460
+MONDO_0005101,ulcerative colitis,IFNLR1,0.5456
+MONDO_0005101,ulcerative colitis,NEU4,0.5456
+MONDO_0005101,ulcerative colitis,ITGAL,0.5450
+MONDO_0005101,ulcerative colitis,GALC,0.5433
+MONDO_0005101,ulcerative colitis,PADI4,0.5409
+MONDO_0005101,ulcerative colitis,HSBP1,0.5405
+MONDO_0005101,ulcerative colitis,CRTC3,0.5403
+MONDO_0005101,ulcerative colitis,FADS2,0.5375
+MONDO_0005101,ulcerative colitis,SFMBT1,0.5370
+MONDO_0005101,ulcerative colitis,SLC7A10,0.5365
+MONDO_0005101,ulcerative colitis,MRPS31,0.5363
+MONDO_0005101,ulcerative colitis,FOXI2,0.5354
+MONDO_0005101,ulcerative colitis,IP6K3,0.5347
+MONDO_0005101,ulcerative colitis,MYO16,0.5347
+MONDO_0005101,ulcerative colitis,DAGLB,0.5327
+MONDO_0005101,ulcerative colitis,IL1R1,0.5288
+MONDO_0005101,ulcerative colitis,BANK1,0.5274
+MONDO_0005101,ulcerative colitis,SLC4A3,0.5272
+MONDO_0005101,ulcerative colitis,RGS13,0.5259
+MONDO_0005101,ulcerative colitis,RGS14,0.5240
+MONDO_0005101,ulcerative colitis,HELZ2,0.5231
+MONDO_0005101,ulcerative colitis,SERTAD4,0.5218
+MONDO_0005101,ulcerative colitis,STK38,0.5214
+MONDO_0005101,ulcerative colitis,REL,0.5203
+MONDO_0005101,ulcerative colitis,IFIH1,0.5195
+MONDO_0005101,ulcerative colitis,LMO3,0.5169
+MONDO_0005101,ulcerative colitis,NFIA,0.5168
+MONDO_0005101,ulcerative colitis,PACSIN1,0.5156
+MONDO_0005101,ulcerative colitis,CD200,0.5152
+MONDO_0005101,ulcerative colitis,PTGIR,0.5151
+MONDO_0005101,ulcerative colitis,ALOX5AP,0.5138
+MONDO_0005101,ulcerative colitis,LIME1,0.5113
+MONDO_0005101,ulcerative colitis,GSDMB,0.5103
+MONDO_0005101,ulcerative colitis,VSTM2A,0.5098
+MONDO_0005101,ulcerative colitis,SOX4,0.5092
+MONDO_0005101,ulcerative colitis,CSMD1,0.5091
+MONDO_0005101,ulcerative colitis,POMC,0.5089
+MONDO_0005101,ulcerative colitis,CTSF,0.5072
+MONDO_0005101,ulcerative colitis,CFAP90,0.5069
+MONDO_0005101,ulcerative colitis,CCDC93,0.5040
+MONDO_0005101,ulcerative colitis,KSR1,0.5039
+MONDO_0005101,ulcerative colitis,MYT1L,0.5037
+MONDO_0005101,ulcerative colitis,MAX,0.5011
+MONDO_0005101,ulcerative colitis,IL19,0.5006
+MONDO_0005090,schizophrenia,RGS6,0.9091
+MONDO_0005090,schizophrenia,SLC39A8,0.8946
+MONDO_0005090,schizophrenia,GPM6A,0.8832
+MONDO_0005090,schizophrenia,PJA1,0.8638
+MONDO_0005090,schizophrenia,FURIN,0.8621
+MONDO_0005090,schizophrenia,CACNA1C,0.8615
+MONDO_0005090,schizophrenia,FES,0.8611
+MONDO_0005090,schizophrenia,TMTC1,0.8595
+MONDO_0005090,schizophrenia,NMUR2,0.8569
+MONDO_0005090,schizophrenia,GRM3,0.8553
+MONDO_0005090,schizophrenia,ESAM,0.8540
+MONDO_0005090,schizophrenia,ZNF804A,0.8534
+MONDO_0005090,schizophrenia,BCL11B,0.8493
+MONDO_0005090,schizophrenia,TCF4,0.8472
+MONDO_0005090,schizophrenia,HCN1,0.8406
+MONDO_0005090,schizophrenia,ZNF536,0.8377
+MONDO_0005090,schizophrenia,IMMP2L,0.8320
+MONDO_0005090,schizophrenia,CSMD1,0.8280
+MONDO_0005090,schizophrenia,RORA,0.8224
+MONDO_0005090,schizophrenia,NEGR1,0.8169
+MONDO_0005090,schizophrenia,CA8,0.8159
+MONDO_0005090,schizophrenia,IGSF9B,0.8107
+MONDO_0005090,schizophrenia,MTHFR,0.8058
+MONDO_0005090,schizophrenia,TSNARE1,0.8039
+MONDO_0005090,schizophrenia,CNTN4,0.7994
+MONDO_0005090,schizophrenia,MAD1L1,0.7970
+MONDO_0005090,schizophrenia,KCNV1,0.7951
+MONDO_0005090,schizophrenia,KLF6,0.7947
+MONDO_0005090,schizophrenia,WSCD2,0.7945
+MONDO_0005090,schizophrenia,SHANK3,0.7930
+MONDO_0005090,schizophrenia,SORCS3,0.7929
+MONDO_0005090,schizophrenia,NRXN1,0.7852
+MONDO_0005090,schizophrenia,RTN4R,0.7839
+MONDO_0005090,schizophrenia,SNX19,0.7812
+MONDO_0005090,schizophrenia,SDCCAG8,0.7804
+MONDO_0005090,schizophrenia,BCL11A,0.7801
+MONDO_0005090,schizophrenia,CACNA1I,0.7797
+MONDO_0005090,schizophrenia,PPARGC1A,0.7786
+MONDO_0005090,schizophrenia,KCNQ5,0.7767
+MONDO_0005090,schizophrenia,PRKD1,0.7694
+MONDO_0005090,schizophrenia,ZSWIM6,0.7692
+MONDO_0005090,schizophrenia,SETD1A,0.7620
+MONDO_0005090,schizophrenia,FUT9,0.7605
+MONDO_0005090,schizophrenia,AKT3,0.7600
+MONDO_0005090,schizophrenia,EFNA5,0.7563
+MONDO_0005090,schizophrenia,CALN1,0.7540
+MONDO_0005090,schizophrenia,SATB2,0.7413
+MONDO_0005090,schizophrenia,NRGN,0.7411
+MONDO_0005090,schizophrenia,PODXL,0.7411
+MONDO_0005090,schizophrenia,MAN2A1,0.7402
+MONDO_0005090,schizophrenia,CUL3,0.7381
+MONDO_0005090,schizophrenia,CARMIL1,0.7350
+MONDO_0005090,schizophrenia,KCNB1,0.7327
+MONDO_0005090,schizophrenia,MMP16,0.7317
+MONDO_0005090,schizophrenia,PDE4B,0.7276
+MONDO_0005090,schizophrenia,GRIN2A,0.7266
+MONDO_0005090,schizophrenia,ZFPM2,0.7259
+MONDO_0005090,schizophrenia,SH3RF1,0.7258
+MONDO_0005090,schizophrenia,DPYD,0.7252
+MONDO_0005090,schizophrenia,THOC7,0.7246
+MONDO_0005090,schizophrenia,NCAM1,0.7243
+MONDO_0005090,schizophrenia,PPP1R16B,0.7238
+MONDO_0005090,schizophrenia,GRAMD1B,0.7232
+MONDO_0005090,schizophrenia,POU3F3,0.7212
+MONDO_0005090,schizophrenia,PCDH17,0.7192
+MONDO_0005090,schizophrenia,CPNE1,0.7182
+MONDO_0005090,schizophrenia,SGCD,0.7176
+MONDO_0005090,schizophrenia,GDNF,0.7123
+MONDO_0005090,schizophrenia,CHRNA3,0.7109
+MONDO_0005090,schizophrenia,GALNT10,0.7097
+MONDO_0005090,schizophrenia,MRPS30,0.7088
+MONDO_0005090,schizophrenia,NPAS3,0.7039
+MONDO_0005090,schizophrenia,ITIH3,0.7027
+MONDO_0005090,schizophrenia,TRPS1,0.7020
+MONDO_0005090,schizophrenia,ANXA1,0.7014
+MONDO_0005090,schizophrenia,SEMA6D,0.7003
+MONDO_0005090,schizophrenia,RBM12,0.6961
+MONDO_0005090,schizophrenia,VRK2,0.6948
+MONDO_0005090,schizophrenia,NLGN4X,0.6908
+MONDO_0005090,schizophrenia,NRIP1,0.6902
+MONDO_0005090,schizophrenia,RALGPS1,0.6830
+MONDO_0005090,schizophrenia,SPHKAP,0.6830
+MONDO_0005090,schizophrenia,SOX9,0.6828
+MONDO_0005090,schizophrenia,CBLN2,0.6821
+MONDO_0005090,schizophrenia,KLF10,0.6808
+MONDO_0005090,schizophrenia,UTRN,0.6784
+MONDO_0005090,schizophrenia,TCF7L2,0.6773
+MONDO_0005090,schizophrenia,KCNG2,0.6764
+MONDO_0005090,schizophrenia,APAF1,0.6746
+MONDO_0005090,schizophrenia,KIF18A,0.6739
+MONDO_0005090,schizophrenia,CNKSR2,0.6732
+MONDO_0005090,schizophrenia,BNIP3L,0.6718
+MONDO_0005090,schizophrenia,FOXP1,0.6717
+MONDO_0005090,schizophrenia,NRBF2,0.6692
+MONDO_0005090,schizophrenia,CACNB2,0.6688
+MONDO_0005090,schizophrenia,SPATS2L,0.6670
+MONDO_0005090,schizophrenia,ENOX1,0.6643
+MONDO_0005090,schizophrenia,SNAP91,0.6619
+MONDO_0005090,schizophrenia,TXNL1,0.6596
+MONDO_0005090,schizophrenia,MGAT5,0.6583
+MONDO_0005090,schizophrenia,FHIT,0.6580
+MONDO_0005090,schizophrenia,ATP2A2,0.6577
+MONDO_0005090,schizophrenia,EMB,0.6572
+MONDO_0005090,schizophrenia,RBFOX1,0.6551
+MONDO_0005090,schizophrenia,MSRA,0.6544
+MONDO_0005090,schizophrenia,DRD2,0.6539
+MONDO_0005090,schizophrenia,GIGYF2,0.6515
+MONDO_0005090,schizophrenia,MEF2C,0.6512
+MONDO_0005090,schizophrenia,CUL9,0.6496
+MONDO_0005090,schizophrenia,NFIA,0.6470
+MONDO_0005090,schizophrenia,NXPH1,0.6458
+MONDO_0005090,schizophrenia,ANKS1B,0.6445
+MONDO_0005090,schizophrenia,FOXO3,0.6444
+MONDO_0005090,schizophrenia,ZDHHC2,0.6440
+MONDO_0005090,schizophrenia,CELF4,0.6433
+MONDO_0005090,schizophrenia,YWHAE,0.6409
+MONDO_0005090,schizophrenia,ACE,0.6379
+MONDO_0005090,schizophrenia,C11orf87,0.6377
+MONDO_0005090,schizophrenia,DLX1,0.6365
+MONDO_0005090,schizophrenia,CXXC5,0.6340
+MONDO_0005090,schizophrenia,SYT13,0.6339
+MONDO_0005090,schizophrenia,PPP2R2B,0.6335
+MONDO_0005090,schizophrenia,GGNBP2,0.6285
+MONDO_0005090,schizophrenia,PTBP2,0.6277
+MONDO_0005090,schizophrenia,COA8,0.6276
+MONDO_0005090,schizophrenia,GRIA1,0.6262
+MONDO_0005090,schizophrenia,TTC7B,0.6244
+MONDO_0005090,schizophrenia,EMX1,0.6237
+MONDO_0005090,schizophrenia,BRINP2,0.6227
+MONDO_0005090,schizophrenia,LPP,0.6213
+MONDO_0005090,schizophrenia,ZNF835,0.6211
+MONDO_0005090,schizophrenia,NT5C2,0.6178
+MONDO_0005090,schizophrenia,CLCN3,0.6173
+MONDO_0005090,schizophrenia,STAG1,0.6169
+MONDO_0005090,schizophrenia,DUSP26,0.6167
+MONDO_0005090,schizophrenia,NDST3,0.6150
+MONDO_0005090,schizophrenia,FTO,0.6149
+MONDO_0005090,schizophrenia,RUNDC3B,0.6085
+MONDO_0005090,schizophrenia,VSIG2,0.6062
+MONDO_0005090,schizophrenia,ZCCHC14,0.6046
+MONDO_0005090,schizophrenia,CCDC68,0.6041
+MONDO_0005090,schizophrenia,AS3MT,0.6020
+MONDO_0005090,schizophrenia,CYP2D7,0.6008
+MONDO_0005090,schizophrenia,FXR1,0.5993
+MONDO_0005090,schizophrenia,PLK2,0.5970
+MONDO_0005090,schizophrenia,OSBPL10,0.5961
+MONDO_0005090,schizophrenia,NFIB,0.5957
+MONDO_0005090,schizophrenia,STK24,0.5924
+MONDO_0005090,schizophrenia,ERCC4,0.5910
+MONDO_0005090,schizophrenia,ESR2,0.5886
+MONDO_0005090,schizophrenia,NUF2,0.5872
+MONDO_0005090,schizophrenia,APOE,0.5855
+MONDO_0005090,schizophrenia,ATF7IP,0.5844
+MONDO_0005090,schizophrenia,PTPRD,0.5832
+MONDO_0005090,schizophrenia,CYP26B1,0.5815
+MONDO_0005090,schizophrenia,SNORC,0.5780
+MONDO_0005090,schizophrenia,IRF3,0.5773
+MONDO_0005090,schizophrenia,ZNF365,0.5770
+MONDO_0005090,schizophrenia,ASTN1,0.5756
+MONDO_0005090,schizophrenia,SPATA31D1,0.5703
+MONDO_0005090,schizophrenia,SLC66A2,0.5702
+MONDO_0005090,schizophrenia,PTN,0.5698
+MONDO_0005090,schizophrenia,MYO19,0.5691
+MONDO_0005090,schizophrenia,COPS8,0.5676
+MONDO_0005090,schizophrenia,OPCML,0.5674
+MONDO_0005090,schizophrenia,MYT1L,0.5657
+MONDO_0005090,schizophrenia,NAA11,0.5650
+MONDO_0005090,schizophrenia,SERPING1,0.5641
+MONDO_0005090,schizophrenia,ATXN7,0.5640
+MONDO_0005090,schizophrenia,ZNF823,0.5626
+MONDO_0005090,schizophrenia,PLCB2,0.5616
+MONDO_0005090,schizophrenia,FUT2,0.5609
+MONDO_0005090,schizophrenia,FOXO6,0.5608
+MONDO_0005090,schizophrenia,IRAK1BP1,0.5593
+MONDO_0005090,schizophrenia,PHIP,0.5593
+MONDO_0005090,schizophrenia,DMRTA1,0.5572
+MONDO_0005090,schizophrenia,CAMK1D,0.5550
+MONDO_0005090,schizophrenia,FOXG1,0.5550
+MONDO_0005090,schizophrenia,IGFBP7,0.5518
+MONDO_0005090,schizophrenia,SLTM,0.5510
+MONDO_0005090,schizophrenia,SPRED2,0.5504
+MONDO_0005090,schizophrenia,BTG1,0.5504
+MONDO_0005090,schizophrenia,TFAP2B,0.5503
+MONDO_0005090,schizophrenia,ADAM10,0.5503
+MONDO_0005090,schizophrenia,NRXN3,0.5487
+MONDO_0005090,schizophrenia,TMEM161B,0.5486
+MONDO_0005090,schizophrenia,ERBB4,0.5479
+MONDO_0005090,schizophrenia,PSD3,0.5476
+MONDO_0005090,schizophrenia,IP6K3,0.5430
+MONDO_0005090,schizophrenia,NGEF,0.5424
+MONDO_0005090,schizophrenia,MTRFR,0.5423
+MONDO_0005090,schizophrenia,KCNC2,0.5409
+MONDO_0005090,schizophrenia,FOXP2,0.5404
+MONDO_0005090,schizophrenia,GALNT17,0.5401
+MONDO_0005090,schizophrenia,MROH6,0.5395
+MONDO_0005090,schizophrenia,BBX,0.5393
+MONDO_0005090,schizophrenia,PLCL2,0.5387
+MONDO_0005090,schizophrenia,EYA2,0.5377
+MONDO_0005090,schizophrenia,RERE,0.5374
+MONDO_0005090,schizophrenia,GALNT13,0.5366
+MONDO_0005090,schizophrenia,BMPR1B,0.5366
+MONDO_0005090,schizophrenia,AKAP6,0.5352
+MONDO_0005090,schizophrenia,SLC7A11,0.5347
+MONDO_0005090,schizophrenia,MTNR1B,0.5346
+MONDO_0005090,schizophrenia,NWD2,0.5343
+MONDO_0005090,schizophrenia,ZNF521,0.5342
+MONDO_0005090,schizophrenia,CYP7B1,0.5341
+MONDO_0005090,schizophrenia,CHRM3,0.5336
+MONDO_0005090,schizophrenia,DGKI,0.5334
+MONDO_0005090,schizophrenia,GSDME,0.5334
+MONDO_0005090,schizophrenia,ZNF281,0.5324
+MONDO_0005090,schizophrenia,CENPW,0.5316
+MONDO_0005090,schizophrenia,PTPRF,0.5313
+MONDO_0005090,schizophrenia,LRGUK,0.5311
+MONDO_0005090,schizophrenia,CDH13,0.5310
+MONDO_0005090,schizophrenia,ARHGAP42,0.5306
+MONDO_0005090,schizophrenia,BARHL2,0.5305
+MONDO_0005090,schizophrenia,RAPGEF4,0.5304
+MONDO_0005090,schizophrenia,JRK,0.5294
+MONDO_0005090,schizophrenia,C3orf49,0.5271
+MONDO_0005090,schizophrenia,LYPLAL1,0.5255
+MONDO_0005090,schizophrenia,DCC,0.5249
+MONDO_0005090,schizophrenia,GAS7,0.5239
+MONDO_0005090,schizophrenia,ITGA1,0.5232
+MONDO_0005090,schizophrenia,PEX2,0.5229
+MONDO_0005090,schizophrenia,KLF12,0.5226
+MONDO_0005090,schizophrenia,EPHA5,0.5217
+MONDO_0005090,schizophrenia,PRC1,0.5215
+MONDO_0005090,schizophrenia,ST6GAL1,0.5212
+MONDO_0005090,schizophrenia,PDCD6IP,0.5201
+MONDO_0005090,schizophrenia,CACNA2D1,0.5194
+MONDO_0005090,schizophrenia,SHISA9,0.5185
+MONDO_0005090,schizophrenia,FAM120AOS,0.5183
+MONDO_0005090,schizophrenia,ATXN1,0.5161
+MONDO_0005090,schizophrenia,IL1RAPL1,0.5155
+MONDO_0005090,schizophrenia,HDAC4,0.5152
+MONDO_0005090,schizophrenia,IKBIP,0.5151
+MONDO_0005090,schizophrenia,COL9A3,0.5150
+MONDO_0005090,schizophrenia,STMN2,0.5134
+MONDO_0005090,schizophrenia,B3GAT1,0.5132
+MONDO_0005090,schizophrenia,BAG5,0.5123
+MONDO_0005090,schizophrenia,OXR1,0.5119
+MONDO_0005090,schizophrenia,WBP1L,0.5109
+MONDO_0005090,schizophrenia,CDKN2B,0.5103
+MONDO_0005090,schizophrenia,ZNF860,0.5083
+MONDO_0005090,schizophrenia,STUM,0.5074
+MONDO_0005090,schizophrenia,FBN2,0.5067
+MONDO_0005090,schizophrenia,PTPN14,0.5067
+MONDO_0005090,schizophrenia,ARHGAP15,0.5051
+MONDO_0005090,schizophrenia,GABRB1,0.5028
+MONDO_0005090,schizophrenia,CRHR1,0.5019
+MONDO_0005090,schizophrenia,MRTFA,0.5017
+MONDO_0005090,schizophrenia,IRS1,0.5012
+MONDO_0005090,schizophrenia,RNF122,0.5012
+MONDO_0005090,schizophrenia,TBL1XR1,0.5009
+MONDO_0005010,coronary artery disorder,LDLR,0.9844
+MONDO_0005010,coronary artery disorder,SORT1,0.9798
+MONDO_0005010,coronary artery disorder,SH2B3,0.9729
+MONDO_0005010,coronary artery disorder,APOE,0.9647
+MONDO_0005010,coronary artery disorder,CELSR2,0.9636
+MONDO_0005010,coronary artery disorder,HNF1A,0.9593
+MONDO_0005010,coronary artery disorder,FES,0.9570
+MONDO_0005010,coronary artery disorder,IL6R,0.9551
+MONDO_0005010,coronary artery disorder,APOA5,0.9538
+MONDO_0005010,coronary artery disorder,PCSK9,0.9526
+MONDO_0005010,coronary artery disorder,FN1,0.9488
+MONDO_0005010,coronary artery disorder,JCAD,0.9485
+MONDO_0005010,coronary artery disorder,FLT1,0.9478
+MONDO_0005010,coronary artery disorder,ZC3HC1,0.9469
+MONDO_0005010,coronary artery disorder,FGF5,0.9381
+MONDO_0005010,coronary artery disorder,EDNRA,0.9331
+MONDO_0005010,coronary artery disorder,APOB,0.9329
+MONDO_0005010,coronary artery disorder,REST,0.9322
+MONDO_0005010,coronary artery disorder,ITGB5,0.9317
+MONDO_0005010,coronary artery disorder,ADAMTS7,0.9291
+MONDO_0005010,coronary artery disorder,SERPINA1,0.9286
+MONDO_0005010,coronary artery disorder,LPA,0.9280
+MONDO_0005010,coronary artery disorder,ANGPTL4,0.9260
+MONDO_0005010,coronary artery disorder,TGFB1,0.9253
+MONDO_0005010,coronary artery disorder,HHIPL1,0.9249
+MONDO_0005010,coronary artery disorder,TNS1,0.9173
+MONDO_0005010,coronary artery disorder,FURIN,0.9161
+MONDO_0005010,coronary artery disorder,COL4A1,0.9154
+MONDO_0005010,coronary artery disorder,CDH13,0.9125
+MONDO_0005010,coronary artery disorder,SERPINH1,0.9120
+MONDO_0005010,coronary artery disorder,SCARB1,0.9076
+MONDO_0005010,coronary artery disorder,SEMA5A,0.9073
+MONDO_0005010,coronary artery disorder,ABCG8,0.9065
+MONDO_0005010,coronary artery disorder,FTO,0.9064
+MONDO_0005010,coronary artery disorder,HP,0.9032
+MONDO_0005010,coronary artery disorder,PHACTR1,0.9015
+MONDO_0005010,coronary artery disorder,COL4A2,0.9012
+MONDO_0005010,coronary artery disorder,LIPA,0.9008
+MONDO_0005010,coronary artery disorder,CTAGE1,0.8911
+MONDO_0005010,coronary artery disorder,PROCR,0.8879
+MONDO_0005010,coronary artery disorder,TCF21,0.8840
+MONDO_0005010,coronary artery disorder,LIPC,0.8830
+MONDO_0005010,coronary artery disorder,PLPP3,0.8802
+MONDO_0005010,coronary artery disorder,CDKN2A,0.8772
+MONDO_0005010,coronary artery disorder,ARHGAP42,0.8745
+MONDO_0005010,coronary artery disorder,SLC22A1,0.8734
+MONDO_0005010,coronary artery disorder,PRDM16,0.8706
+MONDO_0005010,coronary artery disorder,ABO,0.8694
+MONDO_0005010,coronary artery disorder,GUCY1A1,0.8655
+MONDO_0005010,coronary artery disorder,PRKCE,0.8628
+MONDO_0005010,coronary artery disorder,LRP6,0.8594
+MONDO_0005010,coronary artery disorder,SLC22A3,0.8554
+MONDO_0005010,coronary artery disorder,FBN2,0.8522
+MONDO_0005010,coronary artery disorder,MPDZ,0.8515
+MONDO_0005010,coronary artery disorder,ZEB2,0.8508
+MONDO_0005010,coronary artery disorder,TCF7L2,0.8501
+MONDO_0005010,coronary artery disorder,TRIM5,0.8485
+MONDO_0005010,coronary artery disorder,MRAS,0.8474
+MONDO_0005010,coronary artery disorder,CTRB1,0.8474
+MONDO_0005010,coronary artery disorder,PECAM1,0.8472
+MONDO_0005010,coronary artery disorder,FIGN,0.8451
+MONDO_0005010,coronary artery disorder,CDKN2B,0.8417
+MONDO_0005010,coronary artery disorder,LPL,0.8405
+MONDO_0005010,coronary artery disorder,UMPS,0.8398
+MONDO_0005010,coronary artery disorder,HDGFL1,0.8379
+MONDO_0005010,coronary artery disorder,ABCG5,0.8361
+MONDO_0005010,coronary artery disorder,DAB2IP,0.8355
+MONDO_0005010,coronary artery disorder,PDE3A,0.8345
+MONDO_0005010,coronary artery disorder,SMAD7,0.8343
+MONDO_0005010,coronary artery disorder,RGL3,0.8324
+MONDO_0005010,coronary artery disorder,C1S,0.8306
+MONDO_0005010,coronary artery disorder,TWIST1,0.8271
+MONDO_0005010,coronary artery disorder,PID1,0.8261
+MONDO_0005010,coronary artery disorder,MEF2A,0.8255
+MONDO_0005010,coronary artery disorder,KCNK5,0.8195
+MONDO_0005010,coronary artery disorder,CDKN1A,0.8192
+MONDO_0005010,coronary artery disorder,ABCA1,0.8167
+MONDO_0005010,coronary artery disorder,SLC2A12,0.8149
+MONDO_0005010,coronary artery disorder,HMBS,0.8131
+MONDO_0005010,coronary artery disorder,PARP12,0.8128
+MONDO_0005010,coronary artery disorder,ATP1B1,0.8091
+MONDO_0005010,coronary artery disorder,FOXC1,0.8085
+MONDO_0005010,coronary artery disorder,ATP2B1,0.8082
+MONDO_0005010,coronary artery disorder,RAB23,0.8072
+MONDO_0005010,coronary artery disorder,TENT5A,0.8064
+MONDO_0005010,coronary artery disorder,HGFAC,0.7988
+MONDO_0005010,coronary artery disorder,PLG,0.7985
+MONDO_0005010,coronary artery disorder,PCCB,0.7966
+MONDO_0005010,coronary artery disorder,C1R,0.7959
+MONDO_0005010,coronary artery disorder,TSPAN14,0.7958
+MONDO_0005010,coronary artery disorder,RAPH1,0.7941
+MONDO_0005010,coronary artery disorder,TBX2,0.7907
+MONDO_0005010,coronary artery disorder,CDC123,0.7872
+MONDO_0005010,coronary artery disorder,ZNF652,0.7864
+MONDO_0005010,coronary artery disorder,CTRB2,0.7864
+MONDO_0005010,coronary artery disorder,TRIB1,0.7828
+MONDO_0005010,coronary artery disorder,PNPLA3,0.7820
+MONDO_0005010,coronary artery disorder,IGF2R,0.7818
+MONDO_0005010,coronary artery disorder,DOK7,0.7808
+MONDO_0005010,coronary artery disorder,CELA2A,0.7789
+MONDO_0005010,coronary artery disorder,SVEP1,0.7779
+MONDO_0005010,coronary artery disorder,MCF2L,0.7777
+MONDO_0005010,coronary artery disorder,FGD5,0.7773
+MONDO_0005010,coronary artery disorder,FHL1,0.7729
+MONDO_0005010,coronary artery disorder,FER,0.7705
+MONDO_0005010,coronary artery disorder,PPARG,0.7696
+MONDO_0005010,coronary artery disorder,SWAP70,0.7693
+MONDO_0005010,coronary artery disorder,WWP2,0.7673
+MONDO_0005010,coronary artery disorder,ADAM19,0.7670
+MONDO_0005010,coronary artery disorder,AGPAT4,0.7656
+MONDO_0005010,coronary artery disorder,PALLD,0.7650
+MONDO_0005010,coronary artery disorder,HTRA1,0.7648
+MONDO_0005010,coronary artery disorder,AFAP1,0.7641
+MONDO_0005010,coronary artery disorder,ZFHX3,0.7626
+MONDO_0005010,coronary artery disorder,FDX1,0.7606
+MONDO_0005010,coronary artery disorder,TBX5,0.7601
+MONDO_0005010,coronary artery disorder,PHB1,0.7596
+MONDO_0005010,coronary artery disorder,NGF,0.7584
+MONDO_0005010,coronary artery disorder,DCLRE1B,0.7578
+MONDO_0005010,coronary artery disorder,IRS1,0.7571
+MONDO_0005010,coronary artery disorder,GMDS,0.7546
+MONDO_0005010,coronary artery disorder,HPR,0.7477
+MONDO_0005010,coronary artery disorder,PDE5A,0.7462
+MONDO_0005010,coronary artery disorder,DOCK5,0.7461
+MONDO_0005010,coronary artery disorder,SEMA3C,0.7454
+MONDO_0005010,coronary artery disorder,CETP,0.7450
+MONDO_0005010,coronary artery disorder,CYP4V2,0.7448
+MONDO_0005010,coronary artery disorder,IRX1,0.7438
+MONDO_0005010,coronary artery disorder,CCM2,0.7436
+MONDO_0005010,coronary artery disorder,ZNF827,0.7430
+MONDO_0005010,coronary artery disorder,PLEKHG1,0.7420
+MONDO_0005010,coronary artery disorder,STN1,0.7409
+MONDO_0005010,coronary artery disorder,MAP1S,0.7384
+MONDO_0005010,coronary artery disorder,APOC3,0.7375
+MONDO_0005010,coronary artery disorder,NAT2,0.7361
+MONDO_0005010,coronary artery disorder,SHROOM3,0.7342
+MONDO_0005010,coronary artery disorder,SOS2,0.7316
+MONDO_0005010,coronary artery disorder,INPP5B,0.7279
+MONDO_0005010,coronary artery disorder,COL6A3,0.7274
+MONDO_0005010,coronary artery disorder,SMAD3,0.7271
+MONDO_0005010,coronary artery disorder,MTAP,0.7269
+MONDO_0005010,coronary artery disorder,GALNT2,0.7252
+MONDO_0005010,coronary artery disorder,BMPR1B,0.7240
+MONDO_0005010,coronary artery disorder,MAP3K4,0.7183
+MONDO_0005010,coronary artery disorder,LOXL4,0.7140
+MONDO_0005010,coronary artery disorder,ST3GAL4,0.7108
+MONDO_0005010,coronary artery disorder,UBASH3B,0.7073
+MONDO_0005010,coronary artery disorder,BTBD16,0.7057
+MONDO_0005010,coronary artery disorder,YBX3,0.7049
+MONDO_0005010,coronary artery disorder,TBX20,0.7036
+MONDO_0005010,coronary artery disorder,DDI1,0.7035
+MONDO_0005010,coronary artery disorder,GNPDA2,0.7016
+MONDO_0005010,coronary artery disorder,MASP1,0.7009
+MONDO_0005010,coronary artery disorder,LIPG,0.7004
+MONDO_0005010,coronary artery disorder,MYH11,0.7000
+MONDO_0005010,coronary artery disorder,NCALD,0.6995
+MONDO_0005010,coronary artery disorder,ARHGAP15,0.6990
+MONDO_0005010,coronary artery disorder,MYO9B,0.6969
+MONDO_0005010,coronary artery disorder,HMGCR,0.6950
+MONDO_0005010,coronary artery disorder,STAG1,0.6921
+MONDO_0005010,coronary artery disorder,ZNF831,0.6904
+MONDO_0005010,coronary artery disorder,ADAMTS9,0.6899
+MONDO_0005010,coronary artery disorder,MFGE8,0.6867
+MONDO_0005010,coronary artery disorder,IRAG1,0.6847
+MONDO_0005010,coronary artery disorder,ITGA1,0.6823
+MONDO_0005010,coronary artery disorder,TMEM41B,0.6812
+MONDO_0005010,coronary artery disorder,VEGFA,0.6810
+MONDO_0005010,coronary artery disorder,EHBP1L1,0.6810
+MONDO_0005010,coronary artery disorder,BEGAIN,0.6803
+MONDO_0005010,coronary artery disorder,MORF4L1,0.6793
+MONDO_0005010,coronary artery disorder,IGF2BP1,0.6791
+MONDO_0005010,coronary artery disorder,PML,0.6791
+MONDO_0005010,coronary artery disorder,ITIH4,0.6780
+MONDO_0005010,coronary artery disorder,GEM,0.6743
+MONDO_0005010,coronary artery disorder,CUX1,0.6718
+MONDO_0005010,coronary artery disorder,BCAS3,0.6694
+MONDO_0005010,coronary artery disorder,HHAT,0.6692
+MONDO_0005010,coronary artery disorder,CRTAC1,0.6692
+MONDO_0005010,coronary artery disorder,PREX1,0.6686
+MONDO_0005010,coronary artery disorder,MMP14,0.6672
+MONDO_0005010,coronary artery disorder,PDGFD,0.6658
+MONDO_0005010,coronary artery disorder,PLCG2,0.6653
+MONDO_0005010,coronary artery disorder,BMAL1,0.6653
+MONDO_0005010,coronary artery disorder,EFNA5,0.6622
+MONDO_0005010,coronary artery disorder,FGD6,0.6604
+MONDO_0005010,coronary artery disorder,POLR2C,0.6603
+MONDO_0005010,coronary artery disorder,MIA3,0.6595
+MONDO_0005010,coronary artery disorder,FHL3,0.6574
+MONDO_0005010,coronary artery disorder,NREP,0.6529
+MONDO_0005010,coronary artery disorder,CPS1,0.6514
+MONDO_0005010,coronary artery disorder,SLC22A2,0.6514
+MONDO_0005010,coronary artery disorder,ZFPM1,0.6512
+MONDO_0005010,coronary artery disorder,KLF2,0.6500
+MONDO_0005010,coronary artery disorder,NPR3,0.6484
+MONDO_0005010,coronary artery disorder,DHX58,0.6469
+MONDO_0005010,coronary artery disorder,RASGRP1,0.6419
+MONDO_0005010,coronary artery disorder,DAB1,0.6416
+MONDO_0005010,coronary artery disorder,CENPW,0.6411
+MONDO_0005010,coronary artery disorder,OPRM1,0.6378
+MONDO_0005010,coronary artery disorder,MAML3,0.6370
+MONDO_0005010,coronary artery disorder,ZNF32,0.6368
+MONDO_0005010,coronary artery disorder,KIAA0040,0.6364
+MONDO_0005010,coronary artery disorder,FBN1,0.6359
+MONDO_0005010,coronary artery disorder,GOSR2,0.6335
+MONDO_0005010,coronary artery disorder,WT1,0.6331
+MONDO_0005010,coronary artery disorder,B9D2,0.6313
+MONDO_0005010,coronary artery disorder,CORO6,0.6286
+MONDO_0005010,coronary artery disorder,MAFB,0.6282
+MONDO_0005010,coronary artery disorder,ADAMTS3,0.6279
+MONDO_0005010,coronary artery disorder,PLCE1,0.6251
+MONDO_0005010,coronary artery disorder,GPSM1,0.6251
+MONDO_0005010,coronary artery disorder,RGS19,0.6242
+MONDO_0005010,coronary artery disorder,TAF1A,0.6239
+MONDO_0005010,coronary artery disorder,INHBC,0.6238
+MONDO_0005010,coronary artery disorder,CFAP161,0.6230
+MONDO_0005010,coronary artery disorder,TFAP2B,0.6204
+MONDO_0005010,coronary artery disorder,MECOM,0.6197
+MONDO_0005010,coronary artery disorder,APOC1,0.6191
+MONDO_0005010,coronary artery disorder,STOML1,0.6187
+MONDO_0005010,coronary artery disorder,NFIB,0.6186
+MONDO_0005010,coronary artery disorder,VWF,0.6176
+MONDO_0005010,coronary artery disorder,SF3A3,0.6153
+MONDO_0005010,coronary artery disorder,CASZ1,0.6129
+MONDO_0005010,coronary artery disorder,PRDM6,0.6105
+MONDO_0005010,coronary artery disorder,ZPR1,0.6103
+MONDO_0005010,coronary artery disorder,UHRF1,0.6076
+MONDO_0005010,coronary artery disorder,EML1,0.6048
+MONDO_0005010,coronary artery disorder,RAI1,0.6048
+MONDO_0005010,coronary artery disorder,NYAP2,0.6018
+MONDO_0005010,coronary artery disorder,PPL,0.6004
+MONDO_0005010,coronary artery disorder,AGT,0.6004
+MONDO_0005010,coronary artery disorder,MITF,0.5992
+MONDO_0005010,coronary artery disorder,ARHGEF26,0.5991
+MONDO_0005010,coronary artery disorder,TDRD15,0.5978
+MONDO_0005010,coronary artery disorder,ZNF268,0.5969
+MONDO_0005010,coronary artery disorder,LSP1,0.5960
+MONDO_0005010,coronary artery disorder,PSRC1,0.5952
+MONDO_0005010,coronary artery disorder,IL1RN,0.5947
+MONDO_0005010,coronary artery disorder,ARHGAP26,0.5936
+MONDO_0005010,coronary artery disorder,ZNF664,0.5928
+MONDO_0005010,coronary artery disorder,PLAUR,0.5922
+MONDO_0005010,coronary artery disorder,EXOC3L2,0.5920
+MONDO_0005010,coronary artery disorder,ALDH2,0.5913
+MONDO_0005010,coronary artery disorder,GIT2,0.5900
+MONDO_0005010,coronary artery disorder,KLF4,0.5896
+MONDO_0005010,coronary artery disorder,GCKR,0.5882
+MONDO_0005010,coronary artery disorder,LRP1,0.5879
+MONDO_0005010,coronary artery disorder,KNG1,0.5874
+MONDO_0005010,coronary artery disorder,SLC16A9,0.5870
+MONDO_0005010,coronary artery disorder,CDON,0.5859
+MONDO_0005010,coronary artery disorder,TCF7L1,0.5844
+MONDO_0005010,coronary artery disorder,KCNE2,0.5837
+MONDO_0005010,coronary artery disorder,AKAP13,0.5830
+MONDO_0005010,coronary artery disorder,SMARCD3,0.5828
+MONDO_0005010,coronary artery disorder,BNC2,0.5820
+MONDO_0005010,coronary artery disorder,IP6K2,0.5816
+MONDO_0005010,coronary artery disorder,VPS33B,0.5801
+MONDO_0005010,coronary artery disorder,CAMK1D,0.5798
+MONDO_0005010,coronary artery disorder,SMG6,0.5793
+MONDO_0005010,coronary artery disorder,SCARA5,0.5793
+MONDO_0005010,coronary artery disorder,SIPA1,0.5785
+MONDO_0005010,coronary artery disorder,HNF4A,0.5780
+MONDO_0005010,coronary artery disorder,PMFBP1,0.5775
+MONDO_0005010,coronary artery disorder,PLEKHH2,0.5770
+MONDO_0005010,coronary artery disorder,FCHO1,0.5762
+MONDO_0005010,coronary artery disorder,MYL2,0.5761
+MONDO_0005010,coronary artery disorder,FBXL17,0.5761
+MONDO_0005010,coronary artery disorder,CCDC69,0.5742
+MONDO_0005010,coronary artery disorder,CARS2,0.5735
+MONDO_0005010,coronary artery disorder,PLTP,0.5733
+MONDO_0005010,coronary artery disorder,PLXND1,0.5730
+MONDO_0005010,coronary artery disorder,LOXL1,0.5718
+MONDO_0005010,coronary artery disorder,OSR1,0.5710
+MONDO_0005010,coronary artery disorder,MC4R,0.5709
+MONDO_0005010,coronary artery disorder,GUCY1A2,0.5699
+MONDO_0005010,coronary artery disorder,SCML4,0.5695
+MONDO_0005010,coronary artery disorder,ZBTB46,0.5691
+MONDO_0005010,coronary artery disorder,DNAJA4,0.5687
+MONDO_0005010,coronary artery disorder,GUCY1B1,0.5673
+MONDO_0005010,coronary artery disorder,CACNB2,0.5672
+MONDO_0005010,coronary artery disorder,OIT3,0.5670
+MONDO_0005010,coronary artery disorder,WNT3,0.5669
+MONDO_0005010,coronary artery disorder,DDX59,0.5664
+MONDO_0005010,coronary artery disorder,DUSP6,0.5664
+MONDO_0005010,coronary artery disorder,MAP3K7CL,0.5658
+MONDO_0005010,coronary artery disorder,MS4A6A,0.5655
+MONDO_0005010,coronary artery disorder,ASTN2,0.5635
+MONDO_0005010,coronary artery disorder,KLHL35,0.5633
+MONDO_0005010,coronary artery disorder,C12orf42,0.5628
+MONDO_0005010,coronary artery disorder,CXCL8,0.5611
+MONDO_0005010,coronary artery disorder,CLEC4M,0.5594
+MONDO_0005010,coronary artery disorder,TMEM184A,0.5589
+MONDO_0005010,coronary artery disorder,SLC23A2,0.5585
+MONDO_0005010,coronary artery disorder,PRIM1,0.5585
+MONDO_0005010,coronary artery disorder,BPTF,0.5576
+MONDO_0005010,coronary artery disorder,PRIM2,0.5551
+MONDO_0005010,coronary artery disorder,CXCL12,0.5547
+MONDO_0005010,coronary artery disorder,ASAP2,0.5546
+MONDO_0005010,coronary artery disorder,TM4SF4,0.5543
+MONDO_0005010,coronary artery disorder,MMP12,0.5541
+MONDO_0005010,coronary artery disorder,LMOD1,0.5522
+MONDO_0005010,coronary artery disorder,ZNF239,0.5508
+MONDO_0005010,coronary artery disorder,NFAT5,0.5499
+MONDO_0005010,coronary artery disorder,ZNF469,0.5494
+MONDO_0005010,coronary artery disorder,HYOU1,0.5492
+MONDO_0005010,coronary artery disorder,SULT1A1,0.5491
+MONDO_0005010,coronary artery disorder,MAPKAPK5,0.5484
+MONDO_0005010,coronary artery disorder,CDKAL1,0.5472
+MONDO_0005010,coronary artery disorder,TUBA3C,0.5469
+MONDO_0005010,coronary artery disorder,TTC29,0.5468
+MONDO_0005010,coronary artery disorder,BLTP3A,0.5449
+MONDO_0005010,coronary artery disorder,ARL15,0.5437
+MONDO_0005010,coronary artery disorder,MSL2,0.5422
+MONDO_0005010,coronary artery disorder,ANKRD55,0.5421
+MONDO_0005010,coronary artery disorder,KCNJ11,0.5418
+MONDO_0005010,coronary artery disorder,NRIP1,0.5417
+MONDO_0005010,coronary artery disorder,FHL5,0.5416
+MONDO_0005010,coronary artery disorder,THSD7A,0.5415
+MONDO_0005010,coronary artery disorder,MACC1,0.5408
+MONDO_0005010,coronary artery disorder,KCTD10,0.5393
+MONDO_0005010,coronary artery disorder,CNTN2,0.5379
+MONDO_0005010,coronary artery disorder,TMOD4,0.5378
+MONDO_0005010,coronary artery disorder,DHX36,0.5360
+MONDO_0005010,coronary artery disorder,CMKLR1,0.5356
+MONDO_0005010,coronary artery disorder,LCN12,0.5349
+MONDO_0005010,coronary artery disorder,SEMA5B,0.5337
+MONDO_0005010,coronary artery disorder,PLCB2,0.5332
+MONDO_0005010,coronary artery disorder,PDE1A,0.5332
+MONDO_0005010,coronary artery disorder,NUDT5,0.5323
+MONDO_0005010,coronary artery disorder,TTC17,0.5316
+MONDO_0005010,coronary artery disorder,TDRKH,0.5311
+MONDO_0005010,coronary artery disorder,TMPRSS11E,0.5310
+MONDO_0005010,coronary artery disorder,VAMP8,0.5306
+MONDO_0005010,coronary artery disorder,FOXP2,0.5304
+MONDO_0005010,coronary artery disorder,FGGY,0.5304
+MONDO_0005010,coronary artery disorder,VWDE,0.5291
+MONDO_0005010,coronary artery disorder,ATP1B3,0.5282
+MONDO_0005010,coronary artery disorder,GGT7,0.5260
+MONDO_0005010,coronary artery disorder,MRTFA,0.5249
+MONDO_0005010,coronary artery disorder,HDLBP,0.5248
+MONDO_0005010,coronary artery disorder,ARVCF,0.5239
+MONDO_0005010,coronary artery disorder,RPH3A,0.5235
+MONDO_0005010,coronary artery disorder,LAMB2,0.5235
+MONDO_0005010,coronary artery disorder,PSTPIP1,0.5227
+MONDO_0005010,coronary artery disorder,ADGRL3,0.5226
+MONDO_0005010,coronary artery disorder,CNTN3,0.5186
+MONDO_0005010,coronary artery disorder,ZNF100,0.5181
+MONDO_0005010,coronary artery disorder,IP6K3,0.5175
+MONDO_0005010,coronary artery disorder,CABCOCO1,0.5168
+MONDO_0005010,coronary artery disorder,IRAK1BP1,0.5164
+MONDO_0005010,coronary artery disorder,PCSK6,0.5158
+MONDO_0005010,coronary artery disorder,DOCK9,0.5155
+MONDO_0005010,coronary artery disorder,AR,0.5154
+MONDO_0005010,coronary artery disorder,RTP1,0.5147
+MONDO_0005010,coronary artery disorder,KIF1A,0.5124
+MONDO_0005010,coronary artery disorder,MEIS1,0.5112
+MONDO_0005010,coronary artery disorder,TIMP2,0.5109
+MONDO_0005010,coronary artery disorder,PCDH17,0.5106
+MONDO_0005010,coronary artery disorder,TSC22D2,0.5105
+MONDO_0005010,coronary artery disorder,RBMX,0.5099
+MONDO_0005010,coronary artery disorder,HHEX,0.5098
+MONDO_0005010,coronary artery disorder,SLC5A3,0.5095
+MONDO_0005010,coronary artery disorder,SYT14,0.5094
+MONDO_0005010,coronary artery disorder,ING1,0.5093
+MONDO_0005010,coronary artery disorder,THSD4,0.5081
+MONDO_0005010,coronary artery disorder,SPPL3,0.5081
+MONDO_0005010,coronary artery disorder,ERBB4,0.5050
+MONDO_0005010,coronary artery disorder,WNT2,0.5047
+MONDO_0005010,coronary artery disorder,WNT9B,0.5045
+MONDO_0005010,coronary artery disorder,ICA1L,0.5042
+MONDO_0005010,coronary artery disorder,IL1F10,0.5041
+MONDO_0005010,coronary artery disorder,TSPAN3,0.5041
+MONDO_0005010,coronary artery disorder,NOP58,0.5041
+MONDO_0005010,coronary artery disorder,DNMT3A,0.5033
+MONDO_0005010,coronary artery disorder,BMP1,0.5031
+MONDO_0005010,coronary artery disorder,PTK7,0.5023
+MONDO_0005010,coronary artery disorder,PODXL,0.5019
+MONDO_0005010,coronary artery disorder,BACE2,0.5016
+MONDO_0005010,coronary artery disorder,CLCN6,0.5016
+MONDO_0005010,coronary artery disorder,MLN,0.5015
+MONDO_0005010,coronary artery disorder,HOPX,0.5011
+MONDO_0005010,coronary artery disorder,HDAC9,0.5009
+MONDO_0007915,systemic lupus erythematosus,TYK2,0.9227
+MONDO_0007915,systemic lupus erythematosus,TREX1,0.9219
+MONDO_0007915,systemic lupus erythematosus,IRF5,0.8886
+MONDO_0007915,systemic lupus erythematosus,NCF2,0.8837
+MONDO_0007915,systemic lupus erythematosus,ATRIP,0.8650
+MONDO_0007915,systemic lupus erythematosus,SHISA5,0.8650
+MONDO_0007915,systemic lupus erythematosus,WDFY4,0.8419
+MONDO_0007915,systemic lupus erythematosus,TNFAIP3,0.8385
+MONDO_0007915,systemic lupus erythematosus,BLK,0.8331
+MONDO_0007915,systemic lupus erythematosus,IL10,0.8298
+MONDO_0007915,systemic lupus erythematosus,ARID5B,0.8141
+MONDO_0007915,systemic lupus erythematosus,SLC15A4,0.8134
+MONDO_0007915,systemic lupus erythematosus,SH2B3,0.8088
+MONDO_0007915,systemic lupus erythematosus,DNASE1L3,0.8043
+MONDO_0007915,systemic lupus erythematosus,CCR1,0.8012
+MONDO_0007915,systemic lupus erythematosus,TNIP1,0.7958
+MONDO_0007915,systemic lupus erythematosus,RASGRP3,0.7933
+MONDO_0007915,systemic lupus erythematosus,TNFSF4,0.7871
+MONDO_0007915,systemic lupus erythematosus,JAZF1,0.7809
+MONDO_0007915,systemic lupus erythematosus,BACH2,0.7782
+MONDO_0007915,systemic lupus erythematosus,TLR7,0.7747
+MONDO_0007915,systemic lupus erythematosus,IKBKE,0.7739
+MONDO_0007915,systemic lupus erythematosus,FUT2,0.7728
+MONDO_0007915,systemic lupus erythematosus,IRF8,0.7659
+MONDO_0007915,systemic lupus erythematosus,IRAK1,0.7647
+MONDO_0007915,systemic lupus erythematosus,LBH,0.7617
+MONDO_0007915,systemic lupus erythematosus,DGKQ,0.7582
+MONDO_0007915,systemic lupus erythematosus,STAT4,0.7576
+MONDO_0007915,systemic lupus erythematosus,CTLA4,0.7545
+MONDO_0007915,systemic lupus erythematosus,CCR3,0.7502
+MONDO_0007915,systemic lupus erythematosus,CD44,0.7494
+MONDO_0007915,systemic lupus erythematosus,PTPN22,0.7419
+MONDO_0007915,systemic lupus erythematosus,ETS1,0.7282
+MONDO_0007915,systemic lupus erythematosus,FAM167A,0.7223
+MONDO_0007915,systemic lupus erythematosus,RASGRP1,0.7064
+MONDO_0007915,systemic lupus erythematosus,CD226,0.7042
+MONDO_0007915,systemic lupus erythematosus,BANK1,0.7035
+MONDO_0007915,systemic lupus erythematosus,IKZF2,0.6965
+MONDO_0007915,systemic lupus erythematosus,FCGR2A,0.6915
+MONDO_0007915,systemic lupus erythematosus,MGAT5,0.6846
+MONDO_0007915,systemic lupus erythematosus,TET3,0.6743
+MONDO_0007915,systemic lupus erythematosus,IL2RA,0.6701
+MONDO_0007915,systemic lupus erythematosus,GTF2I,0.6689
+MONDO_0007915,systemic lupus erythematosus,IL12RB2,0.6632
+MONDO_0007915,systemic lupus erythematosus,RAD51B,0.6609
+MONDO_0007915,systemic lupus erythematosus,AHNAK2,0.6593
+MONDO_0007915,systemic lupus erythematosus,TRIB2,0.6565
+MONDO_0007915,systemic lupus erythematosus,IRF7,0.6528
+MONDO_0007915,systemic lupus erythematosus,DUSP22,0.6515
+MONDO_0007915,systemic lupus erythematosus,LYST,0.6504
+MONDO_0007915,systemic lupus erythematosus,IKBKB,0.6464
+MONDO_0007915,systemic lupus erythematosus,ST8SIA4,0.6445
+MONDO_0007915,systemic lupus erythematosus,MFSD6,0.6375
+MONDO_0007915,systemic lupus erythematosus,SPRED2,0.6367
+MONDO_0007915,systemic lupus erythematosus,IL12A,0.6270
+MONDO_0007915,systemic lupus erythematosus,CCL22,0.6234
+MONDO_0007915,systemic lupus erythematosus,TERT,0.6153
+MONDO_0007915,systemic lupus erythematosus,TCF7,0.6148
+MONDO_0007915,systemic lupus erythematosus,CLEC16A,0.6106
+MONDO_0007915,systemic lupus erythematosus,PTPRC,0.6099
+MONDO_0007915,systemic lupus erythematosus,FRMD4A,0.6090
+MONDO_0007915,systemic lupus erythematosus,C1R,0.6079
+MONDO_0007915,systemic lupus erythematosus,SAT1,0.6079
+MONDO_0007915,systemic lupus erythematosus,IGHG1,0.6079
+MONDO_0007915,systemic lupus erythematosus,DMRTA1,0.6033
+MONDO_0007915,systemic lupus erythematosus,DNASE1,0.6030
+MONDO_0007915,systemic lupus erythematosus,IL7R,0.6027
+MONDO_0007915,systemic lupus erythematosus,FCGR2B,0.5992
+MONDO_0007915,systemic lupus erythematosus,KLF2,0.5965
+MONDO_0007915,systemic lupus erythematosus,CFH,0.5924
+MONDO_0007915,systemic lupus erythematosus,ITGAM,0.5886
+MONDO_0007915,systemic lupus erythematosus,FLT3,0.5883
+MONDO_0007915,systemic lupus erythematosus,CD40,0.5882
+MONDO_0007915,systemic lupus erythematosus,CDKN1B,0.5878
+MONDO_0007915,systemic lupus erythematosus,CD83,0.5810
+MONDO_0007915,systemic lupus erythematosus,GPD2,0.5793
+MONDO_0007915,systemic lupus erythematosus,ELF1,0.5719
+MONDO_0007915,systemic lupus erythematosus,TPCN2,0.5715
+MONDO_0007915,systemic lupus erythematosus,IFIH1,0.5708
+MONDO_0007915,systemic lupus erythematosus,IL12B,0.5631
+MONDO_0007915,systemic lupus erythematosus,ITGAX,0.5629
+MONDO_0007915,systemic lupus erythematosus,APCDD1,0.5608
+MONDO_0007915,systemic lupus erythematosus,SCUBE3,0.5558
+MONDO_0007915,systemic lupus erythematosus,RGS1,0.5557
+MONDO_0007915,systemic lupus erythematosus,LRRC18,0.5542
+MONDO_0007915,systemic lupus erythematosus,GLT1D1,0.5484
+MONDO_0007915,systemic lupus erythematosus,ENG,0.5471
+MONDO_0007915,systemic lupus erythematosus,CLVS1,0.5470
+MONDO_0007915,systemic lupus erythematosus,ATXN1,0.5459
+MONDO_0007915,systemic lupus erythematosus,MYC,0.5457
+MONDO_0007915,systemic lupus erythematosus,THBS3,0.5430
+MONDO_0007915,systemic lupus erythematosus,AGPAT4,0.5419
+MONDO_0007915,systemic lupus erythematosus,IKZF1,0.5379
+MONDO_0007915,systemic lupus erythematosus,KIT,0.5377
+MONDO_0007915,systemic lupus erythematosus,NSRP1,0.5363
+MONDO_0007915,systemic lupus erythematosus,GPR78,0.5323
+MONDO_0007915,systemic lupus erythematosus,AFF1,0.5323
+MONDO_0007915,systemic lupus erythematosus,TNFSF15,0.5323
+MONDO_0007915,systemic lupus erythematosus,RMI2,0.5319
+MONDO_0007915,systemic lupus erythematosus,PRDM1,0.5308
+MONDO_0007915,systemic lupus erythematosus,PGBD5,0.5256
+MONDO_0007915,systemic lupus erythematosus,ETV3,0.5239
+MONDO_0007915,systemic lupus erythematosus,SLITRK6,0.5232
+MONDO_0007915,systemic lupus erythematosus,TASL,0.5228
+MONDO_0007915,systemic lupus erythematosus,ARHGAP24,0.5224
+MONDO_0007915,systemic lupus erythematosus,BCL2L11,0.5218
+MONDO_0007915,systemic lupus erythematosus,NR2F1,0.5215
+MONDO_0007915,systemic lupus erythematosus,TSLIG3B,0.5214
+MONDO_0007915,systemic lupus erythematosus,PAPPA,0.5205
+MONDO_0007915,systemic lupus erythematosus,CD80,0.5185
+MONDO_0007915,systemic lupus erythematosus,ARHGAP15,0.5177
+MONDO_0007915,systemic lupus erythematosus,JAK2,0.5168
+MONDO_0007915,systemic lupus erythematosus,GPR19,0.5131
+MONDO_0007915,systemic lupus erythematosus,GFI1,0.5122
+MONDO_0007915,systemic lupus erythematosus,TNPO3,0.5120
+MONDO_0007915,systemic lupus erythematosus,XKR6,0.5116
+MONDO_0007915,systemic lupus erythematosus,SIGLEC5,0.5112
+MONDO_0007915,systemic lupus erythematosus,SYNGR1,0.5096
+MONDO_0007915,systemic lupus erythematosus,TRAF3,0.5077
+MONDO_0007915,systemic lupus erythematosus,DNMT3A,0.5076
+MONDO_0007915,systemic lupus erythematosus,MED13,0.5055
+MONDO_0007915,systemic lupus erythematosus,ZNF33B,0.5055
+MONDO_0007915,systemic lupus erythematosus,CLNK,0.5040
+MONDO_0007915,systemic lupus erythematosus,TNFRSF13B,0.5040
+MONDO_0007915,systemic lupus erythematosus,ZNF831,0.5038
+MONDO_0007915,systemic lupus erythematosus,CDC14C,0.5037
+MONDO_0007915,systemic lupus erythematosus,C10orf105,0.5036
+MONDO_0007915,systemic lupus erythematosus,GTF2IRD1,0.5015
+MONDO_0005083,psoriasis,IL12B,0.9757
+MONDO_0005083,psoriasis,TYK2,0.9719
+MONDO_0005083,psoriasis,TRAF3IP2,0.9559
+MONDO_0005083,psoriasis,EGFL8,0.9420
+MONDO_0005083,psoriasis,IL23R,0.9314
+MONDO_0005083,psoriasis,CARD14,0.9267
+MONDO_0005083,psoriasis,IL13,0.9220
+MONDO_0005083,psoriasis,SH2B3,0.9071
+MONDO_0005083,psoriasis,ZC3H12C,0.8993
+MONDO_0005083,psoriasis,ELMO1,0.8976
+MONDO_0005083,psoriasis,IL36RN,0.8958
+MONDO_0005083,psoriasis,PLCL2,0.8772
+MONDO_0005083,psoriasis,IFNLR1,0.8766
+MONDO_0005083,psoriasis,FAM8A1,0.8758
+MONDO_0005083,psoriasis,NFKBIA,0.8746
+MONDO_0005083,psoriasis,DENND1B,0.8689
+MONDO_0005083,psoriasis,NOS2,0.8629
+MONDO_0005083,psoriasis,CDKAL1,0.8467
+MONDO_0005083,psoriasis,KLF13,0.8446
+MONDO_0005083,psoriasis,SOCS1,0.8428
+MONDO_0005083,psoriasis,IL2RA,0.8402
+MONDO_0005083,psoriasis,TNFAIP3,0.8391
+MONDO_0005083,psoriasis,ERAP1,0.8121
+MONDO_0005083,psoriasis,FUT2,0.8103
+MONDO_0005083,psoriasis,PRR5L,0.8076
+MONDO_0005083,psoriasis,ETS1,0.8033
+MONDO_0005083,psoriasis,RUNX3,0.8033
+MONDO_0005083,psoriasis,IRF1,0.7987
+MONDO_0005083,psoriasis,IKBKE,0.7948
+MONDO_0005083,psoriasis,IFIH1,0.7887
+MONDO_0005083,psoriasis,REL,0.7829
+MONDO_0005083,psoriasis,JAZF1,0.7817
+MONDO_0005083,psoriasis,TNRC18,0.7687
+MONDO_0005083,psoriasis,USP8,0.7660
+MONDO_0005083,psoriasis,B3GNT2,0.7635
+MONDO_0005083,psoriasis,TNFSF15,0.7624
+MONDO_0005083,psoriasis,TAGAP,0.7571
+MONDO_0005083,psoriasis,C1orf141,0.7539
+MONDO_0005083,psoriasis,TNIP1,0.7415
+MONDO_0005083,psoriasis,CCDC88B,0.7382
+MONDO_0005083,psoriasis,CAMK2G,0.7244
+MONDO_0005083,psoriasis,PTPN2,0.7122
+MONDO_0005083,psoriasis,BACH2,0.7036
+MONDO_0005083,psoriasis,PTPN22,0.7014
+MONDO_0005083,psoriasis,TCF7L2,0.6947
+MONDO_0005083,psoriasis,KLRK1,0.6941
+MONDO_0005083,psoriasis,RAD51B,0.6921
+MONDO_0005083,psoriasis,RGS14,0.6855
+MONDO_0005083,psoriasis,IRF5,0.6850
+MONDO_0005083,psoriasis,TRIB1,0.6772
+MONDO_0005083,psoriasis,FUBP1,0.6721
+MONDO_0005083,psoriasis,SPOCK1,0.6708
+MONDO_0005083,psoriasis,POU2F3,0.6696
+MONDO_0005083,psoriasis,SMAD3,0.6653
+MONDO_0005083,psoriasis,RNF114,0.6607
+MONDO_0005083,psoriasis,PTGER4,0.6524
+MONDO_0005083,psoriasis,EBF1,0.6522
+MONDO_0005083,psoriasis,XCL2,0.6485
+MONDO_0005083,psoriasis,AP1S3,0.6464
+MONDO_0005083,psoriasis,IL4R,0.6395
+MONDO_0005083,psoriasis,POLI,0.6359
+MONDO_0005083,psoriasis,SLC60A2,0.6251
+MONDO_0005083,psoriasis,PRDM1,0.6199
+MONDO_0005083,psoriasis,HHEX,0.6199
+MONDO_0005083,psoriasis,HINT1,0.6145
+MONDO_0005083,psoriasis,MED15,0.6037
+MONDO_0005083,psoriasis,TNFRSF1A,0.6013
+MONDO_0005083,psoriasis,SPATA2,0.6006
+MONDO_0005083,psoriasis,IL6R,0.6002
+MONDO_0005083,psoriasis,FTO,0.5987
+MONDO_0005083,psoriasis,CD6,0.5985
+MONDO_0005083,psoriasis,IL7R,0.5955
+MONDO_0005083,psoriasis,NFKB1,0.5918
+MONDO_0005083,psoriasis,CD40,0.5891
+MONDO_0005083,psoriasis,OSTM1,0.5880
+MONDO_0005083,psoriasis,SNAI1,0.5877
+MONDO_0005083,psoriasis,AGK,0.5841
+MONDO_0005083,psoriasis,PLAU,0.5835
+MONDO_0005083,psoriasis,RNF145,0.5833
+MONDO_0005083,psoriasis,GPR183,0.5811
+MONDO_0005083,psoriasis,UBASH3A,0.5806
+MONDO_0005083,psoriasis,FOSL2,0.5801
+MONDO_0005083,psoriasis,IPMK,0.5795
+MONDO_0005083,psoriasis,GSTCD,0.5770
+MONDO_0005083,psoriasis,GPR35,0.5738
+MONDO_0005083,psoriasis,TBC1D32,0.5733
+MONDO_0005083,psoriasis,NFATC2,0.5730
+MONDO_0005083,psoriasis,XCL1,0.5717
+MONDO_0005083,psoriasis,CXCR2,0.5710
+MONDO_0005083,psoriasis,STAP2,0.5708
+MONDO_0005083,psoriasis,IL4,0.5698
+MONDO_0005083,psoriasis,BAZ1A,0.5681
+MONDO_0005083,psoriasis,NOD2,0.5673
+MONDO_0005083,psoriasis,EXOC2,0.5658
+MONDO_0005083,psoriasis,SLC30A8,0.5641
+MONDO_0005083,psoriasis,KCNH7,0.5636
+MONDO_0005083,psoriasis,TLR4,0.5630
+MONDO_0005083,psoriasis,IL10,0.5602
+MONDO_0005083,psoriasis,IL12RB2,0.5561
+MONDO_0005083,psoriasis,IL21,0.5555
+MONDO_0005083,psoriasis,CLINT1,0.5547
+MONDO_0005083,psoriasis,STXBP4,0.5513
+MONDO_0005083,psoriasis,SPHK2,0.5494
+MONDO_0005083,psoriasis,SP140,0.5478
+MONDO_0005083,psoriasis,BBS7,0.5465
+MONDO_0005083,psoriasis,PTPN11,0.5450
+MONDO_0005083,psoriasis,PRKCB,0.5429
+MONDO_0005083,psoriasis,KCNJ11,0.5428
+MONDO_0005083,psoriasis,NR5A2,0.5428
+MONDO_0005083,psoriasis,MFN2,0.5398
+MONDO_0005083,psoriasis,SLC39A11,0.5378
+MONDO_0005083,psoriasis,LEKR1,0.5363
+MONDO_0005083,psoriasis,SATB1,0.5350
+MONDO_0005083,psoriasis,PLXNC1,0.5333
+MONDO_0005083,psoriasis,SYNE2,0.5317
+MONDO_0005083,psoriasis,INAVA,0.5309
+MONDO_0005083,psoriasis,RIGI,0.5292
+MONDO_0005083,psoriasis,BANK1,0.5274
+MONDO_0005083,psoriasis,PRKRA,0.5239
+MONDO_0005083,psoriasis,CARD9,0.5226
+MONDO_0005083,psoriasis,LYRM7,0.5214
+MONDO_0005083,psoriasis,RASGRP1,0.5204
+MONDO_0005083,psoriasis,SCG2,0.5191
+MONDO_0005083,psoriasis,CSF2RB,0.5136
+MONDO_0005083,psoriasis,BEND3,0.5121
+MONDO_0005083,psoriasis,CCDC122,0.5094
+MONDO_0005083,psoriasis,SLC9A8,0.5093
+MONDO_0005083,psoriasis,ACER2,0.5089
+MONDO_0005083,psoriasis,NRSN1,0.5085
+MONDO_0005083,psoriasis,MST1,0.5065
+MONDO_0005083,psoriasis,KSR1,0.5039
+MONDO_0005083,psoriasis,RPL6,0.5028
+MONDO_0005083,psoriasis,IL18R1,0.5028
+MONDO_0004985,bipolar disorder,ANK3,0.8609
+MONDO_0004985,bipolar disorder,CACNA1C,0.8522
+MONDO_0004985,bipolar disorder,THSD7A,0.8172
+MONDO_0004985,bipolar disorder,FES,0.8101
+MONDO_0004985,bipolar disorder,NEGR1,0.7962
+MONDO_0004985,bipolar disorder,GRIN2A,0.7894
+MONDO_0004985,bipolar disorder,LMAN2L,0.7886
+MONDO_0004985,bipolar disorder,NMUR2,0.7798
+MONDO_0004985,bipolar disorder,BCL11B,0.7757
+MONDO_0004985,bipolar disorder,GSDME,0.7663
+MONDO_0004985,bipolar disorder,CD40,0.7649
+MONDO_0004985,bipolar disorder,ADCY2,0.7629
+MONDO_0004985,bipolar disorder,DRD2,0.7618
+MONDO_0004985,bipolar disorder,FURIN,0.7463
+MONDO_0004985,bipolar disorder,MAD1L1,0.7401
+MONDO_0004985,bipolar disorder,SCN2A,0.7349
+MONDO_0004985,bipolar disorder,TCF4,0.7319
+MONDO_0004985,bipolar disorder,MSRA,0.7281
+MONDO_0004985,bipolar disorder,GRM3,0.7190
+MONDO_0004985,bipolar disorder,RGS6,0.7132
+MONDO_0004985,bipolar disorder,NUF2,0.7003
+MONDO_0004985,bipolar disorder,APAF1,0.6977
+MONDO_0004985,bipolar disorder,CNNM4,0.6925
+MONDO_0004985,bipolar disorder,TENM4,0.6914
+MONDO_0004985,bipolar disorder,GCKR,0.6892
+MONDO_0004985,bipolar disorder,TSNARE1,0.6759
+MONDO_0004985,bipolar disorder,KCNB1,0.6753
+MONDO_0004985,bipolar disorder,SLC39A8,0.6746
+MONDO_0004985,bipolar disorder,ITIH3,0.6739
+MONDO_0004985,bipolar disorder,LRFN5,0.6681
+MONDO_0004985,bipolar disorder,OLFM4,0.6674
+MONDO_0004985,bipolar disorder,FLRT3,0.6656
+MONDO_0004985,bipolar disorder,SHANK2,0.6622
+MONDO_0004985,bipolar disorder,RBFOX1,0.6609
+MONDO_0004985,bipolar disorder,FUBP1,0.6605
+MONDO_0004985,bipolar disorder,ANKS1B,0.6549
+MONDO_0004985,bipolar disorder,CNTN4,0.6530
+MONDO_0004985,bipolar disorder,STARD9,0.6527
+MONDO_0004985,bipolar disorder,SORCS3,0.6487
+MONDO_0004985,bipolar disorder,NFIA,0.6448
+MONDO_0004985,bipolar disorder,ALOX5AP,0.6422
+MONDO_0004985,bipolar disorder,PAX5,0.6322
+MONDO_0004985,bipolar disorder,CDK5RAP2,0.6282
+MONDO_0004985,bipolar disorder,CTSF,0.6143
+MONDO_0004985,bipolar disorder,SPATS2L,0.6105
+MONDO_0004985,bipolar disorder,SYNE1,0.6090
+MONDO_0004985,bipolar disorder,NPAS3,0.6082
+MONDO_0004985,bipolar disorder,DCLK3,0.6016
+MONDO_0004985,bipolar disorder,PAX6,0.6008
+MONDO_0004985,bipolar disorder,FAM53C,0.5827
+MONDO_0004985,bipolar disorder,PJA1,0.5826
+MONDO_0004985,bipolar disorder,ZNF608,0.5816
+MONDO_0004985,bipolar disorder,TENM2,0.5763
+MONDO_0004985,bipolar disorder,ELAVL2,0.5700
+MONDO_0004985,bipolar disorder,DOCK2,0.5685
+MONDO_0004985,bipolar disorder,CADM2,0.5668
+MONDO_0004985,bipolar disorder,CACNB2,0.5646
+MONDO_0004985,bipolar disorder,IKBIP,0.5571
+MONDO_0004985,bipolar disorder,ZNF804A,0.5566
+MONDO_0004985,bipolar disorder,MRPS33,0.5522
+MONDO_0004985,bipolar disorder,SNAP91,0.5509
+MONDO_0004985,bipolar disorder,FADS2,0.5494
+MONDO_0004985,bipolar disorder,TOE1,0.5487
+MONDO_0004985,bipolar disorder,VRK2,0.5439
+MONDO_0004985,bipolar disorder,SETBP1,0.5419
+MONDO_0004985,bipolar disorder,SSBP2,0.5396
+MONDO_0004985,bipolar disorder,SOX5,0.5351
+MONDO_0004985,bipolar disorder,MCHR1,0.5349
+MONDO_0004985,bipolar disorder,SNTB1,0.5341
+MONDO_0004985,bipolar disorder,SEMA6A,0.5320
+MONDO_0004985,bipolar disorder,SP4,0.5318
+MONDO_0004985,bipolar disorder,HLF,0.5317
+MONDO_0004985,bipolar disorder,SHISA9,0.5302
+MONDO_0004985,bipolar disorder,TFAP2B,0.5295
+MONDO_0004985,bipolar disorder,NGEF,0.5292
+MONDO_0004985,bipolar disorder,ERCC4,0.5261
+MONDO_0004985,bipolar disorder,ATP1B3,0.5250
+MONDO_0004985,bipolar disorder,ESAM,0.5244
+MONDO_0004985,bipolar disorder,RNF180,0.5239
+MONDO_0004985,bipolar disorder,WFDC12,0.5230
+MONDO_0004985,bipolar disorder,PMFBP1,0.5190
+MONDO_0004985,bipolar disorder,ASTN1,0.5173
+MONDO_0004985,bipolar disorder,MACROD2,0.5158
+MONDO_0004985,bipolar disorder,RSRC1,0.5153
+MONDO_0004985,bipolar disorder,XPNPEP1,0.5124
+MONDO_0004985,bipolar disorder,SOX6,0.5118
+MONDO_0004985,bipolar disorder,AQP9,0.5115
+MONDO_0004985,bipolar disorder,NMB,0.5068
+MONDO_0004985,bipolar disorder,PCDH18,0.5058
+MONDO_0004985,bipolar disorder,MSR1,0.5052
