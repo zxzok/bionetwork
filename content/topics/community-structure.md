@@ -211,7 +211,7 @@ Traag、Waltman 与 van Eck（2019）指出 Louvain 有一个长期被忽视的�
 ::: {.callout-warn}
 - 两者都含有随机性（节点访问顺序、细化中的随机合并），不同运行可能给出不同结果；应固定随机种子以便复现，并用多次运行评估稳定性。
 - Leiden 保证的是**连通性**，不是**正确性**：它同样继承模块度的分辨率极限和简并性。
-- 较新版本的 NetworkX（本站环境为 3.7）提供 `leiden_communities`，但其默认质量函数是 CPM 而非模块度（`metric="cpm"`, `resolution=1`），对无权网络几乎只会返回单点社团；用模块度时应显式设置 `metric="modularity"`。官方实现见 `leidenalg`（基于 igraph）。
+- NetworkX 从 3.7 起提供纯 Python 实现的 `leiden_communities`（3.5、3.6 中只有接口，须安装后端才能运行；本站环境为 3.7），但其默认质量函数是 CPM 而非模块度（`metric="cpm"`, `resolution=1`），对无权网络几乎只会返回单点社团；用模块度时应显式设置 `metric="modularity"`。官方实现见 `leidenalg`（基于 igraph）。
 :::
 
 ### 质量函数的选择：模块度与常数 Potts 模型

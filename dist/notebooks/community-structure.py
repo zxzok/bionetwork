@@ -1,4 +1,4 @@
-# 依赖：networkx（leiden_communities 需较新版本；本站环境为 3.7）, numpy, scipy, matplotlib
+# 依赖：networkx（leiden_communities 的纯 Python 实现与 metric 参数需 3.7 及以上；本站环境为 3.7）, numpy, scipy, matplotlib
 # 数据：Zachary 空手道俱乐部网络（NetworkX 内置 karate_club_graph()；节点属性 "club" 记录
 #       分裂后每个成员所在的一派，"Mr. Hi" 为教练一派）。此处去掉边权，按无权网络计算。
 #       另有“两个三角形 + 一条桥”等手写小网络，以及由代码生成的 ER 随机网络、随机块模型（SBM）、

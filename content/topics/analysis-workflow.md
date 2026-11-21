@@ -405,7 +405,7 @@ NetworkX 3 起支持“后端分派”：安装 nx-parallel（基于 joblib 的�
 | 微生物共现 | 组成数据（相对丰度）直接求相关会产生虚假相关，应使用针对组成数据的方法 |
 
 ::: {.callout-warn}
-**数据获取与合规**：HCP 数据需注册 ConnectomeDB 并同意其数据使用条款，个体数据不得再分发；DisGeNET 的免费学术许可只含人工审编数据，需申请；DrugBank 的学术下载需注册，近期可能暂停，可考虑 DGIdb 等替代来源（见[疾病模块、网络邻近度与药物重定位](network-medicine.html)的延伸资源）。初次分析可以先从下载即得的数据入手，例如 STRING 的人类 PPI 文件、TRRUST v2 转录调控关系、ENIGMA Toolbox 内置的 HCP 组平均连接组矩阵。不要把含个人信息的数据上传到任何公共平台或 AI 工具。
+**数据获取与合规**：HCP 数据需注册 ConnectomeDB 并同意其数据使用条款，个体数据不得再分发；DisGeNET 的免费学术许可只含人工审编数据，需申请；DrugBank 的学术下载需注册，目前暂停（截至 2026 年 11 月），可考虑 DGIdb 等替代来源（见[疾病模块、网络邻近度与药物重定位](network-medicine.html)的延伸资源）。初次分析可以先从下载即得的数据入手，例如 STRING 的人类 PPI 文件、TRRUST v2 转录调控关系、ENIGMA Toolbox 内置的 HCP 组平均连接组矩阵。不要把含个人信息的数据上传到任何公共平台或 AI 工具。
 :::
 
 ## 数学推导与算法 {#derivations}

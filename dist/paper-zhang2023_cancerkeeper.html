@@ -102,7 +102,7 @@ href="controllability.author-team-research.html">驱动节点的枚举、分类�
 2</strong>：把所有边反向得到转置网络，转置网络的头节点就是原网络的尾节点（二分图边集不变，最大匹配一一对应，控制路径只是方向相反）。</li>
 </ul>
 <p>于是：<strong>既不可能当头、也不可能当尾的节点，必然在所有方案中都是中间节点</strong>，即控制枢纽。算法复杂度为
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false" form="prefix">(</mo><msup><mi>n</mi><mn>3</mn></msup><mi>m</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">O(n^3m)</annotation></semantics></math>；识别敏感
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false" form="prefix">(</mo><mi>n</mi><mi>m</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">O(nm)</annotation></semantics></math>；识别敏感
 CKG 只需逐条删边重算，最坏复杂度
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false" form="prefix">(</mo><msup><mi>n</mi><mn>0.5</mn></msup><msup><mi>m</mi><mn>2</mn></msup><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">O(n^{0.5}m^2)</annotation></semantics></math>。</p>
 <p><strong>小例子</strong>：链

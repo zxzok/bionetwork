@@ -40,7 +40,7 @@
   questions: 在人群尺度上研究脑结构与功能连接和遗传、生活方式、疾病结局的关联；为脑网络指标提供大样本参照。
   data: 大规模人群队列，包括问卷、体格测量、生物样本、基因组、健康记录关联数据，以及部分参与者的脑、心脏与全身影像；影像衍生指标（IDP）中包含功能连接矩阵等。
   access: 须经 UK Biobank Access Management System 注册并提交研究申请，获批后在其研究分析平台中使用数据。
-  limits: 仅限经审核的健康相关、符合公共利益的研究，需申请并按数据层级缴费；官网显示新申请目前暂停，计划于 2026 年底恢复，以官方说明为准。不可自由下载或转发数据。
+  limits: 仅限经审核的健康相关、符合公共利益的研究，需申请并按数据层级缴费；官网显示新研究项目申请目前暂停，目标是 2026 年底恢复，尚未公布确定日期（截至 2026 年 11 月），以官方说明为准。不可自由下载或转发数据。
   tools: UK Biobank Research Analysis Platform、FSL（影像流程）、Python/R
   cite: '常用引用：Sudlow C, et al. UK Biobank: an open access resource ... PLoS Med 2015. DOI: 10.1371/journal.pmed.1001779；影像数据：Miller KL, et al. Nat Neurosci 2016. DOI: 10.1038/nn.4393。具体引用与致谢要求以申请协议为准。'
   topics: [brain-connectome, network-medicine]
@@ -482,7 +482,7 @@
   questions: 构建药物–靶点网络；计算药物靶点与疾病模块的网络邻近度，用于药物重定位假设。
   data: 已批准与在研药物的结构、靶点、酶、转运体及药理注释（XML/CSV）。
   access: 网页检索免费；学术下载需注册并申请学术许可。
-  limits: 学术许可免费，限学术、非商业目的；“开放数据”子集为 CC BY-NC 4.0。官网显示学术数据下载目前暂停，以官方说明为准。商业使用须购买许可。
+  limits: 学术许可免费，限学术、非商业目的；“开放数据”子集为 CC BY-NC 4.0。官网显示所有学术数据下载目前暂停（正在调整数据分发方式，未公布恢复日期；截至 2026 年 11 月），以官方说明为准。商业使用须购买许可。
   tools: dbparser（R）、NetMedPy、Cytoscape
   cite: 'Knox C, et al. DrugBank 6.0: the DrugBank Knowledgebase for 2024. Nucleic Acids Res 2024. DOI: 10.1093/nar/gkad976（官方引用指南：https://dev.drugbank.com/guides/drugbank/citing ）。'
   topics: [network-medicine]
@@ -547,7 +547,7 @@
   questions: 以疾病表达特征反向匹配扰动特征，寻找可能逆转疾病状态的化合物；把扰动特征映射到分子网络上分析作用机制。
   data: L1000 平台测得的大量化合物、基因敲低/过表达扰动谱（GCTx 格式，文件很大）。
   access: NIH LINCS 项目网站汇总数据与工具；L1000 数据可从 GEO（如 GSE92742）下载。
-  limits: clue.io 页面公告已于 2026-01-31 退役，公开数据转由 GEO 提供；原 clue.io 数据和工具限学术非营利机构使用。以官方说明为准。
+  limits: clue.io 网站公告称该网站及其工具自 2026-01-31 起因经费原因退役，不再提供订阅，公开数据仍可从 GEO 获取；CMap 对学术与非营利机构人员免费（截至 2026 年 11 月）。以官方说明为准。
   tools: cmapPy、GCTx、GEO
   cite: 'Subramanian A, et al. A next generation Connectivity Map: L1000 platform and the first 1,000,000 profiles. Cell 2017. DOI: 10.1016/j.cell.2017.10.049。'
   topics: [network-medicine]

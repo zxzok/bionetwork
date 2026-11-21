@@ -3,8 +3,9 @@
 加权聚集系数（几何平均，NetworkX 的默认加权定义）与 Barrat
 加权聚集系数（手工实现）；(3) 把强度转换为长度 l = 1/w 后用 Dijkstra
 求加权距离， 并演示“直接把强度当长度”会得到错误的最短路径。
-输出：强度与度高度相关但排序不完全相同；两种加权聚集系数与无权值不同；
-两种长度定义下 0→33 的最短路径不同。</p>
+输出：强度与度高度相关，前 5 名相同（33, 0, 32, 2, 1），第 6
+名起排序有差异；两种加权聚集系数与无权值不同； 两种长度定义下 0→33
+的最短路径不同。</p>
 </section><section class="block"><h2><span class="tag">Output</span>输出图</h2><div class="ex-figs"><img src="gallery/network-metrics-4-0.png" alt="加权网络的强度、加权聚集系数与加权最短路径：输出图 1" loading="lazy"></div></section><section class="block"><h2><span class="tag">Output</span>文字输出</h2><pre class="ex-out">强度最大的 5 个节点: [33, 0, 32, 2, 1]
 度最大的 5 个节点:   [33, 0, 32, 2, 1]
 度与强度的相关系数 r = 0.976
@@ -17,7 +18,7 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a hr
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># (1) 强度 s_i = Σ_j w_ij；(2) Onnela 加权聚集系数（几何平均，NetworkX 的默认加权定义）与</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#     Barrat 加权聚集系数（手工实现）；(3) 把强度转换为长度 l = 1/w 后用 Dijkstra 求加权距离，</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">#     并演示“直接把强度当长度”会得到错误的最短路径。</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 输出：强度与度高度相关但排序不完全相同；两种加权聚集系数与无权值不同；</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 输出：强度与度高度相关，前 5 名相同（33, 0, 32, 2, 1），第 6 名起排序有差异；两种加权聚集系数与无权值不同；</span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">#       两种长度定义下 0→33 的最短路径不同。</span></span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> networkx <span class="im">as</span> nx</span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -76,7 +77,7 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a hr
 # (1) 强度 s_i = Σ_j w_ij；(2) Onnela 加权聚集系数（几何平均，NetworkX 的默认加权定义）与
 #     Barrat 加权聚集系数（手工实现）；(3) 把强度转换为长度 l = 1/w 后用 Dijkstra 求加权距离，
 #     并演示“直接把强度当长度”会得到错误的最短路径。
-# 输出：强度与度高度相关但排序不完全相同；两种加权聚集系数与无权值不同；
+# 输出：强度与度高度相关，前 5 名相同（33, 0, 32, 2, 1），第 6 名起排序有差异；两种加权聚集系数与无权值不同；
 #       两种长度定义下 0→33 的最短路径不同。
 import networkx as nx
 import numpy as np
