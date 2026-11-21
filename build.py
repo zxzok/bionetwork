@@ -861,11 +861,14 @@ def collect_terms():
         for ti, si, tx in t["_articles"]:
             for m in re.finditer(r"::: \{\.callout-def\}\n(.*?)\n:::", tx, re.S):
                 txt = m.group(1).strip()
-                for para in re.split(r"\n\s*\n", txt):
+                # a term = its bold-led paragraph plus the formula blocks / lists that follow it, up to the next term
+                for para in re.split(r"\n\s*\n(?=\*\*)", txt):
                     h = re.match(r"\*\*(.+?)\*\*\s*[（(]([^）)]{2,60})[）)]", para) or re.match(r"\*\*(.+?)\*\*", para)
                     if not h:
                         continue
                     name = h.group(1).strip("：: ")
+                    if name.endswith(("？", "?")) or name in ("手算例", "例", "注意", "直观理解", "举例", "小结"):
+                        continue                      # worked examples and asides, not terms
                     en = h.group(2).strip() if h.lastindex and h.lastindex >= 2 and re.search(r"[A-Za-z]", h.group(2) or "") else ""
                     items.append({"name": name, "en": en, "md": para, "topic": tid, "sec": si, "sectitle": ti})
     seen, out = set(), []

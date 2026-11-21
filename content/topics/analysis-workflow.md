@@ -387,7 +387,7 @@ NetworkX 3 起支持“后端分派”：安装 nx-parallel（基于 joblib 的�
 | 4 | 疾病关联网络 | DisGeNET [disgenet.com](https://disgenet.com/) | 构建多种疾病的基因关联网络，分析疾病间共享基因及其在共病机制中的作用 |
 | 5 | 代谢网络 | KEGG [genome.jp/kegg](https://www.genome.jp/kegg/) | 构建代谢网络，分析度分布、聚类系数，识别高中心性代谢物，讨论网络的稳健性与脆弱性 |
 | 6 | 微生物生态网络 | Earth Microbiome Project [earthmicrobiome.org](https://earthmicrobiome.org/) | 构建微生物共现网络（正、负相关），识别关键物种，分析温度、湿度等环境因素对网络结构的影响 |
-| 7 | miRNA–基因调控网络 | miRTarBase [mirtarbase.cuhk.edu.cn](https://mirtarbase.cuhk.edu.cn/) | 构建 miRNA–靶基因调控网络，用中心性找出关键 miRNA，探讨其在某种疾病中的调控机制 |
+| 7 | miRNA–基因调控网络 | miRTarBase（官网暂不可用，见 [2025 年 NAR 论文](https://doi.org/10.1093/nar/gkae1072)） | 构建 miRNA–靶基因调控网络，用中心性找出关键 miRNA，探讨其在某种疾病中的调控机制 |
 | 8 | 药物–靶点网络 | DrugBank [go.drugbank.com](https://go.drugbank.com/) | 构建药物–靶点网络，分析药物间靶点重叠，寻找药物重定位线索，识别关键药物与关键靶点 |
 | 9 | 癌症突变网络 | TCGA [cancer.gov/tcga](https://www.cancer.gov/tcga) | 用突变数据构建突变基因相互作用网络，识别高频突变基因，分析其网络地位、模块化与连通性 |
 | 10 | 细胞信号传导网络 | Reactome [reactome.org](https://reactome.org/) | 构建信号传导网络，用中心性识别信号传递关键节点，分析或模拟信号传递路径 |

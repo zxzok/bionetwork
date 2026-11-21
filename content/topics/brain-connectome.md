@@ -6,7 +6,7 @@ domain: brain
 legacy: L09
 summary: 从 dMRI 与 fMRI 构建结构、功能与有效连接网络，解读模块、枢纽、梯度与布线代价，并检验组间与个体差异。
 keywords: [连接组, 结构连接, 功能连接, 有效连接, 脑图谱, 纤维追踪, 阈值, 加权网络, 小世界, 模块, 功能系统, 枢纽, 富人俱乐部, 连接组梯度, 布线代价, 指纹识别, 病变网络映射, 分析流程]
-synonyms: [connectome, 人脑连接组, 结构连接, structural connectivity, SC, 功能连接, functional connectivity, FC, 有效连接, effective connectivity, EC, 动态因果模型, dynamic causal modelling, DCM, 格兰杰因果, Granger causality, GC, 向量自回归, VAR, 血流动力学响应函数, HRF, 脑图谱, atlas, parcellation, ROI, Schaefer, Glasser, HCP-MMP, Yeo 7 网络, Yeo networks, Power 264, 纤维追踪, tractography, 流线, streamline, DTI, CSD, SIFT2, 假阳性连接, false positive connections, 弥散磁共振, dMRI, 静息态, resting-state fMRI, 偏相关, partial correlation, 切空间, tangent space, 全局信号回归, GSR, 头动, scrubbing, framewise displacement, FD, 比例阈值, proportional threshold, 网络密度, 加权聚集系数, weighted clustering, 强度, node strength, 全局效率, global efficiency, 小世界指数, small-worldness, 参与系数, participation coefficient, 模块内度 z 分数, within-module degree z-score, 功能制图, functional cartography, 负权模块度, signed modularity, 富人俱乐部, rich club, 连接组梯度, connectivity gradient, 主梯度, principal gradient, 扩散映射, diffusion map embedding, 空间嵌入, spatial embedding, 布线代价, wiring cost, 网络经济性, network economy, 生成模型, generative network model, spin test, 指纹识别, connectome fingerprinting, 可识别性, identifiability, 基于连接组的预测建模, CPM, 重测信度, ICC, 病变网络映射, lesion network mapping, LNM, 规范连接组, normative connectome, NBS, network-based statistic, 人类连接组计划, Human Connectome Project, HCP, 默认模式网络, DMN, 多宇宙分析, multiverse analysis]
+synonyms: [connectome, 人脑连接组, 结构连接, structural connectivity, SC, 功能连接, functional connectivity, FC, 有效连接, effective connectivity, EC, 动态因果模型, dynamic causal modelling, DCM, 格兰杰因果, Granger causality, GC, 向量自回归, VAR, 血流动力学响应函数, HRF, 脑图谱, atlas, parcellation, ROI, Schaefer, Glasser, HCP-MMP, Yeo 7 网络, Yeo networks, Power 264, 纤维追踪, tractography, 流线, streamline, DTI, CSD, SIFT2, 假阳性连接, false positive connections, 弥散磁共振, dMRI, 静息态, resting-state fMRI, 偏相关, partial correlation, 切空间, tangent space, 全局信号回归, GSR, 头动, scrubbing, framewise displacement, FD, 比例阈值, proportional threshold, 网络密度, 加权聚集系数, weighted clustering, 强度, node strength, 全局效率, global efficiency, 小世界指数, small-worldness, 参与系数, participation coefficient, 模块内度 z 分数, within-module degree z-score, 功能制图, functional cartography, 负权模块度, signed modularity, 富人俱乐部, rich club, 连接组梯度, connectivity gradient, 主梯度, principal gradient, 扩散映射, diffusion map embedding, 空间嵌入, spatial embedding, 布线代价, wiring cost, 网络经济性, network economy, 生成模型, generative network model, spin test, 指纹识别, connectome fingerprinting, 可识别性, identifiability, 基于连接组的预测建模, CPM, 重测信度, ICC, 病变网络映射, lesion network mapping, LNM, 规范连接组, normative connectome, NBS, network-based statistic, 人类连接组计划, Human Connectome Project, HCP, 默认模式网络, DMN, 多元宇宙分析, multiverse analysis]
 demos: [brain_threshold]
 reviewed: 2026-11-15
 ---
@@ -533,10 +533,10 @@ LNM 的核心操作是从**同一个规范 FC 矩阵**中反复取出若干行�
 | 7. 网络指标 | 二值或加权；全局、节点或边层面 | 加权效率随整体权重缩放；度受模块大小影响 | 选择少数预先假设的指标，避免“指标钓鱼” |
 | 8. 零模型与归一化 | ER、度保持重连、保持强度、保持空间几何、随机相关矩阵 | 零模型保留什么，结论就只能超出什么 | 报告零模型类型；对空间嵌入网络使用空间零模型 |
 | 9. 统计推断 | 组间 GLM、NBS、置换检验；多重比较校正；预测模型交叉验证 | 未校正的多重比较和信息泄漏是假阳性的主要来源 | 预注册；置换检验；嵌套交叉验证 |
-| 10. 验证与报告 | 独立样本复现、跨图谱/去噪/阈值的多宇宙分析、公开代码 | 小样本效应量膨胀；分析灵活性导致不可重复（Marek 等, 2022） | 多宇宙分析或规格曲线；公开代码与连接矩阵 |
+| 10. 验证与报告 | 独立样本复现、跨图谱/去噪/阈值的多元宇宙分析、公开代码 | 小样本效应量膨胀；分析灵活性导致不可重复（Marek 等, 2022） | 多元宇宙分析或规格曲线；公开代码与连接矩阵 |
 
 ::: {.callout-def}
-**多宇宙分析**（multiverse analysis）：把流程中每个有合理理由的选择都列出来，组合成所有可能的“分析宇宙”，对每个宇宙都执行一次分析，然后报告结论在这些宇宙中的分布，而不只报告其中一个。它把分析灵活性从隐藏的风险变成可报告的结果（另见[研究问题、可复现分析与敏感性分析](reproducible-research.html)）。
+**多元宇宙分析**（multiverse analysis）：把流程中每个有合理理由的选择都列出来，组合成所有可能的“分析宇宙”，对每个宇宙都执行一次分析，然后报告结论在这些宇宙中的分布，而不只报告其中一个。它把分析灵活性从隐藏的风险变成可报告的结果（另见[研究问题、可复现分析与敏感性分析](reproducible-research.html)）。
 :::
 
 ### 公开数据：人类连接组计划
@@ -725,7 +725,7 @@ $P$ 是图上随机游走的转移矩阵。其特征分解 $P\psi_\ell=\lambda_\
 - [动态功能连接与多层脑网络](dynamic-brain-networks.html)：在静态连接矩阵上加入时间维度和多模态层，并讨论结构–功能耦合与 EEG/MEG 网络。
 - [症状网络与网络精神病学](symptom-networks.html)：偏相关、精度矩阵与图形 LASSO 在量表数据上的应用。
 - [网络可控性与稳定性](controllability.html)：鲁棒性与控制理论在结构脑网络上的延伸。
-- [研究问题、可复现分析与敏感性分析](reproducible-research.html)：多宇宙分析、预注册与可复算流程，对应本专题的分析流程表。
+- [研究问题、可复现分析与敏感性分析](reproducible-research.html)：多元宇宙分析、预注册与可复算流程，对应本专题的分析流程表。
 
 ## 核心文献 {#references}
 

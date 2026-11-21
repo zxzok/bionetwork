@@ -206,15 +206,7 @@ centrality）：节点得分正比于邻居得分之和，
 条。<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
 很大时两者性质相同。（<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo stretchy="false" form="prefix">(</mo><mi>N</mi><mo>,</mo><mi>p</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">G(N,p)</annotation></semantics></math>
 也常归于 Gilbert 1959。）</p>
-<p class="src small">定义见 <a href="network-metrics.er-random-graph.html">网络结构指标与随机图 · ER 随机网络</a><br>可视化：<a href="lab.html#graph_matrix">图与邻接矩阵</a>、<a href="lab.html#er">ER 随机图与巨连通分支</a></p></div><div class="term" id="为什么是 1？" data-dom="theory" data-k="为什么是 1？ "><div class="term-dom">网络基础理论</div>
-<p><strong>为什么是
-1？</strong>沿一条边走到一个新节点，它平均还有多少条“向外”的边？对泊松度分布，剩余度均值为
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msup><mi>k</mi><mn>2</mn></msup><mo stretchy="false" form="postfix">⟩</mo><mi>/</mi><mo stretchy="false" form="prefix">⟨</mo><mi>k</mi><mo stretchy="false" form="postfix">⟩</mo><mo>−</mo><mn>1</mn><mo>=</mo><mo stretchy="false" form="prefix">⟨</mo><mi>k</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle k^2\rangle/\langle k\rangle-1=\langle k\rangle</annotation></semantics></math>。若每一步平均找到的新节点少于
-1 个，探索会像亚临界的分支过程一样很快灭绝；多于 1
-个时有正概率无限延续，形成巨分支。一般度分布下的条件
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msup><mi>k</mi><mn>2</mn></msup><mo stretchy="false" form="postfix">⟩</mo><mi>/</mi><mo stretchy="false" form="prefix">⟨</mo><mi>k</mi><mo stretchy="false" form="postfix">⟩</mo><mo>&gt;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\langle k^2\rangle/\langle k\rangle&gt;2</annotation></semantics></math>
-称为 Molloy–Reed 判据。</p>
-<p class="src small">定义见 <a href="network-metrics.er-evolution.html">网络结构指标与随机图 · ER 网络的演化与相变</a><br>可视化：<a href="lab.html#graph_matrix">图与邻接矩阵</a>、<a href="lab.html#er">ER 随机图与巨连通分支</a></p></div><div class="term" id="小世界性" data-dom="theory" data-k="小世界性 small-world property"><div class="term-dom">网络基础理论</div>
+<p class="src small">定义见 <a href="network-metrics.er-random-graph.html">网络结构指标与随机图 · ER 随机网络</a><br>可视化：<a href="lab.html#graph_matrix">图与邻接矩阵</a>、<a href="lab.html#er">ER 随机图与巨连通分支</a></p></div><div class="term" id="小世界性" data-dom="theory" data-k="小世界性 small-world property"><div class="term-dom">网络基础理论</div>
 <p><strong>小世界性</strong>（small-world
 property）：网络的平均路径长度与同规模随机网络相近（<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>≈</mo><msub><mi>L</mi><mtext mathvariant="normal">rand</mtext></msub></mrow><annotation encoding="application/x-tex">L \approx L_{\text{rand}}</annotation></semantics></math>），而聚集系数远高于随机网络（<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>≫</mo><msub><mi>C</mi><mtext mathvariant="normal">rand</mtext></msub></mrow><annotation encoding="application/x-tex">C \gg C_{\text{rand}}</annotation></semantics></math>）。小世界系数
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ω</mi><annotation encoding="application/x-tex">\omega</annotation></semantics></math>
@@ -350,7 +342,8 @@ href="community-structure.hypotheses-definitions.html">基本假设与形式化�
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><msub><mi>c</mi><mtext mathvariant="normal">in</mtext></msub><mo>−</mo><msub><mi>c</mi><mtext mathvariant="normal">out</mtext></msub><mo stretchy="false" form="prefix">|</mo><mo>&gt;</mo><mi>q</mi><msqrt><mi>c</mi></msqrt></mrow><annotation encoding="application/x-tex">|c_{\text{in}}-c_{\text{out}}|&gt;q\sqrt c</annotation></semantics></math>
 时，置信传播（belief
 propagation）等算法可以得到正相关的划分。这一条件也称为 Kesten–Stigum
-阈值。</p>
+阈值。严格地说，“阈值以下不可检测”对 2 个社团成立；社团较多（如 5
+个以上）时，阈值附近还有一段信息上可检测、但已知的高效算法难以做到的区间。</p>
 <p class="src small">定义见 <a href="community-structure.detectability.html">社团结构与社区发现 · 可检测性阈值</a><br>可视化：<a href="lab.html#modularity">模块度与社团划分</a></p></div><div class="term" id="联合度分布" data-dom="theory" data-k="联合度分布 joint degree distribution，也称度相关矩阵"><div class="term-dom">网络基础理论</div>
 <p><strong>联合度分布</strong>（joint degree
 distribution，也称度相关矩阵）<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>e</mi><mrow><mi>j</mi><mi>k</mi></mrow></msub><annotation encoding="application/x-tex">e_{jk}</annotation></semantics></math>：随机选一条边，其两端节点的度分别为
@@ -359,6 +352,7 @@ distribution，也称度相关矩阵）<math display="inline" xmlns="http://www.
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
 的概率。无向网络中
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>e</mi><mrow><mi>j</mi><mi>k</mi></mrow></msub><mo>=</mo><msub><mi>e</mi><mrow><mi>k</mi><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">e_{jk}=e_{kj}</annotation></semantics></math>，且</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo>∑</mo><mrow><mi>j</mi><mo>,</mo><mi>k</mi></mrow></munder><msub><mi>e</mi><mrow><mi>j</mi><mi>k</mi></mrow></msub><mo>=</mo><mn>1</mn><mo>,</mo><mspace width="2.0em"></mspace><munder><mo>∑</mo><mi>j</mi></munder><msub><mi>e</mi><mrow><mi>j</mi><mi>k</mi></mrow></msub><mo>=</mo><msub><mi>q</mi><mi>k</mi></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">\sum_{j,k}e_{jk}=1,\qquad \sum_{j}e_{jk}=q_k .</annotation></semantics></math></p>
 <p class="src small">定义见 <a href="degree-correlations.joint-degree-distribution.html">度相关性与网络结构的高阶统计 · 联合度分布与条件度分布</a><br>可视化：<a href="lab.html#ba">BA 优先连接</a>、<a href="lab.html#er">ER 随机图与巨连通分支</a></p></div><div class="term" id="条件度分布" data-dom="theory" data-k="条件度分布 "><div class="term-dom">网络基础理论</div>
 <p><strong>条件度分布</strong>
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false" form="prefix">(</mo><msup><mi>k</mi><mo>′</mo></msup><mo>∣</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">P(k&#39;\mid k)</annotation></semantics></math>：从一个度为
@@ -379,15 +373,36 @@ distribution，也称度相关矩阵）<math display="inline" xmlns="http://www.
 的节点的
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>k</mi><mrow><mi>n</mi><mi>n</mi><mo>,</mo><mi>i</mi></mrow></msub><annotation encoding="application/x-tex">k_{nn,i}</annotation></semantics></math>
 的平均，</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>k</mi><mrow><mi>n</mi><mi>n</mi></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><munder><mo>∑</mo><msup><mi>k</mi><mo>′</mo></msup></munder><msup><mi>k</mi><mo>′</mo></msup><mspace width="0.167em"></mspace><mi>P</mi><mo stretchy="false" form="prefix">(</mo><msup><mi>k</mi><mo>′</mo></msup><mo>∣</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">k_{nn}(k)=\sum_{k&#39;}k&#39;\,P(k&#39;\mid k).</annotation></semantics></math></p>
+<ul>
+<li>中性网络：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>k</mi><mrow><mi>n</mi><mi>n</mi></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo stretchy="false" form="prefix">⟨</mo><msup><mi>k</mi><mn>2</mn></msup><mo stretchy="false" form="postfix">⟩</mo><mi>/</mi><mo stretchy="false" form="prefix">⟨</mo><mi>k</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">k_{nn}(k)=\langle k^2\rangle/\langle k\rangle</annotation></semantics></math>，与
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+无关（水平线）；</li>
+<li>同配网络：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>k</mi><mrow><mi>n</mi><mi>n</mi></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">k_{nn}(k)</annotation></semantics></math>
+随
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+增加；</li>
+<li>异配网络：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>k</mi><mrow><mi>n</mi><mi>n</mi></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">k_{nn}(k)</annotation></semantics></math>
+随
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+减小。</li>
+</ul>
 <p class="src small">定义见 <a href="degree-correlations.knn-function.html">度相关性与网络结构的高阶统计 · 邻居平均度函数与相关指数</a><br>可视化：<a href="lab.html#ba">BA 优先连接</a>、<a href="lab.html#er">ER 随机图与巨连通分支</a></p></div><div class="term" id="度相关系数" data-dom="theory" data-k="度相关系数 degree assortativity coefficient，newman, 2002"><div class="term-dom">网络基础理论</div>
 <p><strong>度相关系数</strong>（degree assortativity
 coefficient，Newman, 2002）：一条边两端节点度的 Pearson 相关系数，</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mfrac><mrow><munder><mo>∑</mo><mrow><mi>j</mi><mi>k</mi></mrow></munder><mi>j</mi><mi>k</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><msub><mi>e</mi><mrow><mi>j</mi><mi>k</mi></mrow></msub><mo>−</mo><msub><mi>q</mi><mi>j</mi></msub><msub><mi>q</mi><mi>k</mi></msub><mo stretchy="false" form="postfix">)</mo></mrow><msubsup><mi>σ</mi><mi>q</mi><mn>2</mn></msubsup></mfrac><mo>,</mo><mspace width="2.0em"></mspace><msubsup><mi>σ</mi><mi>q</mi><mn>2</mn></msubsup><mo>=</mo><munder><mo>∑</mo><mi>k</mi></munder><msup><mi>k</mi><mn>2</mn></msup><msub><mi>q</mi><mi>k</mi></msub><mo>−</mo><mo minsize="180%" maxsize="180%" stretchy="true" form="prefix">(</mo><munder><mo>∑</mo><mi>k</mi></munder><mi>k</mi><mspace width="0.167em"></mspace><msub><mi>q</mi><mi>k</mi></msub><msup><mo minsize="180%" maxsize="180%" stretchy="true" form="postfix">)</mo><mn>2</mn></msup><mi>.</mi></mrow><annotation encoding="application/x-tex">r=\frac{\sum_{jk}jk\,(e_{jk}-q_jq_k)}{\sigma_q^2},\qquad
+\sigma_q^2=\sum_k k^2q_k-\Big(\sum_k k\,q_k\Big)^2 .</annotation></semantics></math></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1</mn><mo>≤</mo><mi>r</mi><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">-1\le r\le1</annotation></semantics></math>；<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">r&gt;0</annotation></semantics></math>
+同配，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">r=0</annotation></semantics></math>
+中性，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">r&lt;0</annotation></semantics></math>
+异配。</p>
 <p class="src small">定义见 <a href="degree-correlations.assortativity-coefficient.html">度相关性与网络结构的高阶统计 · 度相关系数 r</a><br>可视化：<a href="lab.html#ba">BA 优先连接</a>、<a href="lab.html#er">ER 随机图与巨连通分支</a></p></div><div class="term" id="结构截断" data-dom="theory" data-k="结构截断 structural cutoff"><div class="term-dom">网络基础理论</div>
 <p><strong>结构截断</strong>（structural
 cutoff）<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>k</mi><mi>s</mi></msub><annotation encoding="application/x-tex">k_s</annotation></semantics></math>：度超过
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>k</mi><mi>s</mi></msub><annotation encoding="application/x-tex">k_s</annotation></semantics></math>
 的两个节点在中性网络中的期望边数超过
 1，因而在简单图中无法保持中性。对中性网络，</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>k</mi><mi>s</mi></msub><mo>∼</mo><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>k</mi><mo stretchy="false" form="postfix">⟩</mo><mi>N</mi><msup><mo stretchy="false" form="postfix">)</mo><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup><mi>.</mi></mrow><annotation encoding="application/x-tex">k_s\sim(\langle k\rangle N)^{1/2}.</annotation></semantics></math></p>
 <p class="src small">定义见 <a href="degree-correlations.structural-cutoff.html">度相关性与网络结构的高阶统计 · 结构截断与结构性异配</a><br>可视化：<a href="lab.html#ba">BA 优先连接</a>、<a href="lab.html#er">ER 随机图与巨连通分支</a></p></div><div class="term" id="自然截断" data-dom="theory" data-k="自然截断 natural cutoff"><div class="term-dom">网络基础理论</div>
 <p><strong>自然截断</strong>（natural
 cutoff）<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>k</mi><mi mathvariant="normal">max</mi></msub><annotation encoding="application/x-tex">k_{\max}</annotation></semantics></math>：网络中期望的最大度。对
@@ -402,6 +417,7 @@ Mondragón, 2004, <em>IEEE Communications Letters</em>）：度大于
 个节点之间实际边数
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mrow><mo>&gt;</mo><mi>k</mi></mrow></msub><annotation encoding="application/x-tex">E_{&gt;k}</annotation></semantics></math>
 占可能边数的比例，</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mfrac><mrow><mn>2</mn><msub><mi>E</mi><mrow><mo>&gt;</mo><mi>k</mi></mrow></msub></mrow><mrow><msub><mi>N</mi><mrow><mo>&gt;</mo><mi>k</mi></mrow></msub><mo stretchy="false" form="prefix">(</mo><msub><mi>N</mi><mrow><mo>&gt;</mo><mi>k</mi></mrow></msub><mo>−</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">\phi(k)=\frac{2E_{&gt;k}}{N_{&gt;k}(N_{&gt;k}-1)}.</annotation></semantics></math></p>
 <p class="src small">定义见 <a href="degree-correlations.rich-club.html">度相关性与网络结构的高阶统计 · 富人俱乐部系数及其归一化</a><br>可视化：<a href="lab.html#ba">BA 优先连接</a>、<a href="lab.html#er">ER 随机图与巨连通分支</a></p></div><div class="term" id="归一化富人俱乐部系数" data-dom="theory" data-k="归一化富人俱乐部系数 colizza 等, 2006, *nature physics*"><div class="term-dom">网络基础理论</div>
 <p><strong>归一化富人俱乐部系数</strong>（Colizza 等, 2006, <em>Nature
 Physics</em>）：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ρ</mi><mtext mathvariant="normal">ran</mtext></msub><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>ϕ</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo><mi>/</mi><msub><mi>ϕ</mi><mtext mathvariant="normal">ran</mtext></msub><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\rho_{\text{ran}}(k)=\phi(k)/\phi_{\text{ran}}(k)</annotation></semantics></math>，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ϕ</mi><mtext mathvariant="normal">ran</mtext></msub><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\phi_{\text{ran}}(k)</annotation></semantics></math>
@@ -553,9 +569,61 @@ href="network-models.html">小世界与无标度网络模型</a>中的小世界�
 称之为“长关系的弱点”）。Centola（2010，Science）的在线实验支持了这一点：健康行为在聚集度高的网络中扩散更多。</p>
 <p class="src small">定义见 <a href="spreading.social-contagion.html">网络上的传播与免疫 · 信息与行为的传播</a><br>可视化：<a href="lab.html#sir">网络上的 SIR 传播与免疫</a>、<a href="lab.html#attack">随机失效与蓄意攻击</a></p></div><div class="term" id="同步" data-dom="dynamics" data-k="同步 "><div class="term-dom">网络动力学与控制</div>
 <p><strong>同步</strong>：多个具有自身节律的动力学单元，通过相互作用使其节律（频率或相位）趋于一致的过程。常见类型包括：</p>
+<ul>
+<li><strong>完全同步</strong>（complete / identical
+synchronization）：所有单元状态完全相同，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="bold-italic">𝒙</mi><mn>1</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mi mathvariant="bold-italic">𝒙</mi><mn>2</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>⋯</mi><mo>=</mo><msub><mi mathvariant="bold-italic">𝒙</mi><mi>N</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathbf x_1(t)=\mathbf x_2(t)=\cdots=\mathbf x_N(t)</annotation></semantics></math>，通常针对相同的单元，混沌振荡器也可以完全同步；</li>
+<li><strong>相位同步</strong>：相位差保持有界或恒定，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>n</mi><msub><mi>ϕ</mi><mn>1</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mi>m</mi><msub><mi>ϕ</mi><mn>2</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><mtext mathvariant="normal">常数</mtext></mrow><annotation encoding="application/x-tex">|n\phi_1(t)-m\phi_2(t)|&lt;\text{常数}</annotation></semantics></math>（<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>:</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">n{:}m</annotation></semantics></math>
+锁相），振幅可以不同甚至不相关；</li>
+<li><strong>频率锁定</strong>（频率同步）：长时间平均频率相同，相位差可以不为零；</li>
+<li><strong>滞后同步</strong>：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="bold-italic">𝒙</mi><mn>2</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>≈</mo><msub><mi mathvariant="bold-italic">𝒙</mi><mn>1</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo>−</mo><mi>τ</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathbf x_2(t)\approx\mathbf x_1(t-\tau)</annotation></semantics></math>，一个单元重复另一个单元稍早的状态；</li>
+<li><strong>广义同步</strong>：存在函数关系
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="bold-italic">𝒙</mi><mn>2</mn></msub><mo>=</mo><mi mathvariant="normal">Φ</mi><mo stretchy="false" form="prefix">(</mo><msub><mi mathvariant="bold-italic">𝒙</mi><mn>1</mn></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathbf x_2=\Phi(\mathbf x_1)</annotation></semantics></math>，两者状态不必相似，但可以互相预测；</li>
+<li><strong>簇同步</strong>：网络分成若干组，组内同步而组间不同步（见<a
+href="synchronization.cluster-chimera.html">簇同步与奇异态</a>）。</li>
+</ul>
 <p class="src small">定义见 <a href="synchronization.synchronization-types.html">同步与协同动力学 · 同步现象与类型</a><br>可视化：<a href="lab.html#kuramoto">Kuramoto 同步</a><br>论文：<a href="paper-arenas2008_sync.html">复杂网络中的同步</a></p></div><div class="term" id="两条研究线" data-dom="dynamics" data-k="两条研究线 arenas 等 2008 的划分，见[精读](paper-arenas2008_sync.html"><div class="term-dom">网络动力学与控制</div>
 <p><strong>两条研究线</strong>（Arenas 等 2008 的划分，见<a
 href="paper-arenas2008_sync.html">精读</a>）：</p>
+<div class="table-wrap"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th>非相同振荡器的相位同步</th>
+<th>相同振荡器的完全同步</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>代表模型</td>
+<td>Kuramoto 相振荡器</td>
+<td>任意
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+维系统（Rössler、神经元模型）经扩散耦合</td>
+</tr>
+<tr>
+<td>核心问题</td>
+<td>耦合多强时<strong>开始</strong>出现集体同步？</td>
+<td>同步态是否<strong>稳定</strong>？</td>
+</tr>
+<tr>
+<td>网络量</td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>k</mi><mo stretchy="false" form="postfix">⟩</mo><mi>/</mi><mo stretchy="false" form="prefix">⟨</mo><msup><mi>k</mi><mn>2</mn></msup><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle k\rangle/\langle k^2\rangle</annotation></semantics></math>、邻接矩阵最大特征值</td>
+<td>拉普拉斯谱：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>μ</mi><mn>2</mn></msub><annotation encoding="application/x-tex">\mu_2</annotation></semantics></math>、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>μ</mi><mi>N</mi></msub><mi>/</mi><msub><mi>μ</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">\mu_N/\mu_2</annotation></semantics></math></td>
+</tr>
+<tr>
+<td>本专题</td>
+<td>Kuramoto 模型、网络阈值、爆发式同步</td>
+<td>拉普拉斯谱、主稳定函数、簇同步</td>
+</tr>
+</tbody>
+</table></div>
+<p>两条线回答不同问题，结论可以相反（例如度异质性使 Kuramoto
+同步更早开始，却可能使完全同步更难稳定），阅读文献时要先分清是哪一条。</p>
 <p class="src small">定义见 <a href="synchronization.synchronization-types.html">同步与协同动力学 · 同步现象与类型</a><br>可视化：<a href="lab.html#kuramoto">Kuramoto 同步</a></p></div><div class="term" id="Kuramoto 序参量" data-dom="dynamics" data-k="kuramoto 序参量 "><div class="term-dom">网络动力学与控制</div>
 <p><strong>Kuramoto 序参量</strong>：
 <math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mspace width="0.167em"></mspace><msup><mi>e</mi><mrow><mi>i</mi><mi>ψ</mi></mrow></msup><mo>=</mo><mfrac><mn>1</mn><mi>N</mi></mfrac><munderover><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msup><mi>e</mi><mrow><mi>i</mi><msub><mi>θ</mi><mi>j</mi></msub></mrow></msup></mrow><annotation encoding="application/x-tex">r\,e^{i\psi}=\frac{1}{N}\sum_{j=1}^{N}e^{i\theta_j}</annotation></semantics></math>
@@ -720,6 +788,18 @@ Reviews
 Cancer</em>）。<strong>遗传相互作用网络</strong>以基因为节点，以合成致死或更广义的“双突变表型偏离单突变预期”为边。</p>
 <p class="src small">定义见 <a href="robustness.synthetic-lethality.html">网络鲁棒性、渗流与级联失效 · 合成致死与癌症治疗</a><br>可视化：<a href="lab.html#attack">随机失效与蓄意攻击</a></p></div><div class="term" id="网络控制的三个要素" data-dom="dynamics" data-k="网络控制的三个要素 "><div class="term-dom">网络动力学与控制</div>
 <p><strong>网络控制的三个要素</strong>：</p>
+<ul>
+<li><strong>网络矩阵</strong>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>：零/非零模式就是网络的有向拓扑，非零元的数值是相互作用强度（边权）；</li>
+<li><strong>输入矩阵</strong>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>：每一列对应一个独立的外部信号，非零行指明该信号直接作用的节点。直接接收独立输入信号的节点称为<strong>驱动节点</strong>（driver
+nodes）；</li>
+<li><strong>控制目标</strong>：经典可控性要求在有限时间内把系统从<strong>任意</strong>初始状态驱动到<strong>任意</strong>目标状态。</li>
+</ul>
+<p>网络可控性的核心问题是：给定
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+的结构，最少需要多少列
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>（多少个驱动节点），以及应把它们放在哪里。</p>
 <p class="src small">定义见 <a href="controllability.network-control-systems.html">网络可控性与稳定性 · 动态系统与网络控制</a><br>可视化：<a href="lab.html#matching">最大匹配、驱动节点与 Kalman 秩检验</a>、<a href="lab.html#attack">随机失效与蓄意攻击</a></p></div><div class="term" id="可控性" data-dom="dynamics" data-k="可控性 "><div class="term-dom">网络动力学与控制</div>
 <p><strong>可控性</strong>：如果存在输入
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold-italic">𝒖</mi><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathbf u(t)</annotation></semantics></math>，能在有限时间内把系统从任意初始状态
@@ -889,8 +969,8 @@ href="brain-connectome.effective-connectivity.html">有效连接</a>）。</p>
 <p><strong>参与系数</strong>
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mi>i</mi></msub><annotation encoding="application/x-tex">P_i</annotation></semantics></math>：见<a
 href="brain-connectome.topology.html">拓扑指标</a>，衡量节点的连接在模块之间分布得多均匀。</p>
-<p class="src small">定义见 <a href="brain-connectome.functional-systems.html">脑连接组：结构与功能连接 · 模块与功能系统</a><br>可视化：<a href="lab.html#brain_threshold">脑网络阈值敏感性</a></p></div><div class="term" id="多宇宙分析" data-dom="brain" data-k="多宇宙分析 multiverse analysis"><div class="term-dom">脑网络与连接组</div>
-<p><strong>多宇宙分析</strong>（multiverse
+<p class="src small">定义见 <a href="brain-connectome.functional-systems.html">脑连接组：结构与功能连接 · 模块与功能系统</a><br>可视化：<a href="lab.html#brain_threshold">脑网络阈值敏感性</a></p></div><div class="term" id="多元宇宙分析" data-dom="brain" data-k="多元宇宙分析 multiverse analysis"><div class="term-dom">脑网络与连接组</div>
+<p><strong>多元宇宙分析</strong>（multiverse
 analysis）：把流程中每个有合理理由的选择都列出来，组合成所有可能的“分析宇宙”，对每个宇宙都执行一次分析，然后报告结论在这些宇宙中的分布，而不只报告其中一个。它把分析灵活性从隐藏的风险变成可报告的结果（另见<a
 href="reproducible-research.html">研究问题、可复现分析与敏感性分析</a>）。</p>
 <p class="src small">定义见 <a href="brain-connectome.pipeline.html">脑连接组：结构与功能连接 · 从 fMRI 到结论：分析流程与选择</a><br>可视化：<a href="lab.html#brain_threshold">脑网络阈值敏感性</a></p></div><div class="term" id="动态功能连接" data-dom="brain" data-k="动态功能连接 "><div class="term-dom">脑网络与连接组</div>
@@ -904,10 +984,32 @@ href="dynamic-brain-networks.html#code">代码示例</a>用一个完全平稳的
 RSS 帧更像整体 FC”的现象。</p>
 <p class="src small">定义见 <a href="dynamic-brain-networks.edge-time-series.html">动态功能连接与多层脑网络 · 边时间序列</a><br>可视化：<a href="lab.html#dfc">滑动窗口动态功能连接</a></p></div><div class="term" id="连接状态" data-dom="brain" data-k="连接状态 "><div class="term-dom">脑网络与连接组</div>
 <p><strong>连接状态</strong>：在不同时间、不同被试中反复出现的典型连接模式，通常是聚类中心。由此派生的指标包括：</p>
+<ul>
+<li><strong>占时比例</strong>（fraction of time / fractional
+occupancy）：被试处于某状态的窗口比例；</li>
+<li><strong>平均停留时间</strong>（mean dwell
+time）：连续停留在同一状态的平均窗口数；</li>
+<li><strong>转移概率矩阵</strong>：从状态
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+转到状态
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>
+的概率；</li>
+<li><strong>切换次数</strong>：状态序列中标签改变的次数。</li>
+</ul>
 <p class="src small">定义见 <a href="dynamic-brain-networks.connectivity-states.html">动态功能连接与多层脑网络 · 连接状态</a><br>可视化：<a href="lab.html#dfc">滑动窗口动态功能连接</a></p></div><div class="term" id="灵活性" data-dom="brain" data-k="灵活性 flexibility"><div class="term-dom">脑网络与连接组</div>
 <p><strong>灵活性</strong>（flexibility）：脑区
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>
 在相邻层之间改变社团归属的比例，</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>i</mi></msub><mo>=</mo><mfrac><mn>1</mn><mrow><mi>L</mi><mo>−</mo><mn>1</mn></mrow></mfrac><munderover><mo>∑</mo><mrow><mi>l</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>L</mi><mo>−</mo><mn>1</mn></mrow></munderover><mo minsize="120%" maxsize="120%" stretchy="true" form="prefix">[</mo><mn>1</mn><mo>−</mo><mi>δ</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>g</mi><mrow><mi>i</mi><mi>l</mi></mrow></msub><mo>,</mo><msub><mi>g</mi><mrow><mi>i</mi><mo>,</mo><mi>l</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false" form="postfix">)</mo><mo minsize="120%" maxsize="120%" stretchy="true" form="postfix">]</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">f_i=\frac{1}{L-1}\sum_{l=1}^{L-1}\big[1-\delta(g_{il},g_{i,l+1})\big].</annotation></semantics></math></p>
+<p>全脑灵活性是
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mi>i</mi></msub><annotation encoding="application/x-tex">f_i</annotation></semantics></math>
+的平均。<strong>模块忠诚度矩阵</strong>（module
+allegiance）<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><annotation encoding="application/x-tex">P_{ij}</annotation></semantics></math>
+是脑区
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow><annotation encoding="application/x-tex">i,j</annotation></semantics></math>
+被分在同一社团的层（或多次运行）的比例；以先验的功能系统为参照，可由
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math>
+计算一个系统内部的<strong>招募</strong>（recruitment，系统内脑区相互的平均忠诚度）和两个系统之间的<strong>整合</strong>（integration，跨系统的平均忠诚度）。</p>
 <p class="src small">定义见 <a href="dynamic-brain-networks.flexibility.html">动态功能连接与多层脑网络 · 网络灵活性与动态社团指标</a><br>可视化：<a href="lab.html#dfc">滑动窗口动态功能连接</a></p></div><div class="term" id="相位滞后指数" data-dom="brain" data-k="相位滞后指数 "><div class="term-dom">脑网络与连接组</div>
 <p><strong>相位滞后指数</strong>：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">P</mi><mi mathvariant="normal">L</mi><mi mathvariant="normal">I</mi></mrow><mo>=</mo><mo minsize="120%" maxsize="120%" stretchy="true" form="prefix">|</mo><mo stretchy="false" form="prefix">⟨</mo><mrow><mi mathvariant="normal">sign</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">Δ</mi><msub><mi>ϕ</mi><mi>t</mi></msub><mo stretchy="false" form="postfix">)</mo><msub><mo stretchy="false" form="postfix">⟩</mo><mi>t</mi></msub><mo minsize="120%" maxsize="120%" stretchy="true" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">\mathrm{PLI}=\big|\langle\operatorname{sign}(\Delta\phi_t)\rangle_t\big|</annotation></semantics></math>，其中
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><msub><mi>ϕ</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">\Delta\phi_t</annotation></semantics></math>
@@ -933,6 +1035,11 @@ ICC）：在
 与残差均方
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><msub><mi>S</mi><mi>E</mi></msub></mrow><annotation encoding="application/x-tex">MS_E</annotation></semantics></math>
 定义（一致性、双向混合效应形式）</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">I</mi><mi mathvariant="normal">C</mi><mi mathvariant="normal">C</mi></mrow><mo stretchy="false" form="prefix">(</mo><mn>3</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mfrac><mrow><mi>M</mi><msub><mi>S</mi><mi>R</mi></msub><mo>−</mo><mi>M</mi><msub><mi>S</mi><mi>E</mi></msub></mrow><mrow><mi>M</mi><msub><mi>S</mi><mi>R</mi></msub><mo>+</mo><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mi>M</mi><msub><mi>S</mi><mi>E</mi></msub></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">\mathrm{ICC}(3,1)=\frac{MS_R-MS_E}{MS_R+(k-1)MS_E}.</annotation></semantics></math></p>
+<p>它近似等于“被试间真实差异的方差 / 总方差”。常用的经验分级：&lt;0.4
+差，0.4–0.59 一般，0.6–0.74 良好，≥0.75
+优秀。若要求不同次测量的绝对值一致（而不仅是排序一致），应使用绝对一致性形式
+ICC(2,1)。</p>
 <p class="src small">定义见 <a href="dynamic-brain-networks.reliability.html">动态功能连接与多层脑网络 · 动态指标的重测信度</a><br>可视化：<a href="lab.html#dfc">滑动窗口动态功能连接</a></p></div><div class="term" id="症状网络" data-dom="symptom" data-k="症状网络 symptom network"><div class="term-dom">症状网络与网络精神病学</div>
 <p><strong>症状网络</strong>（symptom
 network）：以症状（通常是量表条目）为节点，以症状之间的统计关联（通常是偏相关或条件对数优势比）为边的网络。</p>
@@ -958,6 +1065,17 @@ Psychiatry</em>）：精神障碍不是某个潜在实体的外在表现，而�
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>∈</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">x_i\in\{0,1\}</annotation></semantics></math>（也可编码为
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi>−</mi><mn>1</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{-1,1\}</annotation></semantics></math>），<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
 个症状的联合分布为</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false" form="prefix">(</mo><mi mathvariant="bold-italic">𝒙</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mfrac><mn>1</mn><mi>Z</mi></mfrac><mrow><mi mathvariant="normal">exp</mi><mo>&#8289;</mo></mrow><mo minsize="180%" maxsize="180%" stretchy="true" form="prefix">(</mo><munder><mo>∑</mo><mi>i</mi></munder><msub><mi>τ</mi><mi>i</mi></msub><msub><mi>x</mi><mi>i</mi></msub><mo>+</mo><munder><mo>∑</mo><mrow><mi>i</mi><mo>&lt;</mo><mi>j</mi></mrow></munder><msub><mi>ω</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><msub><mi>x</mi><mi>i</mi></msub><msub><mi>x</mi><mi>j</mi></msub><mo minsize="180%" maxsize="180%" stretchy="true" form="postfix">)</mo><mo>,</mo></mrow><annotation encoding="application/x-tex">P(\mathbf x)=\frac1Z\exp\Big(\sum_i\tau_ix_i+\sum_{i&lt;j}\omega_{ij}x_ix_j\Big),</annotation></semantics></math></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>τ</mi><mi>i</mi></msub><annotation encoding="application/x-tex">\tau_i</annotation></semantics></math>
+是<strong>阈值</strong>（threshold，节点在其余症状都为 0
+时出现的倾向），<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ω</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><msub><mi>ω</mi><mrow><mi>j</mi><mi>i</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\omega_{ij}=\omega_{ji}</annotation></semantics></math>
+是<strong>边权</strong>（成对交互），<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Z</mi><annotation encoding="application/x-tex">Z</annotation></semantics></math>
+是对全部
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mi>p</mi></msup><annotation encoding="application/x-tex">2^p</annotation></semantics></math>
+种状态求和的归一化常数。<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ω</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\omega_{ij}=0</annotation></semantics></math>
+⇔ 给定其余症状时
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>⟂</mo><msub><mi>x</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">x_i\perp x_j</annotation></semantics></math>，所以
+Ising 模型与 GGM 一样是一个无向图模型（成对马尔可夫随机场）。</p>
 <p class="src small">定义见 <a href="symptom-networks.ising-model.html">症状网络与网络精神病学 · Ising 模型与二值症状数据</a><br>可视化：<a href="lab.html#symptom">相关与偏相关症状网络</a></p></div><div class="term" id="可预测性" data-dom="symptom" data-k="可预测性 "><div class="term-dom">症状网络与网络精神病学</div>
 <p><strong>可预测性</strong>：节点
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>
@@ -966,6 +1084,9 @@ Psychiatry</em>）：精神障碍不是某个潜在实体的外在表现，而�
 对其余全部变量做线性回归，残差方差等于
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><msub><mi>K</mi><mrow><mi>i</mi><mi>i</mi></mrow></msub></mrow><annotation encoding="application/x-tex">1/K_{ii}</annotation></semantics></math>（<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
 为相关矩阵的逆），因此</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>R</mi><mi>i</mi><mn>2</mn></msubsup><mo>=</mo><mn>1</mn><mo>−</mo><mfrac><mn>1</mn><msub><mi>K</mi><mrow><mi>i</mi><mi>i</mi></mrow></msub></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">R^2_i = 1-\frac{1}{K_{ii}} .</annotation></semantics></math></p>
+<p>可预测性是一个<strong>绝对</strong>量（0 到
+1），可以在不同节点、不同网络之间比较；中心性则只是相对排序。</p>
 <p class="src small">定义见 <a href="symptom-networks.mixed-graphical-models.html">症状网络与网络精神病学 · 混合图模型与可预测性</a><br>可视化：<a href="lab.html#symptom">相关与偏相关症状网络</a></p></div><div class="term" id="桥中心性" data-dom="symptom" data-k="桥中心性 "><div class="term-dom">症状网络与网络精神病学</div>
 <p><strong>桥中心性</strong>（Jones, Ma &amp; McNally, 2021,
 <em>Multivariate Behavioral Research</em>；R 包 networktools 的
@@ -975,6 +1096,13 @@ Psychiatry</em>）：精神障碍不是某个潜在实体的外在表现，而�
 为节点
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>
 所在社团之外的节点。</p>
+<ul>
+<li><strong>桥强度</strong>：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mtext mathvariant="normal">BS</mtext><mi>i</mi></msub><mo>=</mo><msub><mo>∑</mo><mrow><mi>j</mi><mo>∈</mo><msub><mi mathvariant="script">ℬ</mi><mi>i</mi></msub></mrow></msub><mo stretchy="false" form="prefix">|</mo><msub><mi>w</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo stretchy="false" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">\text{BS}_i=\sum_{j\in\mathcal B_i}|w_{ij}|</annotation></semantics></math>；</li>
+<li><strong>一步桥预期影响</strong>：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mtext mathvariant="normal">BEI</mtext><mi>i</mi><mrow><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow></msubsup><mo>=</mo><msub><mo>∑</mo><mrow><mi>j</mi><mo>∈</mo><msub><mi mathvariant="script">ℬ</mi><mi>i</mi></msub></mrow></msub><msub><mi>w</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\text{BEI}^{(1)}_i=\sum_{j\in\mathcal B_i}w_{ij}</annotation></semantics></math>；</li>
+<li><strong>两步桥预期影响</strong>：在一步的基础上，还计入经由一个中间邻居到达其他社团的间接影响（以两段边权的乘积加权）；</li>
+<li><strong>桥介数</strong>：节点出现在“起点与终点属于不同社团”的最短路径上的次数；</li>
+<li><strong>桥接近度</strong>：节点到所有其他社团节点平均最短路径长度的倒数。</li>
+</ul>
 <p class="src small">定义见 <a href="symptom-networks.bridge-centrality.html">症状网络与网络精神病学 · 桥中心性与共病</a><br>可视化：<a href="lab.html#symptom">相关与偏相关症状网络</a></p></div><div class="term" id="零分布" data-dom="symptom" data-k="零分布 "><div class="term-dom">症状网络与网络精神病学</div>
 <p><strong>零分布</strong>：把两组被试合并，随机重新分成同样大小的两组，在每次置换中重新估计两个网络并计算统计量，重复（如
 1000
@@ -1038,6 +1166,8 @@ Genetics</em>）：与同一疾病相关的基因产物在互作组中不是随�
 <p class="src small">定义见 <a href="molecular-networks.disease-modules.html">生物分子网络与拓扑特征 · 人类疾病网络与疾病模块</a><br>可视化：<a href="lab.html#ffl">前馈环的滤波作用</a>、<a href="lab.html#attack">随机失效与蓄意攻击</a></p></div><div class="term" id="网络基序" data-dom="molecular" data-k="网络基序 network motif; milo 等, 2002, *science*"><div class="term-dom">分子网络与基因调控</div>
 <p><strong>网络基序</strong>（network motif; Milo 等, 2002,
 <em>Science</em>）：在真实网络中出现次数显著多于随机化网络的小型子图模式。显著性常用</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Z</mi><mo>=</mo><mfrac><mrow><msub><mi>N</mi><mtext mathvariant="normal">real</mtext></msub><mo>−</mo><mo stretchy="false" form="prefix">⟨</mo><msub><mi>N</mi><mtext mathvariant="normal">rand</mtext></msub><mo stretchy="false" form="postfix">⟩</mo></mrow><msub><mi>σ</mi><mtext mathvariant="normal">rand</mtext></msub></mfrac></mrow><annotation encoding="application/x-tex">Z = \frac{N_{\text{real}} - \langle N_{\text{rand}}\rangle}{\sigma_{\text{rand}}}</annotation></semantics></math></p>
+<p>衡量，其中随机化网络保持每个节点的入度和出度不变。</p>
 <p class="src small">定义见 <a href="molecular-networks.network-motifs.html">生物分子网络与拓扑特征 · 网络基序：类别与动力学功能</a><br>可视化：<a href="lab.html#ffl">前馈环的滤波作用</a>、<a href="lab.html#attack">随机失效与蓄意攻击</a><br>论文：<a href="paper-milo2002_motifs.html">网络基序：复杂网络的简单构件</a>、<a href="paper-shenorr2002_ecoli.html">大肠杆菌转录调控网络中的网络基序</a></p></div><div class="term" id="共表达（co-expression）" data-dom="molecular" data-k="共表达（co-expression） "><div class="term-dom">分子网络与基因调控</div>
 <p><strong>共表达（co-expression）</strong>：两个基因在多个样本中的表达水平共同升降。共表达是<strong>关联</strong>而不是<strong>调控</strong>：它可能来自直接调控、共同上游调控者、细胞类型比例差异，甚至批次效应。</p>
 <p class="src small">定义见 <a href="gene-network-inference.inference-problem.html">基因调控网络推断与共表达分析 · 网络推断问题：从“一起变化”到“谁调控谁”</a><br>可视化：<a href="lab.html#ffl">前馈环的滤波作用</a></p></div><div class="term" id="金标准（gold standard）" data-dom="molecular" data-k="金标准（gold standard） "><div class="term-dom">分子网络与基因调控</div>
@@ -1050,9 +1180,7 @@ RegulonDB）、ChIP-seq
 <p class="src small">定义见 <a href="network-medicine.framework.html">疾病模块、网络邻近度与药物重定位 · 网络医学：把疾病看作网络的扰动</a><br>可视化：<a href="lab.html#proximity">网络邻近度与疾病模块</a></p></div><div class="term" id="疾病模块（disease module）" data-dom="medicine" data-k="疾病模块（disease module） "><div class="term-dom">网络医学与药物网络</div>
 <p><strong>疾病模块（disease
 module）</strong>：与同一疾病相关的基因产物在相互作用组中构成的连通子图；模块内的扰动引起该疾病的表型。实际操作中，把一种疾病的已知相关基因投到相互作用组上，用它们诱导子图的<strong>最大连通分支</strong>作为可观测的疾病模块。</p>
-<p class="src small">定义见 <a href="network-medicine.disease-modules.html">疾病模块、网络邻近度与药物重定位 · 疾病模块：定义与检测</a><br>可视化：<a href="lab.html#proximity">网络邻近度与疾病模块</a></p></div><div class="term" id="手算例" data-dom="medicine" data-k="手算例 "><div class="term-dom">网络医学与药物网络</div>
-<p><strong>手算例</strong>：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>=</mo><mn>20</mn></mrow><annotation encoding="application/x-tex">N=20</annotation></semantics></math>，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mn>0</mn></msub><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">s_0=4</annotation></semantics></math>。</p>
-<p class="src small">定义见 <a href="network-medicine.module-detection.html">疾病模块、网络邻近度与药物重定位 · 疾病模块检测算法：从种子基因到完整模块</a><br>可视化：<a href="lab.html#proximity">网络邻近度与疾病模块</a></p></div><div class="term" id="网络邻近度（network proximity）" data-dom="medicine" data-k="网络邻近度（network proximity） "><div class="term-dom">网络医学与药物网络</div>
+<p class="src small">定义见 <a href="network-medicine.disease-modules.html">疾病模块、网络邻近度与药物重定位 · 疾病模块：定义与检测</a><br>可视化：<a href="lab.html#proximity">网络邻近度与疾病模块</a></p></div><div class="term" id="网络邻近度（network proximity）" data-dom="medicine" data-k="网络邻近度（network proximity） "><div class="term-dom">网络医学与药物网络</div>
 <p><strong>网络邻近度（network
 proximity）</strong>：药物靶点与疾病模块在相互作用组中的距离，经度匹配随机基线标准化后的
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>
@@ -1141,6 +1269,19 @@ href="reproducible-research.multiverse-analysis.html">多元宇宙分析与设�
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>
 属于超边
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi><annotation encoding="application/x-tex">e</annotation></semantics></math>。</p>
+<ul>
+<li>节点
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>
+的<strong>超度</strong>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>k</mi><mi>i</mi><mi>H</mi></msubsup><mo>=</mo><msub><mo>∑</mo><mi>e</mi></msub><msub><mi>I</mi><mrow><mi>i</mi><mi>e</mi></mrow></msub></mrow><annotation encoding="application/x-tex">k_i^{H}=\sum_e I_{ie}</annotation></semantics></math>：所在超边的数目；</li>
+<li>超边大小
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>e</mi><mo stretchy="false" form="prefix">|</mo><mo>=</mo><msub><mo>∑</mo><mi>i</mi></msub><msub><mi>I</mi><mrow><mi>i</mi><mi>e</mi></mrow></msub></mrow><annotation encoding="application/x-tex">|e|=\sum_i I_{ie}</annotation></semantics></math>；</li>
+<li><strong>两两投影</strong>（clique
+expansion）：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>=</mo><mi>I</mi><msup><mi>I</mi><mi>⊤</mi></msup><mo>−</mo><mrow><mi mathvariant="normal">d</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">g</mi></mrow><mo stretchy="false" form="prefix">(</mo><msup><mi>k</mi><mi>H</mi></msup><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">W = I I^{\top} - \mathrm{diag}(k^{H})</annotation></semantics></math>，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>W</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><annotation encoding="application/x-tex">W_{ij}</annotation></semantics></math>
+是
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow><annotation encoding="application/x-tex">i,j</annotation></semantics></math>
+共同出现的超边数。投影丢失了“哪些节点同时出现在一条超边里”的信息。</li>
+</ul>
 <p class="src small">定义见 <a href="reporting-frontiers.higher-order.html">结果呈现与研究前沿 · 高阶相互作用：超图与单纯复形</a><br>可视化：<a href="lab.html#graph_matrix">图与邻接矩阵</a>、<a href="lab.html#attack">随机失效与蓄意攻击</a></p></div><div class="term" id="单纯复形（simplicial complex）" data-dom="methods" data-k="单纯复形（simplicial complex） "><div class="term-dom">计算方法与研究规范</div>
 <p><strong>单纯复形（simplicial
 complex）</strong>：一组单纯形的集合，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>-单纯形是由

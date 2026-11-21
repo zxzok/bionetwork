@@ -364,7 +364,7 @@ H3 说随机网络没有社团。反过来问：如果网络确实由含社团�
 $$
 |c_{\text{in}}-c_{\text{out}}|\le q\sqrt{c}
 $$
-时，在 $n\to\infty$ 的极限下，没有任何算法能得到与真实分组相关性大于零的划分；当 $|c_{\text{in}}-c_{\text{out}}|>q\sqrt c$ 时，置信传播（belief propagation）等算法可以得到正相关的划分。这一条件也称为 Kesten–Stigum 阈值。
+时，在 $n\to\infty$ 的极限下，没有任何算法能得到与真实分组相关性大于零的划分；当 $|c_{\text{in}}-c_{\text{out}}|>q\sqrt c$ 时，置信传播（belief propagation）等算法可以得到正相关的划分。这一条件也称为 Kesten–Stigum 阈值。严格地说，“阈值以下不可检测”对 2 个社团成立；社团较多（如 5 个以上）时，阈值附近还有一段信息上可检测、但已知的高效算法难以做到的区间。
 :::
 
 几点含义：

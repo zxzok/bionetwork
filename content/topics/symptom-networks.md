@@ -769,7 +769,7 @@ mlVAR 的两步近似：（1）用每人的样本均值 $\bar{\mathbf y}_k$ 代�
 | 网站 | [psych-networks.com](https://psych-networks.com/) | Eiko Fried 维护的博客，含心理网络方法的教程、争论与新文献介绍（中心性解读、正则化后的 bootstrap、个体化方法等） |
 | 软件 | [JASP](https://jasp-stats.org/)；R 包 [bootnet](https://cran.r-project.org/package=bootnet)、[qgraph](https://cran.r-project.org/package=qgraph)、[networktools](https://cran.r-project.org/package=networktools) | JASP 的 Network 模块无需写代码；R 包分别负责估计与稳定性、绘图、桥中心性与条目重叠检查 |
 | 软件 | R 包 [IsingFit](https://cran.r-project.org/package=IsingFit)、[mgm](https://cran.r-project.org/package=mgm)、[mlVAR](https://cran.r-project.org/package=mlVAR)、[graphicalVAR](https://cran.r-project.org/package=graphicalVAR)、[psychonetrics](https://cran.r-project.org/package=psychonetrics)、[NetworkComparisonTest](https://cran.r-project.org/package=NetworkComparisonTest) | 分别对应 Ising 模型、混合图模型与可预测性、多层 VAR、单被试 GVAR、panel-GVAR 与潜变量网络、网络比较检验 |
-| 数据 | [NHANES 2021–2023 PHQ-9（DPQ_L）](https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/DPQ_L.htm) | 6337 名成人的 PHQ-9 九个条目，公开下载，可用于构建抑郁症状网络 |
+| 数据 | [NHANES 2021–2023 PHQ-9（DPQ_L）](https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/DPQ_L.htm) | 约 5500 名成人作答的 PHQ-9 九个条目（数据文件共 6337 条记录），公开下载，可用于构建抑郁症状网络 |
 
 ## 开放问题 {#questions}
 
