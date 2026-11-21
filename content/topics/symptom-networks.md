@@ -576,7 +576,7 @@ $$
 \text{PL}(\tau,\omega)=\sum_{k=1}^n\sum_{i=1}^p\log P\big(x_{ki}\mid \mathbf x_{k,-i}\big),\qquad P(x_i=1\mid\mathbf x_{-i})=\sigma\Big(\tau_i+\sum_{j\ne i}\omega_{ij}x_j\Big).
 $$
 
-由于 $\omega_{ij}$ 同时出现在节点 $i$ 和 $j$ 的条件分布中，最大化伪似然可以分解为 $p$ 个独立的逻辑回归（各自估计 $\beta_{ij}$），再用 AND/OR 规则把 $\beta_{ij}$ 与 $\beta_{ji}$ 合并。每个回归加 $\ell_1$ 惩罚，以节点级 EBIC 选 $\lambda$：
+$\omega_{ij}$ 同时出现在节点 $i$ 和 $j$ 的条件分布中；若放松 $\omega_{ij}=\omega_{ji}$ 的约束，最大化伪似然就可以分解为 $p$ 个独立的逻辑回归（各自估计 $\beta_{ij}$），再用 AND/OR 规则把 $\beta_{ij}$ 与 $\beta_{ji}$ 合并。每个回归加 $\ell_1$ 惩罚，以节点级 EBIC 选 $\lambda$：
 
 $$
 \text{EBIC}_i(\lambda)=-2\,\ell_i(\hat\beta_\lambda)+k_\lambda\log n+2\gamma\,k_\lambda\log(p-1),

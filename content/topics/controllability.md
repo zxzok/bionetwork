@@ -686,7 +686,7 @@ $$
 
 ### C. PBH 判据与精确可控性
 
-**PBH 判据的证明要点**。（PBH 条件的必要性）若存在左特征向量 $\mathbf q^\top A=\lambda\mathbf q^\top$ 且 $\mathbf q^\top B=\mathbf 0$，则 $\mathbf q^\top A^kB=\lambda^k\mathbf q^\top B=\mathbf 0$ 对所有 $k$ 成立，$\mathbf q^\top\mathcal C=\mathbf 0$，不可控。（PBH 条件的充分性，逆否形式）若 $\operatorname{rank}\mathcal C<N$，不可控子空间的正交补 $\{\mathbf q:\mathbf q^\top\mathcal C=0\}$ 非空，且在 $A^\top$ 作用下不变（由 Cayley–Hamilton 定理，$\mathbf q^\top\mathcal C=0\Rightarrow\mathbf q^\top A\mathcal C=0$）。$A^\top$ 在这个不变子空间中至少有一个特征向量 $\mathbf q$，它满足 $\mathbf q^\top A=\lambda\mathbf q^\top$ 且 $\mathbf q^\top B=\mathbf 0$。$\operatorname{rank}[\lambda I-A,B]<N$ 与“存在这样的 $\mathbf q$”等价，因为 $\mathbf q^\top[\lambda I-A,B]=\mathbf 0$。
+**PBH 判据的证明要点**。（PBH 条件的必要性）若存在左特征向量 $\mathbf q^\top A=\lambda\mathbf q^\top$ 且 $\mathbf q^\top B=\mathbf 0$，则 $\mathbf q^\top A^kB=\lambda^k\mathbf q^\top B=\mathbf 0$ 对所有 $k$ 成立，$\mathbf q^\top\mathcal C=\mathbf 0$，不可控。（PBH 条件的充分性，逆否形式）若 $\operatorname{rank}\mathcal C<N$，可控子空间的正交补 $\{\mathbf q:\mathbf q^\top\mathcal C=0\}$ 非零，且在 $A^\top$ 作用下不变（由 Cayley–Hamilton 定理，$\mathbf q^\top\mathcal C=0\Rightarrow\mathbf q^\top A\mathcal C=0$）。$A^\top$ 在这个不变子空间中至少有一个特征向量 $\mathbf q$，它满足 $\mathbf q^\top A=\lambda\mathbf q^\top$ 且 $\mathbf q^\top B=\mathbf 0$。$\operatorname{rank}[\lambda I-A,B]<N$ 与“存在这样的 $\mathbf q$”等价，因为 $\mathbf q^\top[\lambda I-A,B]=\mathbf 0$。
 
 **精确可控性的计数论证**。对特征值 $\lambda$，$\lambda I-A$ 的左零空间维数为几何重数 $\mu(\lambda)$。要让 $[\lambda I-A,B]$ 满秩，$B$ 的列必须在这 $\mu(\lambda)$ 维左零空间上的投影满秩，因此 $\operatorname{rank}B\ge\mu(\lambda)$；对所有特征值同时成立，$N_D\ge\max_\lambda\mu(\lambda)$。反过来，可以构造恰好 $\max_\lambda\mu(\lambda)$ 列的 $B$ 同时满足所有特征值的条件（Yuan 等 2013 用初等变换给出构造）。
 

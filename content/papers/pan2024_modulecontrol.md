@@ -82,7 +82,7 @@ $$\hat K = \arg\min_K \left( \mathrm{tr}(SK) - \log\det K + \alpha \|K\|_1 \righ
 - **样本特征**：医学院新生、疫情背景下的快速筛查，量表选择也会改变网络。
 - 原文中性别比例在正文写作 47.3%/52.7%，方法部分写作 47.7%/52.3%，阅读时以正文为准并留意。
 
-代码已在 GitHub 公开（network-control-lab/module-control）。与相关研究的关系：MDSet 控制模型与[结构可控性与最大匹配](controllability.structural-controllability.html)中基于最大匹配的有向网络控制互补；同一控制视角也被用于脑网络（见 pan2024_mddcontrol）。
+代码已在 GitHub 公开（network-control-lab/module-control）。与相关研究的关系：MDSet 控制模型与[结构可控性与最大匹配](controllability.structural-controllability.html)中基于最大匹配的有向网络控制互补；同一控制视角也被用于脑网络。
 
 ## 关联知识
 

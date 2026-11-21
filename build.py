@@ -123,10 +123,27 @@ def split_sections(body):
     return out
 
 
+_GREEK = {"alpha": "α", "beta": "β", "gamma": "γ", "delta": "δ", "Delta": "Δ", "epsilon": "ε", "varepsilon": "ε",
+          "theta": "θ", "lambda": "λ", "Lambda": "Λ", "mu": "μ", "nu": "ν", "pi": "π", "rho": "ρ", "sigma": "σ",
+          "Sigma": "Σ", "tau": "τ", "phi": "φ", "varphi": "φ", "Phi": "Φ", "chi": "χ", "psi": "ψ", "omega": "ω",
+          "Omega": "Ω", "kappa": "κ", "eta": "η", "xi": "ξ", "langle": "⟨", "rangle": "⟩", "sum": "∑", "approx": "≈",
+          "le": "≤", "leq": "≤", "ge": "≥", "geq": "≥", "neq": "≠", "ne": "≠", "times": "×", "cdot": "·", "infty": "∞",
+          "to": "→", "in": "∈", "sim": "∼", "propto": "∝", "ll": "≪", "gg": "≫", "pm": "±"}
+
+
+def _math_words(s):
+    """Inline TeX as plain text for search snippets: $k_i$ -> k_i, $\\langle k\\rangle$ -> ⟨k⟩, \\frac{a}{b} -> a/b."""
+    s = re.sub(r"\\[dt]?frac\{([^{}]*)\}\{([^{}]*)\}", r"(\1)/(\2)", s)
+    s = re.sub(r"\\(text|mathrm|mathbf|mathcal|operatorname|bar|hat|tilde|overline)\{([^{}]*)\}", r"\2", s)
+    s = re.sub(r"\\([A-Za-z]+)", lambda m: _GREEK.get(m.group(1), ""), s)
+    s = s.replace("{", "").replace("}", "").replace("\\,", " ").replace("\\", "")
+    return re.sub(r"\s+", " ", s).strip()
+
+
 def plain_text(md, n=None):
     t = re.sub(r"```.*?```", " ", md, flags=re.S)
     t = re.sub(r"\$\$.*?\$\$", " ", t, flags=re.S)
-    t = re.sub(r"\$[^$\n]*\$", " ", t)
+    t = re.sub(r"\$([^$\n]*)\$", lambda m: " " + _math_words(m.group(1)) + " ", t)   # keep inline symbols readable
     t = re.sub(r"!\[[^\]]*\]\([^)]*\)", " ", t)
     t = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", t)
     t = re.sub(r"[*`_]", "", t)
@@ -503,7 +520,7 @@ def build_articles(tid, papers):
                              [("所属专题", f'<a href="{tid}.html">{E(t["title"])}</a>'), ("阅读", f"约 {reading_minutes(tx)} 分钟")])
         body = f'{head_html}<section class="block prose" id="notes">{body_html}</section>{appendix_refs(body_html)}{relh}{pager}'
         content = f'<div class="lec-grid"><article style="min-width:0">{body}</article><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div>'
-        write_page(f"{tid}.{si}.html", f"{ti}", f"{t['title']} · {ti}", "domains", content, tid, si, scripts=scripts)
+        write_page(f"{tid}.{si}.html", f"{ti} · {t['title']}", f"{t['title']} · {ti}", "domains", content, tid, si, scripts=scripts)
 
 
 # ----------------------------------------------------------------------------- domain pages
@@ -959,7 +976,7 @@ def courses_home():
                      f'<span class="cv-tab-n">第 {s["n"]} 讲</span><b>{E(s["title"])}</b><small>{len(r)} 集 · {hms(sum(e.get("duration") or 0 for e in r), True)}</small></a>')
     if not cards:
         return ""
-    return ('<section class="home-sec"><span class="tag">Lecture videos</span><h2>课程视频</h2><p class="small">按讲次组织的系列讲解，每集七到十二分钟，配中文字幕和文字稿。</p>'
+    return ('<section class="home-sec"><span class="tag">Lecture videos</span><h2>课程视频</h2><p class="small">按讲次组织的系列讲解，每讲约两小时，分成七到十五分钟的短集，配中文字幕和文字稿。</p>'
             f'<div class="cv-hgrid">{"".join(cards)}</div><p class="small" style="margin-top:12px"><a href="courses.html">进入课程视频 →</a></p></section>')
 
 
@@ -1016,7 +1033,7 @@ def build_courses():
 
     body = f"""<header class="doc-head cv-head"><div class="eyebrow"><b>课程视频</b><span>Lecture videos</span></div>
 <h1>课程视频</h1>
-<p class="dek">按讲次组织的系列讲解。每讲分成若干短集，每集七到十二分钟，配中文字幕和文字稿，可以按自己的节奏观看、暂停和回看。</p>
+<p class="dek">按讲次组织的系列讲解。每讲约两小时，分成若干七到十五分钟的短集，配中文字幕和文字稿，可以按自己的节奏观看、暂停和回看。</p>
 <dl class="doc-meta"><div><dt>讲次</dt><dd>{len(series)} 讲</dd></div><div><dt>已上线</dt><dd>{len(ready)} 集</dd></div>
 <div><dt>总时长</dt><dd>{hms(total, True)}</dd></div><div><dt>字幕</dt><dd>中文字幕 · 文字稿</dd></div></dl></header>
 <div class="cv-resume" hidden><span class="cv-resume-t"></span><a class="cv-btn primary" href="#">继续观看</a></div>

@@ -189,7 +189,7 @@ $$
 r_{ij}=\frac1T\sum_{t=1}^{T}e_{ij}(t).
 $$
 
-$e_{ij}(t)>0$ 表示两脑区在这一刻同向偏离各自均值，$<0$ 表示反向偏离。每帧的整体**共波动幅度**常用所有边的均方根（RSS）$\sqrt{\sum_{i<j}e_{ij}(t)^2}$ 表示。
+$e_{ij}(t)>0$ 表示两脑区在这一刻同向偏离各自均值，$<0$ 表示反向偏离。每帧的整体**共波动幅度**常用所有边共波动的平方和的平方根（root sum of squares, RSS）$\sqrt{\sum_{i<j}e_{ij}(t)^2}$ 表示。
 
 Faskowitz 等（2020, *Nature Neuroscience*）进一步计算边时间序列之间的相关，得到 $E\times E$ 的**边功能连接**（edge functional connectivity, eFC，$E$ 为边数）。对 eFC 聚类得到的是“边的社团”，映射回脑区时自然形成**重叠社团**：一个脑区的不同边可以属于不同社团。他们报告感觉运动和注意网络的脑区重叠程度最高，并且 eFC 在不同数据集间一致、在同一个体多次扫描间可重复。关于重叠社团的一般方法见[重叠社团](community-structure.overlapping-communities.html)。
 

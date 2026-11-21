@@ -172,13 +172,16 @@ centrality）：到其他所有节点平均距离的倒数，
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi>s</mi><mo>,</mo><mi>t</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{s,t\}</annotation></semantics></math>
 求和；归一化时除以
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>N</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">(</mo><mi>N</mi><mo>−</mo><mn>2</mn><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">(N-1)(N-2)/2</annotation></semantics></math>。</p>
-<p class="src small">定义见 <a href="network-metrics.centrality.html">网络结构指标与随机图 · 中心性：度、接近与介数</a><br>可视化：<a href="lab.html#graph_matrix">图与邻接矩阵</a>、<a href="lab.html#er">ER 随机图与巨连通分支</a><br>论文：<a href="paper-freeman1977_betweenness.html">一组基于“介于性”的中心性度量</a></p></div><div class="term" id="特征向量中心性" data-dom="theory" data-k="特征向量中心性 eigenvector centrality；bonacich 1987 系统化"><div class="term-dom">网络基础理论</div>
+<p class="src small">定义见 <a href="network-metrics.centrality.html">网络结构指标与随机图 · 中心性：度、接近与介数</a><br>可视化：<a href="lab.html#graph_matrix">图与邻接矩阵</a>、<a href="lab.html#er">ER 随机图与巨连通分支</a><br>论文：<a href="paper-freeman1977_betweenness.html">一组基于“介于性”的中心性度量</a></p></div><div class="term" id="特征向量中心性" data-dom="theory" data-k="特征向量中心性 "><div class="term-dom">网络基础理论</div>
 <p><strong>特征向量中心性</strong>（eigenvector centrality；Bonacich
-1987 系统化）：节点得分正比于邻居得分之和，
+1972 提出，1987 年推广为 power
+centrality）：节点得分正比于邻居得分之和，
 <math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>=</mo><mfrac><mn>1</mn><msub><mi>λ</mi><mn>1</mn></msub></mfrac><munder><mo>∑</mo><mi>j</mi></munder><msub><mi>A</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><msub><mi>x</mi><mi>j</mi></msub><mo>,</mo><mspace width="2.0em"></mspace><mi>A</mi><mi mathvariant="bold-italic">𝒙</mi><mo>=</mo><msub><mi>λ</mi><mn>1</mn></msub><mi mathvariant="bold-italic">𝒙</mi><mo>,</mo></mrow><annotation encoding="application/x-tex">x_i=\frac{1}{\lambda_1}\sum_jA_{ij}x_j,\qquad A\mathbf x=\lambda_1\mathbf x,</annotation></semantics></math>
 取最大特征值
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>λ</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\lambda_1</annotation></semantics></math>
-对应的特征向量。</p>
+对应的特征向量。有向网络中通常按入边求和，即
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>A</mi><mi>⊤</mi></msup><mi mathvariant="bold-italic">𝒙</mi><mo>=</mo><msub><mi>λ</mi><mn>1</mn></msub><mi mathvariant="bold-italic">𝒙</mi></mrow><annotation encoding="application/x-tex">A^{\top}\mathbf x=\lambda_1\mathbf x</annotation></semantics></math>（NetworkX
+的约定，与下文 Katz 中心性一致）。</p>
 <p class="src small">定义见 <a href="network-metrics.spectral-centrality.html">网络结构指标与随机图 · 谱类中心性：特征向量、Katz、PageRank 与 HITS</a><br>可视化：<a href="lab.html#graph_matrix">图与邻接矩阵</a>、<a href="lab.html#er">ER 随机图与巨连通分支</a></p></div><div class="term" id="k 核" data-dom="theory" data-k="k 核 k-core；seidman 1983"><div class="term-dom">网络基础理论</div>
 <p><strong>k 核</strong>（k-core；Seidman 1983）：图中所有节点度都不小于
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>

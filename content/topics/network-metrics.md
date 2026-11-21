@@ -275,11 +275,11 @@ $\sigma_{st}$ 是 $s$ 到 $t$ 的最短路径条数，$\sigma_{st}(i)$ 是其中
 ### 特征向量中心性
 
 ::: {.callout-def}
-**特征向量中心性**（eigenvector centrality；Bonacich 1987 系统化）：节点得分正比于邻居得分之和，
+**特征向量中心性**（eigenvector centrality；Bonacich 1972 提出，1987 年推广为 power centrality）：节点得分正比于邻居得分之和，
 $$
 x_i=\frac{1}{\lambda_1}\sum_jA_{ij}x_j,\qquad A\mathbf x=\lambda_1\mathbf x,
 $$
-取最大特征值 $\lambda_1$ 对应的特征向量。
+取最大特征值 $\lambda_1$ 对应的特征向量。有向网络中通常按入边求和，即 $A^{\top}\mathbf x=\lambda_1\mathbf x$（NetworkX 的约定，与下文 Katz 中心性一致）。
 :::
 
 对连通无向网络，Perron–Frobenius 定理保证 $\lambda_1$ 是单重的、对应特征向量所有分量为正，因此排名唯一。从任意正初值出发做**幂迭代** $\mathbf x\leftarrow A\mathbf x/\|A\mathbf x\|$，结果收敛到 $\mathbf x$，这说明特征向量中心性就是“很长的途径从哪里出发最多”。收敛速度由 $|\lambda_2/\lambda_1|$ 决定。
@@ -324,7 +324,7 @@ $$
 A^{\top}A\,\mathbf a=\lambda\mathbf a,\quad AA^{\top}\mathbf h=\lambda\mathbf h .
 $$
 
-$A^{\top}A$ 的元素是两个节点共同的“上游”数（共引），$AA^{\top}$ 是共同的“下游”数（共被引）。在转录调控网络中，调控大量重要靶基因的转录因子枢纽值高，被多个关键转录因子共同调控的基因权威值高。
+$A^{\top}A$ 的元素是两个节点共同的“上游”数（共被引），$AA^{\top}$ 是共同的“下游”数（共引，即文献耦合）。在转录调控网络中，调控大量重要靶基因的转录因子枢纽值高，被多个关键转录因子共同调控的基因权威值高。
 
 ### 子图中心性
 
@@ -731,6 +731,7 @@ $$
 - Barrat A, Barthélemy M, Pastor-Satorras R, Vespignani A (2004). The architecture of complex weighted networks. *PNAS* 101: 3747–3752. DOI：[10.1073/pnas.0400087101](https://doi.org/10.1073/pnas.0400087101)
 - Batagelj V, Zaversnik M (2003). An O(m) algorithm for cores decomposition of networks. arXiv:cs/0310049
 - Boldi P, Vigna S (2014). Axioms for centrality. *Internet Mathematics* 10: 222–262. DOI：[10.1080/15427951.2013.865686](https://doi.org/10.1080/15427951.2013.865686)
+- Bonacich P (1972). Factoring and weighting approaches to status scores and clique identification. *Journal of Mathematical Sociology* 2: 113–120. DOI：[10.1080/0022250X.1972.9989806](https://doi.org/10.1080/0022250X.1972.9989806)
 - Bonacich P (1987). Power and centrality: a family of measures. *American Journal of Sociology* 92: 1170–1182. DOI：[10.1086/228631](https://doi.org/10.1086/228631)
 - Borgatti SP (2005). Centrality and network flow. *Social Networks* 27: 55–71. DOI：[10.1016/j.socnet.2004.11.008](https://doi.org/10.1016/j.socnet.2004.11.008)
 - Brandes U (2001). A faster algorithm for betweenness centrality. *Journal of Mathematical Sociology* 25: 163–177. DOI：[10.1080/0022250X.2001.9990249](https://doi.org/10.1080/0022250X.2001.9990249)

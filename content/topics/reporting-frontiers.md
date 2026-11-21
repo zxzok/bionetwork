@@ -85,7 +85,7 @@ reviewed: 2026-11-15
 ### 视觉映射
 
 1. **位置**最精确，**长度**次之，**面积、颜色饱和度**较差。最重要的变量用位置编码，其次才是节点大小或颜色。
-2. **节点大小映射面积而不是半径**：若半径与度成正比，度增加一倍，面积增加三倍，视觉上夸大了枢纽。
+2. **节点大小映射面积而不是半径**：若半径与度成正比，度增加一倍，面积变为原来的四倍，视觉上夸大了枢纽。
 3. **边的粗细与透明度**：加权网络中，粗细只适合少数几档；边很多时用透明度弱化弱边，并在图注中说明是否省略了某些边。
 4. **标注**：只标注与结论相关的节点（候选基因、枢纽脑区），其余用颜色或图例概括。
 
@@ -204,7 +204,7 @@ reviewed: 2026-11-15
 
 ## 贯穿网络科学的五条主线 {#cross-cutting-themes}
 
-**主线一：度与枢纽。** [网络结构指标与随机图](network-metrics.html)中的度分布与[小世界与无标度网络模型](network-models.html)中的无标度模型 → [网络可控性与稳定性](controllability.html)中蓄意攻击枢纽使网络崩解 → [脑连接组](brain-connectome.html)中的枢纽脑区与富人俱乐部 → [生物分子网络与拓扑特征](molecular-networks.html)中 PPI 的致死性与中心性 → [疾病模块、网络邻近度与药物重定位](network-medicine.html)中“枢纽离谁都近”，邻近度必须做度匹配。
+**主线一：度与枢纽。** [网络结构指标与随机图](network-metrics.html)中的度分布与[小世界与无标度网络模型](network-models.html)中的无标度模型 → [网络鲁棒性、渗流与级联失效](robustness.html)中蓄意攻击枢纽使网络崩解 → [脑连接组](brain-connectome.html)中的枢纽脑区与富人俱乐部 → [生物分子网络与拓扑特征](molecular-networks.html)中 PPI 的致死性与中心性 → [疾病模块、网络邻近度与药物重定位](network-medicine.html)中“枢纽离谁都近”，邻近度必须做度匹配。
 
 **主线二：模块。** [社团结构与社区发现](community-structure.html)中的模块度与社团检测 → [脑连接组](brain-connectome.html)中的脑功能模块 → [生物分子网络与拓扑特征](molecular-networks.html)中的疾病模块假说 → [基因调控网络推断与共表达分析](gene-network-inference.html)中的 WGCNA 共表达模块 → [网络医学](network-medicine.html)中疾病模块的重叠与分离度。
 

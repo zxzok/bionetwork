@@ -357,7 +357,7 @@ $L$ 是半正定矩阵，特征值 $0=\mu_1\le\mu_2\le\cdots\le\mu_N$；
 - $\mu=3$：取 $\mathbf x=(1,-1,0,0)^\top$（a 与 b 反相，c、d 为 0），$L\mathbf x=(3,-3,0,0)^\top=3\mathbf x$；
 - 迹检验：$0+1+3+4=8=2M$。
 
-$\mu_2=1>0$，说明图连通；对应的 Fiedler 向量把 d 与其他节点分在符号相反的两侧——切断 c–d 这一条边就能把图分开，这正是谱划分的思想（见[社团结构与社区发现](community-structure.spectral-hierarchical.html)）。
+$\mu_2=1>0$，说明图连通；对应的 Fiedler 向量为 $(-1,-1,0,2)^\top$（未归一化），把 d 与 a、b 分在符号相反的两侧（c 恰为 0）——切断 c–d 这一条边就能把图分开，这正是谱划分的思想（见[社团结构与社区发现](community-structure.spectral-hierarchical.html)）。
 
 ### 为什么拉普拉斯矩阵重要
 

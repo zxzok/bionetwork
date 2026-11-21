@@ -5,7 +5,8 @@
 先验网络含一半真边和同样多的假边（模拟“不完整且有错”的数据库）；整合方式是把先验边的惩罚乘以
 0.5 （Inferelator 等方法的思路）。在同一真实网络下比较样本少（n =
 30）与样本多（n = 120）两种情形。 输出解读：数据弱时，先验明显提高
-AUPR；数据强时，先验几乎不再增益，甚至略有拖累。先验中的错误边也会被抬高，
+AUPR；数据强时，先验不再增益，反而拉低
+AUPR（错误先验边被抬高）。先验中的错误边也会被抬高，
 所以整合后的预测仍需独立验证，且评估时不能再用同一个数据库当金标准。</p>
 </section><section class="block"><h2><span class="tag">Output</span>输出图</h2><div class="ex-figs"><img src="gallery/gene-network-inference-5-0.png" alt="基于回归的有向推断与先验知识整合（LASSO 路径 + 惩罚因子）：输出图 1" loading="lazy"></div></section><section class="block"><h2><span class="tag">Output</span>文字输出</h2><pre class="ex-out">真边 99 条；先验 98 条（其中正确 49 条）；仅先验 AUPR = 0.388
 n =  30：仅数据 AUPR = 0.550，数据 + 先验 AUPR = 0.635（随机 0.198）；先验错误边的平均得分 0.175 → 0.317
@@ -14,7 +15,7 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a hr
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 对每个靶基因用坐标下降求 LASSO 正则化路径，边 TF→靶 的得分 = 该系数首次进入模型时的 λ/λmax（越早进入越可信）。</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 先验网络含一半真边和同样多的假边（模拟“不完整且有错”的数据库）；整合方式是把先验边的惩罚乘以 0.5</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># （Inferelator 等方法的思路）。在同一真实网络下比较样本少（n = 30）与样本多（n = 120）两种情形。</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 输出解读：数据弱时，先验明显提高 AUPR；数据强时，先验几乎不再增益，甚至略有拖累。先验中的错误边也会被抬高，</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 输出解读：数据弱时，先验明显提高 AUPR；数据强时，先验不再增益，反而拉低 AUPR（错误先验边被抬高）。先验中的错误边也会被抬高，</span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># 所以整合后的预测仍需独立验证，且评估时不能再用同一个数据库当金标准。</span></span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
@@ -90,7 +91,7 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a hr
 # 对每个靶基因用坐标下降求 LASSO 正则化路径，边 TF→靶 的得分 = 该系数首次进入模型时的 λ/λmax（越早进入越可信）。
 # 先验网络含一半真边和同样多的假边（模拟“不完整且有错”的数据库）；整合方式是把先验边的惩罚乘以 0.5
 # （Inferelator 等方法的思路）。在同一真实网络下比较样本少（n = 30）与样本多（n = 120）两种情形。
-# 输出解读：数据弱时，先验明显提高 AUPR；数据强时，先验几乎不再增益，甚至略有拖累。先验中的错误边也会被抬高，
+# 输出解读：数据弱时，先验明显提高 AUPR；数据强时，先验不再增益，反而拉低 AUPR（错误先验边被抬高）。先验中的错误边也会被抬高，
 # 所以整合后的预测仍需独立验证，且评估时不能再用同一个数据库当金标准。
 import numpy as np
 

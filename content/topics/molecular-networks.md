@@ -669,7 +669,7 @@ $$
 n\approx 3+\frac{2\,(z_{1-\alpha_0/2}+z_{1-\beta_0})^2}{(\operatorname{atanh}\rho_A-\operatorname{atanh}\rho_B)^2}.
 $$
 
-**算例**：$\rho_A=0.5$、$\rho_B=0.2$，$\operatorname{atanh}$ 之差为 $0.549-0.203=0.346$；$\alpha_0=0.05$、功效 0.8 时 $(1.96+0.84)^2=7.84$，$n\approx3+2\times7.84/0.120\approx134$。若再对 1000 个基因对做 Bonferroni 校正（$\alpha_0=5\times10^{-5}$，$z\approx4.06$），$(4.06+0.84)^2=24.0$，$n\approx3+2\times24.0/0.120\approx402$。这说明中等程度的相关变化需要数百个样本才能可靠地在多重比较下检出。
+**算例**：$\rho_A=0.5$、$\rho_B=0.2$，$\operatorname{atanh}$ 之差为 $0.549-0.203=0.346$；$\alpha_0=0.05$、功效 0.8 时 $(1.96+0.84)^2=7.84$，$n\approx3+2\times7.84/0.120\approx134$。若再对 1000 个基因对做 Bonferroni 校正（$\alpha_0=5\times10^{-5}$，$z\approx4.06$），$(4.06+0.84)^2=24.0$，$n\approx3+2\times24.0/0.120\approx403$。这说明中等程度的相关变化需要数百个样本才能可靠地在多重比较下检出。
 
 ## 研究前沿与开放问题 {#frontiers}
 
@@ -859,7 +859,7 @@ $$
 | 类型 | 资源 | 说明 |
 |---|---|---|
 | 视频 | [系统生物学讲义 1–4（张弓，2017）](https://www.bilibili.com/video/BV1V7411n78f/)（B 站） | 中文，约 4 小时，讲解系统生物学概念、网络构建与调控；上传者非讲者本人 |
-| 视频 | Uri Alon, Systems Biology 2018：[B 站 AI 双语转载](https://www.bilibili.com/video/BV1YT411c7Y9/)；[YouTube 原始播放列表](https://www.youtube.com/playlist?list=PLLbr-B8cNbo6v4kc68JowzUeAYdh6gdQH)（需境外网络） | 网络基序的权威系列讲座，推荐第 1 集（基本概念）、第 2 集（自调控）、第 3 集（前馈环）；B 站版为转载，授权情况不明 |
+| 视频 | Uri Alon, Systems Biology 2018：[B 站双语转载](https://www.bilibili.com/video/BV1YT411c7Y9/)；[YouTube 原始播放列表](https://www.youtube.com/playlist?list=PLLbr-B8cNbo6v4kc68JowzUeAYdh6gdQH)（需境外网络） | 网络基序的权威系列讲座，推荐第 1 集（基本概念）、第 2 集（自调控）、第 3 集（前馈环）；B 站版为转载，授权情况不明 |
 | 视频 | [PPI 网络：蛋白互作网络的构建与核心基因的筛选](https://www.bilibili.com/video/BV1n34y1b7by/)（B 站） | 中文，31 分钟，STRING + Cytoscape 实操 |
 | 综述 | Barabási & Oltvai 2004，[doi.org/10.1038/nrg1272](https://doi.org/10.1038/nrg1272) | 网络生物学经典入门 |
 | 综述 | Alon 2007，[doi.org/10.1038/nrg2102](https://doi.org/10.1038/nrg2102) | 网络基序的理论与实验 |

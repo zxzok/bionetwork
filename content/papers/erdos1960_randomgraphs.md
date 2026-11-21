@@ -27,7 +27,7 @@ summary: 让随机图的边数逐渐增加，系统刻画各种结构在何时�
 
 ## 核心思想与方法
 
-论文使用的模型是在 $n$ 个带标号的节点上、从 $\binom{n}{2}$ 条可能的边中等概率地选出 $N$ 条，记为 $\Gamma_{n,N}$。这就是今天的 $G(N,M)$ 模型；[ER 随机网络](network-metrics.er-random-graph.html)中的 $G(N,p)$ 模型在 $N$ 很大时与之等价，平均度 $\langle k\rangle = 2N/n$。
+论文使用的模型是在 $n$ 个带标号的节点上、从 $\binom{n}{2}$ 条可能的边中等概率地选出 $N$ 条，记为 $\Gamma_{n,N}$。这就是今天的 $G(N,M)$ 模型（注意本文的 $N$ 是边数；按本站记号，即 $n$ 个节点、$N$ 条边的 $G(n,N)$）；[ER 随机网络](network-metrics.er-random-graph.html)中的 $G(N,p)$ 模型在 $N$ 很大时与之等价，平均度 $\langle k\rangle = 2N/n$。
 
 ::: {.callout-def}
 **阈值函数**（threshold function）：对某个图性质 $A$，若存在函数 $A(n)$，使得当 $N(n)/A(n)\to0$ 时具有性质 $A$ 的概率趋于 0，而当 $N(n)/A(n)\to\infty$ 时该概率趋于 1，则称 $A(n)$ 为性质 $A$ 的阈值函数。
