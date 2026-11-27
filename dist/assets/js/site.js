@@ -435,3 +435,27 @@ def __figs():
   const cur = document.querySelector('.rail a[aria-current="page"]');
   if (cur && cur.scrollIntoView) { const r = document.querySelector(".rail"); r.scrollTop = Math.max(0, cur.offsetTop - r.clientHeight / 3); }
 })();
+
+// list filters (papers, resources, glossary): a search button, Enter to search, and a live result count
+(() => {
+  document.querySelectorAll(".pfilters input.filter[data-items]").forEach((inp) => {
+    const box = document.createElement("div"); box.className = "fsearch";
+    inp.replaceWith(box); box.appendChild(inp);
+    const go = document.createElement("button"); go.type = "button"; go.className = "btn"; go.textContent = "搜索";
+    box.appendChild(go);
+    const out = document.createElement("p"); out.className = "fcount"; out.setAttribute("aria-live", "polite");
+    box.closest(".lec-head, .pfilters").appendChild(out);
+    const items = () => [...document.querySelectorAll(inp.dataset.items)];
+    const total = items().length;
+    const count = () => setTimeout(() => {
+      const n = items().filter((x) => !x.hidden).length;
+      out.textContent = n === total ? `共 ${total} 条` : n ? `显示 ${n} / ${total} 条` : "没有匹配的条目，换个关键词或取消筛选试试";
+    }, 0);
+    const run = () => { inp.dispatchEvent(new Event("input", { bubbles: true })); count(); };
+    go.addEventListener("click", run);
+    inp.addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); run(); } });
+    inp.addEventListener("input", count);
+    document.querySelectorAll(".pfilters button[data-f], .pfilters button[data-dom]").forEach((b) => b.addEventListener("click", count));
+    count();
+  });
+})();

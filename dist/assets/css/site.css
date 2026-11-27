@@ -163,6 +163,7 @@ main { min-width: 0; padding-block: 34px 80px; }
   body.nav-open .rail { transform: none; visibility: visible; }
   .nav-scrim { position: fixed; inset: 0; z-index: 55; background: rgba(10, 12, 18, .38); }
 }
+[hidden] { display: none !important; }
 .nav-scrim[hidden] { display: none; }
 
 /* ============================================================ page heads */
@@ -286,6 +287,10 @@ code span.at, code span.va { color: #7a3fc0; }
 .pfilters .btn[aria-pressed="true"] { background: var(--ink); color: var(--sheet); border-color: var(--ink); }
 .filter { width: 100%; max-width: 420px; font: inherit; font-size: 14px; padding: 8px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--sheet); color: var(--ink); }
 .pfilters .filter { flex: 1 1 220px; min-width: 0; }
+.fsearch { display: flex; flex: 1 1 300px; max-width: 480px; gap: 6px; align-items: center; }
+.fsearch .filter { flex: 1 1 auto; max-width: none; padding-left: 34px; background: var(--sheet) no-repeat 11px 50% / 15px url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23888' stroke-width='2.2' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='m20 20-3.5-3.5'/%3E%3C/svg%3E"); }
+.fsearch .btn { font-size: 14px; padding: 7px 14px; white-space: nowrap; }
+.fcount { flex-basis: 100%; margin: 2px 0 0; font-size: 13px; color: var(--ink-3); }
 
 /* ============================================================ cards */
 .dgrid, .tgrid, .pgrid, .rgrid, .labgrid, .arts, .entry3 { display: grid; gap: 14px; }

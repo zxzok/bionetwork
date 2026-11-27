@@ -776,7 +776,7 @@ def build_papers(papers):
             f'并链接到对应的理论专题。收录奠定这一领域的经典论文与近年的代表性研究。</p>'
             f'<div class="pfilters"><button class="btn ghost" data-f="all" aria-pressed="true">全部</button><button class="btn ghost" data-f="classic" aria-pressed="false">经典论文</button>'
             f'<button class="btn ghost" data-f="own" aria-pressed="false">近年研究</button></div>'
-            f'<div class="pfilters">{dom_btns}<input class="filter" id="paper-filter" type="search" placeholder="题名、方法或关键词" aria-label="搜索论文"></div></div>'
+            f'<div class="pfilters">{dom_btns}<input class="filter" id="paper-filter" data-items="#plist .pcard" type="search" placeholder="题名、方法或关键词" aria-label="搜索论文"></div></div>'
             f'<div class="pgrid" id="plist">{"".join(paper_card(p) for p in papers)}</div>'
             '<script>(function(){var mode="all",dom="",q="";function apply(){document.querySelectorAll("#plist .pcard").forEach(function(c){'
             'var ok=(mode==="all"||(mode==="own")===(c.dataset.own==="1"))&&(!dom||c.dataset.dom.split(" ").indexOf(dom)>=0)&&(!q||c.dataset.k.indexOf(q)>=0||c.textContent.toLowerCase().indexOf(q)>=0);c.hidden=!ok})}'
@@ -849,7 +849,7 @@ def build_resources(resources):
             groups.append(f'<section class="block rgroup"><h2>{E(k)}</h2><div class="rgrid">{"".join(res_card(r) for r in rs)}</div></section>')
     body = (f'<div class="lec-head"><h1>数据与软件资源库</h1><p class="lead">生物医学网络研究常用的公共数据、数据库、脑图谱与分析软件。每个资源都有中文介绍：'
             f'适合回答的研究问题、数据类型、获取方式、访问限制、相关工具与引用要求。</p>'
-            f'<div class="pfilters">{btns}<input class="filter" id="res-filter" type="search" placeholder="名称或用途" aria-label="筛选资源"></div></div>'
+            f'<div class="pfilters">{btns}<input class="filter" id="res-filter" data-items=".rcard" type="search" placeholder="名称或用途" aria-label="筛选资源"></div></div>'
             + ('<section class="block related-box"><h2>站内练习与案例所用的数据</h2><p class="small" style="margin:0">练习和真实数据案例使用的公开数据集，'
                '以及每个数据集的来源、许可证与引用方式：<a href="data-sources.html">数据来源与许可 →</a></p></section>' if (DIST / "data").exists() else "")
             + f'{"".join(groups)}'
@@ -920,7 +920,7 @@ def build_glossary(terms, papers):
     btns = "".join(f'<button class="btn ghost" data-dom="{d["id"]}" aria-pressed="false">{E(d["title"])}</button>' for d in DOMAINS)
     body = (f'<div class="lec-head"><h1>知识索引</h1><p class="lead">全站的正式定义、数学表达与中英文术语，每条都链接到定义所在的知识页面，以及相关的可视化与论文。'
             f'需要跨专题查找时，用<a href="search.html">站内搜索</a>（支持英文术语与缩写）。</p>'
-            f'<div class="pfilters">{btns}<input class="filter" id="gloss-filter" type="search" placeholder="例如：模块度、clustering、驱动节点" aria-label="筛选术语"></div></div>'
+            f'<div class="pfilters">{btns}<input class="filter" id="gloss-filter" data-items="#gloss .term" type="search" placeholder="例如：模块度、clustering、驱动节点" aria-label="筛选术语"></div></div>'
             f'<div class="gloss" id="gloss">{"".join(cards)}</div>'
             '<script>(function(){var dom="",q="";function apply(){document.querySelectorAll("#gloss .term").forEach(function(t){t.hidden=!((!dom||t.dataset.dom===dom)&&(!q||t.textContent.toLowerCase().indexOf(q)>=0))})}'
             'document.querySelectorAll(".pfilters [data-dom]").forEach(function(b){b.addEventListener("click",function(){dom=dom===b.dataset.dom?"":b.dataset.dom;document.querySelectorAll(".pfilters [data-dom]").forEach(function(x){x.setAttribute("aria-pressed",x.dataset.dom===dom)});apply()})});'
