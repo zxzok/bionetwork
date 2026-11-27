@@ -351,7 +351,7 @@ def __figs():
     const hs = [...document.querySelectorAll("main .block > h2, #notes h2, #notes h3")].filter((h) => h.textContent.trim());
     const ol = document.createElement("ol");
     hs.forEach((h, i) => { if (!h.id) h.id = "s-" + i; const li = document.createElement("li"); li.className = h.tagName === "H3" ? "sub" : "";
-      const a = document.createElement("a"); a.href = "#" + h.id; const hc = h.cloneNode(true); hc.querySelectorAll(".tag").forEach((x) => x.remove()); a.textContent = hc.textContent.trim(); li.appendChild(a); ol.appendChild(li); });
+      const a = document.createElement("a"); a.href = "#" + h.id; const hc = h.cloneNode(true); hc.querySelectorAll(".tag").forEach((x) => x.remove()); a.textContent = h.dataset.toc || hc.textContent.trim(); li.appendChild(a); ol.appendChild(li); });
     toc.appendChild(ol);
     const links = [...toc.querySelectorAll("a")];
     const io = new IntersectionObserver((es) => { es.forEach((e) => { if (e.isIntersecting) { links.forEach((l) => l.classList.toggle("on", l.getAttribute("href") === "#" + e.target.id)); } }); }, { rootMargin: "-20% 0px -70% 0px" });

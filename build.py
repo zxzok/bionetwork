@@ -74,7 +74,7 @@ def pandoc(md, mathml=True):
     if r.returncode:
         raise RuntimeError(r.stderr)
     out = r.stdout
-    out = re.sub(r"<table>", '<div class="table-wrap"><table>', out).replace("</table>", "</table></div>")
+    out = re.sub(r"<table(?=[\s>])", '<div class="table-wrap"><table', out).replace("</table>", "</table></div>")  # tables with column widths carry a style attribute
     out = re.sub(r'<a href="(https?://[^"]+)"', r'<a href="\1" target="_blank" rel="noopener"', out)
     return out
 
@@ -990,6 +990,13 @@ def build_search(papers, resources, terms):
         if qs:
             idx.append({"t": f"第 {ser['n']} 讲测验：{ser['title']}", "u": f"quiz-V{ser['n']}.html", "k": "课程视频", "d": f"{len(qs)} 题",
                         "s": "题目只考这一讲视频里讲过的内容", "x": plain_text(" ".join(str(q.get("q", "")) for q in qs), 2000)})
+    secs = project_sections()
+    if secs:
+        idx.append({"t": "课程论文选题", "u": "project.html", "k": "课程论文", "d": f"{len(secs)} 个题目", "s": "课程论文的题目、公开数据集、要求与评分",
+                    "x": "课程论文 课程作业 大作业 期末作业 选题 " + " ".join(c + " " + t for c, t, _, _ in secs)})
+        for code, title, group, txt in secs:
+            idx.append({"t": f"{code}　{title}", "u": f"project.html#{code.lower()}", "k": "课程论文", "d": group,
+                        "s": plain_text(txt.split("**背景与问题。**", 1)[-1], 110), "x": plain_text(txt, 3000)})
     if (DIST / "data-sources.html").exists():
         sp = CONTENT / "data" / "SOURCES.md"
         idx.append({"t": "数据来源与许可", "u": "data-sources.html", "k": "数据与软件", "d": "练习与案例数据", "s": "站内练习和真实数据案例使用的公开数据集",
@@ -1026,7 +1033,8 @@ def courses_home():
     if not cards:
         return ""
     return ('<section class="home-sec"><span class="tag">Lecture videos</span><h2>课程视频</h2><p class="small">按讲次组织的系列讲解，每讲约两小时，分成七到十五分钟的短集，配中文字幕和文字稿。</p>'
-            f'<div class="cv-hgrid">{"".join(cards)}</div><p class="small" style="margin-top:12px"><a href="courses.html">进入课程视频 →</a></p></section>')
+            f'<div class="cv-hgrid">{"".join(cards)}</div><p class="small" style="margin-top:12px"><a href="courses.html">进入课程视频 →</a>'
+            + ('　<a href="project.html">课程论文选题 →</a>' if (CONTENT / "project.md").exists() else "") + '</p></section>')
 
 
 def build_courses():
@@ -1084,7 +1092,7 @@ def build_courses():
 <h1>课程视频</h1>
 <p class="dek">按讲次组织的系列讲解。每讲约两小时，分成若干七到十五分钟的短集，配中文字幕和文字稿，可以按自己的节奏观看、暂停和回看。</p>
 <dl class="doc-meta"><div><dt>讲次</dt><dd>{len(series)} 讲</dd></div><div><dt>已上线</dt><dd>{len(ready)} 集</dd></div>
-<div><dt>总时长</dt><dd>{hms(total, True)}</dd></div><div><dt>字幕</dt><dd>中文字幕 · 文字稿</dd></div></dl></header>
+<div><dt>总时长</dt><dd>{hms(total, True)}</dd></div><div><dt>字幕</dt><dd>中文字幕 · 文字稿</dd></div></dl>{project_link()}</header>
 <div class="cv-resume" hidden><span class="cv-resume-t"></span><a class="cv-btn primary" href="#">继续观看</a></div>
 <div class="cv-tabs" role="tablist" aria-label="讲次">{"".join(tabs)}</div>
 <section class="cv-stage" aria-label="播放器">
@@ -1113,6 +1121,47 @@ def build_courses():
 <script type="application/json" id="cv-data">{json.dumps(data, ensure_ascii=False).replace("</", "<\\/")}</script>"""
     write_page("courses.html", "课程视频", f"{SITE}系列讲解视频：{'、'.join(s['title'] for s in series)}，共 {len(ready)} 集，配中文字幕与文字稿",
                "courses", body, scripts=("site.js", "courses.js"), with_rail=False)
+
+
+# ----------------------------------------------------------------------------- course papers (project.html)
+def project_sections():
+    """(code, title, group, text) for each topic in content/project.md ("### A1　标题 {#a1}")."""
+    f = CONTENT / "project.md"
+    if not f.exists():
+        return []
+    _, md = front(f)
+    out, group = [], ""
+    parts = re.split(r"^(#{2,3} .+)$", md, flags=re.M)
+    for i in range(1, len(parts), 2):
+        h, txt = parts[i], parts[i + 1]
+        m2 = re.match(r"## ([A-E])　(.+?) \{#", h)
+        if m2:
+            group = m2.group(2)
+        m3 = re.match(r"### ([A-E]\d)　(.+?) \{#([a-e]\d)[ }]", h)
+        if m3:
+            out.append((m3.group(1), m3.group(2), group, txt))
+    return out
+
+
+def project_link():
+    n = len(project_sections())
+    return (f'<p class="cv-proj"><a class="cv-btn" href="project.html">课程论文选题：{n} 个题目，均配公开数据集 →</a></p>' if n else "")
+
+
+def build_project():
+    """课程论文选题: topics, public datasets and requirements for the course paper (content/project.md); linked from courses.html."""
+    f = CONTENT / "project.md"
+    if not f.exists():
+        return
+    meta, md = front(f)
+    secs = project_sections()
+    body_html = pandoc(md)
+    head_html = doc_head(['<a href="courses.html">课程视频</a>'], "<b>课程论文</b><span>Course papers</span>", meta["title"], E(str(meta.get("dek", ""))),
+                         [("题目", f"{len(secs)} 个"), ("领域", f"{len({g for _, _, g, _ in secs})} 类"), ("数据", "全部公开"), ("核查日期", str(meta.get("checked", "")))])
+    content = (f'<div class="lec-grid"><article style="min-width:0">{head_html}<section class="block prose project" id="notes">{body_html}</section></article>'
+               '<aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div>')
+    write_page("project.html", meta["title"], f"课程论文选题：{len(secs)} 个题目，每个题目给出研究问题、公开数据集、必做分析与参考文献",
+               "courses", content, with_rail=False)
 
 
 # ----------------------------------------------------------------------------- self-test, exercises, data cases (format: content/FORMATS.md)
@@ -1592,7 +1641,7 @@ def build_about():
 def build_redirects():
     for lid, tid in LEGACY.items():
         redirect(f"{lid}.html", f"{tid}.html", ttitle(tid))
-    for name in ("guide.html", "me.html", "project.html"):
+    for name in ("guide.html", "me.html") + (() if (CONTENT / "project.md").exists() else ("project.html",)):
         redirect(name, "about.html" if name == "guide.html" else "index.html", SITE)
 
 
@@ -1651,6 +1700,7 @@ def main():
     build_search(papers, resources, terms)
     build_about()
     build_courses()
+    build_project()
     build_redirects()
     print(f"done: {len(TOPICS)} topics, {sum(len(t['_articles']) for t in TOPICS.values())} pages, {len(papers)} papers, {len(resources)} resources, {len(terms)} terms")
 
