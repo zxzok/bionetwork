@@ -1158,8 +1158,8 @@ def build_project():
     body_html = pandoc(md)
     head_html = doc_head(['<a href="courses.html">课程视频</a>'], "<b>课程论文</b><span>Course papers</span>", meta["title"], E(str(meta.get("dek", ""))),
                          [("题目", f"{len(secs)} 个"), ("领域", f"{len({g for _, _, g, _ in secs})} 类"), ("数据", "全部公开"), ("核查日期", str(meta.get("checked", "")))])
-    content = (f'<div class="lec-grid"><article style="min-width:0">{head_html}<section class="block prose project" id="notes">{body_html}</section></article>'
-               '<aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside></div>')
+    content = ('<div class="lec-grid toc-left"><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside>'
+               f'<article style="min-width:0">{head_html}<section class="block prose project" id="notes">{body_html}</section></article></div>')
     write_page("project.html", meta["title"], f"课程论文选题：{len(secs)} 个题目，每个题目给出研究问题、公开数据集、必做分析与参考文献",
                "courses", content, with_rail=False)
 
