@@ -229,9 +229,12 @@ def code_cells(tid):
 
 
 # ----------------------------------------------------------------------------- page chrome
-NAV = [("index.html", "首页", "home"), ("courses.html", "课程视频", "courses"), ("domains.html", "知识领域", "domains"), ("lab.html", "可视化实验室", "lab"),
-       ("code.html", "代码库", "code"), ("papers.html", "文献", "papers"), ("resources.html", "数据与软件", "resources"),
-       ("glossary.html", "知识索引", "glossary")]
+HAS_PROJECT = (CONTENT / "project.md").exists()   # 课程论文选题 page (project.html)
+NAV = ([("index.html", "首页", "home"), ("courses.html", "课程视频", "courses")] + ([("project.html", "课程论文", "project")] if HAS_PROJECT else [])
+       + [("domains.html", "知识领域", "domains"), ("lab.html", "可视化实验室", "lab"),
+          ("code.html", "代码库", "code"), ("papers.html", "文献", "papers"), ("resources.html", "数据与软件", "resources"),
+          ("glossary.html", "知识索引", "glossary")])
+PROJECT_LINK = '<a href="project.html">课程论文</a>' if HAS_PROJECT else ""
 
 
 def head(title, desc=""):
@@ -275,7 +278,7 @@ def rail(topics, cur_topic=None, cur_sec=None, cur_domain=None):
         out.append("</ol></details>")
     out.append('<div class="tree-links"><a href="index.html">首页</a><a href="lab.html">可视化实验室</a><a href="code.html">计算方法与代码库</a>'
                '<a href="papers.html">文献知识库</a><a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a>'
-               '<a href="courses.html">课程视频</a><a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div>')
+               f'<a href="courses.html">课程视频</a>{PROJECT_LINK}<a href="search.html">站内搜索</a><a href="about.html">关于本站</a></div>')
     out.append("</nav>")
     return "".join(out)
 
@@ -297,7 +300,7 @@ def write_page(name, title, desc, active, body, topic=None, sec=None, scripts=("
     shell = (f'<div class="shell">{rail(TOPICS, topic, sec, dom)}<main id="main">{body}</main></div><div class="nav-scrim" hidden></div>' if with_rail
              else f'<div class="shell wide"><main id="main">{body}</main></div>')
     foot = ('<footer class="site"><div><b>' + SITE + '</b><span>' + SITE_EN + '</span>'
-            '<a href="courses.html">课程视频</a><a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a>'
+            '<a href="courses.html">课程视频</a>' + PROJECT_LINK + '<a href="domains.html">知识领域</a><a href="lab.html">可视化实验室</a><a href="code.html">代码库</a><a href="papers.html">文献</a>'
             '<a href="resources.html">数据与软件</a><a href="glossary.html">知识索引</a><a href="about.html">关于本站</a></div></footer>')
     page = (f'<!doctype html><html lang="zh-CN"><head>{head(title, desc)}</head><body{cls}{body_attr}>{topbar(active)}{shell}{foot}{sc}</body></html>')
     (DIST / name).write_text(page, encoding="utf-8")
@@ -1161,7 +1164,7 @@ def build_project():
     content = ('<div class="lec-grid toc-left"><aside class="toc" data-auto aria-label="本页目录"><b>本页目录</b></aside>'
                f'<article style="min-width:0">{head_html}<section class="block prose project" id="notes">{body_html}</section></article></div>')
     write_page("project.html", meta["title"], f"课程论文选题：{len(secs)} 个题目，每个题目给出研究问题、公开数据集、必做分析与参考文献",
-               "courses", content, with_rail=False)
+               "project", content, with_rail=False)
 
 
 # ----------------------------------------------------------------------------- self-test, exercises, data cases (format: content/FORMATS.md)
