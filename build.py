@@ -238,7 +238,7 @@ def head(title, desc=""):
     full = title if title == SITE else f"{title} · {SITE}"
     return (f'<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">'
             f'<meta name="claude:viewport-fit-sides" content="cover"><title>{E(full)}</title>'
-            f'<meta name="description" content="{E(desc)}">{FONTS}<link rel="stylesheet" href="assets/css/site.css">'
+            f'<meta name="description" content="{E(desc)}">{FONTS}<link rel="stylesheet" href="assets/css/site.css?v={AV("css/site.css")}">'
             '<script>try{var t=localStorage.getItem("bcna:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script>')
 
 
@@ -283,8 +283,15 @@ def rail(topics, cur_topic=None, cur_sec=None, cur_domain=None):
 TOPICS = {}
 
 
+def AV(rel):
+    """Short content hash of site/assets/<rel>, appended as ?v= so browsers fetch a changed file at once."""
+    import hashlib
+    f = ROOT / "site" / "assets" / rel
+    return hashlib.sha1(f.read_bytes()).hexdigest()[:8] if f.exists() else "0"
+
+
 def write_page(name, title, desc, active, body, topic=None, sec=None, scripts=("site.js",), with_rail=True, body_attr="", domain=None):
-    sc = "".join(f'<script src="assets/js/{s}"></script>' for s in scripts)
+    sc = "".join(f'<script src="assets/js/{s}?v={AV("js/" + s)}"></script>' for s in scripts)
     dom = domain or (TMETA[topic]["domain"] if topic in TMETA else None)
     cls = f' class="dom-{dom}"' if dom else ""
     shell = (f'<div class="shell">{rail(TOPICS, topic, sec, dom)}<main id="main">{body}</main></div><div class="nav-scrim" hidden></div>' if with_rail
@@ -631,7 +638,7 @@ def build_index(papers):
 <a href="resources.html"><b>数据与软件资源库</b><span>脑影像、量表、分子相互作用、药物与疾病数据库，以及分析软件的中文介绍。</span></a>
 <a href="glossary.html"><b>知识索引</b><span>中英文术语、定义与公式，连接到对应的理论、可视化与论文。</span></a>
 <a href="search.html"><b>站内搜索</b><span>支持中英文与常见缩写，同时检索专题、知识页面、论文、代码与数据。</span></a></div></section>
-<script>window.KMAP={graph};</script><script src="assets/js/kmap.js"></script>"""
+<script>window.KMAP={graph};</script><script src="assets/js/kmap.js?v={AV("js/kmap.js")}"></script>"""
     return write_page("index.html", SITE, "生物医学网络科学：复杂网络理论、动力学与控制，以及脑网络、症状网络、分子网络与网络医学", "home", body, with_rail=False)
 
 
@@ -990,7 +997,7 @@ def build_search(papers, resources, terms):
     (DIST / "assets" / "search-index.json").write_text(json.dumps({"items": idx, "syn": SYNONYMS}, ensure_ascii=False), encoding="utf-8")
     body = ('<div class="lec-head"><h1>站内搜索</h1><form class="hero-search" role="search" onsubmit="return false"><input id="sq" type="search" '
             'placeholder="概念、算法、论文、数据集；支持英文与缩写，如 FC、PPI、modularity" aria-label="搜索"></form><p class="small" id="scount"></p></div>'
-            '<div class="kinds" id="skinds"></div><ol class="results" id="sres"></ol><script src="assets/js/search.js"></script>')
+            '<div class="kinds" id="skinds"></div><ol class="results" id="sres"></ol>' f'<script src="assets/js/search.js?v={AV("js/search.js")}"></script>')
     write_page("search.html", "站内搜索", "搜索生物医学网络科学的概念、算法、论文与数据", "", body)
 
 
