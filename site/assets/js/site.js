@@ -354,7 +354,13 @@ def __figs():
       const a = document.createElement("a"); a.href = "#" + h.id; const hc = h.cloneNode(true); hc.querySelectorAll(".tag").forEach((x) => x.remove()); a.textContent = h.dataset.toc || hc.textContent.trim(); li.appendChild(a); ol.appendChild(li); });
     toc.appendChild(ol);
     const links = [...toc.querySelectorAll("a")];
-    const io = new IntersectionObserver((es) => { es.forEach((e) => { if (e.isIntersecting) { links.forEach((l) => l.classList.toggle("on", l.getAttribute("href") === "#" + e.target.id)); } }); }, { rootMargin: "-20% 0px -70% 0px" });
+    // a TOC taller than the screen scrolls inside itself; keep the highlighted entry in view
+    const keepVisible = (l) => {
+      if (!l || toc.scrollHeight <= toc.clientHeight + 2) return;
+      const top = l.offsetTop, bottom = top + l.offsetHeight;
+      if (top < toc.scrollTop + 24 || bottom > toc.scrollTop + toc.clientHeight - 24) toc.scrollTo({ top: Math.max(0, top - toc.clientHeight / 3), behavior: "smooth" });
+    };
+    const io = new IntersectionObserver((es) => { es.forEach((e) => { if (e.isIntersecting) { links.forEach((l) => l.classList.toggle("on", l.getAttribute("href") === "#" + e.target.id)); keepVisible(links.find((l) => l.classList.contains("on"))); } }); }, { rootMargin: "-20% 0px -70% 0px" });
     hs.forEach((h) => io.observe(h));
   }
 
